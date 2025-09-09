@@ -1,1 +1,17 @@
-node_modules
+# Ignore cache files
+.next/
+node_modules/
+
+# Ignore build artifacts
+dist/
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore other cache and temporary files
+.cache/
+.tmp/

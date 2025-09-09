@@ -1,25 +1,26 @@
 import { siteConfig } from '@/lib/site.config'
 
 export function Footer() {
+  const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-white dark:bg-gray-950 border-t border-gray-200 dark:border-gray-800">
+    <footer className="relative z-10 bg-ice/90 backdrop-blur-sm border-t border-snow/20">
       <div className="container max-w-6xl mx-auto px-4 py-12">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-              Owen Cheung
+            <h3 className="text-lg font-semibold text-snow mb-4">
+              Owen Cheung ⛷️
             </h3>
-            <p className="text-gray-600 dark:text-gray-400 mb-4">
-              CS & AI student passionate about learning cool things.
+            <p className="text-snow/80 mb-4 leading-relaxed">
+              CS & AI student passionate about building impactful technology.
             </p>
-            <p className="text-sm text-gray-500 dark:text-gray-500">
+            <p className="text-sm text-snow/60">
               {siteConfig.author.hobbies}
             </p>
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-4 uppercase tracking-wider">
+            <h4 className="text-sm font-semibold text-snow mb-4 uppercase tracking-wider">
               Quick Links
             </h4>
             <ul className="space-y-2">
@@ -27,7 +28,7 @@ export function Footer() {
                 <li key={item.href}>
                   <a
                     href={item.href}
-                    className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-950 rounded px-2 py-1"
+                    className="text-snow/70 hover:text-foam transition-colors focus:outline-none focus:ring-2 focus:ring-foam focus:ring-offset-2 focus:ring-offset-ice rounded px-2 py-1"
                   >
                     {item.label}
                   </a>
@@ -37,13 +38,13 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold text-gray-900 dark:text-white mb-4 uppercase tracking-wider">
+            <h4 className="text-sm font-semibold text-snow mb-4 uppercase tracking-wider">
               Connect
             </h4>
             <div className="flex space-x-4">
               <a
-                href="https://github.com/OwenC05"
-                className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-950 rounded p-2"
+                href="https://github.com/owencheung"
+                className="text-snow/70 hover:text-foam transition-colors focus:outline-none focus:ring-2 focus:ring-foam focus:ring-offset-2 focus:ring-offset-ice rounded p-2"
                 aria-label="GitHub profile"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -53,8 +54,8 @@ export function Footer() {
                 </svg>
               </a>
               <a
-                href="https://www.linkedin.com/in/owen-cheung-472998225/"
-                className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-950 rounded p-2"
+                href="https://linkedin.com/in/owencheung"
+                className="text-snow/70 hover:text-foam transition-colors focus:outline-none focus:ring-2 focus:ring-foam focus:ring-offset-2 focus:ring-offset-ice rounded p-2"
                 aria-label="LinkedIn profile"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -65,8 +66,8 @@ export function Footer() {
               </a>
               <a
                 href={`mailto:${siteConfig.author.email}`}
-                className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-950 rounded p-2"
-                aria-label="Send email"
+                className="text-snow/70 hover:text-foam transition-colors focus:outline-none focus:ring-2 focus:ring-foam focus:ring-offset-2 focus:ring-offset-ice rounded p-2"
+                aria-label="Send email to Owen Cheung"
               >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -76,9 +77,9 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-200 dark:border-gray-800 mt-8 pt-8 text-center">
-          <p className="text-gray-600 dark:text-gray-400 text-sm">
-            Made by yours truly :)
+        <div className="border-t border-snow/20 mt-8 pt-8 text-center">
+          <p className="text-snow/60 text-sm">
+            © {currentYear} Owen Cheung. Built with Next.js, TypeScript, and Tailwind CSS.
           </p>
         </div>
       </div>

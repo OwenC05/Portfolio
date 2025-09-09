@@ -8,7 +8,7 @@ export const siteConfig = {
     email: 'oc608@bath.ac.uk',
     headline: 'CS & AI @ University of Bath • Data Science (Fraud Analytics) @ LexisNexis • Full-stack engineer',
     oneLiner: 'I build data-driven systems and clean developer tooling across Python/SQL/Snowflake and TypeScript/Django/Flutter.',
-    hobbies: 'Coffee, snowboarding (Bath Snowsports), and custom mechanical keyboards (180 WPM)',
+    hobbies: 'Coffee ☕, Snowboarding 🏂 (Bath Snowsports), Custom keyboards ⌨️ (180 WPM)',
   },
   navItems: [
     { href: '#about', label: 'About' },

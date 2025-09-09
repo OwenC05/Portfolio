@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Owen Cheung — CS & AI | Data Science @ LexisNexis',
-  description: 'I build data-driven systems and clean developer tooling across Python/SQL/Snowflake and TypeScript/Django/Flutter.',
+  title: 'Owen Cheung',
+  description: 'Personal portfolio',
 }
 
 export default function RootLayout({
@@ -12,8 +12,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className="font-sans antialiased bg-ice text-snow dark:bg-sky dark:text-snow overflow-x-hidden">
+    <html lang="en">
+      <body className="font-sans antialiased bg-white text-gray-900 dark:bg-gray-950 dark:text-white">
         {children}
       </body>
     </html>

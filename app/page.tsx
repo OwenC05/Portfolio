@@ -44,7 +44,7 @@ export default function HomePage() {
               projects, or just having a chat about technology.
             </p>
             <a
-              href="mailto:owenc05dev@gmail.com"
+              href="mailto:oc608@bath.ac.uk"
               className="btn-primary"
               aria-label="Send email to Owen Cheung"
             >

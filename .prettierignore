@@ -1,10 +1,7 @@
-node_modules/
-.next/
-# Ignore all files with the .tmp extension
-*.tmp
-
-# Ignore the build directory
-build/
-
-# Ignore the dist directory
-dist/
+.next
+node_modules
+out
+public/**/*.mp4
+public/**/*.webm
+public/**/*.png
+public/**/*.jpg

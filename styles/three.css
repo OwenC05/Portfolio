@@ -12,3 +12,13 @@
   filter: saturate(1.05);
 }
 
+/* Soft radial mask so shapes fade before reaching copy column */
+.canvas-fade {
+  -webkit-mask-image: radial-gradient(70% 70% at 80% 50%, #000 70%, transparent 100%);
+  mask-image: radial-gradient(70% 70% at 80% 50%, #000 70%, transparent 100%);
+}
+
+/* Push absolutely positioned canvas to bleed out of centered container */
+.bleed-right {
+  right: calc(-1 * ((100vw - 100%) / 2));
+}

@@ -3,12 +3,20 @@
 import * as THREE from 'three'
 import { forwardRef, useMemo } from 'react'
 
-type Props = JSX.IntrinsicElements['group'] & { color?: string }
+type Props = JSX.IntrinsicElements['group'] & {
+  color?: string
+  roughness?: number
+  metalness?: number
+  clearcoat?: number
+}
 
-const Snowflake = forwardRef<THREE.Group, Props>(function Snowflake({ color = '#0f1627', ...props }, ref) {
+const Snowflake = forwardRef<THREE.Group, Props>(function Snowflake(
+  { color = '#0f1627', roughness = 0.4, metalness = 0.1, clearcoat = 0.9, ...props },
+  ref
+) {
   const mat = useMemo(
-    () => new THREE.MeshPhysicalMaterial({ color, roughness: 0.4, metalness: 0.1, clearcoat: 0.9 }),
-    [color]
+    () => new THREE.MeshPhysicalMaterial({ color, roughness, metalness, clearcoat }),
+    [color, roughness, metalness, clearcoat]
   )
   return (
     <group ref={ref} {...props}>
@@ -23,4 +31,3 @@ const Snowflake = forwardRef<THREE.Group, Props>(function Snowflake({ color = '#
 })
 
 export default Snowflake
-

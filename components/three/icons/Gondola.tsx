@@ -5,25 +5,23 @@ import { forwardRef, useMemo } from 'react'
 
 type Props = JSX.IntrinsicElements['group'] & {
   color?: string
+  roughness?: number
+  metalness?: number
+  clearcoat?: number
+  clearcoatRoughness?: number
 }
 
-const Gondola = forwardRef<THREE.Group, Props>(function Gondola({ color = '#0f1627', ...props }, ref) {
+const Gondola = forwardRef<THREE.Group, Props>(function Gondola(
+  { color = '#0f1627', roughness = 0.35, metalness = 0.1, clearcoat = 1, clearcoatRoughness = 0.25, ...props },
+  ref
+) {
   const material = useMemo(
-    () => new THREE.MeshPhysicalMaterial({ color, roughness: 0.35, metalness: 0.1, clearcoat: 1, clearcoatRoughness: 0.25 }),
-    [color]
+    () => new THREE.MeshPhysicalMaterial({ color, roughness, metalness, clearcoat, clearcoatRoughness }),
+    [color, roughness, metalness, clearcoat, clearcoatRoughness]
   )
   return (
     <group ref={ref} {...props}>
-      {/* Cable */}
-      <mesh position={[0, 1.2, 0]} rotation={[0, 0, 0]}>
-        <cylinderGeometry args={[0.02, 0.02, 6, 12]} />
-        <meshStandardMaterial color={new THREE.Color(color).offsetHSL(0, 0, 0.1)} />
-      </mesh>
-      {/* Hanger */}
-      <mesh position={[0, 0.7, 0]}>
-        <cylinderGeometry args={[0.04, 0.04, 0.8, 16]} />
-        <primitive object={material} attach="material" />
-      </mesh>
+      {/* Hanger removed to avoid vertical bar on the right */}
       {/* Cabin */}
       <mesh position={[0, 0, 0]} castShadow>
         <boxGeometry args={[1.6, 1.0, 0.6]} />
@@ -51,4 +49,3 @@ const Gondola = forwardRef<THREE.Group, Props>(function Gondola({ color = '#0f16
 })
 
 export default Gondola
-

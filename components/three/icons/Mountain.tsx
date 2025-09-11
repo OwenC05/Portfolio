@@ -3,12 +3,20 @@
 import * as THREE from 'three'
 import { forwardRef, useMemo } from 'react'
 
-type Props = JSX.IntrinsicElements['group'] & { color?: string }
+type Props = JSX.IntrinsicElements['group'] & {
+  color?: string
+  roughness?: number
+  metalness?: number
+  clearcoat?: number
+}
 
-const Mountain = forwardRef<THREE.Group, Props>(function Mountain({ color = '#0f1627', ...props }, ref) {
+const Mountain = forwardRef<THREE.Group, Props>(function Mountain(
+  { color = '#0f1627', roughness = 0.5, metalness = 0.05, clearcoat = 0.8, ...props },
+  ref
+) {
   const mat = useMemo(
-    () => new THREE.MeshPhysicalMaterial({ color, roughness: 0.5, metalness: 0.05, clearcoat: 0.8 }),
-    [color]
+    () => new THREE.MeshPhysicalMaterial({ color, roughness, metalness, clearcoat }),
+    [color, roughness, metalness, clearcoat]
   )
   return (
     <group ref={ref} {...props}>
@@ -25,4 +33,3 @@ const Mountain = forwardRef<THREE.Group, Props>(function Mountain({ color = '#0f
 })
 
 export default Mountain
-

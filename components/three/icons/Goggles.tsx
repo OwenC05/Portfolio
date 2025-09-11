@@ -3,12 +3,21 @@
 import * as THREE from 'three'
 import { forwardRef, useMemo } from 'react'
 
-type Props = JSX.IntrinsicElements['group'] & { color?: string }
+type Props = JSX.IntrinsicElements['group'] & {
+  color?: string
+  roughness?: number
+  metalness?: number
+  clearcoat?: number
+  clearcoatRoughness?: number
+}
 
-const Goggles = forwardRef<THREE.Group, Props>(function Goggles({ color = '#0f1627', ...props }, ref) {
+const Goggles = forwardRef<THREE.Group, Props>(function Goggles(
+  { color = '#0f1627', roughness = 0.4, metalness = 0.1, clearcoat = 1, clearcoatRoughness = 0.25, ...props },
+  ref
+) {
   const frame = useMemo(
-    () => new THREE.MeshPhysicalMaterial({ color, roughness: 0.4, metalness: 0.1, clearcoat: 1, clearcoatRoughness: 0.25 }),
-    [color]
+    () => new THREE.MeshPhysicalMaterial({ color, roughness, metalness, clearcoat, clearcoatRoughness }),
+    [color, roughness, metalness, clearcoat, clearcoatRoughness]
   )
   const lens = useMemo(
     () => new THREE.MeshPhysicalMaterial({ color: new THREE.Color(color).offsetHSL(0, 0, 0.2), roughness: 0.1, metalness: 0.5, transmission: 0.2, transparent: true, opacity: 0.9 }),
@@ -31,4 +40,3 @@ const Goggles = forwardRef<THREE.Group, Props>(function Goggles({ color = '#0f16
 })
 
 export default Goggles
-

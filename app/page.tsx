@@ -11,15 +11,15 @@ export default function HomePage() {
       <div className="grain-overlay" aria-hidden />
 
       {/* Hero */}
-      <section className="relative overflow-hidden">
-        <div className="relative z-10 mx-auto max-w-6xl px-6 pt-28 pb-20">
+      <section className="relative mx-auto max-w-7xl px-5 pt-28 pb-24 grid gap-8 md:grid-cols-[minmax(0,1fr)_minmax(360px,40vw)]">
+        <div className="z-10 md:pr-6 max-w-[56ch]">
           <Reveal>
-            <p className="eyebrow mb-4 text-[12px] text-[var(--muted)]">OWEN · DESIGN × BUILD × ANALYZE</p>
+            <p className="eyebrow mb-4 text-[12px] text-[var(--muted)]">OWEN · Data Science × Software Engineer</p>
           </Reveal>
 
           <Reveal delay={0.05}>
             <h1 className="display-1 font-extrabold tracking-[-0.01em] text-balance">
-              I design systems, tell data stories, and build interfaces that ship.
+              ANALYZE × DESIGN × BUILD
             </h1>
           </Reveal>
 
@@ -52,8 +52,15 @@ export default function HomePage() {
             </div>
           </Reveal>
         </div>
-        <div className="hero-canvas-wrap" aria-hidden>
-          <HeroScene />
+        {/* Side canvas column (never blocks text) */}
+        <div className="relative hidden md:block">
+          <div className="canvas-fade pointer-events-none absolute inset-0 pr-6">
+            <HeroScene />
+          </div>
+        </div>
+        {/* Mobile: compact canvas at top-right */}
+        <div className="pointer-events-none md:hidden absolute right-0 top-0 w-[78vw] h-[38vh]">
+          <HeroScene compact />
         </div>
       </section>
 
@@ -169,4 +176,3 @@ export default function HomePage() {
     </main>
   )
 }
-

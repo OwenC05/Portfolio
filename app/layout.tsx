@@ -2,6 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 import '../styles/projects.css'
 import '../styles/grain.css'
+import '../styles/three.css'
+import { ThemeProvider } from '@/components/ui/ThemeProvider'
+import ThemeToggle from '@/components/ui/ThemeToggle'
 import { Inter, Fraunces } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans', display: 'swap' })
@@ -18,9 +21,15 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${fraunces.variable} antialiased bg-[var(--bg)] text-[var(--ink)]`}>
-        {children}
+        <ThemeProvider>
+          {/* Minimal header with theme toggle */}
+          <div className="fixed top-4 right-4 z-[1000]">
+            <ThemeToggle />
+          </div>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )

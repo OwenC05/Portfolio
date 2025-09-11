@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { Reveal } from '@/components/ui/Reveal'
 import { Magnet } from '@/components/ui/Magnet'
 import { Spotlight } from '@/components/ui/Spotlight'
-import HeroScene from '@/components/three/HeroScene'
 
 export default function HomePage() {
   return (
@@ -12,9 +11,11 @@ export default function HomePage() {
 
       {/* Hero */}
       <section className="relative overflow-hidden">
-        <div className="relative z-10 mx-auto max-w-6xl px-6 pt-28 pb-20">
+        <div className="mx-auto max-w-6xl px-6 pt-28 pb-20">
           <Reveal>
-            <p className="eyebrow mb-4 text-[12px] text-[var(--muted)]">OWEN · DESIGN × BUILD × ANALYZE</p>
+            <p className="eyebrow mb-4 text-[12px] text-[var(--muted)]">
+              OWEN · DESIGN × BUILD × ANALYZE
+            </p>
           </Reveal>
 
           <Reveal delay={0.05}>
@@ -25,7 +26,8 @@ export default function HomePage() {
 
           <Reveal delay={0.1}>
             <p className="mt-6 max-w-[60ch] text-[17.5px] leading-relaxed text-[var(--muted)]">
-              CS & AI @ Bath · Data Science (Fraud Analytics) @ LexisNexis · Snowboard theme, because carving clean lines into complex problems feels right.
+              CS & AI @ Bath · Data Science (Fraud Analytics) @ LexisNexis · Snowboard theme,
+              because carving clean lines into complex problems feels right.
             </p>
           </Reveal>
 
@@ -51,9 +53,6 @@ export default function HomePage() {
               </Magnet>
             </div>
           </Reveal>
-        </div>
-        <div className="hero-canvas-wrap" aria-hidden>
-          <HeroScene />
         </div>
       </section>
 
@@ -85,7 +84,7 @@ export default function HomePage() {
                   <Spotlight />
                   <div className="relative z-10 p-6">
                     <div className="mb-3 flex items-center gap-2">
-                      <span className="chip">Green</span>
+                      <span className="chip">🟢 Green</span>
                       <span className="chip">Data</span>
                       <span className="chip">Snowflake</span>
                     </div>
@@ -115,7 +114,7 @@ export default function HomePage() {
                   <Spotlight />
                   <div className="relative z-10 p-6">
                     <div className="mb-3 flex items-center gap-2">
-                      <span className="chip">Blue</span>
+                      <span className="chip">🔷 Blue</span>
                       <span className="chip">Realtime</span>
                       <span className="chip">UI</span>
                     </div>
@@ -145,7 +144,7 @@ export default function HomePage() {
                   <Spotlight />
                   <div className="relative z-10 p-6">
                     <div className="mb-3 flex items-center gap-2">
-                      <span className="chip">Black</span>
+                      <span className="chip">⬛ Black</span>
                       <span className="chip">Community</span>
                       <span className="chip">AR/VR</span>
                     </div>
@@ -169,4 +168,5 @@ export default function HomePage() {
     </main>
   )
 }
+
 

@@ -72,6 +72,20 @@ body {
   cursor: none !important;
 }
 
+/* --- Theme tokens for 3D + DOM (dark default) --- */
+:root {
+  --bg:#0b1220; --ink:#E6EAF2; --muted:#A6B0BF; --line:#1A2233; --accent:#88A9FF;
+  --card:#0F172A; --chip:#0E213B;
+  --three-base:#0f1627; --three-highlight:#1b2438;
+}
+
+/* Light theme overrides */
+:root.light, .light {
+  --bg:#f7f9fc; --ink:#0f172a; --muted:#475569; --line:#e2e8f0; --accent:#3b82f6;
+  --card:#ffffff; --chip:#eef2f7;
+  --three-base:#f3f6fb; --three-highlight:#e6edf7;
+}
+
 /* --- Editorial cinematic tokens (append-only) --- */
 :root {
   --bg: #0B1220;
@@ -127,4 +141,17 @@ body {
   height: 1px;
   background: var(--line);
   width: 100%;
+}
+/* --- Theme tokens for 3D + DOM (dark default) --- */
+:root {
+  --bg:#0b1220; --ink:#E6EAF2; --muted:#A6B0BF; --line:#1A2233; --accent:#88A9FF;
+  --card:#0F172A; --chip:#0E213B;
+  --three-base:#0f1627; --three-highlight:#1b2438;
+}
+
+/* Light theme overrides */
+:root.light, .light {
+  --bg:#f7f9fc; --ink:#0f172a; --muted:#475569; --line:#e2e8f0; --accent:#3b82f6;
+  --card:#ffffff; --chip:#eef2f7;
+  --three-base:#f3f6fb; --three-highlight:#e6edf7;
 }

@@ -1,0 +1,22 @@
+/* Optional film grain overlay — add <div class="grain-overlay" /> at root for effect */
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.06;
+  mix-blend-mode: multiply;
+  background-image:
+    radial-gradient(1px 1px at 10% 20%, rgba(0,0,0,0.6) 0.5px, transparent 0.5px),
+    radial-gradient(1px 1px at 80% 30%, rgba(0,0,0,0.6) 0.5px, transparent 0.5px),
+    radial-gradient(1px 1px at 50% 80%, rgba(0,0,0,0.6) 0.5px, transparent 0.5px);
+  background-size: 200px 200px, 260px 260px, 220px 220px;
+  animation: grainShift 9s linear infinite;
+}
+
+@keyframes grainShift {
+  0% { transform: translate3d(0,0,0); }
+  50% { transform: translate3d(-0.8%, 0.6%, 0); }
+  100% { transform: translate3d(0,0,0); }
+}
+

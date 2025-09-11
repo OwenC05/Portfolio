@@ -3,7 +3,7 @@ import { siteConfig } from '@/lib/site.config'
 
 export function Hero() {
   return (
-    <section className="pt-24 pb-20 bg-gradient-to-br from-white to-gray-50 dark:from-gray-950 dark:to-gray-900">
+    <section id="hero" className="pt-24 pb-20 bg-gradient-to-br from-white to-gray-50 dark:from-gray-950 dark:to-gray-900">
       <div className="container max-w-6xl mx-auto px-4">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6">

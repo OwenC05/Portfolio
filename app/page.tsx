@@ -1,59 +1,171 @@
-
-import { Navbar } from '@/components/Navbar'
-import { Hero } from '@/components/Hero'
-import { Skills } from '@/components/Skills'
-import { ProjectsTeaser } from '@/components/ProjectsTeaser'
-import { Footer } from '@/components/Footer'
+// install: npm i framer-motion
+import Link from 'next/link'
+import { Reveal } from '@/components/ui/Reveal'
+import { Magnet } from '@/components/ui/Magnet'
+import { Spotlight } from '@/components/ui/Spotlight'
 
 export default function HomePage() {
   return (
-    <>
-      <Navbar />
-      <main>
-        <Hero />
-        <section id="about" className="py-20 bg-gray-50 dark:bg-gray-900">
-          <div className="container mx-auto px-4 max-w-4xl">
-            <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white">
-              About Me
-            </h2>
-            <div className="prose prose-lg mx-auto text-center text-gray-600 dark:text-gray-300">
-              <p>
-                I'm passionate about building technology that makes a real
-                difference. Currently balancing academic excellence at Bath with
-                hands-on experience in fraud detection at LexisNexis, I enjoy
-                tackling complex problems across the full stack—from data
-                pipelines to delightful user interfaces.
-              </p>
-              <p>
-                When I'm not coding, you'll find me perfecting my typing speed
-                on custom mechanical keyboards, hitting the slopes with Bath
-                Snowsports, or exploring the perfect coffee brew.
-              </p>
-            </div>
-          </div>
-        </section>
-        <Skills />
-        <ProjectsTeaser />
-        <section id="contact" className="py-20 bg-gray-50 dark:bg-gray-900">
-          <div className="container mx-auto px-4 max-w-4xl text-center">
-            <h2 className="text-3xl font-bold mb-8 text-gray-900 dark:text-white">
-              Let's Connect
-            </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-              I'm always open to discussing new opportunities, interesting
-              projects, or just having a chat about technology.
+    <main className="min-h-[100dvh] bg-[var(--bg)] text-[var(--ink)]">
+      <div className="grain-overlay" aria-hidden />
+
+      {/* Hero */}
+      <section className="relative overflow-hidden">
+        <div className="mx-auto max-w-6xl px-6 pt-28 pb-20">
+          <Reveal>
+            <p className="eyebrow mb-4 text-[12px] text-[var(--muted)]">
+              OWEN · DESIGN × BUILD × ANALYZE
             </p>
-            <a
-              href="mailto:oc608@bath.ac.uk"
-              className="btn-primary"
-              aria-label="Send email to Owen Cheung"
-            >
-              Get in Touch
-            </a>
+          </Reveal>
+
+          <Reveal delay={0.05}>
+            <h1 className="display-1 font-extrabold tracking-[-0.01em] text-balance">
+              I design systems, tell data stories, and build interfaces that ship.
+            </h1>
+          </Reveal>
+
+          <Reveal delay={0.1}>
+            <p className="mt-6 max-w-[60ch] text-[17.5px] leading-relaxed text-[var(--muted)]">
+              CS & AI @ Bath · Data Science (Fraud Analytics) @ LexisNexis · Snowboard theme,
+              because carving clean lines into complex problems feels right.
+            </p>
+          </Reveal>
+
+          <Reveal delay={0.15}>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Magnet>
+                <Link
+                  href="/projects"
+                  aria-label="See my work"
+                  className="inline-flex items-center justify-center rounded-full h-11 px-6 text-[15px] font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] bg-[var(--ink)] text-[var(--bg)] hover:opacity-90"
+                >
+                  See Work
+                </Link>
+              </Magnet>
+              <Magnet>
+                <Link
+                  href="/about"
+                  aria-label="More about me"
+                  className="inline-flex items-center justify-center rounded-full h-11 px-6 text-[15px] font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] border border-[var(--line)] text-[var(--ink)] bg-[var(--card)]/40 hover:bg-[var(--card)]/60"
+                >
+                  More About Me
+                </Link>
+              </Magnet>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* Featured */}
+      <section className="relative">
+        <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
+          <Reveal>
+            <div className="mb-8 flex items-center justify-between">
+              <h2 className="display-2 text-[var(--ink)]">Featured</h2>
+              <Link
+                href="/projects"
+                aria-label="View all projects"
+                className="inline-flex items-center justify-center rounded-full h-10 px-4 text-sm font-medium transition-transform hover:translate-x-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] text-[var(--ink)] link-arrow"
+              >
+                View all →
+              </Link>
+            </div>
+          </Reveal>
+
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {/* Fraud Analytics */}
+            <Reveal>
+              <Magnet className="group relative">
+                <Link
+                  href="/projects/fraud-analytics"
+                  aria-label="Open Fraud Analytics project"
+                  className="relative block overflow-hidden rounded-3xl border border-[var(--line)] bg-[var(--card)]/50 shadow-sm transition-transform focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]"
+                >
+                  <Spotlight />
+                  <div className="relative z-10 p-6">
+                    <div className="mb-3 flex items-center gap-2">
+                      <span className="chip">🟢 Green</span>
+                      <span className="chip">Data</span>
+                      <span className="chip">Snowflake</span>
+                    </div>
+                    <h3 className="text-xl font-semibold text-[var(--ink)]">Fraud Analytics (LNRS)</h3>
+                    <p className="mt-2 text-sm text-[var(--muted)]">Snowflake→Streamlit ROC/KS with narrative.</p>
+                  </div>
+                  <div
+                    aria-hidden
+                    className="absolute inset-0 transition-transform duration-500 group-hover:scale-[1.03]"
+                    style={{
+                      background:
+                        'radial-gradient(1200px 400px at 10% 10%, rgba(127,176,255,0.18), transparent 60%)',
+                    }}
+                  />
+                </Link>
+              </Magnet>
+            </Reveal>
+
+            {/* Typing Webapp */}
+            <Reveal delay={0.05}>
+              <Magnet className="group relative">
+                <Link
+                  href="/projects/typing-speed-webapp"
+                  aria-label="Open Typing Webapp project"
+                  className="relative block overflow-hidden rounded-3xl border border-[var(--line)] bg-[var(--card)]/50 shadow-sm transition-transform focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]"
+                >
+                  <Spotlight />
+                  <div className="relative z-10 p-6">
+                    <div className="mb-3 flex items-center gap-2">
+                      <span className="chip">🔷 Blue</span>
+                      <span className="chip">Realtime</span>
+                      <span className="chip">UI</span>
+                    </div>
+                    <h3 className="text-xl font-semibold text-[var(--ink)]">Typing Webapp</h3>
+                    <p className="mt-2 text-sm text-[var(--muted)]">Realtime metrics, clean UI, AI insights.</p>
+                  </div>
+                  <div
+                    aria-hidden
+                    className="absolute inset-0 transition-transform duration-500 group-hover:scale-[1.03]"
+                    style={{
+                      background:
+                        'radial-gradient(1200px 400px at 10% 10%, rgba(127,176,255,0.12), transparent 60%)',
+                    }}
+                  />
+                </Link>
+              </Magnet>
+            </Reveal>
+
+            {/* Unity Community */}
+            <Reveal delay={0.1}>
+              <Magnet className="group relative">
+                <Link
+                  href="/projects/unity-community"
+                  aria-label="Open Unity Community project"
+                  className="relative block overflow-hidden rounded-3xl border border-[var(--line)] bg-[var(--card)]/50 shadow-sm transition-transform focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)]"
+                >
+                  <Spotlight />
+                  <div className="relative z-10 p-6">
+                    <div className="mb-3 flex items-center gap-2">
+                      <span className="chip">⬛ Black</span>
+                      <span className="chip">Community</span>
+                      <span className="chip">AR/VR</span>
+                    </div>
+                    <h3 className="text-xl font-semibold text-[var(--ink)]">Unity Community (AR/VR)</h3>
+                    <p className="mt-2 text-sm text-[var(--muted)]">Warm, accessible social presence.</p>
+                  </div>
+                  <div
+                    aria-hidden
+                    className="absolute inset-0 transition-transform duration-500 group-hover:scale-[1.03]"
+                    style={{
+                      background:
+                        'radial-gradient(1200px 400px at 10% 10%, rgba(2,6,23,0.22), transparent 60%)',
+                    }}
+                  />
+                </Link>
+              </Magnet>
+            </Reveal>
           </div>
-        </section>
-      </main>
-      <Footer />
-    </>
+        </div>
+      </section>
+    </main>
   )
 }
+

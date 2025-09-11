@@ -47,3 +47,84 @@ body {
     @apply text-lg leading-relaxed;
   }
 }
+
+/* --- Editorial theme tokens --- */
+:root {
+  --bg: #ffffff;
+  --ink: #0f172a;
+  --muted: #475569;
+  --line: #e2e8f0;
+  --accent: #4f8ff7;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b1020;
+    --ink: #e5e7eb;
+    --muted: #94a3b8;
+    --line: #1f2937;
+    --accent: #7aa7ff;
+  }
+}
+
+/* Hide system cursor when CustomCursor is mounted */
+.cursor-none, .cursor-none * {
+  cursor: none !important;
+}
+
+/* --- Editorial cinematic tokens (append-only) --- */
+:root {
+  --bg: #0B1220;
+  --ink: #E6EAF2;
+  --muted: #9AA4B2;
+  --line: #1C2434;
+  --card: #0F172A;
+  --chip: #0E213B;
+  --accent: #7FB0FF;
+}
+
+/* Type scale utilities */
+.display-1 {
+  font-size: clamp(44px, 8vw, 112px);
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+}
+.display-2 {
+  font-size: clamp(36px, 6.2vw, 80px);
+  line-height: 1.04;
+  letter-spacing: -0.008em;
+}
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  opacity: .7;
+}
+
+/* Chips & small UI */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  border-radius: 999px;
+  padding: 0 10px;
+  font-size: 11px;
+  font-weight: 500;
+  background: var(--chip);
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+
+/* Link arrow micro-interaction */
+.link-arrow {
+  position: relative;
+}
+.link-arrow:hover {
+  transform: translateX(2px);
+}
+
+/* Divider utility */
+.divider {
+  height: 1px;
+  background: var(--line);
+  width: 100%;
+}

@@ -1,0 +1,14 @@
+# Explicit keep rules for the repo prune tool.
+# Add glob patterns under `keep:` to exclude files from deletion.
+# Examples:
+# - Keep all 3D assets
+# - Keep a specific folder under public
+# - Keep experimental components
+
+keep:
+  - "public/models/**"
+  - "public/textures/**"
+  - "components/experimental/**"
+  - "**/*.stories.*"
+  - "**/*.spec.*"
+

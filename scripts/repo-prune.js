@@ -106,6 +106,7 @@ function guardrailPatterns() {
     'node_modules/**',
     'prune-report.*',
     'scripts/prune-keep.yml',
+    '.gitignore', '.gitattributes', 'README.*', 'CHANGELOG.*', 'COMMENTS.*', 'LICENSE*',
     // Configs
     '.env*', 'next.config.*', 'tsconfig.*', 'postcss.config.*', 'tailwind.config.*',
     '.eslintrc*', '.prettierrc*', 'prettier.config.*', '.prettier*', '.stylelintrc*',
@@ -411,23 +412,20 @@ async function main() {
   if (APPLY) {
     const trashRoot = path.join(repoRoot, '__trash__');
     if (!fs.existsSync(trashRoot)) fs.mkdirSync(trashRoot);
-    const toDelete = candidates.filter((c) => c.confidence >= 0.9 || FORCE);
-    const toQuarantine = candidates.filter((c) => c.confidence >= 0.8 && c.confidence < 0.9 && !FORCE);
+    const toHigh = candidates.filter((c) => c.confidence >= 0.9 || FORCE);
+    const toMid = candidates.filter((c) => c.confidence >= 0.8 && c.confidence < 0.9 && !FORCE);
 
-    // Delete high-confidence
-    for (const c of toDelete) {
-      const abs = fromRepoRel(c.path);
-      try { fs.unlinkSync(abs); } catch {}
-    }
-    // Move medium-confidence
-    for (const c of toQuarantine) {
-      const abs = fromRepoRel(c.path);
-      const dest = path.join(trashRoot, c.path);
+    // Move both high- and mid- confidence files into trash first
+    function moveToTrash(item) {
+      const abs = fromRepoRel(item.path);
+      const dest = path.join(trashRoot, item.path);
       fs.mkdirSync(path.dirname(dest), { recursive: true });
       try { fs.renameSync(abs, dest); } catch {}
     }
+    toHigh.forEach(moveToTrash);
+    toMid.forEach(moveToTrash);
 
-    // Try building to validate; if fails, restore
+    // Try building to validate; if fails, restore all moved files
     function runCmd(cmd, args, opts = {}) {
       try {
         cp.execFileSync(cmd, args, { stdio: 'inherit', cwd: repoRoot, ...opts });
@@ -435,20 +433,42 @@ async function main() {
       } catch (e) { return false; }
     }
     // Prefer pnpm, fallback npm
+    const pkg = readJSON(path.join(repoRoot, 'package.json'), {});
+    const hasScript = (name) => pkg && pkg.scripts && typeof pkg.scripts[name] === 'string';
+    const hasDep = (name) => (pkg.devDependencies && pkg.devDependencies[name]) || (pkg.dependencies && pkg.dependencies[name]);
+
     const okBuild = runCmd('pnpm', ['build']) || runCmd('npm', ['run', 'build']);
-    const okLint = runCmd('pnpm', ['lint']) || runCmd('npm', ['run', 'lint']);
-    const okType = runCmd('pnpm', ['typecheck']) || true; // optional if not present
+
+    // Lint is optional; skip if @typescript-eslint plugin not installed to avoid false failures
+    let okLint = true;
+    if (hasScript('lint')) {
+      if (hasDep('@typescript-eslint/eslint-plugin') || !fs.existsSync(path.join(repoRoot, '.eslintrc.json'))) {
+        okLint = runCmd('pnpm', ['lint']) || runCmd('npm', ['run', 'lint']);
+      }
+    }
+
+    // Typecheck is optional if no script
+    let okType = true;
+    if (hasScript('typecheck')) {
+      okType = runCmd('pnpm', ['typecheck']) || runCmd('npm', ['run', 'typecheck']);
+    }
 
     if (!(okBuild && okLint && okType)) {
-      // Restore from trash
-      for (const c of toQuarantine) {
+      // Restore from trash (both sets)
+      for (const c of [...toHigh, ...toMid]) {
         const dest = path.join(trashRoot, c.path);
         const back = fromRepoRel(c.path);
         fs.mkdirSync(path.dirname(back), { recursive: true });
         if (fs.existsSync(dest)) fs.renameSync(dest, back);
       }
-      console.error('Build/lint/typecheck failed — restored quarantined files. Aborting.');
+      console.error('Build/lint/typecheck failed — restored files from trash. Aborting.');
       process.exit(1);
+    }
+
+    // Finalize: permanently delete high-confidence files from trash; keep mid in trash
+    for (const c of toHigh) {
+      const dest = path.join(trashRoot, c.path);
+      try { fs.unlinkSync(dest); } catch {}
     }
   }
 

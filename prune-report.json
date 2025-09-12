@@ -1,6 +1,6 @@
 {
-  "mode": "dry-run",
-  "generatedAt": "2025-09-12T12:18:25.882Z",
+  "mode": "apply",
+  "generatedAt": "2025-09-12T13:03:09.464Z",
   "candidates": [
     {
       "path": ".gitattributes",

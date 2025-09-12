@@ -1,7 +1,7 @@
 # Prune Report
 
-Mode: dry-run
-Generated: 2025-09-12T12:18:25.885Z
+Mode: apply
+Generated: 2025-09-12T13:03:09.468Z
 
 ## Summary
 - Candidates: 31

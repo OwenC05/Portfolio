@@ -8,18 +8,15 @@ import { EffectComposer, Bloom, Vignette } from '@react-three/postprocessing'
 import { useTheme } from 'next-themes'
 import { useReducedMotion } from 'framer-motion'
 
-import Gondola from './icons/Gondola'
 import Snowboard from './icons/Snowboard'
-import Goggles from './icons/Goggles'
 import Mountain from './icons/Mountain'
-import Snowflake from './icons/Snowflake'
+import Chairlift from './icons/Chairlift'
+import Snowflakes from './icons/Snowflakes'
+import { useIconMaterial } from './iconMaterial'
 
 type ThemeColors = {
   base: THREE.Color
   highlight: THREE.Color
-  shadow: THREE.Color
-  sky: THREE.Color
-  sun: THREE.Color
   fog: THREE.Color
 }
 
@@ -52,7 +49,7 @@ function CameraRig({ disabled = false }: { disabled?: boolean }) {
   const mouse = useCursorParallax(disabled)
   useFrame(() => {
     if (disabled) return
-    const strength = 0.4 // cap to ±0.4 so it never crosses text column
+    const strength = 0.25
     const tx = THREE.MathUtils.clamp(mouse.current.x, -1, 1) * strength
     const ty = THREE.MathUtils.clamp(-mouse.current.y, -1, 1) * strength
     const targetPos = new THREE.Vector3(tx, ty, camera.position.z)
@@ -66,9 +63,6 @@ function useThemeColors(): ThemeColors {
   const fallback: ThemeColors = {
     base: new THREE.Color('#0f1627'),
     highlight: new THREE.Color('#1b2438'),
-    shadow: new THREE.Color('#0a0f1c'),
-    sky: new THREE.Color('#0d1324'),
-    sun: new THREE.Color('#dfe7ff'),
     fog: new THREE.Color('#0b1220'),
   }
   const [colors, setColors] = useState<ThemeColors>(fallback)
@@ -80,9 +74,6 @@ function useThemeColors(): ThemeColors {
       return {
         base: pick('--three-base'),
         highlight: pick('--three-highlight'),
-        shadow: pick('--three-shadow'),
-        sky: pick('--three-sky'),
-        sun: pick('--three-sun'),
         fog: pick('--three-fog'),
       }
     }
@@ -94,97 +85,36 @@ function useThemeColors(): ThemeColors {
   return colors
 }
 
-function Icons({
-  baseColor,
-  roughness,
-  metalness,
-  clearcoat,
-  clearcoatRoughness,
-  compact,
-}: {
-  baseColor: string
-  roughness: number
-  metalness: number
-  clearcoat: number
-  clearcoatRoughness: number
-  compact?: boolean
-}) {
-  // Predefined positions to avoid overlapping hero copy
-  const nodes = useMemo(
-    () => [
-      // right-side bounding box; values tuned to stay in right column
-      { p: [0.4, 0.9, -5.5] as [number, number, number], r: [0.1, 0.4, 0] as [number, number, number] },
-      { p: [1.6, 1.0, -6.2] as [number, number, number], r: [0.0, -0.5, 0] as [number, number, number] },
-      { p: [0.9, -0.1, -6.8] as [number, number, number], r: [0.2, 0.2, 0] as [number, number, number] },
-      { p: [2.1, -0.8, -4.8] as [number, number, number], r: [0.1, -0.2, 0] as [number, number, number] },
-      { p: [0.5, -1.0, -6.5] as [number, number, number], r: [0, 0.3, 0] as [number, number, number] },
-      { p: [2.3, -0.6, -5.2] as [number, number, number], r: [0, -0.2, 0] as [number, number, number] },
-    ],
-    []
-  )
+type SafeRect = { cx: number; cy: number; z: number; hw: number; hh: number }
 
+function Icons({ baseMat, capMat, compact, rect }: { baseMat: THREE.Material; capMat: THREE.Material; compact?: boolean; rect: SafeRect }) {
   const reduced = useReducedMotion()
   const mouse = useCursorParallax(!!reduced || !!compact)
+  const { cx, cy, z, hw, hh } = rect
+  const scaleMul = compact ? 0.85 : 1
 
   return (
     <group>
-      {nodes.map((n, i) => (
-        <Floating key={i} position={n.p} rotation={n.r} mouse={mouse} reduced={!!reduced}>
-          {i === 0 && (
-            <Gondola color={baseColor} scale={1.1} {...{}} />
-          )}
-          {i === 1 && (
-            <Snowboard color={baseColor} scale={1.2} {...{}} />
-          )}
-          {i === 2 && (
-            <Goggles color={baseColor} scale={1.1} {...{}} />
-          )}
-          {i === 3 && <Mountain color={baseColor} scale={1.05} />}
-          {i === 4 && <Snowflake color={baseColor} scale={1.0} />}
-          {i === 5 && <Snowflake color={baseColor} scale={0.88} />}
-        </Floating>
-      ))}
-    </group>
-  )
-}
+      {/* Snowboard — front-left */}
+      <Floating position={[cx + (-0.72) * hw, cy + (-0.22) * hh, z + 0.15]} rotation={[0.05, 0.25, 0]} mouse={mouse} reduced={!!reduced} rect={rect}>
+        <Snowboard material={baseMat} scale={0.45 * scaleMul} />
+      </Floating>
 
-function Floating({ children, position, rotation = [0, 0, 0], mouse, reduced }: {
-  children: React.ReactNode
-  position: [number, number, number]
-  rotation?: [number, number, number]
-  mouse: React.MutableRefObject<THREE.Vector2>
-  reduced: boolean
-}) {
-  const ref = useRef<THREE.Group>(null)
-  const t = useRef(Math.random() * Math.PI * 2)
-  const speed = 0.4 + Math.random() * 0.4
-  const amp = 0.2 + Math.random() * 0.25
-  useFrame(({ camera }, dt) => {
-    if (!ref.current) return
-    if (reduced) return
-    t.current += dt * speed
-    const [x0, y0, z0] = position
-    // Compute safe bounds based on camera frustum at mean distance
-    const meanZ = Math.abs(z0)
-    const persp = camera as THREE.PerspectiveCamera
-    const vFOV = (persp.fov * Math.PI) / 180
-    const height = 2 * Math.tan(vFOV / 2) * meanZ
-    const width = height * persp.aspect
-    const SAFE_X = width * 0.42
-    const SAFE_Y = height * 0.35
-    const clamp = (v: number, a: number, b: number) => Math.min(b, Math.max(a, v))
+      {/* Mountain — back-right, slightly farther back */}
+      <Floating position={[cx + (0.68) * hw, cy + (-0.42) * hh, z - 0.65]} rotation={[0.1, -0.25, 0]} mouse={mouse} reduced={!!reduced} rect={rect}>
+        <Mountain material={baseMat} capMaterial={capMat} scale={1.6 * scaleMul} />
+      </Floating>
 
-    const targetX = clamp(x0 + mouse.current.x * 0.6, -SAFE_X * 0.1, SAFE_X)
-    const targetY = clamp(y0 + Math.sin(t.current) * amp + (-mouse.current.y * 0.3), -SAFE_Y, SAFE_Y)
+      {/* Chairlift — upper area */}
+      <Floating position={[cx + (0.15) * hw, cy + (0.50) * hh, z + 0.35]} rotation={[0.04, -0.08, 0]} mouse={mouse} reduced={!!reduced} rect={rect}>
+        <Chairlift material={baseMat} scale={1.1 * scaleMul} showCable={false} />
+      </Floating>
 
-    ref.current.position.x += (targetX - ref.current.position.x) * 0.02
-    ref.current.position.y = targetY
-    ref.current.position.z = -meanZ
-    ref.current.rotation.y += 0.002
-  })
-  return (
-    <group ref={ref} position={position} rotation={rotation}>
-      {children}
+      {/* Cable across top of rect */}
+      <Cable material={baseMat} from={[cx + (-0.60) * hw, cy + (0.52) * hh, z]} to={[cx + (0.72) * hw, cy + (0.52) * hh, z]} />
+
+      {/* Instanced flakes across rect */}
+      <Snowflakes material={baseMat} count={80} scaleRange={[0.09, 0.18]} rect={rect} />
     </group>
   )
 }
@@ -194,6 +124,8 @@ export default function HeroScene({ compact = false }: { compact?: boolean }) {
   const { resolvedTheme } = useTheme()
   const colors = useThemeColors()
   const isDark = resolvedTheme === 'dark'
+  const baseMat = useIconMaterial('base')
+  const capMat = useIconMaterial('highlight')
 
   return (
     <Canvas
@@ -201,16 +133,18 @@ export default function HeroScene({ compact = false }: { compact?: boolean }) {
       dpr={[1, 1.5]}
       gl={{ antialias: true, alpha: true }}
       camera={{ fov: 45, position: [0, 0, 8] }}
+      style={{ pointerEvents: 'none' }}
     >
       {/* Scene background and fog driven by theme tokens */}
       <Setter colors={colors} isDark={isDark} />
 
-      {/* Lighting (theme-synced) */}
-      <hemisphereLight args={[colors.sky, colors.shadow, 0.6]} />
-      <directionalLight color={colors.sun} position={[5, 6, 4]} intensity={isDark ? 1.1 : 0.9} castShadow />
+      {/* Lighting (theme-synced): warm key, cool rim, hemisphere */}
+      <hemisphereLight args={[colors.base, colors.highlight, 0.65]} />
+      <directionalLight color={new THREE.Color(isDark ? '#ffd9a8' : '#ffcf99')} position={[4, 5, 3]} intensity={isDark ? 1.0 : 0.85} castShadow />
+      <directionalLight color={new THREE.Color(isDark ? '#9bc3ff' : '#8ab6ff')} position={[-3, 2, -4]} intensity={isDark ? 0.55 : 0.45} />
 
       <Suspense fallback={null}>
-        <IconColumn compact={compact} colors={colors} isDark={isDark} />
+        <IconColumn compact={compact} colors={colors} isDark={isDark} mats={{ base: baseMat, cap: capMat }} />
         <Environment preset="city" />
       </Suspense>
 
@@ -221,7 +155,8 @@ export default function HeroScene({ compact = false }: { compact?: boolean }) {
         </EffectComposer>
       )}
 
-      <CameraRig disabled={!!reduced} />
+      {/* Parallax handled in-object; keep camera static */}
+      <CameraRig disabled={true} />
     </Canvas>
   )
 }
@@ -231,31 +166,97 @@ function Setter({ colors, isDark }: { colors: ThemeColors; isDark: boolean }) {
   useEffect(() => {
     // Keep canvas transparent so underlying DOM background shows; only fog colors the depth
     scene.background = null
-    scene.fog = new THREE.Fog(colors.fog.getHex(), 6, 22)
+    const fogColor = colors.fog || new THREE.Color(isDark ? '#0b1220' : '#eef2f7')
+    scene.fog = new THREE.Fog(fogColor.getHex(), 6, 22)
     invalidate()
   }, [colors, isDark, scene, invalidate])
   return null
 }
 
-function IconColumn({ compact, colors, isDark }: { compact: boolean; colors: ThemeColors; isDark: boolean }) {
+function IconColumn({ compact, colors, isDark, mats }: { compact: boolean; colors: ThemeColors; isDark: boolean; mats: { base: THREE.Material; cap: THREE.Material } }) {
   const { camera } = useThree()
   const persp = camera as THREE.PerspectiveCamera
   const meanZ = 6
   const vFOV = (persp.fov * Math.PI) / 180
   const height = 2 * Math.tan(vFOV / 2) * meanZ
   const width = height * persp.aspect
-  const groupX = compact ? width * 0.18 : width * 0.25
-  const groupY = compact ? 0.4 : 0.1
+
+  const vw = (typeof window !== 'undefined' ? window.innerWidth : 1280)
+  const isDesktop = vw >= 1280 && !compact
+  const isTablet = vw >= 768 && vw < 1280 && !compact
+  const isMobile = vw < 768 || compact
+
+  const rectWidthPct = isDesktop ? 0.52 : isTablet ? 0.48 : 0.46
+  const rectHeightPct = isDesktop ? 0.70 : isTablet ? 0.62 : 0.55
+  const rectCenterXPct = isDesktop ? 0.20 : isTablet ? 0.18 : 0.16
+  const rectCenterYPct = -0.02
+
+  const rect: SafeRect = {
+    cx: rectCenterXPct * width,
+    cy: rectCenterYPct * height,
+    z: -meanZ,
+    hw: (rectWidthPct * width) / 2,
+    hh: (rectHeightPct * height) / 2,
+  }
+
   return (
-    <group position={[groupX, groupY, -meanZ]} scale={compact ? 0.75 : 1}>
-      <Icons
-        baseColor={colors.base.getStyle()}
-        roughness={isDark ? 0.35 : 0.5}
-        metalness={isDark ? 0.1 : 0.05}
-        clearcoat={isDark ? 1 : 0.8}
-        clearcoatRoughness={0.25}
-        compact={compact}
-      />
+    <group position={[0, 0, rect.z]}>
+      <Icons baseMat={mats.base} capMat={mats.cap} compact={isMobile || isTablet} rect={rect} />
+    </group>
+  )
+}
+
+function Cable({ material, from, to }: { material: THREE.Material; from: [number, number, number]; to: [number, number, number] }) {
+  const dir = useMemo(() => new THREE.Vector3(to[0]-from[0], to[1]-from[1], to[2]-from[2]), [from, to])
+  const len = useMemo(() => dir.length(), [dir])
+  const mid = useMemo(() => new THREE.Vector3((from[0]+to[0])/2, (from[1]+to[1])/2, (from[2]+to[2])/2), [from, to])
+  const q = useMemo(() => new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0,1,0), dir.clone().normalize()), [dir])
+  return (
+    <mesh position={mid} quaternion={q} material={material}>
+      <cylinderGeometry args={[0.02, 0.02, len, 8]} />
+    </mesh>
+  )
+}
+
+function Floating({ children, position, rotation = [0, 0, 0], mouse, reduced, rect }: {
+  children: React.ReactNode
+  position: [number, number, number]
+  rotation?: [number, number, number]
+  mouse: React.MutableRefObject<THREE.Vector2>
+  reduced: boolean
+  rect: SafeRect
+}) {
+  const ref = useRef<THREE.Group>(null)
+  const t = useRef(Math.random() * Math.PI * 2)
+  const speed = 0.2 + Math.random() * 0.2
+  const amp = 0.08 + Math.random() * 0.04 // <= 0.12
+  useFrame(() => {
+    if (!ref.current) return
+    if (reduced) return
+    t.current += 0.016 * speed
+    const [x0, y0, z0] = position
+    const { cx, cy, hw, hh } = rect
+    const clamp = (v: number, a: number, b: number) => Math.min(b, Math.max(a, v))
+    // Cluster parallax limited to 35% of rect half-extent
+    const px = THREE.MathUtils.clamp(mouse.current.x, -1, 1) * hw * 0.35
+    const py = THREE.MathUtils.clamp(-mouse.current.y, -1, 1) * hh * 0.35
+    const floatY = Math.sin(t.current) * amp
+
+    let targetX = x0 + px
+    let targetY = y0 + py + floatY
+    // Clamp to safe rect bounds
+    targetX = clamp(targetX, cx - hw, cx + hw)
+    targetY = clamp(targetY, cy - hh, cy + hh)
+
+    ref.current.position.x += (targetX - ref.current.position.x) * 0.08
+    ref.current.position.y += (targetY - ref.current.position.y) * 0.1
+    ref.current.position.z = z0
+    // Slow spin <= 0.003 rad/frame
+    ref.current.rotation.y += 0.002
+  })
+  return (
+    <group ref={ref} position={position} rotation={rotation}>
+      {children}
     </group>
   )
 }

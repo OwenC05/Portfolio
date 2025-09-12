@@ -1,0 +1,223 @@
+{
+  "mode": "dry-run",
+  "generatedAt": "2025-09-12T12:18:25.882Z",
+  "candidates": [
+    {
+      "path": ".gitattributes",
+      "size": 66,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    },
+    {
+      "path": ".gitignore",
+      "size": 107,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    },
+    {
+      "path": "CHANGELOG.md",
+      "size": 1079,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    },
+    {
+      "path": "COMMENTS.md",
+      "size": 1891,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    },
+    {
+      "path": "next-env.d.ts",
+      "size": 206,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    },
+    {
+      "path": "README.md",
+      "size": 251,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    },
+    {
+      "path": "tmp_itssharl_ee.html",
+      "size": 12904,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    },
+    {
+      "path": "tmp_patch_before.txt",
+      "size": 8172,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    },
+    {
+      "path": "components/Footer.tsx",
+      "size": 5243,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    },
+    {
+      "path": "components/Hero.tsx",
+      "size": 2128,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    },
+    {
+      "path": "components/Navbar.tsx",
+      "size": 4702,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    },
+    {
+      "path": "components/ProjectsTeaser.tsx",
+      "size": 2517,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    },
+    {
+      "path": "components/Skills.tsx",
+      "size": 1006,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    },
+    {
+      "path": "components/ThemeToggle.tsx",
+      "size": 2062,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    },
+    {
+      "path": "lib/site.config.ts",
+      "size": 1685,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    },
+    {
+      "path": "lib/utils.ts",
+      "size": 885,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    },
+    {
+      "path": "components/projects/Chairlift.tsx",
+      "size": 1091,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    },
+    {
+      "path": "components/projects/ControlsHint.tsx",
+      "size": 738,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    },
+    {
+      "path": "components/projects/MountainScene.tsx",
+      "size": 1359,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    },
+    {
+      "path": "components/projects/ProjectNode.tsx",
+      "size": 1447,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    },
+    {
+      "path": "components/ui/badge.tsx",
+      "size": 1037,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    },
+    {
+      "path": "components/ui/button.tsx",
+      "size": 1561,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    },
+    {
+      "path": "components/ui/card.tsx",
+      "size": 1085,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    },
+    {
+      "path": "components/ui/CustomCursor.tsx",
+      "size": 1942,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    },
+    {
+      "path": "public/refs/chairlift.png",
+      "size": 1972,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    },
+    {
+      "path": "public/refs/mountain.png",
+      "size": 2798,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    },
+    {
+      "path": "public/refs/snowboard.png",
+      "size": 21105,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    },
+    {
+      "path": "public/refs/snowflake.png",
+      "size": 62901,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    },
+    {
+      "path": "components/three/icons/Goggles.tsx",
+      "size": 1309,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    },
+    {
+      "path": "components/three/icons/Gondola.tsx",
+      "size": 1672,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    },
+    {
+      "path": "components/three/icons/Snowflake.tsx",
+      "size": 886,
+      "reason": "No references across graph and scans",
+      "confidence": 1
+    }
+  ],
+  "summary": {
+    "totalFiles": 31,
+    "totalSizeBytes": 147807,
+    "totalSizeHuman": "144.3 KB",
+    "byFolder": [
+      {
+        "folder": "./",
+        "count": 8,
+        "sizeBytes": 24676,
+        "sizeHuman": "24.1 KB"
+      },
+      {
+        "folder": "components/",
+        "count": 17,
+        "sizeBytes": 31785,
+        "sizeHuman": "31.0 KB"
+      },
+      {
+        "folder": "lib/",
+        "count": 2,
+        "sizeBytes": 2570,
+        "sizeHuman": "2.5 KB"
+      },
+      {
+        "folder": "public/",
+        "count": 4,
+        "sizeBytes": 88776,
+        "sizeHuman": "86.7 KB"
+      }
+    ]
+  }
+}

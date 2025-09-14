@@ -96,12 +96,13 @@ export default function MountainBand({
         transition={{ duration: effectiveReduced ? 0.2 : 0.42, ease: 'easeOut' }}
         className="w-full h-full"
       >
-        <Canvas
-          className="w-full h-full"
-          dpr={[1, 1.75]}
-          gl={{ antialias: true, alpha: true }}
-          frameloop={warm ? 'always' : 'demand'}
-          camera={{ fov: 35, position: [0, 14, 42] }}
+          <Canvas
+            className="w-full h-full"
+            style={{ pointerEvents: 'none' }}
+            dpr={[1, 1.75]}
+            gl={{ antialias: true, alpha: true }}
+            frameloop={warm ? 'always' : 'demand'}
+            camera={{ fov: 35, position: [0, 14, 42] }}
           eventSource={typeof window !== 'undefined' ? (document as any) : undefined}
           onCreated={(state) => {
             state.gl.setClearColor(0x000000, 0)
@@ -218,28 +219,29 @@ function Scene({
 
   return (
     <>
-      <ambientLight intensity={0.48} />
-      <hemisphereLight args={[0x7aa2ff, 0x0b1220, 0.35]} />
-      <directionalLight position={[-26, 38, 24]} intensity={1.4} color={0xfff3e6} />
-      <directionalLight position={[30, 28, -10]} intensity={0.45} color={0x9bc3ff} />
+        <ambientLight intensity={0.48} />
+        <hemisphereLight args={[0x7aa2ff, 0x0b1220, 0.35]} />
+        <directionalLight position={[-26, 38, 24]} intensity={1.2} color={0xfff3e6} />
+        <directionalLight position={[30, 28, -10]} intensity={0.45} color={0x9bc3ff} />
+        <fog attach="fog" args={[baseTheme.fog, 40, 140]} />
 
       {/* Far layer */}
       <group position={[0, -5.6, -46]} scale={[1.30, 1, 1]}>
-        <mesh geometry={geoFar}>
-          <LowPolyMaterial roughness={0.82} metalness={0.0} />
-        </mesh>
+          <mesh geometry={geoFar}>
+            <LowPolyMaterial roughness={0.82} metalness={0.0} envMapIntensity={0.3} />
+          </mesh>
       </group>
       {/* Mid layer */}
       <group position={[0, -4.8, -32]} scale={[1.22, 1, 1]}>
-        <mesh geometry={geoMid}>
-          <LowPolyMaterial roughness={0.78} metalness={0.02} />
-        </mesh>
+          <mesh geometry={geoMid}>
+            <LowPolyMaterial roughness={0.78} metalness={0.02} envMapIntensity={0.3} />
+          </mesh>
       </group>
       {/* Near layer */}
       <group position={[0, -3.8, -20]} scale={[1.12, 1, 1]}>
-        <mesh geometry={geoNear}>
-          <LowPolyMaterial roughness={0.76} metalness={0.03} />
-        </mesh>
+          <mesh geometry={geoNear}>
+            <LowPolyMaterial roughness={0.76} metalness={0.03} envMapIntensity={0.3} />
+          </mesh>
       </group>
     </>
   )

@@ -1,7 +1,6 @@
 "use client"
 
 import { LazyMotion, domAnimation, m } from 'framer-motion'
-import DesignStroke from './DesignStroke'
 import { useEffect, useState } from 'react'
 
 type Props = {
@@ -27,14 +26,14 @@ export default function Headline({ animate, reduced, onComplete }: Props) {
 
   return (
     <div className="text-center">
-      <p className="mb-6 text-xs uppercase tracking-[0.25em] text-[var(--muted)] font-body">
+      <p className="mb-6 text-xs uppercase tracking-[0.25em] text-brand-muted font-body">
         OWEN | DATA SCIENCE &times; SOFTWARE ENGINEER
       </p>
 
       <LazyMotion features={domAnimation}>
         <m.h1
           key={animate && !reduced ? 'reveal' : 'static'}
-          className="font-display font-extrabold leading-[0.9] tracking-wide uppercase text-6xl sm:text-7xl md:text-8xl"
+          className="font-display font-extrabold leading-[0.9] tracking-[0.1em] uppercase text-6xl sm:text-7xl md:text-8xl"
           initial={animate && !reduced ? 'hidden' : undefined}
           animate={animate && !reduced ? 'visible' : undefined}
           variants={
@@ -56,7 +55,7 @@ export default function Headline({ animate, reduced, onComplete }: Props) {
         >
           {/* ANALYZE */}
           <m.span
-            className="block text-[var(--headline-fill)] text-glow"
+            className="block text-brand-ink text-glow"
               variants={
                 animate && !reduced
                   ? {
@@ -71,17 +70,21 @@ export default function Headline({ animate, reduced, onComplete }: Props) {
 
           {/* DESIGN + BUILD row */}
           <m.span className="block">
-            {/* DESIGN (true stroke draw via SVG text dash) */}
-            <DesignStroke
-              text="Design"
-              animate={animate}
-              reduced={reduced}
-              duration={designDur}
-              className="inline-block text-brand-primary/90"
-            />
-            {/* BUILD */}
             <m.span
-              className="ml-3 inline-block text-[var(--headline-fill)] text-glow"
+              className="inline-block stroke-1 text-brand-accent"
+              variants={
+                animate && !reduced
+                  ? {
+                      hidden: { opacity: 0, y: 12 },
+                      visible: { opacity: 1, y: 0, transition: { duration: designDur, ease: 'easeOut' } },
+                    }
+                  : undefined
+              }
+            >
+              Design
+            </m.span>
+            <m.span
+              className="ml-3 inline-block text-brand-ink text-glow"
               variants={
                 animate && !reduced
                   ? {
@@ -107,7 +110,7 @@ export default function Headline({ animate, reduced, onComplete }: Props) {
       {/* Subline after headline completes */}
       <LazyMotion features={domAnimation}>
         <m.p
-          className="mt-6 text-[var(--muted)] max-w-2xl mx-auto font-body"
+          className="mt-6 text-brand-muted max-w-2xl mx-auto font-body"
           initial={animate && !reduced ? { opacity: 0, y: 8 } : undefined}
           animate={
             animate && !reduced

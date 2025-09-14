@@ -13,6 +13,11 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  overflow-y: auto;
+  overflow-x: clip;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -55,11 +60,9 @@ body {
 :root,
 :root.dark,
 .dark {
-  --bg:#0b1220; --ink:#E6EAF2; --muted:#A6B0BF; --line:#1A2233; --accent:#88A9FF;
+  --bg:#0C1420; --ink:#DCE6FF; --muted:#7E8AA6; --line:#1A2233; --accent:#9DB8FF;
   --card:#0F172A; --chip:#0E213B;
-  --three-base:#0f1627; --three-highlight:#1b2438; --three-fog:#0b1220;
-  /* Hero headline fill leans toward navy on dark */
-  --headline-fill: color-mix(in oklab, var(--accent) 52%, var(--bg));
+  --three-base:#0f1627; --three-highlight:#1b2438; --three-fog:#0C1420;
   --snow: #E6EEF6;
   /* IDE overlay tokens */
   --ide-bg: color-mix(in oklab, var(--ink) 8%, black);
@@ -74,8 +77,6 @@ body {
   --bg:#f7f9fc; --ink:#0f172a; --muted:#475569; --line:#e2e8f0; --accent:#3b82f6;
   --card:#ffffff; --chip:#eef2f7;
   --three-base:#f3f6fb; --three-highlight:#e6edf7; --three-fog:#eef2f7;
-  /* Hero headline fill is a tempered blue on light */
-  --headline-fill: color-mix(in oklab, var(--accent) 60%, white);
   --snow: #AABCD4;
   /* IDE overlay tokens */
   --ide-bg: color-mix(in oklab, var(--ink) 6%, white);
@@ -88,6 +89,15 @@ body {
 /* Hide system cursor when CustomCursor is mounted */
 .cursor-none, .cursor-none * {
   cursor: none !important;
+}
+
+/* Hide scrollbars but keep scroll functionality */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
 /* (tokens consolidated above) */
@@ -143,13 +153,17 @@ body {
 
 /* Custom Sharlee hero utilities */
 .text-glow {
-  text-shadow:
-    0 1px 8px color-mix(in oklab, var(--headline-fill) 42%, transparent),
-    0 0 30px color-mix(in oklab, var(--accent) 26%, transparent);
+  text-shadow: 0 0 24px rgba(157,184,255,.25);
 }
 
 .stroke-1 {
   -webkit-text-stroke: 1.5px currentColor;
   -webkit-text-fill-color: transparent; /* keep fill invisible */
   color: inherit; /* preserve currentColor for stroke */
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 0.125rem;
 }

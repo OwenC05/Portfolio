@@ -38,11 +38,11 @@ export type CursorSettings = {
 }
 
 export const defaultSettings: CursorSettings = {
-  maxParticles: 150,
-  baseRate: 8, // particles/sec at idle
-  ratePerSpeed: 0.04, // per px/sec
-  clickBurstMin: 12,
-  clickBurstMax: 18,
+  maxParticles: 90,
+  baseRate: 5, // particles/sec at idle
+  ratePerSpeed: 0.025, // per px/sec
+  clickBurstMin: 8,
+  clickBurstMax: 12,
   dprMax: 1.75,
 }
 

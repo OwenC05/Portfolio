@@ -13,9 +13,10 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          bg: '#0c1420',
-          primary: '#9db8ff',
-          secondary: '#59e0ff',
+          bg: '#0C1420',
+          ink: '#DCE6FF',
+          accent: '#9DB8FF',
+          muted: '#7E8AA6',
         },
       },
       fontFamily: {

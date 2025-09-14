@@ -2,7 +2,10 @@ import type { Metadata } from 'next'
 import './globals.css'
 import '../styles/projects.css'
 import '../styles/grain.css'
+import '../styles/hero-mountain.css'
 import '../styles/three.css'
+import '../styles/cursor.css'
+import dynamic from 'next/dynamic'
 import { ThemeProvider } from '@/components/ui/ThemeProvider'
 import ThemeToggle from '@/components/ui/ThemeToggle'
 import { Inter, Outfit } from 'next/font/google'
@@ -20,6 +23,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const SnowCursor = dynamic(() => import('@/components/cursor/SnowCursor'), { ssr: false })
   return (
     <html lang="en" suppressHydrationWarning className={`${inter.variable} ${outfit.variable}`}>
       <body className={`antialiased bg-[var(--bg)] text-[var(--ink)]`}>
@@ -28,6 +32,7 @@ export default function RootLayout({
           <div className="fixed top-4 right-4 z-[1000]">
             <ThemeToggle />
           </div>
+          <SnowCursor />
           {children}
         </ThemeProvider>
       </body>

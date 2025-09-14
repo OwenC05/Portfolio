@@ -1,0 +1,12 @@
+.mountain-band {
+  /* White = visible, black/transparent = hidden */
+  -webkit-mask-image: linear-gradient(to top, white 70%, transparent 96%);
+          mask-image: linear-gradient(to top, white 70%, transparent 96%);
+}
+
+@media (max-width: 640px) {
+  .mountain-band {
+    -webkit-mask-image: linear-gradient(to top, white 66%, transparent 94%);
+            mask-image: linear-gradient(to top, white 66%, transparent 94%);
+  }
+}

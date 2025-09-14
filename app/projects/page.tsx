@@ -1,9 +1,9 @@
-'use client'
-
 import dynamic from 'next/dynamic'
 import HUD from '@/components/ui/HUD'
 
-const Experience = dynamic(() => import('@/components/three/Experience'), { ssr: false })
+const Experience = dynamic(() => import('@/components/three/Experience'), {
+  ssr: false,
+})
 
 export default function ProjectsPage() {
   return (

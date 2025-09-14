@@ -3,74 +3,16 @@ import Link from 'next/link'
 import { Reveal } from '@/components/ui/Reveal'
 import { Magnet } from '@/components/ui/Magnet'
 import { Spotlight } from '@/components/ui/Spotlight'
-import HeroScene from '@/components/three/HeroScene'
-import { Keyword } from '@/components/hero/Keyword'
+import HeroSharlee from '@/components/HeroSharlee'
 
 export default function HomePage() {
   return (
     <main className="min-h-[100dvh] bg-[var(--bg)] text-[var(--ink)]">
-      <div className="grain-overlay" aria-hidden />
-
-      {/* Hero */}
-      <section className="relative mx-auto max-w-7xl px-5 pt-28 pb-24 grid gap-8 md:grid-cols-[minmax(0,1fr)_minmax(360px,40vw)]">
-        <div className="z-10 md:pr-6 max-w-[56ch]">
-          <Reveal>
-            <p className="eyebrow mb-4 text-[12px] text-[var(--muted)]">OWEN | Data Science ✕ Software Engineer</p>
-          </Reveal>
-
-          <Reveal delay={0.05}>
-            <h1 className="display-1 font-extrabold tracking-[-0.01em] text-balance">
-              <Keyword kind="analyze" className="mr-3">ANALYZE</Keyword>
-              <span aria-hidden className="mx-1">&mdash;</span>
-              <Keyword kind="design" className="mx-3">DESIGN</Keyword>
-              <span aria-hidden className="mx-1">&mdash;</span>
-              <Keyword kind="build" className="ml-3">BUILD</Keyword>
-            </h1>
-          </Reveal>
-
-          <Reveal delay={0.1}>
-            <p className="mt-6 max-w-[60ch] text-[17.5px] leading-relaxed text-[var(--muted)]">
-              CS &amp; AI @ Bath &mdash; Data Science (Fraud Analytics) @ LexisNexis &mdash; Snowboard theme, because carving clean lines into complex problems feels right.
-            </p>
-          </Reveal>
-
-          <Reveal delay={0.15}>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Magnet>
-                <Link
-                  href="/projects"
-                  aria-label="See my work"
-                  className="inline-flex items-center justify-center rounded-full h-11 px-6 text-[15px] font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] bg-[var(--ink)] text-[var(--bg)] hover:opacity-90"
-                >
-                  See Work
-                </Link>
-              </Magnet>
-              <Magnet>
-                <Link
-                  href="/about"
-                  aria-label="More about me"
-                  className="inline-flex items-center justify-center rounded-full h-11 px-6 text-[15px] font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] border border-[var(--line)] text-[var(--ink)] bg-[var(--card)]/40 hover:bg-[var(--card)]/60"
-                >
-                  More About Me
-                </Link>
-              </Magnet>
-            </div>
-          </Reveal>
-        </div>
-        {/* Side canvas column (never blocks text) */}
-        <div className="relative hidden md:block">
-          <div className="canvas-fade pointer-events-none absolute inset-0 pr-6">
-            <HeroScene />
-          </div>
-        </div>
-        {/* Mobile: compact canvas at top-right */}
-        <div className="pointer-events-none md:hidden absolute right-0 top-0 w-[78vw] h-[38vh]">
-          <HeroScene compact />
-        </div>
-      </section>
+      {/* Centered Sharlee-style hero */}
+      <HeroSharlee />
 
       {/* Featured */}
-      <section className="relative">
+      <section className="relative" id="projects">
         <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
           <Reveal>
             <div className="mb-8 flex items-center justify-between">

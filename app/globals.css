@@ -169,3 +169,15 @@ body {
   --card:#ffffff; --chip:#eef2f7;
   --three-base:#f3f6fb; --three-highlight:#e6edf7;
 }
+
+/* Custom Sharlee hero utilities */
+.text-glow {
+  text-shadow:
+    0 1px 8px rgba(157, 184, 255, 0.25),
+    0 0 30px rgba(89, 224, 255, 0.25);
+}
+
+.stroke-1 {
+  -webkit-text-stroke: 1.5px currentColor;
+  color: transparent;
+}

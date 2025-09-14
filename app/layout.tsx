@@ -5,10 +5,10 @@ import '../styles/grain.css'
 import '../styles/three.css'
 import { ThemeProvider } from '@/components/ui/ThemeProvider'
 import ThemeToggle from '@/components/ui/ThemeToggle'
-import { Inter, Fraunces } from 'next/font/google'
+import { Inter, Outfit } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-sans', display: 'swap' })
-const fraunces = Fraunces({ subsets: ['latin'], variable: '--font-display', display: 'swap' })
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' })
+const outfit = Outfit({ subsets: ['latin'], variable: '--font-outfit', display: 'swap' })
 
 export const metadata: Metadata = {
   title: 'Owen Cheung',
@@ -21,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} ${fraunces.variable} antialiased bg-[var(--bg)] text-[var(--ink)]`}>
+    <html lang="en" suppressHydrationWarning className={`${inter.variable} ${outfit.variable}`}>
+      <body className={`antialiased bg-[var(--bg)] text-[var(--ink)]`}>
         <ThemeProvider>
           {/* Minimal header with theme toggle */}
           <div className="fixed top-4 right-4 z-[1000]">

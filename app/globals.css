@@ -3,6 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "../styles/hero-effects.css";
+
 * {
   box-sizing: border-box;
 }

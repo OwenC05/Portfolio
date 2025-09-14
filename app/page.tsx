@@ -4,6 +4,7 @@ import { Reveal } from '@/components/ui/Reveal'
 import { Magnet } from '@/components/ui/Magnet'
 import { Spotlight } from '@/components/ui/Spotlight'
 import HeroScene from '@/components/three/HeroScene'
+import { Keyword } from '@/components/hero/Keyword'
 
 export default function HomePage() {
   return (
@@ -14,18 +15,22 @@ export default function HomePage() {
       <section className="relative mx-auto max-w-7xl px-5 pt-28 pb-24 grid gap-8 md:grid-cols-[minmax(0,1fr)_minmax(360px,40vw)]">
         <div className="z-10 md:pr-6 max-w-[56ch]">
           <Reveal>
-            <p className="eyebrow mb-4 text-[12px] text-[var(--muted)]">OWEN · Data Science × Software Engineer</p>
+            <p className="eyebrow mb-4 text-[12px] text-[var(--muted)]">OWEN | Data Science ✕ Software Engineer</p>
           </Reveal>
 
           <Reveal delay={0.05}>
             <h1 className="display-1 font-extrabold tracking-[-0.01em] text-balance">
-              ANALYZE × DESIGN × BUILD
+              <Keyword kind="analyze" className="mr-3">ANALYZE</Keyword>
+              <span aria-hidden className="mx-1">&mdash;</span>
+              <Keyword kind="design" className="mx-3">DESIGN</Keyword>
+              <span aria-hidden className="mx-1">&mdash;</span>
+              <Keyword kind="build" className="ml-3">BUILD</Keyword>
             </h1>
           </Reveal>
 
           <Reveal delay={0.1}>
             <p className="mt-6 max-w-[60ch] text-[17.5px] leading-relaxed text-[var(--muted)]">
-              CS & AI @ Bath · Data Science (Fraud Analytics) @ LexisNexis · Snowboard theme, because carving clean lines into complex problems feels right.
+              CS &amp; AI @ Bath &mdash; Data Science (Fraud Analytics) @ LexisNexis &mdash; Snowboard theme, because carving clean lines into complex problems feels right.
             </p>
           </Reveal>
 
@@ -75,7 +80,7 @@ export default function HomePage() {
                 aria-label="View all projects"
                 className="inline-flex items-center justify-center rounded-full h-10 px-4 text-sm font-medium transition-transform hover:translate-x-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] text-[var(--ink)] link-arrow"
               >
-                View all →
+                View all &rarr;
               </Link>
             </div>
           </Reveal>
@@ -97,7 +102,7 @@ export default function HomePage() {
                       <span className="chip">Snowflake</span>
                     </div>
                     <h3 className="text-xl font-semibold text-[var(--ink)]">Fraud Analytics (LNRS)</h3>
-                    <p className="mt-2 text-sm text-[var(--muted)]">Snowflake→Streamlit ROC/KS with narrative.</p>
+                    <p className="mt-2 text-sm text-[var(--muted)]">Snowflake &rarr; Streamlit ROC/KS with narrative.</p>
                   </div>
                   <div
                     aria-hidden
@@ -176,3 +181,4 @@ export default function HomePage() {
     </main>
   )
 }
+

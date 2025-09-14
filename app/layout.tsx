@@ -25,8 +25,8 @@ export default function RootLayout({
 }) {
   const SnowCursor = dynamic(() => import('@/components/cursor/SnowCursor'), { ssr: false })
   return (
-    <html lang="en" suppressHydrationWarning className={`${inter.variable} ${outfit.variable}`}>
-      <body className={`antialiased bg-[var(--bg)] text-[var(--ink)]`}>
+    <html lang="en" suppressHydrationWarning className={`${inter.variable} ${outfit.variable} no-scrollbar`}>
+      <body className={`antialiased bg-[var(--bg)] text-[var(--ink)] overflow-x-clip`}>
         <ThemeProvider>
           {/* Minimal header with theme toggle */}
           <div className="fixed top-4 right-4 z-[1000]">
@@ -34,6 +34,7 @@ export default function RootLayout({
           </div>
           <SnowCursor />
           {children}
+          <div className="grain-overlay" aria-hidden />
         </ThemeProvider>
       </body>
     </html>

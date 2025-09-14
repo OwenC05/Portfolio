@@ -46,6 +46,7 @@ export default function SnowCursor() {
   const rootRef = useRef<HTMLDivElement | null>(null)
   const canvasRef = useRef<HTMLCanvasElement | null>(null)
   const ringRef = useRef<HTMLDivElement | null>(null)
+  const fillRef = useRef<HTMLDivElement | null>(null)
   const dotRef = useRef<HTMLDivElement | null>(null)
 
   const { x, y, speed, hoveringInteractive, onPointerMove, onPointerDown, onPointerUp } = usePointer()
@@ -123,7 +124,19 @@ export default function SnowCursor() {
   // Pointer listeners
   useEffect(() => {
     if (!enabled) return
-    const onMove = (e: PointerEvent) => onPointerMove(e)
+    const onMove = (e: PointerEvent) => {
+      onPointerMove(e)
+      const target = e.target as HTMLElement | null
+      const host = target?.closest('button, [role="button"], a, .btn-primary, .btn-secondary') as HTMLElement | null
+      const color = host?.dataset?.cursorFill
+      const opacity = host?.dataset?.cursorFillOpacity
+      if (ringRef.current) {
+        if (color) ringRef.current.style.setProperty('--cursor-fill', color)
+        else ringRef.current.style.removeProperty('--cursor-fill')
+        if (opacity) ringRef.current.style.setProperty('--cursor-fill-opacity', opacity)
+        else ringRef.current.style.removeProperty('--cursor-fill-opacity')
+      }
+    }
     const onDown = (e: PointerEvent) => {
       onPointerDown(e)
       // click burst
@@ -290,7 +303,9 @@ export default function SnowCursor() {
   return (
     <div ref={rootRef} data-snow-cursor-root style={{ display: enabled ? 'block' : 'none' }}>
       <canvas ref={canvasRef} data-snow-canvas />
-      <div ref={ringRef} className="cursor-ring" />
+      <div ref={ringRef} className="cursor-ring">
+        <div ref={fillRef} className="cursor-fill" />
+      </div>
       <div ref={dotRef} className="cursor-dot" />
     </div>
   )

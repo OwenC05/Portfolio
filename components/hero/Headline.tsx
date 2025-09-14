@@ -1,21 +1,126 @@
-export default function Headline() {
+"use client"
+
+import { LazyMotion, domAnimation, m } from 'framer-motion'
+import DesignStroke from './DesignStroke'
+import { useEffect, useState } from 'react'
+
+type Props = {
+  animate: boolean
+  reduced: boolean
+  onComplete?: () => void
+}
+
+export default function Headline({ animate, reduced, onComplete }: Props) {
+  const [headlineDone, setHeadlineDone] = useState(!animate)
+
+  useEffect(() => {
+    if (!animate || reduced) {
+      setHeadlineDone(true)
+      onComplete?.()
+    }
+  }, [animate, reduced, onComplete])
+
+  const stagger = 0.12
+  const analyzeDur = 0.24
+  const designDur = 0.45
+  const sublineDelayAfterHeadline = 0.18
+
   return (
     <div className="text-center">
       <p className="mb-6 text-xs uppercase tracking-[0.25em] text-[var(--muted)] font-body">
         OWEN | DATA SCIENCE &times; SOFTWARE ENGINEER
       </p>
 
-      <h1 className="font-display font-extrabold leading-[0.9] tracking-wide uppercase text-6xl sm:text-7xl md:text-8xl">
-        <span className="block text-[var(--headline-fill)] text-glow">Analyze</span>
-        <span className="block">
-          <span className="stroke-1 text-brand-primary/90">Design</span>
-          <span className="ml-3 text-[var(--headline-fill)] text-glow">Build</span>
-        </span>
-      </h1>
+      <LazyMotion features={domAnimation}>
+        <m.h1
+          key={animate && !reduced ? 'reveal' : 'static'}
+          className="font-display font-extrabold leading-[0.9] tracking-wide uppercase text-6xl sm:text-7xl md:text-8xl"
+          initial={animate && !reduced ? 'hidden' : undefined}
+          animate={animate && !reduced ? 'visible' : undefined}
+          variants={
+            animate && !reduced
+              ? {
+                  hidden: {},
+                  visible: {
+                    transition: { staggerChildren: stagger, when: 'beforeChildren' },
+                  },
+                }
+              : undefined
+          }
+          onAnimationComplete={() => {
+            if (animate && !reduced) {
+              setHeadlineDone(true)
+              onComplete?.()
+            }
+          }}
+        >
+          {/* ANALYZE */}
+          <m.span
+            className="block text-[var(--headline-fill)] text-glow"
+              variants={
+                animate && !reduced
+                  ? {
+                      hidden: { y: 12, opacity: 0 },
+                    visible: { y: 0, opacity: 1, transition: { duration: analyzeDur, ease: 'easeOut' } },
+                  }
+                : undefined
+            }
+          >
+            Analyze
+          </m.span>
 
-      <p className="mt-6 text-[var(--muted)] max-w-2xl mx-auto font-body">
-        I carve lines through messy data
-      </p>
+          {/* DESIGN + BUILD row */}
+          <m.span className="block">
+            {/* DESIGN (true stroke draw via SVG text dash) */}
+            <DesignStroke
+              text="Design"
+              animate={animate}
+              reduced={reduced}
+              duration={designDur}
+              className="inline-block text-brand-primary/90"
+            />
+            {/* BUILD */}
+            <m.span
+              className="ml-3 inline-block text-[var(--headline-fill)] text-glow"
+              variants={
+                animate && !reduced
+                  ? {
+                      hidden: { opacity: 0, scale: 0.98 },
+                      visible: {
+                        opacity: 1,
+                        scale: [1, 1.02, 1],
+                        transition: {
+                          opacity: { duration: 0.2, ease: 'easeOut' },
+                          scale: { type: 'spring', stiffness: 200, damping: 24 },
+                        },
+                      },
+                    }
+                  : undefined
+              }
+            >
+              Build
+            </m.span>
+          </m.span>
+        </m.h1>
+      </LazyMotion>
+
+      {/* Subline after headline completes */}
+      <LazyMotion features={domAnimation}>
+        <m.p
+          className="mt-6 text-[var(--muted)] max-w-2xl mx-auto font-body"
+          initial={animate && !reduced ? { opacity: 0, y: 8 } : undefined}
+          animate={
+            animate && !reduced
+              ? headlineDone
+                ? { opacity: 1, y: 0 }
+                : undefined
+              : undefined
+          }
+          transition={animate && !reduced ? { delay: sublineDelayAfterHeadline, duration: 0.22, ease: 'easeOut' } : undefined}
+        >
+          I carve lines through messy data
+        </m.p>
+      </LazyMotion>
     </div>
   )
 }

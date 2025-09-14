@@ -6,6 +6,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { LowPolyMaterial, createLowPolyTerrain } from './mountain'
 import { getMountainTheme, layerTheme } from './mountain/theme'
 import { useTheme } from 'next-themes'
+import { LazyMotion, domAnimation, m } from 'framer-motion'
 
 type HeightPct = { mobile: number; desktop: number }
 
@@ -18,6 +19,8 @@ export type MountainBandProps = {
   terraceStepsMid?: number
   terraceStepsFar?: number
   seed?: number
+  animate?: boolean
+  reduced?: boolean
 }
 
 function useReducedMotion() {
@@ -65,32 +68,56 @@ export default function MountainBand({
   terraceStepsMid = 8,
   terraceStepsFar = 10,
   seed = 42,
+  animate = false,
+  reduced = false,
 }: MountainBandProps) {
   const { resolvedTheme } = useTheme()
-  const reduced = useReducedMotion()
+  const userReduced = useReducedMotion()
   const baseTheme = useMemo(() => getMountainTheme((resolvedTheme as any) === 'light' ? 'light' : 'dark'), [resolvedTheme])
+  const [warm, setWarm] = useState(true)
+
+  // Ensure first-frame render reliably appears, then drop to demand
+  useEffect(() => {
+    if (userReduced || reduced) {
+      setWarm(false)
+      return
+    }
+    const t = setTimeout(() => setWarm(false), 900)
+    return () => clearTimeout(t)
+  }, [userReduced, reduced])
+
+  const effectiveReduced = reduced || userReduced
 
   return (
-    <Canvas
-      className="w-full h-full"
-      dpr={[1, 1.75]}
-      gl={{ antialias: true, alpha: true }}
-      frameloop="demand"
-      camera={{ fov: 35, position: [0, 14, 42] }}
-      eventSource={typeof window !== 'undefined' ? (document as any) : undefined}
-      onCreated={(state) => {
-        state.gl.setClearColor(0x000000, 0)
-        state.invalidate()
-      }}
-    >
-      <Scene
-        reduced={reduced}
-        baseTheme={baseTheme}
-        amps={{ near: ampNear, mid: ampMid, far: ampFar }}
-        steps={{ near: terraceStepsNear, mid: terraceStepsMid, far: terraceStepsFar }}
-        seed={seed}
-      />
-    </Canvas>
+    <LazyMotion features={domAnimation}>
+      <m.div
+        initial={animate ? { opacity: 0 } : undefined}
+        animate={animate ? { opacity: 1 } : undefined}
+        transition={{ duration: effectiveReduced ? 0.2 : 0.42, ease: 'easeOut' }}
+        className="w-full h-full"
+      >
+        <Canvas
+          className="w-full h-full"
+          dpr={[1, 1.75]}
+          gl={{ antialias: true, alpha: true }}
+          frameloop={warm ? 'always' : 'demand'}
+          camera={{ fov: 35, position: [0, 14, 42] }}
+          eventSource={typeof window !== 'undefined' ? (document as any) : undefined}
+          onCreated={(state) => {
+            state.gl.setClearColor(0x000000, 0)
+            state.invalidate()
+          }}
+        >
+          <Scene
+            reduced={effectiveReduced}
+            baseTheme={baseTheme}
+            amps={{ near: ampNear, mid: ampMid, far: ampFar }}
+            steps={{ near: terraceStepsNear, mid: terraceStepsMid, far: terraceStepsFar }}
+            seed={seed}
+          />
+        </Canvas>
+      </m.div>
+    </LazyMotion>
   )
 }
 

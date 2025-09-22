@@ -6,12 +6,23 @@ import '../styles/hero-mountain.css'
 import '../styles/three.css'
 import '../styles/cursor.css'
 import dynamic from 'next/dynamic'
-import { ThemeProvider } from '@/components/ui/ThemeProvider'
-import ThemeToggle from '@/components/ui/ThemeToggle'
+import { Providers } from './providers'
 import { Inter, Outfit } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' })
-const outfit = Outfit({ subsets: ['latin'], variable: '--font-outfit', display: 'swap' })
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+})
+const outfit = Outfit({
+  subsets: ['latin'],
+  variable: '--font-outfit',
+  display: 'swap',
+})
+
+const SnowCursor = dynamic(() => import('@/components/cursor/SnowCursor'), {
+  ssr: false,
+})
 
 export const metadata: Metadata = {
   title: 'Owen Cheung',
@@ -23,19 +34,20 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const SnowCursor = dynamic(() => import('@/components/cursor/SnowCursor'), { ssr: false })
   return (
-    <html lang="en" suppressHydrationWarning className={`${inter.variable} ${outfit.variable} no-scrollbar`}>
-      <body className={`antialiased bg-[var(--bg)] text-[var(--ink)] overflow-x-clip`}>
-        <ThemeProvider>
-          {/* Minimal header with theme toggle */}
-          <div className="fixed top-4 right-4 z-[1000]">
-            <ThemeToggle />
-          </div>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${inter.variable} ${outfit.variable}`}
+    >
+      <body
+        className={`no-scrollbar antialiased bg-[var(--bg)] text-[var(--ink)] overflow-x-clip`}
+      >
+        <Providers>
           <SnowCursor />
           {children}
           <div className="grain-overlay" aria-hidden />
-        </ThemeProvider>
+        </Providers>
       </body>
     </html>
   )

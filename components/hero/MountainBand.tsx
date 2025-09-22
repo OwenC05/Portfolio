@@ -1,248 +1,188 @@
-"use client"
+'use client'
 
-import { Canvas, useFrame, useThree } from '@react-three/fiber'
-import * as THREE from 'three'
-import { useEffect, useMemo, useRef, useState } from 'react'
-import { LowPolyMaterial, createLowPolyTerrain } from './mountain'
-import { getMountainTheme, layerTheme } from './mountain/theme'
 import { useTheme } from 'next-themes'
-import { LazyMotion, domAnimation, m } from 'framer-motion'
+import { Canvas, useThree } from '@react-three/fiber'
+import * as THREE from 'three'
+import { useEffect, useMemo, useState } from 'react'
 
-type HeightPct = { mobile: number; desktop: number }
-
-export type MountainBandProps = {
-  heightPct?: HeightPct
-  ampNear?: number
-  ampMid?: number
-  ampFar?: number
-  terraceStepsNear?: number
-  terraceStepsMid?: number
-  terraceStepsFar?: number
-  seed?: number
-  animate?: boolean
-  reduced?: boolean
+type Palette = {
+  bg: string
+  fog: string
+  near: string
+  far: string
 }
 
-function useReducedMotion() {
-  const [reduced, setReduced] = useState(false)
-  useEffect(() => {
-    if (typeof window === 'undefined') return
-    const m = window.matchMedia('(prefers-reduced-motion: reduce)')
-    const onChange = () => setReduced(!!m.matches)
-    onChange()
-    m.addEventListener?.('change', onChange)
-    return () => m.removeEventListener?.('change', onChange)
-  }, [])
-  return reduced
-}
+const CANVAS_CLASS =
+  'mountainMask pointer-events-none absolute inset-x-0 bottom-0 h-[30vh] md:h-[32vh] xl:h-[36vh]'
 
-function usePointerSway(enabled: boolean) {
-  const { camera, invalidate } = useThree()
-  const mouse = useRef({ x: 0, y: 0 })
-  useEffect(() => {
-    if (!enabled) return
-    const onMove = (e: PointerEvent) => {
-      mouse.current.x = (e.clientX / window.innerWidth) * 2 - 1
-      mouse.current.y = (e.clientY / window.innerHeight) * 2 - 1
-      invalidate()
-    }
-    window.addEventListener('pointermove', onMove)
-    return () => window.removeEventListener('pointermove', onMove)
-  }, [enabled, invalidate])
-
-  useFrame((state, delta) => {
-    if (!enabled) return
-    const targetYaw = THREE.MathUtils.degToRad(0.4) * mouse.current.x
-    const targetPitch = THREE.MathUtils.degToRad(0.2) * -mouse.current.y
-    camera.rotation.y = THREE.MathUtils.damp(camera.rotation.y, targetYaw, 2.5, delta)
-    camera.rotation.x = THREE.MathUtils.damp(camera.rotation.x, targetPitch, 2.5, delta)
-  })
-}
-
-export default function MountainBand({
-  heightPct = { mobile: 0.20, desktop: 0.28 },
-  ampNear = 48,
-  ampMid = 32,
-  ampFar = 22,
-  terraceStepsNear = 6,
-  terraceStepsMid = 8,
-  terraceStepsFar = 10,
-  seed = 42,
-  animate = false,
-  reduced = false,
-}: MountainBandProps) {
+export default function MountainBand() {
   const { resolvedTheme } = useTheme()
-  const userReduced = useReducedMotion()
-  const baseTheme = useMemo(() => getMountainTheme((resolvedTheme as any) === 'light' ? 'light' : 'dark'), [resolvedTheme])
-  const [warm, setWarm] = useState(true)
+  const [palette, setPalette] = useState<Palette>(() => readPalette())
 
-  // Ensure first-frame render reliably appears, then drop to demand
   useEffect(() => {
-    if (userReduced || reduced) {
-      setWarm(false)
-      return
-    }
-    const t = setTimeout(() => setWarm(false), 900)
-    return () => clearTimeout(t)
-  }, [userReduced, reduced])
-
-  const effectiveReduced = reduced || userReduced
+    setPalette(readPalette())
+  }, [resolvedTheme])
 
   return (
-    <LazyMotion features={domAnimation}>
-      <m.div
-        initial={animate ? { opacity: 0 } : undefined}
-        animate={animate ? { opacity: 1 } : undefined}
-        transition={{ duration: effectiveReduced ? 0.2 : 0.42, ease: 'easeOut' }}
-        className="w-full h-full"
+    <div className={CANVAS_CLASS}>
+      <Canvas
+        dpr={[1, 2]}
+        frameloop="demand"
+        camera={{ position: [0, 9, 22], fov: 35 }}
+        gl={{ antialias: true, powerPreference: 'high-performance' }}
+        style={{ pointerEvents: 'none' }}
       >
-          <Canvas
-            className="w-full h-full"
-            style={{ pointerEvents: 'none' }}
-            dpr={[1, 1.75]}
-            gl={{ antialias: true, alpha: true }}
-            frameloop={warm ? 'always' : 'demand'}
-            camera={{ fov: 35, position: [0, 14, 42] }}
-          eventSource={typeof window !== 'undefined' ? (document as any) : undefined}
-          onCreated={(state) => {
-            state.gl.setClearColor(0x000000, 0)
-            state.invalidate()
-          }}
-        >
-          <Scene
-            reduced={effectiveReduced}
-            baseTheme={baseTheme}
-            amps={{ near: ampNear, mid: ampMid, far: ampFar }}
-            steps={{ near: terraceStepsNear, mid: terraceStepsMid, far: terraceStepsFar }}
-            seed={seed}
-          />
-        </Canvas>
-      </m.div>
-    </LazyMotion>
+        <Scene palette={palette} />
+      </Canvas>
+    </div>
   )
 }
 
-function Scene({
-  reduced,
-  baseTheme,
-  amps,
-  steps,
-  seed,
-}: {
-  reduced: boolean
-  baseTheme: ReturnType<typeof getMountainTheme>
-  amps: { near: number; mid: number; far: number }
-  steps: { near: number; mid: number; far: number }
-  seed: number
-}) {
-  const [time, setTime] = useState(0)
-  const [wind] = useState(0.03)
-  const { invalidate } = useThree()
-  const { camera } = useThree()
-  // Ensure the camera looks toward the band
+function Scene({ palette }: { palette: Palette }) {
+  const { gl, scene, invalidate } = useThree()
+  const geometry = useMemo(() => createTerrainGeometry(palette), [palette])
+
   useEffect(() => {
-    const c = camera as THREE.PerspectiveCamera
-    c.position.set(0, 14, 42)
-    c.lookAt(0, -4, -30)
-    invalidate()
-  }, [camera, invalidate])
+    const clear = new THREE.Color(palette.bg)
+    gl.setClearColor(clear, 0)
 
-  // Drive time at ~20fps when not reduced
-  const accRef = useRef(0)
-  useFrame((_, delta) => {
-    if (reduced) return
-    accRef.current += delta
-    if (accRef.current > 0.05) {
-      setTime((t) => t + accRef.current * 0.5)
-      accRef.current = 0
-      invalidate()
+    if (scene.fog instanceof THREE.Fog) {
+      scene.fog.color.set(palette.fog)
+      scene.fog.near = 12
+      scene.fog.far = 52
+    } else {
+      scene.fog = new THREE.Fog(palette.fog, 12, 52)
     }
-  })
 
-  usePointerSway(!reduced)
+    invalidate()
+  }, [palette, gl, scene, invalidate])
 
-  // Bake low‑poly layers using Perlin FBM for a crisp faceted silhouette
-  const farTheme = useMemo(() => layerTheme(baseTheme, 'far'), [baseTheme])
-  const midTheme = useMemo(() => layerTheme(baseTheme, 'mid'), [baseTheme])
-  const nearTheme = useMemo(() => layerTheme(baseTheme, 'near'), [baseTheme])
-
-  const geoFar = useMemo(
-    () =>
-      createLowPolyTerrain({
-        width: 1000,
-        depth: 190,
-        segX: 100,
-        segZ: 34,
-        amplitude: amps.far,
-        scaleX: 0.013,
-        scaleZ: 0.032,
-        seed: seed + 3,
-        snowColor: farTheme.snow,
-        rockColor: farTheme.rockMid,
-      }),
-    [amps.far, seed, farTheme]
-  )
-
-  const geoMid = useMemo(
-    () =>
-      createLowPolyTerrain({
-        width: 1000,
-        depth: 190,
-        segX: 120,
-        segZ: 38,
-        amplitude: amps.mid,
-        scaleX: 0.012,
-        scaleZ: 0.030,
-        seed: seed + 7,
-        snowColor: midTheme.snow,
-        rockColor: midTheme.rockMid,
-      }),
-    [amps.mid, seed, midTheme]
-  )
-
-  const geoNear = useMemo(
-    () =>
-      createLowPolyTerrain({
-        width: 1000,
-        depth: 190,
-        segX: 140,
-        segZ: 42,
-        amplitude: amps.near,
-        scaleX: 0.010,
-        scaleZ: 0.028,
-        seed: seed + 13,
-        snowColor: nearTheme.snow,
-        rockColor: nearTheme.rockMid,
-      }),
-    [amps.near, seed, nearTheme]
-  )
+  useEffect(() => {
+    invalidate()
+  }, [geometry, invalidate])
 
   return (
     <>
-        <ambientLight intensity={0.48} />
-        <hemisphereLight args={[0x7aa2ff, 0x0b1220, 0.35]} />
-        <directionalLight position={[-26, 38, 24]} intensity={1.2} color={0xfff3e6} />
-        <directionalLight position={[30, 28, -10]} intensity={0.45} color={0x9bc3ff} />
-        <fog attach="fog" args={[baseTheme.fog, 40, 140]} />
+      <ambientLight intensity={0.5} />
+      <directionalLight position={[-3, 5, 3]} intensity={1.2} />
+      <fog attach="fog" args={[palette.fog, 12, 52]} />
 
-      {/* Far layer */}
-      <group position={[0, -5.6, -46]} scale={[1.30, 1, 1]}>
-          <mesh geometry={geoFar}>
-            <LowPolyMaterial roughness={0.82} metalness={0.0} envMapIntensity={0.3} />
-          </mesh>
-      </group>
-      {/* Mid layer */}
-      <group position={[0, -4.8, -32]} scale={[1.22, 1, 1]}>
-          <mesh geometry={geoMid}>
-            <LowPolyMaterial roughness={0.78} metalness={0.02} envMapIntensity={0.3} />
-          </mesh>
-      </group>
-      {/* Near layer */}
-      <group position={[0, -3.8, -20]} scale={[1.12, 1, 1]}>
-          <mesh geometry={geoNear}>
-            <LowPolyMaterial roughness={0.76} metalness={0.03} envMapIntensity={0.3} />
-          </mesh>
-      </group>
+      <mesh geometry={geometry} position={[0, -1.8, -4]}>
+        <meshStandardMaterial
+          vertexColors
+          flatShading
+          roughness={0.9}
+          metalness={0.08}
+        />
+      </mesh>
     </>
   )
+}
+
+function createTerrainGeometry(palette: Palette) {
+  const geometry = new THREE.PlaneGeometry(36, 22, 180, 60)
+  geometry.rotateX(-Math.PI / 2)
+
+  const position = geometry.attributes.position as THREE.BufferAttribute
+  const count = position.count
+  const colors = new Float32Array(count * 3)
+
+  let minY = Number.POSITIVE_INFINITY
+  let maxY = Number.NEGATIVE_INFINITY
+
+  for (let i = 0; i < count; i++) {
+    const x = position.getX(i)
+    const z = position.getZ(i)
+    const height = ridgedNoise(x * 0.12, z * 0.18)
+    position.setY(i, height)
+    if (height < minY) minY = height
+    if (height > maxY) maxY = height
+  }
+
+  position.needsUpdate = true
+  geometry.computeVertexNormals()
+
+  const range = Math.max(0.0001, maxY - minY)
+  const nearColor = new THREE.Color(palette.near)
+  const farColor = new THREE.Color(palette.far)
+
+  for (let i = 0; i < count; i++) {
+    const height = position.getY(i)
+    const t = (height - minY) / range
+    const color = farColor
+      .clone()
+      .lerp(nearColor, Math.pow(t, 1.4))
+      .convertSRGBToLinear()
+    colors[i * 3 + 0] = color.r
+    colors[i * 3 + 1] = color.g
+    colors[i * 3 + 2] = color.b
+  }
+
+  geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3))
+  return geometry
+}
+
+function ridgedNoise(x: number, y: number) {
+  let amplitude = 0.55
+  let frequency = 0.55
+  let sum = 0
+
+  for (let octave = 0; octave < 4; octave += 1) {
+    const value = smoothNoise(x * frequency, y * frequency)
+    const ridge = 1 - Math.abs(2 * value - 1)
+    sum += ridge * amplitude
+    frequency *= 2
+    amplitude *= 0.5
+  }
+
+  return sum * sum * 5 - 2.2
+}
+
+function smoothNoise(x: number, y: number) {
+  const x0 = Math.floor(x)
+  const y0 = Math.floor(y)
+  const xf = x - x0
+  const yf = y - y0
+
+  const n00 = randomNoise(x0, y0)
+  const n10 = randomNoise(x0 + 1, y0)
+  const n01 = randomNoise(x0, y0 + 1)
+  const n11 = randomNoise(x0 + 1, y0 + 1)
+
+  const u = fade(xf)
+  const v = fade(yf)
+
+  const nx0 = THREE.MathUtils.lerp(n00, n10, u)
+  const nx1 = THREE.MathUtils.lerp(n01, n11, u)
+  return THREE.MathUtils.lerp(nx0, nx1, v)
+}
+
+function randomNoise(x: number, y: number) {
+  const s = Math.sin(x * 127.1 + y * 311.7) * 43758.5453
+  return s - Math.floor(s)
+}
+
+function fade(t: number) {
+  return t * t * (3 - 2 * t)
+}
+
+function readPalette(): Palette {
+  if (typeof window === 'undefined') {
+    return {
+      bg: '#f6f8fc',
+      fog: '#e4ebf6',
+      near: '#7f90ad',
+      far: '#a9b9d3',
+    }
+  }
+  const styles = getComputedStyle(document.documentElement)
+  const read = (token: string, fallback: string) => {
+    return styles.getPropertyValue(token).trim() || fallback
+  }
+  return {
+    bg: read('--bg', '#0c1420'),
+    fog: read('--fog', '#0d1724'),
+    near: read('--terrainNear', '#354761'),
+    far: read('--terrainFar', '#4e6180'),
+  }
 }

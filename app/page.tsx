@@ -3,13 +3,13 @@ import Link from 'next/link'
 import { Reveal } from '@/components/ui/Reveal'
 import { Magnet } from '@/components/ui/Magnet'
 import { Spotlight } from '@/components/ui/Spotlight'
-import HeroSharlee from '@/components/HeroSharlee'
+import Hero from '@/components/hero/Hero'
 
 export default function HomePage() {
   return (
     <main className="min-h-[100dvh] bg-[var(--bg)] text-[var(--ink)]">
       {/* Centered Sharlee-style hero */}
-      <HeroSharlee />
+      <Hero />
 
       {/* Featured */}
       <section className="relative" id="projects">
@@ -43,8 +43,12 @@ export default function HomePage() {
                       <span className="chip">Data</span>
                       <span className="chip">Snowflake</span>
                     </div>
-                    <h3 className="text-xl font-semibold text-[var(--ink)]">Fraud Analytics (LNRS)</h3>
-                    <p className="mt-2 text-sm text-[var(--muted)]">Snowflake &rarr; Streamlit ROC/KS with narrative.</p>
+                    <h3 className="text-xl font-semibold text-[var(--ink)]">
+                      Fraud Analytics (LNRS)
+                    </h3>
+                    <p className="mt-2 text-sm text-[var(--muted)]">
+                      Snowflake &rarr; Streamlit ROC/KS with narrative.
+                    </p>
                   </div>
                   <div
                     aria-hidden
@@ -73,8 +77,12 @@ export default function HomePage() {
                       <span className="chip">Realtime</span>
                       <span className="chip">UI</span>
                     </div>
-                    <h3 className="text-xl font-semibold text-[var(--ink)]">Typing Webapp</h3>
-                    <p className="mt-2 text-sm text-[var(--muted)]">Realtime metrics, clean UI, AI insights.</p>
+                    <h3 className="text-xl font-semibold text-[var(--ink)]">
+                      Typing Webapp
+                    </h3>
+                    <p className="mt-2 text-sm text-[var(--muted)]">
+                      Realtime metrics, clean UI, AI insights.
+                    </p>
                   </div>
                   <div
                     aria-hidden
@@ -103,8 +111,12 @@ export default function HomePage() {
                       <span className="chip">Community</span>
                       <span className="chip">AR/VR</span>
                     </div>
-                    <h3 className="text-xl font-semibold text-[var(--ink)]">Unity Community (AR/VR)</h3>
-                    <p className="mt-2 text-sm text-[var(--muted)]">Warm, accessible social presence.</p>
+                    <h3 className="text-xl font-semibold text-[var(--ink)]">
+                      Unity Community (AR/VR)
+                    </h3>
+                    <p className="mt-2 text-sm text-[var(--muted)]">
+                      Warm, accessible social presence.
+                    </p>
                   </div>
                   <div
                     aria-hidden
@@ -123,4 +135,3 @@ export default function HomePage() {
     </main>
   )
 }
-

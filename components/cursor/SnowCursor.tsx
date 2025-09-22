@@ -1,312 +1,346 @@
-"use client"
+'use client'
 
-import { useEffect, useMemo, useRef, useState } from 'react'
-import { createParticlePool } from './particlePool'
-import { defaultSettings, type ParticleInit } from './types'
-import { usePrefersReducedMotion } from './usePrefersReducedMotion'
-import { usePointer } from './usePointer'
+import { useEffect, useRef, useState } from 'react'
+import { useTheme } from 'next-themes'
+
+type Particle = {
+  x: number
+  y: number
+  vx: number
+  vy: number
+  life: number
+  ttl: number
+  size: number
+}
+
+const MAX_PARTICLES = 120
+const TWO_PI = Math.PI * 2
 
 export default function SnowCursor() {
-  // SSR/feature guards
-  const isClient = typeof window !== 'undefined'
+  const { resolvedTheme } = useTheme()
   const prefersReduced = usePrefersReducedMotion()
   const [pointerFine, setPointerFine] = useState(false)
 
   useEffect(() => {
-    if (!isClient) return
+    if (typeof window === 'undefined') return
     const mq = window.matchMedia('(pointer: fine)')
-    const set = () => setPointerFine(!!mq.matches)
-    set()
-    mq.addEventListener?.('change', set)
-    return () => mq.removeEventListener?.('change', set)
-  }, [isClient])
+    const update = () => setPointerFine(mq.matches)
+    update()
+    mq.addEventListener('change', update)
+    return () => mq.removeEventListener('change', update)
+  }, [])
 
-  const enabled = isClient && pointerFine
+  const enabled = pointerFine
+  const canvasRef = useRef<HTMLCanvasElement | null>(null)
+  const ringRef = useRef<HTMLDivElement | null>(null)
+  const dotRef = useRef<HTMLDivElement | null>(null)
+  const frameRef = useRef<number | null>(null)
+  const lastTimeRef = useRef<number>(0)
+  const particlesRef = useRef<Particle[]>([])
+  const spawnQueueRef = useRef<{ x: number; y: number; speed: number } | null>(
+    null
+  )
+  const pointerRef = useRef({ x: -100, y: -100, speed: 0, active: false })
+  const colorsRef = useRef(readCursorColors())
+  const [cursorVisible, setCursorVisible] = useState(false)
 
-  // enable global cursor hiding only on client
+  useEffect(() => {
+    if (!enabled) {
+      setCursorVisible(false)
+      toggleCursorAttribute(true)
+    }
+  }, [enabled])
+
+  useEffect(() => {
+    colorsRef.current = readCursorColors()
+  }, [resolvedTheme])
+
   useEffect(() => {
     if (!enabled) return
-    const html = document.documentElement
-    html.setAttribute('data-cursor', 'on')
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Tab') {
-        html.setAttribute('data-cursor', 'disabled')
-      }
-    }
-    window.addEventListener('keydown', onKey)
+    const doc = document.documentElement
+    doc.setAttribute('data-cursor', 'on')
     return () => {
-      window.removeEventListener('keydown', onKey)
-      if (html.getAttribute('data-cursor') === 'on' || html.getAttribute('data-cursor') === 'disabled') {
-        html.removeAttribute('data-cursor')
+      if (doc.getAttribute('data-cursor') === 'on') {
+        doc.removeAttribute('data-cursor')
       }
     }
   }, [enabled])
 
-  // refs for DOM + canvas
-  const rootRef = useRef<HTMLDivElement | null>(null)
-  const canvasRef = useRef<HTMLCanvasElement | null>(null)
-  const ringRef = useRef<HTMLDivElement | null>(null)
-  const fillRef = useRef<HTMLDivElement | null>(null)
-  const dotRef = useRef<HTMLDivElement | null>(null)
-
-  const { x, y, speed, hoveringInteractive, onPointerMove, onPointerDown, onPointerUp } = usePointer()
-  const pointerRef = useRef({ x: -100, y: -100, speed: 0, hovering: false })
-  useEffect(() => {
-    pointerRef.current.x = x
-    pointerRef.current.y = y
-    pointerRef.current.speed = speed
-    pointerRef.current.hovering = hoveringInteractive
-  }, [x, y, speed, hoveringInteractive])
-
-  // Init canvas & pool
-  const pool = useMemo(() => createParticlePool(defaultSettings.maxParticles), [])
-  const rafRef = useRef<number | null>(null)
-  const dprRef = useRef(1)
-  const ctxRef = useRef<CanvasRenderingContext2D | null>(null)
-  const runningRef = useRef(false)
-  const lastTsRef = useRef<number>(0)
-  const carryRef = useRef(0)
-  const hoverBoostRef = useRef(0)
-
-  // Ring/dot smoothing
-  const smoothPos = useRef({ x: -100, y: -100 })
-  const ringRadius = useRef(14)
-
-  // Visibility pause on tab hidden
   useEffect(() => {
     if (!enabled) return
-    const onVis = () => {
-      if (document.hidden) {
-        if (rafRef.current) cancelAnimationFrame(rafRef.current)
-        rafRef.current = null
-        runningRef.current = false
-      } else if (!prefersReduced) {
-        start()
+
+    const handleMove = (event: PointerEvent) => {
+      const { clientX, clientY } = event
+      const dx = clientX - pointerRef.current.x
+      const dy = clientY - pointerRef.current.y
+      const speed = Math.sqrt(dx * dx + dy * dy)
+      pointerRef.current = { x: clientX, y: clientY, speed, active: true }
+
+      const disabled = isInputTarget(event.target as HTMLElement | null)
+      setCursorVisible(!disabled)
+      toggleCursorAttribute(disabled)
+
+      if (!prefersReduced && !disabled) {
+        spawnQueueRef.current = { x: clientX, y: clientY, speed }
       }
     }
-    document.addEventListener('visibilitychange', onVis)
-    return () => document.removeEventListener('visibilitychange', onVis)
+
+    const handleDown = (event: PointerEvent) => {
+      if (prefersReduced) return
+      if (isInputTarget(event.target as HTMLElement | null)) return
+      spawnParticles(particlesRef.current, event.clientX, event.clientY, 90)
+    }
+
+    const handleLeave = () => {
+      pointerRef.current = { x: -100, y: -100, speed: 0, active: false }
+      setCursorVisible(false)
+      toggleCursorAttribute(true)
+    }
+
+    window.addEventListener('pointermove', handleMove)
+    window.addEventListener('pointerdown', handleDown)
+    window.addEventListener('pointerleave', handleLeave)
+
+    return () => {
+      window.removeEventListener('pointermove', handleMove)
+      window.removeEventListener('pointerdown', handleDown)
+      window.removeEventListener('pointerleave', handleLeave)
+    }
   }, [enabled, prefersReduced])
 
-  // Resize handling
   useEffect(() => {
-    if (!enabled || !canvasRef.current) return
+    if (!enabled) return
     const canvas = canvasRef.current
+    if (!canvas) return
+
     const resize = () => {
-      const max = defaultSettings.dprMax
-      const dpr = Math.min(window.devicePixelRatio || 1, max)
-      dprRef.current = dpr
-      const w = Math.floor(window.innerWidth * dpr)
-      const h = Math.floor(window.innerHeight * dpr)
-      if (canvas.width !== w || canvas.height !== h) {
-        canvas.width = w
-        canvas.height = h
+      const dpr = Math.min(window.devicePixelRatio || 1, 2)
+      const width = Math.floor(window.innerWidth * dpr)
+      const height = Math.floor(window.innerHeight * dpr)
+      if (canvas.width !== width || canvas.height !== height) {
+        canvas.width = width
+        canvas.height = height
+        canvas.style.width = '100%'
+        canvas.style.height = '100%'
         const ctx = canvas.getContext('2d')
         if (ctx) {
           ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
-          ctxRef.current = ctx
         }
       }
     }
-    let t: any
-    const onResize = () => {
-      clearTimeout(t)
-      t = setTimeout(resize, 150)
-    }
+
     resize()
-    window.addEventListener('resize', onResize)
-    return () => {
-      window.removeEventListener('resize', onResize)
-      clearTimeout(t)
-    }
+    const handleResize = () => requestAnimationFrame(resize)
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
   }, [enabled])
 
-  // Pointer listeners
   useEffect(() => {
     if (!enabled) return
-    const onMove = (e: PointerEvent) => {
-      onPointerMove(e)
-      const target = e.target as HTMLElement | null
-      const host = target?.closest('button, [role="button"], a, .btn-primary, .btn-secondary') as HTMLElement | null
-      const color = host?.dataset?.cursorFill
-      const opacity = host?.dataset?.cursorFillOpacity
-      if (ringRef.current) {
-        if (color) ringRef.current.style.setProperty('--cursor-fill', color)
-        else ringRef.current.style.removeProperty('--cursor-fill')
-        if (opacity) ringRef.current.style.setProperty('--cursor-fill-opacity', opacity)
-        else ringRef.current.style.removeProperty('--cursor-fill-opacity')
-      }
-    }
-    const onDown = (e: PointerEvent) => {
-      onPointerDown(e)
-      // click burst
-      if (!prefersReduced) spawnBurst(e.clientX, e.clientY)
-      ringRef.current?.classList.add('is-press')
-      setTimeout(() => ringRef.current?.classList.remove('is-press'), 120)
-    }
-    const onUp = (e: PointerEvent) => onPointerUp(e)
-    const onEnter = () => {
-      if (!prefersReduced) start()
-      setVisible(true)
-    }
-    const onLeave = () => {
-      stop()
-      setVisible(false)
-    }
-    window.addEventListener('pointermove', onMove)
-    window.addEventListener('pointerdown', onDown)
-    window.addEventListener('pointerup', onUp)
-    window.addEventListener('pointerenter', onEnter)
-    window.addEventListener('pointerleave', onLeave)
-    // Start initially
-    if (!prefersReduced) start()
-    setVisible(true)
-    return () => {
-      window.removeEventListener('pointermove', onMove)
-      window.removeEventListener('pointerdown', onDown)
-      window.removeEventListener('pointerup', onUp)
-      window.removeEventListener('pointerenter', onEnter)
-      window.removeEventListener('pointerleave', onLeave)
-      stop()
-    }
-  }, [enabled, onPointerMove, onPointerDown, onPointerUp, prefersReduced])
-
-  // Hover boost toggle
-  useEffect(() => {
-    if (hoveringInteractive) {
-      ringRef.current?.classList.add('is-hover')
-      hoverBoostRef.current = 0.18 // transient boost window in seconds; consumed in loop
-    } else {
-      ringRef.current?.classList.remove('is-hover')
-    }
-  }, [hoveringInteractive])
-
-  function setVisible(v: boolean) {
-    const r = ringRef.current
-    const d = dotRef.current
-    if (!r || !d) return
-    r.style.opacity = v ? '1' : '0'
-    d.style.opacity = v ? '1' : '0'
-  }
-
-  function spawnOne(px: number, py: number, spd: number) {
-    const theta = Math.random() * Math.PI * 2
-    const v = Math.min(600, 80 + spd * 0.25) // px/s
-    const vx = Math.cos(theta) * v
-    const vy = Math.sin(theta) * v * 0.35 // bias flatter
-    const init: ParticleInit = {
-      x: px,
-      y: py,
-      vx,
-      vy,
-      size: 1.6 + Math.random() * 2.6,
-      maxLife: 0.6 + Math.random() * 0.6,
-    }
-    pool.spawn(init)
-  }
-
-  function spawnBurst(px: number, py: number) {
-    const n = Math.floor(defaultSettings.clickBurstMin + Math.random() * (defaultSettings.clickBurstMax - defaultSettings.clickBurstMin + 1))
-    for (let i = 0; i < n; i++) spawnOne(px, py, speed)
-  }
-
-  function start() {
-    if (runningRef.current) return
-    runningRef.current = true
-    lastTsRef.current = performance.now()
-    rafRef.current = requestAnimationFrame(loop)
-  }
-  function stop() {
-    runningRef.current = false
-    if (rafRef.current) cancelAnimationFrame(rafRef.current)
-    rafRef.current = null
-  }
-
-  function loop(ts: number) {
-    const ctx = ctxRef.current
     const canvas = canvasRef.current
-    if (!ctx || !canvas) {
-      rafRef.current = requestAnimationFrame(loop)
-      return
-    }
-    const dt = Math.min(0.05, (ts - lastTsRef.current) / 1000)
-    lastTsRef.current = ts
+    if (!canvas) return
+    const ctx = canvas.getContext('2d')
+    if (!ctx) return
 
-    // emission rate
-    const base = defaultSettings.baseRate
-    const cur = pointerRef.current
-    let rate = base + defaultSettings.ratePerSpeed * Math.min(1200, cur.speed)
-    if (hoverBoostRef.current > 0) {
-      rate *= 1.18
-      hoverBoostRef.current -= dt
-    }
-    const want = rate * dt + carryRef.current
-    const spawnCount = Math.floor(want)
-    carryRef.current = want - spawnCount
-    const px = cur.x
-    const py = cur.y
-    for (let i = 0; i < spawnCount; i++) spawnOne(px, py, cur.speed)
+    lastTimeRef.current = performance.now()
 
-    // update pool physics
-    pool.update(dt)
+    const loop = (time: number) => {
+      const dt = Math.min(0.05, (time - lastTimeRef.current) / 1000)
+      lastTimeRef.current = time
 
-    // draw
-    ctx.clearRect(0, 0, canvas.width, canvas.height)
-    const snow = getComputedStyle(document.documentElement).getPropertyValue('--snow').trim() || '#E6EEF6'
-    ctx.fillStyle = snow
-    ctx.strokeStyle = snow
-    ctx.lineWidth = 1
-    pool.forEachAlive((p) => {
-      // alpha and size over life
-      const t = 1 - Math.min(1, p.life / p.maxLife)
-      const r = Math.max(0, p.size * t)
-      const a = Math.max(0, Math.min(1, t * 0.9))
-      ctx.globalAlpha = a
-      if (p.kind === 'flake') {
-        // small rotated plus
-        ctx.save()
-        ctx.translate(p.x, p.y)
-        ctx.rotate(p.spin)
-        ctx.beginPath()
-        ctx.moveTo(-r, 0)
-        ctx.lineTo(r, 0)
-        ctx.moveTo(0, -r)
-        ctx.lineTo(0, r)
-        ctx.stroke()
-        ctx.restore()
-      } else {
-        ctx.beginPath()
-        ctx.arc(p.x, p.y, r * 0.66, 0, Math.PI * 2)
-        ctx.fill()
+      const showParticles = cursorVisible && !prefersReduced
+      if (showParticles && spawnQueueRef.current) {
+        const spawn = spawnQueueRef.current
+        spawnParticles(particlesRef.current, spawn.x, spawn.y, spawn.speed)
+        spawnQueueRef.current = null
       }
-    })
-    ctx.globalAlpha = 1
 
-    // DOM ring/dot smoothing & transform
-    const s = smoothPos.current
-    s.x += (pointerRef.current.x - s.x) * 0.22
-    s.y += (pointerRef.current.y - s.y) * 0.22
-    const r = ringRef.current
-    const d = dotRef.current
-    if (r && d) {
-      const targetRadius = pointerRef.current.hovering ? 18 : 14
-      ringRadius.current += (targetRadius - ringRadius.current) * 0.25
-      r.style.transform = `translate3d(${s.x - ringRadius.current}px, ${s.y - ringRadius.current}px, 0)`
-      r.style.width = `${ringRadius.current * 2}px`
-      r.style.height = `${ringRadius.current * 2}px`
-      d.style.transform = `translate3d(${s.x - 3}px, ${s.y - 3}px, 0)`
+      updateParticles(particlesRef.current, dt, showParticles)
+      drawParticles(
+        ctx,
+        particlesRef.current,
+        showParticles ? colorsRef.current.snow : null
+      )
+      updateCursorSprites(
+        ringRef.current,
+        dotRef.current,
+        pointerRef.current,
+        cursorVisible
+      )
+
+      frameRef.current = requestAnimationFrame(loop)
     }
 
-    if (runningRef.current) rafRef.current = requestAnimationFrame(loop)
-  }
+    frameRef.current = requestAnimationFrame(loop)
+    return () => {
+      if (frameRef.current) cancelAnimationFrame(frameRef.current)
+      frameRef.current = null
+    }
+  }, [enabled, cursorVisible, prefersReduced])
+
+  useEffect(() => {
+    if (!cursorVisible) {
+      updateCursorSprites(
+        ringRef.current,
+        dotRef.current,
+        pointerRef.current,
+        false
+      )
+    }
+  }, [cursorVisible])
 
   return (
-    <div ref={rootRef} data-snow-cursor-root style={{ display: enabled ? 'block' : 'none' }}>
-      <canvas ref={canvasRef} data-snow-canvas />
+    <div
+      data-snow-cursor-root
+      style={{
+        display: enabled ? 'block' : 'none',
+        pointerEvents: 'none',
+        position: 'fixed',
+        inset: 0,
+        zIndex: 1000,
+      }}
+    >
+      <canvas
+        ref={canvasRef}
+        data-snow-canvas
+        style={{ display: !prefersReduced && cursorVisible ? 'block' : 'none' }}
+      />
       <div ref={ringRef} className="cursor-ring">
-        <div ref={fillRef} className="cursor-fill" />
+        <div className="cursor-fill" />
       </div>
       <div ref={dotRef} className="cursor-dot" />
     </div>
   )
+}
+
+function spawnParticles(
+  particles: Particle[],
+  x: number,
+  y: number,
+  speed: number
+) {
+  const count = Math.min(6, 3 + Math.floor(Math.min(speed, 600) / 160))
+  for (let i = 0; i < count; i++) {
+    if (particles.length >= MAX_PARTICLES) particles.shift()
+    const angle = Math.random() * TWO_PI
+    const velocity = 26 + speed * 0.1
+    particles.push({
+      x,
+      y,
+      vx: Math.cos(angle) * velocity,
+      vy: Math.sin(angle) * velocity * 0.45 - 14,
+      life: 0,
+      ttl: 0.45 + Math.random() * 0.3,
+      size: 0.9 + Math.random() * 1.1,
+    })
+  }
+}
+
+function updateParticles(particles: Particle[], dt: number, enabled: boolean) {
+  if (!enabled) {
+    particles.length = 0
+    return
+  }
+
+  for (let i = particles.length - 1; i >= 0; i--) {
+    const p = particles[i]
+    p.life += dt
+    if (p.life >= p.ttl) {
+      particles.splice(i, 1)
+      continue
+    }
+    p.x += p.vx * dt
+    p.y += p.vy * dt
+    p.vy += 30 * dt
+  }
+}
+
+function drawParticles(
+  ctx: CanvasRenderingContext2D,
+  particles: Particle[],
+  color: string | null
+) {
+  ctx.save()
+  ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height)
+  if (!color) {
+    ctx.restore()
+    return
+  }
+  ctx.fillStyle = color
+  particles.forEach((particle) => {
+    const alpha = 1 - particle.life / particle.ttl
+    ctx.globalAlpha = Math.max(0, alpha)
+    ctx.beginPath()
+    ctx.arc(particle.x, particle.y, particle.size, 0, TWO_PI)
+    ctx.fill()
+  })
+  ctx.restore()
+}
+
+function updateCursorSprites(
+  ring: HTMLDivElement | null,
+  dot: HTMLDivElement | null,
+  pointer: { x: number; y: number; active: boolean },
+  visible: boolean
+) {
+  if (!ring || !dot) return
+  if (!visible || !pointer.active) {
+    ring.style.opacity = '0'
+    dot.style.opacity = '0'
+    return
+  }
+
+  ring.style.opacity = '1'
+  dot.style.opacity = '1'
+
+  const smoothing = 0.22
+  const prevX = Number(ring.dataset.x ?? pointer.x)
+  const prevY = Number(ring.dataset.y ?? pointer.y)
+  const nextX = prevX + (pointer.x - prevX) * smoothing
+  const nextY = prevY + (pointer.y - prevY) * smoothing
+  ring.dataset.x = String(nextX)
+  ring.dataset.y = String(nextY)
+
+  ring.style.transform = `translate3d(${nextX - 16}px, ${nextY - 16}px, 0)`
+  dot.style.transform = `translate3d(${pointer.x - 3}px, ${pointer.y - 3}px, 0)`
+}
+
+function toggleCursorAttribute(disabled: boolean) {
+  if (typeof window === 'undefined') return
+  const doc = document.documentElement
+  if (disabled) {
+    doc.setAttribute('data-cursor', 'off')
+  } else {
+    doc.setAttribute('data-cursor', 'on')
+  }
+}
+
+function isInputTarget(target: HTMLElement | null) {
+  if (!target) return false
+  return !!target.closest('input, textarea, select, [contenteditable="true"]')
+}
+
+function readCursorColors() {
+  if (typeof window === 'undefined') {
+    return { ring: '#dce6ff', accent: '#9db8ff', snow: '#e6eef6' }
+  }
+  const styles = getComputedStyle(document.documentElement)
+  return {
+    ring: styles.getPropertyValue('--ink').trim() || '#dce6ff',
+    accent: styles.getPropertyValue('--accent').trim() || '#9db8ff',
+    snow: styles.getPropertyValue('--snow').trim() || '#e6eef6',
+  }
+}
+
+function usePrefersReducedMotion() {
+  const [reduced, setReduced] = useState(false)
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    const mq = window.matchMedia('(prefers-reduced-motion: reduce)')
+    const update = () => setReduced(mq.matches)
+    update()
+    mq.addEventListener('change', update)
+    return () => mq.removeEventListener('change', update)
+  }, [])
+  return reduced
 }

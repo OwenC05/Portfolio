@@ -1,4 +1,3 @@
-
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
@@ -15,6 +14,7 @@ const config: Config = {
         brand: {
           bg: '#0C1420',
           ink: '#DCE6FF',
+          primary: '#9DB8FF',
           accent: '#9DB8FF',
           muted: '#7E8AA6',
         },
@@ -27,4 +27,5 @@ const config: Config = {
   },
   plugins: [],
 }
+
 export default config

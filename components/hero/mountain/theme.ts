@@ -9,20 +9,36 @@ export type ThemeMode = 'light' | 'dark'
 
 const darkTheme: MountainTheme = {
   snow: '#E6EEF6',
-  rockMid: '#5E6672',
-  rockShadow: '#3B414A',
-  fog: '#0C1420',
+  rockMid: '#43526A',
+  rockShadow: '#5A6A84',
+  fog: '#0D1724',
 }
 
 const lightTheme: MountainTheme = {
   snow: '#F5FAFF',
-  rockMid: '#6C7480',
-  rockShadow: '#4A515A',
-  fog: '#E8EEF6',
+  rockMid: '#7586A3',
+  rockShadow: '#9BAAC2',
+  fog: '#E6EDF6',
+}
+
+function readVar(styles: CSSStyleDeclaration | null, name: string, fallback: string) {
+  if (!styles) return fallback
+  const value = styles.getPropertyValue(name)
+  return value ? value.trim() || fallback : fallback
 }
 
 export function getMountainTheme(mode: ThemeMode = 'dark'): MountainTheme {
-  return mode === 'light' ? lightTheme : darkTheme
+  const fallback = mode === 'light' ? lightTheme : darkTheme
+  if (typeof window === 'undefined') {
+    return fallback
+  }
+  const styles = getComputedStyle(document.documentElement)
+  return {
+    snow: readVar(styles, '--snow', fallback.snow),
+    rockMid: readVar(styles, '--terrainNear', fallback.rockMid),
+    rockShadow: readVar(styles, '--terrainFar', fallback.rockShadow),
+    fog: readVar(styles, '--fog', fallback.fog),
+  }
 }
 
 function clamp(v: number, min: number, max: number) {
@@ -51,7 +67,6 @@ export function layerTheme(base: MountainTheme, layer: 'near' | 'mid' | 'far'): 
       fog: tint(base.fog, 10),
     }
   }
-  // far
   return {
     snow: tint(base.snow, 16),
     rockMid: tint(base.rockMid, 18),
@@ -59,4 +74,3 @@ export function layerTheme(base: MountainTheme, layer: 'near' | 'mid' | 'far'): 
     fog: tint(base.fog, 16),
   }
 }
-

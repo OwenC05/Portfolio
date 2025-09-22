@@ -1,9 +1,10 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import "../styles/hero-effects.css";
+@import '../styles/hero-mountain.css';
+@import '../styles/cursor.css';
+@import '../styles/hero-effects.css';
 
 * {
   box-sizing: border-box;
@@ -13,8 +14,8 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body {
-  overflow-y: auto;
+html,
+body {
   overflow-x: clip;
 }
 
@@ -27,15 +28,15 @@ body {
   .btn-primary {
     @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-blue-600 border border-transparent rounded-lg shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-950 transition-colors;
   }
-  
+
   .btn-secondary {
     @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium text-blue-600 bg-white border border-blue-600 rounded-lg shadow-sm hover:bg-blue-50 dark:bg-gray-950 dark:text-blue-400 dark:border-blue-400 dark:hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-950 transition-colors;
   }
-  
+
   .skill-badge {
     @apply px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 border border-gray-200 rounded-full hover:bg-gray-200 dark:text-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-950;
   }
-  
+
   .card {
     @apply bg-white dark:bg-gray-950 border border-gray-200 dark:border-gray-800 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow;
   }
@@ -45,83 +46,96 @@ body {
   .prose {
     @apply max-w-none;
   }
-  
+
   .prose p {
     @apply mb-4;
   }
-  
+
   .prose-lg {
     @apply text-lg leading-relaxed;
   }
 }
 
-/* --- Theme tokens (class-driven) --- */
-/* Default to dark; next-themes toggles .light/.dark on <html> */
-:root,
-:root.dark,
-.dark {
-  --bg:#0C1420; --ink:#DCE6FF; --muted:#7E8AA6; --line:#1A2233; --accent:#9DB8FF;
-  --card:#0F172A; --chip:#0E213B;
-  --three-base:#0f1627; --three-highlight:#1b2438; --three-fog:#0C1420;
-  --snow: #E6EEF6;
-  /* IDE overlay tokens */
-  --ide-bg: color-mix(in oklab, var(--ink) 8%, black);
-  --ide-chrome: color-mix(in oklab, var(--ink) 16%, black);
-  --ide-line: color-mix(in oklab, var(--ink) 30%, transparent);
-  /* BUILD outline token (contrasting stroke for overlapped letters) */
-  --build-outline: color-mix(in oklab, var(--ink) 85%, black);
-}
-
-:root.light,
-.light {
-  --bg:#f7f9fc; --ink:#0f172a; --muted:#475569; --line:#e2e8f0; --accent:#3b82f6;
-  --card:#ffffff; --chip:#eef2f7;
-  --three-base:#f3f6fb; --three-highlight:#e6edf7; --three-fog:#eef2f7;
-  --snow: #AABCD4;
-  /* IDE overlay tokens */
-  --ide-bg: color-mix(in oklab, var(--ink) 6%, white);
-  --ide-chrome: color-mix(in oklab, var(--ink) 10%, white);
-  --ide-line: color-mix(in oklab, var(--ink) 22%, transparent);
-  /* BUILD outline token */
+:root {
+  color-scheme: light;
+  --bg: #f6f8fc;
+  --ink: #101a2c;
+  --accent: #2f6df6;
+  --muted: #4b566a;
+  --glow: #7ea3ff;
+  --snow: #cedbf0;
+  --terrainNear: #7f90ad;
+  --terrainFar: #a9b9d3;
+  --fog: #e4ebf6;
+  --line: rgba(54, 78, 116, 0.16);
+  --card: rgba(255, 255, 255, 0.94);
+  --chip: rgba(226, 235, 250, 0.88);
+  --ring: color-mix(in oklab, var(--accent) 60%, transparent);
   --build-outline: color-mix(in oklab, var(--ink) 85%, white);
 }
 
-/* Hide system cursor when CustomCursor is mounted */
-.cursor-none, .cursor-none * {
-  cursor: none !important;
+:root.dark,
+.dark {
+  color-scheme: dark;
+  --bg: #0c1420;
+  --ink: #dce6ff;
+  --accent: #9db8ff;
+  --muted: #90a0bd;
+  --glow: #b9c9ff;
+  --snow: #e6eef6;
+  --terrainNear: #354761;
+  --terrainFar: #4e6180;
+  --fog: #0d1724;
+  --line: rgba(118, 138, 175, 0.32);
+  --card: rgba(12, 20, 32, 0.92);
+  --chip: rgba(20, 33, 54, 0.9);
+  --ring: color-mix(in oklab, var(--accent) 68%, transparent);
+  --build-outline: color-mix(in oklab, var(--ink) 82%, black);
 }
 
-/* Hide scrollbars but keep scroll functionality */
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
 
-/* (tokens consolidated above) */
+.text-glow {
+  text-shadow: 0 0 22px color-mix(in oklab, var(--glow) 55%, transparent);
+}
 
-/* (legacy duplicate tokens removed) */
+.stroke-1 {
+  color: transparent;
+  -webkit-text-stroke: 1.6px currentColor;
+  -webkit-text-fill-color: transparent;
+}
 
-/* Type scale utilities */
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 0.125rem;
+}
+
 .display-1 {
   font-size: clamp(44px, 8vw, 112px);
   line-height: 1.02;
   letter-spacing: -0.01em;
 }
+
 .display-2 {
   font-size: clamp(36px, 6.2vw, 80px);
   line-height: 1.04;
   letter-spacing: -0.008em;
 }
+
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.18em;
-  opacity: .7;
+  opacity: 0.7;
 }
 
-/* Chips & small UI */
 .chip {
   display: inline-flex;
   align-items: center;
@@ -135,35 +149,16 @@ body {
   border: 1px solid var(--line);
 }
 
-/* Link arrow micro-interaction */
 .link-arrow {
   position: relative;
 }
+
 .link-arrow:hover {
   transform: translateX(2px);
 }
 
-/* Divider utility */
 .divider {
   height: 1px;
   background: var(--line);
   width: 100%;
-}
-/* (duplicate dark/light token blocks removed) */
-
-/* Custom Sharlee hero utilities */
-.text-glow {
-  text-shadow: 0 0 24px rgba(157,184,255,.25);
-}
-
-.stroke-1 {
-  -webkit-text-stroke: 1.5px currentColor;
-  -webkit-text-fill-color: transparent; /* keep fill invisible */
-  color: inherit; /* preserve currentColor for stroke */
-}
-
-a:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
-  border-radius: 0.125rem;
 }

@@ -1,4 +1,4 @@
-"use client"
+'use client'
 
 import { LazyMotion, domAnimation, m } from 'framer-motion'
 import { useEffect, useState } from 'react'
@@ -26,14 +26,14 @@ export default function Headline({ animate, reduced, onComplete }: Props) {
 
   return (
     <div className="text-center">
-      <p className="mb-6 text-xs uppercase tracking-[0.25em] text-brand-muted font-body">
+      <p className="mb-6 text-xs uppercase tracking-[0.25em] text-[color:var(--muted)] font-body">
         OWEN | DATA SCIENCE &times; SOFTWARE ENGINEER
       </p>
 
       <LazyMotion features={domAnimation}>
         <m.h1
           key={animate && !reduced ? 'reveal' : 'static'}
-          className="font-display font-extrabold leading-[0.9] tracking-[0.1em] uppercase text-6xl sm:text-7xl md:text-8xl"
+          className="font-display font-extrabold leading-[0.9] tracking-[0.1em] uppercase text-6xl sm:text-7xl md:text-8xl text-[color:var(--ink)]"
           initial={animate && !reduced ? 'hidden' : undefined}
           animate={animate && !reduced ? 'visible' : undefined}
           variants={
@@ -41,7 +41,10 @@ export default function Headline({ animate, reduced, onComplete }: Props) {
               ? {
                   hidden: {},
                   visible: {
-                    transition: { staggerChildren: stagger, when: 'beforeChildren' },
+                    transition: {
+                      staggerChildren: stagger,
+                      when: 'beforeChildren',
+                    },
                   },
                 }
               : undefined
@@ -55,12 +58,16 @@ export default function Headline({ animate, reduced, onComplete }: Props) {
         >
           {/* ANALYZE */}
           <m.span
-            className="block text-brand-ink text-glow"
-              variants={
-                animate && !reduced
-                  ? {
-                      hidden: { y: 12, opacity: 0 },
-                    visible: { y: 0, opacity: 1, transition: { duration: analyzeDur, ease: 'easeOut' } },
+            className="block text-[color:var(--ink)] text-glow"
+            variants={
+              animate && !reduced
+                ? {
+                    hidden: { y: 12, opacity: 0 },
+                    visible: {
+                      y: 0,
+                      opacity: 1,
+                      transition: { duration: analyzeDur, ease: 'easeOut' },
+                    },
                   }
                 : undefined
             }
@@ -71,12 +78,17 @@ export default function Headline({ animate, reduced, onComplete }: Props) {
           {/* DESIGN + BUILD row */}
           <m.span className="block">
             <m.span
-              className="inline-block stroke-1 text-brand-accent"
+              className="inline-block stroke-1"
+              style={{ color: 'var(--build-outline)' }}
               variants={
                 animate && !reduced
                   ? {
                       hidden: { opacity: 0, y: 12 },
-                      visible: { opacity: 1, y: 0, transition: { duration: designDur, ease: 'easeOut' } },
+                      visible: {
+                        opacity: 1,
+                        y: 0,
+                        transition: { duration: designDur, ease: 'easeOut' },
+                      },
                     }
                   : undefined
               }
@@ -84,7 +96,7 @@ export default function Headline({ animate, reduced, onComplete }: Props) {
               Design
             </m.span>
             <m.span
-              className="ml-3 inline-block text-brand-ink text-glow"
+              className="ml-3 inline-block text-[color:var(--ink)] text-glow"
               variants={
                 animate && !reduced
                   ? {
@@ -94,7 +106,11 @@ export default function Headline({ animate, reduced, onComplete }: Props) {
                         scale: [1, 1.02, 1],
                         transition: {
                           opacity: { duration: 0.2, ease: 'easeOut' },
-                          scale: { type: 'spring', stiffness: 200, damping: 24 },
+                          scale: {
+                            type: 'spring',
+                            stiffness: 200,
+                            damping: 24,
+                          },
                         },
                       },
                     }
@@ -110,7 +126,7 @@ export default function Headline({ animate, reduced, onComplete }: Props) {
       {/* Subline after headline completes */}
       <LazyMotion features={domAnimation}>
         <m.p
-          className="mt-6 text-brand-muted max-w-2xl mx-auto font-body"
+          className="mt-6 text-[color:var(--muted)] max-w-2xl mx-auto font-body"
           initial={animate && !reduced ? { opacity: 0, y: 8 } : undefined}
           animate={
             animate && !reduced
@@ -119,7 +135,15 @@ export default function Headline({ animate, reduced, onComplete }: Props) {
                 : undefined
               : undefined
           }
-          transition={animate && !reduced ? { delay: sublineDelayAfterHeadline, duration: 0.22, ease: 'easeOut' } : undefined}
+          transition={
+            animate && !reduced
+              ? {
+                  delay: sublineDelayAfterHeadline,
+                  duration: 0.22,
+                  ease: 'easeOut',
+                }
+              : undefined
+          }
         >
           I carve lines through messy data
         </m.p>

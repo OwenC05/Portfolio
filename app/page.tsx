@@ -1,8 +1,4 @@
 // install: npm i framer-motion
-import Link from 'next/link'
-import { Reveal } from '@/components/ui/Reveal'
-import { Magnet } from '@/components/ui/Magnet'
-import { Spotlight } from '@/components/ui/Spotlight'
 import Hero from '@/components/hero/Hero'
 
 export default function HomePage() {

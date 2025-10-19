@@ -2,187 +2,128 @@
 
 import { useTheme } from 'next-themes'
 import { Canvas, useThree } from '@react-three/fiber'
-import * as THREE from 'three'
 import { useEffect, useMemo, useState } from 'react'
+import * as THREE from 'three'
 
-type Palette = {
-  bg: string
-  fog: string
-  near: string
-  far: string
-}
+import RidgedTerrain, { type LayerProps } from './mountain/RidgedTerrain'
+import { getMountainTheme, type MountainTheme, type ThemeMode } from './mountain/theme'
 
-const CANVAS_CLASS =
-  'mountainMask pointer-events-none absolute inset-x-0 bottom-0 h-[30vh] md:h-[32vh] xl:h-[36vh]'
+const LAYER_DEPTHS = {
+  far: -28,
+  mid: -18,
+  near: -10,
+} as const
+
+const BAND_DROP = 12
 
 export default function MountainBand() {
   const { resolvedTheme } = useTheme()
-  const [palette, setPalette] = useState<Palette>(() => readPalette())
+  const [mode, setMode] = useState<ThemeMode>('dark')
 
   useEffect(() => {
-    setPalette(readPalette())
+    setMode(resolvedTheme === 'light' ? 'light' : 'dark')
   }, [resolvedTheme])
 
+  const theme = useMemo(() => getMountainTheme(mode), [mode])
+
   return (
-    <div className={CANVAS_CLASS}>
-      <Canvas
-        dpr={[1, 2]}
-        frameloop="demand"
-        camera={{ position: [0, 9, 22], fov: 35 }}
-        gl={{ antialias: true, powerPreference: 'high-performance' }}
-        style={{ pointerEvents: 'none' }}
-      >
-        <Scene palette={palette} />
-      </Canvas>
-    </div>
+    <Canvas
+      className="w-full h-full"
+      dpr={[1, 2]}
+      camera={{ position: [0, 10, 34], fov: 42, near: 0.1, far: 160 }}
+      gl={{ antialias: true, alpha: true, powerPreference: 'high-performance' }}
+      style={{ pointerEvents: 'none' }}
+    >
+      <MountainScene theme={theme} />
+    </Canvas>
   )
 }
 
-function Scene({ palette }: { palette: Palette }) {
-  const { gl, scene, invalidate } = useThree()
-  const geometry = useMemo(() => createTerrainGeometry(palette), [palette])
+function MountainScene({ theme }: { theme: MountainTheme }) {
+  const { gl, scene, camera, viewport, size } = useThree()
 
   useEffect(() => {
-    const clear = new THREE.Color(palette.bg)
-    gl.setClearColor(clear, 0)
+    gl.setClearColor(new THREE.Color(theme.fog), 0)
+    scene.fog = new THREE.Fog(theme.fog, 12, 140)
+  }, [gl, scene, theme.fog])
 
-    if (scene.fog instanceof THREE.Fog) {
-      scene.fog.color.set(palette.fog)
-      scene.fog.near = 12
-      scene.fog.far = 52
-    } else {
-      scene.fog = new THREE.Fog(palette.fog, 12, 52)
+  const layers = useMemo<[LayerProps, LayerProps, LayerProps]>(() => {
+    const viewportKey = size.width + size.height
+    const computeWidth = (depth: number) => {
+      void viewportKey
+      return viewport.getCurrentViewport(camera, [0, 0, depth]).width * 1.18
     }
 
-    invalidate()
-  }, [palette, gl, scene, invalidate])
+    const farWidth = ensureWidth(computeWidth(LAYER_DEPTHS.far), 160)
+    const midWidth = ensureWidth(computeWidth(LAYER_DEPTHS.mid), 140)
+    const nearWidth = ensureWidth(computeWidth(LAYER_DEPTHS.near), 120)
 
-  useEffect(() => {
-    invalidate()
-  }, [geometry, invalidate])
+    return [
+      {
+        width: farWidth,
+        depth: 140,
+        segX: 360,
+        segZ: 64,
+        amp: 22,
+        terraceSteps: 5,
+        seed: 11,
+        scaleX: 0.006,
+        scaleZ: 0.01,
+        wind: 0.004,
+        xScale: 1.05,
+        yOffset: -BAND_DROP - 3.2,
+        zOffset: LAYER_DEPTHS.far,
+        fogStrength: 0.35,
+      },
+      {
+        width: midWidth,
+        depth: 120,
+        segX: 340,
+        segZ: 60,
+        amp: 32,
+        terraceSteps: 6,
+        seed: 19,
+        scaleX: 0.0085,
+        scaleZ: 0.014,
+        wind: 0.006,
+        xScale: 1.02,
+        yOffset: -BAND_DROP + 0.6,
+        zOffset: LAYER_DEPTHS.mid,
+        fogStrength: 0.52,
+      },
+      {
+        width: nearWidth,
+        depth: 96,
+        segX: 320,
+        segZ: 56,
+        amp: 44,
+        terraceSteps: 8,
+        seed: 31,
+        scaleX: 0.011,
+        scaleZ: 0.018,
+        wind: 0.008,
+        xScale: 1,
+        yOffset: -BAND_DROP + 3.2,
+        zOffset: LAYER_DEPTHS.near,
+        fogStrength: 0.72,
+      },
+    ] as [LayerProps, LayerProps, LayerProps]
+  }, [camera, viewport, size.width, size.height])
 
   return (
-    <>
-      <ambientLight intensity={0.5} />
-      <directionalLight position={[-3, 5, 3]} intensity={1.2} />
-      <fog attach="fog" args={[palette.fog, 12, 52]} />
-
-      <mesh geometry={geometry} position={[0, -1.8, -4]}>
-        <meshStandardMaterial
-          vertexColors
-          flatShading
-          roughness={0.9}
-          metalness={0.08}
-        />
-      </mesh>
-    </>
+    <group>
+      <ambientLight intensity={0.72} />
+      <directionalLight position={[4, 6, 3]} intensity={1.08} />
+      <RidgedTerrain theme={theme} time={0.0} wind={0.0} layers={layers} />
+    </group>
   )
 }
 
-function createTerrainGeometry(palette: Palette) {
-  const geometry = new THREE.PlaneGeometry(36, 22, 180, 60)
-  geometry.rotateX(-Math.PI / 2)
-
-  const position = geometry.attributes.position as THREE.BufferAttribute
-  const count = position.count
-  const colors = new Float32Array(count * 3)
-
-  let minY = Number.POSITIVE_INFINITY
-  let maxY = Number.NEGATIVE_INFINITY
-
-  for (let i = 0; i < count; i++) {
-    const x = position.getX(i)
-    const z = position.getZ(i)
-    const height = ridgedNoise(x * 0.12, z * 0.18)
-    position.setY(i, height)
-    if (height < minY) minY = height
-    if (height > maxY) maxY = height
+function ensureWidth(width: number, fallback: number) {
+  if (Number.isFinite(width) && width > 0) {
+    return width
   }
-
-  position.needsUpdate = true
-  geometry.computeVertexNormals()
-
-  const range = Math.max(0.0001, maxY - minY)
-  const nearColor = new THREE.Color(palette.near)
-  const farColor = new THREE.Color(palette.far)
-
-  for (let i = 0; i < count; i++) {
-    const height = position.getY(i)
-    const t = (height - minY) / range
-    const color = farColor
-      .clone()
-      .lerp(nearColor, Math.pow(t, 1.4))
-      .convertSRGBToLinear()
-    colors[i * 3 + 0] = color.r
-    colors[i * 3 + 1] = color.g
-    colors[i * 3 + 2] = color.b
-  }
-
-  geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3))
-  return geometry
+  return fallback
 }
 
-function ridgedNoise(x: number, y: number) {
-  let amplitude = 0.55
-  let frequency = 0.55
-  let sum = 0
 
-  for (let octave = 0; octave < 4; octave += 1) {
-    const value = smoothNoise(x * frequency, y * frequency)
-    const ridge = 1 - Math.abs(2 * value - 1)
-    sum += ridge * amplitude
-    frequency *= 2
-    amplitude *= 0.5
-  }
-
-  return sum * sum * 5 - 2.2
-}
-
-function smoothNoise(x: number, y: number) {
-  const x0 = Math.floor(x)
-  const y0 = Math.floor(y)
-  const xf = x - x0
-  const yf = y - y0
-
-  const n00 = randomNoise(x0, y0)
-  const n10 = randomNoise(x0 + 1, y0)
-  const n01 = randomNoise(x0, y0 + 1)
-  const n11 = randomNoise(x0 + 1, y0 + 1)
-
-  const u = fade(xf)
-  const v = fade(yf)
-
-  const nx0 = THREE.MathUtils.lerp(n00, n10, u)
-  const nx1 = THREE.MathUtils.lerp(n01, n11, u)
-  return THREE.MathUtils.lerp(nx0, nx1, v)
-}
-
-function randomNoise(x: number, y: number) {
-  const s = Math.sin(x * 127.1 + y * 311.7) * 43758.5453
-  return s - Math.floor(s)
-}
-
-function fade(t: number) {
-  return t * t * (3 - 2 * t)
-}
-
-function readPalette(): Palette {
-  if (typeof window === 'undefined') {
-    return {
-      bg: '#f6f8fc',
-      fog: '#e4ebf6',
-      near: '#7f90ad',
-      far: '#a9b9d3',
-    }
-  }
-  const styles = getComputedStyle(document.documentElement)
-  const read = (token: string, fallback: string) => {
-    return styles.getPropertyValue(token).trim() || fallback
-  }
-  return {
-    bg: read('--bg', '#0c1420'),
-    fog: read('--fog', '#0d1724'),
-    near: read('--terrainNear', '#354761'),
-    far: read('--terrainFar', '#4e6180'),
-  }
-}

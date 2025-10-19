@@ -162,3 +162,30 @@ a:focus-visible {
   background: var(--line);
   width: 100%;
 }
+html,
+body,
+a,
+button,
+[role="button"],
+input,
+textarea,
+select {
+  cursor: none !important;
+}
+
+@media (pointer: coarse), (prefers-reduced-motion: reduce) {
+  html,
+  body,
+  a,
+  button,
+  [role="button"],
+  input,
+  textarea,
+  select {
+    cursor: auto !important;
+  }
+  .cursor-dot,
+  .cursor-lead {
+    display: none !important;
+  }
+}

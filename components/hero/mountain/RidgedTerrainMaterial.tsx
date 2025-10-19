@@ -59,10 +59,11 @@ const VERT = /* glsl */`
   }
   void main(){
     vec3 pos = position;
-    vec2 p = vec2(pos.x * uScaleX, pos.z * uScaleZ + uTime * uWind);
+    float baseY = pos.y;
+    vec2 p = vec2(pos.x * uScaleX, baseY * uScaleZ + uTime * uWind);
     float h = fbmRidged(p);
     float ht = terrace(h, uTerraceSteps);
-    pos.y += ht * uAmp;
+    pos.y = baseY + ht * uAmp;
     vHeight = ht;
     vec4 wp = modelMatrix * vec4(pos, 1.0);
     vWorldPos = wp.xyz;
@@ -171,3 +172,4 @@ export default memo(function RidgedTerrainMaterial({
     />
   )
 })
+

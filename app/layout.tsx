@@ -20,7 +20,7 @@ const outfit = Outfit({
   display: 'swap',
 })
 
-const SnowCursor = dynamic(() => import('@/components/cursor/SnowCursor'), {
+const Cursor = dynamic(() => import('@/components/Cursor'), {
   ssr: false,
 })
 
@@ -44,7 +44,7 @@ export default function RootLayout({
         className={`no-scrollbar antialiased bg-[var(--bg)] text-[var(--ink)] overflow-x-clip`}
       >
         <Providers>
-          <SnowCursor />
+          <Cursor />
           {children}
           <div className="grain-overlay" aria-hidden />
         </Providers>

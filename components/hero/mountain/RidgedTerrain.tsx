@@ -10,6 +10,9 @@ export type LayerProps = {
   amp: number
   terraceSteps: number
   seed: number
+  scaleX?: number
+  scaleZ?: number
+  wind?: number
   xScale?: number
   yOffset?: number
   zOffset: number
@@ -41,7 +44,9 @@ export default memo(function RidgedTerrain({ theme, time, wind, layers, debug = 
                 uTerraceSteps={L.terraceSteps}
                 uSeed={L.seed}
                 uTime={time}
-                uWind={wind}
+                uWind={L.wind ?? wind}
+                uScaleX={L.scaleX ?? 0.012}
+                uScaleZ={L.scaleZ ?? 0.026}
                 uSnow={theme.snow}
                 uRockMid={theme.rockMid}
                 uRockShadow={theme.rockShadow}

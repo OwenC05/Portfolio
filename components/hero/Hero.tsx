@@ -35,7 +35,7 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative min-h-[100svh] overflow-hidden bg-[var(--bg)] text-[var(--ink)]">
+    <section className="relative isolate min-h-[70vh] overflow-visible bg-[var(--bg)] text-[var(--ink)]">
       <div className="absolute right-6 top-6 z-20">
         <ThemeToggle />
       </div>
@@ -67,9 +67,20 @@ export default function Hero() {
           />
         </m.div>
       </LazyMotion>
-      <Suspense fallback={<div className="h-[30vh]" aria-hidden />}>
-        <MountainBand />
+      <Suspense
+        fallback={
+          <div
+            className="pointer-events-none absolute inset-x-0 bottom-0 w-screen h-[clamp(240px,30vh,460px)]"
+            aria-hidden
+          />
+        }
+      >
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 w-screen h-[clamp(240px,30vh,460px)]">
+          <MountainBand />
+        </div>
       </Suspense>
     </section>
   )
 }
+
+

@@ -1,6 +1,6 @@
 # Owen Cheung Portfolio
 
-A modern portfolio website built with Next.js 14, TypeScript, and Tailwind CSS.
+Portfolio website built with Next.js 14, TypeScript, and Tailwind CSS.
 
 ## Tech Stack
 

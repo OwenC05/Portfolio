@@ -4,6 +4,7 @@ import '../styles/grain.css'
 import CursorMount from '@/components/CursorMount'
 import { Providers } from './providers'
 import { Inter, Space_Grotesk, Space_Mono } from 'next/font/google'
+import { siteUrl } from '@/lib/siteUrl'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -23,9 +24,24 @@ const spaceMono = Space_Mono({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: 'Owen Cheung — Applied AI · Snowboard Portfolio',
   description:
     'Snowboard down the slope to explore the work of Owen Cheung — applied AI at LexisNexis, CS & AI at Bath.',
+  openGraph: {
+    type: 'website',
+    siteName: 'Owen Cheung',
+    url: '/',
+    title: 'Owen Cheung — Applied AI · Snowboard Portfolio',
+    description:
+      'Snowboard down the slope to explore the work of Owen Cheung — applied AI at LexisNexis, CS & AI at Bath.',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Owen Cheung — Applied AI · Snowboard Portfolio',
+    description:
+      'Snowboard down the slope to explore the work of Owen Cheung — applied AI at LexisNexis, CS & AI at Bath.',
+  },
 }
 
 export default function RootLayout({

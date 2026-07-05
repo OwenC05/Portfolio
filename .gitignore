@@ -9,3 +9,11 @@ node_modules/
 # env & misc
 .env*
 .DS_Store
+
+# tooling & agent dirs
+.claude/
+.omc/
+.codegraph/
+.mcp.json
+data/
+*.log

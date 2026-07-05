@@ -107,6 +107,9 @@ export default function RunStage() {
               <a className="chip-link" href={`mailto:${contact.email}`}>
                 Email
               </a>
+              <a className="chip-link" href={contact.github} target="_blank" rel="noreferrer">
+                GitHub
+              </a>
               <a className="chip-link" href={contact.linkedin} target="_blank" rel="noreferrer">
                 LinkedIn
               </a>

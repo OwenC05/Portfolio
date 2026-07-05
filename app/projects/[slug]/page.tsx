@@ -85,26 +85,28 @@ export default async function CaseStudy({
           </div>
         </section>
 
-        <section className="mt-10 border-t border-[var(--line)] pt-6">
-          {p.confidential ? (
-            <p className="text-sm text-[var(--muted)]">
-              Internal work — happy to talk through the approach and results in more depth.
-            </p>
-          ) : (
-            <div className="flex flex-wrap gap-2.5">
-              {p.liveUrl && (
-                <a className="chip-link" href={p.liveUrl} target="_blank" rel="noreferrer">
-                  Live ↗
-                </a>
-              )}
-              {p.repoUrl && (
-                <a className="chip-link" href={p.repoUrl} target="_blank" rel="noreferrer">
-                  GitHub ↗
-                </a>
-              )}
-            </div>
-          )}
-        </section>
+        {(p.confidential || p.liveUrl || p.repoUrl) && (
+          <section className="mt-10 border-t border-[var(--line)] pt-6">
+            {p.confidential ? (
+              <p className="text-sm text-[var(--muted)]">
+                Internal work — happy to talk through the approach and results in more depth.
+              </p>
+            ) : (
+              <div className="flex flex-wrap gap-2.5">
+                {p.liveUrl && (
+                  <a className="chip-link" href={p.liveUrl} target="_blank" rel="noreferrer">
+                    Live ↗
+                  </a>
+                )}
+                {p.repoUrl && (
+                  <a className="chip-link" href={p.repoUrl} target="_blank" rel="noreferrer">
+                    GitHub ↗
+                  </a>
+                )}
+              </div>
+            )}
+          </section>
+        )}
       </article>
     </main>
   )

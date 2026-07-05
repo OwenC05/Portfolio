@@ -9,6 +9,7 @@ export const site = {
   tagline: 'I build systems that learn — and ride mountains for the rest.',
   intro:
     'Computer Science & AI at the University of Bath, on placement turning risk-analytics research into applied AI. Heading for AI research and engineering.',
+  coords: 'BATH · 51.38°N',
 }
 
 export const contact = {
@@ -17,7 +18,8 @@ export const contact = {
   githubHandle: 'OwenC05',
   linkedin: 'https://www.linkedin.com/in/owencheungcs/',
   linkedinHandle: 'owencheungcs',
-  cvUrl: '/owen-cheung-cv.pdf', // reserved — file to be uploaded
+  cvUrl: undefined as string | undefined, // no public CV yet — chip auto-appears when a PDF path is set
+  blurb: 'Building toward AI research & engineering. Always up for a good problem — or a good run.',
 }
 
 export type ExperienceItem = {
@@ -39,7 +41,7 @@ export const about = {
   bio: [
     "I'm Owen — a Computer Science & AI student at the University of Bath, currently on placement as a Data Scientist at LexisNexis Risk Solutions, where the work turned toward applied AI research.",
     'I care about systems that learn: representation learning, embeddings with the right geometry, and agentic systems that do real work. I’m heading toward AI research and engineering.',
-    'Away from the screen I snowboard with Bath Snowsports, pull a lot of espresso, and build mechanical keyboards — which is how I ended up typing at ~180 wpm (and building TypeForge).',
+    'Away from the screen I snowboard with Bath Snowsports, pull a lot of espresso, and build mechanical keyboards — which is how I ended up typing at ~180 wpm (and designing TypeForge).',
   ],
   experience: [
     {

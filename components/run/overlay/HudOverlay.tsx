@@ -22,7 +22,7 @@ export default function HudOverlay() {
           {site.name}
         </Link>
         <div className="font-mono text-[10px] tracking-[0.22em] text-[var(--muted)]">
-          BATH · 51.38°N
+          {site.coords}
         </div>
       </div>
 

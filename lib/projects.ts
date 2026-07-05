@@ -79,23 +79,22 @@ export const projects: Project[] = [
     id: 'typeforge',
     slug: 'typeforge',
     title: 'TypeForge',
-    tagline: 'Typing practice that adapts to you.',
+    tagline: 'A typing trainer for the transitions you fumble.',
     blurb:
-      'A typing trainer with real-time analytics and AI drills that target the keys and patterns you actually fumble.',
+      'A typing trainer designed around precise keystroke timing and your costliest letter-transitions — currently in design, instrument-first.',
     grade: 'black',
     lane: 'research',
     z: 38,
-    year: '2025 — present',
+    year: '2025 · in design',
     role: 'Solo build',
-    stack: ['React', 'Node.js', 'TypeScript', 'Real-time analytics'],
+    stack: ['React', 'Node.js', 'TypeScript', 'Keystroke timing'],
     summary:
-      'A typing-speed trainer with real-time analytics on cadence, keystrokes and accuracy, plus AI-driven drills that adapt to the patterns you fumble. I built it because I type at ~180 wpm and wanted practice that targets the gaps instead of drilling what I already know.',
+      'TypeForge is a typing trainer I am designing instrument-first: a validated sub-millisecond keystroke instrument (dwell + flight timing), a frequency-weighted ranking of the letter-transitions that actually cost you, and drills built from real text. The plan is exactly one model — per-bigram empirical-Bayes shrinkage — evaluated offline against a heuristic baseline and reported honestly, win or lose. It comes from building mechanical keyboards and typing at ~180 wpm, wanting practice that targets the gaps rather than what I already know. Today it is in design: the spec is written, the product is not built yet.',
     highlights: [
-      'Real-time analytics on cadence, keystroke timing and accuracy.',
-      'Adaptive AI drills generated from your individual weak spots.',
+      'Design goal: a validated sub-millisecond keystroke instrument measuring dwell + flight time per transition.',
+      'Planned model: per-bigram empirical-Bayes shrinkage, evaluated offline against a heuristic baseline — reported honestly even if it loses.',
       'Born from a keyboard-builder obsession with input mechanics.',
     ],
-    repoUrl: 'https://github.com/OwenC05',
   },
   {
     id: 'sortify',
@@ -117,7 +116,6 @@ export const projects: Project[] = [
       'Personalised recommendations from listening signals.',
       'Python backend against the Spotify Web API.',
     ],
-    repoUrl: 'https://github.com/OwenC05',
   },
   {
     id: 'knowtrients',
@@ -139,7 +137,6 @@ export const projects: Project[] = [
       'Team of 8 on a real Scrum cadence.',
       '20+ pilot users through stakeholder testing.',
     ],
-    repoUrl: 'https://github.com/OwenC05',
   },
   {
     id: 'dishd',

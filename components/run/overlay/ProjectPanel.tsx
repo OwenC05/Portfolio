@@ -112,7 +112,7 @@ export default function ProjectPanel() {
                   Let’s talk
                 </h2>
                 <p className="mt-3 text-sm leading-relaxed text-[var(--muted)]">
-                  Building toward AI research & engineering. Always up for a good problem — or a good run.
+                  {contact.blurb}
                 </p>
                 <div className="mt-5 flex flex-wrap gap-2.5">
                   <a className="chip-link" href={`mailto:${contact.email}`}>
@@ -124,9 +124,11 @@ export default function ProjectPanel() {
                   <a className="chip-link" href={contact.linkedin} target="_blank" rel="noreferrer">
                     LinkedIn
                   </a>
-                  <a className="chip-link" href={contact.cvUrl} target="_blank" rel="noreferrer">
-                    CV
-                  </a>
+                  {contact.cvUrl && (
+                    <a className="chip-link" href={contact.cvUrl} target="_blank" rel="noreferrer">
+                      CV
+                    </a>
+                  )}
                 </div>
                 <div className="mt-6">
                   <button

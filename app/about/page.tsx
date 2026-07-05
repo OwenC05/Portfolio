@@ -152,9 +152,11 @@ export default function AboutPage() {
             <a className="chip-link" href={contact.linkedin} target="_blank" rel="noreferrer">
               LinkedIn
             </a>
-            <a className="chip-link" href={contact.cvUrl} target="_blank" rel="noreferrer">
-              CV
-            </a>
+            {contact.cvUrl && (
+              <a className="chip-link" href={contact.cvUrl} target="_blank" rel="noreferrer">
+                CV
+              </a>
+            )}
           </div>
         </section>
       </div>

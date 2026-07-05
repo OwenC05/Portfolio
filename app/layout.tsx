@@ -1,32 +1,31 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import '../styles/projects.css'
 import '../styles/grain.css'
-import '../styles/hero-mountain.css'
-import '../styles/three.css'
-import '../styles/cursor.css'
-import dynamic from 'next/dynamic'
+import CursorMount from '@/components/CursorMount'
 import { Providers } from './providers'
-import { Inter, Outfit } from 'next/font/google'
+import { Inter, Space_Grotesk, Space_Mono } from 'next/font/google'
 
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
   display: 'swap',
 })
-const outfit = Outfit({
+const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
-  variable: '--font-outfit',
+  variable: '--font-space-grotesk',
+  display: 'swap',
+})
+const spaceMono = Space_Mono({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-space-mono',
   display: 'swap',
 })
 
-const Cursor = dynamic(() => import('@/components/Cursor'), {
-  ssr: false,
-})
-
 export const metadata: Metadata = {
-  title: 'Owen Cheung',
-  description: 'Personal portfolio',
+  title: 'Owen Cheung — Applied AI · Snowboard Portfolio',
+  description:
+    'Snowboard down the slope to explore the work of Owen Cheung — applied AI at LexisNexis, CS & AI at Bath.',
 }
 
 export default function RootLayout({
@@ -38,13 +37,13 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${inter.variable} ${outfit.variable}`}
+      className={`${inter.variable} ${spaceGrotesk.variable} ${spaceMono.variable}`}
     >
       <body
         className={`no-scrollbar antialiased bg-[var(--bg)] text-[var(--ink)] overflow-x-clip`}
       >
         <Providers>
-          <Cursor />
+          <CursorMount />
           {children}
           <div className="grain-overlay" aria-hidden />
         </Providers>

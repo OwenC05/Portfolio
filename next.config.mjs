@@ -1,18 +1,14 @@
 
+import { fileURLToPath } from 'node:url'
+import { dirname } from 'node:path'
+
+const root = dirname(fileURLToPath(import.meta.url))
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    typedRoutes: true,
-  },
-  // Enable async WebAssembly so libraries like @react-three/rapier
-  // can load their WASM modules correctly in the browser.
-  webpack: (config) => {
-    config.experiments = {
-      ...config.experiments,
-      asyncWebAssembly: true,
-    }
-    return config
-  },
+  typedRoutes: true, // stable / top-level in Next 16
+  transpilePackages: ['three'], // three.js interop under Turbopack
+  turbopack: { root }, // pin workspace root (a stray ~/pnpm-lock.yaml confuses inference)
 }
 
 export default nextConfig

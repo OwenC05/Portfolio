@@ -1,65 +1,111 @@
-'use client'
-
+import type { Metadata } from 'next'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
-import { projectTree } from '../data'
-import { indexBySlug } from '@/lib/tree'
-import { motion, useAnimation, useReducedMotion } from 'framer-motion'
+import { notFound } from 'next/navigation'
+import { projects, getProject } from '@/lib/projects'
+import { gradeColor } from '@/lib/theme'
 
-export default function ProjectDetail({ params }: { params: { slug: string } }) {
-  const map = indexBySlug(projectTree)
-  const node = map[params.slug]
+const GLYPH = { green: '●', blue: '■', black: '◆' } as const
+const GRADE_LABEL = { green: 'Green run', blue: 'Blue run', black: 'Black diamond' } as const
 
-  const router = useRouter()
-  const controls = useAnimation()
-  const prefersReduced = useReducedMotion()
+export function generateStaticParams() {
+  return projects.map((p) => ({ slug: p.slug }))
+}
 
-  const handleReturn = async () => {
-    if (prefersReduced) {
-      router.push('/projects')
-      return
-    }
-    await controls.start({ opacity: 0, transition: { duration: 0.4, ease: 'easeInOut' } })
-    router.push('/projects')
-  }
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}): Promise<Metadata> {
+  const { slug } = await params
+  const p = getProject(slug)
+  return p
+    ? { title: `${p.title} — Owen Cheung`, description: p.blurb }
+    : { title: 'Project — Owen Cheung' }
+}
 
-  if (!node) {
-    return (
-      <div className="p-8">
-        <p>Project not found.</p>
-        <Link href="/projects" className="text-sky-600 underline">
-          Back
-        </Link>
-      </div>
-    )
-  }
+export default async function CaseStudy({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}) {
+  const { slug } = await params
+  const p = getProject(slug)
+  if (!p) notFound()
 
   return (
-    <motion.div
-      initial={{ opacity: 1 }}
-      animate={controls}
-      className="relative p-8 max-w-2xl mx-auto"
-    >
-      <button
-        onClick={handleReturn}
-        aria-label="Back to Projects"
-        className="absolute top-4 left-4 rounded-full bg-white/80 backdrop-blur shadow-lg border border-white/40 px-4 py-2 text-sm text-sky-700 hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500"
-      >
-        ← Back to Projects
-      </button>
+    <main className="min-h-[100dvh] bg-[var(--bg)] text-[var(--ink)]">
+      <article className="mx-auto max-w-2xl px-6 py-16 sm:py-24">
+        <nav className="flex items-center gap-5 font-mono text-[11px] tracking-[0.18em] text-[var(--muted)]">
+          <Link href="/" className="transition hover:text-[var(--ink)]">
+            ↑ BACK TO THE RUN
+          </Link>
+          <Link href="/projects" className="transition hover:text-[var(--ink)]">
+            TRAIL MAP
+          </Link>
+        </nav>
 
-      <h1 className="mt-12 text-3xl font-bold">{node.title}</h1>
-      <p className="mt-4 text-gray-700">{node.blurb}</p>
-      <div className="mt-4 flex flex-wrap gap-2">
-        {node.tags.map((t) => (
-          <span key={t} className="px-2 py-1 rounded bg-sky-100 text-sky-700 text-sm">
-            {t}
-          </span>
-        ))}
-      </div>
-      <Link href="/projects" className="mt-8 inline-block text-sky-600 underline">
-        Back to Projects
-      </Link>
-    </motion.div>
+        <header className="mt-10">
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-1 font-mono text-[11px] tracking-[0.18em]">
+            <span style={{ color: gradeColor[p.grade] }}>
+              {GLYPH[p.grade]} {GRADE_LABEL[p.grade].toUpperCase()}
+            </span>
+            <span className="text-[var(--muted)]">{p.year}</span>
+            {p.role && <span className="text-[var(--muted)]">{p.role}</span>}
+          </div>
+          <h1 className="mt-4 font-display text-4xl font-semibold tracking-tight sm:text-5xl">
+            {p.title}
+          </h1>
+          <p className="mt-3 text-xl text-[var(--accent)]">{p.tagline}</p>
+        </header>
+
+        <p className="mt-8 text-[17px] leading-relaxed text-[var(--ink)]/90">{p.summary}</p>
+
+        <section className="mt-10">
+          <h2 className="font-mono text-[11px] tracking-[0.22em] text-[var(--muted)]">HIGHLIGHTS</h2>
+          <ul className="mt-4 space-y-3">
+            {p.highlights.map((h) => (
+              <li key={h} className="flex gap-3 text-[15px] leading-relaxed text-[var(--ink)]/90">
+                <span aria-hidden style={{ color: gradeColor[p.grade] }}>
+                  ›
+                </span>
+                <span>{h}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="mt-10">
+          <h2 className="font-mono text-[11px] tracking-[0.22em] text-[var(--muted)]">STACK</h2>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {p.stack.map((t) => (
+              <span key={t} className="chip">
+                {t}
+              </span>
+            ))}
+          </div>
+        </section>
+
+        <section className="mt-10 border-t border-[var(--line)] pt-6">
+          {p.confidential ? (
+            <p className="text-sm text-[var(--muted)]">
+              Internal work — happy to talk through the approach and results in more depth.
+            </p>
+          ) : (
+            <div className="flex flex-wrap gap-2.5">
+              {p.liveUrl && (
+                <a className="chip-link" href={p.liveUrl} target="_blank" rel="noreferrer">
+                  Live ↗
+                </a>
+              )}
+              {p.repoUrl && (
+                <a className="chip-link" href={p.repoUrl} target="_blank" rel="noreferrer">
+                  GitHub ↗
+                </a>
+              )}
+            </div>
+          )}
+        </section>
+      </article>
+    </main>
   )
 }

@@ -1,8 +1,0 @@
-/* Overlay utilities for hero keyword effects */
-.effect-layer { position:absolute; inset:-12px; pointer-events:none; z-index:2; contain:layout paint; }
-.effect-grid { mix-blend-mode:soft-light; }
-.effect-muted { opacity:.6; }
-
-/* Ensure the overlay never captures pointer events */
-.effect-layer * { pointer-events:none; }
-

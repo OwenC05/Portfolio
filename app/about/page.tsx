@@ -1,116 +1,163 @@
-import { Reveal } from '@/components/ui/Reveal'
+import type { Metadata } from 'next'
+import Link from 'next/link'
+import { about, contact, site } from '@/lib/content'
+
+export const metadata: Metadata = {
+  title: 'About — Owen Cheung',
+  description: site.intro,
+}
 
 export default function AboutPage() {
   return (
     <main className="min-h-[100dvh] bg-[var(--bg)] text-[var(--ink)]">
-      <div className="grain-overlay" aria-hidden />
+      <div className="mx-auto max-w-3xl px-6 py-16 sm:py-24">
+        <nav className="flex items-center gap-5 font-mono text-[11px] tracking-[0.18em] text-[var(--muted)]">
+          <Link href="/" className="transition hover:text-[var(--ink)]">
+            ↑ BACK TO THE RUN
+          </Link>
+          <Link href="/projects" className="transition hover:text-[var(--ink)]">
+            TRAIL MAP
+          </Link>
+        </nav>
 
-      <section className="mx-auto max-w-6xl px-6 pt-28 pb-12">
-        <Reveal>
-          <p className="eyebrow mb-4 text-[var(--muted)]">ABOUT</p>
-        </Reveal>
-        <Reveal delay={0.05}>
-          <h1 className="display-2 font-extrabold tracking-[-0.01em] text-balance">
-            Intentional systems, human interfaces.
+        <header className="mt-10">
+          <p className="font-mono text-[11px] tracking-[0.32em] text-[var(--accent)]">⌂ BASE LODGE</p>
+          <h1 className="mt-3 font-display text-4xl font-semibold tracking-tight sm:text-5xl">
+            {site.name}
           </h1>
-        </Reveal>
-        <Reveal delay={0.1}>
-          <p className="mt-6 max-w-[65ch] text-[17.5px] leading-relaxed text-[var(--muted)]">
-            I’m Owen — CS & AI @ University of Bath with a placement in Fraud Analytics (LNRS).
-            I care about clarity, craft, and making complex things feel simple.
+          <p className="mt-2 font-mono text-[12px] tracking-[0.12em] text-[var(--muted)]">
+            {site.sub}
           </p>
-        </Reveal>
-      </section>
+          <div className="mt-6 space-y-4 text-[17px] leading-relaxed text-[var(--ink)]/90">
+            {about.bio.map((para) => (
+              <p key={para}>{para}</p>
+            ))}
+          </div>
+        </header>
 
-      <section className="mx-auto max-w-6xl px-6 pb-24">
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
-          {/* Portrait */}
-          <Reveal>
-            <div className="rounded-3xl border border-[var(--line)] bg-[var(--card)]/50 p-4 shadow-sm">
-              <div
-                aria-hidden
-                className="aspect-[4/5] w-full rounded-2xl border border-[var(--line)] bg-gradient-to-br from-[#0c1a30] to-[#13233a]"
-              />
-            </div>
-          </Reveal>
-
-          {/* Right Column */}
-          <div className="md:col-span-2 grid grid-cols-1 gap-10">
-            {/* Quick facts */}
-            <Reveal>
-              <div className="rounded-3xl border border-[var(--line)] bg-[var(--card)]/50 p-6 shadow-sm">
-                <h2 className="text-xl font-semibold">Quick facts</h2>
-                <ul className="mt-4 space-y-2 text-sm text-[var(--ink)]">
-                  <li>• UK-based</li>
-                  <li>• CS &amp; AI @ University of Bath</li>
-                  <li>• Bath Snowsports · Snowboard enjoyer</li>
-                  <li>• Custom keyboards (180 WPM)</li>
-                  <li>• Espresso + data viz</li>
-                  <li>• Curious about ML systems</li>
-                </ul>
-              </div>
-            </Reveal>
-
-            {/* Values */}
-            <Reveal delay={0.05}>
-              <div className="rounded-3xl border border-[var(--line)] bg-[var(--card)]/50 p-6 shadow-sm">
-                <h2 className="text-xl font-semibold">Values</h2>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  <span className="chip">Clarity</span>
-                  <span className="chip">Empathy</span>
-                  <span className="chip">Craft</span>
+        {/* Experience */}
+        <section className="mt-14">
+          <h2 className="font-mono text-[11px] tracking-[0.22em] text-[var(--muted)]">EXPERIENCE</h2>
+          <div className="mt-5 space-y-6">
+            {about.experience.map((e) => (
+              <article key={e.org + e.period} className="relative border-l border-[var(--line)] pl-5">
+                <span className="absolute -left-[5px] top-1.5 h-2.5 w-2.5 rounded-full bg-[var(--accent)]" />
+                <div className="flex flex-wrap items-baseline justify-between gap-x-3">
+                  <h3 className="font-display text-lg font-semibold">{e.role}</h3>
+                  <span className="font-mono text-[11px] tracking-[0.14em] text-[var(--muted)]">
+                    {e.period}
+                  </span>
                 </div>
-              </div>
-            </Reveal>
+                <div className="text-sm text-[var(--accent)]">
+                  {e.org}
+                  {e.location ? ` · ${e.location}` : ''}
+                </div>
+                {e.note && <p className="mt-1.5 text-sm leading-relaxed text-[var(--muted)]">{e.note}</p>}
+              </article>
+            ))}
+          </div>
+        </section>
 
-            {/* Experience timeline */}
-            <Reveal>
-              <div className="rounded-3xl border border-[var(--line)] bg-[var(--card)]/50 p-6 shadow-sm">
-                <h2 className="text-xl font-semibold">Experience</h2>
-                <div className="mt-6 relative">
-                  <div className="absolute left-[10px] top-0 h-full w-[1px] bg-[var(--line)]" />
-                  <div className="space-y-6">
-                    <article className="relative pl-10">
-                      <span
-                        aria-hidden
-                        className="absolute left-[6px] top-[4px] h-2.5 w-2.5 rounded-full bg-[var(--accent)]"
-                      />
-                      <p className="text-sm text-[var(--muted)]">Data Science · LexisNexis Risk · 2024–2025</p>
-                      <h3 className="mt-1 text-[var(--ink)] font-medium">Fraud analytics and narrative dashboards</h3>
-                      <p className="mt-1 text-sm text-[var(--muted)]">
-                        Built ROC/KS reporting and Snowflake pipelines, packaging insights into
-                        clear Streamlit narratives for product and ops.
-                      </p>
-                    </article>
-                    <article className="relative pl-10">
-                      <span
-                        aria-hidden
-                        className="absolute left-[6px] top-[4px] h-2.5 w-2.5 rounded-full bg-[var(--accent)]/70"
-                      />
-                      <p className="text-sm text-[var(--muted)]">Personal Projects · Ongoing</p>
-                      <h3 className="mt-1 text-[var(--ink)] font-medium">Full‑stack interfaces & data stories</h3>
-                      <p className="mt-1 text-sm text-[var(--muted)]">
-                        Focused on clarity and polish across Next.js, TypeScript, and Python — shipping small, often.
-                      </p>
-                    </article>
+        <div className="mt-14 grid gap-12 sm:grid-cols-2">
+          {/* Skills */}
+          <section>
+            <h2 className="font-mono text-[11px] tracking-[0.22em] text-[var(--muted)]">SKILLS</h2>
+            <div className="mt-4 space-y-4">
+              {Object.entries(about.skills).map(([group, items]) => (
+                <div key={group}>
+                  <div className="text-xs font-medium text-[var(--ink)]">{group}</div>
+                  <div className="mt-1.5 flex flex-wrap gap-1.5">
+                    {items.map((s) => (
+                      <span key={s} className="chip">
+                        {s}
+                      </span>
+                    ))}
                   </div>
                 </div>
-              </div>
-            </Reveal>
+              ))}
+            </div>
+          </section>
 
-            {/* Now */}
-            <Reveal delay={0.05}>
-              <div className="rounded-3xl border border-[var(--line)] bg-[var(--card)]/50 p-6 shadow-sm">
-                <h2 className="text-xl font-semibold">Now</h2>
-                <p className="mt-3 text-[var(--ink)]">
-                  Exploring data storytelling, refining snowboard‑themed projects, and pushing tactile UI details that reward attention.
-                </p>
-              </div>
-            </Reveal>
-          </div>
+          {/* Education + Languages */}
+          <section>
+            <h2 className="font-mono text-[11px] tracking-[0.22em] text-[var(--muted)]">EDUCATION</h2>
+            <div className="mt-4 space-y-4">
+              {about.education.map((e) => (
+                <div key={e.org}>
+                  <div className="flex flex-wrap items-baseline justify-between gap-x-3">
+                    <h3 className="font-medium">{e.org}</h3>
+                    <span className="font-mono text-[11px] tracking-[0.14em] text-[var(--muted)]">
+                      {e.period}
+                    </span>
+                  </div>
+                  <p className="text-sm text-[var(--muted)]">{e.detail}</p>
+                  {e.note && <p className="text-xs text-[var(--accent)]">{e.note}</p>}
+                </div>
+              ))}
+            </div>
+            <h2 className="mt-8 font-mono text-[11px] tracking-[0.22em] text-[var(--muted)]">
+              LANGUAGES
+            </h2>
+            <div className="mt-3 flex flex-wrap gap-1.5">
+              {about.languages.map((l) => (
+                <span key={l} className="chip">
+                  {l}
+                </span>
+              ))}
+            </div>
+          </section>
         </div>
-      </section>
+
+        {/* Beyond the screen */}
+        <section className="mt-14">
+          <h2 className="font-mono text-[11px] tracking-[0.22em] text-[var(--muted)]">
+            BEYOND THE SCREEN
+          </h2>
+          <div className="mt-4 grid gap-4 sm:grid-cols-3">
+            {about.hobbies.map((h) => (
+              <div key={h.label} className="rounded-2xl border border-[var(--line)] bg-[var(--card)] p-4">
+                <div className="font-display font-semibold text-[var(--ink)]">{h.label}</div>
+                <p className="mt-1 text-sm text-[var(--muted)]">{h.note}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Archive */}
+        <section className="mt-14">
+          <h2 className="font-mono text-[11px] tracking-[0.22em] text-[var(--muted)]">ARCHIVE</h2>
+          <div className="mt-4 space-y-3">
+            {about.archive.map((a) => (
+              <div key={a.title} className="flex flex-wrap items-baseline gap-x-3">
+                <span className="font-medium">{a.title}</span>
+                <span className="font-mono text-[11px] tracking-[0.14em] text-[var(--muted)]">
+                  {a.period}
+                </span>
+                <p className="w-full text-sm text-[var(--muted)]">{a.note}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Contact */}
+        <section className="mt-14 border-t border-[var(--line)] pt-8">
+          <h2 className="font-display text-xl font-semibold">Let’s talk.</h2>
+          <div className="mt-4 flex flex-wrap gap-2.5">
+            <a className="chip-link" href={`mailto:${contact.email}`}>
+              Email
+            </a>
+            <a className="chip-link" href={contact.github} target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+            <a className="chip-link" href={contact.linkedin} target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
+            <a className="chip-link" href={contact.cvUrl} target="_blank" rel="noreferrer">
+              CV
+            </a>
+          </div>
+        </section>
+      </div>
     </main>
   )
 }
-

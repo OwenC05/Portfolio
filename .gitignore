@@ -15,5 +15,6 @@ node_modules/
 .omc/
 .codegraph/
 .mcp.json
+.playwright-mcp/
 data/
 *.log

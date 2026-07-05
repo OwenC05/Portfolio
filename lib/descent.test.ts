@@ -49,6 +49,11 @@ describe('altitudeAt', () => {
 
   it('returns startAltitude minus verticalDrop at p = 1 (base)', () => {
     expect(altitudeAt(1)).toBe(slope.startAltitude - slope.verticalDrop)
+    expect(altitudeAt(1)).toBe(1720) // literal oracle, independent of slope constants
+  })
+
+  it('interpolates mid-run (literal oracle, exercises rounding path)', () => {
+    expect(altitudeAt(0.5)).toBe(2100) // 2480 - 760/2
   })
 })
 
@@ -64,9 +69,9 @@ describe('groundY', () => {
     expect(groundY(slope.length)).toBeLessThan(groundY(50))
   })
 
-  it('equals -grade * d for several waypoints', () => {
-    expect(groundY(10)).toBeCloseTo(-slope.grade * 10)
-    expect(groundY(100)).toBeCloseTo(-slope.grade * 100)
+  it('equals -grade * d for several waypoints (literal oracles)', () => {
+    expect(groundY(10)).toBeCloseTo(-1.6) // -0.16 * 10
+    expect(groundY(100)).toBeCloseTo(-16)
   })
 })
 

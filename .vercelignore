@@ -1,0 +1,23 @@
+# Keep source deployments free of local state and private intake.
+.git
+.next
+node_modules
+.vercel
+.omx
+.omx-state-locks
+.omx-state-locks.identity.json
+.agents
+.codex
+.aws
+.claude
+.omc
+.codegraph
+.vscode
+.playwright-mcp
+.mcp.json
+.env*
+*.log
+tsconfig.tsbuildinfo
+data
+/Owen_Cheung_-_AI_Researcher.md
+/Owen_Cheung_-_AI_Researcher.pdf

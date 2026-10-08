@@ -1,14 +1,54 @@
-// Canonical site origin for metadata/sitemap/robots.
-// Order: explicit env → Vercel production domain → deployment host → local placeholder.
-function resolveSiteUrl(): string {
-  const explicit = process.env.NEXT_PUBLIC_SITE_URL
-  if (explicit) return explicit.replace(/\/+$/, '')
-  // Stable production domain (custom domain if set), unlike per-deploy VERCEL_URL.
-  const prod = process.env.VERCEL_PROJECT_PRODUCTION_URL
-  if (prod) return `https://${prod}`
-  const vercel = process.env.VERCEL_URL
-  if (vercel) return `https://${vercel}`
-  return 'http://localhost:3000' // placeholder until NEXT_PUBLIC_SITE_URL is set in prod
+/** Build-time configuration only: canonical citations never trust request headers. */
+export type SiteUrlEnvironment = {
+  NEXT_PUBLIC_SITE_URL?: string
+  VERCEL_PROJECT_PRODUCTION_URL?: string
+  VERCEL_URL?: string
 }
 
-export const siteUrl = resolveSiteUrl()
+function validateOrigin(value: string, label: string): string {
+  // Check the original spelling too: URL normalisation can hide /.., empty ?/#,
+  // backslashes or whitespace that are not an origin-only configuration.
+  if (!/^https?:\/\/[^/?#@\\\s]+\/?$/i.test(value)) {
+    throw new Error(
+      `${label} must be an HTTP(S) origin without credentials, path, query or fragment`
+    )
+  }
+  try {
+    const url = new URL(value)
+    if (url.username || url.password || !url.hostname)
+      throw new Error('Invalid origin')
+    return url.origin
+  } catch {
+    throw new Error(
+      `${label} must be an HTTP(S) origin without credentials, path, query or fragment`
+    )
+  }
+}
+
+function vercelOrigin(hostname: string, label: string): string {
+  if (!hostname || /[\s/@?#\\:]/.test(hostname)) {
+    throw new Error(
+      `${label} must be a hostname without scheme, credentials, path or port`
+    )
+  }
+  return validateOrigin(`https://${hostname}`, label)
+}
+
+export function resolveSiteUrl(env: SiteUrlEnvironment): string {
+  if (env.NEXT_PUBLIC_SITE_URL !== undefined)
+    return validateOrigin(env.NEXT_PUBLIC_SITE_URL, 'NEXT_PUBLIC_SITE_URL')
+  if (env.VERCEL_PROJECT_PRODUCTION_URL !== undefined)
+    return vercelOrigin(
+      env.VERCEL_PROJECT_PRODUCTION_URL,
+      'VERCEL_PROJECT_PRODUCTION_URL'
+    )
+  if (env.VERCEL_URL !== undefined)
+    return vercelOrigin(env.VERCEL_URL, 'VERCEL_URL')
+  return 'http://localhost:3000'
+}
+
+export const siteUrl = resolveSiteUrl({
+  NEXT_PUBLIC_SITE_URL: process.env.NEXT_PUBLIC_SITE_URL,
+  VERCEL_PROJECT_PRODUCTION_URL: process.env.VERCEL_PROJECT_PRODUCTION_URL,
+  VERCEL_URL: process.env.VERCEL_URL,
+})

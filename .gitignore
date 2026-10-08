@@ -19,3 +19,13 @@ node_modules/
 data/
 *.log
 tsconfig.tsbuildinfo
+
+# Local agent evidence, source snapshots and runtime state are never public source.
+.omx/
+.omx-state-locks/
+.omx-state-locks.identity.json
+
+# Private owner-supplied intake; curated public facts live under lib/.
+/Owen_Cheung_-_AI_Researcher.md
+/Owen_Cheung_-_AI_Researcher.pdf
+.vercel

@@ -1,0 +1,465 @@
+/* The approved Alpine composition; all selectors are scoped to the homepage. */
+.alpine-wrap {
+  width: 100%;
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+.alpine-eyebrow {
+  margin: 0;
+  font-size: 0.74rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--clay-deep);
+  font-weight: 600;
+}
+.alpine-home h1,
+.alpine-home h2 {
+  font-family: var(--display);
+  font-weight: 500;
+  text-wrap: balance;
+  letter-spacing: -0.024em;
+}
+.alpine-home h2 {
+  font-size: clamp(1.6rem, 1.2rem + 1.6vw, 2.4rem);
+  line-height: 1.08;
+  margin: 0.7rem 0 0;
+}
+.alpine-home a:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+.alpine-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 44px;
+  min-width: 44px;
+  margin-top: 1.5rem;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+  transition:
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+.alpine-link:hover {
+  border-color: var(--clay);
+  color: var(--clay-deep);
+}
+.alpine-hero {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--paper);
+}
+.alpine-scene {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  transform: translate3d(0, 0, 0);
+}
+.alpine-scene__media {
+  position: absolute;
+  inset: -18px;
+}
+.alpine-scene__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 62% 32%;
+}
+.alpine-scene__veil {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      120% 90% at 8% 30%,
+      color-mix(in oklab, var(--paper) 92%, transparent) 0%,
+      color-mix(in oklab, var(--paper) 55%, transparent) 34%,
+      transparent 62%
+    ),
+    linear-gradient(
+      180deg,
+      color-mix(in oklab, var(--paper) 55%, transparent) 0%,
+      transparent 26%,
+      transparent 74%,
+      color-mix(in oklab, var(--paper) 70%, transparent) 100%
+    );
+}
+.alpine-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    color-mix(in oklab, var(--paper) 96%, transparent) 0%,
+    color-mix(in oklab, var(--paper) 92%, transparent) 28%,
+    color-mix(in oklab, var(--paper) 84%, transparent) 42%,
+    color-mix(in oklab, var(--paper) 42%, transparent) 54%,
+    transparent 66%
+  );
+}
+.alpine-hero__inner {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  gap: 2rem;
+  align-content: center;
+  padding-block: clamp(2.25rem, 7vw, 5rem);
+  min-height: min(100svh, 54rem);
+  pointer-events: none;
+}
+.alpine-identity {
+  max-width: 30rem;
+  pointer-events: auto;
+}
+.alpine-identity h1 {
+  font-size: clamp(2.15rem, 1.35rem + 3.6vw, 3.9rem);
+  line-height: 1.05;
+  margin: 1.05rem 0 0;
+}
+.alpine-intro {
+  margin: 1.35rem 0 0;
+  max-width: 39ch;
+  font-size: clamp(1rem, 0.98rem + 0.25vw, 1.14rem);
+  line-height: 1.62;
+  color: var(--muted);
+}
+.alpine-intro strong {
+  color: var(--ink);
+  font-weight: 500;
+}
+.alpine-mobile-piste {
+  display: none;
+}
+.alpine-scene__credit {
+  position: absolute;
+  z-index: 2;
+  left: var(--gutter);
+  bottom: clamp(0.8rem, 3vw, 1.6rem);
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  pointer-events: none;
+}
+.alpine-waypoints {
+  position: relative;
+  list-style: none;
+  margin: 0.25rem 0 0;
+  padding: 0.25rem 0 0.25rem 1.7rem;
+  max-width: 31ch;
+}
+.alpine-waypoints li a {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 52px;
+  min-width: 44px;
+  padding-block: 0.35rem;
+  text-decoration: none;
+}
+.alpine-waypoints li a::before {
+  content: '';
+  position: absolute;
+  left: -1.7rem;
+  top: 50%;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 2px solid var(--clay-deep);
+  transform: translateY(-50%);
+}
+.alpine-waypoints li a:is(:hover, :focus-visible)::before {
+  background: var(--clay);
+}
+.alpine-skill-name {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.02rem;
+  letter-spacing: -0.01em;
+}
+.alpine-skill-labels {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+.alpine-route {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+.alpine-route__stop {
+  position: absolute;
+  pointer-events: auto;
+}
+.alpine-route__stop a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  min-width: 44px;
+  padding: 8px 4px 8px 30px;
+  transform: translate(-12px, -50%);
+  text-decoration: none;
+}
+.alpine-route__dot {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 2px solid var(--clay-deep);
+  transform: translate(-50%, -50%);
+}
+.alpine-route__stop a:is(:hover, :focus-visible) .alpine-route__dot {
+  background: var(--clay);
+}
+.alpine-route__stop a:is(:hover, :focus-visible) .alpine-skill-name {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.alpine-route__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+  width: max-content;
+  max-width: clamp(12rem, 18vw, 17rem);
+  white-space: normal;
+  background: color-mix(in oklab, var(--paper) 96%, transparent);
+  box-shadow: 0 0 10px 7px color-mix(in oklab, var(--paper) 96%, transparent);
+}
+.alpine-route .alpine-skill-name {
+  font-size: 1rem;
+}
+.alpine-route .alpine-skill-labels {
+  font-size: 0.76rem;
+}
+.alpine-route__index {
+  position: absolute;
+  left: -18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--display);
+  font-size: 0.72rem;
+  color: var(--clay-deep);
+  letter-spacing: 0.08em;
+}
+.alpine-route__stop--left a {
+  padding: 8px 30px 8px 4px;
+  transform: translate(calc(-100% + 12px), -50%);
+}
+.alpine-route__stop--left .alpine-route__dot {
+  left: auto;
+  right: 12px;
+  transform: translate(50%, -50%);
+}
+.alpine-route__stop--left .alpine-route__index {
+  left: auto;
+  right: -18px;
+}
+.alpine-route__stop--left .alpine-route__text {
+  align-items: flex-end;
+  text-align: right;
+}
+.alpine-route__piste {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+.alpine-route__piste path {
+  fill: none;
+  stroke: var(--clay-deep);
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+  stroke-linecap: round;
+  opacity: 0.85;
+}
+.alpine-route__piste path.is-active {
+  stroke-width: 2.5;
+  opacity: 1;
+}
+.alpine-evidence,
+.alpine-work {
+  border-top: 1px solid var(--line);
+  padding-block: clamp(2.5rem, 6vw, 4.5rem);
+}
+.alpine-evidence__grid {
+  display: grid;
+  gap: 1.5rem 3rem;
+}
+.alpine-evidence__body p {
+  margin: 0;
+  max-width: 52ch;
+  color: var(--muted);
+}
+.alpine-evidence__body p + p {
+  margin-top: 1rem;
+}
+.alpine-evidence__body .alpine-evidence__lede {
+  color: var(--ink);
+  font-size: 1.08rem;
+  margin-bottom: 1.1rem;
+}
+.alpine-evidence__labels {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0;
+}
+.alpine-evidence__labels li {
+  position: relative;
+  padding-left: 1.1rem;
+  margin-right: 1.6rem;
+  font-size: 0.95rem;
+}
+.alpine-evidence__labels li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--clay);
+}
+.alpine-work__grid {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.alpine-work__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.alpine-work__list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.35rem 1.5rem;
+  padding-block: 1rem;
+  border-top: 1px solid var(--line);
+}
+.alpine-work__list li:last-child {
+  border-bottom: 1px solid var(--line);
+}
+.alpine-work__list a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  min-width: 44px;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: clamp(1.1rem, 1rem + 0.5vw, 1.35rem);
+  letter-spacing: -0.01em;
+  text-decoration: none;
+}
+.alpine-work__list a:hover {
+  color: var(--clay-deep);
+}
+.alpine-work__list li > span {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.alpine-work__figure {
+  margin: 0;
+}
+.alpine-work__figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+.alpine-work__figure figcaption {
+  margin-top: 0.7rem;
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  padding-top: 0.6rem;
+}
+@media (min-width: 56rem) {
+  .alpine-evidence__grid {
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  }
+  .alpine-work__grid {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    align-items: start;
+  }
+}
+@media (min-width: 62rem) {
+  .alpine-route {
+    display: block;
+    right: var(--gutter);
+    top: 10%;
+    width: min(45vw, 40rem);
+    height: 80%;
+  }
+  .alpine-waypoints {
+    display: none;
+  }
+  .alpine-scene__credit {
+    left: auto;
+    right: var(--gutter);
+  }
+}
+@media (max-width: 61.999rem) {
+  .alpine-hero::before {
+    background: linear-gradient(
+      90deg,
+      color-mix(in oklab, var(--paper) 94%, transparent),
+      color-mix(in oklab, var(--paper) 89%, transparent) 75%,
+      color-mix(in oklab, var(--paper) 52%, transparent)
+    );
+  }
+  .alpine-hero__inner {
+    padding-bottom: 4.75rem;
+  }
+  .alpine-intro {
+    max-width: 34ch;
+  }
+  .alpine-mobile-piste {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    right: 2%;
+    top: 28%;
+    width: 21%;
+    height: 65%;
+    overflow: visible;
+    pointer-events: none;
+  }
+  .alpine-mobile-piste path {
+    fill: none;
+    stroke: var(--clay-deep);
+    stroke-width: 1.5;
+    vector-effect: non-scaling-stroke;
+    opacity: 0.6;
+  }
+  .alpine-scene__credit {
+    max-width: calc(100% - 2 * var(--gutter));
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .alpine-home a {
+    transition: none;
+  }
+}

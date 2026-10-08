@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Retain verified upstream bytes even on Windows autocrlf checkouts.
+vendor/next-eslint-plugin/** text eol=lf

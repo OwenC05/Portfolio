@@ -5,3 +5,13 @@ public/**/*.mp4
 public/**/*.webm
 public/**/*.png
 public/**/*.jpg
+
+# Generated orchestration artifacts and untouched private intake.
+.omx/
+.omx-state-locks/
+.omx-state-locks.identity.json
+/Owen_Cheung_-_AI_Researcher.md
+/Owen_Cheung_-_AI_Researcher.pdf
+
+# Preserve upstream compiled third-party code and its reviewable minimal patch.
+vendor/next-eslint-plugin/dist/

@@ -11,12 +11,25 @@ export default defineConfig([
     // because they fire as false positives on R3F useFrame buffer mutations and
     // useMemo initializations — standard R3F patterns, not real bugs.
     rules: {
-      '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
+      '@typescript-eslint/no-unused-vars': [
+        'warn',
+        { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
+      ],
       'react/no-unescaped-entities': 'off',
       'react-hooks/set-state-in-effect': 'warn',
       'react-hooks/immutability': 'warn',
       'react-hooks/purity': 'warn',
     },
   },
-  globalIgnores(['.next/**', 'out/**', 'build/**', 'next-env.d.ts', 'node_modules/**', '.vercel/**']),
+  globalIgnores([
+    '.next/**',
+    'out/**',
+    'build/**',
+    'next-env.d.ts',
+    'node_modules/**',
+    '.vercel/**',
+    '.omx/**',
+    '.omx-state-locks/**',
+    'vendor/next-eslint-plugin/**',
+  ]),
 ])

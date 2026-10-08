@@ -1,17 +1,12 @@
 import type { MetadataRoute } from 'next'
+import { publicProjects } from '@/lib/publicPortfolio'
 import { siteUrl } from '@/lib/siteUrl'
-import { projects } from '@/lib/projects'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes: MetadataRoute.Sitemap = [
-    { url: `${siteUrl}/` },
-    { url: `${siteUrl}/projects` },
-    { url: `${siteUrl}/about` },
+  return [
+    ...['', '/projects', '/about', '/contact', '/agents'].map((path) => ({
+      url: `${siteUrl}${path}`,
+    })),
+    ...publicProjects.map((project) => ({ url: project.url })),
   ]
-
-  const projectRoutes: MetadataRoute.Sitemap = projects.map((p) => ({
-    url: `${siteUrl}/projects/${p.slug}`,
-  }))
-
-  return [...staticRoutes, ...projectRoutes]
 }

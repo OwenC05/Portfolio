@@ -1,113 +1,143 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { projects, getProject } from '@/lib/projects'
-import { gradeColor } from '@/lib/theme'
-
-const GLYPH = { green: '●', blue: '■', black: '◆' } as const
-const GRADE_LABEL = { green: 'Green run', blue: 'Blue run', black: 'Black diamond' } as const
-
+import { publicProjects, getPublicProject } from '@/lib/publicPortfolio'
+import { TypeForgePreview } from '@/components/portfolio/TypeForgePreview'
 export function generateStaticParams() {
-  return projects.map((p) => ({ slug: p.slug }))
+  return publicProjects.map((p) => ({ slug: p.slug }))
 }
-
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ slug: string }>
 }): Promise<Metadata> {
   const { slug } = await params
-  const p = getProject(slug)
+  const p = getPublicProject(slug)
   return p
-    ? { title: `${p.title} — Owen Cheung`, description: p.blurb }
-    : { title: 'Project — Owen Cheung' }
+    ? {
+        title: p.title,
+        description: p.blurb,
+        alternates: { canonical: `/projects/${p.slug}` },
+      }
+    : { title: 'Project not found' }
 }
-
 export default async function CaseStudy({
   params,
 }: {
   params: Promise<{ slug: string }>
 }) {
   const { slug } = await params
-  const p = getProject(slug)
+  const p = getPublicProject(slug)
   if (!p) notFound()
-
+  const next =
+    publicProjects[
+      (publicProjects.findIndex((x) => x.slug === slug) + 1) %
+        publicProjects.length
+    ]
   return (
-    <main className="min-h-[100dvh] bg-[var(--bg)] text-[var(--ink)]">
-      <article className="mx-auto max-w-2xl px-6 py-16 sm:py-24">
-        <nav className="flex items-center gap-5 font-mono text-[11px] tracking-[0.18em] text-[var(--muted)]">
-          <Link href="/" className="transition hover:text-[var(--ink)]">
-            ↑ BACK TO THE RUN
-          </Link>
-          <Link href="/projects" className="transition hover:text-[var(--ink)]">
-            TRAIL MAP
-          </Link>
-        </nav>
-
-        <header className="mt-10">
-          <div className="flex flex-wrap items-center gap-x-4 gap-y-1 font-mono text-[11px] tracking-[0.18em]">
-            <span style={{ color: gradeColor[p.grade] }}>
-              {GLYPH[p.grade]} {GRADE_LABEL[p.grade].toUpperCase()}
-            </span>
-            <span className="text-[var(--muted)]">{p.year}</span>
-            {p.role && <span className="text-[var(--muted)]">{p.role}</span>}
-          </div>
-          <h1 className="mt-4 font-display text-4xl font-semibold tracking-tight sm:text-5xl">
-            {p.title}
-          </h1>
-          <p className="mt-3 text-xl text-[var(--accent)]">{p.tagline}</p>
-        </header>
-
-        <p className="mt-8 text-[17px] leading-relaxed text-[var(--ink)]/90">{p.summary}</p>
-
-        <section className="mt-10">
-          <h2 className="font-mono text-[11px] tracking-[0.22em] text-[var(--muted)]">HIGHLIGHTS</h2>
-          <ul className="mt-4 space-y-3">
-            {p.highlights.map((h) => (
-              <li key={h} className="flex gap-3 text-[15px] leading-relaxed text-[var(--ink)]/90">
-                <span aria-hidden style={{ color: gradeColor[p.grade] }}>
-                  ›
-                </span>
-                <span>{h}</span>
-              </li>
+    <article className="page-shell case-study">
+      <header className="page-heading">
+        <Link className="back-link" href="/projects">
+          ← All work
+        </Link>
+        <p className="eyebrow">
+          {p.year} / {p.status}
+        </p>
+        <h1>{p.title}</h1>
+        <p className="case-deck">{p.tagline}</p>
+        <p className="lede">{p.summary}</p>
+        {p.liveUrl && (
+          <a className="text-link" href={p.liveUrl}>
+            Try the live demo ↗
+          </a>
+        )}
+      </header>
+      <dl className="case-meta">
+        <div>
+          <dt>Role</dt>
+          <dd>{p.role}</dd>
+        </div>
+        <div>
+          <dt>Status</dt>
+          <dd>{p.status}</dd>
+        </div>
+        <div>
+          <dt>Evidence</dt>
+          <dd>
+            {p.confidential
+              ? 'Public summary · confidential work'
+              : 'Project summary'}
+          </dd>
+        </div>
+      </dl>
+      {p.id === 'typeforge' && (
+        <div className="case-figure">
+          <TypeForgePreview />
+        </div>
+      )}
+      <div className="case-body">
+        <section className="case-section">
+          <h2>
+            <span>01</span>The context
+          </h2>
+          <p>{p.context}</p>
+        </section>
+        <section className="case-section">
+          <h2>
+            <span>02</span>My contribution
+          </h2>
+          <p>{p.contribution}</p>
+        </section>
+        <section className="case-section">
+          <h2>
+            <span>03</span>The approach
+          </h2>
+          <ul>
+            {p.approach.map((item) => (
+              <li key={item}>{item}</li>
             ))}
           </ul>
         </section>
-
-        <section className="mt-10">
-          <h2 className="font-mono text-[11px] tracking-[0.22em] text-[var(--muted)]">STACK</h2>
-          <div className="mt-3 flex flex-wrap gap-2">
-            {p.stack.map((t) => (
-              <span key={t} className="chip">
-                {t}
-              </span>
-            ))}
+        <section className="case-section">
+          <h2>
+            <span>04</span>Evidence & limitations
+          </h2>
+          <div>
+            <ul>
+              {p.evidence.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+            <div className="evidence-note">
+              <p className="eyebrow">The boundaries of this account</p>
+              {p.limitations.map((item) => (
+                <p key={item}>{item}</p>
+              ))}
+            </div>
           </div>
         </section>
-
-        {(p.confidential || p.liveUrl || p.repoUrl) && (
-          <section className="mt-10 border-t border-[var(--line)] pt-6">
-            {p.confidential ? (
-              <p className="text-sm text-[var(--muted)]">
-                Internal work — happy to talk through the approach and results in more depth.
-              </p>
-            ) : (
-              <div className="flex flex-wrap gap-2.5">
-                {p.liveUrl && (
-                  <a className="chip-link" href={p.liveUrl} target="_blank" rel="noreferrer">
-                    Live ↗
-                  </a>
-                )}
-                {p.repoUrl && (
-                  <a className="chip-link" href={p.repoUrl} target="_blank" rel="noreferrer">
-                    GitHub ↗
-                  </a>
-                )}
-              </div>
-            )}
-          </section>
-        )}
-      </article>
-    </main>
+        <section className="case-section">
+          <h2>
+            <span>05</span>Tools & methods
+          </h2>
+          <ul className="tool-list">
+            {p.stack.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </section>
+      </div>
+      <div className="case-next">
+        <div>
+          <p className="eyebrow">Continue exploring</p>
+          <Link href={`/projects/${next.slug}`}>
+            {next.title} <span aria-hidden="true">↗</span>
+          </Link>
+        </div>
+        <a className="text-link" href={p.markdownUrl}>
+          Read as Markdown ↗
+        </a>
+      </div>
+    </article>
   )
 }

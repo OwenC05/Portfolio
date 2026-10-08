@@ -49,29 +49,50 @@ export const projects: Project[] = [
     id: 'lexisnexis',
     slug: 'lexisnexis-applied-ai',
     title: 'LexisNexis — Applied AI',
-    tagline: 'Teaching risk systems to reason.',
+    tagline: 'From an idea to an end-to-end demonstration.',
     blurb:
-      'Behavioral-engine research (multimodal contrastive learning + hyperbolic embeddings) that grew into a founded, cross-site agentic platform.',
+      'Architecture, an end-to-end demo and senior-stakeholder communication. A self-initiated idea progressing into a funded internal pilot.',
     grade: 'black',
     lane: 'center',
     z: 16,
-    year: '2025 — present',
-    role: 'Data Scientist (placement)',
+    year: 'Jul 2025 — present',
+    role: 'AI Engineer (Agentic AI) · previously Data Scientist',
+    stack: ['Python', 'SQLite', 'DVC', 'Papermill', 'LightGBM'],
+    summary:
+      'I architected a fraud-model optimisation solution designed for organisation-wide use and built an end-to-end working demonstration. I presented its core concept, business value and approach to scaling to senior stakeholders. After my placement, I was retained as an AI engineering contractor to develop the funded internal pilot toward production.',
+    highlights: [
+      'Custom Python orchestration, reusable Copilot skills, persistent SQLite state, audit trails and mandatory human review gates.',
+      'Recoverable DVC/Papermill workflows with LightGBM candidate-rule discovery and constrained logistic-regression policy weighting.',
+      'Built an end-to-end demonstration and presented the core concept, business value and scaling approach to senior stakeholders.',
+    ],
+    confidential: true,
+  },
+  {
+    id: 'lexisnexis-ml',
+    slug: 'lexisnexis-ml',
+    title: 'LexisNexis — ML',
+    tagline: 'Understanding fraud through data and representation.',
+    blurb:
+      'Fraud-model optimisation, financial-data analysis and research into self-supervised representations during my industrial placement.',
+    grade: 'black',
+    lane: 'research',
+    z: 38,
+    year: 'Jul 2025 — Aug 2026',
+    role: 'Data Scientist · Industrial placement',
     stack: [
-      'PyTorch',
-      'Contrastive learning',
-      'Hyperbolic embeddings',
-      'Agentic systems',
       'Python',
+      'SQL',
       'Snowflake',
+      'Feature engineering',
+      'Representation learning',
     ],
     summary:
-      "My placement turned into applied AI research. I prototyped a behavioral engine that fuses heterogeneous signals with multimodal contrastive learning, and modelled their natural hierarchy with hyperbolic (Poincaré-disk) embeddings — a direction that led to a long-term-memory innovation session with the CTO. I then founded an internal initiative to automate the team's analytical work with an agentic system; it grew beyond our team into a cross-site effort with engineering in the US, and earned SVP backing.",
+      'During my industrial placement at LexisNexis Risk Solutions, I completed two fraud-model optimisations and analysed large-scale financial data using Python, SQL and Snowflake. Alongside this applied work, I researched self-supervised fraud representations and gained practical experience in GPU compute and batch training.',
     highlights: [
-      'Multimodal contrastive learning to fuse heterogeneous behavioral signals into one shared representation space.',
-      'Hyperbolic (Poincaré-disk) embeddings to capture the hierarchy real-world behavior actually has.',
-      'Presented the research direction in a long-term-memory innovation session with the CTO.',
-      'Founded and led an agentic-automation initiative spanning teams and the US engineering org, with SVP backing.',
+      'Completed two fraud-model optimisations, working across feature engineering, tuning and evaluation.',
+      'Analysed large-scale financial data using Python, SQL and Snowflake.',
+      'Researched graph embeddings, contrastive learning and non-Euclidean geometry for self-supervised fraud representations.',
+      'Gained practical experience in GPU compute and batch training.',
     ],
     confidential: true,
   },
@@ -79,97 +100,40 @@ export const projects: Project[] = [
     id: 'typeforge',
     slug: 'typeforge',
     title: 'TypeForge',
-    tagline: 'A typing trainer for the transitions you fumble.',
+    tagline: 'Practice that adapts to the way you type.',
     blurb:
-      'A typing trainer designed around precise keystroke timing and your costliest letter-transitions — currently in design, instrument-first.',
+      'A typing application in development, with implemented adaptive AI drills and real-time analytics being developed.',
     grade: 'black',
     lane: 'research',
     z: 38,
-    year: '2025 · in design',
-    role: 'Solo build',
-    stack: ['React', 'Node.js', 'TypeScript', 'Keystroke timing'],
+    year: 'Jul 2025 — present',
+    role: 'Solo developer',
+    stack: ['React', 'Node.js', 'TypeScript', 'Keystroke analytics'],
     summary:
-      'TypeForge is a typing trainer I am designing instrument-first: a validated sub-millisecond keystroke instrument (dwell + flight timing), a frequency-weighted ranking of the letter-transitions that actually cost you, and drills built from real text. The plan is exactly one model — per-bigram empirical-Bayes shrinkage — evaluated offline against a heuristic baseline and reported honestly, win or lose. It comes from building mechanical keyboards and typing at ~180 wpm, wanting practice that targets the gaps rather than what I already know. Today it is in design: the spec is written, the product is not built yet.',
+      'I am developing a typing application that tracks cadence, keystrokes and accuracy, with AI-driven drills designed and implemented to adapt to user weaknesses. It comes from building mechanical keyboards and reaching 193 wpm. A public demo is available; the product remains in development, with no public evaluation or full product release claimed.',
     highlights: [
-      'Design goal: a validated sub-millisecond keystroke instrument measuring dwell + flight time per transition.',
-      'Planned model: per-bigram empirical-Bayes shrinkage, evaluated offline against a heuristic baseline — reported honestly even if it loses.',
-      'Born from a keyboard-builder obsession with input mechanics.',
+      'Designed and implemented adaptive AI-driven drills.',
+      'Developing real-time cadence, keystroke and accuracy analytics.',
+      'A personal exploration of more targeted typing practice.',
     ],
-  },
-  {
-    id: 'sortify',
-    slug: 'sortify',
-    title: 'Sortify',
-    tagline: 'Playlists sorted by feel.',
-    blurb:
-      'A Spotify tool that sorts and recommends playlists by genre, mood and danceability from audio features.',
-    grade: 'blue',
-    lane: 'research',
-    z: 62,
-    year: '2024',
-    role: 'Backend + recommendations',
-    stack: ['Python', 'Spotify API', 'Recommendation'],
-    summary:
-      "A Spotify-API app that sorts and recommends playlists by genre, mood and danceability. I built the backend recommendation logic on top of Spotify's audio-feature data to surface personalised picks for how a playlist actually feels.",
-    highlights: [
-      'Clusters tracks by audio features — mood, danceability, genre.',
-      'Personalised recommendations from listening signals.',
-      'Python backend against the Spotify Web API.',
-    ],
-  },
-  {
-    id: 'knowtrients',
-    slug: 'knowtrients',
-    title: 'Knowtrients',
-    tagline: 'Nutrition tracking, built by eight.',
-    blurb:
-      'A micronutrient + wellbeing app built in a team of 8 on a real Scrum cadence; I owned recipe parsing and nutrition analysis.',
-    grade: 'blue',
-    lane: 'build',
-    z: 38,
-    year: '2024 — 2025',
-    role: 'Full-stack + Scrum',
-    stack: ['Django', 'Flutter / Dart', 'Agile / Scrum'],
-    summary:
-      'A micronutrient-tracking and wellbeing app built in a team of 8 using Scrum. I implemented recipe parsing and nutrition analysis end-to-end with Django and Flutter, and helped run sprint planning and stakeholder testing — we onboarded 20+ pilot users.',
-    highlights: [
-      'Recipe parsing + nutrition analysis, end to end.',
-      'Team of 8 on a real Scrum cadence.',
-      '20+ pilot users through stakeholder testing.',
-    ],
-  },
-  {
-    id: 'dishd',
-    slug: 'dishd',
-    title: "Dish'D",
-    tagline: 'A social network for cooking.',
-    blurb:
-      'A social cooking app (Django + Flutter) where I built auth, sharing and feeds, and led the technical decisions.',
-    grade: 'blue',
-    lane: 'build',
-    z: 62,
-    year: '2024 — 2025',
-    role: 'Full-Stack Developer',
-    stack: ['Django', 'Flutter / Dart', 'Auth', 'Feeds'],
-    summary:
-      'A social cooking app where people share recipes and meal inspiration. I built core features — authentication, content sharing and interactive feeds — with Django and Flutter, and led technical decisions on scalability, usability and performance.',
-    highlights: [
-      'Auth, content sharing and interactive feeds.',
-      'Led technical decisions on scalability + performance.',
-      'Django backend, Flutter/Dart mobile client.',
-    ],
+    liveUrl: 'https://typeforge-alpha.vercel.app',
   },
 ]
 
 export const projectBySlug: Record<string, Project> = Object.fromEntries(
-  projects.map((p) => [p.slug, p]),
+  projects.map((p) => [p.slug, p])
 )
 
-export const getProject = (slug: string): Project | undefined => projectBySlug[slug]
+export const getProject = (slug: string): Project | undefined =>
+  projectBySlug[slug]
 
 // x position of a gate from its lane.
 export const laneX = (lane: Lane): number =>
-  lane === 'research' ? -slope.laneOffset : lane === 'build' ? slope.laneOffset : 0
+  lane === 'research'
+    ? -slope.laneOffset
+    : lane === 'build'
+      ? slope.laneOffset
+      : 0
 
 export type StationKind = 'project' | 'lodge' | 'lift'
 
@@ -197,7 +161,20 @@ export const runStations: RunStation[] = [
     grade: p.grade,
     slug: p.slug,
   })),
-  { id: 'about', kind: 'lodge', x: 0, z: stations.lodge.z, title: 'Base Lodge', subtitle: 'About Owen' },
-  { id: 'contact', kind: 'lift', x: 0, z: stations.lift.z, title: 'The Lift', subtitle: 'Get in touch' },
+  {
+    id: 'about',
+    kind: 'lodge',
+    x: 0,
+    z: stations.lodge.z,
+    title: 'Base Lodge',
+    subtitle: 'About Owen',
+  },
+  {
+    id: 'contact',
+    kind: 'lift',
+    x: 0,
+    z: stations.lift.z,
+    title: 'The Lift',
+    subtitle: 'Get in touch',
+  },
 ]
-

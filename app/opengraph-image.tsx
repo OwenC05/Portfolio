@@ -1,37 +1,62 @@
 import { ImageResponse } from 'next/og'
-import { alpenglow } from '@/lib/theme'
-import { site } from '@/lib/content'
 
-export const alt = 'Owen Cheung — Applied AI · Snowboard Portfolio'
+export const alt =
+  'Owen Cheung — AI engineering & data science. Research-minded. Built to be useful.'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
 export default function OpengraphImage() {
   return new ImageResponse(
-    (
+    <div
+      style={{
+        width: '100%',
+        height: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'space-between',
+        padding: '64px 76px',
+        background: '#F5F8F9',
+        color: '#19232B',
+        fontFamily: 'sans-serif',
+      }}
+    >
       <div
         style={{
-          width: '100%',
-          height: '100%',
           display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          padding: '80px',
-          color: alpenglow.snow,
-          background: `linear-gradient(135deg, ${alpenglow.peakGlow} 0%, ${alpenglow.valleyShadow} 45%, ${alpenglow.skyBase} 100%)`,
+          justifyContent: 'space-between',
+          borderBottom: '1px solid #A9B9C0',
+          paddingBottom: 24,
+          fontSize: 22,
         }}
       >
-        <div style={{ fontSize: 34, letterSpacing: 4, color: alpenglow.accentWarm, display: 'flex' }}>
-          OWEN CHEUNG
-        </div>
-        <div style={{ fontSize: 76, fontWeight: 700, marginTop: 16, lineHeight: 1.05, display: 'flex' }}>
-          {site.tagline}
-        </div>
-        <div style={{ fontSize: 30, marginTop: 24, opacity: 0.85, display: 'flex' }}>
-          {site.sub}
-        </div>
+        <span>OWEN CHEUNG</span>
+        <span>AI ENGINEERING & DATA SCIENCE</span>
       </div>
-    ),
-    { ...size },
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          fontSize: 80,
+          lineHeight: 1.08,
+          letterSpacing: -3,
+        }}
+      >
+        <span style={{ color: '#976446' }}>Research-minded.</span>
+        <span>Built to be useful.</span>
+      </div>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          borderTop: '1px solid #A9B9C0',
+          paddingTop: 24,
+          fontSize: 22,
+        }}
+      >
+        <span>Engineering · Research · Selected work</span>
+        <span>University of Bath</span>
+      </div>
+    </div>,
+    size
   )
 }

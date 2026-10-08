@@ -1,0 +1,10 @@
+{
+  "package": "@next/eslint-plugin-next",
+  "version": "16.3.8",
+  "tarball": "https://registry.npmjs.org/@next/eslint-plugin-next/-/eslint-plugin-next-16.3.8.tgz",
+  "integrity": "sha512-eCR9RcLTZrVS+K3+VOhi0xMdUUGNuriCHHhU1ZoABC/QQ/Gp0OWbLKQxV2/9DkmihYdYRcQWFmZXW8M1AMUXYw==",
+  "shasum": "9186a0fff633d867215e1ba2eeafa500c85d9f5f",
+  "verifiedTarballIntegrity": true,
+  "licenseSource": "https://raw.githubusercontent.com/vercel/next.js/v16.3.8/license.md",
+  "upstreamFiles": "upstream-files.json"
+}

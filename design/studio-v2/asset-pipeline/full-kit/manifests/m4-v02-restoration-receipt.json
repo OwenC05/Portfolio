@@ -1,0 +1,94 @@
+{
+  "scope": "Exact root-approved restoration; writer evidence, not independent or visual acceptance.",
+  "authority": "scene-coordination/m4-v01-raw-root-disposition.md / msg_4abbeff01768",
+  "restorerSha256": "9f5cb2f5ec5ab2395d254bf32e828a9a89a6473a244284871f931046373fc12b",
+  "inputs": {
+    "parent": {
+      "sha256": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+      "bytes": 1628664
+    },
+    "raw": {
+      "sha256": "c10e6453b6bee5c1cf09b3d1c905151a4567e5360116a0495bc1398eb20f5906",
+      "bytes": 2206200
+    }
+  },
+  "preservedProvenance": {
+    "asset-pipeline/full-kit/source/build_fullkit_m4.py": "aa9724dcd14dbc428ca5c2ba84cffdcbb469fa14c53cf3866ac46164ec04dc22",
+    "asset-pipeline/full-kit/source/build_fullkit_m4_geometry.py": "c7ce9d8e1792273d6aeffdc5b536233413fdca6c6fd16abf344827d6433ab1c0",
+    "asset-pipeline/full-kit/source/fk-40-music-proposal-v01.blend": "0ae40460b9a2cb578fc35a96497a9016e5f116a1efe98cac4809568fd68c4665",
+    "asset-pipeline/full-kit/manifests/m4-v01-author-measurements.json": "22039aa167938fea67554bf42158b8d66eae2b4a244ddf1ee63486a93b194782",
+    "asset-pipeline/full-kit/manifests/m4-v01-transition-guard-receipt.json": "b31e17bfd8782ce5625f80222e28dd836a0cb5930f07cd4d5b6e990e7d250fcd",
+    "scene-coordination/m4-transition-guard.py": "ad62627f0683806ace2c8ebbb133ba83e72c7d95f1df8adc291a3706aa40da6b",
+    "scene-coordination/m4-model-contract.json": "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98",
+    "scene-coordination/m4-scene-provenance-amendment-v01.json": "3b3a011d5d2f599dc63a4bf31aacd115513eb06c31267ddee0201209cebb2229"
+  },
+  "output": {
+    "path": "exports/studio-full-kit-m4-proposal-v02.glb",
+    "sha256": "baa1a43bd343359edb217fa077bde0678a931cc3ed3991d5ee059e04813ed32f",
+    "bytes": 2206200
+  },
+  "restoredWordSlots": [
+    {
+      "mesh": "desk_top__top_mesh.002",
+      "attribute": "TEXCOORD_0",
+      "parentAccessor": 64,
+      "rawAccessor": 75,
+      "vertex": 199,
+      "component": 0,
+      "parentBinOffset": 411396,
+      "parentFileOffset": 487544,
+      "rawBinOffset": 580196,
+      "rawFileOffset": 662880,
+      "rawHex": "5d8f72bf",
+      "outputHex": "5b8f72bf",
+      "changedFileByteOffsets": [
+        662880
+      ]
+    },
+    {
+      "mesh": "desk_top__top_mesh.002",
+      "attribute": "TEXCOORD_0",
+      "parentAccessor": 64,
+      "rawAccessor": 75,
+      "vertex": 258,
+      "component": 0,
+      "parentBinOffset": 411868,
+      "parentFileOffset": 488016,
+      "rawBinOffset": 580668,
+      "rawFileOffset": 663352,
+      "rawHex": "21858b3e",
+      "outputHex": "20858b3e",
+      "changedFileByteOffsets": [
+        663352
+      ]
+    },
+    {
+      "mesh": "desk_top__top_mesh.002",
+      "attribute": "TEXCOORD_0",
+      "parentAccessor": 64,
+      "rawAccessor": 75,
+      "vertex": 274,
+      "component": 1,
+      "parentBinOffset": 412000,
+      "parentFileOffset": 488148,
+      "rawBinOffset": 580800,
+      "rawFileOffset": 663484,
+      "rawHex": "3789213f",
+      "outputHex": "3689213f",
+      "changedFileByteOffsets": [
+        663484
+      ]
+    }
+  ],
+  "addressedWordCount": 3,
+  "addressedByteSlots": 12,
+  "actuallyChangedByteCount": 3,
+  "changedFileByteOffsets": [
+    662880,
+    663352,
+    663484
+  ],
+  "headerJsonAndAllOtherBytesIdenticalToRaw": true,
+  "embeddedBuildTags": "M4 v01 preserved verbatim; v02 denotes this separate byte canonicalization.",
+  "independentReview": "Required before capture; exact transition guard and assembled audit run separately."
+}

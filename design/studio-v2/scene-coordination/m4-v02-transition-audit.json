@@ -1,0 +1,139 @@
+{
+  "valid": true,
+  "parentSha256": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+  "candidateSha256": "baa1a43bd343359edb217fa077bde0678a931cc3ed3991d5ee059e04813ed32f",
+  "errors": [],
+  "mappingSha256": "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98",
+  "sceneProvenanceAmendmentSha256": "3b3a011d5d2f599dc63a4bf31aacd115513eb06c31267ddee0201209cebb2229",
+  "hierarchySourceSha256": "dccfa2885919a84b03ff472cecbf76da35e0cd2a8b32baaca2dc8cb31929a209",
+  "profileSha256": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+  "scope": "transition only; full structural validator and independent review still required",
+  "metrics": {
+    "retainedLeaves": 92,
+    "retainedAccessorComparisons": 368,
+    "retainedComponentDifferences": 0,
+    "leaves": 110,
+    "assetIds": 58,
+    "remainingProxies": 17,
+    "provisionalContacts": 3,
+    "placedTriangles": 46020,
+    "stageMainCallsEstimate": 18,
+    "stageShadowCallsEstimate": 9,
+    "stageRefreshCallsEstimate": 27,
+    "stagePlacedTriangles": 12528,
+    "rows": [
+      {
+        "node": "ctl_body__shell",
+        "triangles": 1132,
+        "main": 1,
+        "shadow": 1
+      },
+      {
+        "node": "ctl_body__indicators",
+        "triangles": 60,
+        "main": 1,
+        "shadow": 0
+      },
+      {
+        "node": "ctl_keys__keys",
+        "triangles": 936,
+        "main": 1,
+        "shadow": 0
+      },
+      {
+        "node": "ctl_stand__frame",
+        "triangles": 776,
+        "main": 1,
+        "shadow": 1
+      },
+      {
+        "node": "ctl_sustain_pedal__pedal",
+        "triangles": 216,
+        "main": 1,
+        "shadow": 0
+      },
+      {
+        "node": "stool_keys__stool",
+        "triangles": 548,
+        "main": 1,
+        "shadow": 1
+      },
+      {
+        "node": "drum_rack__rack",
+        "triangles": 2084,
+        "main": 1,
+        "shadow": 1
+      },
+      {
+        "node": "drum_pads__shells",
+        "triangles": 1928,
+        "main": 1,
+        "shadow": 1
+      },
+      {
+        "node": "drum_pads__heads",
+        "triangles": 384,
+        "main": 1,
+        "shadow": 0
+      },
+      {
+        "node": "drum_cymbals__cymbals",
+        "triangles": 1812,
+        "main": 1,
+        "shadow": 1
+      },
+      {
+        "node": "drum_hihat_pedal__pedal",
+        "triangles": 172,
+        "main": 1,
+        "shadow": 0
+      },
+      {
+        "node": "drum_kick__tower",
+        "triangles": 696,
+        "main": 1,
+        "shadow": 1
+      },
+      {
+        "node": "drum_module__body",
+        "triangles": 320,
+        "main": 1,
+        "shadow": 1
+      },
+      {
+        "node": "drum_module__display",
+        "triangles": 12,
+        "main": 1,
+        "shadow": 0
+      },
+      {
+        "node": "drum_sticks__pair",
+        "triangles": 120,
+        "main": 1,
+        "shadow": 0
+      },
+      {
+        "node": "drum_throne__throne",
+        "triangles": 588,
+        "main": 1,
+        "shadow": 1
+      },
+      {
+        "node": "rug__rug",
+        "triangles": 156,
+        "main": 1,
+        "shadow": 0
+      },
+      {
+        "node": "music_cables__runs",
+        "triangles": 588,
+        "main": 1,
+        "shadow": 0
+      }
+    ],
+    "rendererDrawMeasurements": false
+  },
+  "helperSha256": "ad62627f0683806ace2c8ebbb133ba83e72c7d95f1df8adc291a3706aa40da6b",
+  "parentManifestSha256": "060bab9af5dd23b4258e03aef10de21faa7c32aa0a6010cd4e09b35089026405",
+  "candidatePath": "design\\studio-v2\\asset-pipeline\\full-kit\\exports\\studio-full-kit-m4-proposal-v02.glb"
+}

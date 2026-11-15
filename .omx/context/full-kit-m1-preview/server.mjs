@@ -14,9 +14,9 @@ const option = (name, fallback) => args.includes(name) ? args[args.indexOf(name)
 const stage = option('--stage', 'M1');
 const revision = option('--revision', undefined);
 if (args.includes('--revision') && (!revision || revision.startsWith('--'))) throw new Error('Missing revision');
-if (revision !== undefined && (!['M2', 'M3'].includes(stage) || args.includes('--tag'))) throw new Error('Use --revision only for M2/M3 and do not combine it with --tag');
+if (revision !== undefined && (!['M2', 'M3', 'M4'].includes(stage) || args.includes('--tag'))) throw new Error('Use --revision only for M2/M3/M4 and do not combine it with --tag');
 const tag = revision ?? option('--tag', 'v02');
-if (!['M1', 'M2', 'M3'].includes(stage) || (stage === 'M2' && !['v02', 'v03', 'v05'].includes(tag)) || (stage === 'M3' && tag !== 'v03')) throw new Error('Use M1, a pinned M2 v02/v03/v05 candidate, or M3 v03');
+if (!['M1', 'M2', 'M3', 'M4'].includes(stage) || (stage === 'M2' && !['v02', 'v03', 'v05'].includes(tag)) || (stage === 'M3' && tag !== 'v03') || (stage === 'M4' && tag !== 'v02')) throw new Error('Use M1, a pinned M2 v02/v03/v05 candidate, M3 v03, or M4 v02');
 if (!/^v\d+$/.test(tag)) throw new Error('Use a version tag such as v02');
 const port = Number(option('--port', '4182'));
 if (!Number.isInteger(port) || port < 1024 || port > 65535 || port === 4181) throw new Error('Invalid isolated preview port');
@@ -104,6 +104,7 @@ for (const variant of (stage !== 'M1' ? ['proposal'] : ['baseline', 'proposal'])
   };
   if (stage === 'M2' && (sha(bytes) !== m2Pins[tag][0] || sources[manifestPath].sha256 !== m2Pins[tag][1])) throw new Error('M2 exact candidate pin mismatch');
   if (stage === 'M3' && (sha(bytes) !== 'dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf' || sources[manifestPath].sha256 !== '060bab9af5dd23b4258e03aef10de21faa7c32aa0a6010cd4e09b35089026405')) throw new Error('M3 exact candidate pin mismatch');
+  if (stage === 'M4' && (sha(bytes) !== 'baa1a43bd343359edb217fa077bde0678a931cc3ed3991d5ee059e04813ed32f' || sources[manifestPath].sha256 !== '42597f1b859fdae354063e09ee925d4d2dc9be8ae0ac8556663e391db6906b82')) throw new Error('M4 exact candidate pin mismatch');
   let rawSceneExtras;
   if (stage === 'M2' && tag === 'v05') {
     const gltf = JSON.parse(bytes.subarray(20, 20 + bytes.readUInt32LE(12)).toString('utf8'));
@@ -114,6 +115,11 @@ for (const variant of (stage !== 'M1' ? ['proposal'] : ['baseline', 'proposal'])
     const gltf = JSON.parse(bytes.subarray(20, 20 + bytes.readUInt32LE(12)).toString('utf8'));
     rawSceneExtras = gltf.scenes?.[gltf.scene]?.extras;
     if (rawSceneExtras?.fk_tag !== 'm3-v02' || rawSceneExtras?.fk_m3_tag !== 'v02') throw new Error('Unexpected M3 raw source provenance');
+  }
+  if (stage === 'M4') {
+    const gltf = JSON.parse(bytes.subarray(20, 20 + bytes.readUInt32LE(12)).toString('utf8'));
+    rawSceneExtras = gltf.scenes?.[gltf.scene]?.extras;
+    if (rawSceneExtras?.fk_tag !== 'm4-v01' || rawSceneExtras?.fk_stage !== 'M4' || rawSceneExtras?.fk_m4_tag !== 'v01') throw new Error('Unexpected M4 raw source provenance');
   }
   candidates[variant] = {manifest, manifestPath, technicalManifest, technicalManifestPath, glbPath, sha256:sha(bytes), bytes:bytes.length, ...(rawSceneExtras ? {rawSceneExtras} : {})};
   add(`/asset/${variant}.glb`, bytes, 'model/gltf-binary');

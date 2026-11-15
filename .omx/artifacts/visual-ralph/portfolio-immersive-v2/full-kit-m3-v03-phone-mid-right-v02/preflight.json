@@ -1,0 +1,20 @@
+{
+    "expectedComposites":  2,
+    "timestamp":  "2026-11-15T16:32:51.3459340Z",
+    "browserKnownVersion":  "157.0.8103.52",
+    "expectedSceneCaptures":  2,
+    "browserTool":  "mcp__playwright_isolated__browser_run_code_unsafe",
+    "inputHashes":  {
+                        "lib/studio-contract.ts":  "64f88fd30b896c88c87a5631349bbb2bb9a3bc8676c0a1a816f1e5720902c84d",
+                        "design/studio-v2/asset-pipeline/full-kit/source/build_fullkit_m3.py":  "dccfa2885919a84b03ff472cecbf76da35e0cd2a8b32baaca2dc8cb31929a209",
+                        ".omx/context/full-kit-m3-v03-phone-mid-right-capture-v01.json":  "2af374c647850d856c6172891b091e050427ec1f769de86dcdff6d60723b4083",
+                        ".omx/context/full-kit-m1-preview/server.mjs":  "4f0c1f331937d1356a7a2b0e75e3df4a27c302bd154b28b0f255d33c583271b8",
+                        ".omx/context/full-kit-m3-v03-runtime-capture-v01.json":  "641328d42c029b00979d41324df213190e168526af5447689cb50713652098b0",
+                        "app/studio/studio.module.css":  "ce72d40af43223b33bc77dbdfd810ac38caaadb50af30916b25f1e3907bf1432",
+                        ".omx/context/full-kit-m3-v03-phone-mid-right-capture-v02.mjs":  "13ab71784de0185406215832c8ba123fbaa39b2520b18d8b47ae38da6a33499a",
+                        "app/globals.css":  "38a5427299238e2be46ad5062e798ef3c68d13dfa884a1272bfdb2c55946f13f",
+                        "components/studio/StudioExperience.tsx":  "4e8628d8b91c840a494174d559e30b7967bc062f773aa37d74f53f3094891e16",
+                        "app/studio/StudioShell.tsx":  "bcae10c0b983b1295b4d13e4ff1777c25fe9af224ebf2aee865c146fdb62eca8",
+                        ".omx/context/full-kit-m1-preview/preview.mjs":  "a829adb7842d9df00fb619ac6643aefbf71a84643774eaaab9c65b705c0e12e7"
+                    }
+}

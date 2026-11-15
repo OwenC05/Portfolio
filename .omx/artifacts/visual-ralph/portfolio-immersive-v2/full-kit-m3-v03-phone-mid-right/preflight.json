@@ -1,0 +1,42 @@
+{
+  "inputs": {
+    "app/studio/studio.module.css": "ce72d40af43223b33bc77dbdfd810ac38caaadb50af30916b25f1e3907bf1432",
+    "lib/studio-contract.ts": "64f88fd30b896c88c87a5631349bbb2bb9a3bc8676c0a1a816f1e5720902c84d",
+    "design/studio-v2/asset-pipeline/full-kit/source/build_fullkit_m3.py": "dccfa2885919a84b03ff472cecbf76da35e0cd2a8b32baaca2dc8cb31929a209",
+    ".omx/context/full-kit-m3-v03-runtime-capture-v01.json": "641328d42c029b00979d41324df213190e168526af5447689cb50713652098b0",
+    ".omx/context/full-kit-m1-preview/preview.mjs": "a829adb7842d9df00fb619ac6643aefbf71a84643774eaaab9c65b705c0e12e7",
+    ".omx/context/full-kit-m1-preview/server.mjs": "4f0c1f331937d1356a7a2b0e75e3df4a27c302bd154b28b0f255d33c583271b8",
+    "components/studio/StudioExperience.tsx": "4e8628d8b91c840a494174d559e30b7967bc062f773aa37d74f53f3094891e16",
+    ".omx/context/full-kit-m3-v03-capture-v01.mjs": "4562a6151bb3b59124a276d1d3431cd3a99cce4fd76efd69d100ec74e7d4fd76",
+    ".omx/context/full-kit-m3-v03-phone-mid-right-capture-v01.mjs": "066125ef08fc8668a1f018e4512743da1353b962de6bd4bc70a29a3d5aad1892",
+    "app/studio/StudioShell.tsx": "bcae10c0b983b1295b4d13e4ff1777c25fe9af224ebf2aee865c146fdb62eca8"
+  },
+  "originalImages": {
+    "scene-home-1440x900-f58.png": "d7a99c4bd330d4fd4a5773dee5d745b57c2e7c25d786c41e464870c8736edbc1",
+    "scene-left-down-1440x900-f58.png": "371021a4fc77085342d53cce65003c7807fa6bc9af000fd22ac4cf3a2ba58839",
+    "scene-right-down-1440x900-f58.png": "cca919714ec936e5ee34ad19d136e0c9caa6d3adaafac6c5fcae4a6ddd2c61d5",
+    "scene-music-1440x900-f58.png": "8dd3710e4bf0da96c557bf2f96f5af61d297f3f1ab7374b1d30c2dd0741ac5d5",
+    "scene-mid-right-1440x900-f58.png": "2505ac0076f720e9e32ad2a26efa151554105bd5106f95a59d177e69136d4811",
+    "scene-home-1024x768-f58.png": "62da4d52647e01249cdcec824c3b288a1edc9e8ed53cb1d6ca3b80025e7c0644",
+    "scene-home-390x844-f74.png": "fc370298151a31354a352d0d82cc1fc3e0498752e5c6b4ec5b10a8e17304dc00",
+    "scene-music-390x844-f74.png": "f3fbfacde63e93f3346044f54ebf4d579c62f1e613e576c9cba59e90df10506d",
+    "scene-left-down-390x844-f74.png": "5c4f1c1039478b74f2d890fa7ad222cf19b958f873cb017aad61ac84436c06c6",
+    "scene-home-320x844-f74.png": "48a97844be27f28ae8bb5bbd19384e14f69548f828eb5009190d6b5202c35b78",
+    "scene-music-320x844-f74.png": "2f848afa443f1841cf701e87017a19d2e747edcdc4a50f3a641246f4861b9fec",
+    "scene-left-down-320x844-f74.png": "bfa2a61be44bb979c7afc594185aa4502fdf4bd3642c36795a976527f4ee5778",
+    "chrome-home-default-1440x900.png": "955f09de2af4fea1226bcb80995936bdb149f3f814f11a74892512f549115432",
+    "chrome-left-down-default-1440x900.png": "ca21150110badab8e4238c8383c6ef8ece723447a5c4042126bbb6336f135804",
+    "chrome-right-down-default-1440x900.png": "0ae61bcbe900d513adf990f33380f25cd9ac8d4316188351f6be5746efde4db1",
+    "chrome-music-default-1440x900.png": "353dac14823cc80ec2a7d46abd743028e56e39dece07e12de9acb12b519041b4",
+    "chrome-mid-right-default-1440x900.png": "64c6dbd213c07e6fba34e92b2c649369ea87105573a805109d858971e4f65d65",
+    "chrome-home-default-1024x768.png": "1631076ed79f6c0bf625cb8f1e7be06bf76f83ebfa2046b384d0849574b1151b",
+    "chrome-home-closed-390x844.png": "950dba16c6c95efff0b2cd3036b7934b4aabb5accab57d6e33bfe7cebff60e7b",
+    "chrome-home-open-390x844.png": "5c6940a1313c9a78f962a7fa54aec2172b570adb898b3f3f64d600df84abd249",
+    "chrome-music-closed-390x844.png": "5481a58d05ff26dad84a3fd73d82df0bd21dd40b3c56545f660a4953661b146e",
+    "chrome-left-down-closed-390x844.png": "df667b416053f0020359e44df0db4a3d2b0fef4a30170751500bf32642172cb6",
+    "chrome-home-closed-320x844.png": "0537eb936e84f064bffad318211ab803ba71dd8f01bbb1e6266506cd7a95fe19",
+    "chrome-home-open-320x844.png": "bc02d7240726c6b64f2d7af0ea394e051f9a394fb0f026a81a7085b2d254df60",
+    "chrome-music-closed-320x844.png": "8ede9ccb34b73dde1b1c525163451dec92f63efedf47861b56054f8ec6ef59fb",
+    "chrome-left-down-closed-320x844.png": "efce6adfb4dbaefb010f3a03491cdd7a6c6f5b1635a19c7209eccfabe35b4665"
+  }
+}

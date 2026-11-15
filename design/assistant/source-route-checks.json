@@ -1,0 +1,53 @@
+{
+  "testedAt": "2026-11-15T15:50:57.466Z",
+  "base": "http://127.0.0.1:4193",
+  "checks": [
+    {
+      "path": "/work/lexisnexis",
+      "status": 200,
+      "anchors": 4
+    },
+    {
+      "path": "/work/portfolio-assistant",
+      "status": 200,
+      "anchors": 3
+    },
+    {
+      "path": "/work/dissertation",
+      "status": 200,
+      "anchors": 4
+    },
+    {
+      "path": "/work/copilot",
+      "status": 200,
+      "anchors": 3
+    },
+    {
+      "path": "/work/typeforge",
+      "status": 200,
+      "anchors": 3
+    },
+    {
+      "path": "/work/reinforcement-learning",
+      "status": 200,
+      "anchors": 2
+    },
+    {
+      "path": "/work/about-owen",
+      "status": 200,
+      "anchors": 3
+    },
+    {
+      "path": "/writing/research-note-template",
+      "status": 404
+    },
+    {
+      "path": "/work/case-study-template",
+      "status": 404
+    },
+    {
+      "path": "/writing/personal-writing-template",
+      "status": 404
+    }
+  ]
+}

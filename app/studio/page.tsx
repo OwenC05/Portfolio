@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import ProjectEvidence from '@/components/studio/ProjectEvidence'
 import StudioExperience from '@/components/studio/StudioExperience'
 import { studioProfile, studioProjects } from '@/lib/studio-content'
@@ -58,6 +59,9 @@ export default function StudioPage() {
           Get in touch.
         </h2>
         <nav className={styles.contactLinks} aria-label="Contact and profiles">
+          <Link href="/ask">Ask the portfolio</Link>
+          <Link href="/work">Work & background</Link>
+          <Link href="/writing">Writing</Link>
           {studioProfile.links.map((link) => (
             <a key={link.href} href={link.href}>
               {link.label}

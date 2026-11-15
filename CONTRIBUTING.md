@@ -30,7 +30,9 @@ npm run dev
 Run checks from the repository root:
 
 ```sh
-npx tsc --noEmit --incremental false
+npm run typecheck
+npm run test:assistant
+npm run eval:assistant
 node --test components/studio/scene/verify-controller.mjs components/studio/scene/verify-pilot.mjs components/studio/scene/verify-full-kit.mjs
 npm run lint
 npm run build
@@ -38,7 +40,7 @@ npm run build
 
 Only one local process should write `.next` at a time: coordinate stopping the development server before a production build. Hosted CI builds in its own checkout. The node tests cover technical behavior using documented CPU/image shims; they do not prove browser rendering, GPU cleanup, interaction or performance.
 
-At the current checkpoint, configured lint cannot load `@typescript-eslint/eslint-plugin`. This remains a visible blocker; do not remove rules, ignore failures or claim lint passed. Dependency changes must be deliberate and include the lockfile. The final build and browser acceptance gates also remain open.
+The assistant branch updates Next.js and React, supplies the configured TypeScript ESLint dependencies and includes the matching lockfile. Its configured lint, typecheck and production build pass. See [assistant delivery evidence](docs/assistant-delivery.md) for the bounded browser checks; these do not close the Studio's separate product acceptance gates.
 
 ## Asset and product acceptance
 

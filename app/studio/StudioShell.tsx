@@ -25,7 +25,7 @@ export interface StudioShellProps {
   evidence: ReactNode
   children: ReactNode
   projectContent: ReactNode
-  dialogRef: RefObject<HTMLDialogElement>
+  dialogRef: RefObject<HTMLDialogElement | null>
   dialogTitleId: string | undefined
   onNavigate: MouseEventHandler<HTMLDivElement>
   onViewCommand: (action: StudioViewAction) => void
@@ -33,8 +33,8 @@ export interface StudioShellProps {
   onDialogCancel: ReactEventHandler<HTMLDialogElement>
   onDialogClose: ReactEventHandler<HTMLDialogElement>
   projectsOpen: boolean
-  projectsToggleRef: RefObject<HTMLButtonElement>
-  panelScrollRef: RefObject<HTMLDivElement>
+  projectsToggleRef: RefObject<HTMLButtonElement | null>
+  panelScrollRef: RefObject<HTMLDivElement | null>
   onToggleProjects: () => void
   onFocusProjects: () => void
   onProjectsKeyDown: KeyboardEventHandler<HTMLElement>

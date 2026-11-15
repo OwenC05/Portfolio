@@ -1,0 +1,11 @@
+# Assistant validation
+
+Run `node --test tests/assistant/*.test.cjs` and `node scripts/assistant-eval.cjs` after installing the application's existing dependencies. The loader transpiles TypeScript in memory; run the application typecheck separately because transpilation is not a typecheck.
+
+The versioned offline fixtures report topical retrieval checks against the published catalogue. Unsupported and misleading questions are included, but retrieving a topic does not establish its premise. Provider tests use injected fake transports solely to verify request mechanics, schema checks, failure handling and cancellation. They do not measure model quality or semantic grounding. Human semantic review and a permitted live model evaluation remain outstanding.
+
+Generation defaults off. Enabling it requires `ASSISTANT_GENERATION_ENABLED=true`, an `ASSISTANT_MODEL` in the source-controlled allowlist, and a credential. In Vercel functions only the current request's `x-vercel-oidc-token` is used; local execution accepts `VERCEL_OIDC_TOKEN` or `AI_GATEWAY_API_KEY`. Do not enable generation until the account's free-only eligibility and permitted model are established. Never expose these variables to browser code. The provider is fixed to the Vercel AI Gateway chat-completions endpoint. No retries or automatic model fallback occur.
+
+Request bodies are bounded to 4096 bytes and questions to 600 characters; selected context is at most four 1200-character passages. Generation is limited to 700 output tokens, 12 seconds, and a 32000-byte provider response. Browser requests require the same Origin. This is a browser boundary, not authentication. Throttling is capped at 512 keys and 12 requests per minute per process; it is not a distributed serverless quota or a reliable spend cap. Production-level shared abuse controls remain a deployment concern.
+
+Stable chunk IDs are `source-id:section-id:zero-based-slice`. Published record and section IDs must remain stable; editing a passage can change its content without changing its ID, so catalogue and fixture versions are recorded separately. Citations link to the published section anchor. Drafts are filtered again at retrieval, even if a caller supplies them accidentally.

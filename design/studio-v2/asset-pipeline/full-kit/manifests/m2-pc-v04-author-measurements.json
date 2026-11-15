@@ -1,0 +1,1287 @@
+{
+ "statement": "Author measurements from the evaluated editable Blender state (modifiers and curves evaluated). Ray tests are exact geometry from the fixed eye; they do not prove UI visibility, which needs product chrome.",
+ "eyeBlenderM": [
+  -0.3499999940395355,
+  -1.7000000476837158,
+  1.3450000286102295
+ ],
+ "removedM1Proxies": [
+  "desk_frame__proxy_leg_1",
+  "desk_frame__proxy_leg_2",
+  "desk_frame__proxy_leg_3",
+  "desk_frame__proxy_leg_4",
+  "desk_mat__proxy_mat",
+  "desk_top__proxy_slab",
+  "fix_pendant__proxy_body",
+  "fix_pendant__proxy_lens",
+  "mon_central__proxy_dissertation_foot",
+  "mon_central__proxy_dissertation_lip_b",
+  "mon_central__proxy_dissertation_lip_l",
+  "mon_central__proxy_dissertation_lip_r",
+  "mon_central__proxy_dissertation_lip_t",
+  "mon_central__proxy_dissertation_post",
+  "mon_central__proxy_dissertation_shell",
+  "mon_side__proxy_copilot_foot",
+  "mon_side__proxy_copilot_lip_b",
+  "mon_side__proxy_copilot_lip_l",
+  "mon_side__proxy_copilot_lip_r",
+  "mon_side__proxy_copilot_lip_t",
+  "mon_side__proxy_copilot_post",
+  "mon_side__proxy_copilot_shell",
+  "mon_side__proxy_typeforge_foot",
+  "mon_side__proxy_typeforge_lip_b",
+  "mon_side__proxy_typeforge_lip_l",
+  "mon_side__proxy_typeforge_lip_r",
+  "mon_side__proxy_typeforge_lip_t",
+  "mon_side__proxy_typeforge_post",
+  "mon_side__proxy_typeforge_shell",
+  "mon_top__proxy_studio_lip_b",
+  "mon_top__proxy_studio_lip_l",
+  "mon_top__proxy_studio_lip_r",
+  "mon_top__proxy_studio_lip_t",
+  "mon_top__proxy_studio_post",
+  "mon_top__proxy_studio_shell",
+  "pc_tower__proxy_case",
+  "sub_woofer__proxy_cabinet"
+ ],
+ "pcTower": {
+  "boxBlenderM": {
+   "x": [
+    0.1,
+    0.375
+   ],
+   "y": [
+    -0.395,
+    0.165
+   ],
+   "z": [
+    0.0,
+    0.605
+   ],
+   "bodyBottom": 0.015
+  },
+  "sizeM": [
+   0.275,
+   0.59,
+   0.56
+  ],
+  "frontSetbackFromDeskFrontEdgeM": 0.1675,
+  "topToDeskUndersideM": 0.09,
+  "topIOMaxHeightM": 0.6065,
+  "clearanceToRightLegInnerFaceM": 0.075,
+  "clearanceBackToBackBeamYM": 0.0625,
+  "analyticMinimumFrontSetbackForHiddenTopM": 0.1549,
+  "topSamples": 121,
+  "topSamplesVisibleFromEye": 0,
+  "topSampleFirstHits": [
+   "desk_top__top",
+   "notebook_pen__proxy_notebook"
+  ],
+  "frontSamples": 105,
+  "frontSamplesVisible": 105,
+  "frontVisibleHeightRangeM": [
+   0.02,
+   0.6
+  ],
+  "glassSideSamples": 63,
+  "glassSideSamplesVisible": 45,
+  "home-1440": {
+   "frontInFrame": 28,
+   "glassSideInFrame": 19,
+   "frontOutsideChrome": 16,
+   "frontPxBounds": [
+    1046.9,
+    1217.1,
+    818.5,
+    896.4
+   ],
+   "glassOutsideChrome": 19,
+   "fanCentresPx": [
+    [
+     1129.7,
+     875.7,
+     true
+    ],
+    [
+     1124.3,
+     971.1,
+     false
+    ],
+    [
+     1119.1,
+     1064.0,
+     false
+    ]
+   ]
+  },
+  "right-down": {
+   "frontInFrame": 78,
+   "glassSideInFrame": 33
+  },
+  "music-1440": {
+   "frontInFrame": 49,
+   "glassSideInFrame": 20
+  },
+  "left-down": {
+   "frontInFrame": 0,
+   "glassSideInFrame": 0
+  }
+ },
+ "targetRays": {
+  "dissertation": {
+   "clear": 81,
+   "of": 81,
+   "blockers": []
+  },
+  "copilot": {
+   "clear": 81,
+   "of": 81,
+   "blockers": []
+  },
+  "typeforge": {
+   "clear": 81,
+   "of": 81,
+   "blockers": []
+  }
+ },
+ "m2BoundsBlenderM": {
+  "desk_frame__steel": [
+   [
+    -1.84,
+    -0.51,
+    0.0003
+   ],
+   [
+    0.49,
+    0.2625,
+    0.6947
+   ]
+  ],
+  "desk_mat__felt": [
+   [
+    -1.2,
+    -0.51,
+    0.7353
+   ],
+   [
+    -0.3,
+    -0.11,
+    0.7443
+   ]
+  ],
+  "desk_top__top": [
+   [
+    -1.9,
+    -0.5625,
+    0.695
+   ],
+   [
+    0.55,
+    0.3125,
+    0.735
+   ]
+  ],
+  "fix_pendant__body": [
+   [
+    -1.2795,
+    -0.195,
+    1.934
+   ],
+   [
+    -0.3205,
+    -0.105,
+    2.5947
+   ]
+  ],
+  "fix_pendant__lens": [
+   [
+    -1.263,
+    -0.1805,
+    1.9365
+   ],
+   [
+    -0.337,
+    -0.1195,
+    1.9405
+   ]
+  ],
+  "mon_cables__central_a": [
+   [
+    -0.8832,
+    0.2145,
+    0.5623
+   ],
+   [
+    -0.5981,
+    0.3074,
+    1.0161
+   ]
+  ],
+  "mon_cables__central_b": [
+   [
+    -0.8742,
+    0.2145,
+    0.5623
+   ],
+   [
+    -0.5891,
+    0.3074,
+    1.0161
+   ]
+  ],
+  "mon_cables__copilot_a": [
+   [
+    -1.6354,
+    0.0735,
+    0.5583
+   ],
+   [
+    -1.2499,
+    0.3418,
+    1.0261
+   ]
+  ],
+  "mon_cables__copilot_b": [
+   [
+    -1.6268,
+    0.0761,
+    0.5584
+   ],
+   [
+    -1.2499,
+    0.3421,
+    1.0261
+   ]
+  ],
+  "mon_cables__grommet": [
+   [
+    -1.5963,
+    0.1293,
+    0.695
+   ],
+   [
+    -0.0137,
+    0.376,
+    1.311
+   ]
+  ],
+  "mon_cables__studio_a": [
+   [
+    -0.7803,
+    0.1894,
+    0.5583
+   ],
+   [
+    -0.4437,
+    0.3844,
+    1.6435
+   ]
+  ],
+  "mon_cables__studio_b": [
+   [
+    -0.7713,
+    0.1894,
+    0.5583
+   ],
+   [
+    -0.4347,
+    0.3844,
+    1.6435
+   ]
+  ],
+  "mon_cables__typeforge_a": [
+   [
+    -0.4202,
+    0.1142,
+    0.5584
+   ],
+   [
+    -0.0076,
+    0.3414,
+    1.0261
+   ]
+  ],
+  "mon_cables__typeforge_b": [
+   [
+    -0.4202,
+    0.1115,
+    0.5584
+   ],
+   [
+    0.001,
+    0.3412,
+    1.0261
+   ]
+  ],
+  "mon_central__body": [
+   [
+    -1.2925,
+    0.115,
+    0.7353
+   ],
+   [
+    -0.3175,
+    0.305,
+    1.4175
+   ]
+  ],
+  "mon_side__copilot": [
+   [
+    -1.7633,
+    -0.0563,
+    0.7353
+   ],
+   [
+    -1.3396,
+    0.1768,
+    1.5175
+   ]
+  ],
+  "mon_side__typeforge": [
+   [
+    -0.2704,
+    -0.0563,
+    0.7353
+   ],
+   [
+    0.1533,
+    0.1768,
+    1.5175
+   ]
+  ],
+  "mon_top__body": [
+   [
+    -1.145,
+    0.265,
+    0.623
+   ],
+   [
+    -0.465,
+    0.374,
+    1.905
+   ]
+  ],
+  "pc_tower__case": [
+   [
+    0.1,
+    -0.395,
+    0.0003
+   ],
+   [
+    0.376,
+    0.165,
+    0.607
+   ]
+  ],
+  "pc_tower__glass": [
+   [
+    0.0985,
+    -0.364,
+    0.025
+   ],
+   [
+    0.0985,
+    0.155,
+    0.595
+   ]
+  ],
+  "pc_tower__glow": [
+   [
+    0.118,
+    -0.363,
+    0.14
+   ],
+   [
+    0.357,
+    -0.358,
+    0.1435
+   ]
+  ],
+  "sub_woofer__cabinet": [
+   [
+    -1.535,
+    -0.155,
+    0.0003
+   ],
+   [
+    -1.165,
+    0.217,
+    0.4023
+   ]
+  ],
+  "sub_woofer__grille": [
+   [
+    -1.512,
+    -0.149,
+    0.0353
+   ],
+   [
+    -1.188,
+    -0.145,
+    0.3793
+   ]
+  ],
+  "under_desk_power__lead_1": [
+   [
+    -1.2016,
+    0.1472,
+    0.5668
+   ],
+   [
+    -1.0286,
+    0.194,
+    0.6461
+   ]
+  ],
+  "under_desk_power__lead_2": [
+   [
+    -1.2018,
+    0.1472,
+    0.5669
+   ],
+   [
+    -0.9484,
+    0.2024,
+    0.646
+   ]
+  ],
+  "under_desk_power__lead_3": [
+   [
+    -1.2019,
+    0.1472,
+    0.567
+   ],
+   [
+    -0.8683,
+    0.2116,
+    0.646
+   ]
+  ],
+  "under_desk_power__loom": [
+   [
+    -1.9833,
+    0.1207,
+    0.0003
+   ],
+   [
+    -1.1796,
+    0.4863,
+    0.5794
+   ]
+  ],
+  "under_desk_power__pc_lead": [
+   [
+    -0.3202,
+    0.1418,
+    0.0003
+   ],
+   [
+    0.3075,
+    0.2939,
+    0.579
+   ]
+  ],
+  "under_desk_power__strip": [
+   [
+    -1.593,
+    0.137,
+    0.416
+   ],
+   [
+    -0.7,
+    0.205,
+    0.6313
+   ]
+  ],
+  "under_desk_power__sub_lead": [
+   [
+    -1.5072,
+    0.1493,
+    0.0967
+   ],
+   [
+    -1.2945,
+    0.3133,
+    0.5831
+   ]
+  ]
+ },
+ "intersections": {
+  "m2VersusM2OrArchitecture": {},
+  "m2VersusLaterStageProxiesOrContacts": {
+   "desk_top__top x mouse_native__proxy_body": [
+    4,
+    [
+     -0.618,
+     0.124,
+     0.735
+    ]
+   ],
+   "desk_top__top x mug_coaster__proxy_mug": [
+    16,
+    [
+     -0.618,
+     0.124,
+     0.735
+    ]
+   ],
+   "desk_top__top x notebook_pen__proxy_notebook": [
+    4,
+    [
+     -0.618,
+     0.124,
+     0.735
+    ]
+   ],
+   "desk_top__top x speaker_nearfield__proxy_cabinet": [
+    6,
+    [
+     -0.61,
+     0.248,
+     0.735
+    ]
+   ],
+   "desk_top__top x headphones__proxy_on_stand": [
+    4,
+    [
+     -0.618,
+     0.124,
+     0.735
+    ]
+   ],
+   "desk_top__top x mic_boom__proxy_clamp": [
+    8,
+    [
+     -0.618,
+     0.124,
+     0.735
+    ]
+   ],
+   "desk_frame__steel x mic_boom__proxy_clamp": [
+    10,
+    [
+     -1.805,
+     -0.124,
+     0.67
+    ]
+   ],
+   "desk_frame__steel x rug__proxy_rug": [
+    62,
+    [
+     0.466,
+     0.261,
+     0.001
+    ]
+   ],
+   "desk_frame__steel x contact_decals__under_desk": [
+    60,
+    [
+     0.466,
+     0.224,
+     0.001
+    ]
+   ],
+   "desk_mat__felt x mouse_native__proxy_body": [
+    8,
+    [
+     -0.75,
+     -0.31,
+     0.735
+    ]
+   ],
+   "desk_mat__felt x contact_decals__desk_gear": [
+    24,
+    [
+     -0.301,
+     -0.112,
+     0.737
+    ]
+   ],
+   "mon_side__typeforge x headphones__proxy_on_stand": [
+    50,
+    [
+     -0.054,
+     0.068,
+     1.165
+    ]
+   ],
+   "pc_tower__case x contact_decals__under_desk": [
+    96,
+    [
+     0.33,
+     0.135,
+     0.002
+    ]
+   ],
+   "sub_woofer__cabinet x contact_decals__under_desk": [
+    96,
+    [
+     -1.192,
+     0.165,
+     0.002
+    ]
+   ],
+   "mon_cables__typeforge_a x headphones__proxy_on_stand": [
+    12,
+    [
+     -0.028,
+     0.152,
+     0.82
+    ]
+   ],
+   "mon_cables__typeforge_b x headphones__proxy_on_stand": [
+    12,
+    [
+     -0.03,
+     0.142,
+     0.846
+    ]
+   ],
+   "mon_cables__grommet x headphones__proxy_on_stand": [
+    4,
+    [
+     -0.031,
+     0.142,
+     0.829
+    ]
+   ]
+  }
+ },
+ "minimumGapsM": {
+  "pc_tower__case | desk_top__top": 0.088,
+  "pc_tower__case | desk_frame__steel": 0.076,
+  "sub_woofer__cabinet | desk_frame__steel": 0.1527,
+  "mon_central__body | mon_top__body": 0.108,
+  "mon_central__body | desk_top__top": 0.0003,
+  "mon_top__body | desk_top__top": 0.0003,
+  "mon_top__body | desk_frame__steel": 0.0075,
+  "mon_side__copilot | desk_top__top": 0.0003,
+  "mon_side__typeforge | desk_top__top": 0.0003,
+  "desk_mat__felt | desk_top__top": 0.0003,
+  "desk_frame__steel | desk_top__top": 0.0003,
+  "under_desk_power__strip | desk_frame__steel": 0.0003,
+  "mon_cables__central_a | desk_top__top": 0.017,
+  "mon_cables__central_a | desk_frame__steel": 0.0038,
+  "mon_cables__central_a | mon_central__body": 0.0022,
+  "mon_cables__central_a | mon_side__copilot": 0.4786,
+  "mon_cables__central_a | mon_side__typeforge": 0.356,
+  "mon_cables__central_a | mon_top__body": 0.0753,
+  "mon_cables__central_a | pc_tower__case": 0.7029,
+  "mon_cables__central_a | sub_woofer__cabinet": 0.5636,
+  "mon_cables__central_b | desk_top__top": 0.0172,
+  "mon_cables__central_b | desk_frame__steel": 0.0038,
+  "mon_cables__central_b | mon_central__body": 0.0022,
+  "mon_cables__central_b | mon_side__copilot": 0.4872,
+  "mon_cables__central_b | mon_side__typeforge": 0.3476,
+  "mon_cables__central_b | mon_top__body": 0.0681,
+  "mon_cables__central_b | pc_tower__case": 0.694,
+  "mon_cables__central_b | sub_woofer__cabinet": 0.569,
+  "mon_cables__copilot_a | desk_top__top": 0.0003,
+  "mon_cables__copilot_a | desk_frame__steel": 0.0003,
+  "mon_cables__copilot_a | mon_central__body": 0.2864,
+  "mon_cables__copilot_a | mon_side__copilot": 0.0022,
+  "mon_cables__copilot_a | mon_side__typeforge": 1.0155,
+  "mon_cables__copilot_a | mon_top__body": 0.7146,
+  "mon_cables__copilot_a | pc_tower__case": 1.3507,
+  "mon_cables__copilot_a | sub_woofer__cabinet": 0.156,
+  "mon_cables__copilot_b | desk_top__top": 0.0003,
+  "mon_cables__copilot_b | desk_frame__steel": 0.0004,
+  "mon_cables__copilot_b | mon_central__body": 0.2801,
+  "mon_cables__copilot_b | mon_side__copilot": 0.0022,
+  "mon_cables__copilot_b | mon_side__typeforge": 1.0164,
+  "mon_cables__copilot_b | mon_top__body": 0.708,
+  "mon_cables__copilot_b | pc_tower__case": 1.351,
+  "mon_cables__copilot_b | sub_woofer__cabinet": 0.1565,
+  "mon_cables__typeforge_a | desk_top__top": 0.0003,
+  "mon_cables__typeforge_a | desk_frame__steel": 0.0004,
+  "mon_cables__typeforge_a | mon_central__body": 0.2089,
+  "mon_cables__typeforge_a | mon_side__copilot": 0.9567,
+  "mon_cables__typeforge_a | mon_side__typeforge": 0.0022,
+  "mon_cables__typeforge_a | mon_top__body": 0.1151,
+  "mon_cables__typeforge_a | pc_tower__case": 0.1811,
+  "mon_cables__typeforge_a | sub_woofer__cabinet": 0.7617,
+  "mon_cables__typeforge_b | desk_top__top": 0.0003,
+  "mon_cables__typeforge_b | desk_frame__steel": 0.0004,
+  "mon_cables__typeforge_b | mon_central__body": 0.2178,
+  "mon_cables__typeforge_b | mon_side__copilot": 0.9575,
+  "mon_cables__typeforge_b | mon_side__typeforge": 0.0022,
+  "mon_cables__typeforge_b | mon_top__body": 0.1101,
+  "mon_cables__typeforge_b | pc_tower__case": 0.1752,
+  "mon_cables__typeforge_b | sub_woofer__cabinet": 0.7617,
+  "mon_cables__studio_a | desk_top__top": 0.0633,
+  "mon_cables__studio_a | desk_frame__steel": 0.0003,
+  "mon_cables__studio_a | mon_central__body": 0.1271,
+  "mon_cables__studio_a | mon_side__copilot": 0.6217,
+  "mon_cables__studio_a | mon_side__typeforge": 0.31,
+  "mon_cables__studio_a | mon_top__body": 0.0021,
+  "mon_cables__studio_a | pc_tower__case": 0.5786,
+  "mon_cables__studio_a | sub_woofer__cabinet": 0.6909,
+  "mon_cables__studio_b | desk_top__top": 0.0633,
+  "mon_cables__studio_b | desk_frame__steel": 0.0003,
+  "mon_cables__studio_b | mon_central__body": 0.1307,
+  "mon_cables__studio_b | mon_side__copilot": 0.63,
+  "mon_cables__studio_b | mon_side__typeforge": 0.3041,
+  "mon_cables__studio_b | mon_top__body": 0.0021,
+  "mon_cables__studio_b | pc_tower__case": 0.5699,
+  "mon_cables__studio_b | sub_woofer__cabinet": 0.6996,
+  "under_desk_power__lead_1 | desk_top__top": 0.0489,
+  "under_desk_power__lead_1 | desk_frame__steel": 0.0088,
+  "under_desk_power__lead_1 | mon_central__body": 0.1307,
+  "under_desk_power__lead_1 | mon_side__copilot": 0.2808,
+  "under_desk_power__lead_1 | mon_side__typeforge": 0.7835,
+  "under_desk_power__lead_1 | mon_top__body": 0.4961,
+  "under_desk_power__lead_1 | pc_tower__case": 1.1291,
+  "under_desk_power__lead_1 | sub_woofer__cabinet": 0.1645,
+  "under_desk_power__lead_2 | desk_top__top": 0.049,
+  "under_desk_power__lead_2 | desk_frame__steel": 0.0089,
+  "under_desk_power__lead_2 | mon_central__body": 0.0955,
+  "under_desk_power__lead_2 | mon_side__copilot": 0.281,
+  "under_desk_power__lead_2 | mon_side__typeforge": 0.7065,
+  "under_desk_power__lead_2 | mon_top__body": 0.4174,
+  "under_desk_power__lead_2 | pc_tower__case": 1.049,
+  "under_desk_power__lead_2 | sub_woofer__cabinet": 0.1646,
+  "under_desk_power__lead_3 | desk_top__top": 0.049,
+  "under_desk_power__lead_3 | desk_frame__steel": 0.009,
+  "under_desk_power__lead_3 | mon_central__body": 0.092,
+  "under_desk_power__lead_3 | mon_side__copilot": 0.2811,
+  "under_desk_power__lead_3 | mon_side__typeforge": 0.63,
+  "under_desk_power__lead_3 | mon_top__body": 0.3394,
+  "under_desk_power__lead_3 | pc_tower__case": 0.9689,
+  "under_desk_power__lead_3 | sub_woofer__cabinet": 0.1647,
+  "under_desk_power__loom | desk_top__top": 0.1156,
+  "under_desk_power__loom | desk_frame__steel": 0.0014,
+  "under_desk_power__loom | mon_central__body": 0.2796,
+  "under_desk_power__loom | mon_side__copilot": 0.1574,
+  "under_desk_power__loom | mon_side__typeforge": 0.9413,
+  "under_desk_power__loom | mon_top__body": 0.6557,
+  "under_desk_power__loom | pc_tower__case": 1.2798,
+  "under_desk_power__loom | sub_woofer__cabinet": 0.0421,
+  "under_desk_power__pc_lead | desk_top__top": 0.116,
+  "under_desk_power__pc_lead | desk_frame__steel": 0.0003,
+  "under_desk_power__pc_lead | mon_central__body": 0.2794,
+  "under_desk_power__pc_lead | mon_side__copilot": 1.0503,
+  "under_desk_power__pc_lead | mon_side__typeforge": 0.1841,
+  "under_desk_power__pc_lead | mon_top__body": 0.2071,
+  "under_desk_power__pc_lead | pc_tower__case": 0.0021,
+  "under_desk_power__pc_lead | sub_woofer__cabinet": 0.8598,
+  "under_desk_power__sub_lead | desk_top__top": 0.1119,
+  "under_desk_power__sub_lead | desk_frame__steel": 0.0003,
+  "under_desk_power__sub_lead | mon_central__body": 0.3073,
+  "under_desk_power__sub_lead | mon_side__copilot": 0.1523,
+  "under_desk_power__sub_lead | mon_side__typeforge": 1.158,
+  "under_desk_power__sub_lead | mon_top__body": 0.87,
+  "under_desk_power__sub_lead | pc_tower__case": 1.3969,
+  "under_desk_power__sub_lead | sub_woofer__cabinet": 0.0026
+ },
+ "cableMinimumGapsM": {
+  "mon_cables__central_a": 0.0022,
+  "mon_cables__central_b": 0.0022,
+  "mon_cables__copilot_a": 0.0003,
+  "mon_cables__copilot_b": 0.0003,
+  "mon_cables__typeforge_a": 0.0003,
+  "mon_cables__typeforge_b": 0.0003,
+  "mon_cables__studio_a": 0.0003,
+  "mon_cables__studio_b": 0.0003,
+  "under_desk_power__lead_1": 0.0088,
+  "under_desk_power__lead_2": 0.0089,
+  "under_desk_power__lead_3": 0.009,
+  "under_desk_power__loom": 0.0014,
+  "under_desk_power__pc_lead": 0.0003,
+  "under_desk_power__sub_lead": 0.0003
+ },
+ "monitors": {
+  "mon_central": {
+   "outer": [
+    0.975,
+    0.565
+   ],
+   "lip": 0.007,
+   "rearY": 0.048,
+   "neckY": [
+    0.064,
+    0.092
+   ],
+   "footY": [
+    -0.08,
+    0.11
+   ],
+   "footW": 0.3,
+   "footTop": -0.385
+  },
+  "mon_side": {
+   "outer": [
+    0.435,
+    0.705
+   ],
+   "lip": 0.007,
+   "rearY": 0.028,
+   "linkedObjects": 2,
+   "neckY": [
+    0.044,
+    0.072
+   ],
+   "footY": [
+    -0.1,
+    0.09
+   ],
+   "footW": 0.24,
+   "footTop": -0.415
+  },
+  "mon_top": {
+   "outer": [
+    0.68,
+    0.4
+   ],
+   "lip": 0.007,
+   "rearY": 0.028,
+   "poleWorld": [
+    -0.505,
+    0.345
+   ]
+  }
+ },
+ "monitorPlanesLocalY": {
+  "facePlane": -0.027,
+  "bezelLipFront": -0.027,
+  "border": -0.023,
+  "recessFloor": -0.019,
+  "slabBack": 0.003,
+  "bezelPerSide": 0.0175,
+  "borderOverhangPerSide": 0.01
+ },
+ "fixtureCentresRuntimeWorld": {
+  "fix_pendant_lens_centre": [
+   -1.6,
+   3.983,
+   0.3
+  ],
+  "note": "Pendant kept at the M1 position; ref_pendant light at world (-1.6, 3.85, 0.3) unchanged, so no runtime light move is required."
+ },
+ "sourceScript": "source/build_fullkit_m2_pc_v04.py",
+ "sourceScriptSha256": "62d0733e46c8d7e91e7d91ae904ff20ac469850148ac207b8c953b8f334de551",
+ "baseScript": "source/build_fullkit_m2_material_v03.py",
+ "baseScriptSha256": "b4218d03094766ee30de7874afe42a55273ef27b95e34ee9d6a8db6c9d49574a",
+ "materialRepairV03": {
+  "statement": "Only lib_glow response values changed. Geometry, UVs, images, leaves, flags, lights and material count unchanged.",
+  "material": "lib_glow",
+  "before": {
+   "baseColorLinear": [
+    1.0,
+    0.708376,
+    0.341914
+   ],
+   "roughness": 0.6,
+   "metallic": 0.0,
+   "emissionLinear": [
+    1.0,
+    0.539479,
+    0.194618
+   ],
+   "emissionStrength": 1.1,
+   "linkedInputs": []
+  },
+  "after": {
+   "baseColorLinear": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "roughness": 1.0,
+   "metallic": 1.0,
+   "emissionLinear": [
+    1.0,
+    0.64448,
+    0.323143
+   ],
+   "emissionStrength": 1.2,
+   "linkedInputs": []
+  },
+  "sharedConsumers": [
+   "fix_floor_lamp__bulb",
+   "fix_pendant__lens",
+   "fix_wall_triangles__proxy_light_1",
+   "fix_wall_triangles__proxy_light_2",
+   "fix_wall_triangles__proxy_light_3",
+   "fix_wall_triangles__proxy_light_4",
+   "fix_wall_triangles__proxy_light_5",
+   "pc_tower__glow"
+  ],
+  "runtimeExpectation": "emissive-only; three r187 ACES filmic, exposure 1.2, sRGB output: about (237, 225, 201) wherever the lens is unoccluded"
+ },
+ "pcV04": {
+  "frontPanelUv": {
+   "object": "pc_tower__case",
+   "editablePolygonIndex": 35,
+   "loops": [
+    140,
+    141,
+    142,
+    143
+   ],
+   "vertices": [
+    [
+     0.122,
+     -0.387,
+     0.037
+    ],
+    [
+     0.353,
+     -0.387,
+     0.037
+    ],
+    [
+     0.353,
+     -0.387,
+     0.583
+    ],
+    [
+     0.122,
+     -0.387,
+     0.583
+    ]
+   ],
+   "faceCentreBlenderM": [
+    0.2375,
+    -0.387,
+    0.31
+   ],
+   "faceAreaM2": 0.126126,
+   "uvBefore": {
+    "swatch": "black",
+    "uv": [
+     0.3125,
+     0.9375
+    ]
+   },
+   "uvAfter": {
+    "swatch": "paper",
+    "uv": [
+     0.3125,
+     0.6875
+    ]
+   },
+   "why": "The only black-swatch face of pc_tower__case with normal -Y at the pocket floor depth (yf + 0.008); framed_box recoloured exactly this face. Fan rings, hubs and blades are separate faces proud of it and keep metal / black_metal."
+  },
+  "glow": {
+   "object": "pc_tower__glow",
+   "vertices": 8,
+   "triangles": 12,
+   "objectTransform": "identity (unchanged)",
+   "boundsBeforeBlenderM": [
+    [
+     0.118,
+     -0.363,
+     0.14
+    ],
+    [
+     0.357,
+     -0.358,
+     0.1435
+    ]
+   ],
+   "boundsAfterBlenderM": [
+    [
+     0.1063,
+     0.1537,
+     0.1403
+    ],
+    [
+     0.3453,
+     0.1587,
+     0.1438
+    ]
+   ],
+   "rigidTransform": "translate([-0.0117, 0.5167, 0.0003]) (pure translation; no rotation, so normals are unchanged)",
+   "caseInteriorBlenderM": [
+    [
+     0.10600000000000001,
+     -0.368,
+     0.020999999999999998
+    ],
+    [
+     0.369,
+     0.159,
+     0.599
+    ]
+   ],
+   "insideCaseInterior": true,
+   "placement": "horizontal bar (unchanged orientation) lying 0.3 mm above the PSU shroud top, 0.3 mm in front of the inner back wall, starting 0.3 mm from the glass-side inner wall; no intersection with any other mesh (BVH-checked below)"
+  },
+  "glowIntersections": [],
+  "glowMinimumGapToCaseM": 0.0003,
+  "fixedEye": {
+   "topSamples": 121,
+   "topSamplesVisibleFromEye": 0,
+   "frontSamples": 105,
+   "frontSamplesVisible": 105,
+   "glowSamples": 936,
+   "glowSamplesVisibleThroughGlass": 264,
+   "views": {
+    "home-1440": {
+     "glowVisibleSamplesInFrame": 264,
+     "glowPx": {
+      "x": [
+       967.8,
+       1011.1
+      ],
+      "y": [
+       870.8,
+       875.2
+      ]
+     },
+     "frontPanelVisibleSamplesInFrame": 28,
+     "frontPx": {
+      "x": [
+       1046.9,
+       1217.1
+      ],
+      "y": [
+       818.5,
+       896.4
+      ]
+     }
+    },
+    "home-1024": {
+     "glowVisibleSamplesInFrame": 264,
+     "glowPx": {
+      "x": [
+       723.4,
+       760.4
+      ],
+      "y": [
+       743.1,
+       746.8
+      ]
+     },
+     "frontPanelVisibleSamplesInFrame": 28,
+     "frontPx": {
+      "x": [
+       791.0,
+       936.2
+      ],
+      "y": [
+       698.5,
+       764.9
+      ]
+     }
+    },
+    "music-1440": {
+     "glowVisibleSamplesInFrame": 264,
+     "glowPx": {
+      "x": [
+       290.2,
+       337.7
+      ],
+      "y": [
+       860.3,
+       882.5
+      ]
+     },
+     "frontPanelVisibleSamplesInFrame": 49,
+     "frontPx": {
+      "x": [
+       371.0,
+       519.9
+      ],
+      "y": [
+       735.6,
+       898.8
+      ]
+     }
+    },
+    "v04-mid-right-1440": {
+     "glowVisibleSamplesInFrame": 0,
+     "glowPx": null,
+     "frontPanelVisibleSamplesInFrame": 0,
+     "frontPx": null
+    },
+    "v04-music-390-f74": {
+     "glowVisibleSamplesInFrame": 0,
+     "glowPx": null,
+     "frontPanelVisibleSamplesInFrame": 0,
+     "frontPx": null
+    }
+   },
+   "note": "Exact Blender ray casts and projections with the runtime-matched yaw/pitch/FOV cameras; no UI chrome. Glow visibility skips only the BLEND glass quad."
+  }
+ },
+ "sourceBlend": "source/fk-20-workstation-pc-v04.blend",
+ "sourceBlendSha256": "0b5336771a92e5cc0ae0c9b5d8c60a784065739bbbc93e56ba9f9b3471c62d79",
+ "exportReadback": {
+  "glb": "exports/studio-full-kit-m2-proposal-v04.glb",
+  "glbBytes": 1228192,
+  "glbSha256": "560acb2f2fa1ae36598a5d63ab484f842766ad344d88b065abad82286b560ea0",
+  "pairedWith": {
+   "glb": "exports/studio-full-kit-m2-proposal-v03.glb",
+   "glbBytes": 1228192,
+   "glbSha256": "7c0d30428065d0024bb1c4a631a3b54504008edcccab91c75e7367a53fa57752"
+  },
+  "binChunkBytes": [
+   1155932,
+   1155932
+  ],
+  "jsonSectionsIdentical": {
+   "nodes": true,
+   "meshes": true,
+   "bufferViews": true,
+   "images": true,
+   "textures": true,
+   "samplers": true,
+   "materials": true,
+   "extensionsUsed": true,
+   "accessorCount": true,
+   "scenesExceptTagExtras": true
+  },
+  "accessorsWithChangedBytes": {
+   "64": {
+    "words": 3,
+    "is": [
+     "desk_top__top_mesh.002 TEXCOORD_0"
+    ]
+   },
+   "149": {
+    "words": 4,
+    "is": "pc_tower__case TEXCOORD_0"
+   },
+   "154": {
+    "words": 72,
+    "is": "pc_tower__glow POSITION"
+   },
+   "165": {
+    "words": 1,
+    "is": [
+     "sub_woofer__cabinet_mesh.001 TEXCOORD_0"
+    ]
+   }
+  },
+  "accessorsWithChangedJson": [
+   {
+    "accessor": 154,
+    "is": "pc_tower__glow POSITION",
+    "v03": {
+     "bufferView": 159,
+     "componentType": 5126,
+     "count": 24,
+     "max": [
+      0.3569999933242798,
+      0.14350000023841858,
+      0.3630000054836273
+     ],
+     "min": [
+      0.11800000071525574,
+      0.14000001549720764,
+      0.3580000102519989
+     ],
+     "type": "VEC3"
+    },
+    "v04": {
+     "bufferView": 159,
+     "componentType": 5126,
+     "count": 24,
+     "max": [
+      0.34529998898506165,
+      0.14379999041557312,
+      -0.15370002388954163
+     ],
+     "min": [
+      0.1062999963760376,
+      0.14030000567436218,
+      -0.15870001912117004
+     ],
+     "type": "VEC3"
+    }
+   }
+  ],
+  "caseUvWordChanges": [
+   {
+    "bufferView": 154,
+    "byteOffsetInView": 484,
+    "accessor": 149,
+    "attribute": [
+     "pc_tower__case_mesh.001 TEXCOORD_0"
+    ],
+    "v03": 0.0625,
+    "v04": 0.3125
+   },
+   {
+    "bufferView": 154,
+    "byteOffsetInView": 508,
+    "accessor": 149,
+    "attribute": [
+     "pc_tower__case_mesh.001 TEXCOORD_0"
+    ],
+    "v03": 0.0625,
+    "v04": 0.3125
+   },
+   {
+    "bufferView": 154,
+    "byteOffsetInView": 532,
+    "accessor": 149,
+    "attribute": [
+     "pc_tower__case_mesh.001 TEXCOORD_0"
+    ],
+    "v03": 0.0625,
+    "v04": 0.3125
+   },
+   {
+    "bufferView": 154,
+    "byteOffsetInView": 556,
+    "accessor": 149,
+    "attribute": [
+     "pc_tower__case_mesh.001 TEXCOORD_0"
+    ],
+    "v03": 0.0625,
+    "v04": 0.3125
+   }
+  ],
+  "glowWordChanges": 72,
+  "exporterNoiseWords": [
+   {
+    "bufferView": 67,
+    "byteOffsetInView": 1580,
+    "accessor": 64,
+    "attribute": [
+     "desk_top__top_mesh.002 TEXCOORD_0"
+    ],
+    "v03": 0.6280038952827454,
+    "v04": 0.6280039548873901,
+    "absDelta": 5.960464477539063e-08
+   },
+   {
+    "bufferView": 67,
+    "byteOffsetInView": 1592,
+    "accessor": 64,
+    "attribute": [
+     "desk_top__top_mesh.002 TEXCOORD_0"
+    ],
+    "v03": -0.9474999308586121,
+    "v04": -0.9475000500679016,
+    "absDelta": 1.1920928955078125e-07
+   },
+   {
+    "bufferView": 67,
+    "byteOffsetInView": 2196,
+    "accessor": 64,
+    "attribute": [
+     "desk_top__top_mesh.002 TEXCOORD_0"
+    ],
+    "v03": 0.6309999227523804,
+    "v04": 0.6309999823570251,
+    "absDelta": 5.960464477539063e-08
+   },
+   {
+    "bufferView": 170,
+    "byteOffsetInView": 684,
+    "accessor": 165,
+    "attribute": [
+     "sub_woofer__cabinet_mesh.001 TEXCOORD_0"
+    ],
+    "v03": 0.0625,
+    "v04": 0.062499940395355225,
+    "absDelta": 5.960464477539063e-08
+   }
+  ],
+  "exporterNoiseRule": "Outside the authorised accessors only TEXCOORD_0 words with |delta| <= 2^-20 (float32 evaluation noise of the unchanged builders, as recorded for v03) are accepted; all are listed here.",
+  "pairedCheckPassed": true
+ }
+}

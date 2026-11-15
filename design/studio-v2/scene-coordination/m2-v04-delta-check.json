@@ -1,0 +1,1116 @@
+{
+  "checkedAt": "2026-11-15T14:30:34.447Z",
+  "status": "fail-unreleased-delta",
+  "scope": "Independent S Codex exact byte/accessor/material/manifest comparison; root PC-v04 scope grants no unrelated UV tolerance.",
+  "beforeGlbSha256": "7c0d30428065d0024bb1c4a631a3b54504008edcccab91c75e7367a53fa57752",
+  "afterGlbSha256": "560acb2f2fa1ae36598a5d63ab484f842766ad344d88b065abad82286b560ea0",
+  "afterManifestSha256": "5cddbf0f75ac9afbf92862a7ebdf44bd4d71aed2df588abe0d943f3198d28b23",
+  "allowedAccessors": [
+    149,
+    154,
+    155
+  ],
+  "changedWords": [
+    {
+      "offset": 411436,
+      "accessor": 64,
+      "vertex": 197,
+      "component": 1,
+      "labels": [
+        "desk_top__top.TEXCOORD_0"
+      ],
+      "allowed": false,
+      "before": 0.6280038952827454,
+      "after": 0.6280039548873901
+    },
+    {
+      "offset": 411448,
+      "accessor": 64,
+      "vertex": 199,
+      "component": 0,
+      "labels": [
+        "desk_top__top.TEXCOORD_0"
+      ],
+      "allowed": false,
+      "before": -0.9474999308586121,
+      "after": -0.9475000500679016
+    },
+    {
+      "offset": 412052,
+      "accessor": 64,
+      "vertex": 274,
+      "component": 1,
+      "labels": [
+        "desk_top__top.TEXCOORD_0"
+      ],
+      "allowed": false,
+      "before": 0.6309999227523804,
+      "after": 0.6309999823570251
+    },
+    {
+      "offset": 1024600,
+      "accessor": 149,
+      "vertex": 60,
+      "component": 1,
+      "labels": [
+        "pc_tower__case.TEXCOORD_0"
+      ],
+      "allowed": true,
+      "before": 0.0625,
+      "after": 0.3125
+    },
+    {
+      "offset": 1024624,
+      "accessor": 149,
+      "vertex": 63,
+      "component": 1,
+      "labels": [
+        "pc_tower__case.TEXCOORD_0"
+      ],
+      "allowed": true,
+      "before": 0.0625,
+      "after": 0.3125
+    },
+    {
+      "offset": 1024648,
+      "accessor": 149,
+      "vertex": 66,
+      "component": 1,
+      "labels": [
+        "pc_tower__case.TEXCOORD_0"
+      ],
+      "allowed": true,
+      "before": 0.0625,
+      "after": 0.3125
+    },
+    {
+      "offset": 1024672,
+      "accessor": 149,
+      "vertex": 69,
+      "component": 1,
+      "labels": [
+        "pc_tower__case.TEXCOORD_0"
+      ],
+      "allowed": true,
+      "before": 0.0625,
+      "after": 0.3125
+    },
+    {
+      "offset": 1057204,
+      "accessor": 154,
+      "vertex": 0,
+      "component": 0,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.11800000071525574,
+      "after": 0.1062999963760376
+    },
+    {
+      "offset": 1057208,
+      "accessor": 154,
+      "vertex": 0,
+      "component": 1,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.14000001549720764,
+      "after": 0.14030000567436218
+    },
+    {
+      "offset": 1057212,
+      "accessor": 154,
+      "vertex": 0,
+      "component": 2,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3630000054836273,
+      "after": -0.15370002388954163
+    },
+    {
+      "offset": 1057216,
+      "accessor": 154,
+      "vertex": 1,
+      "component": 0,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.11800000071525574,
+      "after": 0.1062999963760376
+    },
+    {
+      "offset": 1057220,
+      "accessor": 154,
+      "vertex": 1,
+      "component": 1,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.14000001549720764,
+      "after": 0.14030000567436218
+    },
+    {
+      "offset": 1057224,
+      "accessor": 154,
+      "vertex": 1,
+      "component": 2,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3630000054836273,
+      "after": -0.15370002388954163
+    },
+    {
+      "offset": 1057228,
+      "accessor": 154,
+      "vertex": 2,
+      "component": 0,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.11800000071525574,
+      "after": 0.1062999963760376
+    },
+    {
+      "offset": 1057232,
+      "accessor": 154,
+      "vertex": 2,
+      "component": 1,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.14000001549720764,
+      "after": 0.14030000567436218
+    },
+    {
+      "offset": 1057236,
+      "accessor": 154,
+      "vertex": 2,
+      "component": 2,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3630000054836273,
+      "after": -0.15370002388954163
+    },
+    {
+      "offset": 1057240,
+      "accessor": 154,
+      "vertex": 3,
+      "component": 0,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.11800000071525574,
+      "after": 0.1062999963760376
+    },
+    {
+      "offset": 1057244,
+      "accessor": 154,
+      "vertex": 3,
+      "component": 1,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.14350000023841858,
+      "after": 0.14379999041557312
+    },
+    {
+      "offset": 1057248,
+      "accessor": 154,
+      "vertex": 3,
+      "component": 2,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3630000054836273,
+      "after": -0.15370002388954163
+    },
+    {
+      "offset": 1057252,
+      "accessor": 154,
+      "vertex": 4,
+      "component": 0,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.11800000071525574,
+      "after": 0.1062999963760376
+    },
+    {
+      "offset": 1057256,
+      "accessor": 154,
+      "vertex": 4,
+      "component": 1,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.14350000023841858,
+      "after": 0.14379999041557312
+    },
+    {
+      "offset": 1057260,
+      "accessor": 154,
+      "vertex": 4,
+      "component": 2,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3630000054836273,
+      "after": -0.15370002388954163
+    },
+    {
+      "offset": 1057264,
+      "accessor": 154,
+      "vertex": 5,
+      "component": 0,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.11800000071525574,
+      "after": 0.1062999963760376
+    },
+    {
+      "offset": 1057268,
+      "accessor": 154,
+      "vertex": 5,
+      "component": 1,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.14350000023841858,
+      "after": 0.14379999041557312
+    },
+    {
+      "offset": 1057272,
+      "accessor": 154,
+      "vertex": 5,
+      "component": 2,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3630000054836273,
+      "after": -0.15370002388954163
+    },
+    {
+      "offset": 1057276,
+      "accessor": 154,
+      "vertex": 6,
+      "component": 0,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.11800000071525574,
+      "after": 0.1062999963760376
+    },
+    {
+      "offset": 1057280,
+      "accessor": 154,
+      "vertex": 6,
+      "component": 1,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.14000001549720764,
+      "after": 0.14030000567436218
+    },
+    {
+      "offset": 1057284,
+      "accessor": 154,
+      "vertex": 6,
+      "component": 2,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3580000102519989,
+      "after": -0.15870001912117004
+    },
+    {
+      "offset": 1057288,
+      "accessor": 154,
+      "vertex": 7,
+      "component": 0,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.11800000071525574,
+      "after": 0.1062999963760376
+    },
+    {
+      "offset": 1057292,
+      "accessor": 154,
+      "vertex": 7,
+      "component": 1,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.14000001549720764,
+      "after": 0.14030000567436218
+    },
+    {
+      "offset": 1057296,
+      "accessor": 154,
+      "vertex": 7,
+      "component": 2,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3580000102519989,
+      "after": -0.15870001912117004
+    },
+    {
+      "offset": 1057300,
+      "accessor": 154,
+      "vertex": 8,
+      "component": 0,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.11800000071525574,
+      "after": 0.1062999963760376
+    },
+    {
+      "offset": 1057304,
+      "accessor": 154,
+      "vertex": 8,
+      "component": 1,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.14000001549720764,
+      "after": 0.14030000567436218
+    },
+    {
+      "offset": 1057308,
+      "accessor": 154,
+      "vertex": 8,
+      "component": 2,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3580000102519989,
+      "after": -0.15870001912117004
+    },
+    {
+      "offset": 1057312,
+      "accessor": 154,
+      "vertex": 9,
+      "component": 0,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.11800000071525574,
+      "after": 0.1062999963760376
+    },
+    {
+      "offset": 1057316,
+      "accessor": 154,
+      "vertex": 9,
+      "component": 1,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.14350000023841858,
+      "after": 0.14379999041557312
+    },
+    {
+      "offset": 1057320,
+      "accessor": 154,
+      "vertex": 9,
+      "component": 2,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3580000102519989,
+      "after": -0.15870001912117004
+    },
+    {
+      "offset": 1057324,
+      "accessor": 154,
+      "vertex": 10,
+      "component": 0,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.11800000071525574,
+      "after": 0.1062999963760376
+    },
+    {
+      "offset": 1057328,
+      "accessor": 154,
+      "vertex": 10,
+      "component": 1,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.14350000023841858,
+      "after": 0.14379999041557312
+    },
+    {
+      "offset": 1057332,
+      "accessor": 154,
+      "vertex": 10,
+      "component": 2,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3580000102519989,
+      "after": -0.15870001912117004
+    },
+    {
+      "offset": 1057336,
+      "accessor": 154,
+      "vertex": 11,
+      "component": 0,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.11800000071525574,
+      "after": 0.1062999963760376
+    },
+    {
+      "offset": 1057340,
+      "accessor": 154,
+      "vertex": 11,
+      "component": 1,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.14350000023841858,
+      "after": 0.14379999041557312
+    },
+    {
+      "offset": 1057344,
+      "accessor": 154,
+      "vertex": 11,
+      "component": 2,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3580000102519989,
+      "after": -0.15870001912117004
+    },
+    {
+      "offset": 1057348,
+      "accessor": 154,
+      "vertex": 12,
+      "component": 0,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3569999933242798,
+      "after": 0.34529998898506165
+    },
+    {
+      "offset": 1057352,
+      "accessor": 154,
+      "vertex": 12,
+      "component": 1,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.14000001549720764,
+      "after": 0.14030000567436218
+    },
+    {
+      "offset": 1057356,
+      "accessor": 154,
+      "vertex": 12,
+      "component": 2,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3630000054836273,
+      "after": -0.15370002388954163
+    },
+    {
+      "offset": 1057360,
+      "accessor": 154,
+      "vertex": 13,
+      "component": 0,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3569999933242798,
+      "after": 0.34529998898506165
+    },
+    {
+      "offset": 1057364,
+      "accessor": 154,
+      "vertex": 13,
+      "component": 1,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.14000001549720764,
+      "after": 0.14030000567436218
+    },
+    {
+      "offset": 1057368,
+      "accessor": 154,
+      "vertex": 13,
+      "component": 2,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3630000054836273,
+      "after": -0.15370002388954163
+    },
+    {
+      "offset": 1057372,
+      "accessor": 154,
+      "vertex": 14,
+      "component": 0,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3569999933242798,
+      "after": 0.34529998898506165
+    },
+    {
+      "offset": 1057376,
+      "accessor": 154,
+      "vertex": 14,
+      "component": 1,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.14000001549720764,
+      "after": 0.14030000567436218
+    },
+    {
+      "offset": 1057380,
+      "accessor": 154,
+      "vertex": 14,
+      "component": 2,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3630000054836273,
+      "after": -0.15370002388954163
+    },
+    {
+      "offset": 1057384,
+      "accessor": 154,
+      "vertex": 15,
+      "component": 0,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3569999933242798,
+      "after": 0.34529998898506165
+    },
+    {
+      "offset": 1057388,
+      "accessor": 154,
+      "vertex": 15,
+      "component": 1,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.14350000023841858,
+      "after": 0.14379999041557312
+    },
+    {
+      "offset": 1057392,
+      "accessor": 154,
+      "vertex": 15,
+      "component": 2,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3630000054836273,
+      "after": -0.15370002388954163
+    },
+    {
+      "offset": 1057396,
+      "accessor": 154,
+      "vertex": 16,
+      "component": 0,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3569999933242798,
+      "after": 0.34529998898506165
+    },
+    {
+      "offset": 1057400,
+      "accessor": 154,
+      "vertex": 16,
+      "component": 1,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.14350000023841858,
+      "after": 0.14379999041557312
+    },
+    {
+      "offset": 1057404,
+      "accessor": 154,
+      "vertex": 16,
+      "component": 2,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3630000054836273,
+      "after": -0.15370002388954163
+    },
+    {
+      "offset": 1057408,
+      "accessor": 154,
+      "vertex": 17,
+      "component": 0,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3569999933242798,
+      "after": 0.34529998898506165
+    },
+    {
+      "offset": 1057412,
+      "accessor": 154,
+      "vertex": 17,
+      "component": 1,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.14350000023841858,
+      "after": 0.14379999041557312
+    },
+    {
+      "offset": 1057416,
+      "accessor": 154,
+      "vertex": 17,
+      "component": 2,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3630000054836273,
+      "after": -0.15370002388954163
+    },
+    {
+      "offset": 1057420,
+      "accessor": 154,
+      "vertex": 18,
+      "component": 0,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3569999933242798,
+      "after": 0.34529998898506165
+    },
+    {
+      "offset": 1057424,
+      "accessor": 154,
+      "vertex": 18,
+      "component": 1,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.14000001549720764,
+      "after": 0.14030000567436218
+    },
+    {
+      "offset": 1057428,
+      "accessor": 154,
+      "vertex": 18,
+      "component": 2,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3580000102519989,
+      "after": -0.15870001912117004
+    },
+    {
+      "offset": 1057432,
+      "accessor": 154,
+      "vertex": 19,
+      "component": 0,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3569999933242798,
+      "after": 0.34529998898506165
+    },
+    {
+      "offset": 1057436,
+      "accessor": 154,
+      "vertex": 19,
+      "component": 1,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.14000001549720764,
+      "after": 0.14030000567436218
+    },
+    {
+      "offset": 1057440,
+      "accessor": 154,
+      "vertex": 19,
+      "component": 2,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3580000102519989,
+      "after": -0.15870001912117004
+    },
+    {
+      "offset": 1057444,
+      "accessor": 154,
+      "vertex": 20,
+      "component": 0,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3569999933242798,
+      "after": 0.34529998898506165
+    },
+    {
+      "offset": 1057448,
+      "accessor": 154,
+      "vertex": 20,
+      "component": 1,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.14000001549720764,
+      "after": 0.14030000567436218
+    },
+    {
+      "offset": 1057452,
+      "accessor": 154,
+      "vertex": 20,
+      "component": 2,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3580000102519989,
+      "after": -0.15870001912117004
+    },
+    {
+      "offset": 1057456,
+      "accessor": 154,
+      "vertex": 21,
+      "component": 0,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3569999933242798,
+      "after": 0.34529998898506165
+    },
+    {
+      "offset": 1057460,
+      "accessor": 154,
+      "vertex": 21,
+      "component": 1,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.14350000023841858,
+      "after": 0.14379999041557312
+    },
+    {
+      "offset": 1057464,
+      "accessor": 154,
+      "vertex": 21,
+      "component": 2,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3580000102519989,
+      "after": -0.15870001912117004
+    },
+    {
+      "offset": 1057468,
+      "accessor": 154,
+      "vertex": 22,
+      "component": 0,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3569999933242798,
+      "after": 0.34529998898506165
+    },
+    {
+      "offset": 1057472,
+      "accessor": 154,
+      "vertex": 22,
+      "component": 1,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.14350000023841858,
+      "after": 0.14379999041557312
+    },
+    {
+      "offset": 1057476,
+      "accessor": 154,
+      "vertex": 22,
+      "component": 2,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3580000102519989,
+      "after": -0.15870001912117004
+    },
+    {
+      "offset": 1057480,
+      "accessor": 154,
+      "vertex": 23,
+      "component": 0,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3569999933242798,
+      "after": 0.34529998898506165
+    },
+    {
+      "offset": 1057484,
+      "accessor": 154,
+      "vertex": 23,
+      "component": 1,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.14350000023841858,
+      "after": 0.14379999041557312
+    },
+    {
+      "offset": 1057488,
+      "accessor": 154,
+      "vertex": 23,
+      "component": 2,
+      "labels": [
+        "pc_tower__glow.POSITION"
+      ],
+      "allowed": true,
+      "before": 0.3580000102519989,
+      "after": -0.15870001912117004
+    },
+    {
+      "offset": 1074960,
+      "accessor": 165,
+      "vertex": 85,
+      "component": 1,
+      "labels": [
+        "sub_woofer__cabinet.TEXCOORD_0"
+      ],
+      "allowed": false,
+      "before": 0.0625,
+      "after": 0.062499940395355225
+    }
+  ],
+  "unauthorizedWords": [
+    {
+      "offset": 411436,
+      "accessor": 64,
+      "vertex": 197,
+      "component": 1,
+      "labels": [
+        "desk_top__top.TEXCOORD_0"
+      ],
+      "allowed": false,
+      "before": 0.6280038952827454,
+      "after": 0.6280039548873901
+    },
+    {
+      "offset": 411448,
+      "accessor": 64,
+      "vertex": 199,
+      "component": 0,
+      "labels": [
+        "desk_top__top.TEXCOORD_0"
+      ],
+      "allowed": false,
+      "before": -0.9474999308586121,
+      "after": -0.9475000500679016
+    },
+    {
+      "offset": 412052,
+      "accessor": 64,
+      "vertex": 274,
+      "component": 1,
+      "labels": [
+        "desk_top__top.TEXCOORD_0"
+      ],
+      "allowed": false,
+      "before": 0.6309999227523804,
+      "after": 0.6309999823570251
+    },
+    {
+      "offset": 1074960,
+      "accessor": 165,
+      "vertex": 85,
+      "component": 1,
+      "labels": [
+        "sub_woofer__cabinet.TEXCOORD_0"
+      ],
+      "allowed": false,
+      "before": 0.0625,
+      "after": 0.062499940395355225
+    }
+  ],
+  "jsonDifferences": [
+    {
+      "path": "scenes.0.extras.fk_tag",
+      "before": "m2base-v03",
+      "after": "m2base-v04"
+    },
+    {
+      "path": "scenes.0.extras.fk_m2_tag",
+      "before": "v03-material",
+      "after": "v04-pc"
+    },
+    {
+      "path": "accessors.154.max.0",
+      "before": 0.3569999933242798,
+      "after": 0.34529998898506165
+    },
+    {
+      "path": "accessors.154.max.1",
+      "before": 0.14350000023841858,
+      "after": 0.14379999041557312
+    },
+    {
+      "path": "accessors.154.max.2",
+      "before": 0.3630000054836273,
+      "after": -0.15370002388954163
+    },
+    {
+      "path": "accessors.154.min.0",
+      "before": 0.11800000071525574,
+      "after": 0.1062999963760376
+    },
+    {
+      "path": "accessors.154.min.1",
+      "before": 0.14000001549720764,
+      "after": 0.14030000567436218
+    },
+    {
+      "path": "accessors.154.min.2",
+      "before": 0.3580000102519989,
+      "after": -0.15870001912117004
+    }
+  ],
+  "unauthorizedJson": [],
+  "manifestDifferences": [
+    {
+      "path": "glbSha256",
+      "before": "7c0d30428065d0024bb1c4a631a3b54504008edcccab91c75e7367a53fa57752",
+      "after": "560acb2f2fa1ae36598a5d63ab484f842766ad344d88b065abad82286b560ea0"
+    }
+  ],
+  "validation": {
+    "valid": true,
+    "profileId": "studio-full-kit-v1",
+    "profileSha256": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+    "glbSha256": "560acb2f2fa1ae36598a5d63ab484f842766ad344d88b065abad82286b560ea0",
+    "errors": [],
+    "deferred": [
+      "Actual browser PNG/JPEG decode",
+      "Runtime renderer first-refresh/settled draws and triangles",
+      "Scene JS plus assets transfer",
+      "Root visual gate and independent review"
+    ],
+    "metrics": {
+      "uniqueGeometryTriangles": 22658,
+      "placedTriangles": 24722,
+      "shadowTriangles": 12680,
+      "primitiveInstances": 117,
+      "shadowInstances": 48,
+      "imagePixels": 425984,
+      "materialCount": 11,
+      "textureCount": 5,
+      "rawBytes": 1228192,
+      "gzipBytesEstimate": 586960,
+      "brotliBytesEstimate": 483994,
+      "textureEncodedBytes": 325195,
+      "rawRgbaBytesBeforeMipmaps": 1703936
+    },
+    "boundsGltfMetres": {
+      "min": [
+        -2.250000089406967,
+        -0.02000001072883606,
+        -1.0600000619888306
+      ],
+      "max": [
+        2.550000101327896,
+        2.5950000565499067,
+        3.3000000715255737
+      ]
+    }
+  },
+  "limitations": "This preserves the reported failed candidate; no appearance approval, runtime or full suite. A corrected candidate needs a fresh identity-bound delta check and root captures."
+}

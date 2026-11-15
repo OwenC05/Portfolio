@@ -1,0 +1,15 @@
+{
+  "valid": false,
+  "profileId": "studio-full-kit-v1",
+  "profileSha256": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+  "glbSha256": "3d5194e039d85d309d899f1629d30ddc0a45a4439690ae89a5fff747d529e331",
+  "errors": [
+    "Studio full kit: binding planar local +Z/upright UV"
+  ],
+  "deferred": [
+    "Actual browser PNG/JPEG decode",
+    "Runtime renderer first-refresh/settled draws and triangles",
+    "Scene JS plus assets transfer",
+    "Root visual gate and independent review"
+  ]
+}

@@ -9,3 +9,12 @@ node_modules/
 # env & misc
 .env*
 .DS_Store
+
+# Local compiler, browser and agent runtime state (keep plans and evidence tracked)
+*.tsbuildinfo
+/.playwright-mcp/
+/.omx/state/
+/.omx/logs/
+/.omx/metrics.json
+/.omx/tmux-hook.json
+/.omx/*.log

@@ -1,0 +1,251 @@
+{
+  "date": "2026-11-14",
+  "environment": {
+    "url": "http://127.0.0.1:4181/studio",
+    "mode": "Next development preview",
+    "browser": "isolated Chromium via Playwright",
+    "desktop": [
+      1440,
+      900
+    ],
+    "mobile": [
+      390,
+      844
+    ],
+    "reducedMotion": "reduce",
+    "hardwareTouchPenTested": false
+  },
+  "sourceHashes": [
+    {
+      "Path": "C:\\Users\\Owenc\\orca\\Portfolio\\components\\studio\\StudioExperience.tsx",
+      "Hash": "4E8628D8B91C840A494174D559E30B7967BC062F773AA37D74F53F3094891E16"
+    },
+    {
+      "Path": "C:\\Users\\Owenc\\orca\\Portfolio\\app\\studio\\panel-navigation.ts",
+      "Hash": "E67ABF654D6FD286EDC536EC3F29290CA5A6F2E67DAEB91CA596AE3FD976E347"
+    },
+    {
+      "Path": "C:\\Users\\Owenc\\orca\\Portfolio\\app\\studio\\StudioShell.tsx",
+      "Hash": "BCAE10C0B983B1295B4D13E4FF1777C25FE9AF224EBF2AEE865C146FDB62ECA8"
+    },
+    {
+      "Path": "C:\\Users\\Owenc\\orca\\Portfolio\\app\\studio\\studio.module.css",
+      "Hash": "04B55C973D556B8A4C2FE396F3A7F4CCBB422A3E9577E55D373CDC608582691A"
+    }
+  ],
+  "sectionHistory": {
+    "passed": true,
+    "records": [
+      {
+        "label": "about",
+        "hash": "#about",
+        "y": 809,
+        "restoration": "auto",
+        "open": false,
+        "focus": "about",
+        "eye": "-0.7,2.8,3.4"
+      },
+      {
+        "label": "back-room",
+        "hash": "",
+        "y": 0,
+        "restoration": "auto",
+        "open": false,
+        "focus": "about",
+        "eye": "-0.7,2.8,3.4"
+      },
+      {
+        "label": "forward-about",
+        "hash": "#about",
+        "y": 809,
+        "restoration": "auto",
+        "open": false,
+        "focus": "about",
+        "eye": "-0.7,2.8,3.4"
+      },
+      {
+        "label": "about-before-contact-click",
+        "hash": "#about",
+        "y": 0,
+        "restoration": "auto",
+        "open": false,
+        "focus": "about",
+        "eye": "-0.7,2.8,3.4"
+      },
+      {
+        "label": "contact",
+        "hash": "#contact",
+        "y": 809,
+        "restoration": "auto",
+        "open": false,
+        "focus": "contact",
+        "eye": "-0.7,2.8,3.4"
+      },
+      {
+        "label": "back-about-restored",
+        "hash": "#about",
+        "y": 0,
+        "restoration": "auto",
+        "open": false,
+        "focus": "contact",
+        "eye": "-0.7,2.8,3.4"
+      }
+    ],
+    "clicks": [
+      {
+        "event": "click",
+        "href": "#about",
+        "y": 0,
+        "hash": ""
+      },
+      {
+        "event": "click",
+        "href": "#contact",
+        "y": 0,
+        "hash": "#about"
+      }
+    ]
+  },
+  "projectHistory": {
+    "passed": false,
+    "error": "TimeoutError: page.waitForFunction: Timeout 5000ms exceeded.",
+    "records": [
+      {
+        "label": "base",
+        "hash": "",
+        "y": 0,
+        "restoration": "auto",
+        "open": false,
+        "focus": "",
+        "historyKeys": [
+          "__NA",
+          "__PRIVATE_NEXTJS_INTERNALS_TREE"
+        ],
+        "pose": {
+          "eye": "-0.7,2.8,3.4",
+          "yaw": "-4",
+          "pitch": "-6"
+        },
+        "interaction": "true"
+      },
+      {
+        "label": "opened",
+        "hash": "#project-copilot",
+        "y": 0,
+        "restoration": "manual",
+        "open": true,
+        "focus": "panel-project-copilot-heading",
+        "historyKeys": [
+          "__NA",
+          "__PRIVATE_NEXTJS_INTERNALS_TREE",
+          "__studioPanelEntry"
+        ],
+        "pose": {
+          "eye": "-0.7,2.8,3.4",
+          "yaw": "-4",
+          "pitch": "-6"
+        },
+        "interaction": "false"
+      },
+      {
+        "label": "escape-to-base",
+        "hash": "",
+        "y": 0,
+        "restoration": "auto",
+        "open": false,
+        "focus": "studio-shortcut-copilot",
+        "historyKeys": [
+          "__NA",
+          "__PRIVATE_NEXTJS_INTERNALS_TREE"
+        ],
+        "pose": {
+          "eye": "-0.7,2.8,3.4",
+          "yaw": "-4",
+          "pitch": "-6"
+        },
+        "interaction": "true"
+      },
+      {
+        "label": "forward-reopened",
+        "hash": "#project-copilot",
+        "y": 0,
+        "restoration": "manual",
+        "open": true,
+        "focus": "panel-project-copilot-heading",
+        "historyKeys": [
+          "__NA",
+          "__PRIVATE_NEXTJS_INTERNALS_TREE"
+        ],
+        "pose": {
+          "eye": "-0.7,2.8,3.4",
+          "yaw": "-4",
+          "pitch": "-6"
+        },
+        "interaction": "false"
+      },
+      {
+        "label": "failure",
+        "hash": "#studio",
+        "y": 0,
+        "restoration": "auto",
+        "open": false,
+        "focus": "studio-shortcut-copilot",
+        "historyKeys": [
+          "__NA",
+          "__PRIVATE_NEXTJS_INTERNALS_TREE"
+        ],
+        "pose": {
+          "eye": "-0.7,2.8,3.4",
+          "yaw": "-4",
+          "pitch": "-6"
+        },
+        "interaction": "true"
+      }
+    ]
+  },
+  "disclosure": {
+    "passed": true,
+    "records": [
+      {
+        "label": "expanded",
+        "expanded": "true",
+        "focus": "",
+        "focusOnToggle": true,
+        "focusInNav": false,
+        "clipPath": "none",
+        "y": 0
+      },
+      {
+        "label": "keyboard-in-nav",
+        "expanded": "true",
+        "focus": "studio-shortcut-dissertation",
+        "focusOnToggle": false,
+        "focusInNav": true,
+        "clipPath": "none",
+        "y": 0
+      },
+      {
+        "label": "escape-collapsed",
+        "expanded": "false",
+        "focus": "",
+        "focusOnToggle": true,
+        "focusInNav": false,
+        "clipPath": "inset(50%)",
+        "y": 0
+      }
+    ],
+    "tabs": [
+      {
+        "id": "studio-shortcut-dissertation",
+        "inNav": true
+      }
+    ]
+  },
+  "interpretation": [
+    "Section history passes using the position at actual navigation. Initial harness wrongly expected About Y809 after Playwright scrolled the header Contact link into view; corrected trusted-click capture proves source entry Y0 and Back restores Y0.",
+    "Project-history raw test reports false solely because its final assertion expected an empty fragment. Next.js removed __studioPanelEntry on Forward; the agreed safe fallback is #studio. A separate live read confirmed safe:true, no open dialog, Y0 and focus studio-shortcut-copilot. That fallback is conforming behavior, not a product failure.",
+    "Project heading focus, scroll restoration auto/manual transitions, retained eye/yaw/pitch and interaction true/false transitions were directly observed.",
+    "Mobile Projects click, trusted Tab into dissertation link and Escape move focus to toggle, set aria-expanded false and remove focus-within so nav clipPath becomes inset(50%) without scroll.",
+    "These bounded checks do not establish full final history/race/StrictMode/failure/performance behavior, screen-reader or physical mobile support. The 320 visual failure remains open."
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "renderer": {
+    "engine": "three.js r187",
+    "studioDpr": "1",
+    "studioRenderCount": "2",
+    "studioDrawCalls": "60",
+    "studioTriangles": "65542",
+    "studioGeometries": "9",
+    "studioTextures": "9"
+  },
+  "resources": [
+    {
+      "url": "http://127.0.0.1:4181/_next/static/css/49325f0ffcc73f04.css",
+      "encodedBodySize": 3942,
+      "decodedBodySize": 19256,
+      "transferSize": 4242
+    },
+    {
+      "url": "http://127.0.0.1:4181/_next/static/css/e80d31316053d9ae.css",
+      "encodedBodySize": 3574,
+      "decodedBodySize": 13293,
+      "transferSize": 3874
+    },
+    {
+      "url": "http://127.0.0.1:4181/_next/static/chunks/webpack-63be727659054193.js",
+      "encodedBodySize": 1815,
+      "decodedBodySize": 3764,
+      "transferSize": 2115
+    },
+    {
+      "url": "http://127.0.0.1:4181/_next/static/chunks/fd9d1056-a609a526229acf68.js",
+      "encodedBodySize": 53365,
+      "decodedBodySize": 171902,
+      "transferSize": 53665
+    },
+    {
+      "url": "http://127.0.0.1:4181/_next/static/chunks/938-936cd42000408a93.js",
+      "encodedBodySize": 26775,
+      "decodedBodySize": 104463,
+      "transferSize": 27075
+    },
+    {
+      "url": "http://127.0.0.1:4181/_next/static/chunks/main-app-e45aef12b002873b.js",
+      "encodedBodySize": 463,
+      "decodedBodySize": 463,
+      "transferSize": 763
+    },
+    {
+      "url": "http://127.0.0.1:4181/_next/static/chunks/app/studio/page-b496cbb3eaed3b19.js",
+      "encodedBodySize": 3492,
+      "decodedBodySize": 9051,
+      "transferSize": 3792
+    },
+    {
+      "url": "http://127.0.0.1:4181/favicon.ico",
+      "encodedBodySize": 129,
+      "decodedBodySize": 129,
+      "transferSize": 429
+    },
+    {
+      "url": "http://127.0.0.1:4181/_next/static/chunks/b536a0f1.6c31ef11a63259cb.js",
+      "encodedBodySize": 84156,
+      "decodedBodySize": 357014,
+      "transferSize": 84456
+    },
+    {
+      "url": "http://127.0.0.1:4181/_next/static/chunks/bd904a5c.564f9db91f45a909.js",
+      "encodedBodySize": 64653,
+      "decodedBodySize": 239184,
+      "transferSize": 64953
+    },
+    {
+      "url": "http://127.0.0.1:4181/_next/static/chunks/31.53493164e55910ac.js",
+      "encodedBodySize": 9780,
+      "decodedBodySize": 24175,
+      "transferSize": 10080
+    }
+  ],
+  "home": {
+    "title": "Owen Cheung",
+    "h1": "Hi, I'm Owen Cheung"
+  },
+  "errors": []
+}

@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <meta name="description" content="Owen Cheung — software, applied AI, and the engineering that makes models useful." />
+    <title>Owen Cheung — Software / Applied AI</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./app.mjs"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="wordmark" href="#main" aria-label="Owen Cheung, back to top">Owen Cheung<span aria-hidden="true">.</span></a>
+        <nav aria-label="Main navigation">
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact <span aria-hidden="true">↗</span></a>
+        </nav>
+      </header>
+
+      <main id="main">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-main">
+            <p class="eyebrow"><span class="tiny-cross" aria-hidden="true">+</span> Software / Applied AI</p>
+            <h1 id="hero-title">From models<br /><span>to useful systems.</span></h1>
+            <p class="hero-description">I build software around AI: retrieval, evaluation, dependable workflows, and interfaces people can use.</p>
+            <div class="hero-actions">
+              <a class="primary-link" href="#work">Explore the work <span aria-hidden="true">↘</span></a>
+              <a class="text-link" href="mailto:oc608@bath.ac.uk">Get in touch <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <aside class="hero-note" aria-label="Experience and education">
+            <p class="eyebrow">Experience</p>
+            <p><strong>AI workflows</strong><span>LexisNexis Risk Solutions</span></p>
+            <p><strong>CS &amp; AI</strong><span>University of Bath</span></p>
+            <div class="note-rule" aria-hidden="true"></div>
+            <p class="note-caption">Interested in how the pieces<br />work together.</p>
+          </aside>
+        </section>
+
+        <section class="selected-work" id="work" aria-labelledby="work-title">
+          <div class="section-heading">
+            <h2 id="work-title">Selected work</h2>
+            <span class="eyebrow">01 — 03</span>
+          </div>
+
+          <article class="featured-project" aria-labelledby="research-title">
+            <div class="feature-copy">
+              <p class="eyebrow">01 / Research engineering</p>
+              <h3 id="research-title">A reproducible <br />RAG experiment.</h3>
+              <p class="project-description">Self-hosted Qwen inference, custom retrieval, and a benchmark built to expose what works—and what fails.</p>
+              <p class="project-context">Dissertation engineering</p>
+              <ui-dialog id="research-details">
+                <ui-dialog-trigger><button type="button" class="text-link project-link">Explore the experiment <span aria-hidden="true">↗</span></button></ui-dialog-trigger>
+                <ui-dialog-backdrop hidden></ui-dialog-backdrop>
+                <ui-dialog-content class="case-dialog" hidden initial-focus="content">
+                  <p class="eyebrow">01 / Research engineering</p>
+                  <ui-dialog-title><h2>A reproducible RAG experiment</h2></ui-dialog-title>
+                  <ui-dialog-description>From a self-hosted model to a comparison that can be inspected and repeated.</ui-dialog-description>
+                  <div class="case-body">
+                    <section><h3>What I built</h3><p>A Qwen inference setup on a university GPU server, a custom TF-IDF retrieval pipeline, and a benchmark comparing plain-model answers with answers supplied with retrieved context.</p></section>
+                    <section><h3>What makes it inspectable</h3><p>Twenty questions, forty primary outputs, recorded configurations and source provenance. The comparison looks at required facts, claim support, citations and abstention rather than treating fluent answers as sufficient evidence.</p></section>
+                    <section class="case-limit"><h3>Where the evidence stops</h3><p>This is an exploratory dissertation preparation experiment on a fictional teaching fixture. It is not a general performance claim, a completed thesis result, or a continuously operated model service.</p></section>
+                  </div>
+                  <div class="case-actions"><ui-dialog-close><button type="button" class="primary-link">Back to the work <span aria-hidden="true">↙</span></button></ui-dialog-close></div>
+                </ui-dialog-content>
+              </ui-dialog>
+            </div>
+
+            <div class="research-figure">
+              <div class="figure-heading"><p class="eyebrow">Experiment structure</p><span class="figure-mark" aria-hidden="true">[ R / 01 ]</span></div>
+              <ui-tabs id="experiment-tabs" default-value="compare" aria-label="Experiment views">
+                <ui-tabs-list class="experiment-tabs" aria-label="Experiment views">
+                  <ui-tabs-tab value="compare"><button type="button">Compare</button></ui-tabs-tab>
+                  <ui-tabs-tab value="plain"><button type="button">Plain model</button></ui-tabs-tab>
+                  <ui-tabs-tab value="rag"><button type="button">With retrieval</button></ui-tabs-tab>
+                </ui-tabs-list>
+                <div class="experiment-panels">
+                  <ui-tabs-panel value="compare" keep-mounted>
+                    <div class="flow-row"><span class="flow-label">01 / Plain</span><div class="flow-path"><span class="flow-node">Question</span><span class="connector" aria-hidden="true">→</span><span class="flow-node model-node">Qwen</span><span class="connector" aria-hidden="true">→</span><span class="flow-output">Plain<br />output</span></div></div>
+                    <div class="flow-row"><span class="flow-label">02 / Retrieval augmented</span><div class="flow-path rag-path"><span class="flow-node">Question +<br />documents</span><span class="connector" aria-hidden="true">→</span><span class="flow-node retrieval-node">Retrieval</span><span class="connector" aria-hidden="true">→</span><span class="flow-node model-node">Context +<br />Qwen</span><span class="connector" aria-hidden="true">→</span><span class="flow-output">RAG<br />output</span></div></div>
+                  </ui-tabs-panel>
+                  <ui-tabs-panel value="plain" keep-mounted hidden>
+                    <div class="single-experiment"><p class="flow-label">01 / Plain model</p><h4>A question.<br />The model alone.</h4><p>Qwen answers without retrieved documents. This is the baseline for the same set of questions.</p><div class="flow-path"><span class="flow-node">Question</span><span class="connector" aria-hidden="true">→</span><span class="flow-node model-node">Qwen</span><span class="connector" aria-hidden="true">→</span><span class="flow-output">Plain<br />output</span></div></div>
+                  </ui-tabs-panel>
+                  <ui-tabs-panel value="rag" keep-mounted hidden>
+                    <div class="single-experiment"><p class="flow-label">02 / Retrieval augmented</p><h4>The same question.<br />Relevant context.</h4><p>Custom TF-IDF retrieval selects document passages to add to the prompt. The outputs are then checked against the same criteria.</p><div class="flow-path rag-path"><span class="flow-node">Question +<br />documents</span><span class="connector" aria-hidden="true">→</span><span class="flow-node retrieval-node">Retrieval</span><span class="connector" aria-hidden="true">→</span><span class="flow-node model-node">Context +<br />Qwen</span><span class="connector" aria-hidden="true">→</span><span class="flow-output">RAG<br />output</span></div></div>
+                  </ui-tabs-panel>
+                </div>
+              </ui-tabs>
+              <dl class="experiment-facts"><div><dt>Questions</dt><dd>20</dd></div><div><dt>Primary outputs</dt><dd>40</dd></div><div><dt>Compute</dt><dd>One GPU</dd></div></dl>
+              <p class="figure-caption">Exploratory benchmark <span aria-hidden="true">·</span> Fictional fixture</p>
+            </div>
+          </article>
+
+          <div class="project-pair">
+            <article class="secondary-project" aria-labelledby="copilot-title">
+              <div class="copilot-figure" aria-label="Conceptual illustration of evidence, workflow and human review">
+                <p class="eyebrow figure-label">Workflow illustration</p>
+                <div class="document-flow" aria-hidden="true">
+                  <div class="document-sheet"><span class="sheet-number">01</span><strong>Evidence</strong><div class="document-lines"><i></i><i></i><i></i><i></i></div><span class="sheet-foot">Traceable sources</span></div>
+                  <span class="document-arrow">→</span>
+                  <div class="document-sheet workflow-sheet"><span class="sheet-number">02</span><strong>Workflow</strong><div class="workflow-steps"><span><i>✓</i> Draft</span><span><i>✓</i> Inspect</span><span><i></i> Refine</span></div><span class="sheet-foot">Durable steps</span></div>
+                  <span class="document-arrow">→</span>
+                  <div class="document-sheet"><span class="sheet-number">03</span><strong>Review</strong><div class="document-lines"><i></i><i></i><i></i></div><span class="review-mark">Human judgement</span></div>
+                </div>
+              </div>
+              <div class="project-title-row"><p class="eyebrow">02 / AI systems</p><span class="status-label"><span aria-hidden="true"></span> In development</span></div>
+              <h3 id="copilot-title">Application Copilot</h3>
+              <p class="secondary-description">Making AI workflows inspectable.</p>
+              <ui-dialog id="copilot-details">
+                <ui-dialog-trigger><button type="button" class="text-link project-link">Inside Application Copilot <span aria-hidden="true">↗</span></button></ui-dialog-trigger>
+                <ui-dialog-backdrop hidden></ui-dialog-backdrop>
+                <ui-dialog-content class="case-dialog" hidden initial-focus="content">
+                  <p class="eyebrow">02 / AI systems · In development</p>
+                  <ui-dialog-title><h2>Application Copilot</h2></ui-dialog-title>
+                  <ui-dialog-description>Making the evidence and the workflow around AI output visible.</ui-dialog-description>
+                  <div class="case-body">
+                    <section><h3>The engineering focus</h3><p>A local-first application workspace with evidence retrieval, inspectable citations, drafting and human review. Durable jobs and recorded stages make the workflow easier to inspect and recover.</p></section>
+                    <section><h3>Beyond a prompt</h3><p>The work includes job state, idempotency, recovery behavior and controls around selected-data model calls. The aim is a workflow people can understand and supervise.</p></section>
+                    <section class="case-limit"><h3>Current limits</h3><p>Synthetic tests exercise the workflow behavior. Full end-to-end recovery and semantic quality qualification are the next milestones.</p></section>
+                  </div>
+                  <div class="case-actions"><a class="text-link" href="https://github.com/OwenC05/applications" target="_blank" rel="noopener noreferrer">Read the repository <span aria-hidden="true">↗</span></a><ui-dialog-close><button type="button" class="primary-link">Back to the work <span aria-hidden="true">↙</span></button></ui-dialog-close></div>
+                </ui-dialog-content>
+              </ui-dialog>
+            </article>
+
+            <article class="secondary-project" aria-labelledby="typeforge-title">
+              <div class="typeforge-figure" aria-label="Conceptual typing interface with highlighted words and keyboard keys">
+                <p class="eyebrow figure-label">Interface study</p>
+                <p class="typing-passage" aria-hidden="true">good systems make<br />the <span>next step</span> clearer<span class="typing-caret"></span></p>
+                <div class="keyboard" aria-hidden="true"><span>Q</span><span>W</span><span>E</span><span>R</span><span>T</span><span>Y</span><span>U</span><span>I</span><span>O</span><span>P</span></div>
+              </div>
+              <div class="project-title-row"><p class="eyebrow">03 / Product + ML</p><span class="quiet-label">Local-first</span></div>
+              <h3 id="typeforge-title">TypeForge</h3>
+              <p class="secondary-description">Typing practice meets applied ML.</p>
+              <ui-dialog id="typeforge-details">
+                <ui-dialog-trigger><button type="button" class="text-link project-link">Inside TypeForge <span aria-hidden="true">↗</span></button></ui-dialog-trigger>
+                <ui-dialog-backdrop hidden></ui-dialog-backdrop>
+                <ui-dialog-content class="case-dialog" hidden initial-focus="content">
+                  <p class="eyebrow">03 / Product + ML</p>
+                  <ui-dialog-title><h2>TypeForge</h2></ui-dialog-title>
+                  <ui-dialog-description>A browser product that connects a small interaction to an evaluated model.</ui-dialog-description>
+                  <div class="case-body">
+                    <section><h3>The product</h3><p>A local-first typing application built with native browser technology and local storage. The interface keeps the typing experience direct and the user's data close to the device.</p></section>
+                    <section><h3>The ML work</h3><p>A Python benchmark compares a baseline and candidate model, with a versioned artifact used for browser inference. Product engineering and model evaluation are part of the same project.</p></section>
+                    <section class="case-limit"><h3>What the benchmark means</h3><p>Model evaluation is not evidence that users type faster or learn more. No such improvement is claimed here. The repository documents deployment and evaluation limitations.</p></section>
+                  </div>
+                  <div class="case-actions"><a class="text-link" href="https://github.com/OwenC05/TypeForge" target="_blank" rel="noopener noreferrer">Read the repository <span aria-hidden="true">↗</span></a><ui-dialog-close><button type="button" class="primary-link">Back to the work <span aria-hidden="true">↙</span></button></ui-dialog-close></div>
+                </ui-dialog-content>
+              </ui-dialog>
+            </article>
+          </div>
+        </section>
+
+        <section class="about-section" id="about" aria-labelledby="about-title">
+          <p class="eyebrow">A little about me</p>
+          <div><h2 id="about-title">Curiosity, put to work.</h2><p>I like the space between an interesting idea and something useful. AI engineering, thoughtful tools, and a habit of asking why.</p><p class="personal-note">Away from the screen: snowboarding, coffee, and custom keyboards.</p></div>
+        </section>
+      </main>
+
+      <footer class="site-footer" id="contact">
+        <a class="contact-link" href="mailto:oc608@bath.ac.uk">Let's make something useful. <span aria-hidden="true">↗</span></a>
+        <div class="footer-bottom"><p class="eyebrow">Owen Cheung / 2026</p><nav aria-label="Contact links"><a href="mailto:oc608@bath.ac.uk">Email</a><a href="https://github.com/OwenC05" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/owen-cheung-472998225/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></nav><a class="back-top" href="#main">Back to top <span aria-hidden="true">↑</span></a></div>
+      </footer>
+    </div>
+  </body>
+</html>

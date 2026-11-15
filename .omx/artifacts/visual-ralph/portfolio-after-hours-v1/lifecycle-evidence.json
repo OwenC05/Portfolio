@@ -1,0 +1,330 @@
+{
+  "finalSnapshot": {
+    "documentToken": 0.6150820176988103,
+    "canvases": 0,
+    "activeListeners": [],
+    "activeObservers": [],
+    "pendingOwnedRAF": 0,
+    "contexts": [
+      {
+        "connected": false,
+        "lost": true,
+        "created": {
+          "Buffer": 0,
+          "Texture": 4,
+          "Framebuffer": 3,
+          "Renderbuffer": 0,
+          "Program": 0,
+          "Shader": 0,
+          "VertexArray": 0
+        },
+        "deleted": {
+          "Buffer": 0,
+          "Texture": 0,
+          "Framebuffer": 0,
+          "Renderbuffer": 0,
+          "Program": 0,
+          "Shader": 0,
+          "VertexArray": 0
+        }
+      },
+      {
+        "connected": false,
+        "lost": true,
+        "created": {
+          "Buffer": 72,
+          "Texture": 13,
+          "Framebuffer": 4,
+          "Renderbuffer": 0,
+          "Program": 10,
+          "Shader": 20,
+          "VertexArray": 84
+        },
+        "deleted": {
+          "Buffer": 72,
+          "Texture": 9,
+          "Framebuffer": 1,
+          "Renderbuffer": 0,
+          "Program": 8,
+          "Shader": 20,
+          "VertexArray": 84
+        }
+      },
+      {
+        "connected": false,
+        "lost": true,
+        "created": {
+          "Buffer": 0,
+          "Texture": 4,
+          "Framebuffer": 3,
+          "Renderbuffer": 0,
+          "Program": 0,
+          "Shader": 0,
+          "VertexArray": 0
+        },
+        "deleted": {
+          "Buffer": 0,
+          "Texture": 0,
+          "Framebuffer": 0,
+          "Renderbuffer": 0,
+          "Program": 0,
+          "Shader": 0,
+          "VertexArray": 0
+        }
+      },
+      {
+        "connected": false,
+        "lost": true,
+        "created": {
+          "Buffer": 72,
+          "Texture": 13,
+          "Framebuffer": 4,
+          "Renderbuffer": 0,
+          "Program": 10,
+          "Shader": 20,
+          "VertexArray": 84
+        },
+        "deleted": {
+          "Buffer": 72,
+          "Texture": 9,
+          "Framebuffer": 1,
+          "Renderbuffer": 0,
+          "Program": 8,
+          "Shader": 20,
+          "VertexArray": 84
+        }
+      },
+      {
+        "connected": false,
+        "lost": true,
+        "created": {
+          "Buffer": 0,
+          "Texture": 4,
+          "Framebuffer": 3,
+          "Renderbuffer": 0,
+          "Program": 0,
+          "Shader": 0,
+          "VertexArray": 0
+        },
+        "deleted": {
+          "Buffer": 0,
+          "Texture": 0,
+          "Framebuffer": 0,
+          "Renderbuffer": 0,
+          "Program": 0,
+          "Shader": 0,
+          "VertexArray": 0
+        }
+      },
+      {
+        "connected": false,
+        "lost": true,
+        "created": {
+          "Buffer": 72,
+          "Texture": 13,
+          "Framebuffer": 4,
+          "Renderbuffer": 0,
+          "Program": 10,
+          "Shader": 20,
+          "VertexArray": 84
+        },
+        "deleted": {
+          "Buffer": 72,
+          "Texture": 9,
+          "Framebuffer": 1,
+          "Renderbuffer": 0,
+          "Program": 8,
+          "Shader": 20,
+          "VertexArray": 84
+        }
+      },
+      {
+        "connected": false,
+        "lost": true,
+        "created": {
+          "Buffer": 0,
+          "Texture": 4,
+          "Framebuffer": 3,
+          "Renderbuffer": 0,
+          "Program": 0,
+          "Shader": 0,
+          "VertexArray": 0
+        },
+        "deleted": {
+          "Buffer": 0,
+          "Texture": 0,
+          "Framebuffer": 0,
+          "Renderbuffer": 0,
+          "Program": 0,
+          "Shader": 0,
+          "VertexArray": 0
+        }
+      },
+      {
+        "connected": false,
+        "lost": true,
+        "created": {
+          "Buffer": 72,
+          "Texture": 13,
+          "Framebuffer": 4,
+          "Renderbuffer": 0,
+          "Program": 10,
+          "Shader": 20,
+          "VertexArray": 84
+        },
+        "deleted": {
+          "Buffer": 72,
+          "Texture": 9,
+          "Framebuffer": 1,
+          "Renderbuffer": 0,
+          "Program": 8,
+          "Shader": 20,
+          "VertexArray": 84
+        }
+      },
+      {
+        "connected": false,
+        "lost": true,
+        "created": {
+          "Buffer": 0,
+          "Texture": 4,
+          "Framebuffer": 3,
+          "Renderbuffer": 0,
+          "Program": 0,
+          "Shader": 0,
+          "VertexArray": 0
+        },
+        "deleted": {
+          "Buffer": 0,
+          "Texture": 0,
+          "Framebuffer": 0,
+          "Renderbuffer": 0,
+          "Program": 0,
+          "Shader": 0,
+          "VertexArray": 0
+        }
+      },
+      {
+        "connected": false,
+        "lost": true,
+        "created": {
+          "Buffer": 72,
+          "Texture": 13,
+          "Framebuffer": 4,
+          "Renderbuffer": 0,
+          "Program": 10,
+          "Shader": 20,
+          "VertexArray": 84
+        },
+        "deleted": {
+          "Buffer": 72,
+          "Texture": 9,
+          "Framebuffer": 1,
+          "Renderbuffer": 0,
+          "Program": 8,
+          "Shader": 20,
+          "VertexArray": 84
+        }
+      }
+    ],
+    "frames": [
+      {
+        "time": 2128.05,
+        "owned": true,
+        "calls": 100,
+        "triangles": 121418
+      },
+      {
+        "time": 3411.332,
+        "owned": true,
+        "calls": 60,
+        "triangles": 65542
+      },
+      {
+        "time": 3427.8,
+        "owned": true,
+        "calls": 60,
+        "triangles": 65542
+      },
+      {
+        "time": 4544.232,
+        "owned": true,
+        "calls": 100,
+        "triangles": 121418
+      },
+      {
+        "time": 4844.22,
+        "owned": true,
+        "calls": 60,
+        "triangles": 65542
+      },
+      {
+        "time": 5427.5,
+        "owned": true,
+        "calls": 100,
+        "triangles": 121418
+      },
+      {
+        "time": 5677.49,
+        "owned": true,
+        "calls": 60,
+        "triangles": 65542
+      },
+      {
+        "time": 5694,
+        "owned": true,
+        "calls": 60,
+        "triangles": 65542
+      },
+      {
+        "time": 6327.332,
+        "owned": true,
+        "calls": 100,
+        "triangles": 121418
+      },
+      {
+        "time": 6610.654,
+        "owned": true,
+        "calls": 60,
+        "triangles": 65542
+      },
+      {
+        "time": 6627.2,
+        "owned": true,
+        "calls": 60,
+        "triangles": 65542
+      },
+      {
+        "time": 7327.2,
+        "owned": true,
+        "calls": 100,
+        "triangles": 121418
+      },
+      {
+        "time": 7677.186,
+        "owned": true,
+        "calls": 60,
+        "triangles": 65542
+      }
+    ],
+    "audio": 0
+  },
+  "summary": {
+    "actualSpaCycles": 5,
+    "documentReloads": 0,
+    "eachMounted": {
+      "canvas": 1,
+      "studioListeners": 15,
+      "observers": 2,
+      "pendingRAF": 0
+    },
+    "eachUnmounted": {
+      "canvas": 0,
+      "studioListeners": 0,
+      "observers": 0,
+      "pendingRAF": 0
+    },
+    "strictModeContextsPerMount": 2,
+    "pageErrors": 0
+  }
+}

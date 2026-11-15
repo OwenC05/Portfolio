@@ -1,0 +1,72 @@
+[
+  {
+    "label": "focused-tests",
+    "command": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "--test",
+      "--test-reporter=tap",
+      "components/studio/scene/verify-full-kit.mjs"
+    ],
+    "exit": 0
+  },
+  {
+    "label": "m1-baseline-v02-loader",
+    "command": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "--test",
+      "--test-reporter=tap",
+      "--test-name-pattern=exact author candidate",
+      "components/studio/scene/verify-full-kit.mjs"
+    ],
+    "exit": 0
+  },
+  {
+    "label": "actual-author-manifest-baseline",
+    "exit": 0,
+    "sha256": "04994845f62236c6230dce1ba8af7d9811e21fc1e45c0fff6a89be7f06777093"
+  },
+  {
+    "label": "m1-proposal-v02-loader",
+    "command": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "--test",
+      "--test-reporter=tap",
+      "--test-name-pattern=exact author candidate",
+      "components/studio/scene/verify-full-kit.mjs"
+    ],
+    "exit": 0
+  },
+  {
+    "label": "actual-author-manifest-proposal",
+    "exit": 0,
+    "sha256": "bdc997b45917be0c72480af9738362e9940e5159b07781eac2bfa6b86b01fe76"
+  },
+  {
+    "label": "typecheck",
+    "command": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "node_modules/typescript/bin/tsc",
+      "--noEmit",
+      "--incremental",
+      "false",
+      "--pretty",
+      "false"
+    ],
+    "exit": 0
+  },
+  {
+    "label": "configured-lint",
+    "command": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "node_modules/eslint/bin/eslint.js",
+      "components/studio/scene/load-full-kit.ts",
+      "components/studio/scene/bind-full-kit.ts",
+      "components/studio/scene/full-kit-types.ts"
+    ],
+    "exit": 2
+  },
+  {
+    "label": "Pillow actual image decode",
+    "exit": 0
+  }
+]

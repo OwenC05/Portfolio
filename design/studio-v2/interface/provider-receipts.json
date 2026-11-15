@@ -1,0 +1,112 @@
+{
+  "runId": "run_9e2c28f2f96d",
+  "coordinator": "term_ae45b53b-074c-420f-aae1-e93e92acadfb",
+  "parentTaskId": "task_98c5bfadef16",
+  "parentDispatchId": "ctx_fb9f5e79f23d",
+  "contract": "design/studio-v2/interface/contract.md",
+  "workers": [
+    {
+      "role": "visual performer",
+      "agent": "claude",
+      "taskId": "task_00060a30659b",
+      "dispatchId": "ctx_508665017830",
+      "terminal": "term_072fcd55-70a0-414e-b39f-de0641912268",
+      "stateAtLaunch": "ready",
+      "mode": "terminal",
+      "spec": "design/studio-v2/interface/visual-spec.md"
+    },
+    {
+      "role": "behavior performer",
+      "agent": "codex",
+      "taskId": "task_af20e209be36",
+      "dispatchId": "ctx_6def74944874",
+      "terminal": "term_b76bf898-e0e8-4bec-b037-1df3e6087df3",
+      "stateAtLaunch": "ready",
+      "mode": "terminal",
+      "spec": "design/studio-v2/interface/behavior-spec.md"
+    }
+  ],
+  "critics": [
+    {
+      "role": "independent actual-render visual critic",
+      "agent": "claude",
+      "taskId": "task_5d47e0507580",
+      "dispatchId": "ctx_705ac112f869",
+      "terminal": "term_ecf3c8a4-5fa2-4178-a64c-e72ed7f1e002",
+      "stateAtLaunch": "ready",
+      "mode": "terminal",
+      "spec": "design/studio-v2/interface/visual-critique-spec.md"
+    },
+    {
+      "role": "independent technical critic",
+      "agent": "codex",
+      "taskId": "task_04013a2c4f28",
+      "dispatchId": "ctx_03cb188aa6c1",
+      "terminal": "term_c7cd1ef2-f168-4373-bd6b-876bd096dde3",
+      "stateAtLaunch": "ready",
+      "mode": "terminal",
+      "spec": "design/studio-v2/interface/technical-critique-spec.md"
+    }
+  ],
+  "followups": [
+    {
+      "role": "independent scoped technical re-review",
+      "agent": "codex",
+      "followUpOf": "ctx_4507761f317d",
+      "taskId": "task_c55e30985f95",
+      "dispatchId": "ctx_3aa540fbbb15",
+      "terminal": "term_b88bfab534be285c7992929c4a956d15",
+      "stateAtLaunch": "ready",
+      "outcome": "succeeded",
+      "verdict": "PASS for TC-01 and TC-02 within source/CPU/SSR scope",
+      "completionReceipt": "msg_19fb2e902a3c"
+    },
+    {
+      "role": "bounded technical repair replacement",
+      "agent": "codex",
+      "taskId": "task_1028a39cc004",
+      "dispatchId": "ctx_64f321e54538",
+      "terminal": "term_7f3e1d35-c31b-4b82-9b7f-15b00f8b2068",
+      "stateAtLaunch": "ready",
+      "recoveryOf": "ctx_0e9a4174cb64",
+      "outcome": "succeeded",
+      "completionReceipt": "msg_86ab0ae342fa",
+      "recoveryNote": "Prior dispatch lost after operator terminal close, verified exited and released. retry-of rejected because task was already ready; inspected exact settled dispatch then restarted same task without retry-of, as ready-task recovery. Partial edits retained."
+    },
+    {
+      "role": "bounded technical repair performer",
+      "agent": "codex",
+      "followUpOf": "ctx_6def74944874",
+      "taskId": "task_1028a39cc004",
+      "dispatchId": "ctx_0e9a4174cb64",
+      "terminal": "term_593fef71c4bdcd744e797983951e7d6c",
+      "stateAtInspection": "ready",
+      "stage": "input_accepted",
+      "livenessAtInspection": "live",
+      "finalOutcome": "failed",
+      "failure": "Terminal closed by operator request before worker_done; partial source/test edits unverified.",
+      "finalLiveness": "exited",
+      "resourceState": "released"
+    },
+    {
+      "role": "technical critic scope clarification",
+      "agent": "codex",
+      "followUpOf": "ctx_03cb188aa6c1",
+      "taskId": "task_1748f03826b8",
+      "dispatchId": "ctx_4507761f317d",
+      "outcome": "succeeded",
+      "receipt": "msg_d2a250983e0a",
+      "recoveryNote": "Input-start observation was temporarily uncertain; later worker_done settled normally without duplicate dispatch."
+    },
+    {
+      "role": "visual performer ownership release",
+      "agent": "claude",
+      "taskId": "task_fa50aae5dfca",
+      "dispatchId": "ctx_46aeb1400f90",
+      "terminal": "term_072fcd55-70a0-414e-b39f-de0641912268",
+      "outcome": "succeeded",
+      "receipt": "msg_d334e014104b"
+    }
+  ],
+  "modelOrEffortOverrides": false
+}

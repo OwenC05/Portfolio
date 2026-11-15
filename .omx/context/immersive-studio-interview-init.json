@@ -1,0 +1,27 @@
+{
+  "mode": "deep-interview",
+  "active": true,
+  "current_phase": "deep-interview",
+  "state": {
+    "interview_id": "studio-immersive-20261114",
+    "profile": "quick",
+    "type": "brownfield",
+    "initial_idea": "Make warm studio immersive like Jesse's Ramen, inside room/click/look around; keep projects on monitors.",
+    "rounds": [],
+    "current_ambiguity": 0.3075,
+    "threshold": 0.3,
+    "max_rounds": 5,
+    "challenge_modes_used": [
+      "Terminologist"
+    ],
+    "current_stage": "intent-first",
+    "current_focus": "outcome-and-scope",
+    "context_snapshot_path": ".omx/context/immersive-studio-20261114T215500Z.md",
+    "codebase_context": "Current fixed orthographic shallow exterior room,3projecttargets; SSR/scene/navigation/lifecycle boundaries reusable.",
+    "initial_context_summary_status": "not_needed",
+    "non_goals_ready": false,
+    "decision_boundaries_ready": false,
+    "pressure_pass_complete": false
+  }
+}
+

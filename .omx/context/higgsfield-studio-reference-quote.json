@@ -1,0 +1,19 @@
+{
+  "preparedAt": "2026-11-14",
+  "source": "design/studio-v2/asset-pipeline/art-production-plan.md, frame C plus shared style anchor",
+  "purpose": "Cost-only preflight; no job submitted",
+  "provider": "Higgsfield",
+  "credits": 2.75,
+  "params": {
+    "model": "gpt_image_2_6",
+    "prompt": "Same room, looking right and slightly up at the corner where the right wall meets the ceiling. A closed timber panel door with two recessed moulded panels and a brass knob, lit by the floor lamp so grain and mouldings read; dusk window to its left; exposed dark timber ceiling beams catching warm light; plaster wall with soft light pooling. Nothing in this view falls to black.\n\nStylised 3D illustration, clean hand-modelled forms with soft bevels, matte painted materials with gentle roughness variation, warm tungsten practical lighting with one cool dusk-blue counterpoint, olive-charcoal plaster walls, honey oak timber, ivory plastic, dark rubber, brushed pale metal, smoked floorboards. Cosy after-hours home studio, lived-in but tidy. Soft contact shadows, light pooling on walls, no bloom blowout. No people, no logos, no brand names, no readable text, no neon, no cyberpunk, no photorealism, no fisheye, no exterior view, no cutaway or dollhouse, no extra instruments, no posters of real artwork.",
+    "aspect_ratio": "auto",
+    "size": "1440x900",
+    "quality": "high",
+    "resolution": "2k",
+    "output_format": "png",
+    "count": 1,
+    "get_cost": true
+  },
+  "authorization": "Not submitted; preserve the current no-paid-generation gate until exact approval is recorded."
+}

@@ -1,0 +1,15 @@
+# Early assembled render evidence
+
+14 November 2026, captures began around 22:52 UTC. This is a development preview and an early gate, not frozen-source final verification. Fresh full `node node_modules/typescript/bin/tsc --noEmit --incremental false` exited 0 before startup.
+
+Preview: http://127.0.0.1:4181/studio. Next 14.0.4 dev, tool-managed exec session `57769`; observed listener PID `34212`. Revalidate before process management. The first detached PowerShell launch was rejected by automatic approval review without a detailed reason and did not execute; direct tool-managed launch succeeded and reported Ready. Root owns this preview and isolated Playwright browser. No other build/preview writer is released.
+
+Actual images: `.omx/artifacts/visual-ralph/portfolio-immersive-v2/early/initial-1440.png`, `right-1440.png`, `panel-1440.png`, `top-390.png`, `right-390.png`, `panel-390.png`, `top-320.png`, `panel-320.png`. Explicit top-of-page captures are the mobile comparison inputs. `initial-390.png` is retained from the prior capture attempt; it is not the authoritative top-of-page comparison.
+
+Observed desktop: canvas 1440x900, eye [-0.7,2.8,3.4], initial yaw -4/pitch -6/FOV58, DPR1. Settled sample 73 draws/57,772 triangles. After four Look-right commands yaw36/pitch-6; opening Application Copilot immediately showed its full dialog heading and focused `panel-project-copilot-heading`. Eye/yaw/pitch stayed equal before/open/closed; interaction flag true/false/true. Escape closed and returned to the studio URL. This is a bounded early smoke, not exhaustive input/history proof.
+
+Observed responsive 390x844 and 320x844 desktop-browser viewports: fresh navigation, explicit scroll-to-top, canvas ready, initial yaw-13/pitch-8/eye[-0.7,2.8,3.4]/FOV64/DPR1. Settled samples respectively 55 draws/42,332 triangles and 52 draws/42,020 triangles. Correct mobile path (Projects disclosure, then dissertation link) opened the labelled full article and focused `panel-project-dissertation-heading`. Dialog/document widths were respectively 390/390 and 320/320; no horizontal overflow in those samples; scrollY remained0. These are neither touch emulation nor physical-mobile results.
+
+The first mobile script attempted to click a collapsed shortcut without opening Projects, and timed out on an intercepted pointer. Preserve this as harness misuse, not a proven product click failure. A separate observable accessibility concern was sent to U: collapsed `#studio-projects` remained visible to role queries with hidden=false, inert=false, aria-hidden absent, display block, visibility visible and clip-path inset(50%). U's existing Codex wiring/technical review owns whether and how that is repaired while preserving Claude design.
+
+Both parent coordinators received exact screenshot paths and were asked to dispatch their separate actual Claude visual critics. Root has not issued a visual approval; bounded corner captures and independent verdicts remain pending. Configured lint, production build, full integration matrix and final quality gates remain outstanding.

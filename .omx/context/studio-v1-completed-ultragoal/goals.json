@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "createdAt": "2026-11-14T19:10:23.724Z",
+  "updatedAt": "2026-11-14T21:28:26.709Z",
+  "briefPath": ".omx/ultragoal/brief.md",
+  "goalsPath": ".omx/ultragoal/goals.json",
+  "ledgerPath": ".omx/ultragoal/ledger.jsonl",
+  "codexGoalMode": "aggregate",
+  "goals": [
+    {
+      "id": "G001-foundation-and-content",
+      "title": "Foundation and content",
+      "objective": "Verify exact Three.js dependencies, freeze the shared scene contract, and create truthful project content with traceable sources through Orca F and C.",
+      "status": "complete",
+      "attempt": 1,
+      "createdAt": "2026-11-14T19:10:23.724Z",
+      "updatedAt": "2026-11-14T19:23:23.947Z",
+      "startedAt": "2026-11-14T19:10:28.459Z",
+      "completedAt": "2026-11-14T19:23:23.947Z",
+      "evidence": "F task_33773885e9a9 and C task_664c3c5548cf succeeded. Exact Three/types0.187.0, contract/hash/type checks pass and no existing lock versions changed. Root inspected actual contract, package diff, revised content and worker evidence. Content matches fixed schema, verified teaching-fixture scope and supplied destinations; editorial revision keeps concise public limitations. Foundation build exit0 with known pre-existing missing ESLint plugin; lint is explicitly not passed. Reports: design/studio-v1/foundation-report.md, content-report.md, content-evidence.md. Studio integration remains G002/G003."
+    },
+    {
+      "id": "G002-warm-studio-and-interface",
+      "title": "Warm studio and interface",
+      "objective": "Build the personal warm Three.js studio and responsive server-rendered portfolio interface through Orca S and U; preserve the right-side instruments and shared project navigation.",
+      "status": "complete",
+      "attempt": 1,
+      "createdAt": "2026-11-14T19:10:23.724Z",
+      "updatedAt": "2026-11-14T20:12:41.152Z",
+      "startedAt": "2026-11-14T19:23:31.011Z",
+      "completedAt": "2026-11-14T20:12:41.152Z",
+      "evidence": "S task_31ebbeeae6d6 and U task_26384c2e4f5a succeeded with independent approvals. Root inspected warm desktop and 390/320 mobile compositions and real dissertation evidence views. Scene final review passed 20 CPU checks and full TypeScript; U verified 53 no-JS retention assertions plus 24 history regression assertions and explicit fragment history. P2 touch and bare-route focus findings resolved; all required right-side instruments present. Reports: design/studio-v1/scene-report.md, interface-report.md and their independent critique reports. Source and available lint checks pass; baseline configured lint gap remains explicit. Browser is released to root; integrated failure, real lifecycle and performance evidence remain G003."
+    },
+    {
+      "id": "G003-integrated-verified-v1",
+      "title": "Integrated verified v1",
+      "objective": "Verify the complete local studio with required visual, accessibility, lifecycle, failure and performance evidence; resolve findings and pass independent final reviews.",
+      "status": "complete",
+      "attempt": 1,
+      "createdAt": "2026-11-14T19:10:23.724Z",
+      "updatedAt": "2026-11-14T21:28:26.709Z",
+      "startedAt": "2026-11-14T20:12:50.554Z",
+      "evidence": "Local Studio v1 verified at http://127.0.0.1:4181/studio build SWplwMoiIE-2Vby4TGU5f. Orca F/C/S/U/I and repair/cleanup review work settled; final I worker_done msg_33aa5874ee7a succeeded. Native code-reviewer APPROVE and architect CLEAR; I evidence critic and S cleanup delta APPROVE. Fresh33CPU,51core,4pen,3failure checks; build/typecheck/scopedNextlint pass with configuredlint baseline explicitly retained.18invariants proved in .omx/context/studio-v1-final-acceptance.md. Root manifest/HTTP/images verified; previews left running, no commit/deploy. Physicaldevice/AT/nativevisibility/GPUmemory and initialstartup limitations documented.",
+      "completedAt": "2026-11-14T21:28:26.709Z"
+    }
+  ],
+  "codexObjective": "Complete the durable ultragoal plan in .omx/ultragoal/goals.json, including later accepted/appended stories, under the original brief constraints; use .omx/ultragoal/ledger.jsonl as the audit trail.",
+  "aggregateCompletion": {
+    "status": "complete",
+    "completedAt": "2026-11-14T21:28:26.709Z",
+    "evidence": "Local Studio v1 verified at http://127.0.0.1:4181/studio build SWplwMoiIE-2Vby4TGU5f. Orca F/C/S/U/I and repair/cleanup review work settled; final I worker_done msg_33aa5874ee7a succeeded. Native code-reviewer APPROVE and architect CLEAR; I evidence critic and S cleanup delta APPROVE. Fresh33CPU,51core,4pen,3failure checks; build/typecheck/scopedNextlint pass with configuredlint baseline explicitly retained.18invariants proved in .omx/context/studio-v1-final-acceptance.md. Root manifest/HTTP/images verified; previews left running, no commit/deploy. Physicaldevice/AT/nativevisibility/GPUmemory and initialstartup limitations documented.",
+    "codexGoal": {
+      "available": true,
+      "objective": "Complete the durable ultragoal plan in .omx/ultragoal/goals.json, including later accepted/appended stories, under the original brief constraints; use .omx/ultragoal/ledger.jsonl as the audit trail.",
+      "status": "complete",
+      "remainingTokens": null,
+      "raw": {
+        "goal": {
+          "threadId": "01a1daa7-0ca8-77a0-9bcc-da11ad109c99",
+          "objective": "Complete the durable ultragoal plan in .omx/ultragoal/goals.json, including later accepted/appended stories, under the original brief constraints; use .omx/ultragoal/ledger.jsonl as the audit trail.",
+          "status": "complete",
+          "tokensUsed": 1239666,
+          "timeUsedSeconds": 8252,
+          "createdAt": 1794683438,
+          "updatedAt": 1794691691
+        },
+        "remainingTokens": null,
+        "completionBudgetReport": null
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+    "active":  false,
+    "current_phase":  "complete",
+    "mode":  "deep-interview",
+    "state":  {
+                  "rounds":  [
+                                 {
+                                     "round":  1,
+                                     "target":  "outcome-and-scope",
+                                     "question":  "Inside eye-level studio, orbitable room, or free exploration?",
+                                     "answer":  "yes eye level i think is a good starting point, i think just a 3d room you can looking around is good enough, it should sitll act like a portfolio not like a game",
+                                     "source":  "from-user",
+                                     "accepted":  [
+                                                      "Eye-level interior viewpoint.",
+                                                      "Room look-around is sufficient.",
+                                                      "Portfolio purpose takes priority over game-like exploration."
+                                                  ],
+                                     "inferences":  [
+                                                        "Use a fixed viewing position with restrained look controls; no walking controls or game loop."
+                                                    ],
+                                     "ambiguity_after":  0.155
+                                 },
+                                 {
+                                     "round":  2,
+                                     "target":  "Project-reading transition",
+                                     "question":  "When someone clicks a project monitor, move closer first, read immediately over the room, or open a case-study page?",
+                                     "answer":  "yes it shoudl read immediately",
+                                     "source":  "from-user",
+                                     "accepted":  [
+                                                      "Clicking a project monitor opens readable project content immediately.",
+                                                      "No camera move or waiting animation before reading."
+                                                  ],
+                                     "inferences":  [
+                                                        "Use a large accessible HTML panel over the room; closing preserves the viewing direction."
+                                                    ],
+                                     "ambiguity_after":  0.1175
+                                 },
+                                 {
+                                     "round":  3,
+                                     "target":  "Visual fidelity",
+                                     "question":  "Richly detailed stylised room or realistic interior?",
+                                     "answer":  "the recommended version is good",
+                                     "source":  "from-user",
+                                     "accepted":  [
+                                                      "Richly detailed stylised room with warm after-hours lighting, recognisable equipment and tactile materials."
+                                                  ],
+                                     "ambiguity_after":  0.065
+                                 }
+                             ],
+                  "pressure_pass_complete":  true,
+                  "decision_boundaries_ready":  true,
+                  "pending_question":  null,
+                  "handoff_artifacts":  {
+                                            "deep_interview":  {
+                                                                   "transcript_path":  ".omx/interviews/immersive-studio-v2-20261114.md",
+                                                                   "spec_path":  ".omx/specs/deep-interview-immersive-studio-v2.md",
+                                                                   "residual_risk":  "Low; implementation and artistic composition decisions remain within accepted scope.",
+                                                                   "execution_contract_required":  false
+                                                               }
+                                        },
+                  "spec_path":  ".omx/specs/deep-interview-immersive-studio-v2.md",
+                  "current_ambiguity":  0.065,
+                  "current_focus":  "Complete; Ralplan handoff",
+                  "transcript_path":  ".omx/interviews/immersive-studio-v2-20261114.md",
+                  "non_goals_ready":  true
+              }
+}

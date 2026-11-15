@@ -1,0 +1,59 @@
+{
+  "candidate": "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\pilot-right-limit\\exports\\pilot-right-limit-v02.glb",
+  "profile": "right-limit-pilot-v1",
+  "sha256": "a4e2e741389bee33eec6eb705b89646490cb89fa34dba479fad9f756a1c0c4b8",
+  "profileSha256": "02a9b364ed42127988747660ac61d6efca8bc3af9f151a0e41eb0d50bc0baa08",
+  "valid": false,
+  "errors": [
+    {
+      "code": "OCCLUSION_METADATA",
+      "message": "pilot_lamp_bulb: opaque pilot needs occluder=true; nocast is independent"
+    }
+  ],
+  "metrics": {
+    "bytes": 582280,
+    "images": [
+      {
+        "index": 0,
+        "name": "pilot_timber_albedo",
+        "mimeType": "image/png",
+        "bytes": 144594,
+        "width": 1024,
+        "height": 256,
+        "sha256": "ab1b820b394d7fa97125b92a384a29633117bcceef9cbd8214a1ca31245b0429"
+      },
+      {
+        "index": 1,
+        "name": "pilot_linen_emissive",
+        "mimeType": "image/png",
+        "bytes": 85552,
+        "width": 256,
+        "height": 256,
+        "sha256": "ad2cfc3d67e0e2e975fe1464c9e3ecdbedf1e455e7219ebcdd17babce1bd9ff0"
+      },
+      {
+        "index": 2,
+        "name": "pilot_linen_albedo",
+        "mimeType": "image/png",
+        "bytes": 93353,
+        "width": 256,
+        "height": 256,
+        "sha256": "47eeaa04e00157247fd99e475947ab9c74a3d3196a119df1ac27568e65136809"
+      }
+    ],
+    "imagePixels": 393216
+  },
+  "limits": {
+    "fileBytes": 1500000,
+    "triangles": 20000,
+    "primitives": 18,
+    "imageDimension": 2048,
+    "totalImagePixels": 12582912
+  },
+  "deferred": [
+    "Image decode and browser GLTFLoader parsing",
+    "GPU/material/normal appearance and artistic placement",
+    "Live target/occlusion adapter, cancellation and disposal",
+    "Actual renderer/network/frame budgets and independent critique"
+  ]
+}

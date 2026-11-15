@@ -1,0 +1,17 @@
+{
+  "components/studio/scene/load-full-kit.ts": "d30e468d2b69fa08fbe1c2e1ca22380bebfd9f1323888f16153d8485a04e0ca2",
+  "components/studio/scene/bind-full-kit.ts": "0ee8bbe6e0fb83ab4bf219343655c4260a8f5193f5624dc69fb802634a2294eb",
+  "components/studio/scene/full-kit-types.ts": "19269dc5acf09fc9ebac3de6b5ac37157608b258a1b0ac288a85fd13021a4a56",
+  "components/studio/scene/verify-full-kit.mjs": "dd5458273dbf6ab6da25256c18b67b7be969bb0230bf1c3253b323b830c4bf0b",
+  "design/studio-v2/asset-pipeline/full-kit/technical/profile-core.mjs": "b92e0ccabc6324a5f3a48b29ce9a9e075c0a1de23bb3a2f63a51dff0d800c742",
+  "design/studio-v2/asset-pipeline/full-kit/technical/validate-full-kit.mjs": "9a502413330618de8ac126a02b2826aae76b36f46ce3f0a51d36da0f06311e5e",
+  "design/studio-v2/asset-pipeline/full-kit/technical/export-manifest.mjs": "4eaf46c760931c5862776fc55573ec0eb2b969481b255460a2a300193431ff9d",
+  "design/studio-v2/asset-pipeline/full-kit/technical/synthetic-fixture.mjs": "66b4882de30d7766b266262f7a0204a2749916e6f7c9f251b9ed1f2af09800bf",
+  "design/studio-v2/asset-pipeline/full-kit/technical/decode-images.py": "fc68958366f7681606b97c0f2798a011d9716510c67b78330d78399cf21ad5c9",
+  "design/studio-v2/asset-pipeline/full-kit/full-kit-profile-v1.json": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+  "design/studio-v2/asset-pipeline/full-kit/asset-inventory.json": "eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87",
+  "design/studio-v2/asset-pipeline/full-kit/exports/studio-full-kit-m1-baseline-v02.glb": "04994845f62236c6230dce1ba8af7d9811e21fc1e45c0fff6a89be7f06777093",
+  "design/studio-v2/asset-pipeline/full-kit/manifests/studio-full-kit-m1-baseline-v02.manifest.json": "fab5ed35086773ee380103014a7c05760953fcea3437f71b0e20da9d1d858b3f",
+  "design/studio-v2/asset-pipeline/full-kit/exports/studio-full-kit-m1-proposal-v02.glb": "bdc997b45917be0c72480af9738362e9940e5159b07781eac2bfa6b86b01fe76",
+  "design/studio-v2/asset-pipeline/full-kit/manifests/studio-full-kit-m1-proposal-v02.manifest.json": "8c290bbe555b8d0737e07639b2b34ee289a0b6d903c91380e13f133b074773aa"
+}

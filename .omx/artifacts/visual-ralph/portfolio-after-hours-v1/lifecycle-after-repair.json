@@ -1,0 +1,2104 @@
+{
+  "kind": "Actual development Next App Router transitions with React StrictMode double effect",
+  "url": "http://127.0.0.1:4180/",
+  "baseline": {
+    "documentToken": 0.24984652686452136,
+    "canvases": 0,
+    "activeListeners": [],
+    "activeObservers": [],
+    "pendingOwnedRAF": 0,
+    "contexts": [],
+    "frames": [],
+    "audio": 0
+  },
+  "cycles": [
+    {
+      "cycle": 1,
+      "mounted": {
+        "documentToken": 0.24984652686452136,
+        "canvases": 1,
+        "activeListeners": [
+          "change",
+          "hashchange",
+          "popstate",
+          "webglcontextlost",
+          "webglcontextlost",
+          "webglcontextrestored",
+          "webglcontextcreationerror",
+          "pointerdown",
+          "pointermove",
+          "pointerup",
+          "click",
+          "pointercancel",
+          "pointerout",
+          "pointerleave",
+          "pointerdown",
+          "click",
+          "visibilitychange",
+          "resize",
+          "scroll"
+        ],
+        "activeObservers": [
+          "ResizeObserver",
+          "IntersectionObserver"
+        ],
+        "pendingOwnedRAF": 0,
+        "contexts": [
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 0,
+              "Texture": 4,
+              "Framebuffer": 3,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            }
+          },
+          {
+            "connected": true,
+            "contextLossRequested": false,
+            "isContextLost": false,
+            "created": {
+              "Buffer": 72,
+              "Texture": 13,
+              "Framebuffer": 4,
+              "Renderbuffer": 0,
+              "Program": 10,
+              "Shader": 20,
+              "VertexArray": 84
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 20,
+              "VertexArray": 0
+            }
+          }
+        ],
+        "frames": [
+          {
+            "time": 8986.596,
+            "owned": true,
+            "calls": 100,
+            "triangles": 121418
+          },
+          {
+            "time": 10136.55,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 10169.9,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          }
+        ],
+        "audio": 0
+      },
+      "unmounted": {
+        "documentToken": 0.24984652686452136,
+        "canvases": 0,
+        "activeListeners": [],
+        "activeObservers": [],
+        "pendingOwnedRAF": 0,
+        "contexts": [
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 0,
+              "Texture": 4,
+              "Framebuffer": 3,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 72,
+              "Texture": 13,
+              "Framebuffer": 4,
+              "Renderbuffer": 0,
+              "Program": 10,
+              "Shader": 20,
+              "VertexArray": 84
+            },
+            "deleted": {
+              "Buffer": 72,
+              "Texture": 9,
+              "Framebuffer": 1,
+              "Renderbuffer": 0,
+              "Program": 8,
+              "Shader": 20,
+              "VertexArray": 84
+            }
+          }
+        ],
+        "frames": [
+          {
+            "time": 8986.596,
+            "owned": true,
+            "calls": 100,
+            "triangles": 121418
+          },
+          {
+            "time": 10136.55,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 10169.9,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          }
+        ],
+        "audio": 0
+      }
+    },
+    {
+      "cycle": 2,
+      "mounted": {
+        "documentToken": 0.24984652686452136,
+        "canvases": 1,
+        "activeListeners": [
+          "webglcontextlost",
+          "webglcontextlost",
+          "webglcontextrestored",
+          "webglcontextcreationerror",
+          "pointerdown",
+          "pointermove",
+          "pointerup",
+          "click",
+          "pointercancel",
+          "pointerout",
+          "pointerleave",
+          "pointerdown",
+          "click",
+          "visibilitychange",
+          "resize",
+          "scroll",
+          "change",
+          "hashchange",
+          "popstate"
+        ],
+        "activeObservers": [
+          "ResizeObserver",
+          "IntersectionObserver"
+        ],
+        "pendingOwnedRAF": 0,
+        "contexts": [
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 0,
+              "Texture": 4,
+              "Framebuffer": 3,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 72,
+              "Texture": 13,
+              "Framebuffer": 4,
+              "Renderbuffer": 0,
+              "Program": 10,
+              "Shader": 20,
+              "VertexArray": 84
+            },
+            "deleted": {
+              "Buffer": 72,
+              "Texture": 9,
+              "Framebuffer": 1,
+              "Renderbuffer": 0,
+              "Program": 8,
+              "Shader": 20,
+              "VertexArray": 84
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 0,
+              "Texture": 4,
+              "Framebuffer": 3,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            }
+          },
+          {
+            "connected": true,
+            "contextLossRequested": false,
+            "isContextLost": false,
+            "created": {
+              "Buffer": 72,
+              "Texture": 13,
+              "Framebuffer": 4,
+              "Renderbuffer": 0,
+              "Program": 10,
+              "Shader": 20,
+              "VertexArray": 84
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 20,
+              "VertexArray": 0
+            }
+          }
+        ],
+        "frames": [
+          {
+            "time": 8986.596,
+            "owned": true,
+            "calls": 100,
+            "triangles": 121418
+          },
+          {
+            "time": 10136.55,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 10169.9,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 11286.354,
+            "owned": true,
+            "calls": 100,
+            "triangles": 121418
+          },
+          {
+            "time": 11569.676,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          }
+        ],
+        "audio": 0
+      },
+      "unmounted": {
+        "documentToken": 0.24984652686452136,
+        "canvases": 0,
+        "activeListeners": [],
+        "activeObservers": [],
+        "pendingOwnedRAF": 0,
+        "contexts": [
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 0,
+              "Texture": 4,
+              "Framebuffer": 3,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 72,
+              "Texture": 13,
+              "Framebuffer": 4,
+              "Renderbuffer": 0,
+              "Program": 10,
+              "Shader": 20,
+              "VertexArray": 84
+            },
+            "deleted": {
+              "Buffer": 72,
+              "Texture": 9,
+              "Framebuffer": 1,
+              "Renderbuffer": 0,
+              "Program": 8,
+              "Shader": 20,
+              "VertexArray": 84
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 0,
+              "Texture": 4,
+              "Framebuffer": 3,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 72,
+              "Texture": 13,
+              "Framebuffer": 4,
+              "Renderbuffer": 0,
+              "Program": 10,
+              "Shader": 20,
+              "VertexArray": 84
+            },
+            "deleted": {
+              "Buffer": 72,
+              "Texture": 9,
+              "Framebuffer": 1,
+              "Renderbuffer": 0,
+              "Program": 8,
+              "Shader": 20,
+              "VertexArray": 84
+            }
+          }
+        ],
+        "frames": [
+          {
+            "time": 8986.596,
+            "owned": true,
+            "calls": 100,
+            "triangles": 121418
+          },
+          {
+            "time": 10136.55,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 10169.9,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 11286.354,
+            "owned": true,
+            "calls": 100,
+            "triangles": 121418
+          },
+          {
+            "time": 11569.676,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          }
+        ],
+        "audio": 0
+      }
+    },
+    {
+      "cycle": 3,
+      "mounted": {
+        "documentToken": 0.24984652686452136,
+        "canvases": 1,
+        "activeListeners": [
+          "webglcontextlost",
+          "webglcontextlost",
+          "webglcontextrestored",
+          "webglcontextcreationerror",
+          "pointerdown",
+          "pointermove",
+          "pointerup",
+          "click",
+          "pointercancel",
+          "pointerout",
+          "pointerleave",
+          "pointerdown",
+          "click",
+          "visibilitychange",
+          "resize",
+          "scroll",
+          "change",
+          "hashchange",
+          "popstate"
+        ],
+        "activeObservers": [
+          "ResizeObserver",
+          "IntersectionObserver"
+        ],
+        "pendingOwnedRAF": 0,
+        "contexts": [
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 0,
+              "Texture": 4,
+              "Framebuffer": 3,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 72,
+              "Texture": 13,
+              "Framebuffer": 4,
+              "Renderbuffer": 0,
+              "Program": 10,
+              "Shader": 20,
+              "VertexArray": 84
+            },
+            "deleted": {
+              "Buffer": 72,
+              "Texture": 9,
+              "Framebuffer": 1,
+              "Renderbuffer": 0,
+              "Program": 8,
+              "Shader": 20,
+              "VertexArray": 84
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 0,
+              "Texture": 4,
+              "Framebuffer": 3,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 72,
+              "Texture": 13,
+              "Framebuffer": 4,
+              "Renderbuffer": 0,
+              "Program": 10,
+              "Shader": 20,
+              "VertexArray": 84
+            },
+            "deleted": {
+              "Buffer": 72,
+              "Texture": 9,
+              "Framebuffer": 1,
+              "Renderbuffer": 0,
+              "Program": 8,
+              "Shader": 20,
+              "VertexArray": 84
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 0,
+              "Texture": 4,
+              "Framebuffer": 3,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            }
+          },
+          {
+            "connected": true,
+            "contextLossRequested": false,
+            "isContextLost": false,
+            "created": {
+              "Buffer": 72,
+              "Texture": 13,
+              "Framebuffer": 4,
+              "Renderbuffer": 0,
+              "Program": 10,
+              "Shader": 20,
+              "VertexArray": 84
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 20,
+              "VertexArray": 0
+            }
+          }
+        ],
+        "frames": [
+          {
+            "time": 8986.596,
+            "owned": true,
+            "calls": 100,
+            "triangles": 121418
+          },
+          {
+            "time": 10136.55,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 10169.9,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 11286.354,
+            "owned": true,
+            "calls": 100,
+            "triangles": 121418
+          },
+          {
+            "time": 11569.676,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 12152.832,
+            "owned": true,
+            "calls": 100,
+            "triangles": 121418
+          },
+          {
+            "time": 12352.824,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 12369.3,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          }
+        ],
+        "audio": 0
+      },
+      "unmounted": {
+        "documentToken": 0.24984652686452136,
+        "canvases": 0,
+        "activeListeners": [],
+        "activeObservers": [],
+        "pendingOwnedRAF": 0,
+        "contexts": [
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 0,
+              "Texture": 4,
+              "Framebuffer": 3,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 72,
+              "Texture": 13,
+              "Framebuffer": 4,
+              "Renderbuffer": 0,
+              "Program": 10,
+              "Shader": 20,
+              "VertexArray": 84
+            },
+            "deleted": {
+              "Buffer": 72,
+              "Texture": 9,
+              "Framebuffer": 1,
+              "Renderbuffer": 0,
+              "Program": 8,
+              "Shader": 20,
+              "VertexArray": 84
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 0,
+              "Texture": 4,
+              "Framebuffer": 3,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 72,
+              "Texture": 13,
+              "Framebuffer": 4,
+              "Renderbuffer": 0,
+              "Program": 10,
+              "Shader": 20,
+              "VertexArray": 84
+            },
+            "deleted": {
+              "Buffer": 72,
+              "Texture": 9,
+              "Framebuffer": 1,
+              "Renderbuffer": 0,
+              "Program": 8,
+              "Shader": 20,
+              "VertexArray": 84
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 0,
+              "Texture": 4,
+              "Framebuffer": 3,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 72,
+              "Texture": 13,
+              "Framebuffer": 4,
+              "Renderbuffer": 0,
+              "Program": 10,
+              "Shader": 20,
+              "VertexArray": 84
+            },
+            "deleted": {
+              "Buffer": 72,
+              "Texture": 9,
+              "Framebuffer": 1,
+              "Renderbuffer": 0,
+              "Program": 8,
+              "Shader": 20,
+              "VertexArray": 84
+            }
+          }
+        ],
+        "frames": [
+          {
+            "time": 8986.596,
+            "owned": true,
+            "calls": 100,
+            "triangles": 121418
+          },
+          {
+            "time": 10136.55,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 10169.9,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 11286.354,
+            "owned": true,
+            "calls": 100,
+            "triangles": 121418
+          },
+          {
+            "time": 11569.676,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 12152.832,
+            "owned": true,
+            "calls": 100,
+            "triangles": 121418
+          },
+          {
+            "time": 12352.824,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 12369.3,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          }
+        ],
+        "audio": 0
+      }
+    },
+    {
+      "cycle": 4,
+      "mounted": {
+        "documentToken": 0.24984652686452136,
+        "canvases": 1,
+        "activeListeners": [
+          "webglcontextlost",
+          "webglcontextlost",
+          "webglcontextrestored",
+          "webglcontextcreationerror",
+          "pointerdown",
+          "pointermove",
+          "pointerup",
+          "click",
+          "pointercancel",
+          "pointerout",
+          "pointerleave",
+          "pointerdown",
+          "click",
+          "visibilitychange",
+          "resize",
+          "scroll",
+          "change",
+          "hashchange",
+          "popstate"
+        ],
+        "activeObservers": [
+          "ResizeObserver",
+          "IntersectionObserver"
+        ],
+        "pendingOwnedRAF": 0,
+        "contexts": [
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 0,
+              "Texture": 4,
+              "Framebuffer": 3,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 72,
+              "Texture": 13,
+              "Framebuffer": 4,
+              "Renderbuffer": 0,
+              "Program": 10,
+              "Shader": 20,
+              "VertexArray": 84
+            },
+            "deleted": {
+              "Buffer": 72,
+              "Texture": 9,
+              "Framebuffer": 1,
+              "Renderbuffer": 0,
+              "Program": 8,
+              "Shader": 20,
+              "VertexArray": 84
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 0,
+              "Texture": 4,
+              "Framebuffer": 3,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 72,
+              "Texture": 13,
+              "Framebuffer": 4,
+              "Renderbuffer": 0,
+              "Program": 10,
+              "Shader": 20,
+              "VertexArray": 84
+            },
+            "deleted": {
+              "Buffer": 72,
+              "Texture": 9,
+              "Framebuffer": 1,
+              "Renderbuffer": 0,
+              "Program": 8,
+              "Shader": 20,
+              "VertexArray": 84
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 0,
+              "Texture": 4,
+              "Framebuffer": 3,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 72,
+              "Texture": 13,
+              "Framebuffer": 4,
+              "Renderbuffer": 0,
+              "Program": 10,
+              "Shader": 20,
+              "VertexArray": 84
+            },
+            "deleted": {
+              "Buffer": 72,
+              "Texture": 9,
+              "Framebuffer": 1,
+              "Renderbuffer": 0,
+              "Program": 8,
+              "Shader": 20,
+              "VertexArray": 84
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 0,
+              "Texture": 4,
+              "Framebuffer": 3,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            }
+          },
+          {
+            "connected": true,
+            "contextLossRequested": false,
+            "isContextLost": false,
+            "created": {
+              "Buffer": 72,
+              "Texture": 13,
+              "Framebuffer": 4,
+              "Renderbuffer": 0,
+              "Program": 10,
+              "Shader": 20,
+              "VertexArray": 84
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 20,
+              "VertexArray": 0
+            }
+          }
+        ],
+        "frames": [
+          {
+            "time": 8986.596,
+            "owned": true,
+            "calls": 100,
+            "triangles": 121418
+          },
+          {
+            "time": 10136.55,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 10169.9,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 11286.354,
+            "owned": true,
+            "calls": 100,
+            "triangles": 121418
+          },
+          {
+            "time": 11569.676,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 12152.832,
+            "owned": true,
+            "calls": 100,
+            "triangles": 121418
+          },
+          {
+            "time": 12352.824,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 12369.3,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 13035.9,
+            "owned": true,
+            "calls": 100,
+            "triangles": 121418
+          },
+          {
+            "time": 13185.9,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          }
+        ],
+        "audio": 0
+      },
+      "unmounted": {
+        "documentToken": 0.24984652686452136,
+        "canvases": 0,
+        "activeListeners": [],
+        "activeObservers": [],
+        "pendingOwnedRAF": 0,
+        "contexts": [
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 0,
+              "Texture": 4,
+              "Framebuffer": 3,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 72,
+              "Texture": 13,
+              "Framebuffer": 4,
+              "Renderbuffer": 0,
+              "Program": 10,
+              "Shader": 20,
+              "VertexArray": 84
+            },
+            "deleted": {
+              "Buffer": 72,
+              "Texture": 9,
+              "Framebuffer": 1,
+              "Renderbuffer": 0,
+              "Program": 8,
+              "Shader": 20,
+              "VertexArray": 84
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 0,
+              "Texture": 4,
+              "Framebuffer": 3,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 72,
+              "Texture": 13,
+              "Framebuffer": 4,
+              "Renderbuffer": 0,
+              "Program": 10,
+              "Shader": 20,
+              "VertexArray": 84
+            },
+            "deleted": {
+              "Buffer": 72,
+              "Texture": 9,
+              "Framebuffer": 1,
+              "Renderbuffer": 0,
+              "Program": 8,
+              "Shader": 20,
+              "VertexArray": 84
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 0,
+              "Texture": 4,
+              "Framebuffer": 3,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 72,
+              "Texture": 13,
+              "Framebuffer": 4,
+              "Renderbuffer": 0,
+              "Program": 10,
+              "Shader": 20,
+              "VertexArray": 84
+            },
+            "deleted": {
+              "Buffer": 72,
+              "Texture": 9,
+              "Framebuffer": 1,
+              "Renderbuffer": 0,
+              "Program": 8,
+              "Shader": 20,
+              "VertexArray": 84
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 0,
+              "Texture": 4,
+              "Framebuffer": 3,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 72,
+              "Texture": 13,
+              "Framebuffer": 4,
+              "Renderbuffer": 0,
+              "Program": 10,
+              "Shader": 20,
+              "VertexArray": 84
+            },
+            "deleted": {
+              "Buffer": 72,
+              "Texture": 9,
+              "Framebuffer": 1,
+              "Renderbuffer": 0,
+              "Program": 8,
+              "Shader": 20,
+              "VertexArray": 84
+            }
+          }
+        ],
+        "frames": [
+          {
+            "time": 8986.596,
+            "owned": true,
+            "calls": 100,
+            "triangles": 121418
+          },
+          {
+            "time": 10136.55,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 10169.9,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 11286.354,
+            "owned": true,
+            "calls": 100,
+            "triangles": 121418
+          },
+          {
+            "time": 11569.676,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 12152.832,
+            "owned": true,
+            "calls": 100,
+            "triangles": 121418
+          },
+          {
+            "time": 12352.824,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 12369.3,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 13035.9,
+            "owned": true,
+            "calls": 100,
+            "triangles": 121418
+          },
+          {
+            "time": 13185.9,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          }
+        ],
+        "audio": 0
+      }
+    },
+    {
+      "cycle": 5,
+      "mounted": {
+        "documentToken": 0.24984652686452136,
+        "canvases": 1,
+        "activeListeners": [
+          "webglcontextlost",
+          "webglcontextlost",
+          "webglcontextrestored",
+          "webglcontextcreationerror",
+          "pointerdown",
+          "pointermove",
+          "pointerup",
+          "click",
+          "pointercancel",
+          "pointerout",
+          "pointerleave",
+          "pointerdown",
+          "click",
+          "visibilitychange",
+          "resize",
+          "scroll",
+          "change",
+          "hashchange",
+          "popstate"
+        ],
+        "activeObservers": [
+          "ResizeObserver",
+          "IntersectionObserver"
+        ],
+        "pendingOwnedRAF": 0,
+        "contexts": [
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 0,
+              "Texture": 4,
+              "Framebuffer": 3,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 72,
+              "Texture": 13,
+              "Framebuffer": 4,
+              "Renderbuffer": 0,
+              "Program": 10,
+              "Shader": 20,
+              "VertexArray": 84
+            },
+            "deleted": {
+              "Buffer": 72,
+              "Texture": 9,
+              "Framebuffer": 1,
+              "Renderbuffer": 0,
+              "Program": 8,
+              "Shader": 20,
+              "VertexArray": 84
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 0,
+              "Texture": 4,
+              "Framebuffer": 3,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 72,
+              "Texture": 13,
+              "Framebuffer": 4,
+              "Renderbuffer": 0,
+              "Program": 10,
+              "Shader": 20,
+              "VertexArray": 84
+            },
+            "deleted": {
+              "Buffer": 72,
+              "Texture": 9,
+              "Framebuffer": 1,
+              "Renderbuffer": 0,
+              "Program": 8,
+              "Shader": 20,
+              "VertexArray": 84
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 0,
+              "Texture": 4,
+              "Framebuffer": 3,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 72,
+              "Texture": 13,
+              "Framebuffer": 4,
+              "Renderbuffer": 0,
+              "Program": 10,
+              "Shader": 20,
+              "VertexArray": 84
+            },
+            "deleted": {
+              "Buffer": 72,
+              "Texture": 9,
+              "Framebuffer": 1,
+              "Renderbuffer": 0,
+              "Program": 8,
+              "Shader": 20,
+              "VertexArray": 84
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 0,
+              "Texture": 4,
+              "Framebuffer": 3,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 72,
+              "Texture": 13,
+              "Framebuffer": 4,
+              "Renderbuffer": 0,
+              "Program": 10,
+              "Shader": 20,
+              "VertexArray": 84
+            },
+            "deleted": {
+              "Buffer": 72,
+              "Texture": 9,
+              "Framebuffer": 1,
+              "Renderbuffer": 0,
+              "Program": 8,
+              "Shader": 20,
+              "VertexArray": 84
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 0,
+              "Texture": 4,
+              "Framebuffer": 3,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            }
+          },
+          {
+            "connected": true,
+            "contextLossRequested": false,
+            "isContextLost": false,
+            "created": {
+              "Buffer": 72,
+              "Texture": 13,
+              "Framebuffer": 4,
+              "Renderbuffer": 0,
+              "Program": 10,
+              "Shader": 20,
+              "VertexArray": 84
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 20,
+              "VertexArray": 0
+            }
+          }
+        ],
+        "frames": [
+          {
+            "time": 8986.596,
+            "owned": true,
+            "calls": 100,
+            "triangles": 121418
+          },
+          {
+            "time": 10136.55,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 10169.9,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 11286.354,
+            "owned": true,
+            "calls": 100,
+            "triangles": 121418
+          },
+          {
+            "time": 11569.676,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 12152.832,
+            "owned": true,
+            "calls": 100,
+            "triangles": 121418
+          },
+          {
+            "time": 12352.824,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 12369.3,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 13035.9,
+            "owned": true,
+            "calls": 100,
+            "triangles": 121418
+          },
+          {
+            "time": 13185.9,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 13752.6,
+            "owned": true,
+            "calls": 100,
+            "triangles": 121418
+          },
+          {
+            "time": 13969.258,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          }
+        ],
+        "audio": 0
+      },
+      "unmounted": {
+        "documentToken": 0.24984652686452136,
+        "canvases": 0,
+        "activeListeners": [],
+        "activeObservers": [],
+        "pendingOwnedRAF": 0,
+        "contexts": [
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 0,
+              "Texture": 4,
+              "Framebuffer": 3,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 72,
+              "Texture": 13,
+              "Framebuffer": 4,
+              "Renderbuffer": 0,
+              "Program": 10,
+              "Shader": 20,
+              "VertexArray": 84
+            },
+            "deleted": {
+              "Buffer": 72,
+              "Texture": 9,
+              "Framebuffer": 1,
+              "Renderbuffer": 0,
+              "Program": 8,
+              "Shader": 20,
+              "VertexArray": 84
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 0,
+              "Texture": 4,
+              "Framebuffer": 3,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 72,
+              "Texture": 13,
+              "Framebuffer": 4,
+              "Renderbuffer": 0,
+              "Program": 10,
+              "Shader": 20,
+              "VertexArray": 84
+            },
+            "deleted": {
+              "Buffer": 72,
+              "Texture": 9,
+              "Framebuffer": 1,
+              "Renderbuffer": 0,
+              "Program": 8,
+              "Shader": 20,
+              "VertexArray": 84
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 0,
+              "Texture": 4,
+              "Framebuffer": 3,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 72,
+              "Texture": 13,
+              "Framebuffer": 4,
+              "Renderbuffer": 0,
+              "Program": 10,
+              "Shader": 20,
+              "VertexArray": 84
+            },
+            "deleted": {
+              "Buffer": 72,
+              "Texture": 9,
+              "Framebuffer": 1,
+              "Renderbuffer": 0,
+              "Program": 8,
+              "Shader": 20,
+              "VertexArray": 84
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 0,
+              "Texture": 4,
+              "Framebuffer": 3,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 72,
+              "Texture": 13,
+              "Framebuffer": 4,
+              "Renderbuffer": 0,
+              "Program": 10,
+              "Shader": 20,
+              "VertexArray": 84
+            },
+            "deleted": {
+              "Buffer": 72,
+              "Texture": 9,
+              "Framebuffer": 1,
+              "Renderbuffer": 0,
+              "Program": 8,
+              "Shader": 20,
+              "VertexArray": 84
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 0,
+              "Texture": 4,
+              "Framebuffer": 3,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            },
+            "deleted": {
+              "Buffer": 0,
+              "Texture": 0,
+              "Framebuffer": 0,
+              "Renderbuffer": 0,
+              "Program": 0,
+              "Shader": 0,
+              "VertexArray": 0
+            }
+          },
+          {
+            "connected": false,
+            "contextLossRequested": true,
+            "isContextLost": true,
+            "created": {
+              "Buffer": 72,
+              "Texture": 13,
+              "Framebuffer": 4,
+              "Renderbuffer": 0,
+              "Program": 10,
+              "Shader": 20,
+              "VertexArray": 84
+            },
+            "deleted": {
+              "Buffer": 72,
+              "Texture": 9,
+              "Framebuffer": 1,
+              "Renderbuffer": 0,
+              "Program": 8,
+              "Shader": 20,
+              "VertexArray": 84
+            }
+          }
+        ],
+        "frames": [
+          {
+            "time": 8986.596,
+            "owned": true,
+            "calls": 100,
+            "triangles": 121418
+          },
+          {
+            "time": 10136.55,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 10169.9,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 11286.354,
+            "owned": true,
+            "calls": 100,
+            "triangles": 121418
+          },
+          {
+            "time": 11569.676,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 12152.832,
+            "owned": true,
+            "calls": 100,
+            "triangles": 121418
+          },
+          {
+            "time": 12352.824,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 12369.3,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 13035.9,
+            "owned": true,
+            "calls": 100,
+            "triangles": 121418
+          },
+          {
+            "time": 13185.9,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          },
+          {
+            "time": 13752.6,
+            "owned": true,
+            "calls": 100,
+            "triangles": 121418
+          },
+          {
+            "time": 13969.258,
+            "owned": true,
+            "calls": 60,
+            "triangles": 65542
+          }
+        ],
+        "audio": 0
+      }
+    }
+  ],
+  "errors": [],
+  "limitations": "Injected instrumentation retains references for counting; this measures removal/cancellation/disconnect/delete/context-loss, not heap collection or physical GPU memory."
+}

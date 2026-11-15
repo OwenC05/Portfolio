@@ -1,2 +1,14 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Preserve byte-bound portfolio evidence and its source snapshots across checkouts.
+/.omx/** -text
+/design/** -text
+/components/studio/** -text
+/app/studio/** -text
+/app/globals.css -text
+/lib/studio-content.ts -text
+/lib/studio-contract.ts -text
+/public/studio/** -text
+/package.json -text
+/package-lock.json -text

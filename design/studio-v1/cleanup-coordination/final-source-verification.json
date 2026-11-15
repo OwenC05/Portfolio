@@ -1,0 +1,147 @@
+{
+  "capturedAtUtc": "2026-11-14T20:26:10.232Z",
+  "sourceScopeFiles": [
+    "app/globals.css",
+    "app/studio/page.tsx",
+    "app/studio/studio.module.css",
+    "components/studio/ProjectEvidence.tsx",
+    "components/studio/StudioExperience.tsx",
+    "components/studio/StudioScene.tsx",
+    "components/studio/scene/build-studio.ts",
+    "components/studio/scene/controller.ts",
+    "components/studio/scene/resources.ts",
+    "components/studio/scene/textures.ts",
+    "components/studio/scene/types.ts",
+    "components/studio/scene/verify-controller.mjs",
+    "lib/studio-content.ts",
+    "lib/studio-contract.ts"
+  ],
+  "noNewOrMissingFiles": true,
+  "sources": [
+    {
+      "file": "app/globals.css",
+      "bytes": 1701,
+      "sha256": "38A5427299238E2BE46AD5062E798EF3C68D13DFA884A1272BFDB2C55946F13F",
+      "matchesInventory": true,
+      "matchesCritique": true
+    },
+    {
+      "file": "app/studio/page.tsx",
+      "bytes": 3316,
+      "sha256": "7A3E95A799A27041229ED70F496607B376D9097BB5A0D0194C186F0DD1A66152",
+      "matchesInventory": true,
+      "matchesCritique": true
+    },
+    {
+      "file": "app/studio/studio.module.css",
+      "bytes": 13917,
+      "sha256": "30BA6D8C4AC62F3F7A9120D41D7774B531E53891A504634ED91E2EF62DF052AC",
+      "matchesInventory": true,
+      "matchesCritique": true
+    },
+    {
+      "file": "components/studio/ProjectEvidence.tsx",
+      "bytes": 2268,
+      "sha256": "078C749B8BAD50D88DCD47EC29CD9CF97A5C3621B3E98D21FAD455B3420905C5",
+      "matchesInventory": true,
+      "matchesCritique": true
+    },
+    {
+      "file": "components/studio/StudioExperience.tsx",
+      "bytes": 7787,
+      "sha256": "75B57B83F0D8F93EDFFBDDC5F2CB26457F227F6D7A9643A8167487C62C2CB3E3",
+      "matchesInventory": true,
+      "matchesCritique": true
+    },
+    {
+      "file": "components/studio/StudioScene.tsx",
+      "bytes": 1051,
+      "sha256": "29586D8A880AD079627E9E8D670F46A60C4614B221B17BBCEFEB54112327E5AC",
+      "matchesInventory": true,
+      "matchesCritique": true
+    },
+    {
+      "file": "components/studio/scene/build-studio.ts",
+      "bytes": 18373,
+      "sha256": "DBAF86527A207C09DB45F19125316FD8C929B97CFE16B14E52CC25B6D386DDEE",
+      "matchesInventory": true,
+      "matchesCritique": true
+    },
+    {
+      "file": "components/studio/scene/controller.ts",
+      "bytes": 13418,
+      "sha256": "BD46EDE4D8CD0525AC89A8A491866BBC065554918D663A4830D5DB51FFC9FB63",
+      "matchesInventory": true,
+      "matchesCritique": true
+    },
+    {
+      "file": "components/studio/scene/resources.ts",
+      "bytes": 4210,
+      "sha256": "756A26FBA1840696FD7B8F0A24DFA588A50488A55FBC99BEC60CA3C0E14CB509",
+      "matchesInventory": true,
+      "matchesCritique": true
+    },
+    {
+      "file": "components/studio/scene/textures.ts",
+      "bytes": 5059,
+      "sha256": "EF7E5E025D21DEB88350B79A994DFB5AB1D9A1296D57EB0000CFDE813FB2BC84",
+      "matchesInventory": true,
+      "matchesCritique": true
+    },
+    {
+      "file": "components/studio/scene/types.ts",
+      "bytes": 361,
+      "sha256": "F5A0A0F6F174124FF6C0ABBFD6C9BEF46E6FB6BCC4900404719B4928C4FEF5C6",
+      "matchesInventory": true,
+      "matchesCritique": true
+    },
+    {
+      "file": "components/studio/scene/verify-controller.mjs",
+      "bytes": 28476,
+      "sha256": "7F9F21EE10458B676D548AFEDCEFFCEF84A21892CE42DE80D6677310EB325A6F",
+      "matchesInventory": true,
+      "matchesCritique": true
+    },
+    {
+      "file": "lib/studio-content.ts",
+      "bytes": 8095,
+      "sha256": "36E08B40CFB779F3F05CC17623766F1A2FB7B8F876CAC73AC9B12DB381764662",
+      "matchesInventory": true,
+      "matchesCritique": true
+    },
+    {
+      "file": "lib/studio-contract.ts",
+      "bytes": 924,
+      "sha256": "7F00624980E4E89ECFF7E90ABF371595FE8A0DDF3CDC0401DB4B679A872A9097",
+      "matchesInventory": true,
+      "matchesCritique": true
+    }
+  ],
+  "globalsAddition": {
+    "startLine": 14,
+    "lineCount": 6,
+    "sha256": "AE9CFD1E017A63A058E98FD3F56CC6A6C3B1421B76A32E989BE29D1AD15DE4A8",
+    "matchesInventory": true
+  },
+  "adoptedChecks": [
+    {
+      "name": "cpu",
+      "command": "node components/studio/scene/verify-controller.mjs",
+      "startedAt": "2026-11-14T20:10:10.550Z",
+      "exit_code": 0
+    },
+    {
+      "name": "typecheck",
+      "command": ".\\node_modules\\.bin\\tsc.cmd --noEmit --incremental false --pretty false",
+      "startedAt": "2026-11-14T20:10:10.570Z",
+      "exit_code": 0
+    },
+    {
+      "name": "lint",
+      "command": "npm.cmd run lint -- --no-cache",
+      "startedAt": "2026-11-14T20:10:10.570Z",
+      "exit_code": 1
+    }
+  ],
+  "passed": true
+}

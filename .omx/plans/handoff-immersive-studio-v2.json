@@ -1,0 +1,55 @@
+{
+  "mode": "ralplan",
+  "active": false,
+  "current_phase": "complete",
+  "iteration": 1,
+  "review_cycle": 1,
+  "run_outcome": "complete",
+  "stop_reason": null,
+  "session_id": "01a1daa7-0ca8-77a0-9bcc-da11ad109c99",
+  "planning_artifacts": {
+    "prd": ".omx/plans/prd-immersive-studio-v2.md",
+    "prd_sha256": "1F92AED3C8B4D26628D03D856DC27C3B87EA2564770673B9D9E84CCF00A8A5ED",
+    "test_spec": ".omx/plans/test-spec-immersive-studio-v2.md",
+    "test_spec_sha256": "E5822F3D02BC17EF074F7FD6ED61A7B0F9FDE3D05E162F0F15D5823656FBAD9B",
+    "requirements": ".omx/specs/deep-interview-immersive-studio-v2.md",
+    "user_agent_routing": ".omx/plans/immersive-v2-agent-routing.md"
+  },
+  "ralplan_architect_review": {
+    "agent": "/root/immersive_v2_architect",
+    "agent_role": "architect",
+    "artifact": ".omx/plans/review-immersive-studio-v2-architect.md",
+    "completed": true,
+    "verdict": "APPROVE",
+    "review_cycle": 1,
+    "sequence": 1
+  },
+  "ralplan_critic_review": {
+    "agent": "/root/immersive_v2_critic",
+    "agent_role": "critic",
+    "artifact": ".omx/plans/review-immersive-studio-v2-critic.md",
+    "completed": true,
+    "verdict": "APPROVE",
+    "review_cycle": 1,
+    "sequence": 2
+  },
+  "ralplan_consensus_gate": {
+    "complete": true,
+    "review_cycle": 1,
+    "qualityGateResults": [],
+    "scope": "Actual sequential local workflow evidence only; not host security authority."
+  },
+  "ralplan_execution_handoff": {
+    "authorized": true,
+    "source": "user",
+    "session_id": "01a1daa7-0ca8-77a0-9bcc-da11ad109c99",
+    "review_cycle": 1,
+    "requested_lane": "orchestration",
+    "tracking": "ultragoal",
+    "reason": "Continue user-requested portfolio refinement and Orca implementation after accepted eye-level/immediate-reading/stylised choices; latest instruction assigns all design to Claude and all other work to Codex.",
+    "scope": "Local immersive v2 only; no deploy/commit/paid generation/private photo publication.",
+    "authorized_at": "2026-11-14 22:29:55 UTC"
+  },
+  "recovery_note": "Interrupted after actual sequential Architect and Critic APPROVE but before handoff/dispatch. Runtime hook counter reported max_iterations_reached=5 despite one actual review cycle. This receipt records the real cycle, current exact approved bytes and new explicit staffing override; no reviewer was reopened or replaced based on persisted legacy records.",
+  "recorded_at": "2026-11-14 22:29:55 UTC"
+}

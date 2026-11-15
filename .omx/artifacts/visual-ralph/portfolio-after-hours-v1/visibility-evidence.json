@@ -1,0 +1,19 @@
+{
+  "instrumentedControllerBranch": {
+    "method": "Temporarily define document.hidden=true and visibilityState=hidden, dispatch visibilitychange, resize actual viewport1440 to1280, restore original property descriptors, dispatch visibilitychange",
+    "beforeRenderCount": 3,
+    "hiddenRenderCountAfterResize": 3,
+    "visibleRenderCount": 4,
+    "visibleCanvasCssWidth": 674.515625,
+    "pass": true,
+    "scope": "Real production controller and listeners with browser-injected visibility state; not native OS visibility"
+  },
+  "nativeAttempts": {
+    "cdpFreezeResume": "Command succeeded, but document remained visible",
+    "headlessBackgroundTabAndWindowMinimize": "Document remained visible; no native visibility events; resize still rendered",
+    "temporaryOffscreenHeadedChrome": "Document remained visible on minimize; temporary owned browsers closed",
+    "unsupportedEmulationCommand": "Emulation.setPageVisibilityOverride was not found",
+    "nativeHiddenDocumentProved": false
+  },
+  "scopeDisposition": "Root msg_00c8c7ffa22f bounded further investigation: keep this explicit limitation and branch evidence; no new browser/package installation or further environment experiments"
+}

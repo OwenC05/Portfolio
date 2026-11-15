@@ -1,0 +1,454 @@
+{
+  "results": [
+    {
+      "isMobile": false,
+      "reducedMotion": "reduce",
+      "focus": "project-dissertation-heading",
+      "hash": "#project-dissertation",
+      "selected": "dissertation",
+      "trace": [
+        {
+          "type": "pointerdown",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "pointerType": "touch",
+          "active": "BODY",
+          "hash": "",
+          "scrollY": 0,
+          "time": 631.6999999880791
+        },
+        {
+          "type": "touchstart",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "active": "BODY",
+          "hash": "",
+          "scrollY": 0,
+          "time": 633.1999999880791
+        },
+        {
+          "type": "pointerup",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "pointerType": "touch",
+          "active": "BODY",
+          "hash": "",
+          "scrollY": 0,
+          "time": 633.5
+        },
+        {
+          "type": "touchend",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "active": "BODY",
+          "hash": "",
+          "scrollY": 0,
+          "time": 634
+        },
+        {
+          "type": "mousedown",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "active": "BODY",
+          "hash": "",
+          "scrollY": 0,
+          "time": 634.5
+        },
+        {
+          "type": "focusin",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "active": "CANVAS",
+          "hash": "",
+          "scrollY": 0,
+          "time": 634.6999999880791
+        },
+        {
+          "type": "mouseup",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "active": "CANVAS",
+          "hash": "",
+          "scrollY": 0,
+          "time": 634.8000000119209
+        },
+        {
+          "type": "click",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "pointerType": "touch",
+          "active": "CANVAS",
+          "hash": "",
+          "scrollY": 0,
+          "time": 634.9000000059605
+        },
+        {
+          "type": "focusout",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "active": "BODY",
+          "hash": "#project-dissertation",
+          "scrollY": 0,
+          "time": 635.3000000119209
+        },
+        {
+          "type": "focusin",
+          "target": "H2",
+          "id": "project-dissertation-heading",
+          "trusted": true,
+          "active": "project-dissertation-heading",
+          "hash": "#project-dissertation",
+          "scrollY": 0,
+          "time": 635.5
+        }
+      ]
+    },
+    {
+      "isMobile": false,
+      "reducedMotion": "no-preference",
+      "focus": "project-dissertation-heading",
+      "hash": "#project-dissertation",
+      "selected": "dissertation",
+      "trace": [
+        {
+          "type": "pointerdown",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "pointerType": "touch",
+          "active": "BODY",
+          "hash": "",
+          "scrollY": 0,
+          "time": 659.7999999821186
+        },
+        {
+          "type": "touchstart",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "active": "BODY",
+          "hash": "",
+          "scrollY": 0,
+          "time": 660.6999999880791
+        },
+        {
+          "type": "pointerup",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "pointerType": "touch",
+          "active": "BODY",
+          "hash": "",
+          "scrollY": 0,
+          "time": 661
+        },
+        {
+          "type": "touchend",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "active": "BODY",
+          "hash": "",
+          "scrollY": 0,
+          "time": 661.3999999761581
+        },
+        {
+          "type": "mousedown",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "active": "BODY",
+          "hash": "",
+          "scrollY": 0,
+          "time": 662.0999999940395
+        },
+        {
+          "type": "focusin",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "active": "CANVAS",
+          "hash": "",
+          "scrollY": 0,
+          "time": 662.3999999761581
+        },
+        {
+          "type": "mouseup",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "active": "CANVAS",
+          "hash": "",
+          "scrollY": 0,
+          "time": 662.5999999940395
+        },
+        {
+          "type": "click",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "pointerType": "touch",
+          "active": "CANVAS",
+          "hash": "",
+          "scrollY": 0,
+          "time": 662.7999999821186
+        },
+        {
+          "type": "focusout",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "active": "BODY",
+          "hash": "#project-dissertation",
+          "scrollY": 0,
+          "time": 663.2999999821186
+        },
+        {
+          "type": "focusin",
+          "target": "H2",
+          "id": "project-dissertation-heading",
+          "trusted": true,
+          "active": "project-dissertation-heading",
+          "hash": "#project-dissertation",
+          "scrollY": 0,
+          "time": 663.3999999761581
+        }
+      ]
+    },
+    {
+      "isMobile": true,
+      "reducedMotion": "reduce",
+      "focus": "project-dissertation-heading",
+      "hash": "#project-dissertation",
+      "selected": "dissertation",
+      "trace": [
+        {
+          "type": "pointerdown",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "pointerType": "touch",
+          "active": "BODY",
+          "hash": "",
+          "scrollY": 0,
+          "time": 673.2000000178814
+        },
+        {
+          "type": "touchstart",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "active": "BODY",
+          "hash": "",
+          "scrollY": 0,
+          "time": 674.7000000178814
+        },
+        {
+          "type": "pointerup",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "pointerType": "touch",
+          "active": "BODY",
+          "hash": "",
+          "scrollY": 0,
+          "time": 675
+        },
+        {
+          "type": "touchend",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "active": "BODY",
+          "hash": "",
+          "scrollY": 0,
+          "time": 675.4000000059605
+        },
+        {
+          "type": "mousedown",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "active": "BODY",
+          "hash": "",
+          "scrollY": 0,
+          "time": 676
+        },
+        {
+          "type": "focusin",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "active": "CANVAS",
+          "hash": "",
+          "scrollY": 0,
+          "time": 676.3000000119209
+        },
+        {
+          "type": "mouseup",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "active": "CANVAS",
+          "hash": "",
+          "scrollY": 0,
+          "time": 676.5
+        },
+        {
+          "type": "click",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "pointerType": "touch",
+          "active": "CANVAS",
+          "hash": "",
+          "scrollY": 0,
+          "time": 676.8000000119209
+        },
+        {
+          "type": "focusout",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "active": "BODY",
+          "hash": "#project-dissertation",
+          "scrollY": 0,
+          "time": 677.4000000059605
+        },
+        {
+          "type": "focusin",
+          "target": "H2",
+          "id": "project-dissertation-heading",
+          "trusted": true,
+          "active": "project-dissertation-heading",
+          "hash": "#project-dissertation",
+          "scrollY": 0,
+          "time": 677.7000000178814
+        }
+      ]
+    },
+    {
+      "isMobile": true,
+      "reducedMotion": "no-preference",
+      "focus": "project-dissertation-heading",
+      "hash": "#project-dissertation",
+      "selected": "dissertation",
+      "trace": [
+        {
+          "type": "pointerdown",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "pointerType": "touch",
+          "active": "BODY",
+          "hash": "",
+          "scrollY": 0,
+          "time": 659.3000000119209
+        },
+        {
+          "type": "touchstart",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "active": "BODY",
+          "hash": "",
+          "scrollY": 0,
+          "time": 660.7000000178814
+        },
+        {
+          "type": "pointerup",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "pointerType": "touch",
+          "active": "BODY",
+          "hash": "",
+          "scrollY": 0,
+          "time": 661
+        },
+        {
+          "type": "touchend",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "active": "BODY",
+          "hash": "",
+          "scrollY": 0,
+          "time": 661.7000000178814
+        },
+        {
+          "type": "mousedown",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "active": "BODY",
+          "hash": "",
+          "scrollY": 0,
+          "time": 662.7000000178814
+        },
+        {
+          "type": "focusin",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "active": "CANVAS",
+          "hash": "",
+          "scrollY": 0,
+          "time": 662.8000000119209
+        },
+        {
+          "type": "mouseup",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "active": "CANVAS",
+          "hash": "",
+          "scrollY": 0,
+          "time": 663
+        },
+        {
+          "type": "click",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "pointerType": "touch",
+          "active": "CANVAS",
+          "hash": "",
+          "scrollY": 0,
+          "time": 663.0999999940395
+        },
+        {
+          "type": "focusout",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "active": "BODY",
+          "hash": "#project-dissertation",
+          "scrollY": 0,
+          "time": 663.5999999940395
+        },
+        {
+          "type": "focusin",
+          "target": "H2",
+          "id": "project-dissertation-heading",
+          "trusted": true,
+          "active": "project-dissertation-heading",
+          "hash": "#project-dissertation",
+          "scrollY": 0,
+          "time": 663.8000000119209
+        }
+      ]
+    }
+  ],
+  "failures": [],
+  "note": "Fresh production contexts with no focus/scroll wrappers; trusted touchscreen.tap. Expected final focus is existing project-dissertation-heading."
+}

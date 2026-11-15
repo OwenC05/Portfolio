@@ -1,0 +1,188 @@
+{
+  "atUtc": "2026-11-15T00:49:34.345Z",
+  "node": "v24.21.0",
+  "three": "187",
+  "task": "task_73fa4e160358",
+  "dispatch": "ctx_e14be999996e",
+  "sourceHashes": [
+    {
+      "file": "components/studio/scene/load-pilot.ts",
+      "sha256": "B5CD61C682DD69D2336B10B508B516999E72D73A00EDBD6E2CEBCF0323D39D11"
+    },
+    {
+      "file": "components/studio/scene/controller.ts",
+      "sha256": "CC76055EA4BFE596E0D3AB49C84CA55C55B8A9BAD3B33627E08ADEB78F0969F0"
+    },
+    {
+      "file": "components/studio/scene/build-studio.ts",
+      "sha256": "D8ABF67F6C25DDADB0EBA3A1B43DF372EB132F5B35AA6867A3A0F573701E2DD6"
+    },
+    {
+      "file": "components/studio/scene/resources.ts",
+      "sha256": "756A26FBA1840696FD7B8F0A24DFA588A50488A55FBC99BEC60CA3C0E14CB509"
+    },
+    {
+      "file": "components/studio/scene/types.ts",
+      "sha256": "5AA65F769BD2077BD6A16CC5834EF1B47DB5C76B6A4E0FF1ABDA226892178364"
+    },
+    {
+      "file": "components/studio/scene/textures.ts",
+      "sha256": "09F6FF6CC7BB8910F09838566DFCF840D85A0D2CE1BE8D064DEAFB0989C63AA6"
+    },
+    {
+      "file": "components/studio/scene/view-config.ts",
+      "sha256": "1FEA7ADBCFD730A56920389C8AC4ECF8323C9739FD4882C15F3E134A11F1A450"
+    },
+    {
+      "file": "public/studio/pilot-right-limit-v03.glb",
+      "sha256": "2B9A4182C3024485680C1E066C8A22EF0DC0F541ACCA4BD958486BCED2C4063E"
+    },
+    {
+      "file": "design/studio-v2/asset-pipeline/integration-contract/pilot-profile.json",
+      "sha256": "02A9B364ED42127988747660AC61D6EFCA8BC3AF9F151A0E41EB0D50BC0BAA08"
+    },
+    {
+      "file": "node_modules/three/examples/jsm/loaders/GLTFLoader.js",
+      "sha256": "532AC726E120039ACBCD6CF54328C57ACBF7B438176AFAA6951257126D11BFF1"
+    }
+  ],
+  "cases": [
+    {
+      "name": "real GLB placement, imported blocker ownership and shared bitmap disposal",
+      "fetches": 1,
+      "allocations": {
+        "geometry": 9,
+        "material": 16,
+        "texture": 3
+      },
+      "disposeEvents": 28,
+      "uniqueBitmaps": 1,
+      "bitmapCloses": [
+        1
+      ],
+      "htmlImages": 0,
+      "remainingUrls": 0,
+      "remainingAbortListeners": 0,
+      "importedMeshes": 9,
+      "triangles": 5528,
+      "importedBlockers": 9,
+      "noncastingBulbBlocks": true,
+      "singleAdapterVerified": true,
+      "passed": true
+    },
+    {
+      "name": "parse rejection with shared bitmap and still-pending sibling decode",
+      "fetches": 1,
+      "allocations": {
+        "geometry": 9,
+        "material": 15,
+        "texture": 3
+      },
+      "disposeEvents": 27,
+      "uniqueBitmaps": 1,
+      "bitmapCloses": [
+        1
+      ],
+      "htmlImages": 0,
+      "remainingUrls": 0,
+      "remainingAbortListeners": 0,
+      "error": "Independent sibling material failure",
+      "noPrematureDisposal": true,
+      "passed": true
+    },
+    {
+      "name": "abort after bitmap decoding starts closes late results",
+      "fetches": 1,
+      "allocations": {
+        "geometry": 9,
+        "material": 16,
+        "texture": 3
+      },
+      "disposeEvents": 28,
+      "uniqueBitmaps": 3,
+      "bitmapCloses": [
+        1,
+        1,
+        1
+      ],
+      "htmlImages": 0,
+      "remainingUrls": 0,
+      "remainingAbortListeners": 0,
+      "rejectedAs": "AbortError",
+      "passed": true
+    },
+    {
+      "name": "decoded zero width rejects loaded materials and releases allocations",
+      "fetches": 1,
+      "allocations": {
+        "geometry": 9,
+        "material": 16,
+        "texture": 3
+      },
+      "disposeEvents": 28,
+      "uniqueBitmaps": 3,
+      "bitmapCloses": [
+        1,
+        1,
+        1
+      ],
+      "htmlImages": 0,
+      "remainingUrls": 0,
+      "remainingAbortListeners": 0,
+      "rejectedAs": "missing or invalid decoded image",
+      "passed": true
+    },
+    {
+      "name": "HTMLImage fallback success cleans URLs and listeners",
+      "fetches": 1,
+      "allocations": {
+        "geometry": 9,
+        "material": 16,
+        "texture": 3
+      },
+      "disposeEvents": 28,
+      "uniqueBitmaps": 0,
+      "bitmapCloses": [],
+      "htmlImages": 3,
+      "remainingUrls": 0,
+      "remainingAbortListeners": 0,
+      "completion": "success",
+      "passed": true
+    },
+    {
+      "name": "HTMLImage fallback error cleans URLs and listeners",
+      "fetches": 1,
+      "allocations": {
+        "geometry": 9,
+        "material": 16,
+        "texture": 3
+      },
+      "disposeEvents": 28,
+      "uniqueBitmaps": 0,
+      "bitmapCloses": [],
+      "htmlImages": 3,
+      "remainingUrls": 0,
+      "remainingAbortListeners": 0,
+      "completion": "error",
+      "passed": true
+    },
+    {
+      "name": "HTMLImage fallback abort cleans URLs and listeners",
+      "fetches": 1,
+      "allocations": {
+        "geometry": 9,
+        "material": 16,
+        "texture": 3
+      },
+      "disposeEvents": 28,
+      "uniqueBitmaps": 0,
+      "bitmapCloses": [],
+      "htmlImages": 3,
+      "remainingUrls": 0,
+      "remainingAbortListeners": 0,
+      "completion": "abort",
+      "passed": true
+    }
+  ],
+  "sourceStable": true
+}

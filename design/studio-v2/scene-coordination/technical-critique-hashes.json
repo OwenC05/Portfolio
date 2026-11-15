@@ -1,0 +1,111 @@
+{
+    "reviewedAtUtc":  "2026-11-14T23:08:37.1679977Z",
+    "gitHead":  "e42b010d61736511e4257249dacb2954658ebe9f",
+    "task":  "task_788766abc9dc",
+    "dispatch":  "ctx_212467b7a346",
+    "provider":  "codex",
+    "sourceFiles":  [
+                        {
+                            "path":  "lib/studio-contract.ts",
+                            "sha256":  "64F88FD30B896C88C87A5631349BBB2BB9A3BC8676C0A1A816F1E5720902C84D"
+                        },
+                        {
+                            "path":  "components/studio/StudioScene.tsx",
+                            "sha256":  "29586D8A880AD079627E9E8D670F46A60C4614B221B17BBCEFEB54112327E5AC"
+                        },
+                        {
+                            "path":  "components/studio/scene/build-studio.ts",
+                            "sha256":  "364DA680F5111138207A03A72579D7E6491A5E4FC09F8786B5DE794D69FB1EC3"
+                        },
+                        {
+                            "path":  "components/studio/scene/controller.ts",
+                            "sha256":  "F04F7E9F2B4CA082C81A5447343D825B34602CA6BE2B09B3EDD5610EFA6B4847"
+                        },
+                        {
+                            "path":  "components/studio/scene/picking.ts",
+                            "sha256":  "31F4546ED1480C8D5FD99CE0ED42F64387E6002199AC7D506F73649211E35B60"
+                        },
+                        {
+                            "path":  "components/studio/scene/resources.ts",
+                            "sha256":  "756A26FBA1840696FD7B8F0A24DFA588A50488A55FBC99BEC60CA3C0E14CB509"
+                        },
+                        {
+                            "path":  "components/studio/scene/textures.ts",
+                            "sha256":  "09F6FF6CC7BB8910F09838566DFCF840D85A0D2CE1BE8D064DEAFB0989C63AA6"
+                        },
+                        {
+                            "path":  "components/studio/scene/types.ts",
+                            "sha256":  "090288AA14EFBE6AD6C2E95FD38202D2E86CC5530785DA40DC272390FB18200A"
+                        },
+                        {
+                            "path":  "components/studio/scene/verify-controller.mjs",
+                            "sha256":  "0A8C66647CDCFA27F46EBD2DEAB3682CFC7AA569AF402D3EC27C5B6F007D8020"
+                        },
+                        {
+                            "path":  "components/studio/scene/verify-types.mjs",
+                            "sha256":  "7A684D6E38384C80B57FECB63D24DB6FCF6E8EAC24CDB6F4918C451EBE066947"
+                        },
+                        {
+                            "path":  "components/studio/scene/view-config.ts",
+                            "sha256":  "1FEA7ADBCFD730A56920389C8AC4ECF8323C9739FD4882C15F3E134A11F1A450"
+                        }
+                    ],
+    "additionalInputs":  [
+                             {
+                                 "path":  ".omx/specs/studio-v2/common.md",
+                                 "sha256":  "697030E8441795B9BAA2C9F7A34CD7748578A9ECCF39A6A3AC5B1A45ED77FCDC"
+                             },
+                             {
+                                 "path":  ".omx/plans/immersive-v2-agent-routing.md",
+                                 "sha256":  "CA309B3C3DF04532E21AC5E0E6530FBEE285731375930C0E0BC4EEC5219D60E3"
+                             },
+                             {
+                                 "path":  ".omx/plans/prd-immersive-studio-v2.md",
+                                 "sha256":  "1F92AED3C8B4D26628D03D856DC27C3B87EA2564770673B9D9E84CCF00A8A5ED"
+                             },
+                             {
+                                 "path":  ".omx/plans/test-spec-immersive-studio-v2.md",
+                                 "sha256":  "E5822F3D02BC17EF074F7FD6ED61A7B0F9FDE3D05E162F0F15D5823656FBAD9B"
+                             },
+                             {
+                                 "path":  ".omx/specs/deep-interview-immersive-studio-v2.md",
+                                 "sha256":  "C50D53E861751FDCF1CAF9E1F35465BFF4486FB29485D0D23D730316074A1465"
+                             },
+                             {
+                                 "path":  ".omx/plans/immersive-v2-technical-evidence.md",
+                                 "sha256":  "E8B48F2CCF1FB8140B68A6E9FCB8B8CF7005ADB8DA19768C278E63EC8080D2BF"
+                             },
+                             {
+                                 "path":  ".omx/plans/review-immersive-studio-v2-architect.md",
+                                 "sha256":  "D68C6B6F2294D75FB3ABA8EFE84C5BD1EA45C19E9833F2FEA59965E04A3D92DE"
+                             },
+                             {
+                                 "path":  "design/studio-v2/scene-coordination/contracts.md",
+                                 "sha256":  "46E5C4D7117F275A10219F840EFC99835A5C006AC0F717B73EF81595531516CC"
+                             },
+                             {
+                                 "path":  "design/studio-v2/scene-technical-report.md",
+                                 "sha256":  "6532321ED499D43D21C2E27D478EBB8501E13C5A8F086C9B6EABD1329EE9FBE2"
+                             },
+                             {
+                                 "path":  "design/studio-v2/scene-art-direction.md",
+                                 "sha256":  "0691D9F67CDB2BAFFAB317F936FA546A54046C914D83065E64FD188CE831EF83"
+                             },
+                             {
+                                 "path":  "design/studio-v2/scene-technical-tests-final.md",
+                                 "sha256":  "0AE3BBC5CEF41B20537F16554AB5BA9C61B1FD6DDF53AE8E1AD125C4D9B8349C"
+                             },
+                             {
+                                 "path":  "design/studio-v2/scene-technical-types-final.md",
+                                 "sha256":  "D1348E642E1BE64554B45EC432F38B534267AE687F8DEAF3C4D58135FF1C3EC9"
+                             },
+                             {
+                                 "path":  "design/studio-v2/scene-technical-lint-initial.md",
+                                 "sha256":  "AACDCCB685168CBF2D8D6FE5F6A5CAA53A7E81816EB43719BFC012683C682ECC"
+                             },
+                             {
+                                 "path":  "design/studio-v2/scene-technical-lint-supplemental.md",
+                                 "sha256":  "6213A7ED88B9C3E22C847AC4A5461A8F8546781C8FA123115BD254AC3220AE9F"
+                             }
+                         ]
+}

@@ -1,0 +1,126 @@
+{
+  "scope": "Independent CPU geometry probes; no WebGL, Canvas2D paint, browser trust or device proof",
+  "cwd": "C:\\Users\\Owenc\\orca\\Portfolio\\",
+  "probes": [
+    {
+      "name": "other-target-back-under-expanded-finger",
+      "expected": null,
+      "actual": "dissertation",
+      "defectReproduced": true,
+      "foregroundDistance": 3.003198295151354,
+      "foregroundCameraDepth": 2.9999999999999996,
+      "clearRearDistance": 5,
+      "exact": null,
+      "positive": "dissertation",
+      "unobstructed": "dissertation",
+      "includedAsOpaqueBlocker": null
+    },
+    {
+      "name": "real-art-border-collection-and-edge-differential",
+      "liveOccluders": 78,
+      "instancedOccluders": 55,
+      "omittedOpaqueMeshes": [
+        {
+          "parent": "dissertation monitor",
+          "localPosition": [
+            0,
+            0,
+            0.049
+          ],
+          "scale": [
+            1.9349999999999998,
+            1.115,
+            1
+          ],
+          "side": 0
+        },
+        {
+          "parent": "copilot monitor",
+          "localPosition": [
+            0,
+            0,
+            0.049
+          ],
+          "scale": [
+            0.8550000000000001,
+            1.395,
+            1
+          ],
+          "side": 0
+        },
+        {
+          "parent": "typeforge monitor",
+          "localPosition": [
+            0,
+            0,
+            0.049
+          ],
+          "scale": [
+            0.8550000000000001,
+            1.395,
+            1
+          ],
+          "side": 0
+        }
+      ],
+      "samples": 3023,
+      "changes": 0,
+      "exactPositives": 1034,
+      "expandedOnly": 1177,
+      "firstChanges": [],
+      "expansions": [
+        {
+          "width": 1440,
+          "height": 900,
+          "yaw": -38,
+          "pitch": -16,
+          "x": 876.197582171245,
+          "y": 306.8937317830216,
+          "actual": "dissertation"
+        },
+        {
+          "width": 1440,
+          "height": 900,
+          "yaw": -38,
+          "pitch": -16,
+          "x": 882.0637198024566,
+          "y": 195.1926206299488,
+          "actual": "dissertation"
+        },
+        {
+          "width": 1440,
+          "height": 900,
+          "yaw": -38,
+          "pitch": -16,
+          "x": 882.1880282535714,
+          "y": 192.8255789769636,
+          "actual": "dissertation"
+        }
+      ],
+      "physicalOcclusionViolations": 0,
+      "firstPhysicalViolations": [],
+      "limits": "Finite selected yaw/pitch and edge samples, not exhaustive projection or browser coverage"
+    },
+    {
+      "name": "click-negative-test-guard-sensitivity",
+      "targetName": "unrelated, programmatic and stale clicks consume no selection and cannot be retried",
+      "mutation": "Remove click pointer identity and displacement rejection only, in memory",
+      "existingTest": {
+        "selectedTests": 1,
+        "removedGuards": 20,
+        "passed": true,
+        "error": null
+      },
+      "withTrustedMousedownBeforeClick": {
+        "selectedTests": 1,
+        "removedGuards": 2,
+        "passed": false,
+        "error": {
+          "message": "wrong-id\n+ actual - expected\n\n+ [\n+   'dissertation'\n+ ]\n- []\n",
+          "operator": "deepStrictEqual"
+        }
+      },
+      "defectReproduced": true
+    }
+  ]
+}

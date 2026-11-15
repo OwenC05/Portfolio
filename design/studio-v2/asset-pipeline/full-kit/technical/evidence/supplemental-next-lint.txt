@@ -1,0 +1,2 @@
+Supplemental installed Next rules; project TypeScript-plugin rules not available.
+errors=0 warnings=0

@@ -1,0 +1,92 @@
+{
+  "recordedUTC": "2026-11-14T21:18:47.393Z",
+  "previousBuildId": "e8PunoltI-I82iN8eBSa4",
+  "currentBuildId": "SWplwMoiIE-2Vby4TGU5f",
+  "changed": [
+    {
+      "path": "components/studio/scene/controller.ts",
+      "previous": "65be133fc5b2e7d6716ac9c262883ff40d6a9fcda71360a1e13852bd4e99be79",
+      "current": "728c12affd53a069fd684a725c53ceb39a046ad569a43314a9ac2dd5348222b0"
+    },
+    {
+      "path": "components/studio/scene/verify-controller.mjs",
+      "previous": "abe8cbcad65121f3bacb72c0b680fa9e5267e39f4d44598982dcf62092565077",
+      "current": "d26a7f4eb94678f1dba7c32922f1ff35f3019231e71a712117e5e3d1ab49e2c4"
+    }
+  ],
+  "unchanged": [
+    {
+      "path": "app/globals.css",
+      "previous": "38a5427299238e2be46ad5062e798ef3c68d13dfa884a1272bfdb2c55946f13f",
+      "current": "38a5427299238e2be46ad5062e798ef3c68d13dfa884a1272bfdb2c55946f13f"
+    },
+    {
+      "path": "app/studio/page.tsx",
+      "previous": "7a3e95a799a27041229ed70f496607b376d9097bb5a0d0194c186f0dd1a66152",
+      "current": "7a3e95a799a27041229ed70f496607b376d9097bb5a0d0194c186f0dd1a66152"
+    },
+    {
+      "path": "app/studio/studio.module.css",
+      "previous": "30ba6d8c4ac62f3f7a9120d41d7774b531e53891a504634ed91e2ef62df052ac",
+      "current": "30ba6d8c4ac62f3f7a9120d41d7774b531e53891a504634ed91e2ef62df052ac"
+    },
+    {
+      "path": "components/studio/ProjectEvidence.tsx",
+      "previous": "078c749b8bad50d88dcd47ec29cd9cf97a5c3621b3e98d21fad455b3420905c5",
+      "current": "078c749b8bad50d88dcd47ec29cd9cf97a5c3621b3e98d21fad455b3420905c5"
+    },
+    {
+      "path": "components/studio/StudioExperience.tsx",
+      "previous": "e186ac78acfc51583be852b115046e28cfd20779f23af5f6eaa2f0c83e6d15d1",
+      "current": "e186ac78acfc51583be852b115046e28cfd20779f23af5f6eaa2f0c83e6d15d1"
+    },
+    {
+      "path": "components/studio/StudioScene.tsx",
+      "previous": "29586d8a880ad079627e9e8d670f46a60c4614b221b17bbcefeb54112327e5ac",
+      "current": "29586d8a880ad079627e9e8d670f46a60c4614b221b17bbcefeb54112327e5ac"
+    },
+    {
+      "path": "components/studio/scene/build-studio.ts",
+      "previous": "dbaf86527a207c09db45f19125316fd8c929b97cfe16b14e52cc25b6d386ddee",
+      "current": "dbaf86527a207c09db45f19125316fd8c929b97cfe16b14e52cc25b6d386ddee"
+    },
+    {
+      "path": "components/studio/scene/resources.ts",
+      "previous": "756a26fba1840696fd7b8f0a24dfa588a50488a55fbc99bec60ca3c0e14cb509",
+      "current": "756a26fba1840696fd7b8f0a24dfa588a50488a55fbc99bec60ca3c0e14cb509"
+    },
+    {
+      "path": "components/studio/scene/textures.ts",
+      "previous": "ef7e5e025d21deb88350b79a994dfb5ab1d9a1296d57eb0000cfde813fb2bc84",
+      "current": "ef7e5e025d21deb88350b79a994dfb5ab1d9a1296d57eb0000cfde813fb2bc84"
+    },
+    {
+      "path": "components/studio/scene/types.ts",
+      "previous": "f5a0a0f6f174124ff6c0abbfd6c9bef46e6fb6bcc4900404719b4928c4fef5c6",
+      "current": "f5a0a0f6f174124ff6c0abbfd6c9bef46e6fb6bcc4900404719b4928c4fef5c6"
+    },
+    {
+      "path": "lib/studio-content.ts",
+      "previous": "36e08b40cfb779f3f05cc17623766f1a2fb7b8f876cac73ac9b12db381764662",
+      "current": "36e08b40cfb779f3f05cc17623766f1a2fb7b8f876cac73ac9b12db381764662"
+    },
+    {
+      "path": "lib/studio-contract.ts",
+      "previous": "7f00624980e4e89ecff7e90abf371595fe8a0ddf3cdc0401db4b679a872a9097",
+      "current": "7f00624980e4e89ecff7e90abf371595fe8a0ddf3cdc0401db4b679a872a9097"
+    },
+    {
+      "path": "package.json",
+      "previous": "74b49915fac2ee8cd0f896a1aaadbab0fd68427b52d31979f4ded4273a133d54",
+      "current": "74b49915fac2ee8cd0f896a1aaadbab0fd68427b52d31979f4ded4273a133d54"
+    },
+    {
+      "path": "package-lock.json",
+      "previous": "e2d26d355bf292c7c880469ad295b7cb9356f51136ecc5d7f79ba0a15b34515d",
+      "current": "e2d26d355bf292c7c880469ad295b7cb9356f51136ecc5d7f79ba0a15b34515d"
+    }
+  ],
+  "controllerReverseDeltaSHA256": "65be133fc5b2e7d6716ac9c262883ff40d6a9fcda71360a1e13852bd4e99be79",
+  "reverseDeltaMatchesPrevious": true,
+  "carryForward": "Only one executable pointerLeave predicate and its comment differ in controller; subscription, disposal, renderer, model, texture, content, UI caption, CSS and dependency sources match prior reviewed build. Harness adds pen regressions."
+}

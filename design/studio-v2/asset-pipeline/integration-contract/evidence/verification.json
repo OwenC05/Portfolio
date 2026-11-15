@@ -1,0 +1,96 @@
+{
+  "timestamp": "2026-11-14T23:29:34.070Z",
+  "provider": "codex",
+  "task": "task_618f1b843a91",
+  "dispatch": "ctx_bf0dc81aabed",
+  "node": "v24.21.0",
+  "versions": {
+    "three": "0.187.0",
+    "@types/three": "0.187.0",
+    "next": "14.0.4",
+    "react": "18.3.1",
+    "eslint": "8.57.1"
+  },
+  "commands": [
+    {
+      "command": "node --check design/studio-v2/asset-pipeline/integration-contract/validate-glb.mjs",
+      "exit": 0,
+      "expectedExit": 0,
+      "passed": true
+    },
+    {
+      "command": "node --check design/studio-v2/asset-pipeline/integration-contract/synthetic-fixture.mjs",
+      "exit": 0,
+      "expectedExit": 0,
+      "passed": true
+    },
+    {
+      "command": "node --check design/studio-v2/asset-pipeline/integration-contract/verify-validator.mjs",
+      "exit": 0,
+      "expectedExit": 0,
+      "passed": true
+    },
+    {
+      "command": "node --test --test-reporter=tap design/studio-v2/asset-pipeline/integration-contract/verify-validator.mjs",
+      "exit": 0,
+      "expectedExit": 0,
+      "passed": true,
+      "log": "validator-tests.tap"
+    },
+    {
+      "command": "ESLint Linter API: no-undef, no-unused-vars, no-unreachable, no-constant-condition on all three .mjs files",
+      "exit": 0,
+      "log": "lint.json"
+    },
+    {
+      "command": "node design/studio-v2/asset-pipeline/integration-contract/validate-glb.mjs design/studio-v2/asset-pipeline/integration-contract/evidence/synthetic-cli-only.glb --report design/studio-v2/asset-pipeline/integration-contract/evidence/synthetic-pass.json",
+      "exit": 0,
+      "expectedExit": 0,
+      "passed": true
+    },
+    {
+      "command": "node design/studio-v2/asset-pipeline/integration-contract/validate-glb.mjs design/studio-v2/asset-pipeline/integration-contract/evidence/synthetic-cli-only.glb --report design/studio-v2/asset-pipeline/integration-contract/evidence/synthetic-failure.json",
+      "exit": 1,
+      "expectedExit": 1,
+      "passed": true
+    },
+    {
+      "command": "node design/studio-v2/asset-pipeline/integration-contract/validate-glb.mjs",
+      "exit": 2,
+      "expectedExit": 2,
+      "passed": true
+    },
+    {
+      "command": "node design/studio-v2/asset-pipeline/integration-contract/validate-glb.mjs design/studio-v2/asset-pipeline/pilot-right-limit/exports/pilot-right-limit-v02.glb --report design/studio-v2/asset-pipeline/integration-contract/evidence/pilot-v02.json",
+      "exit": 1,
+      "expectedExit": 1,
+      "passed": true
+    },
+    {
+      "command": "node design/studio-v2/asset-pipeline/integration-contract/validate-glb.mjs design/studio-v2/asset-pipeline/pilot-right-limit/exports/pilot-right-limit-v03.glb --report design/studio-v2/asset-pipeline/integration-contract/evidence/pilot-v03.json",
+      "exit": 0,
+      "expectedExit": 0,
+      "passed": true,
+      "log": "pilot-v03.json"
+    }
+  ],
+  "inspectedHashes": {
+    "node_modules/three/examples/jsm/loaders/GLTFLoader.js": "532ac726e120039acbcd6cf54328c57acbf7b438176afaa6951257126d11bff1",
+    "node_modules/three/package.json": "87f2c99a8718e5fdd6f5e51427fde52c6075f2f698ddf8f7b4e162882df93940",
+    "node_modules/@types/three/package.json": "ea6b3d184b224214293a870fd79c760401c35a0f15bcc87665d9cf856f77298d"
+  },
+  "earlierDiagnosticFailure": {
+    "command": "node -e require('three/package.json')",
+    "exit": 1,
+    "reason": "ERR_PACKAGE_PATH_NOT_EXPORTED; recovered by filesystem package.json read"
+  },
+  "realCandidateState": "Author-final v03 exact hash passes offline validation; historical v02 failure retained; independent critic ctx_41b4a64b4d66 pending",
+  "noRuntimeGpuVisualClaim": true,
+  "followupRecordedAt": "2026-11-15T00:10:39.136Z",
+  "authorFinalCandidate": {
+    "sha256": "2b9a4182c3024485680c1e066c8a22ef0dc0f541acca4bd958486bced2c4063e",
+    "bytes": 585536,
+    "handoffMessage": "msg_e8a2d1234bef",
+    "independentCriticDispatch": "ctx_41b4a64b4d66"
+  }
+}

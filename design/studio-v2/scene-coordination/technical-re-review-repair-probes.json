@@ -1,0 +1,213 @@
+{
+  "atUtc": "2026-11-15T00:20:01.887Z",
+  "task": "task_1707db15bd3d",
+  "dispatch": "ctx_b7c401f35669",
+  "node": "v24.21.0",
+  "scope": "S-T1/S-T2/S-T3 only; CPU Three geometry, modeled events, no browser/GPU/render evidence",
+  "reviewedFiles": [
+    {
+      "path": "components/studio/scene/picking.ts",
+      "sha256": "C427B0553DD2403500F7AC0E306A42C5B1476A6A8AB3175186704261D638261C"
+    },
+    {
+      "path": "components/studio/scene/verify-controller.mjs",
+      "sha256": "3CAC02D52E2B36F57CAD0AE53486DA8FDF289A1AFA6CDF2B978B45B7C983CE44"
+    },
+    {
+      "path": "components/studio/scene/types.ts",
+      "sha256": "0085B8D6B3ACF8E545B38EF58463D1A1BD82AF4F5CAA2E88002F40EC6E271104"
+    },
+    {
+      "path": "components/studio/scene/controller.ts",
+      "sha256": "F04F7E9F2B4CA082C81A5447343D825B34602CA6BE2B09B3EDD5610EFA6B4847"
+    },
+    {
+      "path": "components/studio/scene/build-studio.ts",
+      "sha256": "364DA680F5111138207A03A72579D7E6491A5E4FC09F8786B5DE794D69FB1EC3"
+    },
+    {
+      "path": "components/studio/scene/resources.ts",
+      "sha256": "756A26FBA1840696FD7B8F0A24DFA588A50488A55FBC99BEC60CA3C0E14CB509"
+    },
+    {
+      "path": "components/studio/scene/view-config.ts",
+      "sha256": "1FEA7ADBCFD730A56920389C8AC4ECF8323C9739FD4882C15F3E134A11F1A450"
+    },
+    {
+      "path": "components/studio/scene/textures.ts",
+      "sha256": "09F6FF6CC7BB8910F09838566DFCF840D85A0D2CE1BE8D064DEAFB0989C63AA6"
+    },
+    {
+      "path": "components/studio/StudioScene.tsx",
+      "sha256": "29586D8A880AD079627E9E8D670F46A60C4614B221B17BBCEFEB54112327E5AC"
+    },
+    {
+      "path": "lib/studio-contract.ts",
+      "sha256": "64F88FD30B896C88C87A5631349BBB2BB9A3BC8676C0A1A816F1E5720902C84D"
+    },
+    {
+      "path": "design/studio-v2/scene-coordination/contracts.md",
+      "sha256": "4C3237391ED2245FE1FF8DA5F073B92F127B937DDD7FA5B7D808A78B045E9B39"
+    },
+    {
+      "path": "design/studio-v2/scene-technical-report.md",
+      "sha256": "EB069CFE8CBBD12EADFAA2D7B9D125C8D3EA340F957DFABAD62A412B6470C422"
+    },
+    {
+      "path": "design/studio-v2/scene-technical-repair-tests.md",
+      "sha256": "F1D75644CB39FB168E3DAB46FCA3AEDD5BD8904AFF75E55D384485FA5069A7E8"
+    },
+    {
+      "path": "design/studio-v2/scene-technical-repair-types.md",
+      "sha256": "D1348E642E1BE64554B45EC432F38B534267AE687F8DEAF3C4D58135FF1C3EC9"
+    },
+    {
+      "path": "design/studio-v2/scene-technical-repair-lint.md",
+      "sha256": "722BE383D7AB47B0D05AECC84E590BBD735D4E1C2D4A12ED0A4AA7CA14CBDE2B"
+    }
+  ],
+  "preservedHistoricalFiles": [
+    {
+      "path": "design/studio-v2/scene-technical-critique.md",
+      "sha256": "3D6D661AF9366956CF8B853379A9AE564961D78A82BA058856BE6546C52FDDB2"
+    },
+    {
+      "path": "design/studio-v2/scene-coordination/technical-critique-probes.mjs",
+      "sha256": "ED85037B07DF85DE192B851E3D74153B9E382B4AFC476A79CC2E5F744CB8CEF8"
+    },
+    {
+      "path": "design/studio-v2/scene-coordination/technical-critique-probes.json",
+      "sha256": "11FC44146B2BB51CA3ECA73B3C0F7480681DD743B295E214AD2D4F8175F029C1"
+    },
+    {
+      "path": "design/studio-v2/scene-coordination/technical-critique-hashes.json",
+      "sha256": "85B39F598DDBF592A6585C51C57CD564C6A75A16DAA82320E39AB9AEA3F5ABA2"
+    }
+  ],
+  "probes": [
+    {
+      "finding": "S-T1",
+      "x": 270,
+      "foregroundDistance": 3.003198295151354,
+      "cameraDepth": 2.9999999999999996,
+      "normalDot": 0.9989350369715786,
+      "clearRearDistance": 5,
+      "repairedExpanded": null,
+      "exactBack": null,
+      "exactRear": "dissertation",
+      "revertedExpanded": "dissertation",
+      "hiddenPositive": "dissertation",
+      "translucentPositive": "dissertation",
+      "exactForegroundPositive": "copilot"
+    },
+    {
+      "finding": "S-T1",
+      "x": 230,
+      "foregroundDistance": 3.003198295151354,
+      "cameraDepth": 2.9999999999999996,
+      "normalDot": 0.9989350369715786,
+      "clearRearDistance": 5,
+      "repairedExpanded": null,
+      "exactBack": null,
+      "exactRear": "dissertation",
+      "revertedExpanded": "dissertation",
+      "hiddenPositive": "dissertation",
+      "translucentPositive": "dissertation",
+      "exactForegroundPositive": "copilot"
+    },
+    {
+      "finding": "S-T2",
+      "baseline": {
+        "selectedTests": 1,
+        "changedLoads": 0,
+        "passed": true,
+        "failure": null
+      },
+      "sensitivity": [
+        {
+          "label": "pointer-id",
+          "selectedTests": 1,
+          "changedLoads": 1,
+          "passed": false,
+          "failure": {
+            "firstLine": "wrong-id",
+            "operator": "deepStrictEqual",
+            "actual": [
+              "dissertation"
+            ],
+            "expected": []
+          }
+        },
+        {
+          "label": "pointer-type",
+          "selectedTests": 1,
+          "changedLoads": 2,
+          "passed": false,
+          "failure": {
+            "firstLine": "wrong-type",
+            "operator": "deepStrictEqual",
+            "actual": [
+              "dissertation"
+            ],
+            "expected": []
+          }
+        },
+        {
+          "label": "displacement",
+          "selectedTests": 1,
+          "changedLoads": 3,
+          "passed": false,
+          "failure": {
+            "firstLine": "wrong-position",
+            "operator": "deepStrictEqual",
+            "actual": [
+              "dissertation"
+            ],
+            "expected": []
+          }
+        }
+      ],
+      "mousedownBaseline": {
+        "selectedTests": 1,
+        "changedLoads": 0,
+        "passed": true,
+        "failure": null
+      },
+      "mousedownRemoved": {
+        "selectedTests": 1,
+        "changedLoads": 1,
+        "passed": false,
+        "failure": {
+          "firstLine": "absent",
+          "operator": "deepStrictEqual",
+          "actual": [
+            "dissertation"
+          ],
+          "expected": []
+        }
+      }
+    },
+    {
+      "finding": "S-T3",
+      "baseline": {
+        "selectedTests": 1,
+        "changedLoads": 0,
+        "passed": true,
+        "failure": null
+      },
+      "omittedExtraInteractiveOpaqueMesh": {
+        "selectedTests": 1,
+        "changedLoads": 1,
+        "passed": false,
+        "failure": {
+          "firstLine": "No arbitrary opaque interactive decoration may be omitted",
+          "operator": "strictEqual",
+          "actual": 7,
+          "expected": 6
+        }
+      }
+    }
+  ],
+  "allReviewedAndHistoricalHashesUnchanged": true,
+  "verdict": "APPROVE: bounded S-T1/S-T2/S-T3 repair only"
+}

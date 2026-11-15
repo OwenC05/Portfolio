@@ -1,0 +1,77 @@
+{
+  "capturedAtUtc": "2026-11-14T20:28:54.954Z",
+  "reportPath": "design/studio-v1/cleanup-review.md",
+  "reportSha256": "29245AA1B00CC71D14BDAD604F07FBFEF773731FC439F8290E445C92C9C97A1C",
+  "checks": {
+    "all14SourceHashesStillMatch": true,
+    "noMissingReportLinks": true,
+    "all18FallbackFamilies": true,
+    "explicitDeferredP3": true,
+    "baselineLintNonzero": true,
+    "noRuntimeChanges": true,
+    "hasIndependentVerdict": true,
+    "noConflictMarkers": true,
+    "noTrailingWhitespace": true,
+    "finalNewline": true
+  },
+  "missingLinks": [],
+  "sources": [
+    {
+      "file": "app/globals.css",
+      "matches": true
+    },
+    {
+      "file": "app/studio/page.tsx",
+      "matches": true
+    },
+    {
+      "file": "app/studio/studio.module.css",
+      "matches": true
+    },
+    {
+      "file": "components/studio/ProjectEvidence.tsx",
+      "matches": true
+    },
+    {
+      "file": "components/studio/StudioExperience.tsx",
+      "matches": true
+    },
+    {
+      "file": "components/studio/StudioScene.tsx",
+      "matches": true
+    },
+    {
+      "file": "components/studio/scene/build-studio.ts",
+      "matches": true
+    },
+    {
+      "file": "components/studio/scene/controller.ts",
+      "matches": true
+    },
+    {
+      "file": "components/studio/scene/resources.ts",
+      "matches": true
+    },
+    {
+      "file": "components/studio/scene/textures.ts",
+      "matches": true
+    },
+    {
+      "file": "components/studio/scene/types.ts",
+      "matches": true
+    },
+    {
+      "file": "components/studio/scene/verify-controller.mjs",
+      "matches": true
+    },
+    {
+      "file": "lib/studio-content.ts",
+      "matches": true
+    },
+    {
+      "file": "lib/studio-contract.ts",
+      "matches": true
+    }
+  ],
+  "passed": true
+}

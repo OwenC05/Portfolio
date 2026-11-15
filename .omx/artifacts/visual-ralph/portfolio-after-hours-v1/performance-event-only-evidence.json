@@ -1,0 +1,5101 @@
+{
+  "initial": {
+    "frames": [
+      {
+        "time": 301.394,
+        "requested": 363.5,
+        "started": 365.2999999821186,
+        "calls": 100,
+        "triangles": 121418,
+        "duration": 163.2000000178814
+      },
+      {
+        "time": 518.052,
+        "requested": 529.0999999940395,
+        "started": 531.3999999761581,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 3.4000000059604645
+      },
+      {
+        "time": 534.6,
+        "requested": 535.5999999940395,
+        "started": 544,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.0999999940395355
+      }
+    ],
+    "canvas": {
+      "engine": "three.js r187",
+      "studioDpr": "2",
+      "studioRenderCount": "3",
+      "studioDrawCalls": "60",
+      "studioTriangles": "65542",
+      "studioGeometries": "9",
+      "studioTextures": "9"
+    },
+    "buffer": {
+      "width": 1518,
+      "height": 1335
+    },
+    "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A60) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "vendor": "Google Inc. (Intel)",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+    "hardwareConcurrency": 16,
+    "longtasks": [
+      {
+        "start": 363.69999998807907,
+        "duration": 166,
+        "name": "self",
+        "attribution": [
+          {
+            "name": "unknown",
+            "containerType": "window",
+            "containerSrc": ""
+          }
+        ]
+      }
+    ]
+  },
+  "idle": {
+    "before": "3",
+    "after": "3",
+    "pass": true
+  },
+  "offscreen": {
+    "before": "3",
+    "afterResize": "3",
+    "afterReturn": "4",
+    "pass": true
+  },
+  "lifecycle": {
+    "hidden": false,
+    "state": "visible",
+    "renderCount": "4"
+  },
+  "dpr": [
+    {
+      "width": 390,
+      "devicePixelRatio": 3,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioDpr": "1.5",
+        "studioRenderCount": "610",
+        "studioDrawCalls": "60",
+        "studioTriangles": "65542",
+        "studioGeometries": "9",
+        "studioTextures": "9"
+      },
+      "pixels": {
+        "width": 522,
+        "height": 528
+      }
+    },
+    {
+      "width": 320,
+      "devicePixelRatio": 3,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioDpr": "1.5",
+        "studioRenderCount": "612",
+        "studioDrawCalls": "60",
+        "studioTriangles": "65542",
+        "studioGeometries": "9",
+        "studioTextures": "9"
+      },
+      "pixels": {
+        "width": 429,
+        "height": 528
+      }
+    },
+    {
+      "width": 1440,
+      "devicePixelRatio": 3,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioDpr": "2",
+        "studioRenderCount": "614",
+        "studioDrawCalls": "60",
+        "studioTriangles": "65542",
+        "studioGeometries": "9",
+        "studioTextures": "9"
+      },
+      "pixels": {
+        "width": 1518,
+        "height": 1335
+      }
+    }
+  ],
+  "sample": {
+    "elapsed": 10031.700000017881,
+    "steps": 602,
+    "frames": [
+      {
+        "time": 2684.5,
+        "requested": 2671.199999988079,
+        "started": 2684.7999999821186,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.9000000059604645
+      },
+      {
+        "time": 2701,
+        "requested": 2687.0999999940395,
+        "started": 2701.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.300000011920929
+      },
+      {
+        "time": 2717.6,
+        "requested": 2705,
+        "started": 2718.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.199999988079071
+      },
+      {
+        "time": 2734.3,
+        "requested": 2720.5999999940395,
+        "started": 2734.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.600000023841858
+      },
+      {
+        "time": 2751.1,
+        "requested": 2737,
+        "started": 2751.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5999999940395355
+      },
+      {
+        "time": 2767.8,
+        "requested": 2753.699999988079,
+        "started": 2769.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.699999988079071
+      },
+      {
+        "time": 2784.4,
+        "requested": 2771.5999999940395,
+        "started": 2785.0999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.0999999940395355
+      },
+      {
+        "time": 2801.1,
+        "requested": 2786.5,
+        "started": 2802,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.2999999821186066
+      },
+      {
+        "time": 2817.7,
+        "requested": 2805.0999999940395,
+        "started": 2818.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.199999988079071
+      },
+      {
+        "time": 2834.4,
+        "requested": 2819.5999999940395,
+        "started": 2834.7999999821186,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.2000000178813934
+      },
+      {
+        "time": 2851.2,
+        "requested": 2836.5,
+        "started": 2852.0999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2
+      },
+      {
+        "time": 2867.7,
+        "requested": 2854.399999976158,
+        "started": 2868.5999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.4000000059604645
+      },
+      {
+        "time": 2884.5,
+        "requested": 2871.5999999940395,
+        "started": 2885,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.899999976158142
+      },
+      {
+        "time": 2901.2,
+        "requested": 2887.5,
+        "started": 2901.7999999821186,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 2917.6,
+        "requested": 2903.0999999940395,
+        "started": 2918.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 2934.3,
+        "requested": 2919.399999976158,
+        "started": 2934.7999999821186,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 2951.1,
+        "requested": 2935.899999976158,
+        "started": 2952.0999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.199999988079071
+      },
+      {
+        "time": 2967.7,
+        "requested": 2953.5999999940395,
+        "started": 2968.5999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.9000000059604645
+      },
+      {
+        "time": 2984.4,
+        "requested": 2972.2999999821186,
+        "started": 2984.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.600000023841858
+      },
+      {
+        "time": 3001,
+        "requested": 2987.199999988079,
+        "started": 3001.7999999821186,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2
+      },
+      {
+        "time": 3017.7,
+        "requested": 3004.0999999940395,
+        "started": 3018.0999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.699999988079071
+      },
+      {
+        "time": 3034.3,
+        "requested": 3020,
+        "started": 3035,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.2999999821186066
+      },
+      {
+        "time": 3051.1,
+        "requested": 3036.699999988079,
+        "started": 3052.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.199999988079071
+      },
+      {
+        "time": 3067.7,
+        "requested": 3055,
+        "started": 3068.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.5999999940395355
+      },
+      {
+        "time": 3084.4,
+        "requested": 3071.5999999940395,
+        "started": 3085.0999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5999999940395355
+      },
+      {
+        "time": 3101.1,
+        "requested": 3087,
+        "started": 3101.7999999821186,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.300000011920929
+      },
+      {
+        "time": 3117.7,
+        "requested": 3103.2999999821186,
+        "started": 3118.0999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.199999988079071
+      },
+      {
+        "time": 3134.4,
+        "requested": 3119.5,
+        "started": 3135.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.5
+      },
+      {
+        "time": 3151,
+        "requested": 3138.899999976158,
+        "started": 3151.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 3167.7,
+        "requested": 3152.399999976158,
+        "started": 3168.7999999821186,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.0999999940395355
+      },
+      {
+        "time": 3184.3,
+        "requested": 3171.199999988079,
+        "started": 3184.7999999821186,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 3200.9,
+        "requested": 3185.7999999821186,
+        "started": 3201.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.0999999940395355
+      },
+      {
+        "time": 3217.6,
+        "requested": 3202.5,
+        "started": 3218.0999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 3234.5,
+        "requested": 3219.0999999940395,
+        "started": 3235.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.300000011920929
+      },
+      {
+        "time": 3251,
+        "requested": 3238,
+        "started": 3252.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.199999988079071
+      },
+      {
+        "time": 3267.6,
+        "requested": 3254.7999999821186,
+        "started": 3268.2999999821186,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 3284.4,
+        "requested": 3269.5,
+        "started": 3285.0999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.4000000059604645
+      },
+      {
+        "time": 3301.1,
+        "requested": 3286.699999988079,
+        "started": 3302.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.300000011920929
+      },
+      {
+        "time": 3317.5,
+        "requested": 3305,
+        "started": 3318.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 3.399999976158142
+      },
+      {
+        "time": 3334.3,
+        "requested": 3322.5,
+        "started": 3334.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5
+      },
+      {
+        "time": 3351,
+        "requested": 3336.5,
+        "started": 3351.2999999821186,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.2000000178813934
+      },
+      {
+        "time": 3367.8,
+        "requested": 3352.5999999940395,
+        "started": 3368.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.0999999940395355
+      },
+      {
+        "time": 3384.2,
+        "requested": 3371.199999988079,
+        "started": 3384.7999999821186,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.300000011920929
+      },
+      {
+        "time": 3401,
+        "requested": 3387.5999999940395,
+        "started": 3402,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.0999999940395355
+      },
+      {
+        "time": 3417.6,
+        "requested": 3404.699999988079,
+        "started": 3418,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.8999999761581421
+      },
+      {
+        "time": 3434.3,
+        "requested": 3419.0999999940395,
+        "started": 3434.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.199999988079071
+      },
+      {
+        "time": 3450.9,
+        "requested": 3436.0999999940395,
+        "started": 3451.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 3468.1,
+        "requested": 3452.199999988079,
+        "started": 3468.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.100000023841858
+      },
+      {
+        "time": 3484.3,
+        "requested": 3471.2999999821186,
+        "started": 3484.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 3501,
+        "requested": 3485.5999999940395,
+        "started": 3502,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 3517.6,
+        "requested": 3503.199999988079,
+        "started": 3518.0999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 3534.3,
+        "requested": 3519,
+        "started": 3534.7999999821186,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 3551,
+        "requested": 3535.7999999821186,
+        "started": 3552.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.300000011920929
+      },
+      {
+        "time": 3567.7,
+        "requested": 3555.199999988079,
+        "started": 3568.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 3584.3,
+        "requested": 3569.399999976158,
+        "started": 3584.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 3600.9,
+        "requested": 3585.699999988079,
+        "started": 3601.2999999821186,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 3617.7,
+        "requested": 3602.699999988079,
+        "started": 3619.2999999821186,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.300000011920929
+      },
+      {
+        "time": 3634.3,
+        "requested": 3622,
+        "started": 3635.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.5
+      },
+      {
+        "time": 3651,
+        "requested": 3638.399999976158,
+        "started": 3651.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 3.600000023841858
+      },
+      {
+        "time": 3667.7,
+        "requested": 3655.899999976158,
+        "started": 3668.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 3684.3,
+        "requested": 3669.5,
+        "started": 3684.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 3701,
+        "requested": 3685.899999976158,
+        "started": 3702.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.4000000059604645
+      },
+      {
+        "time": 3717.6,
+        "requested": 3704.899999976158,
+        "started": 3718.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.9000000059604645
+      },
+      {
+        "time": 3734.2,
+        "requested": 3720.5,
+        "started": 3734.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 3751,
+        "requested": 3735.899999976158,
+        "started": 3752,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.699999988079071
+      },
+      {
+        "time": 3767.6,
+        "requested": 3753.899999976158,
+        "started": 3768,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.8999999761581421
+      },
+      {
+        "time": 3784.3,
+        "requested": 3769.0999999940395,
+        "started": 3784.7999999821186,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 3801,
+        "requested": 3785.7999999821186,
+        "started": 3802.0999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.5
+      },
+      {
+        "time": 3817.5,
+        "requested": 3805.2999999821186,
+        "started": 3818,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 3834.2,
+        "requested": 3819.2999999821186,
+        "started": 3834.5999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 3851.1,
+        "requested": 3835.699999988079,
+        "started": 3851.7999999821186,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5999999940395355
+      },
+      {
+        "time": 3867.6,
+        "requested": 3853.5999999940395,
+        "started": 3868,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.8999999761581421
+      },
+      {
+        "time": 3884.3,
+        "requested": 3869.0999999940395,
+        "started": 3884.7999999821186,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 3900.8,
+        "requested": 3885.899999976158,
+        "started": 3901.2999999821186,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 3917.6,
+        "requested": 3902.2999999821186,
+        "started": 3918.7999999821186,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.4000000059604645
+      },
+      {
+        "time": 3934.2,
+        "requested": 3921.7999999821186,
+        "started": 3935.0999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.5999999940395355
+      },
+      {
+        "time": 3950.9,
+        "requested": 3938.399999976158,
+        "started": 3951.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.399999976158142
+      },
+      {
+        "time": 3967.7,
+        "requested": 3953,
+        "started": 3968.7999999821186,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2
+      },
+      {
+        "time": 3984.3,
+        "requested": 3971.5999999940395,
+        "started": 3985,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 3.0999999940395355
+      },
+      {
+        "time": 4001,
+        "requested": 3988.5,
+        "started": 4001.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.2000000178813934
+      },
+      {
+        "time": 4017.5,
+        "requested": 4004.699999988079,
+        "started": 4018,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.2999999821186066
+      },
+      {
+        "time": 4034.3,
+        "requested": 4019.699999988079,
+        "started": 4034.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 4051,
+        "requested": 4036.5999999940395,
+        "started": 4052.0999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.9000000059604645
+      },
+      {
+        "time": 4067.6,
+        "requested": 4054.399999976158,
+        "started": 4068.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.300000011920929
+      },
+      {
+        "time": 4084.2,
+        "requested": 4071.699999988079,
+        "started": 4084.5999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 4101,
+        "requested": 4085.7999999821186,
+        "started": 4102,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.699999988079071
+      },
+      {
+        "time": 4117.6,
+        "requested": 4103.899999976158,
+        "started": 4118.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.9000000059604645
+      },
+      {
+        "time": 4134.3,
+        "requested": 4120.699999988079,
+        "started": 4134.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.2000000178813934
+      },
+      {
+        "time": 4150.9,
+        "requested": 4137.5999999940395,
+        "started": 4151.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2
+      },
+      {
+        "time": 4167.5,
+        "requested": 4154.399999976158,
+        "started": 4168,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.8999999761581421
+      },
+      {
+        "time": 4184.2,
+        "requested": 4169.0999999940395,
+        "started": 4184.5999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 4201.1,
+        "requested": 4185.5,
+        "started": 4202.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.300000011920929
+      },
+      {
+        "time": 4217.6,
+        "requested": 4203.899999976158,
+        "started": 4218.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.399999976158142
+      },
+      {
+        "time": 4234.3,
+        "requested": 4221.299999982119,
+        "started": 4234.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 4251,
+        "requested": 4235.699999988079,
+        "started": 4252.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.4000000059604645
+      },
+      {
+        "time": 4267.4,
+        "requested": 4255.0999999940395,
+        "started": 4268.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.7000000178813934
+      },
+      {
+        "time": 4284.2,
+        "requested": 4271.5,
+        "started": 4284.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 4
+      },
+      {
+        "time": 4301,
+        "requested": 4289.5,
+        "started": 4301.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.9000000059604645
+      },
+      {
+        "time": 4317.7,
+        "requested": 4304.5,
+        "started": 4318.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.0999999940395355
+      },
+      {
+        "time": 4334.2,
+        "requested": 4319.5999999940395,
+        "started": 4334.5999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5
+      },
+      {
+        "time": 4350.9,
+        "requested": 4336.299999982119,
+        "started": 4351.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.4000000059604645
+      },
+      {
+        "time": 4367.4,
+        "requested": 4353.399999976158,
+        "started": 4368.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.800000011920929
+      },
+      {
+        "time": 4384.2,
+        "requested": 4370.699999988079,
+        "started": 4385.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.2000000178813934
+      },
+      {
+        "time": 4400.8,
+        "requested": 4388,
+        "started": 4401.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 4417.4,
+        "requested": 4402.399999976158,
+        "started": 4417.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 4434.3,
+        "requested": 4418.799999982119,
+        "started": 4435.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 4450.8,
+        "requested": 4436.399999976158,
+        "started": 4451.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.9000000059604645
+      },
+      {
+        "time": 4467.5,
+        "requested": 4454.299999982119,
+        "started": 4468.0999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.199999988079071
+      },
+      {
+        "time": 4484.3,
+        "requested": 4470.899999976158,
+        "started": 4485.0999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.199999988079071
+      },
+      {
+        "time": 4500.9,
+        "requested": 4487.699999988079,
+        "started": 4501.5999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 4517.7,
+        "requested": 4503,
+        "started": 4518.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2
+      },
+      {
+        "time": 4534.2,
+        "requested": 4521,
+        "started": 4535,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.7999999821186066
+      },
+      {
+        "time": 4550.8,
+        "requested": 4537.199999988079,
+        "started": 4551.5999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2
+      },
+      {
+        "time": 4567.6,
+        "requested": 4554,
+        "started": 4568.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.899999976158142
+      },
+      {
+        "time": 4584.2,
+        "requested": 4570.899999976158,
+        "started": 4584.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.5999999940395355
+      },
+      {
+        "time": 4600.9,
+        "requested": 4585.399999976158,
+        "started": 4601.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 4617.7,
+        "requested": 4602.199999988079,
+        "started": 4618.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 4634.1,
+        "requested": 4619.299999982119,
+        "started": 4635,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.199999988079071
+      },
+      {
+        "time": 4650.8,
+        "requested": 4637.899999976158,
+        "started": 4651.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.399999976158142
+      },
+      {
+        "time": 4667.4,
+        "requested": 4653.0999999940395,
+        "started": 4668.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.5
+      },
+      {
+        "time": 4684.1,
+        "requested": 4671.199999988079,
+        "started": 4685.0999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.5
+      },
+      {
+        "time": 4700.9,
+        "requested": 4688.199999988079,
+        "started": 4701.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.0999999940395355
+      },
+      {
+        "time": 4717.4,
+        "requested": 4703.5,
+        "started": 4718,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.199999988079071
+      },
+      {
+        "time": 4734.2,
+        "requested": 4719.699999988079,
+        "started": 4734.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.0999999940395355
+      },
+      {
+        "time": 4750.7,
+        "requested": 4737.0999999940395,
+        "started": 4751.0999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 4767.8,
+        "requested": 4752.199999988079,
+        "started": 4768.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.0999999940395355
+      },
+      {
+        "time": 4784.1,
+        "requested": 4770,
+        "started": 4784.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7999999821186066
+      },
+      {
+        "time": 4800.8,
+        "requested": 4785.5,
+        "started": 4801.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.800000011920929
+      },
+      {
+        "time": 4817.5,
+        "requested": 4804.0999999940395,
+        "started": 4818.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.100000023841858
+      },
+      {
+        "time": 4834.2,
+        "requested": 4821.0999999940395,
+        "started": 4834.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5
+      },
+      {
+        "time": 4850.8,
+        "requested": 4837.0999999940395,
+        "started": 4851.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 4867.5,
+        "requested": 4852.0999999940395,
+        "started": 4867.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 4884.2,
+        "requested": 4868.799999982119,
+        "started": 4884.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.8999999761581421
+      },
+      {
+        "time": 4900.9,
+        "requested": 4885.5999999940395,
+        "started": 4901.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.300000011920929
+      },
+      {
+        "time": 4917.4,
+        "requested": 4904.5,
+        "started": 4918.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 3
+      },
+      {
+        "time": 4934.1,
+        "requested": 4922.0999999940395,
+        "started": 4934.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5999999940395355
+      },
+      {
+        "time": 4950.9,
+        "requested": 4937,
+        "started": 4951.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.0999999940395355
+      },
+      {
+        "time": 4967.4,
+        "requested": 4953,
+        "started": 4967.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 4984.2,
+        "requested": 4969,
+        "started": 4984.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.100000023841858
+      },
+      {
+        "time": 5000.8,
+        "requested": 4987.5,
+        "started": 5001.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 6.0999999940395355
+      },
+      {
+        "time": 5017.4,
+        "requested": 5008,
+        "started": 5018.0999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.0999999940395355
+      },
+      {
+        "time": 5034.1,
+        "requested": 5020.5999999940395,
+        "started": 5034.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7999999821186066
+      },
+      {
+        "time": 5050.8,
+        "requested": 5035.5,
+        "started": 5051.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 5067.6,
+        "requested": 5052.0999999940395,
+        "started": 5068.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5999999940395355
+      },
+      {
+        "time": 5084.2,
+        "requested": 5070.399999976158,
+        "started": 5085,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.899999976158142
+      },
+      {
+        "time": 5100.9,
+        "requested": 5087.299999982119,
+        "started": 5101.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.5
+      },
+      {
+        "time": 5117.6,
+        "requested": 5105.199999988079,
+        "started": 5118.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 5134.1,
+        "requested": 5119.699999988079,
+        "started": 5134.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.199999988079071
+      },
+      {
+        "time": 5150.6,
+        "requested": 5135.899999976158,
+        "started": 5151,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7999999821186066
+      },
+      {
+        "time": 5167.4,
+        "requested": 5151.899999976158,
+        "started": 5168.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.800000011920929
+      },
+      {
+        "time": 5184,
+        "requested": 5171.399999976158,
+        "started": 5184.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 5200.7,
+        "requested": 5185.299999982119,
+        "started": 5201.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.5
+      },
+      {
+        "time": 5217.3,
+        "requested": 5204.5999999940395,
+        "started": 5217.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.2000000178813934
+      },
+      {
+        "time": 5234,
+        "requested": 5220.399999976158,
+        "started": 5234.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 5250.7,
+        "requested": 5235.299999982119,
+        "started": 5251.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 5267.6,
+        "requested": 5252.299999982119,
+        "started": 5268.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5999999940395355
+      },
+      {
+        "time": 5284.1,
+        "requested": 5270.299999982119,
+        "started": 5284.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7999999821186066
+      },
+      {
+        "time": 5300.8,
+        "requested": 5285.399999976158,
+        "started": 5302,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5999999940395355
+      },
+      {
+        "time": 5317.4,
+        "requested": 5303.899999976158,
+        "started": 5317.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 5334.2,
+        "requested": 5318.699999988079,
+        "started": 5334.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 5350.8,
+        "requested": 5335.899999976158,
+        "started": 5351.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 5367.4,
+        "requested": 5352,
+        "started": 5367.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 5384.1,
+        "requested": 5368.699999988079,
+        "started": 5385,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.0999999940395355
+      },
+      {
+        "time": 5400.6,
+        "requested": 5386.199999988079,
+        "started": 5401.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 5417.4,
+        "requested": 5402.299999982119,
+        "started": 5417.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 5434,
+        "requested": 5418.899999976158,
+        "started": 5434.5999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.2999999821186066
+      },
+      {
+        "time": 5450.6,
+        "requested": 5436.0999999940395,
+        "started": 5451.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.2000000178813934
+      },
+      {
+        "time": 5467.4,
+        "requested": 5453.899999976158,
+        "started": 5467.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.9000000059604645
+      },
+      {
+        "time": 5484.1,
+        "requested": 5470.199999988079,
+        "started": 5484.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.0999999940395355
+      },
+      {
+        "time": 5500.7,
+        "requested": 5487.0999999940395,
+        "started": 5501.0999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 5517.5,
+        "requested": 5502,
+        "started": 5518.5999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.0999999940395355
+      },
+      {
+        "time": 5534.2,
+        "requested": 5519.899999976158,
+        "started": 5534.5999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 5550.7,
+        "requested": 5535.5,
+        "started": 5551,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7999999821186066
+      },
+      {
+        "time": 5567.3,
+        "requested": 5552,
+        "started": 5567.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 5584.3,
+        "requested": 5568.5999999940395,
+        "started": 5585.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.4000000059604645
+      },
+      {
+        "time": 5600.7,
+        "requested": 5587,
+        "started": 5601.0999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7999999821186066
+      },
+      {
+        "time": 5617.5,
+        "requested": 5602.199999988079,
+        "started": 5617.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.2000000178813934
+      },
+      {
+        "time": 5634.2,
+        "requested": 5619.5,
+        "started": 5634.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.5999999940395355
+      },
+      {
+        "time": 5650.6,
+        "requested": 5637.899999976158,
+        "started": 5651.0999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.199999988079071
+      },
+      {
+        "time": 5667.5,
+        "requested": 5652.5,
+        "started": 5668.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5
+      },
+      {
+        "time": 5683.9,
+        "requested": 5670.399999976158,
+        "started": 5684.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 5700.8,
+        "requested": 5685.399999976158,
+        "started": 5701.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5
+      },
+      {
+        "time": 5717.4,
+        "requested": 5703.399999976158,
+        "started": 5718.0999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.4000000059604645
+      },
+      {
+        "time": 5734,
+        "requested": 5719.799999982119,
+        "started": 5734.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 5750.8,
+        "requested": 5735.199999988079,
+        "started": 5751.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 5767.5,
+        "requested": 5751.899999976158,
+        "started": 5768.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 5784,
+        "requested": 5769.799999982119,
+        "started": 5784.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 5800.8,
+        "requested": 5785.299999982119,
+        "started": 5801.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.699999988079071
+      },
+      {
+        "time": 5817.3,
+        "requested": 5803.5999999940395,
+        "started": 5817.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.2000000178813934
+      },
+      {
+        "time": 5833.9,
+        "requested": 5819.199999988079,
+        "started": 5834.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.5999999940395355
+      },
+      {
+        "time": 5850.7,
+        "requested": 5835.299999982119,
+        "started": 5851.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 5867.5,
+        "requested": 5852.299999982119,
+        "started": 5868.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.2000000178813934
+      },
+      {
+        "time": 5884,
+        "requested": 5869.799999982119,
+        "started": 5884.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.0999999940395355
+      },
+      {
+        "time": 5900.7,
+        "requested": 5887.199999988079,
+        "started": 5901.0999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 5917.5,
+        "requested": 5902,
+        "started": 5918.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.5
+      },
+      {
+        "time": 5934,
+        "requested": 5921.0999999940395,
+        "started": 5934.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 5950.7,
+        "requested": 5935.0999999940395,
+        "started": 5951.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.0999999940395355
+      },
+      {
+        "time": 5967.5,
+        "requested": 5953,
+        "started": 5968,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5
+      },
+      {
+        "time": 5984.2,
+        "requested": 5969.799999982119,
+        "started": 5984.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.4000000059604645
+      },
+      {
+        "time": 6000.7,
+        "requested": 5986.399999976158,
+        "started": 6001.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.2000000178813934
+      },
+      {
+        "time": 6017.3,
+        "requested": 6004.0999999940395,
+        "started": 6017.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 6033.8,
+        "requested": 6018.799999982119,
+        "started": 6034.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 6050.8,
+        "requested": 6035.299999982119,
+        "started": 6051.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5
+      },
+      {
+        "time": 6067.3,
+        "requested": 6053.5999999940395,
+        "started": 6067.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 6084.2,
+        "requested": 6068.5,
+        "started": 6084.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.2000000178813934
+      },
+      {
+        "time": 6100.7,
+        "requested": 6086.299999982119,
+        "started": 6101.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.300000011920929
+      },
+      {
+        "time": 6117.3,
+        "requested": 6102.699999988079,
+        "started": 6117.5999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 6134,
+        "requested": 6118.699999988079,
+        "started": 6134.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.8999999761581421
+      },
+      {
+        "time": 6150.6,
+        "requested": 6135.699999988079,
+        "started": 6151.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 3.0999999940395355
+      },
+      {
+        "time": 6167.2,
+        "requested": 6154.899999976158,
+        "started": 6167.5999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 6183.9,
+        "requested": 6168.699999988079,
+        "started": 6184.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 6200.7,
+        "requested": 6185.199999988079,
+        "started": 6201.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.699999988079071
+      },
+      {
+        "time": 6217.4,
+        "requested": 6203.5999999940395,
+        "started": 6217.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5
+      },
+      {
+        "time": 6234,
+        "requested": 6219.699999988079,
+        "started": 6234.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 6250.7,
+        "requested": 6235.199999988079,
+        "started": 6251.5999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 6267.1,
+        "requested": 6252.699999988079,
+        "started": 6267.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.600000023841858
+      },
+      {
+        "time": 6283.8,
+        "requested": 6270.0999999940395,
+        "started": 6284.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 6300.7,
+        "requested": 6285.199999988079,
+        "started": 6301.5999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5999999940395355
+      },
+      {
+        "time": 6317.2,
+        "requested": 6303.299999982119,
+        "started": 6318.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.0999999940395355
+      },
+      {
+        "time": 6334,
+        "requested": 6320.899999976158,
+        "started": 6334.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.2999999821186066
+      },
+      {
+        "time": 6350.5,
+        "requested": 6336.5999999940395,
+        "started": 6351,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.199999988079071
+      },
+      {
+        "time": 6367.2,
+        "requested": 6352.5,
+        "started": 6367.5999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 6384,
+        "requested": 6368.799999982119,
+        "started": 6385,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.899999976158142
+      },
+      {
+        "time": 6400.6,
+        "requested": 6387.199999988079,
+        "started": 6401.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.800000011920929
+      },
+      {
+        "time": 6417.2,
+        "requested": 6403.5,
+        "started": 6417.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.4000000059604645
+      },
+      {
+        "time": 6433.9,
+        "requested": 6419.699999988079,
+        "started": 6434.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 6450.5,
+        "requested": 6435.199999988079,
+        "started": 6450.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 6467.2,
+        "requested": 6452,
+        "started": 6467.5999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 6484.1,
+        "requested": 6468.5,
+        "started": 6485.0999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5
+      },
+      {
+        "time": 6500.6,
+        "requested": 6486.699999988079,
+        "started": 6501.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2
+      },
+      {
+        "time": 6517.3,
+        "requested": 6504,
+        "started": 6518.0999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.7999999821186066
+      },
+      {
+        "time": 6533.9,
+        "requested": 6520.399999976158,
+        "started": 6534.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 6550.5,
+        "requested": 6535.5,
+        "started": 6550.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 6567.3,
+        "requested": 6551.799999982119,
+        "started": 6568.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.5999999940395355
+      },
+      {
+        "time": 6583.8,
+        "requested": 6571.299999982119,
+        "started": 6584.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.9000000059604645
+      },
+      {
+        "time": 6600.5,
+        "requested": 6587.199999988079,
+        "started": 6601.0999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 6617.4,
+        "requested": 6602.199999988079,
+        "started": 6618.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.9000000059604645
+      },
+      {
+        "time": 6633.9,
+        "requested": 6620.399999976158,
+        "started": 6634.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.699999988079071
+      },
+      {
+        "time": 6650.6,
+        "requested": 6636.5999999940395,
+        "started": 6650.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 6667.3,
+        "requested": 6651.699999988079,
+        "started": 6668.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.300000011920929
+      },
+      {
+        "time": 6683.8,
+        "requested": 6670.0999999940395,
+        "started": 6684.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 6700.6,
+        "requested": 6685.0999999940395,
+        "started": 6701.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.8999999761581421
+      },
+      {
+        "time": 6717.2,
+        "requested": 6702.5999999940395,
+        "started": 6717.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.7000000178813934
+      },
+      {
+        "time": 6733.9,
+        "requested": 6719.899999976158,
+        "started": 6734.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 6750.7,
+        "requested": 6735.299999982119,
+        "started": 6752,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.699999988079071
+      },
+      {
+        "time": 6767.3,
+        "requested": 6754,
+        "started": 6767.5999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 6783.9,
+        "requested": 6768.5999999940395,
+        "started": 6784.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.2000000178813934
+      },
+      {
+        "time": 6800.5,
+        "requested": 6785.799999982119,
+        "started": 6801.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 6817.2,
+        "requested": 6802.299999982119,
+        "started": 6818.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.7000000178813934
+      },
+      {
+        "time": 6833.7,
+        "requested": 6820.399999976158,
+        "started": 6834.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.199999988079071
+      },
+      {
+        "time": 6850.5,
+        "requested": 6837.399999976158,
+        "started": 6851,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 6867.1,
+        "requested": 6852.5999999940395,
+        "started": 6867.5999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.0999999940395355
+      },
+      {
+        "time": 6884,
+        "requested": 6868.799999982119,
+        "started": 6884.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 6900.6,
+        "requested": 6885.299999982119,
+        "started": 6901.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.4000000059604645
+      },
+      {
+        "time": 6917.2,
+        "requested": 6903.5999999940395,
+        "started": 6918.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2
+      },
+      {
+        "time": 6933.9,
+        "requested": 6920.699999988079,
+        "started": 6934.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 6950.5,
+        "requested": 6935.699999988079,
+        "started": 6950.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.100000023841858
+      },
+      {
+        "time": 6967.1,
+        "requested": 6952.0999999940395,
+        "started": 6967.5999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7999999821186066
+      },
+      {
+        "time": 6983.9,
+        "requested": 6968.5999999940395,
+        "started": 6984.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5999999940395355
+      },
+      {
+        "time": 7000.5,
+        "requested": 6987.0999999940395,
+        "started": 7001,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.899999976158142
+      },
+      {
+        "time": 7017.2,
+        "requested": 7003.899999976158,
+        "started": 7018.0999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5999999940395355
+      },
+      {
+        "time": 7033.8,
+        "requested": 7019.899999976158,
+        "started": 7034.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.4000000059604645
+      },
+      {
+        "time": 7050.5,
+        "requested": 7037.899999976158,
+        "started": 7051.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.9000000059604645
+      },
+      {
+        "time": 7067.2,
+        "requested": 7053.5,
+        "started": 7067.5999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 7084,
+        "requested": 7068.699999988079,
+        "started": 7084.5999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.4000000059604645
+      },
+      {
+        "time": 7100.5,
+        "requested": 7086.0999999940395,
+        "started": 7101.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.9000000059604645
+      },
+      {
+        "time": 7117.2,
+        "requested": 7103.799999982119,
+        "started": 7117.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2
+      },
+      {
+        "time": 7133.9,
+        "requested": 7120.399999976158,
+        "started": 7134.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2
+      },
+      {
+        "time": 7150.5,
+        "requested": 7137.5,
+        "started": 7151.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.300000011920929
+      },
+      {
+        "time": 7167.1,
+        "requested": 7154.399999976158,
+        "started": 7167.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7999999821186066
+      },
+      {
+        "time": 7183.8,
+        "requested": 7168.399999976158,
+        "started": 7184.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 7200.4,
+        "requested": 7185.299999982119,
+        "started": 7201,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.8999999761581421
+      },
+      {
+        "time": 7217.2,
+        "requested": 7202.299999982119,
+        "started": 7218.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 3.199999988079071
+      },
+      {
+        "time": 7233.8,
+        "requested": 7221.899999976158,
+        "started": 7234.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 7250.4,
+        "requested": 7235.799999982119,
+        "started": 7250.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 7267.4,
+        "requested": 7251.899999976158,
+        "started": 7268.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.0999999940395355
+      },
+      {
+        "time": 7283.8,
+        "requested": 7269.5999999940395,
+        "started": 7284.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.800000011920929
+      },
+      {
+        "time": 7300.4,
+        "requested": 7286.5999999940395,
+        "started": 7301.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.199999988079071
+      },
+      {
+        "time": 7317.1,
+        "requested": 7303.899999976158,
+        "started": 7317.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.8999999761581421
+      },
+      {
+        "time": 7334,
+        "requested": 7318.5,
+        "started": 7334.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 7350.5,
+        "requested": 7335.799999982119,
+        "started": 7350.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 7367.2,
+        "requested": 7351.5999999940395,
+        "started": 7367.5999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 7383.8,
+        "requested": 7368.5,
+        "started": 7384.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 7400.6,
+        "requested": 7385.299999982119,
+        "started": 7401.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.7000000178813934
+      },
+      {
+        "time": 7417.1,
+        "requested": 7403.299999982119,
+        "started": 7417.5999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.5999999940395355
+      },
+      {
+        "time": 7433.7,
+        "requested": 7418.299999982119,
+        "started": 7434.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 7450.5,
+        "requested": 7435.5999999940395,
+        "started": 7451.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.100000023841858
+      },
+      {
+        "time": 7467.2,
+        "requested": 7453.699999988079,
+        "started": 7467.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.199999988079071
+      },
+      {
+        "time": 7483.8,
+        "requested": 7470.399999976158,
+        "started": 7484.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 3.0999999940395355
+      },
+      {
+        "time": 7500.6,
+        "requested": 7488.299999982119,
+        "started": 7501,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 7517.1,
+        "requested": 7502.199999988079,
+        "started": 7517.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.5999999940395355
+      },
+      {
+        "time": 7533.7,
+        "requested": 7518.0999999940395,
+        "started": 7534.0999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.0999999940395355
+      },
+      {
+        "time": 7550.5,
+        "requested": 7535.699999988079,
+        "started": 7550.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.600000023841858
+      },
+      {
+        "time": 7567.2,
+        "requested": 7552.699999988079,
+        "started": 7567.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.9000000059604645
+      },
+      {
+        "time": 7583.9,
+        "requested": 7570,
+        "started": 7584.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 7600.5,
+        "requested": 7585,
+        "started": 7600.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 7617.3,
+        "requested": 7601.699999988079,
+        "started": 7617.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 7633.9,
+        "requested": 7618.5999999940395,
+        "started": 7634.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5
+      },
+      {
+        "time": 7650.4,
+        "requested": 7636.5999999940395,
+        "started": 7650.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 7667.2,
+        "requested": 7651.799999982119,
+        "started": 7667.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 7683.7,
+        "requested": 7669.0999999940395,
+        "started": 7684.0999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.5999999940395355
+      },
+      {
+        "time": 7700.3,
+        "requested": 7684.899999976158,
+        "started": 7700.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 7717.1,
+        "requested": 7701.799999982119,
+        "started": 7717.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 7733.8,
+        "requested": 7718.299999982119,
+        "started": 7735,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.7999999821186066
+      },
+      {
+        "time": 7750.4,
+        "requested": 7738,
+        "started": 7750.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 7767.3,
+        "requested": 7751.799999982119,
+        "started": 7768.0999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.199999988079071
+      },
+      {
+        "time": 7783.8,
+        "requested": 7769.5,
+        "started": 7784.0999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7999999821186066
+      },
+      {
+        "time": 7800.5,
+        "requested": 7785.0999999940395,
+        "started": 7801.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.800000011920929
+      },
+      {
+        "time": 7817,
+        "requested": 7803.299999982119,
+        "started": 7817.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.6000000238418579
+      },
+      {
+        "time": 7833.8,
+        "requested": 7818.199999988079,
+        "started": 7834,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 7850.5,
+        "requested": 7834.799999982119,
+        "started": 7851,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7999999821186066
+      },
+      {
+        "time": 7866.9,
+        "requested": 7851.899999976158,
+        "started": 7867.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.6000000238418579
+      },
+      {
+        "time": 7883.8,
+        "requested": 7868.199999988079,
+        "started": 7884.5999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.9000000059604645
+      },
+      {
+        "time": 7900.3,
+        "requested": 7887,
+        "started": 7901.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.9000000059604645
+      },
+      {
+        "time": 7917,
+        "requested": 7903.5999999940395,
+        "started": 7917.5999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 7933.7,
+        "requested": 7919.199999988079,
+        "started": 7934,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7999999821186066
+      },
+      {
+        "time": 7950.3,
+        "requested": 7935.399999976158,
+        "started": 7950.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 7967.1,
+        "requested": 7951.5999999940395,
+        "started": 7968,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.699999988079071
+      },
+      {
+        "time": 7983.6,
+        "requested": 7969.899999976158,
+        "started": 7984.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.4000000059604645
+      },
+      {
+        "time": 8000.2,
+        "requested": 7987.5,
+        "started": 8000.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 8017,
+        "requested": 8001.799999982119,
+        "started": 8017.5999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.0999999940395355
+      },
+      {
+        "time": 8033.8,
+        "requested": 8019,
+        "started": 8034.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2
+      },
+      {
+        "time": 8050.3,
+        "requested": 8037,
+        "started": 8051,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2
+      },
+      {
+        "time": 8067.2,
+        "requested": 8053.299999982119,
+        "started": 8068.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.2000000178813934
+      },
+      {
+        "time": 8083.8,
+        "requested": 8069.799999982119,
+        "started": 8084.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.800000011920929
+      },
+      {
+        "time": 8100.4,
+        "requested": 8086.699999988079,
+        "started": 8101,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.8999999761581421
+      },
+      {
+        "time": 8116.9,
+        "requested": 8102,
+        "started": 8117.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 8133.7,
+        "requested": 8118.0999999940395,
+        "started": 8134.5999999940395,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.2999999821186066
+      },
+      {
+        "time": 8150.3,
+        "requested": 8136.0999999940395,
+        "started": 8151,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.399999976158142
+      },
+      {
+        "time": 8166.9,
+        "requested": 8153.799999982119,
+        "started": 8167.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 8183.7,
+        "requested": 8168.299999982119,
+        "started": 8184.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.300000011920929
+      },
+      {
+        "time": 8200.2,
+        "requested": 8186.299999982119,
+        "started": 8201.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 3.4000000059604645
+      },
+      {
+        "time": 8216.9,
+        "requested": 8205.09999999404,
+        "started": 8217.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.5999999940395355
+      },
+      {
+        "time": 8233.5,
+        "requested": 8221,
+        "started": 8234.59999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.199999988079071
+      },
+      {
+        "time": 8250.4,
+        "requested": 8237.299999982119,
+        "started": 8250.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.7000000178813934
+      },
+      {
+        "time": 8266.9,
+        "requested": 8253.199999988079,
+        "started": 8267.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.5999999940395355
+      },
+      {
+        "time": 8283.7,
+        "requested": 8268.09999999404,
+        "started": 8284.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 8300.3,
+        "requested": 8285.59999999404,
+        "started": 8300.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2
+      },
+      {
+        "time": 8316.9,
+        "requested": 8303.199999988079,
+        "started": 8317.59999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 8333.7,
+        "requested": 8319,
+        "started": 8334.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 8350.2,
+        "requested": 8335.5,
+        "started": 8350.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 8367.3,
+        "requested": 8351.5,
+        "started": 8368,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 8383.7,
+        "requested": 8368.799999982119,
+        "started": 8384.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.199999988079071
+      },
+      {
+        "time": 8400.3,
+        "requested": 8387.199999988079,
+        "started": 8401.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.300000011920929
+      },
+      {
+        "time": 8417.1,
+        "requested": 8402.899999976158,
+        "started": 8417.59999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7999999821186066
+      },
+      {
+        "time": 8433.8,
+        "requested": 8418.799999982119,
+        "started": 8434.59999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 8450.4,
+        "requested": 8436,
+        "started": 8451.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 3.699999988079071
+      },
+      {
+        "time": 8467,
+        "requested": 8455.59999999404,
+        "started": 8468.59999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.4000000059604645
+      },
+      {
+        "time": 8483.6,
+        "requested": 8471.5,
+        "started": 8484.09999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.0999999940395355
+      },
+      {
+        "time": 8500.3,
+        "requested": 8485.399999976158,
+        "started": 8500.59999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7999999821186066
+      },
+      {
+        "time": 8517.4,
+        "requested": 8501.59999999404,
+        "started": 8518.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 8533.6,
+        "requested": 8519.299999982119,
+        "started": 8534.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 8550.4,
+        "requested": 8535.09999999404,
+        "started": 8551.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.0999999940395355
+      },
+      {
+        "time": 8567,
+        "requested": 8554,
+        "started": 8567.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2
+      },
+      {
+        "time": 8583.8,
+        "requested": 8570.59999999404,
+        "started": 8584.59999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 8600.5,
+        "requested": 8585.699999988079,
+        "started": 8601.59999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.7999999821186066
+      },
+      {
+        "time": 8617,
+        "requested": 8603.899999976158,
+        "started": 8617.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.2000000178813934
+      },
+      {
+        "time": 8633.7,
+        "requested": 8620.5,
+        "started": 8634.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2
+      },
+      {
+        "time": 8650.3,
+        "requested": 8637.299999982119,
+        "started": 8651.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.300000011920929
+      },
+      {
+        "time": 8667,
+        "requested": 8654.09999999404,
+        "started": 8667.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 8683.6,
+        "requested": 8668.59999999404,
+        "started": 8684.09999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.5999999940395355
+      },
+      {
+        "time": 8700.5,
+        "requested": 8684.899999976158,
+        "started": 8701.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 8716.9,
+        "requested": 8702.399999976158,
+        "started": 8718.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.4000000059604645
+      },
+      {
+        "time": 8733.7,
+        "requested": 8721.199999988079,
+        "started": 8734.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5
+      },
+      {
+        "time": 8750.3,
+        "requested": 8736.799999982119,
+        "started": 8751,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.199999988079071
+      },
+      {
+        "time": 8767,
+        "requested": 8753.199999988079,
+        "started": 8767.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.8999999761581421
+      },
+      {
+        "time": 8783.5,
+        "requested": 8769.09999999404,
+        "started": 8784,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.399999976158142
+      },
+      {
+        "time": 8800.3,
+        "requested": 8785.59999999404,
+        "started": 8801.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 3.0999999940395355
+      },
+      {
+        "time": 8816.9,
+        "requested": 8805.299999982119,
+        "started": 8818.09999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 3.7999999821186066
+      },
+      {
+        "time": 8833.8,
+        "requested": 8822.59999999404,
+        "started": 8834.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 8850.4,
+        "requested": 8835.09999999404,
+        "started": 8851.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.800000011920929
+      },
+      {
+        "time": 8867,
+        "requested": 8853.5,
+        "started": 8868,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2
+      },
+      {
+        "time": 8883.7,
+        "requested": 8870.5,
+        "started": 8884.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5
+      },
+      {
+        "time": 8900.2,
+        "requested": 8886.399999976158,
+        "started": 8900.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 8917,
+        "requested": 8901.699999988079,
+        "started": 8918,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.199999988079071
+      },
+      {
+        "time": 8933.5,
+        "requested": 8920.5,
+        "started": 8933.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 8950.2,
+        "requested": 8934.799999982119,
+        "started": 8950.59999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7999999821186066
+      },
+      {
+        "time": 8966.9,
+        "requested": 8951.59999999404,
+        "started": 8967.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 8983.7,
+        "requested": 8968.299999982119,
+        "started": 8984.59999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.0999999940395355
+      },
+      {
+        "time": 9000.2,
+        "requested": 8987.199999988079,
+        "started": 9001,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5999999940395355
+      },
+      {
+        "time": 9016.9,
+        "requested": 9003.199999988079,
+        "started": 9017.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.6000000238418579
+      },
+      {
+        "time": 9033.6,
+        "requested": 9018.199999988079,
+        "started": 9034,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7999999821186066
+      },
+      {
+        "time": 9050.2,
+        "requested": 9034.899999976158,
+        "started": 9050.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.5999999940395355
+      },
+      {
+        "time": 9066.9,
+        "requested": 9051.5,
+        "started": 9067.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 9083.8,
+        "requested": 9068.299999982119,
+        "started": 9084.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.0999999940395355
+      },
+      {
+        "time": 9100.3,
+        "requested": 9086.09999999404,
+        "started": 9101,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 3
+      },
+      {
+        "time": 9116.8,
+        "requested": 9104.699999988079,
+        "started": 9117.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.4000000059604645
+      },
+      {
+        "time": 9133.5,
+        "requested": 9119,
+        "started": 9134,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7999999821186066
+      },
+      {
+        "time": 9150.2,
+        "requested": 9135.09999999404,
+        "started": 9151.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.199999988079071
+      },
+      {
+        "time": 9166.8,
+        "requested": 9153.799999982119,
+        "started": 9167.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 9183.7,
+        "requested": 9168.199999988079,
+        "started": 9184.59999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 9200.2,
+        "requested": 9185.5,
+        "started": 9200.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 9216.9,
+        "requested": 9201.59999999404,
+        "started": 9217.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 9233.4,
+        "requested": 9218.399999976158,
+        "started": 9233.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.100000023841858
+      },
+      {
+        "time": 9250.1,
+        "requested": 9235.09999999404,
+        "started": 9250.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 9267,
+        "requested": 9251.399999976158,
+        "started": 9268,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.7999999821186066
+      },
+      {
+        "time": 9283.5,
+        "requested": 9270.09999999404,
+        "started": 9284.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2
+      },
+      {
+        "time": 9300.1,
+        "requested": 9286.699999988079,
+        "started": 9300.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.9000000059604645
+      },
+      {
+        "time": 9316.9,
+        "requested": 9303.299999982119,
+        "started": 9317.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 9333.5,
+        "requested": 9318.09999999404,
+        "started": 9334,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.8999999761581421
+      },
+      {
+        "time": 9350.5,
+        "requested": 9335.299999982119,
+        "started": 9351.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.800000011920929
+      },
+      {
+        "time": 9366.8,
+        "requested": 9354.399999976158,
+        "started": 9367.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 9383.7,
+        "requested": 9368.299999982119,
+        "started": 9384.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.5999999940395355
+      },
+      {
+        "time": 9400.2,
+        "requested": 9387.899999976158,
+        "started": 9400.59999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 4.199999988079071
+      },
+      {
+        "time": 9416.8,
+        "requested": 9404.899999976158,
+        "started": 9417.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.2999999821186066
+      },
+      {
+        "time": 9433.4,
+        "requested": 9418.899999976158,
+        "started": 9434,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.5999999940395355
+      },
+      {
+        "time": 9450.2,
+        "requested": 9434.799999982119,
+        "started": 9450.59999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.5999999940395355
+      },
+      {
+        "time": 9466.9,
+        "requested": 9451.399999976158,
+        "started": 9468,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5
+      },
+      {
+        "time": 9483.5,
+        "requested": 9469.699999988079,
+        "started": 9483.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.6000000238418579
+      },
+      {
+        "time": 9500.1,
+        "requested": 9484.699999988079,
+        "started": 9500.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.5
+      },
+      {
+        "time": 9516.8,
+        "requested": 9501.399999976158,
+        "started": 9517.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 9533.6,
+        "requested": 9518.299999982119,
+        "started": 9534.59999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.7999999821186066
+      },
+      {
+        "time": 9550.2,
+        "requested": 9536.59999999404,
+        "started": 9550.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.9000000059604645
+      },
+      {
+        "time": 9566.8,
+        "requested": 9554.09999999404,
+        "started": 9567.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 9583.5,
+        "requested": 9568.399999976158,
+        "started": 9584.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.699999988079071
+      },
+      {
+        "time": 9600.2,
+        "requested": 9586.399999976158,
+        "started": 9600.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.5999999940395355
+      },
+      {
+        "time": 9617,
+        "requested": 9601.399999976158,
+        "started": 9617.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.0999999940395355
+      },
+      {
+        "time": 9633.5,
+        "requested": 9618.899999976158,
+        "started": 9634.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5999999940395355
+      },
+      {
+        "time": 9650.1,
+        "requested": 9636.399999976158,
+        "started": 9650.59999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.5999999940395355
+      },
+      {
+        "time": 9666.9,
+        "requested": 9651.299999982119,
+        "started": 9667.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.4000000059604645
+      },
+      {
+        "time": 9683.5,
+        "requested": 9669.5,
+        "started": 9683.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 9700.2,
+        "requested": 9684.59999999404,
+        "started": 9700.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 9716.8,
+        "requested": 9702.199999988079,
+        "started": 9717.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.4000000059604645
+      },
+      {
+        "time": 9733.5,
+        "requested": 9719,
+        "started": 9733.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 9750.1,
+        "requested": 9734.799999982119,
+        "started": 9750.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 9766.8,
+        "requested": 9751.399999976158,
+        "started": 9767.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.300000011920929
+      },
+      {
+        "time": 9783.5,
+        "requested": 9770.59999999404,
+        "started": 9783.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 9800.1,
+        "requested": 9784.899999976158,
+        "started": 9800.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.2999999821186066
+      },
+      {
+        "time": 9816.9,
+        "requested": 9802,
+        "started": 9818,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.899999976158142
+      },
+      {
+        "time": 9833.4,
+        "requested": 9820.5,
+        "started": 9834,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7999999821186066
+      },
+      {
+        "time": 9850.1,
+        "requested": 9835,
+        "started": 9850.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 9867,
+        "requested": 9851.199999988079,
+        "started": 9867.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 9883.4,
+        "requested": 9868.299999982119,
+        "started": 9883.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.2000000178813934
+      },
+      {
+        "time": 9900.1,
+        "requested": 9885.5,
+        "started": 9900.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.2000000178813934
+      },
+      {
+        "time": 9916.8,
+        "requested": 9903.5,
+        "started": 9917.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 9933.6,
+        "requested": 9918.09999999404,
+        "started": 9934.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.4000000059604645
+      },
+      {
+        "time": 9950.1,
+        "requested": 9936.5,
+        "started": 9950.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 9966.8,
+        "requested": 9951.399999976158,
+        "started": 9967.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 9983.6,
+        "requested": 9968,
+        "started": 9984,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7999999821186066
+      },
+      {
+        "time": 10000.1,
+        "requested": 9985,
+        "started": 10000.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.800000011920929
+      },
+      {
+        "time": 10016.8,
+        "requested": 10003.199999988079,
+        "started": 10017.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 10033.3,
+        "requested": 10018.09999999404,
+        "started": 10033.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 10050.2,
+        "requested": 10034.799999982119,
+        "started": 10051.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.4000000059604645
+      },
+      {
+        "time": 10066.8,
+        "requested": 10054.09999999404,
+        "started": 10067.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 10083.3,
+        "requested": 10068.399999976158,
+        "started": 10083.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.300000011920929
+      },
+      {
+        "time": 10100.2,
+        "requested": 10085.399999976158,
+        "started": 10101,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.7999999821186066
+      },
+      {
+        "time": 10116.7,
+        "requested": 10103.09999999404,
+        "started": 10117.09999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.5999999940395355
+      },
+      {
+        "time": 10133.4,
+        "requested": 10117.799999982119,
+        "started": 10134.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5
+      },
+      {
+        "time": 10150,
+        "requested": 10136.399999976158,
+        "started": 10150.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 10166.8,
+        "requested": 10151.199999988079,
+        "started": 10167.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.5999999940395355
+      },
+      {
+        "time": 10183.4,
+        "requested": 10167.899999976158,
+        "started": 10183.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 10200.1,
+        "requested": 10184.59999999404,
+        "started": 10200.59999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 10216.7,
+        "requested": 10201.59999999404,
+        "started": 10217.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.800000011920929
+      },
+      {
+        "time": 10233.4,
+        "requested": 10221.09999999404,
+        "started": 10233.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 10250.1,
+        "requested": 10235,
+        "started": 10251,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.2999999821186066
+      },
+      {
+        "time": 10266.8,
+        "requested": 10252.5,
+        "started": 10267.09999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 10283.4,
+        "requested": 10267.899999976158,
+        "started": 10284.09999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 10300,
+        "requested": 10285.09999999404,
+        "started": 10300.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 3.100000023841858
+      },
+      {
+        "time": 10316.7,
+        "requested": 10304.59999999404,
+        "started": 10317.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 10333.5,
+        "requested": 10318.399999976158,
+        "started": 10334.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.0999999940395355
+      },
+      {
+        "time": 10350.1,
+        "requested": 10336.899999976158,
+        "started": 10350.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7999999821186066
+      },
+      {
+        "time": 10366.6,
+        "requested": 10351.5,
+        "started": 10367.09999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.2999999821186066
+      },
+      {
+        "time": 10383.4,
+        "requested": 10368.59999999404,
+        "started": 10383.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 10400.1,
+        "requested": 10384.899999976158,
+        "started": 10400.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.7000000178813934
+      },
+      {
+        "time": 10416.8,
+        "requested": 10402.799999982119,
+        "started": 10417.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.899999976158142
+      },
+      {
+        "time": 10433.3,
+        "requested": 10419.799999982119,
+        "started": 10433.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 10450,
+        "requested": 10434.59999999404,
+        "started": 10450.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 10466.7,
+        "requested": 10451.299999982119,
+        "started": 10467.09999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7999999821186066
+      },
+      {
+        "time": 10483.5,
+        "requested": 10468.09999999404,
+        "started": 10484.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5
+      },
+      {
+        "time": 10500,
+        "requested": 10486.5,
+        "started": 10500.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.0999999940395355
+      },
+      {
+        "time": 10516.8,
+        "requested": 10503.59999999404,
+        "started": 10517.09999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 10533.4,
+        "requested": 10517.899999976158,
+        "started": 10533.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 10550.1,
+        "requested": 10534.699999988079,
+        "started": 10550.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.8999999761581421
+      },
+      {
+        "time": 10566.6,
+        "requested": 10551.5,
+        "started": 10567.09999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7999999821186066
+      },
+      {
+        "time": 10583.5,
+        "requested": 10568,
+        "started": 10584.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.2000000178813934
+      },
+      {
+        "time": 10599.9,
+        "requested": 10586.799999982119,
+        "started": 10601,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.699999988079071
+      },
+      {
+        "time": 10616.7,
+        "requested": 10604.399999976158,
+        "started": 10617.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 10633.4,
+        "requested": 10618.09999999404,
+        "started": 10634.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5
+      },
+      {
+        "time": 10650,
+        "requested": 10636.199999988079,
+        "started": 10650.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 10666.6,
+        "requested": 10651.299999982119,
+        "started": 10667.09999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 10683.4,
+        "requested": 10668.399999976158,
+        "started": 10684.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.4000000059604645
+      },
+      {
+        "time": 10700,
+        "requested": 10685.899999976158,
+        "started": 10700.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5999999940395355
+      },
+      {
+        "time": 10716.7,
+        "requested": 10702.699999988079,
+        "started": 10717.59999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.699999988079071
+      },
+      {
+        "time": 10733.3,
+        "requested": 10719.699999988079,
+        "started": 10733.59999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7999999821186066
+      },
+      {
+        "time": 10750.1,
+        "requested": 10734.5,
+        "started": 10751,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.899999976158142
+      },
+      {
+        "time": 10766.6,
+        "requested": 10753.199999988079,
+        "started": 10768,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.7999999821186066
+      },
+      {
+        "time": 10783.2,
+        "requested": 10770.399999976158,
+        "started": 10783.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.2000000178813934
+      },
+      {
+        "time": 10800,
+        "requested": 10785.59999999404,
+        "started": 10800.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.9000000059604645
+      },
+      {
+        "time": 10816.6,
+        "requested": 10803.5,
+        "started": 10817,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 10833.3,
+        "requested": 10817.799999982119,
+        "started": 10833.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.199999988079071
+      },
+      {
+        "time": 10849.9,
+        "requested": 10835.09999999404,
+        "started": 10850.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.0999999940395355
+      },
+      {
+        "time": 10866.7,
+        "requested": 10851.799999982119,
+        "started": 10867.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.9000000059604645
+      },
+      {
+        "time": 10883.3,
+        "requested": 10869.59999999404,
+        "started": 10884.09999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.0999999940395355
+      },
+      {
+        "time": 10900,
+        "requested": 10886.59999999404,
+        "started": 10900.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 10916.6,
+        "requested": 10901.199999988079,
+        "started": 10917,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7999999821186066
+      },
+      {
+        "time": 10933.4,
+        "requested": 10917.899999976158,
+        "started": 10934.09999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 10950.1,
+        "requested": 10935,
+        "started": 10950.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 10966.7,
+        "requested": 10951.199999988079,
+        "started": 10967,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7999999821186066
+      },
+      {
+        "time": 10983.3,
+        "requested": 10967.899999976158,
+        "started": 10983.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 11000.1,
+        "requested": 10984.59999999404,
+        "started": 11001,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.2999999821186066
+      },
+      {
+        "time": 11016.6,
+        "requested": 11002.59999999404,
+        "started": 11017.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.5
+      },
+      {
+        "time": 11033.3,
+        "requested": 11020.399999976158,
+        "started": 11033.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.2000000178813934
+      },
+      {
+        "time": 11050.1,
+        "requested": 11035.699999988079,
+        "started": 11050.59999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.2999999821186066
+      },
+      {
+        "time": 11066.6,
+        "requested": 11053.399999976158,
+        "started": 11067.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.199999988079071
+      },
+      {
+        "time": 11083.2,
+        "requested": 11068.59999999404,
+        "started": 11083.59999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 11100,
+        "requested": 11084.799999982119,
+        "started": 11101.09999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.2999999821186066
+      },
+      {
+        "time": 11116.8,
+        "requested": 11102.59999999404,
+        "started": 11117.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.4000000059604645
+      },
+      {
+        "time": 11133.3,
+        "requested": 11119,
+        "started": 11133.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.4000000059604645
+      },
+      {
+        "time": 11149.9,
+        "requested": 11135.59999999404,
+        "started": 11150.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 11166.7,
+        "requested": 11151.09999999404,
+        "started": 11167.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.300000011920929
+      },
+      {
+        "time": 11183.2,
+        "requested": 11169.299999982119,
+        "started": 11183.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.5999999940395355
+      },
+      {
+        "time": 11199.9,
+        "requested": 11184.399999976158,
+        "started": 11200.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 11216.7,
+        "requested": 11201.399999976158,
+        "started": 11217.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5999999940395355
+      },
+      {
+        "time": 11233.2,
+        "requested": 11219.5,
+        "started": 11233.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 11250,
+        "requested": 11234.5,
+        "started": 11250.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 11266.6,
+        "requested": 11251.5,
+        "started": 11267,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 11283.3,
+        "requested": 11267.899999976158,
+        "started": 11284.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 11299.9,
+        "requested": 11285.399999976158,
+        "started": 11300.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.5999999940395355
+      },
+      {
+        "time": 11316.6,
+        "requested": 11303.899999976158,
+        "started": 11317.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.100000023841858
+      },
+      {
+        "time": 11333.1,
+        "requested": 11319.09999999404,
+        "started": 11333.59999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 11350,
+        "requested": 11334.5,
+        "started": 11351,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 11366.5,
+        "requested": 11352.199999988079,
+        "started": 11367,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 11383.3,
+        "requested": 11367.799999982119,
+        "started": 11383.59999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.5999999940395355
+      },
+      {
+        "time": 11400.1,
+        "requested": 11384.399999976158,
+        "started": 11401,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.399999976158142
+      },
+      {
+        "time": 11416.8,
+        "requested": 11402.59999999404,
+        "started": 11417.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.5999999940395355
+      },
+      {
+        "time": 11433.3,
+        "requested": 11418,
+        "started": 11433.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.5999999940395355
+      },
+      {
+        "time": 11450,
+        "requested": 11434.5,
+        "started": 11451,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7999999821186066
+      },
+      {
+        "time": 11466.6,
+        "requested": 11452,
+        "started": 11467.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.4000000059604645
+      },
+      {
+        "time": 11483.2,
+        "requested": 11468.899999976158,
+        "started": 11483.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 11500.1,
+        "requested": 11484.399999976158,
+        "started": 11501,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5
+      },
+      {
+        "time": 11516.5,
+        "requested": 11502.699999988079,
+        "started": 11516.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 11533.3,
+        "requested": 11517.899999976158,
+        "started": 11533.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.100000023841858
+      },
+      {
+        "time": 11550.2,
+        "requested": 11535.299999982119,
+        "started": 11551.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.800000011920929
+      },
+      {
+        "time": 11566.4,
+        "requested": 11553.399999976158,
+        "started": 11566.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 11583.3,
+        "requested": 11568,
+        "started": 11584.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 11599.9,
+        "requested": 11585.5,
+        "started": 11600.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.5999999940395355
+      },
+      {
+        "time": 11616.6,
+        "requested": 11601.09999999404,
+        "started": 11617.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 11633.3,
+        "requested": 11618.09999999404,
+        "started": 11633.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5
+      },
+      {
+        "time": 11650,
+        "requested": 11635.799999982119,
+        "started": 11650.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 11666.5,
+        "requested": 11651.09999999404,
+        "started": 11667,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 11683.4,
+        "requested": 11668.09999999404,
+        "started": 11684.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 11699.8,
+        "requested": 11685.5,
+        "started": 11700.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.5999999940395355
+      },
+      {
+        "time": 11716.6,
+        "requested": 11701,
+        "started": 11717,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 11733.3,
+        "requested": 11717.799999982119,
+        "started": 11734.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5999999940395355
+      },
+      {
+        "time": 11749.8,
+        "requested": 11736,
+        "started": 11750.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.0999999940395355
+      },
+      {
+        "time": 11766.5,
+        "requested": 11751.5,
+        "started": 11766.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 11783.3,
+        "requested": 11767.799999982119,
+        "started": 11784.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.0999999940395355
+      },
+      {
+        "time": 11799.9,
+        "requested": 11785.399999976158,
+        "started": 11800.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.100000023841858
+      },
+      {
+        "time": 11816.6,
+        "requested": 11802,
+        "started": 11817.09999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5
+      },
+      {
+        "time": 11833.3,
+        "requested": 11818.799999982119,
+        "started": 11833.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.5999999940395355
+      },
+      {
+        "time": 11849.9,
+        "requested": 11834.399999976158,
+        "started": 11850.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.5
+      },
+      {
+        "time": 11866.5,
+        "requested": 11850.899999976158,
+        "started": 11866.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.6000000238418579
+      },
+      {
+        "time": 11883.3,
+        "requested": 11867.799999982119,
+        "started": 11884.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.300000011920929
+      },
+      {
+        "time": 11899.8,
+        "requested": 11885.899999976158,
+        "started": 11900.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.800000011920929
+      },
+      {
+        "time": 11916.5,
+        "requested": 11903,
+        "started": 11916.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.6000000238418579
+      },
+      {
+        "time": 11933.3,
+        "requested": 11917.699999988079,
+        "started": 11933.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 11949.7,
+        "requested": 11934.799999982119,
+        "started": 11950.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.4000000059604645
+      },
+      {
+        "time": 11966.4,
+        "requested": 11953.299999982119,
+        "started": 11966.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2
+      },
+      {
+        "time": 11983,
+        "requested": 11969.59999999404,
+        "started": 11984,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.699999988079071
+      },
+      {
+        "time": 11999.8,
+        "requested": 11987.199999988079,
+        "started": 12000.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.4000000059604645
+      },
+      {
+        "time": 12016.4,
+        "requested": 12003.59999999404,
+        "started": 12016.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 12033.2,
+        "requested": 12018.199999988079,
+        "started": 12034.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.0999999940395355
+      },
+      {
+        "time": 12049.7,
+        "requested": 12036.899999976158,
+        "started": 12050.5,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.0999999940395355
+      },
+      {
+        "time": 12066.4,
+        "requested": 12053,
+        "started": 12066.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 12083.1,
+        "requested": 12067.5,
+        "started": 12083.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 12099.7,
+        "requested": 12084.799999982119,
+        "started": 12100,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 12116.4,
+        "requested": 12101.09999999404,
+        "started": 12117.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.9000000059604645
+      },
+      {
+        "time": 12133,
+        "requested": 12119.399999976158,
+        "started": 12133.59999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.7999999821186066
+      },
+      {
+        "time": 12149.7,
+        "requested": 12135.899999976158,
+        "started": 12150.09999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.0999999940395355
+      },
+      {
+        "time": 12166.4,
+        "requested": 12151.899999976158,
+        "started": 12166.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.800000011920929
+      },
+      {
+        "time": 12182.9,
+        "requested": 12169.09999999404,
+        "started": 12183.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 12199.7,
+        "requested": 12184,
+        "started": 12199.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 12216.5,
+        "requested": 12200.799999982119,
+        "started": 12217.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.0999999940395355
+      },
+      {
+        "time": 12232.9,
+        "requested": 12218.5,
+        "started": 12233.59999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5999999940395355
+      },
+      {
+        "time": 12249.6,
+        "requested": 12235.59999999404,
+        "started": 12250,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 12266.4,
+        "requested": 12250.899999976158,
+        "started": 12266.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 12283,
+        "requested": 12267.899999976158,
+        "started": 12283.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.7000000178813934
+      },
+      {
+        "time": 12299.6,
+        "requested": 12285.5,
+        "started": 12300.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.800000011920929
+      },
+      {
+        "time": 12316.3,
+        "requested": 12302.5,
+        "started": 12317.09999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.9000000059604645
+      },
+      {
+        "time": 12333,
+        "requested": 12319.5,
+        "started": 12333.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 12349.7,
+        "requested": 12334.799999982119,
+        "started": 12350.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.0999999940395355
+      },
+      {
+        "time": 12366.4,
+        "requested": 12352,
+        "started": 12366.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 12382.9,
+        "requested": 12368,
+        "started": 12383.699999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.199999988079071
+      },
+      {
+        "time": 12399.7,
+        "requested": 12386.5,
+        "started": 12400,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.8999999761581421
+      },
+      {
+        "time": 12416.5,
+        "requested": 12401.09999999404,
+        "started": 12417.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.300000011920929
+      },
+      {
+        "time": 12432.9,
+        "requested": 12418.799999982119,
+        "started": 12433.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2
+      },
+      {
+        "time": 12449.6,
+        "requested": 12436.399999976158,
+        "started": 12449.899999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 12466.4,
+        "requested": 12450.799999982119,
+        "started": 12467.09999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.4000000059604645
+      },
+      {
+        "time": 12483,
+        "requested": 12468.699999988079,
+        "started": 12483.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 12499.6,
+        "requested": 12484.199999988079,
+        "started": 12500,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 12516.3,
+        "requested": 12500.799999982119,
+        "started": 12517,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7999999821186066
+      },
+      {
+        "time": 12532.9,
+        "requested": 12517.899999976158,
+        "started": 12533.399999976158,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.600000023841858
+      },
+      {
+        "time": 12549.6,
+        "requested": 12535.5,
+        "started": 12550.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2.2000000178813934
+      },
+      {
+        "time": 12566.2,
+        "requested": 12552.899999976158,
+        "started": 12566.59999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.4000000059604645
+      },
+      {
+        "time": 12582.9,
+        "requested": 12568.5,
+        "started": 12583.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7000000178813934
+      },
+      {
+        "time": 12599.8,
+        "requested": 12584.09999999404,
+        "started": 12600.299999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.800000011920929
+      },
+      {
+        "time": 12616.2,
+        "requested": 12601.299999982119,
+        "started": 12616.799999982119,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1.5
+      },
+      {
+        "time": 12632.9,
+        "requested": 12618.699999988079,
+        "started": 12633.59999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 2
+      },
+      {
+        "time": 12649.6,
+        "requested": 12636.299999982119,
+        "started": 12650,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 1
+      },
+      {
+        "time": 12666.2,
+        "requested": 12651.399999976158,
+        "started": 12666.59999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.9000000059604645
+      },
+      {
+        "time": 12682.9,
+        "requested": 12667.699999988079,
+        "started": 12683.199999988079,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.699999988079071
+      },
+      {
+        "time": 12699.7,
+        "requested": 12684,
+        "started": 12700.09999999404,
+        "calls": 60,
+        "triangles": 65542,
+        "duration": 0.7999999821186066
+      }
+    ],
+    "longtasks": [],
+    "p95Interval": 16.899999999999636,
+    "p95RequestLatency": 16.5,
+    "p95CallbackDuration": 2.5999999940395355,
+    "maxInterval": 17.199999999999818,
+    "longTasksOver100": []
+  },
+  "transfer": [
+    {
+      "url": "http://127.0.0.1:4181/_next/static/css/49325f0ffcc73f04.css",
+      "initiator": "link",
+      "transferSize": 4242,
+      "encodedBodySize": 3942,
+      "decodedBodySize": 19256
+    },
+    {
+      "url": "http://127.0.0.1:4181/_next/static/css/e80d31316053d9ae.css",
+      "initiator": "link",
+      "transferSize": 3874,
+      "encodedBodySize": 3574,
+      "decodedBodySize": 13293
+    },
+    {
+      "url": "http://127.0.0.1:4181/_next/static/chunks/webpack-ac52e2d1e476adb4.js",
+      "initiator": "link",
+      "transferSize": 2115,
+      "encodedBodySize": 1815,
+      "decodedBodySize": 3764
+    },
+    {
+      "url": "http://127.0.0.1:4181/_next/static/chunks/fd9d1056-a609a526229acf68.js",
+      "initiator": "script",
+      "transferSize": 53665,
+      "encodedBodySize": 53365,
+      "decodedBodySize": 171902
+    },
+    {
+      "url": "http://127.0.0.1:4181/_next/static/chunks/main-app-e45aef12b002873b.js",
+      "initiator": "script",
+      "transferSize": 763,
+      "encodedBodySize": 463,
+      "decodedBodySize": 463
+    },
+    {
+      "url": "http://127.0.0.1:4181/_next/static/chunks/938-936cd42000408a93.js",
+      "initiator": "script",
+      "transferSize": 27075,
+      "encodedBodySize": 26775,
+      "decodedBodySize": 104463
+    },
+    {
+      "url": "http://127.0.0.1:4181/_next/static/chunks/app/studio/page-f7ecd42b37cc8012.js",
+      "initiator": "script",
+      "transferSize": 3790,
+      "encodedBodySize": 3490,
+      "decodedBodySize": 9051
+    },
+    {
+      "url": "http://127.0.0.1:4181/_next/static/chunks/b536a0f1.6c31ef11a63259cb.js",
+      "initiator": "script",
+      "transferSize": 84456,
+      "encodedBodySize": 84156,
+      "decodedBodySize": 357014
+    },
+    {
+      "url": "http://127.0.0.1:4181/_next/static/chunks/bd904a5c.564f9db91f45a909.js",
+      "initiator": "script",
+      "transferSize": 64953,
+      "encodedBodySize": 64653,
+      "decodedBodySize": 239184
+    },
+    {
+      "url": "http://127.0.0.1:4181/_next/static/chunks/31.37ffac54061bbf8c.js",
+      "initiator": "script",
+      "transferSize": 9860,
+      "encodedBodySize": 9560,
+      "decodedBodySize": 23314
+    },
+    {
+      "url": "http://127.0.0.1:4181/favicon.ico",
+      "initiator": "other",
+      "transferSize": 429,
+      "encodedBodySize": 129,
+      "decodedBodySize": 129
+    }
+  ],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:4181/studio",
+      "status": 200,
+      "encoding": "gzip"
+    },
+    {
+      "url": "http://127.0.0.1:4181/_next/static/css/49325f0ffcc73f04.css",
+      "status": 200,
+      "encoding": "gzip"
+    },
+    {
+      "url": "http://127.0.0.1:4181/_next/static/css/e80d31316053d9ae.css",
+      "status": 200,
+      "encoding": "gzip"
+    },
+    {
+      "url": "http://127.0.0.1:4181/_next/static/chunks/webpack-ac52e2d1e476adb4.js",
+      "status": 200,
+      "encoding": "gzip"
+    },
+    {
+      "url": "http://127.0.0.1:4181/_next/static/chunks/main-app-e45aef12b002873b.js",
+      "status": 200,
+      "encoding": null
+    },
+    {
+      "url": "http://127.0.0.1:4181/_next/static/chunks/app/studio/page-f7ecd42b37cc8012.js",
+      "status": 200,
+      "encoding": "gzip"
+    },
+    {
+      "url": "http://127.0.0.1:4181/_next/static/chunks/938-936cd42000408a93.js",
+      "status": 200,
+      "encoding": "gzip"
+    },
+    {
+      "url": "http://127.0.0.1:4181/_next/static/chunks/fd9d1056-a609a526229acf68.js",
+      "status": 200,
+      "encoding": "gzip"
+    },
+    {
+      "url": "http://127.0.0.1:4181/_next/static/chunks/31.37ffac54061bbf8c.js",
+      "status": 200,
+      "encoding": "gzip"
+    },
+    {
+      "url": "http://127.0.0.1:4181/_next/static/chunks/b536a0f1.6c31ef11a63259cb.js",
+      "status": 200,
+      "encoding": "gzip"
+    },
+    {
+      "url": "http://127.0.0.1:4181/_next/static/chunks/bd904a5c.564f9db91f45a909.js",
+      "status": 200,
+      "encoding": "gzip"
+    }
+  ],
+  "limits": {
+    "compressedBytes": 1500000,
+    "drawCalls": 200,
+    "triangles": 200000,
+    "targetP95ms": 33
+  },
+  "limitations": "10 seconds of continuously requested hover work, with resize invalidations; no idle gaps enter interval distribution. Browser CPU callback spans and long-task attribution are not GPU timer queries. DPR=3 is deliberately capped by application; physical mobile is not tested. CDP freeze/resume does not by itself establish hidden-document visibility events."
+}

@@ -1,0 +1,56 @@
+{
+  "buildId": "SWplwMoiIE-2Vby4TGU5f",
+  "preview": {
+    "url": "http://127.0.0.1:4181/studio",
+    "mode": "production",
+    "executionSession": 85094,
+    "listenerPID": 12912
+  },
+  "rootVerification": {
+    "command": "node components/studio/scene/verify-controller.mjs",
+    "exitCode": 0,
+    "tests": 33,
+    "passed": 33,
+    "toolChunk": "6ac041",
+    "postCleaner": true,
+    "diffCheckExitCode": 0,
+    "extraCodeReviewGates": []
+  },
+  "manifestAudit": {
+    "toolChunk": "aa1906",
+    "sources": 16,
+    "scripts": 9,
+    "artifacts": 58,
+    "reports": 6,
+    "mismatches": [],
+    "httpStatus": 200,
+    "expectedTitle": true,
+    "limitation": "PowerShell accidentally serialized BUILD_ID extended metadata; relevant SHA checks and HTTP status were read. Final build string also independently verified by both reviewer and manifest."
+  },
+  "codeReview": {
+    "agent": "/root/studio_final_code_review",
+    "agentRole": "code-reviewer",
+    "recommendation": "APPROVE",
+    "unresolvedFindings": 0,
+    "scope": "16 source/package files plus relevant verification evidence",
+    "evidence": "Actual native role code-reviewer final response: trusted complete browser mouse/CDP pen precision finding resolved; source/spec/root cause and modified diagnostics satisfied. Independently matched16manifest source hashes,33/33CPU, fullTS, supplementalNextlint for controller/harness/UI; final51core/4pen/3failure records inspected. Exact controller728C12AFFD53A069FD684A725C53CEB39A046AD569A43314A9AC2DD5348222B0, harnessD26A7F4EB94678F1DBA7C32922F1FF35F3019231E71A712117E5E3D1AB49E2C4, UIE186AC78ACFC51583BE852B115046E28CFD20779F23AF5F6EAA2F0C83E6D15D1. Overall root acceptance remains separately pending architecture and I critique.",
+    "limitations": "Configured lint missing-plugin baseline; deferred diagnostics and physical-device/GPU limits."
+  },
+  "architecture": {
+    "agent": "/root/studio_final_architecture",
+    "agentRole": "architect",
+    "architectStatus": "CLEAR",
+    "unresolvedBlockers": 0,
+    "evidence": "Actual native architect final CLEAR. Independently inspected all16source/package,9script,58artifact,3report manifest hashes and buildSWplwMoiIE-2Vby4TGU5f; raw51core/4pen/3failure assertions; reversed controller and caption deltas; recomputed5realStrictModecycles and performance. Recovery guidance resolved, progressiveSSR/lazy-boundary/navigation/lifecycle/claim/dependency invariants sound. Observed I independent evidence critique final APPROVE at lines5,124-139. No source edits/build/browser operation.",
+    "limitations": "Configuredlintbaseline; initial281mscallback/289mslongtask; physicalmobile/pen/AT/nativeOSvisibility/physicalGPUmemory unproved; optionaldiagnosticsdeferred."
+  },
+  "integrationEvidence": {
+    "verdict": "APPROVE",
+    "taskId": "task_6b82615447ef",
+    "dispatchId": "ctx_8ac4b4c51fbf",
+    "report": "design/studio-v1/integration-coordination/evidence-critique.md",
+    "rootReadChunk": "5a6f08",
+    "remainingBlockingFindings": 0
+  }
+}
+

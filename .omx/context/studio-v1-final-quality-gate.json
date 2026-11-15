@@ -1,0 +1,189 @@
+{
+  "aiSlopCleaner": {
+    "status": "passed",
+    "evidence": "design/studio-v1/cleanup-review.md independent full no-op audit and critic; subsequent exact caption delta independently approved in integration-coordination/evidence-critique.md; controller/harness final independent pen-delta ai-slop-cleaner APPROVE in scene-coordination/touch-focus-critique-report.md:172-229. No justified cleanup remains; optional diagnostic-onlyP3 deferred with rationale. Root reran33CPU tests after cleanup/delta approval, exit0 chunk6ac041."
+  },
+  "verification": {
+    "status": "passed",
+    "commands": [
+      "node components/studio/scene/verify-controller.mjs",
+      ".\\node_modules\\.bin\\tsc.cmd --noEmit --incremental false --pretty false",
+      "npm.cmd run build",
+      "Installed ESLint API supplemental next/core-web-vitals for11studioTS/TSXfiles",
+      "I-owned production browser core/pen/failure suites",
+      "git diff --check"
+    ],
+    "evidence": "Fresh final build SWplwMoiIE-2Vby4TGU5f:33CPU,51core,4pen,3failure passes; TypeScript0/build0; supplementalNextlint11files0errors/warnings. .omx/artifacts/visual-ralph/portfolio-after-hours-v1/pen-final-check-receipts.json and pen-final-{core,activation,failure,transfer-smoke,source-delta}.json.48extendedtouch/4originalreproductions/5realStrictModecycles/performance carried explicitly by exact predicate-only delta, independently approved. Root verified16sources/9scripts/58artifacts/6reports with zero manifest mismatches and HTTP200. Configured npm run lint FAILS inherited missing @typescript-eslint/eslint-plugin; build0 is not lintpass. Physicaldevice/AT/GPUmemory/nativeOSvisibility limits retained."
+  },
+  "codeReview": {
+    "recommendation": "APPROVE",
+    "architectStatus": "CLEAR",
+    "evidence": ".omx/context/studio-v1-final-independent-reviews.md contains actual independent native-role results; both final verdicts no unresolved source blockers. I independent evidence critic APPROVE closes E1-E3 at buildSWplwMoiIE-2Vby4TGU5f. No configured additional code-review gates.",
+    "independentReview": {
+      "codeReviewer": {
+        "agentRole": "code-reviewer",
+        "evidence": "/root/studio_final_code_review: Actual native role code-reviewer final response: trusted complete browser mouse/CDP pen precision finding resolved; source/spec/root cause and modified diagnostics satisfied. Independently matched16manifest source hashes,33/33CPU, fullTS, supplementalNextlint for controller/harness/UI; final51core/4pen/3failure records inspected. Exact controller728C12AFFD53A069FD684A725C53CEB39A046AD569A43314A9AC2DD5348222B0, harnessD26A7F4EB94678F1DBA7C32922F1FF35F3019231E71A712117E5E3D1AB49E2C4, UIE186AC78ACFC51583BE852B115046E28CFD20779F23AF5F6EAA2F0C83E6D15D1. Overall root acceptance remains separately pending architecture and I critique."
+      },
+      "architect": {
+        "agentRole": "architect",
+        "evidence": "/root/studio_final_architecture: Actual native architect final CLEAR. Independently inspected all16source/package,9script,58artifact,3report manifest hashes and buildSWplwMoiIE-2Vby4TGU5f; raw51core/4pen/3failure assertions; reversed controller and caption deltas; recomputed5realStrictModecycles and performance. Recovery guidance resolved, progressiveSSR/lazy-boundary/navigation/lifecycle/claim/dependency invariants sound. Observed I independent evidence critique final APPROVE at lines5,124-139. No source edits/build/browser operation."
+      }
+    }
+  },
+  "architectureInvariantGate": {
+    "status": "passed",
+    "sourceArtifacts": [
+      ".omx/ultragoal/brief.md",
+      ".omx/plans/prd-after-hours-studio-v1.md",
+      ".omx/plans/test-spec-after-hours-studio-v1.md"
+    ],
+    "invariants": [
+      {
+        "invariant": "Additive local /studio preserves existing homepage, drafts and unrelated work.",
+        "source": ".omx/plans/prd-after-hours-studio-v1.md#result-and-scope",
+        "status": "proved",
+        "implementationEvidence": "app/studio/ route; only six-line global reduced-motion fix and approved package additions.",
+        "testEvidence": "static-review.md baseline/review-window comparison; current homepage smoke and git diff --check. Already-untracked draft history cannot be proved before the recorded baseline.",
+        "reviewEvidence": "I static/evidence reviews; final code and architecture reviews."
+      },
+      {
+        "invariant": "Only exact Three.js/types dependencies are added; current React/Next baseline remains.",
+        "source": ".omx/plans/test-spec-after-hours-studio-v1.md#build-and-change-boundary",
+        "status": "proved",
+        "implementationEvidence": "package.json/package-lock.json exact three and @types/three 0.187.0; no adapter/framework migration.",
+        "testEvidence": "Foundation installed-version receipt and zero changed existing lock entries; final source manifest matches.",
+        "reviewEvidence": "Foundation report; I static review; final code review."
+      },
+      {
+        "invariant": "Substantial warm room shows the agreed personal equipment, with music controller and drums on the right.",
+        "source": ".omx/plans/test-spec-after-hours-studio-v1.md#visual-identity-gate",
+        "status": "proved",
+        "implementationEvidence": "build-studio.ts/resources.ts/textures.ts authored multimonitor desk, triangles, pale compact keys/PC, mic, right instruments and secondary personal props.",
+        "testEvidence": "Root actually viewed final-first-1440.png, final-first-390.png and earlier 320/full/project captures. CSS/model unchanged across final pen delta. No pixel/manufacturer-fidelity claim.",
+        "reviewEvidence": "U/S independent reviews; I evidence critic named-feature visual inspection; root visual acceptance."
+      },
+      {
+        "invariant": "Desktop and mobile retain readable identity, direct work navigation, contact and complete room without horizontal overflow.",
+        "source": ".omx/plans/test-spec-after-hours-studio-v1.md#visual-identity-gate",
+        "status": "proved",
+        "implementationEvidence": "studio.module.css intentional separate mobile composition; normal HTML title/nav/evidence.",
+        "testEvidence": "production-layout.json 1440/390/320; final core and saved first/full/project images.",
+        "reviewEvidence": "Interface critique; I evidence review; root images."
+      },
+      {
+        "invariant": "The shared contract fixes three project IDs and separates graphics/picking/status from UI navigation and content.",
+        "source": ".omx/plans/prd-after-hours-studio-v1.md#frozen-integration-contract",
+        "status": "proved",
+        "implementationEvidence": "lib/studio-contract.ts; StudioScene/controller controlled props; StudioExperience owns history/focus/scroll; studio-content supplies typed data.",
+        "testEvidence": "33 CPU tests include callback freshness, selection without rebuild, real raycasting and adapter lifecycle; final core exercises same destinations.",
+        "reviewEvidence": "Final architect review; S/U boundary critiques."
+      },
+      {
+        "invariant": "All substantive evidence and supplied destinations remain server-rendered and usable without JavaScript or WebGL.",
+        "source": ".omx/plans/prd-after-hours-studio-v1.md#frozen-integration-contract",
+        "status": "proved",
+        "implementationEvidence": "page.tsx renders ProjectEvidence children outside dynamic scene/error boundary; real anchors and destinations.",
+        "testEvidence": "pen-final-core.json retains all 58 selected evidence text nodes without JS; three failure scenarios retain heading/return path.",
+        "reviewEvidence": "Content traceability/static review; final code/architecture review."
+      },
+      {
+        "invariant": "Mouse, touch and pen select existing project headings once with correct final focus; return/history/direct fragments remain coherent.",
+        "source": ".omx/plans/test-spec-after-hours-studio-v1.md#functional-and-accessibility-journeys",
+        "status": "proved",
+        "implementationEvidence": "Controller qualifies gesture then commits one matching trusted click; UI shared navigation owns hash/focus and avoids duplicate pushes.",
+        "testEvidence": "51 final core checks; 4 final pen cases; 33 CPU cases; 48 extended touch and 4 original focus reproductions carried by exact one-predicate delta.",
+        "reviewEvidence": "Independent S repair/delta APPROVE; I evidence review; final code review closes preliminary input-evidence finding."
+      },
+      {
+        "invariant": "Touch has expanded intended target eligibility, deterministic overlap and normal scrolling, while mouse and pen stay precise.",
+        "source": ".omx/plans/test-spec-after-hours-studio-v1.md#functional-and-accessibility-journeys",
+        "status": "proved",
+        "implementationEvidence": "Projected 44px minimum touch footprint, nearest-center/exact-surface rules; passive listeners; precise mouse/pen raycast.",
+        "testEvidence": "CPU real geometry hit/miss/corners/overlap/cancellation; trusted final off-plane mouse/CDP pen traces; extended touch portrait/orientation evidence. Overlapping monitors do not imply exclusive 44px squares.",
+        "reviewEvidence": "S independent critique and final input evidence review."
+      },
+      {
+        "invariant": "Keyboard users have semantic HTML controls, visible focus, sensible order and no canvas-only evidence or trap.",
+        "source": ".omx/plans/test-spec-after-hours-studio-v1.md#functional-and-accessibility-journeys",
+        "status": "proved",
+        "implementationEvidence": "Presentation-only canvas; equivalent semantic nav/links/headings; focusable existing headings and return target.",
+        "testEvidence": "U DOM/Tab/modified-click/history review; I final Enter/return/history/noJS checks; sampled text contrast6.03-13.05. Actual screen-reader hardware/session not claimed.",
+        "reviewEvidence": "U independent interface critique; I evidence critic; final code/architecture."
+      },
+      {
+        "invariant": "Reduced motion applies before load and at runtime, with no autoplay or fabricated audio controls.",
+        "source": ".omx/plans/test-spec-after-hours-studio-v1.md#functional-and-accessibility-journeys",
+        "status": "proved",
+        "implementationEvidence": "No ambient animation; narrow global reduced-motion scroll override; no audio/media/player code.",
+        "testEvidence": "Final core preference-before-load/live-toggle/noJS checks; no Audio/AudioContext/media construction during journeys.",
+        "reviewEvidence": "U/I independent reviews and root source boundary audit."
+      },
+      {
+        "invariant": "Lazy-load, renderer-creation and context-loss failures preserve useful HTML and give reload guidance.",
+        "source": ".omx/plans/test-spec-after-hours-studio-v1.md#failure-lifecycle-and-rendering",
+        "status": "proved",
+        "implementationEvidence": "Scene-only error boundary and renderer disposal; unavailable caption explicitly says reload; all evidence outside boundary.",
+        "testEvidence": "pen-final-failure.json3/3: blocked actual chunk, null WebGL2, actual WEBGL_lose_context, preserved heading/return. Caption visible in context-loss-390.png.",
+        "reviewEvidence": "I critic reverse-hash proves exact caption-only delta; architect preliminary recovery gap closed."
+      },
+      {
+        "invariant": "Lifecycle owns one canvas and releases listeners, observers, pending work and GPU resources without late callbacks.",
+        "source": ".omx/plans/test-spec-after-hours-studio-v1.md#failure-lifecycle-and-rendering",
+        "status": "proved",
+        "implementationEvidence": "Controller-owned teardown and resource ledger attempts every independent release even after exceptions; adapter cleanup.",
+        "testEvidence": "lifecycle-after-repair.json5real same-document StrictMode cycles: mounted1canvas/19listeners/2observers, unmounted0all/pendingRAF;10contexts observed lost;33CPU late-callback/disposal-exception tests. Physical GPU/heap reclamation unmeasured.",
+        "reviewEvidence": "S repair/cleanup critique; I evidence critique; final architecture."
+      },
+      {
+        "invariant": "Rendering is demand-driven, paused when unneeded, resizes correctly and respects DPR/shadow limits.",
+        "source": ".omx/plans/test-spec-after-hours-studio-v1.md#failure-lifecycle-and-rendering",
+        "status": "proved",
+        "implementationEvidence": "No continuous animation; hidden/offscreen guards; effective DPR2desktop/1.5mobile; one static shadow caster.",
+        "testEvidence": "Idle/offscreen3->3->4; resize/orientation readiness evidence; injected visibility branch expressly separate from unproved native OS transition; CPU hidden/cancellation tests.",
+        "reviewEvidence": "I evidence review accepts bounded observation; final architecture."
+      },
+      {
+        "invariant": "Scene transfer, draw calls and geometry fit the approved budgets and timings are reported with their limits.",
+        "source": ".omx/plans/test-spec-after-hours-studio-v1.md#performance-evidence",
+        "status": "proved",
+        "implementationEvidence": "Lazy scene, static instancing and bounded procedural geometry/materials.",
+        "testEvidence": "Final compressed scene158589bytes <1.5MB; peak100draws/121418triangles <200/200k; settled60/65542.10.0164s sample p95requested RAF16.9ms,0interactionlongtasks. Initial281ms callback/289ms overlapping longtask disclosed. No physical-mobile/GPU-timer claim.",
+        "reviewEvidence": "I critic independently recomputed sample; final architecture reviews startup tradeoff."
+      },
+      {
+        "invariant": "Project/employer claims are truthful and qualifications are adjacent to claims.",
+        "source": ".omx/plans/prd-after-hours-studio-v1.md#visual-and-content-direction",
+        "status": "proved",
+        "implementationEvidence": "studio-content: preparatory fictional-fixture RAG teaching benchmark;20questions/40outputs/1GPU scope; Copilot indevelopment/synthetic tests; TypeForge unestablished benefit; LNRS developer enablement.",
+        "testEvidence": "content-evidence.md source-by-source mapping and I static review; current content hash unchanged; noJS retains all qualifications.",
+        "reviewEvidence": "C independent content review; I static/evidence review; final architecture."
+      },
+      {
+        "invariant": "Private reference photo and copied artistic assets are not shipped; procedural gear is stylised and real media is not fabricated.",
+        "source": ".omx/plans/test-spec-after-hours-studio-v1.md#truth-and-assets",
+        "status": "proved",
+        "implementationEvidence": "Original procedural Three geometry and Canvas2D textures; system fonts; Three MIT; no new nonprocedural public assets.",
+        "testEvidence": "asset-provenance.md/static review and current network/import boundary; no photo/reference requests. Inherited invalid favicon and incomplete separate provenance disclosed.",
+        "reviewEvidence": "I static/evidence reviews; final source audit."
+      },
+      {
+        "invariant": "Local build/typecheck/scoped code validation pass and inherited lint failure is stated honestly.",
+        "source": ".omx/plans/test-spec-after-hours-studio-v1.md#build-and-change-boundary",
+        "status": "proved",
+        "implementationEvidence": "New studio source stays scoped; no extra package/rule removal hides missing plugin.",
+        "testEvidence": "pen-final-check-receipts.json build0/typecheck0/33CPU; supplemental Next lint11files0errors/warnings. Configured npm lint fails missing baseline @typescript-eslint/eslint-plugin; build prints it. Root post-cleaner33CPU exit0 chunk6ac041 and diff check0.",
+        "reviewEvidence": "Independent cleaner plus delta reviews; final code reviewer fresh typecheck/CPU/scoped lint."
+      },
+      {
+        "invariant": "Implementation remains local within authorized scope, with no deployment, commit, backend AI service, paid generation or private-photo publication.",
+        "source": ".omx/ultragoal/brief.md",
+        "status": "proved",
+        "implementationEvidence": "Additive local route and hidden production preview at127.0.0.1:4181; no backend/media integration added.",
+        "testEvidence": "Orca task reports, source/dependency/provenance audits, git status and preview receipts; prior drafts/previews retained.",
+        "reviewEvidence": "Root coordination and final independent scope reviews."
+      }
+    ],
+    "evidence": ".omx/context/studio-v1-final-acceptance.md maps18derived architecture/domain/visual/scope requirements to implementation, test and independent review proof. Required limits preserved rather than falsely claiming physical-device or exhaustiveGPU proof. Earlier pending dispositions in studio-v1-invariant-audit.md are superseded only for this exact final build."
+  }
+}
+

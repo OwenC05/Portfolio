@@ -1,0 +1,92 @@
+{
+ "task": "task_ea1fb9efaade",
+ "dispatch": "ctx_89b398f86848",
+ "reviewer": "Claude (actual), independent of M1 author task_e764ee6e591c",
+ "captureManifest": {
+  "path": ".omx/context/full-kit-m1-runtime-capture-v01.json",
+  "sha256": "61174ff2662788c5728b812f585fe62a4c75b8fa50805d0e0bcad17f120eca5c",
+  "imageHashesMatchingManifest": "22/22"
+ },
+ "imagesOpenedAtNativeSize": {
+  "baseline-home-1024x768-f58.png": "54d95714971e9f62837b6e82f83f754bc82f24c1263e0e06d15733a3ff3b293d",
+  "baseline-home-1440x900-f58.png": "71d1df57a40f4e49d8f8761bcc4ea2f5ef0469ec279954d25f81253d23c2cc1e",
+  "baseline-home-320x568-f64.png": "ac67e50e1107908ac3bf8186896d78ec3d473d1f8a593affb74d601e9193e7f7",
+  "baseline-home-320x844-f64.png": "8ccc9627c66fdf45fe800cf09e53950830e5ef551a5ee77f02fbbc0f5df77de8",
+  "baseline-home-390x844-f64.png": "22b17155adfe0ddc4ab0f98fb0bbb019e3d4764bbef8d597cb158780dd6d8a5d",
+  "baseline-left-down-1440x900-f58.png": "71a8297c3f587651343bf9f77b0edbcb5b86fe70c4f1d9111895f69acdb05dc2",
+  "baseline-music-1440x900-f58.png": "708953aeca399f7486a62c8e56a59c555f0c6804d62a7f327690ec2b332bf909",
+  "baseline-right-down-1440x900-f58.png": "7b887e8f14bc3d952f9f41f57d5bde343804fc646b79175b539418a3e5e36bc4",
+  "baseline-right-up-1440x900-f58.png": "cdb6c12d3376a911bda5c5e13d52d88abd1530fc60cc989eeebc9222f0c8816a",
+  "proposal-home-1024x768-f58.png": "b88c762fbcfee35df9fe88e4309c017ee52a99c8e7a4e49a2531a3ee7c7dc7bc",
+  "proposal-home-1440x900-f58.png": "ab9cdc67b33cb67f4168c65da07a31f0f342727d814e1a15b6306a9aeb0d6327",
+  "proposal-home-320x568-f74.png": "0ad23ab3d00427014c1f3033c6ca2788e2a61939c0041daa4473ea9a0ea65020",
+  "proposal-home-320x568-f76.png": "35e2b6a3f9b5d32493d50f3280d821298efaee2fb224d65f247b45de68ce7374",
+  "proposal-home-320x844-f70.png": "e6d7a1f19c37dc9648487a30b8905b7e5524d4192a1877f334589aa021f2b8ca",
+  "proposal-home-320x844-f74.png": "8a9ad0e0fac0c1f0d5b5c885a81831f0952f86adce27caf87975a91bfc8c84a0",
+  "proposal-home-320x844-f76.png": "a50c4e503027e14a7759ef5c0c7c40f6f520ca72af741903339a32adb53f9edf",
+  "proposal-home-390x844-f74.png": "3314088b5b216f94b890003d35c8986e08afc7d1dead088ebead7132d8eff3ec",
+  "proposal-home-390x844-f76.png": "72018f5745ecc91b15e900e39573c0b895956022059d7b15e498be80b81a13cd",
+  "proposal-left-down-1440x900-f58.png": "c4c6e9e64a3d178ee4f810ccd9c21d935e1d2bf276582c23021b90df55581aca",
+  "proposal-music-1440x900-f58.png": "74cad30752403363d7668296dd22ebfe10ec53dd113f3999763f4f4152aed5b1",
+  "proposal-right-down-1440x900-f58.png": "f63c47113db7fc5f87c730fd66da1de0e891da51f7296e0d21cbbc6bd9c319b9",
+  "proposal-right-up-1440x900-f58.png": "4bc534e4f8747b42a97074e0c90ab5b17c045d34604f6c145fa7f81011464652"
+ },
+ "method": "Row scans of the native PNGs (DPR 1). Outer bezel edge = last dark bezel pixel beyond the tan border quad. Margin = clear pixels from that edge to the frame edge. Ranges cover the bezel's top corner to bottom corner. Face width = widest unbroken screen run inside the border.",
+ "centralMonitorMeasured": {
+  "baseline-home-320x844-f64": {
+   "bezel": "clipped both sides; screen face fills 0-319",
+   "visibleFaceW": 320
+  },
+  "proposal-home-320x844-f70": {
+   "marginL": 24,
+   "marginR": "0-2",
+   "visibleFaceW": 286,
+   "note": "right bezel on the frame edge"
+  },
+  "proposal-home-320x844-f74": {
+   "marginL": 33,
+   "marginR": "9-13",
+   "visibleFaceW": 266,
+   "leftSideMonitorIntrusionPx": 17,
+   "rightSideMonitorIntrusionPx": 0
+  },
+  "proposal-home-320x844-f76": {
+   "marginL": 38,
+   "marginR": "15-19",
+   "visibleFaceW": 257,
+   "leftSideMonitorIntrusionPx": 22,
+   "rightSideMonitorIntrusionPx": "2-3"
+  },
+  "baseline-home-390x844-f64": {
+   "marginL": 16,
+   "marginR": "21-25",
+   "visibleFaceW": 330
+  },
+  "proposal-home-390x844-f74": {
+   "marginL": "67-68",
+   "marginR": "46-48",
+   "visibleFaceW": 266
+  },
+  "proposal-home-390x844-f76": {
+   "marginL": "71-73",
+   "marginR": "51-54",
+   "visibleFaceW": 257
+  },
+  "baseline-home-320x568-f64": {
+   "marginL": "38-40",
+   "marginR": "43-45",
+   "visibleFaceW": 222
+  },
+  "proposal-home-320x568-f74": {
+   "marginL": 75,
+   "marginR": "60-61",
+   "visibleFaceW": 179
+  },
+  "proposal-home-320x568-f76": {
+   "marginL": "77-78",
+   "marginR": "63-65",
+   "visibleFaceW": 172
+  }
+ },
+ "limits": "Margins to the frame edge, not to the neighbouring side monitor. Keyboard pitch figures in the critique are estimates from a proxy slab with an assumed 15 columns."
+}

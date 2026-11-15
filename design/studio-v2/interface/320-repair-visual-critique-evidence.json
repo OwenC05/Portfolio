@@ -1,0 +1,74 @@
+{
+  "date": "2026-11-15",
+  "provider": "claude",
+  "model": "claude-fable-5-2",
+  "role": "independent visual critic",
+  "taskId": "task_99f96a35b445",
+  "dispatchId": "ctx_3eeb1435e372",
+  "workerTerminal": "term_fd2e3ab9-32cf-485a-93d5-1216e953d3b3",
+  "coordinatorTerminal": "term_46e0ad40c09a2219361e1f5fa285112b",
+  "helpers": "none",
+  "report": "design/studio-v2/interface/320-repair-visual-critique.md",
+  "verdicts": {
+    "blocker1LookControlsOverProjects320": "PASS",
+    "blocker2NameRoleCrowding320": "PASS",
+    "preservation390": "PASS (byte-identical to early/top-390.png; root to confirm fresh render)",
+    "preservation1440": "PASS (byte-identical to early/initial-1440.png; root to confirm fresh render)",
+    "newBlockingFindings": "none"
+  },
+  "imageRoot": ".omx/artifacts/visual-ralph/portfolio-immersive-v2",
+  "imagesInspected": [
+    {
+      "path": "interface-320-repair/closed-320.png",
+      "pixels": "320x844",
+      "sha256": "2867e36a4f5084cf5583a8a2fe2ee19aec72b837f79c6bc457c284455286b357"
+    },
+    {
+      "path": "interface-320-repair/projects-open-320.png",
+      "pixels": "320x844",
+      "sha256": "d8997228f645e7fd5408589bc79c9d48476f273e8d331ac08f6caaceab7ff324"
+    },
+    {
+      "path": "interface-320-repair/loading-320.png",
+      "pixels": "320x844",
+      "sha256": "2498fc388f3275c323a2459551b476fcd120fe28ab1cd1222e2e52894dbd114c"
+    },
+    {
+      "path": "interface-320-repair/closed-390.png",
+      "pixels": "390x844",
+      "sha256": "6efbbf629113ce4ae1e46251a4e763a2f9cf5e982095211c91fe27c400fb004d",
+      "identicalTo": "early/top-390.png"
+    },
+    {
+      "path": "interface-320-repair/closed-1440.png",
+      "pixels": "1440x900",
+      "sha256": "cc1d6a2ad7371dcd3358b982cf07ebd1486829e02bed842c4789d96cf5bd08c2",
+      "identicalTo": "early/initial-1440.png"
+    }
+  ],
+  "baselinesInspected": [
+    {
+      "path": "early/top-320.png",
+      "sha256": "9349f505b91eb20e8bd73591cbf6558018dffcfc4650d341d1ba8c5826c4690c"
+    },
+    {
+      "path": "early/top-390.png",
+      "sha256": "6efbbf629113ce4ae1e46251a4e763a2f9cf5e982095211c91fe27c400fb004d"
+    },
+    {
+      "path": "early/initial-1440.png",
+      "sha256": "cc1d6a2ad7371dcd3358b982cf07ebd1486829e02bed842c4789d96cf5bd08c2"
+    }
+  ],
+  "sourceHashes": {
+    "app/studio/studio.module.css": "ce72d40af43223b33bc77dbdfd810ac38caaadb50af30916b25f1e3907bf1432",
+    "app/studio/StudioShell.tsx": "bcae10c0b983b1295b4d13e4ff1777c25fe9af224ebf2aee865c146fdb62eca8"
+  },
+  "limits": [
+    "Development Chromium, DPR1, reduced motion, procedural scene; not production, authored-asset or device evidence.",
+    "Rendered rectangles, document widths and pose are root's measurements; nothing was measured in a browser by this critic.",
+    "390 and 1440 images are byte-identical to the early captures; fresh render versus copy cannot be told from the files and should be confirmed by root.",
+    "Root's loading capture ended with harness cleanup error 'route.continue: Route is already handled!'; root's later live read showed ready status and one canvas. Recorded as a harness failure, not a product error.",
+    "Bounded approval of the 320px shell repair only; no product, scene, behavior, performance, production or physical-device acceptance."
+  ]
+}

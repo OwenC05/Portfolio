@@ -1,0 +1,18 @@
+{
+  "engine": "8.57.1",
+  "scope": "Supplemental standalone JS lint, not product Next lint",
+  "results": [
+    {
+      "file": "validate-glb.mjs",
+      "messages": []
+    },
+    {
+      "file": "synthetic-fixture.mjs",
+      "messages": []
+    },
+    {
+      "file": "verify-validator.mjs",
+      "messages": []
+    }
+  ]
+}

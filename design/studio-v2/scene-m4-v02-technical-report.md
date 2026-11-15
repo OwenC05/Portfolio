@@ -80,7 +80,7 @@ Encoded image bytes remain325144. The same component-density forecast method use
 | A: current images plus planned additions | 1071278 | 1462612 | 1559302 |
 | B: conditional, unimplemented T1 image replacement | 826134 | 1217468 | 1314158 |
 
-The current historical hosted all-route JS bound is391334gzip/333289Brotli, not measured future route-specific integration. OptionA's point estimate is37588 below1.5MB, but its geometry sensitivity exceeds the limit by59302. The1.07MB conditional asset allocation is also exceeded by1278 at the point estimate. **No safe margin or final transfer pass is established.** T1 savings are unimplemented and receive no credit. OptionA's asset+JS Brotli point estimate is1172643, likewise a forecast rather than final proof.
+The current historical hosted all-route JS bound is391334gzip/333289Brotli, not measured future route-specific integration. OptionA's point estimate is37388 below1.5MB, but its geometry sensitivity exceeds the limit by59302. The1.07MB conditional asset allocation is also exceeded by1278 at the point estimate. **No safe margin or final transfer pass is established.** T1 savings are unimplemented and receive no credit. OptionA's asset+JS Brotli point estimate is1172643, likewise a forecast rather than final proof.
 
 ## Validation scope and remaining art evidence
 

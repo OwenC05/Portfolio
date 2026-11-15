@@ -1,0 +1,22 @@
+{
+  "status": "INTERRUPTED_NOT_FINAL",
+  "task": "task_1dc141d6856b",
+  "dispatch": "ctx_fb0a0d443f54",
+  "capturedAt": "2026-11-15T19:39:09.655Z",
+  "scope": "Exact-byte interruption snapshots only. Partial verdict text is provisional before worker_done and grants no approval. Original active paths remain unchanged and available for normal resume.",
+  "sourceHashesImmediatelyBeforeAndAfterCopyMatch": true,
+  "files": [
+    {
+      "originalPath": "design/studio-v2/scene-m4-v03-focused-art-closure.md",
+      "snapshotPath": "partial-report.md",
+      "bytes": 29028,
+      "sha256": "c0f673655f2daa99adea3019935e1294ef098927b1ac307d83a128f692cac207"
+    },
+    {
+      "originalPath": "design/studio-v2/scene-coordination/m4-v03-focused-art-closure.json",
+      "snapshotPath": "partial-evidence.json",
+      "bytes": 125586,
+      "sha256": "8322d1cd0b11cd27af16ac9dfc990b6e279639469f263fb15cc4de98451bf307"
+    }
+  ]
+}

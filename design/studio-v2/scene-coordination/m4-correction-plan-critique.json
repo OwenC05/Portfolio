@@ -1,0 +1,1148 @@
+{
+ "schema": "m4-correction-plan-critique/v1",
+ "date": "2026-11-15",
+ "task": "task_e044ad370b4e / ctx_5cc24f4c7395",
+ "reviewer": "retained independent actual-Claude reviewer; launch argv --model claude-fable-5-2 --effort high; no model, effort, provider or base-URL override in the environment; server-effective model and effort are not observable",
+ "ack": "msg_02c9aede63c9",
+ "companionReport": "design/studio-v2/scene-m4-correction-plan-critique.md",
+ "status": "Plan critique only. No variance, visual, stage or M4 approval. No Blender, browser, render, image, build, server, Git, dependency, paid action, process change or polling. Only this file and the companion report were written.",
+ "verdict": "REQUEST CHANGES (bounded). The direction of the plan is endorsed: correct the sizes, raise the stand, bevel the casings, ask for a rug variance. Five items need changes or explicit conditions before root settles variances or any v03 candidate is frozen: N1 normals, K1 stool contact, A1 authoring-method amendment, H1 key fronts, R2 rug variance text.",
+ "evidenceClasses": {
+  "sourceDerived": "measured by the embedded script from the two frozen GLBs, or read from frozen source at the cited line",
+  "authorClaim": "stated in the plan or matrix and not re-measured here",
+  "recommendation": "my artistic or process judgment",
+  "futureRendered": "needs actual images; nothing here substitutes for them"
+ },
+ "frozenInputs": {
+  "plan": [
+   "design/studio-v2/scene-m4-correction-plan.md",
+   "6d249f2800f6201ccb6abab99341b3a03e493a1ba238f0047683f4ceffe37de9"
+  ],
+  "matrix": [
+   "design/studio-v2/scene-coordination/m4-correction-matrix.json",
+   "59fa954fdc61df8f1f9343dc93c384ed681666ce482d044d4f5986ddcffa2d77"
+  ],
+  "rootDisposition": [
+   "design/studio-v2/scene-coordination/m4-correction-plan-root-disposition.md",
+   "25a9cc25afe911acf120e30b2182c01da49282ac6751a7bf0fa1ffffeb1679e1"
+  ],
+  "reviewTask": [
+   "design/studio-v2/scene-coordination/m4-correction-independent-plan-review-task.md",
+   "2d90dd274d23d2793f6d83ded0c6ced2283946d0554fd3adc05f50701c9aa3a9"
+  ],
+  "sHandoff": [
+   "design/studio-v2/scene-coordination/m4-correction-plan-handoff.md",
+   "3595800aee5e06e8f431f111402a76c4843fc6be91bd7bb9c35b7b1a31d183e1"
+  ],
+  "artDirection": [
+   "design/studio-v2/asset-pipeline/full-kit/art-direction.md",
+   "fd1c6d0edc96b7736b32de6397957ce8c549a838aabf67631adc52a0011a68bb"
+  ],
+  "renderGates": [
+   "design/studio-v2/asset-pipeline/full-kit/render-gates.md",
+   "15f10d9d9e8ba2b9e4cf938263b66b481267f824422f12ce63982862858f5fb3"
+  ],
+  "inventory": [
+   "design/studio-v2/asset-pipeline/full-kit/asset-inventory.json",
+   "eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87"
+  ],
+  "technicalPlan": [
+   "design/studio-v2/asset-pipeline/full-kit/technical-plan.md",
+   "537a0734e843fce4ab90935226606172f9d323302241739049f2234d2df4639a"
+  ],
+  "m4Source": [
+   "design/studio-v2/asset-pipeline/full-kit/source/build_fullkit_m4.py",
+   "aa9724dcd14dbc428ca5c2ba84cffdcbb469fa14c53cf3866ac46164ec04dc22"
+  ],
+  "m4Helper": [
+   "design/studio-v2/asset-pipeline/full-kit/source/build_fullkit_m4_geometry.py",
+   "c7ce9d8e1792273d6aeffdc5b536233413fdca6c6fd16abf344827d6433ab1c0"
+  ],
+  "m4AuthorReport": [
+   "design/studio-v2/asset-pipeline/full-kit/m4-author-report.md",
+   "93d7c5c124a846240173b0a04fed1dffd4fb9743e15971d3ea41a966feb3ee79"
+  ],
+  "m3PreparationReport": [
+   "design/studio-v2/asset-pipeline/full-kit/m3-preparation-report.md",
+   "0d03541325c8b22565eb88355bfa9e86b0f9e435b4287160a272681bfb1523c6"
+  ],
+  "m4V03PreparationTask": [
+   "design/studio-v2/scene-coordination/m4-v03-preparation-task.md",
+   "8e475f647ae038f53c1b2f41f742353d71017fd64434f70169e5f8ec2c153e91"
+  ],
+  "parentGlbM3V03": [
+   "design/studio-v2/asset-pipeline/full-kit/exports/studio-full-kit-m3-proposal-v03.glb",
+   "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf"
+  ],
+  "pairGlbM4V02": [
+   "design/studio-v2/asset-pipeline/full-kit/exports/studio-full-kit-m4-proposal-v02.glb",
+   "baa1a43bd343359edb217fa077bde0678a931cc3ed3991d5ee059e04813ed32f"
+  ],
+  "pairManifestM4V02": [
+   "design/studio-v2/asset-pipeline/full-kit/manifests/studio-full-kit-m4-proposal-v02.manifest.json",
+   "42597f1b859fdae354063e09ee925d4d2dc9be8ae0ac8556663e391db6906b82"
+  ],
+  "skillGeometry": [
+   ".agents/skills/threejs-geometry/SKILL.md",
+   "ab48fbd393b2d058996ff7b162031567b1c909c4222b570c1b28cb0e92d4408f"
+  ],
+  "skillMaterials": [
+   ".agents/skills/threejs-materials/SKILL.md",
+   "a31247ecc76f623b1ec70397b73d2f91294c388d4428f9f4c189429490e4332c"
+  ],
+  "skillLighting": [
+   ".agents/skills/threejs-lighting/SKILL.md",
+   "e99170edcabb348afa70b265d9e45ec74139796d1a382e1b0e7d99b437a260d0"
+  ],
+  "skillSteering": [
+   ".agents/skills/webgl-landing-steering/SKILL.md",
+   "892ba3bc63fb4dadc9ec508b522abccc2d1281b6fbb854ebd74a10452f27fbd7"
+  ]
+ },
+ "findings": [
+  {
+   "id": "N1",
+   "question": "C13",
+   "severity": "high",
+   "type": "required change",
+   "title": "Casing bevels need face-weighted normals; the 40 degree split alone will bend the flat faces",
+   "recommendation": "The v03 builder writes custom normals so that every flat casing face keeps its own face normal at the vertices it shares with a bevel, and the turn happens only across the bevel faces. S measures it on the export: on every casing triangle larger than 4 cm2, each exported vertex normal is within 2 degrees of the triangle normal.",
+   "rationale": "The frozen builder marks every face smooth, splits edges only above 40 degrees and writes no custom normals. A two-segment bevel has 30 degree steps, so each flat face joins the same smooth group as the bevel beside it and its corner normals tilt. A large flat face then shades as a soft dome. The art direction asked for weighted normals for this reason.",
+   "locators": [
+    "asset-pipeline/full-kit/art-direction.md:129",
+    "asset-pipeline/full-kit/source/build_fullkit_m4.py:110,120-132",
+    "scene-m4-correction-plan.md:135"
+   ],
+   "evidence": "sourceDerived for the builder behaviour; the size of the visible effect is futureRendered",
+   "missingEvidence": "Actual music-1440 and right-down images of the white controller shell with bevels; exported-normal deviation per row"
+  },
+  {
+   "id": "K1",
+   "question": "C2 and C11",
+   "severity": "high",
+   "type": "required change",
+   "title": "One stool foot already floats beyond the rug; placement D makes it worse and the proposed +0.04 shift does not fix it",
+   "recommendation": "Add a contact rule to the combined check: every foot of a supported object rests on one surface, either all inside the rug flat field or all on the bare floor at floor height, with at least 20 mm between any foot and the binding. The author chooses the stool position and leg rotation that meets it and re-measures occlusion.",
+   "rationale": "The helper places stool feet at rug height without testing the rug outline. In the frozen v02 geometry one foot sits 63 to 94 mm beyond the rug front edge with its underside 8.6 mm above the bare floor. Under D the seat centre lands on the rug edge. With the proposed +0.04 shift one foot is still 130 to 161 mm off the rug and one straddles the edge. Sliding the stool toward the keyboard needs +0.26 to get all feet inside the outline and +0.30 to clear the binding, which pushes the stool into the stand footprint.",
+   "locators": [
+    "asset-pipeline/full-kit/render-gates.md:66",
+    "asset-pipeline/full-kit/source/build_fullkit_m4_geometry.py:223,386-391",
+    "scene-m4-correction-plan.md:88,99",
+    "scene-coordination/m4-correction-matrix.json rows C2, C11"
+   ],
+   "evidence": "sourceDerived (results.stool, results.floorContacts)",
+   "missingEvidence": "Combined CPU measurement with the chosen stool position; right-down-1440 and phone right-down images showing stool feet and rug front edge"
+  },
+  {
+   "id": "A1",
+   "question": "editable source",
+   "severity": "medium",
+   "type": "root decision needed",
+   "title": "No documented exception to the live-modifier requirement exists; a narrow authoring-method amendment is needed before export",
+   "recommendation": "Root records an amendment limited to script-authored full-kit stages M3 and M4: the hash-pinned build script and helper are the editable master and the saved Blender file is a reproducible snapshot, on the conditions listed under authoringAmendmentConditions.",
+   "rationale": "Art direction lines 129 and 144 and technical plan line 54 require live bevel modifiers in the editable files. The explicit-vertex method is disclosed in author reports, and the plan asserts a modifier is not required, which is true for the exported-shape gate only. No root document names those lines and waives them, and the v03 preparation task says it is not an approved exception.",
+   "locators": [
+    "asset-pipeline/full-kit/art-direction.md:129,144,219",
+    "asset-pipeline/full-kit/technical-plan.md:54",
+    "asset-pipeline/full-kit/asset-inventory.json stages M0 produces",
+    "asset-pipeline/full-kit/m3-preparation-report.md:34",
+    "asset-pipeline/full-kit/m4-author-report.md:140,216",
+    "scene-m4-correction-plan.md:110",
+    "scene-coordination/m4-v03-preparation-task.md:19"
+   ],
+   "evidence": "sourceDerived from a document search; the absence of an exception is a search result, not proof",
+   "missingEvidence": "Root text of the amendment; a re-run receipt showing the script reproduces the saved mesh data"
+  },
+  {
+   "id": "H1",
+   "question": "C13",
+   "severity": "medium",
+   "type": "required change",
+   "title": "Keys cannot be exempted wholesale; the white-key front lip needs authored shape and fits the row ceiling",
+   "recommendation": "Remove keys from the blanket variance. Author one edge treatment on the front top edge of each white key, exaggerated to about 3 mm or more so it is over one pixel at music-1440. All other key edges may stay sharp. Other listed hand-scale parts may stay sharp for this candidate, each named, with the invalidation conditions under c13Classes.",
+   "rationale": "Key fronts are the named identifying feature of the keys row and root asked to preserve them. The plan rejects key bevels because a full bevel on 49 keys exceeds the ceiling. A front-lip-only treatment costs about 4 triangles per white key with one segment or 8 with two: 1052 or 1168 of 1540. The detail floor says small features are omitted or exaggerated; it does not say an identifying edge is dropped.",
+   "locators": [
+    "asset-pipeline/full-kit/asset-inventory.json id ctl_keys notes (block at line 1532)",
+    "asset-pipeline/full-kit/art-direction.md:127,136-140",
+    "asset-pipeline/full-kit/render-gates.md:65,74",
+    "scene-m4-correction-plan.md:100-103",
+    "scene-coordination/m4-correction-plan-root-disposition.md:20"
+   ],
+   "evidence": "triangle arithmetic is my estimate; the builder must assert exact counts",
+   "missingEvidence": "Actual music-1440 crop of the key row; phone music crop; exact counts"
+  },
+  {
+   "id": "R1",
+   "question": "C11",
+   "severity": "medium",
+   "type": "recommendation",
+   "title": "A rug-width variance is justified in kind: no rectangle within 3 percent fits between the frozen lamp base and desk frame",
+   "recommendation": "Root may approve a candidate-specific variance for rug__rug at the built outline 1.655 by 2.25 m, x 0.56 to 2.215, once K1 and R2 are met. It is recorded against inventory line 1795 and render-gates line 65. The inventory target is not edited.",
+   "rationale": "The desk frame ends at x 0.490 and the lamp base starts at x 2.235 inside the rug y band, so the hard span is 1.745 m, 5.68 percent under target before any clearance. No rectangle within 3 percent fits at any tested rotation. The blockout proxy at target size overlapped the lamp base by 65 mm and the desk frame by 40 mm, so the target was only ever met by passing through retained geometry.",
+   "locators": [
+    "asset-pipeline/full-kit/asset-inventory.json id rug (block at line 1789, targetSizeM line 1795)",
+    "asset-pipeline/full-kit/render-gates.md:65",
+    "scene-m4-correction-plan.md:95-99"
+   ],
+   "evidence": "sourceDerived (results.rug, results.retained, results.rotatedRectangleSearch)",
+   "missingEvidence": "Actual right-down-1440 and music-1440 images of both rug side edges"
+  },
+  {
+   "id": "R2",
+   "question": "C11",
+   "severity": "medium",
+   "type": "required change",
+   "title": "The variance text is incomplete: it omits the music-corner decal and does not separate the physical limit from chosen clearances",
+   "recommendation": "State in the variance that 5.68 points of the 10.54 percent shortfall are physical and 4.86 points are choices (20 mm lamp clearance, 20 mm desk-frame clearance, 50 mm to stay off the under-desk decal). Add contact_decals__music_corner to the dependencies and invalidation list.",
+   "rationale": "The retained music-corner decal spans x 0.525 to 2.225 at z 0.0205. It overhangs the proposed rug by 35 mm on the left and 10 mm on the right and sits 12 mm above the rug field. It was sized for the wider, thicker proxy rug. It is M6-owned and cannot be changed in M4, but the variance must name it.",
+   "locators": [
+    "scene-coordination/m4-correction-matrix.json row C11 constraints and invalidation",
+    "asset-pipeline/full-kit/m4-author-report.md:91,150"
+   ],
+   "evidence": "sourceDerived (results.rug.musicCornerDecalOverhangM, results.retained)",
+   "missingEvidence": "How the decal renders over and beyond the rug edges in actual captures"
+  },
+  {
+   "id": "S1",
+   "question": "C2",
+   "severity": "medium",
+   "type": "recommendation",
+   "title": "The raised stand is the right art choice; fallback E should not be granted and is not defect-free",
+   "recommendation": "Keep the 0.68 m stand as the goal. Do not grant fallback E now. If the combined check misses 30 degrees by a few tenths, return to root with images rather than distorting the layout or dropping the stand.",
+   "rationale": "The stand is 17 percent low, the largest size failure, in the tier whose purpose is consistent scale. From the fixed eye the readable relation is key height against the stool seat: 127 mm now, 242 mm raised. The low version reads as a keyboard on a low table. Fallback E keeps the same floating stool foot as the base.",
+   "locators": [
+    "asset-pipeline/full-kit/art-direction.md:43,68,120",
+    "asset-pipeline/full-kit/asset-inventory.json id ctl_stand (block at line 1553)",
+    "asset-pipeline/full-kit/render-gates.md:74",
+    "scene-m4-correction-plan.md:80-91"
+   ],
+   "evidence": "recommendation; the stool fact is sourceDerived",
+   "missingEvidence": "Actual music-1440, right-down-1440 and phone music images of the raised controller with throne and stool"
+  },
+  {
+   "id": "S2",
+   "question": "C2",
+   "severity": "medium",
+   "type": "recommendation",
+   "title": "The 0.36 degree azimuth margin equals about 24 mm of sideways placement; yaw can widen it",
+   "recommendation": "Pin the visible-sample method and measure the built candidate with it. Treat the margin as a measurement risk. The author may test a little more yaw toward the eye and a stand height nearer the lower gate bound.",
+   "rationale": "My unoccluded envelope gives 32.14 degrees at base and 31.53 at D, a constant 1.17 degrees above the author figures, with the same differences between variants. At D the span falls 0.153 degrees per 10 mm of +x and 0.059 per 10 mm of +y, and rises 0.026 per 0.01 rad of yaw toward the eye. The stand passes the size gate anywhere from 0.6596 to 0.7004 m.",
+   "locators": [
+    "asset-pipeline/full-kit/render-gates.md:74,126",
+    "scene-m4-correction-plan.md:82-91"
+   ],
+   "evidence": "sourceDerived (results.azimuthEnvelopeDeg, results.azimuthSensitivityAtD); author figures are authorClaim",
+   "missingEvidence": "The author visible-sample script as a durable artifact; the combined measurement"
+  },
+  {
+   "id": "S3",
+   "question": "C2 / C4",
+   "severity": "low",
+   "type": "root decision needed",
+   "title": "Rack width semantics: the inventory titles put boom arms with the cymbals, not the rack",
+   "recommendation": "Root records that the 1.16 m rack width means the frame with its clamps. Any ride move is then decided on composition, not to rescue a number.",
+   "rationale": "The drum_rack title lists uprights, crossbar, wing clamps and feet. The drum_cymbals title lists boom arms. The frame reading passes at 1.170 m after C4.",
+   "locators": [
+    "asset-pipeline/full-kit/asset-inventory.json id drum_rack (block at line 1617), id drum_cymbals (block at line 1660)",
+    "scene-coordination/m4-correction-plan-handoff.md:16"
+   ],
+   "evidence": "sourceDerived from inventory titles; 1.170 is authorClaim",
+   "missingEvidence": "None for the semantics; the ride position still needs the combined check"
+  },
+  {
+   "id": "S4",
+   "question": "C2",
+   "severity": "low",
+   "type": "observation",
+   "title": "Under D the sustain pedal comes within 7 mm of the rug binding",
+   "recommendation": "Include the sustain pedal and its cable in the contact rule check.",
+   "rationale": "Moved rigidly with the controller, its lowest vertices are 33 mm inside the rug outline and 7 mm inside the flat field.",
+   "locators": [
+    "scene-m4-correction-plan.md:88"
+   ],
+   "evidence": "sourceDerived (results.floorContacts)",
+   "missingEvidence": "Combined measurement"
+  }
+ ],
+ "c13Classes": {
+  "needsAuthoredShape": [
+   "white-key front top edge (front lip), exaggerated per the detail floor"
+  ],
+  "mayStaySharpThisCandidate": [
+   "white-key side, rear and stem edges",
+   "black-key edges (already tapered)",
+   "knobs",
+   "panel pads (already rounded in plan)",
+   "transport keys",
+   "pad lugs and mount blocks",
+   "rack, stub and boom clamp caps and wing bolts (already octagonal in plan)",
+   "stand pivot plates and teeth",
+   "cymbal wing nuts",
+   "pedal hinges",
+   "pad-rim inner corner",
+   "rug inner binding step"
+  ],
+  "correctedByThePlanAsCasings": [
+   "ctl_body shell and cheeks",
+   "kick tower and base",
+   "module case",
+   "hi-hat pedal base and housing",
+   "sustain base and plate",
+   "pad-rim outer top corner"
+  ],
+  "reasonRule": "A part may stay sharp when the part itself is at or under the detail floor, or is dark with no environment map so a bevel cannot show. A sub-pixel bevel estimate alone is not a reason.",
+  "invalidation": [
+   "any closer eye, narrower lens, zoom or larger viewport than the approved set",
+   "an environment map or new light that makes dark hardware reflective",
+   "any change of material that makes a listed dark part light",
+   "an actual image in which a listed part reads as a cut block"
+  ],
+  "priorityIfBytesForceCuts": "Keep the white shell and oak cheeks, then the ivory key lip, then the metal pad rims. Black casings (kick, module, hi-hat pedal, sustain) show least and are cut first, each by explicit variance."
+ },
+ "rugVarianceProposedText": {
+  "scope": "Candidate-specific. Leaf rug__rug only. Built outline width 1.655 m, depth 2.25 m, x 0.56 to 2.215, y -1.36 to 0.89, axis-aligned rectangle with bound edge.",
+  "physicalLimit": "1.745 m between desk_frame__steel (x 0.490) and fix_floor_lamp__base (x 2.235), -5.68 percent",
+  "chosenAllowances": "20 mm to the lamp base, 20 mm to the desk frame, 50 mm to stay off contact_decals__under_desk",
+  "conditions": [
+   "K1 contact rule met for every rug-bound item",
+   "music-corner decal named as an M6 dependency",
+   "inventory targetSizeM not edited"
+  ],
+  "invalidation": [
+   "any move or resize of fix_floor_lamp, desk_frame, pc_tower, contact_decals__under_desk or contact_decals__music_corner",
+   "any change of the rug outline, depth, position or rotation",
+   "any rug-bound floor contact outside the flat field",
+   "less than 150 mm of rug beyond the outermost rack foot on either side",
+   "any change of eye, lens or pose bounds",
+   "root restating the target",
+   "an actual image in which the rug reads as too small for the kit or the lamp base reads as touching the rug edge"
+  ],
+  "notApproved": true
+ },
+ "authoringAmendmentConditions": [
+  "Scope: full-kit stages M3 and M4 authored by build scripts. It replaces only the live-modifier clauses at art-direction.md:129 and :144 and technical-plan.md:54 for those stages.",
+  "Master: the hash-pinned build script and geometry helper are the editable master. The saved Blender file is a snapshot. A re-run from the pinned inputs reproduces each row with the same triangle count and bounds.",
+  "One bevel table: class to radius after tier factor and segment count, in one named place in the helper, used by bevel-aware primitives. No literal bevel sizes at call sites.",
+  "Declared edges: each bevelled edge set and each sharp exemption is declared in source with a reason: contact face, screen face, or a named variance.",
+  "Normals: the builder writes face-weighted custom normals in place of the Weighted Normal modifier (finding N1).",
+  "Receipts: per row, the builder records triangles, bevelled edge length by class, and remaining hard edge length by reason.",
+  "Not waived: versioned stage files never overwritten, build script kept with the stage, library materials linked, the row and reuse contract. A hand edit to a saved Blender file, or a bevel-class change at M6 without re-running the builders, voids the amendment for that stage."
+ ],
+ "missingPixels": [
+  "music-1440: white controller shell with bevels (flat faces must read flat), key row with front lip, throne seat behind the raised controller",
+  "right-down-1440: stool feet and rug front edge, sustain pedal, lamp base against the rug right edge, rug left edge against the desk leg and under-desk shadow, music-corner decal over the rug edges",
+  "music-320-f74 and music-390-f74: key row countability, raised controller against the throne",
+  "right-down at 320 and 390: stool and rug front edge if in frame",
+  "An isolated grey turnaround of controller and keys beside the 1 m rule (gate G4, first row)"
+ ],
+ "skills": {
+  "threejs-geometry": {
+   "sha256": "ab48fbd393b2d058996ff7b162031567b1c909c4222b570c1b28cb0e92d4408f",
+   "applies": "Normals drive lighting (its vertex-attribute section). Supports N1: shading follows the exported NORMAL attribute, so the normals must be authored.",
+   "conflicts": "Runtime ExtrudeGeometry bevels, merging and instancing conflict with the frozen named-leaf and draw contracts. Not adopted."
+  },
+  "threejs-materials": {
+   "sha256": "a31247ecc76f623b1ec70397b73d2f91294c388d4428f9f4c189429490e4332c",
+   "applies": "Roughness and environment response decide whether an edge highlight shows. With no environment map, bevels on black parts show little; this supports the C13 priority order.",
+   "conflicts": "Any material or environment-map change conflicts with the frozen library. None proposed."
+  },
+  "threejs-lighting": {
+   "sha256": "e99170edcabb348afa70b265d9e45ec74139796d1a382e1b0e7d99b437a260d0",
+   "applies": "Shadow bias guidance: a normalBias of the order it suggests is larger than the 8 mm rug and the 8.6 mm float, so the shadow pass will not reliably hide or reveal the floating foot. Contact must be right in geometry.",
+   "conflicts": "Its fake contact-shadow recipes conflict with the imported-decal contract. Runtime-owned; no change requested."
+  },
+  "webgl-landing-steering": {
+   "sha256": "892ba3bc63fb4dadc9ec508b522abccc2d1281b6fbb854ebd74a10452f27fbd7",
+   "applies": "Only its principle that readability comes before added detail, which supports spending triangles on the key lip and white shell first.",
+   "conflicts": "Its lanes with orbit cameras, post-processing and compression conflict with the fixed-eye, demand-render and dependency contracts. Not adopted."
+  },
+  "version": "Skills target r186; installed three is 0.187.0 (package.json line 16). No API or dependency change is proposed, so no version-sensitive advice is used."
+ },
+ "limits": [
+  "The rotated-rectangle search treats the desk frame bounding box as solid at floor level. That is conservative and relies on the author statement that the floor runner occupies x 0.45 to 0.49 across the desk depth.",
+  "Azimuth figures are an unoccluded geometric envelope, not the author visible-sample method.",
+  "Placement D was applied as a rigid move of the frozen v01 shapes; it does not include the other corrections.",
+  "Triangle estimates for the key lip are arithmetic, not built geometry.",
+  "No image was made or viewed. Nothing here is visual evidence."
+ ],
+ "reproduction": {
+  "note": "The script below is the complete check. It reads the two frozen GLBs, verifies their hashes and prints the results object. Join scriptLines with newlines, save as a file and run it from the repository root with Python 3 and numpy.",
+  "scriptSha256": "e1bef4e7c8c536a4390fa6fa72b4d431e374408f766c3bf22116311a52079ad6",
+  "scriptLines": [
+   "\"\"\"M4 correction plan critique: read-only CPU geometry checks (reviewer evidence, task_e044ad370b4e).",
+   "",
+   "Reads two frozen GLBs and prints one JSON object. Writes nothing. Python 3 + numpy only.",
+   "Run from the repository root:  python checks.py",
+   "Coordinates are Blender metres (x, y, z up), converted from glTF (x, y up, z) as (x, -z, y).",
+   "\"\"\"",
+   "import hashlib, json, math, struct",
+   "import numpy as np",
+   "",
+   "KIT = 'design/studio-v2/asset-pipeline/full-kit/exports/'",
+   "PARENT = (KIT + 'studio-full-kit-m3-proposal-v03.glb', 'dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf')",
+   "M4V02 = (KIT + 'studio-full-kit-m4-proposal-v02.glb', 'baa1a43bd343359edb217fa077bde0678a931cc3ed3991d5ee059e04813ed32f')",
+   "EYE = np.array([-0.35, -1.70, 1.345])",
+   "BASE = (1.2, -0.8, -0.6, 0.573)          # controller x, y, yaw, underside z in the frozen helper (CTL)",
+   "D = (1.3, -0.9, -0.70, 0.6889)           # plan's preferred placement",
+   "RUG = (0.56, 2.215, -1.36, 0.89)         # proposed outline x0, x1, y0, y1",
+   "FIELD = (0.586, 2.189, -1.334, 0.864)    # flat field inside the 26 mm binding",
+   "",
+   "",
+   "def load(path, sha):",
+   "    raw = open(path, 'rb').read()",
+   "    assert hashlib.sha256(raw).hexdigest() == sha, path",
+   "    jlen = struct.unpack_from('<I', raw, 12)[0]",
+   "    g = json.loads(raw[20:20 + jlen])",
+   "    b0 = 20 + jlen",
+   "    blob = raw[b0 + 8: b0 + 8 + struct.unpack_from('<I', raw, b0)[0]]",
+   "",
+   "    def acc(i):",
+   "        a = g['accessors'][i]; bv = g['bufferViews'][a['bufferView']]",
+   "        n = {'SCALAR': 1, 'VEC2': 2, 'VEC3': 3, 'VEC4': 4}[a['type']]",
+   "        dt = {5126: '<f4', 5123: '<u2', 5125: '<u4', 5121: 'u1'}[a['componentType']]",
+   "        off = bv.get('byteOffset', 0) + a.get('byteOffset', 0)",
+   "        assert not bv.get('byteStride') or bv['byteStride'] == np.dtype(dt).itemsize * n",
+   "        return np.frombuffer(blob, dt, a['count'] * n, off).reshape(a['count'], n)",
+   "",
+   "    def local(nd):",
+   "        if 'matrix' in nd:",
+   "            return np.array(nd['matrix'], float).reshape(4, 4).T",
+   "        x, y, z, w = nd.get('rotation', [0, 0, 0, 1])",
+   "        rot = np.array([[1 - 2 * (y * y + z * z), 2 * (x * y - z * w), 2 * (x * z + y * w)],",
+   "                        [2 * (x * y + z * w), 1 - 2 * (x * x + z * z), 2 * (y * z - x * w)],",
+   "                        [2 * (x * z - y * w), 2 * (y * z + x * w), 1 - 2 * (x * x + y * y)]])",
+   "        m = np.eye(4); m[:3, :3] = rot @ np.diag(nd.get('scale', [1, 1, 1])); m[:3, 3] = nd.get('translation', [0, 0, 0])",
+   "        return m",
+   "",
+   "    out = {}",
+   "",
+   "    def walk(i, parent):",
+   "        nd = g['nodes'][i]; w = parent @ local(nd)",
+   "        if 'mesh' in nd:",
+   "            vs = [(w[:3, :3] @ acc(p['attributes']['POSITION']).astype(float).T).T + w[:3, 3] for p in g['meshes'][nd['mesh']]['primitives']]",
+   "            v = np.vstack(vs)",
+   "            out[nd['name']] = np.stack([v[:, 0], -v[:, 2], v[:, 1]], axis=1)",
+   "        for c in nd.get('children', []):",
+   "            walk(c, w)",
+   "",
+   "    for r in g['scenes'][g.get('scene', 0)]['nodes']:",
+   "        walk(r, np.eye(4))",
+   "    return out",
+   "",
+   "",
+   "def box(v):",
+   "    return {'x': [round(float(v[:, 0].min()), 4), round(float(v[:, 0].max()), 4)],",
+   "            'y': [round(float(v[:, 1].min()), 4), round(float(v[:, 1].max()), 4)],",
+   "            'z': [round(float(v[:, 2].min()), 4), round(float(v[:, 2].max()), 4)]}",
+   "",
+   "",
+   "def rot(a):",
+   "    c, s = math.cos(a), math.sin(a)",
+   "    return np.array([[c, -s], [s, c]])",
+   "",
+   "",
+   "def to_local(v, pl=BASE):",
+   "    q = v.copy(); q[:, :2] = (rot(-pl[2]) @ (v[:, :2] - np.array(pl[:2])).T).T; q[:, 2] = v[:, 2] - pl[3]",
+   "    return q",
+   "",
+   "",
+   "def to_world(q, pl, on_rug=False):",
+   "    v = q.copy(); v[:, :2] = (rot(pl[2]) @ q[:, :2].T).T + np.array(pl[:2]); v[:, 2] = q[:, 2] + (BASE[3] if on_rug else pl[3])",
+   "    return v",
+   "",
+   "",
+   "def margin(p, r):",
+   "    return np.minimum.reduce([p[:, 0] - r[0], r[1] - p[:, 0], p[:, 1] - r[2], r[3] - p[:, 1]])",
+   "",
+   "",
+   "P = load(*PARENT)",
+   "M = load(*M4V02)",
+   "res = {'inputs': {'parentGlb': PARENT[1], 'm4V02Glb': M4V02[1]}}",
+   "",
+   "# 1. Retained floor-level geometry that bounds the rug, and the blockout proxy rug.",
+   "lamp, desk, proxy = P['fix_floor_lamp__base'], P['desk_frame__steel'], P['rug__proxy_rug']",
+   "res['retained'] = {n: box(P[n]) for n in ('fix_floor_lamp__base', 'desk_frame__steel', 'pc_tower__case', 'contact_decals__under_desk',",
+   "                                         'contact_decals__music_corner', 'arch_skirting__right', 'arch_skirting__back', 'rug__proxy_rug')}",
+   "span = float(lamp[:, 0].min() - desk[:, 0].max())",
+   "res['rug'] = {'m4v02Outline': box(M['rug__rug']),",
+   "              'hardSpanDeskFrameToLampBase': round(span, 4), 'hardSpanDeviationPct': round((span - 1.85) / 1.85 * 100, 3),",
+   "              'proxyOverlapLampBaseM': round(float(proxy[:, 0].max() - lamp[:, 0].min()), 4),",
+   "              'proxyOverlapDeskFrameM': round(float(desk[:, 0].max() - proxy[:, 0].min()), 4),",
+   "              'shortfallSplitPctPoints': {'physical': round((span - 1.85) / 1.85 * 100, 3), 'lampClearance20mm': round(-0.02 / 1.85 * 100, 3),",
+   "                                          'deskFrameClearance20mm': round(-0.02 / 1.85 * 100, 3), 'underDeskDecalAvoidance50mm': round(-0.05 / 1.85 * 100, 3)},",
+   "              'musicCornerDecalOverhangM': {'left': round(RUG[0] - float(P['contact_decals__music_corner'][:, 0].min()), 4),",
+   "                                            'right': round(float(P['contact_decals__music_corner'][:, 0].max()) - RUG[1], 4),",
+   "                                            'heightAboveRugFieldM': round(float(P['contact_decals__music_corner'][:, 2].min()) - 0.0083, 4)}}",
+   "",
+   "# 2. Does any rotated rectangle within 3% of the target hold the rug-bound feet and miss the lamp base and desk frame?",
+   "names = ['ctl_stand__frame', 'drum_throne__throne', 'drum_rack__rack', 'drum_kick__tower', 'drum_hihat_pedal__pedal', 'ctl_sustain_pedal__pedal']",
+   "feet = np.vstack([M[n][M[n][:, 2] < 0.03][:, :2] for n in names])",
+   "obstacles = [(lamp[:, 0].min(), lamp[:, 1].min(), lamp[:, 0].max(), lamp[:, 1].max()), (desk[:, 0].min(), desk[:, 1].min(), desk[:, 0].max(), desk[:, 1].max())]",
+   "",
+   "",
+   "def fits(w, d):",
+   "    hits = 0",
+   "    for deg in range(-40, 41, 2):",
+   "        th = math.radians(deg); r = rot(th)",
+   "        u, v = np.linspace(-w / 2, w / 2, 41), np.linspace(-d / 2, d / 2, 41)",
+   "        edge = np.array([(a, -d / 2) for a in u] + [(a, d / 2) for a in u] + [(-w / 2, b) for b in v] + [(w / 2, b) for b in v]) @ r.T",
+   "        for cx in np.arange(1.0, 1.8, 0.01):",
+   "            for cy in np.arange(-0.6, 0.2, 0.01):",
+   "                e = edge + (cx, cy)",
+   "                if e[:, 0].max() > 2.525 or e[:, 1].max() > 1.035:",
+   "                    continue",
+   "                q = (feet - (cx, cy)) @ r",
+   "                if not ((np.abs(q[:, 0]) <= w / 2) & (np.abs(q[:, 1]) <= d / 2)).all():",
+   "                    continue",
+   "                bad = False",
+   "                for b in obstacles:",
+   "                    corners = (np.array([(b[0], b[1]), (b[2], b[1]), (b[2], b[3]), (b[0], b[3])]) - (cx, cy)) @ r",
+   "                    if ((e[:, 0] > b[0]) & (e[:, 0] < b[2]) & (e[:, 1] > b[1]) & (e[:, 1] < b[3])).any() or \\",
+   "                            ((np.abs(corners[:, 0]) <= w / 2) & (np.abs(corners[:, 1]) <= d / 2)).any():",
+   "                        bad = True",
+   "                if not bad:",
+   "                    hits += 1",
+   "    return hits",
+   "",
+   "",
+   "res['rotatedRectangleSearch'] = {'grid': 'rotation -40..40 deg step 2; centre x 1.00..1.79, y -0.60..0.19 step 0.01; stool excluded',",
+   "                                 'feasibleAtTarget_1.85x2.25': fits(1.85, 2.25), 'feasibleAtMinus3pct_1.7945x2.1825': fits(1.7945, 2.1825)}",
+   "",
+   "# 3. Floor contacts of rug-bound items in the frozen v02 geometry.",
+   "res['floorContacts'] = {}",
+   "for n in names + ['stool_keys__stool']:",
+   "    f = M[n][M[n][:, 2] < 0.03]",
+   "    res['floorContacts'][n] = {'undersideZ': round(float(f[:, 2].min()), 4), 'minMarginToRugOutlineMm': round(float(margin(f, RUG).min()) * 1000, 1),",
+   "                               'verticesOutsideOutline': int((margin(f, RUG) < 0).sum())}",
+   "",
+   "# 4. Stool feet under the base and under placement D with local-y shifts.",
+   "stool = to_local(M['stool_keys__stool'])",
+   "",
+   "",
+   "def stool_case(pl, dy):",
+   "    q = stool.copy(); q[:, 1] += dy",
+   "    w = to_world(q, pl, on_rug=True); f = w[w[:, 2] < 0.03]",
+   "    seat = w[w[:, 2] > 0.44][:, :2].mean(0)",
+   "    quad = np.round(np.degrees(np.arctan2(f[:, 1] - seat[1], f[:, 0] - seat[0])) / 90) % 4",
+   "    per_foot = sorted([round(float(margin(f[quad == k], RUG).min()) * 1000), round(float(margin(f[quad == k], RUG).max()) * 1000)] for k in np.unique(quad))",
+   "    return {'seatCentre': [round(float(seat[0]), 3), round(float(seat[1]), 3)], 'perFootMarginToOutlineMm': per_foot,",
+   "            'worstMarginToFlatFieldMm': round(float(margin(f, FIELD).min()) * 1000), 'localYRange': [round(float(q[:, 1].min()), 3), round(float(q[:, 1].max()), 3)]}",
+   "",
+   "",
+   "res['stool'] = {'base': stool_case(BASE, 0.0), 'D_shift_0.00': stool_case(D, 0.0), 'D_shift_0.04': stool_case(D, 0.04)}",
+   "for dy in (0.10, 0.20, 0.25, 0.26, 0.30, -0.20, -0.25, -0.30):",
+   "    res['stool']['D_shift_%+.2f' % dy] = stool_case(D, dy)",
+   "res['controllerFamilyLocalExtents'] = {n: box(to_local(M[n])) for n in ('ctl_stand__frame', 'stool_keys__stool', 'ctl_sustain_pedal__pedal')}",
+   "for n in ('ctl_stand__frame', 'ctl_sustain_pedal__pedal'):",
+   "    w = to_world(to_local(M[n]), D, on_rug=True); f = w[w[:, 2] < 0.03]",
+   "    res['floorContacts'][n + ' under D'] = {'minMarginToRugOutlineMm': round(float(margin(f, RUG).min()) * 1000, 1), 'minMarginToFlatFieldMm': round(float(margin(f, FIELD).min()) * 1000, 1)}",
+   "",
+   "# 5. Controller azimuth: full geometric envelope from the eye (no occlusion), and its sensitivity at D.",
+   "body = to_local(np.vstack([M['ctl_body__shell'], M['ctl_keys__keys'], M['ctl_body__indicators']]))",
+   "",
+   "",
+   "def az_span(pl):",
+   "    d = to_world(body, pl) - EYE",
+   "    a = np.degrees(np.arctan2(d[:, 0], d[:, 1]))",
+   "    return float(a.max() - a.min())",
+   "",
+   "",
+   "res['azimuthEnvelopeDeg'] = {k: round(az_span(pl), 2) for k, pl in {'base': BASE, 'A': (1.2, -0.8, -0.6, 0.6889), 'B': (1.3, -0.8, -0.6, 0.6889),",
+   "                                                                    'C': (1.4, -0.85, -0.6, 0.6889), 'D': D}.items()}",
+   "s0 = az_span(D)",
+   "res['azimuthSensitivityAtD'] = {'degPer10mmX': round(az_span((1.31, -0.9, -0.70, 0.6889)) - s0, 3), 'degPer10mmY': round(az_span((1.3, -0.89, -0.70, 0.6889)) - s0, 3),",
+   "                                'degPer0.01radYawMoreNegative': round(az_span((1.3, -0.9, -0.71, 0.6889)) - s0, 3),",
+   "                                'maxOverYawAtDPosition': max((round(az_span((1.3, -0.9, y, 0.6889)), 2), round(float(y), 2)) for y in np.arange(-1.2, -0.3, 0.01))}",
+   "print(json.dumps(res, indent=1))",
+   ""
+  ]
+ },
+ "results": {
+  "inputs": {
+   "parentGlb": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+   "m4V02Glb": "baa1a43bd343359edb217fa077bde0678a931cc3ed3991d5ee059e04813ed32f"
+  },
+  "retained": {
+   "fix_floor_lamp__base": {
+    "x": [
+     2.235,
+     2.485
+    ],
+    "y": [
+     -0.115,
+     0.135
+    ],
+    "z": [
+     0.0,
+     0.05
+    ]
+   },
+   "desk_frame__steel": {
+    "x": [
+     -1.84,
+     0.49
+    ],
+    "y": [
+     -0.51,
+     0.2625
+    ],
+    "z": [
+     0.0003,
+     0.6947
+    ]
+   },
+   "pc_tower__case": {
+    "x": [
+     0.1,
+     0.376
+    ],
+    "y": [
+     -0.395,
+     0.165
+    ],
+    "z": [
+     0.0003,
+     0.607
+    ]
+   },
+   "contact_decals__under_desk": {
+    "x": [
+     -1.75,
+     0.55
+    ],
+    "y": [
+     -0.55,
+     0.25
+    ],
+    "z": [
+     0.0015,
+     0.0025
+    ]
+   },
+   "contact_decals__music_corner": {
+    "x": [
+     0.525,
+     2.225
+    ],
+    "y": [
+     -1.0,
+     0.8
+    ],
+    "z": [
+     0.0205,
+     0.0215
+    ]
+   },
+   "arch_skirting__right": {
+    "x": [
+     2.525,
+     2.55
+    ],
+    "y": [
+     -3.3,
+     1.06
+    ],
+    "z": [
+     0.0,
+     0.11
+    ]
+   },
+   "arch_skirting__back": {
+    "x": [
+     -2.25,
+     2.55
+    ],
+    "y": [
+     1.035,
+     1.06
+    ],
+    "z": [
+     0.0,
+     0.11
+    ]
+   },
+   "rug__proxy_rug": {
+    "x": [
+     0.45,
+     2.3
+    ],
+    "y": [
+     -1.275,
+     0.975
+    ],
+    "z": [
+     0.0012,
+     0.0187
+    ]
+   }
+  },
+  "rug": {
+   "m4v02Outline": {
+    "x": [
+     0.56,
+     2.215
+    ],
+    "y": [
+     -1.36,
+     0.89
+    ],
+    "z": [
+     0.0003,
+     0.0108
+    ]
+   },
+   "hardSpanDeskFrameToLampBase": 1.745,
+   "hardSpanDeviationPct": -5.676,
+   "proxyOverlapLampBaseM": 0.065,
+   "proxyOverlapDeskFrameM": 0.04,
+   "shortfallSplitPctPoints": {
+    "physical": -5.676,
+    "lampClearance20mm": -1.081,
+    "deskFrameClearance20mm": -1.081,
+    "underDeskDecalAvoidance50mm": -2.703
+   },
+   "musicCornerDecalOverhangM": {
+    "left": 0.035,
+    "right": 0.01,
+    "heightAboveRugFieldM": 0.0122
+   }
+  },
+  "rotatedRectangleSearch": {
+   "grid": "rotation -40..40 deg step 2; centre x 1.00..1.79, y -0.60..0.19 step 0.01; stool excluded",
+   "feasibleAtTarget_1.85x2.25": 0,
+   "feasibleAtMinus3pct_1.7945x2.1825": 0
+  },
+  "floorContacts": {
+   "ctl_stand__frame": {
+    "undersideZ": 0.0086,
+    "minMarginToRugOutlineMm": 227.5,
+    "verticesOutsideOutline": 0
+   },
+   "drum_throne__throne": {
+    "undersideZ": 0.0086,
+    "minMarginToRugOutlineMm": 598.8,
+    "verticesOutsideOutline": 0
+   },
+   "drum_rack__rack": {
+    "undersideZ": 0.0086,
+    "minMarginToRugOutlineMm": 90.0,
+    "verticesOutsideOutline": 0
+   },
+   "drum_kick__tower": {
+    "undersideZ": 0.0086,
+    "minMarginToRugOutlineMm": 325.1,
+    "verticesOutsideOutline": 0
+   },
+   "drum_hihat_pedal__pedal": {
+    "undersideZ": 0.0086,
+    "minMarginToRugOutlineMm": 361.2,
+    "verticesOutsideOutline": 0
+   },
+   "ctl_sustain_pedal__pedal": {
+    "undersideZ": 0.0086,
+    "minMarginToRugOutlineMm": 160.4,
+    "verticesOutsideOutline": 0
+   },
+   "stool_keys__stool": {
+    "undersideZ": 0.0086,
+    "minMarginToRugOutlineMm": -93.6,
+    "verticesOutsideOutline": 49
+   },
+   "ctl_stand__frame under D": {
+    "minMarginToRugOutlineMm": 112.8,
+    "minMarginToFlatFieldMm": 86.8
+   },
+   "ctl_sustain_pedal__pedal under D": {
+    "minMarginToRugOutlineMm": 33.4,
+    "minMarginToFlatFieldMm": 7.4
+   }
+  },
+  "stool": {
+   "base": {
+    "seatCentre": [
+     1.18,
+     -1.271
+    ],
+    "perFootMarginToOutlineMm": [
+     [
+      -94,
+      -63
+     ],
+     [
+      42,
+      73
+     ],
+     [
+      105,
+      135
+     ],
+     [
+      241,
+      271
+     ]
+    ],
+    "worstMarginToFlatFieldMm": -120,
+    "localYRange": [
+     -0.565,
+     -0.235
+    ]
+   },
+   "D_shift_0.00": {
+    "seatCentre": [
+     1.234,
+     -1.367
+    ],
+    "perFootMarginToOutlineMm": [
+     [
+      -192,
+      -161
+     ],
+     [
+      -37,
+      -6
+     ],
+     [
+      -8,
+      23
+     ],
+     [
+      147,
+      178
+     ]
+    ],
+    "worstMarginToFlatFieldMm": -218,
+    "localYRange": [
+     -0.565,
+     -0.235
+    ]
+   },
+   "D_shift_0.04": {
+    "seatCentre": [
+     1.259,
+     -1.336
+    ],
+    "perFootMarginToOutlineMm": [
+     [
+      -161,
+      -130
+     ],
+     [
+      -7,
+      25
+     ],
+     [
+      22,
+      54
+     ],
+     [
+      177,
+      209
+     ]
+    ],
+    "worstMarginToFlatFieldMm": -187,
+    "localYRange": [
+     -0.525,
+     -0.195
+    ]
+   },
+   "D_shift_+0.10": {
+    "seatCentre": [
+     1.298,
+     -1.291
+    ],
+    "perFootMarginToOutlineMm": [
+     [
+      -116,
+      -84
+     ],
+     [
+      39,
+      71
+     ],
+     [
+      68,
+      100
+     ],
+     [
+      223,
+      255
+     ]
+    ],
+    "worstMarginToFlatFieldMm": -142,
+    "localYRange": [
+     -0.465,
+     -0.135
+    ]
+   },
+   "D_shift_+0.20": {
+    "seatCentre": [
+     1.362,
+     -1.214
+    ],
+    "perFootMarginToOutlineMm": [
+     [
+      -39,
+      -8
+     ],
+     [
+      116,
+      147
+     ],
+     [
+      145,
+      176
+     ],
+     [
+      300,
+      331
+     ]
+    ],
+    "worstMarginToFlatFieldMm": -65,
+    "localYRange": [
+     -0.365,
+     -0.035
+    ]
+   },
+   "D_shift_+0.25": {
+    "seatCentre": [
+     1.395,
+     -1.176
+    ],
+    "perFootMarginToOutlineMm": [
+     [
+      -1,
+      30
+     ],
+     [
+      154,
+      185
+     ],
+     [
+      183,
+      214
+     ],
+     [
+      338,
+      369
+     ]
+    ],
+    "worstMarginToFlatFieldMm": -27,
+    "localYRange": [
+     -0.315,
+     0.015
+    ]
+   },
+   "D_shift_+0.26": {
+    "seatCentre": [
+     1.401,
+     -1.168
+    ],
+    "perFootMarginToOutlineMm": [
+     [
+      7,
+      38
+     ],
+     [
+      162,
+      193
+     ],
+     [
+      191,
+      222
+     ],
+     [
+      346,
+      377
+     ]
+    ],
+    "worstMarginToFlatFieldMm": -19,
+    "localYRange": [
+     -0.305,
+     0.025
+    ]
+   },
+   "D_shift_+0.30": {
+    "seatCentre": [
+     1.427,
+     -1.138
+    ],
+    "perFootMarginToOutlineMm": [
+     [
+      37,
+      69
+     ],
+     [
+      192,
+      224
+     ],
+     [
+      221,
+      253
+     ],
+     [
+      376,
+      407
+     ]
+    ],
+    "worstMarginToFlatFieldMm": 11,
+    "localYRange": [
+     -0.265,
+     0.065
+    ]
+   },
+   "D_shift_-0.20": {
+    "seatCentre": [
+     1.105,
+     -1.52
+    ],
+    "perFootMarginToOutlineMm": [
+     [
+      -345,
+      -314
+     ],
+     [
+      -190,
+      -159
+     ],
+     [
+      -161,
+      -130
+     ],
+     [
+      -6,
+      25
+     ]
+    ],
+    "worstMarginToFlatFieldMm": -371,
+    "localYRange": [
+     -0.765,
+     -0.435
+    ]
+   },
+   "D_shift_-0.25": {
+    "seatCentre": [
+     1.072,
+     -1.558
+    ],
+    "perFootMarginToOutlineMm": [
+     [
+      -383,
+      -352
+     ],
+     [
+      -228,
+      -197
+     ],
+     [
+      -199,
+      -168
+     ],
+     [
+      -44,
+      -13
+     ]
+    ],
+    "worstMarginToFlatFieldMm": -409,
+    "localYRange": [
+     -0.815,
+     -0.485
+    ]
+   },
+   "D_shift_-0.30": {
+    "seatCentre": [
+     1.04,
+     -1.596
+    ],
+    "perFootMarginToOutlineMm": [
+     [
+      -421,
+      -390
+     ],
+     [
+      -267,
+      -235
+     ],
+     [
+      -238,
+      -206
+     ],
+     [
+      -83,
+      -51
+     ]
+    ],
+    "worstMarginToFlatFieldMm": -447,
+    "localYRange": [
+     -0.865,
+     -0.535
+    ]
+   }
+  },
+  "controllerFamilyLocalExtents": {
+   "ctl_stand__frame": {
+    "x": [
+     -0.3229,
+     0.3229
+    ],
+    "y": [
+     -0.19,
+     0.19
+    ],
+    "z": [
+     -0.5644,
+     -0.0003
+    ]
+   },
+   "stool_keys__stool": {
+    "x": [
+     0.0855,
+     0.4145
+    ],
+    "y": [
+     -0.5645,
+     -0.2355
+    ],
+    "z": [
+     -0.5644,
+     -0.073
+    ]
+   },
+   "ctl_sustain_pedal__pedal": {
+    "x": [
+     0.3516,
+     0.47
+    ],
+    "y": [
+     -0.17,
+     0.2935
+    ],
+    "z": [
+     -0.5644,
+     0.0434
+    ]
+   }
+  },
+  "azimuthEnvelopeDeg": {
+   "base": 32.14,
+   "A": 32.14,
+   "B": 30.62,
+   "C": 29.41,
+   "D": 31.53
+  },
+  "azimuthSensitivityAtD": {
+   "degPer10mmX": -0.153,
+   "degPer10mmY": -0.059,
+   "degPer0.01radYawMoreNegative": 0.026,
+   "maxOverYawAtDPosition": [
+    32.95,
+    -1.11
+   ]
+  }
+ },
+ "notDone": [
+  "No variance, visual, stage, M4, M5, T1 or transfer approval",
+  "No source, asset, plan, evidence or other report edited",
+  "No Blender, browser, render, image, build, server, Git, dependency, paid action, process change or polling",
+  "The author v03 source in preparation was not read and is not assessed"
+ ]
+}

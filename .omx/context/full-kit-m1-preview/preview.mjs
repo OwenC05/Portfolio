@@ -62,7 +62,20 @@ function snapshot() {
     }
     projections[id]={pixelVertices:points,left:Math.min(...points.map(p=>p[0])),right:Math.max(...points.map(p=>p[0])),top:Math.min(...points.map(p=>p[1])),bottom:Math.max(...points.map(p=>p[1]))};
   }
-  return {variant,pose,fov:camera.fov,eye:camera.position.toArray(),viewport:[innerWidth,innerHeight],dpr:renderer.getPixelRatio(),canvas:[canvas.width,canvas.height],projections,renderer:{calls:renderer.info.render.calls,triangles:renderer.info.render.triangles,memory:{...renderer.info.memory}},firstRender,provenance,scope:provenance.scope,cleanupErrors:[...cleanups]};
+  const meshBounds={};
+  placed.traverse(mesh => {
+    if (!mesh.isMesh || !mesh.name) return;
+    if (!mesh.geometry.boundingBox) mesh.geometry.computeBoundingBox();
+    const box=mesh.geometry.boundingBox;
+    if (!box || box.isEmpty()) return;
+    const corners=[];
+    for (const x of [box.min.x,box.max.x]) for (const y of [box.min.y,box.max.y]) for (const z of [box.min.z,box.max.z]) {
+      const point=new THREE.Vector3(x,y,z).applyMatrix4(mesh.matrixWorld).project(camera);
+      corners.push([(point.x+1)*innerWidth/2,(1-point.y)*innerHeight/2,point.z]);
+    }
+    meshBounds[mesh.name]={pixelBoxCorners:corners,left:Math.min(...corners.map(p=>p[0])),right:Math.max(...corners.map(p=>p[0])),top:Math.min(...corners.map(p=>p[1])),bottom:Math.max(...corners.map(p=>p[1]))};
+  });
+  return {variant,pose,meshBounds,fov:camera.fov,eye:camera.position.toArray(),viewport:[innerWidth,innerHeight],dpr:renderer.getPixelRatio(),canvas:[canvas.width,canvas.height],projections,renderer:{calls:renderer.info.render.calls,triangles:renderer.info.render.triangles,memory:{...renderer.info.memory}},firstRender,provenance,scope:provenance.scope,cleanupErrors:[...cleanups]};
 }
 try {
   document.documentElement.dataset.status='loading';

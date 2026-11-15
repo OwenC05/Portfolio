@@ -6,9 +6,9 @@ The corrected M4 v02 pair remains technically accepted for its exact restoration
 
 ## Assembly evidence
 
-S's new assembled audit reports all 18 M4 rows within their frozen ceilings: 18 main calls, 9 casters, 27 refresh calls, 12,528 placed triangles and 22,412 refresh-weighted triangles. The complete current candidate estimates 145 refresh calls. The full-room forecast substitutes both actual M3 and M4 rows, estimating 141 refresh calls and 85,788 refresh-weighted triangles. A separate Codex review is checking this new forecast; it does not repeat the accepted byte-restoration review.
+S's new assembled audit reports all 18 M4 rows within their frozen ceilings: 18 main calls, 9 casters, 27 refresh calls, 12,528 placed triangles and 22,412 refresh-weighted triangles. The complete current candidate estimates 145 refresh calls. The full-room forecast substitutes both actual M3 and M4 rows, estimating 141 refresh calls and 85,788 refresh-weighted triangles. Root adopts the separate Codex APPROVE in `m4-v02-forecast-review.md` (SHA256 `eee569820116ecae8ee0bbeaad0f94ec6ceb6ed30f744c84ddc526b6798e69c7`) for this arithmetic and its stated limitations. It does not repeat the accepted byte-restoration review or grant visual acceptance.
 
-The asset plus historical hosted JavaScript estimate is 1,462,612 gzip bytes; adding 15% to forecast geometry raises it to 1,559,302. The point estimate does not establish safe headroom under the 1.5 MB limit. T1 is unimplemented and receives no savings credit. These estimates are not future production measurements.
+The asset plus historical hosted JavaScript estimate is 1,462,612 gzip bytes; adding 15% to forecast geometry raises it to 1,559,302. The exact point margin is 37,388 bytes; the technical report's earlier 37,588 was a minor arithmetic typo. The point estimate does not establish safe headroom under the 1.5 MB limit. T1 is unimplemented and receives no savings credit. These estimates are not future production measurements.
 
 ## Resource and design holds
 
@@ -26,4 +26,4 @@ Apply the skills selectively: read WebGL renderer counters after rendering, dist
 
 The installed skills target r186 while this repository uses r187. Confirm version-sensitive APIs against the installed source or official documentation before implementation. Existing approved camera, identity, asset and ownership contracts remain binding.
 
-The next release decision depends on the author's correction/evidence recommendation and the bounded forecast review. M5 remains unreleased.
+The next release decision depends on the author's correction/evidence recommendation and resource readiness. The bounded forecast review is complete. M5 remains unreleased.

@@ -1,0 +1,299 @@
+{
+ "receiptSha256": "cb9524663b7e30e47d1e5529cd8f591a8d78cf6d8c02ddf8956fc17a2246ad4f",
+ "selected": {
+  "revision": "v03",
+  "glbSha256": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+  "manifestSha256": "060bab9af5dd23b4258e03aef10de21faa7c32aa0a6010cd4e09b35089026405"
+ },
+ "browserVersion": "157.0.8103.52",
+ "failures": 0,
+ "sourceDriftAfterCapture": 0,
+ "uniqueCheckedInputCount": 27,
+ "images": {
+  "scene-mid-right-320x844-f74.png": "197d0d45c7e5bddc327a3f99e64c547e83d22b936cfb2c65979e8f9527cb7088",
+  "scene-mid-right-390x844-f74.png": "53f38d71a7d395fb1f19030ec8a2cf1cea22aabd80346c1db8270bc3b32f8998",
+  "chrome-mid-right-closed-320x844.png": "2ab7bc800904880a970e86bae83bfc0c367d78c652c7e13fb0fd63a8e893bdd5",
+  "chrome-mid-right-closed-390x844.png": "58acbba34a3d188cb6884b178cbead0f08d1c0e712acc05fecf22f3df66fce7f"
+ },
+ "views": {
+  "scene-mid-right-320x844-f74.png": {
+   "composite": "chrome-mid-right-closed-320x844.png",
+   "pose": {
+    "yaw": 30,
+    "pitch": -6
+   },
+   "fov": 74,
+   "eye": [
+    -0.7,
+    2.8,
+    3.4
+   ],
+   "viewport": [
+    320,
+    844
+   ],
+   "alignment": {
+    "x": 0,
+    "y": 0,
+    "width": 320,
+    "height": 844,
+    "naturalWidth": 320,
+    "naturalHeight": 844,
+    "htmlClientWidth": 320,
+    "htmlScrollWidth": 320,
+    "scrollbarGutter": "auto",
+    "sceneWidth": 320
+   },
+   "projectsOpen": "false",
+   "uiRectangles": {
+    "header": [
+     12,
+     12,
+     296,
+     66.375
+    ],
+    "projects": [
+     7,
+     722,
+     1,
+     1
+    ],
+    "toggle": [
+     8,
+     722,
+     90.890625,
+     48
+    ],
+    "look": [
+     8,
+     778,
+     304,
+     58
+    ],
+    "hint": [
+     124.8125,
+     731.15625,
+     187.1875,
+     29.6875
+    ]
+   },
+   "uiCoveredShareOfFrame": 0.2755850118483412,
+   "identicalRows": [
+    116,
+    699
+   ],
+   "identicalRowCount": 584,
+   "firstUiRowBelowMiddle": 700,
+   "items": {
+    "mug": {
+     "receiptBox": [
+      -1.7527762797676871,
+      539.7757407052991,
+      84.48195917028819,
+      638.8860463484456
+     ],
+     "receiptBoxInFrameShare": 0.9796743589387733,
+     "uiCoveredPixelsInBox": 0,
+     "wallAndHandleX": [
+      9,
+      80
+     ],
+     "clearOfLeftFrameEdgePx": 9,
+     "coasterBoxLeft": -1.7527762797676871,
+     "coasterRimLeftmostX": 7,
+     "gapFromBoxBottomToFirstUiRowPx": 61.113953651554425
+    },
+    "headphones": {
+     "receiptBox": [
+      37.11351605199978,
+      451.11717474007725,
+      165.0330542496656,
+      596.4629550894255
+     ],
+     "receiptBoxInFrameShare": 1.0,
+     "uiCoveredPixelsInBox": 0,
+     "rightEarCupPlate": {
+      "pixels": 414,
+      "x": [
+       127,
+       148
+      ],
+      "y": [
+       513,
+       553
+      ]
+     },
+     "gapFromBoxBottomToFirstUiRowPx": 103.53704491057454
+    },
+    "speaker": {
+     "receiptBox": [
+      11.038509264649434,
+      424.0168035699753,
+      128.43040048123163,
+      556.4724246120802
+     ],
+     "receiptBoxInFrameShare": 1.0,
+     "uiCoveredPixelsInBox": 0,
+     "cabinetTopBandX": [
+      33,
+      100
+     ],
+     "cabinetLeftEdgeY": [
+      428,
+      556
+     ],
+     "gapFromBoxBottomToFirstUiRowPx": 143.5275753879198
+    }
+   }
+  },
+  "scene-mid-right-390x844-f74.png": {
+   "composite": "chrome-mid-right-closed-390x844.png",
+   "pose": {
+    "yaw": 30,
+    "pitch": -6
+   },
+   "fov": 74,
+   "eye": [
+    -0.7,
+    2.8,
+    3.4
+   ],
+   "viewport": [
+    390,
+    844
+   ],
+   "alignment": {
+    "x": 0,
+    "y": 0,
+    "width": 390,
+    "height": 844,
+    "naturalWidth": 390,
+    "naturalHeight": 844,
+    "htmlClientWidth": 390,
+    "htmlScrollWidth": 390,
+    "scrollbarGutter": "auto",
+    "sceneWidth": 390
+   },
+   "projectsOpen": "false",
+   "uiRectangles": {
+    "header": [
+     12,
+     12,
+     366,
+     66.375
+    ],
+    "projects": [
+     7,
+     778,
+     1,
+     1
+    ],
+    "toggle": [
+     8,
+     778,
+     106.03125,
+     58
+    ],
+    "look": [
+     134,
+     778,
+     248,
+     58
+    ],
+    "hint": [
+     99,
+     740.3125,
+     192,
+     29.6875
+    ]
+   },
+   "uiCoveredShareOfFrame": 0.2433254344391785,
+   "identicalRows": [
+    116,
+    717
+   ],
+   "identicalRowCount": 602,
+   "firstUiRowBelowMiddle": 718,
+   "items": {
+    "mug": {
+     "receiptBox": [
+      33.24722372023234,
+      539.7757407052991,
+      119.4819591702882,
+      638.8860463484456
+     ],
+     "receiptBoxInFrameShare": 1.0,
+     "uiCoveredPixelsInBox": 0,
+     "wallAndHandleX": [
+      44,
+      115
+     ],
+     "clearOfLeftFrameEdgePx": 44,
+     "coasterBoxLeft": 33.24722372023234,
+     "coasterRimLeftmostX": 42,
+     "gapFromBoxBottomToFirstUiRowPx": 79.11395365155443
+    },
+    "headphones": {
+     "receiptBox": [
+      72.1135160519998,
+      451.11717474007725,
+      200.03305424966564,
+      596.4629550894255
+     ],
+     "receiptBoxInFrameShare": 1.0,
+     "uiCoveredPixelsInBox": 0,
+     "rightEarCupPlate": {
+      "pixels": 414,
+      "x": [
+       162,
+       183
+      ],
+      "y": [
+       513,
+       553
+      ]
+     },
+     "gapFromBoxBottomToFirstUiRowPx": 121.53704491057454
+    },
+    "speaker": {
+     "receiptBox": [
+      46.03850926464948,
+      424.0168035699753,
+      163.43040048123166,
+      556.4724246120802
+     ],
+     "receiptBoxInFrameShare": 1.0,
+     "uiCoveredPixelsInBox": 0,
+     "cabinetTopBandX": [
+      68,
+      135
+     ],
+     "cabinetLeftEdgeY": [
+      428,
+      556
+     ],
+     "gapFromBoxBottomToFirstUiRowPx": 161.5275753879198
+    }
+   }
+  }
+ },
+ "narrowVersusWideMiddleColumns": {
+  "offsetPx": 35,
+  "shareOfPixelsDiffering": 0.02000888625592417,
+  "shareDifferingByMoreThan8": 0.0001888329383886256,
+  "maxDifference": 25
+ },
+ "contactSheet": {
+  "path": "design/studio-v2/scene-coordination/m3-v03-phone-discoverability-crops.png",
+  "size": [
+   1210,
+   2918
+  ],
+  "rows": [
+   "320: raw then composite, x 0-300 y 380-680, x2",
+   "320 composite, whole frame 1:1",
+   "390: raw then composite, x 0-300 y 380-680, x2",
+   "390 composite, whole frame 1:1"
+  ]
+ }
+}

@@ -1,0 +1,186 @@
+--- author-frozen-7138fed9
++++ guard-corrected-8829c741
+@@ -718,6 +718,149 @@
+     return doc, 28 + jlen, blen
+ 
+ 
++def retained_hierarchy_problems(parent, candidate, removed, added):
++    """Validate only the named root-child substitution; glTF indices may move."""
++    root = 'studio_full_kit'
++
++    def named(doc):
++        nodes = doc['nodes']
++        names = [node['name'] for node in nodes]
++        if len(set(names)) != len(names):
++            raise ValueError('duplicate node name')
++        children, parents = {}, {}
++        for node in nodes:
++            refs = node.get('children', [])
++            if any(type(i) is not int or not 0 <= i < len(nodes) for i in refs) or len(set(refs)) != len(refs):
++                raise ValueError('invalid or duplicate child reference')
++            children[node['name']] = {names[i] for i in refs}
++            for child in children[node['name']]:
++                if child in parents:
++                    raise ValueError('multiple parents')
++                parents[child] = node['name']
++        if root not in names or root in parents:
++            raise ValueError('missing or parented root')
++        seen, pending = set(), [root]
++        while pending:
++            name = pending.pop()
++            if name in seen:
++                raise ValueError('cyclic hierarchy')
++            seen.add(name)
++            pending.extend(children[name])
++        if seen != set(names):
++            raise ValueError('unreachable node')
++        roots = []
++        for scene_entry in doc['scenes']:
++            refs = scene_entry.get('nodes', [])
++            if any(type(i) is not int or not 0 <= i < len(nodes) for i in refs):
++                raise ValueError('invalid scene root')
++            roots.append([names[i] for i in refs])
++        if roots != [[root]]:
++            raise ValueError('unexpected scene roots')
++        return dict(zip(names, nodes)), children, parents, doc.get('scene', 0)
++
++    try:
++        pn, pc, pp, ps = named(parent)
++        mn, mc, mp, ms = named(candidate)
++        removed, added = set(removed), set(added)
++        if set(pn) - set(mn) != removed or set(mn) - set(pn) != added:
++            return [('hierarchy', 'wrong named substitution')]
++        if not removed <= pc[root] or any(pc[name] for name in removed):
++            return [('hierarchy', 'removed nodes are not direct root leaves')]
++        if mc[root] != (pc[root] - removed) | added:
++            return [('hierarchy', 'wrong root child substitution')]
++        if any(mp.get(name) != root or mc[name] for name in added):
++            return [('hierarchy', 'added nodes are not direct root leaves')]
++        problems = []
++        if ps != ms:
++            problems.append(('hierarchy', 'default scene changed'))
++        for name in sorted(set(pn) & set(mn)):
++            if pp.get(name) != mp.get(name) or (name != root and pc[name] != mc[name]):
++                problems.append(('hierarchy', name))
++            a = {k: v for k, v in pn[name].items() if k not in ('mesh', 'children')}
++            b = {k: v for k, v in mn[name].items() if k not in ('mesh', 'children')}
++            if a != b or ('mesh' in pn[name]) != ('mesh' in mn[name]):
++                problems.append(('node', name))
++        return problems
++    except (KeyError, IndexError, TypeError, ValueError) as error:
++        return [('hierarchy', str(error))]
++
++
++def retained_texture_problems(parent, candidate, parent_raw, candidate_raw, parent_bin, candidate_bin):
++    """Keep image identity and texture/sampler wiring, allowing only T2 pixels."""
++    palettes = {'fk_palette_colour', 'fk_palette_orm'}
++
++    def images(doc, raw, start):
++        result = {}
++        for item in doc.get('images', []):
++            name = item['name']
++            if name in result:
++                raise ValueError('duplicate image name')
++            view = doc['bufferViews'][item['bufferView']]
++            offset = start + view.get('byteOffset', 0)
++            result[name] = ({k: v for k, v in item.items() if k != 'bufferView'}, raw[offset:offset + view['byteLength']])
++        return result
++
++    def textures(doc):
++        result = []
++        for item in doc.get('textures', []):
++            normalized = {k: v for k, v in item.items() if k not in ('source', 'sampler')}
++            normalized['sourceName'] = doc['images'][item['source']]['name']
++            normalized['samplerDefinition'] = doc['samplers'][item['sampler']] if 'sampler' in item else None
++            result.append(normalized)
++        return result
++
++    try:
++        pi = images(parent, parent_raw, parent_bin)
++        mi = images(candidate, candidate_raw, candidate_bin)
++        problems = []
++        if set(pi) != set(mi):
++            return [('images', 'image identity set changed')]
++        for name in pi:
++            if pi[name][0] != mi[name][0]:
++                problems.append(('imageMetadata', name))
++            if name not in palettes and pi[name][1] != mi[name][1]:
++                problems.append(('imageBytes', name))
++        if parent.get('samplers', []) != candidate.get('samplers', []):
++            problems.append(('samplers', 'definitions changed'))
++        if textures(parent) != textures(candidate):
++            problems.append(('textures', 'image or sampler references changed'))
++        return problems
++    except (KeyError, IndexError, TypeError, ValueError) as error:
++        return [('textures', str(error))]
++
++
++def palette_pixel_problems(parent_png, candidate_png, image_name, cells, grid, cell_size):
++    wp, hp, bp, rows_p = parent_png
++    wm, hm, bm, rows_m = candidate_png
++    if (wp, hp) != (wm, hm) or bp not in (3, 4) or bm not in (3, 4):
++        return [('paletteDimensions', image_name)]
++    expected = {}
++    for cell in cells.values():
++        if image_name == 'fk_palette_colour':
++            value = int(cell['srgb'].lstrip('#'), 16)
++            rgba = ((value >> 16) & 255, (value >> 8) & 255, value & 255, 255)
++        else:
++            rgba = (255, int(cell['roughness'] * 255 + 0.5), int(cell['metallic'] * 255 + 0.5), 255)
++        expected[cell['index']] = bytes(rgba)
++
++    def rgba(row, x, channels):
++        value = row[x * channels:(x + 1) * channels]
++        return value if channels == 4 else value + b'\xff'
++
++    seen = set()
++    for y in range(hp):
++        for x in range(wp):
++            cell_index = (y // cell_size) * grid + x // cell_size
++            actual = rgba(rows_m[y], x, bm)
++            if cell_index in expected:
++                seen.add(cell_index)
++                if actual != expected[cell_index]:
++                    return [('paletteT2Value', image_name, x, y, tuple(actual), tuple(expected[cell_index]))]
++            elif actual != rgba(rows_p[y], x, bp):
++                return [('paletteRgba', image_name, x, y)]
++    return [] if seen == set(expected) else [('paletteT2Missing', image_name)]
++
++
+ def png_rgba(data):
+     """Minimal PNG decoder (8-bit RGB/RGBA, non-interlaced) for the palette parity check."""
+     assert data[:8] == b'\x89PNG\r\n\x1a\n'
+@@ -824,11 +967,10 @@
+     NOISE = {('desk_top__top_mesh.002', 'TEXCOORD_0', 197, 1): 0.6280039548873901, ('desk_top__top_mesh.002', 'TEXCOORD_0', 199, 0): -0.9475000500679016,
+              ('desk_top__top_mesh.002', 'TEXCOORD_0', 274, 1): 0.6309999823570251, ('sub_woofer__cabinet_mesh.001', 'TEXCOORD_0', 85, 1): 0.062499940395355225}
+     patches, problems = [], []
++    problems.extend(retained_hierarchy_problems(dp, dm, removed, set(ROWS)))
++    problems.extend(retained_texture_problems(dp, dm, raw3, rawp, bop, bom))
+     for name in sorted(set(pn) & set(mn)):
+         a_, b_ = pn[name], mn[name]
+-        if {k: v for k, v in a_.items() if k != 'mesh'} != {k: v for k, v in b_.items() if k != 'mesh'}:
+-            problems.append(('node', name))
+-            continue
+         if 'mesh' not in a_:
+             continue
+         mp, mm = dp['meshes'][a_['mesh']], dm['meshes'][b_['mesh']]
+@@ -869,17 +1011,8 @@
+             im = next(i for i in doc['images'] if i.get('name') == img_name)
+             v = doc['bufferViews'][im['bufferView']]
+             return raw[boff + v.get('byteOffset', 0):boff + v.get('byteOffset', 0) + v['byteLength']]
+-        wp, hp_, bp, rows_p = png_rgba(img_bytes(dp, raw3, bop))
+-        wm, hm, bm_, rows_m = png_rgba(img_bytes(dm, rawp, bom))
+-        assert (wp, hp_) == (wm, hm)
+-        t2_rect = [(len(G1['SWATCHES']) + k) for k in range(len(T2))]
+-        for y in range(hp_):
+-            for x in range(wp):
+-                cell = (y // CELL) * GRID + x // CELL
+-                if cell in t2_rect:
+-                    continue
+-                if rows_p[y][x * bp:x * bp + 3] != rows_m[y][x * bm_:x * bm_ + 3]:
+-                    problems.append(('palettePixel', img_name, x, y)); break
++        problems.extend(palette_pixel_problems(png_rgba(img_bytes(dp, raw3, bop)),
++                                              png_rgba(img_bytes(dm, rawp, bom)), img_name, t2_cells, GRID, CELL))
+     out = bytearray(rawp)
+     for off, word, _ in patches:
+         out[off:off + 4] = word

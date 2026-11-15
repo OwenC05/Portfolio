@@ -8,6 +8,7 @@ This repository contains the portfolio application and the editable sources, scr
 - Commit at meaningful handoffs: a bounded implementation, an asset version with its source and manifest, or its independent verification. Use clear messages such as `fix: ...`, `feat: ...`, `test: ...` and `docs: ...`.
 - Push those checkpoints so GitHub reflects local progress. Before pushing, inspect the staged diff, check for credentials or unrelated changes, and run checks appropriate to the change. Report failures as failures; an uploaded checkpoint is not release approval.
 - The coordinating agent owns Git staging, commits and pushes in the shared checkout. Workers own assigned files and report ready artifacts. Do not reset, rewrite another worker's changes, or switch branches without coordinating.
+- Before a shared source file passes to a different owner for edits, preserve its exact pre-change bytes in a Git checkpoint or a named, hash-verified source snapshot. Record the ownership handoff and compare the resulting diff against that baseline. A hash without the recoverable file is insufficient for a claim that only the delegated section changed.
 - Keep the PR description current, including remaining work and verification limits. Merge only after the applicable technical and visual reviews and product acceptance checks pass. Do not force-push or publish to production as part of checkpointing.
 
 The initial studio history includes a large recovery checkpoint. Preserve that history; keep subsequent changes focused so they can be reviewed independently.

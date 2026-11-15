@@ -1,0 +1,229 @@
+{
+  "scope": "Static independent ledger audit only; planned geometry is not a validated export or measured performance.",
+  "reviewedAt": "2026-11-15T14:05:17.958Z",
+  "sourceHashes": {
+    "export-ledger-v01.json": "26b4c143f64f6880f012c316e81f124fe899b69312b61866531e6bf884320775",
+    "budget-addendum-v01.md": "d73ca38cac8e2867d9ff10acdbc4b91c1c62a0d8f1696ee8974e90f9a0d89f06",
+    "m2-material-repair-report.md": "dc67aada2edd9ec0cad68e464b6798475b2e389f243c2aa14e5e931202b046d6",
+    "technical/profile-core.mjs": "02b65feddb651f41a4a9d5eab4f55e41ae15c321d850a26fba00b3a92889ae71"
+  },
+  "inputHashes": {
+    "asset-inventory.json": {
+      "expected": "eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87",
+      "actual": "eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87"
+    },
+    "full-kit-budget-technical-review.json": {
+      "expected": "0b955c3a6bdd4c85cb2357563e84ddddc8aa3f85f025bf409a59d3414979bc73",
+      "actual": "0b955c3a6bdd4c85cb2357563e84ddddc8aa3f85f025bf409a59d3414979bc73"
+    },
+    "exports/studio-full-kit-m2-proposal-v02.glb": {
+      "expected": "2089a4f0b955c2730d167a8ee4258f7939b29f51057d9944678b44b4f2555411",
+      "actual": "2089a4f0b955c2730d167a8ee4258f7939b29f51057d9944678b44b4f2555411"
+    },
+    "exports/studio-full-kit-m2-proposal-v03.glb": {
+      "expected": "7c0d30428065d0024bb1c4a631a3b54504008edcccab91c75e7367a53fa57752",
+      "actual": "7c0d30428065d0024bb1c4a631a3b54504008edcccab91c75e7367a53fa57752"
+    },
+    "full-kit-profile-v1.json": {
+      "expected": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+      "actual": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052"
+    }
+  },
+  "arithmeticAndIdentityFailures": [],
+  "rowCount": 107,
+  "inventoryIds": [
+    "acoustic_panels",
+    "arch_beams",
+    "arch_blind",
+    "arch_cornice",
+    "arch_door",
+    "arch_floor",
+    "arch_shell",
+    "arch_skirting",
+    "arch_switches",
+    "arch_window",
+    "contact_decals",
+    "ctl_body",
+    "ctl_keys",
+    "ctl_stand",
+    "ctl_sustain_pedal",
+    "desk_frame",
+    "desk_mat",
+    "desk_top",
+    "display_studio",
+    "drum_cymbals",
+    "drum_hihat_pedal",
+    "drum_kick",
+    "drum_module",
+    "drum_pads",
+    "drum_rack",
+    "drum_sticks",
+    "drum_throne",
+    "fix_floor_lamp",
+    "fix_pendant",
+    "fix_wall_triangles",
+    "headphones",
+    "kb_case",
+    "kb_keycaps",
+    "mic_boom",
+    "mon_cables",
+    "mon_central",
+    "mon_side",
+    "mon_top",
+    "mouse_native",
+    "mug_coaster",
+    "music_cables",
+    "notebook_pen",
+    "pc_tower",
+    "rt_window_dusk",
+    "rug",
+    "shelf_books",
+    "shelf_plant",
+    "shelf_speaker",
+    "snowboard_bindings",
+    "snowboard_deck",
+    "speaker_nearfield",
+    "stool_keys",
+    "sub_woofer",
+    "target_borders",
+    "target_faces",
+    "under_desk_power",
+    "wall_cable_run",
+    "wall_print",
+    "wall_shelf"
+  ],
+  "statusCounts": {
+    "exported": 63,
+    "bounded-proposal": 44
+  },
+  "stageRecomputed": {
+    "M1": {
+      "nodeInstances": 41,
+      "mainCalls": 41,
+      "shadowCalls": 3,
+      "refreshCalls": 44,
+      "uniqueTriangles": 5818,
+      "placedTriangles": 6118,
+      "mainTriangles": 6118,
+      "shadowTriangles": 996,
+      "refreshTriangles": 7114
+    },
+    "M2": {
+      "nodeInstances": 23,
+      "mainCalls": 24,
+      "shadowCalls": 9,
+      "refreshCalls": 33,
+      "uniqueTriangles": 16696,
+      "placedTriangles": 17716,
+      "mainTriangles": 17718,
+      "shadowTriangles": 10772,
+      "refreshTriangles": 28490
+    },
+    "M3": {
+      "nodeInstances": 9,
+      "mainCalls": 9,
+      "shadowCalls": 7,
+      "refreshCalls": 16,
+      "uniqueTriangles": 14100,
+      "placedTriangles": 14100,
+      "mainTriangles": 14100,
+      "shadowTriangles": 8700,
+      "refreshTriangles": 22800
+    },
+    "M4": {
+      "nodeInstances": 18,
+      "mainCalls": 18,
+      "shadowCalls": 9,
+      "refreshCalls": 27,
+      "uniqueTriangles": 19270,
+      "placedTriangles": 19270,
+      "mainTriangles": 19270,
+      "shadowTriangles": 14290,
+      "refreshTriangles": 33560
+    },
+    "M5": {
+      "nodeInstances": 13,
+      "mainCalls": 13,
+      "shadowCalls": 2,
+      "refreshCalls": 15,
+      "uniqueTriangles": 7920,
+      "placedTriangles": 7920,
+      "mainTriangles": 7920,
+      "shadowTriangles": 2900,
+      "refreshTriangles": 10820
+    },
+    "M6": {
+      "nodeInstances": 3,
+      "mainCalls": 6,
+      "shadowCalls": 0,
+      "refreshCalls": 6,
+      "uniqueTriangles": 300,
+      "placedTriangles": 300,
+      "mainTriangles": 600,
+      "shadowTriangles": 0,
+      "refreshTriangles": 600
+    }
+  },
+  "wholeRecomputed": {
+    "nodeInstances": 107,
+    "mainCalls": 111,
+    "shadowCalls": 30,
+    "refreshCalls": 141,
+    "uniqueTriangles": 64104,
+    "placedTriangles": 65424,
+    "mainTriangles": 65726,
+    "shadowTriangles": 37658,
+    "refreshTriangles": 103384
+  },
+  "replacedLeafCount": 54,
+  "stageCeilingSums": {
+    "main": 115,
+    "refresh": 148,
+    "placed": 86500
+  },
+  "proposedReserveNotApproved": {
+    "refreshCalls": 20,
+    "refreshTriangles": 25000,
+    "covers": "lib_frost needing double-sided (+1/+700), indicator/display glow leaves, a split leaf during authoring, unseen extra passes"
+  },
+  "additiveStageCeilingsAndReserveCalls": 168,
+  "compressionBasis": {
+    "raw": 830728,
+    "gzip": 248434,
+    "brotli": 151594,
+    "jsonGzip": 10206,
+    "jsonBrotli": 8002,
+    "node": "v24.21.0",
+    "zlib": "1.3.2.1-motley-8002e91"
+  },
+  "gzipUpperSensitivity": {
+    "A": {
+      "assetEstimate": 1232700,
+      "remainingForSceneJs": 267300
+    },
+    "B": {
+      "assetEstimate": 987505,
+      "remainingForSceneJs": 512495
+    }
+  },
+  "corrections": {
+    "reserveOwnership": "20 calls / 25000 triangles are author proposals, not an accepted root reserve.",
+    "reserveSharing": "148 stage refresh ceilings + 20 separately additive reserve = 168, above proposed 165; adoption must define shared headroom or revise ceilings.",
+    "optionalConsolidationR1": "26 main-call reductions plus 3 caster reductions = 29 refresh-call reduction, not 26; no reduction included in base forecast.",
+    "duplicationNotes": {
+      "drumPads": {
+        "stated": 1600,
+        "ledgerUniqueMinusInventoryUnique": 2400
+      },
+      "wallTriangles": {
+        "stated": 560,
+        "ledgerUniqueMinusInventoryUnique": 880
+      }
+    },
+    "rawPayloadLanguage": "Geometry/flags and image bytes retained across v02/v03; lib_glow material definition differs, so full retained representation is not byte-identical.",
+    "compressionLanguage": "Image 1:1 transfer treatment is an approximation; complete export/delivery recompression remains required."
+  },
+  "finalGeometryUnknown": true,
+  "productionSceneJsUnknown": true,
+  "finalGatePassClaim": false
+}

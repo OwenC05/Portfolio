@@ -1,0 +1,89 @@
+{
+ "statement": "v05 = v04 with exactly four BIN float32 words restored from pinned v03 (root msg_3bf70918e3a0). No tolerance applied.",
+ "script": "source/build_fullkit_m2_pc_v05.py",
+ "scriptSha256": "27a6112aca02015e5b1ee4a83193521d46378b0cf39e4b8a5148bb0f4e9fd888",
+ "inputs": {
+  "v03": {
+   "glb": "exports/studio-full-kit-m2-proposal-v03.glb",
+   "sha256": "7c0d30428065d0024bb1c4a631a3b54504008edcccab91c75e7367a53fa57752",
+   "bytes": 1228192
+  },
+  "v04": {
+   "glb": "exports/studio-full-kit-m2-proposal-v04.glb",
+   "sha256": "560acb2f2fa1ae36598a5d63ab484f842766ad344d88b065abad82286b560ea0",
+   "bytes": 1228192
+  }
+ },
+ "editableSource": {
+  "blend": "source/fk-20-workstation-pc-v04.blend",
+  "builder": "source/build_fullkit_m2_pc_v04.py",
+  "note": "v05 adds no editable change; the four words are exporter float32 noise restored at byte level."
+ },
+ "output": {
+  "glb": "exports/studio-full-kit-m2-proposal-v05.glb",
+  "sha256": "4b2f7b8f44e13ef2a23e6d3420f1098147702aba72a365e6a942dec7e7ccc735",
+  "bytes": 1228192
+ },
+ "restoredWords": [
+  {
+   "binByteOffset": 411436,
+   "accessor": 64,
+   "mesh": "desk_top__top_mesh.002",
+   "attribute": "TEXCOORD_0",
+   "vertex": 197,
+   "component": 1,
+   "v04Hex": "dec4203f",
+   "v04": 0.6280039548873901,
+   "restoredHex": "ddc4203f",
+   "restored": 0.6280038952827454
+  },
+  {
+   "binByteOffset": 411448,
+   "accessor": 64,
+   "mesh": "desk_top__top_mesh.002",
+   "attribute": "TEXCOORD_0",
+   "vertex": 199,
+   "component": 0,
+   "v04Hex": "5d8f72bf",
+   "v04": -0.9475000500679016,
+   "restoredHex": "5b8f72bf",
+   "restored": -0.9474999308586121
+  },
+  {
+   "binByteOffset": 412052,
+   "accessor": 64,
+   "mesh": "desk_top__top_mesh.002",
+   "attribute": "TEXCOORD_0",
+   "vertex": 274,
+   "component": 1,
+   "v04Hex": "3789213f",
+   "v04": 0.6309999823570251,
+   "restoredHex": "3689213f",
+   "restored": 0.6309999227523804
+  },
+  {
+   "binByteOffset": 1074960,
+   "accessor": 165,
+   "mesh": "sub_woofer__cabinet_mesh.001",
+   "attribute": "TEXCOORD_0",
+   "vertex": 85,
+   "component": 1,
+   "v04Hex": "f0ff7f3d",
+   "v04": 0.062499940395355225,
+   "restoredHex": "0000803d",
+   "restored": 0.0625
+  }
+ ],
+ "v05VersusV04": {
+  "changedBytes": 6,
+  "headerAndJsonIdentical": true
+ },
+ "v05VersusV03": {
+  "binWordsChanged": 76,
+  "authorisedWords": 76,
+  "pcTowerCaseTexcoord0Words": 4,
+  "pcTowerGlowPositionWords": 72,
+  "glowNormalIdentical": true,
+  "jsonDelta": "accessor 154 min/max and scene tag extras only (v04 JSON verbatim)"
+ }
+}

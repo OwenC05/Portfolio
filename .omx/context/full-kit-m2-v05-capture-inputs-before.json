@@ -1,0 +1,52 @@
+[
+    {
+        "path":  "app/studio/StudioShell.tsx",
+        "sha256":  "bcae10c0b983b1295b4d13e4ff1777c25fe9af224ebf2aee865c146fdb62eca8",
+        "bytes":  8858
+    },
+    {
+        "path":  "app/studio/studio.module.css",
+        "sha256":  "ce72d40af43223b33bc77dbdfd810ac38caaadb50af30916b25f1e3907bf1432",
+        "bytes":  19871
+    },
+    {
+        "path":  "components/studio/StudioExperience.tsx",
+        "sha256":  "4e8628d8b91c840a494174d559e30b7967bc062f773aa37d74f53f3094891e16",
+        "bytes":  13141
+    },
+    {
+        "path":  "lib/studio-contract.ts",
+        "sha256":  "64f88fd30b896c88c87a5631349bbb2bb9a3bc8676c0a1a816f1e5720902c84d",
+        "bytes":  1157
+    },
+    {
+        "path":  ".omx/context/full-kit-m1-preview/server.mjs",
+        "sha256":  "873b8606134f000c679fca876084caeebec48c6c1f9876d02641e85d489cddc0",
+        "bytes":  14124
+    },
+    {
+        "path":  ".omx/context/full-kit-m1-preview/preview.mjs",
+        "sha256":  "a829adb7842d9df00fb619ac6643aefbf71a84643774eaaab9c65b705c0e12e7",
+        "bytes":  5920
+    },
+    {
+        "path":  ".omx/context/full-kit-m2-v05-capture-v01.mjs",
+        "sha256":  "010c348442b3d2337d3cad5a1563ff1deeddd5fa53f67e3024469c573745fd0d",
+        "bytes":  8426
+    },
+    {
+        "path":  "design/studio-v2/asset-pipeline/full-kit/source/build_fullkit_m2_pc_v05.py",
+        "sha256":  "27a6112aca02015e5b1ee4a83193521d46378b0cf39e4b8a5148bb0f4e9fd888",
+        "bytes":  8865
+    },
+    {
+        "path":  "design/studio-v2/asset-pipeline/full-kit/source/build_fullkit_m2_pc_v04.py",
+        "sha256":  "62d0733e46c8d7e91e7d91ae904ff20ac469850148ac207b8c953b8f334de551",
+        "bytes":  21587
+    },
+    {
+        "path":  "design/studio-v2/asset-pipeline/full-kit/source/fk-20-workstation-pc-v04.blend",
+        "sha256":  "0b5336771a92e5cc0ae0c9b5d8c60a784065739bbbc93e56ba9f9b3471c62d79",
+        "bytes":  559733
+    }
+]

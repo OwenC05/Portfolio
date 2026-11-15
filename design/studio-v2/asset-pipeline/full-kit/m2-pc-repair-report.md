@@ -1,4 +1,11 @@
-# M2 PC repair v04: author report
+# M2 PC repair v04 → v05: author report
+
+> **Current candidate: v05** (`exports/studio-full-kit-m2-proposal-v05.glb`, `4b2f7b8f…c735`).
+>
+> - v04 failed the independent exact-delta check: S's `scene-coordination/m2-v04-delta-check.mjs` exited 1. It found the 76 authorised words plus 4 unauthorised one-ULP UV words.
+> - Root requires exact restoration with no tolerance (msg_3bf70918e3a0).
+> - v05 restores those four words from v03 at byte level; see [v05 exact restoration](#v05-exact-restoration-current-candidate).
+> - v04 and its evidence are kept unchanged as the failed candidate. Every v04 statement below still describes v04, except the noise rule, which root rejected.
 
 15 November 2026. Claude (actual, Opus 5.5 / high, inherited, no override), task `task_d31f70e55a5d`, dispatch `ctx_5abdce20e965`. This is a candidate only: it is not self-approved. Root's delta checks, root capture and the independent review decide it.
 
@@ -130,7 +137,8 @@ Blender 5.2.3 ran in background with `--factory-startup --disable-autoexec`, one
   - desk_top 0.63099992 → 0.63099998
   - sub_woofer 0.0625 → 0.06249994
 - **Cause.** The unchanged builders' UV evaluation in float32 is not bit-stable from run to run. The v03 probe showed the same two leaves doing this, and the v03 real run happened not to.
-- **How it was handled.** I did not tolerate it silently. The paired check accepts words outside the authorised accessors only when they are `TEXCOORD_0` with |Δ| ≤ 2⁻²⁰, the same bounded rule recorded for v03, and lists every such word in `exportReadback.exporterNoiseWords`.
+- **Rejected by root.** The bounded ≤2⁻²⁰ rule below was not authorised. The v03 probe's noise did not license a tolerance. v05 removes the four words exactly.
+- **How it was handled in v04.** I did not tolerate it silently. The paired check accepts words outside the authorised accessors only when they are `TEXCOORD_0` with |Δ| ≤ 2⁻²⁰, the same bounded rule recorded for v03, and lists every such word in `exportReadback.exporterNoiseWords`.
 - **Visual effect.** None is possible: a 1-ULP shift stays inside the same 16 px palette cell, and the desk-top UVs are tiled timber coordinates. Root may still reject the noise. A byte-clean candidate would need a deterministic UV rounding in the M1/M2 builders, which are outside this task's owned files.
 
 **Manifest.** The v04 manifest differs from the v03 manifest only in `glbSha256`. Every count, metric and bound is identical.
@@ -189,11 +197,58 @@ The scratchpad is the session temp directory, outside the repo. The edits for pr
 - Mid-right and music-390 used my reconstructed poses, which do not frame the PC.
 - No browser, build or capture was run, by rule.
 
+## v05 exact restoration (current candidate)
+
+**Method.** `source/build_fullkit_m2_pc_v05.py` is a plain-Python, frozen-source byte step. It needs no Blender and no dependency.
+- It pins v03 (`7c0d3042…7752`) and v04 (`560acb2f…0ea0`).
+- It copies exactly four float32 words of the BIN chunk from v03 into v04 and writes v05.
+- It refuses to overwrite anything.
+
+**Restored words.**
+
+| BIN byte offset | Accessor | Mesh | Vertex.component | v04 | v05 = v03 |
+| ---: | ---: | --- | --- | --- | --- |
+| 411436 | 64 | `desk_top__top` TEXCOORD_0 | 197.1 | 0.62800395 | 0.62800390 |
+| 411448 | 64 | `desk_top__top` TEXCOORD_0 | 199.0 | −0.94750005 | −0.94749993 |
+| 412052 | 64 | `desk_top__top` TEXCOORD_0 | 274.1 | 0.63099998 | 0.63099992 |
+| 1074960 | 165 | `sub_woofer__cabinet` TEXCOORD_0 | 85.1 | 0.06249994 | 0.0625 |
+
+**Guards asserted before writing:**
+- Both input hashes match their pinned values.
+- The v04 JSON differs from v03 only in accessor 154 `min`/`max` and the scene tag extras.
+- Each word sits exactly at its accessor, vertex and component, and holds the recorded v04 and v03 floats.
+- v05 differs from v04 in exactly those 16 bytes. Header and JSON are v04 verbatim, so the embedded scene tag still reads the v04 build.
+- v05's BIN differs from v03's in exactly the 76 authorised words:
+  - 4 `pc_tower__case` TEXCOORD_0 words (V 0.0625 → 0.3125);
+  - all 72 `pc_tower__glow` POSITION words.
+- Glow NORMAL is byte-identical.
+- No tolerance of any size is applied.
+
+**Editable provenance.**
+- The editable source is `source/fk-20-workstation-pc-v04.blend`, built by `build_fullkit_m2_pc_v04.py`, plus this byte step.
+- v05 makes no editable change. The four words were exporter float32 noise and never an authored state.
+- Re-exporting the v04 blend can reproduce the noise; v05 is defined by the byte step.
+
+| File (under `design/studio-v2/asset-pipeline/full-kit/`) | Bytes | SHA256 |
+| --- | ---: | --- |
+| `exports/studio-full-kit-m2-proposal-v05.glb` | 1,228,192 | `4b2f7b8f44e13ef2a23e6d3420f1098147702aba72a365e6a942dec7e7ccc735` |
+| `manifests/studio-full-kit-m2-proposal-v05.manifest.json` | 89,726 | `aaa0c2628810152c165f7e2564c0524394057241ce1f43ec6c94042c5f3ba5e7` |
+| `manifests/m2-pc-v05-validator-report.json` (`valid: true`, 0 errors, validator unchanged) | 1,095 | `03f889f8afb87acb38ef7a82e394295568dabd456e68f2cfe5f171668a1ea6f7` |
+| `manifests/m2-pc-v05-restoration-receipt.json` | 2,599 | `cb1b372c92f32cfb60ece2ab0940ddabfc65dca0326ae21cffa36e6591f2751f` |
+| `source/build_fullkit_m2_pc_v05.py` | 8,865 | `27a6112aca02015e5b1ee4a83193521d46378b0cf39e4b8a5148bb0f4e9fd888` |
+
+**Unchanged from v04.**
+- The manifest differs from v04's only in `glbSha256`. All counts, metrics and bounds equal v03.
+- gzip / Brotli are 586,955 / 483,317 (Node `zlib` defaults).
+- Appearance, visibility and clearance are as described for v04, since the restored words lie on untouched leaves.
+
+**Not run.** S's `m2-v04-delta-check.mjs` is hard-coded to v04 and overwrites its own receipt, so I did not run it against v05. S's re-check of v05 remains a gate.
+
 ## Remaining gates
 
-1. Root's independent bounded delta checks on this GLB against v03.
+1. S's independent exact delta check of **v05** against v03 (v04 failed it).
 2. Root captures of home-1024/1440, mid-right-1440 and music-1440/390, with UI comparisons.
 3. The independent reviewer's judgement of white-case readability, restrained visible glow, clipping under 2% and the preserved C2 placement.
-4. Root's decision on the reported exporter-noise dependency.
+4. (Resolved by v05: the four noise words are restored exactly.)
 
-Only then can v04 become the frozen parent identity for M3 export.
+Only then can v05 become the frozen parent identity for M3 export.

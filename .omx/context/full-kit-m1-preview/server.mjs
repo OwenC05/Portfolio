@@ -16,7 +16,7 @@ const revision = option('--revision', undefined);
 if (args.includes('--revision') && (!revision || revision.startsWith('--'))) throw new Error('Missing M2 revision');
 if (revision !== undefined && (stage !== 'M2' || args.includes('--tag'))) throw new Error('Use --revision only for M2 and do not combine it with --tag');
 const tag = revision ?? option('--tag', 'v02');
-if (!['M1', 'M2'].includes(stage) || (stage === 'M2' && !['v02', 'v03'].includes(tag))) throw new Error('Use M1 or a pinned M2 v02/v03 candidate');
+if (!['M1', 'M2'].includes(stage) || (stage === 'M2' && !['v02', 'v03', 'v05'].includes(tag))) throw new Error('Use M1 or a pinned M2 v02/v03/v05 candidate');
 if (!/^v\d+$/.test(tag)) throw new Error('Use a version tag such as v02');
 const port = Number(option('--port', '4182'));
 if (!Number.isInteger(port) || port < 1024 || port > 65535 || port === 4181) throw new Error('Invalid isolated preview port');
@@ -100,9 +100,16 @@ for (const variant of (stage === 'M2' ? ['proposal'] : ['baseline', 'proposal'])
   const m2Pins = {
     v02: ['2089a4f0b955c2730d167a8ee4258f7939b29f51057d9944678b44b4f2555411', 'a3bd983a582d58875ed024e6815fa891f511b51e72b4d3b835c50692a9a48c51'],
     v03: ['7c0d30428065d0024bb1c4a631a3b54504008edcccab91c75e7367a53fa57752', '5e1cb075b377c3ce3d7656601eef55afdd5d59aeef5be6d3c4b28500f83228d9'],
+    v05: ['4b2f7b8f44e13ef2a23e6d3420f1098147702aba72a365e6a942dec7e7ccc735', 'aaa0c2628810152c165f7e2564c0524394057241ce1f43ec6c94042c5f3ba5e7'],
   };
   if (stage === 'M2' && (sha(bytes) !== m2Pins[tag][0] || sources[manifestPath].sha256 !== m2Pins[tag][1])) throw new Error('M2 exact candidate pin mismatch');
-  candidates[variant] = {manifest, manifestPath, technicalManifest, technicalManifestPath, glbPath, sha256:sha(bytes), bytes:bytes.length};
+  let rawSceneExtras;
+  if (stage === 'M2' && tag === 'v05') {
+    const gltf = JSON.parse(bytes.subarray(20, 20 + bytes.readUInt32LE(12)).toString('utf8'));
+    rawSceneExtras = gltf.scenes?.[gltf.scene]?.extras;
+    if (rawSceneExtras?.fk_tag !== 'm2base-v04' || rawSceneExtras?.fk_m2_tag !== 'v04-pc') throw new Error('Unexpected v05 raw source provenance');
+  }
+  candidates[variant] = {manifest, manifestPath, technicalManifest, technicalManifestPath, glbPath, sha256:sha(bytes), bytes:bytes.length, ...(rawSceneExtras ? {rawSceneExtras} : {})};
   add(`/asset/${variant}.glb`, bytes, 'model/gltf-binary');
   add(`/data/manifest-${variant}.js`,`export default ${JSON.stringify(technicalManifest)};`);
 }

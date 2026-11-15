@@ -1,0 +1,250 @@
+{
+  "scope": "Independent actual-byte restoration/retained-parent review; no visual, forecast or final-budget acceptance.",
+  "hashes": {
+    "parent": "4b2f7b8f44e13ef2a23e6d3420f1098147702aba72a365e6a942dec7e7ccc735",
+    "raw": "71b39b5c242278408092d3ee95ab4e996df47014eb30ef57383b88f3e526fd18",
+    "candidate": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+    "manifest": "060bab9af5dd23b4258e03aef10de21faa7c32aa0a6010cd4e09b35089026405",
+    "receipt": "4db3ed948889218411f3182e36e3a543b1e06661b3edba65267e95c9233dfb5a",
+    "source": "dccfa2885919a84b03ff472cecbf76da35e0cd2a8b32baaca2dc8cb31929a209",
+    "blend": "46c52922f77ca1b78546450b5ef43ec3fdcc2ee6e67082070ccd48b63c25d4cd",
+    "authorMeasurements": "d10621b30ea6f6ceace4c46e03e04ceba7eec8e36b5f58772670f5785b9c654f",
+    "rawAudit": "29995ecaa2404e1a8ece12521de930c984278a78ec1fa9e6241597b1adadb52c",
+    "restorer": "e6c7a3ea4cca8539e6b04f8d65dc50c8b2b00cd5e4e32745febf8bb90d4158a3"
+  },
+  "exactChangedIndividualBytes": [
+    487532,
+    487544,
+    488016,
+    488148
+  ],
+  "wordSlots": [
+    {
+      "vertex": 197,
+      "component": 1,
+      "parentBin": 411436,
+      "rawBin": 411384,
+      "file": 487532,
+      "raw": "dec4203f",
+      "output": "ddc4203f"
+    },
+    {
+      "vertex": 199,
+      "component": 0,
+      "parentBin": 411448,
+      "rawBin": 411396,
+      "file": 487544,
+      "raw": "5d8f72bf",
+      "output": "5b8f72bf"
+    },
+    {
+      "vertex": 258,
+      "component": 0,
+      "parentBin": 411920,
+      "rawBin": 411868,
+      "file": 488016,
+      "raw": "21858b3e",
+      "output": "20858b3e"
+    },
+    {
+      "vertex": 274,
+      "component": 1,
+      "parentBin": 412052,
+      "rawBin": 412000,
+      "file": 488148,
+      "raw": "3789213f",
+      "output": "3689213f"
+    }
+  ],
+  "headerJsonAndEveryOtherRawByteUnchanged": true,
+  "embeddedSceneTags": [
+    {
+      "extras": {
+        "fk_variant": "proposal",
+        "fk_tag": "m3-v02",
+        "fk_profile": "studio-full-kit-v1",
+        "fk_stage": "M3",
+        "fk_m2_tag": "v04-pc",
+        "fk_m3_tag": "v02"
+      },
+      "name": "Scene",
+      "nodes": [
+        115
+      ]
+    }
+  ],
+  "retainedMeshNames": [
+    "acoustic_panels__proxy_panel_1",
+    "acoustic_panels__proxy_panel_2",
+    "acoustic_panels__proxy_panel_3",
+    "arch_beams__beam_1",
+    "arch_beams__beam_2",
+    "arch_beams__beam_3",
+    "arch_beams__beam_4",
+    "arch_blind__head_rail",
+    "arch_blind__slat_1",
+    "arch_blind__slat_2",
+    "arch_blind__slat_3",
+    "arch_blind__slat_4",
+    "arch_blind__slat_5",
+    "arch_blind__slat_6",
+    "arch_blind__slat_7",
+    "arch_blind__slat_8",
+    "arch_blind__slat_9",
+    "arch_cornice__back",
+    "arch_cornice__front",
+    "arch_cornice__left",
+    "arch_cornice__right",
+    "arch_door__architrave",
+    "arch_door__hardware",
+    "arch_door__leaf",
+    "arch_floor__boards",
+    "arch_shell__walls_ceiling",
+    "arch_skirting__back",
+    "arch_skirting__front",
+    "arch_skirting__left",
+    "arch_skirting__right",
+    "arch_switches__proxy_switch_door",
+    "arch_window__foot",
+    "arch_window__head",
+    "arch_window__jamb_a",
+    "arch_window__jamb_b",
+    "arch_window__mullion",
+    "arch_window__sill",
+    "border_copilot",
+    "border_dissertation",
+    "border_typeforge",
+    "contact_decals__desk_gear",
+    "contact_decals__music_corner",
+    "contact_decals__under_desk",
+    "ctl_body__proxy_body",
+    "ctl_keys__proxy_key_bed",
+    "ctl_stand__proxy_leg_1",
+    "ctl_stand__proxy_leg_2",
+    "ctl_sustain_pedal__proxy_pedal",
+    "desk_frame__steel",
+    "desk_mat__felt",
+    "desk_top__top",
+    "display_studio",
+    "drum_cymbals__proxy_cymbal_1",
+    "drum_cymbals__proxy_cymbal_2",
+    "drum_cymbals__proxy_cymbal_3",
+    "drum_hihat_pedal__proxy_pedal",
+    "drum_kick__proxy_tower_pedal",
+    "drum_module__proxy_module",
+    "drum_pads__proxy_pad_1",
+    "drum_pads__proxy_pad_2",
+    "drum_pads__proxy_pad_3",
+    "drum_pads__proxy_pad_4",
+    "drum_rack__proxy_crossbar",
+    "drum_rack__proxy_upright_1",
+    "drum_rack__proxy_upright_2",
+    "drum_sticks__proxy_pair",
+    "drum_throne__proxy_seat",
+    "fix_floor_lamp__base",
+    "fix_floor_lamp__bulb",
+    "fix_floor_lamp__fittings",
+    "fix_floor_lamp__pole",
+    "fix_floor_lamp__shade",
+    "fix_floor_lamp__shade_trim",
+    "fix_pendant__body",
+    "fix_pendant__lens",
+    "fix_wall_triangles__proxy_light_1",
+    "fix_wall_triangles__proxy_light_2",
+    "fix_wall_triangles__proxy_light_3",
+    "fix_wall_triangles__proxy_light_4",
+    "fix_wall_triangles__proxy_light_5",
+    "mon_cables__runs",
+    "mon_central__body",
+    "mon_side__copilot",
+    "mon_side__typeforge",
+    "mon_top__body",
+    "pc_tower__case",
+    "pc_tower__glass",
+    "pc_tower__glow",
+    "rt_window_dusk",
+    "rug__proxy_rug",
+    "shelf_books__proxy_row",
+    "shelf_plant__proxy_plant",
+    "shelf_speaker__proxy_cabinet",
+    "snowboard_bindings__proxy_binding_1",
+    "snowboard_bindings__proxy_binding_2",
+    "snowboard_deck__proxy_deck",
+    "stool_keys__proxy_post",
+    "stool_keys__proxy_seat",
+    "sub_woofer__cabinet",
+    "sub_woofer__grille",
+    "target_copilot",
+    "target_dissertation",
+    "target_typeforge",
+    "under_desk_power__strip_loom",
+    "wall_print__proxy_frame",
+    "wall_shelf__proxy_board"
+  ],
+  "retainedAccessorComparisons": 424,
+  "retainedAccessorDifferences": [],
+  "reviewedGuardFunctionsUnchanged": true,
+  "sourceNoiseRowsT2FrostUnchanged": true,
+  "hierarchyTextureRgbaAndFrostChecks": "passed against actual parent/candidate",
+  "negativeTests": [
+    {
+      "name": "modified authorized raw word rejected by complete hash",
+      "passed": true
+    },
+    {
+      "name": "unrelated raw byte mutation rejected",
+      "passed": true
+    },
+    {
+      "name": "modified parent rejected",
+      "passed": true
+    },
+    {
+      "name": "already corrected candidate rejected as raw",
+      "passed": true
+    },
+    {
+      "name": "duplicate mesh identity rejected",
+      "passed": true
+    },
+    {
+      "name": "duplicate node consumer rejected",
+      "passed": true
+    },
+    {
+      "name": "wrong accessor count rejected",
+      "passed": true
+    },
+    {
+      "name": "unexpected accessor stride rejected",
+      "passed": true
+    },
+    {
+      "name": "wrong view origin rejected",
+      "passed": true
+    },
+    {
+      "name": "wrong offset rejected with exact inputs",
+      "passed": true
+    },
+    {
+      "name": "wrong raw value rejected with exact inputs",
+      "passed": true
+    },
+    {
+      "name": "wrong replacement value rejected with exact inputs",
+      "passed": true
+    },
+    {
+      "name": "existing output refusal before any writes",
+      "passed": true
+    },
+    {
+      "name": "existing receipt refusal before any writes",
+      "passed": true
+    }
+  ],
+  "negativePassed": 14,
+  "isolatedMarkerDirectory": "m3-v03-review-isolated-hhuarwvz",
+  "frozenInputsOutputsAndReceiptsUnchanged": true
+}

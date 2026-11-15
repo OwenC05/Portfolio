@@ -13,10 +13,10 @@ const args = process.argv.slice(2);
 const option = (name, fallback) => args.includes(name) ? args[args.indexOf(name) + 1] : fallback;
 const stage = option('--stage', 'M1');
 const revision = option('--revision', undefined);
-if (args.includes('--revision') && (!revision || revision.startsWith('--'))) throw new Error('Missing M2 revision');
-if (revision !== undefined && (stage !== 'M2' || args.includes('--tag'))) throw new Error('Use --revision only for M2 and do not combine it with --tag');
+if (args.includes('--revision') && (!revision || revision.startsWith('--'))) throw new Error('Missing revision');
+if (revision !== undefined && (!['M2', 'M3'].includes(stage) || args.includes('--tag'))) throw new Error('Use --revision only for M2/M3 and do not combine it with --tag');
 const tag = revision ?? option('--tag', 'v02');
-if (!['M1', 'M2'].includes(stage) || (stage === 'M2' && !['v02', 'v03', 'v05'].includes(tag))) throw new Error('Use M1 or a pinned M2 v02/v03/v05 candidate');
+if (!['M1', 'M2', 'M3'].includes(stage) || (stage === 'M2' && !['v02', 'v03', 'v05'].includes(tag)) || (stage === 'M3' && tag !== 'v03')) throw new Error('Use M1, a pinned M2 v02/v03/v05 candidate, or M3 v03');
 if (!/^v\d+$/.test(tag)) throw new Error('Use a version tag such as v02');
 const port = Number(option('--port', '4182'));
 if (!Number.isInteger(port) || port < 1024 || port > 65535 || port === 4181) throw new Error('Invalid isolated preview port');
@@ -72,7 +72,7 @@ for (const [relative,url] of modulePaths) {
     'components/studio/scene/load-full-kit.ts':'37549d60af2eb7f5e1feaf0914fd0da496ec38441ebe088ce445d2914b5ad68f',
     [`${base}/technical/profile-core.mjs`]:'02b65feddb651f41a4a9d5eab4f55e41ae15c321d850a26fba00b3a92889ae71',
   };
-  if (stage === 'M2' && requiredHashes[relative] && sources[relative].sha256 !== requiredHashes[relative]) throw new Error(`M2 reviewed source changed: ${relative}`);
+  if (stage !== 'M1' && requiredHashes[relative] && sources[relative].sha256 !== requiredHashes[relative]) throw new Error(`M2 reviewed source changed: ${relative}`);
   if(relative.endsWith('/build-full-studio.ts') && sources[relative].sha256 !== '5a4e8296e04d66cfeaedf59bedee8c633b378c84126de52b78eaabe421c0f02f') throw new Error('Authored full builder changed; root must review new snapshot');
   if(relative.endsWith('/bind-full-kit.ts') && sources[relative].sha256 !== '0ee8bbe6e0fb83ab4bf219343655c4260a8f5193f5624dc69fb802634a2294eb') throw new Error('Reviewed binder changed; root must review new snapshot');
   if(relative.endsWith('/load-full-kit.ts')) {
@@ -87,12 +87,12 @@ for(const [name,file] of [['profile','full-kit-profile-v1.json'],['inventory','a
   add(`/data/${name}.js`,`export default ${JSON.stringify(JSON.parse(read(`${base}/${file}`)))};`);
 }
 const candidates = {};
-for (const variant of (stage === 'M2' ? ['proposal'] : ['baseline', 'proposal'])) {
+for (const variant of (stage !== 'M1' ? ['proposal'] : ['baseline', 'proposal'])) {
   const stem = `studio-full-kit-${stage.toLowerCase()}-${variant}-${tag}`;
   const manifestPath = `${base}/manifests/${stem}.manifest.json`;
   const manifest = JSON.parse(read(manifestPath));
-  const technicalManifestPath = stage === 'M2' ? manifestPath : `${base}/technical/evidence/m1-${variant}-${tag}.manifest.json`;
-  const technicalManifest = stage === 'M2' ? manifest : JSON.parse(read(technicalManifestPath));
+  const technicalManifestPath = stage !== 'M1' ? manifestPath : `${base}/technical/evidence/m1-${variant}-${tag}.manifest.json`;
+  const technicalManifest = stage !== 'M1' ? manifest : JSON.parse(read(technicalManifestPath));
   const glbPath = `${base}/exports/${stem}.glb`;
   const bytes = read(glbPath);
   if (manifest.variant !== variant || manifest.stage !== stage || manifest.profileId !== 'studio-full-kit-v1' || sha(bytes) !== manifest.glbSha256.toLowerCase()) throw new Error(`Candidate provenance mismatch: ${variant}`);
@@ -103,17 +103,23 @@ for (const variant of (stage === 'M2' ? ['proposal'] : ['baseline', 'proposal'])
     v05: ['4b2f7b8f44e13ef2a23e6d3420f1098147702aba72a365e6a942dec7e7ccc735', 'aaa0c2628810152c165f7e2564c0524394057241ce1f43ec6c94042c5f3ba5e7'],
   };
   if (stage === 'M2' && (sha(bytes) !== m2Pins[tag][0] || sources[manifestPath].sha256 !== m2Pins[tag][1])) throw new Error('M2 exact candidate pin mismatch');
+  if (stage === 'M3' && (sha(bytes) !== 'dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf' || sources[manifestPath].sha256 !== '060bab9af5dd23b4258e03aef10de21faa7c32aa0a6010cd4e09b35089026405')) throw new Error('M3 exact candidate pin mismatch');
   let rawSceneExtras;
   if (stage === 'M2' && tag === 'v05') {
     const gltf = JSON.parse(bytes.subarray(20, 20 + bytes.readUInt32LE(12)).toString('utf8'));
     rawSceneExtras = gltf.scenes?.[gltf.scene]?.extras;
     if (rawSceneExtras?.fk_tag !== 'm2base-v04' || rawSceneExtras?.fk_m2_tag !== 'v04-pc') throw new Error('Unexpected v05 raw source provenance');
   }
+  if (stage === 'M3') {
+    const gltf = JSON.parse(bytes.subarray(20, 20 + bytes.readUInt32LE(12)).toString('utf8'));
+    rawSceneExtras = gltf.scenes?.[gltf.scene]?.extras;
+    if (rawSceneExtras?.fk_tag !== 'm3-v02' || rawSceneExtras?.fk_m3_tag !== 'v02') throw new Error('Unexpected M3 raw source provenance');
+  }
   candidates[variant] = {manifest, manifestPath, technicalManifest, technicalManifestPath, glbPath, sha256:sha(bytes), bytes:bytes.length, ...(rawSceneExtras ? {rawSceneExtras} : {})};
   add(`/asset/${variant}.glb`, bytes, 'model/gltf-binary');
   add(`/data/manifest-${variant}.js`,`export default ${JSON.stringify(technicalManifest)};`);
 }
-if (stage === 'M2') add('/data/candidate-manifest.js', "import proposal from '/data/manifest-proposal.js'; if(new URLSearchParams(location.search).get('variant')!=='proposal')throw new Error('M2 requires proposal'); export default proposal;");
+if (stage !== 'M1') add('/data/candidate-manifest.js', "import proposal from '/data/manifest-proposal.js'; if(new URLSearchParams(location.search).get('variant')!=='proposal')throw new Error('Staged candidate requires proposal'); export default proposal;");
 else add('/data/candidate-manifest.js',"import baseline from '/data/manifest-baseline.js'; import proposal from '/data/manifest-proposal.js'; const variant=new URLSearchParams(location.search).get('variant') ?? 'baseline'; if(!['baseline','proposal'].includes(variant))throw new Error('Invalid candidate variant'); export default variant==='proposal'?proposal:baseline;");
 read('design/studio-v2/asset-pipeline/full-kit/full-kit-profile-v1.json');
 read('design/studio-v2/scene-coordination/full-kit-contract.md');
@@ -123,7 +129,7 @@ read('.omx/context/full-kit-m1-preview/server.mjs');
 const threePackage = JSON.parse(read('node_modules/three/package.json'));
 if (threePackage.version !== '0.187.0') throw new Error('Expected installed Three 0.187.0');
 add('/preview.js', client);
-if (stage === 'M2') {
+if (stage !== 'M1') {
   const validator = `${base}/technical/validate-full-kit.mjs`;
   read(validator);
   if (sources[validator].sha256 !== '66ee9d342cbded31994e6e8655e385c5b7945916b5ec68ad3404af9beda8bd75') throw new Error('M2 reviewed validator changed');
@@ -166,7 +172,7 @@ if (check) {
       response.end(entry.body);
     } catch (error) {response.writeHead(400,{'Content-Type':'text/plain'});response.end(String(error));}
   });
-  server.listen(port,'127.0.0.1',()=>console.log(JSON.stringify({url:`http://127.0.0.1:${port}/?variant=${stage === 'M2' ? 'proposal' : 'baseline'}`,tag,revision:tag,stage,pid:process.pid,scope:provenance.scope})));
+  server.listen(port,'127.0.0.1',()=>console.log(JSON.stringify({url:`http://127.0.0.1:${port}/?variant=${stage !== 'M1' ? 'proposal' : 'baseline'}`,tag,revision:tag,stage,pid:process.pid,scope:provenance.scope})));
   process.on('SIGTERM',()=>server.close());
   process.on('SIGINT',()=>server.close());
 }

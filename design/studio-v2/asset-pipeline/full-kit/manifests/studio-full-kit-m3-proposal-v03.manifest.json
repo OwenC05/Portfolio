@@ -1,0 +1,4510 @@
+{
+  "profileId": "studio-full-kit-v1",
+  "variant": "proposal",
+  "stage": "M3",
+  "glbSha256": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+  "artInventorySha256": "eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87",
+  "boundsGltfMetres": {
+    "min": [
+      -2.250000089406967,
+      -0.02000001072883606,
+      -1.0600000619888306
+    ],
+    "max": [
+      2.550000101327896,
+      2.5950000565499067,
+      3.3000000715255737
+    ]
+  },
+  "nodes": [
+    {
+      "index": 0,
+      "name": "acoustic_panels__proxy_panel_1",
+      "parent": "studio_full_kit",
+      "meshIndex": 0,
+      "materialIndex": 0,
+      "renderOrder": null,
+      "transform": [
+        0.4350000023841858,
+        0,
+        0,
+        0,
+        0,
+        0.8899999856948853,
+        0,
+        0,
+        0,
+        0,
+        0.04500000178813934,
+        0,
+        0.8999999761581421,
+        1.3700000047683716,
+        -1.034999966621399,
+        1
+      ],
+      "extras": {
+        "assetId": "acoustic_panels",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 1,
+      "name": "acoustic_panels__proxy_panel_2",
+      "parent": "studio_full_kit",
+      "meshIndex": 0,
+      "materialIndex": 0,
+      "renderOrder": null,
+      "transform": [
+        0.4350000023841858,
+        0,
+        0,
+        0,
+        0,
+        0.8899999856948853,
+        0,
+        0,
+        0,
+        0,
+        0.04500000178813934,
+        0,
+        1.4600000381469727,
+        1.3700000047683716,
+        -1.034999966621399,
+        1
+      ],
+      "extras": {
+        "assetId": "acoustic_panels",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 2,
+      "name": "acoustic_panels__proxy_panel_3",
+      "parent": "studio_full_kit",
+      "meshIndex": 0,
+      "materialIndex": 0,
+      "renderOrder": null,
+      "transform": [
+        0.4350000023841858,
+        0,
+        0,
+        0,
+        0,
+        0.8899999856948853,
+        0,
+        0,
+        0,
+        0,
+        0.04500000178813934,
+        0,
+        2.0199999809265137,
+        1.3700000047683716,
+        -1.034999966621399,
+        1
+      ],
+      "extras": {
+        "assetId": "acoustic_panels",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 3,
+      "name": "arch_beams__beam_1",
+      "parent": "studio_full_kit",
+      "meshIndex": 1,
+      "materialIndex": 1,
+      "renderOrder": null,
+      "transform": [
+        4.800000190734863,
+        0,
+        0,
+        0,
+        0,
+        0.10999999940395355,
+        0,
+        0,
+        0,
+        0,
+        0.11999999731779099,
+        0,
+        0.15000000596046448,
+        2.5399999618530273,
+        -0.44999998807907104,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_beams",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 4,
+      "name": "arch_beams__beam_2",
+      "parent": "studio_full_kit",
+      "meshIndex": 1,
+      "materialIndex": 1,
+      "renderOrder": null,
+      "transform": [
+        4.800000190734863,
+        0,
+        0,
+        0,
+        0,
+        0.10999999940395355,
+        0,
+        0,
+        0,
+        0,
+        0.11999999731779099,
+        0,
+        0.15000000596046448,
+        2.5399999618530273,
+        0.550000011920929,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_beams",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 5,
+      "name": "arch_beams__beam_3",
+      "parent": "studio_full_kit",
+      "meshIndex": 1,
+      "materialIndex": 1,
+      "renderOrder": null,
+      "transform": [
+        4.800000190734863,
+        0,
+        0,
+        0,
+        0,
+        0.10999999940395355,
+        0,
+        0,
+        0,
+        0,
+        0.11999999731779099,
+        0,
+        0.15000000596046448,
+        2.5399999618530273,
+        1.5499999523162842,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_beams",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 6,
+      "name": "arch_beams__beam_4",
+      "parent": "studio_full_kit",
+      "meshIndex": 1,
+      "materialIndex": 1,
+      "renderOrder": null,
+      "transform": [
+        4.800000190734863,
+        0,
+        0,
+        0,
+        0,
+        0.10999999940395355,
+        0,
+        0,
+        0,
+        0,
+        0.11999999731779099,
+        0,
+        0.15000000596046448,
+        2.5399999618530273,
+        2.549999952316284,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_beams",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 7,
+      "name": "arch_blind__head_rail",
+      "parent": "studio_full_kit",
+      "meshIndex": 2,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.04500000178813934,
+        0,
+        0,
+        0,
+        0,
+        0.03500000014901161,
+        0,
+        0,
+        0,
+        0,
+        1.0099999904632568,
+        0,
+        2.509999990463257,
+        1.9249999523162842,
+        0.75,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_blind",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 8,
+      "name": "arch_blind__slat_1",
+      "parent": "studio_full_kit",
+      "meshIndex": 2,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.03500000014901161,
+        0,
+        0,
+        0,
+        0,
+        0.006000000052154064,
+        0,
+        0,
+        0,
+        0,
+        0.9900000095367432,
+        0,
+        2.512500047683716,
+        1.8799999952316284,
+        0.75,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_blind",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 9,
+      "name": "arch_blind__slat_2",
+      "parent": "studio_full_kit",
+      "meshIndex": 2,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.03500000014901161,
+        0,
+        0,
+        0,
+        0,
+        0.006000000052154064,
+        0,
+        0,
+        0,
+        0,
+        0.9900000095367432,
+        0,
+        2.512500047683716,
+        1.837499976158142,
+        0.75,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_blind",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 10,
+      "name": "arch_blind__slat_3",
+      "parent": "studio_full_kit",
+      "meshIndex": 2,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.03500000014901161,
+        0,
+        0,
+        0,
+        0,
+        0.006000000052154064,
+        0,
+        0,
+        0,
+        0,
+        0.9900000095367432,
+        0,
+        2.512500047683716,
+        1.7949999570846558,
+        0.75,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_blind",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 11,
+      "name": "arch_blind__slat_4",
+      "parent": "studio_full_kit",
+      "meshIndex": 2,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.03500000014901161,
+        0,
+        0,
+        0,
+        0,
+        0.006000000052154064,
+        0,
+        0,
+        0,
+        0,
+        0.9900000095367432,
+        0,
+        2.512500047683716,
+        1.752500057220459,
+        0.75,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_blind",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 12,
+      "name": "arch_blind__slat_5",
+      "parent": "studio_full_kit",
+      "meshIndex": 2,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.03500000014901161,
+        0,
+        0,
+        0,
+        0,
+        0.006000000052154064,
+        0,
+        0,
+        0,
+        0,
+        0.9900000095367432,
+        0,
+        2.512500047683716,
+        1.7100000381469727,
+        0.75,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_blind",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 13,
+      "name": "arch_blind__slat_6",
+      "parent": "studio_full_kit",
+      "meshIndex": 2,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.03500000014901161,
+        0,
+        0,
+        0,
+        0,
+        0.006000000052154064,
+        0,
+        0,
+        0,
+        0,
+        0.9900000095367432,
+        0,
+        2.512500047683716,
+        1.6675000190734863,
+        0.75,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_blind",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 14,
+      "name": "arch_blind__slat_7",
+      "parent": "studio_full_kit",
+      "meshIndex": 2,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.03500000014901161,
+        0,
+        0,
+        0,
+        0,
+        0.006000000052154064,
+        0,
+        0,
+        0,
+        0,
+        0.9900000095367432,
+        0,
+        2.512500047683716,
+        1.625,
+        0.75,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_blind",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 15,
+      "name": "arch_blind__slat_8",
+      "parent": "studio_full_kit",
+      "meshIndex": 2,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.03500000014901161,
+        0,
+        0,
+        0,
+        0,
+        0.006000000052154064,
+        0,
+        0,
+        0,
+        0,
+        0.9900000095367432,
+        0,
+        2.512500047683716,
+        1.5824999809265137,
+        0.75,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_blind",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 16,
+      "name": "arch_blind__slat_9",
+      "parent": "studio_full_kit",
+      "meshIndex": 2,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.03500000014901161,
+        0,
+        0,
+        0,
+        0,
+        0.006000000052154064,
+        0,
+        0,
+        0,
+        0,
+        0.9900000095367432,
+        0,
+        2.512500047683716,
+        1.5399999618530273,
+        0.75,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_blind",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 17,
+      "name": "arch_cornice__back",
+      "parent": "studio_full_kit",
+      "meshIndex": 3,
+      "materialIndex": 3,
+      "renderOrder": null,
+      "transform": [
+        4.800000190734863,
+        0,
+        0,
+        0,
+        0,
+        0.05999999865889549,
+        0,
+        0,
+        0,
+        0,
+        0.03999999910593033,
+        0,
+        0.15000000596046448,
+        2.565000057220459,
+        -1.0399999618530273,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_cornice",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 18,
+      "name": "arch_cornice__front",
+      "parent": "studio_full_kit",
+      "meshIndex": 3,
+      "materialIndex": 3,
+      "renderOrder": null,
+      "transform": [
+        4.800000190734863,
+        0,
+        0,
+        0,
+        0,
+        0.05999999865889549,
+        0,
+        0,
+        0,
+        0,
+        0.03999999910593033,
+        0,
+        0.15000000596046448,
+        2.565000057220459,
+        3.2799999713897705,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_cornice",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 19,
+      "name": "arch_cornice__left",
+      "parent": "studio_full_kit",
+      "meshIndex": 3,
+      "materialIndex": 3,
+      "renderOrder": null,
+      "transform": [
+        0.03999999910593033,
+        0,
+        0,
+        0,
+        0,
+        0.05999999865889549,
+        0,
+        0,
+        0,
+        0,
+        4.360000133514404,
+        0,
+        -2.2300000190734863,
+        2.565000057220459,
+        1.1200000047683716,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_cornice",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 20,
+      "name": "arch_cornice__right",
+      "parent": "studio_full_kit",
+      "meshIndex": 3,
+      "materialIndex": 3,
+      "renderOrder": null,
+      "transform": [
+        0.03999999910593033,
+        0,
+        0,
+        0,
+        0,
+        0.05999999865889549,
+        0,
+        0,
+        0,
+        0,
+        4.360000133514404,
+        0,
+        2.5299999713897705,
+        2.565000057220459,
+        1.1200000047683716,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_cornice",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 21,
+      "name": "arch_door__architrave",
+      "parent": "studio_full_kit",
+      "meshIndex": 4,
+      "materialIndex": 1,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_door",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 22,
+      "name": "arch_door__hardware",
+      "parent": "studio_full_kit",
+      "meshIndex": 5,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_door",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 23,
+      "name": "arch_door__leaf",
+      "parent": "studio_full_kit",
+      "meshIndex": 6,
+      "materialIndex": 4,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_door",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 24,
+      "name": "arch_floor__boards",
+      "parent": "studio_full_kit",
+      "meshIndex": 7,
+      "materialIndex": 5,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_floor",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 25,
+      "name": "arch_shell__walls_ceiling",
+      "parent": "studio_full_kit",
+      "meshIndex": 8,
+      "materialIndex": 3,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_shell",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 26,
+      "name": "arch_skirting__back",
+      "parent": "studio_full_kit",
+      "meshIndex": 1,
+      "materialIndex": 1,
+      "renderOrder": null,
+      "transform": [
+        4.800000190734863,
+        0,
+        0,
+        0,
+        0,
+        0.10999999940395355,
+        0,
+        0,
+        0,
+        0,
+        0.02500000037252903,
+        0,
+        0.15000000596046448,
+        0.054999999701976776,
+        -1.0475000143051147,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_skirting",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 27,
+      "name": "arch_skirting__front",
+      "parent": "studio_full_kit",
+      "meshIndex": 1,
+      "materialIndex": 1,
+      "renderOrder": null,
+      "transform": [
+        4.800000190734863,
+        0,
+        0,
+        0,
+        0,
+        0.10999999940395355,
+        0,
+        0,
+        0,
+        0,
+        0.02500000037252903,
+        0,
+        0.15000000596046448,
+        0.054999999701976776,
+        3.2874999046325684,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_skirting",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 28,
+      "name": "arch_skirting__left",
+      "parent": "studio_full_kit",
+      "meshIndex": 1,
+      "materialIndex": 1,
+      "renderOrder": null,
+      "transform": [
+        0.02500000037252903,
+        0,
+        0,
+        0,
+        0,
+        0.10999999940395355,
+        0,
+        0,
+        0,
+        0,
+        4.360000133514404,
+        0,
+        -2.237499952316284,
+        0.054999999701976776,
+        1.1200000047683716,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_skirting",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 29,
+      "name": "arch_skirting__right",
+      "parent": "studio_full_kit",
+      "meshIndex": 1,
+      "materialIndex": 1,
+      "renderOrder": null,
+      "transform": [
+        0.02500000037252903,
+        0,
+        0,
+        0,
+        0,
+        0.10999999940395355,
+        0,
+        0,
+        0,
+        0,
+        4.360000133514404,
+        0,
+        2.5374999046325684,
+        0.054999999701976776,
+        1.1200000047683716,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_skirting",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 30,
+      "name": "arch_switches__proxy_switch_door",
+      "parent": "studio_full_kit",
+      "meshIndex": 2,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.014999999664723873,
+        0,
+        0,
+        0,
+        0,
+        0.08500000089406967,
+        0,
+        0,
+        0,
+        0,
+        0.08500000089406967,
+        0,
+        2.5425000190734863,
+        1.1950000524520874,
+        1.375,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_switches",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 31,
+      "name": "arch_window__foot",
+      "parent": "studio_full_kit",
+      "meshIndex": 1,
+      "materialIndex": 1,
+      "renderOrder": null,
+      "transform": [
+        0.05000000074505806,
+        0,
+        0,
+        0,
+        0,
+        0.04500000178813934,
+        0,
+        0,
+        0,
+        0,
+        1.0850000381469727,
+        0,
+        2.5250000953674316,
+        0.925000011920929,
+        0.75,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_window",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 32,
+      "name": "arch_window__head",
+      "parent": "studio_full_kit",
+      "meshIndex": 1,
+      "materialIndex": 1,
+      "renderOrder": null,
+      "transform": [
+        0.05000000074505806,
+        0,
+        0,
+        0,
+        0,
+        0.04500000178813934,
+        0,
+        0,
+        0,
+        0,
+        1.0850000381469727,
+        0,
+        2.5250000953674316,
+        1.965000033378601,
+        0.75,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_window",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 33,
+      "name": "arch_window__jamb_a",
+      "parent": "studio_full_kit",
+      "meshIndex": 1,
+      "materialIndex": 1,
+      "renderOrder": null,
+      "transform": [
+        0.05000000074505806,
+        0,
+        0,
+        0,
+        0,
+        1.0850000381469727,
+        0,
+        0,
+        0,
+        0,
+        0.04500000178813934,
+        0,
+        2.5250000953674316,
+        1.4450000524520874,
+        0.23000000417232513,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_window",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 34,
+      "name": "arch_window__jamb_b",
+      "parent": "studio_full_kit",
+      "meshIndex": 1,
+      "materialIndex": 1,
+      "renderOrder": null,
+      "transform": [
+        0.05000000074505806,
+        0,
+        0,
+        0,
+        0,
+        1.0850000381469727,
+        0,
+        0,
+        0,
+        0,
+        0.04500000178813934,
+        0,
+        2.5250000953674316,
+        1.4450000524520874,
+        1.2699999809265137,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_window",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 35,
+      "name": "arch_window__mullion",
+      "parent": "studio_full_kit",
+      "meshIndex": 1,
+      "materialIndex": 1,
+      "renderOrder": null,
+      "transform": [
+        0.02500000037252903,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0.02500000037252903,
+        0,
+        2.5325000286102295,
+        1.4450000524520874,
+        0.75,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_window",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 36,
+      "name": "arch_window__sill",
+      "parent": "studio_full_kit",
+      "meshIndex": 1,
+      "materialIndex": 1,
+      "renderOrder": null,
+      "transform": [
+        0.11999999731779099,
+        0,
+        0,
+        0,
+        0,
+        0.02500000037252903,
+        0,
+        0,
+        0,
+        0,
+        1.149999976158142,
+        0,
+        2.490000009536743,
+        0.8899999856948853,
+        0.75,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_window",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 37,
+      "name": "border_copilot",
+      "parent": "studio_full_kit",
+      "meshIndex": 9,
+      "materialIndex": 6,
+      "renderOrder": null,
+      "transform": [
+        0.9553364829670272,
+        0,
+        -0.29552022794274535,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.29552022794274535,
+        0,
+        0.9553364829670272,
+        0,
+        -1.5482029914855957,
+        1.1649999618530273,
+        -0.04302725940942764,
+        1
+      ],
+      "extras": {
+        "assetId": "target_borders",
+        "role": "border",
+        "occluder": false,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": false
+      }
+    },
+    {
+      "index": 38,
+      "name": "border_dissertation",
+      "parent": "studio_full_kit",
+      "meshIndex": 10,
+      "materialIndex": 6,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.8050000071525574,
+        1.1349999904632568,
+        -0.1720000058412552,
+        1
+      ],
+      "extras": {
+        "assetId": "target_borders",
+        "role": "border",
+        "occluder": false,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": false
+      }
+    },
+    {
+      "index": 39,
+      "name": "border_typeforge",
+      "parent": "studio_full_kit",
+      "meshIndex": 11,
+      "materialIndex": 6,
+      "renderOrder": null,
+      "transform": [
+        0.9553364829670272,
+        0,
+        0.29552022794274535,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.29552022794274535,
+        0,
+        0.9553364829670272,
+        0,
+        -0.06179696321487427,
+        1.1649999618530273,
+        -0.04302725940942764,
+        1
+      ],
+      "extras": {
+        "assetId": "target_borders",
+        "role": "border",
+        "occluder": false,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": false
+      }
+    },
+    {
+      "index": 40,
+      "name": "contact_decals__desk_gear",
+      "parent": "studio_full_kit",
+      "meshIndex": 12,
+      "materialIndex": 7,
+      "renderOrder": 1,
+      "transform": [
+        1.2000000476837158,
+        0,
+        0,
+        0,
+        0,
+        0.0010000000474974513,
+        0,
+        0,
+        0,
+        0,
+        0.5,
+        0,
+        -0.75,
+        0.7360000014305115,
+        0.30000001192092896,
+        1
+      ],
+      "extras": {
+        "assetId": "contact_decals",
+        "role": "transparent",
+        "occluder": false,
+        "transparent": true,
+        "nocast": true,
+        "receiveShadow": false
+      }
+    },
+    {
+      "index": 41,
+      "name": "contact_decals__music_corner",
+      "parent": "studio_full_kit",
+      "meshIndex": 12,
+      "materialIndex": 7,
+      "renderOrder": 1,
+      "transform": [
+        1.7000000476837158,
+        0,
+        0,
+        0,
+        0,
+        0.0010000000474974513,
+        0,
+        0,
+        0,
+        0,
+        1.7999999523162842,
+        0,
+        1.375,
+        0.020999999716877937,
+        0.10000000149011612,
+        1
+      ],
+      "extras": {
+        "assetId": "contact_decals",
+        "role": "transparent",
+        "occluder": false,
+        "transparent": true,
+        "nocast": true,
+        "receiveShadow": false
+      }
+    },
+    {
+      "index": 42,
+      "name": "contact_decals__under_desk",
+      "parent": "studio_full_kit",
+      "meshIndex": 12,
+      "materialIndex": 7,
+      "renderOrder": 1,
+      "transform": [
+        2.299999952316284,
+        0,
+        0,
+        0,
+        0,
+        0.0010000000474974513,
+        0,
+        0,
+        0,
+        0,
+        0.800000011920929,
+        0,
+        -0.6000000238418579,
+        0.0020000000949949026,
+        0.15000000596046448,
+        1
+      ],
+      "extras": {
+        "assetId": "contact_decals",
+        "role": "transparent",
+        "occluder": false,
+        "transparent": true,
+        "nocast": true,
+        "receiveShadow": false
+      }
+    },
+    {
+      "index": 43,
+      "name": "ctl_body__proxy_body",
+      "parent": "studio_full_kit",
+      "meshIndex": 13,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.9299790540286325,
+        0,
+        0.33946884678954203,
+        0,
+        0,
+        0.0949999988079071,
+        0,
+        0,
+        -0.1097272938968542,
+        0,
+        0.30059926247836727,
+        0,
+        1,
+        0.6200000047683716,
+        0.675000011920929,
+        1
+      ],
+      "extras": {
+        "assetId": "ctl_body",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 44,
+      "name": "ctl_keys__proxy_key_bed",
+      "parent": "studio_full_kit",
+      "meshIndex": 14,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.8172542025898601,
+        0,
+        0.29832109367883924,
+        0,
+        0,
+        0.019999999552965164,
+        0,
+        0,
+        -0.0617216119316471,
+        0,
+        0.16908709377441203,
+        0,
+        0.9828550815582275,
+        0.675000011920929,
+        0.7219686508178711,
+        1
+      ],
+      "extras": {
+        "assetId": "ctl_keys",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 45,
+      "name": "ctl_stand__proxy_leg_1",
+      "parent": "studio_full_kit",
+      "meshIndex": 15,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.03757490780979591,
+        0,
+        0.013715911737106776,
+        0,
+        0,
+        0.6000000238418579,
+        0,
+        0,
+        -0.10286934441527007,
+        0,
+        0.2818118260706497,
+        0,
+        0.671219527721405,
+        0.2800000011920929,
+        0.554985761642456,
+        1
+      ],
+      "extras": {
+        "assetId": "ctl_stand",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 46,
+      "name": "ctl_stand__proxy_leg_2",
+      "parent": "studio_full_kit",
+      "meshIndex": 15,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.03757490780979591,
+        0,
+        0.013715911737106776,
+        0,
+        0,
+        0.6000000238418579,
+        0,
+        0,
+        -0.10286934441527007,
+        0,
+        0.2818118260706497,
+        0,
+        1.3287804126739502,
+        0.2800000011920929,
+        0.7950142621994019,
+        1
+      ],
+      "extras": {
+        "assetId": "ctl_stand",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 47,
+      "name": "ctl_sustain_pedal__proxy_pedal",
+      "parent": "studio_full_kit",
+      "meshIndex": 15,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.09393727302392585,
+        0,
+        0.03428978062016079,
+        0,
+        0,
+        0.03999999910593033,
+        0,
+        0,
+        -0.08915342501380019,
+        0,
+        0.24423689726423736,
+        0,
+        0.9996403455734253,
+        0.02500000037252903,
+        0.9676172733306885,
+        1
+      ],
+      "extras": {
+        "assetId": "ctl_sustain_pedal",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 48,
+      "name": "desk_frame__steel",
+      "parent": "studio_full_kit",
+      "meshIndex": 16,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "desk_frame",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 49,
+      "name": "desk_mat__felt",
+      "parent": "studio_full_kit",
+      "meshIndex": 17,
+      "materialIndex": 0,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "desk_mat",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 50,
+      "name": "desk_top__top",
+      "parent": "studio_full_kit",
+      "meshIndex": 18,
+      "materialIndex": 4,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "desk_top",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 51,
+      "name": "display_studio",
+      "parent": "studio_full_kit",
+      "meshIndex": 19,
+      "materialIndex": 6,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.8050000071525574,
+        1.7050000429153442,
+        -0.2930000126361847,
+        1
+      ],
+      "extras": {
+        "assetId": "display_studio",
+        "role": "decorative-screen",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": false
+      }
+    },
+    {
+      "index": 52,
+      "name": "drum_cymbals__proxy_cymbal_1",
+      "parent": "studio_full_kit",
+      "meshIndex": 20,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.4000000059604645,
+        0,
+        0,
+        0,
+        0,
+        0.014999999664723873,
+        0,
+        0,
+        0,
+        0,
+        0.4000000059604645,
+        0,
+        0.8700000047683716,
+        1.0199999809265137,
+        -0.6499999761581421,
+        1
+      ],
+      "extras": {
+        "assetId": "drum_cymbals",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 53,
+      "name": "drum_cymbals__proxy_cymbal_2",
+      "parent": "studio_full_kit",
+      "meshIndex": 20,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.4399999976158142,
+        0,
+        0,
+        0,
+        0,
+        0.014999999664723873,
+        0,
+        0,
+        0,
+        0,
+        0.4399999976158142,
+        0,
+        1.6799999475479126,
+        1.059999942779541,
+        -0.6700000166893005,
+        1
+      ],
+      "extras": {
+        "assetId": "drum_cymbals",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 54,
+      "name": "drum_cymbals__proxy_cymbal_3",
+      "parent": "studio_full_kit",
+      "meshIndex": 20,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.3700000047683716,
+        0,
+        0,
+        0,
+        0,
+        0.014999999664723873,
+        0,
+        0,
+        0,
+        0,
+        0.3700000047683716,
+        0,
+        1.9800000190734863,
+        0.9350000023841858,
+        -0.4449999928474426,
+        1
+      ],
+      "extras": {
+        "assetId": "drum_cymbals",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 55,
+      "name": "drum_hihat_pedal__proxy_pedal",
+      "parent": "studio_full_kit",
+      "meshIndex": 15,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.12999999523162842,
+        0,
+        0,
+        0,
+        0,
+        0.03999999910593033,
+        0,
+        0,
+        0,
+        0,
+        0.33000001311302185,
+        0,
+        0.875,
+        0.02500000037252903,
+        -0.1850000023841858,
+        1
+      ],
+      "extras": {
+        "assetId": "drum_hihat_pedal",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 56,
+      "name": "drum_kick__proxy_tower_pedal",
+      "parent": "studio_full_kit",
+      "meshIndex": 15,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.2199999988079071,
+        0,
+        0,
+        0,
+        0,
+        0.30000001192092896,
+        0,
+        0,
+        0,
+        0,
+        0.22499999403953552,
+        0,
+        1.4149999618530273,
+        0.17499999701976776,
+        -0.25999999046325684,
+        1
+      ],
+      "extras": {
+        "assetId": "drum_kick",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 57,
+      "name": "drum_module__proxy_module",
+      "parent": "studio_full_kit",
+      "meshIndex": 15,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.11999999731779099,
+        0,
+        0,
+        0,
+        0,
+        0.03500000014901161,
+        0,
+        0,
+        0,
+        0,
+        0.1599999964237213,
+        0,
+        0.7549999952316284,
+        0.7149999737739563,
+        -0.4099999964237213,
+        1
+      ],
+      "extras": {
+        "assetId": "drum_module",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 58,
+      "name": "drum_pads__proxy_pad_1",
+      "parent": "studio_full_kit",
+      "meshIndex": 21,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.28999999165534973,
+        0,
+        0,
+        0,
+        0,
+        0.05000000074505806,
+        0,
+        0,
+        0,
+        0,
+        0.28999999165534973,
+        0,
+        1.1200000047683716,
+        0.7950000166893005,
+        -0.5600000023841858,
+        1
+      ],
+      "extras": {
+        "assetId": "drum_pads",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 59,
+      "name": "drum_pads__proxy_pad_2",
+      "parent": "studio_full_kit",
+      "meshIndex": 21,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.30000001192092896,
+        0,
+        0,
+        0,
+        0,
+        0.05000000074505806,
+        0,
+        0,
+        0,
+        0,
+        0.30000001192092896,
+        0,
+        1.5199999809265137,
+        0.8100000023841858,
+        -0.5600000023841858,
+        1
+      ],
+      "extras": {
+        "assetId": "drum_pads",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 60,
+      "name": "drum_pads__proxy_pad_3",
+      "parent": "studio_full_kit",
+      "meshIndex": 21,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.3400000035762787,
+        0,
+        0,
+        0,
+        0,
+        0.05000000074505806,
+        0,
+        0,
+        0,
+        0,
+        0.3400000035762787,
+        0,
+        1.0499999523162842,
+        0.5450000166893005,
+        -0.23000000417232513,
+        1
+      ],
+      "extras": {
+        "assetId": "drum_pads",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 61,
+      "name": "drum_pads__proxy_pad_4",
+      "parent": "studio_full_kit",
+      "meshIndex": 21,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.3400000035762787,
+        0,
+        0,
+        0,
+        0,
+        0.05000000074505806,
+        0,
+        0,
+        0,
+        0,
+        0.3400000035762787,
+        0,
+        1.8200000524520874,
+        0.574999988079071,
+        -0.26499998569488525,
+        1
+      ],
+      "extras": {
+        "assetId": "drum_pads",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 62,
+      "name": "drum_rack__proxy_crossbar",
+      "parent": "studio_full_kit",
+      "meshIndex": 22,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        1.2000000476837158,
+        0,
+        0,
+        0,
+        0,
+        0.03500000014901161,
+        0,
+        0,
+        0,
+        0,
+        0.03500000014901161,
+        0,
+        1.399999976158142,
+        0.6600000262260437,
+        -0.5600000023841858,
+        1
+      ],
+      "extras": {
+        "assetId": "drum_rack",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 63,
+      "name": "drum_rack__proxy_upright_1",
+      "parent": "studio_full_kit",
+      "meshIndex": 22,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.03500000014901161,
+        0,
+        0,
+        0,
+        0,
+        0.75,
+        0,
+        0,
+        0,
+        0,
+        0.03500000014901161,
+        0,
+        0.8199999928474426,
+        0.375,
+        -0.5600000023841858,
+        1
+      ],
+      "extras": {
+        "assetId": "drum_rack",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 64,
+      "name": "drum_rack__proxy_upright_2",
+      "parent": "studio_full_kit",
+      "meshIndex": 22,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.03500000014901161,
+        0,
+        0,
+        0,
+        0,
+        0.75,
+        0,
+        0,
+        0,
+        0,
+        0.03500000014901161,
+        0,
+        1.9800000190734863,
+        0.375,
+        -0.5600000023841858,
+        1
+      ],
+      "extras": {
+        "assetId": "drum_rack",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 65,
+      "name": "drum_sticks__proxy_pair",
+      "parent": "studio_full_kit",
+      "meshIndex": 23,
+      "materialIndex": 4,
+      "renderOrder": null,
+      "transform": [
+        0.25,
+        0,
+        0,
+        0,
+        0,
+        0.009999999776482582,
+        0,
+        0,
+        0,
+        0,
+        0.029999999329447746,
+        0,
+        1.0750000476837158,
+        0.5950000286102295,
+        -0.23999999463558197,
+        1
+      ],
+      "extras": {
+        "assetId": "drum_sticks",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 66,
+      "name": "drum_throne__proxy_seat",
+      "parent": "studio_full_kit",
+      "meshIndex": 24,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.3100000023841858,
+        0,
+        0,
+        0,
+        0,
+        0.07000000029802322,
+        0,
+        0,
+        0,
+        0,
+        0.3100000023841858,
+        0,
+        1.4249999523162842,
+        0.4449999928474426,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "drum_throne",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 67,
+      "name": "fix_floor_lamp__base",
+      "parent": "studio_full_kit",
+      "meshIndex": 25,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "fix_floor_lamp",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 68,
+      "name": "fix_floor_lamp__bulb",
+      "parent": "studio_full_kit",
+      "meshIndex": 26,
+      "materialIndex": 8,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "fix_floor_lamp",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 69,
+      "name": "fix_floor_lamp__fittings",
+      "parent": "studio_full_kit",
+      "meshIndex": 27,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "fix_floor_lamp",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 70,
+      "name": "fix_floor_lamp__pole",
+      "parent": "studio_full_kit",
+      "meshIndex": 28,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "fix_floor_lamp",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 71,
+      "name": "fix_floor_lamp__shade",
+      "parent": "studio_full_kit",
+      "meshIndex": 29,
+      "materialIndex": 9,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "fix_floor_lamp",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 72,
+      "name": "fix_floor_lamp__shade_trim",
+      "parent": "studio_full_kit",
+      "meshIndex": 30,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "fix_floor_lamp",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 73,
+      "name": "fix_pendant__body",
+      "parent": "studio_full_kit",
+      "meshIndex": 31,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "fix_pendant",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 74,
+      "name": "fix_pendant__lens",
+      "parent": "studio_full_kit",
+      "meshIndex": 32,
+      "materialIndex": 8,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "fix_pendant",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 75,
+      "name": "fix_wall_triangles__proxy_light_1",
+      "parent": "studio_full_kit",
+      "meshIndex": 33,
+      "materialIndex": 8,
+      "renderOrder": null,
+      "transform": [
+        0.15000000596046448,
+        0,
+        0,
+        0,
+        0,
+        0.12999999523162842,
+        0,
+        0,
+        0,
+        0,
+        0.03500000014901161,
+        0,
+        -0.07500000298023224,
+        1.8700000047683716,
+        -1.0299999713897705,
+        1
+      ],
+      "extras": {
+        "assetId": "fix_wall_triangles",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 76,
+      "name": "fix_wall_triangles__proxy_light_2",
+      "parent": "studio_full_kit",
+      "meshIndex": 33,
+      "materialIndex": 8,
+      "renderOrder": null,
+      "transform": [
+        0.15000000596046448,
+        0,
+        0,
+        0,
+        0,
+        0.12999999523162842,
+        0,
+        0,
+        0,
+        0,
+        0.03500000014901161,
+        0,
+        0.0949999988079071,
+        2,
+        -1.0299999713897705,
+        1
+      ],
+      "extras": {
+        "assetId": "fix_wall_triangles",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 77,
+      "name": "fix_wall_triangles__proxy_light_3",
+      "parent": "studio_full_kit",
+      "meshIndex": 33,
+      "materialIndex": 8,
+      "renderOrder": null,
+      "transform": [
+        0.15000000596046448,
+        0,
+        0,
+        0,
+        0,
+        0.12999999523162842,
+        0,
+        0,
+        0,
+        0,
+        0.03500000014901161,
+        0,
+        0.26499998569488525,
+        1.8700000047683716,
+        -1.0299999713897705,
+        1
+      ],
+      "extras": {
+        "assetId": "fix_wall_triangles",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 78,
+      "name": "fix_wall_triangles__proxy_light_4",
+      "parent": "studio_full_kit",
+      "meshIndex": 33,
+      "materialIndex": 8,
+      "renderOrder": null,
+      "transform": [
+        0.15000000596046448,
+        0,
+        0,
+        0,
+        0,
+        0.12999999523162842,
+        0,
+        0,
+        0,
+        0,
+        0.03500000014901161,
+        0,
+        0.4350000023841858,
+        2,
+        -1.0299999713897705,
+        1
+      ],
+      "extras": {
+        "assetId": "fix_wall_triangles",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 79,
+      "name": "fix_wall_triangles__proxy_light_5",
+      "parent": "studio_full_kit",
+      "meshIndex": 33,
+      "materialIndex": 8,
+      "renderOrder": null,
+      "transform": [
+        0.15000000596046448,
+        0,
+        0,
+        0,
+        0,
+        0.12999999523162842,
+        0,
+        0,
+        0,
+        0,
+        0.03500000014901161,
+        0,
+        0.6050000190734863,
+        1.8700000047683716,
+        -1.0299999713897705,
+        1
+      ],
+      "extras": {
+        "assetId": "fix_wall_triangles",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 80,
+      "name": "headphones__on_stand",
+      "parent": "studio_full_kit",
+      "meshIndex": 34,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "headphones",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 81,
+      "name": "kb_case__frost_shell",
+      "parent": "studio_full_kit",
+      "meshIndex": 35,
+      "materialIndex": 10,
+      "renderOrder": 1.5,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "kb_case",
+        "role": "transparent",
+        "occluder": false,
+        "transparent": true,
+        "nocast": true,
+        "receiveShadow": false,
+        "renderOrder": 1.5
+      }
+    },
+    {
+      "index": 82,
+      "name": "kb_case__plate_cable",
+      "parent": "studio_full_kit",
+      "meshIndex": 36,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "kb_case",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 83,
+      "name": "kb_keycaps__caps",
+      "parent": "studio_full_kit",
+      "meshIndex": 37,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "kb_keycaps",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 84,
+      "name": "mic_boom__assembly",
+      "parent": "studio_full_kit",
+      "meshIndex": 38,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "mic_boom",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 85,
+      "name": "mon_cables__runs",
+      "parent": "studio_full_kit",
+      "meshIndex": 39,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "mon_cables",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 86,
+      "name": "mon_central__body",
+      "parent": "studio_full_kit",
+      "meshIndex": 40,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.8050000071525574,
+        1.1349999904632568,
+        -0.19499999284744263,
+        1
+      ],
+      "extras": {
+        "assetId": "mon_central",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 87,
+      "name": "mon_side__copilot",
+      "parent": "studio_full_kit",
+      "meshIndex": 41,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.9553364829670272,
+        0,
+        -0.29552022794274535,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.29552022794274535,
+        0,
+        0.9553364829670272,
+        0,
+        -1.5549999475479126,
+        1.1649999618530273,
+        -0.06499999761581421,
+        1
+      ],
+      "extras": {
+        "assetId": "mon_side",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 88,
+      "name": "mon_side__typeforge",
+      "parent": "studio_full_kit",
+      "meshIndex": 41,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.9553364829670272,
+        0,
+        0.29552022794274535,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.29552022794274535,
+        0,
+        0.9553364829670272,
+        0,
+        -0.054999999701976776,
+        1.1649999618530273,
+        -0.06499999761581421,
+        1
+      ],
+      "extras": {
+        "assetId": "mon_side",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 89,
+      "name": "mon_top__body",
+      "parent": "studio_full_kit",
+      "meshIndex": 42,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.8050000071525574,
+        1.7050000429153442,
+        -0.3199999928474426,
+        1
+      ],
+      "extras": {
+        "assetId": "mon_top",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 90,
+      "name": "mouse_native__body",
+      "parent": "studio_full_kit",
+      "meshIndex": 43,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "mouse_native",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 91,
+      "name": "mug_coaster__mug_coaster",
+      "parent": "studio_full_kit",
+      "meshIndex": 44,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "mug_coaster",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 92,
+      "name": "notebook_pen__set",
+      "parent": "studio_full_kit",
+      "meshIndex": 45,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "notebook_pen",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 93,
+      "name": "pc_tower__case",
+      "parent": "studio_full_kit",
+      "meshIndex": 46,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "pc_tower",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 94,
+      "name": "pc_tower__glass",
+      "parent": "studio_full_kit",
+      "meshIndex": 47,
+      "materialIndex": 11,
+      "renderOrder": 2,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "pc_tower",
+        "role": "transparent",
+        "occluder": false,
+        "transparent": true,
+        "nocast": true,
+        "receiveShadow": false,
+        "renderOrder": 2
+      }
+    },
+    {
+      "index": 95,
+      "name": "pc_tower__glow",
+      "parent": "studio_full_kit",
+      "meshIndex": 48,
+      "materialIndex": 8,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "pc_tower",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 96,
+      "name": "rt_window_dusk",
+      "parent": "studio_full_kit",
+      "meshIndex": 49,
+      "materialIndex": 6,
+      "renderOrder": null,
+      "transform": [
+        -1.3435885648505064e-7,
+        0,
+        1.0000001343588565,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1.0000001343588565,
+        0,
+        -1.3435885648505064e-7,
+        0,
+        2.5425000190734863,
+        1.4450000524520874,
+        0.75,
+        1
+      ],
+      "extras": {
+        "assetId": "rt_window_dusk",
+        "role": "runtime-dusk",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": false
+      }
+    },
+    {
+      "index": 97,
+      "name": "rug__proxy_rug",
+      "parent": "studio_full_kit",
+      "meshIndex": 0,
+      "materialIndex": 0,
+      "renderOrder": null,
+      "transform": [
+        1.850000023841858,
+        0,
+        0,
+        0,
+        0,
+        0.017500000074505806,
+        0,
+        0,
+        0,
+        0,
+        2.25,
+        0,
+        1.375,
+        0.009999999776482582,
+        0.15000000596046448,
+        1
+      ],
+      "extras": {
+        "assetId": "rug",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 98,
+      "name": "shelf_books__proxy_row",
+      "parent": "studio_full_kit",
+      "meshIndex": 50,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.14000000059604645,
+        0,
+        0,
+        0,
+        0,
+        0.20999999344348907,
+        0,
+        0,
+        0,
+        0,
+        0.5,
+        0,
+        -2.1500000953674316,
+        1.8700000047683716,
+        -0.25,
+        1
+      ],
+      "extras": {
+        "assetId": "shelf_books",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 99,
+      "name": "shelf_plant__proxy_plant",
+      "parent": "studio_full_kit",
+      "meshIndex": 51,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.15000000596046448,
+        0,
+        0,
+        0,
+        0,
+        0.25,
+        0,
+        0,
+        0,
+        0,
+        0.15000000596046448,
+        0,
+        -2.1449999809265137,
+        1.8899999856948853,
+        0.25999999046325684,
+        1
+      ],
+      "extras": {
+        "assetId": "shelf_plant",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 100,
+      "name": "shelf_speaker__proxy_cabinet",
+      "parent": "studio_full_kit",
+      "meshIndex": 15,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.14000000059604645,
+        0,
+        0,
+        0,
+        0,
+        0.1899999976158142,
+        0,
+        0,
+        0,
+        0,
+        0.12999999523162842,
+        0,
+        -2.1500000953674316,
+        1.8600000143051147,
+        0.49000000953674316,
+        1
+      ],
+      "extras": {
+        "assetId": "shelf_speaker",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 101,
+      "name": "snowboard_bindings__proxy_binding_1",
+      "parent": "studio_full_kit",
+      "meshIndex": 15,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.07000000029802322,
+        0,
+        0,
+        0,
+        0,
+        0.10999999940395355,
+        0,
+        0,
+        0,
+        0,
+        0.15000000596046448,
+        0,
+        -2.140000104904175,
+        0.550000011920929,
+        0.15000000596046448,
+        1
+      ],
+      "extras": {
+        "assetId": "snowboard_bindings",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 102,
+      "name": "snowboard_bindings__proxy_binding_2",
+      "parent": "studio_full_kit",
+      "meshIndex": 15,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.07000000029802322,
+        0,
+        0,
+        0,
+        0,
+        0.10999999940395355,
+        0,
+        0,
+        0,
+        0,
+        0.15000000596046448,
+        0,
+        -2.140000104904175,
+        0.949999988079071,
+        0.15000000596046448,
+        1
+      ],
+      "extras": {
+        "assetId": "snowboard_bindings",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 103,
+      "name": "snowboard_deck__proxy_deck",
+      "parent": "studio_full_kit",
+      "meshIndex": 2,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.03750000149011612,
+        0,
+        0,
+        0,
+        0,
+        1.5,
+        0,
+        0,
+        0,
+        0,
+        0.25,
+        0,
+        -2.190000057220459,
+        0.75,
+        0.15000000596046448,
+        1
+      ],
+      "extras": {
+        "assetId": "snowboard_deck",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 104,
+      "name": "speaker_nearfield__cabinet",
+      "parent": "studio_full_kit",
+      "meshIndex": 52,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "speaker_nearfield",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 105,
+      "name": "stool_keys__proxy_post",
+      "parent": "studio_full_kit",
+      "meshIndex": 22,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.03999999910593033,
+        0,
+        0,
+        0,
+        0,
+        0.44999998807907104,
+        0,
+        0,
+        0,
+        0,
+        0.03999999910593033,
+        0,
+        1.1749999523162842,
+        0.22499999403953552,
+        1.125,
+        1
+      ],
+      "extras": {
+        "assetId": "stool_keys",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 106,
+      "name": "stool_keys__proxy_seat",
+      "parent": "studio_full_kit",
+      "meshIndex": 24,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.3100000023841858,
+        0,
+        0,
+        0,
+        0,
+        0.07000000029802322,
+        0,
+        0,
+        0,
+        0,
+        0.3100000023841858,
+        0,
+        1.1749999523162842,
+        0.48500001430511475,
+        1.125,
+        1
+      ],
+      "extras": {
+        "assetId": "stool_keys",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 107,
+      "name": "sub_woofer__cabinet",
+      "parent": "studio_full_kit",
+      "meshIndex": 53,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "sub_woofer",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 108,
+      "name": "sub_woofer__grille",
+      "parent": "studio_full_kit",
+      "meshIndex": 54,
+      "materialIndex": 0,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "sub_woofer",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 109,
+      "name": "target_copilot",
+      "parent": "studio_full_kit",
+      "meshIndex": 55,
+      "materialIndex": 6,
+      "renderOrder": null,
+      "transform": [
+        0.9553364829670272,
+        0,
+        -0.29552022794274535,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.29552022794274535,
+        0,
+        0.9553364829670272,
+        0,
+        -1.5470209121704102,
+        1.1649999618530273,
+        -0.03920591622591019,
+        1
+      ],
+      "extras": {
+        "assetId": "target_faces",
+        "role": "target",
+        "occluder": false,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": false
+      }
+    },
+    {
+      "index": 110,
+      "name": "target_dissertation",
+      "parent": "studio_full_kit",
+      "meshIndex": 56,
+      "materialIndex": 6,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.8050000071525574,
+        1.1349999904632568,
+        -0.1679999977350235,
+        1
+      ],
+      "extras": {
+        "assetId": "target_faces",
+        "role": "target",
+        "occluder": false,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": false
+      }
+    },
+    {
+      "index": 111,
+      "name": "target_typeforge",
+      "parent": "studio_full_kit",
+      "meshIndex": 57,
+      "materialIndex": 6,
+      "renderOrder": null,
+      "transform": [
+        0.9553364829670272,
+        0,
+        0.29552022794274535,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.29552022794274535,
+        0,
+        0.9553364829670272,
+        0,
+        -0.06297904253005981,
+        1.1649999618530273,
+        -0.03920591622591019,
+        1
+      ],
+      "extras": {
+        "assetId": "target_faces",
+        "role": "target",
+        "occluder": false,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": false
+      }
+    },
+    {
+      "index": 112,
+      "name": "under_desk_power__strip_loom",
+      "parent": "studio_full_kit",
+      "meshIndex": 58,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "under_desk_power",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 113,
+      "name": "wall_print__proxy_frame",
+      "parent": "studio_full_kit",
+      "meshIndex": 15,
+      "materialIndex": 2,
+      "renderOrder": null,
+      "transform": [
+        0.02500000037252903,
+        0,
+        0,
+        0,
+        0,
+        0.6200000047683716,
+        0,
+        0,
+        0,
+        0,
+        0.46000000834465027,
+        0,
+        -2.234999895095825,
+        1.4700000286102295,
+        1.125,
+        1
+      ],
+      "extras": {
+        "assetId": "wall_print",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 114,
+      "name": "wall_shelf__proxy_board",
+      "parent": "studio_full_kit",
+      "meshIndex": 23,
+      "materialIndex": 4,
+      "renderOrder": null,
+      "transform": [
+        0.20999999344348907,
+        0,
+        0,
+        0,
+        0,
+        0.029999999329447746,
+        0,
+        0,
+        0,
+        0,
+        1.149999976158142,
+        0,
+        -2.1449999809265137,
+        1.75,
+        0.05000000074505806,
+        1
+      ],
+      "extras": {
+        "assetId": "wall_shelf",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 115,
+      "name": "studio_full_kit",
+      "parent": null,
+      "meshIndex": null,
+      "materialIndex": null,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {}
+    }
+  ],
+  "materials": [
+    {
+      "index": 0,
+      "name": "lib_weave",
+      "definition": {
+        "doubleSided": true,
+        "name": "lib_weave",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.08437620848417282,
+            0.09758734703063965,
+            0.0802198201417923,
+            1
+          ],
+          "metallicFactor": 0
+        }
+      },
+      "slots": []
+    },
+    {
+      "index": 1,
+      "name": "lib_dark_oak",
+      "definition": {
+        "doubleSided": true,
+        "name": "lib_dark_oak",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.2045000046491623,
+            0.12250000238418579,
+            0.06870000064373016,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.6800000071525574
+        }
+      },
+      "slots": []
+    },
+    {
+      "index": 2,
+      "name": "lib_palette",
+      "definition": {
+        "doubleSided": true,
+        "name": "lib_palette",
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 0
+          },
+          "metallicRoughnessTexture": {
+            "index": 1
+          }
+        }
+      },
+      "slots": [
+        {
+          "slot": "map",
+          "textureIndex": 0,
+          "texCoord": 0
+        },
+        {
+          "slot": "metalnessMap",
+          "textureIndex": 1,
+          "texCoord": 0
+        },
+        {
+          "slot": "roughnessMap",
+          "textureIndex": 1,
+          "texCoord": 0
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "lib_plaster",
+      "definition": {
+        "doubleSided": true,
+        "name": "lib_plaster",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.05951123684644699,
+            0.06847816705703735,
+            0.05126945674419403,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.9599999785423279
+        }
+      },
+      "slots": []
+    },
+    {
+      "index": 4,
+      "name": "lib_oak",
+      "definition": {
+        "doubleSided": true,
+        "name": "lib_oak",
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 2
+          },
+          "metallicFactor": 0,
+          "roughnessFactor": 0.550000011920929
+        }
+      },
+      "slots": [
+        {
+          "slot": "map",
+          "textureIndex": 2,
+          "texCoord": 0
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "name": "lib_floor",
+      "definition": {
+        "doubleSided": true,
+        "name": "lib_floor",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.07036009430885315,
+            0.04373503103852272,
+            0.026241222396492958,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.7200000286102295
+        }
+      },
+      "slots": []
+    },
+    {
+      "index": 6,
+      "name": "rt_placeholder",
+      "definition": {
+        "doubleSided": true,
+        "emissiveFactor": [
+          0.006197894052084041,
+          0.013892020464619792,
+          0.019862860485428957
+        ],
+        "name": "rt_placeholder",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.01032982300966978,
+            0.023153366521000862,
+            0.03310476616024971,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.6000000238418579
+        }
+      },
+      "slots": []
+    },
+    {
+      "index": 7,
+      "name": "lib_contact",
+      "definition": {
+        "alphaMode": "BLEND",
+        "doubleSided": true,
+        "name": "lib_contact",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.005181516520678997,
+            0.004024717025458813,
+            0.0030352699104696512,
+            0.5
+          ],
+          "metallicFactor": 0
+        }
+      },
+      "slots": []
+    },
+    {
+      "index": 8,
+      "name": "lib_glow",
+      "definition": {
+        "doubleSided": true,
+        "emissiveFactor": [
+          1,
+          0.6444796919822693,
+          0.32314321398735046
+        ],
+        "extensions": {
+          "KHR_materials_emissive_strength": {
+            "emissiveStrength": 1.2000000476837158
+          }
+        },
+        "name": "lib_glow",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "slots": []
+    },
+    {
+      "index": 9,
+      "name": "lib_linen_shade",
+      "definition": {
+        "doubleSided": true,
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveTexture": {
+          "index": 3
+        },
+        "extensions": {
+          "KHR_materials_emissive_strength": {
+            "emissiveStrength": 2.200000047683716
+          }
+        },
+        "name": "lib_linen_shade",
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 4
+          },
+          "metallicFactor": 0,
+          "roughnessFactor": 0.9200000166893005
+        }
+      },
+      "slots": [
+        {
+          "slot": "map",
+          "textureIndex": 4,
+          "texCoord": 0
+        },
+        {
+          "slot": "emissiveMap",
+          "textureIndex": 3,
+          "texCoord": 0
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "name": "lib_frost",
+      "definition": {
+        "alphaMode": "BLEND",
+        "name": "lib_frost",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.7758222222328186,
+            0.8468732237815857,
+            0.7681511640548706,
+            0.41999998688697815
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.8999999761581421
+        }
+      },
+      "slots": []
+    },
+    {
+      "index": 11,
+      "name": "lib_glass",
+      "definition": {
+        "alphaMode": "BLEND",
+        "doubleSided": true,
+        "name": "lib_glass",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0.43965718150138855,
+            0.4969329833984375,
+            0.44520118832588196,
+            0.23000000417232513
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.5299999713897705
+        }
+      },
+      "slots": []
+    }
+  ],
+  "textures": {
+    "images": [
+      {
+        "index": 0,
+        "mimeType": "image/png",
+        "width": 128,
+        "height": 128,
+        "bytes": 778
+      },
+      {
+        "index": 1,
+        "mimeType": "image/png",
+        "width": 128,
+        "height": 128,
+        "bytes": 867
+      },
+      {
+        "index": 2,
+        "mimeType": "image/png",
+        "width": 1024,
+        "height": 256,
+        "bytes": 144594
+      },
+      {
+        "index": 3,
+        "mimeType": "image/png",
+        "width": 256,
+        "height": 256,
+        "bytes": 85552
+      },
+      {
+        "index": 4,
+        "mimeType": "image/png",
+        "width": 256,
+        "height": 256,
+        "bytes": 93353
+      }
+    ],
+    "textures": [
+      {
+        "index": 0,
+        "source": 0,
+        "sampler": {
+          "magFilter": 9728,
+          "minFilter": 9984
+        }
+      },
+      {
+        "index": 1,
+        "source": 1,
+        "sampler": {
+          "magFilter": 9728,
+          "minFilter": 9984
+        }
+      },
+      {
+        "index": 2,
+        "source": 2,
+        "sampler": {
+          "magFilter": 9729,
+          "minFilter": 9987
+        }
+      },
+      {
+        "index": 3,
+        "source": 3,
+        "sampler": {
+          "magFilter": 9729,
+          "minFilter": 9987
+        }
+      },
+      {
+        "index": 4,
+        "source": 4,
+        "sampler": {
+          "magFilter": 9729,
+          "minFilter": 9987
+        }
+      }
+    ]
+  },
+  "targetWorldCorners": {
+    "border_copilot": [
+      [
+        -3.4976472932899947,
+        1.7499999260902406,
+        0.038063973041934554
+      ],
+      [
+        -2.695164672652388,
+        1.7499999260902406,
+        -0.2101730106796451
+      ],
+      [
+        -2.695164672652388,
+        3.1299999213218688,
+        -0.2101730106796451
+      ],
+      [
+        -3.4976472932899947,
+        3.1299999213218688,
+        0.038063973041934554
+      ]
+    ],
+    "border_dissertation": [
+      [
+        -2.5699999928474426,
+        1.8299999690055848,
+        -0.3440000116825104
+      ],
+      [
+        -0.6500000357627869,
+        1.8299999690055848,
+        -0.3440000116825104
+      ],
+      [
+        -0.6500000357627869,
+        2.9299999928474425,
+        -0.3440000116825104
+      ],
+      [
+        -2.5699999928474426,
+        2.9299999928474425,
+        -0.3440000116825104
+      ]
+    ],
+    "border_typeforge": [
+      [
+        -0.5248352367485518,
+        1.7499999260902406,
+        -0.2101730106796451
+      ],
+      [
+        0.27764738388905474,
+        1.7499999260902406,
+        0.038063973041934554
+      ],
+      [
+        0.27764738388905474,
+        3.1299999213218688,
+        0.038063973041934554
+      ],
+      [
+        -0.5248352367485518,
+        3.1299999213218688,
+        -0.2101730106796451
+      ]
+    ],
+    "display_studio": [
+      [
+        -2.2549999952316284,
+        3.155000076293945,
+        -0.5860000252723694
+      ],
+      [
+        -0.9650000333786011,
+        3.155000076293945,
+        -0.5860000252723694
+      ],
+      [
+        -0.9650000333786011,
+        3.8850000953674315,
+        -0.5860000252723694
+      ],
+      [
+        -2.2549999952316284,
+        3.8850000953674315,
+        -0.5860000252723694
+      ]
+    ],
+    "rt_window_dusk": [
+      [
+        5.085000172505829,
+        2.0000001049041747,
+        0.4999998656411435
+      ],
+      [
+        5.084999903788116,
+        2.0000001049041747,
+        2.5000001343588565
+      ],
+      [
+        5.084999903788116,
+        4.000000104904175,
+        2.5000001343588565
+      ],
+      [
+        5.085000172505829,
+        4.000000104904175,
+        0.4999998656411435
+      ]
+    ],
+    "target_copilot": [
+      [
+        -3.4761764232218804,
+        1.7699999070167542,
+        0.039796260486715584
+      ],
+      [
+        -2.7119072254597603,
+        1.7699999070167542,
+        -0.19661992539035633
+      ],
+      [
+        -2.7119072254597603,
+        3.109999940395355,
+        -0.19661992539035633
+      ],
+      [
+        -3.4761764232218804,
+        3.109999940395355,
+        0.039796260486715584
+      ]
+    ],
+    "target_dissertation": [
+      [
+        -2.550000011920929,
+        1.8500000095367433,
+        -0.335999995470047
+      ],
+      [
+        -0.6700000166893005,
+        1.8500000095367433,
+        -0.335999995470047
+      ],
+      [
+        -0.6700000166893005,
+        2.909999952316284,
+        -0.335999995470047
+      ],
+      [
+        -2.550000011920929,
+        2.909999952316284,
+        -0.335999995470047
+      ]
+    ],
+    "target_typeforge": [
+      [
+        -0.5080926839411797,
+        1.7699999070167542,
+        -0.19661992539035633
+      ],
+      [
+        0.2561765138209404,
+        1.7699999070167542,
+        0.039796260486715584
+      ],
+      [
+        0.2561765138209404,
+        3.109999940395355,
+        0.039796260486715584
+      ],
+      [
+        -0.5080926839411797,
+        3.109999940395355,
+        -0.19661992539035633
+      ]
+    ]
+  },
+  "counts": {
+    "uniqueGeometryTriangles": 32232,
+    "placedTriangles": 34200,
+    "shadowTriangles": 19194,
+    "primitiveInstances": 115,
+    "shadowInstances": 44,
+    "imagePixels": 425984,
+    "materialCount": 12,
+    "textureCount": 5
+  }
+}

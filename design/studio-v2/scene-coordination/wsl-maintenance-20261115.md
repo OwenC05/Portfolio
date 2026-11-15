@@ -20,10 +20,13 @@
 | Immediately before graceful stop |4589840KiB (~4.38GiB)|861624KiB (~0.82GiB)|
 | State worker age17s after restart |3307180KiB (~3.15GiB)|603052KiB (~0.58GiB)|
 | 12:36:51UTC, age134s, after known recall |3281004KiB (~3.13GiB)|747112KiB (~0.71GiB)|
+| 13:04:30UTC, 30-minute follow-up |4437412KiB (~4.23GiB)|720444KiB (~704MiB)|
 
 The worker returned to multi-gigabyte RSS during startup. This does not establish a leak or the cause of the in-memory footprint. Do not lower the cap to4GB based on a hoped-for1-1.5GB settling point; actual follow-up measurements are pending. No pruning, consolidation, secret/config changes or cache-reclaim mode change was performed.
 
-A hidden, root-owned Node monitor (PID23624 at launch) records30/60-minute samples at13:04:28/13:34:28UTC and sends Orca notifications to the existing root Run. It exits after those samples and does not start Ubuntu if the distro is no longer running. These are scheduled checks, not completed measurements.
+A hidden, root-owned Node monitor (PID23624 at launch) records30/60-minute samples at13:04:28/13:34:28UTC and sends Orca notifications to the existing root Run. It exits after those samples and does not start Ubuntu if the distro is no longer running. The30-minute sample completed; the60-minute measurement remains pending.
+
+At30 minutes, service remained active, available guest RAM was482852KiB (~472MiB), and swap usage was892656KiB (~872MiB). State RSS increased about1.10GiB from the post-recall startup sample. This shows the restart did not resolve the high memory footprint; it does not distinguish normal loaded/cache growth from a leak. Keep the6GB cap. A4GB cap is not supported by the observed resident workload and current swap use. A separate Windows check shortly after the sample found about1.17GiB physical RAM free. No pruning or automatic cap/reclaim changes were made.
 
 Local machine-operation scripts, backup/recall receipts and raw metrics are under `C:/Users/Owenc/.codex/tmp/agentmemory-restart-20261115/`. Credentials and recalled memory contents are not copied into this repository.
 

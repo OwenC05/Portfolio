@@ -1,0 +1,175 @@
+{
+  "checkedAt": "2026-11-15T13:53:00.372Z",
+  "status": "pass",
+  "checker": "S actual Codex, independent of Claude author",
+  "nodeVersion": "v24.21.0",
+  "beforeGlbSha256": "2089a4f0b955c2730d167a8ee4258f7939b29f51057d9944678b44b4f2555411",
+  "afterGlbSha256": "7c0d30428065d0024bb1c4a631a3b54504008edcccab91c75e7367a53fa57752",
+  "beforeManifestSha256": "a3bd983a582d58875ed024e6815fa891f511b51e72b4d3b835c50692a9a48c51",
+  "afterManifestSha256": "5e1cb075b377c3ce3d7656601eef55afdd5d59aeef5be6d3c4b28500f83228d9",
+  "binByteIdentical": true,
+  "binBytes": 1155932,
+  "binSha256": "a015d8d8022dfd6b39936c8aabf291311790ecb0dcf88bfa3a4251a38e53e6c6",
+  "jsonDifferences": [
+    {
+      "path": "scenes.0.extras.fk_tag",
+      "before": "m2base-v02",
+      "after": "m2base-v03"
+    },
+    {
+      "path": "scenes.0.extras.fk_m2_tag",
+      "before": "v02",
+      "after": "v03-material"
+    },
+    {
+      "path": "materials.8.emissiveFactor.1",
+      "before": 0.5394794940948486,
+      "after": 0.6444796919822693
+    },
+    {
+      "path": "materials.8.emissiveFactor.2",
+      "before": 0.1946178376674652,
+      "after": 0.32314321398735046
+    },
+    {
+      "path": "materials.8.extensions.KHR_materials_emissive_strength.emissiveStrength",
+      "before": 1.100000023841858,
+      "after": 1.2000000476837158
+    },
+    {
+      "path": "materials.8.pbrMetallicRoughness.baseColorFactor.0",
+      "before": 1,
+      "after": 0
+    },
+    {
+      "path": "materials.8.pbrMetallicRoughness.baseColorFactor.1",
+      "before": 0.7083757519721985,
+      "after": 0
+    },
+    {
+      "path": "materials.8.pbrMetallicRoughness.baseColorFactor.2",
+      "before": 0.34191441535949707,
+      "after": 0
+    },
+    {
+      "path": "materials.8.pbrMetallicRoughness.metallicFactor",
+      "before": 0,
+      "after": null
+    },
+    {
+      "path": "materials.8.pbrMetallicRoughness.roughnessFactor",
+      "before": 0.6000000238418579,
+      "after": null
+    }
+  ],
+  "manifestDifferences": [
+    {
+      "path": "glbSha256",
+      "before": "2089a4f0b955c2730d167a8ee4258f7939b29f51057d9944678b44b4f2555411",
+      "after": "7c0d30428065d0024bb1c4a631a3b54504008edcccab91c75e7367a53fa57752"
+    },
+    {
+      "path": "materials.8.definition.emissiveFactor.1",
+      "before": 0.5394794940948486,
+      "after": 0.6444796919822693
+    },
+    {
+      "path": "materials.8.definition.emissiveFactor.2",
+      "before": 0.1946178376674652,
+      "after": 0.32314321398735046
+    },
+    {
+      "path": "materials.8.definition.extensions.KHR_materials_emissive_strength.emissiveStrength",
+      "before": 1.100000023841858,
+      "after": 1.2000000476837158
+    },
+    {
+      "path": "materials.8.definition.pbrMetallicRoughness.baseColorFactor.0",
+      "before": 1,
+      "after": 0
+    },
+    {
+      "path": "materials.8.definition.pbrMetallicRoughness.baseColorFactor.1",
+      "before": 0.7083757519721985,
+      "after": 0
+    },
+    {
+      "path": "materials.8.definition.pbrMetallicRoughness.baseColorFactor.2",
+      "before": 0.34191441535949707,
+      "after": 0
+    },
+    {
+      "path": "materials.8.definition.pbrMetallicRoughness.metallicFactor",
+      "before": 0,
+      "after": null
+    },
+    {
+      "path": "materials.8.definition.pbrMetallicRoughness.roughnessFactor",
+      "before": 0.6000000238418579,
+      "after": null
+    }
+  ],
+  "affectedNodes": [
+    "fix_floor_lamp__bulb",
+    "fix_pendant__lens",
+    "fix_wall_triangles__proxy_light_1",
+    "fix_wall_triangles__proxy_light_2",
+    "fix_wall_triangles__proxy_light_3",
+    "fix_wall_triangles__proxy_light_4",
+    "fix_wall_triangles__proxy_light_5",
+    "pc_tower__glow"
+  ],
+  "validation": {
+    "valid": true,
+    "profileId": "studio-full-kit-v1",
+    "profileSha256": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+    "glbSha256": "7c0d30428065d0024bb1c4a631a3b54504008edcccab91c75e7367a53fa57752",
+    "errors": [],
+    "deferred": [
+      "Actual browser PNG/JPEG decode",
+      "Runtime renderer first-refresh/settled draws and triangles",
+      "Scene JS plus assets transfer",
+      "Root visual gate and independent review"
+    ],
+    "metrics": {
+      "uniqueGeometryTriangles": 22658,
+      "placedTriangles": 24722,
+      "shadowTriangles": 12680,
+      "primitiveInstances": 117,
+      "shadowInstances": 48,
+      "imagePixels": 425984,
+      "materialCount": 11,
+      "textureCount": 5,
+      "rawBytes": 1228192,
+      "gzipBytesEstimate": 586943,
+      "brotliBytesEstimate": 483798,
+      "textureEncodedBytes": 325195,
+      "rawRgbaBytesBeforeMipmaps": 1703936
+    },
+    "boundsGltfMetres": {
+      "min": [
+        -2.250000089406967,
+        -0.02000001072883606,
+        -1.0600000619888306
+      ],
+      "max": [
+        2.550000101327896,
+        2.5950000565499067,
+        3.3000000715255737
+      ]
+    }
+  },
+  "sources": {
+    "components/studio/scene/load-full-kit.ts": "37549d60af2eb7f5e1feaf0914fd0da496ec38441ebe088ce445d2914b5ad68f",
+    "components/studio/scene/bind-full-kit.ts": "0ee8bbe6e0fb83ab4bf219343655c4260a8f5193f5624dc69fb802634a2294eb",
+    "components/studio/scene/build-full-studio.ts": "5a4e8296e04d66cfeaedf59bedee8c633b378c84126de52b78eaabe421c0f02f",
+    "components/studio/scene/view-config.ts": "1fea7adbcfd730a56920389c8ac4ecf8323c9739fd4882c15f3e134a11f1a450",
+    "design/studio-v2/asset-pipeline/full-kit/full-kit-profile-v1.json": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+    "design/studio-v2/asset-pipeline/full-kit/asset-inventory.json": "eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87",
+    "design/studio-v2/asset-pipeline/full-kit/technical/validate-full-kit.mjs": "66ee9d342cbded31994e6e8655e385c5b7945916b5ec68ad3404af9beda8bd75",
+    "design/studio-v2/asset-pipeline/full-kit/technical/profile-core.mjs": "02b65feddb651f41a4a9d5eab4f55e41ae15c321d850a26fba00b3a92889ae71"
+  },
+  "scope": "Paired byte/manifest/material delta and existing validator only; no suite, Blender, browser, loader rebuild or appearance judgment.",
+  "preserved": "Exact geometry/UV/images/nodes/placement/bindings/material assignments, all alpha/sidedness/shadow/sort flags, 117 leaves, 48 casters, 11 materials and 5 images.",
+  "deferred": "Root actual rendering, shared-material collateral, independent Claude clip/readability verdict, final forecast/transfer/device/product gates."
+}

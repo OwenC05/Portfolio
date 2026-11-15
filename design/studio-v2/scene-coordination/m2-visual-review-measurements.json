@@ -1,0 +1,2486 @@
+{
+ "reviewer": "Claude (actual), task_5437cd5dfec3, dispatch ctx_a9a533c5bf49",
+ "scope": "Read-only pixel measurements on root-supplied captures. Not a capture, not interaction, picking, performance or budget evidence.",
+ "captureRecord": {
+  "path": ".omx/context/full-kit-m2-runtime-capture-v01.json",
+  "sha256": "1da664b90227c9869801f7f0b950b59c64c24cc52f84bb584e197a4a6add49b2",
+  "matchesTaskBrief": true,
+  "capturedAt": "2026-11-15T13:18:19.988Z",
+  "failures": 0,
+  "sourceDriftAfterCapture": 0
+ },
+ "images": {
+  "count": 33,
+  "allMatchCaptureRecord": true,
+  "binding": [
+   {
+    "file": "scene-home-1440x900-f58.png",
+    "kind": "scene",
+    "sha256": "ea34b26d1efa5524aa771859a3055b1d582aed15dc1216a751b64e1e8b870566",
+    "matchesCaptureRecord": true,
+    "bytes": 403660,
+    "pixels": [
+     1440,
+     900
+    ],
+    "pose": {
+     "yaw": -4,
+     "pitch": -6
+    },
+    "fov": 58,
+    "sceneImage": null,
+    "projectsOpen": null,
+    "consoleWarnings": 1,
+    "errors": 0
+   },
+   {
+    "file": "scene-music-1440x900-f58.png",
+    "kind": "scene",
+    "sha256": "7afe44ccebe1b7a4b9c1506308d6381bd1cbc8f3920e6597c117f0929de6bff8",
+    "matchesCaptureRecord": true,
+    "bytes": 473340,
+    "pixels": [
+     1440,
+     900
+    ],
+    "pose": {
+     "yaw": 44,
+     "pitch": -8
+    },
+    "fov": 58,
+    "sceneImage": null,
+    "projectsOpen": null,
+    "consoleWarnings": 1,
+    "errors": 0
+   },
+   {
+    "file": "scene-left-up-1440x900-f58.png",
+    "kind": "scene",
+    "sha256": "3b46aad2545523011aaf90f12a86b6b511999566664ddcddb93025d80a5cfd4e",
+    "matchesCaptureRecord": true,
+    "bytes": 348532,
+    "pixels": [
+     1440,
+     900
+    ],
+    "pose": {
+     "yaw": -38,
+     "pitch": 12
+    },
+    "fov": 58,
+    "sceneImage": null,
+    "projectsOpen": null,
+    "consoleWarnings": 1,
+    "errors": 0
+   },
+   {
+    "file": "scene-left-down-1440x900-f58.png",
+    "kind": "scene",
+    "sha256": "4de903241c35c433d2f82a9aff3dfc8d2d6204194a9e7ff14afcf967b5f897f4",
+    "matchesCaptureRecord": true,
+    "bytes": 357591,
+    "pixels": [
+     1440,
+     900
+    ],
+    "pose": {
+     "yaw": -38,
+     "pitch": -16
+    },
+    "fov": 58,
+    "sceneImage": null,
+    "projectsOpen": null,
+    "consoleWarnings": 1,
+    "errors": 0
+   },
+   {
+    "file": "scene-right-up-1440x900-f58.png",
+    "kind": "scene",
+    "sha256": "d0e153e42e2307868bc87aab15aacf0df388ee2a954ab3849e1c45a71dd11519",
+    "matchesCaptureRecord": true,
+    "bytes": 461289,
+    "pixels": [
+     1440,
+     900
+    ],
+    "pose": {
+     "yaw": 58,
+     "pitch": 12
+    },
+    "fov": 58,
+    "sceneImage": null,
+    "projectsOpen": null,
+    "consoleWarnings": 1,
+    "errors": 0
+   },
+   {
+    "file": "scene-right-down-1440x900-f58.png",
+    "kind": "scene",
+    "sha256": "66928b61b52a8deb2aba18f5344c4b4bbe08bc375520937d650eb92dd064a4a4",
+    "matchesCaptureRecord": true,
+    "bytes": 513150,
+    "pixels": [
+     1440,
+     900
+    ],
+    "pose": {
+     "yaw": 58,
+     "pitch": -16
+    },
+    "fov": 58,
+    "sceneImage": null,
+    "projectsOpen": null,
+    "consoleWarnings": 1,
+    "errors": 0
+   },
+   {
+    "file": "scene-mid-left-1440x900-f58.png",
+    "kind": "scene",
+    "sha256": "c70b3820ce4f37fa4d2cfd81a3d94eefa69f488082db9e80ad6c2e278e25be48",
+    "matchesCaptureRecord": true,
+    "bytes": 427945,
+    "pixels": [
+     1440,
+     900
+    ],
+    "pose": {
+     "yaw": -20,
+     "pitch": -6
+    },
+    "fov": 58,
+    "sceneImage": null,
+    "projectsOpen": null,
+    "consoleWarnings": 1,
+    "errors": 0
+   },
+   {
+    "file": "scene-mid-right-1440x900-f58.png",
+    "kind": "scene",
+    "sha256": "208dd03ded055f314d9fe9289560cb805cc85b33cab0cf9f2b3503e0af21f944",
+    "matchesCaptureRecord": true,
+    "bytes": 479505,
+    "pixels": [
+     1440,
+     900
+    ],
+    "pose": {
+     "yaw": 30,
+     "pitch": -6
+    },
+    "fov": 58,
+    "sceneImage": null,
+    "projectsOpen": null,
+    "consoleWarnings": 1,
+    "errors": 0
+   },
+   {
+    "file": "scene-home-1024x768-f58.png",
+    "kind": "scene",
+    "sha256": "460255a7ec5ca33137599a9bc5c3ab1ffef031b2663766970bc1f286bb55c85f",
+    "matchesCaptureRecord": true,
+    "bytes": 274937,
+    "pixels": [
+     1024,
+     768
+    ],
+    "pose": {
+     "yaw": -4,
+     "pitch": -6
+    },
+    "fov": 58,
+    "sceneImage": null,
+    "projectsOpen": null,
+    "consoleWarnings": 0,
+    "errors": 0
+   },
+   {
+    "file": "scene-home-390x844-f74.png",
+    "kind": "scene",
+    "sha256": "6a6bf54a684995426a21d7dde287af964d73b71cd880caf57c888a569764e540",
+    "matchesCaptureRecord": true,
+    "bytes": 115067,
+    "pixels": [
+     390,
+     844
+    ],
+    "pose": {
+     "yaw": -13.5,
+     "pitch": -7
+    },
+    "fov": 74,
+    "sceneImage": null,
+    "projectsOpen": null,
+    "consoleWarnings": 0,
+    "errors": 0
+   },
+   {
+    "file": "scene-music-390x844-f74.png",
+    "kind": "scene",
+    "sha256": "e3c5270e79403e62436b9dac488ecd631b08c0276f5bd2125f15568a04f9cfe8",
+    "matchesCaptureRecord": true,
+    "bytes": 122651,
+    "pixels": [
+     390,
+     844
+    ],
+    "pose": {
+     "yaw": 44,
+     "pitch": -8
+    },
+    "fov": 74,
+    "sceneImage": null,
+    "projectsOpen": null,
+    "consoleWarnings": 0,
+    "errors": 0
+   },
+   {
+    "file": "scene-left-up-390x844-f74.png",
+    "kind": "scene",
+    "sha256": "2b86f729e1b0a46120ac34bccbc978126284fd109d25c32d855694a7e5e371c9",
+    "matchesCaptureRecord": true,
+    "bytes": 122900,
+    "pixels": [
+     390,
+     844
+    ],
+    "pose": {
+     "yaw": -38,
+     "pitch": 12
+    },
+    "fov": 74,
+    "sceneImage": null,
+    "projectsOpen": null,
+    "consoleWarnings": 0,
+    "errors": 0
+   },
+   {
+    "file": "scene-left-down-390x844-f74.png",
+    "kind": "scene",
+    "sha256": "73097cb81cb1f72eb37f9ca71ad08288aecc1bb8265176e9f4c8edaf1188b178",
+    "matchesCaptureRecord": true,
+    "bytes": 96416,
+    "pixels": [
+     390,
+     844
+    ],
+    "pose": {
+     "yaw": -38,
+     "pitch": -16
+    },
+    "fov": 74,
+    "sceneImage": null,
+    "projectsOpen": null,
+    "consoleWarnings": 0,
+    "errors": 0
+   },
+   {
+    "file": "scene-right-up-390x844-f74.png",
+    "kind": "scene",
+    "sha256": "352a4ee32ceb64a3ebe635b816ff903c772e1400d484cafeb42486361117e028",
+    "matchesCaptureRecord": true,
+    "bytes": 115470,
+    "pixels": [
+     390,
+     844
+    ],
+    "pose": {
+     "yaw": 58,
+     "pitch": 12
+    },
+    "fov": 74,
+    "sceneImage": null,
+    "projectsOpen": null,
+    "consoleWarnings": 0,
+    "errors": 0
+   },
+   {
+    "file": "scene-right-down-390x844-f74.png",
+    "kind": "scene",
+    "sha256": "e19661a9f3d5736d1f3edc1e84189fe24b66597b6567003808fa91e495920748",
+    "matchesCaptureRecord": true,
+    "bytes": 116498,
+    "pixels": [
+     390,
+     844
+    ],
+    "pose": {
+     "yaw": 58,
+     "pitch": -16
+    },
+    "fov": 74,
+    "sceneImage": null,
+    "projectsOpen": null,
+    "consoleWarnings": 0,
+    "errors": 0
+   },
+   {
+    "file": "scene-home-320x844-f74.png",
+    "kind": "scene",
+    "sha256": "04d0c489af84fa7fd28a905c04bb2fdb9749d0db7366b41420fecbaade444ba2",
+    "matchesCaptureRecord": true,
+    "bytes": 93800,
+    "pixels": [
+     320,
+     844
+    ],
+    "pose": {
+     "yaw": -13.5,
+     "pitch": -7
+    },
+    "fov": 74,
+    "sceneImage": null,
+    "projectsOpen": null,
+    "consoleWarnings": 0,
+    "errors": 0
+   },
+   {
+    "file": "scene-music-320x844-f74.png",
+    "kind": "scene",
+    "sha256": "36b1fc5a533e4b60bf6072cf0a514d5cdea2acc49fb25eff1602646ee6c40a45",
+    "matchesCaptureRecord": true,
+    "bytes": 96715,
+    "pixels": [
+     320,
+     844
+    ],
+    "pose": {
+     "yaw": 44,
+     "pitch": -8
+    },
+    "fov": 74,
+    "sceneImage": null,
+    "projectsOpen": null,
+    "consoleWarnings": 0,
+    "errors": 0
+   },
+   {
+    "file": "scene-left-up-320x844-f74.png",
+    "kind": "scene",
+    "sha256": "5b7fb2c50d1d4964107e5028fc6a623863f3f374b53afdc2dcec49880b2d6b97",
+    "matchesCaptureRecord": true,
+    "bytes": 103318,
+    "pixels": [
+     320,
+     844
+    ],
+    "pose": {
+     "yaw": -38,
+     "pitch": 12
+    },
+    "fov": 74,
+    "sceneImage": null,
+    "projectsOpen": null,
+    "consoleWarnings": 0,
+    "errors": 0
+   },
+   {
+    "file": "scene-left-down-320x844-f74.png",
+    "kind": "scene",
+    "sha256": "9445653bab47b949e0c674cf250f53f54238bde44036228bd074e9da09d67695",
+    "matchesCaptureRecord": true,
+    "bytes": 80748,
+    "pixels": [
+     320,
+     844
+    ],
+    "pose": {
+     "yaw": -38,
+     "pitch": -16
+    },
+    "fov": 74,
+    "sceneImage": null,
+    "projectsOpen": null,
+    "consoleWarnings": 0,
+    "errors": 0
+   },
+   {
+    "file": "scene-right-up-320x844-f74.png",
+    "kind": "scene",
+    "sha256": "e63bc68d714e134402cca6718779b20a3de49145f5b7007932eecd60addea124",
+    "matchesCaptureRecord": true,
+    "bytes": 99252,
+    "pixels": [
+     320,
+     844
+    ],
+    "pose": {
+     "yaw": 58,
+     "pitch": 12
+    },
+    "fov": 74,
+    "sceneImage": null,
+    "projectsOpen": null,
+    "consoleWarnings": 0,
+    "errors": 0
+   },
+   {
+    "file": "scene-right-down-320x844-f74.png",
+    "kind": "scene",
+    "sha256": "eacfea7f7dc802f31b2ce08abea28df056b3b1a41654d697345ef6de996e4b32",
+    "matchesCaptureRecord": true,
+    "bytes": 97089,
+    "pixels": [
+     320,
+     844
+    ],
+    "pose": {
+     "yaw": 58,
+     "pitch": -16
+    },
+    "fov": 74,
+    "sceneImage": null,
+    "projectsOpen": null,
+    "consoleWarnings": 0,
+    "errors": 0
+   },
+   {
+    "file": "scene-home-previous-yaw-320x844-f74.png",
+    "kind": "scene",
+    "sha256": "e18861a74e903687c5c474980664593fae6b456bfdfac5896f2e0fbbddf1adf0",
+    "matchesCaptureRecord": true,
+    "bytes": 93761,
+    "pixels": [
+     320,
+     844
+    ],
+    "pose": {
+     "yaw": -14,
+     "pitch": -7
+    },
+    "fov": 74,
+    "sceneImage": null,
+    "projectsOpen": null,
+    "consoleWarnings": 0,
+    "errors": 0
+   },
+   {
+    "file": "scene-home-320x568-f74.png",
+    "kind": "scene",
+    "sha256": "02423e8cfe6710219c2b0c297471c22adfe632d27e8f8c356aa42c57e5fcb022",
+    "matchesCaptureRecord": true,
+    "bytes": 81983,
+    "pixels": [
+     320,
+     568
+    ],
+    "pose": {
+     "yaw": -13.5,
+     "pitch": -7
+    },
+    "fov": 74,
+    "sceneImage": null,
+    "projectsOpen": null,
+    "consoleWarnings": 0,
+    "errors": 0
+   },
+   {
+    "file": "chrome-home-default-1440x900.png",
+    "kind": "composite",
+    "sha256": "caea1b9aacb0f0bd4d9d65335d52db87f023d14de6eb54a49ac9a5803e3a5fdc",
+    "matchesCaptureRecord": true,
+    "bytes": 411961,
+    "pixels": [
+     1440,
+     900
+    ],
+    "pose": null,
+    "fov": null,
+    "sceneImage": "scene-home-1440x900-f58.png",
+    "projectsOpen": "false",
+    "consoleWarnings": 1,
+    "errors": 0
+   },
+   {
+    "file": "chrome-music-default-1440x900.png",
+    "kind": "composite",
+    "sha256": "fb4dae71b7a459c0ead4c9315dddf87838fda90400f0b69c99e0c4154828c28d",
+    "matchesCaptureRecord": true,
+    "bytes": 471777,
+    "pixels": [
+     1440,
+     900
+    ],
+    "pose": null,
+    "fov": null,
+    "sceneImage": "scene-music-1440x900-f58.png",
+    "projectsOpen": "false",
+    "consoleWarnings": 1,
+    "errors": 0
+   },
+   {
+    "file": "chrome-right-down-default-1440x900.png",
+    "kind": "composite",
+    "sha256": "25df1061c708f3ceb89662ff40c4d2320076817b75cceb2b210a731aba54cba2",
+    "matchesCaptureRecord": true,
+    "bytes": 513974,
+    "pixels": [
+     1440,
+     900
+    ],
+    "pose": null,
+    "fov": null,
+    "sceneImage": "scene-right-down-1440x900-f58.png",
+    "projectsOpen": "false",
+    "consoleWarnings": 1,
+    "errors": 0
+   },
+   {
+    "file": "chrome-home-default-1024x768.png",
+    "kind": "composite",
+    "sha256": "5eb289806b8c52d1b5ba3e6054d02b343de86ccce074ab3fedce4237845f7175",
+    "matchesCaptureRecord": true,
+    "bytes": 279932,
+    "pixels": [
+     1024,
+     768
+    ],
+    "pose": null,
+    "fov": null,
+    "sceneImage": "scene-home-1024x768-f58.png",
+    "projectsOpen": "false",
+    "consoleWarnings": 0,
+    "errors": 0
+   },
+   {
+    "file": "chrome-home-closed-390x844.png",
+    "kind": "composite",
+    "sha256": "538c8b185f71a84edc4c99c086e619a064e8a6ff96df53f649aa556d89e20c94",
+    "matchesCaptureRecord": true,
+    "bytes": 122531,
+    "pixels": [
+     390,
+     844
+    ],
+    "pose": null,
+    "fov": null,
+    "sceneImage": "scene-home-390x844-f74.png",
+    "projectsOpen": "false",
+    "consoleWarnings": 0,
+    "errors": 0
+   },
+   {
+    "file": "chrome-home-open-390x844.png",
+    "kind": "composite",
+    "sha256": "4d33687bf4163cfad92468be1bc0fdf393aaed26349b9e39bc6fd959c226dd30",
+    "matchesCaptureRecord": true,
+    "bytes": 117600,
+    "pixels": [
+     390,
+     844
+    ],
+    "pose": null,
+    "fov": null,
+    "sceneImage": "scene-home-390x844-f74.png",
+    "projectsOpen": "true",
+    "consoleWarnings": 0,
+    "errors": 0
+   },
+   {
+    "file": "chrome-home-closed-320x844.png",
+    "kind": "composite",
+    "sha256": "ba82378bca51f41481604565e21dddb9e2f1e586867a6804f82a499805df8a51",
+    "matchesCaptureRecord": true,
+    "bytes": 101281,
+    "pixels": [
+     320,
+     844
+    ],
+    "pose": null,
+    "fov": null,
+    "sceneImage": "scene-home-320x844-f74.png",
+    "projectsOpen": "false",
+    "consoleWarnings": 0,
+    "errors": 0
+   },
+   {
+    "file": "chrome-home-open-320x844.png",
+    "kind": "composite",
+    "sha256": "f2faf0fef0a22b14b0a7dfafe3d0334e7a2e43768f01667c1c1b41c9182575c9",
+    "matchesCaptureRecord": true,
+    "bytes": 95386,
+    "pixels": [
+     320,
+     844
+    ],
+    "pose": null,
+    "fov": null,
+    "sceneImage": "scene-home-320x844-f74.png",
+    "projectsOpen": "true",
+    "consoleWarnings": 0,
+    "errors": 0
+   },
+   {
+    "file": "chrome-home-closed-320x568.png",
+    "kind": "composite",
+    "sha256": "091b4374ef546c6ff4b15a77426558a92b182eb1597a3540fed456f91951c96f",
+    "matchesCaptureRecord": true,
+    "bytes": 87429,
+    "pixels": [
+     320,
+     568
+    ],
+    "pose": null,
+    "fov": null,
+    "sceneImage": "scene-home-320x568-f74.png",
+    "projectsOpen": "false",
+    "consoleWarnings": 0,
+    "errors": 0
+   },
+   {
+    "file": "chrome-home-open-320x568.png",
+    "kind": "composite",
+    "sha256": "92de95eb5bfe69b172c1746e5eb0ce87e00346e9a2ebc9d6d9884c2744b05fb2",
+    "matchesCaptureRecord": true,
+    "bytes": 75937,
+    "pixels": [
+     320,
+     568
+    ],
+    "pose": null,
+    "fov": null,
+    "sceneImage": "scene-home-320x568-f74.png",
+    "projectsOpen": "true",
+    "consoleWarnings": 0,
+    "errors": 0
+   }
+  ]
+ },
+ "p1": {
+  "cases": [
+   {
+    "file": "scene-home-320x844-f74.png",
+    "pose": {
+     "yaw": -13.5,
+     "pitch": -7
+    },
+    "fov": 74,
+    "viewport": [
+     320,
+     844
+    ],
+    "faceProjection": {
+     "left": 30.9,
+     "right": 300.8,
+     "top": 335.9,
+     "bottom": 497.5
+    },
+    "rowsMeasured": 143,
+    "rowsReliable": 140,
+    "leftMarginPx": [
+     26,
+     33
+    ],
+    "rightMarginPx": [
+     14,
+     21
+    ],
+    "screenRunPx": {
+     "min": 262,
+     "median": 266,
+     "max": 270
+    },
+    "screenRunAllRows": {
+     "rows": [
+      335,
+      484
+     ],
+     "rowCount": 150,
+     "min": 254,
+     "median": 266,
+     "max": 270,
+     "rowsAtOrAbove265": 107,
+     "rowsBelow265": 43,
+     "every8thRow": [
+      [
+       335,
+       254
+      ],
+      [
+       343,
+       270
+      ],
+      [
+       351,
+       270
+      ],
+      [
+       359,
+       269
+      ],
+      [
+       367,
+       269
+      ],
+      [
+       375,
+       268
+      ],
+      [
+       383,
+       268
+      ],
+      [
+       391,
+       267
+      ],
+      [
+       399,
+       267
+      ],
+      [
+       407,
+       267
+      ],
+      [
+       415,
+       266
+      ],
+      [
+       423,
+       266
+      ],
+      [
+       431,
+       265
+      ],
+      [
+       439,
+       265
+      ],
+      [
+       447,
+       264
+      ],
+      [
+       455,
+       264
+      ],
+      [
+       463,
+       263
+      ],
+      [
+       471,
+       263
+      ],
+      [
+       479,
+       263
+      ]
+     ]
+    },
+    "rowProfiles": [
+     {
+      "y": 340,
+      "left": "+TT.++#+..................+##TTfffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "right": "fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffTT.++.............."
+     },
+     {
+      "y": 415,
+      "left": "fff.TT+###..................+##TTfffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "right": "ffffffffffffffffffffffffffffffffffffffffffffff.fffffffffffffff.TT.##................"
+     },
+     {
+      "y": 475,
+      "left": "fffff.TT+###..................###T.fffffffffffffffffffffffffffffffffffffffffffffffff",
+      "right": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff.TT.##...............+##"
+     },
+     {
+      "y": 490,
+      "left": "ffffffTT.######################...........##########################################",
+      "right": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffTTT###...............###"
+     }
+    ],
+    "note": "Margins are frame edge to the outer BEZEL edge on rows where the wall beside the bezel is lit. screenRunPx is pixels strictly between the two border lines on a row; it narrows toward the bottom because the face is a keystoned trapezoid. Profile legend: T border, f face, # dark, + anti-aliased dark, . lit wall/other; left string starts at x=0, right string ends at the last column."
+   },
+   {
+    "file": "scene-home-previous-yaw-320x844-f74.png",
+    "pose": {
+     "yaw": -14,
+     "pitch": -7
+    },
+    "fov": 74,
+    "viewport": [
+     320,
+     844
+    ],
+    "faceProjection": {
+     "left": 36.1,
+     "right": 306.0,
+     "top": 335.9,
+     "bottom": 497.8
+    },
+    "rowsMeasured": 143,
+    "rowsReliable": 140,
+    "leftMarginPx": [
+     31,
+     38
+    ],
+    "rightMarginPx": [
+     9,
+     16
+    ],
+    "screenRunPx": {
+     "min": 262,
+     "median": 266,
+     "max": 270
+    },
+    "screenRunAllRows": {
+     "rows": [
+      335,
+      483
+     ],
+     "rowCount": 149,
+     "min": 254,
+     "median": 266,
+     "max": 270,
+     "rowsAtOrAbove265": 104,
+     "rowsBelow265": 45,
+     "every8thRow": [
+      [
+       335,
+       254
+      ],
+      [
+       343,
+       270
+      ],
+      [
+       351,
+       270
+      ],
+      [
+       359,
+       270
+      ],
+      [
+       367,
+       268
+      ],
+      [
+       375,
+       268
+      ],
+      [
+       383,
+       268
+      ],
+      [
+       391,
+       268
+      ],
+      [
+       399,
+       267
+      ],
+      [
+       407,
+       266
+      ],
+      [
+       415,
+       266
+      ],
+      [
+       423,
+       266
+      ],
+      [
+       431,
+       265
+      ],
+      [
+       439,
+       265
+      ],
+      [
+       447,
+       264
+      ],
+      [
+       455,
+       264
+      ],
+      [
+       463,
+       263
+      ],
+      [
+       471,
+       263
+      ],
+      [
+       479,
+       262
+      ]
+     ]
+    },
+    "rowProfiles": [
+     {
+      "y": 340,
+      "left": "ffffffTTT++##...................##.T.fffffffffffffffffffffffffffffffffffffffffffffff",
+      "right": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffTTT++........."
+     },
+     {
+      "y": 415,
+      "left": "ffffffff.TT.###+..................##.T.fffffffffffffffffffffffffffffffffffffffffffff",
+      "right": "fffffffffffffffffffffffffffffffffffffffffffffffffff.fffffffffffffff.TT.##..........."
+     },
+     {
+      "y": 475,
+      "left": "ffffffffff.TT.###..................###T.ffffffffffffffffffffffffffffffffffffffffffff",
+      "right": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffTT.##+............"
+     },
+     {
+      "y": 490,
+      "left": "fffffffffffTTT######################...........#####################################",
+      "right": "fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff.TT###............."
+     }
+    ],
+    "note": "Margins are frame edge to the outer BEZEL edge on rows where the wall beside the bezel is lit. screenRunPx is pixels strictly between the two border lines on a row; it narrows toward the bottom because the face is a keystoned trapezoid. Profile legend: T border, f face, # dark, + anti-aliased dark, . lit wall/other; left string starts at x=0, right string ends at the last column."
+   },
+   {
+    "file": "scene-home-390x844-f74.png",
+    "pose": {
+     "yaw": -13.5,
+     "pitch": -7
+    },
+    "fov": 74,
+    "viewport": [
+     390,
+     844
+    ],
+    "faceProjection": {
+     "left": 65.9,
+     "right": 335.8,
+     "top": 335.9,
+     "bottom": 497.5
+    },
+    "rowsMeasured": 143,
+    "rowsReliable": 140,
+    "leftMarginPx": [
+     61,
+     68
+    ],
+    "rightMarginPx": [
+     49,
+     56
+    ],
+    "screenRunPx": {
+     "min": 262,
+     "median": 266,
+     "max": 270
+    },
+    "screenRunAllRows": {
+     "rows": [
+      335,
+      484
+     ],
+     "rowCount": 150,
+     "min": 254,
+     "median": 266,
+     "max": 270,
+     "rowsAtOrAbove265": 107,
+     "rowsBelow265": 43,
+     "every8thRow": [
+      [
+       335,
+       254
+      ],
+      [
+       343,
+       270
+      ],
+      [
+       351,
+       270
+      ],
+      [
+       359,
+       269
+      ],
+      [
+       367,
+       269
+      ],
+      [
+       375,
+       268
+      ],
+      [
+       383,
+       268
+      ],
+      [
+       391,
+       267
+      ],
+      [
+       399,
+       267
+      ],
+      [
+       407,
+       267
+      ],
+      [
+       415,
+       266
+      ],
+      [
+       423,
+       266
+      ],
+      [
+       431,
+       265
+      ],
+      [
+       439,
+       265
+      ],
+      [
+       447,
+       264
+      ],
+      [
+       455,
+       264
+      ],
+      [
+       463,
+       263
+      ],
+      [
+       471,
+       263
+      ],
+      [
+       479,
+       263
+      ]
+     ]
+    },
+    "rowProfiles": [
+     {
+      "y": 340,
+      "left": "fffffffffffffffffffffffffffffffffff+TT.++#+..................+##TTffffffffffffffffff",
+      "right": "ffffffffffffffffffffffffffffffTT.++.................++.TT.fffffffffff...f..........."
+     },
+     {
+      "y": 415,
+      "left": "ffffffffffffffffffffffffffffffffffffff.TT+###..................+##TTffffffffffffffff",
+      "right": "fffffffffff.fffffffffffffff.TT.##................##.TT.fffffffffffffffffffffffffffff"
+     },
+     {
+      "y": 475,
+      "left": "ffffffffffffffffffffffffffffffffffffffff.TT+###..................###T.ffffffffffffff",
+      "right": "fffffffffffffffffffffffff.TT.##...............+##.TT+fffffffffffffffffffffffffffffff"
+     },
+     {
+      "y": 490,
+      "left": "fffffffffffffffffffffffffffffffffffffffffTT.######################..........+#######",
+      "right": "fffffffffffffffffffffffffTTT###...............###TT.ffffffffffffffffffffffffffffffff"
+     }
+    ],
+    "note": "Margins are frame edge to the outer BEZEL edge on rows where the wall beside the bezel is lit. screenRunPx is pixels strictly between the two border lines on a row; it narrows toward the bottom because the face is a keystoned trapezoid. Profile legend: T border, f face, # dark, + anti-aliased dark, . lit wall/other; left string starts at x=0, right string ends at the last column."
+   },
+   {
+    "file": "scene-home-320x568-f74.png",
+    "pose": {
+     "yaw": -13.5,
+     "pitch": -7
+    },
+    "fov": 74,
+    "viewport": [
+     320,
+     568
+    ],
+    "faceProjection": {
+     "left": 73.1,
+     "right": 254.7,
+     "top": 226.1,
+     "bottom": 334.8
+    },
+    "rowsMeasured": 54,
+    "rowsReliable": 54,
+    "leftMarginPx": [
+     70,
+     74
+    ],
+    "rightMarginPx": [
+     62,
+     66
+    ],
+    "screenRunPx": {
+     "min": 174,
+     "median": 180,
+     "max": 182
+    },
+    "screenRunAllRows": {
+     "rows": [
+      226,
+      325
+     ],
+     "rowCount": 58,
+     "min": 171,
+     "median": 180,
+     "max": 182,
+     "rowsAtOrAbove265": 0,
+     "rowsBelow265": 58,
+     "every8thRow": [
+      [
+       226,
+       174
+      ],
+      [
+       234,
+       182
+      ],
+      [
+       256,
+       180
+      ],
+      [
+       264,
+       180
+      ],
+      [
+       272,
+       180
+      ],
+      [
+       294,
+       178
+      ],
+      [
+       302,
+       178
+      ],
+      [
+       310,
+       178
+      ]
+     ]
+    },
+    "rowProfiles": [
+     {
+      "y": 229,
+      "left": "...........fffffffffffffffffffffffffffffffffffffffff+TT+#+............++T.ffffffffff",
+      "right": "fffffffffffffffffffT.+............#.T.fffffff..f.......ff..ffffffffffff.....ffffffff"
+     },
+     {
+      "y": 280,
+      "left": "ffffffffffffffffffffffffffffffffffffffffffffffffffffff.T.##............+#..fffffffff",
+      "right": "fffffffffffffffffTT+#..........+#.T+fffffffffffffffffffffffffffff..ffffffffffff..fff"
+     },
+     {
+      "y": 322,
+      "left": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffTT###......+######..ffffffff",
+      "right": "ffffffffffffffffTT#+..........##T.ffffffffffffffffffffffffffffffffffffffffffffffffff"
+     }
+    ],
+    "note": "Margins are frame edge to the outer BEZEL edge on rows where the wall beside the bezel is lit. screenRunPx is pixels strictly between the two border lines on a row; it narrows toward the bottom because the face is a keystoned trapezoid. Profile legend: T border, f face, # dark, + anti-aliased dark, . lit wall/other; left string starts at x=0, right string ends at the last column."
+   },
+   {
+    "file": "scene-home-1440x900-f58.png",
+    "pose": {
+     "yaw": -4,
+     "pitch": -6
+    },
+    "fov": 58,
+    "viewport": [
+     1440,
+     900
+    ],
+    "faceProjection": {
+     "left": 383.5,
+     "right": 783.9,
+     "top": 340.4,
+     "bottom": 568.5
+    },
+    "rowsMeasured": 209,
+    "rowsReliable": 209,
+    "leftMarginPx": [
+     376,
+     390
+    ],
+    "rightMarginPx": [
+     649,
+     654
+    ],
+    "screenRunPx": {
+     "min": 392,
+     "median": 395,
+     "max": 401
+    },
+    "screenRunAllRows": {
+     "rows": [
+      340,
+      564
+     ],
+     "rowCount": 225,
+     "min": 391,
+     "median": 395,
+     "max": 401,
+     "rowsAtOrAbove265": 225,
+     "rowsBelow265": 0,
+     "every8thRow": [
+      [
+       340,
+       393
+      ],
+      [
+       348,
+       401
+      ],
+      [
+       356,
+       400
+      ],
+      [
+       364,
+       400
+      ],
+      [
+       372,
+       400
+      ],
+      [
+       380,
+       399
+      ],
+      [
+       388,
+       399
+      ],
+      [
+       396,
+       399
+      ],
+      [
+       404,
+       398
+      ],
+      [
+       412,
+       398
+      ],
+      [
+       420,
+       397
+      ],
+      [
+       428,
+       397
+      ],
+      [
+       436,
+       396
+      ],
+      [
+       444,
+       395
+      ],
+      [
+       452,
+       395
+      ],
+      [
+       460,
+       395
+      ],
+      [
+       468,
+       394
+      ],
+      [
+       476,
+       394
+      ],
+      [
+       484,
+       394
+      ],
+      [
+       492,
+       393
+      ],
+      [
+       500,
+       393
+      ],
+      [
+       508,
+       393
+      ],
+      [
+       516,
+       392
+      ],
+      [
+       524,
+       392
+      ],
+      [
+       532,
+       392
+      ],
+      [
+       540,
+       392
+      ],
+      [
+       548,
+       392
+      ],
+      [
+       556,
+       391
+      ],
+      [
+       564,
+       391
+      ]
+     ]
+    },
+    "rowProfiles": [
+     {
+      "y": 345,
+      "left": "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++",
+      "right": "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT.............."
+     },
+     {
+      "y": 454,
+      "left": "+++++++++++++++++++++###............................................................",
+      "right": "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT........................"
+     },
+     {
+      "y": 540,
+      "left": "#++++++++++#####################....................................................",
+      "right": "#################################################################+.................."
+     }
+    ],
+    "note": "Margins are frame edge to the outer BEZEL edge on rows where the wall beside the bezel is lit. screenRunPx is pixels strictly between the two border lines on a row; it narrows toward the bottom because the face is a keystoned trapezoid. Profile legend: T border, f face, # dark, + anti-aliased dark, . lit wall/other; left string starts at x=0, right string ends at the last column."
+   },
+   {
+    "file": "scene-home-1024x768-f58.png",
+    "pose": {
+     "yaw": -4,
+     "pitch": -6
+    },
+    "fov": 58,
+    "viewport": [
+     1024,
+     768
+    ],
+    "faceProjection": {
+     "left": 224.8,
+     "right": 566.5,
+     "top": 290.4,
+     "bottom": 485.2
+    },
+    "rowsMeasured": 176,
+    "rowsReliable": 176,
+    "leftMarginPx": [
+     219,
+     230
+    ],
+    "rightMarginPx": [
+     451,
+     456
+    ],
+    "screenRunPx": {
+     "min": 333,
+     "median": 338,
+     "max": 342
+    },
+    "screenRunAllRows": {
+     "rows": [
+      290,
+      481
+     ],
+     "rowCount": 192,
+     "min": 333,
+     "median": 337,
+     "max": 343,
+     "rowsAtOrAbove265": 192,
+     "rowsBelow265": 0,
+     "every8thRow": [
+      [
+       290,
+       335
+      ],
+      [
+       298,
+       342
+      ],
+      [
+       306,
+       342
+      ],
+      [
+       314,
+       342
+      ],
+      [
+       322,
+       341
+      ],
+      [
+       330,
+       341
+      ],
+      [
+       338,
+       340
+      ],
+      [
+       346,
+       339
+      ],
+      [
+       354,
+       339
+      ],
+      [
+       362,
+       338
+      ],
+      [
+       370,
+       338
+      ],
+      [
+       378,
+       338
+      ],
+      [
+       386,
+       337
+      ],
+      [
+       394,
+       337
+      ],
+      [
+       402,
+       337
+      ],
+      [
+       410,
+       336
+      ],
+      [
+       418,
+       336
+      ],
+      [
+       426,
+       336
+      ],
+      [
+       434,
+       335
+      ],
+      [
+       442,
+       335
+      ],
+      [
+       450,
+       335
+      ],
+      [
+       458,
+       334
+      ],
+      [
+       466,
+       333
+      ],
+      [
+       474,
+       333
+      ]
+     ]
+    },
+    "rowProfiles": [
+     {
+      "y": 295,
+      "left": "+++++####TTT.fffffffffffff...ffff.....................f..f..........................",
+      "right": "TTTTTTTTTTTTTTT............................+++++++.TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+     },
+     {
+      "y": 388,
+      "left": "++++############TTT.ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "right": "#####...............................+######+........................................"
+     },
+     {
+      "y": 470,
+      "left": "###################ff#.TTTffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "right": "................................TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT"
+     }
+    ],
+    "note": "Margins are frame edge to the outer BEZEL edge on rows where the wall beside the bezel is lit. screenRunPx is pixels strictly between the two border lines on a row; it narrows toward the bottom because the face is a keystoned trapezoid. Profile legend: T border, f face, # dark, + anti-aliased dark, . lit wall/other; left string starts at x=0, right string ends at the last column."
+   }
+  ],
+  "typeforgeEdgeSliver320x844": [
+   {
+    "file": "scene-home-320x844-f74.png",
+    "rows": [
+     430,
+     521
+    ],
+    "rowCount": 92,
+    "maxWidthPx": 4
+   },
+   {
+    "file": "scene-home-previous-yaw-320x844-f74.png",
+    "rows": null,
+    "rowCount": 0,
+    "maxWidthPx": 0
+   }
+  ]
+ },
+ "emitters": {
+  "clipDefinition": "all three channels >= 250, as in render-gates.md",
+  "gate": "under 2% of each emitter crop",
+  "cases": [
+   {
+    "emitter": "fix_pendant__lens",
+    "file": "scene-home-1440x900-f58.png",
+    "crop": [
+     270,
+     20,
+     805,
+     65
+    ],
+    "emitterPx": 6916,
+    "clippedPct": 26.0,
+    "luminanceP10P50P90": [
+     217,
+     241,
+     255
+    ],
+    "meanLuminanceByFifthAlongX": [
+     224.2,
+     241.5,
+     243.7,
+     241.8,
+     226.8
+    ],
+    "emitterBox": [
+     275,
+     20,
+     794,
+     59
+    ]
+   },
+   {
+    "emitter": "fix_pendant__lens",
+    "file": "scene-home-1024x768-f58.png",
+    "crop": [
+     125,
+     5,
+     585,
+     55
+    ],
+    "emitterPx": 5041,
+    "clippedPct": 25.8,
+    "luminanceP10P50P90": [
+     211,
+     241,
+     255
+    ],
+    "meanLuminanceByFifthAlongX": [
+     224.0,
+     242.0,
+     242.5,
+     241.4,
+     225.7
+    ],
+    "emitterBox": [
+     132,
+     5,
+     575,
+     50
+    ]
+   },
+   {
+    "emitter": "fix_pendant__lens",
+    "file": "scene-mid-left-1440x900-f58.png",
+    "crop": [
+     540,
+     0,
+     1055,
+     95
+    ],
+    "emitterPx": 6599,
+    "clippedPct": 25.6,
+    "luminanceP10P50P90": [
+     219,
+     241,
+     255
+    ],
+    "meanLuminanceByFifthAlongX": [
+     226.0,
+     241.5,
+     242.4,
+     242.3,
+     225.9
+    ],
+    "emitterBox": [
+     546,
+     0,
+     1048,
+     87
+    ]
+   },
+   {
+    "emitter": "fix_pendant__lens",
+    "file": "scene-left-up-1440x900-f58.png",
+    "crop": [
+     800,
+     205,
+     1340,
+     375
+    ],
+    "emitterPx": 6387,
+    "clippedPct": 24.1,
+    "luminanceP10P50P90": [
+     201,
+     240,
+     255
+    ],
+    "meanLuminanceByFifthAlongX": [
+     228.8,
+     241.4,
+     242.7,
+     232.5,
+     223.4
+    ],
+    "emitterBox": [
+     807,
+     214,
+     1330,
+     374
+    ]
+   },
+   {
+    "emitter": "fix_pendant__lens",
+    "file": "scene-home-320x844-f74.png",
+    "crop": [
+     0,
+     95,
+     320,
+     160
+    ],
+    "emitterPx": 2988,
+    "clippedPct": 26.7,
+    "luminanceP10P50P90": [
+     210,
+     242,
+     255
+    ],
+    "meanLuminanceByFifthAlongX": [
+     234.5,
+     241.0,
+     242.4,
+     240.6,
+     223.3
+    ],
+    "emitterBox": [
+     0,
+     95,
+     313,
+     150
+    ]
+   },
+   {
+    "emitter": "fix_pendant__lens",
+    "file": "scene-home-390x844-f74.png",
+    "crop": [
+     0,
+     95,
+     355,
+     160
+    ],
+    "emitterPx": 3172,
+    "clippedPct": 25.2,
+    "luminanceP10P50P90": [
+     207,
+     241,
+     255
+    ],
+    "meanLuminanceByFifthAlongX": [
+     224.9,
+     240.2,
+     242.5,
+     241.0,
+     224.2
+    ],
+    "emitterBox": [
+     2,
+     95,
+     348,
+     154
+    ]
+   },
+   {
+    "emitter": "fix_pendant__lens",
+    "file": "scene-home-320x568-f74.png",
+    "crop": [
+     25,
+     60,
+     270,
+     110
+    ],
+    "emitterPx": 1421,
+    "clippedPct": 24.8,
+    "luminanceP10P50P90": [
+     197,
+     240,
+     255
+    ],
+    "meanLuminanceByFifthAlongX": [
+     223.0,
+     238.7,
+     242.1,
+     238.9,
+     223.0
+    ],
+    "emitterBox": [
+     30,
+     65,
+     263,
+     103
+    ]
+   },
+   {
+    "emitter": "fix_pendant__lens (left part only in frame)",
+    "file": "scene-left-up-390x844-f74.png",
+    "crop": [
+     250,
+     310,
+     390,
+     370
+    ],
+    "emitterPx": 934,
+    "clippedPct": 22.3,
+    "luminanceP10P50P90": [
+     196,
+     241,
+     254
+    ],
+    "meanLuminanceByFifthAlongX": [
+     214.2,
+     230.9,
+     240.2,
+     239.1,
+     238.4
+    ],
+    "emitterBox": [
+     255,
+     326,
+     389,
+     363
+    ]
+   },
+   {
+    "emitter": "fix_pendant__lens (left end only in frame)",
+    "file": "scene-left-up-320x844-f74.png",
+    "crop": [
+     215,
+     310,
+     320,
+     370
+    ],
+    "emitterPx": 607,
+    "clippedPct": 0.0,
+    "luminanceP10P50P90": [
+     223,
+     236,
+     250
+    ],
+    "meanLuminanceByFifthAlongX": [
+     209.7,
+     227.2,
+     234.3,
+     240.3,
+     241.1
+    ],
+    "emitterBox": [
+     220,
+     335,
+     319,
+     363
+    ]
+   },
+   {
+    "emitter": "fix_pendant__lens (left end only in frame)",
+    "file": "scene-left-down-390x844-f74.png",
+    "crop": [
+     260,
+     0,
+     390,
+     50
+    ],
+    "emitterPx": 1082,
+    "clippedPct": 0.0,
+    "luminanceP10P50P90": [
+     223,
+     236,
+     250
+    ],
+    "meanLuminanceByFifthAlongX": [
+     211.3,
+     227.3,
+     234.4,
+     241.0,
+     244.2
+    ],
+    "emitterBox": [
+     267,
+     5,
+     389,
+     44
+    ]
+   },
+   {
+    "emitter": "fix_wall_triangles proxies (reference, not M2)",
+    "file": "scene-home-1440x900-f58.png",
+    "crop": [
+     830,
+     125,
+     1115,
+     230
+    ],
+    "emitterPx": 11549,
+    "clippedPct": 0.0,
+    "luminanceP10P50P90": [
+     221,
+     241,
+     247
+    ],
+    "meanLuminanceByFifthAlongX": [
+     234.2,
+     237.7,
+     231.0,
+     239.3,
+     236.3
+    ],
+    "emitterBox": [
+     839,
+     135,
+     1105,
+     229
+    ]
+   },
+   {
+    "emitter": "fix_wall_triangles proxies (reference, not M2)",
+    "file": "scene-music-1440x900-f58.png",
+    "crop": [
+     0,
+     40,
+     370,
+     200
+    ],
+    "emitterPx": 17639,
+    "clippedPct": 0.0,
+    "luminanceP10P50P90": [
+     219,
+     241,
+     247
+    ],
+    "meanLuminanceByFifthAlongX": [
+     236.4,
+     238.2,
+     229.1,
+     236.7,
+     236.0
+    ],
+    "emitterBox": [
+     8,
+     53,
+     359,
+     190
+    ]
+   },
+   {
+    "emitter": "fix_floor_lamp shade (reference, not M2)",
+    "file": "scene-right-down-1440x900-f58.png",
+    "crop": [
+     660,
+     50,
+     775,
+     160
+    ],
+    "emitterPx": 9049,
+    "clippedPct": 0.0,
+    "luminanceP10P50P90": [
+     166,
+     207,
+     233
+    ],
+    "meanLuminanceByFifthAlongX": [
+     207.8,
+     209.0,
+     213.0,
+     207.2,
+     186.3
+    ],
+    "emitterBox": [
+     671,
+     50,
+     774,
+     159
+    ]
+   },
+   {
+    "emitter": "fix_floor_lamp shade (reference, not M2)",
+    "file": "scene-music-1440x900-f58.png",
+    "crop": [
+     865,
+     180,
+     985,
+     280
+    ],
+    "emitterPx": 8511,
+    "clippedPct": 0.1,
+    "luminanceP10P50P90": [
+     169,
+     207,
+     233
+    ],
+    "meanLuminanceByFifthAlongX": [
+     207.8,
+     209.9,
+     214.3,
+     209.7,
+     186.6
+    ],
+    "emitterBox": [
+     877,
+     180,
+     984,
+     279
+    ]
+   }
+  ],
+  "pendantLensCentreLineHome1440_y44": [
+   {
+    "x": 330,
+    "rgb": [
+     248,
+     235,
+     204
+    ]
+   },
+   {
+    "x": 370,
+    "rgb": [
+     251,
+     241,
+     217
+    ]
+   },
+   {
+    "x": 410,
+    "rgb": [
+     254,
+     248,
+     233
+    ]
+   },
+   {
+    "x": 450,
+    "rgb": [
+     255,
+     253,
+     247
+    ]
+   },
+   {
+    "x": 490,
+    "rgb": [
+     255,
+     255,
+     254
+    ]
+   },
+   {
+    "x": 530,
+    "rgb": [
+     255,
+     255,
+     255
+    ]
+   },
+   {
+    "x": 570,
+    "rgb": [
+     255,
+     255,
+     255
+    ]
+   },
+   {
+    "x": 610,
+    "rgb": [
+     255,
+     254,
+     250
+    ]
+   },
+   {
+    "x": 650,
+    "rgb": [
+     254,
+     250,
+     238
+    ]
+   },
+   {
+    "x": 690,
+    "rgb": [
+     252,
+     243,
+     222
+    ]
+   },
+   {
+    "x": 730,
+    "rgb": [
+     249,
+     237,
+     208
+    ]
+   },
+   {
+    "x": 770,
+    "rgb": [
+     94,
+     84,
+     66
+    ]
+   }
+  ]
+ },
+ "pc": {
+  "home-1440": {
+   "sceneImage": "scene-home-1440x900-f58.png",
+   "composite": "chrome-home-default-1440x900.png",
+   "handReadFrontRect": [
+    1040,
+    818,
+    1219,
+    900
+   ],
+   "frontToneSplit": {
+    "px": 14678,
+    "lightPct_ge140": 13.5,
+    "midPct_60to140": 23.0,
+    "darkPct_lt60": 63.5
+   },
+   "chromeRects": {
+    "header": [
+     23,
+     23,
+     1417,
+     83
+    ],
+    "projects": [
+     23,
+     681,
+     391,
+     877
+    ],
+    "look": [
+     1124,
+     819,
+     1417,
+     877
+    ],
+    "hint": [
+     1219,
+     729,
+     1417,
+     763
+    ]
+   },
+   "frontRectCoveredPctByChrome": {
+    "look": 37.5
+   },
+   "frontRectCoveredPctTotal": 37.5,
+   "columnReadings": {
+    "glassSideX": [
+     963,
+     1038
+    ],
+    "leftStileX": [
+     1040,
+     1058
+    ],
+    "darkPanelX": [
+     1059,
+     1201
+    ],
+    "rightStileX": [
+     1202,
+     1218
+    ],
+    "topRailRows": [
+     820,
+     845
+    ],
+    "stileRgb": [
+     216,
+     202,
+     176
+    ],
+    "panelRgb": [
+     18,
+     17,
+     9
+    ],
+    "topRailRgbInShadow": [
+     116,
+     112,
+     100
+    ],
+    "fanRingRgb": [
+     90,
+     77,
+     52
+    ],
+    "fanRingThicknessPx": "4-5",
+    "note": "read from row y=850/870 and columns x=1045..1212"
+   }
+  },
+  "home-1024": {
+   "sceneImage": "scene-home-1024x768-f58.png",
+   "composite": "chrome-home-default-1024x768.png",
+   "handReadFrontRect": [
+    785,
+    697,
+    940,
+    768
+   ],
+   "frontToneSplit": {
+    "px": 11005,
+    "lightPct_ge140": 13.0,
+    "midPct_60to140": 23.9,
+    "darkPct_lt60": 63.1
+   },
+   "chromeRects": {
+    "header": [
+     16,
+     16,
+     1008,
+     76
+    ],
+    "projects": [
+     16,
+     556,
+     384,
+     752
+    ],
+    "look": [
+     715,
+     694,
+     1008,
+     752
+    ],
+    "hint": [
+     810,
+     604,
+     1008,
+     637
+    ]
+   },
+   "frontRectCoveredPctByChrome": {
+    "look": 77.5
+   },
+   "frontRectCoveredPctTotal": 77.5
+  },
+  "music-1440": {
+   "sceneImage": "scene-music-1440x900-f58.png",
+   "composite": "chrome-music-default-1440x900.png",
+   "handReadFrontRect": [
+    380,
+    745,
+    522,
+    900
+   ],
+   "frontToneSplit": {
+    "px": 22010,
+    "lightPct_ge140": 9.2,
+    "midPct_60to140": 23.1,
+    "darkPct_lt60": 67.7
+   },
+   "chromeRects": {
+    "header": [
+     23,
+     23,
+     1417,
+     83
+    ],
+    "projects": [
+     23,
+     681,
+     391,
+     877
+    ],
+    "look": [
+     1124,
+     819,
+     1417,
+     877
+    ],
+    "hint": [
+     1219,
+     729,
+     1417,
+     763
+    ]
+   },
+   "frontRectCoveredPctByChrome": {
+    "projects": 6.6
+   },
+   "frontRectCoveredPctTotal": 6.6
+  },
+  "right-down-1440": {
+   "sceneImage": "scene-right-down-1440x900-f58.png",
+   "composite": "chrome-right-down-default-1440x900.png",
+   "handReadFrontRect": [
+    150,
+    660,
+    352,
+    900
+   ],
+   "frontToneSplit": {
+    "px": 48480,
+    "lightPct_ge140": 16.9,
+    "midPct_60to140": 20.8,
+    "darkPct_lt60": 62.4
+   },
+   "chromeRects": {
+    "header": [
+     23,
+     23,
+     1417,
+     83
+    ],
+    "projects": [
+     23,
+     681,
+     391,
+     877
+    ],
+    "look": [
+     1124,
+     819,
+     1417,
+     877
+    ],
+    "hint": [
+     1219,
+     729,
+     1417,
+     763
+    ]
+   },
+   "frontRectCoveredPctByChrome": {
+    "projects": 81.7
+   },
+   "frontRectCoveredPctTotal": 81.7
+  }
+ },
+ "contactSheet": {
+  "path": "design/studio-v2/scene-coordination/m2-visual-review-crops.png",
+  "resampling": "nearest-neighbour, no smoothing",
+  "tiles": [
+   {
+    "title": "PC home-1440 raw x3",
+    "source": "scene-home-1440x900-f58.png",
+    "sourceBox": [
+     930,
+     780,
+     1440,
+     900
+    ],
+    "scale": 3,
+    "sheetY": [
+     0,
+     360
+    ]
+   },
+   {
+    "title": "PC home-1440 + chrome x3",
+    "source": "chrome-home-default-1440x900.png",
+    "sourceBox": [
+     930,
+     780,
+     1440,
+     900
+    ],
+    "scale": 3,
+    "sheetY": [
+     368,
+     728
+    ]
+   },
+   {
+    "title": "PC home-1024 + chrome x3",
+    "source": "chrome-home-default-1024x768.png",
+    "sourceBox": [
+     690,
+     670,
+     1024,
+     768
+    ],
+    "scale": 3,
+    "sheetY": [
+     736,
+     1030
+    ]
+   },
+   {
+    "title": "PC mid-right-1440 raw x2",
+    "source": "scene-mid-right-1440x900-f58.png",
+    "sourceBox": [
+     440,
+     620,
+     800,
+     900
+    ],
+    "scale": 2,
+    "sheetY": [
+     1038,
+     1598
+    ]
+   },
+   {
+    "title": "PC right-down-1440 + chrome x2",
+    "source": "chrome-right-down-default-1440x900.png",
+    "sourceBox": [
+     0,
+     560,
+     460,
+     900
+    ],
+    "scale": 2,
+    "sheetY": [
+     1606,
+     2286
+    ]
+   },
+   {
+    "title": "Pendant lens home-1440 x2",
+    "source": "scene-home-1440x900-f58.png",
+    "sourceBox": [
+     260,
+     0,
+     810,
+     70
+    ],
+    "scale": 2,
+    "sheetY": [
+     2294,
+     2434
+    ]
+   },
+   {
+    "title": "Pendant lens left-up-1440 x2",
+    "source": "scene-left-up-1440x900-f58.png",
+    "sourceBox": [
+     790,
+     190,
+     1340,
+     380
+    ],
+    "scale": 2,
+    "sheetY": [
+     2442,
+     2822
+    ]
+   },
+   {
+    "title": "320x844 yaw -13.5 monitor band x3",
+    "source": "scene-home-320x844-f74.png",
+    "sourceBox": [
+     0,
+     320,
+     320,
+     520
+    ],
+    "scale": 3,
+    "sheetY": [
+     2830,
+     3430
+    ]
+   },
+   {
+    "title": "320x844 yaw -14 monitor band x3",
+    "source": "scene-home-previous-yaw-320x844-f74.png",
+    "sourceBox": [
+     0,
+     320,
+     320,
+     520
+    ],
+    "scale": 3,
+    "sheetY": [
+     3438,
+     4038
+    ]
+   },
+   {
+    "title": "Central stand, cables, grommet home-1440 x3",
+    "source": "scene-home-1440x900-f58.png",
+    "sourceBox": [
+     500,
+     540,
+     790,
+     660
+    ],
+    "scale": 3,
+    "sheetY": [
+     4046,
+     4406
+    ]
+   },
+   {
+    "title": "Desk end and edge left-down-1440 x3",
+    "source": "scene-left-down-1440x900-f58.png",
+    "sourceBox": [
+     480,
+     440,
+     800,
+     620
+    ],
+    "scale": 3,
+    "sheetY": [
+     4414,
+     4954
+    ]
+   },
+   {
+    "title": "Subwoofer left-down-1440 x3",
+    "source": "scene-left-down-1440x900-f58.png",
+    "sourceBox": [
+     690,
+     560,
+     950,
+     800
+    ],
+    "scale": 3,
+    "sheetY": [
+     4962,
+     5682
+    ]
+   }
+  ]
+ }
+}

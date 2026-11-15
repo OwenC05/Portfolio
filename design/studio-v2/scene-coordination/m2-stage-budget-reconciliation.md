@@ -2,6 +2,8 @@
 
 15 November 2026. S coordination evidence, not artistic approval or a budget waiver. The held M2 candidate has **23 primitive instances versus 19 planned and a 20-instance stage ceiling**. The discrepancy is accounted for below; the ceiling has not been met or changed.
 
+Subsequent disposition: [root's bounded release](full-kit-budget-root-disposition.md) retains M1/M2 provisionally for non-expanding material repair and requires a separate complete export ledger before M3. The [independent technical review](full-kit-budget-technical-review.md) supersedes the hypothetical headroom arithmetic below with exact current all-visible accounting:169 refresh calls/37,440 triangles, including four extra double-sided transparent submissions. It also identifies the M1 switch proxy among the51 proxies. The unchanged70/130 forecast is rejected; no stage or hard-gate waiver is recorded.
+
 Sources: frozen `asset-inventory.json` SHA256 `EDDC33B5A1C4B05184745C70AC71D25CB37BEF295638F0B3ECAAA440A4001C87`; M2 v02 GLB `2089A4F0B955C2730D167A8EE4258F7939B29F51057D9944678B44B4F2555411`; independently recomputed identical manifest `A3BD983A582D58875ED024E6815FA891F511B51E72B4D3B835C50692A9A48C51`; root capture receipt `.omx/context/full-kit-m2-runtime-capture-v01.json` SHA256 `1DA664B90227C9869801F7F0B950B59C64C24CC52F84BB584E197A4A6ADD49B2`. See [independent technical check](../scene-m2-technical-check.md) for installed-loader/binder and ownership evidence. This reconciliation reads those artifacts; it does not repeat the 72-test suite or mutate the inventory/profile.
 
 ## Exact M2 accounting

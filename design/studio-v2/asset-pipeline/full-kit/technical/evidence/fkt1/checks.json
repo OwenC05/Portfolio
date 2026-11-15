@@ -1,0 +1,44 @@
+[
+  {
+    "label": "typecheck",
+    "command": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "node_modules/typescript/bin/tsc",
+      "--noEmit",
+      "--incremental",
+      "false",
+      "--pretty",
+      "false"
+    ],
+    "exit": 0
+  },
+  {
+    "label": "configured-lint",
+    "command": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "node_modules/eslint/bin/eslint.js",
+      "components/studio/scene/load-full-kit.ts"
+    ],
+    "exit": 2
+  },
+  {
+    "label": "cli-baseline",
+    "command": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "design/studio-v2/asset-pipeline/full-kit/technical/validate-full-kit.mjs",
+      "design/studio-v2/asset-pipeline/full-kit/exports/studio-full-kit-m1-baseline-v02.glb",
+      "design/studio-v2/asset-pipeline/full-kit/manifests/studio-full-kit-m1-baseline-v02.manifest.json"
+    ],
+    "exit": 0
+  },
+  {
+    "label": "cli-proposal",
+    "command": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "design/studio-v2/asset-pipeline/full-kit/technical/validate-full-kit.mjs",
+      "design/studio-v2/asset-pipeline/full-kit/exports/studio-full-kit-m1-proposal-v02.glb",
+      "design/studio-v2/asset-pipeline/full-kit/manifests/studio-full-kit-m1-proposal-v02.manifest.json"
+    ],
+    "exit": 0
+  }
+]

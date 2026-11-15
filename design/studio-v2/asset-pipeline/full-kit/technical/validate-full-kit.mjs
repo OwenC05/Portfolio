@@ -4,7 +4,7 @@ import { createHash } from 'node:crypto';
 import { gzipSync, brotliCompressSync } from 'node:zlib';
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { inspectFullKit, checkManifest, requireFullKit } from './profile-core.mjs';
+import { inspectFullKit, checkManifest, requireFullKit, canonical, checkInventoryIdentity } from './profile-core.mjs';
 
 export const profileBytes = readFileSync(new URL('../full-kit-profile-v1.json', import.meta.url));
 export const inventoryBytes = readFileSync(new URL('../asset-inventory.json', import.meta.url));
@@ -23,13 +23,9 @@ export function validateFullKit(bytes, manifest) {
   try {
     requireFullKit(manifest.glbSha256 === sha256(bytes), 'GLB hash mismatch');
     requireFullKit(manifest.artInventorySha256 === sha256(inventoryBytes), 'art inventory hash mismatch');
+    checkInventoryIdentity(sha256(canonical(inventory)));
     const inspection = inspectFullKit(bytes, profile, inventory, manifest.variant);
-    checkManifest(manifest, inspection, profile);
-    if (manifest.stage === 'final') {
-      const ids = new Set(inspection.snapshot.nodes.map((n) => n.extras.assetId));
-      requireFullKit(inventory.assets.every((a) => ids.has(a.id)), 'final inventory incomplete');
-      requireFullKit(inspection.snapshot.nodes.every((n) => !n.extras.proxy && !n.name.includes('__proxy')), 'final contains proxy');
-    }
+    checkManifest(manifest, inspection, profile, inventory);
     report.valid = true;
     report.metrics = { ...inspection.snapshot.counts, rawBytes: bytes.length, gzipBytesEstimate: gzipSync(bytes).length, brotliBytesEstimate: brotliCompressSync(bytes).length, textureEncodedBytes: inspection.images.reduce((sum, image) => sum + image.bytes, 0), rawRgbaBytesBeforeMipmaps: inspection.snapshot.counts.imagePixels * 4 };
     report.boundsGltfMetres = inspection.snapshot.boundsGltfMetres;

@@ -5,6 +5,14 @@ export function requireFullKit(condition, message) {
   if (!condition) throw new Error(`Studio full kit: ${message}`);
 }
 const check = requireFullKit;
+// Frozen source identity: raw bytes remain the manifest contract. The canonical
+// pin also binds the parsed JSON bundled by Next, where source whitespace is lost.
+// Both pins must be verified against asset-inventory.json when it is revised.
+export const artInventorySha256 = 'eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87';
+export const artInventoryCanonicalSha256 = '4c654f241a29a3ce83229132bdbf085798690af56beaca388e1b5fb3e361b8d2';
+export function checkInventoryIdentity(canonicalSha256) {
+  check(canonicalSha256 === artInventoryCanonicalSha256, 'bundled art inventory identity mismatch');
+}
 const finite = (value, size) => Array.isArray(value) && value.length === size && value.every(Number.isFinite);
 const integer = (value, min = 0) => Number.isSafeInteger(value) && value >= min;
 const unit = (value) => Number.isFinite(value) && value >= 0 && value <= 1;
@@ -321,8 +329,15 @@ export function canonical(value) {
   return JSON.stringify(value);
 }
 
-export function checkManifest(manifest, inspection, profile) {
-  check(manifest.profileId === profile.profileId && ['baseline', 'proposal'].includes(manifest.variant) && typeof manifest.stage === 'string' && /^(M[0-6]|final|synthetic)$/.test(manifest.stage), 'manifest identity/stage');
-  check(/^[a-f0-9]{64}$/.test(manifest.glbSha256) && /^[a-f0-9]{64}$/.test(manifest.artInventorySha256), 'manifest hashes');
+export function checkManifest(manifest, inspection, profile, inventory) {
+  check(manifest.profileId === profile.profileId && ['baseline', 'proposal'].includes(manifest.variant) && ['M0', 'M1', 'M2', 'M3', 'M4', 'M5', 'M6', 'final', 'synthetic'].includes(manifest.stage), 'manifest identity/stage');
+  const isHash = (value) => typeof value === 'string' && value.length === 64 && /^[a-f0-9]{64}$/.test(value);
+  check(isHash(manifest.glbSha256) && isHash(manifest.artInventorySha256), 'manifest hashes');
+  check(manifest.artInventorySha256 === artInventorySha256, 'art inventory hash mismatch');
   for (const [key, value] of Object.entries(inspection.snapshot)) check(canonical(manifest[key]) === canonical(value), `manifest ${key} differs from bytes`);
+  if (manifest.stage === 'final') {
+    const ids = new Set(inspection.snapshot.nodes.map((n) => n.extras.assetId));
+    check(inventory.assets.every((a) => ids.has(a.id)), 'final inventory incomplete');
+    check(inspection.snapshot.nodes.every((n) => !n.extras.proxy && !n.name.includes('__proxy')), 'final contains proxy');
+  }
 }

@@ -101,12 +101,12 @@ function fixture(options = {}) {
   const pilotModule = loadTs('./load-full-kit.ts', {
     three: trackedThree, 'three/addons/loaders/GLTFLoader.js': { GLTFLoader: Loader },
     '@/design/studio-v2/asset-pipeline/full-kit/full-kit-profile-v1.json': profile,
-    '@/design/studio-v2/asset-pipeline/full-kit/asset-inventory.json': inventory,
+    '@/design/studio-v2/asset-pipeline/full-kit/asset-inventory.json': options.inventory ?? inventory,
     '@/design/studio-v2/asset-pipeline/full-kit/technical/fixtures/baseline.manifest.json': options.manifest ?? candidateManifest(options.bytes ?? candidate, options.variant ?? 'baseline', 'synthetic'),
     '@/design/studio-v2/asset-pipeline/full-kit/technical/profile-core.mjs': core,
     './full-kit-types': state,
   }, {
-    AbortController, DOMException, Blob, crypto: webcrypto,
+    AbortController, DOMException, Blob, TextEncoder, crypto: webcrypto,
     URL: options.htmlImage ? {
       createObjectURL() { const url = `blob:studio-test-${imageUrls.created.length}`; imageUrls.created.push(url); return url; },
       revokeObjectURL(url) { imageUrls.revoked.push(url); },
@@ -404,6 +404,110 @@ for (const mode of ['success', 'failure', 'abort']) test(`HTMLImage fallback ${m
     await settle(); assert.ok(h.imageUrls.created.length); assert.deepEqual([...h.imageUrls.created].sort(), [...h.imageUrls.revoked].sort());
     assert.ok(h.htmlImages.every((image) => image.onload === null && image.onerror === null)); h.assertReleased();
   } finally { gate?.resolve(); await settle(); h.restore(); }
+});
+
+// FKT-1: metadata-only mutations keep the original bytes and their valid hash.
+test('FKT-1 inventory pins bind exact source bytes and bundled JSON content', () => {
+  const bytes = readFileSync(new URL('../../../design/studio-v2/asset-pipeline/full-kit/asset-inventory.json', import.meta.url));
+  const hash = (value) => createHash('sha256').update(value).digest('hex');
+  assert.equal(hash(bytes), core.artInventorySha256);
+  assert.equal(hash(core.canonical(JSON.parse(bytes))), core.artInventoryCanonicalSha256);
+  assert.doesNotThrow(() => core.checkInventoryIdentity(hash(core.canonical(inventory))));
+});
+
+for (const variant of ['baseline', 'proposal']) {
+  const base = '../../../design/studio-v2/asset-pipeline/full-kit/';
+  const bytes = readFileSync(new URL(`${base}exports/studio-full-kit-m1-${variant}-v02.glb`, import.meta.url));
+  const manifest = JSON.parse(readFileSync(new URL(`${base}manifests/studio-full-kit-m1-${variant}-v02.manifest.json`, import.meta.url)));
+  test(`FKT-1 real M1 ${variant}: exact author manifest, permitted proxies and missing later gear`, async () => {
+    assert.equal(manifest.stage, 'M1');
+    assert.ok(manifest.nodes.some((n) => n.extras.proxy || n.name.includes('__proxy')));
+    assert.ok(inventory.assets.some((a) => !manifest.nodes.some((n) => n.extras.assetId === a.id)));
+    assert.equal(validateFullKit(bytes, manifest).valid, true);
+    const h = fixture({ bytes, manifest });
+    let asset;
+    const runtime = new resourcesModule.SceneResources();
+    try {
+      asset = await h.load(new AbortController().signal);
+      const bindings = binder.bindFullKit(runtime, asset.root);
+      assert.equal(bindings.targets.length, 3);
+      assert.equal(bindings.occluders.length, manifest.nodes.filter((n) => n.extras.occluder).length);
+    } finally { asset?.dispose(); runtime.dispose(); h.assertReleased(); h.restore(); }
+  });
+  manifestParityCases(`real M1 ${variant}`, bytes, manifest);
+}
+const parityFixture = makeFixture();
+manifestParityCases('original synthetic', parityFixture.bytes, parityFixture.manifest);
+
+function manifestParityCases(label, bytes, original) {
+  for (const [name, mutate, reason] of [
+    ['zero inventory hash', (m) => { m.artInventorySha256 = '0'.repeat(64); }, /art inventory hash mismatch/],
+    ['incomplete final', (m) => { m.stage = 'final'; }, /final inventory incomplete/],
+    ['stage trailing newline', (m) => { m.stage = 'final\n'; }, /manifest identity\/stage/],
+    ['unknown stage', (m) => { m.stage = 'M7'; }, /manifest identity\/stage/],
+    ['non-string stage', (m) => { m.stage = ['M1']; }, /manifest identity\/stage/],
+    ['variant trailing newline', (m) => { m.variant += '\n'; }, /explicit baseline\/proposal required/],
+    ['non-string variant', (m) => { m.variant = [m.variant]; }, /explicit baseline\/proposal required/],
+  ]) test(`FKT-1 ${label}: rejects ${name} with original valid bytes`, async () => {
+    const manifest = structuredClone(original); mutate(manifest);
+    assert.equal(manifest.glbSha256, createHash('sha256').update(bytes).digest('hex'));
+    assert.equal(validateFullKit(bytes, original).valid, true, 'unmutated control must pass');
+    const report = validateFullKit(bytes, manifest);
+    assert.equal(report.valid, false); assert.match(report.errors.join(), reason);
+    const h = fixture({ bytes, manifest });
+    try {
+      await assert.rejects(h.load(new AbortController().signal), (error) => {
+        assert.match(error.message, reason);
+        assert.equal(error.message, report.errors[0], 'runtime and CLI reject for the same cause');
+        return true;
+      });
+      assert.equal(h.parser, undefined, 'metadata failure must precede parser allocation');
+      assert.equal(h.images.length, 0); h.assertReleased();
+    } finally { h.restore(); }
+  });
+}
+
+function completeInventoryFixture(proxy) {
+  // Synthetic completeness probe only: no claim of final artwork acceptance.
+  const f = makeFixture(), template = f.doc.nodes.find((n) => n.name === 'arch_shell__linked0');
+  const represented = new Set(f.doc.nodes.map((n) => n.extras?.assetId));
+  for (const asset of inventory.assets) if (!represented.has(asset.id)) {
+    const node = structuredClone(template);
+    node.name = `${asset.id}__completion_probe`; node.extras.assetId = asset.id;
+    f.doc.nodes[0].children.push(f.doc.nodes.length); f.doc.nodes.push(node);
+  }
+  if (proxy === 'flag') template.extras.proxy = true;
+  if (proxy === 'name') template.name = 'arch_shell__proxy_completion_probe';
+  const bytes = encodeGlb(f.doc, f.binary);
+  return { bytes, manifest: candidateManifest(bytes, 'baseline', 'final') };
+}
+
+for (const proxy of [undefined, 'flag', 'name']) test(`FKT-1 all 59 IDs: ${proxy ? `reject final proxy ${proxy}` : 'admit structurally complete synthetic final'}`, async () => {
+  const f = completeInventoryFixture(proxy);
+  assert.equal(inventory.assets.length, 59);
+  assert.ok(inventory.assets.every((a) => f.manifest.nodes.some((n) => n.extras.assetId === a.id)));
+  const report = validateFullKit(f.bytes, f.manifest);
+  assert.equal(report.valid, !proxy);
+  const h = fixture(f); let asset;
+  try {
+    if (proxy) {
+      assert.match(report.errors.join(), /final contains proxy/);
+      await assert.rejects(h.load(new AbortController().signal), (error) => {
+        assert.equal(error.message, report.errors[0]); return true;
+      });
+      assert.equal(h.parser, undefined);
+    } else asset = await h.load(new AbortController().signal);
+  } finally { asset?.dispose(); h.assertReleased(); h.restore(); }
+});
+
+test('FKT-1 bundled inventory drift rejects despite unchanged candidate identity', async () => {
+  const changed = structuredClone(inventory);
+  changed.assets[0].id += '_drift';
+  const h = fixture({ inventory: changed });
+  try {
+    await assert.rejects(h.load(new AbortController().signal), /bundled art inventory identity mismatch/);
+    assert.equal(h.parser, undefined); h.assertReleased();
+  } finally { h.restore(); }
 });
 
 // Optional exact author candidate; decoding remains a labelled CPU boundary stub.

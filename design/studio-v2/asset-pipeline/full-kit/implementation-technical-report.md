@@ -65,3 +65,33 @@ Root requested source stability during preview in `msg_e0af72fa1da8`; loader, bi
 Independent Codex review is **pending**: coordinator reported reviewer dispatch `ctx_a52f1856e522` failed startup at `agent-hooks-review-prompt` before execution. No reviewer verdict is inferred; no hooks were bypassed or reconfigured. Root owns recovery/review routing, browser decoding/WebGL captures, actual target-clearance/appearance verdict, and first-refresh/settled renderer/network measurements.
 
 Hard limits remain 1,500,000 compressed bytes for scene JS plus assets, 200 peak renderer draws and 200,000 rendered triangles. No runtime total, scene-JS headroom, GPU reclamation, visual acceptance or overall product completion is established by these bounded outputs.
+
+## FKT-1 bounded repair, 15 November 2026
+
+Writer: actual Codex, task `task_0c3dd6b3f781`, dispatch `ctx_e0fa565b92d1`, ACK `msg_62a844ece892`. The exact terminal's running `codex.exe` PID 7712 argv verified `-m gpt-6-astra -c model_reasoning_effort=high`; worker-show verified live/input_accepted. No helpers. This section supersedes the historical pending-review status above: independent review `task_b2b62a79af12` / `ctx_70b616d3a242` found FKT-1 and requested changes. This repair is ready for independent re-review, not independently approved or overall complete.
+
+The shared manifest checker now compares the raw inventory SHA256 with the frozen source identity and enforces final inventory coverage and absence of proxy flags/names. Runtime and CLI both use it. The runtime also hashes canonical bundled inventory JSON against a separate pinned digest, so an altered JSON import cannot silently inherit the raw-byte identity after bundling removes whitespace. CLI retains the actual source-byte comparison and checks the same canonical identity. Regression checks bind both pins to the actual frozen source file. Inventory revisions must deliberately update both pins; no profile, contract, inventory, manifest or GLB was changed.
+
+Stage and variant use exact admitted values. Existing M0-M6/synthetic admission remains; M1 permits the current proxies and missing later gear. Final still requires every one of the 59 inventory IDs and no proxy flag or proxy name. A structurally complete synthetic final is only a semantics control, not proof of final artwork, native mouse quality or visual completeness.
+
+Only four implementation/test files changed:
+
+| File | Repaired SHA256 |
+| --- | --- |
+| `components/studio/scene/load-full-kit.ts` | `37549d60af2eb7f5e1feaf0914fd0da496ec38441ebe088ce445d2914b5ad68f` |
+| `components/studio/scene/verify-full-kit.mjs` | `ea836ba70da71020ba78b70b78311b46d2eacec798da4f8163e7b03a54b3b531` |
+| `technical/profile-core.mjs` | `02b65feddb651f41a4a9d5eab4f55e41ae15c321d850a26fba00b3a92889ae71` |
+| `technical/validate-full-kit.mjs` | `66ee9d342cbded31994e6e8655e385c5b7945916b5ec68ad3404af9beda8bd75` |
+
+This report and additive `technical/evidence/fkt1/**` receipts are the remaining writer outputs. Original reviewer probes/results and the earlier implementation evidence remain untouched. Before/after hash receipts include both v01/v02 GLBs and manifests, profile/inventory/contract, held scene sources, and original reviewer evidence. Accepted v02 hashes remain baseline `04994845f62236c6230dce1ba8af7d9811e21fc1e45c0fff6a89be7f06777093` and proposal `bdc997b45917be0c72480af9738362e9940e5159b07781eac2bfa6b86b01fe76`.
+
+| Fresh check | Result |
+| --- | --- |
+| Pre-repair `node --test --test-reporter=tap --test-name-pattern=FKT-1 components/studio/scene/verify-full-kit.mjs` | 27 cases: 18 pass, 9 fail; preserved in `before-regressions.tap`. The reported zero-hash and incomplete-final mutations reproduce on unchanged synthetic bytes and both real M1 candidates. PowerShell's final Get-Content masked the shell exit; TAP failures are explicit, not a passing-command claim. |
+| Repaired `node --test --test-reporter=tap components/studio/scene/verify-full-kit.mjs` | Exit0, 72/72. Includes exact author baseline/proposal M1 manifests through validator, installed loader and binder, metadata rejection before parser allocation, exact stage/variant negatives, bundled inventory drift, complete synthetic final positive, and final proxy-flag/name negatives. |
+| `node node_modules/typescript/bin/tsc --noEmit --incremental false --pretty false` | Exit0. |
+| CLI `technical/validate-full-kit.mjs` against each actual v02 GLB and its author manifest | Exit0 both; full command/args and reports in the new evidence directory. |
+| Configured ESLint on changed loader | Exit2: existing missing `@typescript-eslint/eslint-plugin`; not repaired or bypassed in project configuration. |
+| Supplemental ESLint API, `useEslintrc:false`, `next/core-web-vitals`, installed TypeScript parser, all four changed TS/MJS files | 0 errors, 0 warnings; supplementary only. |
+
+The 28 added checks include two actual M1 positives; metadata mutations preserve the correct original GLB hash and assert the specific matching runtime/CLI rejection. Final proxy cases include all 59 IDs, so missing-inventory rejection cannot hide the proxy guard. ImageBitmap/Canvas2D remain labelled CPU shims; no browser/server/build/Blender/generation or fresh pixel/GPU evidence was used. Binder, types, production/controller/pilot/UI/configuration/dependencies remain untouched. Existing nonblocking trusted-root mutation observations are outside this assignment. Sources are held for S's independent re-review; root retains all integration, M2 and final acceptance decisions.

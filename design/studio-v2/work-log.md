@@ -11,14 +11,13 @@ This checkpoint preserves the implementation, editable asset sources, generation
 - The Blender door/lamp pilot and bounded runtime tuning received independent technical and Claude visual approval.
 - Full-room M1 baseline and proposal v02 GLBs fix the rejected v01 UV inversion. The real loader/binder/builder rendered 22 isolated desktop/mobile captures with zero recorded page errors or warnings and stable source hashes. These images use provisional lighting and many equipment proxies; they omit product chrome.
 - Independent Claude accepted M1 direction with explicit geometry/visibility conditions. Root choices are in `scene-coordination/full-kit-m1-root-decisions.md`.
-- The implementation author reported 44 passing technical tests. Independent technical review found blocking FKT-1: runtime/CLI inventory-hash and final-stage validation parity. That repair and independent rereview remain open; passing author tests do not waive it.
+- Independent technical review found FKT-1: runtime/CLI inventory-hash and final-stage validation parity. The repair passed72 author checks and independent rereview with24 focused probes plus9 CLI checks. Root verified the four current implementation/test hashes against the APPROVE report; FKT-1 is closed. Browser/production/full-room acceptance remains open.
 - Worker model/effort selection now follows `.omx/plans/portfolio-worker-model-routing.md`, as explicitly requested by the user. Claude owns design; Codex owns technical work.
 
 ### Next work
 
-1. Repair FKT-1 with actual Codex Astra/high, then independent rereview.
-2. M2 workstation authoring with actual Claude Opus5.5/high; subsequent art stages retain the independent critic's C1-C3 and visibility conditions.
-3. Confirm proposed phone yaw at FOV74, integrate actual chrome, finish required equipment, and run final browser/lifecycle/performance/production and independent review gates.
+1. M2 workstation authoring with actual Claude Opus5.5/high; subsequent art stages retain the independent critic's C1-C3 and visibility conditions.
+2. Confirm proposed phone yaw at FOV74, integrate actual chrome, finish required equipment, and run final browser/lifecycle/performance/production and independent review gates.
 
 The user-approved WSL/agentmemory maintenance completed with a verified stopped-store backup and matching known-memory recall. The6GB cap is active and the worker hold is released; see `scene-coordination/wsl-maintenance-20261115.md`. State RSS remains about3.1GiB shortly after restart;30/60-minute measurements are pending. Global machine credentials, raw recalled memory data, runtime caches and service state are not portfolio source artifacts.
 

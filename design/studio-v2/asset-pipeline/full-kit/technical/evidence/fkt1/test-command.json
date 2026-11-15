@@ -1,0 +1,9 @@
+{
+  "command": "C:\\Program Files\\nodejs\\node.exe",
+  "args": [
+    "--test",
+    "--test-reporter=tap",
+    "components/studio/scene/verify-full-kit.mjs"
+  ],
+  "exit": 0
+}

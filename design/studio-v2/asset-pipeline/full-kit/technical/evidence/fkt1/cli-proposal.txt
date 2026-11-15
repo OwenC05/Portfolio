@@ -1,0 +1,40 @@
+{
+  "valid": true,
+  "profileId": "studio-full-kit-v1",
+  "profileSha256": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+  "glbSha256": "bdc997b45917be0c72480af9738362e9940e5159b07781eac2bfa6b86b01fe76",
+  "errors": [],
+  "deferred": [
+    "Actual browser PNG/JPEG decode",
+    "Runtime renderer first-refresh/settled draws and triangles",
+    "Scene JS plus assets transfer",
+    "Root visual gate and independent review"
+  ],
+  "metrics": {
+    "uniqueGeometryTriangles": 5988,
+    "placedTriangles": 7464,
+    "shadowTriangles": 2316,
+    "primitiveInstances": 138,
+    "shadowInstances": 73,
+    "imagePixels": 425984,
+    "materialCount": 10,
+    "textureCount": 5,
+    "rawBytes": 673348,
+    "gzipBytesEstimate": 399953,
+    "brotliBytesEstimate": 368525,
+    "textureEncodedBytes": 325195,
+    "rawRgbaBytesBeforeMipmaps": 1703936
+  },
+  "boundsGltfMetres": {
+    "min": [
+      -2.250000089406967,
+      -0.02000001072883606,
+      -1.0600000619888306
+    ],
+    "max": [
+      2.550000101327896,
+      2.5950000565499067,
+      3.3000000715255737
+    ]
+  }
+}

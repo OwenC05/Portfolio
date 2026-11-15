@@ -4,7 +4,7 @@ import type { GLTFParser } from 'three/addons/loaders/GLTFLoader.js';
 import profile from '@/design/studio-v2/asset-pipeline/full-kit/full-kit-profile-v1.json';
 import inventory from '@/design/studio-v2/asset-pipeline/full-kit/asset-inventory.json';
 import fixtureManifest from '@/design/studio-v2/asset-pipeline/full-kit/technical/fixtures/baseline.manifest.json';
-import { inspectFullKit, checkManifest, textureSlots, requireFullKit } from '@/design/studio-v2/asset-pipeline/full-kit/technical/profile-core.mjs';
+import { inspectFullKit, checkManifest, textureSlots, requireFullKit, canonical, checkInventoryIdentity } from '@/design/studio-v2/asset-pipeline/full-kit/technical/profile-core.mjs';
 import { fullKitCertificates, type StudioFullKitAsset } from './full-kit-types';
 
 // Explicit internal CPU fixture selection. Not installed or wired into production.
@@ -233,8 +233,10 @@ export async function loadFullKit(signal: AbortSignal): Promise<StudioFullKitAss
     requireKit(bytes.byteLength <= profile.guards.maxRawGlbBytes, 'raw byte guard');
     const digest = await crypto.subtle.digest('SHA-256', bytes);
     requireKit(Array.from(new Uint8Array(digest), (b) => b.toString(16).padStart(2, '0')).join('') === candidate.manifest.glbSha256, 'candidate byte hash');
+    const inventoryDigest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(canonical(inventory)));
+    checkInventoryIdentity(Array.from(new Uint8Array(inventoryDigest), (b) => b.toString(16).padStart(2, '0')).join(''));
     const inspection = inspectFullKit(bytes, profile, inventory, candidate.manifest.variant);
-    checkManifest(candidate.manifest, inspection, profile);
+    checkManifest(candidate.manifest, inspection, profile, inventory);
     checkAbort(signal);
     const loader = new GLTFLoader();
     loader.register((parser) => {

@@ -11,9 +11,12 @@ const require = createRequire(path.join(repo, 'package.json'));
 const ts = require('typescript');
 const args = process.argv.slice(2);
 const option = (name, fallback) => args.includes(name) ? args[args.indexOf(name) + 1] : fallback;
-const tag = option('--tag', 'v02');
 const stage = option('--stage', 'M1');
-if (!['M1', 'M2'].includes(stage) || (stage === 'M2' && tag !== 'v02')) throw new Error('Use M1 or the pinned M2 v02 candidate');
+const revision = option('--revision', undefined);
+if (args.includes('--revision') && (!revision || revision.startsWith('--'))) throw new Error('Missing M2 revision');
+if (revision !== undefined && (stage !== 'M2' || args.includes('--tag'))) throw new Error('Use --revision only for M2 and do not combine it with --tag');
+const tag = revision ?? option('--tag', 'v02');
+if (!['M1', 'M2'].includes(stage) || (stage === 'M2' && !['v02', 'v03'].includes(tag))) throw new Error('Use M1 or a pinned M2 v02/v03 candidate');
 if (!/^v\d+$/.test(tag)) throw new Error('Use a version tag such as v02');
 const port = Number(option('--port', '4182'));
 if (!Number.isInteger(port) || port < 1024 || port > 65535 || port === 4181) throw new Error('Invalid isolated preview port');
@@ -94,7 +97,11 @@ for (const variant of (stage === 'M2' ? ['proposal'] : ['baseline', 'proposal'])
   const bytes = read(glbPath);
   if (manifest.variant !== variant || manifest.stage !== stage || manifest.profileId !== 'studio-full-kit-v1' || sha(bytes) !== manifest.glbSha256.toLowerCase()) throw new Error(`Candidate provenance mismatch: ${variant}`);
   if(technicalManifest.variant!==variant || technicalManifest.profileId!=='studio-full-kit-v1' || technicalManifest.glbSha256!==sha(bytes))throw new Error(`Technical manifest mismatch: ${variant}`);
-  if (stage === 'M2' && (sha(bytes) !== '2089a4f0b955c2730d167a8ee4258f7939b29f51057d9944678b44b4f2555411' || sources[manifestPath].sha256 !== 'a3bd983a582d58875ed024e6815fa891f511b51e72b4d3b835c50692a9a48c51')) throw new Error('M2 exact candidate pin mismatch');
+  const m2Pins = {
+    v02: ['2089a4f0b955c2730d167a8ee4258f7939b29f51057d9944678b44b4f2555411', 'a3bd983a582d58875ed024e6815fa891f511b51e72b4d3b835c50692a9a48c51'],
+    v03: ['7c0d30428065d0024bb1c4a631a3b54504008edcccab91c75e7367a53fa57752', '5e1cb075b377c3ce3d7656601eef55afdd5d59aeef5be6d3c4b28500f83228d9'],
+  };
+  if (stage === 'M2' && (sha(bytes) !== m2Pins[tag][0] || sources[manifestPath].sha256 !== m2Pins[tag][1])) throw new Error('M2 exact candidate pin mismatch');
   candidates[variant] = {manifest, manifestPath, technicalManifest, technicalManifestPath, glbPath, sha256:sha(bytes), bytes:bytes.length};
   add(`/asset/${variant}.glb`, bytes, 'model/gltf-binary');
   add(`/data/manifest-${variant}.js`,`export default ${JSON.stringify(technicalManifest)};`);
@@ -114,7 +121,7 @@ if (stage === 'M2') {
   read(validator);
   if (sources[validator].sha256 !== '66ee9d342cbded31994e6e8655e385c5b7945916b5ec68ad3404af9beda8bd75') throw new Error('M2 reviewed validator changed');
 }
-const provenance = {tag, stage, mode:'actual-full-kit-loader-builder', threeVersion:threePackage.version, sources, candidates, scope:`${stage} isolated actual loader/binder/builder assembly; authored lights provisional; no product controls/UI, production lifecycle/performance or final appearance acceptance`, authoredLighting:'actual createFullStudio, unchanged source', authoredRenderer:'accepted controller configuration', rendererFragmentSha256:sha(renderer), loaderInjection:{originalCandidate,injectedCandidate,manifestImportReplacement:replacements[`@/${base}/technical/fixtures/baseline.manifest.json`]}, compiledModules:Object.fromEntries([...routes].filter(([,entry])=>entry.type==='text/javascript').map(([url,entry])=>[url,sha(entry.body)]))};
+const provenance = {tag, revision:tag, stage, mode:'actual-full-kit-loader-builder', threeVersion:threePackage.version, sources, candidates, scope:`${stage} isolated actual loader/binder/builder assembly; authored lights provisional; no product controls/UI, production lifecycle/performance or final appearance acceptance`, authoredLighting:'actual createFullStudio, unchanged source', authoredRenderer:'accepted controller configuration', rendererFragmentSha256:sha(renderer), loaderInjection:{originalCandidate,injectedCandidate,manifestImportReplacement:replacements[`@/${base}/technical/fixtures/baseline.manifest.json`]}, compiledModules:Object.fromEntries([...routes].filter(([,entry])=>entry.type==='text/javascript').map(([url,entry])=>[url,sha(entry.body)]))};
 add('/provenance.json', JSON.stringify(provenance), 'application/json');
 add('/', `<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>M1 technical capture harness</title><style>html,body{margin:0;width:100%;height:100%;overflow:hidden}canvas{display:block;width:100%;height:100%}</style><script type="importmap">{"imports":{"three":"/three/build/three.module.js","three/addons/":"/three/examples/jsm/"}}</script></head><body><canvas></canvas><script type="module" src="/preview.js"></script></body></html>`, 'text/html');
 
@@ -134,7 +141,7 @@ if (check) {
   for (const relative of ['build/three.module.js','build/three.core.js','examples/jsm/loaders/GLTFLoader.js','examples/jsm/utils/BufferGeometryUtils.js','examples/jsm/utils/SkeletonUtils.js','examples/jsm/geometries/RoundedBoxGeometry.js']) {
     if (!fs.existsSync(path.join(repo,'node_modules/three',relative))) throw new Error(`Missing Three module ${relative}`);
   }
-  console.log(JSON.stringify({ok:true,tag,stage,candidates:Object.keys(candidates),generatedModules:[...routes.keys()].filter(p=>p.endsWith('.js')),scope:'syntax, source bindings and installed module existence only; server/browser not launched'},null,2));
+  console.log(JSON.stringify({ok:true,tag,revision:tag,stage,candidates:Object.keys(candidates),generatedModules:[...routes.keys()].filter(p=>p.endsWith('.js')),scope:'syntax, source bindings and installed module existence only; server/browser not launched'},null,2));
 } else {
   const threeRoot = path.join(repo, 'node_modules/three');
   const server = http.createServer((request, response) => {
@@ -152,7 +159,7 @@ if (check) {
       response.end(entry.body);
     } catch (error) {response.writeHead(400,{'Content-Type':'text/plain'});response.end(String(error));}
   });
-  server.listen(port,'127.0.0.1',()=>console.log(JSON.stringify({url:`http://127.0.0.1:${port}/?variant=${stage === 'M2' ? 'proposal' : 'baseline'}`,tag,stage,pid:process.pid,scope:provenance.scope})));
+  server.listen(port,'127.0.0.1',()=>console.log(JSON.stringify({url:`http://127.0.0.1:${port}/?variant=${stage === 'M2' ? 'proposal' : 'baseline'}`,tag,revision:tag,stage,pid:process.pid,scope:provenance.scope})));
   process.on('SIGTERM',()=>server.close());
   process.on('SIGINT',()=>server.close());
 }

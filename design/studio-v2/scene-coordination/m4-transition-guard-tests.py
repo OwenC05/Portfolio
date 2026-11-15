@@ -1,6 +1,7 @@
 """Focused implementer tests, synthetic M4 geometry only; never art approval."""
 import argparse
 import copy
+import hashlib
 import importlib.util
 import json
 from pathlib import Path
@@ -16,6 +17,10 @@ guard = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(guard)
 PARENT = (guard.KIT / guard.CONTRACT['parent']['glb']).read_bytes()
 PARENT_DOC, PARENT_BIN = guard.parse_glb(PARENT)
+M4_SCENE_EXTRAS = {
+    'fk_variant': 'proposal', 'fk_tag': 'm4-v01', 'fk_profile': 'studio-full-kit-v1',
+    'fk_stage': 'M4', 'fk_m2_tag': 'v04-pc', 'fk_m3_tag': 'v02', 'fk_m4_tag': 'v01',
+}
 
 
 def encode(doc, binary):
@@ -30,6 +35,7 @@ def encode(doc, binary):
 def synthetic():
     """Exact 23-to-18 substitution with copied proxy geometry, not M4 artwork."""
     doc = copy.deepcopy(PARENT_DOC)
+    doc['scenes'][0]['extras'] = copy.deepcopy(M4_SCENE_EXTRAS)
     binary = bytearray(PARENT[PARENT_BIN:PARENT_BIN+doc['buffers'][0]['byteLength']])
     retired = {r['name'] for r in guard.CONTRACT['retiredParentLeaves']}
     template = copy.deepcopy(next(n for n in doc['nodes'] if n['name']=='ctl_body__proxy_body'))
@@ -124,7 +130,11 @@ def main():
     if args.report.exists():raise FileExistsError(args.report)
     paths=[HELPER,Path(__file__),HERE/'m4-model-contract.json',guard.KIT/'source/build_fullkit_m3.py',
            guard.KIT/guard.CONTRACT['parent']['glb'],guard.KIT/guard.CONTRACT['parent']['manifest'],
-           guard.KIT/'full-kit-profile-v1.json',guard.KIT/'asset-inventory.json']
+           guard.KIT/'full-kit-profile-v1.json',guard.KIT/'asset-inventory.json',
+           HERE/'m4-scene-provenance-amendment-v01.json',HERE/'m4-transition-guard-tests-v1.json',
+           HERE.parent/'scene-m4-transition-guard-report.md',HERE/'m4-transition-guard-independent-review.md',
+           HERE/'m4-independent-review-probes.py',HERE/'m4-independent-review-probes.json',
+           HERE/'m4-independent-review-rerun.json',HERE/'m4-independent-review-first-attempt.json']
     before={str(p):guard.sha(p.read_bytes()) for p in paths};results=[]
     def check(name,operation):
         try:result=operation();results.append({'name':name,'passed':True,'evidence':result})
@@ -140,6 +150,18 @@ def main():
             return {'codes':sorted({e['code'] for e in r['errors']})}
         check(name,run)
     check('synthetic 23-to-18 positive with actual pinned parent',positive)
+    def exact_provenance():
+        d,b=synthetic();raw=encode(d,b);r=guard.audit_m4_transition(PARENT,raw)
+        assert r['valid'],r['errors']
+        assert PARENT_DOC['scenes'][0]['extras']=={
+            'fk_variant':'proposal','fk_tag':'m3-v02','fk_profile':'studio-full-kit-v1',
+            'fk_stage':'M3','fk_m2_tag':'v04-pc','fk_m3_tag':'v02'}
+        assert d['scenes'][0]['extras']==M4_SCENE_EXTRAS==guard.PROVENANCE['after']
+        assert r['parentSha256']==guard.PARENT_SHA
+        assert r['candidateSha256']==hashlib.sha256(raw).hexdigest()
+        assert r['sceneProvenanceAmendmentSha256']=='3b3a011d5d2f599dc63a4bf31aacd115513eb06c31267ddee0201209cebb2229'
+        return {'before':PARENT_DOC['scenes'][0]['extras'],'after':d['scenes'][0]['extras'],'amendmentSha256':r['sceneProvenanceAmendmentSha256']}
+    check('complete exact parent and approved M4 v01 provenance',exact_provenance)
     check('semantic node/mesh/accessor/view/material/image/texture/sampler index and BIN relocation',lambda:positive(reorder))
     check('pure import does not load bpy or bmesh',lambda: {'bpyLoaded':False} if 'bpy' not in sys.modules and 'bmesh' not in sys.modules else (_ for _ in ()).throw(AssertionError('Blender imported')))
     negative('wrong added name',lambda d,b:node(d,'music_cables__runs').update(name='music_cables__extra'),'hierarchy')
@@ -154,7 +176,36 @@ def main():
     negative('cycle',lambda d,b:node(d,'studio_full_kit')['children'].append(d['nodes'].index(node(d,'studio_full_kit'))),'hierarchy')
     negative('duplicate child',lambda d,b:node(d,'studio_full_kit')['children'].append(node(d,'studio_full_kit')['children'][0]),'hierarchy')
     negative('default scene',lambda d,b:d.update(scene=1),'hierarchy')
-    negative('scene extra changed without permission',lambda d,b:d['scenes'][0]['extras'].update(fk_stage='M4'),'sceneMetadata')
+    negative('scene extra changed without permission',lambda d,b:d['scenes'][0]['extras'].update(fk_stage='M5'),'sceneMetadata')
+    negative('stale complete M3 provenance',lambda d,b:d['scenes'][0].update(extras=copy.deepcopy(PARENT_DOC['scenes'][0]['extras'])),'sceneMetadata')
+    negative('missing complete scene extras',lambda d,b:d['scenes'][0].pop('extras'),'sceneMetadata')
+    negative('extra provenance key',lambda d,b:d['scenes'][0]['extras'].update(fk_future_tag='v01'),'sceneMetadata')
+    for key in M4_SCENE_EXTRAS:
+        negative('missing required provenance '+key,lambda d,b,key=key:d['scenes'][0]['extras'].pop(key),'sceneMetadata')
+    for key,value in [('fk_tag','m4-v02'),('fk_tag','m4-v01\n'),('fk_tag',None),('fk_stage','M3'),
+                      ('fk_m4_tag','v02'),('fk_variant','baseline'),('fk_profile','studio-full-kit-v2'),
+                      ('fk_m2_tag','v05'),('fk_m3_tag','v03')]:
+        negative('wrong provenance '+key+' '+repr(value),lambda d,b,key=key,value=value:d['scenes'][0]['extras'].update({key:value}),'sceneMetadata')
+    negative('wrong scene name',lambda d,b:d['scenes'][0].update(name='M4'),'sceneMetadata')
+    negative('unrelated scene field',lambda d,b:d['scenes'][0].update(extensions={}),'sceneMetadata')
+    negative('additional scene',lambda d,b:d['scenes'].append(copy.deepcopy(d['scenes'][0])),'hierarchy')
+    negative('changed asset generator',lambda d,b:d['asset'].update(generator='other exporter'),'documentMetadata')
+    negative('changed asset version',lambda d,b:d['asset'].update(version='2.1'),'documentMetadata')
+    negative('additional asset metadata',lambda d,b:d['asset'].update(extras={'new':True}),'documentMetadata')
+    negative('unrelated document metadata',lambda d,b:d.update(extras={'new':True}),'documentMetadata')
+    for collection in ['scenes','images','textures']:
+        def null_record(collection=collection):
+            d,b=synthetic();d[collection][0]=None;raw=encode(d,b)
+            parent_before=bytes(PARENT);candidate_before=bytes(raw)
+            r=guard.audit_m4_transition(PARENT,raw)
+            assert r['valid'] is False and isinstance(r['errors'],list) and r['errors']
+            assert any(e['code']=='malformedInput' for e in r['errors']),r['errors']
+            assert r['parentSha256']==hashlib.sha256(parent_before).hexdigest()==guard.PARENT_SHA
+            assert r['candidateSha256']==hashlib.sha256(candidate_before).hexdigest()
+            assert PARENT==parent_before and raw==candidate_before
+            assert json.loads(json.dumps(r,allow_nan=False))==r
+            return {'collection':collection,'result':r,'inputsPreserved':True,'jsonSafe':True}
+        check('public API null '+collection+' record returns malformedInput',null_record)
     negative('scene camera data',lambda d,b:d.update(cameras=[{'type':'perspective'}]),'documentMetadata')
     negative('new row camera object',lambda d,b:node(d,'ctl_body__shell').update(camera=0),'newNodeData')
     negative('new row unexpected extras',lambda d,b:node(d,'ctl_body__shell')['extras'].update(unknown='x'),'newRowFlags')
@@ -243,8 +294,16 @@ def main():
             good=run(raw,receipt);assert good.returncode==0,(good.stdout,good.stderr);assert json.loads(receipt.read_text())['valid']
             prior=receipt.read_bytes();duplicate=run(raw,receipt);assert duplicate.returncode!=0;assert receipt.read_bytes()==prior
             rejected=run(invalid,bad_receipt);assert rejected.returncode==1;assert not json.loads(bad_receipt.read_text())['valid']
+            malformed=directory/'null-scene.glb';malformed_receipt=directory/'null-scene.json'
+            malformed_doc=copy.deepcopy(d);malformed_doc['scenes'][0]=None;malformed.write_bytes(encode(malformed_doc,b))
+            malformed_before=malformed.read_bytes();malformed_run=run(malformed,malformed_receipt)
+            assert malformed_run.returncode==1,(malformed_run.stdout,malformed_run.stderr)
+            malformed_result=json.loads(malformed_receipt.read_text());assert not malformed_result['valid']
+            assert any(e['code']=='malformedInput' for e in malformed_result['errors'])
+            assert malformed.read_bytes()==malformed_before
             own_glb=run(raw,raw);assert own_glb.returncode!=0;assert raw.read_bytes()==original and invalid.read_bytes()==invalid_original
-            return {'validExit':good.returncode,'invalidExit':rejected.returncode,'existingReceiptExit':duplicate.returncode,'candidateAsReceiptExit':own_glb.returncode,'candidateBytesUnchanged':True}
+            return {'validExit':good.returncode,'invalidExit':rejected.returncode,'malformedExit':malformed_run.returncode,
+                    'existingReceiptExit':duplicate.returncode,'candidateAsReceiptExit':own_glb.returncode,'candidateBytesUnchanged':True}
         finally:
             assert directory.parent==HERE.resolve() and directory.name.startswith('m4-transition-guard-test-')
             temp.cleanup()

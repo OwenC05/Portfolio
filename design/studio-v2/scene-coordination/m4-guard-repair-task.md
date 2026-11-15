@@ -1,0 +1,14 @@
+# M4 transition guard: two bounded repairs
+
+Root authorization msg_71991aa019dc / `m4-guard-repair-root-decision.md`. Reuse actual-Codex task_ab4f0d628e39 / ctx_be8703637ecd with inherited settings; ACK new task/dispatch and observable current configuration. No helper. You are not alone; preserve author, root and reviewer files.
+
+Own only edits to `m4-transition-guard.py` and `m4-transition-guard-tests.py`, NEW `m4-transition-guard-tests-v2.json`/bounded v2 receipts, and NEW `design/studio-v2/scene-m4-transition-guard-repair-report.md`. Do not edit original mapping8F0474AA, S's new provenance amendment, old writer receipt/report, independent review/probes, earlier sources/art, runtime, validator/profile/inventory/ledger. Preserve exact old helper32673405/tests48CF26CE preimages through pushedfbe08dae8bbf3f565382d804adafc7dec162563a; no Git mutation. No Blender/browser/server/build/package work.
+
+Read root decision and independent `m4-transition-guard-independent-review.md` (REQUEST CHANGES, F46C07F3...F58DCAC). Repair only:
+
+1. Pin and consume S-owned `m4-scene-provenance-amendment-v01.json` at the exact hash supplied in dispatch. Original mapping stays unchanged. Validate the complete exact parent extras and complete exact M4v01 after-object: fk_tag=m4-v01, fk_stage=M4, added fk_m4_tag=v01, all inherited keys/values unchanged. Preserve exactly one Scene with semantic studio_full_kit root, all other scene/document metadata and the exact Blender asset generator/version. No whole-extras omission, wildcardfuturevNN, staleM3labels, parentrewrite, retainedbyte tolerance or noise whitelist. Public API remains unchanged.
+2. Make malformed scenes[0]/images[0]/textures[0]=null return the existing JSON-safe malformedInput failure with valid:false and hash fields. Use narrowly appropriate shape checks or AttributeError conversion at existing boundary; do not weaken unrelated checks or modify frozen M3 hierarchy source. Never patch a GLB.
+
+Relevant old tests plus the exact approved synthetic metadata positive, stale/wrong/missing/extra tags, wrong stage/version/inherited fields and unrelated scene/document changes as negatives; add all three public-API null-record regressions with input preservation and JSON-safe result checks. Preserve v1 and all independent failure evidence. Any CLI test remains a fresh exclusive receipt test, bounded to owned fixtures. No broad runtime suite. Test artifacts are synthetic, not actual music geometry.
+
+Send repair-ready with exact amendment/helper/test/v2receipt pins and a concrete bounded diff before report polish. Freeze code for the same independent root critic's focused rereview. Then worker_done once bounded repair/report settles, keeping terminal retained. Actual M4 raw checking and independent approval remain pending; do not grant candidate acceptance.

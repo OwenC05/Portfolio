@@ -1,0 +1,47 @@
+{
+  "scope": "two authorized guard repairs; implementer evidence, not independent approval",
+  "preimageCommit": "fbe08dae8bbf3f565382d804adafc7dec162563a",
+  "changes": [
+    {
+      "path": "design/studio-v2/scene-coordination/m4-transition-guard.py",
+      "preimageSha256": "32673405c0f07e248899e3b4a855081cfb8a98b0ef2077e00e558892481e1b6a",
+      "repairedSha256": "ad62627f0683806ace2c8ebbb133ba83e72c7d95f1df8adc291a3706aa40da6b"
+    },
+    {
+      "path": "design/studio-v2/scene-coordination/m4-transition-guard-tests.py",
+      "preimageSha256": "48cf26cee1c47a451bf90e5f42db6b842afddc2f9f0cdeead95daa71cb3cd108",
+      "repairedSha256": "d17413ab80c0da964926f46c97cfc61f21f832fc25cddd521e8a49e19badf1c9"
+    }
+  ],
+  "pins": {
+    "m4-scene-provenance-amendment-v01.json": "3b3a011d5d2f599dc63a4bf31aacd115513eb06c31267ddee0201209cebb2229",
+    "m4-model-contract.json": "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98",
+    "m4-transition-guard-tests-v2.json": "4b84d112964c0d1aa671aebab511f4ff250d8c0feb268531e1cc36fa29434b46",
+    "m4-transition-guard-tests-v1.json": "6a90cc5c69c79ec676ebdd08db96b5ac80be97cee6b0e2154692ff9f7afc3134",
+    "m4-transition-guard-independent-review.md": "f46c07f30991c0e65b0bd104e381c1b1b6919e772058d27b7e641c437f58dcac",
+    "m4-transition-guard-v2.diff": "59f16120771211f964509554f71e6fdf06cb53b489604831c995a8c37759bcfb"
+  },
+  "astIdenticalFunctions": [
+    "sha",
+    "pinned",
+    "require",
+    "integer",
+    "token",
+    "without",
+    "ref",
+    "unique_named",
+    "parse_glb",
+    "view",
+    "accessor",
+    "texture_graph",
+    "material_definition",
+    "main"
+  ],
+  "retainedChecksThroughAllRowStageGlobalLimitsAstIdentical": true,
+  "cliFunctionAstIdentical": true,
+  "tests": {
+    "passed": 81,
+    "total": 81
+  },
+  "protectedReceiptFilesUnchangedSinceTest": true
+}

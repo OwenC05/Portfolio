@@ -16,6 +16,7 @@ import struct
 HERE = Path(__file__).resolve().parent
 KIT = HERE.parent / 'asset-pipeline' / 'full-kit'
 MAPPING_SHA = '8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98'
+AMENDMENT_SHA = '3b3a011d5d2f599dc63a4bf31aacd115513eb06c31267ddee0201209cebb2229'
 SOURCE_SHA = 'dccfa2885919a84b03ff472cecbf76da35e0cd2a8b32baaca2dc8cb31929a209'
 PROFILE_SHA = '7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052'
 PARENT_SHA = 'dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf'
@@ -34,6 +35,10 @@ def pinned(path, expected):
 
 
 CONTRACT = json.loads(pinned(HERE / 'm4-model-contract.json', MAPPING_SHA))
+PROVENANCE = json.loads(pinned(HERE / 'm4-scene-provenance-amendment-v01.json', AMENDMENT_SHA))
+if (PROVENANCE['mappingSha256'] != MAPPING_SHA or PROVENANCE['parentSha256'] != PARENT_SHA
+        or PROVENANCE['parentManifestSha256'] != MANIFEST_SHA):
+    raise ValueError('scene provenance amendment pins differ')
 PROFILE = json.loads(pinned(KIT / 'full-kit-profile-v1.json', PROFILE_SHA))
 INVENTORY = json.loads(pinned(KIT / 'asset-inventory.json', CONTRACT['inventorySha256']))
 pinned(KIT / CONTRACT['parent']['manifest'], MANIFEST_SHA)
@@ -186,15 +191,22 @@ def _audit(parent_bytes, candidate_bytes, report):
     pn, cn = unique_named(p['nodes'], 'node'), unique_named(c['nodes'], 'node')
     for entry in CONTRACT['retiredParentLeaves']:
         same(pn[entry['name']].get('extras'), entry['extras'], 'pinnedRetirementMetadata', node=entry['name'])
-    # Root scene data is exact too: M3 tag changes require a separate explicit
-    # contract revision, never an implicit exporter-noise or metadata exception.
+    # Only the pinned first-M4-v01 extras transition is authorized. Compare the
+    # complete before/after objects and preserve every other scene/document field.
     collections = {'nodes', 'meshes', 'accessors', 'bufferViews', 'buffers', 'images',
                    'materials', 'textures', 'samplers', 'scenes'}
     same(without(p, collections), without(c, collections), 'documentMetadata')
     def scenes(doc):
         return [{**without(s, {'nodes'}), 'nodes': [ref(doc['nodes'], i, 'scene node')['name']
                  for i in s.get('nodes', [])]} for s in doc['scenes']]
-    same(scenes(p), scenes(c), 'sceneMetadata')
+    parent_scenes, candidate_scenes = scenes(p), scenes(c)
+    require(len(parent_scenes) == len(candidate_scenes) == PROVENANCE['sceneCount'], 'sceneCount')
+    same(PROVENANCE['before'], parent_scenes[0].get('extras'), 'parentSceneProvenance')
+    same(PROVENANCE['sceneName'], parent_scenes[0].get('name'), 'parentSceneName')
+    same(PROVENANCE['sceneRootNames'], parent_scenes[0].get('nodes'), 'parentSceneRoots')
+    same(PROVENANCE['assetMetadata'], p.get('asset'), 'parentAssetMetadata')
+    expected_scenes = [{**parent_scenes[0], 'extras': PROVENANCE['after']}]
+    same(expected_scenes, candidate_scenes, 'sceneMetadata')
     for name in sorted(set(pn) & set(cn)):
         same(without(pn[name], {'mesh', 'children'}), without(cn[name], {'mesh', 'children'}), 'retainedNode', node=name)
 
@@ -352,13 +364,14 @@ def _audit(parent_bytes, candidate_bytes, report):
 def audit_m4_transition(parent_bytes: bytes, candidate_bytes: bytes) -> dict:
     """Return JSON-safe evidence; no filesystem access, mutations or restoration."""
     report = {'valid': False, 'parentSha256': sha(parent_bytes), 'candidateSha256': sha(candidate_bytes),
-              'errors': [], 'mappingSha256': MAPPING_SHA, 'hierarchySourceSha256': SOURCE_SHA,
+              'errors': [], 'mappingSha256': MAPPING_SHA, 'sceneProvenanceAmendmentSha256': AMENDMENT_SHA,
+              'hierarchySourceSha256': SOURCE_SHA,
               'profileSha256': PROFILE_SHA, 'scope': 'transition only; full structural validator and independent review still required'}
     try:
         _audit(parent_bytes, candidate_bytes, report)
     except AuditError as error:
         report['errors'].append(error.detail)
-    except (KeyError, IndexError, TypeError, ValueError, OverflowError, struct.error) as error:
+    except (KeyError, IndexError, TypeError, AttributeError, ValueError, OverflowError, struct.error) as error:
         report['errors'].append({'code':'malformedInput', 'message':str(error)})
     report['valid'] = not report['errors']
     return report

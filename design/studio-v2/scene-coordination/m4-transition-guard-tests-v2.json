@@ -1,0 +1,1114 @@
+{
+  "scope": "implementer synthetic CPU tests, not independent approval or real M4 art",
+  "helperSha256": "ad62627f0683806ace2c8ebbb133ba83e72c7d95f1df8adc291a3706aa40da6b",
+  "testSha256": "d17413ab80c0da964926f46c97cfc61f21f832fc25cddd521e8a49e19badf1c9",
+  "protectedHashesBefore": {
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-transition-guard.py": "ad62627f0683806ace2c8ebbb133ba83e72c7d95f1df8adc291a3706aa40da6b",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-transition-guard-tests.py": "d17413ab80c0da964926f46c97cfc61f21f832fc25cddd521e8a49e19badf1c9",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-model-contract.json": "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\source\\build_fullkit_m3.py": "dccfa2885919a84b03ff472cecbf76da35e0cd2a8b32baaca2dc8cb31929a209",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\exports\\studio-full-kit-m3-proposal-v03.glb": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\manifests\\studio-full-kit-m3-proposal-v03.manifest.json": "060bab9af5dd23b4258e03aef10de21faa7c32aa0a6010cd4e09b35089026405",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\full-kit-profile-v1.json": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\asset-inventory.json": "eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-scene-provenance-amendment-v01.json": "3b3a011d5d2f599dc63a4bf31aacd115513eb06c31267ddee0201209cebb2229",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-transition-guard-tests-v1.json": "6a90cc5c69c79ec676ebdd08db96b5ac80be97cee6b0e2154692ff9f7afc3134",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-m4-transition-guard-report.md": "dda0a2b11fa9e8bb013c3fd891e2a6cd01ffc697f8fb86dc175e988b4d5c8296",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-transition-guard-independent-review.md": "f46c07f30991c0e65b0bd104e381c1b1b6919e772058d27b7e641c437f58dcac",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-independent-review-probes.py": "e02e33843d59735880a60d084b929f7bb2eed90a5fd697f1577ebeabfa8bc0f4",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-independent-review-probes.json": "0bf9b75878913f235dd514cc33923402e69f1d6f8919fd4c41ce05f75d820ead",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-independent-review-rerun.json": "271aa69040a19be03b5d92162fca5f1e52db96d509f3a88ecf6caf6f36ffb0e3",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-independent-review-first-attempt.json": "1f5d442d1894c4fffc7a61eeae9afc782ae73a3856de0c607a81a8a6460fe6f9"
+  },
+  "protectedHashesAfter": {
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-transition-guard.py": "ad62627f0683806ace2c8ebbb133ba83e72c7d95f1df8adc291a3706aa40da6b",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-transition-guard-tests.py": "d17413ab80c0da964926f46c97cfc61f21f832fc25cddd521e8a49e19badf1c9",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-model-contract.json": "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\source\\build_fullkit_m3.py": "dccfa2885919a84b03ff472cecbf76da35e0cd2a8b32baaca2dc8cb31929a209",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\exports\\studio-full-kit-m3-proposal-v03.glb": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\manifests\\studio-full-kit-m3-proposal-v03.manifest.json": "060bab9af5dd23b4258e03aef10de21faa7c32aa0a6010cd4e09b35089026405",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\full-kit-profile-v1.json": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\asset-inventory.json": "eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-scene-provenance-amendment-v01.json": "3b3a011d5d2f599dc63a4bf31aacd115513eb06c31267ddee0201209cebb2229",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-transition-guard-tests-v1.json": "6a90cc5c69c79ec676ebdd08db96b5ac80be97cee6b0e2154692ff9f7afc3134",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-m4-transition-guard-report.md": "dda0a2b11fa9e8bb013c3fd891e2a6cd01ffc697f8fb86dc175e988b4d5c8296",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-transition-guard-independent-review.md": "f46c07f30991c0e65b0bd104e381c1b1b6919e772058d27b7e641c437f58dcac",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-independent-review-probes.py": "e02e33843d59735880a60d084b929f7bb2eed90a5fd697f1577ebeabfa8bc0f4",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-independent-review-probes.json": "0bf9b75878913f235dd514cc33923402e69f1d6f8919fd4c41ce05f75d820ead",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-independent-review-rerun.json": "271aa69040a19be03b5d92162fca5f1e52db96d509f3a88ecf6caf6f36ffb0e3",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-independent-review-first-attempt.json": "1f5d442d1894c4fffc7a61eeae9afc782ae73a3856de0c607a81a8a6460fe6f9"
+  },
+  "results": [
+    {
+      "name": "synthetic 23-to-18 positive with actual pinned parent",
+      "passed": true,
+      "evidence": {
+        "valid": true,
+        "parentSha256": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+        "candidateSha256": "d741c2a99c4fdc1876d02ca3b2bcf3b6ae3a3f12df9d2fc664332b872dad3f8d",
+        "errors": [],
+        "mappingSha256": "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98",
+        "sceneProvenanceAmendmentSha256": "3b3a011d5d2f599dc63a4bf31aacd115513eb06c31267ddee0201209cebb2229",
+        "hierarchySourceSha256": "dccfa2885919a84b03ff472cecbf76da35e0cd2a8b32baaca2dc8cb31929a209",
+        "profileSha256": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+        "scope": "transition only; full structural validator and independent review still required",
+        "metrics": {
+          "retainedLeaves": 92,
+          "retainedAccessorComparisons": 368,
+          "retainedComponentDifferences": 0,
+          "leaves": 110,
+          "assetIds": 58,
+          "remainingProxies": 17,
+          "provisionalContacts": 3,
+          "placedTriangles": 33708,
+          "stageMainCallsEstimate": 18,
+          "stageShadowCallsEstimate": 9,
+          "stageRefreshCallsEstimate": 27,
+          "stagePlacedTriangles": 216,
+          "rows": [
+            {
+              "node": "ctl_body__shell",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "ctl_body__indicators",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "ctl_keys__keys",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "ctl_stand__frame",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "ctl_sustain_pedal__pedal",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "stool_keys__stool",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "drum_rack__rack",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "drum_pads__shells",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "drum_pads__heads",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "drum_cymbals__cymbals",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "drum_hihat_pedal__pedal",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "drum_kick__tower",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "drum_module__body",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "drum_module__display",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "drum_sticks__pair",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "drum_throne__throne",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "rug__rug",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "music_cables__runs",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            }
+          ],
+          "rendererDrawMeasurements": false
+        }
+      }
+    },
+    {
+      "name": "complete exact parent and approved M4 v01 provenance",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "fk_variant": "proposal",
+          "fk_tag": "m3-v02",
+          "fk_profile": "studio-full-kit-v1",
+          "fk_stage": "M3",
+          "fk_m2_tag": "v04-pc",
+          "fk_m3_tag": "v02"
+        },
+        "after": {
+          "fk_variant": "proposal",
+          "fk_tag": "m4-v01",
+          "fk_profile": "studio-full-kit-v1",
+          "fk_stage": "M4",
+          "fk_m2_tag": "v04-pc",
+          "fk_m3_tag": "v02",
+          "fk_m4_tag": "v01"
+        },
+        "amendmentSha256": "3b3a011d5d2f599dc63a4bf31aacd115513eb06c31267ddee0201209cebb2229"
+      }
+    },
+    {
+      "name": "semantic node/mesh/accessor/view/material/image/texture/sampler index and BIN relocation",
+      "passed": true,
+      "evidence": {
+        "valid": true,
+        "parentSha256": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+        "candidateSha256": "afbee47e8198e43f2e64f8018a4c2261cde34c32300b7b64ca3b4e61bbe6f949",
+        "errors": [],
+        "mappingSha256": "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98",
+        "sceneProvenanceAmendmentSha256": "3b3a011d5d2f599dc63a4bf31aacd115513eb06c31267ddee0201209cebb2229",
+        "hierarchySourceSha256": "dccfa2885919a84b03ff472cecbf76da35e0cd2a8b32baaca2dc8cb31929a209",
+        "profileSha256": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+        "scope": "transition only; full structural validator and independent review still required",
+        "metrics": {
+          "retainedLeaves": 92,
+          "retainedAccessorComparisons": 368,
+          "retainedComponentDifferences": 0,
+          "leaves": 110,
+          "assetIds": 58,
+          "remainingProxies": 17,
+          "provisionalContacts": 3,
+          "placedTriangles": 33708,
+          "stageMainCallsEstimate": 18,
+          "stageShadowCallsEstimate": 9,
+          "stageRefreshCallsEstimate": 27,
+          "stagePlacedTriangles": 216,
+          "rows": [
+            {
+              "node": "ctl_body__shell",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "ctl_body__indicators",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "ctl_keys__keys",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "ctl_stand__frame",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "ctl_sustain_pedal__pedal",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "stool_keys__stool",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "drum_rack__rack",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "drum_pads__shells",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "drum_pads__heads",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "drum_cymbals__cymbals",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "drum_hihat_pedal__pedal",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "drum_kick__tower",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "drum_module__body",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "drum_module__display",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "drum_sticks__pair",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "drum_throne__throne",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "rug__rug",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "music_cables__runs",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            }
+          ],
+          "rendererDrawMeasurements": false
+        }
+      }
+    },
+    {
+      "name": "pure import does not load bpy or bmesh",
+      "passed": true,
+      "evidence": {
+        "bpyLoaded": false
+      }
+    },
+    {
+      "name": "wrong added name",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "hierarchy"
+        ]
+      }
+    },
+    {
+      "name": "wrong retirement keeping one old proxy",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "hierarchy"
+        ]
+      }
+    },
+    {
+      "name": "retained target reparenting",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "hierarchy"
+        ]
+      }
+    },
+    {
+      "name": "root transform",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "hierarchy"
+        ]
+      }
+    },
+    {
+      "name": "retained translation",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "hierarchy"
+        ]
+      }
+    },
+    {
+      "name": "retained flags",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "hierarchy"
+        ]
+      }
+    },
+    {
+      "name": "cycle",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "hierarchy"
+        ]
+      }
+    },
+    {
+      "name": "duplicate child",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "hierarchy"
+        ]
+      }
+    },
+    {
+      "name": "default scene",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "hierarchy"
+        ]
+      }
+    },
+    {
+      "name": "scene extra changed without permission",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "sceneMetadata"
+        ]
+      }
+    },
+    {
+      "name": "stale complete M3 provenance",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "sceneMetadata"
+        ]
+      }
+    },
+    {
+      "name": "missing complete scene extras",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "sceneMetadata"
+        ]
+      }
+    },
+    {
+      "name": "extra provenance key",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "sceneMetadata"
+        ]
+      }
+    },
+    {
+      "name": "missing required provenance fk_variant",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "sceneMetadata"
+        ]
+      }
+    },
+    {
+      "name": "missing required provenance fk_tag",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "sceneMetadata"
+        ]
+      }
+    },
+    {
+      "name": "missing required provenance fk_profile",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "sceneMetadata"
+        ]
+      }
+    },
+    {
+      "name": "missing required provenance fk_stage",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "sceneMetadata"
+        ]
+      }
+    },
+    {
+      "name": "missing required provenance fk_m2_tag",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "sceneMetadata"
+        ]
+      }
+    },
+    {
+      "name": "missing required provenance fk_m3_tag",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "sceneMetadata"
+        ]
+      }
+    },
+    {
+      "name": "missing required provenance fk_m4_tag",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "sceneMetadata"
+        ]
+      }
+    },
+    {
+      "name": "wrong provenance fk_tag 'm4-v02'",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "sceneMetadata"
+        ]
+      }
+    },
+    {
+      "name": "wrong provenance fk_tag 'm4-v01\\n'",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "sceneMetadata"
+        ]
+      }
+    },
+    {
+      "name": "wrong provenance fk_tag None",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "sceneMetadata"
+        ]
+      }
+    },
+    {
+      "name": "wrong provenance fk_stage 'M3'",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "sceneMetadata"
+        ]
+      }
+    },
+    {
+      "name": "wrong provenance fk_m4_tag 'v02'",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "sceneMetadata"
+        ]
+      }
+    },
+    {
+      "name": "wrong provenance fk_variant 'baseline'",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "sceneMetadata"
+        ]
+      }
+    },
+    {
+      "name": "wrong provenance fk_profile 'studio-full-kit-v2'",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "sceneMetadata"
+        ]
+      }
+    },
+    {
+      "name": "wrong provenance fk_m2_tag 'v05'",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "sceneMetadata"
+        ]
+      }
+    },
+    {
+      "name": "wrong provenance fk_m3_tag 'v03'",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "sceneMetadata"
+        ]
+      }
+    },
+    {
+      "name": "wrong scene name",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "sceneMetadata"
+        ]
+      }
+    },
+    {
+      "name": "unrelated scene field",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "sceneMetadata"
+        ]
+      }
+    },
+    {
+      "name": "additional scene",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "hierarchy"
+        ]
+      }
+    },
+    {
+      "name": "changed asset generator",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "documentMetadata"
+        ]
+      }
+    },
+    {
+      "name": "changed asset version",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "documentMetadata"
+        ]
+      }
+    },
+    {
+      "name": "additional asset metadata",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "documentMetadata"
+        ]
+      }
+    },
+    {
+      "name": "unrelated document metadata",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "documentMetadata"
+        ]
+      }
+    },
+    {
+      "name": "public API null scenes record returns malformedInput",
+      "passed": true,
+      "evidence": {
+        "collection": "scenes",
+        "result": {
+          "valid": false,
+          "parentSha256": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+          "candidateSha256": "b71ece9c976a56629981ab8251cbb66788327f41bd93935ec0d7818abb040998",
+          "errors": [
+            {
+              "code": "malformedInput",
+              "message": "'NoneType' object has no attribute 'get'"
+            }
+          ],
+          "mappingSha256": "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98",
+          "sceneProvenanceAmendmentSha256": "3b3a011d5d2f599dc63a4bf31aacd115513eb06c31267ddee0201209cebb2229",
+          "hierarchySourceSha256": "dccfa2885919a84b03ff472cecbf76da35e0cd2a8b32baaca2dc8cb31929a209",
+          "profileSha256": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+          "scope": "transition only; full structural validator and independent review still required"
+        },
+        "inputsPreserved": true,
+        "jsonSafe": true
+      }
+    },
+    {
+      "name": "public API null images record returns malformedInput",
+      "passed": true,
+      "evidence": {
+        "collection": "images",
+        "result": {
+          "valid": false,
+          "parentSha256": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+          "candidateSha256": "19c169618cc89be92a9e9a0cae0c91893b9d32f893bbce18abb442d7a3a1741c",
+          "errors": [
+            {
+              "code": "malformedInput",
+              "message": "'NoneType' object has no attribute 'get'"
+            }
+          ],
+          "mappingSha256": "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98",
+          "sceneProvenanceAmendmentSha256": "3b3a011d5d2f599dc63a4bf31aacd115513eb06c31267ddee0201209cebb2229",
+          "hierarchySourceSha256": "dccfa2885919a84b03ff472cecbf76da35e0cd2a8b32baaca2dc8cb31929a209",
+          "profileSha256": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+          "scope": "transition only; full structural validator and independent review still required"
+        },
+        "inputsPreserved": true,
+        "jsonSafe": true
+      }
+    },
+    {
+      "name": "public API null textures record returns malformedInput",
+      "passed": true,
+      "evidence": {
+        "collection": "textures",
+        "result": {
+          "valid": false,
+          "parentSha256": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+          "candidateSha256": "a76745382a02901a1becf2e8e69dd55005bf42ea870d7d1f9d3089266174fde9",
+          "errors": [
+            {
+              "code": "malformedInput",
+              "message": "'NoneType' object has no attribute 'items'"
+            }
+          ],
+          "mappingSha256": "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98",
+          "sceneProvenanceAmendmentSha256": "3b3a011d5d2f599dc63a4bf31aacd115513eb06c31267ddee0201209cebb2229",
+          "hierarchySourceSha256": "dccfa2885919a84b03ff472cecbf76da35e0cd2a8b32baaca2dc8cb31929a209",
+          "profileSha256": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+          "scope": "transition only; full structural validator and independent review still required"
+        },
+        "inputsPreserved": true,
+        "jsonSafe": true
+      }
+    },
+    {
+      "name": "scene camera data",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "documentMetadata"
+        ]
+      }
+    },
+    {
+      "name": "new row camera object",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "newNodeData"
+        ]
+      }
+    },
+    {
+      "name": "new row unexpected extras",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "newRowFlags"
+        ]
+      }
+    },
+    {
+      "name": "retained target position word",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "retainedAccessorBytes"
+        ]
+      }
+    },
+    {
+      "name": "retained target UV word",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "retainedAccessorBytes"
+        ]
+      }
+    },
+    {
+      "name": "retained index word",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "retainedAccessorBytes"
+        ]
+      }
+    },
+    {
+      "name": "prior noise word has no exception",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "retainedAccessorBytes"
+        ]
+      }
+    },
+    {
+      "name": "normalized accessor metadata",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "accessorMetadata"
+        ]
+      }
+    },
+    {
+      "name": "retained mesh metadata",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "retainedMesh"
+        ]
+      }
+    },
+    {
+      "name": "retained primitive mode",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "newPrimitiveDefinition",
+          "retainedPrimitive"
+        ]
+      }
+    },
+    {
+      "name": "retained extra attribute",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "attributeSet",
+          "newAttributeSet"
+        ]
+      }
+    },
+    {
+      "name": "retained material assignment",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "materialAssignment"
+        ]
+      }
+    },
+    {
+      "name": "existing material roughness",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "materialDefinition"
+        ]
+      }
+    },
+    {
+      "name": "encoded image unchanged fk_palette_colour",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "imageBytes"
+        ]
+      }
+    },
+    {
+      "name": "encoded image unchanged fk_palette_orm",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "imageBytes"
+        ]
+      }
+    },
+    {
+      "name": "encoded image unchanged pilot_timber_albedo",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "imageBytes"
+        ]
+      }
+    },
+    {
+      "name": "image metadata",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "imageMetadata"
+        ]
+      }
+    },
+    {
+      "name": "image relationship",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "materialDefinition",
+          "textureWiring"
+        ]
+      }
+    },
+    {
+      "name": "sampler definition",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "materialDefinition",
+          "samplerDefinitions",
+          "textureWiring"
+        ]
+      }
+    },
+    {
+      "name": "sampler wiring",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "materialDefinition",
+          "samplerDefinitions",
+          "textureWiring"
+        ]
+      }
+    },
+    {
+      "name": "opaque nocast must still occlude",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "newRowFlags"
+        ]
+      }
+    },
+    {
+      "name": "wrong new cast flag",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "newRowFlags"
+        ]
+      }
+    },
+    {
+      "name": "numeric value cannot stand in for boolean",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "newRowFlags"
+        ]
+      }
+    },
+    {
+      "name": "new receive flag",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "newRowFlags"
+        ]
+      }
+    },
+    {
+      "name": "wrong row material",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "newRowMaterial"
+        ]
+      }
+    },
+    {
+      "name": "split new primitive",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "onePrimitivePerLeaf"
+        ]
+      }
+    },
+    {
+      "name": "nineteenth row is forbidden",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "hierarchy"
+        ]
+      }
+    },
+    {
+      "name": "per-row ceiling binds before 22500 stage ceiling",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "rowTriangleCeiling"
+        ]
+      }
+    },
+    {
+      "name": "wrong new row alphaMode",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "materialDefinition",
+          "newRowAlpha"
+        ]
+      }
+    },
+    {
+      "name": "wrong new row doubleSided",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "materialDefinition",
+          "newRowSidedness"
+        ]
+      }
+    },
+    {
+      "name": "retained shared geometry identity",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "retainedSharingChanged"
+        ]
+      }
+    },
+    {
+      "name": "diagnostics identify exact word, both indices and both offset spaces",
+      "passed": true,
+      "evidence": {
+        "code": "retainedAccessorBytes",
+        "node": "desk_top__top",
+        "mesh": "desk_top__top_mesh.002",
+        "primitive": 0,
+        "semantic": "TEXCOORD_0",
+        "parentAccessor": 64,
+        "candidateAccessor": 64,
+        "vertex": 258,
+        "component": 0,
+        "parentBinOffset": 411868,
+        "candidateBinOffset": 411868,
+        "parentFileOffset": 488016,
+        "candidateFileOffset": 485412,
+        "parentHex": "20858b3e",
+        "candidateHex": "21858b3e"
+      }
+    },
+    {
+      "name": "wrong parent complete byte hash",
+      "passed": true,
+      "evidence": {
+        "code": "parentHashMismatch"
+      }
+    },
+    {
+      "name": "pure API input immutability",
+      "passed": true,
+      "evidence": {
+        "inputsUnchanged": true
+      }
+    },
+    {
+      "name": "outer main cap wired (test-only cap override)",
+      "passed": true,
+      "evidence": {
+        "testOnlyInMemoryCap": 0,
+        "frozenFileUntouched": true
+      }
+    },
+    {
+      "name": "outer refresh cap wired (test-only cap override)",
+      "passed": true,
+      "evidence": {
+        "testOnlyInMemoryCap": 0,
+        "frozenFileUntouched": true
+      }
+    },
+    {
+      "name": "outer placed cap wired (test-only cap override)",
+      "passed": true,
+      "evidence": {
+        "testOnlyInMemoryCap": 0,
+        "frozenFileUntouched": true
+      }
+    },
+    {
+      "name": "receipt-only CLI and exclusive existing-path refusal",
+      "passed": true,
+      "evidence": {
+        "validExit": 0,
+        "invalidExit": 1,
+        "malformedExit": 1,
+        "existingReceiptExit": 2,
+        "candidateAsReceiptExit": 2,
+        "candidateBytesUnchanged": true
+      }
+    }
+  ],
+  "passed": 81,
+  "total": 81
+}

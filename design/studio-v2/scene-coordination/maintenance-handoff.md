@@ -1,6 +1,6 @@
 # S maintenance hold and next work
 
-Root message msg_ec7898ad9b41 requests a temporary quiet period for user-confirmed WSL maintenance. No new worker launches, Blender processes or AgentMemory operations until root explicitly releases the maintenance hold. This is not cancellation of full G003. Root alone owns maintenance/service actions and the Git checkpoint.
+Root message msg_ec7898ad9b41 requested a temporary quiet period for user-confirmed WSL maintenance. Root released that hold in msg_1f3e25453d49 after verified restart/6GB cap and memory-service recall. The quiet-state snapshot below is historical; authorized FKT-1/M2 launches now resume under explicit routing. This is not cancellation of full G003. Root alone owns maintenance/service actions and the Git checkpoint b55957e.
 
 All S implementation/review assignments are settled. The only live retained worker is independent Codex reviewer term_d8314a49-4e0d-4818-9b86-b41605724ba4, task_b2b62a79af12 / ctx_70b616d3a242, succeeded and idle; retain it for FKT-1 rereview. No S AgentMemory save/write is in flight and no memory write was initiated. M1 author reported no running Blender process; root closed its4182capture server and contexts. Root's4181preview is outside S ownership.
 

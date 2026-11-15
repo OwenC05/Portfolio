@@ -40,6 +40,7 @@ Child Run run_63fe6fcaad85 created by Orca run-create for the S lane. This Run i
 | Independent M2/P1 actual-image visual critique | claude / claude-fable-5-2 / high (launch receipt and argv) | task_5437cd5dfec3 | ctx_a9a533c5bf49 | term_94dff2ba-d7aa-4d79-ab0a-7b6e53e85fae |
 | Bounded M2 material repair and full-room ledger | claude / claude-opus-5-5 / high (launch receipt and argv) | task_e0a4ef11c0ca | ctx_c777d3962014 | term_f6736686-f766-4f37-80d1-ee12fbb800c2 |
 | Independent v03 material actual-image rereview | retained Claude Fable, inherited settings | task_76847bdd1353 | ctx_a9e053890019 | term_94dff2ba-d7aa-4d79-ab0a-7b6e53e85fae |
+| PC v04 repair and M3 source preparation | retained Claude Opus, inherited settings | task_d31f70e55a5d | ctx_5abdce20e965 | term_f6736686-f766-4f37-80d1-ee12fbb800c2 |
 
 M2 visual review started ready under root msg_0e3903046d68 with exact spec m2-visual-review-task.md. Current ACK msg_0e143915442b observes claude.exe PID49980 argv --model claude-fable-5-2 --effort high and matching session model self-identification. CLAUDE_CODE_EFFORT_LEVEL and ANTHROPIC_MODEL are unset in that process. High effort is requested via argv; no in-session effective-effort readout or server-side routing proof is claimed. Reviewer is independent of the M2 Opus author and owns reports only. Root retains capture and acceptance authority; static chrome composites do not establish integrated input behavior.
 

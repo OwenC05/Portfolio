@@ -1,0 +1,3774 @@
+{
+ "reviewer": "Claude (actual), task_76847bdd1353, dispatch ctx_a9e053890019",
+ "scope": "Read-only pixel measurements on root-supplied v03 captures against the same-named v02 captures. Not a capture, not interaction, picking, performance or budget evidence.",
+ "captureRecords": {
+  "v03": {
+   "path": ".omx/context/full-kit-m2-v03-runtime-capture-v01.json",
+   "sha256": "6ba13644b5217383ff4bf70706f2d5468fe287ed92c40b9d7f324a510994bb8c",
+   "matchesTaskBrief": true,
+   "capturedAt": "2026-11-15T13:56:17.029Z",
+   "failures": 0,
+   "sourceDriftAfterCapture": 0
+  },
+  "v02Baseline": {
+   "path": ".omx/context/full-kit-m2-runtime-capture-v01.json",
+   "sha256": "1da664b90227c9869801f7f0b950b59c64c24cc52f84bb584e197a4a6add49b2",
+   "matchesPriorReview": true
+  }
+ },
+ "images": {
+  "count": 18,
+  "allMatchCaptureRecord": true,
+  "allV02BaselinesMatchV02Record": true,
+  "binding": [
+   {
+    "file": "scene-home-1440x900-f58.png",
+    "kind": "scene",
+    "sha256": "a89bdf6a2edf49a31403afd6944f5187c3f1676684fc5121ee1e5f3eeafce717",
+    "matchesCaptureRecord": true,
+    "bytes": 401346,
+    "pixels": [
+     1440,
+     900
+    ],
+    "pose": {
+     "yaw": -4,
+     "pitch": -6
+    },
+    "fov": 58,
+    "sceneImage": null,
+    "errors": 0,
+    "consoleWarnings": 1,
+    "consoleWarningUrls": [
+     "http://127.0.0.1:4182/favicon.ico"
+    ],
+    "v02BaselineSha256": "ea34b26d1efa5524aa771859a3055b1d582aed15dc1216a751b64e1e8b870566",
+    "v02BaselineMatchesV02CaptureRecord": true,
+    "byteIdenticalToV02": false
+   },
+   {
+    "file": "scene-music-1440x900-f58.png",
+    "kind": "scene",
+    "sha256": "031c02c6f37725f095474b0634c0d889e48009ccd17fe6355c8d8783ebdcd2ee",
+    "matchesCaptureRecord": true,
+    "bytes": 470306,
+    "pixels": [
+     1440,
+     900
+    ],
+    "pose": {
+     "yaw": 44,
+     "pitch": -8
+    },
+    "fov": 58,
+    "sceneImage": null,
+    "errors": 0,
+    "consoleWarnings": 1,
+    "consoleWarningUrls": [
+     "http://127.0.0.1:4182/favicon.ico"
+    ],
+    "v02BaselineSha256": "7afe44ccebe1b7a4b9c1506308d6381bd1cbc8f3920e6597c117f0929de6bff8",
+    "v02BaselineMatchesV02CaptureRecord": true,
+    "byteIdenticalToV02": false
+   },
+   {
+    "file": "scene-left-up-1440x900-f58.png",
+    "kind": "scene",
+    "sha256": "8c656a495b2b8ff445812e95800540bc2f28f495d121c59634d962692b00a646",
+    "matchesCaptureRecord": true,
+    "bytes": 346985,
+    "pixels": [
+     1440,
+     900
+    ],
+    "pose": {
+     "yaw": -38,
+     "pitch": 12
+    },
+    "fov": 58,
+    "sceneImage": null,
+    "errors": 0,
+    "consoleWarnings": 1,
+    "consoleWarningUrls": [
+     "http://127.0.0.1:4182/favicon.ico"
+    ],
+    "v02BaselineSha256": "3b46aad2545523011aaf90f12a86b6b511999566664ddcddb93025d80a5cfd4e",
+    "v02BaselineMatchesV02CaptureRecord": true,
+    "byteIdenticalToV02": false
+   },
+   {
+    "file": "scene-right-up-1440x900-f58.png",
+    "kind": "scene",
+    "sha256": "a892e0714fdf252580bf01d02c6cb5c6b22d803d052e72bcb06ae30faf22e6b3",
+    "matchesCaptureRecord": true,
+    "bytes": 460192,
+    "pixels": [
+     1440,
+     900
+    ],
+    "pose": {
+     "yaw": 58,
+     "pitch": 12
+    },
+    "fov": 58,
+    "sceneImage": null,
+    "errors": 0,
+    "consoleWarnings": 1,
+    "consoleWarningUrls": [
+     "http://127.0.0.1:4182/favicon.ico"
+    ],
+    "v02BaselineSha256": "d0e153e42e2307868bc87aab15aacf0df388ee2a954ab3849e1c45a71dd11519",
+    "v02BaselineMatchesV02CaptureRecord": true,
+    "byteIdenticalToV02": false
+   },
+   {
+    "file": "scene-right-down-1440x900-f58.png",
+    "kind": "scene",
+    "sha256": "9abd79860a218f40c47a2405a370156307cd8a5b14a49c7c2b1483fa8690a7de",
+    "matchesCaptureRecord": true,
+    "bytes": 512982,
+    "pixels": [
+     1440,
+     900
+    ],
+    "pose": {
+     "yaw": 58,
+     "pitch": -16
+    },
+    "fov": 58,
+    "sceneImage": null,
+    "errors": 0,
+    "consoleWarnings": 1,
+    "consoleWarningUrls": [
+     "http://127.0.0.1:4182/favicon.ico"
+    ],
+    "v02BaselineSha256": "66928b61b52a8deb2aba18f5344c4b4bbe08bc375520937d650eb92dd064a4a4",
+    "v02BaselineMatchesV02CaptureRecord": true,
+    "byteIdenticalToV02": false
+   },
+   {
+    "file": "scene-mid-left-1440x900-f58.png",
+    "kind": "scene",
+    "sha256": "78c8020944abc5085d9034bc9ec687e4a42036185f77672e1ce2aa839f872474",
+    "matchesCaptureRecord": true,
+    "bytes": 424286,
+    "pixels": [
+     1440,
+     900
+    ],
+    "pose": {
+     "yaw": -20,
+     "pitch": -6
+    },
+    "fov": 58,
+    "sceneImage": null,
+    "errors": 0,
+    "consoleWarnings": 1,
+    "consoleWarningUrls": [
+     "http://127.0.0.1:4182/favicon.ico"
+    ],
+    "v02BaselineSha256": "c70b3820ce4f37fa4d2cfd81a3d94eefa69f488082db9e80ad6c2e278e25be48",
+    "v02BaselineMatchesV02CaptureRecord": true,
+    "byteIdenticalToV02": false
+   },
+   {
+    "file": "scene-mid-right-1440x900-f58.png",
+    "kind": "scene",
+    "sha256": "7c9454d33e04331030431d8be39f2422b8fb4157a0eb6317f37cd310c92d8770",
+    "matchesCaptureRecord": true,
+    "bytes": 477652,
+    "pixels": [
+     1440,
+     900
+    ],
+    "pose": {
+     "yaw": 30,
+     "pitch": -6
+    },
+    "fov": 58,
+    "sceneImage": null,
+    "errors": 0,
+    "consoleWarnings": 1,
+    "consoleWarningUrls": [
+     "http://127.0.0.1:4182/favicon.ico"
+    ],
+    "v02BaselineSha256": "208dd03ded055f314d9fe9289560cb805cc85b33cab0cf9f2b3503e0af21f944",
+    "v02BaselineMatchesV02CaptureRecord": true,
+    "byteIdenticalToV02": false
+   },
+   {
+    "file": "scene-home-1024x768-f58.png",
+    "kind": "scene",
+    "sha256": "770e221c2afb696ddece70981e68a81e11873f8798492e30b38ee1dddb151941",
+    "matchesCaptureRecord": true,
+    "bytes": 272955,
+    "pixels": [
+     1024,
+     768
+    ],
+    "pose": {
+     "yaw": -4,
+     "pitch": -6
+    },
+    "fov": 58,
+    "sceneImage": null,
+    "errors": 0,
+    "consoleWarnings": 0,
+    "consoleWarningUrls": [],
+    "v02BaselineSha256": "460255a7ec5ca33137599a9bc5c3ab1ffef031b2663766970bc1f286bb55c85f",
+    "v02BaselineMatchesV02CaptureRecord": true,
+    "byteIdenticalToV02": false
+   },
+   {
+    "file": "scene-home-390x844-f74.png",
+    "kind": "scene",
+    "sha256": "24f6150660774a7d6035b9e65217cbd596bf815ed205c6ae62cae1a569a3c98f",
+    "matchesCaptureRecord": true,
+    "bytes": 114460,
+    "pixels": [
+     390,
+     844
+    ],
+    "pose": {
+     "yaw": -13.5,
+     "pitch": -7
+    },
+    "fov": 74,
+    "sceneImage": null,
+    "errors": 0,
+    "consoleWarnings": 0,
+    "consoleWarningUrls": [],
+    "v02BaselineSha256": "6a6bf54a684995426a21d7dde287af964d73b71cd880caf57c888a569764e540",
+    "v02BaselineMatchesV02CaptureRecord": true,
+    "byteIdenticalToV02": false
+   },
+   {
+    "file": "scene-music-390x844-f74.png",
+    "kind": "scene",
+    "sha256": "e3c5270e79403e62436b9dac488ecd631b08c0276f5bd2125f15568a04f9cfe8",
+    "matchesCaptureRecord": true,
+    "bytes": 122651,
+    "pixels": [
+     390,
+     844
+    ],
+    "pose": {
+     "yaw": 44,
+     "pitch": -8
+    },
+    "fov": 74,
+    "sceneImage": null,
+    "errors": 0,
+    "consoleWarnings": 0,
+    "consoleWarningUrls": [],
+    "v02BaselineSha256": "e3c5270e79403e62436b9dac488ecd631b08c0276f5bd2125f15568a04f9cfe8",
+    "v02BaselineMatchesV02CaptureRecord": true,
+    "byteIdenticalToV02": true
+   },
+   {
+    "file": "scene-left-up-390x844-f74.png",
+    "kind": "scene",
+    "sha256": "04329224556b760028f7d9a9107f4cd320efe4adcdeb895958f1ee62d7133a38",
+    "matchesCaptureRecord": true,
+    "bytes": 122581,
+    "pixels": [
+     390,
+     844
+    ],
+    "pose": {
+     "yaw": -38,
+     "pitch": 12
+    },
+    "fov": 74,
+    "sceneImage": null,
+    "errors": 0,
+    "consoleWarnings": 0,
+    "consoleWarningUrls": [],
+    "v02BaselineSha256": "2b86f729e1b0a46120ac34bccbc978126284fd109d25c32d855694a7e5e371c9",
+    "v02BaselineMatchesV02CaptureRecord": true,
+    "byteIdenticalToV02": false
+   },
+   {
+    "file": "scene-home-320x844-f74.png",
+    "kind": "scene",
+    "sha256": "d9bb31c03cd33730e8585a4c355556144dcd96f872d0807431f66ab4a4817676",
+    "matchesCaptureRecord": true,
+    "bytes": 93329,
+    "pixels": [
+     320,
+     844
+    ],
+    "pose": {
+     "yaw": -13.5,
+     "pitch": -7
+    },
+    "fov": 74,
+    "sceneImage": null,
+    "errors": 0,
+    "consoleWarnings": 0,
+    "consoleWarningUrls": [],
+    "v02BaselineSha256": "04d0c489af84fa7fd28a905c04bb2fdb9749d0db7366b41420fecbaade444ba2",
+    "v02BaselineMatchesV02CaptureRecord": true,
+    "byteIdenticalToV02": false
+   },
+   {
+    "file": "scene-home-320x568-f74.png",
+    "kind": "scene",
+    "sha256": "2ed26b3c4078995bf0181862a35423d360cf349e5efe1503b8ec0ab1e192cc79",
+    "matchesCaptureRecord": true,
+    "bytes": 81530,
+    "pixels": [
+     320,
+     568
+    ],
+    "pose": {
+     "yaw": -13.5,
+     "pitch": -7
+    },
+    "fov": 74,
+    "sceneImage": null,
+    "errors": 0,
+    "consoleWarnings": 0,
+    "consoleWarningUrls": [],
+    "v02BaselineSha256": "02423e8cfe6710219c2b0c297471c22adfe632d27e8f8c356aa42c57e5fcb022",
+    "v02BaselineMatchesV02CaptureRecord": true,
+    "byteIdenticalToV02": false
+   },
+   {
+    "file": "chrome-home-default-1440x900.png",
+    "kind": "composite",
+    "sha256": "4f993f1e534b3115b553553673c7350533dc4aa86f6317a4cbb24de8278cedb0",
+    "matchesCaptureRecord": true,
+    "bytes": 409381,
+    "pixels": [
+     1440,
+     900
+    ],
+    "pose": null,
+    "fov": null,
+    "sceneImage": "scene-home-1440x900-f58.png",
+    "errors": 0,
+    "consoleWarnings": 1,
+    "consoleWarningUrls": [
+     "http://127.0.0.1:4182/favicon.ico"
+    ]
+   },
+   {
+    "file": "chrome-music-default-1440x900.png",
+    "kind": "composite",
+    "sha256": "2b721aebae1e96a0cd53dfd0c959109b899511e7903b324d7e4defad6b049ba6",
+    "matchesCaptureRecord": true,
+    "bytes": 468878,
+    "pixels": [
+     1440,
+     900
+    ],
+    "pose": null,
+    "fov": null,
+    "sceneImage": "scene-music-1440x900-f58.png",
+    "errors": 0,
+    "consoleWarnings": 1,
+    "consoleWarningUrls": [
+     "http://127.0.0.1:4182/favicon.ico"
+    ]
+   },
+   {
+    "file": "chrome-mid-right-default-1440x900.png",
+    "kind": "composite",
+    "sha256": "ce7201214e08ff0e59f70ce54b781468dde3f9b507a8e58e9e5e4add4b0e7636",
+    "matchesCaptureRecord": true,
+    "bytes": 484947,
+    "pixels": [
+     1440,
+     900
+    ],
+    "pose": null,
+    "fov": null,
+    "sceneImage": "scene-mid-right-1440x900-f58.png",
+    "errors": 0,
+    "consoleWarnings": 1,
+    "consoleWarningUrls": [
+     "http://127.0.0.1:4182/favicon.ico"
+    ]
+   },
+   {
+    "file": "chrome-home-default-1024x768.png",
+    "kind": "composite",
+    "sha256": "511c018ac93f45767b9e2dd12f115b7354676895b188cf5f826e7a390f22ae0a",
+    "matchesCaptureRecord": true,
+    "bytes": 278587,
+    "pixels": [
+     1024,
+     768
+    ],
+    "pose": null,
+    "fov": null,
+    "sceneImage": "scene-home-1024x768-f58.png",
+    "errors": 0,
+    "consoleWarnings": 0,
+    "consoleWarningUrls": []
+   },
+   {
+    "file": "chrome-music-closed-390x844.png",
+    "kind": "composite",
+    "sha256": "84b64b03f2b1c169bea7750f8a36e633746e930639b2203b9f59e157ae10024b",
+    "matchesCaptureRecord": true,
+    "bytes": 129285,
+    "pixels": [
+     390,
+     844
+    ],
+    "pose": null,
+    "fov": null,
+    "sceneImage": "scene-music-390x844-f74.png",
+    "errors": 0,
+    "consoleWarnings": 0,
+    "consoleWarningUrls": []
+   }
+  ]
+ },
+ "method": {
+  "emitterMask": "luminance (mean of RGB) > 150 and R >= B inside a fixed crop box",
+  "clipDefinition": "all three channels >= 250, as in render-gates.md",
+  "gate": "under 2% of each emitter crop",
+  "flatEmissionRgb": [
+   237,
+   225,
+   201
+  ],
+  "sameAsV02Review": "mask, clip rule and the eight pendant, two wall and two lamp crop boxes are unchanged"
+ },
+ "pendant": {
+  "cases": [
+   {
+    "emitter": "fix_pendant__lens",
+    "file": "scene-home-1440x900-f58.png",
+    "crop": [
+     270,
+     20,
+     805,
+     65
+    ],
+    "role": "required view",
+    "v02": {
+     "emitterPx": 6916,
+     "clippedPx": 1801,
+     "clippedPct": 26.04,
+     "clippedPctOfWholeCropBox": 7.481,
+     "anyChannelGe250Pct": 66.1,
+     "allChannelsGe240Pct": 38.74,
+     "maxRgb": [
+      255,
+      255,
+      255
+     ],
+     "luminanceP10P50P90": [
+      217,
+      241,
+      255
+     ],
+     "meanLuminanceByFifthAlongX": [
+      224.2,
+      241.5,
+      243.7,
+      241.8,
+      226.8
+     ],
+     "exactFlatEmissionPct": 0.0,
+     "brighterThanFlatPx": 6113,
+     "emitterBox": [
+      275,
+      20,
+      794,
+      59
+     ],
+     "surroundMedianLuminance": 28.7
+    },
+    "v03": {
+     "emitterPx": 6907,
+     "clippedPx": 19,
+     "clippedPct": 0.28,
+     "clippedPctOfWholeCropBox": 0.079,
+     "anyChannelGe250Pct": 0.9,
+     "allChannelsGe240Pct": 0.81,
+     "maxRgb": [
+      254,
+      253,
+      250
+     ],
+     "luminanceP10P50P90": [
+      211,
+      221,
+      223
+     ],
+     "meanLuminanceByFifthAlongX": [
+      216.6,
+      217.0,
+      221.1,
+      217.0,
+      217.7
+     ],
+     "exactFlatEmissionPct": 50.4,
+     "brighterThanFlatPx": 987,
+     "emitterBox": [
+      275,
+      20,
+      794,
+      59
+     ],
+     "surroundMedianLuminance": 28.7
+    },
+    "v03UnderTwoPercent": true,
+    "v03SplitByChangeFromV02": {
+     "lensMaterialPx": 6264,
+     "lensMaterialClippedPx": 0,
+     "lensMaterialMaxRgb": [
+      251,
+      247,
+      241
+     ],
+     "lensMaterialBrighterThanFlatPx": 804,
+     "lensMaterialMaxRgbAtLeastTwoPxInsideMask": [
+      242,
+      232,
+      213
+     ],
+     "unchangedNeighbourPx": 643,
+     "unchangedNeighbourClippedPx": 19,
+     "unchangedNeighbourMaxRgb": [
+      254,
+      253,
+      250
+     ],
+     "unchangedNeighbourClippedInV02Too": 19,
+     "unchangedNeighbourAbove240": {
+      "px": 68,
+      "box": [
+       515,
+       36,
+       558,
+       37
+      ]
+     }
+    },
+    "v02Edge": {
+     "columns": 498,
+     "bodyAboveLensMedianLuminance": 13.7,
+     "lensMidMedianLuminance": 245.0,
+     "belowLensMedianLuminance": 52.5,
+     "upperEdgeTransitionPxMedian": 1,
+     "lensThicknessPxMedian": 13,
+     "lensLengthPx": 498
+    },
+    "v03Edge": {
+     "columns": 498,
+     "bodyAboveLensMedianLuminance": 13.7,
+     "lensMidMedianLuminance": 221.0,
+     "belowLensMedianLuminance": 52.5,
+     "upperEdgeTransitionPxMedian": 1,
+     "lensThicknessPxMedian": 13,
+     "lensLengthPx": 498
+    }
+   },
+   {
+    "emitter": "fix_pendant__lens",
+    "file": "scene-home-1024x768-f58.png",
+    "crop": [
+     125,
+     5,
+     585,
+     55
+    ],
+    "role": "required view",
+    "v02": {
+     "emitterPx": 5041,
+     "clippedPx": 1300,
+     "clippedPct": 25.79,
+     "clippedPctOfWholeCropBox": 5.652,
+     "anyChannelGe250Pct": 65.3,
+     "allChannelsGe240Pct": 38.11,
+     "maxRgb": [
+      255,
+      255,
+      255
+     ],
+     "luminanceP10P50P90": [
+      211,
+      241,
+      255
+     ],
+     "meanLuminanceByFifthAlongX": [
+      224.0,
+      242.0,
+      242.5,
+      241.4,
+      225.7
+     ],
+     "exactFlatEmissionPct": 0.0,
+     "brighterThanFlatPx": 4438,
+     "emitterBox": [
+      132,
+      5,
+      575,
+      50
+     ],
+     "surroundMedianLuminance": 31.3
+    },
+    "v03": {
+     "emitterPx": 5035,
+     "clippedPx": 11,
+     "clippedPct": 0.22,
+     "clippedPctOfWholeCropBox": 0.048,
+     "anyChannelGe250Pct": 0.6,
+     "allChannelsGe240Pct": 0.6,
+     "maxRgb": [
+      254,
+      253,
+      251
+     ],
+     "luminanceP10P50P90": [
+      205,
+      221,
+      223
+     ],
+     "meanLuminanceByFifthAlongX": [
+      216.4,
+      217.2,
+      220.1,
+      216.8,
+      216.8
+     ],
+     "exactFlatEmissionPct": 49.8,
+     "brighterThanFlatPx": 709,
+     "emitterBox": [
+      132,
+      5,
+      575,
+      50
+     ],
+     "surroundMedianLuminance": 31.3
+    },
+    "v03UnderTwoPercent": true,
+    "v03SplitByChangeFromV02": {
+     "lensMaterialPx": 4566,
+     "lensMaterialClippedPx": 0,
+     "lensMaterialMaxRgb": [
+      250,
+      246,
+      238
+     ],
+     "lensMaterialBrighterThanFlatPx": 577,
+     "lensMaterialMaxRgbAtLeastTwoPxInsideMask": [
+      241,
+      231,
+      211
+     ],
+     "unchangedNeighbourPx": 469,
+     "unchangedNeighbourClippedPx": 11,
+     "unchangedNeighbourMaxRgb": [
+      254,
+      253,
+      251
+     ],
+     "unchangedNeighbourClippedInV02Too": 11,
+     "unchangedNeighbourAbove240": {
+      "px": 57,
+      "box": [
+       336,
+       30,
+       374,
+       32
+      ]
+     }
+    },
+    "v02Edge": {
+     "columns": 425,
+     "bodyAboveLensMedianLuminance": 10.3,
+     "lensMidMedianLuminance": 245.0,
+     "belowLensMedianLuminance": 59.0,
+     "upperEdgeTransitionPxMedian": 1,
+     "lensThicknessPxMedian": 11,
+     "lensLengthPx": 425
+    },
+    "v03Edge": {
+     "columns": 425,
+     "bodyAboveLensMedianLuminance": 10.3,
+     "lensMidMedianLuminance": 221.0,
+     "belowLensMedianLuminance": 58.7,
+     "upperEdgeTransitionPxMedian": 1,
+     "lensThicknessPxMedian": 11,
+     "lensLengthPx": 425
+    }
+   },
+   {
+    "emitter": "fix_pendant__lens",
+    "file": "scene-mid-left-1440x900-f58.png",
+    "crop": [
+     540,
+     0,
+     1055,
+     95
+    ],
+    "role": "required view",
+    "v02": {
+     "emitterPx": 6599,
+     "clippedPx": 1691,
+     "clippedPct": 25.63,
+     "clippedPctOfWholeCropBox": 3.456,
+     "anyChannelGe250Pct": 65.7,
+     "allChannelsGe240Pct": 38.1,
+     "maxRgb": [
+      255,
+      255,
+      255
+     ],
+     "luminanceP10P50P90": [
+      219,
+      241,
+      255
+     ],
+     "meanLuminanceByFifthAlongX": [
+      226.0,
+      241.5,
+      242.4,
+      242.3,
+      225.9
+     ],
+     "exactFlatEmissionPct": 0.0,
+     "brighterThanFlatPx": 5873,
+     "emitterBox": [
+      546,
+      0,
+      1048,
+      87
+     ],
+     "surroundMedianLuminance": 61.7
+    },
+    "v03": {
+     "emitterPx": 6567,
+     "clippedPx": 10,
+     "clippedPct": 0.15,
+     "clippedPctOfWholeCropBox": 0.02,
+     "anyChannelGe250Pct": 0.8,
+     "allChannelsGe240Pct": 0.82,
+     "maxRgb": [
+      254,
+      253,
+      251
+     ],
+     "luminanceP10P50P90": [
+      215,
+      221,
+      223
+     ],
+     "meanLuminanceByFifthAlongX": [
+      216.7,
+      216.2,
+      220.1,
+      219.6,
+      218.1
+     ],
+     "exactFlatEmissionPct": 50.0,
+     "brighterThanFlatPx": 943,
+     "emitterBox": [
+      546,
+      0,
+      1048,
+      87
+     ],
+     "surroundMedianLuminance": 61.7
+    },
+    "v03UnderTwoPercent": true,
+    "v03SplitByChangeFromV02": {
+     "lensMaterialPx": 5959,
+     "lensMaterialClippedPx": 0,
+     "lensMaterialMaxRgb": [
+      251,
+      248,
+      241
+     ],
+     "lensMaterialBrighterThanFlatPx": 768,
+     "lensMaterialMaxRgbAtLeastTwoPxInsideMask": [
+      242,
+      231,
+      212
+     ],
+     "unchangedNeighbourPx": 608,
+     "unchangedNeighbourClippedPx": 10,
+     "unchangedNeighbourMaxRgb": [
+      254,
+      253,
+      251
+     ],
+     "unchangedNeighbourClippedInV02Too": 10,
+     "unchangedNeighbourAbove240": {
+      "px": 71,
+      "box": [
+       754,
+       40,
+       798,
+       46
+      ]
+     }
+    },
+    "v02Edge": {
+     "columns": 485,
+     "bodyAboveLensMedianLuminance": 13.7,
+     "lensMidMedianLuminance": 244.7,
+     "belowLensMedianLuminance": 52.3,
+     "upperEdgeTransitionPxMedian": 1,
+     "lensThicknessPxMedian": 13,
+     "lensLengthPx": 485
+    },
+    "v03Edge": {
+     "columns": 485,
+     "bodyAboveLensMedianLuminance": 14.0,
+     "lensMidMedianLuminance": 221.0,
+     "belowLensMedianLuminance": 52.3,
+     "upperEdgeTransitionPxMedian": 1,
+     "lensThicknessPxMedian": 13,
+     "lensLengthPx": 485
+    }
+   },
+   {
+    "emitter": "fix_pendant__lens",
+    "file": "scene-left-up-1440x900-f58.png",
+    "crop": [
+     800,
+     205,
+     1340,
+     375
+    ],
+    "role": "required view",
+    "v02": {
+     "emitterPx": 6387,
+     "clippedPx": 1540,
+     "clippedPct": 24.11,
+     "clippedPctOfWholeCropBox": 1.678,
+     "anyChannelGe250Pct": 63.1,
+     "allChannelsGe240Pct": 35.96,
+     "maxRgb": [
+      255,
+      255,
+      255
+     ],
+     "luminanceP10P50P90": [
+      201,
+      240,
+      255
+     ],
+     "meanLuminanceByFifthAlongX": [
+      228.8,
+      241.4,
+      242.7,
+      232.5,
+      223.4
+     ],
+     "exactFlatEmissionPct": 0.0,
+     "brighterThanFlatPx": 5557,
+     "emitterBox": [
+      807,
+      214,
+      1330,
+      374
+     ],
+     "surroundMedianLuminance": 66.0
+    },
+    "v03": {
+     "emitterPx": 6345,
+     "clippedPx": 9,
+     "clippedPct": 0.14,
+     "clippedPctOfWholeCropBox": 0.01,
+     "anyChannelGe250Pct": 0.7,
+     "allChannelsGe240Pct": 0.72,
+     "maxRgb": [
+      254,
+      253,
+      251
+     ],
+     "luminanceP10P50P90": [
+      201,
+      221,
+      223
+     ],
+     "meanLuminanceByFifthAlongX": [
+      217.7,
+      216.8,
+      219.4,
+      214.4,
+      217.0
+     ],
+     "exactFlatEmissionPct": 48.9,
+     "brighterThanFlatPx": 858,
+     "emitterBox": [
+      807,
+      214,
+      1330,
+      374
+     ],
+     "surroundMedianLuminance": 66.0
+    },
+    "v03UnderTwoPercent": true,
+    "v03SplitByChangeFromV02": {
+     "lensMaterialPx": 5634,
+     "lensMaterialClippedPx": 0,
+     "lensMaterialMaxRgb": [
+      251,
+      248,
+      241
+     ],
+     "lensMaterialBrighterThanFlatPx": 703,
+     "lensMaterialMaxRgbAtLeastTwoPxInsideMask": [
+      241,
+      231,
+      212
+     ],
+     "unchangedNeighbourPx": 711,
+     "unchangedNeighbourClippedPx": 9,
+     "unchangedNeighbourMaxRgb": [
+      254,
+      253,
+      251
+     ],
+     "unchangedNeighbourClippedInV02Too": 9,
+     "unchangedNeighbourAbove240": {
+      "px": 61,
+      "box": [
+       1005,
+       302,
+       1047,
+       311
+      ]
+     }
+    },
+    "v02Edge": {
+     "columns": 458,
+     "bodyAboveLensMedianLuminance": 12.0,
+     "lensMidMedianLuminance": 241.7,
+     "belowLensMedianLuminance": 56.7,
+     "upperEdgeTransitionPxMedian": 1,
+     "lensThicknessPxMedian": 12,
+     "lensLengthPx": 458
+    },
+    "v03Edge": {
+     "columns": 458,
+     "bodyAboveLensMedianLuminance": 12.0,
+     "lensMidMedianLuminance": 221.0,
+     "belowLensMedianLuminance": 56.7,
+     "upperEdgeTransitionPxMedian": 1,
+     "lensThicknessPxMedian": 12,
+     "lensLengthPx": 458
+    }
+   },
+   {
+    "emitter": "fix_pendant__lens",
+    "file": "scene-home-320x844-f74.png",
+    "crop": [
+     0,
+     95,
+     320,
+     160
+    ],
+    "role": "required view",
+    "v02": {
+     "emitterPx": 2988,
+     "clippedPx": 799,
+     "clippedPct": 26.74,
+     "clippedPctOfWholeCropBox": 3.841,
+     "anyChannelGe250Pct": 68.3,
+     "allChannelsGe240Pct": 40.06,
+     "maxRgb": [
+      255,
+      255,
+      255
+     ],
+     "luminanceP10P50P90": [
+      210,
+      242,
+      255
+     ],
+     "meanLuminanceByFifthAlongX": [
+      234.5,
+      241.0,
+      242.4,
+      240.6,
+      223.3
+     ],
+     "exactFlatEmissionPct": 0.0,
+     "brighterThanFlatPx": 2631,
+     "emitterBox": [
+      0,
+      95,
+      313,
+      150
+     ],
+     "surroundMedianLuminance": 61.0
+    },
+    "v03": {
+     "emitterPx": 2964,
+     "clippedPx": 2,
+     "clippedPct": 0.07,
+     "clippedPctOfWholeCropBox": 0.01,
+     "anyChannelGe250Pct": 0.9,
+     "allChannelsGe240Pct": 0.84,
+     "maxRgb": [
+      254,
+      253,
+      251
+     ],
+     "luminanceP10P50P90": [
+      209,
+      221,
+      224
+     ],
+     "meanLuminanceByFifthAlongX": [
+      218.7,
+      216.0,
+      219.9,
+      218.9,
+      215.9
+     ],
+     "exactFlatEmissionPct": 47.0,
+     "brighterThanFlatPx": 449,
+     "emitterBox": [
+      0,
+      95,
+      313,
+      150
+     ],
+     "surroundMedianLuminance": 61.0
+    },
+    "v03UnderTwoPercent": true,
+    "v03SplitByChangeFromV02": {
+     "lensMaterialPx": 2717,
+     "lensMaterialClippedPx": 0,
+     "lensMaterialMaxRgb": [
+      251,
+      247,
+      241
+     ],
+     "lensMaterialBrighterThanFlatPx": 374,
+     "lensMaterialMaxRgbAtLeastTwoPxInsideMask": [
+      241,
+      231,
+      211
+     ],
+     "unchangedNeighbourPx": 247,
+     "unchangedNeighbourClippedPx": 2,
+     "unchangedNeighbourMaxRgb": [
+      254,
+      253,
+      251
+     ],
+     "unchangedNeighbourClippedInV02Too": 2,
+     "unchangedNeighbourAbove240": {
+      "px": 30,
+      "box": [
+       119,
+       128,
+       146,
+       130
+      ]
+     }
+    },
+    "v02Edge": {
+     "columns": 309,
+     "bodyAboveLensMedianLuminance": 11.3,
+     "lensMidMedianLuminance": 246.7,
+     "belowLensMedianLuminance": 65.0,
+     "upperEdgeTransitionPxMedian": 1,
+     "lensThicknessPxMedian": 9,
+     "lensLengthPx": 309
+    },
+    "v03Edge": {
+     "columns": 309,
+     "bodyAboveLensMedianLuminance": 11.3,
+     "lensMidMedianLuminance": 221.0,
+     "belowLensMedianLuminance": 65.3,
+     "upperEdgeTransitionPxMedian": 1,
+     "lensThicknessPxMedian": 9,
+     "lensLengthPx": 309
+    }
+   },
+   {
+    "emitter": "fix_pendant__lens",
+    "file": "scene-home-390x844-f74.png",
+    "crop": [
+     0,
+     95,
+     355,
+     160
+    ],
+    "role": "required view",
+    "v02": {
+     "emitterPx": 3172,
+     "clippedPx": 799,
+     "clippedPct": 25.19,
+     "clippedPctOfWholeCropBox": 3.463,
+     "anyChannelGe250Pct": 64.4,
+     "allChannelsGe240Pct": 37.74,
+     "maxRgb": [
+      255,
+      255,
+      255
+     ],
+     "luminanceP10P50P90": [
+      207,
+      241,
+      255
+     ],
+     "meanLuminanceByFifthAlongX": [
+      224.9,
+      240.2,
+      242.5,
+      241.0,
+      224.2
+     ],
+     "exactFlatEmissionPct": 0.0,
+     "brighterThanFlatPx": 2764,
+     "emitterBox": [
+      2,
+      95,
+      348,
+      154
+     ],
+     "surroundMedianLuminance": 58.7
+    },
+    "v03": {
+     "emitterPx": 3148,
+     "clippedPx": 2,
+     "clippedPct": 0.06,
+     "clippedPctOfWholeCropBox": 0.009,
+     "anyChannelGe250Pct": 0.9,
+     "allChannelsGe240Pct": 0.79,
+     "maxRgb": [
+      254,
+      253,
+      251
+     ],
+     "luminanceP10P50P90": [
+      203,
+      221,
+      224
+     ],
+     "meanLuminanceByFifthAlongX": [
+      216.2,
+      215.8,
+      220.2,
+      218.2,
+      216.1
+     ],
+     "exactFlatEmissionPct": 48.8,
+     "brighterThanFlatPx": 449,
+     "emitterBox": [
+      2,
+      95,
+      348,
+      154
+     ],
+     "surroundMedianLuminance": 58.7
+    },
+    "v03UnderTwoPercent": true,
+    "v03SplitByChangeFromV02": {
+     "lensMaterialPx": 2872,
+     "lensMaterialClippedPx": 0,
+     "lensMaterialMaxRgb": [
+      251,
+      247,
+      241
+     ],
+     "lensMaterialBrighterThanFlatPx": 374,
+     "lensMaterialMaxRgbAtLeastTwoPxInsideMask": [
+      241,
+      231,
+      211
+     ],
+     "unchangedNeighbourPx": 276,
+     "unchangedNeighbourClippedPx": 2,
+     "unchangedNeighbourMaxRgb": [
+      254,
+      253,
+      251
+     ],
+     "unchangedNeighbourClippedInV02Too": 2,
+     "unchangedNeighbourAbove240": {
+      "px": 30,
+      "box": [
+       154,
+       128,
+       181,
+       130
+      ]
+     }
+    },
+    "v02Edge": {
+     "columns": 332,
+     "bodyAboveLensMedianLuminance": 11.0,
+     "lensMidMedianLuminance": 245.0,
+     "belowLensMedianLuminance": 64.0,
+     "upperEdgeTransitionPxMedian": 1,
+     "lensThicknessPxMedian": 9,
+     "lensLengthPx": 332
+    },
+    "v03Edge": {
+     "columns": 332,
+     "bodyAboveLensMedianLuminance": 10.7,
+     "lensMidMedianLuminance": 221.0,
+     "belowLensMedianLuminance": 64.8,
+     "upperEdgeTransitionPxMedian": 1,
+     "lensThicknessPxMedian": 9,
+     "lensLengthPx": 332
+    }
+   },
+   {
+    "emitter": "fix_pendant__lens",
+    "file": "scene-home-320x568-f74.png",
+    "crop": [
+     25,
+     60,
+     270,
+     110
+    ],
+    "role": "required view",
+    "v02": {
+     "emitterPx": 1421,
+     "clippedPx": 353,
+     "clippedPct": 24.84,
+     "clippedPctOfWholeCropBox": 2.882,
+     "anyChannelGe250Pct": 62.5,
+     "allChannelsGe240Pct": 36.59,
+     "maxRgb": [
+      255,
+      255,
+      255
+     ],
+     "luminanceP10P50P90": [
+      197,
+      240,
+      255
+     ],
+     "meanLuminanceByFifthAlongX": [
+      223.0,
+      238.7,
+      242.1,
+      238.9,
+      223.0
+     ],
+     "exactFlatEmissionPct": 0.0,
+     "brighterThanFlatPx": 1214,
+     "emitterBox": [
+      30,
+      65,
+      263,
+      103
+     ],
+     "surroundMedianLuminance": 59.3
+    },
+    "v03": {
+     "emitterPx": 1408,
+     "clippedPx": 0,
+     "clippedPct": 0.0,
+     "clippedPctOfWholeCropBox": 0.0,
+     "anyChannelGe250Pct": 0.7,
+     "allChannelsGe240Pct": 0.78,
+     "maxRgb": [
+      253,
+      252,
+      249
+     ],
+     "luminanceP10P50P90": [
+      191,
+      221,
+      223
+     ],
+     "meanLuminanceByFifthAlongX": [
+      214.0,
+      214.6,
+      219.8,
+      216.8,
+      215.0
+     ],
+     "exactFlatEmissionPct": 47.3,
+     "brighterThanFlatPx": 197,
+     "emitterBox": [
+      30,
+      65,
+      263,
+      103
+     ],
+     "surroundMedianLuminance": 59.3
+    },
+    "v03UnderTwoPercent": true,
+    "v03SplitByChangeFromV02": {
+     "lensMaterialPx": 1301,
+     "lensMaterialClippedPx": 0,
+     "lensMaterialMaxRgb": [
+      251,
+      248,
+      242
+     ],
+     "lensMaterialBrighterThanFlatPx": 168,
+     "lensMaterialMaxRgbAtLeastTwoPxInsideMask": [
+      240,
+      229,
+      209
+     ],
+     "unchangedNeighbourPx": 107,
+     "unchangedNeighbourClippedPx": 0,
+     "unchangedNeighbourMaxRgb": [
+      253,
+      252,
+      249
+     ],
+     "unchangedNeighbourClippedInV02Too": 0,
+     "unchangedNeighbourAbove240": {
+      "px": 13,
+      "box": [
+       135,
+       86,
+       151,
+       87
+      ]
+     }
+    },
+    "v02Edge": {
+     "columns": 221,
+     "bodyAboveLensMedianLuminance": 14.3,
+     "lensMidMedianLuminance": 245.3,
+     "belowLensMedianLuminance": 68.3,
+     "upperEdgeTransitionPxMedian": 1,
+     "lensThicknessPxMedian": 6,
+     "lensLengthPx": 221
+    },
+    "v03Edge": {
+     "columns": 221,
+     "bodyAboveLensMedianLuminance": 14.3,
+     "lensMidMedianLuminance": 221.0,
+     "belowLensMedianLuminance": 68.3,
+     "upperEdgeTransitionPxMedian": 1,
+     "lensThicknessPxMedian": 6,
+     "lensLengthPx": 221
+    }
+   },
+   {
+    "emitter": "fix_pendant__lens",
+    "file": "scene-left-up-390x844-f74.png",
+    "crop": [
+     250,
+     310,
+     390,
+     370
+    ],
+    "role": "additional view, left part of the lens only in frame",
+    "v02": {
+     "emitterPx": 934,
+     "clippedPx": 208,
+     "clippedPct": 22.27,
+     "clippedPctOfWholeCropBox": 2.476,
+     "anyChannelGe250Pct": 65.2,
+     "allChannelsGe240Pct": 35.97,
+     "maxRgb": [
+      255,
+      255,
+      255
+     ],
+     "luminanceP10P50P90": [
+      196,
+      241,
+      254
+     ],
+     "meanLuminanceByFifthAlongX": [
+      214.2,
+      230.9,
+      240.2,
+      239.1,
+      238.4
+     ],
+     "exactFlatEmissionPct": 0.0,
+     "brighterThanFlatPx": 797,
+     "emitterBox": [
+      255,
+      326,
+      389,
+      363
+     ],
+     "surroundMedianLuminance": 55.7
+    },
+    "v03": {
+     "emitterPx": 921,
+     "clippedPx": 0,
+     "clippedPct": 0.0,
+     "clippedPctOfWholeCropBox": 0.0,
+     "anyChannelGe250Pct": 0.0,
+     "allChannelsGe240Pct": 0.0,
+     "maxRgb": [
+      244,
+      239,
+      228
+     ],
+     "luminanceP10P50P90": [
+      194,
+      221,
+      221
+     ],
+     "meanLuminanceByFifthAlongX": [
+      210.5,
+      218.9,
+      219.7,
+      215.2,
+      213.4
+     ],
+     "exactFlatEmissionPct": 68.3,
+     "brighterThanFlatPx": 25,
+     "emitterBox": [
+      255,
+      326,
+      389,
+      363
+     ],
+     "surroundMedianLuminance": 55.7
+    },
+    "v03UnderTwoPercent": true,
+    "v03SplitByChangeFromV02": {
+     "lensMaterialPx": 854,
+     "lensMaterialClippedPx": 0,
+     "lensMaterialMaxRgb": [
+      239,
+      231,
+      213
+     ],
+     "lensMaterialBrighterThanFlatPx": 16,
+     "lensMaterialMaxRgbAtLeastTwoPxInsideMask": [
+      238,
+      226,
+      203
+     ],
+     "unchangedNeighbourPx": 67,
+     "unchangedNeighbourClippedPx": 0,
+     "unchangedNeighbourMaxRgb": [
+      244,
+      239,
+      228
+     ],
+     "unchangedNeighbourClippedInV02Too": 0
+    },
+    "v02Edge": {
+     "columns": 126,
+     "bodyAboveLensMedianLuminance": 10.0,
+     "lensMidMedianLuminance": 244.3,
+     "belowLensMedianLuminance": 60.3,
+     "upperEdgeTransitionPxMedian": 1,
+     "lensThicknessPxMedian": 7,
+     "lensLengthPx": 126
+    },
+    "v03Edge": {
+     "columns": 126,
+     "bodyAboveLensMedianLuminance": 10.0,
+     "lensMidMedianLuminance": 221.0,
+     "belowLensMedianLuminance": 60.3,
+     "upperEdgeTransitionPxMedian": 1,
+     "lensThicknessPxMedian": 7,
+     "lensLengthPx": 126
+    }
+   }
+  ],
+  "centreLineHome1440_y44": [
+   {
+    "x": 330,
+    "v02": [
+     248,
+     235,
+     204
+    ],
+    "v03": [
+     237,
+     225,
+     201
+    ]
+   },
+   {
+    "x": 370,
+    "v02": [
+     251,
+     241,
+     217
+    ],
+    "v03": [
+     237,
+     225,
+     201
+    ]
+   },
+   {
+    "x": 410,
+    "v02": [
+     254,
+     248,
+     233
+    ],
+    "v03": [
+     237,
+     225,
+     201
+    ]
+   },
+   {
+    "x": 450,
+    "v02": [
+     255,
+     253,
+     247
+    ],
+    "v03": [
+     237,
+     225,
+     201
+    ]
+   },
+   {
+    "x": 490,
+    "v02": [
+     255,
+     255,
+     254
+    ],
+    "v03": [
+     238,
+     225,
+     202
+    ]
+   },
+   {
+    "x": 530,
+    "v02": [
+     255,
+     255,
+     255
+    ],
+    "v03": [
+     239,
+     227,
+     205
+    ]
+   },
+   {
+    "x": 570,
+    "v02": [
+     255,
+     255,
+     255
+    ],
+    "v03": [
+     239,
+     227,
+     205
+    ]
+   },
+   {
+    "x": 610,
+    "v02": [
+     255,
+     254,
+     250
+    ],
+    "v03": [
+     238,
+     226,
+     203
+    ]
+   },
+   {
+    "x": 650,
+    "v02": [
+     254,
+     250,
+     238
+    ],
+    "v03": [
+     238,
+     225,
+     201
+    ]
+   },
+   {
+    "x": 690,
+    "v02": [
+     252,
+     243,
+     222
+    ],
+    "v03": [
+     237,
+     225,
+     201
+    ]
+   },
+   {
+    "x": 730,
+    "v02": [
+     249,
+     237,
+     208
+    ],
+    "v03": [
+     237,
+     225,
+     201
+    ]
+   },
+   {
+    "x": 770,
+    "v02": [
+     94,
+     84,
+     66
+    ],
+    "v03": [
+     91,
+     82,
+     67
+    ]
+   }
+  ],
+  "columnsHome1440": {
+   "330": [
+    {
+     "y": 30,
+     "v02": [
+      11,
+      9,
+      5
+     ],
+     "v03": [
+      11,
+      9,
+      5
+     ]
+    },
+    {
+     "y": 32,
+     "v02": [
+      11,
+      9,
+      5
+     ],
+     "v03": [
+      11,
+      9,
+      5
+     ]
+    },
+    {
+     "y": 34,
+     "v02": [
+      11,
+      9,
+      5
+     ],
+     "v03": [
+      11,
+      9,
+      5
+     ]
+    },
+    {
+     "y": 36,
+     "v02": [
+      11,
+      9,
+      5
+     ],
+     "v03": [
+      11,
+      9,
+      5
+     ]
+    },
+    {
+     "y": 38,
+     "v02": [
+      11,
+      9,
+      5
+     ],
+     "v03": [
+      11,
+      9,
+      5
+     ]
+    },
+    {
+     "y": 40,
+     "v02": [
+      10,
+      8,
+      4
+     ],
+     "v03": [
+      10,
+      8,
+      4
+     ]
+    },
+    {
+     "y": 42,
+     "v02": [
+      27,
+      21,
+      11
+     ],
+     "v03": [
+      27,
+      21,
+      11
+     ]
+    },
+    {
+     "y": 44,
+     "v02": [
+      248,
+      235,
+      204
+     ],
+     "v03": [
+      237,
+      225,
+      201
+     ]
+    },
+    {
+     "y": 46,
+     "v02": [
+      248,
+      234,
+      203
+     ],
+     "v03": [
+      237,
+      225,
+      201
+     ]
+    },
+    {
+     "y": 48,
+     "v02": [
+      248,
+      234,
+      202
+     ],
+     "v03": [
+      237,
+      225,
+      201
+     ]
+    },
+    {
+     "y": 50,
+     "v02": [
+      248,
+      233,
+      201
+     ],
+     "v03": [
+      237,
+      225,
+      201
+     ]
+    },
+    {
+     "y": 52,
+     "v02": [
+      248,
+      233,
+      201
+     ],
+     "v03": [
+      237,
+      225,
+      201
+     ]
+    },
+    {
+     "y": 54,
+     "v02": [
+      247,
+      233,
+      200
+     ],
+     "v03": [
+      237,
+      225,
+      201
+     ]
+    },
+    {
+     "y": 56,
+     "v02": [
+      132,
+      123,
+      103
+     ],
+     "v03": [
+      128,
+      120,
+      104
+     ]
+    },
+    {
+     "y": 58,
+     "v02": [
+      12,
+      8,
+      4
+     ],
+     "v03": [
+      12,
+      8,
+      4
+     ]
+    }
+   ],
+   "530": [
+    {
+     "y": 30,
+     "v02": [
+      17,
+      14,
+      8
+     ],
+     "v03": [
+      17,
+      14,
+      8
+     ]
+    },
+    {
+     "y": 32,
+     "v02": [
+      17,
+      14,
+      8
+     ],
+     "v03": [
+      17,
+      14,
+      8
+     ]
+    },
+    {
+     "y": 34,
+     "v02": [
+      14,
+      12,
+      6
+     ],
+     "v03": [
+      14,
+      12,
+      6
+     ]
+    },
+    {
+     "y": 36,
+     "v02": [
+      252,
+      250,
+      246
+     ],
+     "v03": [
+      252,
+      250,
+      246
+     ]
+    },
+    {
+     "y": 38,
+     "v02": [
+      254,
+      254,
+      253
+     ],
+     "v03": [
+      245,
+      237,
+      222
+     ]
+    },
+    {
+     "y": 40,
+     "v02": [
+      255,
+      255,
+      255
+     ],
+     "v03": [
+      241,
+      230,
+      210
+     ]
+    },
+    {
+     "y": 42,
+     "v02": [
+      255,
+      255,
+      255
+     ],
+     "v03": [
+      240,
+      228,
+      207
+     ]
+    },
+    {
+     "y": 44,
+     "v02": [
+      255,
+      255,
+      255
+     ],
+     "v03": [
+      239,
+      227,
+      205
+     ]
+    },
+    {
+     "y": 46,
+     "v02": [
+      255,
+      255,
+      255
+     ],
+     "v03": [
+      238,
+      226,
+      203
+     ]
+    },
+    {
+     "y": 48,
+     "v02": [
+      255,
+      255,
+      255
+     ],
+     "v03": [
+      238,
+      226,
+      202
+     ]
+    },
+    {
+     "y": 50,
+     "v02": [
+      255,
+      255,
+      255
+     ],
+     "v03": [
+      238,
+      225,
+      202
+     ]
+    },
+    {
+     "y": 52,
+     "v02": [
+      236,
+      230,
+      215
+     ],
+     "v03": [
+      236,
+      230,
+      215
+     ]
+    },
+    {
+     "y": 54,
+     "v02": [
+      86,
+      73,
+      42
+     ],
+     "v03": [
+      86,
+      73,
+      42
+     ]
+    },
+    {
+     "y": 56,
+     "v02": [
+      86,
+      73,
+      42
+     ],
+     "v03": [
+      86,
+      73,
+      42
+     ]
+    },
+    {
+     "y": 58,
+     "v02": [
+      86,
+      73,
+      42
+     ],
+     "v03": [
+      86,
+      73,
+      42
+     ]
+    }
+   ],
+   "730": [
+    {
+     "y": 30,
+     "v02": [
+      34,
+      26,
+      15
+     ],
+     "v03": [
+      34,
+      26,
+      15
+     ]
+    },
+    {
+     "y": 32,
+     "v02": [
+      135,
+      126,
+      107
+     ],
+     "v03": [
+      129,
+      120,
+      104
+     ]
+    },
+    {
+     "y": 34,
+     "v02": [
+      249,
+      236,
+      207
+     ],
+     "v03": [
+      237,
+      225,
+      201
+     ]
+    },
+    {
+     "y": 36,
+     "v02": [
+      249,
+      236,
+      208
+     ],
+     "v03": [
+      237,
+      225,
+      201
+     ]
+    },
+    {
+     "y": 38,
+     "v02": [
+      249,
+      237,
+      208
+     ],
+     "v03": [
+      237,
+      225,
+      201
+     ]
+    },
+    {
+     "y": 40,
+     "v02": [
+      249,
+      237,
+      208
+     ],
+     "v03": [
+      237,
+      225,
+      201
+     ]
+    },
+    {
+     "y": 42,
+     "v02": [
+      249,
+      237,
+      208
+     ],
+     "v03": [
+      237,
+      225,
+      201
+     ]
+    },
+    {
+     "y": 44,
+     "v02": [
+      249,
+      237,
+      208
+     ],
+     "v03": [
+      237,
+      225,
+      201
+     ]
+    },
+    {
+     "y": 46,
+     "v02": [
+      38,
+      30,
+      19
+     ],
+     "v03": [
+      38,
+      30,
+      19
+     ]
+    },
+    {
+     "y": 48,
+     "v02": [
+      77,
+      63,
+      35
+     ],
+     "v03": [
+      77,
+      63,
+      35
+     ]
+    },
+    {
+     "y": 50,
+     "v02": [
+      95,
+      79,
+      44
+     ],
+     "v03": [
+      95,
+      79,
+      44
+     ]
+    },
+    {
+     "y": 52,
+     "v02": [
+      96,
+      79,
+      44
+     ],
+     "v03": [
+      96,
+      79,
+      44
+     ]
+    },
+    {
+     "y": 54,
+     "v02": [
+      96,
+      79,
+      45
+     ],
+     "v03": [
+      96,
+      79,
+      45
+     ]
+    },
+    {
+     "y": 56,
+     "v02": [
+      96,
+      79,
+      45
+     ],
+     "v03": [
+      96,
+      79,
+      45
+     ]
+    },
+    {
+     "y": 58,
+     "v02": [
+      96,
+      79,
+      45
+     ],
+     "v03": [
+      96,
+      79,
+      45
+     ]
+    }
+   ]
+  }
+ },
+ "wallTriangleProxies": [
+  {
+   "emitter": "fix_wall_triangles__proxy_light_1..5",
+   "file": "scene-home-1440x900-f58.png",
+   "crop": [
+    830,
+    125,
+    1115,
+    230
+   ],
+   "cropOrigin": "v02 crop",
+   "v02": {
+    "emitterPx": 11549,
+    "clippedPx": 0,
+    "clippedPct": 0.0,
+    "clippedPctOfWholeCropBox": 0.0,
+    "anyChannelGe250Pct": 88.3,
+    "allChannelsGe240Pct": 0.0,
+    "maxRgb": [
+     255,
+     251,
+     237
+    ],
+    "luminanceP10P50P90": [
+     221,
+     241,
+     247
+    ],
+    "meanLuminanceByFifthAlongX": [
+     234.2,
+     237.7,
+     231.0,
+     239.3,
+     236.3
+    ],
+    "exactFlatEmissionPct": 0.0,
+    "brighterThanFlatPx": 10362,
+    "emitterBox": [
+     839,
+     135,
+     1105,
+     229
+    ],
+    "surroundMedianLuminance": 118.0
+   },
+   "v03": {
+    "emitterPx": 11528,
+    "clippedPx": 0,
+    "clippedPct": 0.0,
+    "clippedPctOfWholeCropBox": 0.0,
+    "anyChannelGe250Pct": 0.0,
+    "allChannelsGe240Pct": 0.0,
+    "maxRgb": [
+     237,
+     225,
+     201
+    ],
+    "luminanceP10P50P90": [
+     221,
+     221,
+     221
+    ],
+    "meanLuminanceByFifthAlongX": [
+     218.6,
+     218.6,
+     210.8,
+     219.2,
+     219.7
+    ],
+    "exactFlatEmissionPct": 91.4,
+    "brighterThanFlatPx": 0,
+    "emitterBox": [
+     839,
+     135,
+     1105,
+     229
+    ],
+    "surroundMedianLuminance": 118.0
+   }
+  },
+  {
+   "emitter": "fix_wall_triangles__proxy_light_1..5",
+   "file": "scene-music-1440x900-f58.png",
+   "crop": [
+    0,
+    40,
+    370,
+    200
+   ],
+   "cropOrigin": "v02 crop",
+   "v02": {
+    "emitterPx": 17639,
+    "clippedPx": 0,
+    "clippedPct": 0.0,
+    "clippedPctOfWholeCropBox": 0.0,
+    "anyChannelGe250Pct": 88.2,
+    "allChannelsGe240Pct": 0.0,
+    "maxRgb": [
+     255,
+     251,
+     237
+    ],
+    "luminanceP10P50P90": [
+     219,
+     241,
+     247
+    ],
+    "meanLuminanceByFifthAlongX": [
+     236.4,
+     238.2,
+     229.1,
+     236.7,
+     236.0
+    ],
+    "exactFlatEmissionPct": 0.0,
+    "brighterThanFlatPx": 15714,
+    "emitterBox": [
+     8,
+     53,
+     359,
+     190
+    ],
+    "surroundMedianLuminance": 113.3
+   },
+   "v03": {
+    "emitterPx": 17613,
+    "clippedPx": 0,
+    "clippedPct": 0.0,
+    "clippedPctOfWholeCropBox": 0.0,
+    "anyChannelGe250Pct": 0.0,
+    "allChannelsGe240Pct": 0.0,
+    "maxRgb": [
+     237,
+     225,
+     201
+    ],
+    "luminanceP10P50P90": [
+     221,
+     221,
+     221
+    ],
+    "meanLuminanceByFifthAlongX": [
+     220.0,
+     219.6,
+     210.0,
+     216.7,
+     219.1
+    ],
+    "exactFlatEmissionPct": 91.2,
+    "brighterThanFlatPx": 0,
+    "emitterBox": [
+     8,
+     53,
+     359,
+     190
+    ],
+    "surroundMedianLuminance": 113.3
+   }
+  },
+  {
+   "emitter": "fix_wall_triangles__proxy_light_1..5",
+   "file": "scene-mid-right-1440x900-f58.png",
+   "crop": [
+    300,
+    110,
+    600,
+    245
+   ],
+   "cropOrigin": "new crop for this rereview",
+   "v02": {
+    "emitterPx": 11888,
+    "clippedPx": 0,
+    "clippedPct": 0.0,
+    "clippedPctOfWholeCropBox": 0.0,
+    "anyChannelGe250Pct": 87.6,
+    "allChannelsGe240Pct": 0.0,
+    "maxRgb": [
+     255,
+     251,
+     237
+    ],
+    "luminanceP10P50P90": [
+     218,
+     241,
+     247
+    ],
+    "meanLuminanceByFifthAlongX": [
+     236.3,
+     238.2,
+     226.7,
+     238.5,
+     235.8
+    ],
+    "exactFlatEmissionPct": 0.0,
+    "brighterThanFlatPx": 10544,
+    "emitterBox": [
+     315,
+     124,
+     585,
+     235
+    ],
+    "surroundMedianLuminance": 113.0
+   },
+   "v03": {
+    "emitterPx": 11867,
+    "clippedPx": 0,
+    "clippedPct": 0.0,
+    "clippedPctOfWholeCropBox": 0.0,
+    "anyChannelGe250Pct": 0.0,
+    "allChannelsGe240Pct": 0.0,
+    "maxRgb": [
+     237,
+     225,
+     201
+    ],
+    "luminanceP10P50P90": [
+     221,
+     221,
+     221
+    ],
+    "meanLuminanceByFifthAlongX": [
+     219.8,
+     219.3,
+     208.0,
+     218.4,
+     219.0
+    ],
+    "exactFlatEmissionPct": 90.5,
+    "brighterThanFlatPx": 0,
+    "emitterBox": [
+     315,
+     124,
+     585,
+     235
+    ],
+    "surroundMedianLuminance": 113.0
+   }
+  },
+  {
+   "emitter": "fix_wall_triangles__proxy_light_1..5",
+   "file": "scene-mid-left-1440x900-f58.png",
+   "crop": [
+    1080,
+    80,
+    1440,
+    225
+   ],
+   "cropOrigin": "new crop for this rereview",
+   "v02": {
+    "emitterPx": 17350,
+    "clippedPx": 0,
+    "clippedPct": 0.0,
+    "clippedPctOfWholeCropBox": 0.0,
+    "anyChannelGe250Pct": 88.5,
+    "allChannelsGe240Pct": 0.0,
+    "maxRgb": [
+     255,
+     251,
+     237
+    ],
+    "luminanceP10P50P90": [
+     219,
+     241,
+     247
+    ],
+    "meanLuminanceByFifthAlongX": [
+     235.2,
+     236.9,
+     228.0,
+     239.6,
+     236.8
+    ],
+    "exactFlatEmissionPct": 0.0,
+    "brighterThanFlatPx": 15530,
+    "emitterBox": [
+     1093,
+     93,
+     1439,
+     217
+    ],
+    "surroundMedianLuminance": 116.7
+   },
+   "v03": {
+    "emitterPx": 17331,
+    "clippedPx": 0,
+    "clippedPct": 0.0,
+    "clippedPctOfWholeCropBox": 0.0,
+    "anyChannelGe250Pct": 0.0,
+    "allChannelsGe240Pct": 0.0,
+    "maxRgb": [
+     237,
+     225,
+     201
+    ],
+    "luminanceP10P50P90": [
+     221,
+     221,
+     221
+    ],
+    "meanLuminanceByFifthAlongX": [
+     219.2,
+     217.6,
+     208.6,
+     219.6,
+     220.1
+    ],
+    "exactFlatEmissionPct": 91.4,
+    "brighterThanFlatPx": 0,
+    "emitterBox": [
+     1093,
+     93,
+     1439,
+     217
+    ],
+    "surroundMedianLuminance": 116.7
+   }
+  },
+  {
+   "emitter": "fix_wall_triangles__proxy_light_1..5",
+   "file": "scene-home-1024x768-f58.png",
+   "crop": [
+    600,
+    100,
+    855,
+    205
+   ],
+   "cropOrigin": "new crop for this rereview",
+   "v02": {
+    "emitterPx": 8533,
+    "clippedPx": 0,
+    "clippedPct": 0.0,
+    "clippedPctOfWholeCropBox": 0.0,
+    "anyChannelGe250Pct": 87.1,
+    "allChannelsGe240Pct": 0.0,
+    "maxRgb": [
+     255,
+     251,
+     237
+    ],
+    "luminanceP10P50P90": [
+     209,
+     241,
+     247
+    ],
+    "meanLuminanceByFifthAlongX": [
+     234.5,
+     237.0,
+     226.9,
+     238.2,
+     236.0
+    ],
+    "exactFlatEmissionPct": 0.0,
+    "brighterThanFlatPx": 7517,
+    "emitterBox": [
+     614,
+     115,
+     841,
+     200
+    ],
+    "surroundMedianLuminance": 113.3
+   },
+   "v03": {
+    "emitterPx": 8518,
+    "clippedPx": 0,
+    "clippedPct": 0.0,
+    "clippedPctOfWholeCropBox": 0.0,
+    "anyChannelGe250Pct": 0.0,
+    "allChannelsGe240Pct": 0.0,
+    "maxRgb": [
+     237,
+     225,
+     201
+    ],
+    "luminanceP10P50P90": [
+     220,
+     221,
+     221
+    ],
+    "meanLuminanceByFifthAlongX": [
+     218.4,
+     218.0,
+     207.8,
+     218.6,
+     219.3
+    ],
+    "exactFlatEmissionPct": 89.7,
+    "brighterThanFlatPx": 0,
+    "emitterBox": [
+     614,
+     115,
+     841,
+     200
+    ],
+    "surroundMedianLuminance": 113.3
+   }
+  }
+ ],
+ "floorLamp": {
+  "note": "Crops cover the shade (lib_linen_shade). The lib_glow bulb is inside it.",
+  "cases": [
+   {
+    "file": "scene-right-down-1440x900-f58.png",
+    "crop": [
+     660,
+     50,
+     775,
+     160
+    ],
+    "px": 12650,
+    "changedPxV02ToV03": 0,
+    "v03PxWithinThreeOfFlatEmission": 67,
+    "v03MaxLuminance": 252.7,
+    "cropOrigin": "v02 crop",
+    "shadeV03": {
+     "emitterPx": 9049,
+     "clippedPx": 4,
+     "clippedPct": 0.04,
+     "clippedPctOfWholeCropBox": 0.032,
+     "anyChannelGe250Pct": 3.1,
+     "allChannelsGe240Pct": 0.24,
+     "maxRgb": [
+      255,
+      253,
+      251
+     ],
+     "luminanceP10P50P90": [
+      166,
+      207,
+      233
+     ],
+     "meanLuminanceByFifthAlongX": [
+      207.8,
+      209.0,
+      213.0,
+      207.2,
+      186.3
+     ],
+     "exactFlatEmissionPct": 0.0,
+     "brighterThanFlatPx": 2695,
+     "emitterBox": [
+      671,
+      50,
+      774,
+      159
+     ],
+     "surroundMedianLuminance": 110.7
+    }
+   },
+   {
+    "file": "scene-music-1440x900-f58.png",
+    "crop": [
+     865,
+     180,
+     985,
+     280
+    ],
+    "px": 12000,
+    "changedPxV02ToV03": 0,
+    "v03PxWithinThreeOfFlatEmission": 58,
+    "v03MaxLuminance": 252.7,
+    "cropOrigin": "v02 crop",
+    "shadeV03": {
+     "emitterPx": 8511,
+     "clippedPx": 5,
+     "clippedPct": 0.06,
+     "clippedPctOfWholeCropBox": 0.042,
+     "anyChannelGe250Pct": 3.5,
+     "allChannelsGe240Pct": 0.26,
+     "maxRgb": [
+      255,
+      253,
+      251
+     ],
+     "luminanceP10P50P90": [
+      169,
+      207,
+      233
+     ],
+     "meanLuminanceByFifthAlongX": [
+      207.8,
+      209.9,
+      214.3,
+      209.7,
+      186.6
+     ],
+     "exactFlatEmissionPct": 0.0,
+     "brighterThanFlatPx": 2597,
+     "emitterBox": [
+      877,
+      180,
+      984,
+      279
+     ],
+     "surroundMedianLuminance": 107.3
+    }
+   },
+   {
+    "file": "scene-mid-right-1440x900-f58.png",
+    "crop": [
+     1085,
+     195,
+     1225,
+     305
+    ],
+    "px": 15400,
+    "changedPxV02ToV03": 0,
+    "v03PxWithinThreeOfFlatEmission": 82,
+    "v03MaxLuminance": 252.7,
+    "cropOrigin": "new crop for this rereview",
+    "shadeV03": {
+     "emitterPx": 10718,
+     "clippedPx": 5,
+     "clippedPct": 0.05,
+     "clippedPctOfWholeCropBox": 0.032,
+     "anyChannelGe250Pct": 3.5,
+     "allChannelsGe240Pct": 0.23,
+     "maxRgb": [
+      255,
+      253,
+      251
+     ],
+     "luminanceP10P50P90": [
+      170,
+      209,
+      233
+     ],
+     "meanLuminanceByFifthAlongX": [
+      208.1,
+      209.0,
+      213.9,
+      210.1,
+      192.1
+     ],
+     "exactFlatEmissionPct": 0.0,
+     "brighterThanFlatPx": 3373,
+     "emitterBox": [
+      1099,
+      195,
+      1224,
+      304
+     ],
+     "surroundMedianLuminance": 106.3
+    }
+   },
+   {
+    "file": "scene-right-up-1440x900-f58.png",
+    "crop": [
+     660,
+     475,
+     775,
+     570
+    ],
+    "px": 10925,
+    "changedPxV02ToV03": 0,
+    "v03PxWithinThreeOfFlatEmission": 46,
+    "v03MaxLuminance": 253.0,
+    "cropOrigin": "new crop for this rereview",
+    "shadeV03": {
+     "emitterPx": 7609,
+     "clippedPx": 5,
+     "clippedPct": 0.07,
+     "clippedPctOfWholeCropBox": 0.046,
+     "anyChannelGe250Pct": 3.3,
+     "allChannelsGe240Pct": 0.29,
+     "maxRgb": [
+      255,
+      254,
+      251
+     ],
+     "luminanceP10P50P90": [
+      166,
+      204,
+      232
+     ],
+     "meanLuminanceByFifthAlongX": [
+      207.9,
+      209.2,
+      212.3,
+      205.8,
+      183.1
+     ],
+     "exactFlatEmissionPct": 0.0,
+     "brighterThanFlatPx": 2165,
+     "emitterBox": [
+      673,
+      475,
+      774,
+      569
+     ],
+     "surroundMedianLuminance": 108.0
+    }
+   },
+   {
+    "file": "scene-music-390x844-f74.png",
+    "crop": [
+     295,
+     235,
+     375,
+     305
+    ],
+    "px": 5600,
+    "changedPxV02ToV03": 0,
+    "v03PxWithinThreeOfFlatEmission": 31,
+    "v03MaxLuminance": 252.7,
+    "cropOrigin": "new crop for this rereview",
+    "shadeV03": {
+     "emitterPx": 3911,
+     "clippedPx": 2,
+     "clippedPct": 0.05,
+     "clippedPctOfWholeCropBox": 0.036,
+     "anyChannelGe250Pct": 3.3,
+     "allChannelsGe240Pct": 0.33,
+     "maxRgb": [
+      255,
+      253,
+      251
+     ],
+     "luminanceP10P50P90": [
+      167,
+      209,
+      233
+     ],
+     "meanLuminanceByFifthAlongX": [
+      207.1,
+      209.4,
+      213.5,
+      208.3,
+      191.2
+     ],
+     "exactFlatEmissionPct": 0.0,
+     "brighterThanFlatPx": 1211,
+     "emitterBox": [
+      304,
+      235,
+      374,
+      304
+     ],
+     "surroundMedianLuminance": 108.0
+    }
+   }
+  ]
+ },
+ "pcRegions": [
+  {
+   "file": "scene-right-down-1440x900-f58.png",
+   "crop": [
+    5,
+    640,
+    355,
+    900
+   ],
+   "px": 91000,
+   "changedPxV02ToV03": 0,
+   "v03PxWithinThreeOfFlatEmission": 0,
+   "v03MaxLuminance": 204.7
+  },
+  {
+   "file": "scene-mid-right-1440x900-f58.png",
+   "crop": [
+    489,
+    700,
+    708,
+    900
+   ],
+   "px": 43800,
+   "changedPxV02ToV03": 0,
+   "v03PxWithinThreeOfFlatEmission": 0,
+   "v03MaxLuminance": 199.0
+  },
+  {
+   "file": "scene-music-1440x900-f58.png",
+   "crop": [
+    267,
+    745,
+    527,
+    900
+   ],
+   "px": 40300,
+   "changedPxV02ToV03": 0,
+   "v03PxWithinThreeOfFlatEmission": 0,
+   "v03MaxLuminance": 204.7
+  },
+  {
+   "file": "scene-home-1440x900-f58.png",
+   "crop": [
+    960,
+    818,
+    1220,
+    900
+   ],
+   "px": 21320,
+   "changedPxV02ToV03": 0,
+   "v03PxWithinThreeOfFlatEmission": 0,
+   "v03MaxLuminance": 204.7
+  },
+  {
+   "file": "scene-home-1024x768-f58.png",
+   "crop": [
+    715,
+    690,
+    945,
+    768
+   ],
+   "px": 17940,
+   "changedPxV02ToV03": 0,
+   "v03PxWithinThreeOfFlatEmission": 0,
+   "v03MaxLuminance": 204.7
+  },
+  {
+   "file": "scene-music-390x844-f74.png",
+   "crop": [
+    0,
+    625,
+    62,
+    844
+   ],
+   "px": 13578,
+   "changedPxV02ToV03": 0,
+   "v03PxWithinThreeOfFlatEmission": 0,
+   "v03MaxLuminance": 215.3
+  }
+ ],
+ "frameDiffV02ToV03": [
+  {
+   "file": "scene-home-1440x900-f58.png",
+   "changedPx": 17972,
+   "maxChannelDelta": 54,
+   "regions": [
+    {
+     "box": [
+      839,
+      134,
+      1105,
+      223
+     ],
+     "changedPx": 11365,
+     "consumer": "fix_wall_triangles__proxy_light (position checked by eye in the image)",
+     "v02MeanRgb": [
+      251,
+      241,
+      218
+     ],
+     "v03MeanRgb": [
+      235,
+      222,
+      197
+     ],
+     "v03MaxRgb": [
+      237,
+      225,
+      201
+     ]
+    },
+    {
+     "box": [
+      288,
+      31,
+      786,
+      56
+     ],
+     "changedPx": 6607,
+     "consumer": "fix_pendant__lens",
+     "v02MeanRgb": [
+      243,
+      237,
+      221
+     ],
+     "v03MeanRgb": [
+      229,
+      217,
+      194
+     ],
+     "v03MaxRgb": [
+      251,
+      247,
+      241
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene-music-1440x900-f58.png",
+   "changedPx": 17170,
+   "maxChannelDelta": 36,
+   "regions": [
+    {
+     "box": [
+      8,
+      53,
+      359,
+      190
+     ],
+     "changedPx": 17170,
+     "consumer": "fix_wall_triangles__proxy_light (position checked by eye in the image)",
+     "v02MeanRgb": [
+      251,
+      242,
+      219
+     ],
+     "v03MeanRgb": [
+      235,
+      223,
+      198
+     ],
+     "v03MaxRgb": [
+      237,
+      225,
+      201
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene-left-up-1440x900-f58.png",
+   "changedPx": 6441,
+   "maxChannelDelta": 54,
+   "regions": [
+    {
+     "box": [
+      815,
+      241,
+      1318,
+      362
+     ],
+     "changedPx": 6020,
+     "consumer": "fix_pendant__lens",
+     "v02MeanRgb": [
+      243,
+      236,
+      219
+     ],
+     "v03MeanRgb": [
+      229,
+      217,
+      194
+     ],
+     "v03MaxRgb": [
+      251,
+      248,
+      241
+     ]
+    },
+    {
+     "box": [
+      1428,
+      387,
+      1439,
+      439
+     ],
+     "changedPx": 421,
+     "consumer": "fix_wall_triangles__proxy_light (position checked by eye in the image)",
+     "v02MeanRgb": [
+      245,
+      232,
+      204
+     ],
+     "v03MeanRgb": [
+      232,
+      218,
+      193
+     ],
+     "v03MaxRgb": [
+      237,
+      225,
+      201
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene-right-up-1440x900-f58.png",
+   "changedPx": 6166,
+   "maxChannelDelta": 31,
+   "regions": [
+    {
+     "box": [
+      0,
+      345,
+      122,
+      461
+     ],
+     "changedPx": 6166,
+     "consumer": "fix_wall_triangles__proxy_light (position checked by eye in the image)",
+     "v02MeanRgb": [
+      251,
+      241,
+      217
+     ],
+     "v03MeanRgb": [
+      235,
+      222,
+      198
+     ],
+     "v03MaxRgb": [
+      237,
+      225,
+      201
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene-right-down-1440x900-f58.png",
+   "changedPx": 1159,
+   "maxChannelDelta": 28,
+   "regions": [
+    {
+     "box": [
+      0,
+      0,
+      39,
+      33
+     ],
+     "changedPx": 1159,
+     "consumer": "fix_wall_triangles__proxy_light (position checked by eye in the image)",
+     "v02MeanRgb": [
+      249,
+      237,
+      211
+     ],
+     "v03MeanRgb": [
+      235,
+      222,
+      198
+     ],
+     "v03MaxRgb": [
+      237,
+      225,
+      201
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene-mid-left-1440x900-f58.png",
+   "changedPx": 23153,
+   "maxChannelDelta": 54,
+   "regions": [
+    {
+     "box": [
+      1093,
+      93,
+      1439,
+      211
+     ],
+     "changedPx": 16834,
+     "consumer": "fix_wall_triangles__proxy_light (position checked by eye in the image)",
+     "v02MeanRgb": [
+      252,
+      242,
+      219
+     ],
+     "v03MeanRgb": [
+      235,
+      223,
+      198
+     ],
+     "v03MaxRgb": [
+      237,
+      225,
+      201
+     ]
+    },
+    {
+     "box": [
+      556,
+      8,
+      1038,
+      84
+     ],
+     "changedPx": 6319,
+     "consumer": "fix_pendant__lens",
+     "v02MeanRgb": [
+      243,
+      236,
+      221
+     ],
+     "v03MeanRgb": [
+      229,
+      217,
+      194
+     ],
+     "v03MaxRgb": [
+      251,
+      248,
+      241
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene-mid-right-1440x900-f58.png",
+   "changedPx": 11587,
+   "maxChannelDelta": 36,
+   "regions": [
+    {
+     "box": [
+      314,
+      124,
+      585,
+      231
+     ],
+     "changedPx": 11587,
+     "consumer": "fix_wall_triangles__proxy_light (position checked by eye in the image)",
+     "v02MeanRgb": [
+      251,
+      241,
+      218
+     ],
+     "v03MeanRgb": [
+      235,
+      222,
+      197
+     ],
+     "v03MaxRgb": [
+      237,
+      225,
+      201
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene-home-1024x768-f58.png",
+   "changedPx": 13179,
+   "maxChannelDelta": 54,
+   "regions": [
+    {
+     "box": [
+      613,
+      115,
+      841,
+      190
+     ],
+     "changedPx": 8318,
+     "consumer": "fix_wall_triangles__proxy_light (position checked by eye in the image)",
+     "v02MeanRgb": [
+      250,
+      241,
+      218
+     ],
+     "v03MeanRgb": [
+      235,
+      222,
+      196
+     ],
+     "v03MaxRgb": [
+      237,
+      225,
+      201
+     ]
+    },
+    {
+     "box": [
+      143,
+      26,
+      568,
+      48
+     ],
+     "changedPx": 4861,
+     "consumer": "fix_pendant__lens",
+     "v02MeanRgb": [
+      242,
+      235,
+      219
+     ],
+     "v03MeanRgb": [
+      228,
+      216,
+      193
+     ],
+     "v03MaxRgb": [
+      250,
+      246,
+      238
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene-home-390x844-f74.png",
+   "changedPx": 3477,
+   "maxChannelDelta": 54,
+   "regions": [
+    {
+     "box": [
+      9,
+      113,
+      342,
+      152
+     ],
+     "changedPx": 3118,
+     "consumer": "fix_pendant__lens",
+     "v02MeanRgb": [
+      240,
+      233,
+      217
+     ],
+     "v03MeanRgb": [
+      226,
+      214,
+      191
+     ],
+     "v03MaxRgb": [
+      251,
+      247,
+      241
+     ]
+    },
+    {
+     "box": [
+      378,
+      219,
+      389,
+      251
+     ],
+     "changedPx": 359,
+     "consumer": "fix_wall_triangles__proxy_light (position checked by eye in the image)",
+     "v02MeanRgb": [
+      245,
+      232,
+      205
+     ],
+     "v03MeanRgb": [
+      231,
+      218,
+      192
+     ],
+     "v03MaxRgb": [
+      237,
+      225,
+      201
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene-music-390x844-f74.png",
+   "changedPx": 0,
+   "maxChannelDelta": 0,
+   "regions": []
+  },
+  {
+   "file": "scene-left-up-390x844-f74.png",
+   "changedPx": 959,
+   "maxChannelDelta": 54,
+   "regions": [
+    {
+     "box": [
+      261,
+      328,
+      389,
+      361
+     ],
+     "changedPx": 959,
+     "consumer": "fix_pendant__lens",
+     "v02MeanRgb": [
+      236,
+      229,
+      213
+     ],
+     "v03MeanRgb": [
+      222,
+      210,
+      187
+     ],
+     "v03MaxRgb": [
+      239,
+      231,
+      213
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene-home-320x844-f74.png",
+   "changedPx": 2934,
+   "maxChannelDelta": 54,
+   "regions": [
+    {
+     "box": [
+      0,
+      113,
+      307,
+      151
+     ],
+     "changedPx": 2934,
+     "consumer": "fix_pendant__lens",
+     "v02MeanRgb": [
+      241,
+      234,
+      220
+     ],
+     "v03MeanRgb": [
+      227,
+      215,
+      192
+     ],
+     "v03MaxRgb": [
+      251,
+      247,
+      241
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene-home-320x568-f74.png",
+   "changedPx": 2214,
+   "maxChannelDelta": 54,
+   "regions": [
+    {
+     "box": [
+      35,
+      76,
+      259,
+      102
+     ],
+     "changedPx": 1469,
+     "consumer": "fix_pendant__lens",
+     "v02MeanRgb": [
+      234,
+      227,
+      211
+     ],
+     "v03MeanRgb": [
+      221,
+      209,
+      186
+     ],
+     "v03MaxRgb": [
+      251,
+      248,
+      242
+     ]
+    },
+    {
+     "box": [
+      283,
+      125,
+      319,
+      169
+     ],
+     "changedPx": 745,
+     "consumer": "fix_wall_triangles__proxy_light (position checked by eye in the image)",
+     "v02MeanRgb": [
+      246,
+      234,
+      209
+     ],
+     "v03MeanRgb": [
+      232,
+      218,
+      192
+     ],
+     "v03MaxRgb": [
+      237,
+      225,
+      201
+     ]
+    }
+   ]
+  }
+ ],
+ "composites": [
+  {
+   "file": "chrome-home-default-1440x900.png",
+   "sceneImage": "scene-home-1440x900-f58.png",
+   "pxIdenticalToSceneImagePct": 84.1,
+   "pendantLensPxLeftUncoveredByChromePct": 91.8
+  },
+  {
+   "file": "chrome-music-default-1440x900.png",
+   "sceneImage": "scene-music-1440x900-f58.png",
+   "pxIdenticalToSceneImagePct": 84.0
+  },
+  {
+   "file": "chrome-mid-right-default-1440x900.png",
+   "sceneImage": "scene-mid-right-1440x900-f58.png",
+   "pxIdenticalToSceneImagePct": 84.6
+  },
+  {
+   "file": "chrome-home-default-1024x768.png",
+   "sceneImage": "scene-home-1024x768-f58.png",
+   "pxIdenticalToSceneImagePct": 74.1,
+   "pendantLensPxLeftUncoveredByChromePct": 59.5
+  },
+  {
+   "file": "chrome-music-closed-390x844.png",
+   "sceneImage": "scene-music-390x844-f74.png",
+   "pxIdenticalToSceneImagePct": 76.0
+  }
+ ],
+ "contactSheet": {
+  "path": "design/studio-v2/scene-coordination/m2-v03-visual-review-crops.png",
+  "resampling": "nearest-neighbour, no smoothing",
+  "layout": "each tile is v02 above v03",
+  "tiles": [
+   {
+    "title": "Pendant home-1440 x2",
+    "source": "scene-home-1440x900-f58.png",
+    "sourceBox": [
+     250,
+     0,
+     830,
+     110
+    ],
+    "scale": 2,
+    "v02SheetY": [
+     0,
+     220
+    ],
+    "v03SheetY": [
+     224,
+     444
+    ]
+   },
+   {
+    "title": "Pendant home-1024 x2",
+    "source": "scene-home-1024x768-f58.png",
+    "sourceBox": [
+     100,
+     0,
+     620,
+     90
+    ],
+    "scale": 2,
+    "v02SheetY": [
+     456,
+     636
+    ],
+    "v03SheetY": [
+     640,
+     820
+    ]
+   },
+   {
+    "title": "Pendant mid-left-1440 x2",
+    "source": "scene-mid-left-1440x900-f58.png",
+    "sourceBox": [
+     520,
+     0,
+     1100,
+     130
+    ],
+    "scale": 2,
+    "v02SheetY": [
+     832,
+     1092
+    ],
+    "v03SheetY": [
+     1096,
+     1356
+    ]
+   },
+   {
+    "title": "Pendant left-up-1440 x2",
+    "source": "scene-left-up-1440x900-f58.png",
+    "sourceBox": [
+     780,
+     190,
+     1360,
+     400
+    ],
+    "scale": 2,
+    "v02SheetY": [
+     1368,
+     1788
+    ],
+    "v03SheetY": [
+     1792,
+     2212
+    ]
+   },
+   {
+    "title": "Pendant home-320x844 x3",
+    "source": "scene-home-320x844-f74.png",
+    "sourceBox": [
+     0,
+     70,
+     320,
+     190
+    ],
+    "scale": 3,
+    "v02SheetY": [
+     2224,
+     2584
+    ],
+    "v03SheetY": [
+     2588,
+     2948
+    ]
+   },
+   {
+    "title": "Pendant home-390x844 x3",
+    "source": "scene-home-390x844-f74.png",
+    "sourceBox": [
+     0,
+     70,
+     390,
+     190
+    ],
+    "scale": 3,
+    "v02SheetY": [
+     2960,
+     3320
+    ],
+    "v03SheetY": [
+     3324,
+     3684
+    ]
+   },
+   {
+    "title": "Pendant home-320x568 x3",
+    "source": "scene-home-320x568-f74.png",
+    "sourceBox": [
+     0,
+     40,
+     320,
+     140
+    ],
+    "scale": 3,
+    "v02SheetY": [
+     3696,
+     3996
+    ],
+    "v03SheetY": [
+     4000,
+     4300
+    ]
+   },
+   {
+    "title": "Pendant left-up-390 x4",
+    "source": "scene-left-up-390x844-f74.png",
+    "sourceBox": [
+     190,
+     280,
+     390,
+     400
+    ],
+    "scale": 4,
+    "v02SheetY": [
+     4312,
+     4792
+    ],
+    "v03SheetY": [
+     4796,
+     5276
+    ]
+   },
+   {
+    "title": "Wall proxies home-1440 x3",
+    "source": "scene-home-1440x900-f58.png",
+    "sourceBox": [
+     800,
+     90,
+     1150,
+     270
+    ],
+    "scale": 3,
+    "v02SheetY": [
+     5288,
+     5828
+    ],
+    "v03SheetY": [
+     5832,
+     6372
+    ]
+   },
+   {
+    "title": "Wall proxies music-1440 x2",
+    "source": "scene-music-1440x900-f58.png",
+    "sourceBox": [
+     0,
+     20,
+     400,
+     230
+    ],
+    "scale": 2,
+    "v02SheetY": [
+     6384,
+     6804
+    ],
+    "v03SheetY": [
+     6808,
+     7228
+    ]
+   },
+   {
+    "title": "Floor lamp right-down-1440 x3",
+    "source": "scene-right-down-1440x900-f58.png",
+    "sourceBox": [
+     640,
+     40,
+     800,
+     180
+    ],
+    "scale": 3,
+    "v02SheetY": [
+     7240,
+     7660
+    ],
+    "v03SheetY": [
+     7664,
+     8084
+    ]
+   },
+   {
+    "title": "PC mid-right-1440 x2",
+    "source": "scene-mid-right-1440x900-f58.png",
+    "sourceBox": [
+     440,
+     620,
+     800,
+     900
+    ],
+    "scale": 2,
+    "v02SheetY": [
+     8096,
+     8656
+    ],
+    "v03SheetY": [
+     8660,
+     9220
+    ]
+   },
+   {
+    "title": "PC music-1440 x2",
+    "source": "scene-music-1440x900-f58.png",
+    "sourceBox": [
+     240,
+     700,
+     600,
+     900
+    ],
+    "scale": 2,
+    "v02SheetY": [
+     9232,
+     9632
+    ],
+    "v03SheetY": [
+     9636,
+     10036
+    ]
+   }
+  ]
+ }
+}

@@ -217,7 +217,7 @@ The scratchpad is the session temp directory, outside the repo. The edits for pr
 - Both input hashes match their pinned values.
 - The v04 JSON differs from v03 only in accessor 154 `min`/`max` and the scene tag extras.
 - Each word sits exactly at its accessor, vertex and component, and holds the recorded v04 and v03 floats.
-- v05 differs from v04 in exactly those 16 bytes. Header and JSON are v04 verbatim, so the embedded scene tag still reads the v04 build.
+- The step addresses exactly those four float32 word slots, 16 addressed bytes in all. Only 6 individual bytes within them actually differ between v04 and v05 (receipt `v05VersusV04.changedBytes: 6`); the other addressed bytes were already equal. Header and JSON are v04 verbatim, so the embedded scene tag still reads the v04 build.
 - v05's BIN differs from v03's in exactly the 76 authorised words:
   - 4 `pc_tower__case` TEXCOORD_0 words (V 0.0625 → 0.3125);
   - all 72 `pc_tower__glow` POSITION words.

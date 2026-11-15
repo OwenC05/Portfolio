@@ -28,10 +28,24 @@ Retained evidence is in [design/assistant](../design/assistant): browser results
 
 The local browser runner requires Orca on PATH (or `ORCA_BIN`), the production server on `127.0.0.1:4193`, and a newly opened `/ask` tab at 1440×1100. Pass its observed page ID to `node scripts/verify-assistant-browser.mjs <page-id>`. It changes only that tab and writes evidence under `design/assistant`.
 
+## Independent follow-up
+
+Two Codex workers completed a functional boundary audit and a separately frozen source-navigation challenge. The audit found no blocker for the current source-only preview, but identified an unchecked client event shape that can crash rendering. Seven targeted existing backend tests passed. The challenge found all required passages on 11/19 scored questions (14/22 evidence groups); ordinary paraphrases and missing limitation passages are concrete gaps. These results qualify the earlier 17/17 developer-visible fixtures rather than replacing or inflating them.
+
+See [functional audit](assistant-functional-audit.md) and [retrieval challenge](assistant-retrieval-challenge.md). The original challenge files remain immutable. They become development/regression evidence when used to improve retrieval. Archived TypeScript snapshots are narrowly excluded from application typechecking; the live application remains checked. The integration typecheck passed after adding that exclusion. No live generation evaluation has occurred.
+
 ## Deployment and remaining work
 
-Deploy this branch as a Vercel preview, with `ASSISTANT_GENERATION_ENABLED=false`. The code also defaults to disabled when the variable is absent. No production promotion or payment setup belongs to this checkpoint.
+Vercel reported preview deployment `dpl_BkDGXAGU9AM15ncfqZbKyAZZmxrL` READY for commit `f08605b8d5ae1dd234bba286ebcd2f543c1e8693`. Preview: https://portfolio-wbdbsoc0n-owenc05s-projects.vercel.app/ask. Hosted verification is the deployment status; browser interaction checks ran locally.
+
+The code defaults generation to disabled when the variable is absent, as on this initial build. The branch-specific preview variable `ASSISTANT_GENERATION_ENABLED=false` is also now recorded for subsequent deployments. No production promotion or payment setup belongs to this checkpoint.
 
 Generation, model adaptation and semantic answer evaluation remain deferred. Before enabling inference, establish an approved model/budget, evaluate real outputs and injection behavior, review claim support, and verify abuse controls appropriate to a public endpoint. The current in-memory throttle is not a distributed quota or spending cap. No screen-reader audit or full WCAG conformance claim is made.
 
 The Next.js/React update resolves the old framework baseline and configured lint dependency failure; it also requires three nullable Studio ref annotations and the stable typed-routes setting. The Studio content and scene remain under their separate branch and acceptance process.
+
+## Final interface direction
+
+Owen clarified that `/ask` is the functional test surface, not the final product presentation. The eventual assistant should be an interactive floating robot, similar to the reference Owen uploaded earlier. Design that experience collaboratively with Owen after the functionality is ready; recover the reference at that stage rather than inventing its appearance. No robot design is approved by this preview.
+
+Use Orca orchestration to delegate independent tasks in parallel. Actual Claude handles design; Codex handles engineering, evaluation and other work. Preserve the source-only choice until Owen changes it. A later character interface should use the same source policy, API and actual retrieval events rather than implying generated reasoning or unsupported knowledge.

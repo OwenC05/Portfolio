@@ -4,6 +4,8 @@
 # Preserve byte-bound portfolio evidence and its source snapshots across checkouts.
 /.omx/** -text
 /design/** -text
+# Keep frozen challenge hashes intact when original evidence uses CRLF.
+/design/assistant/challenge/** whitespace=cr-at-eol
 /components/studio/** -text
 /app/studio/** -text
 /app/globals.css -text

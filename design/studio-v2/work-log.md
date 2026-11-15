@@ -20,7 +20,7 @@ This checkpoint preserves the implementation, editable asset sources, generation
 2. M2 workstation authoring with actual Claude Opus5.5/high; subsequent art stages retain the independent critic's C1-C3 and visibility conditions.
 3. Confirm proposed phone yaw at FOV74, integrate actual chrome, finish required equipment, and run final browser/lifecycle/performance/production and independent review gates.
 
-New worker launches are temporarily held while root prepares the user-requested WSL/agentmemory maintenance window. No WSL shutdown is authorized until the user's explicit timing confirmation. Global machine credentials, runtime caches and service state are not portfolio source artifacts.
+The user-approved WSL/agentmemory maintenance completed with a verified stopped-store backup and matching known-memory recall. The6GB cap is active and the worker hold is released; see `scene-coordination/wsl-maintenance-20261115.md`. State RSS remains about3.1GiB shortly after restart;30/60-minute measurements are pending. Global machine credentials, raw recalled memory data, runtime caches and service state are not portfolio source artifacts.
 
 ### Tracking policy
 

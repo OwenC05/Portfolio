@@ -1,0 +1,92 @@
+{
+  "schema": "m4-verifier-declaration-interface/2",
+  "status": "implementation interface; author integration and independent review held",
+  "api": "audit_m4_v2(rows, declaration, *, expected_declaration_sha256, source_bytes) -> JSON-safe result",
+  "ownership": {
+    "declarationMeaning": "Actual Claude authors support intent, stable primitive/group identities, receiving surfaces and N1 classes; root/S freezes the exact declaration digest before candidate verification.",
+    "verification": "Actual Codex implements checks; a different reviewer assesses this implementation.",
+    "scope": "Offline Blender-metre Z-up source evidence only; no public GLB fields or runtime changes. Existing v03 has no complete approved declaration and must fail closed."
+  },
+  "pinning": {
+    "declarationDigest": "SHA256 of UTF-8 json.dumps(declaration, sort_keys=True, separators=(',', ':'), ensure_ascii=False, allow_nan=False). Caller supplies an independently frozen expected digest; never repin a changed candidate automatically.",
+    "sources": "declaration.sources is a nonempty object of stable source identifiers to lowercase SHA256. source_bytes contains exactly those identifiers and actual bytes; the verifier hashes the bytes itself.",
+    "coverage": "Exact declaration row/support/surface identities, ranges and classes are the expected scope. Complete support intent cannot be inferred from positions or normals; author completeness and the external pin are integration prerequisites."
+  },
+  "declaration": {
+    "schema": "m4-source-declaration/2",
+    "scope": "candidate or fixture; fixture scope is never candidate acceptance",
+    "sources": {"<source identifier>": "<sha256>"},
+    "rows": [
+      {
+        "id": "<exact source leaf or explicitly scoped fixture row>",
+        "vertexCount": "integer > 0",
+        "faceCount": "integer > 0",
+        "normalsRequired": "boolean; true for all N1 rows, including their bevel/round faces",
+        "groups": [
+          {
+            "id": "<stable author identity unique in row; not inferred from geometry>",
+            "vertexRange": "[startInclusive, endExclusive]",
+            "faceRange": "[startInclusive, endExclusive]",
+            "triangleCount": "exact sum of polygon vertex counts minus two",
+            "n1": "in_scope or out_of_scope",
+            "reason": "nonempty author reason; out_of_scope requires explicit named purpose"
+          }
+        ],
+        "faceClasses": "full-length array, one string per face; planar, round, bevel:casing, bevel:white_key_lip, or out_of_scope; exact expected array is pinned"
+      }
+    ],
+    "surfaces": [
+      {
+        "id": "<stable receiving-surface identity>",
+        "kind": "rug_field or bare_floor",
+        "boundaryRow": "<declared row containing the actual rug geometry>",
+        "boundaryFace": "nonnegative polygon ordinal: flat inner field for rug_field; actual outer underside outline for bare_floor"
+      }
+    ],
+    "supports": [
+      {
+        "id": "<stable unique independently contacting primitive identity>",
+        "row": "<declared row>",
+        "group": "<declared primitive group id>",
+        "surface": "<explicit declared receiving-surface id>"
+      }
+    ]
+  },
+  "rowsArgument": {
+    "type": "object keyed by exact row id; no missing/unknown rows",
+    "row": {
+      "vertices": "finite XYZ array in Blender metres Z-up",
+      "faces": "nonempty polygons of integer vertex indices; same order as source",
+      "groups": "live authored groups with exactly the declaration group fields; ids, ranges, counts and reasons must match",
+      "faceClasses": "live full-length authored array; must exactly match pinned classes, never derived from normals",
+      "cornerNormals": "when normalsRequired, one normal per polygon corner in matching face/corner order; supplied authored normals, never recomputed by verifier"
+    }
+  },
+  "supportMeaning": {
+    "primitive": "Each support group must identify one independently contacting primitive. Separate feet/spurs cannot be merged into one identity. Every intended support must appear; do not relabel failures as decoration. The original kick spurs are explicitly intended supports.",
+    "footprint": "Conservative convex hull of ALL projected primitive vertices, including its entire boundary edges and enclosed area; no lowest-row or bottom-only vertex selection. Convex hull may conservatively reject a concave primitive; split only with author-approved independent primitive identities, not to hide a contact.",
+    "height": "Minimum Z of each complete primitive minus the actual rug-field Z or bare-floor Z=0, minus the fixed intended 0.0003m gap. Both positive lift and negative penetration beyond 0.000001m reject.",
+    "clearance": "At least 0.020m against the actual authored inner-field polygon on the inside, or actual outer-outline polygon on the outside. Polygon edge crossing and footprint containment of the rug reject. Only horizontal simple convex rug boundaries are supported; other boundaries fail closed.",
+    "oneSurfacePerRow": "All declared supports of a floor-supported row must select the same receiving surface. No mixed rug/floor contact approval is implied."
+  },
+  "normalMeaning": {
+    "coverage": "Every face and vertex belongs to exactly one expected group; group ranges/counts and full-length class arrays match. No missing/duplicate/null/unknown group/class or unpinned reclassification. Out-of-scope groups are explicit, not absence.",
+    "validity": "All supplied normals in required rows must be finite unit vectors within 0.000001 of unit length; every source fan triangle is nondegenerate. Planar polygons must be planar, and each planar triangle corner must satisfy oriented dot(normalized supplied normal, geometric normal) >= cos(2 degrees), irrespective of area.",
+    "bevels": "Bevel/round groups remain subject to validity/degeneracy checks but are excluded from the flat-plane assertion. No abs(dot), average error, replacement normal or area-based selection."
+  },
+  "result": {
+    "valid": "true only if coverage, supportGeometry and normalValidity all pass for the explicitly declared source scope",
+    "scope": "candidate, fixture or unknown; a true fixture result is not a candidate pass",
+    "coverage": "valid, errors",
+    "supportGeometry": "status, valid, errors, per-support records",
+    "normalValidity": "status, valid, errors, per-row records",
+    "candidateAcceptance": "always false; independent review and downstream export/image/runtime gates remain"
+  },
+  "integrationRemaining": [
+    "Root releases actual-Claude geometry and complete declarations separately; this interface does not release or edit those sources.",
+    "Root/S freezes the complete authored declaration, group identities and source hashes; missing declarations reject the original v03 candidate.",
+    "Tests use clearly named narrow fixtures grounded in inspected source or synthetic geometry, not an invented complete artistic classification.",
+    "Final GLB needs separate hash-bound per-triangle source/group correspondence and actual POSITION/NORMAL/index validation; source polygon order is not assumed to survive Blender/export.",
+    "G1 geometry, V4 edge reasons, embedding intent and rug/decal wording remain held for their owners."
+  ]
+}

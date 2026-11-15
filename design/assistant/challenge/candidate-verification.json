@@ -1,0 +1,98 @@
+{
+  "verifiedAtUtc": "2026-11-15T16:41:43.512Z",
+  "status": "passed",
+  "protectedArtifactsVerified": 12,
+  "originalChallengeArtifactsByteIdentical": true,
+  "catalogVersion": "2026-11-15.2",
+  "frozenQuestionsSha256": "1fa0b7c7a7d65dc23456142bd393f1d52ea5de6191f95c458db0c6128f25454f",
+  "candidateRetrieverSha256": "99c5b5af5e85d43289d97d31c25b7b826425838ab4e576de99f3b6648c356445",
+  "candidateResultsSha256": "246693c51107fed354e04785e0b0596f775d2e3f0a217fedc7aaca9744be87e9",
+  "candidateQualityTestsSha256": "33261f0ec30d7a8d28b4dacea3bb474cc2841d7199abca8566f84421fba85fc6",
+  "baseline": {
+    "questions": 20,
+    "scoredQuestions": 19,
+    "passedQuestions": 11,
+    "failedQuestions": 8,
+    "observationOnlyQuestions": 1,
+    "requiredGroups": 22,
+    "hitGroups": 14,
+    "emptySelections": 6
+  },
+  "candidate": {
+    "questions": 20,
+    "scoredQuestions": 19,
+    "passedQuestions": 17,
+    "failedQuestions": 2,
+    "observationOnlyQuestions": 1,
+    "requiredGroups": 22,
+    "hitGroups": 20,
+    "emptySelections": 3
+  },
+  "changes": [
+    {
+      "id": "C01",
+      "before": false,
+      "after": true
+    },
+    {
+      "id": "C04",
+      "before": false,
+      "after": true
+    },
+    {
+      "id": "C06",
+      "before": false,
+      "after": true
+    },
+    {
+      "id": "C09",
+      "before": false,
+      "after": true
+    },
+    {
+      "id": "C11",
+      "before": false,
+      "after": true
+    },
+    {
+      "id": "C12",
+      "before": false,
+      "after": true
+    }
+  ],
+  "remainingMisses": [
+    {
+      "id": "C08",
+      "question": "What went wrong when he first ran the small language model, and how did he catch invalid numeric output?",
+      "missing": [
+        "dissertation:dissertation-observations:0"
+      ]
+    },
+    {
+      "id": "C15",
+      "question": "What brand of espresso machine does he recommend for a beginner?",
+      "missing": [
+        "about-owen:about-owen-interests:0"
+      ]
+    }
+  ],
+  "context": {
+    "baselineSelectedPassages": 27,
+    "candidateSelectedPassages": 40,
+    "baselineSelectedCharacters": 8780,
+    "candidateSelectedCharacters": 13107,
+    "belowStandaloneThreshold": [
+      {
+        "questionId": "C01",
+        "chunkId": "lexisnexis:lexisnexis-limits:0",
+        "score": 1.265
+      },
+      {
+        "questionId": "C05",
+        "chunkId": "lexisnexis:lexisnexis-limits:0",
+        "score": 0.603
+      }
+    ]
+  },
+  "validation": "All saved passage text, source IDs, links and coverage decisions checked; original artifacts hashed; no retrieval or generation invocation in this verifier"
+}

@@ -1,0 +1,119 @@
+✖ natural inflections find customer work without a project name (7.1097ms)
+✖ bounded vocabulary connects visitor terms to excerpts and assistant behavior (0.5611ms)
+✖ education and boosted-tree vocabulary generalize beyond question templates (0.3315ms)
+✖ one overlapping limitation can accompany direct project evidence within the budget (10.197ms)
+✔ metadata alone does not attach every caveat and unrelated topics stay empty (1.0956ms)
+✖ normalization preserves publication, identity, text and request/context bounds (0.7909ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 1
+ℹ fail 5
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 378.6072
+
+✖ failing tests:
+
+test at tests\assistant\retrieval-quality.test.cjs:14:1
+✖ natural inflections find customer work without a project name (7.1097ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(ids(retrieve('Has he worked with customers?', [work], href)).includes('work-history:role:0'))
+  
+      at TestContext.<anonymous> (C:\Users\Owenc\orca\Portfolio-assistant\tests\assistant\retrieval-quality.test.cjs:16:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.start (node:internal/test_runner/test:1262:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests\assistant\retrieval-quality.test.cjs:19:1
+✖ bounded vocabulary connects visitor terms to excerpts and assistant behavior (0.5611ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(ids(retrieve('Does the bot show extracts or write replies?', [preview], href)).includes('search-preview:behavior:0'))
+  
+      at TestContext.<anonymous> (C:\Users\Owenc\orca\Portfolio-assistant\tests\assistant\retrieval-quality.test.cjs:21:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests\assistant\retrieval-quality.test.cjs:24:1
+✖ education and boosted-tree vocabulary generalize beyond question templates (0.3315ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(ids(retrieve('Which college is he studying at?', [education], href)).includes('profile:degree:0'))
+  
+      at TestContext.<anonymous> (C:\Users\Owenc\orca\Portfolio-assistant\tests\assistant\retrieval-quality.test.cjs:27:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests\assistant\retrieval-quality.test.cjs:31:1
+✖ one overlapping limitation can accompany direct project evidence within the budget (10.197ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(ids(found).includes('application-workspace:limits:0'))
+  
+      at TestContext.<anonymous> (C:\Users\Owenc\orca\Portfolio-assistant\tests\assistant\retrieval-quality.test.cjs:43:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests\assistant\retrieval-quality.test.cjs:63:1
+✖ normalization preserves publication, identity, text and request/context bounds (0.7909ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(found.length > 0 && found.length <= 4)
+  
+      at TestContext.<anonymous> (C:\Users\Owenc\orca\Portfolio-assistant\tests\assistant\retrieval-quality.test.cjs:67:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

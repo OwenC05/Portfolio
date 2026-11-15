@@ -15,18 +15,18 @@ The sources distinguish owner accounts from artifacts and limit claims to the su
 
 | Check | Evidence |
 | --- | --- |
-| Assistant and catalog tests | 17 passed via `npm run test:assistant` |
+| Assistant and catalog tests | 34 passed, including event validation and retrieval-quality regressions |
 | Retrieval regression fixtures | 17/17 passed; all required passages found for 12 supported-topic questions |
 | Studio CPU regressions after dependency update | 153 passed |
 | Application typecheck and configured lint | Passed |
 | Production build | Passed; `/ask` first-load JavaScript reported as 113 kB |
-| Actual local browser checks | 14 passed, including 320px/390px fit, reduced motion, real source-only events and controlled failure/cancellation cases |
+| Actual local browser checks | 15 passed on the combined repair, including malformed-event recovery, 320px/390px fit, reduced motion, real source-only events and controlled failure/cancellation cases |
 | Source routes | Seven published pages and their anchors resolve; draft template routes return 404 |
 | Independent visual review | Actual Claude Opus review approved the mobile repair; its small label-clipping follow-up was repaired and checked at 320px, 390px and 1440px |
 
-Retained evidence is in [design/assistant](../design/assistant): browser results, actual retrieval events, viewport screenshots, source-route checks and separate Claude visual review/rereview reports. The 14-check report records the build before the final two SVG label positions changed. `final-layout-checks.json` and `mobile-trace-final.png` record the final build's label bounds, mobile touch targets and passage focus check. Browser transport fixtures test interface behavior, not model quality. The retrieval set is developer-visible regression data, not an untouched held-out benchmark. See [evaluation](assistant-evaluation.md) for the unrun human and model checks.
+Retained evidence is in [design/assistant](../design/assistant): browser results, actual retrieval events, viewport screenshots, source-route checks and separate Claude visual review/rereview reports. The original 14-check report and label repair evidence remain intact. [The combined repair browser report](../design/assistant/validation-20261115-v2/browser-checks.json) records 15 passing checks against build `y-B3AVJ4r6mRb4PDZAs-6`, including a valid-JSON event with missing hits and subsequent successful recovery. Its viewport captures and real source trace are in the same directory. Full application typecheck, configured lint and production build passed on the combined implementation. Browser transport fixtures test interface behavior, not model quality. See [evaluation](assistant-evaluation.md) for the unrun human and model checks.
 
-The local browser runner requires Orca on PATH (or `ORCA_BIN`), the production server on `127.0.0.1:4193`, and a newly opened `/ask` tab at 1440×1100. Pass its observed page ID to `node scripts/verify-assistant-browser.mjs <page-id>`. It changes only that tab and writes evidence under `design/assistant`.
+The local browser runner requires Orca on PATH (or `ORCA_BIN`), the production server on `127.0.0.1:4193`, and a newly opened `/ask` tab at 1440×1100. Run `node scripts/verify-assistant-browser.mjs <page-id> <new-evidence-directory>` to preserve earlier captures. It changes only that tab; the evidence directory defaults to `design/assistant` when omitted.
 
 ## Independent follow-up
 
@@ -34,9 +34,11 @@ Two Codex workers completed a functional boundary audit and a separately frozen 
 
 See [functional audit](assistant-functional-audit.md) and [retrieval challenge](assistant-retrieval-challenge.md). The original challenge files remain immutable. They become development/regression evidence when used to improve retrieval. Archived TypeScript snapshots are narrowly excluded from application typechecking; the live application remains checked. The integration typecheck passed after adding that exclusion. No live generation evaluation has occurred.
 
+Both follow-ups are now integrated. The client rejects malformed event shapes before rendering, with nine parser tests and a passing browser recovery case. Shared lexical normalization and bounded limitation-context selection improve challenge coverage to 17/19 questions and 20/22 groups, preserving all previous passes and all 17 original fixtures. The two remaining misses concern numeric-output wording and an unsupported espresso preference. More context is selected (40 versus 27 passages), and broader vocabulary can create noisy hits; there is no general accuracy or precision claim. See [stream repair](assistant-stream-repair.md) and [retrieval repair](assistant-retrieval-repair.md).
+
 ## Deployment and remaining work
 
-Vercel reported preview deployment `dpl_BkDGXAGU9AM15ncfqZbKyAZZmxrL` READY for commit `f08605b8d5ae1dd234bba286ebcd2f543c1e8693`. Preview: https://portfolio-wbdbsoc0n-owenc05s-projects.vercel.app/ask. Hosted verification is the deployment status; browser interaction checks ran locally.
+The branch preview is https://portfolio-git-feature-portfolio-assistant-owenc05s-projects.vercel.app/ask. The initial deployment `dpl_BkDGXAGU9AM15ncfqZbKyAZZmxrL` was verified READY for commit `f08605b8d5ae1dd234bba286ebcd2f543c1e8693`; subsequent deployments follow feature-branch pushes. Hosted verification uses deployment status for the pushed commit; browser interaction checks run locally.
 
 The code defaults generation to disabled when the variable is absent, as on this initial build. The branch-specific preview variable `ASSISTANT_GENERATION_ENABLED=false` is also now recorded for subsequent deployments. No production promotion or payment setup belongs to this checkpoint.
 

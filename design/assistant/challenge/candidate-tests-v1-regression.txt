@@ -1,0 +1,16 @@
+✔ natural inflections find customer work without a project name (1.5047ms)
+✔ bounded vocabulary connects visitor terms to excerpts and assistant behavior (0.2508ms)
+✔ education and boosted-tree vocabulary generalize beyond question templates (0.2205ms)
+✔ contractions retain useful multiword headings (0.1315ms)
+✔ one overlapping limitation can accompany direct project evidence within the budget (8.1226ms)
+✔ metadata alone does not attach every caveat and unrelated topics stay empty (0.2644ms)
+✔ context completion preserves sole passages from other sources and never invents zero-overlap context (0.3016ms)
+✔ normalization preserves publication, identity, text and request/context bounds (0.8658ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 289.1517

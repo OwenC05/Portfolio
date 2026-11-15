@@ -36,7 +36,7 @@ console.log(
       knowledgeVersion,
       retrieval: {
         method:
-          'Deterministic lexical matching of published titles, tags, headings and fixed-size passages; top four.',
+          'Deterministic normalized lexical matching of published passages, with one optional related limitation; at most four hits.',
         fixtureChecksPassed: cases.filter((item) => item.passed).length,
         fixtureChecksTotal: cases.length,
         supportedTopicRecallAt4:

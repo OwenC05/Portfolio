@@ -6,6 +6,8 @@
 /design/** -text
 # Keep frozen challenge hashes intact when original evidence uses CRLF.
 /design/assistant/challenge/** whitespace=cr-at-eol
+# Raw Node failure output includes indented blank lines; preserve the transcript.
+/design/assistant/challenge/candidate-tests-*.txt whitespace=cr-at-eol,-blank-at-eol
 /components/studio/** -text
 /app/studio/** -text
 /app/globals.css -text

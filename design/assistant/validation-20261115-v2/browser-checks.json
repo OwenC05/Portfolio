@@ -1,0 +1,112 @@
+{
+  "buildId": "y-B3AVJ4r6mRb4PDZAs-6",
+  "testedAt": "2026-11-15T16:47:51.338Z",
+  "base": "http://127.0.0.1:4193",
+  "results": [
+    {
+      "name": "Real same-origin request on 127.0.0.1 completes",
+      "passed": true
+    },
+    {
+      "name": "Graph and disclosures agree with retrieved passages",
+      "passed": true
+    },
+    {
+      "name": "Source quotes are exact retrieved passages",
+      "passed": true
+    },
+    {
+      "name": "Disabled generation produces no model stage",
+      "passed": true
+    },
+    {
+      "name": "320px viewport has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Source disclosure opens its passage",
+      "passed": true
+    },
+    {
+      "name": "Unsupported topic abstains and offers contact",
+      "passed": true
+    },
+    {
+      "name": "Rate limit has retryable error state",
+      "passed": true
+    },
+    {
+      "name": "Malformed stream is reported",
+      "passed": true
+    },
+    {
+      "name": "Keyboard cancellation restores usable state",
+      "passed": true
+    },
+    {
+      "name": "Valid JSON with missing hits shows a recoverable error",
+      "passed": true
+    },
+    {
+      "name": "Superseded response cannot overwrite latest answer",
+      "passed": true
+    },
+    {
+      "name": "Split NDJSON and final unterminated line finish",
+      "passed": true
+    },
+    {
+      "name": "Reduced motion disables graph animation",
+      "passed": true
+    },
+    {
+      "name": "390px viewport has no horizontal overflow",
+      "passed": true
+    }
+  ],
+  "captures": {
+    "desktop": {
+      "width": 1440,
+      "height": 1100,
+      "scrollY": 0,
+      "scrollWidth": 1425
+    },
+    "mobileTop": {
+      "width": 320,
+      "height": 844,
+      "scrollY": 0,
+      "scrollWidth": 320
+    },
+    "mobileAnswer": {
+      "width": 320,
+      "height": 844,
+      "scrollY": 933.2000122070312,
+      "scrollWidth": 320
+    },
+    "mobileTrace": {
+      "width": 320,
+      "height": 844,
+      "scrollY": 3053.60009765625,
+      "scrollWidth": 320
+    },
+    "mobilePassage": {
+      "width": 320,
+      "height": 844,
+      "scrollY": 3053.60009765625,
+      "scrollWidth": 320
+    }
+  },
+  "sourceHashes": {
+    "components/assistant/AssistantWorkbench.tsx": "fb34ea410581d32627ffe02593915ba1417ce4b0636b4bb395a04096c29327b6",
+    "components/assistant/assistant.module.css": "eaa316e29f646c718112cd841ea6028eb72929fff0133c01b6d566d92105b3c4",
+    "lib/assistant/events.ts": "95e37b16c181cb13e663695f73c5555608d873c12d4e9505c888d71c87f5e491",
+    "lib/assistant/handler.ts": "2836c4f60915e15583d9910923ca7c2ef72c78ca47a1b2d97cb6247692a92458",
+    "lib/assistant/retrieval.ts": "99c5b5af5e85d43289d97d31c25b7b826425838ab4e576de99f3b6648c356445",
+    "lib/knowledge/catalog.ts": "145e04a8296e8815ff6c4f9da94f663df3c5a993223a5fb1b41c365a2b09d52b"
+  },
+  "limits": [
+    "Controlled transport fixtures do not test live model quality.",
+    "Screenshots are viewport captures; full-page stitching was unreliable.",
+    "No screen-reader or full WCAG audit."
+  ]
+}

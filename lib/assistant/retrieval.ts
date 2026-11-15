@@ -8,17 +8,57 @@ export const MAX_PASSAGE_CHARS = 1200
 export const MIN_LEXICAL_SCORE = 1.5
 const RECORD_IDENTITY_BOOST = 2
 const stop = new Set(
-  'a an the is are was were be been what which who how does do did can could would should will has have had of on in at to for and or with about me tell owen owens his he you your please'.split(
+  'a an the is are was were be been am what which who how when where why does do did can could would should will has have had of on in at to for and or with about me tell owen owens his he you your please i im my it its they them their this that these those as by than then rather'.split(
     ' '
   )
 )
 
+// Small, explicit term families, applied equally to query and source text.
+// They broaden lexical navigation, not factual equivalence or answer support.
+const termFamilies = [
+  ['assistant', 'bot', 'chatbot'],
+  ['excerpt', 'extract', 'quotation', 'quote'],
+  ['answer', 'reply', 'response'],
+  ['customer', 'client'],
+  ['education', 'university', 'college'],
+  ['boosting', 'lightgbm'],
+  ['study', 'studied', 'studying'],
+  ['learn', 'learned', 'learning'],
+  ['predict', 'predicted', 'predicting', 'prediction'],
+  ['graduate', 'graduated', 'graduating', 'graduation'],
+  ['work', 'worked', 'working'],
+]
+const canonicalTerms = new Map(
+  termFamilies.flatMap(([canonical, ...forms]) =>
+    forms.map((form) => [form, canonical] as const)
+  )
+)
+
+function normalizeWord(word: string): string {
+  // Conservative plurals; avoid turning analysis/status/process into fragments.
+  const singular =
+    word.endsWith('ies') && word.length > 4
+      ? `${word.slice(0, -3)}y`
+      : word.endsWith('s') && word.length > 3 && !/(ss|us|is)$/.test(word)
+        ? word.slice(0, -1)
+        : word
+  return canonicalTerms.get(singular) || singular
+}
+
 function tokens(text: string): string[] {
+  const normalized = text
+    .toLowerCase()
+    .replace(/[’']/g, '')
+    .replace(
+      /\b(?:boosted[- ]trees?|gradient[- ]boost(?:ed|ing))\b/g,
+      'boosting'
+    )
   return Array.from(
     new Set(
-      (text.toLowerCase().match(/[a-z0-9]+/g) || []).filter(
-        (word) => word.length > 1 && !stop.has(word)
-      )
+      (normalized.match(/[a-z0-9]+/g) || [])
+        .filter((word) => word.length > 1 && !stop.has(word))
+        .map(normalizeWord)
+        .filter((word) => !stop.has(word))
     )
   )
 }
@@ -67,6 +107,67 @@ function mentionsRecord(question: string, record: KnowledgeRecord): boolean {
   })
 }
 
+interface ScoredPassage {
+  hit: RetrievalHit
+  directMatches: number
+  limitation: boolean
+}
+
+const comparePassages = (a: ScoredPassage, b: ScoredPassage) =>
+  b.hit.score - a.hit.score || a.hit.chunkId.localeCompare(b.hit.chunkId)
+
+function selectPassages(candidates: ScoredPassage[]): RetrievalHit[] {
+  const ranked = candidates.sort(comparePassages)
+  const selected = ranked
+    .filter(({ hit }) => hit.score >= MIN_LEXICAL_SCORE)
+    .slice(0, MAX_HITS)
+
+  // Reserve at most one slot for a directly overlapping limitation from a
+  // matched source. Do not attach caveats based on metadata alone, replace the
+  // anchor, or evict the only selected passage of another source.
+  for (const anchor of selected) {
+    if (anchor.limitation || anchor.directMatches < 2) continue
+    if (
+      selected.some(
+        (item) => item.limitation && item.hit.sourceId === anchor.hit.sourceId
+      )
+    )
+      continue
+    const context = ranked.find(
+      (item) =>
+        item.limitation &&
+        item.directMatches > 0 &&
+        item.hit.sourceId === anchor.hit.sourceId &&
+        !selected.includes(item)
+    )
+    if (!context) continue
+    if (selected.length < MAX_HITS) {
+      selected.push(context)
+    } else {
+      let replace = -1
+      for (let index = selected.length - 1; index >= 0; index--) {
+        const item = selected[index]
+        if (
+          item !== anchor &&
+          selected.some(
+            (other) =>
+              other !== item && other.hit.sourceId === item.hit.sourceId
+          )
+        ) {
+          replace = index
+          break
+        }
+      }
+      if (replace < 0) continue
+      selected[replace] = context
+    }
+    break
+  }
+  // Context keeps its measured lexical score, even below the standalone-hit
+  // threshold. Selection is evidence-aware; final ordering stays score-based.
+  return selected.sort(comparePassages).map(({ hit }) => hit)
+}
+
 /** Publication is checked here even when callers already supply a public catalogue. */
 export function retrieve(
   question: string,
@@ -75,7 +176,7 @@ export function retrieve(
 ): RetrievalHit[] {
   const query = queryTokens(question.slice(0, MAX_QUESTION_CHARS))
   if (!query.length) return []
-  const hits: RetrievalHit[] = []
+  const hits: ScoredPassage[] = []
   for (const record of records) {
     if (record.publication !== 'published') continue
     const identityBoost = mentionsRecord(
@@ -111,19 +212,24 @@ export function retrieve(
           ) /
             Math.sqrt(query.length)
         hits.push({
-          sourceId: record.id,
-          chunkId: `${record.id}:${section.id}:${offset / MAX_PASSAGE_CHARS}`,
-          title: record.title,
-          heading: section.heading,
-          text,
-          href: `${href(record)}#${section.id}`,
-          score: Math.round(score * 1000) / 1000,
+          hit: {
+            sourceId: record.id,
+            chunkId: `${record.id}:${section.id}:${offset / MAX_PASSAGE_CHARS}`,
+            title: record.title,
+            heading: section.heading,
+            text,
+            href: `${href(record)}#${section.id}`,
+            score: Math.round(score * 1000) / 1000,
+          },
+          directMatches: query.filter(
+            (word) => passage.has(word) || heading.has(word)
+          ).length,
+          limitation: /\b(limit(?:s|ations)?|validation|disclosure)\b/i.test(
+            section.heading
+          ),
         })
       }
     }
   }
-  return hits
-    .filter((hit) => hit.score >= MIN_LEXICAL_SCORE)
-    .sort((a, b) => b.score - a.score || a.chunkId.localeCompare(b.chunkId))
-    .slice(0, MAX_HITS)
+  return selectPassages(hits)
 }

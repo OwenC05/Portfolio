@@ -6,11 +6,13 @@ Implementation snapshot: 15 November 2026. The available baseline is published-s
 
 `lib/knowledge/catalog.ts` is the explicit, versioned publication allowlist. Pages and the assistant share its records. Retrieval checks `publication === 'published'` again at its own boundary. It does not scan the filesystem, ingest a CV, or index editorial drafts, employer files or learner notes. See [content authoring](content-authoring.md).
 
-`lib/assistant/retrieval.ts` implements lexical matching, not embeddings or a vector database. It lowercases ASCII alphanumeric tokens, removes short tokens and a fixed stop-word list, and deduplicates terms. Each query term contributes 2 points for passage presence, 3 for heading presence and 2 for title/tag presence. The sum is divided by the square root of the query term count. Scores below 1.5 are omitted; remaining passages sort by score, then chunk ID, with a maximum of four hits. Scores measure this matching rule, not factual confidence. Synonyms, paraphrases and non-English text can be missed.
+`lib/assistant/retrieval.ts` implements lexical matching, not embeddings or a vector database. Queries and sources share conservative plural/apostrophe normalization, a fixed stop-word list and eleven explicit term families for common visitor vocabulary. A bounded phrase rule recognizes boosted trees and gradient boosting. Each distinct normalized query term contributes 2 points for passage presence, 3 for heading presence and 2 for title/tag presence. The sum is divided by the square root of the query term count. Scores measure this matching rule, not factual confidence. Unlisted synonyms, paraphrases and non-English text can still be missed; broader matching can also return incidental context.
+
+Standalone hits require a score of at least 1.5. Selection may include at most one directly overlapping limitation passage from an already matched source, retaining its real lexical score even below that threshold. Its anchor must have two direct term matches; the companion needs one and a heading containing limit/limits/limitations, validation or disclosure. It fills a free slot or replaces a removable duplicate-source hit, preserving the anchor and other sources' sole hits. This is a coverage heuristic, not proof of semantic relevance; it can displace useful context. Final passages sort by score, then chunk ID, with at most four hits. See the [retrieval repair evidence](assistant-retrieval-repair.md) for measured coverage and context costs.
 
 Sections are sliced at fixed 1200 JavaScript string units. IDs are `record-id:section-id:slice-index`; links point to the published section anchor. Stable IDs identify locations, not immutable content: record the catalogue version when evaluating. Slices can split a sentence; that is a baseline limitation. Selected passage text totals at most 4800 string units.
 
-Complete profile and education questions receive bounded query expansion. An exact normalized record slug or title adds two points per passage before normalization, so a named employer's sections need not repeat its name. These are transparent lexical heuristics, not semantic embeddings.
+Complete profile and education questions receive bounded query expansion. An exact normalized record slug or title adds two points per passage after the normalized token score, so a named employer's sections need not repeat its name. These are transparent lexical heuristics, not semantic embeddings.
 
 ## Request and event path
 
@@ -25,6 +27,8 @@ Successful responses use newline-delimited JSON, with these actual events:
 5. `done` carries elapsed request-processing duration.
 
 The contract is exported from `lib/assistant/types.ts`. No artificial delays or reasoning trace are produced. Request or response cancellation aborts an active provider request. Responses are marked `no-store`; application code does not log credentials or conversations. This does not describe the hosting provider's separate logging or retention configuration.
+
+The client validates complete event payloads before updating render state: required fields, nested hits/citations, answer modes and finite nonnegative measurements. Malformed JSON and malformed shapes use the existing recoverable error. This does not validate event ordering, cross-event citation membership or semantic support.
 
 ## Optional generation
 

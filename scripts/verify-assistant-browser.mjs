@@ -6,7 +6,7 @@ import assert from 'node:assert/strict'
 const page = process.argv[2]
 if (!page) throw new Error('Pass the observed Orca browser page ID')
 const cli = process.env.ORCA_BIN || 'orca'
-const evidence = 'design/assistant'
+const evidence = process.argv[3] || 'design/assistant'
 mkdirSync(evidence, { recursive: true })
 const results = []
 function orca(command, ...args) {
@@ -75,6 +75,11 @@ orca('keypress', '--key', 'Enter')
 orca('wait', '--text', 'Cancelled.')
 check('Keyboard cancellation restores usable state', status().startsWith('Cancelled.'))
 
+evaluate("window.fetch=async()=>new Response(JSON.stringify({type:'retrieval',durationMs:1})+'\\n'); JSON.stringify(true)")
+ask('Who is Owen?')
+orca('wait', '--text', 'could not read')
+check('Valid JSON with missing hits shows a recoverable error', status().includes('could not read') && evaluate("JSON.stringify(!!document.querySelector('textarea') && Array.from(document.querySelectorAll('button')).some(button=>button.textContent.trim()==='Try again'))"))
+
 evaluate(`window.__qaCalls=0; window.fetch=async()=>{const n=++window.__qaCalls; if(n===1) await new Promise(r=>setTimeout(r,7000)); const text=[{type:'retrieval-start',question:'fixture'},{type:'retrieval',hits:[],durationMs:1},{type:'answer',answer:{mode:'abstained',text:n===1?'STALE RESULT':'FRESH RESULT',citations:[]}},{type:'done',durationMs:2}].map(x=>JSON.stringify(x)).join('\\n'); const bytes=new TextEncoder().encode(text); return new Response(new ReadableStream({start(c){c.enqueue(bytes.slice(0,23));c.enqueue(bytes.slice(23));c.close()}}))}; JSON.stringify(true)`)
 ask('Old question')
 ask('New question')
@@ -90,6 +95,6 @@ assert.ok(mediaResult.ok)
 check('Reduced motion disables graph animation', evaluate("JSON.stringify(matchMedia('(prefers-reduced-motion: reduce)').matches && Array.from(document.querySelectorAll('svg *')).every(node=>getComputedStyle(node).animationName==='none'))"))
 orca('viewport', '--width', '390', '--height', '844', '--mobile')
 check('390px viewport has no horizontal overflow', evaluate('JSON.stringify(document.documentElement.scrollWidth===390)'))
-const files = ['components/assistant/AssistantWorkbench.tsx','components/assistant/assistant.module.css','lib/assistant/handler.ts','lib/assistant/retrieval.ts','lib/knowledge/catalog.ts']
+const files = ['components/assistant/AssistantWorkbench.tsx','components/assistant/assistant.module.css','lib/assistant/events.ts','lib/assistant/handler.ts','lib/assistant/retrieval.ts','lib/knowledge/catalog.ts']
 writeFileSync(`${evidence}/browser-checks.json`, JSON.stringify({buildId:readFileSync('.next/BUILD_ID','utf8').trim(),testedAt:new Date().toISOString(),base:'http://127.0.0.1:4193',results,captures,sourceHashes:Object.fromEntries(files.map(f=>[f,createHash('sha256').update(readFileSync(f)).digest('hex')])),limits:['Controlled transport fixtures do not test live model quality.','Screenshots are viewport captures; full-page stitching was unreliable.','No screen-reader or full WCAG audit.']}, null, 2))
 console.log(JSON.stringify({passed:results.length,captures:Object.keys(captures),report:`${evidence}/browser-checks.json`}))

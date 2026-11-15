@@ -10,11 +10,8 @@ import {
   type FormEvent,
   type KeyboardEvent,
 } from 'react'
-import type {
-  AssistantAnswer,
-  AssistantEvent,
-  RetrievalHit,
-} from '@/lib/assistant/types'
+import type { AssistantAnswer, RetrievalHit } from '@/lib/assistant/types'
+import { parseAssistantEvent } from '@/lib/assistant/events'
 import styles from './assistant.module.css'
 
 type Phase =
@@ -99,14 +96,6 @@ const fmtMs = (n?: number) =>
       ? `${Math.round(n)} ms`
       : `${(n / 1000).toFixed(1)} s`
 const plural = (n: number, w: string) => `${n} ${w}${n === 1 ? '' : 's'}`
-
-function parseLine(line: string): AssistantEvent {
-  try {
-    return JSON.parse(line) as AssistantEvent
-  } catch {
-    throw new Error('The assistant sent a response this page could not read.')
-  }
-}
 
 function statusText(run: Run): string {
   switch (run.phase) {
@@ -391,7 +380,7 @@ export default function AssistantWorkbench({
         let finished = false
         const handle = (line: string) => {
           if (!line.trim() || !live()) return
-          const ev = parseLine(line)
+          const ev = parseAssistantEvent(line)
           if (ev.type === 'retrieval-start') {
             patch((r) => ({ ...r, phase: 'retrieving', received: true }))
           } else if (ev.type === 'retrieval') {

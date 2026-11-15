@@ -50,3 +50,6 @@ jobs:
         run: npm ci
       - name: Run ${{ matrix.name }}
         run: ${{ matrix.command }}
+      - name: Measure all-route static JavaScript ceiling
+        if: success() && matrix.name == 'Production build'
+        run: node .github/scripts/measure-studio-js-budget.mjs

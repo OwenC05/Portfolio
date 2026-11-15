@@ -1,8 +1,8 @@
-"""Studio v2 full kit, stage M3 nearfield: authored desk gear on the frozen M2 parent (PREPARED SOURCE, NOT YET RUN).
+"""Studio v2 full kit, stage M3 nearfield: authored desk gear on the accepted M2 parent v05.
 
-Status: prepared under task_d31f70e55a5d. It has not been executed. M3 export and saving the assembled blend are held
-until root releases them: the parent v05 must first pass root delta, capture and independent review, and the export
-handoff supplies the frozen parent identity. The script enforces that hold (see RELEASE below).
+Status: prepared under task_d31f70e55a5d. Export guards corrected by S and independently approved (m3-guard-rereview.md,
+44/44). Art refinement and first run under task_f514e48085e4: root released v05 as the parent
+(m2-v05-root-disposition-and-m3-release.md). The interlock below must still match that exact parent hash.
 
 Run (one hidden process, never interactive):
   blender --background --factory-startup --disable-autoexec --python-exit-code 1 \
@@ -45,7 +45,7 @@ FLAGS = set(ARGS)
 HERE = os.path.dirname(os.path.abspath(__file__))
 KIT = os.path.dirname(HERE)
 EXPORTS, MANIFESTS = os.path.join(KIT, 'exports'), os.path.join(KIT, 'manifests')
-TAG = 'v01'
+TAG = 'v02'   # v01: editable blend saved, export failed in the join step (preserved, no GLB)
 V04_SCRIPT = os.path.join(HERE, 'build_fullkit_m2_pc_v04.py')
 V04_SCRIPT_SHA = '62d0733e46c8d7e91e7d91ae904ff20ac469850148ac207b8c953b8f334de551'
 V05_STEP = os.path.join(HERE, 'build_fullkit_m2_pc_v05.py')
@@ -152,7 +152,7 @@ for arr_b, arr_a in ((before_c, after_c), (before_o, after_o)):
             assert arr_a[4 * p:4 * p + 4] == arr_b[4 * p:4 * p + 4], 'T2 changed an existing palette pixel'
 
 # ------------------------------------------------------------------ frost: first export of lib_frost
-assert not [o.name for o in bpy.data.objects if o.type == 'MESH' and MAT['lib_frost'].name in [m.name for m in o.data.materials]], 'lib_frost already consumed'
+assert not [o.name for o in bpy.data.objects if o.type == 'MESH' and MAT['lib_frost'].name in [m.name for m in o.data.materials if m]], 'lib_frost already consumed'
 MAT['lib_frost'].use_backface_culling = True                  # glTF doubleSided false: one main pass
 
 # ------------------------------------------------------------------ geometry helpers (exact counts, no modifiers)
@@ -313,7 +313,10 @@ MAT_RIM = DESK['top'] + EPS + 0.009
 on_desk = TOP + RW
 path += [Vector(p) for p in [(PX, -0.124, MAT_RIM + EPS + RW), (PX, -0.112, MAT_RIM + EPS + RW), (PX, -0.104, on_desk + 0.004), (PX, -0.094, on_desk),
                              (-0.93, -0.06, on_desk), (-0.70, -0.02, on_desk), (-0.625, 0.04, on_desk), (-0.605, 0.12, on_desk),
-                             (GROMMET.x, 0.17, on_desk), (GROMMET.x, 0.188, DESK['top'] + EPS + 0.003 + EPS + RW), (GROMMET.x, 0.200, DESK['top'] - 0.01),
+                             # over the grommet rim (top 0.7383, r 0.026-0.040), then straight down 20 mm from the hole centre:
+                             # clear of the 26 mm sleeve wall and of the central monitor cables at y 0.22 (r 4 mm)
+                             (GROMMET.x, 0.160, on_desk), (GROMMET.x, 0.177, DESK['top'] + EPS + 0.003 + EPS + RW),
+                             (GROMMET.x, 0.200, DESK['top'] + EPS + 0.003 + EPS + RW), (GROMMET.x, 0.200, DESK['top'] - 0.007),
                              (GROMMET.x, 0.200, DESK['under'] - 0.035), (GROMMET.x, 0.190, TRAY['floor'] + 0.03),
                              (GROMMET.x, 0.170, TRAY['floor'] + EPS + RW), (GROMMET.x, 0.140, TRAY['floor'] + EPS + RW)]]
 sweep(b, path, RW, 4, 'cream', up=Vector((0, 0, 1)))
@@ -353,6 +356,11 @@ for ri, row in enumerate(LAYOUT):
 done(b, 'kb_keycaps__caps')
 
 # ------------------------------------------------------------------ native mouse: symmetric pebble, two buttons, wheel, feet
+# G3 "mouse spans three to four key pitches" comes from art-direction section 2 item 1: "In home-1440 the mouse is two
+# keycaps wide ... real ones span three to four". The intended relationship is the mouse's lateral span across the home
+# view, at the same tier D hand scale as the keycaps. Width 99 mm = 3.25 pitches. Length follows the 10 : 6 : 3.5
+# reference profile (160 mm = 5.2 pitches; a real mouse is about 6.2 real pitches long), so the mouse is not shrunk below
+# hand scale. Reported as an explicit reading for review, not an exception: see m3-author-report.md.
 MS = dict(cx=KB['cx'] + 0.40, cy=-0.34, L=0.16, W=0.099, H=0.056)       # 40 cm right of the keyboard centre line
 assert MS['cx'] + MS['W'] / 2 < MAT_POCKET['x1'] and MAT_POCKET['y0'] < MS['cy'] - MS['L'] / 2
 MZ = MAT_Z + EPS + 0.0008                                     # on two 0.8 mm glide feet
@@ -525,7 +533,10 @@ for s in (-1, 1):
 done(b, 'headphones__on_stand')
 
 # ------------------------------------------------------------------ nearfield speaker: tier F (x1.25, M1 C1 exception), toed in
-SPK = dict(cx=0.36, cy=0.12, yaw=math.radians(-22), w=0.231, d=0.263, h=0.356, pad=0.019)
+# Tier x1.25 kept (root-adopted C1 suggestion). Moved 20 mm left and 20 mm back from the prepared (0.36, 0.12), so the
+# fixed-eye rays to the left cymbal proxy pass right of the cabinet's rear-right top edge. Planning box model: about 11%
+# of cymbal-disc rays blocked before, about 6% after; actual readability is judged on root captures only.
+SPK = dict(cx=0.34, cy=0.14, yaw=math.radians(-22), w=0.231, d=0.263, h=0.356, pad=0.019)
 Ms = Matrix.Translation((SPK['cx'], SPK['cy'], TOP)) @ Matrix.Rotation(SPK['yaw'], 4, 'Z')
 b = Build('speaker_nearfield__cabinet', 'lib_palette')
 loft(b, [[Ms @ Vector((x, y, 0.0)) for x, y in rrect(0.21, 0.24, 0.006, 1)], [Ms @ Vector((x, y, SPK['pad'])) for x, y in rrect(0.21, 0.24, 0.006, 1)]],
@@ -630,6 +641,7 @@ mfront, mback = Vector((MS['cx'], MS['cy'] + MS['L'] / 2, MZ + 0.01)), Vector((M
 mleft, mright = Vector((MS['cx'] - MS['W'] / 2, MS['cy'], MZ + 0.01)), Vector((MS['cx'] + MS['W'] / 2, MS['cy'], MZ + 0.01))
 meas['mouseSpanKeyPitches'] = {'lengthWorld': round(MS['L'] / P_KEY, 2), 'widthWorld': round(MS['W'] / P_KEY, 2),
                                'home-1440WidthPx': round(math.dist(project('home-1440', mleft)[:2], project('home-1440', mright)[:2]), 1)}
+meas['mouseSpanKeyPitches']['home-1440WidthInPitches'] = round(meas['mouseSpanKeyPitches']['home-1440WidthPx'] / meas['keycapPitchPx']['home-1440'], 2)
 
 # cymbal reveal (music-1440): rays to the left cymbal proxy's top face
 cym = bpy.data.objects.get('drum_cymbals__proxy_cymbal_1')
@@ -931,8 +943,12 @@ if 'glb' in FLAGS:
             bpy.data.objects.remove(obj, do_unlink=True)
         return leaf(name, out, 'FK_WORKSTATION', asset, casts=False)
 
-    join('mon_cables__runs', 'mon_cables', [(o, 'black') for o in CABLES if o.get('assetId') == 'mon_cables'] + [(grommet, None)])
-    join('under_desk_power__strip_loom', 'under_desk_power', [(o, 'black') for o in CABLES if o.get('assetId') == 'under_desk_power'] + [(OBJ['under_desk_power__strip'], None)])
+    # Both part lists are built before either join, exactly as v04 lines 293-296: join() removes its parts, so evaluating
+    # the second list afterwards touches removed CABLES entries (failed v01 attempt, ReferenceError).
+    mon_parts = [(o, 'black') for o in CABLES if o.get('assetId') == 'mon_cables'] + [(grommet, None)]
+    power_parts = [(o, 'black') for o in CABLES if o.get('assetId') == 'under_desk_power'] + [(OBJ['under_desk_power__strip'], None)]
+    join('mon_cables__runs', 'mon_cables', mon_parts)
+    join('under_desk_power__strip_loom', 'under_desk_power', power_parts)
     for obj in bpy.data.objects:
         if obj.parent == ROOT:
             assert obj.type == 'MESH', obj.name

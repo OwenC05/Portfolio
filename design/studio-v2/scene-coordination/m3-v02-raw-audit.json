@@ -1,0 +1,116 @@
+{
+  "status": "verified one new out-of-scope retained UV word; no candidate acceptance",
+  "sourceSha256": "dccfa2885919a84b03ff472cecbf76da35e0cd2a8b32baaca2dc8cb31929a209",
+  "reviewedBaselineSha256": "8829c741ee25bbb32da8328e4d56eb43fcd40ad9eac931a49bc0bb7192d22954",
+  "parentSha256": "4b2f7b8f44e13ef2a23e6d3420f1098147702aba72a365e6a942dec7e7ccc735",
+  "rawSha256": "71b39b5c242278408092d3ee95ab4e996df47014eb30ef57383b88f3e526fd18",
+  "reviewedGuardFunctionsUnchanged": true,
+  "existingNoiseRulesRowsT2FrostUnchanged": true,
+  "paletteGridSourceSha256": "1a66c8be156c8ef7208f8ccba8c0fee7130f962ba2ba280a98f8aa450404d3a5",
+  "paletteGrid": 8,
+  "paletteCellSize": 16,
+  "auditCorrection": "First audit run incorrectly assumed a 4px palette cell and failed; actual M1 source declares 16px. Audit now reads that declaration; author source and assets unchanged.",
+  "hierarchyErrors": [],
+  "textureErrors": [],
+  "paletteErrors": [],
+  "retainedAttributeDifferences": [
+    {
+      "node": "desk_top__top",
+      "identity": [
+        "desk_top__top_mesh.002",
+        "TEXCOORD_0",
+        197,
+        1
+      ],
+      "parentAccessor": 64,
+      "rawAccessor": 64,
+      "parentBinOffset": 411436,
+      "rawBinOffset": 411384,
+      "rawFileOffset": 487532,
+      "parentHex": "ddc4203f",
+      "rawHex": "dec4203f",
+      "parentValue": 0.6280038952827454,
+      "rawValue": 0.6280039548873901,
+      "matchesExistingNamedRule": true
+    },
+    {
+      "node": "desk_top__top",
+      "identity": [
+        "desk_top__top_mesh.002",
+        "TEXCOORD_0",
+        199,
+        0
+      ],
+      "parentAccessor": 64,
+      "rawAccessor": 64,
+      "parentBinOffset": 411448,
+      "rawBinOffset": 411396,
+      "rawFileOffset": 487544,
+      "parentHex": "5b8f72bf",
+      "rawHex": "5d8f72bf",
+      "parentValue": -0.9474999308586121,
+      "rawValue": -0.9475000500679016,
+      "matchesExistingNamedRule": true
+    },
+    {
+      "node": "desk_top__top",
+      "identity": [
+        "desk_top__top_mesh.002",
+        "TEXCOORD_0",
+        258,
+        0
+      ],
+      "parentAccessor": 64,
+      "rawAccessor": 64,
+      "parentBinOffset": 411920,
+      "rawBinOffset": 411868,
+      "rawFileOffset": 488016,
+      "parentHex": "20858b3e",
+      "rawHex": "21858b3e",
+      "parentValue": 0.27250003814697266,
+      "rawValue": 0.27250006794929504,
+      "matchesExistingNamedRule": false
+    },
+    {
+      "node": "desk_top__top",
+      "identity": [
+        "desk_top__top_mesh.002",
+        "TEXCOORD_0",
+        274,
+        1
+      ],
+      "parentAccessor": 64,
+      "rawAccessor": 64,
+      "parentBinOffset": 412052,
+      "rawBinOffset": 412000,
+      "rawFileOffset": 488148,
+      "parentHex": "3689213f",
+      "rawHex": "3789213f",
+      "parentValue": 0.6309999227523804,
+      "rawValue": 0.6309999823570251,
+      "matchesExistingNamedRule": true
+    }
+  ],
+  "newOutOfScopeWords": [
+    {
+      "node": "desk_top__top",
+      "identity": [
+        "desk_top__top_mesh.002",
+        "TEXCOORD_0",
+        258,
+        0
+      ],
+      "parentAccessor": 64,
+      "rawAccessor": 64,
+      "parentBinOffset": 411920,
+      "rawBinOffset": 411868,
+      "rawFileOffset": 488016,
+      "parentHex": "20858b3e",
+      "rawHex": "21858b3e",
+      "parentValue": 0.27250003814697266,
+      "rawValue": 0.27250006794929504,
+      "matchesExistingNamedRule": false
+    }
+  ],
+  "scope": "Read-only actual raw bytes, AST guard identity, retained attributes/materials/hierarchy and exact T2/nonpalette texture graph. No new GLB, Blender, source edit, visual or final budget acceptance."
+}

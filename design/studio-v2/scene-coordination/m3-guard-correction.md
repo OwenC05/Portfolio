@@ -4,6 +4,8 @@
 
 The preflight blocker is corrected and25 targeted CPU checks pass. This is source readiness, not an exported M3 candidate or visual approval. Root's existing technical reviewer receives the exact correction for independent scrutiny; no duplicate assembled-stage audit is claimed.
 
+Subsequent closure: independent [guard rereview](m3-guard-rereview.md) APPROVE,44/44CPU checks, and [root adoption](m3-guard-root-disposition.md) clear the source blocker. Root checkpoint416af31 preserves exact8829 source and7138 preimage. After checkpoint confirmation msg_92382e0f7d2d, S returned the source lease to the retained actual-Claude author via task_f514e48085e4 / ctx_4ebc25a81194. Later art revisions must identify their new source hash and preserve the reviewed guards; this historical whole-file hash does not describe later revisions.
+
 Exact preimage for independent review: [m3-source-preimage-7138fed9.py](m3-source-preimage-7138fed9.py),54142bytes, SHA256 `7138FED965BB145FEBEC3865D704A3CCE80D394A23687972FF9CD1C536814EC2`. It was reconstructed by reversing only the literal guard patch, not claimed as an original backup; [m3-guard-preimage.py](m3-guard-preimage.py) writes nothing unless the reconstructed bytes match that previously recorded author hash exactly. It ran exit0 and left the current8829C741 source untouched. This supports an exact guard-only diff despite the previously untracked source having no Git baseline.
 
 ## Change

@@ -1,24 +1,28 @@
-# M4 v04 preparation: author report (bounded final pass applied at P14; one hi-hat finding for root before the full run)
+# M4 v04 preparation: author report (bounded pass and hi-hat repair applied at P14; ready for the one full P14 measurement)
 
 **Author:** actual Claude Opus 5.5 (`claude-opus-5-5`, `--effort high`, observed in my own process argv, PID 28952, under Orca). Task `task_23314c669e03`, dispatch `ctx_2d83d120ad37`, retry of stopped `ctx_5996dc215cff`. Current S: `term_34bea5af…`; scope message `msg_3215a56a133b`, my ACK `msg_e060e25d1bf1`. 16 November 2026.
 
-**State: bounded final pass applied, not completion.** Root adopted P14 (`msg_3426c4122a7b`), and its bounded disposition `scene-coordination/m4-v04-bounded-art-disposition.md` (`7705f590…`, adopting the independent review `scene-m4-v04-bounded-art-review.md` `1af11ba5…`) released one final pass in these same four files, after checkpoint `4432edde`. This report covers that pass (section 3b): decisions 1–8, the hi-hat hinge declaration, and the metadata S approved for Codex (`msg_404c585797e4`, `msg_63a12bb6ae48`). P14 is unchanged. One hi-hat finding is **reported to root before the full run** (section 7, item 1). It needs no change to the interface, but it may need a geometry repair, and none is released.
+**State: hi-hat repair applied on top of the bounded pass, not completion.** Root's hi-hat release `scene-coordination/m4-v04-hihat-repair-release.md` (`038dc8af…`) delegated the remedy to the independent critic. The critic's `scene-m4-v04-hihat-repair-review.md` (`5bc3d79f…`, evidence JSON `780363ca…`) selected one construction, and S relayed it in `msg_66baf41d5d4c`. I implemented that section 3 exactly (section 3c). The two hi-hat defects recorded in the pre-repair checkpoint `005955c6` are now repaired by construction, pending Codex's measurement; their history stays in section 7. The bounded-pass text follows.
+
+**Bounded final pass (earlier, kept for history).** Root adopted P14 (`msg_3426c4122a7b`), and its bounded disposition `scene-coordination/m4-v04-bounded-art-disposition.md` (`7705f590…`, adopting the independent review `scene-m4-v04-bounded-art-review.md` `1af11ba5…`) released one final pass in these same four files, after checkpoint `4432edde`. This report covers that pass (section 3b): decisions 1–8, the hi-hat hinge declaration, and the metadata S approved for Codex (`msg_404c585797e4`, `msg_63a12bb6ae48`). P14 is unchanged. That pass reported one hi-hat finding to root before the full run; the hi-hat repair answers it.
 
 Earlier pins, all superseded:
 - **Interface-ready** (`msg_d12ca7bbbbc0`, root checkpoint `191a4c90`): helper `83e1445f…`, builder `eb0af482…`, declaration `f62a5850…`, report `1af15373…`.
 - **Pose-selected** (`msg_1becf8e43691`, checkpoint `4432edde`): helper `4bb40946…`, builder `f65ff919…`, declaration `71171111…`, report `84853714…`.
+- **Bounded pass, pre-repair** (`msg_103b9d7f17b2`, checkpoint `005955c6`): helper `5d01ed7c…`, builder `74476be0…`, declaration `476a17e3…`, report `f8f5342c…`.
+- **Hi-hat repair, first handoff** (`msg_6bd22517f3a0`, never released: S read it mid-edit): helper `370b4adc…`, builder `fa2db253…`, declaration `c955f30b…`, report `50169877…`. The settled pins in section 1 add only the declared `deepestVertices` field in criterion A.
 
 No Blender, export, browser, render, image, Git, dependency, helper, paid or process action was taken. The builder was never run and refuses to run. Nothing here is visual, export or candidate approval; all fourteen image gates (section 9) stay open.
 
 Authorities: root `m4-v04-combined-repair-disposition.md` (`24E9B32C`), S boundary `m4-v04-internal-contract.md` (`A2AFC8A3`), author task `m4-v04-author-task.md`, recovery `m4-v04-coordinator-recovery-2026-11-16.md`, final art review `scene-m4-v03-focused-art-closure.md` (`4157A176`), declaration interface `m4-v03-verifier-declaration-contract-v3.json` (`5632CA4A`). v01-v03 sources, receipts, reviews and snapshots were only read. The stale original M4 export brief in the restart paste was **not** executed.
 
-## 1. Files and hashes (final bounded-pass pins)
+## 1. Files and hashes (repair-ready pins)
 
 | Owned file (relative to `design/studio-v2/`) | SHA256 | Note |
 |---|---|---|
-| `asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py` | `5d01ed7c094d2983d9a597a6b7271eedfa662cfdcfa435929fa258898caca20a` | pure helper (math, fnmatch, numpy); writes nothing |
-| `asset-pipeline/full-kit/source/build_fullkit_m4_v04.py` | `74476be0316cee121436ceb7c06308bc159e046bbab71677c566b16c5374f524` | held builder, pins the helper hash above; refuses execution |
-| `asset-pipeline/full-kit/manifests/m4-v04-author-declarations.json` | `476a17e3acbf4e50a1fcec5d7cac33fcf6b123e43253630dffe704d4875bd5d6` | 291,007 bytes; byte-exact output of the helper's `--declaration` |
+| `asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py` | `8d814874ee0ac1317827297d2a729b34f4789fffd891212ae03e2c440a73b792` | pure helper (math, fnmatch, numpy); writes nothing |
+| `asset-pipeline/full-kit/source/build_fullkit_m4_v04.py` | `0d01536c36481021e8ff7026a6608998eb44dce0d88505dae105f94834909826` | held builder, pins the helper hash above; refuses execution |
+| `asset-pipeline/full-kit/manifests/m4-v04-author-declarations.json` | `8ce8db34b40a3ce053d037c5152fec8c8ed19d586b0968439abf64e3308f32bb` | 302,196 bytes; byte-exact output of the helper's `--declaration` |
 | `scene-m4-v04-preparation-report.md` | (this file; hash sent with the handoff) | |
 
 Reproduce the declaration with `python -B source/build_fullkit_m4_geometry_v04.py --declaration > manifests/m4-v04-author-declarations.json`, run from `asset-pipeline/full-kit/`. That writes UTF-8, one-space indent, insertion order, LF and a final newline; `declaration_bytes()` returns the same bytes. Its `sources` entry carries the helper hash. Any helper edit, including the later pose selection, changes both pins. The builder's `HELPER_SHA` must then be updated and all three re-handed off.
@@ -39,7 +43,12 @@ Declaration top-level keys, in order: `schema` (`m4-source-declaration/3`), `sco
   - kick: base frame, `kick.spur_foot.L`, `kick.spur_foot.R` and the pedal plate
   - hi-hat base
   - 3 throne feet
-- `attachments`: 11 entries `{id, row, group, ontoRow, ontoGroup, relation: rests_on | embedded | hinged, intent, gapM (rests_on only), criterion (embedded / hinged)}`. The spring, both posts and the heel block rest on `kick.pedal_plate` with gap 0. The display face rests on `ctl.bezel` with gap 0.0003. Six entries carry a `criterion`: both spur arms into their feet and into `kick.base`, `kick.footboard_on_heel`, and the new `hihat.footboard_in_hinge`. The ambiguous `depthM` field is gone (decision 2); the criterion layout is in section 3b.
+- `attachments`: 13 entries `{id, row, group, ontoRow, ontoGroup, relation: rests_on | embedded | hinged, intent, gapM (rests_on only), criterion?}`. The spring, both posts and the heel block rest on `kick.pedal_plate` with gap 0. The display face rests on `ctl.bezel` with gap 0.0003. Eight entries carry a `criterion`:
+  - both spur arms into their feet and into `kick.base`;
+  - `kick.footboard_on_heel`;
+  - `hihat.hinge_in_base` (embedded, A), `hihat.footboard_in_hinge` (hinged, B) and `hihat.footboard_on_housing` (rests_on, gap 0.0003, C).
+
+  The ambiguous `depthM` field is gone (decision 2). Every criterion locator is an **explicit index list**: each criterion carries `indexConvention`, and `edgeClassification.attachmentCriteria` says so too. Row `groups[].vertexRange` / `faceRange` stay end-exclusive, as before (S `msg_b4aca287d5fa`). Layout: sections 3b and 3c.
 - `seatings`: exactly the four I1 pairs, `ctl_body__indicators/ctl.indicator_strip#0..3` into `ctl_body__shell/ctl.panel`, `seatDepthM` 0.001, `proudM` 0.0025.
 - `roundRuns`: 18 entries `{id, row, group, faces}`: 4 corner runs each in `module.case`, `sustain.base`, `sustain.plate` and `hihat.base`, plus the top run of each `ctl.cheeks`.
 - `edgeClassification`: the rule texts, plus `rolePairs` and `attachmentCriteria` texts.
@@ -114,7 +123,7 @@ The `named` status text now says it also covers sets accepted by name in the bou
   - **Observed:** six below-top vertices (382–387), maximum depth 4.000 mm, thickness 8.000 mm, heel-end corners 3.82 mm proud, 16 mm above the heel underside.
   - **Coverage:** Codex checks all footboard vertices and all source edges, not this subset.
 
-**Hi-hat (existing joint; no geometry change).** `hihat.footboard_in_hinge`, relation `hinged`, kind `board_heel_captured_in_hinge_barrel`. This is a cylindrical capture, not the kick's planar seat rule.
+**Hi-hat (pre-repair state, superseded by section 3c).** `hihat.footboard_in_hinge`, relation `hinged`, kind `board_heel_captured_in_hinge_barrel`. This is a cylindrical capture, not the kick's planar seat rule.
 
 Locators:
 - **Barrel:** `hihat.hinge`, axis start [0.971485, −0.039416, 0.0306] → end [1.060838, −0.028642, 0.0306]; radius 9 mm, 12 sides, inscribed radius 8.693 mm; rings 128–139 and 140–151; side faces 94–105; end discs 106 and 107.
@@ -132,7 +141,60 @@ Observed against that criterion:
 - Six corner vertices (105, 106, 109, 110, 122, 125) lie beyond the end discs. The whole board overhangs by at most 7.0 mm.
 - The board is 12 mm above the base top.
 
-**The pair satisfies its criterion.** The separate barrel-mounting issue is in section 7.
+**The pair satisfied its criterion.** The separate barrel-mounting issue was reported (section 7) and is repaired in section 3c. In this section, the ranges were written then as `sideFaceRange` (last face included) and `vertexRange` (end excluded). They are now explicit lists.
+
+## 3c. Hi-hat repair (root `038dc8af`; construction `5bc3d79f` section 3, implemented exactly)
+
+**Construction.** Both defects are fixed by one adjustment, using authored numbers only. No part is added, removed or renamed.
+- **Seated hinge.** New constant `HIHAT_HINGE = {r 0.009, seat 0.003, base_top 0.010, housing_top 0.070}`, in the pedal frame. The hinge axis is now `base_top + r − seat` = local z **0.016** (was 0.022), so the barrel is a knuckle seated 3.0 mm into the base top cap. The barrel's x extent (±0.045), y (−0.135), radius, 12 sides and material are unchanged. The base and housing now take their heights from the same constants; their values are unchanged.
+- **Toe at rest.** The board origin stays on the barrel axis. The pitch is derived, not chosen:
+  - lip at pedal-frame y = `l/2 − 0.085 + bev('casing')` = 0.083125, z 0.070;
+  - `rise = atan2(Δz, Δy) + asin(EPS / hypot(Δy, Δz))` = **13.9813°** (was 12.2648°);
+  - the plan run stays 0.23, so the toe tip is still at local y 0.095.
+
+**Effect, against pre-repair `5d01ed7c`, by an author source comparison:**
+- Only `drum_hihat_pedal__pedal` changes. Exactly 56 vertices move: the board (96–127) and the barrel (128–151). Base, housing, heel rubber and every other row are byte-identical in vertices, faces, classes, roles, runs and identities.
+- The row stays at 300 of 600 triangles, 160 vertices and 114 faces. Its bounds are [0.917, −0.070, 0.009] to [1.083, 0.270, **0.090**]; the top rose from 0.0884 to 0.0896.
+- The hard edges sit in the same sets. The only tally change is `granted.thin_plates` ≥80 at 6.379 m, up 6.6 mm because the board is longer.
+- `HIHAT_PEDAL`, the cable jack, P14, the cheeks and all materials are unchanged.
+
+**Criterion A: `hihat.hinge_in_base`** (embedded), kind `barrel_knuckle_seated_through_top_face`, intent: a knuckle seated in the base plate.
+- **Locators:**
+  - receiving top face **1**, vertices [36…47], outward normal +z;
+  - underside face 0; base vertices [0…47]; base thickness 0.010;
+  - barrel rings [128…139] and [140…151]; side faces [94…105]; end discs [106, 107]; radius 0.009, 12 sides; axis = the line through the two ring centroids;
+  - heel vertices [152…159].
+- **Required:**
+  - exactly `seatedVertices` [133, 134, 135, 145, 146, 147] lie below the top-cap plane;
+  - seat depth 0.003 ± 0.00005, measured as the greatest perpendicular depth and reached by exactly `deepestVertices` [134, 146] (S `msg_aa0a700e3304`);
+  - every other barrel vertex at least 1.0 mm above the plane;
+  - seated vertices inside the top-cap outline by at least 10 mm;
+  - every barrel vertex at least 5 mm above the underside plane;
+  - both axis ends 0.006 ± 0.00005 above the top plane;
+  - vertex-to-box distance to the heel rubber at least 2.5 mm (a designed clearance).
+- **Observed:** seated exactly [133, 134, 135, 145, 146, 147]; depth 3.000 mm (vertices 134 and 146; the others 1.794 mm); others at least 1.500 mm above; inside the outline by 16.87 mm; 7.000 mm above the underside; axis heights 6.000 and 6.000 mm; heel clearance 3.000 mm. **Satisfied.**
+
+**Criterion B: `hihat.footboard_in_hinge`** (hinged), same kind and the same four conditions, updated for the lowered axis.
+- **Locators:**
+  - axis [0.971485, −0.039416, **0.0246**] → [1.060838, −0.028642, 0.0246] in world metres;
+  - board vertices [96…127], underside 76, top 77, side faces [78…93], heel-axis vertices [107, 108], heel-end face 89;
+  - condition 4 is now measured against the plane of an author-owned surface, `receivingBaseTop` = `hihat.base` face 1.
+- `barrelMountingNote` is removed.
+- **Observed:** axis vertices 0.000 mm; 107, 108, 123 and 124 inside the barrel, with a maximum radial distance of 8.000 mm against the 8.693 mm inscribed radius; the board overhangs at most 7.000 mm beyond an end disc; the board is **6.000 mm** above the base top (was 12). **Satisfied.**
+
+**Criterion C: `hihat.footboard_on_housing`** (rests_on, `gapM` 0.0003), kind `board_rests_on_lip_separating_plane`, intent: the toe rests on the housing's front lip and does not enter it.
+- **Clearance:** the signed perpendicular distance of a housing vertex from the plane of board face 76, positive on its outward (lower) side.
+- **Locators:**
+  - board underside 76 with its 16 vertices, top face 77, toe-tip underside vertices [99, 100];
+  - housing vertices [48…95], top face 39 with vertices [84…95], lip vertices **[86, 87]**.
+- **Required:**
+  - every housing vertex at least 0.25 mm clear;
+  - the lip at 0.30 ± 0.05 mm, with every other housing vertex further away;
+  - the lip's perpendicular feet inside the face-76 outline by at least 5 mm.
+- **Observed:** minimum over all housing vertices 0.300 mm; lip 0.300 and 0.300 mm; next nearest 0.374 mm; feet 5.84 mm inside. Reported only: the board overhangs 11.9 mm beyond the lip, and the toe tip stands 3.27 mm above the housing top. **Satisfied, with no overlap.**
+
+The criterion figures match the critic's what-if to the printed precision. The one exception is the 1.5 mm unseated margin: the critic gave it from geometry, and my source check now prints it.
+
 
 
 ## 4. P1 pose table (author's explicit bounded options)
@@ -188,7 +250,7 @@ The options differ in four measures:
 | `drum_pads__shells` | yes | 2312 | 2312 | 2600 | [0.883, 0.096, 0.438] | [1.936, 0.621, 0.846] |
 | `drum_pads__heads` | no | 384 | 384 | 900 | [0.924, 0.114, 0.536] | [1.908, 0.592, 0.833] |
 | `drum_cymbals__cymbals` | yes | 1812 | 1812 | 1950 | [0.66, 0.258, 0.888] | [2.169, 0.857, 1.11] |
-| `drum_hihat_pedal__pedal` | no | 300 | 300 | 600 | [0.917, -0.07, 0.009] | [1.083, 0.27, 0.088] |
+| `drum_hihat_pedal__pedal` | no | 300 | 300 | 600 | [0.917, -0.07, 0.009] | [1.083, 0.27, **0.09**] |
 | `drum_kick__tower` | yes | 856 | **1040** | 1500 | [1.236, 0.06, 0.009] | [1.604, 0.568, 0.459] |
 | `drum_module__body` | yes | 416 | 416 | 640 | [0.739, 0.317, 0.567] | [0.993, 0.53, 0.854] |
 | `drum_module__display` | no | 12 | 12 | 60 | [0.796, 0.37, 0.803] | [0.878, 0.411, 0.832] |
@@ -204,7 +266,7 @@ Controller-dependent rows (shell, indicators, keys, stand, sustain, stool and th
 | Status | Sets (length by band) |
 |---|---|
 | named (C13; knobs and hinges by kind of part; v04 decisions 5–7 by name) | keys.white 29.15 (≥80); keys.black 11.68 / 0.22 (40-80); rack.clamps 8.21 / 7.17; rug.binding_shoulder 7.74 (40-80, decision 7); rug.inner_step 7.57 + 7.57 concave; cymbal.edge 3.57 (≥80) + 3.50 (40-80) (decision 5); pad.rim_lower_outer 3.61 (40-80, decision 6); pad.lugs 4.03; pad.rim_inner 3.21 + 3.46 concave; ctl.panel_pads 2.25 / 0.24; stand.pivot 1.98; pad.blocks 1.86; cymbal.nuts 1.35; ctl.knobs 1.15; ctl.transport_keys 0.90; stand.knob 0.27; pedal.hinges 0.25; module.knob 0.20 |
-| granted (root 5d, exactly as enumerated) | round_member_ends 14.59; thin_plates 6.37 / 0.03; small_dark_blocks 1.84; controller_wheels 0.52 |
+| granted (root 5d, exactly as enumerated) | round_member_ends 14.59; thin_plates 6.38 / 0.03; small_dark_blocks 1.84; controller_wheels 0.52 |
 | contact (reason, not exception) | rug.underside 7.74; pad.head 6.39; ctl.slab 4.23; pad.shell_bottom 3.36 (40-80, decision 6); pad.rim_skirt 3.21 (open); ctl.panel 2.65; ctl.bays 1.84; ctl.cheeks 1.655 + 0.022 (40-80 underside mitres, decision 4); kick.head 0.98; kick.pad_ring.open 0.96 (open); hihat.base 0.89; kick.base 0.89; sustain.base 0.69; kick.tower 0.63; kick.pad_ring.seat 0.55 (40-80); sustain.plate 0.54; hihat.housing 0.35 |
 | screen | ctl.glow 1.19; module.glow 0.46 |
 | faceted-round | members 68.95 (40-80) / 0.02 / 0.17 concave; cables 41.09 (40-80) / 2.47 (≥80 skewed bends) / 0.17 concave; profiles 6.23 (40-80; no cymbal edge) |
@@ -214,24 +276,17 @@ Recomputed at P14 after the bounded pass: 0 undeclared. Totals at P14: 134.16 m 
 
 ## 7. Honest unresolved findings
 
-1. **Hi-hat hinge barrel mounting: reported to root and S before the full run; no repair applied.** The declared footboard/barrel pair satisfies its criterion (section 3b). The barrel, though, touches nothing but the board:
-   - its underside is 3.0 mm above the hi-hat base top;
-   - its back is 3.0 mm in front of the heel rubber.
-
-   This is inherited v01 hinge geometry, unchanged in v04, and it is a nothing-floats (K1/HH1) risk on the heel hinge. Bounded options, for root to choose; none is released, and I make none:
-   - **(a)** lower the hinge axis 3 mm so the barrel rests on the base top; the footboard pivot moves with it;
-   - **(b)** add two small hinge brackets from the base top to the barrel ends;
-   - **(c)** accept it under HH1/K1 as a reported gap.
-
-   I have not invented a clearance to pass it.
-2. **Hi-hat footboard toe over the sensor housing (observed, undeclared, outside the hinge pair).** The housing's top front edge stands up to about 0.57 mm above the sloped footboard underside within the board outline. The figure comes from six housing top-cap vertices. So the board toe rests on the housing with a small intersection. It is unchanged in v04. I report it rather than declare it, because the disposition limits the hi-hat coverage to the footboard/hinge pair. Codex may see it as a same-row overlap.
+1. **Hi-hat hinge barrel mounting: repaired by construction (section 3c), pending Codex's measurement.** History: at checkpoint `005955c6` the barrel touched only the board, 3.0 mm above the base top and 3.0 mm in front of the heel rubber (inherited v01). That checkpoint reported it to root before the full run, root released a bounded repair, and the critic selected the remedy. The barrel is now seated 3.0 mm into the base top (criterion A). The 3.0 mm to the heel rubber is now a declared designed clearance, not a defect.
+2. **Hi-hat footboard toe over the sensor housing: repaired by construction (section 3c), pending Codex's measurement.** History: the housing's top front edge stood up to about 0.57 mm inside the board underside (six top-cap vertices). It was undeclared and reported. The board pitch is now derived from the pivot and the lip, so the toe rests 0.30 mm above the lip with no overlap (criterion C).
 3. **Thin source margins, by design:**
    - spur ring burial 1.34 mm against 1.0;
    - spur tip 0.85 mm inside the foot wall;
    - kick footboard 0.5 mm inside the heel sides, and heel-end corners 3.82 mm proud against 3.8;
-   - hi-hat heel-end top vertices at 8.000 mm against the barrel's 8.693 mm inscribed radius.
+   - hi-hat heel-end top vertices at 8.000 mm against the barrel's 8.693 mm inscribed radius;
+   - hi-hat toe lip rest 0.30 mm, next housing clearance 0.374 mm;
+   - barrel seat 3.0 mm, unseated barrel vertices 1.5 mm above the base top.
 
-   Exported positions must confirm all of these after quantisation (K1/E1b).
+   Exported positions must confirm all of these after quantisation (K1/E1b). In particular, the 0.30 mm lip gap must stay positive and the barrel must stay seated.
 4. **Open lathes** (pad shell inner skirt, kick pad ring ends) are surfaces, not closed solids, with double-sided material. Their boundaries are declared as contact/hidden, so a ray or intersection tool should treat them as surfaces.
 5. **Cables** rest on both the rug and the bare floor. They are deliberately **not** supports: interface 3 requires one surface per row, and a resting run is not a standing primitive. They need Codex's cable checks.
 6. **Pose P14 sits at root's yaw cap.** The azimuth margin (0.70° by actual-hit envelope) is thin and is not continuous visible span. Phone key pitch is 9.05 px. Gates AZ1, T1 and H1 decide, with the already-measured fallbacks P08 and P13 kept for image review only.
@@ -249,7 +304,8 @@ These used plain CPython with `-B`, run from the repository, with throwaway chec
 - All 24 poses build, with 29 + 20 keys.
 - Edge tally with no undeclared edge and no proposed set; the cheek-nose assertion (only the eight underside mitres remain in the 40-80 `along` band).
 - Cheek classes and runs (26/5/4 per cheek, 4-face run); 16 run-smoothed over-40° edges, none on the cheeks.
-- Attachment criteria computed from source (section 3b) and the hi-hat barrel, base and housing distances.
+- Attachment criteria computed from source (sections 3b and 3c), every hi-hat criterion A/B/C value included.
+- Hi-hat repair comparison against the pre-repair helper `5d01ed7c` (read with `git show` from `005955c6`): only the hi-hat row differs, 56 vertices move, topology is identical, and the edge tally is unchanged except the board's thin-plate length.
 - N1 planar corner deviation.
 - Declaration byte reproduction.
 - The read-only producer compatibility smoke check.
@@ -263,9 +319,9 @@ None of these is Codex's measurement, the verifier or image evidence. The approv
 | N1a | casing faces shade evenly; highlight stays in the bevel band | cheek nose now bevelled (decision 3): the nose highlight must stay in the bevel band |
 | N1b | module case and pedal-base rounded corners: no mid-corner crease | run fix applied at source |
 | H1 | continuous key lips; 29 + 20 countable | |
-| K1 | contact under every support, **both spur feet**, no gap under the spring | plate, spurs, arm roots (decision 1) and footboard seat (decision 8) at source |
+| K1 | contact under every support, **both spur feet**, no gap under the spring | plate, spurs, arm roots (decision 1), kick footboard seat (decision 8), hi-hat barrel seat and toe rest at source |
 | T1 (throne) | round seat behind the controller, at most about a third hidden, no near-tangent | P14: 292/384 sampled top area against 245/384 at P00 (CPU diagnostic); unpassed |
-| HH1 | hi-hat footboard and heel identifiable beside the desk leg | hinge barrel 3 mm clear of the base (section 7, item 1) |
+| HH1 | hi-hat footboard and heel identifiable beside the desk leg | repaired at source: barrel seated, toe resting on the lip; heel 6 mm lower and pitch 1.7° steeper; the barrel shows 7 mm above the heel rubber (was 13) |
 | SP1 | sustain pedal identifiable, not merged with the stool leg | |
 | AZ1 | controller azimuth from the capture ≥ 30° (continuous span) | |
 | RUG1 | rug clear of lamp base and desk frame, reads as carrying the kit | binding shoulder: no hard slab or bright outline (decision 7) |
@@ -277,6 +333,6 @@ None of these is Codex's measurement, the verifier or image evidence. The approv
 
 ## 10. Next
 
-1. Root/S decide the hi-hat barrel mounting (section 7, item 1) and note the toe/housing finding (item 2). S releases the one full P14 run only when the coverage has no unresolved repair.
-2. Codex's single full P14 measurement on these final pins.
+1. S checks that the repair fits root's release `038dc8af` and that both defects have concrete criteria, then releases the one full P14 CPU measurement on these pins after a fresh resource check.
+2. Codex's single full P14 measurement: assembly, attachments (criteria A, B, C included), supports, normals, cables, targets, budgets and source-to-rows reproduction.
 3. My final author handoff, then worker_done reporting source preparation only.

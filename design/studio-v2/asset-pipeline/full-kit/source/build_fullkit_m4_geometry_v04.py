@@ -469,6 +469,9 @@ SPUR = dict(arm_r=0.007, arm_root_z=0.022, arm_tip_z=0.014, foot_r=0.0085, pad_h
 # it, 4 mm inside its edge) and heel extension 0.02 -> 0.04 (the heel block, y from heel_y - 0.04, no longer overhangs it).
 PEDAL_PLATE = dict(hw=0.068, heel=0.04, t=0.006)
 HIHAT_PEDAL = dict(cx=1.00, cy=0.10, w=0.114, l=0.33, yaw=0.12)  # v03 C8/C9 base 0.130 x 0.330 (v01 w 0.11, l 0.30)    # proxy (0.875, 0.185): out from behind the desk leg
+# v04 hi-hat repair: hinge barrel radius, seat depth into the base top cap, and the base / housing top heights it is derived
+# from (pedal frame, metres above the resting height). The base and housing geometry themselves are unchanged.
+HIHAT_HINGE = dict(r=0.009, seat=0.003, base_top=0.010, housing_top=0.070)
 MODULE = dict(c=(0.85, 0.40, 0.78), w=0.20, h=0.15, d=0.05, az=165.0, up=35.0)
 WALL_Y = 1.035 - EPS                # front face of the back skirting
 
@@ -926,16 +929,24 @@ def hihat_pedal():
     h = HIHAT_PEDAL
     M = T(h['cx'], h['cy'], ON_RUG) @ Rz(h['yaw'])
     with label('hihat.base'):                                                                                   # base (v03: bevelled top)
-        prism(p, rrect(h['w'] + 0.016, h['l'], 0.014, 2), 0.0, 0.010, 'black', M, top='casing')
+        prism(p, rrect(h['w'] + 0.016, h['l'], 0.014, 2), 0.0, HIHAT_HINGE['base_top'], 'black', M, top='casing')
     with label('hihat.housing'):                                                                                # sensor housing (v03: bevelled)
         prism(p, bevel_corners([(-0.05, h['l'] / 2 - 0.085), (0.05, h['l'] / 2 - 0.085), (0.05, h['l'] / 2 - 0.005), (-0.05, h['l'] / 2 - 0.005)], 'casing'),
-              0.010, 0.070, 'black', M, top='casing')
-    rise = math.atan2(0.050, h['l'] - 0.10)
-    fb = M @ T(0, -h['l'] / 2 + 0.03, 0.022) @ Rx(rise)
+              HIHAT_HINGE['base_top'], HIHAT_HINGE['housing_top'], 'black', M, top='casing')
+    # v04 hi-hat repair (root 038dc8af; selected construction scene-m4-v04-hihat-repair-review.md 5bc3d79f section 3):
+    # the hinge barrel is a knuckle seated HINGE['seat'] into the base top (axis = base top + radius - seat), and the board,
+    # pivoting on that axis, rests on the housing's front top lip with the EPS resting gap. The pitch is derived from both
+    # contacts (pivot and lip), not chosen; the plan run (toe at local y 0.095) is unchanged.
+    hy, run = -h['l'] / 2 + 0.03, h['l'] - 0.10
+    axis_z = HIHAT_HINGE['base_top'] + HIHAT_HINGE['r'] - HIHAT_HINGE['seat']
+    lip_y, lip_z = h['l'] / 2 - 0.085 + bev('casing'), HIHAT_HINGE['housing_top']       # front edge of the housing's top cap
+    dy, dz = lip_y - hy, lip_z - axis_z
+    rise = math.atan2(dz, dy) + math.asin(EPS / math.hypot(dy, dz))                     # underside plane through the axis, EPS above the lip
+    fb = M @ T(0, hy, axis_z) @ Rx(rise)
     _LABEL[0] = 'hihat.footboard'
-    extrude(p, rrect(h['w'] - 0.01, (h['l'] - 0.10) / math.cos(rise), 0.012, 3), 0.0, 0.008, 'black_metal', fb @ T(0, (h['l'] - 0.10) / math.cos(rise) / 2, 0))
+    extrude(p, rrect(h['w'] - 0.01, run / math.cos(rise), 0.012, 3), 0.0, 0.008, 'black_metal', fb @ T(0, run / math.cos(rise) / 2, 0))
     _LABEL[0] = 'hihat.hinge'
-    rod(p, apply(M, (-0.045, -h['l'] / 2 + 0.03, 0.022)), apply(M, (0.045, -h['l'] / 2 + 0.03, 0.022)), 0.009, 12, 'black_metal')  # heel hinge
+    rod(p, apply(M, (-0.045, hy, axis_z)), apply(M, (0.045, hy, axis_z)), HIHAT_HINGE['r'], 12, 'black_metal')  # heel hinge knuckle
     _LABEL[0] = 'hihat.heel'
     box(p, (-0.045, -h['l'] / 2 + 0.005, 0.010), (0.045, -h['l'] / 2 + 0.018, 0.018), 'rubber', M)
     return p
@@ -1551,20 +1562,29 @@ ATTACHMENTS = [  # K1 attachment intent, separate from floor support (root v04 K
      'root decision 8: intended seat. The inclined footboard heel end is seated up to 4 mm (half its 8 mm thickness) into '
      'the heel block top, entering and leaving only through that top, so it reads as a board hinged at a heel plate with no '
      'open wedge beneath (criterion)'),
+    ('hihat.hinge_in_base', 'drum_hihat_pedal__pedal', 'hihat.hinge', 'hihat.base', 'embedded', None,
+     'hi-hat repair (root 038dc8af, construction 5bc3d79f): the hinge barrel is a knuckle seated 3 mm into the base plate '
+     'top, so the hinge is carried by the base (criterion A). Replaces the inherited barrel floating 3 mm above the base'),
     ('hihat.footboard_in_hinge', 'drum_hihat_pedal__pedal', 'hihat.footboard', 'hihat.hinge', 'hinged', None,
-     'author intent for the existing hi-hat heel hinge (bounded disposition, hi-hat coverage): the footboard pivots on the '
-     'hinge barrel, its heel edge on the barrel axis and its heel end inside the barrel (criterion). No geometry change'),
+     'the footboard pivots on the seated hinge barrel, its heel edge on the barrel axis and its heel end inside the barrel '
+     '(criterion B; axis lowered 6 mm by the hi-hat repair)'),
+    ('hihat.footboard_on_housing', 'drum_hihat_pedal__pedal', 'hihat.footboard', 'hihat.housing', 'rests_on', EPS,
+     'hi-hat repair: the board toe rests on the front lip of the sensor housing with the 0.3 mm resting gap and does not '
+     'enter it; the board pitch is derived from the pivot and this lip (criterion C). Replaces the inherited ~0.57 mm '
+     'housing / toe intersection'),
     ('ctl.display_face_on_bezel', 'ctl_body__indicators', 'ctl.display_face', 'ctl.bezel', 'rests_on', EPS,
      'display glow face rests on the bezel top with the usual 0.3 mm gap (I1 wording); no overlap'),
 ]
 ATTACH_ROWS = {'ctl.bezel': 'ctl_body__shell'}
 
 
-# v04 bounded pass (root 7705f590 decisions 1, 2, 8 and hi-hat coverage; S msg_404c585797e4 / msg_63a12bb6ae48): explicit
-# attachment criteria with row-level vertex / face locators. Additive author metadata only (the public v3 verifier schema is
-# unchanged). Locators come from the authored primitive topology (rod = 2 rings + side quads + root cap + tip cap; extrude =
-# bottom cap, top cap, sides; box = -z, +z, -y, +x, +y, -x); nothing is inferred from coincident coordinates. 'authorObserved'
-# values are the author's own source figures, not measurement of record; Codex measures every criterion independently.
+# v04 bounded pass (root 7705f590 decisions 1, 2, 8; S msg_404c585797e4 / msg_63a12bb6ae48 / msg_b4aca287d5fa) and the
+# hi-hat repair (root 038dc8af; construction scene-m4-v04-hihat-repair-review.md 5bc3d79f section 3): explicit attachment
+# criteria with row-level locators. Additive author metadata only (the public v3 verifier schema is unchanged). Every
+# locator is an EXPLICIT index list (no ranges). Locators come from the authored primitive topology (rod = root ring, tip
+# ring, side quads, root cap, tip cap; extrude / prism = underside cap, top cap, sides; box = -z, +z, -y, +x, +y, -x);
+# nothing is inferred from coincident coordinates. Coordinates are Blender world metres unless a field says 'pedal frame'.
+# 'authorObserved' values are the author's own source figures, not measurement of record; Codex measures each criterion.
 def _grp(part, gid):
     i = part.ids.index(gid)
     _, v0, v1, f0, f1 = part.groups[i]
@@ -1575,7 +1595,7 @@ def _rod_topology(part, gid, n):
     v0, v1, f0, f1 = _grp(part, gid)
     assert v1 - v0 == 2 * n and f1 - f0 == n + 2, gid
     return dict(rootRing=list(range(v0, v0 + n)), tipRing=list(range(v0 + n, v0 + 2 * n)),
-                lengthwiseEdges=[[v0 + i, v0 + n + i] for i in range(n)], sideFaces=[f0, f0 + n - 1],
+                lengthwiseEdges=[[v0 + i, v0 + n + i] for i in range(n)], sideFaces=list(range(f0, f0 + n)),
                 rootCapFace=f0 + n, tipCapFace=f0 + n + 1)
 
 
@@ -1586,8 +1606,33 @@ def _plane(part, fi):
     return P, nrm / np.linalg.norm(nrm)
 
 
+def _outward_normal(part, fi, gid):
+    return _face_normals(part)[fi] * _outward_sign(part)[part.ids.index(gid)]
+
+
+def _inside_margin(P, q, nrm):
+    """Signed distance of the projection of q into convex planar polygon P from its nearest edge (positive inside)."""
+    u = P[1] - P[0]
+    u = u / np.linalg.norm(u)
+    w = np.cross(nrm, u)
+    P2 = np.c_[(P - P[0]) @ u, (P - P[0]) @ w]
+    q2 = np.array([(q - P[0]) @ u, (q - P[0]) @ w])
+    area = sum(P2[i, 0] * P2[(i + 1) % len(P2), 1] - P2[(i + 1) % len(P2), 0] * P2[i, 1] for i in range(len(P2)))
+    out = []
+    for i in range(len(P2)):
+        a, b = P2[i], P2[(i + 1) % len(P2)]
+        e = (b - a) / np.linalg.norm(b - a)
+        d = e[0] * (q2[1] - a[1]) - e[1] * (q2[0] - a[0])
+        out.append(d if area > 0 else -d)
+    return float(min(out))
+
+
 def _r(x, k=5):
     return round(float(x), k)
+
+
+_CONV = ('explicit index lists only (row-level vertex / face indices of rows[].id); row groups[].vertexRange / faceRange '
+         'elsewhere in this file stay END-EXCLUSIVE [start, end)')
 
 
 def _crit_spur_base(parts, side):
@@ -1596,9 +1641,7 @@ def _crit_spur_base(parts, side):
     sx = -1 if side == 'L' else 1
     arm = _rod_topology(p, f'kick.spur_arm.{side}', 8)
     b0, b1, bf0, bf1 = _grp(p, 'kick.base')
-    sign = _outward_sign(p)[p.ids.index('kick.base')]
-    nrm = _face_normals(p)
-    own = [fi for fi in range(bf0, bf1) if float(np.dot(nrm[fi] * sign, (sx, 0, 0))) > 0.9999]
+    own = [fi for fi in range(bf0, bf1) if float(np.dot(_outward_normal(p, fi, 'kick.base'), (sx, 0, 0))) > 0.9999]
     assert len(own) == 1, own
     P, _ = _plane(p, own[0])
     face_x = float(P[:, 0].mean())
@@ -1608,24 +1651,24 @@ def _crit_spur_base(parts, side):
         t = (face_x - V[a][0]) / (V[b][0] - V[a][0])
         assert 0 < t < 1
         cross.append(V[a] + t * (V[b] - V[a]))
-    cross = np.asarray(cross)
-    margin = min(min(c[1] - P[:, 1].min(), P[:, 1].max() - c[1], c[2] - P[:, 2].min(), P[:, 2].max() - c[2]) for c in cross)
+    margin = min(_inside_margin(P, c, np.array([sx, 0.0, 0.0])) for c in cross)
     root_c, tip_c = V[arm['rootRing']].mean(0), V[arm['tipRing']].mean(0)
     return dict(
-        kind='rod_root_embedded_through_flat_face',
+        kind='rod_root_embedded_through_flat_face', indexConvention=_CONV,
         meaning='every root-ring vertex lies inside the kick.base solid, at least minRingBurialM inside the receiving own-side '
                 'flat face; each lengthwise arm edge crosses the base boundary exactly once and only through that flat face '
                 '(never a bevel band, the top or the back). rootCentreInsetM is the authored inset of the root-disc CENTRE from '
                 'that face plane and is NOT a penetration depth: the oblique ring is buried 1.3-10.7 mm. Root and tip heights '
                 'are centre heights of the root and tip cap discs above the resting height. Not a same-row overlap allowance',
         rootRingVertices=arm['rootRing'], lengthwiseEdges=arm['lengthwiseEdges'], rootCapFace=arm['rootCapFace'],
-        tipRingVertices=arm['tipRing'], tipCapFace=arm['tipCapFace'], armSideFaceRange=arm['sideFaces'],
-        receivingFace=dict(row='drum_kick__tower', group='kick.base', face=own[0], outwardNormal=[sx, 0, 0]),
+        tipRingVertices=arm['tipRing'], tipCapFace=arm['tipCapFace'], armSideFaces=arm['sideFaces'],
+        receivingFace=dict(row='drum_kick__tower', group='kick.base', face=own[0], faceVertices=list(p.f[own[0]][0]),
+                           outwardNormal=[sx, 0, 0]),
         minRingBurialM=0.001, rootCentreInsetM=SPUR['root_in'], restingHeightM=_r(ON_RUG, 6),
         rootCentreHeightM=SPUR['arm_root_z'], tipCentreHeightM=SPUR['arm_tip_z'],
         heightChange='v03 root 18 mm -> v04 22 mm; v03 tip 12 mm -> v04 14 mm (tip plan position unchanged)',
         authorObserved=dict(ringBurialMinM=_r(min(burial)), ringBurialMaxM=_r(max(burial)),
-                            crossingMinMarginToFaceBoundaryM=_r(margin),
+                            crossingMinInsideFaceOutlineM=_r(margin),
                             rootCentreHeightM=_r(root_c[2] - ON_RUG), tipCentreHeightM=_r(tip_c[2] - ON_RUG)))
 
 
@@ -1638,9 +1681,9 @@ def _crit_spur_foot(parts, side):
     c = F[:, :2].mean(0)
     wall = min(SPUR['foot_r'] * math.cos(math.pi / 8) - float(np.linalg.norm(V[i][:2] - c)) for i in arm['tipRing'])
     top = min(float(F[:, 2].max() - V[i][2]) for i in arm['tipRing'])
-    return dict(kind='rod_tip_inside_solid',
-                meaning='every tip-ring vertex lies inside the spur foot solid (8-sided lathe): inside its wall and below its top',
-                tipRingVertices=arm['tipRing'], tipCapFace=arm['tipCapFace'],
+    return dict(kind='rod_tip_inside_solid', indexConvention=_CONV,
+                meaning='every tip-ring vertex lies inside the spur foot solid (8-sided lathe): inside its wall (apothem) and below its top',
+                tipRingVertices=arm['tipRing'], tipCapFace=arm['tipCapFace'], footVertices=list(range(f0v, f1v)),
                 authorObserved=dict(minInsideWallM=_r(wall), minBelowTopM=_r(top)))
 
 
@@ -1656,15 +1699,15 @@ def _crit_kick_heel(parts):
     Pb, nb = _plane(p, ff0)
     Pt, _ = _plane(p, ff0 + 1)
     thick = abs(float(np.dot(Pt[0] - Pb[0], nb)))
-    # heel-end edge of the top cap: the two top-cap vertices nearest the heel along the board's run (local board y)
-    run = np.array([0.0, math.cos(math.atan2(0.05, KICK['toe_y'] - KICK['heel_y'])), math.sin(math.atan2(0.05, KICK['toe_y'] - KICK['heel_y']))])
+    rise = math.atan2(0.05, KICK['toe_y'] - KICK['heel_y'])
+    run = np.array([0.0, math.cos(rise), math.sin(rise)])
     tops = list(range(fv0 + n, fv1))
     tmin = min(float(np.dot(V[i], run)) for i in tops)
     heel_top = [i for i in tops if float(np.dot(V[i], run)) < tmin + 1e-9]
     assert len(heel_top) == 2
     below = [i for i in range(fv0, fv1) if V[i][2] < top_z - 1e-12]
     return dict(
-        kind='board_end_seated_through_top_face',
+        kind='board_end_seated_through_top_face', indexConvention=_CONV,
         meaning='intended seat (decision 8), exactly kick.footboard into kick.heel: (1) every footboard vertex below the heel '
                 'top plane lies inside the heel plan outline; (2) the board crosses the heel boundary only through the heel '
                 'top face, never a side, the back or the toe-side face; (3) the greatest depth below the top plane is at most '
@@ -1672,10 +1715,10 @@ def _crit_kick_heel(parts):
                 'exposed upper heel-end corners stand at least minProudM above the heel top; (4) no footboard vertex is below '
                 'the heel underside. Checked over ALL footboard vertices and source edges, separately from support height. '
                 'Not a same-row overlap allowance',
-        receivingTopFace=top, receivingUndersideFace=under,
+        receivingTopFace=top, receivingUndersideFace=under, heelVertices=list(range(hv0, hv1)),
         forbiddenCrossingFaces=dict(minusY=hf0 + 2, plusX=hf0 + 3, plusY=hf0 + 4, minusX=hf0 + 5),
         boardFaces=dict(underside=ff0, top=ff0 + 1, meaning='the two parallel extrude caps; board thickness is the distance between their planes'),
-        boardVertexRange=[fv0, fv1], boardSideFaceRange=[ff0 + 2, ff1 - 1],
+        boardVertices=list(range(fv0, fv1)), boardSideFaces=list(range(ff0 + 2, ff1)),
         exposedUpperHeelEndCorners=heel_top,
         maxDepthM=0.004, boardThicknessM=0.008, minProudM=0.0038,
         authorObserved=dict(belowTopVertices=below, maxDepthM=_r(max(top_z - V[i][2] for i in below)),
@@ -1683,16 +1726,88 @@ def _crit_kick_heel(parts):
                             minAboveUndersideM=_r(min(V[i][2] for i in range(fv0, fv1)) - under_z)))
 
 
+def _hihat_frame():
+    h = HIHAT_PEDAL
+    M = T(h['cx'], h['cy'], ON_RUG) @ Rz(h['yaw'])
+    return M, np.linalg.inv(M)
+
+
+def _hihat_base_top(p):
+    """The author-owned receiving surface of the hi-hat base: its top cap (prism cap order: underside, top)."""
+    v0, v1, f0, f1 = _grp(p, 'hihat.base')
+    P, _ = _plane(p, f0 + 1)
+    nrm = _outward_normal(p, f0 + 1, 'hihat.base')
+    assert nrm[2] > 0.9999 and abs(P[:, 2].max() - (ON_RUG + HIHAT_HINGE['base_top'])) < 1e-12
+    return f0 + 1, f0, P, nrm
+
+
+def _crit_hihat_seat(parts):
+    """Criterion A: the hinge barrel is a knuckle seated in the base plate (new pair, hi-hat repair)."""
+    p = parts['drum_hihat_pedal__pedal']
+    V = np.asarray(p.v, float)
+    _, Mi = _hihat_frame()
+    bar = _rod_topology(p, 'hihat.hinge', 12)
+    barrel = bar['rootRing'] + bar['tipRing']
+    top, under, P, nrm = _hihat_base_top(p)
+    Pu, _ = _plane(p, under)
+    hgt = {i: float(np.dot(V[i] - P[0], nrm)) for i in barrel}                       # height above the top-cap plane
+    seated = sorted(i for i in barrel if hgt[i] < 0)
+    deepest = sorted(i for i in seated if hgt[i] < min(hgt.values()) + 1e-9)
+    assert seated == [133, 134, 135, 145, 146, 147] and deepest == [134, 146], (seated, deepest)   # construction 5bc3d79f 3.4
+    cent = [V[bar['rootRing']].mean(0), V[bar['tipRing']].mean(0)]
+    hv0, hv1, _, _ = _grp(p, 'hihat.heel')
+    H = np.array([(Mi @ np.append(V[i], 1.0))[:3] for i in range(hv0, hv1)])
+    lo, hi = H.min(0), H.max(0)
+
+    def box_dist(q):
+        d = np.maximum(np.maximum(lo - q, q - hi), 0.0)
+        return float(np.linalg.norm(d))
+    heel_gap = min(box_dist((Mi @ np.append(V[i], 1.0))[:3]) for i in barrel)
+    base_v = list(range(*_grp(p, 'hihat.base')[:2]))
+    return dict(
+        kind='barrel_knuckle_seated_through_top_face', indexConvention=_CONV,
+        meaning='artist intent (hi-hat repair): the 12-sided hinge barrel is a knuckle seated in the base plate, exactly '
+                'hihat.hinge into hihat.base. (1) Exactly seatedVertices lie below the plane of the base top cap; every other '
+                'barrel vertex is at least minUnseatedAboveTopM above it. (2) seatDepthM is the greatest perpendicular '
+                'distance of a barrel vertex below that plane (not the 6 mm axis drop, not the trough width), within '
+                'toleranceM, reached by exactly deepestVertices. (3) Through the top cap only: every seated vertex projects inside the top-cap outline by at least '
+                'minInsideTopOutlineM, and no barrel vertex is less than minAboveBaseUndersideM above the plane of the base '
+                'underside cap, so no bevel band, side or underside is crossed. (4) Level: both ring centroids (the axis ends) '
+                'are axisHeightAboveTopM above the top-cap plane, within toleranceM (axis height = radius - seat depth). (5) '
+                'Designed clearance, not a defect: no barrel vertex is closer than minClearanceToHeelM to the hihat.heel box '
+                '(vertex-to-solid distance). Not a same-row overlap allowance',
+        receivingTopFace=dict(row='drum_hihat_pedal__pedal', group='hihat.base', face=top, faceVertices=list(p.f[top][0]),
+                              outwardNormal=[0, 0, 1]),
+        receivingUndersideFace=under, baseVertices=base_v, baseThicknessM=HIHAT_HINGE['base_top'],
+        barrel=dict(group='hihat.hinge', ringVertices=[bar['rootRing'], bar['tipRing']], sideFaces=bar['sideFaces'],
+                    endDiscFaces=[bar['rootCapFace'], bar['tipCapFace']], radiusM=HIHAT_HINGE['r'], sides=12,
+                    axis='the line through the centroids of the two rings'),
+        heel=dict(group='hihat.heel', vertices=list(range(hv0, hv1))),
+        seatedVertices=seated, deepestVertices=deepest, seatDepthM=HIHAT_HINGE['seat'], axisHeightAboveTopM=HIHAT_HINGE['r'] - HIHAT_HINGE['seat'],
+        toleranceM=0.00005, minUnseatedAboveTopM=0.001, minInsideTopOutlineM=0.010, minAboveBaseUndersideM=0.005,
+        minClearanceToHeelM=0.0025,
+        authorObserved=dict(
+            seatedVertices=seated, seatDepthM=_r(-min(hgt.values()), 6),
+            seatedVertexDepthsM={str(i): _r(-hgt[i], 6) for i in seated},
+            minUnseatedAboveTopM=_r(min(h for i, h in hgt.items() if i not in seated), 6),
+            minInsideTopOutlineM=_r(min(_inside_margin(P, V[i], nrm) for i in seated)),
+            minAboveBaseUndersideM=_r(min(float(V[i][2] - Pu[:, 2].max()) for i in barrel), 6),
+            axisHeightsAboveTopM=[_r(float(np.dot(c - P[0], nrm)), 6) for c in cent],
+            minClearanceToHeelM=_r(heel_gap, 6)))
+
+
 def _crit_hihat_hinge(parts):
+    """Criterion B: the board pivots on the barrel (existing pair, updated for the lowered axis)."""
     p = parts['drum_hihat_pedal__pedal']
     V = np.asarray(p.v, float)
     h = HIHAT_PEDAL
-    M = T(h['cx'], h['cy'], ON_RUG) @ Rz(h['yaw'])
-    Mi = np.linalg.inv(M)
+    _, Mi = _hihat_frame()
     L = lambda i: (Mi @ np.append(V[i], 1.0))[:3]
     hinge = _rod_topology(p, 'hihat.hinge', 12)
     a, b = V[hinge['rootRing']].mean(0), V[hinge['tipRing']].mean(0)
-    ax_y, ax_z, half, R = -h['l'] / 2 + 0.03, 0.022, 0.045, 0.009
+    ax_y = -h['l'] / 2 + 0.03
+    ax_z = HIHAT_HINGE['base_top'] + HIHAT_HINGE['r'] - HIHAT_HINGE['seat']
+    half, R = 0.045, HIHAT_HINGE['r']
     r_in = R * math.cos(math.pi / 12)
     fv0, fv1, ff0, ff1 = _grp(p, 'hihat.footboard')
     n = (fv1 - fv0) // 2
@@ -1717,26 +1832,28 @@ def _crit_hihat_hinge(parts):
 
     within = [i for i in range(fv0, fv1) if abs(loc[i][0]) <= half and rad[i] < R]
     outside_ends = [i for i in range(fv0, fv1) if abs(loc[i][0]) > half and rad[i] < R]
-    base_top = max(L(i)[2] for i in range(*_grp(p, 'hihat.base')[:2]))
-    heel_v = list(range(*_grp(p, 'hihat.heel')[:2]))
-    heel_front = max(L(i)[1] for i in heel_v)
+    top, _, P, nrm = _hihat_base_top(p)
     return dict(
-        kind='board_heel_captured_in_hinge_barrel',
-        meaning='author intent for the EXISTING hi-hat heel hinge (inherited v01 geometry, no change): the footboard pivots on '
-                'the 12-sided hinge barrel. (1) The two heel-axis vertices of the board underside lie on the barrel axis '
-                '(within 0.05 mm) and axially between the barrel end discs; (2) every footboard vertex that is axially '
-                'between the end discs and radially within the barrel radius lies inside the 12-gon barrel solid, so the '
-                'board heel-end face is wholly inside the barrel; (3) the board is wider (104 mm) than the barrel (90 mm): '
-                'its rounded heel corners pass out through the end discs, and no footboard vertex lies axially more than '
-                'maxCornerOverhangM (the authored width difference, not a tolerance) beyond an end disc; (4) no footboard vertex is below the base top. This is a cylindrical capture, not the '
-                'kick heel planar seat; it covers the footboard / barrel pair only, not the barrel mounting',
+        kind='board_heel_captured_in_hinge_barrel', indexConvention=_CONV,
+        meaning='author intent for the hi-hat heel hinge: the footboard pivots on the 12-sided hinge barrel (itself seated '
+                'in the base, criterion hihat.hinge_in_base). (1) The two heel-axis vertices of the board underside lie on '
+                'the barrel axis (the line through the two ring centroids) within axisToleranceM, axially between the end '
+                'discs; (2) every footboard vertex that is axially between the end discs and radially within the barrel '
+                'vertex radius lies inside the exact 12-gon barrel solid, so the board heel-end face is wholly inside the '
+                'barrel; (3) the board is wider (104 mm) than the barrel (90 mm): its rounded heel corners pass out through '
+                'the end discs, and no footboard vertex lies axially more than maxCornerOverhangM (the authored width '
+                'difference, not a tolerance) beyond an end disc; (4) no footboard vertex is below the plane of the receiving '
+                'base top face. A cylindrical capture, not the kick heel planar seat',
         barrel=dict(row='drum_hihat_pedal__pedal', group='hihat.hinge', axisStart=[_r(c, 6) for c in a],
-                    axisEnd=[_r(c, 6) for c in b], radiusM=R, sides=12, inscribedRadiusM=_r(r_in, 6),
-                    ringVertices=[hinge['rootRing'], hinge['tipRing']], sideFaceRange=hinge['sideFaces'],
-                    endDiscFaces=[hinge['rootCapFace'], hinge['tipCapFace']]),
-        board=dict(group='hihat.footboard', vertexRange=[fv0, fv1], undersideFace=ff0, topFace=ff0 + 1,
-                   heelAxisVertices=on_axis, heelEndFace=end_face[0], heelEndFaceVertices=list(p.f[end_face[0]][0])),
-        axisToleranceM=0.00005, maxCornerOverhangM=_r((h['w'] - 0.01) / 2 - half, 6),   # board half-width 0.052 less barrel half-length 0.045
+                    axisEnd=[_r(c, 6) for c in b], axisFrame='Blender world metres', radiusM=R, sides=12,
+                    inscribedRadiusM=_r(r_in, 6), ringVertices=[hinge['rootRing'], hinge['tipRing']],
+                    sideFaces=hinge['sideFaces'], endDiscFaces=[hinge['rootCapFace'], hinge['tipCapFace']]),
+        board=dict(group='hihat.footboard', vertices=list(range(fv0, fv1)), undersideFace=ff0, topFace=ff0 + 1,
+                   sideFaces=list(range(ff0 + 2, ff1)), heelAxisVertices=on_axis, heelEndFace=end_face[0],
+                   heelEndFaceVertices=list(p.f[end_face[0]][0])),
+        receivingBaseTop=dict(row='drum_hihat_pedal__pedal', group='hihat.base', face=top, faceVertices=list(p.f[top][0]),
+                              outwardNormal=[0, 0, 1], meaning='condition (4) is measured against the plane of this face'),
+        axisToleranceM=0.00005, maxCornerOverhangM=_r((h['w'] - 0.01) / 2 - half, 6),
         authorObserved=dict(
             heelAxisVertexRadialM=[_r(rad[i], 6) for i in on_axis],
             verticesBetweenEndDiscsWithinRadius=within,
@@ -1745,11 +1862,64 @@ def _crit_hihat_hinge(parts):
             cornerVerticesBeyondEndDiscs=outside_ends,
             maxBoardOverhangBeyondEndDiscM=_r(max(abs(q[0]) - half for q in loc.values())),
             maxOverhangOfCornerVerticesWithinRadiusM=_r(max(abs(loc[i][0]) - half for i in outside_ends)),
-            boardMinAboveBaseTopM=_r(min(q[2] for q in loc.values()) - base_top),
-            barrelMountingNote=('NOT part of this pair, reported for root: the barrel touches nothing but the board. Its '
-                                f'underside is {_r(1000 * (ax_z - R - base_top), 2)} mm above the base top and its back '
-                                f'{_r(1000 * (ax_y - R - heel_front), 2)} mm in front of the heel rubber (inherited v01 '
-                                'geometry; no hi-hat geometry change is released)')))
+            boardMinAboveBaseTopM=_r(min(float(np.dot(V[i] - P[0], nrm)) for i in range(fv0, fv1)))))
+
+
+def _crit_hihat_toe(parts):
+    """Criterion C: the board toe rests on the housing's front top lip with the EPS resting gap (new pair, hi-hat repair)."""
+    p = parts['drum_hihat_pedal__pedal']
+    V = np.asarray(p.v, float)
+    _, Mi = _hihat_frame()
+    L = lambda i: (Mi @ np.append(V[i], 1.0))[:3]
+    fv0, fv1, ff0, ff1 = _grp(p, 'hihat.footboard')
+    hv0, hv1, hf0, hf1 = _grp(p, 'hihat.housing')
+    Pb, nb = _plane(p, ff0)
+    nb = _outward_normal(p, ff0, 'hihat.footboard')
+    assert nb[2] < 0                                                                   # the underside faces down
+    clr = {i: float(np.dot(V[i] - Pb[0], nb)) for i in range(hv0, hv1)}               # positive on the outward (lower) side
+    htop = hf0 + 1
+    tv = list(p.f[htop][0])
+    ymin = min(L(i)[1] for i in tv)
+    lip = sorted(i for i in tv if L(i)[1] < ymin + 1e-9)
+    assert len(lip) == 2
+    feet = {i: V[i] - clr[i] * nb for i in lip}
+    under_v = list(p.f[ff0][0])
+    ymax = max(L(i)[1] for i in under_v)
+    tip = sorted(i for i in under_v if L(i)[1] > ymax - 1e-9)
+    htop_z = max(V[i][2] for i in tv)
+    next_clr = min(c for i, c in clr.items() if i not in lip)
+    return dict(
+        kind='board_rests_on_lip_separating_plane', indexConvention=_CONV,
+        meaning='artist intent (hi-hat repair): the footboard toe rests on the front lip of the sensor housing and does not '
+                'enter it, exactly hihat.footboard onto hihat.housing. Clearance = signed perpendicular distance of a housing '
+                'vertex from the plane of the board underside face, positive on that face\'s outward (lower) side. (1) No '
+                'intersection: every housing vertex has clearance >= minClearanceM (both solids are convex and the board lies '
+                'wholly on the inner side of its own underside plane, so that plane separates them). (2) Rest: the two lip '
+                'vertices have clearance gapM within toleranceM, and every other housing vertex has more clearance than both. '
+                '(3) Under the board: the feet of the perpendiculars from the lip vertices fall inside the underside face '
+                'outline by at least minLipInsideBoardOutlineM. Reported only (not criteria): the overhang beyond the lip and '
+                'the toe-tip height above the housing top. No overlap allowance is needed',
+        board=dict(group='hihat.footboard', undersideFace=ff0, undersideFaceVertices=under_v, topFace=ff0 + 1,
+                   toeTipUndersideVertices=tip),
+        housing=dict(group='hihat.housing', vertices=list(range(hv0, hv1)), topFace=htop, topFaceVertices=tv,
+                     lipVertices=lip, lipPedalFrameY=_r(HIHAT_PEDAL['l'] / 2 - 0.085 + bev('casing'), 6),
+                     lipMeaning='front (heel-side) edge of the housing top cap, pedal frame y = l/2 - 0.085 + casing bevel'),
+        gapM=EPS, toleranceM=0.00005, minClearanceM=0.00025, minLipInsideBoardOutlineM=0.005,
+        authorObserved=dict(
+            lipClearanceM=[_r(clr[i], 6) for i in lip], nextClearanceM=_r(next_clr, 6),
+            minClearanceAllHousingM=_r(min(clr.values()), 6),
+            lipInsideBoardOutlineM=[_r(_inside_margin(Pb, feet[i], nb)) for i in lip],
+            toeTipAboveHousingTopM=[_r(V[i][2] - htop_z) for i in tip],
+            boardOverhangBeyondLipM=_r(max(L(i)[1] for i in under_v) - HIHAT_PEDAL['l'] / 2 + 0.085 - bev('casing')),
+            boardPitchDeg=_r(math.degrees(_hihat_pitch()), 4)))
+
+
+def _hihat_pitch():
+    h = HIHAT_PEDAL
+    hy = -h['l'] / 2 + 0.03
+    axis_z = HIHAT_HINGE['base_top'] + HIHAT_HINGE['r'] - HIHAT_HINGE['seat']
+    dy, dz = h['l'] / 2 - 0.085 + bev('casing') - hy, HIHAT_HINGE['housing_top'] - axis_z
+    return math.atan2(dz, dy) + math.asin(EPS / math.hypot(dy, dz))
 
 
 ATTACH_CRITERIA = {
@@ -1758,7 +1928,9 @@ ATTACH_CRITERIA = {
     'kick.spur_arm_L_in_foot': lambda parts: _crit_spur_foot(parts, 'L'),
     'kick.spur_arm_R_in_foot': lambda parts: _crit_spur_foot(parts, 'R'),
     'kick.footboard_on_heel': _crit_kick_heel,
+    'hihat.hinge_in_base': _crit_hihat_seat,
     'hihat.footboard_in_hinge': _crit_hihat_hinge,
+    'hihat.footboard_on_housing': _crit_hihat_toe,
 }
 
 
@@ -1857,10 +2029,12 @@ def author_declaration(helper_sha256=None):
             'statuses': 'named (root C13, or accepted by name in the v04 bounded disposition: see source), granted, contact, '
                         'screen, faceted-round, proposed; first matching set wins; an unmatched hard edge is undeclared (a failure)',
             'bevelLength': 'bevelMiddleSeamM in edge_tally(): the seam between the two faces of a 2-segment bevel, not the treated original edge length'},
-        'attachmentCriteria': 'v04 bounded pass: an attachment with relation embedded or hinged carries criterion {kind, meaning, '
-                              'row-level vertex / edge / face locators, named metric fields with explicit meaning, authorObserved}. '
-                              'Indices are row-level (rows[].vertexCount / faceCount space). rests_on keeps gapM. authorObserved is '
-                              'author evidence, not measurement of record',
+        'attachmentCriteria': 'v04: an attachment with relation embedded or hinged (and the hi-hat toe rests_on pair) carries '
+                              'criterion {kind, indexConvention, meaning, locators, named metric fields with explicit meaning, '
+                              'authorObserved}. Every criterion locator is an EXPLICIT row-level index list (no ranges); '
+                              'rows[].groups[].vertexRange / faceRange remain END-EXCLUSIVE [start, end). Coordinates are '
+                              'Blender world metres unless marked pedal frame. rests_on keeps gapM. authorObserved is author '
+                              'evidence, not measurement of record',
         'edgeSets': edge_sets,
         'poseOptionIds': [p['id'] for p in POSE_OPTIONS],
         'poseOptions': [dict(cx=p['cx'], cy=p['cy'], yaw=p['yaw']) for p in POSE_OPTIONS],

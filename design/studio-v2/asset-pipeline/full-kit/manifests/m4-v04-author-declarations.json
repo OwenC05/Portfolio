@@ -4,7 +4,7 @@
  "status": "actual-Claude author semantic declaration for M4 v04 source preparation; NOT frozen, NOT verified, NOT candidate acceptance. rowsSha256 and the expected declaration digest are for the producer and root/S freeze.",
  "author": "actual Claude Opus 5.5 (claude-opus-5-5, effort high), task_23314c669e03",
  "sources": {
-  "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py": "83e1445f324159935571a350ea0b501a62f8286be3cee0a0903c11046225e0a3"
+  "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py": "4bb4094672fd762e622f9187690941b88f8677ec463eb09b38f691d0e7effbaf"
  },
  "interface": {
   "helper": "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py",
@@ -13820,10 +13820,10 @@
   }
  ],
  "selectedPose": {
-  "cx": 1.325,
+  "cx": 1.375,
   "cy": -0.825,
-  "yaw": -0.85
+  "yaw": -0.95
  },
- "selectedPoseStatus": "provisional: v03 reference P00, held until the author selects from the Codex coarse comparison",
+ "selectedPoseStatus": "selected P14 by the author from manifests/m4-v04-pose-comparison.json (fc4af9e7...): throne-top uniform area 292/384 (0.760; P00 0.638), actual-hit azimuth envelope 30.70 deg, sustain 116/116, targets 243/243, 29/29 key tops, support clearance min 33.9 mm, music-320 key pitch 9.05 px. Alternatives kept: P08 if the captured azimuth fails AZ1, P13 if yaw -0.95 reads too turned. Image gates T1 and AZ1 decide; not image approval",
  "restingRuns": "cables (music_cables__runs, sustain.cable) lie on the rug and the bare floor; they are not supports and are checked as cable runs, not by supportMeaning"
 }

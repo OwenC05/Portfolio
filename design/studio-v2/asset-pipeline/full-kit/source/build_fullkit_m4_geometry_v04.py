@@ -430,8 +430,12 @@ POSE_X, POSE_Y, POSE_YAW = (1.325, 1.35, 1.375, 1.40), (-0.825, -0.80), (-0.85, 
 POSE_OPTIONS = [dict(id=f'P{n:02d}', cx=x, cy=y, yaw=w) for n, (x, y, w) in
                 enumerate((x, y, w) for x in POSE_X for y in POSE_Y for w in POSE_YAW)]
 assert len(POSE_OPTIONS) == 24 and POSE_OPTIONS[0] == dict(id='P00', cx=1.325, cy=-0.825, yaw=-0.85)
-SELECTED_POSE = dict(cx=1.325, cy=-0.825, yaw=-0.85)   # v04 author selection: PROVISIONAL (= v03 / P00) until the Codex comparison
-SELECTED_POSE_STATUS = 'provisional: v03 reference P00, held until the author selects from the Codex coarse comparison'
+SELECTED_POSE = dict(cx=1.375, cy=-0.825, yaw=-0.95)   # v04 author selection P14, from the single Codex coarse comparison
+SELECTED_POSE_STATUS = ('selected P14 by the author from manifests/m4-v04-pose-comparison.json (fc4af9e7...): throne-top uniform '
+                        'area 292/384 (0.760; P00 0.638), actual-hit azimuth envelope 30.70 deg, sustain 116/116, targets '
+                        '243/243, 29/29 key tops, support clearance min 33.9 mm, music-320 key pitch 9.05 px. Alternatives '
+                        'kept: P08 if the captured azimuth fails AZ1, P13 if yaw -0.95 reads too turned. Image gates T1 and '
+                        'AZ1 decide; not image approval')
 CTL = dict(SELECTED_POSE, zb=0.6889, w=0.99, d=0.32, h=0.095)    # v03 C2: stand own height 0.68 (zb); v01: 1.2, -0.8, -0.6, zb 0.573
 MC = T(CTL['cx'], CTL['cy'], CTL['zb']) @ Rz(CTL['yaw'])                       # controller local: z from the underside
 MCF = T(CTL['cx'], CTL['cy'], 0.0) @ Rz(CTL['yaw'])                            # controller local, z from the floor

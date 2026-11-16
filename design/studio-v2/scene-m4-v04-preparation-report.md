@@ -1,18 +1,24 @@
-# M4 v04 preparation: author report (pose P14 selected; full selected-pose measurement pending)
+# M4 v04 preparation: author report (bounded final pass applied at P14; one hi-hat finding for root before the full run)
 
 **Author:** actual Claude Opus 5.5 (`claude-opus-5-5`, `--effort high`, observed in my own process argv, PID 28952, under Orca). Task `task_23314c669e03`, dispatch `ctx_2d83d120ad37`, retry of stopped `ctx_5996dc215cff`. Current S: `term_34bea5af…`; scope message `msg_3215a56a133b`, my ACK `msg_e060e25d1bf1`. 16 November 2026.
 
-**State: pose selected, not completion.** The geometry helper, the held builder and the semantic declaration are written and self-consistent. From Codex's single coarse comparison (`manifests/m4-v04-pose-comparison.json` `fc4af9e7…`, producer report `305579c0…`, relayed in `msg_41e9dd95edc9`), I selected **P14 = (1.375, −0.825, −0.95)** (section 4). The pins below are the selected-pose pins. Root says the full measurement waits for both this choice and its pending source decisions (`msg_43e8419aa040`). Superseded interface-ready pins, sent in `msg_d12ca7bbbbc0`: helper `83e1445f…`, builder `eb0af482…`, declaration `f62a5850…`, report `1af15373…`; root checkpoint `191a4c90`. No Blender, export, browser, render, image, Git, dependency, helper, paid or process action was taken. The builder was never run and refuses to run. Nothing here is visual, export or candidate approval; all fourteen image gates (section 9) stay open.
+**State: bounded final pass applied, not completion.** Root adopted P14 (`msg_3426c4122a7b`), and its bounded disposition `scene-coordination/m4-v04-bounded-art-disposition.md` (`7705f590…`, adopting the independent review `scene-m4-v04-bounded-art-review.md` `1af11ba5…`) released one final pass in these same four files, after checkpoint `4432edde`. This report covers that pass (section 3b): decisions 1–8, the hi-hat hinge declaration, and the metadata S approved for Codex (`msg_404c585797e4`, `msg_63a12bb6ae48`). P14 is unchanged. One hi-hat finding is **reported to root before the full run** (section 7, item 1). It needs no change to the interface, but it may need a geometry repair, and none is released.
+
+Earlier pins, all superseded:
+- **Interface-ready** (`msg_d12ca7bbbbc0`, root checkpoint `191a4c90`): helper `83e1445f…`, builder `eb0af482…`, declaration `f62a5850…`, report `1af15373…`.
+- **Pose-selected** (`msg_1becf8e43691`, checkpoint `4432edde`): helper `4bb40946…`, builder `f65ff919…`, declaration `71171111…`, report `84853714…`.
+
+No Blender, export, browser, render, image, Git, dependency, helper, paid or process action was taken. The builder was never run and refuses to run. Nothing here is visual, export or candidate approval; all fourteen image gates (section 9) stay open.
 
 Authorities: root `m4-v04-combined-repair-disposition.md` (`24E9B32C`), S boundary `m4-v04-internal-contract.md` (`A2AFC8A3`), author task `m4-v04-author-task.md`, recovery `m4-v04-coordinator-recovery-2026-11-16.md`, final art review `scene-m4-v03-focused-art-closure.md` (`4157A176`), declaration interface `m4-v03-verifier-declaration-contract-v3.json` (`5632CA4A`). v01-v03 sources, receipts, reviews and snapshots were only read. The stale original M4 export brief in the restart paste was **not** executed.
 
-## 1. Files and hashes (selected-pose pins)
+## 1. Files and hashes (final bounded-pass pins)
 
 | Owned file (relative to `design/studio-v2/`) | SHA256 | Note |
 |---|---|---|
-| `asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py` | `4bb4094672fd762e622f9187690941b88f8677ec463eb09b38f691d0e7effbaf` | pure helper (math, fnmatch, numpy); writes nothing |
-| `asset-pipeline/full-kit/source/build_fullkit_m4_v04.py` | `f65ff91947b8cf8e9235e2a0e16e93589f3941bd85bfd97fe644b034fbdfe097` | held builder, pins the helper hash above; refuses execution |
-| `asset-pipeline/full-kit/manifests/m4-v04-author-declarations.json` | `711711111ace7d15e347b3cae555947cb489531000ce5ab0df0e76bc0f91b8d9` | 278,679 bytes; byte-exact output of the helper's `--declaration` |
+| `asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py` | `5d01ed7c094d2983d9a597a6b7271eedfa662cfdcfa435929fa258898caca20a` | pure helper (math, fnmatch, numpy); writes nothing |
+| `asset-pipeline/full-kit/source/build_fullkit_m4_v04.py` | `74476be0316cee121436ceb7c06308bc159e046bbab71677c566b16c5374f524` | held builder, pins the helper hash above; refuses execution |
+| `asset-pipeline/full-kit/manifests/m4-v04-author-declarations.json` | `476a17e3acbf4e50a1fcec5d7cac33fcf6b123e43253630dffe704d4875bd5d6` | 291,007 bytes; byte-exact output of the helper's `--declaration` |
 | `scene-m4-v04-preparation-report.md` | (this file; hash sent with the handoff) | |
 
 Reproduce the declaration with `python -B source/build_fullkit_m4_geometry_v04.py --declaration > manifests/m4-v04-author-declarations.json`, run from `asset-pipeline/full-kit/`. That writes UTF-8, one-space indent, insertion order, LF and a final newline; `declaration_bytes()` returns the same bytes. Its `sources` entry carries the helper hash. Any helper edit, including the later pose selection, changes both pins. The builder's `HELPER_SHA` must then be updated and all three re-handed off.
@@ -33,12 +39,12 @@ Declaration top-level keys, in order: `schema` (`m4-source-declaration/3`), `sco
   - kick: base frame, `kick.spur_foot.L`, `kick.spur_foot.R` and the pedal plate
   - hi-hat base
   - 3 throne feet
-- `attachments`: 10 entries `{id, row, group, ontoRow, ontoGroup, relation: rests_on | embedded, gapM | depthM, intent}`. These are the K1 pairs. The spring, both posts and the heel block rest on `kick.pedal_plate` with gap 0. Each spur arm is embedded in its own foot and 6 mm into `kick.base`. Two more are recorded: the inherited footboard heel seat in the heel block (≤4 mm, v01, unchanged) and the display face resting on `ctl.bezel` with gap 0.0003.
+- `attachments`: 11 entries `{id, row, group, ontoRow, ontoGroup, relation: rests_on | embedded | hinged, intent, gapM (rests_on only), criterion (embedded / hinged)}`. The spring, both posts and the heel block rest on `kick.pedal_plate` with gap 0. The display face rests on `ctl.bezel` with gap 0.0003. Six entries carry a `criterion`: both spur arms into their feet and into `kick.base`, `kick.footboard_on_heel`, and the new `hihat.footboard_in_hinge`. The ambiguous `depthM` field is gone (decision 2); the criterion layout is in section 3b.
 - `seatings`: exactly the four I1 pairs, `ctl_body__indicators/ctl.indicator_strip#0..3` into `ctl_body__shell/ctl.panel`, `seatDepthM` 0.001, `proudM` 0.0025.
 - `roundRuns`: 18 entries `{id, row, group, faces}`: 4 corner runs each in `module.case`, `sustain.base`, `sustain.plate` and `hihat.base`, plus the top run of each `ctl.cheeks`.
-- `edgeClassification`: the rule texts.
-- `edgeSets`: 44 entries `{id, status, reason, match: [{label, kinds, bands}], reconsider?, source?}`.
-- `poseOptionIds`, `poseOptions` (24 plain `{cx, cy, yaw}`, accepted by the producer's `validate_pose_options`), `selectedPose` (now P14), `selectedPoseStatus`, `restingRuns`. Between the two handoffs only `SELECTED_POSE` and its status changed in the helper. The pose table, geometry functions, groups, classes, supports, attachments, seatings, runs and edge sets are unchanged.
+- `edgeClassification`: the rule texts, plus `rolePairs` and `attachmentCriteria` texts.
+- `edgeSets`: 44 entries `{id, status, reason, match: [{label, kinds, bands, rolePairs?}], reconsider?, source?}`. `rolePairs` is optional and additive. When present, the edge's two face roles (sorted; `edge_records()` now returns them as `roles`) must be one of the listed pairs. It pins the three by-name sets and the pad hidden edge to exact profile strips.
+- `poseOptionIds`, `poseOptions` (24 plain `{cx, cy, yaw}`, accepted by the producer's `validate_pose_options`), `selectedPose` (P14), `selectedPoseStatus`, `restingRuns`.
 
 `rowsSha256` is deliberately absent. It belongs to the producer and the root/S freeze, and is never self-pinned. A read-only import of Codex's checkpoint `produce_fullkit_m4_v04.py` (`e302a953…`) accepts this JSON: `snapshot_rows()` passes all 18 rows and `validate_pose_options()` passes. That is a compatibility smoke check, not producer evidence or a frozen digest.
 
@@ -46,14 +52,14 @@ Declaration top-level keys, in order: `schema` (`m4-source-declaration/3`), `sco
 
 **K1 kick** (`kick()`, `SPUR`, `PEDAL_PLATE`):
 - Each spur is now a rod arm ending inside its own flat-bottomed foot (r 8.5 mm, 22 mm tall, 8 sides). The foot's underside sits at the resting height: minimum z − rug field − 0.3 mm = 0.0000 mm for both. The foot is dark rubber, so the granted round-member-ends condition about bright-metal ends over 12 mm does not arise.
-- I also moved each arm root 6 mm inside the base frame's side face. The arm leaves at 45° in plan, so in v03 its root disc straddled the face, with half of it up to 4.9 mm proud: a visible wedge gap of the same kind as the reviewer's spring finding. It is the same arm and the same kick spur, so I treated it as part of the K1 attachment remedy. **Root should confirm this reading.**
+- I also moved each arm's root centre 6 mm inside the base frame's side face. In v03 the arm left at 45° in plan, so its root disc straddled the face, with half of it up to 4.9 mm proud: a visible wedge gap, the same kind of defect as the reviewer's spring finding. The root centre also rose from 18 to 22 mm above the resting height, and the tip centre from 12 to 14 mm. The tip's plan position is unchanged. Root confirmed this for exactly the two arms (decision 1); see section 3b for the criterion.
 - The pedal plate is widened from half-width 0.045 to 0.068 (the reviewer suggested about 0.066) and extended 20 mm at the heel. The spring (x 1.472–1.484), both posts (1.367–1.383, 1.457–1.473) and the heel block (y 0.06–0.12) now stand flush on the plate top and wholly inside it (x 1.352–1.488, y 0.06–0.36). Measured offset: 0.0 mm.
 - The kick pad ring's outer front corner now carries the shared `casing` 2-segment bevel. Its classes are `round`, `round`, `bevel:casing`, `bevel:casing`, `planar`, like the rack pad rims.
 - Kick triangles: 856 → **1,040** of 1,500. The ring adds 96, as the reviewer estimated. The two spur feet add 88.
 
 **N1 round runs:** `prism()` gives every face built from a run of consecutive round plan edges a run id: rrect arcs and the cheek top chain. `smooth_edges()` keeps an edge between two faces of one run smooth at any angle; otherwise the 40° split applies. Both `corner_normals()` and the held builder's edge marking use this one rule. The builder asserts that every non-run edge still agrees with Blender's own 40° angle. Effect: exactly 16 edges that were over 40° become smooth, the mid-arc edges of `module.case`, `sustain.base`, `sustain.plate` and `hihat.base`, at zero triangles. Planar corners keep their own normals; my quick check finds a maximum deviation of 1e-6°.
 
-The reviewer's "cheek profile 12 edges, 0.065 m" is **not** a mid-run break. It is the genuine corner where the round top run meets the flat cheek front, at 51°. It stays hard and is declared as `proposed` (section 6).
+The reviewer's "cheek profile 12 edges, 0.065 m" was not a mid-run break: four were the 51° nose and eight were underside mitres. The bounded pass bevelled the nose and moved the mitres to contact (section 3b).
 
 **A1 / E1 edge sets:** labels are split by kind of part, for example `kick.spur_arm.L`, `kick.pad_ring`, `ctl.wheel`, `ctl.bezel`, `stand.knob` and `pad.<name>.block`. Every hard edge belongs to exactly one `EDGE_SETS` entry, which gives it one status and one reason. Matching is by label, kind and band:
 - **Kind** comes from the authored face roles: `cap`, `along` (lengthwise facets), `ring` (profile corners and bends), `block` or `open`.
@@ -65,7 +71,69 @@ Lengthwise cable facets are `faceted-round`, never end caps. Sticks and heads no
 
 **R2 / B1 wording (no geometry):** rug unchanged. Clearances are 20 mm to the lamp base, 70 mm to the desk-frame runner and 10 mm to the under-desk decal. The extra 50 mm is width surrendered inside the 70 mm separation, not a gap to the decal. Reconsider if that decal grows or moves more than 10 mm toward +x. The 150 mm rug margin applies left and right; the shortened rack back foot is accepted at source level under gate RK1. The music-corner decal's height and overhang remain an M6 dependency.
 
-**Unchanged:** every other placement, material, row, caster, ceiling and retained-data contract. Rows 18 main, 9 casters, 27 refresh; placed 13,752 → **13,936** (limit 22,500); refresh-weighted 24,404 → 24,772. White keys 29, black 20, at all 24 poses.
+**Unchanged:** every other placement, material, row, caster, ceiling and retained-data contract. Rows 18 main, 9 casters, 27 refresh; placed 13,752 → **13,968** (limit 22,500) after the bounded pass; refresh-weighted 24,404 → 24,836. White keys 29, black 20, at all 24 poses.
+
+## 3b. Bounded final pass (root `7705f590`, decisions 1–8 and hi-hat coverage)
+
+**Geometry: one change, decision 3.** Each cheek nose now carries the shared `casing` 2-segment bevel, the same bevel already on the back-top corner and the outer face perimeter. Its effects:
+- **Counts:** each cheek goes from 68 to 84 triangles (+16), and `ctl_body__shell` from 1,260 to **1,292** of 2,500. That is +32, as the reviewer estimated.
+- **Preserved:** controller height and depth, keys, the key-to-cheek fit, materials, P14 and the row ceiling. The bevel only removes material.
+- **Classes per cheek (35 faces):** 26 `bevel:casing`, 5 `planar`, 4 `round`.
+- **Round run, declared explicitly rather than inferred from the old top chain:** each cheek's top run is now every non-facet top edge touching an interior top profile point. That gives 4 faces, the whole sloped top between the back-top bevel and the nose bevel: the 140 mm rear segment, two middle segments and the shortened front segment. Before, it was 3 faces, because the back-top bevel had already dropped the rear segment. This keeps the v01 intent of one smooth curved top. The helper asserts the count.
+- **Normals:** the run rule still smooths exactly the same 16 over-40° edges in the whole kit (sustain 8, hi-hat 4, module 4). No cheek edge needs it, because every turn along the top run and into both bevels is under 40°. Planar corner deviation is 1e-6°.
+- **Edges:** no hard `along` edge in the 40–80 band remains at the nose. The helper asserts that the only such cheek edges are the eight underside mitres, 0.0223 m in total.
+
+**Classification and wording (decisions 4–7):**
+
+| Decision | Set (status) | What changed |
+|---|---|---|
+| 4 | `ctl.cheeks.contact` (contact) | `ctl.cheeks.front_corner` is removed. The eight underside bevel-band mitres (4 at 75.5°, 4 at 41.4°, within 2.2 mm of the cheek underside, facing the stand arms) are named in the contact reason. |
+| 5 | `cymbal.edge` (named, source decision 5) | Covers both corners of the 8.9 mm band on the three cymbals: the 70.0° upper corner (72 edges, 3.496 m, moved from `faceted_round.profiles`) and the 108.5° lower corner (72 edges, 3.571 m), 7.067 m in all. Pinned to role pairs `b5/b6` and `b6/b7`. The wrong "bell-to-bow" reason is removed: that turn is 39.6° and smooth. The source material rule is `fabric` (the dark matte e-cymbal pad). |
+| 6 | `pad.rim_lower_outer` (named, source decision 6), `pad.shell_bottom.contact` (contact) | The proposed set is split. The bright rim lower outer corner (71.4°, `b4/b5`, 3.609 m) is accepted under E1b; its bevel fallback (about 384 triangles against 288 headroom) is not authorised. The black shell bottom corner (52.8°, `b1/b2`, 3.358 m) gets a hidden-edge reason, to be reconsidered if a planned eye drops below the pad bottoms. |
+| 7 | `rug.binding_shoulder` (named, source decision 7) | Accepted for the current 10.5 mm chamfered matte binding only (`b0/b1`, 16 edges, 7.739 m). The rug is unchanged. |
+
+The `named` status text now says it also covers sets accepted by name in the bounded disposition, with a `source` field on each. **No `proposed` set remains.** There are 0 undeclared edges and still 44 sets: one was removed and one split.
+
+**Attachment criteria (decisions 1, 2, 8; S `msg_404c585797e4`, `msg_63a12bb6ae48`).** Each `criterion` is `{kind, meaning, locators…, named metric fields, authorObserved}`. All indices are row-level (`rows[].vertexCount` / `faceCount` space). They come from the authored primitive topology:
+- **rod:** root ring, tip ring, side quads, root cap, tip cap
+- **extrude:** underside cap, top cap, sides
+- **box:** −z, +z, −y, +x, +y, −x
+
+`authorObserved` is my source figure, not measurement of record. The public v3 verifier schema is unchanged.
+
+- **`kick.spur_arm_{L,R}_in_base`**, kind `rod_root_embedded_through_flat_face`.
+  - **Locators:** `rootRingVertices` (8: L 96–103, R 136–143); `lengthwiseEdges` (8 pairs, root i to tip i); `rootCapFace` (L 84, R 112); `tipRingVertices`; `tipCapFace` (L 85, R 113); `armSideFaceRange`; `receivingFace` (`kick.base` own-side flat face: L 51 with outward normal −x, R 45 with +x).
+  - **Metrics:** `minRingBurialM` 0.001 (every ring vertex at least this far inside that face) is separate from `rootCentreInsetM` 0.006 (the disc centre's inset, not a penetration depth). Also `rootCentreHeightM` 0.022, `tipCentreHeightM` 0.014 and `restingHeightM` 0.0086, with the v03 → v04 height change stated.
+  - **Observed:** burial 1.34–10.66 mm; crossing points at least 3.69 mm inside the flat face boundary, clear of the bevel bands, top and back; heights 22.0 and 14.0 mm.
+- **`kick.spur_arm_{L,R}_in_foot`**, kind `rod_tip_inside_solid`: tip ring and tip cap locators. Observed: at least 0.85 mm inside the foot's 8-sided wall (apothem) and 1.04 mm below its top.
+- **`kick.footboard_on_heel`**, kind `board_end_seated_through_top_face`. The intent is now positive: an intended seat, not "inherited, reported".
+  - **Heel faces:** `receivingTopFace` 299 and `receivingUndersideFace` 298; `forbiddenCrossingFaces` −y 300, +x 301, +y 302, −x 303.
+  - **Board faces:** the two parallel caps, underside 284 and top 285, so Codex measures the thickness. Also `boardVertexRange` 376–400 and `boardSideFaceRange`.
+  - **Proud locator:** `exposedUpperHeelEndCorners` [396, 397], the exposed upper corners of the heel-end edge.
+  - **Metrics:** `maxDepthM` 0.004, `boardThicknessM` 0.008, `minProudM` 0.0038.
+  - **Observed:** six below-top vertices (382–387), maximum depth 4.000 mm, thickness 8.000 mm, heel-end corners 3.82 mm proud, 16 mm above the heel underside.
+  - **Coverage:** Codex checks all footboard vertices and all source edges, not this subset.
+
+**Hi-hat (existing joint; no geometry change).** `hihat.footboard_in_hinge`, relation `hinged`, kind `board_heel_captured_in_hinge_barrel`. This is a cylindrical capture, not the kick's planar seat rule.
+
+Locators:
+- **Barrel:** `hihat.hinge`, axis start [0.971485, −0.039416, 0.0306] → end [1.060838, −0.028642, 0.0306]; radius 9 mm, 12 sides, inscribed radius 8.693 mm; rings 128–139 and 140–151; side faces 94–105; end discs 106 and 107.
+- **Board:** `hihat.footboard` vertices 96–128; underside face 76, top face 77; heel-axis vertices 107 and 108; heel-end face 89 = (107, 108, 124, 123).
+
+My intended criterion:
+1. The two heel-axis vertices lie on the barrel axis, within 0.05 mm, between the end discs.
+2. Every footboard vertex between the end discs and within the barrel radius lies inside the exact 12-gon barrel, so the heel-end face is wholly inside.
+3. The board is 104 mm wide and the barrel 90 mm, so the board's rounded heel corners pass out through the end discs. No board vertex lies more than 7.0 mm (the authored width difference, not a tolerance) beyond an end disc.
+4. No footboard vertex is below the base top.
+
+Observed against that criterion:
+- Axis vertices at 0.000 mm.
+- The four vertices within the barrel (107, 108, 123, 124) are all inside it, with a maximum radial distance of 8.000 mm.
+- Six corner vertices (105, 106, 109, 110, 122, 125) lie beyond the end discs. The whole board overhangs by at most 7.0 mm.
+- The board is 12 mm above the base top.
+
+**The pair satisfies its criterion.** The separate barrel-mounting issue is in section 7.
+
 
 ## 4. P1 pose table (author's explicit bounded options)
 
@@ -98,7 +166,7 @@ The options differ in four measures:
 | P20 | 1.40, −0.825, −0.95 | 30.31° | 0.833 | 58/73 | 116/116 | 8.98 | 33.9 |
 
 **Why P14:**
-- **Throne.** The seat-top area visible rises from 0.638 to 0.760. Under gate T1, the controller now hides about a quarter of the seat rather than more than a third, the gate's own limit.
+- **Throne.** In Codex's CPU uniform-area samples on the seat-top roof faces, 292/384 samples are visible at P14 against 245/384 at P00 (0.760 against 0.638). That is a sampled-area improvement. It is not a T1 result, and image gate T1 remains unpassed.
 - **Azimuth.** The envelope keeps 0.70° above 30°, about the v03 margin the reviewer judged thin but workable. The higher-throne cx 1.40 options keep only 0.04–0.31°, and P18, P21 and P22 fall below 30°. At every x, cy −0.80 loses both throne and azimuth against −0.825.
 - **Sustain pedal.** It is fully clear at yaw −0.95, so gate SP1 gains.
 - **Cost.** Phone key pitch drops about 4% (9.40 → 9.05 px at music-320), and the keyboard turns to root's yaw cap. I accept this at the cap, not past it, as the reviewer's art guard requires.
@@ -110,7 +178,7 @@ The options differ in four measures:
 
 | Row | Casts | v03 tris | v04 tris | Ceiling | min | max |
 |---|---|---|---|---|---|---|
-| `ctl_body__shell` | yes | 1260 | 1260 | 2500 | [0.959, -1.319, 0.689] | [1.791, -0.331, 0.784] |
+| `ctl_body__shell` | yes | 1260 | **1292** | 2500 | [0.959, -1.319, 0.689] | [1.791, -0.331, 0.784] |
 | `ctl_body__indicators` | no | 60 | 60 | 60 | [1.133, -1.001, 0.76] | [1.619, -0.436, 0.772] |
 | `ctl_keys__keys` | no | 1168 | 1168 | 1540 | [1.017, -1.285, 0.719] | [1.649, -0.495, 0.754] |
 | `ctl_stand__frame` | yes | 776 | 776 | 1300 | [1.038, -1.194, 0.009] | [1.712, -0.456, 0.689] |
@@ -129,35 +197,44 @@ The options differ in four measures:
 | `rug__rug` | no | 156 | 156 | 400 | [0.56, -1.36, 0.0] | [2.215, 0.89, 0.011] |
 | `music_cables__runs` | no | 588 | 588 | 800 | [0.617, -0.488, 0.0] | [1.933, 1.031, 0.76] |
 
-Controller-dependent rows (shell, indicators, keys, stand, sustain, stool and the controller cable) move with the selected pose. Their counts do not change.
+Controller-dependent rows (shell, indicators, keys, stand, sustain, stool and the controller cable) move with the selected pose; pose does not change their counts. The shell's 1,292 includes the 32 cheek-nose bevel triangles (decision 3), and its bounds are unchanged because the bevel only removes material.
 
 ## 6. Edge sets: author tally (metres; Codex measures independently)
 
 | Status | Sets (length by band) |
 |---|---|
-| named (C13; knobs and hinges by kind of part) | keys.white 29.15 (≥80); keys.black 11.68 / 0.22 (40-80); rack.clamps 8.21 / 7.17; rug.inner_step 7.57 + 7.57 concave; pad.lugs 4.03; pad.rim_inner 3.21 + 3.46 concave; ctl.panel_pads 2.25 / 0.24; stand.pivot 1.98; pad.blocks 1.86; cymbal.nuts 1.35; ctl.knobs 1.15; ctl.transport_keys 0.90; stand.knob 0.27; pedal.hinges 0.25; module.knob 0.20 |
+| named (C13; knobs and hinges by kind of part; v04 decisions 5–7 by name) | keys.white 29.15 (≥80); keys.black 11.68 / 0.22 (40-80); rack.clamps 8.21 / 7.17; rug.binding_shoulder 7.74 (40-80, decision 7); rug.inner_step 7.57 + 7.57 concave; cymbal.edge 3.57 (≥80) + 3.50 (40-80) (decision 5); pad.rim_lower_outer 3.61 (40-80, decision 6); pad.lugs 4.03; pad.rim_inner 3.21 + 3.46 concave; ctl.panel_pads 2.25 / 0.24; stand.pivot 1.98; pad.blocks 1.86; cymbal.nuts 1.35; ctl.knobs 1.15; ctl.transport_keys 0.90; stand.knob 0.27; pedal.hinges 0.25; module.knob 0.20 |
 | granted (root 5d, exactly as enumerated) | round_member_ends 14.59; thin_plates 6.37 / 0.03; small_dark_blocks 1.84; controller_wheels 0.52 |
-| contact (reason, not exception) | rug.underside 7.74; pad.head 6.39; ctl.slab 4.23; pad.rim_skirt 3.21 (open); ctl.panel 2.65; ctl.bays 1.84; ctl.cheeks 1.66; kick.head 0.98; kick.pad_ring.open 0.96 (open); hihat.base 0.89; kick.base 0.89; sustain.base 0.69; kick.tower 0.63; kick.pad_ring.seat 0.55 (40-80); sustain.plate 0.54; hihat.housing 0.35 |
+| contact (reason, not exception) | rug.underside 7.74; pad.head 6.39; ctl.slab 4.23; pad.shell_bottom 3.36 (40-80, decision 6); pad.rim_skirt 3.21 (open); ctl.panel 2.65; ctl.bays 1.84; ctl.cheeks 1.655 + 0.022 (40-80 underside mitres, decision 4); kick.head 0.98; kick.pad_ring.open 0.96 (open); hihat.base 0.89; kick.base 0.89; sustain.base 0.69; kick.tower 0.63; kick.pad_ring.seat 0.55 (40-80); sustain.plate 0.54; hihat.housing 0.35 |
 | screen | ctl.glow 1.19; module.glow 0.46 |
-| faceted-round | members 68.95 (40-80) / 0.02 / 0.17 concave; cables 41.09 (40-80) / 2.47 (≥80 skewed bends) / 0.17 concave; profiles 9.72 (40-80) |
-| **proposed (awaiting root; no exemption assumed)** | **rug.binding_shoulder 7.74 (40-80); pad.rim_lower 6.97 (40-80); cymbal.edge 3.57 (≥80); ctl.cheeks.front_corner 0.065 (40-80)** |
+| faceted-round | members 68.95 (40-80) / 0.02 / 0.17 concave; cables 41.09 (40-80) / 2.47 (≥80 skewed bends) / 0.17 concave; profiles 6.23 (40-80; no cymbal edge) |
+| proposed | none |
 
-Recomputed at P14: 0 undeclared. The lengths listed were tallied at P00; they are pose-independent except the controller cable bends. Totals at P00: 134.6 m convex ≥80, 142.7 m convex 40-80, 11.4 m concave, 4.2 m open-lathe boundary. The 139.10 m v03 review figure is evidence on v03, not a target. Convexity is taken per primitive after orienting its winding outward. Open lathes are flagged as `open` rather than guessed.
+Recomputed at P14 after the bounded pass: 0 undeclared. Totals at P14: 134.16 m convex ≥80, 143.58 m convex 40-80, 11.36 m concave, 4.17 m open-lathe boundary. Lengths are pose-independent except the controller cable bends. Bevel middle seams: `bevel:casing` 17.15 m (the cheek noses add 0.07), `bevel:white_key_lip` 0.75 m. The 139.10 m v03 review figure is evidence on v03, not a target. Convexity is taken per primitive after orienting its winding outward. Open lathes are flagged as `open` rather than guessed.
 
 ## 7. Honest unresolved findings
 
-1. **Four `proposed` edge sets** are outside every root decision. The tallies are unchanged since v01 or v03; they are newly visible because the 40-80 band and the label split are now reported.
-   - **Cymbal edge rim**: the identifying silhouette, about 110° across 11 mm.
-   - **Pad rim lower outer corner and shell bottom chamfer**: C13 names only the inner corners.
-   - **Rug binding shoulder**: a 2.6 mm chamfer facet.
-   - **Oak cheek front-top corner**: 51°, 22 mm wide, an exposed casing-family edge.
+1. **Hi-hat hinge barrel mounting: reported to root and S before the full run; no repair applied.** The declared footboard/barrel pair satisfies its criterion (section 3b). The barrel, though, touches nothing but the board:
+   - its underside is 3.0 mm above the hi-hat base top;
+   - its back is 3.0 mm in front of the heel rubber.
 
-   I recommend a casing bevel for the cheek corner in a later bounded pass, and image-gate decisions for the other three. I did not bevel the cheek here, because root's release lists no cheek geometry change.
-2. **Spur arm root moved 6 mm into the base frame** (section 3). This goes beyond the reviewer's literal tip/spring/plate list, though it is the same K1 attachment class. It is declared as an embedded attachment.
-3. **Inherited footboard-in-heel-block overlap**, ≤4 mm, unchanged since v01. Declared, not newly fixed, and outside the released list.
-4. **Open lathes** (pad shell inner skirt, kick pad ring ends) are surfaces, not closed solids, with double-sided material. Their boundaries are declared as contact/hidden. A ray or intersection tool should treat them as surfaces.
+   This is inherited v01 hinge geometry, unchanged in v04, and it is a nothing-floats (K1/HH1) risk on the heel hinge. Bounded options, for root to choose; none is released, and I make none:
+   - **(a)** lower the hinge axis 3 mm so the barrel rests on the base top; the footboard pivot moves with it;
+   - **(b)** add two small hinge brackets from the base top to the barrel ends;
+   - **(c)** accept it under HH1/K1 as a reported gap.
+
+   I have not invented a clearance to pass it.
+2. **Hi-hat footboard toe over the sensor housing (observed, undeclared, outside the hinge pair).** The housing's top front edge stands up to about 0.57 mm above the sloped footboard underside within the board outline. The figure comes from six housing top-cap vertices. So the board toe rests on the housing with a small intersection. It is unchanged in v04. I report it rather than declare it, because the disposition limits the hi-hat coverage to the footboard/hinge pair. Codex may see it as a same-row overlap.
+3. **Thin source margins, by design:**
+   - spur ring burial 1.34 mm against 1.0;
+   - spur tip 0.85 mm inside the foot wall;
+   - kick footboard 0.5 mm inside the heel sides, and heel-end corners 3.82 mm proud against 3.8;
+   - hi-hat heel-end top vertices at 8.000 mm against the barrel's 8.693 mm inscribed radius.
+
+   Exported positions must confirm all of these after quantisation (K1/E1b).
+4. **Open lathes** (pad shell inner skirt, kick pad ring ends) are surfaces, not closed solids, with double-sided material. Their boundaries are declared as contact/hidden, so a ray or intersection tool should treat them as surfaces.
 5. **Cables** rest on both the rug and the bare floor. They are deliberately **not** supports: interface 3 requires one surface per row, and a resting run is not a standing primitive. They need Codex's cable checks.
-6. **Pose P14 sits at root's yaw cap.** The azimuth margin (0.70° by actual-hit envelope) is thin and is not continuous visible span. Phone key pitch is 9.05 px. Gates AZ1, T1 and H1 decide, with fallbacks P08 and P13.
+6. **Pose P14 sits at root's yaw cap.** The azimuth margin (0.70° by actual-hit envelope) is thin and is not continuous visible span. Phone key pitch is 9.05 px. Gates AZ1, T1 and H1 decide, with the already-measured fallbacks P08 and P13 kept for image review only.
 7. The **music-corner decal** sits above the pedal plates, hi-hat base, cables and lower rubber feet. That is M6's dependency; M4 does not edit retained decals.
 8. **Builder never executed.** The `smooth_edges` ↔ Blender angle assert and the custom-normal readback are unproven until a released run. The exported NORMAL accessors decide.
 
@@ -170,7 +247,9 @@ These used plain CPython with `-B`, run from the repository, with throwaway chec
 - K1 attachment extents.
 - Repeat-stable `build_all()` across poses (same geometry digest before and after a foreign pose).
 - All 24 poses build, with 29 + 20 keys.
-- Edge tally with no undeclared edge.
+- Edge tally with no undeclared edge and no proposed set; the cheek-nose assertion (only the eight underside mitres remain in the 40-80 `along` band).
+- Cheek classes and runs (26/5/4 per cheek, 4-face run); 16 run-smoothed over-40° edges, none on the cheeks.
+- Attachment criteria computed from source (section 3b) and the hi-hat barrel, base and housing distances.
 - N1 planar corner deviation.
 - Declaration byte reproduction.
 - The read-only producer compatibility smoke check.
@@ -181,23 +260,23 @@ None of these is Codex's measurement, the verifier or image evidence. The approv
 
 | Gate | Passes when (from the pinned review) | v04 note |
 |---|---|---|
-| N1a | casing faces shade evenly; highlight stays in the bevel band | |
+| N1a | casing faces shade evenly; highlight stays in the bevel band | cheek nose now bevelled (decision 3): the nose highlight must stay in the bevel band |
 | N1b | module case and pedal-base rounded corners: no mid-corner crease | run fix applied at source |
 | H1 | continuous key lips; 29 + 20 countable | |
-| K1 | contact under every support, **both spur feet**, no gap under the spring | plate, spurs and arm root at source |
-| T1 (throne) | round seat behind the controller, at most about a third hidden, no near-tangent | P14: about 0.76 of the top area by CPU samples |
-| HH1 | hi-hat footboard and heel identifiable beside the desk leg | |
+| K1 | contact under every support, **both spur feet**, no gap under the spring | plate, spurs, arm roots (decision 1) and footboard seat (decision 8) at source |
+| T1 (throne) | round seat behind the controller, at most about a third hidden, no near-tangent | P14: 292/384 sampled top area against 245/384 at P00 (CPU diagnostic); unpassed |
+| HH1 | hi-hat footboard and heel identifiable beside the desk leg | hinge barrel 3 mm clear of the base (section 7, item 1) |
 | SP1 | sustain pedal identifiable, not merged with the stool leg | |
 | AZ1 | controller azimuth from the capture ≥ 30° (continuous span) | |
-| RUG1 | rug clear of lamp base and desk frame, reads as carrying the kit | |
+| RUG1 | rug clear of lamp base and desk frame, reads as carrying the kit | binding shoulder: no hard slab or bright outline (decision 7) |
 | RK1 | rack feet read as feet front and back | |
 | E1a | kick pad ring not cheaper than the tom rims | now bevelled; checks the bevel reads alike |
-| E1b | no allowed sharp set reads unfinished; strips read as lit inlays | plus the four `proposed` sets |
+| E1b | no allowed sharp set reads unfinished; strips read as lit inlays | plus cymbal band (no slab, no bright line), pad rim lower corner (no bright lower line or cut strip), rug shoulder, footboards |
 | F1 | stand tubes and sticks not faceted; cables do not sparkle | |
 | M6 | music-corner decal does not veil pedal bases | carried |
 
 ## 10. Next
 
-1. Root's disposition of the pending scope questions (`msg_64da0f2176d8`, now with the independent critic `ctx_0759ccb535bb`): the four `proposed` edge sets, the 6 mm spur-root embedding and the inherited footboard overlap. I make no geometry change before it.
-2. Codex's one full selected-pose geometry, support, cable and target measurement, on the final pins, via S.
-3. My final author handoff (any honest corrections, final hashes), then worker_done reporting source preparation only.
+1. Root/S decide the hi-hat barrel mounting (section 7, item 1) and note the toe/housing finding (item 2). S releases the one full P14 run only when the coverage has no unresolved repair.
+2. Codex's single full P14 measurement on these final pins.
+3. My final author handoff, then worker_done reporting source preparation only.

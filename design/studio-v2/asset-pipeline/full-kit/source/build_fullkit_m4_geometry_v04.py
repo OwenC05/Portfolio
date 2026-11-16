@@ -510,10 +510,15 @@ def controller():
             M = MC @ T(x_a, 0, 0) @ Ry(math.pi / 2)            # local Z -> controller +X; profile (y, z) -> (-z?, y)
             pts = [(-z, y) for y, z in prof]                   # Ry(90): local x maps to -z, local y to y
             pts = pts if _ccw(pts) else list(reversed(pts))
-            top_chain = {(-z, y) for y, z in prof[2:]}          # the sloped top profile (v01 smooth curve) is a round surface
             back_top = (-prof[2][1], prof[2][0])                # the 90-degree back-top corner across the cheek thickness
-            pts = bevel_corners(pts, 'casing', which={pts.index(back_top)})
-            rounds = {i for i in range(len(pts)) if pts[i] in top_chain and pts[(i + 1) % len(pts)] in top_chain}
+            nose = (-prof[-1][1], prof[-1][0])                  # v04 root decision 3: the 51-degree cheek nose (top run meets the flat front)
+            interior = {(-z, y) for y, z in prof[3:-1]}         # the sloped top's interior profile points
+            pts = bevel_corners(pts, 'casing', which={pts.index(back_top), pts.index(nose)})
+            # v04 declared round run (explicit, not old top_chain membership): the whole sloped top between the back-top bevel
+            # and the nose bevel, i.e. every non-facet edge touching an interior top point (4 edges: the 140 mm rear segment,
+            # two middle segments and the shortened front segment). The v01 intent was one smooth curved top.
+            rounds = {i for i in range(len(pts)) if i not in pts.facets and (pts[i] in interior or pts[(i + 1) % len(pts)] in interior)}
+            assert len(rounds) == 4, rounds
             prism(shell, pts, 0.0, x_b - x_a, 'oak_tone', M, top='casing' if s > 0 else None, bottom='casing' if s < 0 else None,
                   round_edges=rounds)
     # pitch and mod wheels in black slots on the wheel bay (v04: one label per kind of part)
@@ -1136,10 +1141,13 @@ def _build():
 
 SHARP_DEG = 40.0                    # the builder's split rule: an edge whose face normals differ by more than this is sharp
 # v04 A1 / E1: edge sets. Every hard edge (smooth_edges() False) belongs to exactly one set: one status, one reason.
-# Matching: first entry whose (label glob, kinds, bands) all match the edge (see edge_records() for kind and band).
+# Matching: first entry whose (label glob, kinds, bands[, rolePairs]) all match the edge (see edge_records() for kind, band
+# and roles). rolePairs, when present, is a set of sorted face-role pairs: the edge's two face roles must be one of them.
 # Statuses:
 #   'named'          root C13 named sharp details (m4-v03-design-correction-disposition.md); knobs and pedal hinges read by
-#                    kind of part for the module / stand knobs and pedal axle / heel-hinge ends (v04 disposition)
+#                    kind of part for the module / stand knobs and pedal axle / heel-hinge ends (v04 disposition); and the
+#                    three sets root accepted sharp by name in m4-v04-bounded-art-disposition.md decisions 5-7 (their
+#                    'source' field says so; each is pinned to exact profile strips by rolePairs)
 #   'granted'        one of root's four section-5d sets granted in m4-v04-combined-repair-disposition.md, exactly as
 #                    enumerated in scene-m4-v03-focused-art-closure.md 5d (round-member ends, thin plates, small dark
 #                    blocks, controller wheels), with that table's reasons and reconsider conditions
@@ -1152,8 +1160,9 @@ _ANY = ('cap', 'along', 'ring', 'block', 'open')
 _B = ('convex>=80', 'convex40-80', 'concave', 'open')
 _GR = 'scene-m4-v03-focused-art-closure.md 5d, granted by m4-v04-combined-repair-disposition.md'
 _RME = 'a free bright-metal end wider than 12 mm reads as a cut-off stub'
+_BD = 'm4-v04-bounded-art-disposition.md (7705f590...)'
 EDGE_SETS = [
-    # ---- controller shell: casing remainders (contact) and the one exposed corner (proposed)
+    # ---- controller shell: casing remainders (contact); v04 decision 3 bevelled the cheek nose (no proposed set remains)
     dict(id='ctl.slab.contact', status='contact', match=[('ctl.slab', _ANY, _B)],
          reason='slab ends hidden inside the cheeks; underside corners above the stand arms (never seen from the planned eyes); '
                 'back-top corner covered by the panel. The exposed top-front edge is bevelled (casing)'),
@@ -1161,14 +1170,12 @@ EDGE_SETS = [
          reason='bottom corners rest on the slab; ends meet the cheek inner faces. Front-top and back-top edges are bevelled'),
     dict(id='ctl.bays.contact', status='contact', match=[('ctl.bays', _ANY, _B)],
          reason='bottom corners rest on the slab; ends meet the cheeks and the outer keys; back meets the panel wall. Top-front bevelled'),
-    dict(id='ctl.cheeks.front_corner', status='proposed', match=[('ctl.cheeks', ('along',), ('convex40-80',))],
-         reason='exposed oak-tone cheek front-top profile corner, 51 degrees, across the 22 mm cheek: the end of the round top '
-                'run meeting the flat cheek front (a genuine profile corner, not a mid-run break). Unchanged since v01; not '
-                'covered by any grant. Author recommendation: a casing bevel in a later bounded pass, else image gate N1b',
-         reconsider='any view where the cheek nose shows a hard highlight line'),
     dict(id='ctl.cheeks.contact', status='contact', match=[('ctl.cheeks', _ANY, _B)],
-         reason='inner face perimeter meets the slab, panel and bays; bottom profile corners at the underside on the stand arms. '
-                'Outer face perimeter and back-top corner are bevelled'),
+         reason='inner face perimeter meets the slab, panel and bays; bottom profile corners at the underside on the stand arms; '
+                'and (v04 decision 4) the eight bevel-band mitre edges at the two unbevelled 90-degree underside corners of each '
+                'cheek (4 at 75.5 and 4 at 41.4 degrees, all within 2.2 mm of the cheek underside, facing down onto the stand '
+                'arms). Outer face perimeter, back-top corner and (v04 decision 3) the cheek nose are bevelled (casing); no '
+                'exposed cheek edge is in this set (author_declaration asserts it)'),
     # ---- controller details
     dict(id='ctl.panel_pads', status='named', match=[('ctl.pad', _ANY, _B)], reason='panel pads (C13), incl. their 2-step plan corners'),
     dict(id='ctl.knobs', status='named', match=[('ctl.knob', _ANY, _B)], reason='knobs (C13)'),
@@ -1199,9 +1206,12 @@ EDGE_SETS = [
     dict(id='rug.inner_step', status='named', match=[('rug', ('ring',), ('convex>=80',)), ('rug', ('cap',), ('concave',))],
          reason="rug's inner binding step (C13): the 2.5 mm step from the binding top down to the field, both corners"),
     dict(id='rug.underside.contact', status='contact', match=[('rug', ('cap',), ('convex>=80',))], reason='underside perimeter on the floor'),
-    dict(id='rug.binding_shoulder', status='proposed', match=[('rug', ('ring',), ('convex40-80',))],
-         reason='outer binding shoulder: one 63-degree chamfer facet, 2.6 mm tall, on the 10.5 mm fabric binding (under the 12 mm '
-                'floor). Not named by root; unchanged since v03 (C11)', reconsider='the rug edge reads as a hard slab'),
+    dict(id='rug.binding_shoulder', status='named', source=_BD + ' decision 7',
+         match=[('rug', ('ring',), ('convex40-80',), (('b0', 'b1'),))],
+         reason='accepted sharp by name (decision 7): the outer binding shoulder at the foot of its one chamfer facet (62.3 '
+                'degrees on the four straight runs, 61.5 at the twelve corner edges), 8.2 mm above the floor, on the current '
+                'matte, already-chamfered 10.5 mm woven binding only. Rug size and position unchanged',
+         reconsider='image gates RUG1 / E1b: the rug edge reads as a hard slab or shows a bright outline'),
     # ---- rack
     dict(id='rack.clamps', status='named', match=[('rack.clamp_body', _ANY, _B), ('rack.clamp_bolt', _ANY, _B), ('rack.clamp_wing', _ANY, _B)],
          reason='clamp caps and wing bolts (C13), incl. the octagonal clamp-block plan corners'),
@@ -1210,18 +1220,32 @@ EDGE_SETS = [
          reason='pad-rim inner corners (C13): rim inner top corner and the inner corner under the rim step; outer top corner bevelled'),
     dict(id='pad.rim_skirt.contact', status='contact', match=[('pad.*.shell', ('open',), ('open',))],
          reason='open end of the rim inner skirt, 0.5 mm below the mesh head top and 0.6 mm outside its edge: hidden by the head'),
-    dict(id='pad.rim_lower', status='proposed', match=[('pad.*.shell', ('ring',), ('convex40-80',))],
-         reason='rim lower outer corner (72 degrees, 6 mm metal step under the rim) and shell bottom chamfer (52 degrees, underside); '
-                'not named by root (C13 names the inner corners only); unchanged since v03', reconsider='a lit rim underside reads as a hard line'),
+    dict(id='pad.rim_lower_outer', status='named', source=_BD + ' decision 6',
+         match=[('pad.*.shell', ('ring',), ('convex40-80',), (('b4', 'b5'),))],
+         reason='accepted sharp by name (decision 6): the bright-metal rim lower outer corner, 71.4 degrees, where the 8.9 mm rim '
+                'wall meets the 6.3 mm step under it, on the four pads. The rim outer top corner stays bevelled. The obvious '
+                'fallback (a casing bevel, about 384 triangles for four pads) does not fit the 2,600 row ceiling and is not '
+                'authorised: an image failure goes back to root for a bounded profile / budget decision',
+         reconsider='image gate E1b: the lower boundary of any rim shows a bright line, or the rim reads as a flat cut strip '
+                    'beside its bevelled top'),
+    dict(id='pad.shell_bottom.contact', status='contact', match=[('pad.*.shell', ('ring',), ('convex40-80',), (('b1', 'b2'),))],
+         reason='hidden edge, not an exemption (decision 6): the black shell bottom corner, 52.8 degrees, 4 mm above the shell '
+                'underside, where the visible black shell facet meets the shell bottom ring. That ring faces at least 63 degrees '
+                'below horizontal at every authored tilt, and every planned eye is above every pad (pads 0.44-0.85 m)',
+         reconsider='any planned eye drops below the pad bottoms'),
     dict(id='pad.lugs', status='named', match=[('pad.*.lug', _ANY, _B)], reason='pad lugs (C13)'),
     dict(id='pad.blocks', status='named', match=[('pad.*.block', _ANY, _B)], reason='mount blocks (C13)'),
     dict(id='pad.head.contact', status='contact', match=[('pad.*.head', _ANY, _B)],
          reason='3 mm mesh-head disc edge inside the rim, 0.3 mm clear of the inner skirt and 9.5 mm below the rim top: hidden by the rim'),
     # ---- cymbals
     dict(id='cymbal.nuts', status='named', match=[('cymbal.*.nut', ('block', 'cap'), _B)], reason='cymbal wing nuts (C13): wings and nut body'),
-    dict(id='cymbal.edge', status='proposed', match=[('cymbal.*.disc', ('ring',), ('convex>=80',))],
-         reason='e-cymbal outer edge rim (rubber pad edge, about 110 degrees across 11 mm) and its underside corner; the edge is the '
-                "cymbal's identifying silhouette. Not named by root; unchanged since v01", reconsider='the cymbal reads as a slab, not a cymbal'),
+    dict(id='cymbal.edge', status='named', source=_BD + ' decision 5',
+         match=[('cymbal.*.disc', ('ring',), ('convex>=80', 'convex40-80'), (('b5', 'b6'), ('b6', 'b7')))],
+         reason='accepted sharp by name (decision 5): both corners of the 8.9 mm outer edge band of the three authored cymbals: '
+                'the 70.0-degree upper corner (bow strip into the band) and the 108.5-degree lower corner (band into the '
+                'underside), radius about 0.19 m. Dark matte e-cymbal pad surface (material rule fabric, the rubber pad), '
+                'source profile, scale and identity as authored. No allowance for any other profile or later geometry',
+         reconsider='image gate E1b: a cymbal reads as a slab, or the band shows a bright line'),
     # ---- kick
     dict(id='kick.base.contact', status='contact', match=[('kick.base', _ANY, _B)], reason='bottom perimeter rests on the rug; top perimeter and plan corners bevelled'),
     dict(id='kick.tower.contact', status='contact', match=[('kick.tower', _ANY, _B)], reason='bottom perimeter rests on the base frame; top perimeter and plan corners bevelled'),
@@ -1268,18 +1292,21 @@ EDGE_SETS = [
          reconsider='image gate F1: cables sparkle'),
     dict(id='faceted_round.profiles', status='faceted-round',
          match=[('stool.seat', ('ring',), ('convex40-80',)), ('throne.seat', ('ring',), ('convex40-80',)),
-                ('kick.beater', ('ring',), ('convex40-80',)), ('cymbal.*.disc', ('ring',), ('convex40-80',))],
-         reason='profile facets of curved lathed surfaces (24-step seat cushions with 4-5 profile points, 12-step beater head, '
-                'cymbal bell-to-bow transitions): turns of 40-80 degrees between profile points',
+                ('kick.beater', ('ring',), ('convex40-80',))],
+         reason='profile facets of curved lathed surfaces (24-step seat cushions with 4-5 profile points, 12-step beater head): '
+                'turns of 40-80 degrees between profile points. (v04: no cymbal edge here; the bell-to-bow turn is 39.6 degrees '
+                'and smooth, and the band corners are cymbal.edge)',
          reconsider='a seat cushion or the beater head reads as a stepped solid'),
 ]
 
 
-def edge_set(label, kind, band):
-    """The EDGE_SETS entry holding a hard edge, or None (undeclared: a failure to report, never an exemption)."""
+def edge_set(label, kind, band, roles=None):
+    """The EDGE_SETS entry holding a hard edge, or None (undeclared: a failure to report, never an exemption).
+    roles: the sorted pair of the edge's two face roles (edge_records()['roles']); a match with rolePairs needs it."""
     for s in EDGE_SETS:
-        for pat, kinds, bands in s['match']:
-            if fnmatch.fnmatchcase(label, pat) and kind in kinds and band in bands:
+        for m in s['match']:
+            pat, kinds, bands = m[:3]
+            if fnmatch.fnmatchcase(label, pat) and kind in kinds and band in bands and (len(m) == 3 or roles in m[3]):
                 return s
     return None
 
@@ -1292,7 +1319,7 @@ def edge_tally(parts):
     for row, part in parts.items():
         for rec in edge_records(part):
             lab = part.groups[rec['group']][0]
-            s = edge_set(lab, rec['kind'], rec['band'])
+            s = edge_set(lab, rec['kind'], rec['band'], rec['roles'])
             key = s['id'] if s else 'UNDECLARED'
             t = out.setdefault(key, dict(status=s['status'] if s else 'undeclared', lengthM={}, edges=0, labels=set()))
             t['lengthM'][rec['band']] = t['lengthM'].get(rec['band'], 0.0) + rec['length']
@@ -1434,7 +1461,8 @@ def edge_records(part, sharp_deg=SHARP_DEG):
     kind (from the authored face roles, never from normals): 'cap' (an end-cap / prism-cap perimeter), 'along' (between two
     side faces of the same band, strip or tube segment: the lengthwise facet edges of a round member, the plan corners of a
     prism), 'ring' (between adjacent bands / strips / segments: a profile corner or a tube bend), 'block' (a box edge),
-    'open' (not two faces). band: 'convex>=80', 'convex40-80' or 'concave' (outward-oriented dihedral turn), 'open'."""
+    'open' (not two faces). band: 'convex>=80', 'convex40-80' or 'concave' (outward-oriented dihedral turn), 'open'.
+    roles (v04 bounded pass): the sorted pair of the two faces' authored roles (e.g. lathe strips 'b4', 'b5'), None if open."""
     V = np.asarray(part.v, float)
     nrm, grp, sign = _face_normals(part), _group_of_faces(part), _outward_sign(part)
     cent = [V[list(f)].mean(0) for f, _ in part.f]
@@ -1446,7 +1474,7 @@ def edge_records(part, sharp_deg=SHARP_DEG):
         g = grp[fs[0]]
         L = float(np.linalg.norm(V[e[1]] - V[e[0]]))
         if len(fs) != 2:
-            recs.append(dict(edge=e, group=g, kind='open', band='open', angle=None, length=L))
+            recs.append(dict(edge=e, group=g, kind='open', band='open', angle=None, length=L, roles=None))
             continue
         r0, r1 = part.roles[fs[0]], part.roles[fs[1]]
         kind = 'cap' if 'cap' in (r0, r1) else 'block' if r0 == r1 == 'blk' else 'along' if r0 == r1 else 'ring'
@@ -1454,7 +1482,7 @@ def edge_records(part, sharp_deg=SHARP_DEG):
         ang = math.degrees(math.acos(max(-1.0, min(1.0, float(np.dot(n0, n1))))))
         convex = float(np.dot(n0, cent[fs[1]] - (V[e[0]] + V[e[1]]) / 2)) < 0
         band = 'concave' if not convex else 'convex>=80' if ang >= 80.0 else 'convex40-80'
-        recs.append(dict(edge=e, group=g, kind=kind, band=band, angle=ang, length=L))
+        recs.append(dict(edge=e, group=g, kind=kind, band=band, angle=ang, length=L, roles=tuple(sorted((r0, r1)))))
     return recs
 
 
@@ -1513,16 +1541,233 @@ ATTACHMENTS = [  # K1 attachment intent, separate from floor support (root v04 K
      'arm tip disc wholly inside the foot; the arm enters through the foot side wall (an attached part, not a support)'),
     ('kick.spur_arm_R_in_foot', 'drum_kick__tower', 'kick.spur_arm.R', 'kick.spur_foot.R', 'embedded', None,
      'arm tip disc wholly inside the foot; the arm enters through the foot side wall'),
-    ('kick.spur_arm_L_in_base', 'drum_kick__tower', 'kick.spur_arm.L', 'kick.base', 'embedded', 0.006,
-     'arm root 6 mm inside the base frame side face: the whole root disc is buried in the frame'),
-    ('kick.spur_arm_R_in_base', 'drum_kick__tower', 'kick.spur_arm.R', 'kick.base', 'embedded', 0.006,
-     'arm root 6 mm inside the base frame side face: the whole root disc is buried in the frame'),
-    ('kick.footboard_on_heel', 'drum_kick__tower', 'kick.footboard', 'kick.heel', 'embedded', 0.004,
-     'INHERITED (v01, unchanged): the footboard heel end sits up to 4 mm into the heel block top as its hinge seat; reported, not new'),
+    ('kick.spur_arm_L_in_base', 'drum_kick__tower', 'kick.spur_arm.L', 'kick.base', 'embedded', None,
+     'root decision 1: the arm grows out of the base frame; its whole root ring is buried in the frame, entering through the '
+     'flat own-side face only (criterion)'),
+    ('kick.spur_arm_R_in_base', 'drum_kick__tower', 'kick.spur_arm.R', 'kick.base', 'embedded', None,
+     'root decision 1: the arm grows out of the base frame; its whole root ring is buried in the frame, entering through the '
+     'flat own-side face only (criterion)'),
+    ('kick.footboard_on_heel', 'drum_kick__tower', 'kick.footboard', 'kick.heel', 'embedded', None,
+     'root decision 8: intended seat. The inclined footboard heel end is seated up to 4 mm (half its 8 mm thickness) into '
+     'the heel block top, entering and leaving only through that top, so it reads as a board hinged at a heel plate with no '
+     'open wedge beneath (criterion)'),
+    ('hihat.footboard_in_hinge', 'drum_hihat_pedal__pedal', 'hihat.footboard', 'hihat.hinge', 'hinged', None,
+     'author intent for the existing hi-hat heel hinge (bounded disposition, hi-hat coverage): the footboard pivots on the '
+     'hinge barrel, its heel edge on the barrel axis and its heel end inside the barrel (criterion). No geometry change'),
     ('ctl.display_face_on_bezel', 'ctl_body__indicators', 'ctl.display_face', 'ctl.bezel', 'rests_on', EPS,
      'display glow face rests on the bezel top with the usual 0.3 mm gap (I1 wording); no overlap'),
 ]
 ATTACH_ROWS = {'ctl.bezel': 'ctl_body__shell'}
+
+
+# v04 bounded pass (root 7705f590 decisions 1, 2, 8 and hi-hat coverage; S msg_404c585797e4 / msg_63a12bb6ae48): explicit
+# attachment criteria with row-level vertex / face locators. Additive author metadata only (the public v3 verifier schema is
+# unchanged). Locators come from the authored primitive topology (rod = 2 rings + side quads + root cap + tip cap; extrude =
+# bottom cap, top cap, sides; box = -z, +z, -y, +x, +y, -x); nothing is inferred from coincident coordinates. 'authorObserved'
+# values are the author's own source figures, not measurement of record; Codex measures every criterion independently.
+def _grp(part, gid):
+    i = part.ids.index(gid)
+    _, v0, v1, f0, f1 = part.groups[i]
+    return v0, v1, f0, f1
+
+
+def _rod_topology(part, gid, n):
+    v0, v1, f0, f1 = _grp(part, gid)
+    assert v1 - v0 == 2 * n and f1 - f0 == n + 2, gid
+    return dict(rootRing=list(range(v0, v0 + n)), tipRing=list(range(v0 + n, v0 + 2 * n)),
+                lengthwiseEdges=[[v0 + i, v0 + n + i] for i in range(n)], sideFaces=[f0, f0 + n - 1],
+                rootCapFace=f0 + n, tipCapFace=f0 + n + 1)
+
+
+def _plane(part, fi):
+    V = np.asarray(part.v, float)
+    P = V[list(part.f[fi][0])]
+    nrm = np.cross(P[1] - P[0], P[2] - P[0])
+    return P, nrm / np.linalg.norm(nrm)
+
+
+def _r(x, k=5):
+    return round(float(x), k)
+
+
+def _crit_spur_base(parts, side):
+    p = parts['drum_kick__tower']
+    V = np.asarray(p.v, float)
+    sx = -1 if side == 'L' else 1
+    arm = _rod_topology(p, f'kick.spur_arm.{side}', 8)
+    b0, b1, bf0, bf1 = _grp(p, 'kick.base')
+    sign = _outward_sign(p)[p.ids.index('kick.base')]
+    nrm = _face_normals(p)
+    own = [fi for fi in range(bf0, bf1) if float(np.dot(nrm[fi] * sign, (sx, 0, 0))) > 0.9999]
+    assert len(own) == 1, own
+    P, _ = _plane(p, own[0])
+    face_x = float(P[:, 0].mean())
+    burial = [sx * (face_x - V[i][0]) for i in arm['rootRing']]
+    cross = []
+    for a, b in arm['lengthwiseEdges']:
+        t = (face_x - V[a][0]) / (V[b][0] - V[a][0])
+        assert 0 < t < 1
+        cross.append(V[a] + t * (V[b] - V[a]))
+    cross = np.asarray(cross)
+    margin = min(min(c[1] - P[:, 1].min(), P[:, 1].max() - c[1], c[2] - P[:, 2].min(), P[:, 2].max() - c[2]) for c in cross)
+    root_c, tip_c = V[arm['rootRing']].mean(0), V[arm['tipRing']].mean(0)
+    return dict(
+        kind='rod_root_embedded_through_flat_face',
+        meaning='every root-ring vertex lies inside the kick.base solid, at least minRingBurialM inside the receiving own-side '
+                'flat face; each lengthwise arm edge crosses the base boundary exactly once and only through that flat face '
+                '(never a bevel band, the top or the back). rootCentreInsetM is the authored inset of the root-disc CENTRE from '
+                'that face plane and is NOT a penetration depth: the oblique ring is buried 1.3-10.7 mm. Root and tip heights '
+                'are centre heights of the root and tip cap discs above the resting height. Not a same-row overlap allowance',
+        rootRingVertices=arm['rootRing'], lengthwiseEdges=arm['lengthwiseEdges'], rootCapFace=arm['rootCapFace'],
+        tipRingVertices=arm['tipRing'], tipCapFace=arm['tipCapFace'], armSideFaceRange=arm['sideFaces'],
+        receivingFace=dict(row='drum_kick__tower', group='kick.base', face=own[0], outwardNormal=[sx, 0, 0]),
+        minRingBurialM=0.001, rootCentreInsetM=SPUR['root_in'], restingHeightM=_r(ON_RUG, 6),
+        rootCentreHeightM=SPUR['arm_root_z'], tipCentreHeightM=SPUR['arm_tip_z'],
+        heightChange='v03 root 18 mm -> v04 22 mm; v03 tip 12 mm -> v04 14 mm (tip plan position unchanged)',
+        authorObserved=dict(ringBurialMinM=_r(min(burial)), ringBurialMaxM=_r(max(burial)),
+                            crossingMinMarginToFaceBoundaryM=_r(margin),
+                            rootCentreHeightM=_r(root_c[2] - ON_RUG), tipCentreHeightM=_r(tip_c[2] - ON_RUG)))
+
+
+def _crit_spur_foot(parts, side):
+    p = parts['drum_kick__tower']
+    V = np.asarray(p.v, float)
+    arm = _rod_topology(p, f'kick.spur_arm.{side}', 8)
+    f0v, f1v, _, _ = _grp(p, f'kick.spur_foot.{side}')
+    F = V[f0v:f1v]
+    c = F[:, :2].mean(0)
+    wall = min(SPUR['foot_r'] * math.cos(math.pi / 8) - float(np.linalg.norm(V[i][:2] - c)) for i in arm['tipRing'])
+    top = min(float(F[:, 2].max() - V[i][2]) for i in arm['tipRing'])
+    return dict(kind='rod_tip_inside_solid',
+                meaning='every tip-ring vertex lies inside the spur foot solid (8-sided lathe): inside its wall and below its top',
+                tipRingVertices=arm['tipRing'], tipCapFace=arm['tipCapFace'],
+                authorObserved=dict(minInsideWallM=_r(wall), minBelowTopM=_r(top)))
+
+
+def _crit_kick_heel(parts):
+    p = parts['drum_kick__tower']
+    V = np.asarray(p.v, float)
+    fv0, fv1, ff0, ff1 = _grp(p, 'kick.footboard')
+    n = (fv1 - fv0) // 2
+    hv0, hv1, hf0, hf1 = _grp(p, 'kick.heel')
+    assert hv1 - hv0 == 8 and hf1 - hf0 == 6
+    under, top = hf0, hf0 + 1                                       # hexa order: -z, +z, -y, +x, +y, -x
+    top_z, under_z = float(V[hv0:hv1, 2].max()), float(V[hv0:hv1, 2].min())
+    Pb, nb = _plane(p, ff0)
+    Pt, _ = _plane(p, ff0 + 1)
+    thick = abs(float(np.dot(Pt[0] - Pb[0], nb)))
+    # heel-end edge of the top cap: the two top-cap vertices nearest the heel along the board's run (local board y)
+    run = np.array([0.0, math.cos(math.atan2(0.05, KICK['toe_y'] - KICK['heel_y'])), math.sin(math.atan2(0.05, KICK['toe_y'] - KICK['heel_y']))])
+    tops = list(range(fv0 + n, fv1))
+    tmin = min(float(np.dot(V[i], run)) for i in tops)
+    heel_top = [i for i in tops if float(np.dot(V[i], run)) < tmin + 1e-9]
+    assert len(heel_top) == 2
+    below = [i for i in range(fv0, fv1) if V[i][2] < top_z - 1e-12]
+    return dict(
+        kind='board_end_seated_through_top_face',
+        meaning='intended seat (decision 8), exactly kick.footboard into kick.heel: (1) every footboard vertex below the heel '
+                'top plane lies inside the heel plan outline; (2) the board crosses the heel boundary only through the heel '
+                'top face, never a side, the back or the toe-side face; (3) the greatest depth below the top plane is at most '
+                'maxDepthM and at most half the board thickness measured between the two parallel board faces, and the '
+                'exposed upper heel-end corners stand at least minProudM above the heel top; (4) no footboard vertex is below '
+                'the heel underside. Checked over ALL footboard vertices and source edges, separately from support height. '
+                'Not a same-row overlap allowance',
+        receivingTopFace=top, receivingUndersideFace=under,
+        forbiddenCrossingFaces=dict(minusY=hf0 + 2, plusX=hf0 + 3, plusY=hf0 + 4, minusX=hf0 + 5),
+        boardFaces=dict(underside=ff0, top=ff0 + 1, meaning='the two parallel extrude caps; board thickness is the distance between their planes'),
+        boardVertexRange=[fv0, fv1], boardSideFaceRange=[ff0 + 2, ff1 - 1],
+        exposedUpperHeelEndCorners=heel_top,
+        maxDepthM=0.004, boardThicknessM=0.008, minProudM=0.0038,
+        authorObserved=dict(belowTopVertices=below, maxDepthM=_r(max(top_z - V[i][2] for i in below)),
+                            boardThicknessM=_r(thick, 6), heelEndCornerProudM=[_r(V[i][2] - top_z) for i in heel_top],
+                            minAboveUndersideM=_r(min(V[i][2] for i in range(fv0, fv1)) - under_z)))
+
+
+def _crit_hihat_hinge(parts):
+    p = parts['drum_hihat_pedal__pedal']
+    V = np.asarray(p.v, float)
+    h = HIHAT_PEDAL
+    M = T(h['cx'], h['cy'], ON_RUG) @ Rz(h['yaw'])
+    Mi = np.linalg.inv(M)
+    L = lambda i: (Mi @ np.append(V[i], 1.0))[:3]
+    hinge = _rod_topology(p, 'hihat.hinge', 12)
+    a, b = V[hinge['rootRing']].mean(0), V[hinge['tipRing']].mean(0)
+    ax_y, ax_z, half, R = -h['l'] / 2 + 0.03, 0.022, 0.045, 0.009
+    r_in = R * math.cos(math.pi / 12)
+    fv0, fv1, ff0, ff1 = _grp(p, 'hihat.footboard')
+    n = (fv1 - fv0) // 2
+    loc = {i: L(i) for i in range(fv0, fv1)}
+    rad = {i: math.hypot(q[1] - ax_y, q[2] - ax_z) for i, q in loc.items()}
+    on_axis = [i for i in range(fv0, fv0 + n) if rad[i] < 1e-6]
+    assert len(on_axis) == 2
+    end_face = [fi for fi in range(ff0 + 2, ff1) if set(on_axis) <= set(p.f[fi][0])]
+    assert len(end_face) == 1
+    ring_c = [L(i) for i in hinge['rootRing']]
+
+    def inside_barrel(q):                                           # exact 12-gon test in the barrel's local (y, z) section
+        if abs(q[0]) > half:
+            return False
+        d = np.array([q[1] - ax_y, q[2] - ax_z])
+        for k in range(12):
+            u0, u1 = ring_c[k][1:] - (ax_y, ax_z), ring_c[(k + 1) % 12][1:] - (ax_y, ax_z)
+            m = (u0 + u1) / 2
+            if float(np.dot(d, m / np.linalg.norm(m))) > float(np.linalg.norm(m)) + 1e-12:
+                return False
+        return True
+
+    within = [i for i in range(fv0, fv1) if abs(loc[i][0]) <= half and rad[i] < R]
+    outside_ends = [i for i in range(fv0, fv1) if abs(loc[i][0]) > half and rad[i] < R]
+    base_top = max(L(i)[2] for i in range(*_grp(p, 'hihat.base')[:2]))
+    heel_v = list(range(*_grp(p, 'hihat.heel')[:2]))
+    heel_front = max(L(i)[1] for i in heel_v)
+    return dict(
+        kind='board_heel_captured_in_hinge_barrel',
+        meaning='author intent for the EXISTING hi-hat heel hinge (inherited v01 geometry, no change): the footboard pivots on '
+                'the 12-sided hinge barrel. (1) The two heel-axis vertices of the board underside lie on the barrel axis '
+                '(within 0.05 mm) and axially between the barrel end discs; (2) every footboard vertex that is axially '
+                'between the end discs and radially within the barrel radius lies inside the 12-gon barrel solid, so the '
+                'board heel-end face is wholly inside the barrel; (3) the board is wider (104 mm) than the barrel (90 mm): '
+                'its rounded heel corners pass out through the end discs, and no footboard vertex lies axially more than '
+                'maxCornerOverhangM (the authored width difference, not a tolerance) beyond an end disc; (4) no footboard vertex is below the base top. This is a cylindrical capture, not the '
+                'kick heel planar seat; it covers the footboard / barrel pair only, not the barrel mounting',
+        barrel=dict(row='drum_hihat_pedal__pedal', group='hihat.hinge', axisStart=[_r(c, 6) for c in a],
+                    axisEnd=[_r(c, 6) for c in b], radiusM=R, sides=12, inscribedRadiusM=_r(r_in, 6),
+                    ringVertices=[hinge['rootRing'], hinge['tipRing']], sideFaceRange=hinge['sideFaces'],
+                    endDiscFaces=[hinge['rootCapFace'], hinge['tipCapFace']]),
+        board=dict(group='hihat.footboard', vertexRange=[fv0, fv1], undersideFace=ff0, topFace=ff0 + 1,
+                   heelAxisVertices=on_axis, heelEndFace=end_face[0], heelEndFaceVertices=list(p.f[end_face[0]][0])),
+        axisToleranceM=0.00005, maxCornerOverhangM=_r((h['w'] - 0.01) / 2 - half, 6),   # board half-width 0.052 less barrel half-length 0.045
+        authorObserved=dict(
+            heelAxisVertexRadialM=[_r(rad[i], 6) for i in on_axis],
+            verticesBetweenEndDiscsWithinRadius=within,
+            allThoseInsideBarrel=all(inside_barrel(loc[i]) for i in within),
+            maxRadialOfThoseM=_r(max(rad[i] for i in within)),
+            cornerVerticesBeyondEndDiscs=outside_ends,
+            maxBoardOverhangBeyondEndDiscM=_r(max(abs(q[0]) - half for q in loc.values())),
+            maxOverhangOfCornerVerticesWithinRadiusM=_r(max(abs(loc[i][0]) - half for i in outside_ends)),
+            boardMinAboveBaseTopM=_r(min(q[2] for q in loc.values()) - base_top),
+            barrelMountingNote=('NOT part of this pair, reported for root: the barrel touches nothing but the board. Its '
+                                f'underside is {_r(1000 * (ax_z - R - base_top), 2)} mm above the base top and its back '
+                                f'{_r(1000 * (ax_y - R - heel_front), 2)} mm in front of the heel rubber (inherited v01 '
+                                'geometry; no hi-hat geometry change is released)')))
+
+
+ATTACH_CRITERIA = {
+    'kick.spur_arm_L_in_base': lambda parts: _crit_spur_base(parts, 'L'),
+    'kick.spur_arm_R_in_base': lambda parts: _crit_spur_base(parts, 'R'),
+    'kick.spur_arm_L_in_foot': lambda parts: _crit_spur_foot(parts, 'L'),
+    'kick.spur_arm_R_in_foot': lambda parts: _crit_spur_foot(parts, 'R'),
+    'kick.footboard_on_heel': _crit_kick_heel,
+    'hihat.footboard_in_hinge': _crit_hihat_hinge,
+}
+
+
+def _assert_cheek_nose(parts):
+    """v04 decisions 3/4: after the nose bevel no hard 'along' 40-80 edge remains on a cheek except the eight underside mitres."""
+    p = parts['ctl_body__shell']
+    mitres = [r for r in edge_records(p) if p.groups[r['group']][0] == 'ctl.cheeks' and r['kind'] == 'along' and r['band'] == 'convex40-80']
+    assert len(mitres) == 8 and abs(sum(r['length'] for r in mitres) - 0.0223) < 0.0005, (len(mitres), sum(r['length'] for r in mitres))
+    return len(mitres)
 
 
 def author_declaration(helper_sha256=None):
@@ -1554,8 +1799,14 @@ def author_declaration(helper_sha256=None):
         orow = ATTACH_ROWS.get(onto, row)
         assert g in parts[row].ids and onto in parts[orow].ids, aid
         a = dict(id=aid, row=row, group=g, ontoRow=orow, ontoGroup=onto, relation=rel, intent=intent)
-        a['gapM' if rel == 'rests_on' else 'depthM'] = d
+        if rel == 'rests_on':
+            a['gapM'] = d
+        else:                                                      # v04 decision 2: no ambiguous depthM; explicit criterion
+            assert d is None and aid in ATTACH_CRITERIA, aid
+        if aid in ATTACH_CRITERIA:
+            a['criterion'] = ATTACH_CRITERIA[aid](parts)
         attachments.append(a)
+    _assert_cheek_nose(parts)
     strips = [i for i in parts['ctl_body__indicators'].ids if i.startswith('ctl.indicator_strip#')]
     assert len(strips) == 4
     seatings = [dict(id=f'I1.{s}', row='ctl_body__indicators', group=s, intoRow='ctl_body__shell', intoGroup='ctl.panel',
@@ -1573,7 +1824,8 @@ def author_declaration(helper_sha256=None):
     edge_sets = []
     for s in EDGE_SETS:
         e = dict(id=s['id'], status=s['status'], reason=s['reason'],
-                 match=[dict(label=pat, kinds=list(k), bands=list(b)) for pat, k, b in s['match']])
+                 match=[dict(label=m[0], kinds=list(m[1]), bands=list(m[2]), **({'rolePairs': [list(r) for r in m[3]]} if len(m) > 3 else {}))
+                        for m in s['match']])
         for opt in ('reconsider', 'source'):
             if opt in s:
                 e[opt] = s[opt]
@@ -1599,9 +1851,16 @@ def author_declaration(helper_sha256=None):
             'hard': 'an edge is hard when smooth_edges() is False: not exactly two faces, or the two faces are not in one '
                     'declared round run and their normals differ by more than 40 degrees',
             'kinds': 'cap, along, ring, block, open: from authored face roles (Part.roles), see edge_records()',
+            'rolePairs': "optional per match: the sorted pair of the edge's two face roles must be one of these (lathe strip "
+                         "bK is profile segment K; rug ring bK is binding strip K); pins a set to exact profile corners",
             'bands': 'convex>=80, convex40-80, concave (outward-oriented per primitive), open',
-            'statuses': 'named, granted, contact, screen, faceted-round, proposed; first matching set wins; an unmatched hard edge is undeclared (a failure)',
+            'statuses': 'named (root C13, or accepted by name in the v04 bounded disposition: see source), granted, contact, '
+                        'screen, faceted-round, proposed; first matching set wins; an unmatched hard edge is undeclared (a failure)',
             'bevelLength': 'bevelMiddleSeamM in edge_tally(): the seam between the two faces of a 2-segment bevel, not the treated original edge length'},
+        'attachmentCriteria': 'v04 bounded pass: an attachment with relation embedded or hinged carries criterion {kind, meaning, '
+                              'row-level vertex / edge / face locators, named metric fields with explicit meaning, authorObserved}. '
+                              'Indices are row-level (rows[].vertexCount / faceCount space). rests_on keeps gapM. authorObserved is '
+                              'author evidence, not measurement of record',
         'edgeSets': edge_sets,
         'poseOptionIds': [p['id'] for p in POSE_OPTIONS],
         'poseOptions': [dict(cx=p['cx'], cy=p['cy'], yaw=p['yaw']) for p in POSE_OPTIONS],

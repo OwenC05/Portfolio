@@ -4,7 +4,7 @@
  "status": "actual-Claude author semantic declaration for M4 v04 source preparation; NOT frozen, NOT verified, NOT candidate acceptance. rowsSha256 and the expected declaration digest are for the producer and root/S freeze.",
  "author": "actual Claude Opus 5.5 (claude-opus-5-5, effort high), task_23314c669e03",
  "sources": {
-  "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py": "4bb4094672fd762e622f9187690941b88f8677ec463eb09b38f691d0e7effbaf"
+  "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py": "5d01ed7c094d2983d9a597a6b7271eedfa662cfdcfa435929fa258898caca20a"
  },
  "interface": {
   "helper": "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py",
@@ -18,8 +18,8 @@
  "rows": [
   {
    "id": "ctl_body__shell",
-   "vertexCount": 692,
-   "faceCount": 426,
+   "vertexCount": 708,
+   "faceCount": 438,
    "normalsRequired": true,
    "groups": [
     {
@@ -87,13 +87,13 @@
      "label": "ctl.cheeks",
      "vertexRange": [
       52,
-      88
+      96
      ],
      "faceRange": [
       34,
-      63
+      69
      ],
-     "triangleCount": 68,
+     "triangleCount": 84,
      "n1": "in_scope",
      "reason": "N1 casing: oak-tone cheek, bevelled outer perimeter and back-top corner, round top run"
     },
@@ -101,14 +101,14 @@
      "id": "ctl.cheeks#1",
      "label": "ctl.cheeks",
      "vertexRange": [
-      88,
-      124
+      96,
+      140
      ],
      "faceRange": [
-      63,
-      92
+      69,
+      104
      ],
-     "triangleCount": 68,
+     "triangleCount": 84,
      "n1": "in_scope",
      "reason": "N1 casing: oak-tone cheek, bevelled outer perimeter and back-top corner, round top run"
     },
@@ -116,12 +116,12 @@
      "id": "ctl.wheel_slot#0",
      "label": "ctl.wheel_slot",
      "vertexRange": [
-      124,
-      132
+      140,
+      148
      ],
      "faceRange": [
-      92,
-      98
+      104,
+      110
      ],
      "triangleCount": 12,
      "n1": "out_of_scope",
@@ -131,12 +131,12 @@
      "id": "ctl.wheel#0",
      "label": "ctl.wheel",
      "vertexRange": [
-      132,
-      164
+      148,
+      180
      ],
      "faceRange": [
-      98,
-      116
+      110,
+      128
      ],
      "triangleCount": 60,
      "n1": "out_of_scope",
@@ -146,12 +146,12 @@
      "id": "ctl.wheel_slot#1",
      "label": "ctl.wheel_slot",
      "vertexRange": [
-      164,
-      172
+      180,
+      188
      ],
      "faceRange": [
-      116,
-      122
+      128,
+      134
      ],
      "triangleCount": 12,
      "n1": "out_of_scope",
@@ -161,12 +161,12 @@
      "id": "ctl.wheel#1",
      "label": "ctl.wheel",
      "vertexRange": [
-      172,
-      204
+      188,
+      220
      ],
      "faceRange": [
-      122,
-      140
+      134,
+      152
      ],
      "triangleCount": 60,
      "n1": "out_of_scope",
@@ -176,12 +176,12 @@
      "id": "ctl.pad#0",
      "label": "ctl.pad",
      "vertexRange": [
-      204,
-      228
+      220,
+      244
      ],
      "faceRange": [
-      140,
-      154
+      152,
+      166
      ],
      "triangleCount": 44,
      "n1": "out_of_scope",
@@ -191,12 +191,12 @@
      "id": "ctl.pad#1",
      "label": "ctl.pad",
      "vertexRange": [
-      228,
-      252
+      244,
+      268
      ],
      "faceRange": [
-      154,
-      168
+      166,
+      180
      ],
      "triangleCount": 44,
      "n1": "out_of_scope",
@@ -206,12 +206,12 @@
      "id": "ctl.pad#2",
      "label": "ctl.pad",
      "vertexRange": [
-      252,
-      276
+      268,
+      292
      ],
      "faceRange": [
-      168,
-      182
+      180,
+      194
      ],
      "triangleCount": 44,
      "n1": "out_of_scope",
@@ -221,12 +221,12 @@
      "id": "ctl.pad#3",
      "label": "ctl.pad",
      "vertexRange": [
-      276,
-      300
+      292,
+      316
      ],
      "faceRange": [
-      182,
-      196
+      194,
+      208
      ],
      "triangleCount": 44,
      "n1": "out_of_scope",
@@ -236,12 +236,12 @@
      "id": "ctl.pad#4",
      "label": "ctl.pad",
      "vertexRange": [
-      300,
-      324
+      316,
+      340
      ],
      "faceRange": [
-      196,
-      210
+      208,
+      222
      ],
      "triangleCount": 44,
      "n1": "out_of_scope",
@@ -251,12 +251,12 @@
      "id": "ctl.pad#5",
      "label": "ctl.pad",
      "vertexRange": [
-      324,
-      348
+      340,
+      364
      ],
      "faceRange": [
-      210,
-      224
+      222,
+      236
      ],
      "triangleCount": 44,
      "n1": "out_of_scope",
@@ -266,12 +266,12 @@
      "id": "ctl.pad#6",
      "label": "ctl.pad",
      "vertexRange": [
-      348,
-      372
+      364,
+      388
      ],
      "faceRange": [
-      224,
-      238
+      236,
+      250
      ],
      "triangleCount": 44,
      "n1": "out_of_scope",
@@ -281,12 +281,12 @@
      "id": "ctl.pad#7",
      "label": "ctl.pad",
      "vertexRange": [
-      372,
-      396
+      388,
+      412
      ],
      "faceRange": [
-      238,
-      252
+      250,
+      264
      ],
      "triangleCount": 44,
      "n1": "out_of_scope",
@@ -296,12 +296,12 @@
      "id": "ctl.knob#0",
      "label": "ctl.knob",
      "vertexRange": [
-      396,
-      428
+      412,
+      444
      ],
      "faceRange": [
-      252,
-      270
+      264,
+      282
      ],
      "triangleCount": 60,
      "n1": "out_of_scope",
@@ -311,12 +311,12 @@
      "id": "ctl.knob#1",
      "label": "ctl.knob",
      "vertexRange": [
-      428,
-      460
+      444,
+      476
      ],
      "faceRange": [
-      270,
-      288
+      282,
+      300
      ],
      "triangleCount": 60,
      "n1": "out_of_scope",
@@ -326,12 +326,12 @@
      "id": "ctl.knob#2",
      "label": "ctl.knob",
      "vertexRange": [
-      460,
-      492
+      476,
+      508
      ],
      "faceRange": [
-      288,
-      306
+      300,
+      318
      ],
      "triangleCount": 60,
      "n1": "out_of_scope",
@@ -341,12 +341,12 @@
      "id": "ctl.knob#3",
      "label": "ctl.knob",
      "vertexRange": [
-      492,
-      524
+      508,
+      540
      ],
      "faceRange": [
-      306,
-      324
+      318,
+      336
      ],
      "triangleCount": 60,
      "n1": "out_of_scope",
@@ -356,12 +356,12 @@
      "id": "ctl.knob#4",
      "label": "ctl.knob",
      "vertexRange": [
-      524,
-      556
+      540,
+      572
      ],
      "faceRange": [
-      324,
-      342
+      336,
+      354
      ],
      "triangleCount": 60,
      "n1": "out_of_scope",
@@ -371,12 +371,12 @@
      "id": "ctl.knob#5",
      "label": "ctl.knob",
      "vertexRange": [
-      556,
-      588
+      572,
+      604
      ],
      "faceRange": [
-      342,
-      360
+      354,
+      372
      ],
      "triangleCount": 60,
      "n1": "out_of_scope",
@@ -386,12 +386,12 @@
      "id": "ctl.knob#6",
      "label": "ctl.knob",
      "vertexRange": [
-      588,
-      620
+      604,
+      636
      ],
      "faceRange": [
-      360,
-      378
+      372,
+      390
      ],
      "triangleCount": 60,
      "n1": "out_of_scope",
@@ -401,12 +401,12 @@
      "id": "ctl.knob#7",
      "label": "ctl.knob",
      "vertexRange": [
-      620,
-      652
+      636,
+      668
      ],
      "faceRange": [
-      378,
-      396
+      390,
+      408
      ],
      "triangleCount": 60,
      "n1": "out_of_scope",
@@ -415,36 +415,6 @@
     {
      "id": "ctl.bezel",
      "label": "ctl.bezel",
-     "vertexRange": [
-      652,
-      660
-     ],
-     "faceRange": [
-      396,
-      402
-     ],
-     "triangleCount": 12,
-     "n1": "out_of_scope",
-     "reason": "out of N1 scope: small round member, hardware or detail part (no casing bevel; named/granted/faceted-round edges)"
-    },
-    {
-     "id": "ctl.transport_key#0",
-     "label": "ctl.transport_key",
-     "vertexRange": [
-      660,
-      668
-     ],
-     "faceRange": [
-      402,
-      408
-     ],
-     "triangleCount": 12,
-     "n1": "out_of_scope",
-     "reason": "out of N1 scope: small round member, hardware or detail part (no casing bevel; named/granted/faceted-round edges)"
-    },
-    {
-     "id": "ctl.transport_key#1",
-     "label": "ctl.transport_key",
      "vertexRange": [
       668,
       676
@@ -458,7 +428,7 @@
      "reason": "out of N1 scope: small round member, hardware or detail part (no casing bevel; named/granted/faceted-round edges)"
     },
     {
-     "id": "ctl.transport_key#2",
+     "id": "ctl.transport_key#0",
      "label": "ctl.transport_key",
      "vertexRange": [
       676,
@@ -473,7 +443,7 @@
      "reason": "out of N1 scope: small round member, hardware or detail part (no casing bevel; named/granted/faceted-round edges)"
     },
     {
-     "id": "ctl.transport_key#3",
+     "id": "ctl.transport_key#1",
      "label": "ctl.transport_key",
      "vertexRange": [
       684,
@@ -482,6 +452,36 @@
      "faceRange": [
       420,
       426
+     ],
+     "triangleCount": 12,
+     "n1": "out_of_scope",
+     "reason": "out of N1 scope: small round member, hardware or detail part (no casing bevel; named/granted/faceted-round edges)"
+    },
+    {
+     "id": "ctl.transport_key#2",
+     "label": "ctl.transport_key",
+     "vertexRange": [
+      692,
+      700
+     ],
+     "faceRange": [
+      426,
+      432
+     ],
+     "triangleCount": 12,
+     "n1": "out_of_scope",
+     "reason": "out of N1 scope: small round member, hardware or detail part (no casing bevel; named/granted/faceted-round edges)"
+    },
+    {
+     "id": "ctl.transport_key#3",
+     "label": "ctl.transport_key",
+     "vertexRange": [
+      700,
+      708
+     ],
+     "faceRange": [
+      432,
+      438
      ],
      "triangleCount": 12,
      "n1": "out_of_scope",
@@ -543,14 +543,20 @@
     "bevel:casing",
     "bevel:casing",
     "bevel:casing",
+    "bevel:casing",
+    "bevel:casing",
+    "bevel:casing",
+    "bevel:casing",
     "planar",
     "planar",
     "bevel:casing",
     "bevel:casing",
-    "planar",
     "round",
     "round",
     "round",
+    "round",
+    "bevel:casing",
+    "bevel:casing",
     "planar",
     "planar",
     "planar",
@@ -558,11 +564,17 @@
     "planar",
     "bevel:casing",
     "bevel:casing",
+    "round",
+    "round",
+    "round",
+    "round",
+    "bevel:casing",
+    "bevel:casing",
     "planar",
-    "round",
-    "round",
-    "round",
-    "planar",
+    "bevel:casing",
+    "bevel:casing",
+    "bevel:casing",
+    "bevel:casing",
     "bevel:casing",
     "bevel:casing",
     "bevel:casing",
@@ -11574,7 +11586,25 @@
    "ontoGroup": "kick.spur_foot.L",
    "relation": "embedded",
    "intent": "arm tip disc wholly inside the foot; the arm enters through the foot side wall (an attached part, not a support)",
-   "depthM": null
+   "criterion": {
+    "kind": "rod_tip_inside_solid",
+    "meaning": "every tip-ring vertex lies inside the spur foot solid (8-sided lathe): inside its wall and below its top",
+    "tipRingVertices": [
+     104,
+     105,
+     106,
+     107,
+     108,
+     109,
+     110,
+     111
+    ],
+    "tipCapFace": 85,
+    "authorObserved": {
+     "minInsideWallM": 0.00085,
+     "minBelowTopM": 0.00104
+    }
+   }
   },
   {
    "id": "kick.spur_arm_R_in_foot",
@@ -11584,7 +11614,25 @@
    "ontoGroup": "kick.spur_foot.R",
    "relation": "embedded",
    "intent": "arm tip disc wholly inside the foot; the arm enters through the foot side wall",
-   "depthM": null
+   "criterion": {
+    "kind": "rod_tip_inside_solid",
+    "meaning": "every tip-ring vertex lies inside the spur foot solid (8-sided lathe): inside its wall and below its top",
+    "tipRingVertices": [
+     144,
+     145,
+     146,
+     147,
+     148,
+     149,
+     150,
+     151
+    ],
+    "tipCapFace": 113,
+    "authorObserved": {
+     "minInsideWallM": 0.00085,
+     "minBelowTopM": 0.00104
+    }
+   }
   },
   {
    "id": "kick.spur_arm_L_in_base",
@@ -11593,8 +11641,94 @@
    "ontoRow": "drum_kick__tower",
    "ontoGroup": "kick.base",
    "relation": "embedded",
-   "intent": "arm root 6 mm inside the base frame side face: the whole root disc is buried in the frame",
-   "depthM": 0.006
+   "intent": "root decision 1: the arm grows out of the base frame; its whole root ring is buried in the frame, entering through the flat own-side face only (criterion)",
+   "criterion": {
+    "kind": "rod_root_embedded_through_flat_face",
+    "meaning": "every root-ring vertex lies inside the kick.base solid, at least minRingBurialM inside the receiving own-side flat face; each lengthwise arm edge crosses the base boundary exactly once and only through that flat face (never a bevel band, the top or the back). rootCentreInsetM is the authored inset of the root-disc CENTRE from that face plane and is NOT a penetration depth: the oblique ring is buried 1.3-10.7 mm. Root and tip heights are centre heights of the root and tip cap discs above the resting height. Not a same-row overlap allowance",
+    "rootRingVertices": [
+     96,
+     97,
+     98,
+     99,
+     100,
+     101,
+     102,
+     103
+    ],
+    "lengthwiseEdges": [
+     [
+      96,
+      104
+     ],
+     [
+      97,
+      105
+     ],
+     [
+      98,
+      106
+     ],
+     [
+      99,
+      107
+     ],
+     [
+      100,
+      108
+     ],
+     [
+      101,
+      109
+     ],
+     [
+      102,
+      110
+     ],
+     [
+      103,
+      111
+     ]
+    ],
+    "rootCapFace": 84,
+    "tipRingVertices": [
+     104,
+     105,
+     106,
+     107,
+     108,
+     109,
+     110,
+     111
+    ],
+    "tipCapFace": 85,
+    "armSideFaceRange": [
+     76,
+     83
+    ],
+    "receivingFace": {
+     "row": "drum_kick__tower",
+     "group": "kick.base",
+     "face": 51,
+     "outwardNormal": [
+      -1,
+      0,
+      0
+     ]
+    },
+    "minRingBurialM": 0.001,
+    "rootCentreInsetM": 0.006,
+    "restingHeightM": 0.0086,
+    "rootCentreHeightM": 0.022,
+    "tipCentreHeightM": 0.014,
+    "heightChange": "v03 root 18 mm -> v04 22 mm; v03 tip 12 mm -> v04 14 mm (tip plan position unchanged)",
+    "authorObserved": {
+     "ringBurialMinM": 0.00134,
+     "ringBurialMaxM": 0.01066,
+     "crossingMinMarginToFaceBoundaryM": 0.00369,
+     "rootCentreHeightM": 0.022,
+     "tipCentreHeightM": 0.014
+    }
+   }
   },
   {
    "id": "kick.spur_arm_R_in_base",
@@ -11603,8 +11737,94 @@
    "ontoRow": "drum_kick__tower",
    "ontoGroup": "kick.base",
    "relation": "embedded",
-   "intent": "arm root 6 mm inside the base frame side face: the whole root disc is buried in the frame",
-   "depthM": 0.006
+   "intent": "root decision 1: the arm grows out of the base frame; its whole root ring is buried in the frame, entering through the flat own-side face only (criterion)",
+   "criterion": {
+    "kind": "rod_root_embedded_through_flat_face",
+    "meaning": "every root-ring vertex lies inside the kick.base solid, at least minRingBurialM inside the receiving own-side flat face; each lengthwise arm edge crosses the base boundary exactly once and only through that flat face (never a bevel band, the top or the back). rootCentreInsetM is the authored inset of the root-disc CENTRE from that face plane and is NOT a penetration depth: the oblique ring is buried 1.3-10.7 mm. Root and tip heights are centre heights of the root and tip cap discs above the resting height. Not a same-row overlap allowance",
+    "rootRingVertices": [
+     136,
+     137,
+     138,
+     139,
+     140,
+     141,
+     142,
+     143
+    ],
+    "lengthwiseEdges": [
+     [
+      136,
+      144
+     ],
+     [
+      137,
+      145
+     ],
+     [
+      138,
+      146
+     ],
+     [
+      139,
+      147
+     ],
+     [
+      140,
+      148
+     ],
+     [
+      141,
+      149
+     ],
+     [
+      142,
+      150
+     ],
+     [
+      143,
+      151
+     ]
+    ],
+    "rootCapFace": 112,
+    "tipRingVertices": [
+     144,
+     145,
+     146,
+     147,
+     148,
+     149,
+     150,
+     151
+    ],
+    "tipCapFace": 113,
+    "armSideFaceRange": [
+     104,
+     111
+    ],
+    "receivingFace": {
+     "row": "drum_kick__tower",
+     "group": "kick.base",
+     "face": 45,
+     "outwardNormal": [
+      1,
+      0,
+      0
+     ]
+    },
+    "minRingBurialM": 0.001,
+    "rootCentreInsetM": 0.006,
+    "restingHeightM": 0.0086,
+    "rootCentreHeightM": 0.022,
+    "tipCentreHeightM": 0.014,
+    "heightChange": "v03 root 18 mm -> v04 22 mm; v03 tip 12 mm -> v04 14 mm (tip plan position unchanged)",
+    "authorObserved": {
+     "ringBurialMinM": 0.00134,
+     "ringBurialMaxM": 0.01066,
+     "crossingMinMarginToFaceBoundaryM": 0.00369,
+     "rootCentreHeightM": 0.022,
+     "tipCentreHeightM": 0.014
+    }
+   }
   },
   {
    "id": "kick.footboard_on_heel",
@@ -11613,8 +11833,172 @@
    "ontoRow": "drum_kick__tower",
    "ontoGroup": "kick.heel",
    "relation": "embedded",
-   "intent": "INHERITED (v01, unchanged): the footboard heel end sits up to 4 mm into the heel block top as its hinge seat; reported, not new",
-   "depthM": 0.004
+   "intent": "root decision 8: intended seat. The inclined footboard heel end is seated up to 4 mm (half its 8 mm thickness) into the heel block top, entering and leaving only through that top, so it reads as a board hinged at a heel plate with no open wedge beneath (criterion)",
+   "criterion": {
+    "kind": "board_end_seated_through_top_face",
+    "meaning": "intended seat (decision 8), exactly kick.footboard into kick.heel: (1) every footboard vertex below the heel top plane lies inside the heel plan outline; (2) the board crosses the heel boundary only through the heel top face, never a side, the back or the toe-side face; (3) the greatest depth below the top plane is at most maxDepthM and at most half the board thickness measured between the two parallel board faces, and the exposed upper heel-end corners stand at least minProudM above the heel top; (4) no footboard vertex is below the heel underside. Checked over ALL footboard vertices and source edges, separately from support height. Not a same-row overlap allowance",
+    "receivingTopFace": 299,
+    "receivingUndersideFace": 298,
+    "forbiddenCrossingFaces": {
+     "minusY": 300,
+     "plusX": 301,
+     "plusY": 302,
+     "minusX": 303
+    },
+    "boardFaces": {
+     "underside": 284,
+     "top": 285,
+     "meaning": "the two parallel extrude caps; board thickness is the distance between their planes"
+    },
+    "boardVertexRange": [
+     376,
+     400
+    ],
+    "boardSideFaceRange": [
+     286,
+     297
+    ],
+    "exposedUpperHeelEndCorners": [
+     396,
+     397
+    ],
+    "maxDepthM": 0.004,
+    "boardThicknessM": 0.008,
+    "minProudM": 0.0038,
+    "authorObserved": {
+     "belowTopVertices": [
+      382,
+      383,
+      384,
+      385,
+      386,
+      387
+     ],
+     "maxDepthM": 0.004,
+     "boardThicknessM": 0.008,
+     "heelEndCornerProudM": [
+      0.00382,
+      0.00382
+     ],
+     "minAboveUndersideM": 0.016
+    }
+   }
+  },
+  {
+   "id": "hihat.footboard_in_hinge",
+   "row": "drum_hihat_pedal__pedal",
+   "group": "hihat.footboard",
+   "ontoRow": "drum_hihat_pedal__pedal",
+   "ontoGroup": "hihat.hinge",
+   "relation": "hinged",
+   "intent": "author intent for the existing hi-hat heel hinge (bounded disposition, hi-hat coverage): the footboard pivots on the hinge barrel, its heel edge on the barrel axis and its heel end inside the barrel (criterion). No geometry change",
+   "criterion": {
+    "kind": "board_heel_captured_in_hinge_barrel",
+    "meaning": "author intent for the EXISTING hi-hat heel hinge (inherited v01 geometry, no change): the footboard pivots on the 12-sided hinge barrel. (1) The two heel-axis vertices of the board underside lie on the barrel axis (within 0.05 mm) and axially between the barrel end discs; (2) every footboard vertex that is axially between the end discs and radially within the barrel radius lies inside the 12-gon barrel solid, so the board heel-end face is wholly inside the barrel; (3) the board is wider (104 mm) than the barrel (90 mm): its rounded heel corners pass out through the end discs, and no footboard vertex lies axially more than maxCornerOverhangM (the authored width difference, not a tolerance) beyond an end disc; (4) no footboard vertex is below the base top. This is a cylindrical capture, not the kick heel planar seat; it covers the footboard / barrel pair only, not the barrel mounting",
+    "barrel": {
+     "row": "drum_hihat_pedal__pedal",
+     "group": "hihat.hinge",
+     "axisStart": [
+      0.971485,
+      -0.039416,
+      0.0306
+     ],
+     "axisEnd": [
+      1.060838,
+      -0.028642,
+      0.0306
+     ],
+     "radiusM": 0.009,
+     "sides": 12,
+     "inscribedRadiusM": 0.008693,
+     "ringVertices": [
+      [
+       128,
+       129,
+       130,
+       131,
+       132,
+       133,
+       134,
+       135,
+       136,
+       137,
+       138,
+       139
+      ],
+      [
+       140,
+       141,
+       142,
+       143,
+       144,
+       145,
+       146,
+       147,
+       148,
+       149,
+       150,
+       151
+      ]
+     ],
+     "sideFaceRange": [
+      94,
+      105
+     ],
+     "endDiscFaces": [
+      106,
+      107
+     ]
+    },
+    "board": {
+     "group": "hihat.footboard",
+     "vertexRange": [
+      96,
+      128
+     ],
+     "undersideFace": 76,
+     "topFace": 77,
+     "heelAxisVertices": [
+      107,
+      108
+     ],
+     "heelEndFace": 89,
+     "heelEndFaceVertices": [
+      107,
+      108,
+      124,
+      123
+     ]
+    },
+    "axisToleranceM": 5e-05,
+    "maxCornerOverhangM": 0.007,
+    "authorObserved": {
+     "heelAxisVertexRadialM": [
+      0.0,
+      0.0
+     ],
+     "verticesBetweenEndDiscsWithinRadius": [
+      107,
+      108,
+      123,
+      124
+     ],
+     "allThoseInsideBarrel": true,
+     "maxRadialOfThoseM": 0.008,
+     "cornerVerticesBeyondEndDiscs": [
+      105,
+      106,
+      109,
+      110,
+      122,
+      125
+     ],
+     "maxBoardOverhangBeyondEndDiscM": 0.007,
+     "maxOverhangOfCornerVerticesWithinRadiusM": 0.00539,
+     "boardMinAboveBaseTopM": 0.012,
+     "barrelMountingNote": "NOT part of this pair, reported for root: the barrel touches nothing but the board. Its underside is 3.0 mm above the base top and its back 3.0 mm in front of the heel rubber (inherited v01 geometry; no hi-hat geometry change is released)"
+    }
+   }
   },
   {
    "id": "ctl.display_face_on_bezel",
@@ -11671,23 +12055,25 @@
  ],
  "roundRuns": [
   {
-   "id": "ctl_body__shell/ctl.cheeks#0/b2.r5",
+   "id": "ctl_body__shell/ctl.cheeks#0/b2.r4",
    "row": "ctl_body__shell",
    "group": "ctl.cheeks#0",
    "faces": [
-    59,
-    60,
-    61
+    62,
+    63,
+    64,
+    65
    ]
   },
   {
-   "id": "ctl_body__shell/ctl.cheeks#1/b0.r5",
+   "id": "ctl_body__shell/ctl.cheeks#1/b0.r4",
    "row": "ctl_body__shell",
    "group": "ctl.cheeks#1",
    "faces": [
-    70,
-    71,
-    72
+    75,
+    76,
+    77,
+    78
    ]
   },
   {
@@ -11838,10 +12224,12 @@
  "edgeClassification": {
   "hard": "an edge is hard when smooth_edges() is False: not exactly two faces, or the two faces are not in one declared round run and their normals differ by more than 40 degrees",
   "kinds": "cap, along, ring, block, open: from authored face roles (Part.roles), see edge_records()",
+  "rolePairs": "optional per match: the sorted pair of the edge's two face roles must be one of these (lathe strip bK is profile segment K; rug ring bK is binding strip K); pins a set to exact profile corners",
   "bands": "convex>=80, convex40-80, concave (outward-oriented per primitive), open",
-  "statuses": "named, granted, contact, screen, faceted-round, proposed; first matching set wins; an unmatched hard edge is undeclared (a failure)",
+  "statuses": "named (root C13, or accepted by name in the v04 bounded disposition: see source), granted, contact, screen, faceted-round, proposed; first matching set wins; an unmatched hard edge is undeclared (a failure)",
   "bevelLength": "bevelMiddleSeamM in edge_tally(): the seam between the two faces of a 2-segment bevel, not the treated original edge length"
  },
+ "attachmentCriteria": "v04 bounded pass: an attachment with relation embedded or hinged carries criterion {kind, meaning, row-level vertex / edge / face locators, named metric fields with explicit meaning, authorObserved}. Indices are row-level (rows[].vertexCount / faceCount space). rests_on keeps gapM. authorObserved is author evidence, not measurement of record",
  "edgeSets": [
   {
    "id": "ctl.slab.contact",
@@ -11913,26 +12301,9 @@
    ]
   },
   {
-   "id": "ctl.cheeks.front_corner",
-   "status": "proposed",
-   "reason": "exposed oak-tone cheek front-top profile corner, 51 degrees, across the 22 mm cheek: the end of the round top run meeting the flat cheek front (a genuine profile corner, not a mid-run break). Unchanged since v01; not covered by any grant. Author recommendation: a casing bevel in a later bounded pass, else image gate N1b",
-   "match": [
-    {
-     "label": "ctl.cheeks",
-     "kinds": [
-      "along"
-     ],
-     "bands": [
-      "convex40-80"
-     ]
-    }
-   ],
-   "reconsider": "any view where the cheek nose shows a hard highlight line"
-  },
-  {
    "id": "ctl.cheeks.contact",
    "status": "contact",
-   "reason": "inner face perimeter meets the slab, panel and bays; bottom profile corners at the underside on the stand arms. Outer face perimeter and back-top corner are bevelled",
+   "reason": "inner face perimeter meets the slab, panel and bays; bottom profile corners at the underside on the stand arms; and (v04 decision 4) the eight bevel-band mitre edges at the two unbevelled 90-degree underside corners of each cheek (4 at 75.5 and 4 at 41.4 degrees, all within 2.2 mm of the cheek underside, facing down onto the stand arms). Outer face perimeter, back-top corner and (v04 decision 3) the cheek nose are bevelled (casing); no exposed cheek edge is in this set (author_declaration asserts it)",
    "match": [
     {
      "label": "ctl.cheeks",
@@ -12454,8 +12825,8 @@
   },
   {
    "id": "rug.binding_shoulder",
-   "status": "proposed",
-   "reason": "outer binding shoulder: one 63-degree chamfer facet, 2.6 mm tall, on the 10.5 mm fabric binding (under the 12 mm floor). Not named by root; unchanged since v03 (C11)",
+   "status": "named",
+   "reason": "accepted sharp by name (decision 7): the outer binding shoulder at the foot of its one chamfer facet (62.3 degrees on the four straight runs, 61.5 at the twelve corner edges), 8.2 mm above the floor, on the current matte, already-chamfered 10.5 mm woven binding only. Rug size and position unchanged",
    "match": [
     {
      "label": "rug",
@@ -12464,10 +12835,17 @@
      ],
      "bands": [
       "convex40-80"
+     ],
+     "rolePairs": [
+      [
+       "b0",
+       "b1"
+      ]
      ]
     }
    ],
-   "reconsider": "the rug edge reads as a hard slab"
+   "reconsider": "image gates RUG1 / E1b: the rug edge reads as a hard slab or shows a bright outline",
+   "source": "m4-v04-bounded-art-disposition.md (7705f590...) decision 7"
   },
   {
    "id": "rack.clamps",
@@ -12558,9 +12936,9 @@
    ]
   },
   {
-   "id": "pad.rim_lower",
-   "status": "proposed",
-   "reason": "rim lower outer corner (72 degrees, 6 mm metal step under the rim) and shell bottom chamfer (52 degrees, underside); not named by root (C13 names the inner corners only); unchanged since v03",
+   "id": "pad.rim_lower_outer",
+   "status": "named",
+   "reason": "accepted sharp by name (decision 6): the bright-metal rim lower outer corner, 71.4 degrees, where the 8.9 mm rim wall meets the 6.3 mm step under it, on the four pads. The rim outer top corner stays bevelled. The obvious fallback (a casing bevel, about 384 triangles for four pads) does not fit the 2,600 row ceiling and is not authorised: an image failure goes back to root for a bounded profile / budget decision",
    "match": [
     {
      "label": "pad.*.shell",
@@ -12569,10 +12947,40 @@
      ],
      "bands": [
       "convex40-80"
+     ],
+     "rolePairs": [
+      [
+       "b4",
+       "b5"
+      ]
      ]
     }
    ],
-   "reconsider": "a lit rim underside reads as a hard line"
+   "reconsider": "image gate E1b: the lower boundary of any rim shows a bright line, or the rim reads as a flat cut strip beside its bevelled top",
+   "source": "m4-v04-bounded-art-disposition.md (7705f590...) decision 6"
+  },
+  {
+   "id": "pad.shell_bottom.contact",
+   "status": "contact",
+   "reason": "hidden edge, not an exemption (decision 6): the black shell bottom corner, 52.8 degrees, 4 mm above the shell underside, where the visible black shell facet meets the shell bottom ring. That ring faces at least 63 degrees below horizontal at every authored tilt, and every planned eye is above every pad (pads 0.44-0.85 m)",
+   "match": [
+    {
+     "label": "pad.*.shell",
+     "kinds": [
+      "ring"
+     ],
+     "bands": [
+      "convex40-80"
+     ],
+     "rolePairs": [
+      [
+       "b1",
+       "b2"
+      ]
+     ]
+    }
+   ],
+   "reconsider": "any planned eye drops below the pad bottoms"
   },
   {
    "id": "pad.lugs",
@@ -12665,8 +13073,8 @@
   },
   {
    "id": "cymbal.edge",
-   "status": "proposed",
-   "reason": "e-cymbal outer edge rim (rubber pad edge, about 110 degrees across 11 mm) and its underside corner; the edge is the cymbal's identifying silhouette. Not named by root; unchanged since v01",
+   "status": "named",
+   "reason": "accepted sharp by name (decision 5): both corners of the 8.9 mm outer edge band of the three authored cymbals: the 70.0-degree upper corner (bow strip into the band) and the 108.5-degree lower corner (band into the underside), radius about 0.19 m. Dark matte e-cymbal pad surface (material rule fabric, the rubber pad), source profile, scale and identity as authored. No allowance for any other profile or later geometry",
    "match": [
     {
      "label": "cymbal.*.disc",
@@ -12674,11 +13082,23 @@
       "ring"
      ],
      "bands": [
-      "convex>=80"
+      "convex>=80",
+      "convex40-80"
+     ],
+     "rolePairs": [
+      [
+       "b5",
+       "b6"
+      ],
+      [
+       "b6",
+       "b7"
+      ]
      ]
     }
    ],
-   "reconsider": "the cymbal reads as a slab, not a cymbal"
+   "reconsider": "image gate E1b: a cymbal reads as a slab, or the band shows a bright line",
+   "source": "m4-v04-bounded-art-disposition.md (7705f590...) decision 5"
   },
   {
    "id": "kick.base.contact",
@@ -13629,7 +14049,7 @@
   {
    "id": "faceted_round.profiles",
    "status": "faceted-round",
-   "reason": "profile facets of curved lathed surfaces (24-step seat cushions with 4-5 profile points, 12-step beater head, cymbal bell-to-bow transitions): turns of 40-80 degrees between profile points",
+   "reason": "profile facets of curved lathed surfaces (24-step seat cushions with 4-5 profile points, 12-step beater head): turns of 40-80 degrees between profile points. (v04: no cymbal edge here; the bell-to-bow turn is 39.6 degrees and smooth, and the band corners are cymbal.edge)",
    "match": [
     {
      "label": "stool.seat",
@@ -13651,15 +14071,6 @@
     },
     {
      "label": "kick.beater",
-     "kinds": [
-      "ring"
-     ],
-     "bands": [
-      "convex40-80"
-     ]
-    },
-    {
-     "label": "cymbal.*.disc",
      "kinds": [
       "ring"
      ],

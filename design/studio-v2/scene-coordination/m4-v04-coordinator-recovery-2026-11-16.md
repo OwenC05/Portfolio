@@ -27,3 +27,16 @@ Current exported asset remains M4 v02, not unfinished v04. No v04 candidate free
 Latest confirmed pushed commit is `870f59dd9caa0ccfd2a8865277cdc6cbea8efb5a` on `feature/studio-v2-after-hours`; draft PR 2 records bounded verifier approval and pending candidate acceptance. Root Git helper verified remote head and empty index, without rerunning tests. Active S reports, v04 sources/tasks, user-installed skill trees/lock, caches and old blocked marker files remain unstaged. Do not modify or remove user work, old evidence or unrelated processes. All Git mutations remain root-owned/delegated.
 
 Root terminal is `term_d47ddfe4-5e6b-403b-bdaa-3e34d286d27f`. Send bounded progress/blockers there. Retained independent Claude reviewer `ctx_0759ccb535bb` already settled its focused art review with REQUEST CHANGES; reuse later only for newly ready closure. Native root critic already approved v3r1 and is idle. Do not launch duplicate reviews or recursively spawn more coordinators. End the turn after independent handoffs when no own work remains; Orca wakes on actual messages.
+
+## Confirmed recovery outcome
+
+Root received `msg_51955b652680`: new coordinator dispatch `ctx_caa24bf857d5`, terminal `term_34bea5af-b5f0-436e-8732-79ef0aa2e6c5`, acknowledged the current handoff and successfully used the documented path to resume the existing child run. Actual coordinator launch is Codex `gpt-6-astra` / high. No duplicate run or tasks were created.
+
+Consolidated receipt `msg_b1a56a0d005b` confirms both original performer tasks resumed with preserved partial files:
+
+- Author task `task_23314c669e03` now dispatch `ctx_2d83d120ad37`: ready receipt and ACK `msg_e060e25d1bf1`, actual Claude `claude-opus-5-5` / high verified from process argv.
+- Producer task `task_2cf416822c8f` now dispatch `ctx_55fd1ff42d3b`: ready receipt and ACK `msg_a733b75b550a`, Codex `gpt-6-astra` / high launch evidence, distinguished from local xhigh configuration. It resumes its recorded 21-test checkpoint, not a new candidate acceptance claim.
+
+Both adopted the current four/nine-file scope and approved v3r1 verifier without repeating completed suites. The next dependency is the author's exact helper/declaration pins and layout; no candidate source is consumed before that handoff. Then one at-most-24-pose comparison feeds Claude's selection.
+
+Resource availability remains a separate gate. Author reported 0.52 GiB free; root's fresh Windows sample after the receipt showed 0.96 GiB free of 15.73 GiB. These are point-in-time observations. Lightweight preparation may continue, but there is no current heavy comparison, Blender/export, browser capture or candidate approval. Recheck resources before heavy work; preserve unrelated processes and do not infer permission for another WSL restart. Recovery completion does not release later asset or image gates.

@@ -23,7 +23,7 @@ Authorities: root `m4-v04-combined-repair-disposition.md` (`24E9B32C`), S bounda
 | `asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py` | `8d814874ee0ac1317827297d2a729b34f4789fffd891212ae03e2c440a73b792` | pure helper (math, fnmatch, numpy); writes nothing |
 | `asset-pipeline/full-kit/source/build_fullkit_m4_v04.py` | `0d01536c36481021e8ff7026a6608998eb44dce0d88505dae105f94834909826` | held builder, pins the helper hash above; refuses execution |
 | `asset-pipeline/full-kit/manifests/m4-v04-author-declarations.json` | `8ce8db34b40a3ce053d037c5152fec8c8ed19d586b0968439abf64e3308f32bb` | 302,196 bytes; byte-exact output of the helper's `--declaration` |
-| `scene-m4-v04-preparation-report.md` | (this file; hash sent with the handoff) | |
+| `scene-m4-v04-preparation-report.md` | (this file; hash sent with the handoff) | prose-only successor of `6b2a62a31ab086a5a72c880ecad04332576a5ae14c31ab882f6421aa6f51c6be`, which remains the measured and reviewed evidence. Only the section 3b locator names were corrected (source-closure note 5.1); no source, test or geometry change |
 
 Reproduce the declaration with `python -B source/build_fullkit_m4_geometry_v04.py --declaration > manifests/m4-v04-author-declarations.json`, run from `asset-pipeline/full-kit/`. That writes UTF-8, one-space indent, insertion order, LF and a final newline; `declaration_bytes()` returns the same bytes. Its `sources` entry carries the helper hash. Any helper edit, including the later pose selection, changes both pins. The builder's `HELPER_SHA` must then be updated and all three re-handed off.
 
@@ -111,13 +111,13 @@ The `named` status text now says it also covers sets accepted by name in the bou
 `authorObserved` is my source figure, not measurement of record. The public v3 verifier schema is unchanged.
 
 - **`kick.spur_arm_{L,R}_in_base`**, kind `rod_root_embedded_through_flat_face`.
-  - **Locators:** `rootRingVertices` (8: L 96–103, R 136–143); `lengthwiseEdges` (8 pairs, root i to tip i); `rootCapFace` (L 84, R 112); `tipRingVertices`; `tipCapFace` (L 85, R 113); `armSideFaceRange`; `receivingFace` (`kick.base` own-side flat face: L 51 with outward normal −x, R 45 with +x).
+  - **Locators:** `rootRingVertices` (8: L 96–103, R 136–143); `lengthwiseEdges` (8 pairs, root i to tip i); `rootCapFace` (L 84, R 112); `tipRingVertices`; `tipCapFace` (L 85, R 113); `armSideFaces` (L [76…83], R [104…111], explicit lists); `receivingFace` (`kick.base` own-side flat face with its `faceVertices`: L 51 [59, 48, 60, 71] with outward normal −x, R 45 [53, 54, 66, 65] with +x).
   - **Metrics:** `minRingBurialM` 0.001 (every ring vertex at least this far inside that face) is separate from `rootCentreInsetM` 0.006 (the disc centre's inset, not a penetration depth). Also `rootCentreHeightM` 0.022, `tipCentreHeightM` 0.014 and `restingHeightM` 0.0086, with the v03 → v04 height change stated.
-  - **Observed:** burial 1.34–10.66 mm; crossing points at least 3.69 mm inside the flat face boundary, clear of the bevel bands, top and back; heights 22.0 and 14.0 mm.
-- **`kick.spur_arm_{L,R}_in_foot`**, kind `rod_tip_inside_solid`: tip ring and tip cap locators. Observed: at least 0.85 mm inside the foot's 8-sided wall (apothem) and 1.04 mm below its top.
+  - **Observed:** burial 1.34–10.66 mm; crossing points at least 3.69 mm inside the flat face outline (`crossingMinInsideFaceOutlineM`), clear of the bevel bands, top and back; heights 22.0 and 14.0 mm.
+- **`kick.spur_arm_{L,R}_in_foot`**, kind `rod_tip_inside_solid`: tip ring, tip cap and `footVertices` (L [112…135], R [152…175]) locators. Observed: at least 0.85 mm inside the foot's 8-sided wall (apothem) and 1.04 mm below its top.
 - **`kick.footboard_on_heel`**, kind `board_end_seated_through_top_face`. The intent is now positive: an intended seat, not "inherited, reported".
   - **Heel faces:** `receivingTopFace` 299 and `receivingUndersideFace` 298; `forbiddenCrossingFaces` −y 300, +x 301, +y 302, −x 303.
-  - **Board faces:** the two parallel caps, underside 284 and top 285, so Codex measures the thickness. Also `boardVertexRange` 376–400 and `boardSideFaceRange`.
+  - **Board faces:** the two parallel caps, underside 284 and top 285, so Codex measures the thickness. Also `boardVertices` [376…399] (24) and `boardSideFaces` [286…297], explicit lists, and `heelVertices` [400…407].
   - **Proud locator:** `exposedUpperHeelEndCorners` [396, 397], the exposed upper corners of the heel-end edge.
   - **Metrics:** `maxDepthM` 0.004, `boardThicknessM` 0.008, `minProudM` 0.0038.
   - **Observed:** six below-top vertices (382–387), maximum depth 4.000 mm, thickness 8.000 mm, heel-end corners 3.82 mm proud, 16 mm above the heel underside.
@@ -127,7 +127,7 @@ The `named` status text now says it also covers sets accepted by name in the bou
 
 Locators:
 - **Barrel:** `hihat.hinge`, axis start [0.971485, −0.039416, 0.0306] → end [1.060838, −0.028642, 0.0306]; radius 9 mm, 12 sides, inscribed radius 8.693 mm; rings 128–139 and 140–151; side faces 94–105; end discs 106 and 107.
-- **Board:** `hihat.footboard` vertices 96–128; underside face 76, top face 77; heel-axis vertices 107 and 108; heel-end face 89 = (107, 108, 124, 123).
+- **Board:** `hihat.footboard` vertices 96–127 (written then as the end-exclusive range [96, 128]); underside face 76, top face 77; heel-axis vertices 107 and 108; heel-end face 89 = (107, 108, 124, 123).
 
 My intended criterion:
 1. The two heel-axis vertices lie on the barrel axis, within 0.05 mm, between the end discs.
@@ -142,6 +142,13 @@ Observed against that criterion:
 - The board is 12 mm above the base top.
 
 **The pair satisfied its criterion.** The separate barrel-mounting issue was reported (section 7) and is repaired in section 3c. In this section, the ranges were written then as `sideFaceRange` (last face included) and `vertexRange` (end excluded). They are now explicit lists.
+
+**Locator names: historical versus final.** The pins handed off in `msg_103b9d7f17b2` (helper `5d01ed7c…`, declaration `476a17e3…`) used range fields:
+- `armSideFaceRange` and `barrel.sideFaceRange`, both [first, last] inclusive;
+- `boardSideFaceRange`, inclusive;
+- `boardVertexRange` and `board.vertexRange`, both end-exclusive.
+
+Those descriptions are kept here as the record of those pins. The final declaration `8ce8db34…` replaces every one of them with an explicit index list: `armSideFaces`, `boardSideFaces`, `boardVertices`, `barrel.sideFaces` and `board.vertices`. Each criterion also carries an `indexConvention`. The lists above in this section are the final names and values.
 
 ## 3c. Hi-hat repair (root `038dc8af`; construction `5bc3d79f` section 3, implemented exactly)
 

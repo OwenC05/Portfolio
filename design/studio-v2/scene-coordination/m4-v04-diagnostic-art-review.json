@@ -1,0 +1,2869 @@
+{
+ "schema": "m4-v04-diagnostic-art-review/1",
+ "task": {
+  "taskId": "task_578397972a46",
+  "dispatchId": "ctx_0fdd7d725ec4",
+  "rootRequest": "msg_a52e093151c4",
+  "continuation": "msg_3f2fc2cdc4db"
+ },
+ "reviewer": "actual Claude Fable 5.2 (claude-fable-5-2, --effort high), retained independent critic session, PID 11168",
+ "nature": "interpretation of existing evidence only; no measurement, no source/camera/geometry/contract change, no visual approval; all fourteen image gates open",
+ "report": {
+  "path": "scene-m4-v04-diagnostic-art-review.md",
+  "sha256": "f241ca2edc0eaf36b6375c71367c3a8a8557da4d537ade1038b2d31b8ccf65de"
+ },
+ "pins": {
+  "scene-m4-v04-producer-report.md": "635572bf32854fa274f2445645a0604ba29a77d951abb4cd23880483340f4ac7",
+  "asset-pipeline/full-kit/manifests/m4-v04-cpu-measurements.json": "be6c205db283f86ce8a8048c0dde58ae11e0cdb38ff326e1a4c62d26a9265bea",
+  "asset-pipeline/full-kit/manifests/m4-v04-rows.json": "1fa5fdd3f267896a76743aca986af9cadd1dd84610395e6049fc799009489992",
+  "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py": "8d814874ee0ac1317827297d2a729b34f4789fffd891212ae03e2c440a73b792",
+  "asset-pipeline/full-kit/manifests/m4-v04-author-declarations.json": "8ce8db34b40a3ce053d037c5152fec8c8ed19d586b0968439abf64e3308f32bb",
+  "asset-pipeline/full-kit/source/build_fullkit_m4_v04.py": "0d01536c36481021e8ff7026a6608998eb44dce0d88505dae105f94834909826",
+  "scene-m4-v04-preparation-report.md@e684190 (frozen original)": "6b2a62a31ab086a5a72c880ecad04332576a5ae14c31ab882f6421aa6f51c6be",
+  "scene-m4-v04-preparation-report.md (on disk, prose-only successor, not reviewed)": "71139a40e60aaf38859b53512d79bfb5a84179783544b11fa53f0fa5796c2c92",
+  "scene-m4-v03-focused-art-closure.md": "4157a176701d2697e44cd39cc3de0b0b3a4d2101d36a46bf8212ff01361401af",
+  "scene-art-direction.md": "0691d9f67cdb2baffab317f936fa546a54046c914d83065e64fd188ce831ef83",
+  "asset-pipeline/full-kit/render-gates.md": "15f10d9d9e8ba2b9e4cf938263b66b481267f824422f12ce63982862858f5fb3",
+  "sourceCommit": "e684190",
+  "headWhenFinished": "8a6addb9c9e16074f1106ca51b26d41830add71a"
+ },
+ "contacts": {
+  "unclassifiedPairs": 299,
+  "byReading": {
+   "intended": 276,
+   "intended; look in inspection export": 8,
+   "unresolved intent": 15
+  },
+  "families": [
+   {
+    "id": "casing_blocks",
+    "pairs": 9,
+    "row": "ctl_body__shell",
+    "reading": "intended",
+    "reason": "panel and bays stand on the slab at key-bed height and end on the cheek inner faces"
+   },
+   {
+    "id": "controls_on_panel",
+    "pairs": 21,
+    "row": "ctl_body__shell",
+    "reading": "intended",
+    "reason": "pads, knobs, bezel and transport keys are seated 2 mm into the sloped panel top"
+   },
+   {
+    "id": "wheels_recessed",
+    "pairs": 8,
+    "row": "ctl_body__shell",
+    "reading": "intended",
+    "reason": "each wheel sits in its slot through the bay top and dips into the slab"
+   },
+   {
+    "id": "white_key_front_to_stem",
+    "pairs": 29,
+    "row": "ctl_keys__keys",
+    "reading": "intended",
+    "reason": "each white key is a front block and a stem that overlap by 0.2 mm"
+   },
+   {
+    "id": "rubber_ends",
+    "pairs": 14,
+    "row": "drum_rack__rack",
+    "reading": "intended",
+    "reason": "same-section end pieces butted onto tube ends"
+   },
+   {
+    "id": "x_tubes_into_arms_and_feet",
+    "pairs": 8,
+    "row": "ctl_stand__frame",
+    "reading": "intended",
+    "reason": "X-frame tube ends run into the arm and foot tubes"
+   },
+   {
+    "id": "x_crossing",
+    "pairs": 2,
+    "row": "ctl_stand__frame",
+    "reading": "intended",
+    "reason": "the two tubes of each X cross through each other at the pivot"
+   },
+   {
+    "id": "pivot_hardware",
+    "pairs": 17,
+    "row": "ctl_stand__frame",
+    "reading": "intended",
+    "reason": "plates and teeth sit on the tubes; the bolt runs through tubes and plates; the knob butts onto the bolt end"
+   },
+   {
+    "id": "sustain_hinge",
+    "pairs": 2,
+    "row": "ctl_sustain_pedal__pedal",
+    "reading": "intended",
+    "reason": "hinge barrel seated 2 mm in the base top and holding the plate back edge"
+   },
+   {
+    "id": "stool_assembly",
+    "pairs": 11,
+    "row": "stool_keys__stool",
+    "reading": "intended",
+    "reason": "seat on post; post through collar into hub; legs into hub and feet"
+   },
+   {
+    "id": "tube_t_joints",
+    "pairs": 6,
+    "row": "drum_rack__rack",
+    "reading": "intended",
+    "reason": "each bar ends on the axis of the tube it joins"
+   },
+   {
+    "id": "rubber_ends",
+    "pairs": 14,
+    "row": "drum_rack__rack",
+    "reading": "intended",
+    "reason": "same-section end pieces butted onto tube ends"
+   },
+   {
+    "id": "clamp_blocks_round_tubes",
+    "pairs": 20,
+    "row": "drum_rack__rack",
+    "reading": "intended",
+    "reason": "each clamp block is drawn round the tube it grips"
+   },
+   {
+    "id": "clamp_bolts_and_wings",
+    "pairs": 28,
+    "row": "drum_rack__rack",
+    "reading": "intended",
+    "reason": "bolt base on the block face; wing on the bolt end"
+   },
+   {
+    "id": "stubs_and_booms",
+    "pairs": 13,
+    "row": "drum_rack__rack",
+    "reading": "intended",
+    "reason": "stubs start on the tube axis inside their clamp; booms start on the clamp face"
+   },
+   {
+    "id": "lugs_on_shells",
+    "pairs": 18,
+    "row": "drum_pads__shells",
+    "reading": "intended",
+    "reason": "each lug sits 2 mm into the shell wall"
+   },
+   {
+    "id": "mount_block_under_shell",
+    "pairs": 4,
+    "row": "drum_pads__shells",
+    "reading": "intended",
+    "reason": "block top is 0.5 mm into the shell bottom"
+   },
+   {
+    "id": "arm_into_block",
+    "pairs": 4,
+    "row": "drum_pads__shells",
+    "reading": "intended",
+    "reason": "the arm ends inside the mount block"
+   },
+   {
+    "id": "arm_against_shell",
+    "pairs": 4,
+    "row": "drum_pads__shells",
+    "reading": "intended; look in inspection export",
+    "reason": "the 20 mm arm, ending 12 mm under the shell bottom, also meets the shell; counts cannot say graze or cut"
+   },
+   {
+    "id": "cymbal_mount_stack",
+    "pairs": 24,
+    "row": "drum_cymbals__cymbals",
+    "reading": "intended",
+    "reason": "rod through the bell; felt, tilter end and nut on the rod; nut on the bell top"
+   },
+   {
+    "id": "tower_and_pad",
+    "pairs": 3,
+    "row": "drum_kick__tower",
+    "reading": "intended",
+    "reason": "tower stands on the base; head and pad-ring backs are 2 mm into the tower face"
+   },
+   {
+    "id": "beater_mechanism",
+    "pairs": 7,
+    "row": "drum_kick__tower",
+    "reading": "intended",
+    "reason": "axle through the post tops; cam and shaft on the axle; chain to the cam; beater on the shaft"
+   },
+   {
+    "id": "beater_on_head",
+    "pairs": 1,
+    "row": "drum_kick__tower",
+    "reading": "intended",
+    "reason": "the beater tip point touches the head front plane (a touch)"
+   },
+   {
+    "id": "pedal_plate_into_base",
+    "pairs": 1,
+    "row": "drum_kick__tower",
+    "reading": "intended",
+    "reason": "the pedal plate runs 20 mm into the base front"
+   },
+   {
+    "id": "pedal_root_at_base_front",
+    "pairs": 4,
+    "row": "drum_kick__tower",
+    "reading": "intended; look in inspection export",
+    "reason": "posts and spring stand more than half inside the base front face; the spring overlaps one post by up to about 1 mm"
+   },
+   {
+    "id": "housing_and_heel_on_base",
+    "pairs": 2,
+    "row": "drum_hihat_pedal__pedal",
+    "reading": "intended",
+    "reason": "housing and heel rubber stand on the base top"
+   },
+   {
+    "id": "module_fittings",
+    "pairs": 9,
+    "row": "drum_module__body",
+    "reading": "intended",
+    "reason": "knob and buttons seated 2 mm into the front; plate 0.5 mm into the back; snake starts inside the lower edge"
+   },
+   {
+    "id": "throne_assembly",
+    "pairs": 15,
+    "row": "drum_throne__throne",
+    "reading": "intended",
+    "reason": "seat on post; post through memory lock onto hub; legs into hub and feet; braces into legs and collar"
+   },
+   {
+    "id": "shared_cable_lead",
+    "pairs": 15,
+    "row": "music_cables__runs",
+    "reading": "unresolved intent",
+    "reason": "six pad and pedal cables share one start point and first 25 mm segment (tom1 and tom2 share a further 46 mm)"
+   }
+  ],
+  "pairs": [
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.slab",
+    "b": "ctl.panel",
+    "noncoplanar": 18,
+    "coplanar": 6,
+    "family": "casing_blocks"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.slab",
+    "b": "ctl.bays#0",
+    "noncoplanar": 9,
+    "coplanar": 2,
+    "family": "casing_blocks"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.slab",
+    "b": "ctl.bays#1",
+    "noncoplanar": 12,
+    "coplanar": 4,
+    "family": "casing_blocks"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.slab",
+    "b": "ctl.wheel#0",
+    "noncoplanar": 31,
+    "coplanar": 0,
+    "family": "wheels_recessed"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.slab",
+    "b": "ctl.wheel#1",
+    "noncoplanar": 31,
+    "coplanar": 0,
+    "family": "wheels_recessed"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.panel",
+    "b": "ctl.bays#0",
+    "noncoplanar": 21,
+    "coplanar": 6,
+    "family": "casing_blocks"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.panel",
+    "b": "ctl.bays#1",
+    "noncoplanar": 32,
+    "coplanar": 9,
+    "family": "casing_blocks"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.panel",
+    "b": "ctl.cheeks#0",
+    "noncoplanar": 28,
+    "coplanar": 23,
+    "family": "casing_blocks"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.panel",
+    "b": "ctl.cheeks#1",
+    "noncoplanar": 21,
+    "coplanar": 8,
+    "family": "casing_blocks"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.panel",
+    "b": "ctl.pad#0",
+    "noncoplanar": 24,
+    "coplanar": 0,
+    "family": "controls_on_panel"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.panel",
+    "b": "ctl.pad#1",
+    "noncoplanar": 24,
+    "coplanar": 0,
+    "family": "controls_on_panel"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.panel",
+    "b": "ctl.pad#2",
+    "noncoplanar": 24,
+    "coplanar": 0,
+    "family": "controls_on_panel"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.panel",
+    "b": "ctl.pad#3",
+    "noncoplanar": 24,
+    "coplanar": 0,
+    "family": "controls_on_panel"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.panel",
+    "b": "ctl.pad#4",
+    "noncoplanar": 24,
+    "coplanar": 0,
+    "family": "controls_on_panel"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.panel",
+    "b": "ctl.pad#5",
+    "noncoplanar": 24,
+    "coplanar": 0,
+    "family": "controls_on_panel"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.panel",
+    "b": "ctl.pad#6",
+    "noncoplanar": 24,
+    "coplanar": 0,
+    "family": "controls_on_panel"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.panel",
+    "b": "ctl.pad#7",
+    "noncoplanar": 26,
+    "coplanar": 0,
+    "family": "controls_on_panel"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.panel",
+    "b": "ctl.knob#0",
+    "noncoplanar": 32,
+    "coplanar": 0,
+    "family": "controls_on_panel"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.panel",
+    "b": "ctl.knob#1",
+    "noncoplanar": 32,
+    "coplanar": 0,
+    "family": "controls_on_panel"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.panel",
+    "b": "ctl.knob#2",
+    "noncoplanar": 34,
+    "coplanar": 0,
+    "family": "controls_on_panel"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.panel",
+    "b": "ctl.knob#3",
+    "noncoplanar": 34,
+    "coplanar": 0,
+    "family": "controls_on_panel"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.panel",
+    "b": "ctl.knob#4",
+    "noncoplanar": 34,
+    "coplanar": 0,
+    "family": "controls_on_panel"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.panel",
+    "b": "ctl.knob#5",
+    "noncoplanar": 34,
+    "coplanar": 0,
+    "family": "controls_on_panel"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.panel",
+    "b": "ctl.knob#6",
+    "noncoplanar": 32,
+    "coplanar": 0,
+    "family": "controls_on_panel"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.panel",
+    "b": "ctl.knob#7",
+    "noncoplanar": 32,
+    "coplanar": 0,
+    "family": "controls_on_panel"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.panel",
+    "b": "ctl.bezel",
+    "noncoplanar": 10,
+    "coplanar": 0,
+    "family": "controls_on_panel"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.panel",
+    "b": "ctl.transport_key#0",
+    "noncoplanar": 8,
+    "coplanar": 0,
+    "family": "controls_on_panel"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.panel",
+    "b": "ctl.transport_key#1",
+    "noncoplanar": 8,
+    "coplanar": 0,
+    "family": "controls_on_panel"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.panel",
+    "b": "ctl.transport_key#2",
+    "noncoplanar": 8,
+    "coplanar": 0,
+    "family": "controls_on_panel"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.panel",
+    "b": "ctl.transport_key#3",
+    "noncoplanar": 8,
+    "coplanar": 0,
+    "family": "controls_on_panel"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.bays#0",
+    "b": "ctl.cheeks#0",
+    "noncoplanar": 24,
+    "coplanar": 19,
+    "family": "casing_blocks"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.bays#0",
+    "b": "ctl.wheel_slot#0",
+    "noncoplanar": 10,
+    "coplanar": 0,
+    "family": "wheels_recessed"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.bays#0",
+    "b": "ctl.wheel#0",
+    "noncoplanar": 53,
+    "coplanar": 0,
+    "family": "wheels_recessed"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.bays#0",
+    "b": "ctl.wheel_slot#1",
+    "noncoplanar": 10,
+    "coplanar": 0,
+    "family": "wheels_recessed"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.bays#0",
+    "b": "ctl.wheel#1",
+    "noncoplanar": 53,
+    "coplanar": 0,
+    "family": "wheels_recessed"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.bays#1",
+    "b": "ctl.cheeks#1",
+    "noncoplanar": 26,
+    "coplanar": 26,
+    "family": "casing_blocks"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.wheel_slot#0",
+    "b": "ctl.wheel#0",
+    "noncoplanar": 40,
+    "coplanar": 0,
+    "family": "wheels_recessed"
+   },
+   {
+    "row": "ctl_body__shell",
+    "a": "ctl.wheel_slot#1",
+    "b": "ctl.wheel#1",
+    "noncoplanar": 40,
+    "coplanar": 0,
+    "family": "wheels_recessed"
+   },
+   {
+    "row": "ctl_keys__keys",
+    "a": "ctl.white_front#0",
+    "b": "ctl.white_stem#0",
+    "noncoplanar": 33,
+    "coplanar": 11,
+    "family": "white_key_front_to_stem"
+   },
+   {
+    "row": "ctl_keys__keys",
+    "a": "ctl.white_front#1",
+    "b": "ctl.white_stem#1",
+    "noncoplanar": 20,
+    "coplanar": 4,
+    "family": "white_key_front_to_stem"
+   },
+   {
+    "row": "ctl_keys__keys",
+    "a": "ctl.white_front#2",
+    "b": "ctl.white_stem#2",
+    "noncoplanar": 29,
+    "coplanar": 8,
+    "family": "white_key_front_to_stem"
+   },
+   {
+    "row": "ctl_keys__keys",
+    "a": "ctl.white_front#3",
+    "b": "ctl.white_stem#3",
+    "noncoplanar": 33,
+    "coplanar": 11,
+    "family": "white_key_front_to_stem"
+   },
+   {
+    "row": "ctl_keys__keys",
+    "a": "ctl.white_front#4",
+    "b": "ctl.white_stem#4",
+    "noncoplanar": 20,
+    "coplanar": 4,
+    "family": "white_key_front_to_stem"
+   },
+   {
+    "row": "ctl_keys__keys",
+    "a": "ctl.white_front#5",
+    "b": "ctl.white_stem#5",
+    "noncoplanar": 20,
+    "coplanar": 4,
+    "family": "white_key_front_to_stem"
+   },
+   {
+    "row": "ctl_keys__keys",
+    "a": "ctl.white_front#6",
+    "b": "ctl.white_stem#6",
+    "noncoplanar": 29,
+    "coplanar": 8,
+    "family": "white_key_front_to_stem"
+   },
+   {
+    "row": "ctl_keys__keys",
+    "a": "ctl.white_front#7",
+    "b": "ctl.white_stem#7",
+    "noncoplanar": 33,
+    "coplanar": 11,
+    "family": "white_key_front_to_stem"
+   },
+   {
+    "row": "ctl_keys__keys",
+    "a": "ctl.white_front#8",
+    "b": "ctl.white_stem#8",
+    "noncoplanar": 20,
+    "coplanar": 4,
+    "family": "white_key_front_to_stem"
+   },
+   {
+    "row": "ctl_keys__keys",
+    "a": "ctl.white_front#9",
+    "b": "ctl.white_stem#9",
+    "noncoplanar": 29,
+    "coplanar": 8,
+    "family": "white_key_front_to_stem"
+   },
+   {
+    "row": "ctl_keys__keys",
+    "a": "ctl.white_front#10",
+    "b": "ctl.white_stem#10",
+    "noncoplanar": 33,
+    "coplanar": 11,
+    "family": "white_key_front_to_stem"
+   },
+   {
+    "row": "ctl_keys__keys",
+    "a": "ctl.white_front#11",
+    "b": "ctl.white_stem#11",
+    "noncoplanar": 20,
+    "coplanar": 4,
+    "family": "white_key_front_to_stem"
+   },
+   {
+    "row": "ctl_keys__keys",
+    "a": "ctl.white_front#12",
+    "b": "ctl.white_stem#12",
+    "noncoplanar": 20,
+    "coplanar": 4,
+    "family": "white_key_front_to_stem"
+   },
+   {
+    "row": "ctl_keys__keys",
+    "a": "ctl.white_front#13",
+    "b": "ctl.white_stem#13",
+    "noncoplanar": 29,
+    "coplanar": 8,
+    "family": "white_key_front_to_stem"
+   },
+   {
+    "row": "ctl_keys__keys",
+    "a": "ctl.white_front#14",
+    "b": "ctl.white_stem#14",
+    "noncoplanar": 33,
+    "coplanar": 11,
+    "family": "white_key_front_to_stem"
+   },
+   {
+    "row": "ctl_keys__keys",
+    "a": "ctl.white_front#15",
+    "b": "ctl.white_stem#15",
+    "noncoplanar": 20,
+    "coplanar": 4,
+    "family": "white_key_front_to_stem"
+   },
+   {
+    "row": "ctl_keys__keys",
+    "a": "ctl.white_front#16",
+    "b": "ctl.white_stem#16",
+    "noncoplanar": 29,
+    "coplanar": 8,
+    "family": "white_key_front_to_stem"
+   },
+   {
+    "row": "ctl_keys__keys",
+    "a": "ctl.white_front#17",
+    "b": "ctl.white_stem#17",
+    "noncoplanar": 33,
+    "coplanar": 11,
+    "family": "white_key_front_to_stem"
+   },
+   {
+    "row": "ctl_keys__keys",
+    "a": "ctl.white_front#18",
+    "b": "ctl.white_stem#18",
+    "noncoplanar": 20,
+    "coplanar": 4,
+    "family": "white_key_front_to_stem"
+   },
+   {
+    "row": "ctl_keys__keys",
+    "a": "ctl.white_front#19",
+    "b": "ctl.white_stem#19",
+    "noncoplanar": 20,
+    "coplanar": 4,
+    "family": "white_key_front_to_stem"
+   },
+   {
+    "row": "ctl_keys__keys",
+    "a": "ctl.white_front#20",
+    "b": "ctl.white_stem#20",
+    "noncoplanar": 29,
+    "coplanar": 8,
+    "family": "white_key_front_to_stem"
+   },
+   {
+    "row": "ctl_keys__keys",
+    "a": "ctl.white_front#21",
+    "b": "ctl.white_stem#21",
+    "noncoplanar": 33,
+    "coplanar": 11,
+    "family": "white_key_front_to_stem"
+   },
+   {
+    "row": "ctl_keys__keys",
+    "a": "ctl.white_front#22",
+    "b": "ctl.white_stem#22",
+    "noncoplanar": 20,
+    "coplanar": 4,
+    "family": "white_key_front_to_stem"
+   },
+   {
+    "row": "ctl_keys__keys",
+    "a": "ctl.white_front#23",
+    "b": "ctl.white_stem#23",
+    "noncoplanar": 29,
+    "coplanar": 8,
+    "family": "white_key_front_to_stem"
+   },
+   {
+    "row": "ctl_keys__keys",
+    "a": "ctl.white_front#24",
+    "b": "ctl.white_stem#24",
+    "noncoplanar": 33,
+    "coplanar": 11,
+    "family": "white_key_front_to_stem"
+   },
+   {
+    "row": "ctl_keys__keys",
+    "a": "ctl.white_front#25",
+    "b": "ctl.white_stem#25",
+    "noncoplanar": 20,
+    "coplanar": 4,
+    "family": "white_key_front_to_stem"
+   },
+   {
+    "row": "ctl_keys__keys",
+    "a": "ctl.white_front#26",
+    "b": "ctl.white_stem#26",
+    "noncoplanar": 20,
+    "coplanar": 4,
+    "family": "white_key_front_to_stem"
+   },
+   {
+    "row": "ctl_keys__keys",
+    "a": "ctl.white_front#27",
+    "b": "ctl.white_stem#27",
+    "noncoplanar": 29,
+    "coplanar": 8,
+    "family": "white_key_front_to_stem"
+   },
+   {
+    "row": "ctl_keys__keys",
+    "a": "ctl.white_front#28",
+    "b": "ctl.white_stem#28",
+    "noncoplanar": 42,
+    "coplanar": 15,
+    "family": "white_key_front_to_stem"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.arm#0",
+    "b": "stand.arm_end#0",
+    "noncoplanar": 128,
+    "coplanar": 46,
+    "family": "rubber_ends"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.arm#0",
+    "b": "stand.arm_end#1",
+    "noncoplanar": 122,
+    "coplanar": 44,
+    "family": "rubber_ends"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.arm#0",
+    "b": "stand.tube#0",
+    "noncoplanar": 28,
+    "coplanar": 0,
+    "family": "x_tubes_into_arms_and_feet"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.arm#0",
+    "b": "stand.tube#2",
+    "noncoplanar": 28,
+    "coplanar": 0,
+    "family": "x_tubes_into_arms_and_feet"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.foot#0",
+    "b": "stand.foot_end#0",
+    "noncoplanar": 128,
+    "coplanar": 46,
+    "family": "rubber_ends"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.foot#0",
+    "b": "stand.foot_end#1",
+    "noncoplanar": 122,
+    "coplanar": 44,
+    "family": "rubber_ends"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.foot#0",
+    "b": "stand.tube#1",
+    "noncoplanar": 29,
+    "coplanar": 0,
+    "family": "x_tubes_into_arms_and_feet"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.foot#0",
+    "b": "stand.tube#3",
+    "noncoplanar": 29,
+    "coplanar": 0,
+    "family": "x_tubes_into_arms_and_feet"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.arm#1",
+    "b": "stand.arm_end#2",
+    "noncoplanar": 128,
+    "coplanar": 46,
+    "family": "rubber_ends"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.arm#1",
+    "b": "stand.arm_end#3",
+    "noncoplanar": 122,
+    "coplanar": 44,
+    "family": "rubber_ends"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.arm#1",
+    "b": "stand.tube#1",
+    "noncoplanar": 28,
+    "coplanar": 0,
+    "family": "x_tubes_into_arms_and_feet"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.arm#1",
+    "b": "stand.tube#3",
+    "noncoplanar": 28,
+    "coplanar": 0,
+    "family": "x_tubes_into_arms_and_feet"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.foot#1",
+    "b": "stand.foot_end#2",
+    "noncoplanar": 128,
+    "coplanar": 46,
+    "family": "rubber_ends"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.foot#1",
+    "b": "stand.foot_end#3",
+    "noncoplanar": 122,
+    "coplanar": 44,
+    "family": "rubber_ends"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.foot#1",
+    "b": "stand.tube#0",
+    "noncoplanar": 29,
+    "coplanar": 0,
+    "family": "x_tubes_into_arms_and_feet"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.foot#1",
+    "b": "stand.tube#2",
+    "noncoplanar": 29,
+    "coplanar": 0,
+    "family": "x_tubes_into_arms_and_feet"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.tube#0",
+    "b": "stand.tube#1",
+    "noncoplanar": 68,
+    "coplanar": 8,
+    "family": "x_crossing"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.tube#0",
+    "b": "stand.pivot_plate#0",
+    "noncoplanar": 37,
+    "coplanar": 0,
+    "family": "pivot_hardware"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.tube#0",
+    "b": "stand.tooth#0",
+    "noncoplanar": 18,
+    "coplanar": 0,
+    "family": "pivot_hardware"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.tube#0",
+    "b": "stand.tooth#1",
+    "noncoplanar": 13,
+    "coplanar": 0,
+    "family": "pivot_hardware"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.tube#0",
+    "b": "stand.pivot_bolt",
+    "noncoplanar": 51,
+    "coplanar": 0,
+    "family": "pivot_hardware"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.tube#0",
+    "b": "stand.knob",
+    "noncoplanar": 34,
+    "coplanar": 0,
+    "family": "pivot_hardware"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.tube#1",
+    "b": "stand.pivot_plate#0",
+    "noncoplanar": 37,
+    "coplanar": 0,
+    "family": "pivot_hardware"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.tube#1",
+    "b": "stand.pivot_bolt",
+    "noncoplanar": 52,
+    "coplanar": 0,
+    "family": "pivot_hardware"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.tube#1",
+    "b": "stand.knob",
+    "noncoplanar": 34,
+    "coplanar": 0,
+    "family": "pivot_hardware"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.pivot_plate#0",
+    "b": "stand.pivot_bolt",
+    "noncoplanar": 52,
+    "coplanar": 0,
+    "family": "pivot_hardware"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.tube#2",
+    "b": "stand.tube#3",
+    "noncoplanar": 68,
+    "coplanar": 8,
+    "family": "x_crossing"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.tube#2",
+    "b": "stand.pivot_plate#1",
+    "noncoplanar": 37,
+    "coplanar": 0,
+    "family": "pivot_hardware"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.tube#2",
+    "b": "stand.tooth#3",
+    "noncoplanar": 18,
+    "coplanar": 0,
+    "family": "pivot_hardware"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.tube#2",
+    "b": "stand.tooth#4",
+    "noncoplanar": 13,
+    "coplanar": 0,
+    "family": "pivot_hardware"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.tube#2",
+    "b": "stand.pivot_bolt",
+    "noncoplanar": 52,
+    "coplanar": 0,
+    "family": "pivot_hardware"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.tube#3",
+    "b": "stand.pivot_plate#1",
+    "noncoplanar": 37,
+    "coplanar": 0,
+    "family": "pivot_hardware"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.tube#3",
+    "b": "stand.pivot_bolt",
+    "noncoplanar": 52,
+    "coplanar": 0,
+    "family": "pivot_hardware"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.pivot_plate#1",
+    "b": "stand.pivot_bolt",
+    "noncoplanar": 52,
+    "coplanar": 0,
+    "family": "pivot_hardware"
+   },
+   {
+    "row": "ctl_stand__frame",
+    "a": "stand.pivot_bolt",
+    "b": "stand.knob",
+    "noncoplanar": 34,
+    "coplanar": 24,
+    "family": "pivot_hardware"
+   },
+   {
+    "row": "ctl_sustain_pedal__pedal",
+    "a": "sustain.base",
+    "b": "sustain.hinge",
+    "noncoplanar": 16,
+    "coplanar": 0,
+    "family": "sustain_hinge"
+   },
+   {
+    "row": "ctl_sustain_pedal__pedal",
+    "a": "sustain.plate",
+    "b": "sustain.hinge",
+    "noncoplanar": 30,
+    "coplanar": 0,
+    "family": "sustain_hinge"
+   },
+   {
+    "row": "stool_keys__stool",
+    "a": "stool.seat",
+    "b": "stool.column#0",
+    "noncoplanar": 72,
+    "coplanar": 120,
+    "family": "stool_assembly"
+   },
+   {
+    "row": "stool_keys__stool",
+    "a": "stool.column#0",
+    "b": "stool.column#1",
+    "noncoplanar": 72,
+    "coplanar": 0,
+    "family": "stool_assembly"
+   },
+   {
+    "row": "stool_keys__stool",
+    "a": "stool.column#0",
+    "b": "stool.column#2",
+    "noncoplanar": 36,
+    "coplanar": 0,
+    "family": "stool_assembly"
+   },
+   {
+    "row": "stool_keys__stool",
+    "a": "stool.column#2",
+    "b": "stool.leg#0",
+    "noncoplanar": 16,
+    "coplanar": 0,
+    "family": "stool_assembly"
+   },
+   {
+    "row": "stool_keys__stool",
+    "a": "stool.column#2",
+    "b": "stool.leg#1",
+    "noncoplanar": 16,
+    "coplanar": 0,
+    "family": "stool_assembly"
+   },
+   {
+    "row": "stool_keys__stool",
+    "a": "stool.column#2",
+    "b": "stool.leg#2",
+    "noncoplanar": 16,
+    "coplanar": 0,
+    "family": "stool_assembly"
+   },
+   {
+    "row": "stool_keys__stool",
+    "a": "stool.column#2",
+    "b": "stool.leg#3",
+    "noncoplanar": 16,
+    "coplanar": 0,
+    "family": "stool_assembly"
+   },
+   {
+    "row": "stool_keys__stool",
+    "a": "stool.leg#0",
+    "b": "stool.foot#0",
+    "noncoplanar": 9,
+    "coplanar": 0,
+    "family": "stool_assembly"
+   },
+   {
+    "row": "stool_keys__stool",
+    "a": "stool.leg#1",
+    "b": "stool.foot#1",
+    "noncoplanar": 9,
+    "coplanar": 0,
+    "family": "stool_assembly"
+   },
+   {
+    "row": "stool_keys__stool",
+    "a": "stool.leg#2",
+    "b": "stool.foot#2",
+    "noncoplanar": 11,
+    "coplanar": 0,
+    "family": "stool_assembly"
+   },
+   {
+    "row": "stool_keys__stool",
+    "a": "stool.leg#3",
+    "b": "stool.foot#3",
+    "noncoplanar": 13,
+    "coplanar": 0,
+    "family": "stool_assembly"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.upright#0",
+    "b": "rack.foot#0",
+    "noncoplanar": 64,
+    "coplanar": 0,
+    "family": "tube_t_joints"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.upright#0",
+    "b": "rack.clamp_body#0",
+    "noncoplanar": 84,
+    "coplanar": 0,
+    "family": "clamp_blocks_round_tubes"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.upright#0",
+    "b": "rack.side_bar#0",
+    "noncoplanar": 88,
+    "coplanar": 0,
+    "family": "tube_t_joints"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.upright#0",
+    "b": "rack.clamp_body#1",
+    "noncoplanar": 84,
+    "coplanar": 0,
+    "family": "clamp_blocks_round_tubes"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.upright#0",
+    "b": "rack.clamp_body#2",
+    "noncoplanar": 84,
+    "coplanar": 0,
+    "family": "clamp_blocks_round_tubes"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.upright#0",
+    "b": "rack.crossbar",
+    "noncoplanar": 90,
+    "coplanar": 0,
+    "family": "tube_t_joints"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.upright#0",
+    "b": "rack.clamp_body#10",
+    "noncoplanar": 84,
+    "coplanar": 0,
+    "family": "clamp_blocks_round_tubes"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.upright#0",
+    "b": "rack.stub#4",
+    "noncoplanar": 32,
+    "coplanar": 0,
+    "family": "stubs_and_booms"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.upright#0",
+    "b": "rack.clamp_body#11",
+    "noncoplanar": 84,
+    "coplanar": 0,
+    "family": "clamp_blocks_round_tubes"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.foot#0",
+    "b": "rack.foot_end#0",
+    "noncoplanar": 216,
+    "coplanar": 108,
+    "family": "rubber_ends"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.foot#0",
+    "b": "rack.foot_end#1",
+    "noncoplanar": 216,
+    "coplanar": 108,
+    "family": "rubber_ends"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.foot#0",
+    "b": "rack.clamp_body#0",
+    "noncoplanar": 37,
+    "coplanar": 0,
+    "family": "clamp_blocks_round_tubes"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_body#0",
+    "b": "rack.clamp_bolt#0",
+    "noncoplanar": 18,
+    "coplanar": 10,
+    "family": "clamp_bolts_and_wings"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_bolt#0",
+    "b": "rack.clamp_wing#0",
+    "noncoplanar": 28,
+    "coplanar": 0,
+    "family": "clamp_bolts_and_wings"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.side_bar#0",
+    "b": "rack.side_end#0",
+    "noncoplanar": 300,
+    "coplanar": 244,
+    "family": "rubber_ends"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.side_bar#0",
+    "b": "rack.clamp_body#1",
+    "noncoplanar": 42,
+    "coplanar": 0,
+    "family": "clamp_blocks_round_tubes"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.side_bar#0",
+    "b": "rack.clamp_body#8",
+    "noncoplanar": 84,
+    "coplanar": 0,
+    "family": "clamp_blocks_round_tubes"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.side_bar#0",
+    "b": "rack.stub#2",
+    "noncoplanar": 34,
+    "coplanar": 0,
+    "family": "stubs_and_booms"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_body#1",
+    "b": "rack.clamp_bolt#1",
+    "noncoplanar": 18,
+    "coplanar": 10,
+    "family": "clamp_bolts_and_wings"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_bolt#1",
+    "b": "rack.clamp_wing#1",
+    "noncoplanar": 28,
+    "coplanar": 0,
+    "family": "clamp_bolts_and_wings"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_body#2",
+    "b": "rack.clamp_bolt#2",
+    "noncoplanar": 18,
+    "coplanar": 10,
+    "family": "clamp_bolts_and_wings"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_body#2",
+    "b": "rack.crossbar",
+    "noncoplanar": 42,
+    "coplanar": 0,
+    "family": "clamp_blocks_round_tubes"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_bolt#2",
+    "b": "rack.clamp_wing#2",
+    "noncoplanar": 28,
+    "coplanar": 0,
+    "family": "clamp_bolts_and_wings"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.upright#1",
+    "b": "rack.foot#1",
+    "noncoplanar": 64,
+    "coplanar": 0,
+    "family": "tube_t_joints"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.upright#1",
+    "b": "rack.clamp_body#3",
+    "noncoplanar": 84,
+    "coplanar": 0,
+    "family": "clamp_blocks_round_tubes"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.upright#1",
+    "b": "rack.side_bar#1",
+    "noncoplanar": 88,
+    "coplanar": 0,
+    "family": "tube_t_joints"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.upright#1",
+    "b": "rack.clamp_body#4",
+    "noncoplanar": 84,
+    "coplanar": 0,
+    "family": "clamp_blocks_round_tubes"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.upright#1",
+    "b": "rack.clamp_body#5",
+    "noncoplanar": 84,
+    "coplanar": 0,
+    "family": "clamp_blocks_round_tubes"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.upright#1",
+    "b": "rack.crossbar",
+    "noncoplanar": 90,
+    "coplanar": 0,
+    "family": "tube_t_joints"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.upright#1",
+    "b": "rack.clamp_body#12",
+    "noncoplanar": 84,
+    "coplanar": 0,
+    "family": "clamp_blocks_round_tubes"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.upright#1",
+    "b": "rack.clamp_body#13",
+    "noncoplanar": 84,
+    "coplanar": 0,
+    "family": "clamp_blocks_round_tubes"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.foot#1",
+    "b": "rack.foot_end#2",
+    "noncoplanar": 216,
+    "coplanar": 108,
+    "family": "rubber_ends"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.foot#1",
+    "b": "rack.foot_end#3",
+    "noncoplanar": 216,
+    "coplanar": 108,
+    "family": "rubber_ends"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.foot#1",
+    "b": "rack.clamp_body#3",
+    "noncoplanar": 37,
+    "coplanar": 0,
+    "family": "clamp_blocks_round_tubes"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_body#3",
+    "b": "rack.clamp_bolt#3",
+    "noncoplanar": 18,
+    "coplanar": 10,
+    "family": "clamp_bolts_and_wings"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_bolt#3",
+    "b": "rack.clamp_wing#3",
+    "noncoplanar": 28,
+    "coplanar": 0,
+    "family": "clamp_bolts_and_wings"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.side_bar#1",
+    "b": "rack.side_end#1",
+    "noncoplanar": 300,
+    "coplanar": 244,
+    "family": "rubber_ends"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.side_bar#1",
+    "b": "rack.clamp_body#4",
+    "noncoplanar": 42,
+    "coplanar": 0,
+    "family": "clamp_blocks_round_tubes"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.side_bar#1",
+    "b": "rack.clamp_body#9",
+    "noncoplanar": 84,
+    "coplanar": 0,
+    "family": "clamp_blocks_round_tubes"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.side_bar#1",
+    "b": "rack.stub#3",
+    "noncoplanar": 34,
+    "coplanar": 0,
+    "family": "stubs_and_booms"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_body#4",
+    "b": "rack.clamp_bolt#4",
+    "noncoplanar": 18,
+    "coplanar": 10,
+    "family": "clamp_bolts_and_wings"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_bolt#4",
+    "b": "rack.clamp_wing#4",
+    "noncoplanar": 28,
+    "coplanar": 0,
+    "family": "clamp_bolts_and_wings"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_body#5",
+    "b": "rack.clamp_bolt#5",
+    "noncoplanar": 18,
+    "coplanar": 10,
+    "family": "clamp_bolts_and_wings"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_body#5",
+    "b": "rack.crossbar",
+    "noncoplanar": 42,
+    "coplanar": 0,
+    "family": "clamp_blocks_round_tubes"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_bolt#5",
+    "b": "rack.clamp_wing#5",
+    "noncoplanar": 28,
+    "coplanar": 0,
+    "family": "clamp_bolts_and_wings"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.crossbar",
+    "b": "rack.clamp_body#6",
+    "noncoplanar": 84,
+    "coplanar": 0,
+    "family": "clamp_blocks_round_tubes"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.crossbar",
+    "b": "rack.stub#0",
+    "noncoplanar": 34,
+    "coplanar": 0,
+    "family": "stubs_and_booms"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.crossbar",
+    "b": "rack.clamp_body#7",
+    "noncoplanar": 84,
+    "coplanar": 0,
+    "family": "clamp_blocks_round_tubes"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.crossbar",
+    "b": "rack.stub#1",
+    "noncoplanar": 36,
+    "coplanar": 0,
+    "family": "stubs_and_booms"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_body#6",
+    "b": "rack.clamp_bolt#6",
+    "noncoplanar": 18,
+    "coplanar": 10,
+    "family": "clamp_bolts_and_wings"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_body#6",
+    "b": "rack.stub#0",
+    "noncoplanar": 30,
+    "coplanar": 0,
+    "family": "stubs_and_booms"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_bolt#6",
+    "b": "rack.clamp_wing#6",
+    "noncoplanar": 28,
+    "coplanar": 0,
+    "family": "clamp_bolts_and_wings"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_body#7",
+    "b": "rack.clamp_bolt#7",
+    "noncoplanar": 18,
+    "coplanar": 10,
+    "family": "clamp_bolts_and_wings"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_body#7",
+    "b": "rack.stub#1",
+    "noncoplanar": 30,
+    "coplanar": 0,
+    "family": "stubs_and_booms"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_bolt#7",
+    "b": "rack.clamp_wing#7",
+    "noncoplanar": 28,
+    "coplanar": 0,
+    "family": "clamp_bolts_and_wings"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_body#8",
+    "b": "rack.clamp_bolt#8",
+    "noncoplanar": 18,
+    "coplanar": 10,
+    "family": "clamp_bolts_and_wings"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_body#8",
+    "b": "rack.stub#2",
+    "noncoplanar": 28,
+    "coplanar": 0,
+    "family": "stubs_and_booms"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_bolt#8",
+    "b": "rack.clamp_wing#8",
+    "noncoplanar": 28,
+    "coplanar": 0,
+    "family": "clamp_bolts_and_wings"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_body#9",
+    "b": "rack.clamp_bolt#9",
+    "noncoplanar": 18,
+    "coplanar": 10,
+    "family": "clamp_bolts_and_wings"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_body#9",
+    "b": "rack.stub#3",
+    "noncoplanar": 28,
+    "coplanar": 0,
+    "family": "stubs_and_booms"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_bolt#9",
+    "b": "rack.clamp_wing#9",
+    "noncoplanar": 28,
+    "coplanar": 0,
+    "family": "clamp_bolts_and_wings"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_body#10",
+    "b": "rack.clamp_bolt#10",
+    "noncoplanar": 18,
+    "coplanar": 10,
+    "family": "clamp_bolts_and_wings"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_body#10",
+    "b": "rack.stub#4",
+    "noncoplanar": 30,
+    "coplanar": 0,
+    "family": "stubs_and_booms"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_bolt#10",
+    "b": "rack.clamp_wing#10",
+    "noncoplanar": 28,
+    "coplanar": 0,
+    "family": "clamp_bolts_and_wings"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_body#11",
+    "b": "rack.clamp_bolt#11",
+    "noncoplanar": 18,
+    "coplanar": 10,
+    "family": "clamp_bolts_and_wings"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_body#11",
+    "b": "rack.boom#0",
+    "noncoplanar": 20,
+    "coplanar": 0,
+    "family": "stubs_and_booms"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_bolt#11",
+    "b": "rack.clamp_wing#11",
+    "noncoplanar": 28,
+    "coplanar": 0,
+    "family": "clamp_bolts_and_wings"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_body#12",
+    "b": "rack.clamp_bolt#12",
+    "noncoplanar": 18,
+    "coplanar": 10,
+    "family": "clamp_bolts_and_wings"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_body#12",
+    "b": "rack.boom#1",
+    "noncoplanar": 20,
+    "coplanar": 0,
+    "family": "stubs_and_booms"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_bolt#12",
+    "b": "rack.clamp_wing#12",
+    "noncoplanar": 28,
+    "coplanar": 0,
+    "family": "clamp_bolts_and_wings"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_body#13",
+    "b": "rack.clamp_bolt#13",
+    "noncoplanar": 18,
+    "coplanar": 10,
+    "family": "clamp_bolts_and_wings"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_body#13",
+    "b": "rack.boom#2",
+    "noncoplanar": 20,
+    "coplanar": 0,
+    "family": "stubs_and_booms"
+   },
+   {
+    "row": "drum_rack__rack",
+    "a": "rack.clamp_bolt#13",
+    "b": "rack.clamp_wing#13",
+    "noncoplanar": 28,
+    "coplanar": 0,
+    "family": "clamp_bolts_and_wings"
+   },
+   {
+    "row": "drum_pads__shells",
+    "a": "pad.tom1.shell",
+    "b": "pad.tom1.lug#0",
+    "noncoplanar": 12,
+    "coplanar": 0,
+    "family": "lugs_on_shells"
+   },
+   {
+    "row": "drum_pads__shells",
+    "a": "pad.tom1.shell",
+    "b": "pad.tom1.lug#1",
+    "noncoplanar": 12,
+    "coplanar": 0,
+    "family": "lugs_on_shells"
+   },
+   {
+    "row": "drum_pads__shells",
+    "a": "pad.tom1.shell",
+    "b": "pad.tom1.lug#2",
+    "noncoplanar": 12,
+    "coplanar": 0,
+    "family": "lugs_on_shells"
+   },
+   {
+    "row": "drum_pads__shells",
+    "a": "pad.tom1.shell",
+    "b": "pad.tom1.lug#3",
+    "noncoplanar": 12,
+    "coplanar": 0,
+    "family": "lugs_on_shells"
+   },
+   {
+    "row": "drum_pads__shells",
+    "a": "pad.tom1.shell",
+    "b": "pad.tom1.block",
+    "noncoplanar": 36,
+    "coplanar": 0,
+    "family": "mount_block_under_shell"
+   },
+   {
+    "row": "drum_pads__shells",
+    "a": "pad.tom1.shell",
+    "b": "pad.tom1.arm",
+    "noncoplanar": 34,
+    "coplanar": 0,
+    "family": "arm_against_shell"
+   },
+   {
+    "row": "drum_pads__shells",
+    "a": "pad.tom1.block",
+    "b": "pad.tom1.arm",
+    "noncoplanar": 35,
+    "coplanar": 0,
+    "family": "arm_into_block"
+   },
+   {
+    "row": "drum_pads__shells",
+    "a": "pad.tom2.shell",
+    "b": "pad.tom2.lug#0",
+    "noncoplanar": 12,
+    "coplanar": 0,
+    "family": "lugs_on_shells"
+   },
+   {
+    "row": "drum_pads__shells",
+    "a": "pad.tom2.shell",
+    "b": "pad.tom2.lug#1",
+    "noncoplanar": 12,
+    "coplanar": 0,
+    "family": "lugs_on_shells"
+   },
+   {
+    "row": "drum_pads__shells",
+    "a": "pad.tom2.shell",
+    "b": "pad.tom2.lug#2",
+    "noncoplanar": 12,
+    "coplanar": 0,
+    "family": "lugs_on_shells"
+   },
+   {
+    "row": "drum_pads__shells",
+    "a": "pad.tom2.shell",
+    "b": "pad.tom2.lug#3",
+    "noncoplanar": 12,
+    "coplanar": 0,
+    "family": "lugs_on_shells"
+   },
+   {
+    "row": "drum_pads__shells",
+    "a": "pad.tom2.shell",
+    "b": "pad.tom2.block",
+    "noncoplanar": 36,
+    "coplanar": 0,
+    "family": "mount_block_under_shell"
+   },
+   {
+    "row": "drum_pads__shells",
+    "a": "pad.tom2.shell",
+    "b": "pad.tom2.arm",
+    "noncoplanar": 8,
+    "coplanar": 0,
+    "family": "arm_against_shell"
+   },
+   {
+    "row": "drum_pads__shells",
+    "a": "pad.tom2.block",
+    "b": "pad.tom2.arm",
+    "noncoplanar": 34,
+    "coplanar": 0,
+    "family": "arm_into_block"
+   },
+   {
+    "row": "drum_pads__shells",
+    "a": "pad.snare.shell",
+    "b": "pad.snare.lug#0",
+    "noncoplanar": 12,
+    "coplanar": 0,
+    "family": "lugs_on_shells"
+   },
+   {
+    "row": "drum_pads__shells",
+    "a": "pad.snare.shell",
+    "b": "pad.snare.lug#1",
+    "noncoplanar": 12,
+    "coplanar": 0,
+    "family": "lugs_on_shells"
+   },
+   {
+    "row": "drum_pads__shells",
+    "a": "pad.snare.shell",
+    "b": "pad.snare.lug#2",
+    "noncoplanar": 12,
+    "coplanar": 0,
+    "family": "lugs_on_shells"
+   },
+   {
+    "row": "drum_pads__shells",
+    "a": "pad.snare.shell",
+    "b": "pad.snare.lug#3",
+    "noncoplanar": 12,
+    "coplanar": 0,
+    "family": "lugs_on_shells"
+   },
+   {
+    "row": "drum_pads__shells",
+    "a": "pad.snare.shell",
+    "b": "pad.snare.lug#4",
+    "noncoplanar": 12,
+    "coplanar": 0,
+    "family": "lugs_on_shells"
+   },
+   {
+    "row": "drum_pads__shells",
+    "a": "pad.snare.shell",
+    "b": "pad.snare.lug#5",
+    "noncoplanar": 12,
+    "coplanar": 0,
+    "family": "lugs_on_shells"
+   },
+   {
+    "row": "drum_pads__shells",
+    "a": "pad.snare.shell",
+    "b": "pad.snare.block",
+    "noncoplanar": 36,
+    "coplanar": 0,
+    "family": "mount_block_under_shell"
+   },
+   {
+    "row": "drum_pads__shells",
+    "a": "pad.snare.shell",
+    "b": "pad.snare.arm",
+    "noncoplanar": 52,
+    "coplanar": 0,
+    "family": "arm_against_shell"
+   },
+   {
+    "row": "drum_pads__shells",
+    "a": "pad.snare.block",
+    "b": "pad.snare.arm",
+    "noncoplanar": 34,
+    "coplanar": 0,
+    "family": "arm_into_block"
+   },
+   {
+    "row": "drum_pads__shells",
+    "a": "pad.tom3.shell",
+    "b": "pad.tom3.lug#0",
+    "noncoplanar": 12,
+    "coplanar": 0,
+    "family": "lugs_on_shells"
+   },
+   {
+    "row": "drum_pads__shells",
+    "a": "pad.tom3.shell",
+    "b": "pad.tom3.lug#1",
+    "noncoplanar": 12,
+    "coplanar": 0,
+    "family": "lugs_on_shells"
+   },
+   {
+    "row": "drum_pads__shells",
+    "a": "pad.tom3.shell",
+    "b": "pad.tom3.lug#2",
+    "noncoplanar": 12,
+    "coplanar": 0,
+    "family": "lugs_on_shells"
+   },
+   {
+    "row": "drum_pads__shells",
+    "a": "pad.tom3.shell",
+    "b": "pad.tom3.lug#3",
+    "noncoplanar": 12,
+    "coplanar": 0,
+    "family": "lugs_on_shells"
+   },
+   {
+    "row": "drum_pads__shells",
+    "a": "pad.tom3.shell",
+    "b": "pad.tom3.block",
+    "noncoplanar": 36,
+    "coplanar": 0,
+    "family": "mount_block_under_shell"
+   },
+   {
+    "row": "drum_pads__shells",
+    "a": "pad.tom3.shell",
+    "b": "pad.tom3.arm",
+    "noncoplanar": 38,
+    "coplanar": 0,
+    "family": "arm_against_shell"
+   },
+   {
+    "row": "drum_pads__shells",
+    "a": "pad.tom3.block",
+    "b": "pad.tom3.arm",
+    "noncoplanar": 34,
+    "coplanar": 0,
+    "family": "arm_into_block"
+   },
+   {
+    "row": "drum_cymbals__cymbals",
+    "a": "cymbal.hihat.disc",
+    "b": "cymbal.hihat.rod",
+    "noncoplanar": 96,
+    "coplanar": 0,
+    "family": "cymbal_mount_stack"
+   },
+   {
+    "row": "drum_cymbals__cymbals",
+    "a": "cymbal.hihat.disc",
+    "b": "cymbal.hihat.nut#0",
+    "noncoplanar": 48,
+    "coplanar": 0,
+    "family": "cymbal_mount_stack"
+   },
+   {
+    "row": "drum_cymbals__cymbals",
+    "a": "cymbal.hihat.rod",
+    "b": "cymbal.hihat.felt",
+    "noncoplanar": 48,
+    "coplanar": 0,
+    "family": "cymbal_mount_stack"
+   },
+   {
+    "row": "drum_cymbals__cymbals",
+    "a": "cymbal.hihat.rod",
+    "b": "cymbal.hihat.nut#0",
+    "noncoplanar": 48,
+    "coplanar": 0,
+    "family": "cymbal_mount_stack"
+   },
+   {
+    "row": "drum_cymbals__cymbals",
+    "a": "cymbal.hihat.rod",
+    "b": "cymbal.hihat.nut#1",
+    "noncoplanar": 28,
+    "coplanar": 0,
+    "family": "cymbal_mount_stack"
+   },
+   {
+    "row": "drum_cymbals__cymbals",
+    "a": "cymbal.hihat.rod",
+    "b": "cymbal.hihat.tilter",
+    "noncoplanar": 50,
+    "coplanar": 16,
+    "family": "cymbal_mount_stack"
+   },
+   {
+    "row": "drum_cymbals__cymbals",
+    "a": "cymbal.hihat.felt",
+    "b": "cymbal.hihat.tilter",
+    "noncoplanar": 30,
+    "coplanar": 28,
+    "family": "cymbal_mount_stack"
+   },
+   {
+    "row": "drum_cymbals__cymbals",
+    "a": "cymbal.hihat.nut#0",
+    "b": "cymbal.hihat.nut#1",
+    "noncoplanar": 26,
+    "coplanar": 0,
+    "family": "cymbal_mount_stack"
+   },
+   {
+    "row": "drum_cymbals__cymbals",
+    "a": "cymbal.crash.disc",
+    "b": "cymbal.crash.rod",
+    "noncoplanar": 96,
+    "coplanar": 0,
+    "family": "cymbal_mount_stack"
+   },
+   {
+    "row": "drum_cymbals__cymbals",
+    "a": "cymbal.crash.disc",
+    "b": "cymbal.crash.nut#0",
+    "noncoplanar": 48,
+    "coplanar": 0,
+    "family": "cymbal_mount_stack"
+   },
+   {
+    "row": "drum_cymbals__cymbals",
+    "a": "cymbal.crash.rod",
+    "b": "cymbal.crash.felt",
+    "noncoplanar": 48,
+    "coplanar": 0,
+    "family": "cymbal_mount_stack"
+   },
+   {
+    "row": "drum_cymbals__cymbals",
+    "a": "cymbal.crash.rod",
+    "b": "cymbal.crash.nut#0",
+    "noncoplanar": 48,
+    "coplanar": 0,
+    "family": "cymbal_mount_stack"
+   },
+   {
+    "row": "drum_cymbals__cymbals",
+    "a": "cymbal.crash.rod",
+    "b": "cymbal.crash.nut#1",
+    "noncoplanar": 28,
+    "coplanar": 0,
+    "family": "cymbal_mount_stack"
+   },
+   {
+    "row": "drum_cymbals__cymbals",
+    "a": "cymbal.crash.rod",
+    "b": "cymbal.crash.tilter",
+    "noncoplanar": 50,
+    "coplanar": 16,
+    "family": "cymbal_mount_stack"
+   },
+   {
+    "row": "drum_cymbals__cymbals",
+    "a": "cymbal.crash.felt",
+    "b": "cymbal.crash.tilter",
+    "noncoplanar": 30,
+    "coplanar": 28,
+    "family": "cymbal_mount_stack"
+   },
+   {
+    "row": "drum_cymbals__cymbals",
+    "a": "cymbal.crash.nut#0",
+    "b": "cymbal.crash.nut#1",
+    "noncoplanar": 26,
+    "coplanar": 0,
+    "family": "cymbal_mount_stack"
+   },
+   {
+    "row": "drum_cymbals__cymbals",
+    "a": "cymbal.ride.disc",
+    "b": "cymbal.ride.rod",
+    "noncoplanar": 96,
+    "coplanar": 0,
+    "family": "cymbal_mount_stack"
+   },
+   {
+    "row": "drum_cymbals__cymbals",
+    "a": "cymbal.ride.disc",
+    "b": "cymbal.ride.nut#0",
+    "noncoplanar": 48,
+    "coplanar": 0,
+    "family": "cymbal_mount_stack"
+   },
+   {
+    "row": "drum_cymbals__cymbals",
+    "a": "cymbal.ride.rod",
+    "b": "cymbal.ride.felt",
+    "noncoplanar": 48,
+    "coplanar": 0,
+    "family": "cymbal_mount_stack"
+   },
+   {
+    "row": "drum_cymbals__cymbals",
+    "a": "cymbal.ride.rod",
+    "b": "cymbal.ride.nut#0",
+    "noncoplanar": 48,
+    "coplanar": 0,
+    "family": "cymbal_mount_stack"
+   },
+   {
+    "row": "drum_cymbals__cymbals",
+    "a": "cymbal.ride.rod",
+    "b": "cymbal.ride.nut#1",
+    "noncoplanar": 28,
+    "coplanar": 0,
+    "family": "cymbal_mount_stack"
+   },
+   {
+    "row": "drum_cymbals__cymbals",
+    "a": "cymbal.ride.rod",
+    "b": "cymbal.ride.tilter",
+    "noncoplanar": 50,
+    "coplanar": 16,
+    "family": "cymbal_mount_stack"
+   },
+   {
+    "row": "drum_cymbals__cymbals",
+    "a": "cymbal.ride.felt",
+    "b": "cymbal.ride.tilter",
+    "noncoplanar": 30,
+    "coplanar": 28,
+    "family": "cymbal_mount_stack"
+   },
+   {
+    "row": "drum_cymbals__cymbals",
+    "a": "cymbal.ride.nut#0",
+    "b": "cymbal.ride.nut#1",
+    "noncoplanar": 26,
+    "coplanar": 0,
+    "family": "cymbal_mount_stack"
+   },
+   {
+    "row": "drum_kick__tower",
+    "a": "kick.tower",
+    "b": "kick.base",
+    "noncoplanar": 30,
+    "coplanar": 31,
+    "family": "tower_and_pad"
+   },
+   {
+    "row": "drum_kick__tower",
+    "a": "kick.tower",
+    "b": "kick.head",
+    "noncoplanar": 50,
+    "coplanar": 0,
+    "family": "tower_and_pad"
+   },
+   {
+    "row": "drum_kick__tower",
+    "a": "kick.tower",
+    "b": "kick.pad_ring",
+    "noncoplanar": 50,
+    "coplanar": 0,
+    "family": "tower_and_pad"
+   },
+   {
+    "row": "drum_kick__tower",
+    "a": "kick.base",
+    "b": "kick.pedal_plate",
+    "noncoplanar": 13,
+    "coplanar": 2,
+    "family": "pedal_plate_into_base"
+   },
+   {
+    "row": "drum_kick__tower",
+    "a": "kick.base",
+    "b": "kick.post#0",
+    "noncoplanar": 33,
+    "coplanar": 0,
+    "family": "pedal_root_at_base_front"
+   },
+   {
+    "row": "drum_kick__tower",
+    "a": "kick.base",
+    "b": "kick.post#1",
+    "noncoplanar": 33,
+    "coplanar": 0,
+    "family": "pedal_root_at_base_front"
+   },
+   {
+    "row": "drum_kick__tower",
+    "a": "kick.base",
+    "b": "kick.spring",
+    "noncoplanar": 33,
+    "coplanar": 0,
+    "family": "pedal_root_at_base_front"
+   },
+   {
+    "row": "drum_kick__tower",
+    "a": "kick.head",
+    "b": "kick.beater",
+    "noncoplanar": 24,
+    "coplanar": 0,
+    "family": "beater_on_head"
+   },
+   {
+    "row": "drum_kick__tower",
+    "a": "kick.post#0",
+    "b": "kick.axle",
+    "noncoplanar": 56,
+    "coplanar": 0,
+    "family": "beater_mechanism"
+   },
+   {
+    "row": "drum_kick__tower",
+    "a": "kick.post#1",
+    "b": "kick.axle",
+    "noncoplanar": 58,
+    "coplanar": 0,
+    "family": "beater_mechanism"
+   },
+   {
+    "row": "drum_kick__tower",
+    "a": "kick.post#1",
+    "b": "kick.spring",
+    "noncoplanar": 15,
+    "coplanar": 2,
+    "family": "pedal_root_at_base_front"
+   },
+   {
+    "row": "drum_kick__tower",
+    "a": "kick.axle",
+    "b": "kick.cam",
+    "noncoplanar": 38,
+    "coplanar": 0,
+    "family": "beater_mechanism"
+   },
+   {
+    "row": "drum_kick__tower",
+    "a": "kick.axle",
+    "b": "kick.shaft",
+    "noncoplanar": 35,
+    "coplanar": 0,
+    "family": "beater_mechanism"
+   },
+   {
+    "row": "drum_kick__tower",
+    "a": "kick.cam",
+    "b": "kick.chain",
+    "noncoplanar": 16,
+    "coplanar": 0,
+    "family": "beater_mechanism"
+   },
+   {
+    "row": "drum_kick__tower",
+    "a": "kick.cam",
+    "b": "kick.shaft",
+    "noncoplanar": 20,
+    "coplanar": 0,
+    "family": "beater_mechanism"
+   },
+   {
+    "row": "drum_kick__tower",
+    "a": "kick.shaft",
+    "b": "kick.beater",
+    "noncoplanar": 24,
+    "coplanar": 0,
+    "family": "beater_mechanism"
+   },
+   {
+    "row": "drum_hihat_pedal__pedal",
+    "a": "hihat.base",
+    "b": "hihat.housing",
+    "noncoplanar": 36,
+    "coplanar": 37,
+    "family": "housing_and_heel_on_base"
+   },
+   {
+    "row": "drum_hihat_pedal__pedal",
+    "a": "hihat.base",
+    "b": "hihat.heel",
+    "noncoplanar": 8,
+    "coplanar": 2,
+    "family": "housing_and_heel_on_base"
+   },
+   {
+    "row": "drum_module__body",
+    "a": "module.case",
+    "b": "module.knob",
+    "noncoplanar": 38,
+    "coplanar": 0,
+    "family": "module_fittings"
+   },
+   {
+    "row": "drum_module__body",
+    "a": "module.case",
+    "b": "module.button#0",
+    "noncoplanar": 10,
+    "coplanar": 0,
+    "family": "module_fittings"
+   },
+   {
+    "row": "drum_module__body",
+    "a": "module.case",
+    "b": "module.button#1",
+    "noncoplanar": 14,
+    "coplanar": 0,
+    "family": "module_fittings"
+   },
+   {
+    "row": "drum_module__body",
+    "a": "module.case",
+    "b": "module.button#2",
+    "noncoplanar": 8,
+    "coplanar": 0,
+    "family": "module_fittings"
+   },
+   {
+    "row": "drum_module__body",
+    "a": "module.case",
+    "b": "module.button#3",
+    "noncoplanar": 8,
+    "coplanar": 0,
+    "family": "module_fittings"
+   },
+   {
+    "row": "drum_module__body",
+    "a": "module.case",
+    "b": "module.button#4",
+    "noncoplanar": 8,
+    "coplanar": 0,
+    "family": "module_fittings"
+   },
+   {
+    "row": "drum_module__body",
+    "a": "module.case",
+    "b": "module.button#5",
+    "noncoplanar": 8,
+    "coplanar": 0,
+    "family": "module_fittings"
+   },
+   {
+    "row": "drum_module__body",
+    "a": "module.case",
+    "b": "module.plate",
+    "noncoplanar": 14,
+    "coplanar": 0,
+    "family": "module_fittings"
+   },
+   {
+    "row": "drum_module__body",
+    "a": "module.case",
+    "b": "module.snake",
+    "noncoplanar": 20,
+    "coplanar": 0,
+    "family": "module_fittings"
+   },
+   {
+    "row": "drum_throne__throne",
+    "a": "throne.seat",
+    "b": "throne.column#0",
+    "noncoplanar": 72,
+    "coplanar": 120,
+    "family": "throne_assembly"
+   },
+   {
+    "row": "drum_throne__throne",
+    "a": "throne.column#0",
+    "b": "throne.column#1",
+    "noncoplanar": 80,
+    "coplanar": 0,
+    "family": "throne_assembly"
+   },
+   {
+    "row": "drum_throne__throne",
+    "a": "throne.column#0",
+    "b": "throne.column#2",
+    "noncoplanar": 38,
+    "coplanar": 43,
+    "family": "throne_assembly"
+   },
+   {
+    "row": "drum_throne__throne",
+    "a": "throne.column#2",
+    "b": "throne.leg#0",
+    "noncoplanar": 19,
+    "coplanar": 0,
+    "family": "throne_assembly"
+   },
+   {
+    "row": "drum_throne__throne",
+    "a": "throne.column#2",
+    "b": "throne.leg#1",
+    "noncoplanar": 19,
+    "coplanar": 0,
+    "family": "throne_assembly"
+   },
+   {
+    "row": "drum_throne__throne",
+    "a": "throne.column#2",
+    "b": "throne.leg#2",
+    "noncoplanar": 19,
+    "coplanar": 0,
+    "family": "throne_assembly"
+   },
+   {
+    "row": "drum_throne__throne",
+    "a": "throne.leg#0",
+    "b": "throne.brace#0",
+    "noncoplanar": 15,
+    "coplanar": 0,
+    "family": "throne_assembly"
+   },
+   {
+    "row": "drum_throne__throne",
+    "a": "throne.leg#0",
+    "b": "throne.foot#0",
+    "noncoplanar": 7,
+    "coplanar": 0,
+    "family": "throne_assembly"
+   },
+   {
+    "row": "drum_throne__throne",
+    "a": "throne.brace#0",
+    "b": "throne.column#3",
+    "noncoplanar": 14,
+    "coplanar": 0,
+    "family": "throne_assembly"
+   },
+   {
+    "row": "drum_throne__throne",
+    "a": "throne.leg#1",
+    "b": "throne.brace#1",
+    "noncoplanar": 15,
+    "coplanar": 0,
+    "family": "throne_assembly"
+   },
+   {
+    "row": "drum_throne__throne",
+    "a": "throne.leg#1",
+    "b": "throne.foot#1",
+    "noncoplanar": 5,
+    "coplanar": 0,
+    "family": "throne_assembly"
+   },
+   {
+    "row": "drum_throne__throne",
+    "a": "throne.brace#1",
+    "b": "throne.column#3",
+    "noncoplanar": 16,
+    "coplanar": 0,
+    "family": "throne_assembly"
+   },
+   {
+    "row": "drum_throne__throne",
+    "a": "throne.leg#2",
+    "b": "throne.brace#2",
+    "noncoplanar": 15,
+    "coplanar": 0,
+    "family": "throne_assembly"
+   },
+   {
+    "row": "drum_throne__throne",
+    "a": "throne.leg#2",
+    "b": "throne.foot#2",
+    "noncoplanar": 7,
+    "coplanar": 0,
+    "family": "throne_assembly"
+   },
+   {
+    "row": "drum_throne__throne",
+    "a": "throne.brace#2",
+    "b": "throne.column#3",
+    "noncoplanar": 16,
+    "coplanar": 0,
+    "family": "throne_assembly"
+   },
+   {
+    "row": "music_cables__runs",
+    "a": "cable.tom1",
+    "b": "cable.tom2",
+    "noncoplanar": 255,
+    "coplanar": 32,
+    "family": "shared_cable_lead"
+   },
+   {
+    "row": "music_cables__runs",
+    "a": "cable.tom1",
+    "b": "cable.snare",
+    "noncoplanar": 106,
+    "coplanar": 9,
+    "family": "shared_cable_lead"
+   },
+   {
+    "row": "music_cables__runs",
+    "a": "cable.tom1",
+    "b": "cable.tom3",
+    "noncoplanar": 128,
+    "coplanar": 9,
+    "family": "shared_cable_lead"
+   },
+   {
+    "row": "music_cables__runs",
+    "a": "cable.tom1",
+    "b": "cable.kick",
+    "noncoplanar": 115,
+    "coplanar": 9,
+    "family": "shared_cable_lead"
+   },
+   {
+    "row": "music_cables__runs",
+    "a": "cable.tom1",
+    "b": "cable.hihat_pedal",
+    "noncoplanar": 114,
+    "coplanar": 9,
+    "family": "shared_cable_lead"
+   },
+   {
+    "row": "music_cables__runs",
+    "a": "cable.tom2",
+    "b": "cable.snare",
+    "noncoplanar": 106,
+    "coplanar": 9,
+    "family": "shared_cable_lead"
+   },
+   {
+    "row": "music_cables__runs",
+    "a": "cable.tom2",
+    "b": "cable.tom3",
+    "noncoplanar": 128,
+    "coplanar": 9,
+    "family": "shared_cable_lead"
+   },
+   {
+    "row": "music_cables__runs",
+    "a": "cable.tom2",
+    "b": "cable.kick",
+    "noncoplanar": 115,
+    "coplanar": 9,
+    "family": "shared_cable_lead"
+   },
+   {
+    "row": "music_cables__runs",
+    "a": "cable.tom2",
+    "b": "cable.hihat_pedal",
+    "noncoplanar": 114,
+    "coplanar": 9,
+    "family": "shared_cable_lead"
+   },
+   {
+    "row": "music_cables__runs",
+    "a": "cable.snare",
+    "b": "cable.tom3",
+    "noncoplanar": 106,
+    "coplanar": 9,
+    "family": "shared_cable_lead"
+   },
+   {
+    "row": "music_cables__runs",
+    "a": "cable.snare",
+    "b": "cable.kick",
+    "noncoplanar": 116,
+    "coplanar": 9,
+    "family": "shared_cable_lead"
+   },
+   {
+    "row": "music_cables__runs",
+    "a": "cable.snare",
+    "b": "cable.hihat_pedal",
+    "noncoplanar": 121,
+    "coplanar": 9,
+    "family": "shared_cable_lead"
+   },
+   {
+    "row": "music_cables__runs",
+    "a": "cable.tom3",
+    "b": "cable.kick",
+    "noncoplanar": 109,
+    "coplanar": 9,
+    "family": "shared_cable_lead"
+   },
+   {
+    "row": "music_cables__runs",
+    "a": "cable.tom3",
+    "b": "cable.hihat_pedal",
+    "noncoplanar": 112,
+    "coplanar": 9,
+    "family": "shared_cable_lead"
+   },
+   {
+    "row": "music_cables__runs",
+    "a": "cable.kick",
+    "b": "cable.hihat_pedal",
+    "noncoplanar": 119,
+    "coplanar": 9,
+    "family": "shared_cable_lead"
+   }
+  ],
+  "limits": [
+   "noncoplanar count merges tangent touch with crossing",
+   "coplanar count merges edge or point touch with area overlap",
+   "counts follow tessellation, not depth or volume",
+   "no facing information: hidden back-to-back seats and same-facing overlaps look alike",
+   "a part wholly inside another, a positive-gap seat and a floating part all record nothing"
+  ],
+  "noBlanketExemption": true,
+  "newCriteriaRecommended": 0
+ },
+ "cables": {
+  "pairs": 15,
+  "reading": "one shared-lead construction, not fifteen routing collisions; intent unstated",
+  "sharedStartCentreFromReceipt": {
+   "cable.tom1": [
+    0.9902846049894152,
+    0.5100948683298051,
+    0.585
+   ],
+   "cable.tom2": [
+    0.9902846049894152,
+    0.5100948683298051,
+    0.585
+   ],
+   "cable.snare": [
+    0.9902846049894152,
+    0.5100948683298051,
+    0.585
+   ],
+   "cable.tom3": [
+    0.9902846049894152,
+    0.5100948683298051,
+    0.585
+   ],
+   "cable.kick": [
+    0.9902846049894152,
+    0.5100948683298051,
+    0.585
+   ],
+   "cable.hihat_pedal": [
+    0.9902846049894152,
+    0.5100948683298051,
+    0.585
+   ]
+  },
+  "allSixShareStart": true,
+  "notMeasured": "downstream clearances after the fan-out",
+  "blocker": false
+ },
+ "partsWithNoRecordedOpaqueContact": {
+  "byRow": {
+   "ctl_body__indicators": [
+    "ctl.display_face"
+   ],
+   "ctl_keys__keys": [
+    "ctl.black_key#0",
+    "ctl.black_key#1",
+    "ctl.black_key#2",
+    "ctl.black_key#3",
+    "ctl.black_key#4",
+    "ctl.black_key#5",
+    "ctl.black_key#6",
+    "ctl.black_key#7",
+    "ctl.black_key#8",
+    "ctl.black_key#9",
+    "ctl.black_key#10",
+    "ctl.black_key#11",
+    "ctl.black_key#12",
+    "ctl.black_key#13",
+    "ctl.black_key#14",
+    "ctl.black_key#15",
+    "ctl.black_key#16",
+    "ctl.black_key#17",
+    "ctl.black_key#18",
+    "ctl.black_key#19"
+   ],
+   "ctl_stand__frame": [
+    "stand.tooth#2",
+    "stand.tooth#5"
+   ],
+   "ctl_sustain_pedal__pedal": [
+    "sustain.cable"
+   ],
+   "rug__rug": [
+    "rug"
+   ],
+   "drum_pads__heads": [
+    "pad.tom1.head",
+    "pad.tom2.head",
+    "pad.snare.head",
+    "pad.tom3.head"
+   ],
+   "drum_module__body": [
+    "module.arm"
+   ],
+   "drum_module__display": [
+    "module.display"
+   ],
+   "drum_sticks__pair": [
+    "sticks#0",
+    "sticks#1"
+   ],
+   "music_cables__runs": [
+    "cable.controller",
+    "cable.module_power"
+   ]
+  },
+  "conventionResting": [
+   "ctl.display_face",
+   "ctl.black_key x20",
+   "pad heads x4",
+   "module.display",
+   "sticks x2",
+   "rug",
+   "sustain.cable",
+   "cable.controller",
+   "cable.module_power"
+  ],
+  "probableFloat": [
+   {
+    "part": "drum_module__body/module.arm",
+    "basis": "source ends the arm 12 mm behind the case back; holder plate is 6 mm thick; receipt records no contact",
+    "measured": false,
+    "visibility": "back of the module, away from the fixed eye (judgement)"
+   },
+   {
+    "part": "ctl_stand__frame/stand.tooth#2 and #5",
+    "basis": "third tooth of each X frame touches no part; all teeth start 2 mm clear of the pivot plate",
+    "measured": false,
+    "visibility": "a few pixels at planned views (rough estimate)"
+   }
+  ]
+ },
+ "phoneH1": {
+  "receipt": {
+   "view": "music-320-f74",
+   "settings": [
+    44,
+    -8,
+    74,
+    320,
+    844
+   ],
+   "whiteCentresInFrame": 10,
+   "pitchPxMinMax": [
+    9.051188321374788,
+    10.636128735091765
+   ],
+   "controllerEnvelopeDeg": 30.742005381314236
+  },
+  "roughEstimatesNotMeasurements": {
+   "horizontalFovDeg_320x844_f74": 31.9,
+   "horizontalFovDeg_390x844_f74": 38.4,
+   "whiteKeysAzimuthDegApprox": [
+    51,
+    76
+   ],
+   "farEndKeysOutsideFrameAt320RightLookLimitApprox": 2,
+   "governedBy": "root native Codex critic projection and the actual capture"
+  },
+  "documentedLookBounds": {
+   "yaw": [
+    -38,
+    58
+   ],
+   "pitch": [
+    -16,
+    12
+   ],
+   "source": "scene-art-direction.md"
+  },
+  "judgement": "framing, not key geometry; a partial keyboard at music-320 can read well; the adopted wording cannot pass at music-320 with 10/29 in frame; no waiver given",
+  "smallestApproach": [
+   "capture music-320 and music-390 in the actual preview as planned",
+   "also capture the existing right-down look (yaw 58, pitch -16) at 390 and 320",
+   "record the device pixel ratio of each phone capture",
+   "if 320 still crops the far end, root chooses the gate view list"
+  ],
+  "rootOptions": {
+   "A": "full count from right-down-390 and music-1440; judge 320 on the keys in frame (recommended; root decision)",
+   "B": "keep literal wording at 320; cannot pass without widening look bounds or moving the controller"
+  },
+  "cameraGeometryOrContractEdit": false
+ },
+ "inspectionExportBlockers": [],
+ "decidableByRootNow": [
+  "whether the shared cable lead is an accepted shorthand",
+  "when to look at the module arm",
+  "which views carry the phone H1 count"
+ ],
+ "needsInspectionExportFreeView": [
+  "under and behind each pad: arm entry into the shell",
+  "behind the module: arm to holder plate",
+  "kick pedal root at the base front and spring beside its post",
+  "stand pivot: floating third teeth",
+  "snake end: six-into-one cable lead and the tom1 kink"
+ ],
+ "needsActualImages": [
+  "H1",
+  "K1",
+  "F1",
+  "E1b",
+  "HH1"
+ ],
+ "imageGatesOpen": [
+  "N1a",
+  "N1b",
+  "H1",
+  "K1",
+  "T1",
+  "HH1",
+  "SP1",
+  "AZ1",
+  "RUG1",
+  "RK1",
+  "E1a",
+  "E1b",
+  "F1",
+  "M6"
+ ],
+ "notDone": [
+  "build",
+  "measurement",
+  "projection",
+  "pose comparison",
+  "Blender",
+  "browser",
+  "render",
+  "export",
+  "Git mutation",
+  "helper workers",
+  "source edits"
+ ]
+}

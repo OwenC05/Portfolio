@@ -1,0 +1,113 @@
+{
+  "verdict": "ready-for-root-freeze",
+  "sourceAndArtifactPins": {
+    "scene-m4-v04-producer-report.md": "635572bf32854fa274f2445645a0604ba29a77d951abb4cd23880483340f4ac7",
+    "scene-m4-v04-preparation-report.md": "6b2a62a31ab086a5a72c880ecad04332576a5ae14c31ab882f6421aa6f51c6be",
+    "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py": "8d814874ee0ac1317827297d2a729b34f4789fffd891212ae03e2c440a73b792",
+    "asset-pipeline/full-kit/source/build_fullkit_m4_v04.py": "0d01536c36481021e8ff7026a6608998eb44dce0d88505dae105f94834909826",
+    "asset-pipeline/full-kit/manifests/m4-v04-author-declarations.json": "8ce8db34b40a3ce053d037c5152fec8c8ed19d586b0968439abf64e3308f32bb",
+    "asset-pipeline/full-kit/source/produce_fullkit_m4_v04.py": "3c9fe150d859087050fed73d3fed54d3a97a5998774c455203e6a00462dc08d1",
+    "asset-pipeline/full-kit/source/measure_fullkit_m4_v04.py": "d56efb031e843320625b610181885ff9110f1789b8bced9bef475f75f50ccf1b",
+    "scene-coordination/m4-v04-producer-tests.py": "dcf7b924bb876a44b243e838aa3d4f59ae1ad987cb4b4fbdccaf3a6f39712039",
+    "scene-coordination/m4-v04-producer-tests.json": "246465ffe6faa941cbaf81aff900e657fec1aedcd8f5347c2e7831c5a5a762c5",
+    "asset-pipeline/full-kit/manifests/m4-v04-pose-comparison.json": "fc4af9e7e8842f315aa7ff3a3ff916e3f27977265e0544c4da7473643aa0eb04",
+    "asset-pipeline/full-kit/manifests/m4-v04-rows.json": "1fa5fdd3f267896a76743aca986af9cadd1dd84610395e6049fc799009489992",
+    "asset-pipeline/full-kit/manifests/m4-v04-verifier-declaration.json": "5d04a051398e09c9b2aeb309e2893efe09ed286a18e27113785ff487a7074d42",
+    "asset-pipeline/full-kit/manifests/m4-v04-cpu-measurements.json": "be6c205db283f86ce8a8048c0dde58ae11e0cdb38ff326e1a4c62d26a9265bea"
+  },
+  "unchangedAfter": true,
+  "expectedCanonicalPins": {
+    "rowsSha256": "cfac1013f686bb7790bc2f5e9ed5acc518009ab7e2bc27d09ad09629c429533e",
+    "declarationSha256": "a737d402307d0aa056e375934beab94c7696c1f5a14f0fe7d028893d5c30db7d",
+    "invocationSha256": "5128d2a61205f9e4262814ca5bdd96ff661a5e613259c7af852ad9fe9c38f5c6"
+  },
+  "observedCanonicalPins": {
+    "rowsSha256": "cfac1013f686bb7790bc2f5e9ed5acc518009ab7e2bc27d09ad09629c429533e",
+    "declarationSha256": "a737d402307d0aa056e375934beab94c7696c1f5a14f0fe7d028893d5c30db7d",
+    "invocationSha256": "5128d2a61205f9e4262814ca5bdd96ff661a5e613259c7af852ad9fe9c38f5c6"
+  },
+  "namedProducerReproducesExactArtifacts": true,
+  "directSourceCoverage": {
+    "rows": 18,
+    "groups": 332,
+    "vertices": 7714,
+    "faces": 6200,
+    "corners": 26368
+  },
+  "writerSuiteSeparateInvocation": {
+    "passed": 42,
+    "failed": 0,
+    "write": false
+  },
+  "independentChecks": [
+    {
+      "name": "kick.spur_arm_L_in_foot/omitted_locator",
+      "rejected": true,
+      "reason": "explicit vertex list omits source coverage"
+    },
+    {
+      "name": "kick.spur_arm_R_in_foot/omitted_locator",
+      "rejected": true,
+      "reason": "explicit vertex list omits source coverage"
+    },
+    {
+      "name": "kick.spur_arm_L_in_base/omitted_locator",
+      "rejected": true,
+      "reason": "side-face list omits or adds source faces"
+    },
+    {
+      "name": "kick.spur_arm_R_in_base/omitted_locator",
+      "rejected": true,
+      "reason": "side-face list omits or adds source faces"
+    },
+    {
+      "name": "kick.footboard_on_heel/omitted_locator",
+      "rejected": true,
+      "reason": "explicit vertex list omits source coverage"
+    },
+    {
+      "name": "hihat.hinge_in_base/omitted_locator",
+      "rejected": true,
+      "reason": "explicit vertex list omits source coverage"
+    },
+    {
+      "name": "hihat.footboard_in_hinge/omitted_locator",
+      "rejected": true,
+      "reason": "explicit vertex list omits source coverage"
+    },
+    {
+      "name": "hihat.footboard_on_housing/omitted_locator",
+      "rejected": true,
+      "reason": "explicit vertex list omits source coverage"
+    },
+    {
+      "name": "role_pairs_exact_and_priority_disclosed",
+      "passed": true
+    },
+    {
+      "name": "inclined_rest_penetration",
+      "rejected": true
+    },
+    {
+      "name": "inclined_rest_finite_footprint_escape",
+      "rejected": true
+    },
+    {
+      "name": "small_planar_oriented_two_degree_boundary",
+      "passed": true
+    }
+  ],
+  "independentStageBudget": {
+    "main": 18,
+    "casters": 9,
+    "refresh": 27,
+    "placed": 13968,
+    "refreshTriangles": 24836
+  },
+  "phoneCentreCount": 10,
+  "unclassifiedWithinRowContacts": 299,
+  "candidateAcceptance": false,
+  "audit_m4_v3Called": false,
+  "fullMeasurementRepeated": false,
+  "probeSourceSha256": "9738112e855ca9f4f89d7cc624bb80a9d4d7ca589afccb6117d292b353ba4ed3"
+}

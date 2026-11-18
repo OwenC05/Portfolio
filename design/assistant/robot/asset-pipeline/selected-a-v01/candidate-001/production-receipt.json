@@ -1,0 +1,33 @@
+{
+  "candidateId": "selected-a-v01-meshy-001",
+  "status": "SUCCEEDED",
+  "successfulCreates": 1,
+  "priorRejectedAttempts": 2,
+  "createAttempts": 3,
+  "retryAuthorization": "User explicitly requested: i upgraded the plan try again",
+  "retryOutcome": "One task successfully created after user-reported upgrade",
+  "priorRejection": "HTTP 402 free-plan restriction; no tasks or credits consumed",
+  "balanceBefore": 1070,
+  "balanceAfter": 1065,
+  "priorRejectionTaskList": {
+    "taskType": "image-to-3d",
+    "tasks": [],
+    "hasMore": false
+  },
+  "requestPath": "design/assistant/robot/meshy-production-request.json",
+  "userConfirmation": "confirm",
+  "approvedCredits": 5,
+  "candidateLimit": 1,
+  "automaticCreateRetries": 0,
+  "inputSha256": "9b94d861e18d5c95f439847e30a81aa7a036110f0105585a8914126bfc9c8cc7",
+  "providerTaskId": "01a1e47c-e987-71f8-8089-30c181b86660",
+  "taskType": "image-to-3d",
+  "submissionStartedAt": "2026-11-16T13:12:26Z",
+  "completedAt": null,
+  "completionObservedAt": "2026-11-16T13:14:15Z",
+  "chargedCredits": 5,
+  "rawGlbSha256": "412c0c213e0c6adc6baa80fa0686b6cbd9a1d259348bb96c571ef28b2f59bec7",
+  "rawGlbBytes": 151996,
+  "productionReady": false,
+  "downloadedAt": "2026-11-16T13:14:15Z"
+}

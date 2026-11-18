@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {readFileSync,readdirSync,writeFileSync} from 'node:fs';
+import {join} from 'node:path';
+const dir='design/assistant/robot/integration/resize-wait-trace-v01';
+const stage=process.argv[2]; assert.ok(['before','after'].includes(stage));
+const hash=path=>{const b=readFileSync(path);return{path:path.replaceAll('\\','/'),bytes:b.length,sha256:createHash('sha256').update(b).digest('hex')};};
+const files=JSON.parse(readFileSync('design/assistant/robot/integration/verification-g4-v04/source-after.json','utf8')).files;
+assert.equal(files.length,83);for(const f of files)assert.equal(hash(f.path).sha256,f.sha256,f.path);
+const walk=p=>readdirSync(p,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(join(p,e.name)):[join(p,e.name)]);
+const paths=[...files.map(f=>f.path),...['integration/verification-g4-v04','integration/performance-diagnosis-v01','integration/dpr-candidate-v01','review/g4-v04-performance','review/density-source-v04'].flatMap(p=>walk('design/assistant/robot/'+p))];
+const inputs=[...new Set(paths)].sort().map(hash);
+if(stage==='after')assert.deepEqual(inputs,JSON.parse(readFileSync(`${dir}/pins-before.json`,'utf8')).inputs);
+writeFileSync(`${dir}/pins-${stage}.json`,JSON.stringify({at:new Date().toISOString(),stage,sourcePins:83,inputs},null,2));
+console.log(JSON.stringify({stage,sourcePins:83,totalFiles:inputs.length,unchanged:stage==='after'}));

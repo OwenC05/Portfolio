@@ -1,0 +1,34 @@
+[
+  {
+    "name": "integration-tests",
+    "command": [
+      "node",
+      "--test",
+      "--test-reporter=tap",
+      "tests/assistant/studio-experience.test.cjs"
+    ],
+    "exitCode": 1,
+    "pass": 14,
+    "fail": 2
+  },
+  {
+    "name": "scoped-typescript",
+    "command": [
+      "node",
+      "C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\review\\root-assembly-g4\\static-check.cjs"
+    ],
+    "exitCode": 0
+  },
+  {
+    "name": "scoped-lint",
+    "command": [
+      "node",
+      "node_modules/eslint/bin/eslint.js",
+      "components/studio/StudioExperience.tsx",
+      "tests/assistant/studio-experience.test.cjs",
+      "--max-warnings",
+      "0"
+    ],
+    "exitCode": 0
+  }
+]

@@ -1,0 +1,65 @@
+[
+  {
+    "argv": [
+      "--test",
+      "--test-reporter=tap",
+      "--test-name-pattern=G2 feedback:",
+      "components/studio/scene/verify-controller.mjs"
+    ],
+    "exitCode": 0,
+    "log": "after-feedback.txt"
+  },
+  {
+    "argv": [
+      "--test",
+      "--test-reporter=tap",
+      "components/studio/scene/robot/verify-cleanup.mjs"
+    ],
+    "exitCode": 0,
+    "log": "after-durable-cleanup.txt"
+  },
+  {
+    "argv": [
+      "--test",
+      "--test-reporter=tap",
+      "design/assistant/robot/review/scene-runtime-g2/probe.test.mjs"
+    ],
+    "exitCode": 0,
+    "log": "after-original-probes.txt"
+  },
+  {
+    "argv": [
+      "--test",
+      "--test-reporter=tap",
+      "--test-name-pattern=G2 |mouse, pen and touch|active leaves|unrelated, programmatic|disabled interaction|trusted canvas click|S-T2|robot/card foreground",
+      "components/studio/scene/verify-controller.mjs",
+      "components/studio/scene/robot/verify-robot.mjs"
+    ],
+    "exitCode": 0,
+    "log": "targeted-guards.txt"
+  },
+  {
+    "argv": [
+      "node_modules/typescript/bin/tsc",
+      "--noEmit",
+      "--incremental",
+      "false"
+    ],
+    "exitCode": 0,
+    "log": "typescript.txt"
+  },
+  {
+    "argv": [
+      "node_modules/eslint/bin/eslint.js",
+      "components/studio/scene/controller.ts",
+      "components/studio/scene/verify-controller.mjs",
+      "components/studio/scene/robot/load-robot.ts",
+      "components/studio/scene/robot/cards.ts",
+      "components/studio/scene/robot/verify-cleanup.mjs",
+      "--max-warnings",
+      "0"
+    ],
+    "exitCode": 0,
+    "log": "scoped-lint.txt"
+  }
+]

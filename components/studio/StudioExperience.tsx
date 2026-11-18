@@ -14,6 +14,7 @@ import {
   type ReactNode,
 } from 'react'
 import StudioShell from '@/app/studio/StudioShell'
+import { useAssistantRun } from '@/components/assistant/useAssistantRun'
 import { createPanelNavigation } from '@/app/studio/panel-navigation'
 import { lockPanelScroll } from '@/app/studio/panel-scroll'
 import { studioProjects } from '@/lib/studio-content'
@@ -27,6 +28,15 @@ import {
   type StudioViewCommand,
 } from '@/lib/studio-contract'
 import ProjectEvidence from './ProjectEvidence'
+import AssistantEntry from './assistant/AssistantEntry'
+import StudioAssistantPanel from './assistant/StudioAssistantPanel'
+
+type PanelTarget =
+  | { kind: 'none' }
+  | { kind: 'project'; id: ProjectId }
+  | { kind: 'assistant' }
+type PanelState = PanelTarget & { epoch: number }
+const ASK_HEADING_ID = 'studio-ask-heading'
 
 const StudioScene = dynamic<StudioSceneProps>(() => import('./StudioScene'), {
   ssr: false,
@@ -69,14 +79,23 @@ export default function StudioExperience({
   children: ReactNode
 }) {
   const [enhanced, setEnhanced] = useState(false)
-  const [selectedProjectId, setSelectedProjectId] = useState<ProjectId | null>(
-    null
-  )
+  const [panel, setPanel] = useState<PanelState>({ kind: 'none', epoch: 0 })
+  // Updated by event intent before React commits, so project activation wins
+  // even when an Ask action is queued in the same batch.
+  const panelIntent = useRef(panel)
+  const selectedProjectId = panel.kind === 'project' ? panel.id : null
+  const askOpen = panel.kind === 'assistant'
+  const { snapshot, actions } = useAssistantRun()
+  const [draft, setDraft] = useState('')
+  const [askFocused, setAskFocused] = useState(false)
+  const [robotHovered, setRobotHovered] = useState(false)
   const [sceneStatus, setSceneStatus] = useState<SceneStatus>('loading')
   const [reducedMotion, setReducedMotion] = useState(true)
   const [viewCommand, setViewCommand] = useState<StudioViewCommand | null>(null)
   const [projectsOpen, setProjectsOpen] = useState(false)
   const dialogRef = useRef<HTMLDialogElement>(null)
+  const askEntryRef = useRef<HTMLButtonElement>(null)
+  const askHeadingRef = useRef<HTMLHeadingElement>(null)
   const projectsToggleRef = useRef<HTMLButtonElement>(null)
   const panelScrollRef = useRef<HTMLDivElement>(null)
   const navigation = useRef<ReturnType<typeof createPanelNavigation> | null>(
@@ -84,12 +103,55 @@ export default function StudioExperience({
   )
   const returnTarget = useRef<HTMLElement | null>(null)
   const returnProject = useRef<ProjectId | null>(null)
-  const focusedProject = useRef<ProjectId | null>(null)
+  const focusedPanel = useRef<PanelState | null>(null)
+  const returnFocusOnClose = useRef(true)
+  const expectedCloseEvents = useRef<number[]>([])
   const fallbackProject = useRef<ProjectId | null>(null)
   const enhancementFailed = useRef(false)
   const releaseScroll = useRef<(() => void) | null>(null)
   const stopNavigation = useRef<(() => void) | null>(null)
   const sequence = useRef(0)
+
+  const changePanel = useCallback(
+    (target: PanelTarget, restoreFocus = true) => {
+      const current = panelIntent.current
+      if (
+        current.kind === target.kind &&
+        (current.kind !== 'project' ||
+          (target.kind === 'project' && current.id === target.id))
+      )
+        return
+      // Invalidate the request and its source markers before replacing content.
+      if (current.kind === 'assistant') actions.close()
+      const next: PanelState = { ...target, epoch: current.epoch + 1 }
+      panelIntent.current = next
+      returnFocusOnClose.current = restoreFocus
+      setPanel(next)
+    },
+    [actions]
+  )
+
+  const closeNativeDialog = useCallback(() => {
+    const dialog = dialogRef.current
+    if (!dialog?.open) return
+    // Native close events arrive later. Consume our own close event even if
+    // another panel has opened by then; it must not close that new session.
+    expectedCloseEvents.current.push(focusedPanel.current?.epoch ?? -1)
+    dialog.close()
+  }, [])
+
+  useEffect(() => {
+    const entry = askEntryRef.current
+    if (!entry) return
+    const focus = () => setAskFocused(true)
+    const blur = () => setAskFocused(false)
+    entry.addEventListener('focus', focus)
+    entry.addEventListener('blur', blur)
+    return () => {
+      entry.removeEventListener('focus', focus)
+      entry.removeEventListener('blur', blur)
+    }
+  }, [enhanced])
 
   useEffect(() => {
     if (typeof window.matchMedia !== 'function') return
@@ -131,7 +193,12 @@ export default function StudioExperience({
         releaseScroll.current?.()
         releaseScroll.current = null
       }
-      setSelectedProjectId(id)
+      // Any history navigation dismisses Ask without an intermediate focus
+      // return. A project destination replaces the same native dialog.
+      changePanel(
+        id ? { kind: 'project', id } : { kind: 'none' },
+        panelIntent.current.kind !== 'assistant'
+      )
     }
     // Navigation scopes manual restoration to project entries; ordinary
     // About/Contact entries keep the browser's saved positions.
@@ -161,7 +228,7 @@ export default function StudioExperience({
     }
     stopNavigation.current = stop
     return stop
-  }, [])
+  }, [changePanel])
 
   const restoreFocus = useCallback(() => {
     const target = returnTarget.current?.isConnected
@@ -177,35 +244,50 @@ export default function StudioExperience({
   useCommitEffect(() => {
     const dialog = dialogRef.current
     if (!dialog) return
-    if (enhanced && selectedProjectId) {
+    if (enhanced && panel.kind !== 'none') {
       releaseScroll.current ??= lockPanelScroll(document, window)
       try {
-        if (!dialog.open) dialog.showModal()
+        if (!dialog.open) {
+          // Root owns Ask's return-focus policy. Letting showModal remember an
+          // invoker would make native close restore it even during navigation.
+          // Blur before opening; the heading receives focus in this same commit.
+          if (
+            panel.kind === 'assistant' &&
+            document.activeElement instanceof HTMLElement
+          ) {
+            document.activeElement.blur()
+          }
+          dialog.showModal()
+        }
       } catch {
         // Keep the URL and reveal its complete server article if native modality
         // is unavailable or fails. Never strand content behind hidden fallback.
-        fallbackProject.current = selectedProjectId
+        fallbackProject.current = panel.kind === 'project' ? panel.id : null
         enhancementFailed.current = true
         stopNavigation.current?.()
         setEnhanced(false)
-        setSelectedProjectId(null)
+        changePanel({ kind: 'none' }, false)
+        releaseScroll.current?.()
+        releaseScroll.current = null
+        if (panel.kind === 'assistant') window.location.assign('/ask')
         return
       }
-      if (focusedProject.current !== selectedProjectId) {
-        const heading = document.getElementById(
-          `panel-project-${selectedProjectId}-heading`
-        )
+      if (focusedPanel.current?.epoch !== panel.epoch) {
+        const heading =
+          panel.kind === 'assistant'
+            ? askHeadingRef.current
+            : document.getElementById(`panel-project-${panel.id}-heading`)
         if (panelScrollRef.current) panelScrollRef.current.scrollTop = 0
         heading?.focus({ preventScroll: true })
-        focusedProject.current = selectedProjectId
+        focusedPanel.current = panel
       }
       return
     }
-    const wasOpen = focusedProject.current !== null
-    if (dialog.open) dialog.close()
+    const previous = focusedPanel.current
+    closeNativeDialog()
     releaseScroll.current?.()
     releaseScroll.current = null
-    focusedProject.current = null
+    focusedPanel.current = null
     if (fallbackProject.current) {
       const heading = document.getElementById(
         `project-${fallbackProject.current}-heading`
@@ -213,20 +295,23 @@ export default function StudioExperience({
       fallbackProject.current = null
       heading?.focus({ preventScroll: true })
       heading?.scrollIntoView({ block: 'start', behavior: 'instant' })
-    } else if (wasOpen) {
-      restoreFocus()
+    } else if (previous && returnFocusOnClose.current) {
+      if (previous.kind === 'assistant') {
+        askEntryRef.current?.focus({ preventScroll: true })
+      } else {
+        restoreFocus()
+      }
     }
-  }, [enhanced, selectedProjectId, restoreFocus])
+  }, [enhanced, panel, restoreFocus, changePanel, closeNativeDialog])
 
   useCommitEffect(() => {
-    const dialog = dialogRef.current
     return () => {
-      if (dialog?.open) dialog.close()
+      closeNativeDialog()
       releaseScroll.current?.()
       releaseScroll.current = null
-      focusedProject.current = null
+      focusedPanel.current = null
     }
-  }, [])
+  }, [closeNativeDialog])
 
   const selectProject = useCallback(
     (id: ProjectId, invoker?: HTMLElement) => {
@@ -241,16 +326,39 @@ export default function StudioExperience({
         invoker ?? document.getElementById(`studio-shortcut-${id}`)
       returnProject.current = id
       navigation.current!.open(id)
-      setSelectedProjectId(id)
+      changePanel({ kind: 'project', id })
     },
-    [enhanced]
+    [enhanced, changePanel]
   )
 
   const closeProject = useCallback(() => {
-    if (!enhanced || !selectedProjectId) return
+    if (!enhanced || panelIntent.current.kind !== 'project') return
     navigation.current!.close()
-    setSelectedProjectId(null)
-  }, [enhanced, selectedProjectId])
+    changePanel({ kind: 'none' })
+  }, [enhanced, changePanel])
+
+  const openAssistant = useCallback(() => {
+    if (!enhanced) {
+      window.location.assign('/ask')
+      return
+    }
+    // Do not rewrite a project URL or compete with a pending history traversal.
+    if (
+      panelIntent.current.kind !== 'none' ||
+      projectIdFromHash(window.location.hash)
+    )
+      return
+    setProjectsOpen(false)
+    changePanel({ kind: 'assistant' })
+  }, [enhanced, changePanel])
+
+  const closePanel = useCallback(() => {
+    if (panelIntent.current.kind === 'assistant') {
+      changePanel({ kind: 'none' })
+    } else {
+      closeProject()
+    }
+  }, [changePanel, closeProject])
 
   const onNavigate = (event: MouseEvent<HTMLDivElement>) => {
     if (
@@ -273,13 +381,18 @@ export default function StudioExperience({
     )
       return
     const destination = new URL(anchor.href)
-    if (
-      destination.origin !== window.location.origin ||
-      destination.pathname !== window.location.pathname ||
-      destination.search !== window.location.search
-    )
-      return
-    const id = projectIdFromHash(destination.hash)
+    const sameDocument =
+      destination.origin === window.location.origin &&
+      destination.pathname === window.location.pathname &&
+      destination.search === window.location.search
+    const id = sameDocument ? projectIdFromHash(destination.hash) : null
+    if (panelIntent.current.kind === 'assistant' && !id) {
+      changePanel({ kind: 'none' }, false)
+      // Unlock before native anchor/route scrolling reads the page position.
+      releaseScroll.current?.()
+      releaseScroll.current = null
+    }
+    if (!sameDocument) return
     if (id) {
       event.preventDefault()
       selectProject(id, anchor)
@@ -295,21 +408,29 @@ export default function StudioExperience({
 
   const onDialogCancel: ReactEventHandler<HTMLDialogElement> = (event) => {
     event.preventDefault()
-    closeProject()
+    closePanel()
   }
   const onDialogClose: ReactEventHandler<HTMLDialogElement> = () => {
     // close events are queued natively: a stale event must not close a new panel.
-    if (!dialogRef.current?.open) closeProject()
+    if (expectedCloseEvents.current.length) {
+      expectedCloseEvents.current.shift()
+      return
+    }
+    if (
+      !dialogRef.current?.open &&
+      focusedPanel.current?.epoch === panelIntent.current.epoch
+    )
+      closePanel()
   }
   const onViewCommand = (action: StudioViewAction) => {
-    if (enhanced && !selectedProjectId) {
+    if (enhanced && panelIntent.current.kind === 'none') {
       setViewCommand({ action, sequence: ++sequence.current })
     }
   }
   const onLookKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
     if (
       !enhanced ||
-      selectedProjectId ||
+      panelIntent.current.kind !== 'none' ||
       event.defaultPrevented ||
       event.altKey ||
       event.ctrlKey ||
@@ -349,6 +470,10 @@ export default function StudioExperience({
     (project) => project.id === selectedProjectId
   )
   const project = studioProjects[projectIndex]
+  // Retain the outgoing style until the commit effect closes the native dialog.
+  const assistantVariant =
+    askOpen ||
+    (panel.kind === 'none' && focusedPanel.current?.kind === 'assistant')
 
   return (
     <StudioShell
@@ -363,11 +488,42 @@ export default function StudioExperience({
             onSelectProject={selectProject}
             onStatusChange={setSceneStatus}
             viewCommand={viewCommand}
-            interactionEnabled={!selectedProjectId}
+            interactionEnabled={panel.kind === 'none'}
+            assistant={
+              enhanced
+                ? {
+                    snapshot,
+                    panelOpen: askOpen,
+                    presentationEpoch: panel.epoch,
+                    attentionRequested:
+                      panel.kind !== 'project' && (askFocused || robotHovered),
+                  }
+                : undefined
+            }
+            onActivateAssistant={openAssistant}
+            onAssistantHoverChange={setRobotHovered}
           />
         </SceneErrorBoundary>
       }
       evidence={evidence}
+      dialogVariant={assistantVariant ? 'assistant' : 'project'}
+      assistantEntry={
+        enhanced ? (
+          <AssistantEntry onOpen={openAssistant} buttonRef={askEntryRef} />
+        ) : undefined
+      }
+      assistantContent={
+        assistantVariant ? (
+          <StudioAssistantPanel
+            snapshot={snapshot}
+            actions={actions}
+            draft={draft}
+            setDraft={setDraft}
+            headingId={ASK_HEADING_ID}
+            headingRef={askHeadingRef}
+          />
+        ) : null
+      }
       projectContent={
         enhanced && project ? (
           <ProjectEvidence
@@ -379,11 +535,15 @@ export default function StudioExperience({
       }
       dialogRef={dialogRef}
       dialogTitleId={
-        enhanced && project ? `panel-project-${project.id}-heading` : undefined
+        assistantVariant
+          ? ASK_HEADING_ID
+          : enhanced && project
+            ? `panel-project-${project.id}-heading`
+            : undefined
       }
       onNavigate={onNavigate}
       onViewCommand={onViewCommand}
-      onRequestClose={closeProject}
+      onRequestClose={closePanel}
       onDialogCancel={onDialogCancel}
       onDialogClose={onDialogClose}
       projectsOpen={projectsOpen}

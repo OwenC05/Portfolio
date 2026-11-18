@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { PROJECT_IDS, type ProjectId } from '@/lib/studio-contract';
-import type { StudioModel } from './types';
+import type { SceneActivation, StudioModel } from './types';
 
 const MIN_TOUCH_TARGET = 44;
 const EPSILON = 1e-6;
@@ -114,7 +114,7 @@ export function pickProject(model: StudioModel, camera: THREE.PerspectiveCamera,
   model.scene.updateMatrixWorld(true);
   camera.updateMatrixWorld(true);
   const targets = PROJECT_IDS.flatMap((id) => model.targets.filter((target) => target.id === id && visible(target.surface, camera)));
-  const occluders = model.occluders.filter((object) => visible(object, camera));
+  const occluders = [...model.occluders, ...(model.assistant?.occluders ?? [])].filter((object) => visible(object, camera));
   const raycaster = new THREE.Raycaster();
   raycaster.layers.mask = camera.layers.mask;
   function cast(px: number, py: number) {
@@ -182,4 +182,31 @@ export function pickProject(model: StudioModel, camera: THREE.PerspectiveCamera,
     }
   }
   return nearest;
+}
+
+/** One discriminated picker; only the project's existing touch area is expanded. */
+export function pickScene(model: StudioModel, camera: THREE.PerspectiveCamera, x: number, y: number, width: number, height: number, expandTouch: boolean): SceneActivation | null {
+  if (![x, y, width, height].every(Number.isFinite) || width <= 0 || height <= 0 || x < 0 || y < 0 || x > width || y > height) return null;
+  if (model.assistant) {
+    model.scene.updateMatrixWorld(true);
+    camera.updateMatrixWorld(true);
+    const raycaster = new THREE.Raycaster();
+    raycaster.layers.mask = camera.layers.mask;
+    raycaster.setFromCamera(new THREE.Vector2(x / width * 2 - 1, 1 - y / height * 2), camera);
+    const surfaces = model.assistant.activationSurfaces.filter((object) => visible(object, camera));
+    const hit = raycaster.intersectObjects(surfaces, false).find((candidate) => {
+      const material = materialAt(candidate);
+      return material?.visible && !material.transparent && material.opacity === 1 && inClip(candidate, camera) && frontFacing(candidate, raycaster.ray);
+    });
+    if (hit) {
+      const blockers = [...model.occluders, ...model.assistant.occluders, ...model.targets.map((target) => target.surface)].filter((object) => visible(object, camera));
+      const blocker = raycaster.intersectObjects(blockers, false).find((candidate) => {
+        const material = materialAt(candidate);
+        return material?.visible && !material.transparent && material.opacity === 1 && inClip(candidate, camera);
+      });
+      if (!blocker || blocker.distance >= hit.distance - EPSILON) return { kind: 'assistant' };
+    }
+  }
+  const projectId = pickProject(model, camera, x, y, width, height, expandTouch);
+  return projectId ? { kind: 'project', projectId } : null;
 }

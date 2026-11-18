@@ -1,0 +1,565 @@
+import * as THREE from 'three';
+import { PROJECT_IDS, type ProjectId, type StudioSceneProps } from '@/lib/studio-contract';
+import { createStudio } from './build-studio';
+import { SceneResources } from './resources';
+import type { SceneActivation, StudioModel, StudioPilotAsset } from './types';
+import type { RobotAsset, RobotPresentation } from './robot/types';
+import { loadStudioPilot } from './load-pilot';
+import { STUDIO_VIEW } from './view-config';
+import { pickScene } from './picking';
+
+type SceneState = Pick<StudioSceneProps, 'selectedProjectId' | 'reducedMotion' | 'viewCommand' | 'interactionEnabled' | 'assistant'>;
+
+export interface StudioController {
+  update(state: SceneState): void;
+  dispose(): void;
+}
+
+const DRAG_THRESHOLD = 8;
+const LOOK_DEGREES_PER_PIXEL = 0.12;
+const COMMAND_STEP = 10;
+
+/** Owns one canvas, one renderer and every subscription for a single mount. */
+export function createStudioController(host: HTMLDivElement, props: StudioSceneProps): StudioController {
+  const document = host.ownerDocument;
+  const window = document.defaultView;
+  const resources = new SceneResources();
+  const canvas = document.createElement('canvas');
+  const camera = new THREE.PerspectiveCamera(STUDIO_VIEW.desktopFov, 1, STUDIO_VIEW.near, STUDIO_VIEW.far);
+  camera.position.fromArray(STUDIO_VIEW.eye);
+  const cleanups: Array<() => void> = [];
+  const shadows: THREE.LightShadow[] = [];
+  let renderer: THREE.WebGLRenderer | null = null;
+  let model: StudioModel | null = null;
+  let pilot: StudioPilotAsset | null = null;
+  let assistant = props.assistant;
+  let reducedMotion = props.reducedMotion;
+  let robot: RobotPresentation | null = null;
+  let robotAbort: AbortController | null = null;
+  let robotGeneration = 0;
+  let robotReady = false;
+  let robotPendingFrame = false;
+  let assistantHovered = false;
+  const loadAbort = new AbortController();
+  let generation = 0;
+  let disposed = false;
+  let ready = false;
+  let inView = true;
+  let frame: number | null = null;
+  let dirty = true;
+  let sizeDirty = true;
+  let zeroSized = false;
+  let width = 0;
+  let height = 0;
+  let renderCount = 0;
+  let selected = props.selectedProjectId;
+  let hovered: ProjectId | null = null;
+  let interactionEnabled = props.interactionEnabled ?? true;
+  let home: { yaw: number; pitch: number } | null = null;
+  let yaw = 0;
+  let pitch = 0;
+  let lastSequence = -Infinity;
+  const pendingCommands: NonNullable<StudioSceneProps['viewCommand']>['action'][] = [];
+  const pointers = new Set<number>();
+  let capturedPointer: number | null = null;
+  type Gesture = {
+    pointerId: number; pointerType: string; x: number; y: number;
+    lastX: number; lastY: number; target: SceneActivation | null;
+    axis: 'pending' | 'look' | 'vertical'; mouseDown: boolean;
+  };
+  let gesture: Gesture | null = null;
+  let activation: { pointerId: number; pointerType: string; x: number; y: number; target: SceneActivation; mouseDown: boolean } | null = null;
+
+  canvas.setAttribute('aria-hidden', 'true');
+  canvas.tabIndex = -1;
+  Object.assign(canvas.style, { display: 'block', width: '100%', height: '100%', position: 'absolute', inset: '0', touchAction: 'pan-y pinch-zoom' });
+
+  function stopFrame() {
+    if (frame !== null && window) window.cancelAnimationFrame(frame);
+    frame = null;
+  }
+
+  function dispose() {
+    if (disposed) return;
+    cancelPointer();
+    pointers.clear();
+    disposed = true;
+    generation++;
+    loadAbort.abort();
+    releaseRobot();
+    stopFrame();
+    // A failed release must not prevent the remaining independent releases.
+    const release = (cleanup: () => void) => { try { cleanup(); } catch { /* Context may already be lost. */ } };
+    cleanups.splice(0).forEach(release);
+    shadows.splice(0).forEach((shadow) => release(() => shadow.dispose()));
+    release(() => resources.dispose());
+    if (pilot) {
+      const ownedPilot = pilot;
+      pilot = null;
+      release(() => ownedPilot.dispose());
+    }
+    if (renderer) {
+      const ownedRenderer = renderer;
+      release(() => ownedRenderer.dispose());
+      release(() => ownedRenderer.forceContextLoss());
+      renderer = null;
+    }
+    model?.scene.clear();
+    model = null;
+    canvas.style.cursor = '';
+    canvas.remove();
+  }
+
+  function fail() {
+    if (disposed) return;
+    // Deliver the terminal status while mounted; cleanup also runs if the host callback throws.
+    try { props.onStatusChange('unavailable'); } finally { dispose(); }
+  }
+
+  function releaseRobot() {
+    robotGeneration++;
+    robotAbort?.abort();
+    robotAbort = null;
+    robotReady = false;
+    robotPendingFrame = false;
+    if (model) delete model.assistant;
+    const owned = robot;
+    robot = null;
+    if (owned) {
+      try { owned.dispose(); } catch { /* Continue releasing the imported owner. */ }
+      try { owned.asset.dispose(); } catch { /* Optional cleanup cannot break the room. */ }
+    }
+  }
+
+  function robotFailed() {
+    if (disposed) return;
+    releaseRobot();
+    cancelPointer();
+    invalidate();
+    props.onRobotStatusChange?.('unavailable');
+  }
+
+  function suspended() {
+    return document.hidden || !inView || width <= 0 || height <= 0;
+  }
+
+  function startRobot() {
+    if (disposed || !assistant || !model || robotAbort) return;
+    const abort = new AbortController();
+    robotAbort = abort;
+    const token = ++robotGeneration;
+    props.onRobotStatusChange?.('loading');
+    const current = () => !disposed && token === robotGeneration && !abort.signal.aborted && Boolean(assistant);
+    // Nothing in this module's dependency tree is requested for the absent prop.
+    void import('./robot/runtime').then(async (runtime) => {
+      if (!current()) return;
+      let asset: RobotAsset | null = await runtime.loadRobot(abort.signal);
+      if (!current()) { asset.dispose(); return; }
+      try {
+        const presentation = runtime.createPresentation(asset);
+        robot = presentation;
+        asset = null; // presentation/asset now belong to releaseRobot.
+        presentation.apply(assistant!, reducedMotion, true);
+        model!.scene.add(presentation.asset.root);
+        model!.assistant = { activationSurfaces: presentation.asset.activationSurfaces,
+          occluders: [...presentation.asset.occluders, ...presentation.cards] };
+        robotPendingFrame = true;
+        invalidate();
+      } catch (error) { asset?.dispose(); throw error; }
+    }).catch(() => { if (current()) robotFailed(); });
+  }
+
+  function schedule() {
+    if (disposed || !window || document.hidden || !inView || zeroSized || !dirty || frame !== null) return;
+    frame = window.requestAnimationFrame(render);
+  }
+
+  function invalidate(resize = false) {
+    if (disposed) return;
+    if (resize) { zeroSized = false; cancelPointer(); }
+    dirty = true;
+    sizeDirty = sizeDirty || resize;
+    schedule();
+  }
+
+  function render(now: number) {
+    frame = null;
+    if (disposed || !renderer || !model || !window || document.hidden || !inView) return;
+    try {
+      if (sizeDirty) {
+        const rect = host.getBoundingClientRect();
+        width = rect.width;
+        height = rect.height;
+        // Keep loading until the host has an actual visible render area.
+        if (width <= 0 || height <= 0) { zeroSized = true; robot?.settle(); return; }
+        const mobile = window.innerWidth <= 640 || width / height < 0.9;
+        const dpr = Math.min(window.devicePixelRatio || 1, mobile ? 1.5 : 2);
+        renderer.setPixelRatio(dpr);
+        renderer.setSize(width, height, false);
+        if (!home) {
+          home = { ...(mobile ? STUDIO_VIEW.mobileHome : STUDIO_VIEW.desktopHome) };
+          yaw = home.yaw;
+          pitch = home.pitch;
+          applyPose();
+          pendingCommands.splice(0).forEach(applyCommand);
+        }
+        camera.aspect = width / height;
+        camera.fov = mobile ? STUDIO_VIEW.mobileFov : STUDIO_VIEW.desktopFov;
+        camera.updateProjectionMatrix();
+        canvas.dataset.studioFov = String(camera.fov);
+        canvas.dataset.studioDpr = String(dpr);
+        sizeDirty = false;
+      }
+      dirty = false;
+      let animating = false;
+      try { animating = robot?.advance(now) ?? false; } catch { robotFailed(); }
+      try { renderer.render(model.scene, camera); } catch (error) {
+        if (!robot || disposed) throw error;
+        // Retry the healthy room once without the optional attachment.
+        robotFailed(); animating = false;
+        renderer.render(model.scene, camera);
+      }
+      // Context-loss handlers can dispose the controller synchronously during render.
+      if (disposed) return;
+      canvas.dataset.studioRenderCount = String(++renderCount);
+      canvas.dataset.studioDrawCalls = String(renderer.info.render.calls);
+      canvas.dataset.studioTriangles = String(renderer.info.render.triangles);
+      canvas.dataset.studioGeometries = String(renderer.info.memory.geometries);
+      canvas.dataset.studioTextures = String(renderer.info.memory.textures);
+      robotPendingFrame = false;
+      if (robot) {
+        canvas.dataset.assistantRunId = assistant?.snapshot.run.runId ?? '';
+        canvas.dataset.assistantRevision = String(assistant?.snapshot.run.revision ?? 0);
+        canvas.dataset.assistantCardCount = String(robot.cards.filter((card) => card.visible).length);
+        if (!robotReady) { robotReady = true; props.onRobotStatusChange?.('ready'); }
+      } else {
+        delete canvas.dataset.assistantRunId;
+        delete canvas.dataset.assistantRevision;
+        delete canvas.dataset.assistantCardCount;
+      }
+      if (!ready) {
+        ready = true;
+        props.onStatusChange('ready');
+      }
+      if (animating) invalidate();
+    } catch {
+      fail();
+    }
+  }
+
+  function styleTargets() {
+    if (!model || disposed) return;
+    for (const target of model.targets) {
+      target.border.color.set(target.id === selected ? '#ffc779' : target.id === hovered ? '#fff3d4' : '#6c5942');
+    }
+    invalidate();
+  }
+
+  function setHover(target: SceneActivation | null) {
+    if (disposed) return;
+    const id = target?.kind === 'project' ? target.projectId : null;
+    const nextAssistant = target?.kind === 'assistant';
+    canvas.style.cursor = target ? 'pointer' : '';
+    if (id !== hovered) { hovered = id; styleTargets(); }
+    if (nextAssistant !== assistantHovered) {
+      assistantHovered = nextAssistant;
+      props.onAssistantHoverChange?.(nextAssistant);
+    }
+  }
+
+  function applyPose() {
+    yaw = THREE.MathUtils.clamp(yaw, ...STUDIO_VIEW.yawBounds);
+    pitch = THREE.MathUtils.clamp(pitch, ...STUDIO_VIEW.pitchBounds);
+    const heading = THREE.MathUtils.degToRad(yaw);
+    const elevation = THREE.MathUtils.degToRad(pitch);
+    camera.lookAt(camera.position.clone().add(new THREE.Vector3(
+      Math.sin(heading) * Math.cos(elevation), Math.sin(elevation), -Math.cos(heading) * Math.cos(elevation),
+    )));
+    camera.updateMatrixWorld(true);
+    canvas.dataset.studioYaw = String(yaw);
+    canvas.dataset.studioPitch = String(pitch);
+    canvas.dataset.studioEye = camera.position.toArray().join(',');
+    if (ready) invalidate();
+  }
+
+  function applyCommand(action: NonNullable<StudioSceneProps['viewCommand']>['action']) {
+    cancelPointer();
+    if (!home) { pendingCommands.push(action); return; }
+    if (action === 'reset') { yaw = home.yaw; pitch = home.pitch; }
+    if (action === 'left') yaw -= COMMAND_STEP;
+    if (action === 'right') yaw += COMMAND_STEP;
+    if (action === 'up') pitch += COMMAND_STEP;
+    if (action === 'down') pitch -= COMMAND_STEP;
+    applyPose();
+  }
+
+  function consumeCommand(command: StudioSceneProps['viewCommand']) {
+    // The UI supplies finite, strictly increasing sequence numbers for this
+    // controller lifetime. Null does not reset the high-water mark. Duplicate
+    // and out-of-order sequences are consumed without replay, including when disabled.
+    if (!command || !Number.isFinite(command.sequence) || command.sequence <= lastSequence) return;
+    lastSequence = command.sequence;
+    if (interactionEnabled && !assistant?.panelOpen) applyCommand(command.action);
+  }
+
+  function canInteract() {
+    return !disposed && interactionEnabled && !assistant?.panelOpen && ready && !sizeDirty && !robotPendingFrame && !document.hidden && inView;
+  }
+
+  function pick(event: Pick<PointerEvent, 'clientX' | 'clientY' | 'pointerType'>): SceneActivation | null {
+    if (!canInteract() || !model) return null;
+    const rect = canvas.getBoundingClientRect();
+    return pickScene(model, camera, event.clientX - rect.left, event.clientY - rect.top, rect.width, rect.height, event.pointerType === 'touch');
+  }
+
+  function sameTarget(a: SceneActivation | null, b: SceneActivation | null) {
+    return a?.kind === 'assistant' ? b?.kind === 'assistant' : a?.kind === 'project' && b?.kind === 'project' && a.projectId === b.projectId;
+  }
+
+  function releaseCapture() {
+    const pointerId = capturedPointer;
+    capturedPointer = null;
+    if (pointerId !== null) {
+      try { if (canvas.hasPointerCapture(pointerId)) canvas.releasePointerCapture(pointerId); } catch { /* Already released by the browser. */ }
+    }
+  }
+
+  function pointerDown(event: PointerEvent) {
+    if (disposed) return;
+    cancelPointer();
+    pointers.add(event.pointerId);
+    if (!canInteract() || pointers.size !== 1 || !event.isTrusted || !event.isPrimary || event.button !== 0) return;
+    gesture = {
+      pointerId: event.pointerId, pointerType: event.pointerType,
+      x: event.clientX, y: event.clientY, lastX: event.clientX, lastY: event.clientY,
+      target: pick(event), axis: 'pending', mouseDown: false,
+    };
+  }
+
+  function pointerMove(event: PointerEvent) {
+    if (!canInteract() || !event.isTrusted) return;
+    if (activation && (activation.pointerId !== event.pointerId || activation.pointerType !== event.pointerType || Math.hypot(event.clientX - activation.x, event.clientY - activation.y) > DRAG_THRESHOLD)) activation = null;
+    if (gesture?.pointerId === event.pointerId && (!event.isPrimary || event.pointerType !== gesture.pointerType
+      || (event.pointerType !== 'touch' && (event.buttons & 1) === 0))) {
+      cancelPointer();
+      return;
+    }
+    if (gesture?.pointerId === event.pointerId && gesture.pointerType === event.pointerType) {
+      const dx = event.clientX - gesture.x;
+      const dy = event.clientY - gesture.y;
+      if (gesture.axis === 'pending' && Math.hypot(dx, dy) > DRAG_THRESHOLD) {
+        gesture.axis = event.pointerType === 'touch' && Math.abs(dy) >= Math.abs(dx) ? 'vertical' : 'look';
+        gesture.target = null;
+        setHover(null);
+        if (gesture.axis === 'look') {
+          try { canvas.setPointerCapture(event.pointerId); capturedPointer = event.pointerId; } catch { /* Leaving cancels when capture is unavailable. */ }
+        }
+      }
+      if (gesture.axis === 'look') {
+        yaw -= (event.clientX - gesture.lastX) * LOOK_DEGREES_PER_PIXEL;
+        if (event.pointerType !== 'touch') pitch += (event.clientY - gesture.lastY) * LOOK_DEGREES_PER_PIXEL;
+        applyPose();
+      }
+      gesture.lastX = event.clientX;
+      gesture.lastY = event.clientY;
+      return;
+    }
+    if (event.pointerType !== 'touch' && event.isPrimary) setHover(pick(event));
+  }
+
+  function pointerUp(event: PointerEvent) {
+    if (disposed) return;
+    const started = gesture;
+    gesture = null;
+    activation = null;
+    pointers.delete(event.pointerId);
+    releaseCapture();
+    if (!canInteract() || !started || started.pointerId !== event.pointerId || started.pointerType !== event.pointerType || started.axis !== 'pending' || !event.isTrusted || !event.isPrimary || event.button !== 0) return;
+    if (Math.hypot(event.clientX - started.x, event.clientY - started.y) > DRAG_THRESHOLD) return;
+    const id = pick(event);
+    if (id && sameTarget(id, started.target)) {
+      activation = { pointerId: event.pointerId, pointerType: event.pointerType, x: event.clientX, y: event.clientY, target: id, mouseDown: started.mouseDown };
+    }
+  }
+
+  function mouseDown(event: MouseEvent) {
+    if (!canInteract() || !event.isTrusted || event.target !== canvas || event.button !== 0) return;
+    const candidate = activation ?? gesture;
+    if (candidate && Math.hypot(event.clientX - candidate.x, event.clientY - candidate.y) <= DRAG_THRESHOLD) candidate.mouseDown = true;
+  }
+
+  function click(event: PointerEvent) {
+    if (disposed) return;
+    const completed = activation;
+    activation = null;
+    gesture = null;
+    if (!canInteract() || !completed?.mouseDown || !event.isTrusted || event.target !== canvas || event.button !== 0 || event.detail < 1) return;
+    if (event.pointerId !== completed.pointerId || event.pointerType !== completed.pointerType) return;
+    // Click coordinates may be rounded. Pointerup qualified the actual surface;
+    // compatibility mousedown must finish its default focus action before this.
+    if (Math.hypot(event.clientX - completed.x, event.clientY - completed.y) > DRAG_THRESHOLD) return;
+    if (completed.target.kind === 'assistant') {
+      if (sameTarget(completed.target, pick({ clientX: completed.x, clientY: completed.y, pointerType: completed.pointerType }))) props.onActivateAssistant?.();
+    } else props.onSelectProject(completed.target.projectId);
+  }
+
+  function pointerLeave(event: PointerEvent) {
+    if (disposed) return;
+    if (gesture?.axis === 'look' && capturedPointer === event.pointerId) return;
+    // Touch and non-hover pen can leave after release, before their click.
+    // Preserve only that completed pointer; leaving during an active gesture cancels.
+    if (!gesture && (activation?.pointerType === 'touch' || activation?.pointerType === 'pen') && event.pointerType === activation.pointerType && activation.pointerId === event.pointerId && event.buttons === 0) {
+      setHover(null);
+      return;
+    }
+    cancelPointer();
+  }
+
+  function outsideActivation(event: Event) {
+    if (event.type === 'pointerdown') pointers.add((event as PointerEvent).pointerId);
+    if (event.target !== canvas || pointers.size > 1) cancelPointer();
+  }
+
+  function endPointer(event: PointerEvent) {
+    pointers.delete(event.pointerId);
+    if (event.target !== canvas || event.type === 'pointercancel') cancelPointer();
+  }
+
+  function blur() {
+    pointers.clear();
+    cancelPointer();
+  }
+
+  function cancelPointer() {
+    if (disposed) return;
+    gesture = null;
+    activation = null;
+    releaseCapture();
+    setHover(null);
+  }
+
+  function visibilityChange() {
+    if (disposed) return;
+    if (document.hidden) { stopFrame(); robot?.settle(); blur(); } else { invalidate(true); }
+  }
+
+  function listen(target: EventTarget, type: string, handler: EventListener) {
+    target.addEventListener(type, handler, { passive: true });
+    cleanups.push(() => target.removeEventListener(type, handler));
+  }
+
+  const controller: StudioController = {
+    update(state) {
+      if (disposed) return;
+      const previousAssistant = assistant;
+      const previousReduced = reducedMotion;
+      assistant = state.assistant;
+      reducedMotion = state.reducedMotion;
+      interactionEnabled = state.interactionEnabled ?? true;
+      canvas.dataset.studioInteractionEnabled = String(interactionEnabled);
+      if (!interactionEnabled || assistant?.panelOpen) { pendingCommands.length = 0; cancelPointer(); }
+      if (!assistant && previousAssistant) { releaseRobot(); cancelPointer(); invalidate(); }
+      else if (assistant && !previousAssistant) startRobot();
+      const presentationChanged = assistant?.snapshot !== previousAssistant?.snapshot || assistant?.panelOpen !== previousAssistant?.panelOpen
+        || assistant?.presentationEpoch !== previousAssistant?.presentationEpoch || assistant?.attentionRequested !== previousAssistant?.attentionRequested;
+      if (robot && assistant && (presentationChanged || reducedMotion !== previousReduced)) {
+        try {
+          robot.apply(assistant, reducedMotion, suspended());
+          if (presentationChanged || reducedMotion) { robotPendingFrame = true; invalidate(); }
+        } catch { robotFailed(); }
+      }
+      consumeCommand(state.viewCommand);
+      if (selected !== state.selectedProjectId) {
+        selected = state.selectedProjectId;
+        styleTargets();
+      }
+    },
+    dispose,
+  };
+
+  try {
+    props.onStatusChange('loading');
+    if (!window) throw new Error('No browser window');
+    listen(canvas, 'webglcontextlost', fail);
+    renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true, powerPreference: 'high-performance' });
+    renderer.setClearColor(0x000000, 0);
+    renderer.outputColorSpace = THREE.SRGBColorSpace;
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 1.2;
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = THREE.PCFShadowMap;
+    renderer.shadowMap.autoUpdate = false;
+    renderer.shadowMap.needsUpdate = true;
+    host.appendChild(canvas);
+    listen(canvas, 'pointerdown', pointerDown as EventListener);
+    listen(canvas, 'pointermove', pointerMove as EventListener);
+    listen(canvas, 'pointerup', pointerUp as EventListener);
+    listen(canvas, 'click', click as EventListener);
+    listen(canvas, 'mousedown', mouseDown as EventListener);
+    listen(canvas, 'pointercancel', endPointer as EventListener);
+    listen(canvas, 'lostpointercapture', () => { if (gesture) cancelPointer(); });
+    listen(canvas, 'pointerout', pointerLeave as EventListener);
+    listen(canvas, 'pointerleave', pointerLeave as EventListener);
+    listen(document, 'pointerdown', outsideActivation);
+    listen(document, 'pointerup', endPointer as EventListener);
+    listen(document, 'pointercancel', endPointer as EventListener);
+    listen(document, 'click', outsideActivation);
+    listen(document, 'visibilitychange', visibilityChange);
+    listen(window, 'resize', () => invalidate(true));
+    listen(window, 'scroll', cancelPointer);
+    listen(window, 'blur', blur);
+    if (typeof ResizeObserver !== 'undefined') {
+      const observer = new ResizeObserver(() => invalidate(true));
+      cleanups.push(() => observer.disconnect());
+      observer.observe(host);
+    }
+    if (typeof IntersectionObserver !== 'undefined') {
+      const observer = new IntersectionObserver((entries) => {
+        if (disposed) return;
+        const entry = entries.find((item) => item.target === host);
+        if (!entry) return;
+        inView = entry.isIntersecting;
+        if (inView) invalidate(true); else { stopFrame(); robot?.settle(); cancelPointer(); }
+      });
+      cleanups.push(() => observer.disconnect());
+      observer.observe(host);
+    }
+    canvas.dataset.studioInteractionEnabled = String(interactionEnabled);
+    consumeCommand(props.viewCommand);
+    const token = generation;
+    void loadStudioPilot(loadAbort.signal).then((asset) => {
+      if (disposed || token !== generation) {
+        try { asset.dispose(); } catch { /* Stale cleanup cannot notify an unmounted host. */ }
+        return;
+      }
+      pilot = asset;
+      try {
+        const builtModel: StudioModel = createStudio(resources, asset.root);
+        model = builtModel;
+        if (builtModel.targets.length !== PROJECT_IDS.length || PROJECT_IDS.some((id) => builtModel.targets.filter((target) => target.id === id).length !== 1)) {
+          throw new Error('Studio requires one surface for each project');
+        }
+        builtModel.scene.traverse((object) => {
+          if (object instanceof THREE.DirectionalLight || object instanceof THREE.SpotLight || object instanceof THREE.PointLight) {
+            shadows.push(object.shadow);
+            object.shadow.autoUpdate = false;
+            object.shadow.needsUpdate = true;
+          }
+        });
+        let castingLights = 0;
+        builtModel.scene.traverse((object) => { if (object instanceof THREE.Light && object.castShadow) castingLights++; });
+        if (castingLights !== 1) throw new Error('Studio requires exactly one static shadow light');
+        builtModel.scene.updateMatrixWorld(true);
+        // State may have changed while fetch/decode was pending. Style from the
+        // current selection; first usable render applies the retained commands.
+        styleTargets();
+        startRobot();
+      } catch { fail(); }
+    }, () => {
+      if (!disposed && token === generation) fail();
+    });
+  } catch {
+    fail();
+  }
+  return controller;
+}

@@ -1,0 +1,34 @@
+{
+  "viewport": [
+    390,
+    844
+  ],
+  "overflow": false,
+  "dialog": {
+    "x": 0,
+    "y": 20,
+    "width": 390,
+    "height": 824,
+    "top": 20,
+    "right": 390,
+    "bottom": 844,
+    "left": 0
+  },
+  "canvas": {
+    "engine": "three.js r187",
+    "studioInteractionEnabled": "false",
+    "studioYaw": "-4",
+    "studioPitch": "-6",
+    "studioEye": "-0.7,2.8,3.4",
+    "studioFov": "64",
+    "studioDpr": "1.0000000149011612",
+    "studioRenderCount": "81",
+    "studioDrawCalls": "55",
+    "studioTriangles": "41928",
+    "studioGeometries": "40",
+    "studioTextures": "12",
+    "assistantRunId": "2208e914-b046-4bf5-81d5-3e1a0e1f85ab:2",
+    "assistantRevision": "14",
+    "assistantCardCount": "4"
+  }
+}

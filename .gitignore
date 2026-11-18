@@ -18,3 +18,7 @@ node_modules/
 /.omx/metrics.json
 /.omx/tmux-hook.json
 /.omx/*.log
+
+# Exact Chromium diagnostic preserved losslessly as the adjacent .json.gz.
+# Restore with: node design/assistant/robot/delivery/trace-archive.mjs restore
+/design/assistant/robot/integration/resize-wait-trace-v01/chromium-trace.json

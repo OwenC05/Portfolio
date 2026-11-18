@@ -1,0 +1,58 @@
+✔ mouse, pen and touch commit once per complete gesture; repeated/double activation needs a new gesture (179.9669ms)
+✔ perspective 390px and 320px fixtures accept 44px touch corners and edges before and after resize (127.4649ms)
+✖ loading precedes a successful render; demand updates coalesce and reuse the model (42.2638ms)
+✖ renderer density preserves low native ratios and CSS-space picking through desktop and small resizes (27.1702ms)
+✔ real Three raycasting uses the offset canvas, supports touch, and ignores drags (37.317ms)
+✔ desktop and mobile cameras use configured fixed eye and perspective; whole-room orthographic fit is intentionally removed (73.5928ms)
+✔ first usable viewport determines immutable reset home; pre-ready commands and disabled initial commands are consumed once (67.2554ms)
+✔ pose survives selection, panel disable/resize/enable, visibility and offscreen transitions and reduced-motion changes (30.9021ms)
+✔ mouse and pen claim capture only past threshold, drag changes look directly, clamps, and never activates (68.2159ms)
+✔ touch horizontal axis changes yaw only; vertical axis remains native and cannot later become look (59.7887ms)
+✔ G2 robot uses the same qualified mouse/pen/touch pipeline, hover edges and modal cancellation (261.998ms)
+✔ G2 feedback: one native mouse mousedown qualifies with root commits and paintDuringHold=false (140.9369ms)
+✔ G2 feedback: one native mouse mousedown qualifies with root commits and paintDuringHold=true (128.0467ms)
+✔ G2 feedback: a fresh presentation still blocks gestures until its geometry is rendered (111.108ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 12
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2135.8562
+
+✖ failing tests:
+
+test at components\studio\scene\verify-controller.mjs:706:1
+✖ loading precedes a successful render; demand updates coalesce and reuse the model (42.2638ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  2 !== 1.5
+  
+      at TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/verify-controller.mjs:725:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 2,
+    expected: 1.5,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at components\studio\scene\verify-controller.mjs:731:1
+✖ renderer density preserves low native ratios and CSS-space picking through desktop and small resizes (27.1702ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  2 !== 1.5
+  
+      at TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/verify-controller.mjs:748:12)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 2,
+    expected: 1.5,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

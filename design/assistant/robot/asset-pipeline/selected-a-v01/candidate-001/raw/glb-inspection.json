@@ -1,0 +1,46 @@
+{
+  "rawSha256": "412c0c213e0c6adc6baa80fa0686b6cbd9a1d259348bb96c571ef28b2f59bec7",
+  "rawBytes": 151996,
+  "asset": {
+    "version": "2.0",
+    "generator": "https://github.com/mikedh/trimesh"
+  },
+  "nodes": [
+    {
+      "name": "geometry_0",
+      "mesh": 0
+    }
+  ],
+  "meshes": [
+    {
+      "name": "geometry_0",
+      "primitives": [
+        {
+          "mode": 4,
+          "vertexCount": 4220,
+          "indexCount": 25158,
+          "bounds": {
+            "min": [
+              -0.234130859375,
+              -0.475341796875,
+              -0.223876953125
+            ],
+            "max": [
+              0.230224609375,
+              0.475830078125,
+              0.221923828125
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "images": 0,
+  "textures": 0,
+  "skins": 0,
+  "animations": 0,
+  "extensionsRequired": [],
+  "extensionsUsed": [],
+  "externalUris": [],
+  "inspectionScope": "GLB structure only; no visual or connected-component acceptance"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "right-limit-pilot-v1",
+  "coordinateSpace": "metres-Y-up-baked-world",
+  "adapter": { "scale": [2, 2, 2], "translation": [0, 0.11, 0], "rotation": [0, 0, 0, 1] },
+  "nodes": {
+    "pilot_door_leaf": "lib_oak",
+    "pilot_door_architrave": "lib_dark_oak",
+    "pilot_door_hardware": "lib_brass",
+    "pilot_lamp_base": "lib_black_metal",
+    "pilot_lamp_pole": "lib_brushed_metal",
+    "pilot_lamp_fittings": "lib_brass",
+    "pilot_lamp_shade": "lib_linen_shade",
+    "pilot_lamp_shade_trim": "lib_linen_trim",
+    "pilot_lamp_bulb": "lib_bulb"
+  },
+  "requiredTextureSlots": {
+    "lib_oak": ["baseColorTexture"],
+    "lib_linen_shade": ["baseColorTexture", "emissiveTexture"]
+  },
+  "allowedExtensions": ["KHR_materials_emissive_strength", "KHR_materials_ior", "KHR_materials_specular"],
+  "imageMimeTypes": ["image/png", "image/jpeg"],
+  "limits": { "fileBytes": 1500000, "triangles": 20000, "primitives": 18, "imageDimension": 2048, "totalImagePixels": 12582912 },
+  "boundsMetres": {
+    "door": { "min": [2.2, -0.03, 1.3], "max": [2.65, 2.3, 2.4], "minHeight": 1.9, "maxHeight": 2.25 },
+    "lamp": { "min": [2.1, -0.03, -0.3], "max": [2.65, 2.1, 0.3], "minHeight": 1.7, "maxHeight": 2.05 }
+  }
+}

@@ -239,9 +239,10 @@
   z-index: 2;
   display: grid;
   grid-template-columns: minmax(0, 23rem) minmax(0, 1fr) auto;
-  grid-template-rows: minmax(0, 1fr) auto auto;
+  grid-template-rows: minmax(0, 1fr) auto auto auto;
   grid-template-areas:
     '. . .'
+    'projects . ask'
     'projects . status'
     'projects . look';
   align-items: end;
@@ -266,6 +267,14 @@
 
 .projectsToggle {
   display: none;
+}
+
+/* Ask entry slot. Empty of everything but the button, so the room shows through. */
+.ask {
+  grid-area: ask;
+  justify-self: end;
+  display: flex;
+  margin-bottom: 0.5rem;
 }
 
 .projects {
@@ -458,11 +467,12 @@
 
   .dock {
     grid-template-columns: auto minmax(0, 1fr);
-    grid-template-rows: minmax(0, 1fr) auto auto auto;
+    grid-template-rows: minmax(0, 1fr) auto auto auto auto;
     grid-template-areas:
       '. .'
       'status status'
       'projects projects'
+      'ask ask'
       'toggle look';
     column-gap: 0.5rem;
     padding: 5.75rem max(0.5rem, env(safe-area-inset-right))
@@ -594,6 +604,7 @@
     grid-template-areas:
       '. .'
       'projects projects'
+      'ask ask'
       'toggle status'
       'look look';
   }
@@ -728,6 +739,31 @@
 
   .panelScroll {
     padding: 1.6rem 1.25rem calc(2rem + env(safe-area-inset-bottom));
+  }
+}
+
+/*
+ * Ask sheet: the same dialog showing the assistant. Left of centre on wide
+ * screens so the room's right side stays in view, under a lighter backdrop.
+ * Nothing here applies to the project sheet.
+ */
+.panel[data-panel-variant='assistant']::backdrop {
+  background: rgba(15, 13, 11, 0.32);
+}
+
+@media (min-width: 48rem) {
+  .panel[data-panel-variant='assistant'] {
+    width: min(38rem, calc(100% - 3rem));
+    margin-left: max(1.5rem, calc(50% - 28rem));
+    margin-right: auto;
+  }
+
+  .panel[data-panel-variant='assistant'] .panelBar {
+    padding-left: 2.25rem;
+  }
+
+  .panel[data-panel-variant='assistant'] .panelScroll {
+    padding: 1.75rem 2.25rem 2.25rem;
   }
 }
 

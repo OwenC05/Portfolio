@@ -2,12 +2,13 @@ import * as THREE from 'three';
 import { PROJECT_IDS, type ProjectId, type StudioSceneProps } from '@/lib/studio-contract';
 import { createStudio } from './build-studio';
 import { SceneResources } from './resources';
-import type { StudioModel, StudioPilotAsset } from './types';
+import type { SceneActivation, StudioModel, StudioPilotAsset } from './types';
+import type { RobotAsset, RobotPresentation } from './robot/types';
 import { loadStudioPilot } from './load-pilot';
 import { STUDIO_VIEW } from './view-config';
-import { pickProject } from './picking';
+import { pickScene } from './picking';
 
-type SceneState = Pick<StudioSceneProps, 'selectedProjectId' | 'reducedMotion' | 'viewCommand' | 'interactionEnabled'>;
+type SceneState = Pick<StudioSceneProps, 'selectedProjectId' | 'reducedMotion' | 'viewCommand' | 'interactionEnabled' | 'assistant'>;
 
 export interface StudioController {
   update(state: SceneState): void;
@@ -31,6 +32,14 @@ export function createStudioController(host: HTMLDivElement, props: StudioSceneP
   let renderer: THREE.WebGLRenderer | null = null;
   let model: StudioModel | null = null;
   let pilot: StudioPilotAsset | null = null;
+  let assistant = props.assistant;
+  let reducedMotion = props.reducedMotion;
+  let robot: RobotPresentation | null = null;
+  let robotAbort: AbortController | null = null;
+  let robotGeneration = 0;
+  let robotReady = false;
+  let robotPendingFrame = false;
+  let assistantHovered = false;
   const loadAbort = new AbortController();
   let generation = 0;
   let disposed = false;
@@ -39,6 +48,7 @@ export function createStudioController(host: HTMLDivElement, props: StudioSceneP
   let frame: number | null = null;
   let dirty = true;
   let sizeDirty = true;
+  let zeroSized = false;
   let width = 0;
   let height = 0;
   let renderCount = 0;
@@ -54,11 +64,11 @@ export function createStudioController(host: HTMLDivElement, props: StudioSceneP
   let capturedPointer: number | null = null;
   type Gesture = {
     pointerId: number; pointerType: string; x: number; y: number;
-    lastX: number; lastY: number; target: ProjectId | null;
+    lastX: number; lastY: number; target: SceneActivation | null;
     axis: 'pending' | 'look' | 'vertical'; mouseDown: boolean;
   };
   let gesture: Gesture | null = null;
-  let activation: { pointerId: number; pointerType: string; x: number; y: number; target: ProjectId; mouseDown: boolean } | null = null;
+  let activation: { pointerId: number; pointerType: string; x: number; y: number; target: SceneActivation; mouseDown: boolean } | null = null;
 
   canvas.setAttribute('aria-hidden', 'true');
   canvas.tabIndex = -1;
@@ -76,6 +86,7 @@ export function createStudioController(host: HTMLDivElement, props: StudioSceneP
     disposed = true;
     generation++;
     loadAbort.abort();
+    releaseRobot();
     stopFrame();
     // A failed release must not prevent the remaining independent releases.
     const release = (cleanup: () => void) => { try { cleanup(); } catch { /* Context may already be lost. */ } };
@@ -105,20 +116,73 @@ export function createStudioController(host: HTMLDivElement, props: StudioSceneP
     try { props.onStatusChange('unavailable'); } finally { dispose(); }
   }
 
+  function releaseRobot() {
+    robotGeneration++;
+    robotAbort?.abort();
+    robotAbort = null;
+    robotReady = false;
+    robotPendingFrame = false;
+    if (model) delete model.assistant;
+    const owned = robot;
+    robot = null;
+    if (owned) {
+      try { owned.dispose(); } catch { /* Continue releasing the imported owner. */ }
+      try { owned.asset.dispose(); } catch { /* Optional cleanup cannot break the room. */ }
+    }
+  }
+
+  function robotFailed() {
+    if (disposed) return;
+    releaseRobot();
+    cancelPointer();
+    invalidate();
+    props.onRobotStatusChange?.('unavailable');
+  }
+
+  function suspended() {
+    return document.hidden || !inView || width <= 0 || height <= 0;
+  }
+
+  function startRobot() {
+    if (disposed || !assistant || !model || robotAbort) return;
+    const abort = new AbortController();
+    robotAbort = abort;
+    const token = ++robotGeneration;
+    props.onRobotStatusChange?.('loading');
+    const current = () => !disposed && token === robotGeneration && !abort.signal.aborted && Boolean(assistant);
+    // Nothing in this module's dependency tree is requested for the absent prop.
+    void import('./robot/runtime').then(async (runtime) => {
+      if (!current()) return;
+      let asset: RobotAsset | null = await runtime.loadRobot(abort.signal);
+      if (!current()) { asset.dispose(); return; }
+      try {
+        const presentation = runtime.createPresentation(asset);
+        robot = presentation;
+        asset = null; // presentation/asset now belong to releaseRobot.
+        presentation.apply(assistant!, reducedMotion, true);
+        model!.scene.add(presentation.asset.root);
+        model!.assistant = { activationSurfaces: presentation.asset.activationSurfaces,
+          occluders: [...presentation.asset.occluders, ...presentation.cards] };
+        robotPendingFrame = true;
+        invalidate();
+      } catch (error) { asset?.dispose(); throw error; }
+    }).catch(() => { if (current()) robotFailed(); });
+  }
+
   function schedule() {
-    if (disposed || !window || document.hidden || !inView || !dirty || frame !== null) return;
+    if (disposed || !window || document.hidden || !inView || zeroSized || !dirty || frame !== null) return;
     frame = window.requestAnimationFrame(render);
   }
 
   function invalidate(resize = false) {
     if (disposed) return;
-    if (resize) cancelPointer();
+    if (resize) { zeroSized = false; cancelPointer(); }
     dirty = true;
     sizeDirty = sizeDirty || resize;
     schedule();
   }
 
-  function render() {
+  function render(now: number) {
     frame = null;
     if (disposed || !renderer || !model || !window || document.hidden || !inView) return;
     try {
@@ -127,9 +191,9 @@ export function createStudioController(host: HTMLDivElement, props: StudioSceneP
         width = rect.width;
         height = rect.height;
         // Keep loading until the host has an actual visible render area.
-        if (width <= 0 || height <= 0) return;
+        if (width <= 0 || height <= 0) { zeroSized = true; robot?.settle(); return; }
         const mobile = window.innerWidth <= 640 || width / height < 0.9;
-        const dpr = Math.min(window.devicePixelRatio || 1, mobile ? 1.5 : 2);
+        const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
         renderer.setPixelRatio(dpr);
         renderer.setSize(width, height, false);
         if (!home) {
@@ -147,7 +211,14 @@ export function createStudioController(host: HTMLDivElement, props: StudioSceneP
         sizeDirty = false;
       }
       dirty = false;
-      renderer.render(model.scene, camera);
+      let animating = false;
+      try { animating = robot?.advance(now) ?? false; } catch { robotFailed(); }
+      try { renderer.render(model.scene, camera); } catch (error) {
+        if (!robot || disposed) throw error;
+        // Retry the healthy room once without the optional attachment.
+        robotFailed(); animating = false;
+        renderer.render(model.scene, camera);
+      }
       // Context-loss handlers can dispose the controller synchronously during render.
       if (disposed) return;
       canvas.dataset.studioRenderCount = String(++renderCount);
@@ -155,10 +226,22 @@ export function createStudioController(host: HTMLDivElement, props: StudioSceneP
       canvas.dataset.studioTriangles = String(renderer.info.render.triangles);
       canvas.dataset.studioGeometries = String(renderer.info.memory.geometries);
       canvas.dataset.studioTextures = String(renderer.info.memory.textures);
+      robotPendingFrame = false;
+      if (robot) {
+        canvas.dataset.assistantRunId = assistant?.snapshot.run.runId ?? '';
+        canvas.dataset.assistantRevision = String(assistant?.snapshot.run.revision ?? 0);
+        canvas.dataset.assistantCardCount = String(robot.cards.filter((card) => card.visible).length);
+        if (!robotReady) { robotReady = true; props.onRobotStatusChange?.('ready'); }
+      } else {
+        delete canvas.dataset.assistantRunId;
+        delete canvas.dataset.assistantRevision;
+        delete canvas.dataset.assistantCardCount;
+      }
       if (!ready) {
         ready = true;
         props.onStatusChange('ready');
       }
+      if (animating) invalidate();
     } catch {
       fail();
     }
@@ -172,11 +255,16 @@ export function createStudioController(host: HTMLDivElement, props: StudioSceneP
     invalidate();
   }
 
-  function setHover(id: ProjectId | null) {
-    if (disposed || id === hovered) return;
-    hovered = id;
-    canvas.style.cursor = id ? 'pointer' : '';
-    styleTargets();
+  function setHover(target: SceneActivation | null) {
+    if (disposed) return;
+    const id = target?.kind === 'project' ? target.projectId : null;
+    const nextAssistant = target?.kind === 'assistant';
+    canvas.style.cursor = target ? 'pointer' : '';
+    if (id !== hovered) { hovered = id; styleTargets(); }
+    if (nextAssistant !== assistantHovered) {
+      assistantHovered = nextAssistant;
+      props.onAssistantHoverChange?.(nextAssistant);
+    }
   }
 
   function applyPose() {
@@ -211,17 +299,21 @@ export function createStudioController(host: HTMLDivElement, props: StudioSceneP
     // and out-of-order sequences are consumed without replay, including when disabled.
     if (!command || !Number.isFinite(command.sequence) || command.sequence <= lastSequence) return;
     lastSequence = command.sequence;
-    if (interactionEnabled) applyCommand(command.action);
+    if (interactionEnabled && !assistant?.panelOpen) applyCommand(command.action);
   }
 
   function canInteract() {
-    return !disposed && interactionEnabled && ready && !sizeDirty && !document.hidden && inView;
+    return !disposed && interactionEnabled && !assistant?.panelOpen && ready && !sizeDirty && !robotPendingFrame && !document.hidden && inView;
   }
 
-  function pick(event: PointerEvent): ProjectId | null {
+  function pick(event: Pick<PointerEvent, 'clientX' | 'clientY' | 'pointerType'>): SceneActivation | null {
     if (!canInteract() || !model) return null;
     const rect = canvas.getBoundingClientRect();
-    return pickProject(model, camera, event.clientX - rect.left, event.clientY - rect.top, rect.width, rect.height, event.pointerType === 'touch');
+    return pickScene(model, camera, event.clientX - rect.left, event.clientY - rect.top, rect.width, rect.height, event.pointerType === 'touch');
+  }
+
+  function sameTarget(a: SceneActivation | null, b: SceneActivation | null) {
+    return a?.kind === 'assistant' ? b?.kind === 'assistant' : a?.kind === 'project' && b?.kind === 'project' && a.projectId === b.projectId;
   }
 
   function releaseCapture() {
@@ -234,7 +326,10 @@ export function createStudioController(host: HTMLDivElement, props: StudioSceneP
 
   function pointerDown(event: PointerEvent) {
     if (disposed) return;
-    cancelPointer();
+    // Starting a press resets old gesture state, not the hover under it.
+    // Clearing hover here feeds a new pose through React before compatibility
+    // mousedown, making that same press fail the pending-geometry guard.
+    resetPointer();
     pointers.add(event.pointerId);
     if (!canInteract() || pointers.size !== 1 || !event.isTrusted || !event.isPrimary || event.button !== 0) return;
     gesture = {
@@ -285,7 +380,7 @@ export function createStudioController(host: HTMLDivElement, props: StudioSceneP
     if (!canInteract() || !started || started.pointerId !== event.pointerId || started.pointerType !== event.pointerType || started.axis !== 'pending' || !event.isTrusted || !event.isPrimary || event.button !== 0) return;
     if (Math.hypot(event.clientX - started.x, event.clientY - started.y) > DRAG_THRESHOLD) return;
     const id = pick(event);
-    if (id && id === started.target) {
+    if (id && sameTarget(id, started.target)) {
       activation = { pointerId: event.pointerId, pointerType: event.pointerType, x: event.clientX, y: event.clientY, target: id, mouseDown: started.mouseDown };
     }
   }
@@ -306,7 +401,9 @@ export function createStudioController(host: HTMLDivElement, props: StudioSceneP
     // Click coordinates may be rounded. Pointerup qualified the actual surface;
     // compatibility mousedown must finish its default focus action before this.
     if (Math.hypot(event.clientX - completed.x, event.clientY - completed.y) > DRAG_THRESHOLD) return;
-    props.onSelectProject(completed.target);
+    if (completed.target.kind === 'assistant') {
+      if (sameTarget(completed.target, pick({ clientX: completed.x, clientY: completed.y, pointerType: completed.pointerType }))) props.onActivateAssistant?.();
+    } else props.onSelectProject(completed.target.projectId);
   }
 
   function pointerLeave(event: PointerEvent) {
@@ -336,17 +433,21 @@ export function createStudioController(host: HTMLDivElement, props: StudioSceneP
     cancelPointer();
   }
 
-  function cancelPointer() {
-    if (disposed) return;
+  function resetPointer() {
     gesture = null;
     activation = null;
     releaseCapture();
+  }
+
+  function cancelPointer() {
+    if (disposed) return;
+    resetPointer();
     setHover(null);
   }
 
   function visibilityChange() {
     if (disposed) return;
-    if (document.hidden) { stopFrame(); blur(); } else { invalidate(true); }
+    if (document.hidden) { stopFrame(); robot?.settle(); blur(); } else { invalidate(true); }
   }
 
   function listen(target: EventTarget, type: string, handler: EventListener) {
@@ -357,9 +458,23 @@ export function createStudioController(host: HTMLDivElement, props: StudioSceneP
   const controller: StudioController = {
     update(state) {
       if (disposed) return;
+      const previousAssistant = assistant;
+      const previousReduced = reducedMotion;
+      assistant = state.assistant;
+      reducedMotion = state.reducedMotion;
       interactionEnabled = state.interactionEnabled ?? true;
       canvas.dataset.studioInteractionEnabled = String(interactionEnabled);
-      if (!interactionEnabled) { pendingCommands.length = 0; cancelPointer(); }
+      if (!interactionEnabled || assistant?.panelOpen) { pendingCommands.length = 0; cancelPointer(); }
+      if (!assistant && previousAssistant) { releaseRobot(); cancelPointer(); invalidate(); }
+      else if (assistant && !previousAssistant) startRobot();
+      const presentationChanged = assistant?.snapshot !== previousAssistant?.snapshot || assistant?.panelOpen !== previousAssistant?.panelOpen
+        || assistant?.presentationEpoch !== previousAssistant?.presentationEpoch || assistant?.attentionRequested !== previousAssistant?.attentionRequested;
+      if (robot && assistant && (presentationChanged || reducedMotion !== previousReduced)) {
+        try {
+          robot.apply(assistant, reducedMotion, suspended());
+          if (presentationChanged || reducedMotion) { robotPendingFrame = true; invalidate(); }
+        } catch { robotFailed(); }
+      }
       consumeCommand(state.viewCommand);
       if (selected !== state.selectedProjectId) {
         selected = state.selectedProjectId;
@@ -411,7 +526,7 @@ export function createStudioController(host: HTMLDivElement, props: StudioSceneP
         const entry = entries.find((item) => item.target === host);
         if (!entry) return;
         inView = entry.isIntersecting;
-        if (inView) invalidate(true); else { stopFrame(); cancelPointer(); }
+        if (inView) invalidate(true); else { stopFrame(); robot?.settle(); cancelPointer(); }
       });
       cleanups.push(() => observer.disconnect());
       observer.observe(host);
@@ -445,6 +560,7 @@ export function createStudioController(host: HTMLDivElement, props: StudioSceneP
         // State may have changed while fetch/decode was pending. Style from the
         // current selection; first usable render applies the retained commands.
         styleTargets();
+        startRobot();
       } catch { fail(); }
     }, () => {
       if (!disposed && token === generation) fail();

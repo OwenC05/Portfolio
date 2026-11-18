@@ -1,0 +1,55 @@
+{
+  "at": "2026-11-16T13:48:50.316Z",
+  "head": "c0348b77adbfe09034e82a9e1a3cee34052d4735",
+  "buildId": "O1RTOH0qRVqxRHQExjvm4",
+  "sourceReceiptSha256": "0f1baa67effb3106ac9abd13076507d0006c039be485fb6c934469fe16e947c3",
+  "postBuildSourceDrift": [],
+  "commands": [
+    {
+      "command": "npm run typecheck",
+      "exitCode": 0,
+      "log": "logs/typecheck.log"
+    },
+    {
+      "command": "npm run lint",
+      "exitCode": 0,
+      "log": "logs/lint.log",
+      "note": "Next lint deprecation warning only; no ESLint warnings/errors."
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "log": "logs/build.log"
+    }
+  ],
+  "buildFiles": [
+    {
+      "path": ".next/BUILD_ID",
+      "sha256": "666323440ab6069ea3b45113dec3d3aa260802789f7ea4192912e2e5802eb4af",
+      "bytes": 21,
+      "mtime": "2026-11-16T13:47:35.090Z"
+    },
+    {
+      "path": ".next/build-manifest.json",
+      "sha256": "c40b3fe8d849f14197a8797fc38e99d528481324ab1cc3d35efcd04914b3fa23",
+      "bytes": 995,
+      "mtime": "2026-11-16T13:47:30.008Z"
+    },
+    {
+      "path": ".next/app-build-manifest.json",
+      "sha256": "043fc5412c2c9f8817c883f4c45f809965d75ce268788e806c254a38c6a6b4ee",
+      "bytes": 3496,
+      "mtime": "2026-11-16T13:47:30.009Z"
+    },
+    {
+      "path": ".next/required-server-files.json",
+      "sha256": "be134c70b8a8bbe1bdaa1e7996475285a7deecfeed18b13fc2119ce19b283a14",
+      "bytes": 9018,
+      "mtime": "2026-11-16T13:47:35.093Z"
+    }
+  ],
+  "tests": {
+    "repeated": false,
+    "reason": "Author six candidate hashes match; 62 tests and 17 fixtures are prior author evidence, not rerun here."
+  }
+}

@@ -1,0 +1,2 @@
+### Error
+Error: Contact scroll did not hide canvas; offscreen coverage blocked

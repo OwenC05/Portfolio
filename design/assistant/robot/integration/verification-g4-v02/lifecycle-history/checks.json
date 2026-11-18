@@ -1,0 +1,65 @@
+{
+  "buildId": "XH_oOqBftWO8em8L7m4E6",
+  "checks": [
+    {
+      "name": "Native hash navigation closes Ask without restoring it",
+      "passed": true
+    },
+    {
+      "name": "Keyboard Ask focuses the substantive heading",
+      "passed": true
+    },
+    {
+      "name": "Project takeover aborts Ask, reuses the dialog and focuses only its heading",
+      "passed": true
+    },
+    {
+      "name": "Keyboard Ask focuses the substantive heading",
+      "passed": true
+    },
+    {
+      "name": "Keyboard source navigation reaches its article without an intermediate Ask return",
+      "passed": true
+    }
+  ],
+  "observations": {
+    "continuedFrom": "lifecycle-navigation: no-match passed and native hash navigation ran. Its wait incorrectly required the closed dialog to be visible; this continuation reads the retained focus trace and verifies remaining navigation.",
+    "history": {
+      "focus": [],
+      "open": false,
+      "active": {
+        "id": "",
+        "tag": "BODY"
+      },
+      "hash": "#contact",
+      "bodyPosition": "",
+      "cards": "0"
+    },
+    "takeover": {
+      "sameDialog": true,
+      "aborted": true,
+      "focus": [
+        {
+          "id": "panel-project-typeforge-heading",
+          "tag": "H2",
+          "text": "TypeForge"
+        }
+      ],
+      "active": "panel-project-typeforge-heading",
+      "cards": "0",
+      "interaction": "false"
+    },
+    "route": {
+      "url": "http://127.0.0.1:4193/work/lexisnexis#lexisnexis-role",
+      "focus": [],
+      "active": {
+        "tag": "BODY",
+        "id": ""
+      }
+    }
+  },
+  "limits": [
+    "Controlled pending/error fetches test state handling, not provider quality.",
+    "Real Chromium input and native navigation; no physical touch, screen reader, full pose sweep, GPU lifetime or full performance certification."
+  ]
+}

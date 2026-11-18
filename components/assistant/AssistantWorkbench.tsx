@@ -1,54 +1,26 @@
 'use client'
 
 import {
-  useCallback,
-  useEffect,
+  useLayoutEffect,
   useId,
   useMemo,
-  useRef,
   useState,
   type FormEvent,
   type KeyboardEvent,
 } from 'react'
 import type { AssistantAnswer, RetrievalHit } from '@/lib/assistant/types'
-import { parseAssistantEvent } from '@/lib/assistant/events'
+import {
+  hitKey as keyOf,
+  type RunState as Run,
+  type Phase,
+} from '@/lib/assistant/run-state'
+import { useAssistantRun } from './useAssistantRun'
 import styles from './assistant.module.css'
 
-type Phase =
-  | 'idle'
-  | 'requesting'
-  | 'retrieving'
-  | 'retrieved'
-  | 'generating'
-  | 'answered'
-  | 'done'
-  | 'error'
-  | 'cancelled'
-type AbortReason = 'user' | 'timeout' | 'superseded' | 'unmount'
 type StepState = 'pending' | 'active' | 'complete' | 'skipped' | 'stopped'
 type Mode = AssistantAnswer['mode']
 
-interface Run {
-  phase: Phase
-  question: string
-  hits: RetrievalHit[]
-  retrievalMs?: number
-  generated: boolean
-  received: boolean
-  answer?: AssistantAnswer
-  totalMs?: number
-  notice?: string
-}
-
-const IDLE: Run = {
-  phase: 'idle',
-  question: '',
-  hits: [],
-  generated: false,
-  received: false,
-}
 const CONTACT = 'oc608@bath.ac.uk'
-const TIMEOUT_MS = 60_000
 const BUSY: Phase[] = [
   'requesting',
   'retrieving',
@@ -87,8 +59,6 @@ const STEP_CLASS: Record<StepState, string> = {
   stopped: styles.stepStopped,
 }
 
-const keyOf = (h: { sourceId: string; chunkId: string }) =>
-  `${h.sourceId}::${h.chunkId}`
 const fmtMs = (n?: number) =>
   n === undefined
     ? ''
@@ -189,11 +159,13 @@ function Constellation({
   const titleId = useId()
   const { hits, answer, phase } = run
   const preview = phase === 'idle'
-  const max = Math.max(0, ...hits.map((h) => h.score)) || 1
+  const max = Math.max(0, ...hits.map(({ hit }) => hit.score)) || 1
   const slots = preview ? 4 : hits.length
   const pts = Array.from({ length: slots }, (_, i) => {
     const t = slots === 1 ? 0.5 : i / (slots - 1)
-    const hit: RetrievalHit | undefined = preview ? undefined : hits[i]
+    const hit: Readonly<RetrievalHit> | undefined = preview
+      ? undefined
+      : hits[i]?.hit
     return {
       hit,
       x: 180 + (i % 2 ? 28 : -28),
@@ -201,7 +173,7 @@ function Constellation({
       r: hit ? 6 + (6 * Math.max(0, hit.score)) / max : 7,
     }
   })
-  const citedCount = hits.filter((h) => cited.has(keyOf(h))).length
+  const citedCount = hits.filter((view) => cited.has(view.key)).length
   const title = preview
     ? 'Process preview: a question is matched to retrieved passages, which feed the answer. No sources yet.'
     : `Retrieval map: ${plural(hits.length, 'retrieved passage')}${answer ? `, ${citedCount} cited in the answer` : ''}.`
@@ -211,7 +183,11 @@ function Constellation({
       ? 'searching…'
       : hits.length
         ? 'retrieved passages'
-        : 'no passages matched'
+        : answer?.mode === 'abstained'
+          ? 'no passages matched'
+          : phase === 'retrieved'
+            ? '0 passages; response pending'
+            : 'no sources yet'
 
   return (
     <svg
@@ -315,165 +291,34 @@ export default function AssistantWorkbench({
 }) {
   const uid = useId()
   const [question, setQuestion] = useState('')
-  const [run, setRun] = useState<Run>(IDLE)
-  const [selected, setSelected] = useState<string | null>(null)
-  const runId = useRef(0)
-  const ctrlRef = useRef<{ c: AbortController; reason?: AbortReason } | null>(
-    null
-  )
+  const { snapshot, actions } = useAssistantRun({ generationEnabled })
+  const run = snapshot.run
+  const selected = run.selectedKey
+  const ask = actions.submit
+  const [focusTarget, setFocusTarget] = useState<{
+    runId: string
+    key: string
+    revision: number
+  } | null>(null)
 
-  const stop = useCallback((reason: AbortReason) => {
-    const cur = ctrlRef.current
-    if (!cur) return
-    cur.reason = reason
-    cur.c.abort()
-    ctrlRef.current = null
-  }, [])
-
-  useEffect(
-    () => () => {
-      runId.current += 1
-      stop('unmount')
-    },
-    [stop]
-  )
-
-  const ask = useCallback(
-    async (raw: string) => {
-      const text = raw.trim().slice(0, 600)
-      if (!text) return
-      stop('superseded')
-      const id = ++runId.current
-      const entry: { c: AbortController; reason?: AbortReason } = {
-        c: new AbortController(),
-      }
-      ctrlRef.current = entry
-      const timer = window.setTimeout(() => {
-        entry.reason = 'timeout'
-        entry.c.abort()
-      }, TIMEOUT_MS)
-      const live = () => id === runId.current
-      const patch = (fn: (r: Run) => Run) => {
-        if (live()) setRun(fn)
-      }
-      setSelected(null)
-      setRun({ ...IDLE, phase: 'requesting', question: text })
-      try {
-        const res = await fetch('/api/assistant', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ question: text }),
-          signal: entry.c.signal,
-        })
-        if (!res.ok) {
-          const body = (await res.json().catch(() => null)) as {
-            error?: string
-          } | null
-          throw new Error(
-            body?.error || `The assistant couldn’t answer (HTTP ${res.status}).`
-          )
-        }
-        if (!res.body) throw new Error('The assistant’s response was empty.')
-        const reader = res.body.getReader()
-        const decoder = new TextDecoder()
-        let buffer = ''
-        let finished = false
-        const handle = (line: string) => {
-          if (!line.trim() || !live()) return
-          const ev = parseAssistantEvent(line)
-          if (ev.type === 'retrieval-start') {
-            patch((r) => ({ ...r, phase: 'retrieving', received: true }))
-          } else if (ev.type === 'retrieval') {
-            const { hits, durationMs } = ev
-            patch((r) => ({
-              ...r,
-              phase: 'retrieved',
-              hits,
-              retrievalMs: durationMs,
-            }))
-          } else if (ev.type === 'generation') {
-            patch((r) => ({ ...r, phase: 'generating', generated: true }))
-          } else if (ev.type === 'answer') {
-            const { answer } = ev
-            patch((r) => ({ ...r, phase: 'answered', answer }))
-          } else if (ev.type === 'done') {
-            finished = true
-            const { durationMs } = ev
-            patch((r) =>
-              r.answer
-                ? { ...r, phase: 'done', totalMs: durationMs }
-                : {
-                    ...r,
-                    phase: 'error',
-                    notice: 'The assistant finished without sending an answer.',
-                  }
-            )
-          }
-        }
-        try {
-          for (;;) {
-            const { value, done } = await reader.read()
-            if (done) break
-            buffer += decoder.decode(value, { stream: true })
-            if (buffer.length > 100000)
-              throw new Error(
-                'The response exceeded the page’s limit. Please try again.'
-              )
-            let nl: number
-            while ((nl = buffer.indexOf('\n')) !== -1) {
-              handle(buffer.slice(0, nl))
-              buffer = buffer.slice(nl + 1)
-            }
-          }
-          handle(buffer + decoder.decode())
-        } finally {
-          await reader.cancel().catch(() => {})
-          reader.releaseLock()
-        }
-        if (!finished) {
-          patch((r) =>
-            r.answer
-              ? {
-                  ...r,
-                  phase: 'done',
-                  notice:
-                    'The connection closed before the final event; showing what arrived.',
-                }
-              : {
-                  ...r,
-                  phase: 'error',
-                  notice:
-                    'The connection closed before an answer arrived. Please try again.',
-                }
-          )
-        }
-      } catch (err) {
-        if (
-          !live() ||
-          entry.reason === 'superseded' ||
-          entry.reason === 'unmount'
-        )
-          return
-        const notice =
-          entry.reason === 'timeout'
-            ? `No complete response after ${TIMEOUT_MS / 1000} s, so the request was stopped. Please try again.`
-            : err instanceof TypeError
-              ? 'The connection to the assistant failed. Check your connection and try again.'
-              : err instanceof Error && err.message
-                ? err.message
-                : 'Something went wrong. Please try again.'
-        setRun((r) => ({
-          ...r,
-          phase: entry.reason === 'user' ? 'cancelled' : 'error',
-          notice,
-        }))
-      } finally {
-        window.clearTimeout(timer)
-        if (ctrlRef.current === entry) ctrlRef.current = null
-      }
-    },
-    [stop]
-  )
+  // Focus in the selection commit, without a rank-capturing RAF that can outlive a run.
+  useLayoutEffect(() => {
+    if (!focusTarget) return
+    setFocusTarget(null)
+    if (
+      run.runId !== focusTarget.runId ||
+      run.revision !== focusTarget.revision ||
+      run.selectedKey !== focusTarget.key
+    )
+      return
+    const current = run.hits.find((view) => view.key === focusTarget.key)
+    if (!current) return
+    const row = document.getElementById(`${uid}-s-${current.rank}`)
+    if (row?.dataset.runId !== run.runId || row.dataset.hitKey !== current.key)
+      return
+    row.querySelector('button')?.focus({ preventScroll: true })
+    row.scrollIntoView({ block: 'nearest' })
+  }, [focusTarget, run, uid])
 
   const busy = BUSY.includes(run.phase)
   const a = run.answer
@@ -482,19 +327,21 @@ export default function AssistantWorkbench({
     [run.answer]
   )
   const rankOf = useMemo(
-    () => new Map(run.hits.map((h, i) => [keyOf(h), i + 1])),
+    () => new Map(run.hits.map((view) => [view.key, view.rank])),
     [run.hits]
   )
 
-  const reveal = (k: string) => {
-    const rank = rankOf.get(k)
-    if (!rank) return
-    setSelected(k)
-    requestAnimationFrame(() => {
-      const row = document.getElementById(`${uid}-s-${rank}`)
-      row?.querySelector('button')?.focus({ preventScroll: true })
-      row?.scrollIntoView({ block: 'nearest' })
+  const setSelected = (key: string | null) => {
+    if (run.runId) actions.select(run.runId, key)
+  }
+  const reveal = (key: string) => {
+    if (!run.runId || !rankOf.has(key)) return
+    setFocusTarget({
+      runId: run.runId,
+      key,
+      revision: run.revision + (selected === key ? 0 : 1),
     })
+    actions.select(run.runId, key)
   }
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -556,7 +403,7 @@ export default function AssistantWorkbench({
               <button
                 type="button"
                 className={styles.secondary}
-                onClick={() => stop('user')}
+                onClick={actions.cancel}
                 disabled={!busy}
               >
                 Cancel
@@ -618,7 +465,8 @@ export default function AssistantWorkbench({
                 <button
                   type="button"
                   className={styles.linkButton}
-                  onClick={() => void ask(run.question)}
+                  onClick={() => void ask(question)}
+                  disabled={!question.trim()}
                 >
                   Try again
                 </button>
@@ -715,14 +563,15 @@ export default function AssistantWorkbench({
                 probabilities.
               </p>
               <ol className={styles.sourceList}>
-                {run.hits.map((h, i) => {
-                  const k = keyOf(h)
+                {run.hits.map(({ hit: h, key: k }, i) => {
                   const open = k === selected
                   const pid = `${uid}-p-${i + 1}`
                   return (
                     <li
                       key={k}
                       id={`${uid}-s-${i + 1}`}
+                      data-run-id={run.runId}
+                      data-hit-key={k}
                       className={styles.source}
                     >
                       <button
@@ -771,9 +620,11 @@ export default function AssistantWorkbench({
                 ? 'Sources appear here after a question is searched. Nothing above is a real source yet.'
                 : run.phase === 'retrieving'
                   ? 'Searching…'
-                  : run.retrievalMs !== undefined
+                  : snapshot.result === 'no-match'
                     ? 'No passages matched this question.'
-                    : 'No sources were retrieved.'}
+                    : run.phase === 'retrieved'
+                      ? 'Zero passages retrieved; the response is still pending.'
+                      : 'No sources were retrieved.'}
             </p>
           )}
         </section>

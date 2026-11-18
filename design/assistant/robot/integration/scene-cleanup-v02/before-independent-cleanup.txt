@@ -1,0 +1,69 @@
+TAP version 13
+# CARD_RELEASE_EVIDENCE [{"type":"ExtrudeGeometry","disposals":1},{"type":"MeshStandardMaterial","disposals":0},{"type":"ExtrudeGeometry","disposals":0}]
+# Subtest: P2: one generated-card release exception must not skip independent remaining resources
+not ok 1 - P2: one generated-card release exception must not skip independent remaining resources
+  ---
+  duration_ms: 150.3163
+  type: 'test'
+  location: 'C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\review\\scene-runtime-g2\\probe.test.mjs:203:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+      [
+        1,
+    +   0,
+    +   0
+    -   1,
+    -   1
+      ]
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    0: 1
+    1: 1
+    2: 1
+  actual:
+    0: 1
+    1: 0
+    2: 0
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/scene-runtime-g2/probe.test.mjs:220:10)
+    async Test.run (node:internal/test_runner/test:1409:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3)
+  ...
+# ROOT_RELEASE_EVIDENCE {"released":0,"total":28,"detached":true,"rendererDisposals":0}
+# Subtest: P2: a throwing root removal listener must not bypass the 28 imported resource releases
+not ok 2 - P2: a throwing root removal listener must not bypass the 28 imported resource releases
+  ---
+  duration_ms: 90.3384
+  type: 'test'
+  location: 'C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\review\\scene-runtime-g2\\probe.test.mjs:223:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    0 !== 28
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 28
+  actual: 0
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/scene-runtime-g2/probe.test.mjs:235:10)
+    async Test.run (node:internal/test_runner/test:1409:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 0
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 874.1736

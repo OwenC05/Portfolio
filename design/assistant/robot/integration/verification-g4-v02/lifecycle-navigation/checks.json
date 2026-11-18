@@ -1,0 +1,17 @@
+{
+  "buildId": "XH_oOqBftWO8em8L7m4E6",
+  "checks": [
+    {
+      "name": "Real unsupported topic presents no-match with no cards and a contact link",
+      "passed": true
+    }
+  ],
+  "observations": {
+    "continuedFrom": "lifecycle-keyboard: first nine checks passed; the wait used mixed-case text while the rendered label was uppercase. The actual no-match state was inspected before resuming only the remaining navigation cases.",
+    "error": "Error: Command failed: orca wait --selector dialog:not([open]) --page 0c891a8f-5ffd-4c83-a292-da00ef2ccf26 --json"
+  },
+  "limits": [
+    "Controlled pending/error fetches test state handling, not provider quality.",
+    "Real Chromium input and native navigation; no physical touch, screen reader, full pose sweep, GPU lifetime or full performance certification."
+  ]
+}

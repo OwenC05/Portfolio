@@ -1,0 +1,11 @@
+{
+  "id": "16a2693b-a841-416b-a5b7-afeb1bcecc64",
+  "ok": false,
+  "error": {
+    "code": "browser_eval_error",
+    "message": "SyntaxError: Unexpected identifier 'code'"
+  },
+  "_meta": {
+    "runtimeId": "19e04513-1ef5-4d38-9d02-d9354525c5f3"
+  }
+}

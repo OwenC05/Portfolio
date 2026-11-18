@@ -1,0 +1,11 @@
+{
+  "contexts": [
+    {
+      "i": 0,
+      "default": true,
+      "pages": [
+        "about:blank"
+      ]
+    }
+  ]
+}

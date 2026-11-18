@@ -1,0 +1,201 @@
+{
+  "checkedAt": "2026-11-16T14:06:23.172Z",
+  "status": "PASS-offline-asset-structure-not-production-acceptance",
+  "assetSha256": "775733a18559d7f52dd6bd71e7ec518a9783ef3c9e95dd753b3072e553587232",
+  "measurements": {
+    "rawGlbBytes": 328960,
+    "gzipBytes": 214023,
+    "brotliBytes": 149706,
+    "triangles": 18330,
+    "exportedVertexRecords": 9341,
+    "nodes": 22,
+    "meshes": 21,
+    "materials": 7,
+    "primitives": 21,
+    "textures": 0,
+    "animations": 0
+  },
+  "meshRecords": [
+    {
+      "name": "APA_body_cap",
+      "vertices": 258,
+      "triangles": 512,
+      "primitives": 1
+    },
+    {
+      "name": "APA_collar",
+      "vertices": 384,
+      "triangles": 768,
+      "primitives": 1
+    },
+    {
+      "name": "APA_mitten_L",
+      "vertices": 416,
+      "triangles": 828,
+      "primitives": 1
+    },
+    {
+      "name": "APA_mitten_R",
+      "vertices": 412,
+      "triangles": 820,
+      "primitives": 1
+    },
+    {
+      "name": "APA_body",
+      "vertices": 788,
+      "triangles": 1572,
+      "primitives": 1
+    },
+    {
+      "name": "APA_bookmark_ribbon",
+      "vertices": 70,
+      "triangles": 136,
+      "primitives": 1
+    },
+    {
+      "name": "APA_bookmark_post",
+      "vertices": 282,
+      "triangles": 560,
+      "primitives": 1
+    },
+    {
+      "name": "APA_highlight_L",
+      "vertices": 146,
+      "triangles": 288,
+      "primitives": 1
+    },
+    {
+      "name": "APA_pupil_L",
+      "vertices": 322,
+      "triangles": 640,
+      "primitives": 1
+    },
+    {
+      "name": "APA_eye_L",
+      "vertices": 482,
+      "triangles": 960,
+      "primitives": 1
+    },
+    {
+      "name": "APA_highlight_R",
+      "vertices": 146,
+      "triangles": 288,
+      "primitives": 1
+    },
+    {
+      "name": "APA_pupil_R",
+      "vertices": 322,
+      "triangles": 640,
+      "primitives": 1
+    },
+    {
+      "name": "APA_eye_R",
+      "vertices": 482,
+      "triangles": 960,
+      "primitives": 1
+    },
+    {
+      "name": "APA_face",
+      "vertices": 1026,
+      "triangles": 2048,
+      "primitives": 1
+    },
+    {
+      "name": "APA_face_rim",
+      "vertices": 576,
+      "triangles": 1152,
+      "primitives": 1
+    },
+    {
+      "name": "APA_lid_lower_L",
+      "vertices": 578,
+      "triangles": 1152,
+      "primitives": 1
+    },
+    {
+      "name": "APA_lid_lower_R",
+      "vertices": 578,
+      "triangles": 1152,
+      "primitives": 1
+    },
+    {
+      "name": "APA_seam",
+      "vertices": 576,
+      "triangles": 1152,
+      "primitives": 1
+    },
+    {
+      "name": "APA_head",
+      "vertices": 937,
+      "triangles": 1806,
+      "primitives": 1
+    },
+    {
+      "name": "APA_tray_glow",
+      "vertices": 174,
+      "triangles": 128,
+      "primitives": 1
+    },
+    {
+      "name": "APA_tray",
+      "vertices": 386,
+      "triangles": 768,
+      "primitives": 1
+    }
+  ],
+  "neutralBoundsGltfMetres": {
+    "min": [
+      -0.14062344492413104,
+      -0.2358040977269411,
+      -0.1354877119883895
+    ],
+    "max": [
+      0.1372770096641034,
+      0.30068186298012733,
+      0.1254333845572546
+    ]
+  },
+  "degenerateTriangles": 0,
+  "maxNormalLengthError": 1.2521518732988568e-7,
+  "hierarchyAndNeutralTRSMatch": true,
+  "materialsOpaqueAndUntextured": true,
+  "animationFree": true,
+  "requiredBindings": 22,
+  "movingBindings": 10,
+  "pupilChecks": {
+    "maxEllipseNormalizedRadiusSquared": 0.34456893709816905,
+    "minPupilToLidClearanceMetres": 0.00808001682439537,
+    "highlightContained": true
+  },
+  "sweep": {
+    "sampleCount": 1025,
+    "scope": "these five endpoints and nonovershooting pairwise lerp/slerp only; runtime marks excluded and still unbuilt",
+    "paddingMetres": 0.0008162916443605818,
+    "maxVertexSpeedBoundMetresPerNormalizedTransition": 0.06522333154884655,
+    "conservativeContinuousBoundsBlenderMetres": {
+      "min": [
+        -0.1429218412182589,
+        -0.1354826004050036,
+        -0.24962987609126763
+      ],
+      "max": [
+        0.14795153446414666,
+        0.13634890921333032,
+        0.3060847581169863
+      ]
+    },
+    "method": "41 samples per ordered pose pair; expand each side by max chain speed / 80 plus 1 micrometre; lerp translation and shortest quaternion slerp only",
+    "runtimeMarksIncluded": false
+  },
+  "compression": {
+    "gzipLevel": 9,
+    "brotliQuality": 11,
+    "gzipSha256": "66266574df1ae470087cbb118f4b967b243bd96e7b767c0a02b90a2ce321cca6",
+    "brotliSha256": "1e9f67a806147eb0097b74114e8097dc7c2b22810698b2c3c2825388c263dbcc"
+  },
+  "limitations": [
+    "No live-room/mobile/WebGL/transport test",
+    "Source marks unbuilt; their bounds and resources remain unallocated",
+    "Independent visual and technical review pending"
+  ]
+}

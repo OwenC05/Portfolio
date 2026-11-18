@@ -1,0 +1,151 @@
+{
+  "at": "2026-11-16T13:57:21.442Z",
+  "attribution": "All observed JS on actual /studio: six initial route chunks plus four dynamically loaded scene/Three/loader chunks; includes shared runtime, deliberately no claimed scene-only splitting.",
+  "observedAcrossSessions": [
+    "1440x900-dpr1",
+    "390x844-dpr1",
+    "320x844-dpr1",
+    "320x568-dpr1",
+    "1440x900-dpr3",
+    "390x844-dpr3",
+    "320x844-dpr3",
+    "320x568-dpr3"
+  ],
+  "initialRouteJs": [
+    "static/chunks/webpack-e1ff4172c76c0361.js",
+    "static/chunks/4bd1b696-c023c6e3521b1417.js",
+    "static/chunks/255-73938ce8a8eac1ad.js",
+    "static/chunks/main-app-cc32d398de97c20e.js",
+    "static/chunks/619-ba102abea3e3d0e4.js",
+    "static/chunks/app/studio/page-154eaaedc7527911.js"
+  ],
+  "resources": [
+    {
+      "url": "http://127.0.0.1:4193/_next/static/css/d442c5091e55dc0c.css",
+      "initiator": "link",
+      "transferSize": 4298,
+      "encodedBodySize": 3998,
+      "decodedBodySize": 19519,
+      "localPath": ".next/static/css/d442c5091e55dc0c.css",
+      "sha256": "a11c4bb4a037b4ee11358f9ec0c1e044fba7ba968a3fa8d8678bd412c68d430e"
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/css/3b3b1d7e1b1dd5a8.css",
+      "initiator": "link",
+      "transferSize": 4780,
+      "encodedBodySize": 4480,
+      "decodedBodySize": 17183,
+      "localPath": ".next/static/css/3b3b1d7e1b1dd5a8.css",
+      "sha256": "6e946fadfc939adaa7401aa4d76ff75b5142b20c885d11e51b34e852d04ac45f"
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-e1ff4172c76c0361.js",
+      "initiator": "link",
+      "transferSize": 2191,
+      "encodedBodySize": 1891,
+      "decodedBodySize": 3644,
+      "localPath": ".next/static/chunks/webpack-e1ff4172c76c0361.js",
+      "sha256": "adf348126f3ee4e291303150cc3052b62d3ce76715ea8f19d38de7797045e6de"
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+      "initiator": "script",
+      "transferSize": 47007,
+      "encodedBodySize": 46707,
+      "decodedBodySize": 174133,
+      "localPath": ".next/static/chunks/255-73938ce8a8eac1ad.js",
+      "sha256": "c69a73d0d47c9a15d93bfe356fc9badd61161374f7e3339bfc01eabc461805f1"
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "initiator": "script",
+      "transferSize": 54658,
+      "encodedBodySize": 54358,
+      "decodedBodySize": 173019,
+      "localPath": ".next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2"
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+      "initiator": "script",
+      "transferSize": 857,
+      "encodedBodySize": 557,
+      "decodedBodySize": 557,
+      "localPath": ".next/static/chunks/main-app-cc32d398de97c20e.js",
+      "sha256": "5b585d62dfec8ab268afd271e673c1cade98439759e07a07e06573522ae5ab85"
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+      "initiator": "script",
+      "transferSize": 3689,
+      "encodedBodySize": 3389,
+      "decodedBodySize": 8537,
+      "localPath": ".next/static/chunks/619-ba102abea3e3d0e4.js",
+      "sha256": "9541ff3dd96091ca8bebc305fb72eca68e6015a177e1d3b4aa72859dc52fbdd7"
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-154eaaedc7527911.js",
+      "initiator": "script",
+      "transferSize": 9032,
+      "encodedBodySize": 8732,
+      "decodedBodySize": 25137,
+      "localPath": ".next/static/chunks/app/studio/page-154eaaedc7527911.js",
+      "sha256": "661a5c0f11e431f4080a1c3ef19d984fd08c3004b7a62fc433af0e714d93a978"
+    },
+    {
+      "url": "http://127.0.0.1:4193/favicon.ico",
+      "initiator": "other",
+      "transferSize": 429,
+      "encodedBodySize": 129,
+      "decodedBodySize": 129,
+      "localPath": "public/favicon.ico",
+      "sha256": "65f9c208d088eb7e9e1a8a10d7468e8a6afffd7328d4a82953a2abafcd5f732c"
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+      "initiator": "script",
+      "transferSize": 84650,
+      "encodedBodySize": 84350,
+      "decodedBodySize": 357041,
+      "localPath": ".next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+      "sha256": "5b21a321c897932368ea16f2c3cceec3c4d1ccc902e8c7e9c9b0aa49ea91a109"
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+      "initiator": "script",
+      "transferSize": 69627,
+      "encodedBodySize": 69327,
+      "decodedBodySize": 262501,
+      "localPath": ".next/static/chunks/bd904a5c.c5a6adda59322159.js",
+      "sha256": "703071aa252f2391bad878e7575d94f6f584d5ada4075fe3f2b02859e7fd0255"
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+      "initiator": "script",
+      "transferSize": 14433,
+      "encodedBodySize": 14133,
+      "decodedBodySize": 47753,
+      "localPath": ".next/static/chunks/894.727b167a66da5efa.js",
+      "sha256": "fe40ca2a082fc48c8880e86de0262a17c88ec3dad292c76892012b5790de50db"
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/703.9b57ff8b5aa079ef.js",
+      "initiator": "script",
+      "transferSize": 18273,
+      "encodedBodySize": 17973,
+      "decodedBodySize": 47208,
+      "localPath": ".next/static/chunks/703.9b57ff8b5aa079ef.js",
+      "sha256": "1509429698b251a71eb9bb88bf9833589bc9b482fd0a13d914cd1064e7723f3f"
+    },
+    {
+      "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+      "initiator": "fetch",
+      "transferSize": 392654,
+      "encodedBodySize": 392354,
+      "decodedBodySize": 585536,
+      "localPath": "public/studio/pilot-right-limit-v03.glb",
+      "sha256": "2b9a4182c3024485680c1e066c8a22ef0dc0f541acca4bd958486bced2c4063e"
+    }
+  ],
+  "missingObservedJsFromConfig": []
+}

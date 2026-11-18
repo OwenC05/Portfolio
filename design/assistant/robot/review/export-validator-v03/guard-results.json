@@ -1,0 +1,240 @@
+[
+  {
+    "name": "valid current document",
+    "expectedReject": false,
+    "rejected": false,
+    "passed": true,
+    "error": null
+  },
+  {
+    "name": "current present skin 0",
+    "expectedReject": true,
+    "rejected": true,
+    "passed": true,
+    "error": "AssertionError [ERR_ASSERTION]: Skin references are not allowed\n\n0 !== undefined\n"
+  },
+  {
+    "name": "current present skin null",
+    "expectedReject": true,
+    "rejected": true,
+    "passed": true,
+    "error": "AssertionError [ERR_ASSERTION]: Skin references are not allowed\n+ actual - expected\n\n+ null\n- undefined\n"
+  },
+  {
+    "name": "current present skin false",
+    "expectedReject": true,
+    "rejected": true,
+    "passed": true,
+    "error": "AssertionError [ERR_ASSERTION]: Skin references are not allowed\n+ actual - expected\n\n+ false\n- undefined\n"
+  },
+  {
+    "name": "current present skin \"\"",
+    "expectedReject": true,
+    "rejected": true,
+    "passed": true,
+    "error": "AssertionError [ERR_ASSERTION]: Skin references are not allowed\n\n'' !== undefined\n"
+  },
+  {
+    "name": "current present skin 1",
+    "expectedReject": true,
+    "rejected": true,
+    "passed": true,
+    "error": "AssertionError [ERR_ASSERTION]: Skin references are not allowed\n\n1 !== undefined\n"
+  },
+  {
+    "name": "current POSITION missing min",
+    "expectedReject": true,
+    "rejected": true,
+    "passed": true,
+    "error": "AssertionError [ERR_ASSERTION]: finite vector 3"
+  },
+  {
+    "name": "current POSITION missing max",
+    "expectedReject": true,
+    "rejected": true,
+    "passed": true,
+    "error": "AssertionError [ERR_ASSERTION]: finite vector 3"
+  },
+  {
+    "name": "current POSITION null min",
+    "expectedReject": true,
+    "rejected": true,
+    "passed": true,
+    "error": "AssertionError [ERR_ASSERTION]: finite vector 3"
+  },
+  {
+    "name": "current POSITION null max",
+    "expectedReject": true,
+    "rejected": true,
+    "passed": true,
+    "error": "AssertionError [ERR_ASSERTION]: finite vector 3"
+  },
+  {
+    "name": "current POSITION two components",
+    "expectedReject": true,
+    "rejected": true,
+    "passed": true,
+    "error": "AssertionError [ERR_ASSERTION]: finite vector 3"
+  },
+  {
+    "name": "current POSITION four components",
+    "expectedReject": true,
+    "rejected": true,
+    "passed": true,
+    "error": "AssertionError [ERR_ASSERTION]: finite vector 3"
+  },
+  {
+    "name": "current POSITION NaN component",
+    "expectedReject": true,
+    "rejected": true,
+    "passed": true,
+    "error": "AssertionError [ERR_ASSERTION]: finite vector 3"
+  },
+  {
+    "name": "current POSITION Infinity component",
+    "expectedReject": true,
+    "rejected": true,
+    "passed": true,
+    "error": "AssertionError [ERR_ASSERTION]: finite vector 3"
+  },
+  {
+    "name": "current POSITION inverted axis",
+    "expectedReject": true,
+    "rejected": true,
+    "passed": true,
+    "error": "AssertionError [ERR_ASSERTION]: Ordered POSITION bounds"
+  },
+  {
+    "name": "optional NORMAL bounds absent",
+    "expectedReject": false,
+    "rejected": false,
+    "passed": true,
+    "error": null
+  },
+  {
+    "name": "optional NORMAL exact min only",
+    "expectedReject": false,
+    "rejected": false,
+    "passed": true,
+    "error": null
+  },
+  {
+    "name": "optional NORMAL exact max only",
+    "expectedReject": false,
+    "rejected": false,
+    "passed": true,
+    "error": null
+  },
+  {
+    "name": "optional NORMAL exact both",
+    "expectedReject": false,
+    "rejected": false,
+    "passed": true,
+    "error": null
+  },
+  {
+    "name": "current optional min null",
+    "expectedReject": true,
+    "rejected": true,
+    "passed": true,
+    "error": "AssertionError [ERR_ASSERTION]: finite vector 3"
+  },
+  {
+    "name": "current optional min zero",
+    "expectedReject": true,
+    "rejected": true,
+    "passed": true,
+    "error": "AssertionError [ERR_ASSERTION]: finite vector 3"
+  },
+  {
+    "name": "current optional min false",
+    "expectedReject": true,
+    "rejected": true,
+    "passed": true,
+    "error": "AssertionError [ERR_ASSERTION]: finite vector 3"
+  },
+  {
+    "name": "current optional min empty string",
+    "expectedReject": true,
+    "rejected": true,
+    "passed": true,
+    "error": "AssertionError [ERR_ASSERTION]: finite vector 3"
+  },
+  {
+    "name": "current optional min short",
+    "expectedReject": true,
+    "rejected": true,
+    "passed": true,
+    "error": "AssertionError [ERR_ASSERTION]: finite vector 3"
+  },
+  {
+    "name": "current optional min nonfinite",
+    "expectedReject": true,
+    "rejected": true,
+    "passed": true,
+    "error": "AssertionError [ERR_ASSERTION]: finite vector 3"
+  },
+  {
+    "name": "current optional min wrong extrema",
+    "expectedReject": true,
+    "rejected": true,
+    "passed": true,
+    "error": "AssertionError [ERR_ASSERTION]: mismatch 10,10,10 / -0.9143139719963074,-1,-0.9143139719963074"
+  },
+  {
+    "name": "current optional max null",
+    "expectedReject": true,
+    "rejected": true,
+    "passed": true,
+    "error": "AssertionError [ERR_ASSERTION]: finite vector 3"
+  },
+  {
+    "name": "current optional max zero",
+    "expectedReject": true,
+    "rejected": true,
+    "passed": true,
+    "error": "AssertionError [ERR_ASSERTION]: finite vector 3"
+  },
+  {
+    "name": "current optional max false",
+    "expectedReject": true,
+    "rejected": true,
+    "passed": true,
+    "error": "AssertionError [ERR_ASSERTION]: finite vector 3"
+  },
+  {
+    "name": "current optional max empty string",
+    "expectedReject": true,
+    "rejected": true,
+    "passed": true,
+    "error": "AssertionError [ERR_ASSERTION]: finite vector 3"
+  },
+  {
+    "name": "current optional max short",
+    "expectedReject": true,
+    "rejected": true,
+    "passed": true,
+    "error": "AssertionError [ERR_ASSERTION]: finite vector 3"
+  },
+  {
+    "name": "current optional max nonfinite",
+    "expectedReject": true,
+    "rejected": true,
+    "passed": true,
+    "error": "AssertionError [ERR_ASSERTION]: finite vector 3"
+  },
+  {
+    "name": "current optional max wrong extrema",
+    "expectedReject": true,
+    "rejected": true,
+    "passed": true,
+    "error": "AssertionError [ERR_ASSERTION]: mismatch 10,10,10 / 0.9143139719963074,1,0.9143139719963074"
+  },
+  {
+    "name": "old optional null bound false-accept sensitivity",
+    "expectedReject": false,
+    "rejected": false,
+    "passed": true,
+    "error": null
+  }
+]

@@ -1,0 +1,38 @@
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {createReadStream,readFileSync,readdirSync,statSync,writeFileSync} from 'node:fs';
+import {spawnSync} from 'node:child_process';
+const dir='design/assistant/robot/integration/resize-wait-trace-v01';
+const read=path=>JSON.parse(readFileSync(path,'utf8').replace(/^\uFEFF/,''));
+const commands=[];
+for(const args of [['--check',`${dir}/trace.run.mjs`],['--check',`${dir}/analyze.mjs`],['--check',`${dir}/pin.mjs`],['--check',`${dir}/verify.mjs`],[`${dir}/analyze.mjs`],[`${dir}/pin.mjs`,'after']]){
+  const r=spawnSync(process.execPath,args,{encoding:'utf8',windowsHide:true,shell:false});
+  commands.push({executable:process.execPath,args,status:r.status,stderr:r.stderr});
+  if(args[0]===`${dir}/analyze.mjs`)writeFileSync(`${dir}/analysis-command.log`,r.stdout);
+  assert.equal(r.status,0,r.stderr);
+}
+const b=read(`${dir}/browser-result.json`),a=read(`${dir}/analysis.json`),p=read(`${dir}/presentation-spans.json`);
+assert.equal(b.failure,undefined);assert.equal(b.traceStarted,true);assert.equal(b.contextClosed,true);
+assert.deepEqual(b.inventoryBefore,[{index:0,pages:['about:blank']}]);assert.deepEqual(b.inventoryAfter,b.inventoryBefore);
+assert.equal(statSync(`${dir}/chromium-trace.json`).size,b.traceBytes);
+assert.equal(a.allVisibleFocused,true);assert.equal(a.maxPending,1);assert.equal(a.frames,193);assert.equal(a.late,8);
+assert.equal(p.length,8);assert.equal(p.filter(f=>f.requestInsideObserver).length,6);
+assert.ok(p.every(f=>f.presentOverlapPercent>88&&f.presentEndToCallbackMs<4));
+assert.equal(a.host.queryStartsInside,6);
+assert.equal(b.probe.trusted.length,161);assert.ok(b.probe.trusted.every(c=>c.trusted));
+assert.equal(b.actions.filter(x=>x.kind==='viewport-resize').length,16);
+const root=JSON.parse(read(`${dir}/root-page-restored.json`).result.result);
+assert.equal(root.url,'http://127.0.0.1:4193/studio');assert.deepEqual(root.viewport,[1440,900]);assert.ok(Math.abs(root.dpr-1)<1e-6);
+assert.equal(root.dialogOpen,false);assert.equal(root.canvas.assistantRunId,'');assert.equal(root.canvas.assistantCardCount,'0');assert.equal(root.probe,'undefined');assert.equal(root.fetchNative,true);
+const sampler=read(`${dir}/sampler-finished.json`);assert.equal(sampler.pid,58304);assert.equal(sampler.samples,46);
+const previewBefore=read(`${dir}/preview-before.json`),previewAfter=read(`${dir}/preview-after.json`);
+assert.equal(previewAfter.pid,previewBefore.pid);assert.equal(previewAfter.creationUtc,previewBefore.creationUtc);
+const helperStatus=read(`${dir}/sampler-process-after.json`);assert.equal(helperStatus.ownedSamplerStillRunning,false);
+const hash=async path=>{const h=createHash('sha256');for await(const b of createReadStream(path))h.update(b);return{path,bytes:statSync(path).size,sha256:h.digest('hex')};};
+const unusedHelper=await hash('C:/Users/Owenc/orca/Portfolio/.playwright-mcp/robot-resize-wait-trace-v01/trace.run.mjs');
+const raw=await hash(`${dir}/chromium-trace.json`);
+writeFileSync(`${dir}/commands.json`,JSON.stringify({at:new Date().toISOString(),commands,executedScenarios:1,executedTraces:1,failedFilenameAttempt:'Denied before browser code; filename-denial.json',offlineParserFailures:2,unusedPermittedArtifactHelper:unusedHelper},null,2));
+writeFileSync(`${dir}/verification.json`,JSON.stringify({at:new Date().toISOString(),buildId:b.buildId,sourcePins:83,unchangedInputs:171,rawTrace:raw,singleTrace:true,singleScenario:true,privateContextClosed:true,rootPageRestored:true,samplerEndedNaturally:true,previewIdentityUnchanged:true,allVisibleFocused:true,traceDiagnosticP95Passed:true,priorAcceptanceFailureStillOpen:true,noProductionPatchRecommended:true},null,2));
+const files=[];for(const file of readdirSync(dir).filter(f=>f!=='artifact-index.json').sort())files.push({...await hash(`${dir}/${file}`),path:file});
+writeFileSync(`${dir}/artifact-index.json`,JSON.stringify({at:new Date().toISOString(),files},null,2));
+console.log(JSON.stringify({checks:commands.length,unchangedInputs:171,sourcePins:83,traceBytes:raw.bytes,traceSha256:raw.sha256,frames:193,diagnosticP95:a.requestDelay.p95,priorFailureStillOpen:true,artifacts:files.length}));

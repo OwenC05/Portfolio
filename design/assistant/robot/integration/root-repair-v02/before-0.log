@@ -1,0 +1,64 @@
+✔ G4: one actual request owner supplies the identical current snapshot to HTML and scene (343.0845ms)
+✔ G4: ordinary close aborts and clears before commit, retains draft and rejects queued close after reopening (145.2643ms)
+✔ G4: assistant-to-project takeover clears once, retains the dialog and focuses only the destination (128.1337ms)
+✔ G4: project activation wins both orders in the same uncommitted batch (192.9164ms)
+✔ G4: project Back/reopen arbitration and Forward use the actual navigation helper (92.392ms)
+✔ G4: route links clear before native navigation while modifiers and new-tab links stay native (133.81ms)
+✔ G4: history navigation clears Ask and unlocks before the commit without Ask return (76.8199ms)
+✔ G4: failed scene leaves Ask and the single root owner available; successful scene stays mounted under modals (95.255ms)
+✔ G4: missing native dialog enhancement keeps SSR and routes character fallback to ask (107.6293ms)
+✔ G4: showModal failure clears and falls back for Ask; projects retain the SSR article destination (160.4817ms)
+✔ G4: setup-cleanup-setup creates one live owner and one listener set, then unmount aborts and unlocks (69.2867ms)
+✔ G4: native cancel and unexpected current close clear Ask while old close notifications cannot close an open project (105.421ms)
+✖ G4: project modality suppresses a previously qualified robot attention hint (71.2482ms)
+✖ G4: source navigation must not restore Ask through the native dialog close algorithm (87.9275ms)
+✔ G4: fresh project deep links close by replacement and project switches retain one owned history entry (128.9619ms)
+✔ G4: native focus-restoration model permits ordinary Ask return and keeps project takeover open (110.2043ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 14
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2424.4978
+
+✖ failing tests:
+
+test at tests\assistant\studio-experience.test.cjs:857:1
+✖ G4: project modality suppresses a previously qualified robot attention hint (71.2482ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  true !== false
+  
+      at TestContext.<anonymous> (C:\Users\Owenc\orca\Portfolio-assistant\tests\assistant\studio-experience.test.cjs:865:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1402:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+      at Test.postRun (node:internal/test_runner/test:1542:19)
+      at Test.run (node:internal/test_runner/test:1467:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests\assistant\studio-experience.test.cjs:868:1
+✖ G4: source navigation must not restore Ask through the native dialog close algorithm (87.9275ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  true !== false
+  
+      at TestContext.<anonymous> (C:\Users\Owenc\orca\Portfolio-assistant\tests\assistant\studio-experience.test.cjs:882:10)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

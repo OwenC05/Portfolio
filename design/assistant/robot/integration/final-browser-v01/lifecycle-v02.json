@@ -1,0 +1,1573 @@
+{
+  "contextIdentity": "task_bc61c9989863-lifecycle",
+  "checks": [
+    {
+      "name": "Reduced motion ON during finite attention settles and stops",
+      "passed": true,
+      "evidence": {
+        "start": 1521.6000000238419,
+        "beforeReduce": {
+          "at": 1562.699999988079,
+          "hidden": false,
+          "reduced": false,
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "true",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "3",
+            "studioDrawCalls": "94",
+            "studioTriangles": "94512",
+            "studioGeometries": "38",
+            "studioTextures": "12",
+            "assistantRunId": "",
+            "assistantRevision": "0",
+            "assistantCardCount": "0"
+          },
+          "chips": [],
+          "rows": [],
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 1424.800048828125,
+            "height": 900,
+            "top": 0,
+            "right": 1424.800048828125,
+            "bottom": 900,
+            "left": 0
+          },
+          "raf": 4
+        },
+        "media": [
+          {
+            "at": 1598.1000000238419,
+            "matches": true
+          }
+        ],
+        "settled": {
+          "before": {
+            "at": 1663.6000000238419,
+            "hidden": false,
+            "reduced": true,
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "2",
+              "studioRenderCount": "6",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "38",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "0",
+              "assistantCardCount": "0"
+            },
+            "chips": [],
+            "rows": [],
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1424.800048828125,
+              "height": 900,
+              "top": 0,
+              "right": 1424.800048828125,
+              "bottom": 900,
+              "left": 0
+            },
+            "raf": 7
+          },
+          "after": {
+            "at": 2319.600000023842,
+            "hidden": false,
+            "reduced": true,
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "2",
+              "studioRenderCount": "6",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "38",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "0",
+              "assistantCardCount": "0"
+            },
+            "chips": [],
+            "rows": [],
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1424.800048828125,
+              "height": 900,
+              "top": 0,
+              "right": 1424.800048828125,
+              "bottom": 900,
+              "left": 0
+            },
+            "raf": 7
+          }
+        }
+      }
+    },
+    {
+      "name": "One current source has matching chip/list run and key plus one tray card",
+      "passed": true,
+      "evidence": {
+        "at": 2808.199999988079,
+        "hidden": false,
+        "reduced": true,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "10",
+          "studioDrawCalls": "95",
+          "studioTriangles": "94588",
+          "studioGeometries": "39",
+          "studioTextures": "12",
+          "assistantRunId": "284ba08a-d50b-414e-bedb-c68bc352c593:1",
+          "assistantRevision": "6",
+          "assistantCardCount": "1"
+        },
+        "chips": [
+          {
+            "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+            "run": "284ba08a-d50b-414e-bedb-c68bc352c593:1",
+            "selected": "false"
+          }
+        ],
+        "rows": [
+          {
+            "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+            "run": "284ba08a-d50b-414e-bedb-c68bc352c593:1"
+          }
+        ],
+        "result": "sources",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "top": 0,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "raf": 14
+      }
+    },
+    {
+      "name": "Native chip activation selects and deselects the same current source",
+      "passed": true,
+      "evidence": {
+        "selected": {
+          "at": 3590.800000011921,
+          "hidden": false,
+          "reduced": true,
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "11",
+            "studioDrawCalls": "95",
+            "studioTriangles": "94588",
+            "studioGeometries": "39",
+            "studioTextures": "12",
+            "assistantRunId": "284ba08a-d50b-414e-bedb-c68bc352c593:1",
+            "assistantRevision": "7",
+            "assistantCardCount": "1"
+          },
+          "chips": [
+            {
+              "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+              "run": "284ba08a-d50b-414e-bedb-c68bc352c593:1",
+              "selected": "true"
+            }
+          ],
+          "rows": [
+            {
+              "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+              "run": "284ba08a-d50b-414e-bedb-c68bc352c593:1"
+            }
+          ],
+          "result": "sources",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 900,
+            "top": 0,
+            "right": 1440,
+            "bottom": 900,
+            "left": 0
+          },
+          "raf": 15
+        },
+        "deselected": {
+          "at": 4234.399999976158,
+          "hidden": false,
+          "reduced": true,
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "11",
+            "studioDrawCalls": "95",
+            "studioTriangles": "94588",
+            "studioGeometries": "39",
+            "studioTextures": "12",
+            "assistantRunId": "284ba08a-d50b-414e-bedb-c68bc352c593:1",
+            "assistantRevision": "7",
+            "assistantCardCount": "1"
+          },
+          "chips": [
+            {
+              "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+              "run": "284ba08a-d50b-414e-bedb-c68bc352c593:1",
+              "selected": "false"
+            }
+          ],
+          "rows": [
+            {
+              "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+              "run": "284ba08a-d50b-414e-bedb-c68bc352c593:1"
+            }
+          ],
+          "result": "sources",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 900,
+            "top": 0,
+            "right": 1440,
+            "bottom": 900,
+            "left": 0
+          },
+          "raf": 15
+        }
+      }
+    },
+    {
+      "name": "Reduced motion OFF preserves data and does not replay",
+      "passed": true,
+      "evidence": {
+        "beforeOff": {
+          "at": 4771.199999988079,
+          "hidden": false,
+          "reduced": true,
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "12",
+            "studioDrawCalls": "95",
+            "studioTriangles": "94588",
+            "studioGeometries": "39",
+            "studioTextures": "12",
+            "assistantRunId": "284ba08a-d50b-414e-bedb-c68bc352c593:1",
+            "assistantRevision": "8",
+            "assistantCardCount": "1"
+          },
+          "chips": [
+            {
+              "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+              "run": "284ba08a-d50b-414e-bedb-c68bc352c593:1",
+              "selected": "false"
+            }
+          ],
+          "rows": [
+            {
+              "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+              "run": "284ba08a-d50b-414e-bedb-c68bc352c593:1"
+            }
+          ],
+          "result": "sources",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 900,
+            "top": 0,
+            "right": 1440,
+            "bottom": 900,
+            "left": 0
+          },
+          "raf": 16
+        },
+        "off": {
+          "before": {
+            "at": 4774.800000011921,
+            "hidden": false,
+            "reduced": false,
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "2",
+              "studioRenderCount": "12",
+              "studioDrawCalls": "95",
+              "studioTriangles": "94588",
+              "studioGeometries": "39",
+              "studioTextures": "12",
+              "assistantRunId": "284ba08a-d50b-414e-bedb-c68bc352c593:1",
+              "assistantRevision": "8",
+              "assistantCardCount": "1"
+            },
+            "chips": [
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:1",
+                "selected": "false"
+              }
+            ],
+            "rows": [
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:1"
+              }
+            ],
+            "result": "sources",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 900,
+              "top": 0,
+              "right": 1440,
+              "bottom": 900,
+              "left": 0
+            },
+            "raf": 16
+          },
+          "after": {
+            "at": 5439.600000023842,
+            "hidden": false,
+            "reduced": false,
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "2",
+              "studioRenderCount": "12",
+              "studioDrawCalls": "95",
+              "studioTriangles": "94588",
+              "studioGeometries": "39",
+              "studioTextures": "12",
+              "assistantRunId": "284ba08a-d50b-414e-bedb-c68bc352c593:1",
+              "assistantRevision": "8",
+              "assistantCardCount": "1"
+            },
+            "chips": [
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:1",
+                "selected": "false"
+              }
+            ],
+            "rows": [
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:1"
+              }
+            ],
+            "result": "sources",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 900,
+              "top": 0,
+              "right": 1440,
+              "bottom": 900,
+              "left": 0
+            },
+            "raf": 16
+          }
+        }
+      }
+    },
+    {
+      "name": "Subsequent semantic event renders four sources then stops",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "at": 5895.899999976158,
+          "hidden": false,
+          "reduced": false,
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "20",
+            "studioDrawCalls": "98",
+            "studioTriangles": "94816",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "284ba08a-d50b-414e-bedb-c68bc352c593:2",
+            "assistantRevision": "14",
+            "assistantCardCount": "4"
+          },
+          "chips": [
+            {
+              "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+              "run": "284ba08a-d50b-414e-bedb-c68bc352c593:2",
+              "selected": "false"
+            },
+            {
+              "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-limits:0\"]",
+              "run": "284ba08a-d50b-414e-bedb-c68bc352c593:2",
+              "selected": "false"
+            },
+            {
+              "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-pilot:0\"]",
+              "run": "284ba08a-d50b-414e-bedb-c68bc352c593:2",
+              "selected": "false"
+            },
+            {
+              "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-tooling:0\"]",
+              "run": "284ba08a-d50b-414e-bedb-c68bc352c593:2",
+              "selected": "false"
+            }
+          ],
+          "rows": [
+            {
+              "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+              "run": "284ba08a-d50b-414e-bedb-c68bc352c593:2"
+            },
+            {
+              "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-limits:0\"]",
+              "run": "284ba08a-d50b-414e-bedb-c68bc352c593:2"
+            },
+            {
+              "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-pilot:0\"]",
+              "run": "284ba08a-d50b-414e-bedb-c68bc352c593:2"
+            },
+            {
+              "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-tooling:0\"]",
+              "run": "284ba08a-d50b-414e-bedb-c68bc352c593:2"
+            }
+          ],
+          "result": "sources",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 900,
+            "top": 0,
+            "right": 1440,
+            "bottom": 900,
+            "left": 0
+          },
+          "raf": 25
+        },
+        "after": {
+          "at": 6556.199999988079,
+          "hidden": false,
+          "reduced": false,
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "20",
+            "studioDrawCalls": "98",
+            "studioTriangles": "94816",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "284ba08a-d50b-414e-bedb-c68bc352c593:2",
+            "assistantRevision": "14",
+            "assistantCardCount": "4"
+          },
+          "chips": [
+            {
+              "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+              "run": "284ba08a-d50b-414e-bedb-c68bc352c593:2",
+              "selected": "false"
+            },
+            {
+              "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-limits:0\"]",
+              "run": "284ba08a-d50b-414e-bedb-c68bc352c593:2",
+              "selected": "false"
+            },
+            {
+              "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-pilot:0\"]",
+              "run": "284ba08a-d50b-414e-bedb-c68bc352c593:2",
+              "selected": "false"
+            },
+            {
+              "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-tooling:0\"]",
+              "run": "284ba08a-d50b-414e-bedb-c68bc352c593:2",
+              "selected": "false"
+            }
+          ],
+          "rows": [
+            {
+              "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+              "run": "284ba08a-d50b-414e-bedb-c68bc352c593:2"
+            },
+            {
+              "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-limits:0\"]",
+              "run": "284ba08a-d50b-414e-bedb-c68bc352c593:2"
+            },
+            {
+              "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-pilot:0\"]",
+              "run": "284ba08a-d50b-414e-bedb-c68bc352c593:2"
+            },
+            {
+              "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-tooling:0\"]",
+              "run": "284ba08a-d50b-414e-bedb-c68bc352c593:2"
+            }
+          ],
+          "result": "sources",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 900,
+            "top": 0,
+            "right": 1440,
+            "bottom": 900,
+            "left": 0
+          },
+          "raf": 25
+        }
+      }
+    },
+    {
+      "name": "offscreen: new result while suspended, one settled resume and no catch-up",
+      "passed": true,
+      "evidence": {
+        "hiddenBefore": {
+          "at": 7250.5,
+          "hidden": false,
+          "reduced": false,
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "24",
+            "studioDrawCalls": "94",
+            "studioTriangles": "94512",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "284ba08a-d50b-414e-bedb-c68bc352c593:3",
+            "assistantRevision": "16",
+            "assistantCardCount": "0"
+          },
+          "chips": [],
+          "rows": [],
+          "result": "pending",
+          "rect": {
+            "x": 0,
+            "y": 1800,
+            "width": 1440,
+            "height": 900,
+            "top": 1800,
+            "right": 1440,
+            "bottom": 2700,
+            "left": 0
+          },
+          "raf": 31
+        },
+        "hidden": {
+          "before": {
+            "at": 7265.600000023842,
+            "hidden": false,
+            "reduced": false,
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "2",
+              "studioRenderCount": "24",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "284ba08a-d50b-414e-bedb-c68bc352c593:3",
+              "assistantRevision": "16",
+              "assistantCardCount": "0"
+            },
+            "chips": [
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3",
+                "selected": "false"
+              },
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-limits:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3",
+                "selected": "false"
+              },
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-pilot:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3",
+                "selected": "false"
+              },
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-tooling:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3",
+                "selected": "false"
+              }
+            ],
+            "rows": [
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3"
+              },
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-limits:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3"
+              },
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-pilot:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3"
+              },
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-tooling:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3"
+              }
+            ],
+            "result": "sources",
+            "rect": {
+              "x": 0,
+              "y": 1800,
+              "width": 1440,
+              "height": 900,
+              "top": 1800,
+              "right": 1440,
+              "bottom": 2700,
+              "left": 0
+            },
+            "raf": 31
+          },
+          "after": {
+            "at": 7921.300000011921,
+            "hidden": false,
+            "reduced": false,
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "2",
+              "studioRenderCount": "24",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "284ba08a-d50b-414e-bedb-c68bc352c593:3",
+              "assistantRevision": "16",
+              "assistantCardCount": "0"
+            },
+            "chips": [
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3",
+                "selected": "false"
+              },
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-limits:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3",
+                "selected": "false"
+              },
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-pilot:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3",
+                "selected": "false"
+              },
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-tooling:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3",
+                "selected": "false"
+              }
+            ],
+            "rows": [
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3"
+              },
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-limits:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3"
+              },
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-pilot:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3"
+              },
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-tooling:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3"
+              }
+            ],
+            "result": "sources",
+            "rect": {
+              "x": 0,
+              "y": 1800,
+              "width": 1440,
+              "height": 900,
+              "top": 1800,
+              "right": 1440,
+              "bottom": 2700,
+              "left": 0
+            },
+            "raf": 31
+          }
+        },
+        "resume": {
+          "before": {
+            "at": 7960,
+            "hidden": false,
+            "reduced": false,
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "2",
+              "studioRenderCount": "25",
+              "studioDrawCalls": "98",
+              "studioTriangles": "94816",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "284ba08a-d50b-414e-bedb-c68bc352c593:3",
+              "assistantRevision": "20",
+              "assistantCardCount": "4"
+            },
+            "chips": [
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3",
+                "selected": "false"
+              },
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-limits:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3",
+                "selected": "false"
+              },
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-pilot:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3",
+                "selected": "false"
+              },
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-tooling:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3",
+                "selected": "false"
+              }
+            ],
+            "rows": [
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3"
+              },
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-limits:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3"
+              },
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-pilot:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3"
+              },
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-tooling:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3"
+              }
+            ],
+            "result": "sources",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 900,
+              "top": 0,
+              "right": 1440,
+              "bottom": 900,
+              "left": 0
+            },
+            "raf": 33
+          },
+          "after": {
+            "at": 8630.300000011921,
+            "hidden": false,
+            "reduced": false,
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "2",
+              "studioRenderCount": "25",
+              "studioDrawCalls": "98",
+              "studioTriangles": "94816",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "284ba08a-d50b-414e-bedb-c68bc352c593:3",
+              "assistantRevision": "20",
+              "assistantCardCount": "4"
+            },
+            "chips": [
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3",
+                "selected": "false"
+              },
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-limits:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3",
+                "selected": "false"
+              },
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-pilot:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3",
+                "selected": "false"
+              },
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-tooling:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3",
+                "selected": "false"
+              }
+            ],
+            "rows": [
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3"
+              },
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-limits:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3"
+              },
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-pilot:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3"
+              },
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-tooling:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:3"
+              }
+            ],
+            "result": "sources",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 900,
+              "top": 0,
+              "right": 1440,
+              "bottom": 900,
+              "left": 0
+            },
+            "raf": 33
+          }
+        }
+      }
+    },
+    {
+      "name": "zero-size: new result while suspended, one settled resume and no catch-up",
+      "passed": true,
+      "evidence": {
+        "hiddenBefore": {
+          "at": 8755.800000011921,
+          "hidden": false,
+          "reduced": false,
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "27",
+            "studioDrawCalls": "94",
+            "studioTriangles": "94512",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "284ba08a-d50b-414e-bedb-c68bc352c593:4",
+            "assistantRevision": "22",
+            "assistantCardCount": "0"
+          },
+          "chips": [],
+          "rows": [],
+          "result": "pending",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          },
+          "raf": 37
+        },
+        "hidden": {
+          "before": {
+            "at": 8764.5,
+            "hidden": false,
+            "reduced": false,
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "2",
+              "studioRenderCount": "27",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "284ba08a-d50b-414e-bedb-c68bc352c593:4",
+              "assistantRevision": "22",
+              "assistantCardCount": "0"
+            },
+            "chips": [
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:4",
+                "selected": "false"
+              }
+            ],
+            "rows": [
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:4"
+              }
+            ],
+            "result": "sources",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "raf": 37
+          },
+          "after": {
+            "at": 9426.5,
+            "hidden": false,
+            "reduced": false,
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "2",
+              "studioRenderCount": "27",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "284ba08a-d50b-414e-bedb-c68bc352c593:4",
+              "assistantRevision": "22",
+              "assistantCardCount": "0"
+            },
+            "chips": [
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:4",
+                "selected": "false"
+              }
+            ],
+            "rows": [
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:4"
+              }
+            ],
+            "result": "sources",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            },
+            "raf": 37
+          }
+        },
+        "resume": {
+          "before": {
+            "at": 9451,
+            "hidden": false,
+            "reduced": false,
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "2",
+              "studioRenderCount": "28",
+              "studioDrawCalls": "95",
+              "studioTriangles": "94588",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "284ba08a-d50b-414e-bedb-c68bc352c593:4",
+              "assistantRevision": "26",
+              "assistantCardCount": "1"
+            },
+            "chips": [
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:4",
+                "selected": "false"
+              }
+            ],
+            "rows": [
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:4"
+              }
+            ],
+            "result": "sources",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 900,
+              "top": 0,
+              "right": 1440,
+              "bottom": 900,
+              "left": 0
+            },
+            "raf": 39
+          },
+          "after": {
+            "at": 10114.199999988079,
+            "hidden": false,
+            "reduced": false,
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "2",
+              "studioRenderCount": "28",
+              "studioDrawCalls": "95",
+              "studioTriangles": "94588",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "284ba08a-d50b-414e-bedb-c68bc352c593:4",
+              "assistantRevision": "26",
+              "assistantCardCount": "1"
+            },
+            "chips": [
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:4",
+                "selected": "false"
+              }
+            ],
+            "rows": [
+              {
+                "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+                "run": "284ba08a-d50b-414e-bedb-c68bc352c593:4"
+              }
+            ],
+            "result": "sources",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 1440,
+              "height": 900,
+              "top": 0,
+              "right": 1440,
+              "bottom": 900,
+              "left": 0
+            },
+            "raf": 39
+          }
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "seed": {
+    "status": 200,
+    "lines": [
+      {
+        "type": "retrieval-start",
+        "question": "What did Owen do at LexisNexis?"
+      },
+      {
+        "type": "retrieval",
+        "hits": [
+          {
+            "sourceId": "lexisnexis",
+            "chunkId": "lexisnexis:lexisnexis-role:0",
+            "title": "LexisNexis Risk Solutions",
+            "heading": "Placement and continuing work",
+            "text": "Owen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.",
+            "href": "/work/lexisnexis#lexisnexis-role",
+            "score": 6
+          },
+          {
+            "sourceId": "lexisnexis",
+            "chunkId": "lexisnexis:lexisnexis-limits:0",
+            "title": "LexisNexis Risk Solutions",
+            "heading": "Evidence and disclosure",
+            "text": "These employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.",
+            "href": "/work/lexisnexis#lexisnexis-limits",
+            "score": 4
+          },
+          {
+            "sourceId": "lexisnexis",
+            "chunkId": "lexisnexis:lexisnexis-pilot:0",
+            "title": "LexisNexis Risk Solutions",
+            "heading": "From demonstration to internal pilot",
+            "text": "According to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.",
+            "href": "/work/lexisnexis#lexisnexis-pilot",
+            "score": 4
+          },
+          {
+            "sourceId": "lexisnexis",
+            "chunkId": "lexisnexis:lexisnexis-tooling:0",
+            "title": "LexisNexis Risk Solutions",
+            "heading": "ML tooling for the team",
+            "text": "Owen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence.",
+            "href": "/work/lexisnexis#lexisnexis-tooling",
+            "score": 4
+          }
+        ],
+        "durationMs": 1
+      },
+      {
+        "type": "answer",
+        "answer": {
+          "mode": "sources",
+          "text": "A generated answer is unavailable. These are matching published excerpts, not confirmation of any premise in your question. If they do not establish the answer, please contact Owen.",
+          "citations": [
+            {
+              "sourceId": "lexisnexis",
+              "chunkId": "lexisnexis:lexisnexis-role:0",
+              "title": "LexisNexis Risk Solutions",
+              "href": "/work/lexisnexis#lexisnexis-role",
+              "quote": "Owen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing."
+            },
+            {
+              "sourceId": "lexisnexis",
+              "chunkId": "lexisnexis:lexisnexis-limits:0",
+              "title": "LexisNexis Risk Solutions",
+              "href": "/work/lexisnexis#lexisnexis-limits",
+              "quote": "These employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system."
+            },
+            {
+              "sourceId": "lexisnexis",
+              "chunkId": "lexisnexis:lexisnexis-pilot:0",
+              "title": "LexisNexis Risk Solutions",
+              "href": "/work/lexisnexis#lexisnexis-pilot",
+              "quote": "According to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale."
+            },
+            {
+              "sourceId": "lexisnexis",
+              "chunkId": "lexisnexis:lexisnexis-tooling:0",
+              "title": "LexisNexis Risk Solutions",
+              "href": "/work/lexisnexis#lexisnexis-tooling",
+              "quote": "Owen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence."
+            }
+          ],
+          "fallbackReason": "disabled"
+        }
+      },
+      {
+        "type": "done",
+        "durationMs": 1
+      }
+    ]
+  },
+  "final": {
+    "at": 10117.300000011921,
+    "hidden": false,
+    "reduced": false,
+    "canvas": {
+      "engine": "three.js r187",
+      "studioInteractionEnabled": "false",
+      "studioYaw": "-4",
+      "studioPitch": "-6",
+      "studioEye": "-0.7,2.8,3.4",
+      "studioFov": "58",
+      "studioDpr": "2",
+      "studioRenderCount": "28",
+      "studioDrawCalls": "95",
+      "studioTriangles": "94588",
+      "studioGeometries": "40",
+      "studioTextures": "12",
+      "assistantRunId": "284ba08a-d50b-414e-bedb-c68bc352c593:4",
+      "assistantRevision": "26",
+      "assistantCardCount": "1"
+    },
+    "chips": [
+      {
+        "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+        "run": "284ba08a-d50b-414e-bedb-c68bc352c593:4",
+        "selected": "false"
+      }
+    ],
+    "rows": [
+      {
+        "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+        "run": "284ba08a-d50b-414e-bedb-c68bc352c593:4"
+      }
+    ],
+    "result": "sources",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 900,
+      "top": 0,
+      "right": 1440,
+      "bottom": 900,
+      "left": 0
+    },
+    "raf": 39
+  },
+  "trace": {
+    "raf": [
+      {
+        "t": 384.1,
+        "start": 400.89999997615814
+      },
+      {
+        "t": 550.7,
+        "start": 557.6000000238419,
+        "count": "1"
+      },
+      {
+        "t": 1000.7,
+        "start": 1001.1000000238419,
+        "count": "2"
+      },
+      {
+        "t": 1533.988,
+        "start": 1551.699999988079,
+        "count": "3"
+      },
+      {
+        "t": 1563.6,
+        "start": 1564.199999988079,
+        "count": "4"
+      },
+      {
+        "t": 1580.3,
+        "start": 1580.6000000238419,
+        "count": "5"
+      },
+      {
+        "t": 1596.9,
+        "start": 1599.800000011921,
+        "count": "6"
+      },
+      {
+        "t": 2330.3,
+        "start": 2458.199999988079,
+        "count": "7"
+      },
+      {
+        "t": 2463.628,
+        "start": 2474.800000011921,
+        "count": "8"
+      },
+      {
+        "t": 2746.95,
+        "start": 2757.100000023842,
+        "count": "9"
+      },
+      {
+        "t": 2746.95,
+        "start": 2762.399999976158,
+        "count": "9"
+      },
+      {
+        "t": 2763.3,
+        "start": 2786.199999988079,
+        "count": "9"
+      },
+      {
+        "t": 2763.3,
+        "start": 2786.199999988079,
+        "count": "10"
+      },
+      {
+        "t": 2780.1,
+        "start": 2793.899999976158,
+        "count": "10"
+      },
+      {
+        "t": 3563.4,
+        "start": 3572.699999988079,
+        "count": "11"
+      },
+      {
+        "t": 4246.532,
+        "start": 4256.699999988079,
+        "count": "12"
+      },
+      {
+        "t": 5507.1,
+        "start": 5507.600000023842,
+        "count": "13"
+      },
+      {
+        "t": 5523.7,
+        "start": 5529.100000023842,
+        "count": "14"
+      },
+      {
+        "t": 5523.7,
+        "start": 5531,
+        "count": "14"
+      },
+      {
+        "t": 5540.3,
+        "start": 5540.600000023842,
+        "count": "15"
+      },
+      {
+        "t": 5557,
+        "start": 5557.5,
+        "count": "16"
+      },
+      {
+        "t": 5606.9,
+        "start": 5622.800000011921,
+        "count": "17"
+      },
+      {
+        "t": 5623.7,
+        "start": 5626.100000023842,
+        "count": "18"
+      },
+      {
+        "t": 5740.8,
+        "start": 5741.899999976158,
+        "count": "19"
+      },
+      {
+        "t": 5857,
+        "start": 5860.199999988079,
+        "count": "20"
+      },
+      {
+        "t": 7094.4,
+        "start": 7111.199999988079,
+        "count": "21"
+      },
+      {
+        "t": 7110.8,
+        "start": 7119.199999988079,
+        "count": "22"
+      },
+      {
+        "t": 7127.7,
+        "start": 7128.899999976158,
+        "count": "23"
+      },
+      {
+        "t": 7144.2,
+        "start": 7145,
+        "count": "24"
+      },
+      {
+        "t": 7144.2,
+        "start": 7147.100000023842,
+        "count": "24"
+      },
+      {
+        "t": 7160.8,
+        "start": 7161.199999988079,
+        "count": "24"
+      },
+      {
+        "t": 7947.4,
+        "start": 7948.699999988079,
+        "count": "25"
+      },
+      {
+        "t": 7947.4,
+        "start": 7952.100000023842,
+        "count": "25"
+      },
+      {
+        "t": 8661.7,
+        "start": 8661.899999976158,
+        "count": "26"
+      },
+      {
+        "t": 8661.7,
+        "start": 8663.300000011921,
+        "count": "26"
+      },
+      {
+        "t": 8678.3,
+        "start": 8678.899999976158,
+        "count": "27"
+      },
+      {
+        "t": 8695.1,
+        "start": 8695.5,
+        "count": "27"
+      },
+      {
+        "t": 9444.9,
+        "start": 9445.199999988079,
+        "count": "28"
+      },
+      {
+        "t": 9444.9,
+        "start": 9447.800000011921,
+        "count": "28"
+      }
+    ],
+    "media": [
+      {
+        "at": 1598.1000000238419,
+        "matches": true
+      },
+      {
+        "at": 4781.5,
+        "matches": false
+      }
+    ],
+    "events": [
+      {
+        "type": "focusin",
+        "at": 1546.5,
+        "id": "",
+        "text": "Ask about Owen’s work"
+      },
+      {
+        "type": "focusin",
+        "at": 2451.600000023842,
+        "id": "",
+        "text": "Close"
+      },
+      {
+        "type": "focusin",
+        "at": 2455.5,
+        "id": "studio-ask-heading",
+        "text": "Ask about Owen’s work"
+      },
+      {
+        "type": "focusin",
+        "at": 2578.399999976158,
+        "id": "_r_0_-question",
+        "text": ""
+      },
+      {
+        "type": "focusin",
+        "at": 3547.100000023842,
+        "id": "_r_0_-chip-1",
+        "text": "1"
+      },
+      {
+        "type": "focusin",
+        "at": 3562.399999976158,
+        "id": "_r_0_-toggle-1",
+        "text": "Hide passage 1"
+      },
+      {
+        "type": "focusin",
+        "at": 4219.5,
+        "id": "_r_0_-chip-1",
+        "text": "1"
+      },
+      {
+        "type": "focusin",
+        "at": 5455.300000011921,
+        "id": "_r_0_-question",
+        "text": "  One   exact source  "
+      }
+    ],
+    "requests": [
+      {
+        "question": "One   exact source",
+        "at": 2698.100000023842
+      },
+      {
+        "question": "Four sources after reduced motion changes",
+        "at": 5496.100000023842
+      },
+      {
+        "question": "Latest offscreen result",
+        "at": 7106.100000023842
+      },
+      {
+        "question": "Latest zero-size result",
+        "at": 8655.300000011921
+      }
+    ]
+  },
+  "closed": true
+}

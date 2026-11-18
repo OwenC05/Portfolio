@@ -1,0 +1,303 @@
+{
+  "at": "2026-11-18T19:03:11.132Z",
+  "author": "Codex repair lane; independent verification pending root",
+  "records": [
+    {
+      "path": "components/studio/scene/controller.ts",
+      "before": {
+        "bytes": 24979,
+        "sha256": "88f24c7ac899c1639ec2596d3545f92dbe845473d901c6d805ca28b33ebb6ffd"
+      },
+      "after": {
+        "bytes": 25265,
+        "sha256": "dbc91da47931fbbd592278ef5e82fe9db8c40d02fc29806b050161585f822afc"
+      },
+      "changed": true
+    },
+    {
+      "path": "components/studio/scene/verify-controller.mjs",
+      "before": {
+        "bytes": 90856,
+        "sha256": "0fe3abe45e84747832b1e3a4c2e463acec1ddfeddab6020ab1392424348ed816"
+      },
+      "after": {
+        "bytes": 94270,
+        "sha256": "cc58de1b838a67a452481a9b9e750f578c95c570de8c04d4fe634db91a7283b0"
+      },
+      "changed": true
+    },
+    {
+      "path": "components/studio/scene/robot/load-robot.ts",
+      "before": {
+        "bytes": 9685,
+        "sha256": "33d2cd75b3e146a76a744023d25d2bc80158336c5f121a40ffc4cd6656829fca"
+      },
+      "after": {
+        "bytes": 9715,
+        "sha256": "f237471d54e2837fab90eab6767ae9a8a70ae15ff5e97daf82dd4a30c2eeb695"
+      },
+      "changed": true
+    },
+    {
+      "path": "components/studio/scene/robot/cards.ts",
+      "before": {
+        "bytes": 2138,
+        "sha256": "6c37eb87147aaf4d290dce4e5bbefe46c361c30b86c55fe4f4a7080ee9b45f58"
+      },
+      "after": {
+        "bytes": 2292,
+        "sha256": "4a27a76b1327a55c5a4df80124ddb0b8676eec3ae51c1d8e22e49943acd8faa2"
+      },
+      "changed": true
+    },
+    {
+      "path": "components/studio/scene/robot/verify-robot.mjs",
+      "before": {
+        "bytes": 18662,
+        "sha256": "391ead023fda086398cb7bde8a54053030d9a5258f6d8af9f7ea754c1d98930f"
+      },
+      "after": {
+        "bytes": 18662,
+        "sha256": "391ead023fda086398cb7bde8a54053030d9a5258f6d8af9f7ea754c1d98930f"
+      },
+      "changed": false
+    },
+    {
+      "path": "components/studio/StudioExperience.tsx",
+      "before": {
+        "bytes": 19149,
+        "sha256": "1c1af8cc3bd9a77a108d9ff21cd9cad09056c0c31755db61db887bf6b97923ca"
+      },
+      "after": {
+        "bytes": 19149,
+        "sha256": "1c1af8cc3bd9a77a108d9ff21cd9cad09056c0c31755db61db887bf6b97923ca"
+      },
+      "changed": false
+    },
+    {
+      "path": "tests/assistant/studio-experience.test.cjs",
+      "before": {
+        "bytes": 30932,
+        "sha256": "4678443279847c541c63a163461b106a58cf524f73c5f71561f1ccda79c70812"
+      },
+      "after": {
+        "bytes": 30932,
+        "sha256": "4678443279847c541c63a163461b106a58cf524f73c5f71561f1ccda79c70812"
+      },
+      "changed": false
+    },
+    {
+      "path": "components/studio/StudioScene.tsx",
+      "before": {
+        "bytes": 1323,
+        "sha256": "bed95661809ae444829c0daaf30222a84c8c16e6bef721b417f342a5ef4a31b1"
+      },
+      "after": {
+        "bytes": 1323,
+        "sha256": "bed95661809ae444829c0daaf30222a84c8c16e6bef721b417f342a5ef4a31b1"
+      },
+      "changed": false
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-implementation/source-pins.json",
+      "before": {
+        "bytes": 7710,
+        "sha256": "1e28ce86ee9f1a72b05cdfd8d9598f5c3daea16227d817ec33e0c4ea5dfce28d"
+      },
+      "after": {
+        "bytes": 7710,
+        "sha256": "1e28ce86ee9f1a72b05cdfd8d9598f5c3daea16227d817ec33e0c4ea5dfce28d"
+      },
+      "changed": false
+    },
+    {
+      "path": "public/studio/assistant-apprentice-v03.glb",
+      "before": {
+        "bytes": 673144,
+        "sha256": "65f1dea3b1d35a748bdfc2089dea0feed1d054cc8b0eb957645ea2d669578a12"
+      },
+      "after": {
+        "bytes": 673144,
+        "sha256": "65f1dea3b1d35a748bdfc2089dea0feed1d054cc8b0eb957645ea2d669578a12"
+      },
+      "changed": false
+    },
+    {
+      "path": "design/assistant/robot/review/scene-runtime-g2/checks.json",
+      "before": {
+        "bytes": 4995,
+        "sha256": "ab1221821f801f7aa293e4d966b4ad5edc51e97e00274119dee0cfa806148941"
+      },
+      "after": {
+        "bytes": 4995,
+        "sha256": "ab1221821f801f7aa293e4d966b4ad5edc51e97e00274119dee0cfa806148941"
+      },
+      "changed": false
+    },
+    {
+      "path": "design/assistant/robot/review/scene-runtime-g2/independent-probes.txt",
+      "before": {
+        "bytes": 4159,
+        "sha256": "0f26561c379d1f4acb5d2d47f5e6eb56823b4863d1cd90f84aafa2035655c698"
+      },
+      "after": {
+        "bytes": 4159,
+        "sha256": "0f26561c379d1f4acb5d2d47f5e6eb56823b4863d1cd90f84aafa2035655c698"
+      },
+      "changed": false
+    },
+    {
+      "path": "design/assistant/robot/review/scene-runtime-g2/payload-evidence.json",
+      "before": {
+        "bytes": 5730,
+        "sha256": "389c8e1906f4dc8db18841a13b35a4046a89a13f06964dd0a9a066cbdd52ddb8"
+      },
+      "after": {
+        "bytes": 5730,
+        "sha256": "389c8e1906f4dc8db18841a13b35a4046a89a13f06964dd0a9a066cbdd52ddb8"
+      },
+      "changed": false
+    },
+    {
+      "path": "design/assistant/robot/review/scene-runtime-g2/payload-evidence.mjs",
+      "before": {
+        "bytes": 5386,
+        "sha256": "7f67f99e142df1e376e651f755f641d6142c20d95242b5515802556bee1aa741"
+      },
+      "after": {
+        "bytes": 5386,
+        "sha256": "7f67f99e142df1e376e651f755f641d6142c20d95242b5515802556bee1aa741"
+      },
+      "changed": false
+    },
+    {
+      "path": "design/assistant/robot/review/scene-runtime-g2/probe.test.mjs",
+      "before": {
+        "bytes": 14588,
+        "sha256": "9ed2de98db6d4330fc09e57124c8b1e87efe2fb862aebcdb0a389a32a7394529"
+      },
+      "after": {
+        "bytes": 14588,
+        "sha256": "9ed2de98db6d4330fc09e57124c8b1e87efe2fb862aebcdb0a389a32a7394529"
+      },
+      "changed": false
+    },
+    {
+      "path": "design/assistant/robot/review/scene-runtime-g2/profile-check.txt",
+      "before": {
+        "bytes": 104,
+        "sha256": "43e9a045bc6fb4355f4bb2090da4b5e69037d38d62acbbd25f97ad66dea35591"
+      },
+      "after": {
+        "bytes": 104,
+        "sha256": "43e9a045bc6fb4355f4bb2090da4b5e69037d38d62acbbd25f97ad66dea35591"
+      },
+      "changed": false
+    },
+    {
+      "path": "design/assistant/robot/review/scene-runtime-g2/review-probe-lint.txt",
+      "before": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "after": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "changed": false
+    },
+    {
+      "path": "design/assistant/robot/review/scene-runtime-g2/review.md",
+      "before": {
+        "bytes": 15424,
+        "sha256": "22074e7c6abdb0011038c004335a6539744161bb32ef70370be8230ddedc233c"
+      },
+      "after": {
+        "bytes": 15424,
+        "sha256": "22074e7c6abdb0011038c004335a6539744161bb32ef70370be8230ddedc233c"
+      },
+      "changed": false
+    },
+    {
+      "path": "design/assistant/robot/review/scene-runtime-g2/run-checks.mjs",
+      "before": {
+        "bytes": 5323,
+        "sha256": "eb19f4a3d3ac9cf3a48cf169e121122666eb9d08405d3bf6e8a0bc31251ea3ad"
+      },
+      "after": {
+        "bytes": 5323,
+        "sha256": "eb19f4a3d3ac9cf3a48cf169e121122666eb9d08405d3bf6e8a0bc31251ea3ad"
+      },
+      "changed": false
+    },
+    {
+      "path": "design/assistant/robot/review/scene-runtime-g2/scoped-lint.txt",
+      "before": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "after": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "changed": false
+    },
+    {
+      "path": "design/assistant/robot/review/scene-runtime-g2/scoped-types.txt",
+      "before": {
+        "bytes": 76,
+        "sha256": "2d58338b9565fea29ab1520ea7703440c9fbf4f113cfb10eb791076522d81864"
+      },
+      "after": {
+        "bytes": 76,
+        "sha256": "2d58338b9565fea29ab1520ea7703440c9fbf4f113cfb10eb791076522d81864"
+      },
+      "changed": false
+    },
+    {
+      "path": "design/assistant/robot/review/scene-runtime-g2/source-after.json",
+      "before": {
+        "bytes": 13431,
+        "sha256": "71e6c03d58bcc86fe4c91d43c231d9295840f1f3b8cec9ffe440fbe95d43543a"
+      },
+      "after": {
+        "bytes": 13431,
+        "sha256": "71e6c03d58bcc86fe4c91d43c231d9295840f1f3b8cec9ffe440fbe95d43543a"
+      },
+      "changed": false
+    },
+    {
+      "path": "design/assistant/robot/review/scene-runtime-g2/source-before.json",
+      "before": {
+        "bytes": 13431,
+        "sha256": "24ea4b5986b41c677710c67a2c9380de2d3dd830fcaf726c3597ba88a181095a"
+      },
+      "after": {
+        "bytes": 13431,
+        "sha256": "24ea4b5986b41c677710c67a2c9380de2d3dd830fcaf726c3597ba88a181095a"
+      },
+      "changed": false
+    },
+    {
+      "path": "design/assistant/robot/review/scene-runtime-g2/targeted-existing.txt",
+      "before": {
+        "bytes": 2861,
+        "sha256": "ffcd8e0ae90fdfd735ff7ac84b2fd47c60ef9d6dccfe42fab120b8cf3ec49248"
+      },
+      "after": {
+        "bytes": 2861,
+        "sha256": "ffcd8e0ae90fdfd735ff7ac84b2fd47c60ef9d6dccfe42fab120b8cf3ec49248"
+      },
+      "changed": false
+    },
+    {
+      "path": "components/studio/scene/robot/verify-cleanup.mjs",
+      "before": null,
+      "after": {
+        "bytes": 3231,
+        "sha256": "fe0c84687ca89ca4894321456bcafd3f0ab9f9e9ee4f89b5dd822d2e2a6ffd40"
+      },
+      "changed": true
+    }
+  ]
+}

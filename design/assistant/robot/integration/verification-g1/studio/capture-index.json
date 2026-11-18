@@ -1,0 +1,5373 @@
+{
+  "origin": "http://127.0.0.1:4193",
+  "capturedAt": "2026-11-16T13:55:49.010Z",
+  "captures": [
+    {
+      "filename": "1440x900-dpr1-home.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/1440x900-dpr1-home.png",
+      "pose": "home",
+      "capturedAt": "2026-11-16T13:55:24.321Z",
+      "viewport": [
+        1440,
+        900
+      ],
+      "devicePixelRatio": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 1440,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-4",
+        "studioPitch": "-6",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "58",
+        "studioDpr": "1",
+        "studioRenderCount": "1",
+        "studioDrawCalls": "125",
+        "studioTriangles": "98876",
+        "studioGeometries": "17",
+        "studioTextures": "12"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "buffer": [
+        1440,
+        900
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "false",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "1440x900-dpr1-left-up.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/1440x900-dpr1-left-up.png",
+      "pose": "left-up",
+      "capturedAt": "2026-11-16T13:55:25.052Z",
+      "viewport": [
+        1440,
+        900
+      ],
+      "devicePixelRatio": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 1440,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-38",
+        "studioPitch": "12",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "58",
+        "studioDpr": "1",
+        "studioRenderCount": "15",
+        "studioDrawCalls": "61",
+        "studioTriangles": "43834",
+        "studioGeometries": "17",
+        "studioTextures": "12"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "buffer": [
+        1440,
+        900
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "false",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "1440x900-dpr1-left-down.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/1440x900-dpr1-left-down.png",
+      "pose": "left-down",
+      "capturedAt": "2026-11-16T13:55:25.423Z",
+      "viewport": [
+        1440,
+        900
+      ],
+      "devicePixelRatio": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 1440,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-38",
+        "studioPitch": "-16",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "58",
+        "studioDpr": "1",
+        "studioRenderCount": "19",
+        "studioDrawCalls": "63",
+        "studioTriangles": "44976",
+        "studioGeometries": "17",
+        "studioTextures": "12"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "buffer": [
+        1440,
+        900
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "false",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "1440x900-dpr1-right-down.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/1440x900-dpr1-right-down.png",
+      "pose": "right-down",
+      "capturedAt": "2026-11-16T13:55:26.467Z",
+      "viewport": [
+        1440,
+        900
+      ],
+      "devicePixelRatio": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 1440,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "58",
+        "studioPitch": "-16",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "58",
+        "studioDpr": "1",
+        "studioRenderCount": "29",
+        "studioDrawCalls": "70",
+        "studioTriangles": "60172",
+        "studioGeometries": "20",
+        "studioTextures": "16"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "buffer": [
+        1440,
+        900
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "false",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "1440x900-dpr1-right-up.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/1440x900-dpr1-right-up.png",
+      "pose": "right-up",
+      "capturedAt": "2026-11-16T13:55:26.898Z",
+      "viewport": [
+        1440,
+        900
+      ],
+      "devicePixelRatio": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 1440,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "58",
+        "studioPitch": "12",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "58",
+        "studioDpr": "1",
+        "studioRenderCount": "33",
+        "studioDrawCalls": "60",
+        "studioTriangles": "51018",
+        "studioGeometries": "20",
+        "studioTextures": "16"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "buffer": [
+        1440,
+        900
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "false",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "1440x900-dpr1-projects-open.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/1440x900-dpr1-projects-open.png",
+      "pose": "projects-open",
+      "capturedAt": "2026-11-16T13:55:27.200Z",
+      "viewport": [
+        1440,
+        900
+      ],
+      "devicePixelRatio": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 1440,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-4",
+        "studioPitch": "-6",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "58",
+        "studioDpr": "1",
+        "studioRenderCount": "34",
+        "studioDrawCalls": "73",
+        "studioTriangles": "56836",
+        "studioGeometries": "20",
+        "studioTextures": "16"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "buffer": [
+        1440,
+        900
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "false",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "1440x900-dpr1-project-dialog.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/1440x900-dpr1-project-dialog.png",
+      "pose": "project-dialog",
+      "capturedAt": "2026-11-16T13:55:27.445Z",
+      "viewport": [
+        1440,
+        900
+      ],
+      "devicePixelRatio": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 1440,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "false",
+        "studioYaw": "-4",
+        "studioPitch": "-6",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "58",
+        "studioDpr": "1",
+        "studioRenderCount": "35",
+        "studioDrawCalls": "73",
+        "studioTriangles": "56836",
+        "studioGeometries": "20",
+        "studioTextures": "16"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "buffer": [
+        1440,
+        900
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "true",
+      "dialogOpen": true,
+      "focusedId": "panel-project-dissertation-heading",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "390x844-dpr1-home.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/390x844-dpr1-home.png",
+      "pose": "home",
+      "capturedAt": "2026-11-16T13:55:29.865Z",
+      "viewport": [
+        390,
+        844
+      ],
+      "devicePixelRatio": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 390,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-13",
+        "studioPitch": "-8",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1",
+        "studioRenderCount": "1",
+        "studioDrawCalls": "106",
+        "studioTriangles": "83340",
+        "studioGeometries": "17",
+        "studioTextures": "12"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "buffer": [
+        390,
+        844
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "false",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "390x844-dpr1-left-up.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/390x844-dpr1-left-up.png",
+      "pose": "left-up",
+      "capturedAt": "2026-11-16T13:55:30.533Z",
+      "viewport": [
+        390,
+        844
+      ],
+      "devicePixelRatio": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 390,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-38",
+        "studioPitch": "12",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1",
+        "studioRenderCount": "15",
+        "studioDrawCalls": "54",
+        "studioTriangles": "43374",
+        "studioGeometries": "17",
+        "studioTextures": "12"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "buffer": [
+        390,
+        844
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "false",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "390x844-dpr1-left-down.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/390x844-dpr1-left-down.png",
+      "pose": "left-down",
+      "capturedAt": "2026-11-16T13:55:30.828Z",
+      "viewport": [
+        390,
+        844
+      ],
+      "devicePixelRatio": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 390,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-38",
+        "studioPitch": "-16",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1",
+        "studioRenderCount": "19",
+        "studioDrawCalls": "55",
+        "studioTriangles": "43386",
+        "studioGeometries": "17",
+        "studioTextures": "12"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "buffer": [
+        390,
+        844
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "false",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "390x844-dpr1-right-down.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/390x844-dpr1-right-down.png",
+      "pose": "right-down",
+      "capturedAt": "2026-11-16T13:55:31.330Z",
+      "viewport": [
+        390,
+        844
+      ],
+      "devicePixelRatio": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 390,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "58",
+        "studioPitch": "-16",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1",
+        "studioRenderCount": "29",
+        "studioDrawCalls": "51",
+        "studioTriangles": "49926",
+        "studioGeometries": "20",
+        "studioTextures": "16"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "buffer": [
+        390,
+        844
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "false",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "390x844-dpr1-right-up.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/390x844-dpr1-right-up.png",
+      "pose": "right-up",
+      "capturedAt": "2026-11-16T13:55:31.604Z",
+      "viewport": [
+        390,
+        844
+      ],
+      "devicePixelRatio": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 390,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "58",
+        "studioPitch": "12",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1",
+        "studioRenderCount": "33",
+        "studioDrawCalls": "47",
+        "studioTriangles": "48574",
+        "studioGeometries": "20",
+        "studioTextures": "16"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "buffer": [
+        390,
+        844
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "false",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "390x844-dpr1-projects-open.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/390x844-dpr1-projects-open.png",
+      "pose": "projects-open",
+      "capturedAt": "2026-11-16T13:55:31.789Z",
+      "viewport": [
+        390,
+        844
+      ],
+      "devicePixelRatio": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 390,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-13",
+        "studioPitch": "-8",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1",
+        "studioRenderCount": "34",
+        "studioDrawCalls": "54",
+        "studioTriangles": "41300",
+        "studioGeometries": "20",
+        "studioTextures": "16"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "buffer": [
+        390,
+        844
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "true",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "390x844-dpr1-project-dialog.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/390x844-dpr1-project-dialog.png",
+      "pose": "project-dialog",
+      "capturedAt": "2026-11-16T13:55:31.967Z",
+      "viewport": [
+        390,
+        844
+      ],
+      "devicePixelRatio": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 390,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "false",
+        "studioYaw": "-13",
+        "studioPitch": "-8",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1",
+        "studioRenderCount": "35",
+        "studioDrawCalls": "54",
+        "studioTriangles": "41300",
+        "studioGeometries": "20",
+        "studioTextures": "16"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "buffer": [
+        390,
+        844
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "true",
+      "dialogOpen": true,
+      "focusedId": "panel-project-dissertation-heading",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "320x844-dpr1-home.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/320x844-dpr1-home.png",
+      "pose": "home",
+      "capturedAt": "2026-11-16T13:55:33.347Z",
+      "viewport": [
+        320,
+        844
+      ],
+      "devicePixelRatio": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 320,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-13",
+        "studioPitch": "-8",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1",
+        "studioRenderCount": "1",
+        "studioDrawCalls": "104",
+        "studioTriangles": "83220",
+        "studioGeometries": "16",
+        "studioTextures": "12"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 844
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 844
+      },
+      "buffer": [
+        320,
+        844
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "false",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "320x844-dpr1-left-up.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/320x844-dpr1-left-up.png",
+      "pose": "left-up",
+      "capturedAt": "2026-11-16T13:55:34.015Z",
+      "viewport": [
+        320,
+        844
+      ],
+      "devicePixelRatio": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 320,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-38",
+        "studioPitch": "12",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1",
+        "studioRenderCount": "15",
+        "studioDrawCalls": "54",
+        "studioTriangles": "43374",
+        "studioGeometries": "16",
+        "studioTextures": "12"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 844
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 844
+      },
+      "buffer": [
+        320,
+        844
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "false",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "320x844-dpr1-left-down.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/320x844-dpr1-left-down.png",
+      "pose": "left-down",
+      "capturedAt": "2026-11-16T13:55:34.308Z",
+      "viewport": [
+        320,
+        844
+      ],
+      "devicePixelRatio": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 320,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-38",
+        "studioPitch": "-16",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1",
+        "studioRenderCount": "19",
+        "studioDrawCalls": "54",
+        "studioTriangles": "43384",
+        "studioGeometries": "16",
+        "studioTextures": "12"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 844
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 844
+      },
+      "buffer": [
+        320,
+        844
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "false",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "320x844-dpr1-right-down.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/320x844-dpr1-right-down.png",
+      "pose": "right-down",
+      "capturedAt": "2026-11-16T13:55:34.799Z",
+      "viewport": [
+        320,
+        844
+      ],
+      "devicePixelRatio": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 320,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "58",
+        "studioPitch": "-16",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1",
+        "studioRenderCount": "29",
+        "studioDrawCalls": "48",
+        "studioTriangles": "45770",
+        "studioGeometries": "20",
+        "studioTextures": "16"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 844
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 844
+      },
+      "buffer": [
+        320,
+        844
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "false",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "320x844-dpr1-right-up.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/320x844-dpr1-right-up.png",
+      "pose": "right-up",
+      "capturedAt": "2026-11-16T13:55:35.073Z",
+      "viewport": [
+        320,
+        844
+      ],
+      "devicePixelRatio": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 320,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "58",
+        "studioPitch": "12",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1",
+        "studioRenderCount": "33",
+        "studioDrawCalls": "43",
+        "studioTriangles": "41690",
+        "studioGeometries": "20",
+        "studioTextures": "16"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 844
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 844
+      },
+      "buffer": [
+        320,
+        844
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "false",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "320x844-dpr1-projects-open.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/320x844-dpr1-projects-open.png",
+      "pose": "projects-open",
+      "capturedAt": "2026-11-16T13:55:35.265Z",
+      "viewport": [
+        320,
+        844
+      ],
+      "devicePixelRatio": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 320,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-13",
+        "studioPitch": "-8",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1",
+        "studioRenderCount": "34",
+        "studioDrawCalls": "52",
+        "studioTriangles": "41180",
+        "studioGeometries": "20",
+        "studioTextures": "16"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 844
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 844
+      },
+      "buffer": [
+        320,
+        844
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "true",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "320x844-dpr1-project-dialog.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/320x844-dpr1-project-dialog.png",
+      "pose": "project-dialog",
+      "capturedAt": "2026-11-16T13:55:35.434Z",
+      "viewport": [
+        320,
+        844
+      ],
+      "devicePixelRatio": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 320,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "false",
+        "studioYaw": "-13",
+        "studioPitch": "-8",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1",
+        "studioRenderCount": "35",
+        "studioDrawCalls": "52",
+        "studioTriangles": "41180",
+        "studioGeometries": "20",
+        "studioTextures": "16"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 844
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 844
+      },
+      "buffer": [
+        320,
+        844
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "true",
+      "dialogOpen": true,
+      "focusedId": "panel-project-dissertation-heading",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "320x568-dpr1-home.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/320x568-dpr1-home.png",
+      "pose": "home",
+      "capturedAt": "2026-11-16T13:55:36.869Z",
+      "viewport": [
+        320,
+        568
+      ],
+      "devicePixelRatio": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 320,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-13",
+        "studioPitch": "-8",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1",
+        "studioRenderCount": "1",
+        "studioDrawCalls": "108",
+        "studioTriangles": "83460",
+        "studioGeometries": "17",
+        "studioTextures": "12"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 568
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 568
+      },
+      "buffer": [
+        320,
+        568
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "false",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "320x568-dpr1-left-up.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/320x568-dpr1-left-up.png",
+      "pose": "left-up",
+      "capturedAt": "2026-11-16T13:55:37.527Z",
+      "viewport": [
+        320,
+        568
+      ],
+      "devicePixelRatio": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 320,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-38",
+        "studioPitch": "12",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1",
+        "studioRenderCount": "15",
+        "studioDrawCalls": "56",
+        "studioTriangles": "43410",
+        "studioGeometries": "17",
+        "studioTextures": "12"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 568
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 568
+      },
+      "buffer": [
+        320,
+        568
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "false",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "320x568-dpr1-left-down.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/320x568-dpr1-left-down.png",
+      "pose": "left-down",
+      "capturedAt": "2026-11-16T13:55:37.790Z",
+      "viewport": [
+        320,
+        568
+      ],
+      "devicePixelRatio": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 320,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-38",
+        "studioPitch": "-16",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1",
+        "studioRenderCount": "19",
+        "studioDrawCalls": "57",
+        "studioTriangles": "43422",
+        "studioGeometries": "17",
+        "studioTextures": "12"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 568
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 568
+      },
+      "buffer": [
+        320,
+        568
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "false",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "320x568-dpr1-right-down.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/320x568-dpr1-right-down.png",
+      "pose": "right-down",
+      "capturedAt": "2026-11-16T13:55:38.274Z",
+      "viewport": [
+        320,
+        568
+      ],
+      "devicePixelRatio": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 320,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "58",
+        "studioPitch": "-16",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1",
+        "studioRenderCount": "29",
+        "studioDrawCalls": "52",
+        "studioTriangles": "49950",
+        "studioGeometries": "20",
+        "studioTextures": "16"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 568
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 568
+      },
+      "buffer": [
+        320,
+        568
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "false",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "320x568-dpr1-right-up.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/320x568-dpr1-right-up.png",
+      "pose": "right-up",
+      "capturedAt": "2026-11-16T13:55:38.520Z",
+      "viewport": [
+        320,
+        568
+      ],
+      "devicePixelRatio": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 320,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "58",
+        "studioPitch": "12",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1",
+        "studioRenderCount": "33",
+        "studioDrawCalls": "49",
+        "studioTriangles": "48882",
+        "studioGeometries": "20",
+        "studioTextures": "16"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 568
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 568
+      },
+      "buffer": [
+        320,
+        568
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "false",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "320x568-dpr1-projects-open.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/320x568-dpr1-projects-open.png",
+      "pose": "projects-open",
+      "capturedAt": "2026-11-16T13:55:38.724Z",
+      "viewport": [
+        320,
+        568
+      ],
+      "devicePixelRatio": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 320,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-13",
+        "studioPitch": "-8",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1",
+        "studioRenderCount": "34",
+        "studioDrawCalls": "56",
+        "studioTriangles": "41420",
+        "studioGeometries": "20",
+        "studioTextures": "16"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 568
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 568
+      },
+      "buffer": [
+        320,
+        568
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "true",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "320x568-dpr1-project-dialog.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/320x568-dpr1-project-dialog.png",
+      "pose": "project-dialog",
+      "capturedAt": "2026-11-16T13:55:38.873Z",
+      "viewport": [
+        320,
+        568
+      ],
+      "devicePixelRatio": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 320,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "false",
+        "studioYaw": "-13",
+        "studioPitch": "-8",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1",
+        "studioRenderCount": "35",
+        "studioDrawCalls": "56",
+        "studioTriangles": "41420",
+        "studioGeometries": "20",
+        "studioTextures": "16"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 568
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 568
+      },
+      "buffer": [
+        320,
+        568
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "true",
+      "dialogOpen": true,
+      "focusedId": "panel-project-dissertation-heading",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "1440x900-dpr3-home.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/1440x900-dpr3-home.png",
+      "pose": "home",
+      "capturedAt": "2026-11-16T13:55:41.925Z",
+      "viewport": [
+        1440,
+        900
+      ],
+      "devicePixelRatio": 3,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 1440,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-4",
+        "studioPitch": "-6",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "58",
+        "studioDpr": "2",
+        "studioRenderCount": "1",
+        "studioDrawCalls": "125",
+        "studioTriangles": "98876",
+        "studioGeometries": "17",
+        "studioTextures": "12"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "buffer": [
+        2880,
+        1800
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "false",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "1440x900-dpr3-projects-open.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/1440x900-dpr3-projects-open.png",
+      "pose": "projects-open",
+      "capturedAt": "2026-11-16T13:55:43.640Z",
+      "viewport": [
+        1440,
+        900
+      ],
+      "devicePixelRatio": 3,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 1440,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-4",
+        "studioPitch": "-6",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "58",
+        "studioDpr": "2",
+        "studioRenderCount": "1",
+        "studioDrawCalls": "125",
+        "studioTriangles": "98876",
+        "studioGeometries": "17",
+        "studioTextures": "12"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "buffer": [
+        2880,
+        1800
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "false",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "390x844-dpr3-home.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/390x844-dpr3-home.png",
+      "pose": "home",
+      "capturedAt": "2026-11-16T13:55:45.156Z",
+      "viewport": [
+        390,
+        844
+      ],
+      "devicePixelRatio": 3,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 390,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-13",
+        "studioPitch": "-8",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1.5",
+        "studioRenderCount": "1",
+        "studioDrawCalls": "106",
+        "studioTriangles": "83340",
+        "studioGeometries": "17",
+        "studioTextures": "12"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "buffer": [
+        585,
+        1266
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "false",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "390x844-dpr3-projects-open.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/390x844-dpr3-projects-open.png",
+      "pose": "projects-open",
+      "capturedAt": "2026-11-16T13:55:45.544Z",
+      "viewport": [
+        390,
+        844
+      ],
+      "devicePixelRatio": 3,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 390,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-13",
+        "studioPitch": "-8",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1.5",
+        "studioRenderCount": "1",
+        "studioDrawCalls": "106",
+        "studioTriangles": "83340",
+        "studioGeometries": "17",
+        "studioTextures": "12"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 844
+      },
+      "buffer": [
+        585,
+        1266
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "true",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "320x844-dpr3-home.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/320x844-dpr3-home.png",
+      "pose": "home",
+      "capturedAt": "2026-11-16T13:55:47.223Z",
+      "viewport": [
+        320,
+        844
+      ],
+      "devicePixelRatio": 3,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 320,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-13",
+        "studioPitch": "-8",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1.5",
+        "studioRenderCount": "1",
+        "studioDrawCalls": "104",
+        "studioTriangles": "83220",
+        "studioGeometries": "16",
+        "studioTextures": "12"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 844
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 844
+      },
+      "buffer": [
+        480,
+        1266
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "false",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "320x844-dpr3-projects-open.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/320x844-dpr3-projects-open.png",
+      "pose": "projects-open",
+      "capturedAt": "2026-11-16T13:55:47.533Z",
+      "viewport": [
+        320,
+        844
+      ],
+      "devicePixelRatio": 3,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 320,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-13",
+        "studioPitch": "-8",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1.5",
+        "studioRenderCount": "1",
+        "studioDrawCalls": "104",
+        "studioTriangles": "83220",
+        "studioGeometries": "16",
+        "studioTextures": "12"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 844
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 844
+      },
+      "buffer": [
+        480,
+        1266
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "true",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "320x568-dpr3-home.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/320x568-dpr3-home.png",
+      "pose": "home",
+      "capturedAt": "2026-11-16T13:55:48.714Z",
+      "viewport": [
+        320,
+        568
+      ],
+      "devicePixelRatio": 3,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 320,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-13",
+        "studioPitch": "-8",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1.5",
+        "studioRenderCount": "1",
+        "studioDrawCalls": "108",
+        "studioTriangles": "83460",
+        "studioGeometries": "17",
+        "studioTextures": "12"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 568
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 568
+      },
+      "buffer": [
+        480,
+        852
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "false",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    },
+    {
+      "filename": "320x568-dpr3-projects-open.png",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio/320x568-dpr3-projects-open.png",
+      "pose": "projects-open",
+      "capturedAt": "2026-11-16T13:55:48.990Z",
+      "viewport": [
+        320,
+        568
+      ],
+      "devicePixelRatio": 3,
+      "scroll": [
+        0,
+        0
+      ],
+      "documentWidth": 320,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-13",
+        "studioPitch": "-8",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1.5",
+        "studioRenderCount": "1",
+        "studioDrawCalls": "108",
+        "studioTriangles": "83460",
+        "studioGeometries": "17",
+        "studioTextures": "12"
+      },
+      "canvasRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 568
+      },
+      "hostRect": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 568
+      },
+      "buffer": [
+        480,
+        852
+      ],
+      "sceneStatus": "ready",
+      "projectsExpanded": "true",
+      "dialogOpen": false,
+      "focusedId": "",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+    }
+  ],
+  "checks": [
+    {
+      "name": "1440x900-dpr1/home no overflow",
+      "pass": true,
+      "evidence": 1440
+    },
+    {
+      "name": "1440x900-dpr1 source camera matches",
+      "pass": true,
+      "evidence": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-4",
+        "studioPitch": "-6",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "58",
+        "studioDpr": "1",
+        "studioRenderCount": "1",
+        "studioDrawCalls": "125",
+        "studioTriangles": "98876",
+        "studioGeometries": "17",
+        "studioTextures": "12"
+      }
+    },
+    {
+      "name": "1440x900-dpr1 DPR cap matches",
+      "pass": true,
+      "evidence": "1"
+    },
+    {
+      "name": "1440x900-dpr1/left-up no overflow",
+      "pass": true,
+      "evidence": 1440
+    },
+    {
+      "name": "1440x900-dpr1/left-down no overflow",
+      "pass": true,
+      "evidence": 1440
+    },
+    {
+      "name": "1440x900-dpr1/right-down no overflow",
+      "pass": true,
+      "evidence": 1440
+    },
+    {
+      "name": "1440x900-dpr1/right-up no overflow",
+      "pass": true,
+      "evidence": 1440
+    },
+    {
+      "name": "1440x900-dpr1 all look bounds",
+      "pass": true,
+      "evidence": [
+        {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-38",
+          "studioPitch": "12",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1",
+          "studioRenderCount": "15",
+          "studioDrawCalls": "61",
+          "studioTriangles": "43834",
+          "studioGeometries": "17",
+          "studioTextures": "12"
+        },
+        {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-38",
+          "studioPitch": "-16",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1",
+          "studioRenderCount": "19",
+          "studioDrawCalls": "63",
+          "studioTriangles": "44976",
+          "studioGeometries": "17",
+          "studioTextures": "12"
+        },
+        {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "58",
+          "studioPitch": "-16",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1",
+          "studioRenderCount": "29",
+          "studioDrawCalls": "70",
+          "studioTriangles": "60172",
+          "studioGeometries": "20",
+          "studioTextures": "16"
+        },
+        {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "58",
+          "studioPitch": "12",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1",
+          "studioRenderCount": "33",
+          "studioDrawCalls": "60",
+          "studioTriangles": "51018",
+          "studioGeometries": "20",
+          "studioTextures": "16"
+        }
+      ]
+    },
+    {
+      "name": "1440x900-dpr1/projects-open no overflow",
+      "pass": true,
+      "evidence": 1440
+    },
+    {
+      "name": "1440x900-dpr1 named dissertation activation and heading focus",
+      "pass": true,
+      "evidence": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "devicePixelRatio": 1,
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 1440,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1",
+          "studioRenderCount": "35",
+          "studioDrawCalls": "73",
+          "studioTriangles": "56836",
+          "studioGeometries": "20",
+          "studioTextures": "16"
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        },
+        "buffer": [
+          1440,
+          900
+        ],
+        "sceneStatus": "ready",
+        "projectsExpanded": "true",
+        "dialogOpen": true,
+        "focusedId": "panel-project-dissertation-heading",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "name": "1440x900-dpr1/project-dialog no overflow",
+      "pass": true,
+      "evidence": 1440
+    },
+    {
+      "name": "1440x900-dpr1 dissertation return focus",
+      "pass": true,
+      "evidence": "studio-shortcut-dissertation"
+    },
+    {
+      "name": "1440x900-dpr1 named copilot activation and heading focus",
+      "pass": true,
+      "evidence": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "devicePixelRatio": 1,
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 1440,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1",
+          "studioRenderCount": "37",
+          "studioDrawCalls": "73",
+          "studioTriangles": "56836",
+          "studioGeometries": "20",
+          "studioTextures": "16"
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        },
+        "buffer": [
+          1440,
+          900
+        ],
+        "sceneStatus": "ready",
+        "projectsExpanded": "true",
+        "dialogOpen": true,
+        "focusedId": "panel-project-copilot-heading",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "name": "1440x900-dpr1 copilot return focus",
+      "pass": true,
+      "evidence": "studio-shortcut-copilot"
+    },
+    {
+      "name": "1440x900-dpr1 named typeforge activation and heading focus",
+      "pass": true,
+      "evidence": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "devicePixelRatio": 1,
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 1440,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1",
+          "studioRenderCount": "39",
+          "studioDrawCalls": "73",
+          "studioTriangles": "56836",
+          "studioGeometries": "20",
+          "studioTextures": "16"
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        },
+        "buffer": [
+          1440,
+          900
+        ],
+        "sceneStatus": "ready",
+        "projectsExpanded": "true",
+        "dialogOpen": true,
+        "focusedId": "panel-project-typeforge-heading",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "name": "1440x900-dpr1 typeforge return focus",
+      "pass": true,
+      "evidence": "studio-shortcut-typeforge"
+    },
+    {
+      "name": "Desktop canvas dissertation trusted picking",
+      "pass": true,
+      "evidence": {
+        "point": {
+          "x": 575.9507796217881,
+          "y": 457.47329240682046
+        },
+        "state": {
+          "viewport": [
+            1440,
+            900
+          ],
+          "devicePixelRatio": 1,
+          "scroll": [
+            0,
+            0
+          ],
+          "documentWidth": 1440,
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1",
+            "studioRenderCount": "42",
+            "studioDrawCalls": "73",
+            "studioTriangles": "56836",
+            "studioGeometries": "20",
+            "studioTextures": "16"
+          },
+          "canvasRect": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 900
+          },
+          "hostRect": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 900
+          },
+          "buffer": [
+            1440,
+            900
+          ],
+          "sceneStatus": "ready",
+          "projectsExpanded": "false",
+          "dialogOpen": true,
+          "focusedId": "panel-project-dissertation-heading",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+        }
+      }
+    },
+    {
+      "name": "Desktop canvas copilot trusted picking",
+      "pass": true,
+      "evidence": {
+        "point": {
+          "x": 243.39600034554013,
+          "y": 445.0829026508791
+        },
+        "state": {
+          "viewport": [
+            1440,
+            900
+          ],
+          "devicePixelRatio": 1,
+          "scroll": [
+            0,
+            0
+          ],
+          "documentWidth": 1440,
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1",
+            "studioRenderCount": "45",
+            "studioDrawCalls": "73",
+            "studioTriangles": "56836",
+            "studioGeometries": "20",
+            "studioTextures": "16"
+          },
+          "canvasRect": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 900
+          },
+          "hostRect": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 900
+          },
+          "buffer": [
+            1440,
+            900
+          ],
+          "sceneStatus": "ready",
+          "projectsExpanded": "false",
+          "dialogOpen": true,
+          "focusedId": "panel-project-copilot-heading",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+        }
+      }
+    },
+    {
+      "name": "Desktop canvas typeforge trusted picking",
+      "pass": true,
+      "evidence": {
+        "point": {
+          "x": 911.9155503006268,
+          "y": 449.88375667773494
+        },
+        "state": {
+          "viewport": [
+            1440,
+            900
+          ],
+          "devicePixelRatio": 1,
+          "scroll": [
+            0,
+            0
+          ],
+          "documentWidth": 1440,
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1",
+            "studioRenderCount": "48",
+            "studioDrawCalls": "73",
+            "studioTriangles": "56836",
+            "studioGeometries": "20",
+            "studioTextures": "16"
+          },
+          "canvasRect": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 900
+          },
+          "hostRect": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 900
+          },
+          "buffer": [
+            1440,
+            900
+          ],
+          "sceneStatus": "ready",
+          "projectsExpanded": "false",
+          "dialogOpen": true,
+          "focusedId": "panel-project-typeforge-heading",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+        }
+      }
+    },
+    {
+      "name": "1440x900-dpr1 no runtime page errors",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "390x844-dpr1/home no overflow",
+      "pass": true,
+      "evidence": 390
+    },
+    {
+      "name": "390x844-dpr1 source camera matches",
+      "pass": true,
+      "evidence": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-13",
+        "studioPitch": "-8",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1",
+        "studioRenderCount": "1",
+        "studioDrawCalls": "106",
+        "studioTriangles": "83340",
+        "studioGeometries": "17",
+        "studioTextures": "12"
+      }
+    },
+    {
+      "name": "390x844-dpr1 DPR cap matches",
+      "pass": true,
+      "evidence": "1"
+    },
+    {
+      "name": "390x844-dpr1/left-up no overflow",
+      "pass": true,
+      "evidence": 390
+    },
+    {
+      "name": "390x844-dpr1/left-down no overflow",
+      "pass": true,
+      "evidence": 390
+    },
+    {
+      "name": "390x844-dpr1/right-down no overflow",
+      "pass": true,
+      "evidence": 390
+    },
+    {
+      "name": "390x844-dpr1/right-up no overflow",
+      "pass": true,
+      "evidence": 390
+    },
+    {
+      "name": "390x844-dpr1 all look bounds",
+      "pass": true,
+      "evidence": [
+        {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-38",
+          "studioPitch": "12",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1",
+          "studioRenderCount": "15",
+          "studioDrawCalls": "54",
+          "studioTriangles": "43374",
+          "studioGeometries": "17",
+          "studioTextures": "12"
+        },
+        {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-38",
+          "studioPitch": "-16",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1",
+          "studioRenderCount": "19",
+          "studioDrawCalls": "55",
+          "studioTriangles": "43386",
+          "studioGeometries": "17",
+          "studioTextures": "12"
+        },
+        {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "58",
+          "studioPitch": "-16",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1",
+          "studioRenderCount": "29",
+          "studioDrawCalls": "51",
+          "studioTriangles": "49926",
+          "studioGeometries": "20",
+          "studioTextures": "16"
+        },
+        {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "58",
+          "studioPitch": "12",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1",
+          "studioRenderCount": "33",
+          "studioDrawCalls": "47",
+          "studioTriangles": "48574",
+          "studioGeometries": "20",
+          "studioTextures": "16"
+        }
+      ]
+    },
+    {
+      "name": "390x844-dpr1/projects-open no overflow",
+      "pass": true,
+      "evidence": 390
+    },
+    {
+      "name": "390x844-dpr1 named dissertation activation and heading focus",
+      "pass": true,
+      "evidence": {
+        "viewport": [
+          390,
+          844
+        ],
+        "devicePixelRatio": 1,
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 390,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-13",
+          "studioPitch": "-8",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1",
+          "studioRenderCount": "35",
+          "studioDrawCalls": "54",
+          "studioTriangles": "41300",
+          "studioGeometries": "20",
+          "studioTextures": "16"
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "buffer": [
+          390,
+          844
+        ],
+        "sceneStatus": "ready",
+        "projectsExpanded": "true",
+        "dialogOpen": true,
+        "focusedId": "panel-project-dissertation-heading",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "name": "390x844-dpr1/project-dialog no overflow",
+      "pass": true,
+      "evidence": 390
+    },
+    {
+      "name": "390x844-dpr1 dissertation return focus",
+      "pass": true,
+      "evidence": "studio-shortcut-dissertation"
+    },
+    {
+      "name": "390x844-dpr1 named copilot activation and heading focus",
+      "pass": true,
+      "evidence": {
+        "viewport": [
+          390,
+          844
+        ],
+        "devicePixelRatio": 1,
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 390,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-13",
+          "studioPitch": "-8",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1",
+          "studioRenderCount": "37",
+          "studioDrawCalls": "54",
+          "studioTriangles": "41300",
+          "studioGeometries": "20",
+          "studioTextures": "16"
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "buffer": [
+          390,
+          844
+        ],
+        "sceneStatus": "ready",
+        "projectsExpanded": "true",
+        "dialogOpen": true,
+        "focusedId": "panel-project-copilot-heading",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "name": "390x844-dpr1 copilot return focus",
+      "pass": true,
+      "evidence": "studio-shortcut-copilot"
+    },
+    {
+      "name": "390x844-dpr1 named typeforge activation and heading focus",
+      "pass": true,
+      "evidence": {
+        "viewport": [
+          390,
+          844
+        ],
+        "devicePixelRatio": 1,
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 390,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-13",
+          "studioPitch": "-8",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1",
+          "studioRenderCount": "39",
+          "studioDrawCalls": "54",
+          "studioTriangles": "41300",
+          "studioGeometries": "20",
+          "studioTextures": "16"
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "buffer": [
+          390,
+          844
+        ],
+        "sceneStatus": "ready",
+        "projectsExpanded": "true",
+        "dialogOpen": true,
+        "focusedId": "panel-project-typeforge-heading",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "name": "390x844-dpr1 typeforge return focus",
+      "pass": true,
+      "evidence": "studio-shortcut-typeforge"
+    },
+    {
+      "name": "390x844-dpr1 no runtime page errors",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "320x844-dpr1/home no overflow",
+      "pass": true,
+      "evidence": 320
+    },
+    {
+      "name": "320x844-dpr1 source camera matches",
+      "pass": true,
+      "evidence": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-13",
+        "studioPitch": "-8",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1",
+        "studioRenderCount": "1",
+        "studioDrawCalls": "104",
+        "studioTriangles": "83220",
+        "studioGeometries": "16",
+        "studioTextures": "12"
+      }
+    },
+    {
+      "name": "320x844-dpr1 DPR cap matches",
+      "pass": true,
+      "evidence": "1"
+    },
+    {
+      "name": "320x844-dpr1/left-up no overflow",
+      "pass": true,
+      "evidence": 320
+    },
+    {
+      "name": "320x844-dpr1/left-down no overflow",
+      "pass": true,
+      "evidence": 320
+    },
+    {
+      "name": "320x844-dpr1/right-down no overflow",
+      "pass": true,
+      "evidence": 320
+    },
+    {
+      "name": "320x844-dpr1/right-up no overflow",
+      "pass": true,
+      "evidence": 320
+    },
+    {
+      "name": "320x844-dpr1 all look bounds",
+      "pass": true,
+      "evidence": [
+        {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-38",
+          "studioPitch": "12",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1",
+          "studioRenderCount": "15",
+          "studioDrawCalls": "54",
+          "studioTriangles": "43374",
+          "studioGeometries": "16",
+          "studioTextures": "12"
+        },
+        {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-38",
+          "studioPitch": "-16",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1",
+          "studioRenderCount": "19",
+          "studioDrawCalls": "54",
+          "studioTriangles": "43384",
+          "studioGeometries": "16",
+          "studioTextures": "12"
+        },
+        {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "58",
+          "studioPitch": "-16",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1",
+          "studioRenderCount": "29",
+          "studioDrawCalls": "48",
+          "studioTriangles": "45770",
+          "studioGeometries": "20",
+          "studioTextures": "16"
+        },
+        {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "58",
+          "studioPitch": "12",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1",
+          "studioRenderCount": "33",
+          "studioDrawCalls": "43",
+          "studioTriangles": "41690",
+          "studioGeometries": "20",
+          "studioTextures": "16"
+        }
+      ]
+    },
+    {
+      "name": "320x844-dpr1/projects-open no overflow",
+      "pass": true,
+      "evidence": 320
+    },
+    {
+      "name": "320x844-dpr1 named dissertation activation and heading focus",
+      "pass": true,
+      "evidence": {
+        "viewport": [
+          320,
+          844
+        ],
+        "devicePixelRatio": 1,
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 320,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-13",
+          "studioPitch": "-8",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1",
+          "studioRenderCount": "35",
+          "studioDrawCalls": "52",
+          "studioTriangles": "41180",
+          "studioGeometries": "20",
+          "studioTextures": "16"
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 844
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 844
+        },
+        "buffer": [
+          320,
+          844
+        ],
+        "sceneStatus": "ready",
+        "projectsExpanded": "true",
+        "dialogOpen": true,
+        "focusedId": "panel-project-dissertation-heading",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "name": "320x844-dpr1/project-dialog no overflow",
+      "pass": true,
+      "evidence": 320
+    },
+    {
+      "name": "320x844-dpr1 dissertation return focus",
+      "pass": true,
+      "evidence": "studio-shortcut-dissertation"
+    },
+    {
+      "name": "320x844-dpr1 named copilot activation and heading focus",
+      "pass": true,
+      "evidence": {
+        "viewport": [
+          320,
+          844
+        ],
+        "devicePixelRatio": 1,
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 320,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-13",
+          "studioPitch": "-8",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1",
+          "studioRenderCount": "37",
+          "studioDrawCalls": "52",
+          "studioTriangles": "41180",
+          "studioGeometries": "20",
+          "studioTextures": "16"
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 844
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 844
+        },
+        "buffer": [
+          320,
+          844
+        ],
+        "sceneStatus": "ready",
+        "projectsExpanded": "true",
+        "dialogOpen": true,
+        "focusedId": "panel-project-copilot-heading",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "name": "320x844-dpr1 copilot return focus",
+      "pass": true,
+      "evidence": "studio-shortcut-copilot"
+    },
+    {
+      "name": "320x844-dpr1 named typeforge activation and heading focus",
+      "pass": true,
+      "evidence": {
+        "viewport": [
+          320,
+          844
+        ],
+        "devicePixelRatio": 1,
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 320,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-13",
+          "studioPitch": "-8",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1",
+          "studioRenderCount": "39",
+          "studioDrawCalls": "52",
+          "studioTriangles": "41180",
+          "studioGeometries": "20",
+          "studioTextures": "16"
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 844
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 844
+        },
+        "buffer": [
+          320,
+          844
+        ],
+        "sceneStatus": "ready",
+        "projectsExpanded": "true",
+        "dialogOpen": true,
+        "focusedId": "panel-project-typeforge-heading",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "name": "320x844-dpr1 typeforge return focus",
+      "pass": true,
+      "evidence": "studio-shortcut-typeforge"
+    },
+    {
+      "name": "320x844-dpr1 no runtime page errors",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "320x568-dpr1/home no overflow",
+      "pass": true,
+      "evidence": 320
+    },
+    {
+      "name": "320x568-dpr1 source camera matches",
+      "pass": true,
+      "evidence": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-13",
+        "studioPitch": "-8",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1",
+        "studioRenderCount": "1",
+        "studioDrawCalls": "108",
+        "studioTriangles": "83460",
+        "studioGeometries": "17",
+        "studioTextures": "12"
+      }
+    },
+    {
+      "name": "320x568-dpr1 DPR cap matches",
+      "pass": true,
+      "evidence": "1"
+    },
+    {
+      "name": "320x568-dpr1/left-up no overflow",
+      "pass": true,
+      "evidence": 320
+    },
+    {
+      "name": "320x568-dpr1/left-down no overflow",
+      "pass": true,
+      "evidence": 320
+    },
+    {
+      "name": "320x568-dpr1/right-down no overflow",
+      "pass": true,
+      "evidence": 320
+    },
+    {
+      "name": "320x568-dpr1/right-up no overflow",
+      "pass": true,
+      "evidence": 320
+    },
+    {
+      "name": "320x568-dpr1 all look bounds",
+      "pass": true,
+      "evidence": [
+        {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-38",
+          "studioPitch": "12",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1",
+          "studioRenderCount": "15",
+          "studioDrawCalls": "56",
+          "studioTriangles": "43410",
+          "studioGeometries": "17",
+          "studioTextures": "12"
+        },
+        {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-38",
+          "studioPitch": "-16",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1",
+          "studioRenderCount": "19",
+          "studioDrawCalls": "57",
+          "studioTriangles": "43422",
+          "studioGeometries": "17",
+          "studioTextures": "12"
+        },
+        {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "58",
+          "studioPitch": "-16",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1",
+          "studioRenderCount": "29",
+          "studioDrawCalls": "52",
+          "studioTriangles": "49950",
+          "studioGeometries": "20",
+          "studioTextures": "16"
+        },
+        {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "58",
+          "studioPitch": "12",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1",
+          "studioRenderCount": "33",
+          "studioDrawCalls": "49",
+          "studioTriangles": "48882",
+          "studioGeometries": "20",
+          "studioTextures": "16"
+        }
+      ]
+    },
+    {
+      "name": "320x568-dpr1/projects-open no overflow",
+      "pass": true,
+      "evidence": 320
+    },
+    {
+      "name": "320x568-dpr1 named dissertation activation and heading focus",
+      "pass": true,
+      "evidence": {
+        "viewport": [
+          320,
+          568
+        ],
+        "devicePixelRatio": 1,
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 320,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-13",
+          "studioPitch": "-8",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1",
+          "studioRenderCount": "35",
+          "studioDrawCalls": "56",
+          "studioTriangles": "41420",
+          "studioGeometries": "20",
+          "studioTextures": "16"
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568
+        },
+        "buffer": [
+          320,
+          568
+        ],
+        "sceneStatus": "ready",
+        "projectsExpanded": "true",
+        "dialogOpen": true,
+        "focusedId": "panel-project-dissertation-heading",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "name": "320x568-dpr1/project-dialog no overflow",
+      "pass": true,
+      "evidence": 320
+    },
+    {
+      "name": "320x568-dpr1 dissertation return focus",
+      "pass": true,
+      "evidence": "studio-shortcut-dissertation"
+    },
+    {
+      "name": "320x568-dpr1 named copilot activation and heading focus",
+      "pass": true,
+      "evidence": {
+        "viewport": [
+          320,
+          568
+        ],
+        "devicePixelRatio": 1,
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 320,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-13",
+          "studioPitch": "-8",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1",
+          "studioRenderCount": "37",
+          "studioDrawCalls": "56",
+          "studioTriangles": "41420",
+          "studioGeometries": "20",
+          "studioTextures": "16"
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568
+        },
+        "buffer": [
+          320,
+          568
+        ],
+        "sceneStatus": "ready",
+        "projectsExpanded": "true",
+        "dialogOpen": true,
+        "focusedId": "panel-project-copilot-heading",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "name": "320x568-dpr1 copilot return focus",
+      "pass": true,
+      "evidence": "studio-shortcut-copilot"
+    },
+    {
+      "name": "320x568-dpr1 named typeforge activation and heading focus",
+      "pass": true,
+      "evidence": {
+        "viewport": [
+          320,
+          568
+        ],
+        "devicePixelRatio": 1,
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 320,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-13",
+          "studioPitch": "-8",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1",
+          "studioRenderCount": "39",
+          "studioDrawCalls": "56",
+          "studioTriangles": "41420",
+          "studioGeometries": "20",
+          "studioTextures": "16"
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568
+        },
+        "buffer": [
+          320,
+          568
+        ],
+        "sceneStatus": "ready",
+        "projectsExpanded": "true",
+        "dialogOpen": true,
+        "focusedId": "panel-project-typeforge-heading",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "name": "320x568-dpr1 typeforge return focus",
+      "pass": true,
+      "evidence": "studio-shortcut-typeforge"
+    },
+    {
+      "name": "320x568-dpr1 no runtime page errors",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "1440x900-dpr3/home no overflow",
+      "pass": true,
+      "evidence": 1440
+    },
+    {
+      "name": "1440x900-dpr3 source camera matches",
+      "pass": true,
+      "evidence": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-4",
+        "studioPitch": "-6",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "58",
+        "studioDpr": "2",
+        "studioRenderCount": "1",
+        "studioDrawCalls": "125",
+        "studioTriangles": "98876",
+        "studioGeometries": "17",
+        "studioTextures": "12"
+      }
+    },
+    {
+      "name": "1440x900-dpr3 DPR cap matches",
+      "pass": true,
+      "evidence": "2"
+    },
+    {
+      "name": "1440x900-dpr3/projects-open no overflow",
+      "pass": true,
+      "evidence": 1440
+    },
+    {
+      "name": "1440x900-dpr3 no runtime page errors",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "390x844-dpr3/home no overflow",
+      "pass": true,
+      "evidence": 390
+    },
+    {
+      "name": "390x844-dpr3 source camera matches",
+      "pass": true,
+      "evidence": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-13",
+        "studioPitch": "-8",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1.5",
+        "studioRenderCount": "1",
+        "studioDrawCalls": "106",
+        "studioTriangles": "83340",
+        "studioGeometries": "17",
+        "studioTextures": "12"
+      }
+    },
+    {
+      "name": "390x844-dpr3 DPR cap matches",
+      "pass": true,
+      "evidence": "1.5"
+    },
+    {
+      "name": "390x844-dpr3/projects-open no overflow",
+      "pass": true,
+      "evidence": 390
+    },
+    {
+      "name": "390x844-dpr3 no runtime page errors",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "320x844-dpr3/home no overflow",
+      "pass": true,
+      "evidence": 320
+    },
+    {
+      "name": "320x844-dpr3 source camera matches",
+      "pass": true,
+      "evidence": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-13",
+        "studioPitch": "-8",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1.5",
+        "studioRenderCount": "1",
+        "studioDrawCalls": "104",
+        "studioTriangles": "83220",
+        "studioGeometries": "16",
+        "studioTextures": "12"
+      }
+    },
+    {
+      "name": "320x844-dpr3 DPR cap matches",
+      "pass": true,
+      "evidence": "1.5"
+    },
+    {
+      "name": "320x844-dpr3/projects-open no overflow",
+      "pass": true,
+      "evidence": 320
+    },
+    {
+      "name": "320x844-dpr3 no runtime page errors",
+      "pass": true,
+      "evidence": []
+    },
+    {
+      "name": "320x568-dpr3/home no overflow",
+      "pass": true,
+      "evidence": 320
+    },
+    {
+      "name": "320x568-dpr3 source camera matches",
+      "pass": true,
+      "evidence": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-13",
+        "studioPitch": "-8",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1.5",
+        "studioRenderCount": "1",
+        "studioDrawCalls": "108",
+        "studioTriangles": "83460",
+        "studioGeometries": "17",
+        "studioTextures": "12"
+      }
+    },
+    {
+      "name": "320x568-dpr3 DPR cap matches",
+      "pass": true,
+      "evidence": "1.5"
+    },
+    {
+      "name": "320x568-dpr3/projects-open no overflow",
+      "pass": true,
+      "evidence": 320
+    },
+    {
+      "name": "320x568-dpr3 no runtime page errors",
+      "pass": true,
+      "evidence": []
+    }
+  ],
+  "sessions": [
+    {
+      "key": "1440x900-dpr1",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "inputDpr": 1,
+      "errors": [],
+      "responses": [
+        {
+          "url": "http://127.0.0.1:4193/studio",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/d442c5091e55dc0c.css",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/3b3b1d7e1b1dd5a8.css",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+          "status": 200,
+          "encoding": null
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-e1ff4172c76c0361.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-154eaaedc7527911.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/703.9b57ff8b5aa079ef.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+          "status": 200,
+          "encoding": "gzip"
+        }
+      ],
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/d442c5091e55dc0c.css",
+          "initiator": "link",
+          "transferSize": 4298,
+          "encodedBodySize": 3998,
+          "decodedBodySize": 19519
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/3b3b1d7e1b1dd5a8.css",
+          "initiator": "link",
+          "transferSize": 4780,
+          "encodedBodySize": 4480,
+          "decodedBodySize": 17183
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-e1ff4172c76c0361.js",
+          "initiator": "link",
+          "transferSize": 2191,
+          "encodedBodySize": 1891,
+          "decodedBodySize": 3644
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+          "initiator": "script",
+          "transferSize": 47007,
+          "encodedBodySize": 46707,
+          "decodedBodySize": 174133
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+          "initiator": "script",
+          "transferSize": 54658,
+          "encodedBodySize": 54358,
+          "decodedBodySize": 173019
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+          "initiator": "script",
+          "transferSize": 857,
+          "encodedBodySize": 557,
+          "decodedBodySize": 557
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+          "initiator": "script",
+          "transferSize": 3689,
+          "encodedBodySize": 3389,
+          "decodedBodySize": 8537
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-154eaaedc7527911.js",
+          "initiator": "script",
+          "transferSize": 9032,
+          "encodedBodySize": 8732,
+          "decodedBodySize": 25137
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 429,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+          "initiator": "script",
+          "transferSize": 84650,
+          "encodedBodySize": 84350,
+          "decodedBodySize": 357041
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+          "initiator": "script",
+          "transferSize": 69627,
+          "encodedBodySize": 69327,
+          "decodedBodySize": 262501
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+          "initiator": "script",
+          "transferSize": 14433,
+          "encodedBodySize": 14133,
+          "decodedBodySize": 47753
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/703.9b57ff8b5aa079ef.js",
+          "initiator": "script",
+          "transferSize": 18273,
+          "encodedBodySize": 17973,
+          "decodedBodySize": 47208
+        },
+        {
+          "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+          "initiator": "fetch",
+          "transferSize": 392654,
+          "encodedBodySize": 392354,
+          "decodedBodySize": 585536
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 300,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 300,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 300,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 300,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 300,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 300,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 300,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 300,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 300,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 300,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 300,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        }
+      ],
+      "final": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "devicePixelRatio": 1,
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 1440,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1",
+          "studioRenderCount": "49",
+          "studioDrawCalls": "73",
+          "studioTriangles": "56836",
+          "studioGeometries": "20",
+          "studioTextures": "16"
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        },
+        "buffer": [
+          1440,
+          900
+        ],
+        "sceneStatus": "ready",
+        "projectsExpanded": "true",
+        "dialogOpen": false,
+        "focusedId": "studio-shortcut-typeforge",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "key": "390x844-dpr1",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "inputDpr": 1,
+      "errors": [],
+      "responses": [
+        {
+          "url": "http://127.0.0.1:4193/studio",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/d442c5091e55dc0c.css",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/3b3b1d7e1b1dd5a8.css",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-e1ff4172c76c0361.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+          "status": 200,
+          "encoding": null
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-154eaaedc7527911.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/703.9b57ff8b5aa079ef.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+          "status": 200,
+          "encoding": "gzip"
+        }
+      ],
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/d442c5091e55dc0c.css",
+          "initiator": "link",
+          "transferSize": 4298,
+          "encodedBodySize": 3998,
+          "decodedBodySize": 19519
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/3b3b1d7e1b1dd5a8.css",
+          "initiator": "link",
+          "transferSize": 4780,
+          "encodedBodySize": 4480,
+          "decodedBodySize": 17183
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-e1ff4172c76c0361.js",
+          "initiator": "link",
+          "transferSize": 2191,
+          "encodedBodySize": 1891,
+          "decodedBodySize": 3644
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+          "initiator": "script",
+          "transferSize": 857,
+          "encodedBodySize": 557,
+          "decodedBodySize": 557
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+          "initiator": "script",
+          "transferSize": 47007,
+          "encodedBodySize": 46707,
+          "decodedBodySize": 174133
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+          "initiator": "script",
+          "transferSize": 54658,
+          "encodedBodySize": 54358,
+          "decodedBodySize": 173019
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+          "initiator": "script",
+          "transferSize": 3689,
+          "encodedBodySize": 3389,
+          "decodedBodySize": 8537
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-154eaaedc7527911.js",
+          "initiator": "script",
+          "transferSize": 9032,
+          "encodedBodySize": 8732,
+          "decodedBodySize": 25137
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+          "initiator": "script",
+          "transferSize": 84650,
+          "encodedBodySize": 84350,
+          "decodedBodySize": 357041
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+          "initiator": "script",
+          "transferSize": 69627,
+          "encodedBodySize": 69327,
+          "decodedBodySize": 262501
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+          "initiator": "script",
+          "transferSize": 14433,
+          "encodedBodySize": 14133,
+          "decodedBodySize": 47753
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/703.9b57ff8b5aa079ef.js",
+          "initiator": "script",
+          "transferSize": 18273,
+          "encodedBodySize": 17973,
+          "decodedBodySize": 47208
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 429,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+          "initiator": "fetch",
+          "transferSize": 392654,
+          "encodedBodySize": 392354,
+          "decodedBodySize": 585536
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 300,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 300,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 300,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 300,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 300,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 300,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        }
+      ],
+      "final": {
+        "viewport": [
+          390,
+          844
+        ],
+        "devicePixelRatio": 1,
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 390,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-13",
+          "studioPitch": "-8",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1",
+          "studioRenderCount": "40",
+          "studioDrawCalls": "54",
+          "studioTriangles": "41300",
+          "studioGeometries": "20",
+          "studioTextures": "16"
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "buffer": [
+          390,
+          844
+        ],
+        "sceneStatus": "ready",
+        "projectsExpanded": "true",
+        "dialogOpen": false,
+        "focusedId": "studio-shortcut-typeforge",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "key": "320x844-dpr1",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "inputDpr": 1,
+      "errors": [],
+      "responses": [
+        {
+          "url": "http://127.0.0.1:4193/studio",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/d442c5091e55dc0c.css",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/3b3b1d7e1b1dd5a8.css",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-e1ff4172c76c0361.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+          "status": 200,
+          "encoding": null
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-154eaaedc7527911.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/703.9b57ff8b5aa079ef.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+          "status": 200,
+          "encoding": "gzip"
+        }
+      ],
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/d442c5091e55dc0c.css",
+          "initiator": "link",
+          "transferSize": 4298,
+          "encodedBodySize": 3998,
+          "decodedBodySize": 19519
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/3b3b1d7e1b1dd5a8.css",
+          "initiator": "link",
+          "transferSize": 4780,
+          "encodedBodySize": 4480,
+          "decodedBodySize": 17183
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-e1ff4172c76c0361.js",
+          "initiator": "link",
+          "transferSize": 2191,
+          "encodedBodySize": 1891,
+          "decodedBodySize": 3644
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+          "initiator": "script",
+          "transferSize": 54658,
+          "encodedBodySize": 54358,
+          "decodedBodySize": 173019
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+          "initiator": "script",
+          "transferSize": 857,
+          "encodedBodySize": 557,
+          "decodedBodySize": 557
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+          "initiator": "script",
+          "transferSize": 47007,
+          "encodedBodySize": 46707,
+          "decodedBodySize": 174133
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+          "initiator": "script",
+          "transferSize": 3689,
+          "encodedBodySize": 3389,
+          "decodedBodySize": 8537
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-154eaaedc7527911.js",
+          "initiator": "script",
+          "transferSize": 9032,
+          "encodedBodySize": 8732,
+          "decodedBodySize": 25137
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+          "initiator": "script",
+          "transferSize": 84650,
+          "encodedBodySize": 84350,
+          "decodedBodySize": 357041
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+          "initiator": "script",
+          "transferSize": 69627,
+          "encodedBodySize": 69327,
+          "decodedBodySize": 262501
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+          "initiator": "script",
+          "transferSize": 14433,
+          "encodedBodySize": 14133,
+          "decodedBodySize": 47753
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/703.9b57ff8b5aa079ef.js",
+          "initiator": "script",
+          "transferSize": 18273,
+          "encodedBodySize": 17973,
+          "decodedBodySize": 47208
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 429,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+          "initiator": "fetch",
+          "transferSize": 392654,
+          "encodedBodySize": 392354,
+          "decodedBodySize": 585536
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 300,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 300,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 300,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 300,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 300,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 300,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        }
+      ],
+      "final": {
+        "viewport": [
+          320,
+          844
+        ],
+        "devicePixelRatio": 1,
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 320,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-13",
+          "studioPitch": "-8",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1",
+          "studioRenderCount": "40",
+          "studioDrawCalls": "52",
+          "studioTriangles": "41180",
+          "studioGeometries": "20",
+          "studioTextures": "16"
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 844
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 844
+        },
+        "buffer": [
+          320,
+          844
+        ],
+        "sceneStatus": "ready",
+        "projectsExpanded": "true",
+        "dialogOpen": false,
+        "focusedId": "studio-shortcut-typeforge",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "key": "320x568-dpr1",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "inputDpr": 1,
+      "errors": [],
+      "responses": [
+        {
+          "url": "http://127.0.0.1:4193/studio",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/d442c5091e55dc0c.css",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/3b3b1d7e1b1dd5a8.css",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+          "status": 200,
+          "encoding": null
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-e1ff4172c76c0361.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-154eaaedc7527911.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/703.9b57ff8b5aa079ef.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+          "status": 200,
+          "encoding": "gzip"
+        }
+      ],
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/d442c5091e55dc0c.css",
+          "initiator": "link",
+          "transferSize": 4298,
+          "encodedBodySize": 3998,
+          "decodedBodySize": 19519
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/3b3b1d7e1b1dd5a8.css",
+          "initiator": "link",
+          "transferSize": 4780,
+          "encodedBodySize": 4480,
+          "decodedBodySize": 17183
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-e1ff4172c76c0361.js",
+          "initiator": "link",
+          "transferSize": 2191,
+          "encodedBodySize": 1891,
+          "decodedBodySize": 3644
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+          "initiator": "script",
+          "transferSize": 54658,
+          "encodedBodySize": 54358,
+          "decodedBodySize": 173019
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+          "initiator": "script",
+          "transferSize": 47007,
+          "encodedBodySize": 46707,
+          "decodedBodySize": 174133
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+          "initiator": "script",
+          "transferSize": 857,
+          "encodedBodySize": 557,
+          "decodedBodySize": 557
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+          "initiator": "script",
+          "transferSize": 3689,
+          "encodedBodySize": 3389,
+          "decodedBodySize": 8537
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-154eaaedc7527911.js",
+          "initiator": "script",
+          "transferSize": 9032,
+          "encodedBodySize": 8732,
+          "decodedBodySize": 25137
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+          "initiator": "script",
+          "transferSize": 84650,
+          "encodedBodySize": 84350,
+          "decodedBodySize": 357041
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+          "initiator": "script",
+          "transferSize": 69627,
+          "encodedBodySize": 69327,
+          "decodedBodySize": 262501
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+          "initiator": "script",
+          "transferSize": 14433,
+          "encodedBodySize": 14133,
+          "decodedBodySize": 47753
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/703.9b57ff8b5aa079ef.js",
+          "initiator": "script",
+          "transferSize": 18273,
+          "encodedBodySize": 17973,
+          "decodedBodySize": 47208
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 429,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+          "initiator": "fetch",
+          "transferSize": 392654,
+          "encodedBodySize": 392354,
+          "decodedBodySize": 585536
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 300,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 300,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 300,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 300,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 300,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 300,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        }
+      ],
+      "final": {
+        "viewport": [
+          320,
+          568
+        ],
+        "devicePixelRatio": 1,
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 320,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-13",
+          "studioPitch": "-8",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1",
+          "studioRenderCount": "40",
+          "studioDrawCalls": "56",
+          "studioTriangles": "41420",
+          "studioGeometries": "20",
+          "studioTextures": "16"
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568
+        },
+        "buffer": [
+          320,
+          568
+        ],
+        "sceneStatus": "ready",
+        "projectsExpanded": "true",
+        "dialogOpen": false,
+        "focusedId": "studio-shortcut-typeforge",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "key": "1440x900-dpr3",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "inputDpr": 3,
+      "errors": [],
+      "responses": [
+        {
+          "url": "http://127.0.0.1:4193/studio",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/d442c5091e55dc0c.css",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/3b3b1d7e1b1dd5a8.css",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-e1ff4172c76c0361.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+          "status": 200,
+          "encoding": null
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-154eaaedc7527911.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/703.9b57ff8b5aa079ef.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+          "status": 200,
+          "encoding": "gzip"
+        }
+      ],
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/d442c5091e55dc0c.css",
+          "initiator": "link",
+          "transferSize": 4298,
+          "encodedBodySize": 3998,
+          "decodedBodySize": 19519
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/3b3b1d7e1b1dd5a8.css",
+          "initiator": "link",
+          "transferSize": 4780,
+          "encodedBodySize": 4480,
+          "decodedBodySize": 17183
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-e1ff4172c76c0361.js",
+          "initiator": "link",
+          "transferSize": 2191,
+          "encodedBodySize": 1891,
+          "decodedBodySize": 3644
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+          "initiator": "script",
+          "transferSize": 54658,
+          "encodedBodySize": 54358,
+          "decodedBodySize": 173019
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+          "initiator": "script",
+          "transferSize": 857,
+          "encodedBodySize": 557,
+          "decodedBodySize": 557
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+          "initiator": "script",
+          "transferSize": 47007,
+          "encodedBodySize": 46707,
+          "decodedBodySize": 174133
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+          "initiator": "script",
+          "transferSize": 3689,
+          "encodedBodySize": 3389,
+          "decodedBodySize": 8537
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-154eaaedc7527911.js",
+          "initiator": "script",
+          "transferSize": 9032,
+          "encodedBodySize": 8732,
+          "decodedBodySize": 25137
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 429,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+          "initiator": "script",
+          "transferSize": 84650,
+          "encodedBodySize": 84350,
+          "decodedBodySize": 357041
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+          "initiator": "script",
+          "transferSize": 69627,
+          "encodedBodySize": 69327,
+          "decodedBodySize": 262501
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+          "initiator": "script",
+          "transferSize": 14433,
+          "encodedBodySize": 14133,
+          "decodedBodySize": 47753
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/703.9b57ff8b5aa079ef.js",
+          "initiator": "script",
+          "transferSize": 18273,
+          "encodedBodySize": 17973,
+          "decodedBodySize": 47208
+        },
+        {
+          "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+          "initiator": "fetch",
+          "transferSize": 392654,
+          "encodedBodySize": 392354,
+          "decodedBodySize": 585536
+        }
+      ],
+      "final": {
+        "viewport": [
+          1440,
+          900
+        ],
+        "devicePixelRatio": 3,
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 1440,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "1",
+          "studioDrawCalls": "125",
+          "studioTriangles": "98876",
+          "studioGeometries": "17",
+          "studioTextures": "12"
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900
+        },
+        "buffer": [
+          2880,
+          1800
+        ],
+        "sceneStatus": "ready",
+        "projectsExpanded": "false",
+        "dialogOpen": false,
+        "focusedId": "",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "key": "390x844-dpr3",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "inputDpr": 3,
+      "errors": [],
+      "responses": [
+        {
+          "url": "http://127.0.0.1:4193/studio",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/d442c5091e55dc0c.css",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/3b3b1d7e1b1dd5a8.css",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-e1ff4172c76c0361.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+          "status": 200,
+          "encoding": null
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-154eaaedc7527911.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/703.9b57ff8b5aa079ef.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+          "status": 200,
+          "encoding": "gzip"
+        }
+      ],
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/d442c5091e55dc0c.css",
+          "initiator": "link",
+          "transferSize": 4298,
+          "encodedBodySize": 3998,
+          "decodedBodySize": 19519
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/3b3b1d7e1b1dd5a8.css",
+          "initiator": "link",
+          "transferSize": 4780,
+          "encodedBodySize": 4480,
+          "decodedBodySize": 17183
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-e1ff4172c76c0361.js",
+          "initiator": "link",
+          "transferSize": 2191,
+          "encodedBodySize": 1891,
+          "decodedBodySize": 3644
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+          "initiator": "script",
+          "transferSize": 54658,
+          "encodedBodySize": 54358,
+          "decodedBodySize": 173019
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+          "initiator": "script",
+          "transferSize": 857,
+          "encodedBodySize": 557,
+          "decodedBodySize": 557
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+          "initiator": "script",
+          "transferSize": 3689,
+          "encodedBodySize": 3389,
+          "decodedBodySize": 8537
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+          "initiator": "script",
+          "transferSize": 47007,
+          "encodedBodySize": 46707,
+          "decodedBodySize": 174133
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-154eaaedc7527911.js",
+          "initiator": "script",
+          "transferSize": 9032,
+          "encodedBodySize": 8732,
+          "decodedBodySize": 25137
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 429,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+          "initiator": "script",
+          "transferSize": 84650,
+          "encodedBodySize": 84350,
+          "decodedBodySize": 357041
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+          "initiator": "script",
+          "transferSize": 69627,
+          "encodedBodySize": 69327,
+          "decodedBodySize": 262501
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+          "initiator": "script",
+          "transferSize": 14433,
+          "encodedBodySize": 14133,
+          "decodedBodySize": 47753
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/703.9b57ff8b5aa079ef.js",
+          "initiator": "script",
+          "transferSize": 18273,
+          "encodedBodySize": 17973,
+          "decodedBodySize": 47208
+        },
+        {
+          "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+          "initiator": "fetch",
+          "transferSize": 392654,
+          "encodedBodySize": 392354,
+          "decodedBodySize": 585536
+        }
+      ],
+      "final": {
+        "viewport": [
+          390,
+          844
+        ],
+        "devicePixelRatio": 3,
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 390,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-13",
+          "studioPitch": "-8",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1.5",
+          "studioRenderCount": "1",
+          "studioDrawCalls": "106",
+          "studioTriangles": "83340",
+          "studioGeometries": "17",
+          "studioTextures": "12"
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844
+        },
+        "buffer": [
+          585,
+          1266
+        ],
+        "sceneStatus": "ready",
+        "projectsExpanded": "true",
+        "dialogOpen": false,
+        "focusedId": "",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "key": "320x844-dpr3",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "inputDpr": 3,
+      "errors": [],
+      "responses": [
+        {
+          "url": "http://127.0.0.1:4193/studio",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/d442c5091e55dc0c.css",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/3b3b1d7e1b1dd5a8.css",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+          "status": 200,
+          "encoding": null
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-e1ff4172c76c0361.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-154eaaedc7527911.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/703.9b57ff8b5aa079ef.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+          "status": 200,
+          "encoding": "gzip"
+        }
+      ],
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/d442c5091e55dc0c.css",
+          "initiator": "link",
+          "transferSize": 4298,
+          "encodedBodySize": 3998,
+          "decodedBodySize": 19519
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/3b3b1d7e1b1dd5a8.css",
+          "initiator": "link",
+          "transferSize": 4780,
+          "encodedBodySize": 4480,
+          "decodedBodySize": 17183
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-e1ff4172c76c0361.js",
+          "initiator": "link",
+          "transferSize": 2191,
+          "encodedBodySize": 1891,
+          "decodedBodySize": 3644
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+          "initiator": "script",
+          "transferSize": 47007,
+          "encodedBodySize": 46707,
+          "decodedBodySize": 174133
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+          "initiator": "script",
+          "transferSize": 54658,
+          "encodedBodySize": 54358,
+          "decodedBodySize": 173019
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+          "initiator": "script",
+          "transferSize": 857,
+          "encodedBodySize": 557,
+          "decodedBodySize": 557
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+          "initiator": "script",
+          "transferSize": 3689,
+          "encodedBodySize": 3389,
+          "decodedBodySize": 8537
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-154eaaedc7527911.js",
+          "initiator": "script",
+          "transferSize": 9032,
+          "encodedBodySize": 8732,
+          "decodedBodySize": 25137
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+          "initiator": "script",
+          "transferSize": 84650,
+          "encodedBodySize": 84350,
+          "decodedBodySize": 357041
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+          "initiator": "script",
+          "transferSize": 69627,
+          "encodedBodySize": 69327,
+          "decodedBodySize": 262501
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+          "initiator": "script",
+          "transferSize": 14433,
+          "encodedBodySize": 14133,
+          "decodedBodySize": 47753
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/703.9b57ff8b5aa079ef.js",
+          "initiator": "script",
+          "transferSize": 18273,
+          "encodedBodySize": 17973,
+          "decodedBodySize": 47208
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 429,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+          "initiator": "fetch",
+          "transferSize": 392654,
+          "encodedBodySize": 392354,
+          "decodedBodySize": 585536
+        }
+      ],
+      "final": {
+        "viewport": [
+          320,
+          844
+        ],
+        "devicePixelRatio": 3,
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 320,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-13",
+          "studioPitch": "-8",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1.5",
+          "studioRenderCount": "1",
+          "studioDrawCalls": "104",
+          "studioTriangles": "83220",
+          "studioGeometries": "16",
+          "studioTextures": "12"
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 844
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 844
+        },
+        "buffer": [
+          480,
+          1266
+        ],
+        "sceneStatus": "ready",
+        "projectsExpanded": "true",
+        "dialogOpen": false,
+        "focusedId": "",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+      }
+    },
+    {
+      "key": "320x568-dpr3",
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "inputDpr": 3,
+      "errors": [],
+      "responses": [
+        {
+          "url": "http://127.0.0.1:4193/studio",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/d442c5091e55dc0c.css",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/3b3b1d7e1b1dd5a8.css",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+          "status": 200,
+          "encoding": null
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-e1ff4172c76c0361.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-154eaaedc7527911.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/703.9b57ff8b5aa079ef.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+          "status": 200,
+          "encoding": "gzip"
+        },
+        {
+          "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+          "status": 200,
+          "encoding": "gzip"
+        }
+      ],
+      "resources": [
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/d442c5091e55dc0c.css",
+          "initiator": "link",
+          "transferSize": 4298,
+          "encodedBodySize": 3998,
+          "decodedBodySize": 19519
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/css/3b3b1d7e1b1dd5a8.css",
+          "initiator": "link",
+          "transferSize": 4780,
+          "encodedBodySize": 4480,
+          "decodedBodySize": 17183
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-e1ff4172c76c0361.js",
+          "initiator": "link",
+          "transferSize": 2191,
+          "encodedBodySize": 1891,
+          "decodedBodySize": 3644
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+          "initiator": "script",
+          "transferSize": 54658,
+          "encodedBodySize": 54358,
+          "decodedBodySize": 173019
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+          "initiator": "script",
+          "transferSize": 857,
+          "encodedBodySize": 557,
+          "decodedBodySize": 557
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+          "initiator": "script",
+          "transferSize": 3689,
+          "encodedBodySize": 3389,
+          "decodedBodySize": 8537
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-154eaaedc7527911.js",
+          "initiator": "script",
+          "transferSize": 9032,
+          "encodedBodySize": 8732,
+          "decodedBodySize": 25137
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+          "initiator": "script",
+          "transferSize": 47007,
+          "encodedBodySize": 46707,
+          "decodedBodySize": 174133
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+          "initiator": "script",
+          "transferSize": 84650,
+          "encodedBodySize": 84350,
+          "decodedBodySize": 357041
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+          "initiator": "script",
+          "transferSize": 69627,
+          "encodedBodySize": 69327,
+          "decodedBodySize": 262501
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+          "initiator": "script",
+          "transferSize": 14433,
+          "encodedBodySize": 14133,
+          "decodedBodySize": 47753
+        },
+        {
+          "url": "http://127.0.0.1:4193/_next/static/chunks/703.9b57ff8b5aa079ef.js",
+          "initiator": "script",
+          "transferSize": 18273,
+          "encodedBodySize": 17973,
+          "decodedBodySize": 47208
+        },
+        {
+          "url": "http://127.0.0.1:4193/favicon.ico",
+          "initiator": "other",
+          "transferSize": 429,
+          "encodedBodySize": 129,
+          "decodedBodySize": 129
+        },
+        {
+          "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+          "initiator": "fetch",
+          "transferSize": 392654,
+          "encodedBodySize": 392354,
+          "decodedBodySize": 585536
+        }
+      ],
+      "final": {
+        "viewport": [
+          320,
+          568
+        ],
+        "devicePixelRatio": 3,
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 320,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-13",
+          "studioPitch": "-8",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1.5",
+          "studioRenderCount": "1",
+          "studioDrawCalls": "108",
+          "studioTriangles": "83460",
+          "studioGeometries": "17",
+          "studioTextures": "12"
+        },
+        "canvasRect": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 320,
+          "height": 568
+        },
+        "buffer": [
+          480,
+          852
+        ],
+        "sceneStatus": "ready",
+        "projectsExpanded": "true",
+        "dialogOpen": false,
+        "focusedId": "",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+      }
+    }
+  ],
+  "limits": [
+    "Actual production pilot room, no robot.",
+    "Emulated viewports/DPR, no physical-device validation.",
+    "Canvas counters are sampled renderer counters, not exhaustive GPU or forced-shadow-refresh peaks."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+    "reason":  "Single-writer G4 v02 build with root and UI repairs",
+    "priorReceipt":  {
+                         "checkedAtUtc":  "2026-11-18T18:02:16.6881600Z",
+                         "ownedPid":  33628,
+                         "creationDate":  "2026-11-18T18:02:15.7905980Z",
+                         "commandLine":  "\"C:\\Program Files\\nodejs\\node.exe\" node_modules/next/dist/bin/next start --hostname 127.0.0.1 --port 4193 ",
+                         "executablePath":  "C:\\Program Files\\nodejs\\node.exe",
+                         "cwd":  "C:/Users/Owenc/orca/Portfolio-assistant",
+                         "port":  4193,
+                         "buildId":  "ZApPY866GsRRPM_fkBW0F",
+                         "owner":  "root G4 verification"
+                     },
+    "stoppedAt":  "2026-11-18T18:31:40.8548066Z"
+}

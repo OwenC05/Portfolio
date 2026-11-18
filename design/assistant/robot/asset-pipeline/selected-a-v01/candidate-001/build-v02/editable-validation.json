@@ -1,0 +1,9 @@
+{
+  "sourceBlendSha256": "80704c8f2989683dffa59f9616b1ef146eab944f7d05ae0e0bf55e1964bc508e",
+  "candidateSha256": "bc1a4d6d968dd53eda3480936959d0ebf292e76652a6bbdd201e15f4cd665270",
+  "reexportSha256": "bc1a4d6d968dd53eda3480936959d0ebf292e76652a6bbdd201e15f4cd665270",
+  "exactBytesEqual": true,
+  "objects": 22,
+  "blenderVersion": "5.2.3 LTS",
+  "blenderBuildHash": "e13b728c6880"
+}

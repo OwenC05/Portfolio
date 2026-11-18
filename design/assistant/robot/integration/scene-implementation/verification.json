@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-18T17:57:31.465Z",
+  "mode": "bounded G2 worker; no build/browser lease",
+  "branch": "feature/portfolio-assistant",
+  "checks": [
+    {
+      "command": "node --test components/studio/scene/verify-controller.mjs components/studio/scene/robot/verify-robot.mjs",
+      "exitCode": 0,
+      "tests": 82,
+      "passed": 82,
+      "failed": 0,
+      "detail": "Real installed Three/r187, actual GLB, G1 reducer snapshots; renderer/DOM shims and synthetic trust only."
+    },
+    {
+      "command": "node components/studio/scene/robot/verify-envelope.mjs --write",
+      "exitCode": 0,
+      "sampledStates": 5000,
+      "detail": "Separate analytic continuous positional enclosure; no continuous collision or room clearance claim."
+    },
+    {
+      "command": "node components/studio/scene/robot/derive-profile.mjs --check",
+      "exitCode": 0,
+      "bytes": 14212,
+      "sha256": "102cfdd0178f4cb9e301ce2feaeb82df0b9701ab60f9379f8cdaac18e208a447"
+    },
+    {
+      "command": "node node_modules/typescript/bin/tsc --noEmit --incremental false",
+      "exitCode": 0
+    },
+    {
+      "command": "node node_modules/eslint/bin/eslint.js components/studio/scene/controller.ts components/studio/scene/picking.ts components/studio/scene/types.ts components/studio/scene/verify-controller.mjs components/studio/StudioScene.tsx lib/studio-contract.ts components/studio/scene/robot --ext .ts,.mjs",
+      "exitCode": 0
+    },
+    {
+      "command": "git -c core.whitespace=cr-at-eol diff --check -- components/studio/scene/controller.ts components/studio/scene/picking.ts components/studio/scene/types.ts components/studio/scene/verify-controller.mjs components/studio/StudioScene.tsx lib/studio-contract.ts",
+      "exitCode": 0,
+      "detail": "Existing byte-preserved CRLF files retained; plain diff --check flags CR-at-EOL under repository -text attributes, with no non-CR whitespace findings."
+    }
+  ],
+  "notRun": [
+    "Next typegen/build",
+    "browser/preview",
+    "GPU/device performance",
+    "independent G2 or Claude in-room review"
+  ],
+  "testDevelopmentCorrections": [
+    "Fixed test-support default-import interop and cross-realm array comparisons.",
+    "Fixed test harness clock to retain monotonic timestamps.",
+    "Scoped lint rejected the test variable name module; renamed loader."
+  ],
+  "node": "v24.21.0",
+  "three": "187"
+}

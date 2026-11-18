@@ -1,0 +1,72 @@
+TAP version 13
+# Subtest: independent real guard controls reject skin zero and missing POSITION min/max
+ok 1 - independent real guard controls reject skin zero and missing POSITION min/max
+  ---
+  duration_ms: 154.3861
+  type: 'test'
+  ...
+# Subtest: abort during a real asynchronous parser continuation releases all 28 imported identities
+ok 2 - abort during a real asynchronous parser continuation releases all 28 imported identities
+  ---
+  duration_ms: 54.6939
+  type: 'test'
+  ...
+# Subtest: remove/readd fences old resolve after replacement is already ready
+ok 3 - remove/readd fences old resolve after replacement is already ready
+  ---
+  duration_ms: 274.9533
+  type: 'test'
+  ...
+# Subtest: remove/readd fences old reject after replacement is already ready
+ok 4 - remove/readd fences old reject after replacement is already ready
+  ---
+  duration_ms: 140.5585
+  type: 'test'
+  ...
+# Subtest: real G1 replacement/cancel/failure/close erase card identity synchronously before a pending frame
+ok 5 - real G1 replacement/cancel/failure/close erase card identity synchronously before a pending frame
+  ---
+  duration_ms: 106.9268
+  type: 'test'
+  ...
+# Subtest: all imported opaque meshes and four real card meshes are registered as direct and expanded blockers
+ok 6 - all imported opaque meshes and four real card meshes are registered as direct and expanded blockers
+  ---
+  duration_ms: 160.6429
+  type: 'test'
+  ...
+# Subtest: normal optional removal releases all 31 robot/card identities and preserves the renderer
+ok 7 - normal optional removal releases all 31 robot/card identities and preserves the renderer
+  ---
+  duration_ms: 124.7778
+  type: 'test'
+  ...
+# Subtest: cleanup/remount lifetime analogue ignores old observers, RAF and robot resolution
+ok 8 - cleanup/remount lifetime analogue ignores old observers, RAF and robot resolution
+  ---
+  duration_ms: 203.3304
+  type: 'test'
+  ...
+# CARD_RELEASE_EVIDENCE [{"type":"ExtrudeGeometry","disposals":1},{"type":"MeshStandardMaterial","disposals":1},{"type":"ExtrudeGeometry","disposals":1}]
+# Subtest: P2: one generated-card release exception must not skip independent remaining resources
+ok 9 - P2: one generated-card release exception must not skip independent remaining resources
+  ---
+  duration_ms: 102.1671
+  type: 'test'
+  ...
+# ROOT_RELEASE_EVIDENCE {"released":28,"total":28,"detached":true,"rendererDisposals":0}
+# Subtest: P2: a throwing root removal listener must not bypass the 28 imported resource releases
+ok 10 - P2: a throwing root removal listener must not bypass the 28 imported resource releases
+  ---
+  duration_ms: 91.9759
+  type: 'test'
+  ...
+1..10
+# tests 10
+# suites 0
+# pass 10
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2313.6027

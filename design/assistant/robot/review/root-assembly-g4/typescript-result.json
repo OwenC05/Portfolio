@@ -1,0 +1,12 @@
+{
+  "roots": [
+    "components/studio/StudioExperience.tsx",
+    "node_modules/next/types/global.d.ts"
+  ],
+  "diagnostics": 0,
+  "noEmit": true,
+  "incremental": false,
+  "sceneImplementationExcluded": true,
+  "boundary": "Actual root and fixed imports; StudioScene implementation replaced only in memory by a component using its published StudioSceneProps interface; current public contract types checked but not frozen as G2 implementation evidence",
+  "details": ""
+}

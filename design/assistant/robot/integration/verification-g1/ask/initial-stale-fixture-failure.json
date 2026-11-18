@@ -1,0 +1,11 @@
+{
+  "id": "da87df49-a7db-45e6-b0af-26c6258cb059",
+  "ok": true,
+  "result": {
+    "result": "{\"status\":\"The assistant sent an inconsistent response. Please try again.\",\"question\":\"New question\",\"article\":\"RESULTS\\n\\nYOU ASKED\\nNew question\\n\\nThe assistant sent an inconsistent response. Please try again.\\n\\nTRY AGAIN\",\"fixtureCalls\":2}",
+    "origin": "http://127.0.0.1:4193/ask"
+  },
+  "_meta": {
+    "runtimeId": "19e04513-1ef5-4d38-9d02-d9354525c5f3"
+  }
+}

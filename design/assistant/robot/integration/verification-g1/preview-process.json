@@ -1,0 +1,11 @@
+﻿{
+    "pid":  30700,
+    "parentPid":  48976,
+    "commandLine":  "\"C:\\Program Files\\nodejs\\node.exe\" node_modules/next/dist/bin/next start --hostname 127.0.0.1 --port 4193 ",
+    "startedAtUtc":  "2026-11-16T13:48:21.1976461Z",
+    "cwd":  "C:\\Users\\Owenc\\orca\\Portfolio-assistant",
+    "origin":  "http://127.0.0.1:4193",
+    "hidden":  true,
+    "ownership":  "task_bd8b4b80058c until completion handoff to root",
+    "startCommand":  "node node_modules/next/dist/bin/next start --hostname 127.0.0.1 --port 4193"
+}

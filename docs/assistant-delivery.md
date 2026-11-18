@@ -1,5 +1,13 @@
 # Portfolio assistant preview
 
+## Current Studio checkpoint — 18 November 2026
+
+The selected Porcelain clerk robot now runs inside the Studio and uses the same source-only request lifecycle as `/ask`. Visitors can click it or use the accessible Ask button, inspect real passages and source links, cancel or recover from failures, and continue using the HTML assistant if WebGL is unavailable. Generation remains off.
+
+The current implementation and reviewed appearance are documented in the [robot delivery checkpoint](../design/assistant/robot/delivery/README.md). The fresh build passes its type/lint checks and targeted functional verification. Desktop scheduling acceptance remains open: one measured repeat exceeded the 33 ms request-delay target. A bounded trace localized observed waiting to Chromium's Windows presentation path without establishing an application defect or justified further patch. This checkpoint is not production or merge approval; device, assistive-technology and continuous-motion limits remain explicit.
+
+The sections below retain the earlier `/ask` delivery history and its dated evidence.
+
 Implemented on 15 November 2026 in the isolated `feature/portfolio-assistant` branch. The preview searches published portfolio sources, displays exact excerpts and citations, and visualizes the retrieval events returned by the API. Generation is disabled at Owen's request; no live assistant inference requests were made.
 
 ## Included
@@ -48,6 +56,8 @@ The Next.js/React update resolves the old framework baseline and configured lint
 
 ## Final interface direction
 
-Owen clarified that `/ask` is the functional test surface, not the final product presentation. The eventual assistant should be an interactive floating robot, similar to the reference Owen uploaded earlier. Design that experience collaboratively with Owen after the functionality is ready; recover the reference at that stage rather than inventing its appearance. No robot design is approved by this preview.
+Owen clarified that `/ask` was the functional test surface and requested an interactive floating robot for the final presentation. That initial preview preceded robot-design approval. Owen subsequently selected A / Porcelain clerk; its Studio implementation and current acceptance limits are recorded in the checkpoint above.
+
+On 15 November, Owen chose **inside the 3D studio only** and moved the next priority to robot design. The proposed asset workflow uses Higgsfield/Blender for development, Meshy for the asset, and Blender for final cleanup and animation. See the [robot brief](../design/assistant/robot/brief.md) for confirmed requirements, tool constraints and unresolved visual choices.
 
 Use Orca orchestration to delegate independent tasks in parallel. Actual Claude handles design; Codex handles engineering, evaluation and other work. Preserve the source-only choice until Owen changes it. A later character interface should use the same source policy, API and actual retrieval events rather than implying generated reasoning or unsupported knowledge.

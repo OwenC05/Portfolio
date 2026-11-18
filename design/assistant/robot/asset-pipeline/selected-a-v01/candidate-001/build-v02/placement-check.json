@@ -1,0 +1,53 @@
+{
+  "assetSha256": "bc1a4d6d968dd53eda3480936959d0ebf292e76652a6bbdd201e15f4cd665270",
+  "method": "new v02 conservative swept AABB transformed by root P2 prototype; compare source-projection neighbour angles from placement.md, not actual triangle occlusion",
+  "anchorWorld": [
+    0.8,
+    2.8,
+    -0.2
+  ],
+  "quaternion": [
+    0,
+    -0.19611998129015468,
+    0,
+    0.9805799064526813
+  ],
+  "wrapperScale": 1.6,
+  "worldUnitsPerMetre": 2,
+  "artScale": 0.8,
+  "floorOffset": 0,
+  "worldSweptAabb": {
+    "min": [
+      0.4747558984820735,
+      2.356071800796561,
+      -0.49661672750899205
+    ],
+    "max": [
+      1.1158023221232047,
+      3.3713150075988243,
+      0.12399351061312197
+    ]
+  },
+  "angularDegrees": {
+    "azimuth": [
+      18.70913257176177,
+      26.558857501006408
+    ],
+    "elevation": [
+      -6.911299952269536,
+      8.866454511144692
+    ]
+  },
+  "marginsAgainstP2ApproximateAngles": {
+    "typeforgeDegrees": 1.7491325717617698,
+    "wallLightsDegrees": -0.9864545111446921,
+    "speakerDegrees": 0.5087000477304642
+  },
+  "anchorAccepted": false,
+  "runtimeCardsIncluded": false,
+  "limitations": [
+    "Negative box margin is a conservative overlap warning, not proof of silhouette collision; enlarged bookmark may sit right of lights",
+    "No shrinking/redesign/moving room authorized or performed",
+    "Runtime card bounds and interrupted transitions remain unmeasured"
+  ]
+}

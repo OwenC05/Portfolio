@@ -1,0 +1,592 @@
+{
+  "profileId": "apprentice-robot-neutral-candidate-v02-draft",
+  "revision": 2,
+  "productionReady": false,
+  "status": "candidate-v02-source-alignment-not-production-freeze",
+  "roomProfile": {
+    "id": "studio-full-kit-v1",
+    "modify": false
+  },
+  "coordinates": {
+    "units": "metres",
+    "authorUp": "+Z",
+    "authorForward": "-Y",
+    "gltfUp": "+Y",
+    "gltfForward": "+Z",
+    "blenderToGltf": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        -1,
+        0
+      ]
+    ],
+    "rootNeutral": {
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "placement": {
+      "worldUnitsPerMetre": 2,
+      "applications": 1,
+      "addRoomFloorOffset": false,
+      "anchorWorld": null,
+      "rotationXyzw": null,
+      "facingAssumption": "R1: external wrapper faces fixed eye, not yet accepted or baked"
+    },
+    "comparisonToleranceMetres": null
+  },
+  "format": {
+    "glbVersion": 2,
+    "sceneCount": 1,
+    "rootCount": 1,
+    "externalUris": false,
+    "images": [],
+    "primitiveMode": 4,
+    "requiredAttributes": [
+      "POSITION",
+      "NORMAL"
+    ],
+    "optionalDeclaredAttributes": [
+      "TEXCOORD_0",
+      "COLOR_0"
+    ],
+    "uv0RequiredWhenTextured": true,
+    "sparseAccessors": false,
+    "allowedExtensions": [
+      "KHR_materials_emissive_strength"
+    ],
+    "animations": false,
+    "skins": false,
+    "morphs": false,
+    "cameras": false,
+    "lights": false,
+    "compressionDecoders": [],
+    "alphaModes": [
+      "OPAQUE"
+    ],
+    "doubleSidedDefault": false,
+    "textures": false
+  },
+  "runtime": {
+    "motion": "neutral-plus-finite-runtime-poses",
+    "eyeTechnique": "imported-rigid-ring-pair-plus-lower-lid-and-pitch-only-gaze-for-candidate-v02",
+    "marks": {
+      "baked": false,
+      "min": 0,
+      "max": 4,
+      "source": "current-validated-hit-list",
+      "overflowPolicy": "protocol-error-clear-all-views-no-truncation",
+      "selectionInput": "HTML-only-current-run-source-and-chunk-key",
+      "pickable": false,
+      "clearing": "first-visible-rendered-frame-no-stagger-no-exit-tween",
+      "selectedLiftAndScaleApproval": null
+    },
+    "castShadowProposal": false,
+    "opaqueLeavesOcclude": true,
+    "importOwner": "private-per-load",
+    "dynamicOwner": "robot-presentation-owner",
+    "eyeGeometryOwner": "private-per-load-import-owner",
+    "eyeTransformsAndGlowOwner": "robot-presentation-owner",
+    "trayStates": {
+      "carried": {
+        "sourceLocalTranslationBlenderMetres": [
+          0,
+          0,
+          -0.228
+        ],
+        "sourceEulerXyzDegrees": [
+          6,
+          0,
+          0
+        ],
+        "usedFor": [
+          "idle",
+          "attention",
+          "waiting",
+          "resubmit",
+          "zero-hit-retrieval-pending",
+          "stopped",
+          "dismissal"
+        ]
+      },
+      "presented": {
+        "sourceLocalTranslationBlenderMetres": [
+          0,
+          -0.03,
+          -0.242
+        ],
+        "sourceEulerXyzDegrees": [
+          20,
+          0,
+          0
+        ],
+        "usedFor": [
+          "valid-current-retrieval-1-to-4-hits",
+          "valid-abstained-answer-after-zero-hit-retrieval"
+        ]
+      },
+      "rootLiftIsSeparate": true
+    },
+    "glowLevelsSourceBlender": {
+      "dim": 0.5,
+      "lit": 2.5,
+      "finalRuntimeValues": null
+    },
+    "eyeOriginSpacingMetres": 0.0684096
+  },
+  "parserSafetyCaps": {
+    "rawBytes": null,
+    "nodes": null,
+    "depth": null,
+    "accessors": null,
+    "imagePixels": null
+  },
+  "allocation": {
+    "approved": false,
+    "encodedGlbBytes": null,
+    "assistantJsBytes": null,
+    "dynamicEyesMarksBytes": null,
+    "peakCalls": null,
+    "peakRenderedTriangles": null,
+    "texturePixels": null
+  },
+  "wholeSceneHardGates": {
+    "encodedSceneJsAndAssetsBytes": 1500000,
+    "peakCalls": 200,
+    "peakRenderedTriangles": 200000,
+    "shadowLights": 1
+  },
+  "candidateId": "apprentice-blockout-v02",
+  "derivedFrom": {
+    "relativePath": "../profile.example.json",
+    "bytes": 2401,
+    "sha256": "ae17ab6abf03ac10785ac09ab7b7f6c23e6071f579d0be7095bd087bf560793d"
+  },
+  "sourcePins": {
+    "readme": {
+      "relativePath": "../../apprentice/README.md",
+      "bytes": 8006,
+      "sha256": "f1beb117af5e1602dae2b8691a222983d9a996b550b7332e67338521716607d6"
+    },
+    "spec": {
+      "relativePath": "../../apprentice/design-spec.md",
+      "bytes": 25824,
+      "sha256": "00474adfac3e349ce7dfd1ca2b28aeb831a3e79906427d5cb5fb4274f3d303f6"
+    },
+    "passport": {
+      "relativePath": "../../apprentice/blockout-v02/README.md",
+      "bytes": 9515,
+      "sha256": "c6437173a403ab96eda415c794f4a8167844c56094cacfc7ae8ca88bef29e589"
+    },
+    "script": {
+      "relativePath": "../../apprentice/blockout-v02/build_apprentice_blockout_v02.py",
+      "bytes": 31380,
+      "sha256": "2fd5ecdf58dd9d0298eddee2beea5af613189bbe2836dbe87f1b73b26fc6709b"
+    },
+    "blend": {
+      "relativePath": "../../apprentice/blockout-v02/apprentice-blockout-v02.blend",
+      "bytes": 303382,
+      "sha256": "ac48061fa08e53008be541e14f9e970c1bef9710089804c9fac17a683e1d7e1c"
+    },
+    "review": {
+      "relativePath": "../../review/blockout-v02/review.md",
+      "bytes": 11637,
+      "sha256": "50f285bb6c3ce18b17c4099dbb84a127866f3eabe3d5dffcb1d42b45c0c58043"
+    },
+    "decisions": {
+      "relativePath": "../../integration-decisions.md",
+      "bytes": 8151,
+      "sha256": "d354b650d30970de9573b1aed07f6d4a99b13e13045c8cc4723d3fcc9c7baa26"
+    },
+    "stateContract": {
+      "relativePath": "../../integration/state-contract.md",
+      "bytes": 21582,
+      "sha256": "e9c1916fd9a0529b6f3a11bdc7a1829b67c1e3b29ccdc5b58d6c05d970f9b26d"
+    }
+  },
+  "inheritedPolicyEvidence": "Format core, parser cap placeholders and whole-scene gates carried forward from B draft; no room/provider refresh in this pass.",
+  "exportBindingFreezePending": true,
+  "requiredMovingNodes": [
+    "APR_root",
+    "APR_head",
+    "APR_eyes",
+    "APR_lid_lower",
+    "APR_body",
+    "APR_fin_L",
+    "APR_fin_R",
+    "APR_tray"
+  ],
+  "sourceBindings": [
+    {
+      "name": "APR_root",
+      "parent": null,
+      "sourceKey": "root",
+      "kind": "empty",
+      "moving": true,
+      "sourceLocalPivotBlenderMetres": [
+        0,
+        0,
+        0
+      ],
+      "sourceNeutralEulerXyzDegrees": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APR_head",
+      "parent": "APR_root",
+      "sourceKey": "head",
+      "kind": "mesh",
+      "moving": true,
+      "sourceLocalPivotBlenderMetres": [
+        0,
+        0,
+        0.018
+      ],
+      "sourceNeutralEulerXyzDegrees": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APR_visor",
+      "parent": "APR_head",
+      "sourceKey": "visor",
+      "kind": "mesh",
+      "moving": false,
+      "sourceLocalPivotBlenderMetres": [
+        0,
+        0,
+        0.08
+      ],
+      "sourceNeutralEulerXyzDegrees": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APR_ear_L",
+      "parent": "APR_head",
+      "sourceKey": "ear_L",
+      "kind": "mesh",
+      "moving": false,
+      "sourceLocalPivotBlenderMetres": [
+        0,
+        0,
+        0.08
+      ],
+      "sourceNeutralEulerXyzDegrees": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APR_ear_R",
+      "parent": "APR_head",
+      "sourceKey": "ear_R",
+      "kind": "mesh",
+      "moving": false,
+      "sourceLocalPivotBlenderMetres": [
+        0,
+        0,
+        0.08
+      ],
+      "sourceNeutralEulerXyzDegrees": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APR_eyes",
+      "parent": "APR_head",
+      "sourceKey": "eyes",
+      "kind": "empty",
+      "moving": true,
+      "sourceLocalPivotBlenderMetres": [
+        0,
+        0,
+        0.08
+      ],
+      "sourceNeutralEulerXyzDegrees": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APR_eye_L",
+      "parent": "APR_eyes",
+      "sourceKey": "eye_L",
+      "kind": "mesh",
+      "moving": false,
+      "sourceLocalPivotBlenderMetres": [
+        0.0342048,
+        -0.07715768466821694,
+        0
+      ],
+      "sourceNeutralEulerXyzDegrees": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APR_eye_R",
+      "parent": "APR_eyes",
+      "sourceKey": "eye_R",
+      "kind": "mesh",
+      "moving": false,
+      "sourceLocalPivotBlenderMetres": [
+        -0.0342048,
+        -0.07715768466821694,
+        0
+      ],
+      "sourceNeutralEulerXyzDegrees": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APR_lid_lower",
+      "parent": "APR_eyes",
+      "sourceKey": "lid_l",
+      "kind": "mesh",
+      "moving": true,
+      "sourceLocalPivotBlenderMetres": [
+        0,
+        0,
+        0
+      ],
+      "sourceNeutralEulerXyzDegrees": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APR_body",
+      "parent": "APR_root",
+      "sourceKey": "body",
+      "kind": "mesh",
+      "moving": true,
+      "sourceLocalPivotBlenderMetres": [
+        0,
+        0,
+        -0.018
+      ],
+      "sourceNeutralEulerXyzDegrees": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APR_badge",
+      "parent": "APR_body",
+      "sourceKey": "badge",
+      "kind": "mesh",
+      "moving": false,
+      "sourceLocalPivotBlenderMetres": [
+        0,
+        -0.05943679795818618,
+        -0.039
+      ],
+      "sourceNeutralEulerXyzDegrees": [
+        -5,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APR_fin_L",
+      "parent": "APR_body",
+      "sourceKey": "fin_L",
+      "kind": "mesh",
+      "moving": true,
+      "sourceLocalPivotBlenderMetres": [
+        0.102,
+        0,
+        -0.028
+      ],
+      "sourceNeutralEulerXyzDegrees": [
+        0,
+        -8,
+        0
+      ]
+    },
+    {
+      "name": "APR_fin_R",
+      "parent": "APR_body",
+      "sourceKey": "fin_R",
+      "kind": "mesh",
+      "moving": true,
+      "sourceLocalPivotBlenderMetres": [
+        -0.102,
+        0,
+        -0.028
+      ],
+      "sourceNeutralEulerXyzDegrees": [
+        0,
+        8,
+        0
+      ]
+    },
+    {
+      "name": "APR_tray",
+      "parent": "APR_root",
+      "sourceKey": "tray",
+      "kind": "mesh",
+      "moving": true,
+      "sourceLocalPivotBlenderMetres": [
+        0,
+        0,
+        -0.228
+      ],
+      "sourceNeutralEulerXyzDegrees": [
+        6,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APR_tray_glow",
+      "parent": "APR_tray",
+      "sourceKey": "glow",
+      "kind": "mesh",
+      "moving": false,
+      "sourceLocalPivotBlenderMetres": [
+        0,
+        0,
+        0
+      ],
+      "sourceNeutralEulerXyzDegrees": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "sourceBindingEvidence": "Static reading of pinned build_robot/apply_pose/NEUTRAL declarations; blend bytes hashed only. Not exported TRS or loaded-scene inspection.",
+  "rejectExportedNodes": [
+    "APR_lid_upper",
+    "APR_card_1",
+    "APR_card_2",
+    "APR_card_3",
+    "APR_card_4"
+  ],
+  "rejectExportedPrefixes": [
+    "APR_sheet_",
+    "ENV_",
+    "LGT_",
+    "CAM_"
+  ],
+  "exportInventoryPolicy": "Only the 15 named source bindings form this unmerged candidate handoff; final GLB inventory remains unmeasured and any cleanup merge requires an updated binding map.",
+  "materialScope": {
+    "intendedImportedNames": [
+      "MAT_APR_shell",
+      "MAT_APR_ink",
+      "MAT_APR_accent",
+      "MAT_APR_eye_emit",
+      "MAT_APR_tray_glow"
+    ],
+    "sourceDatablocks": [
+      "MAT_APR_shell",
+      "MAT_APR_ink",
+      "MAT_APR_accent",
+      "MAT_APR_eye_emit",
+      "MAT_APR_tray_glow_dim",
+      "MAT_APR_tray_glow_lit",
+      "MAT_APR_card",
+      "MAT_ENV_backdrop_standin"
+    ],
+    "pendingConsolidation": {
+      "sources": [
+        "MAT_APR_tray_glow_dim",
+        "MAT_APR_tray_glow_lit"
+      ],
+      "intendedDestination": "MAT_APR_tray_glow",
+      "performed": false
+    },
+    "generatedMarkerMaterial": "MAT_APR_card",
+    "generatedMarkerMaterialOwner": "robot-presentation-owner",
+    "exportedMaterialCount": null,
+    "exportedTextureCount": null,
+    "appearanceApproved": false
+  },
+  "heldClearanceProposal": {
+    "dimensionsBlenderMetres": [
+      0.42,
+      0.28,
+      0.52
+    ],
+    "centreBlenderMetres": [
+      0,
+      -0.012,
+      -0.04
+    ],
+    "minBlenderMetres": [
+      -0.21,
+      -0.152,
+      -0.3
+    ],
+    "maxBlenderMetres": [
+      0.21,
+      0.128,
+      0.22
+    ],
+    "dimensionsGltfMetres": [
+      0.42,
+      0.52,
+      0.28
+    ],
+    "centreGltfMetres": [
+      0,
+      -0.04,
+      0.012
+    ],
+    "minGltfMetres": [
+      -0.21,
+      -0.3,
+      -0.128
+    ],
+    "maxGltfMetres": [
+      0.21,
+      0.22,
+      0.152
+    ],
+    "evidence": "Author-held-pose-proposal; tray envelope arithmetic independently recomputed; not a new geometry measurement",
+    "fullSweptBoundsGltfMetres": null,
+    "selectedMarkerEnlargementCovered": null,
+    "roomClearanceAccepted": false
+  }
+}

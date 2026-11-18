@@ -1,0 +1,997 @@
+{
+  "definition": "All actually loaded route JavaScript (including common framework code) and GLB/external image URLs, deduplicated per scenario. Includes look extremes and Ask/result dependencies. CSS, fonts, document/RSC and dynamic API payloads are retained in raw performance resources but excluded from this scene-JS-plus-assets gate. Embedded/procedural textures are inside GLB or JS bytes.",
+  "inventories": [
+    {
+      "name": "desktop",
+      "cold": {
+        "entries": [
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-a34564894354b532.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-a34564894354b532.js",
+              "initiator": "link",
+              "encodedBodySize": 1912,
+              "decodedBodySize": 3666,
+              "transferSize": 2212,
+              "duration": 21
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-a34564894354b532.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+              "initiator": "script",
+              "encodedBodySize": 557,
+              "decodedBodySize": 557,
+              "transferSize": 857,
+              "duration": 26.30000001192093
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+              "status": 200,
+              "encoding": null,
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+              "initiator": "script",
+              "encodedBodySize": 3389,
+              "decodedBodySize": 8537,
+              "transferSize": 3689,
+              "duration": 35.69999998807907
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/0-09907f8dc8534979.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/0-09907f8dc8534979.js",
+              "initiator": "script",
+              "encodedBodySize": 3237,
+              "decodedBodySize": 9005,
+              "transferSize": 3537,
+              "duration": 36
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/0-09907f8dc8534979.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-33a6621dd63a6088.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-33a6621dd63a6088.js",
+              "initiator": "script",
+              "encodedBodySize": 12445,
+              "decodedBodySize": 36850,
+              "transferSize": 12745,
+              "duration": 36.19999998807907
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-33a6621dd63a6088.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+              "initiator": "script",
+              "encodedBodySize": 46707,
+              "decodedBodySize": 174133,
+              "transferSize": 47007,
+              "duration": 43.10000002384186
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+              "initiator": "script",
+              "encodedBodySize": 54358,
+              "decodedBodySize": 173019,
+              "transferSize": 54658,
+              "duration": 45.09999996423721
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+              "initiator": "script",
+              "encodedBodySize": 14133,
+              "decodedBodySize": 47753,
+              "transferSize": 14433,
+              "duration": 13
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/703.877bb59797a3c0ea.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/703.877bb59797a3c0ea.js",
+              "initiator": "script",
+              "encodedBodySize": 19184,
+              "decodedBodySize": 51204,
+              "transferSize": 19484,
+              "duration": 12.099999964237213
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/703.877bb59797a3c0ea.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+              "initiator": "script",
+              "encodedBodySize": 69327,
+              "decodedBodySize": 262501,
+              "transferSize": 69627,
+              "duration": 22.100000023841858
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+              "initiator": "script",
+              "encodedBodySize": 84350,
+              "decodedBodySize": 357041,
+              "transferSize": 84650,
+              "duration": 24.899999976158142
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+            "timing": {
+              "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+              "initiator": "fetch",
+              "encodedBodySize": 392354,
+              "decodedBodySize": 585536,
+              "transferSize": 392654,
+              "duration": 33.19999998807907
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "fetch"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/287.a76f2f26e2e93633.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/287.a76f2f26e2e93633.js",
+              "initiator": "script",
+              "encodedBodySize": 6717,
+              "decodedBodySize": 24038,
+              "transferSize": 7017,
+              "duration": 6.700000047683716
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/287.a76f2f26e2e93633.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/studio/assistant-apprentice-v03.glb",
+            "timing": {
+              "url": "http://127.0.0.1:4193/studio/assistant-apprentice-v03.glb",
+              "initiator": "fetch",
+              "encodedBodySize": 483118,
+              "decodedBodySize": 673144,
+              "transferSize": 483418,
+              "duration": 35.80000001192093
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/studio/assistant-apprentice-v03.glb",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "fetch"
+            }
+          }
+        ],
+        "complete": true,
+        "encodedBodyBytes": 1191788,
+        "decodedBodyBytes": 2406984,
+        "transferSize": 1195988
+      },
+      "warm": {
+        "entries": [
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-a34564894354b532.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-a34564894354b532.js",
+              "initiator": "link",
+              "encodedBodySize": 1912,
+              "decodedBodySize": 3666,
+              "transferSize": 0,
+              "duration": 0
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-a34564894354b532.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+              "initiator": "script",
+              "encodedBodySize": 557,
+              "decodedBodySize": 557,
+              "transferSize": 0,
+              "duration": 0
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+              "status": 200,
+              "encoding": null,
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+              "initiator": "script",
+              "encodedBodySize": 3389,
+              "decodedBodySize": 8537,
+              "transferSize": 0,
+              "duration": 0
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/0-09907f8dc8534979.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/0-09907f8dc8534979.js",
+              "initiator": "script",
+              "encodedBodySize": 3237,
+              "decodedBodySize": 9005,
+              "transferSize": 0,
+              "duration": 0
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/0-09907f8dc8534979.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-33a6621dd63a6088.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-33a6621dd63a6088.js",
+              "initiator": "script",
+              "encodedBodySize": 12445,
+              "decodedBodySize": 36850,
+              "transferSize": 0,
+              "duration": 0
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-33a6621dd63a6088.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+              "initiator": "script",
+              "encodedBodySize": 46707,
+              "decodedBodySize": 174133,
+              "transferSize": 0,
+              "duration": 0
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+              "initiator": "script",
+              "encodedBodySize": 54358,
+              "decodedBodySize": 173019,
+              "transferSize": 0,
+              "duration": 0
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+              "initiator": "script",
+              "encodedBodySize": 14133,
+              "decodedBodySize": 47753,
+              "transferSize": 0,
+              "duration": 0
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/703.877bb59797a3c0ea.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/703.877bb59797a3c0ea.js",
+              "initiator": "script",
+              "encodedBodySize": 19184,
+              "decodedBodySize": 51204,
+              "transferSize": 0,
+              "duration": 0
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/703.877bb59797a3c0ea.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+              "initiator": "script",
+              "encodedBodySize": 69327,
+              "decodedBodySize": 262501,
+              "transferSize": 0,
+              "duration": 0
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+              "initiator": "script",
+              "encodedBodySize": 84350,
+              "decodedBodySize": 357041,
+              "transferSize": 0,
+              "duration": 0
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+            "timing": {
+              "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+              "initiator": "fetch",
+              "encodedBodySize": 392354,
+              "decodedBodySize": 585536,
+              "transferSize": 300,
+              "duration": 4.800000011920929
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "fetch"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/287.a76f2f26e2e93633.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/287.a76f2f26e2e93633.js",
+              "initiator": "script",
+              "encodedBodySize": 6717,
+              "decodedBodySize": 24038,
+              "transferSize": 0,
+              "duration": 0
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/287.a76f2f26e2e93633.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/studio/assistant-apprentice-v03.glb",
+            "timing": {
+              "url": "http://127.0.0.1:4193/studio/assistant-apprentice-v03.glb",
+              "initiator": "fetch",
+              "encodedBodySize": 483118,
+              "decodedBodySize": 673144,
+              "transferSize": 300,
+              "duration": 5.800000011920929
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/studio/assistant-apprentice-v03.glb",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "fetch"
+            }
+          }
+        ],
+        "complete": true,
+        "encodedBodyBytes": 1191788,
+        "decodedBodyBytes": 2406984,
+        "transferSize": 600
+      },
+      "additionalJsAfterAsk": []
+    },
+    {
+      "name": "small",
+      "cold": {
+        "entries": [
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-a34564894354b532.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-a34564894354b532.js",
+              "initiator": "link",
+              "encodedBodySize": 1912,
+              "decodedBodySize": 3666,
+              "transferSize": 2212,
+              "duration": 39.10000002384186
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-a34564894354b532.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+              "initiator": "script",
+              "encodedBodySize": 557,
+              "decodedBodySize": 557,
+              "transferSize": 857,
+              "duration": 47.80000001192093
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+              "status": 200,
+              "encoding": null,
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/0-09907f8dc8534979.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/0-09907f8dc8534979.js",
+              "initiator": "script",
+              "encodedBodySize": 3237,
+              "decodedBodySize": 9005,
+              "transferSize": 3537,
+              "duration": 52.89999997615814
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/0-09907f8dc8534979.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+              "initiator": "script",
+              "encodedBodySize": 3389,
+              "decodedBodySize": 8537,
+              "transferSize": 3689,
+              "duration": 49.09999996423721
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-33a6621dd63a6088.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-33a6621dd63a6088.js",
+              "initiator": "script",
+              "encodedBodySize": 12445,
+              "decodedBodySize": 36850,
+              "transferSize": 12745,
+              "duration": 55.5
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-33a6621dd63a6088.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+              "initiator": "script",
+              "encodedBodySize": 46707,
+              "decodedBodySize": 174133,
+              "transferSize": 47007,
+              "duration": 44.80000001192093
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+              "initiator": "script",
+              "encodedBodySize": 54358,
+              "decodedBodySize": 173019,
+              "transferSize": 54658,
+              "duration": 44.39999997615814
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+              "initiator": "script",
+              "encodedBodySize": 14133,
+              "decodedBodySize": 47753,
+              "transferSize": 14433,
+              "duration": 10.899999976158142
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/703.877bb59797a3c0ea.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/703.877bb59797a3c0ea.js",
+              "initiator": "script",
+              "encodedBodySize": 19184,
+              "decodedBodySize": 51204,
+              "transferSize": 19484,
+              "duration": 14.199999988079071
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/703.877bb59797a3c0ea.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+              "initiator": "script",
+              "encodedBodySize": 84350,
+              "decodedBodySize": 357041,
+              "transferSize": 84650,
+              "duration": 23.80000001192093
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+              "initiator": "script",
+              "encodedBodySize": 69327,
+              "decodedBodySize": 262501,
+              "transferSize": 69627,
+              "duration": 23.799999952316284
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+            "timing": {
+              "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+              "initiator": "fetch",
+              "encodedBodySize": 392354,
+              "decodedBodySize": 585536,
+              "transferSize": 392654,
+              "duration": 39.19999998807907
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "fetch"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/287.a76f2f26e2e93633.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/287.a76f2f26e2e93633.js",
+              "initiator": "script",
+              "encodedBodySize": 6717,
+              "decodedBodySize": 24038,
+              "transferSize": 7017,
+              "duration": 5.199999988079071
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/287.a76f2f26e2e93633.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/studio/assistant-apprentice-v03.glb",
+            "timing": {
+              "url": "http://127.0.0.1:4193/studio/assistant-apprentice-v03.glb",
+              "initiator": "fetch",
+              "encodedBodySize": 483118,
+              "decodedBodySize": 673144,
+              "transferSize": 483418,
+              "duration": 37.69999998807907
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/studio/assistant-apprentice-v03.glb",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "fetch"
+            }
+          }
+        ],
+        "complete": true,
+        "encodedBodyBytes": 1191788,
+        "decodedBodyBytes": 2406984,
+        "transferSize": 1195988
+      },
+      "warm": {
+        "entries": [
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-a34564894354b532.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-a34564894354b532.js",
+              "initiator": "link",
+              "encodedBodySize": 1912,
+              "decodedBodySize": 3666,
+              "transferSize": 0,
+              "duration": 0
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-a34564894354b532.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+              "initiator": "script",
+              "encodedBodySize": 557,
+              "decodedBodySize": 557,
+              "transferSize": 0,
+              "duration": 0
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+              "status": 200,
+              "encoding": null,
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/0-09907f8dc8534979.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/0-09907f8dc8534979.js",
+              "initiator": "script",
+              "encodedBodySize": 3237,
+              "decodedBodySize": 9005,
+              "transferSize": 0,
+              "duration": 0
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/0-09907f8dc8534979.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+              "initiator": "script",
+              "encodedBodySize": 3389,
+              "decodedBodySize": 8537,
+              "transferSize": 0,
+              "duration": 0
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-33a6621dd63a6088.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-33a6621dd63a6088.js",
+              "initiator": "script",
+              "encodedBodySize": 12445,
+              "decodedBodySize": 36850,
+              "transferSize": 0,
+              "duration": 0
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-33a6621dd63a6088.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+              "initiator": "script",
+              "encodedBodySize": 46707,
+              "decodedBodySize": 174133,
+              "transferSize": 0,
+              "duration": 0
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+              "initiator": "script",
+              "encodedBodySize": 54358,
+              "decodedBodySize": 173019,
+              "transferSize": 0,
+              "duration": 0
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+              "initiator": "script",
+              "encodedBodySize": 14133,
+              "decodedBodySize": 47753,
+              "transferSize": 0,
+              "duration": 0
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/703.877bb59797a3c0ea.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/703.877bb59797a3c0ea.js",
+              "initiator": "script",
+              "encodedBodySize": 19184,
+              "decodedBodySize": 51204,
+              "transferSize": 0,
+              "duration": 0
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/703.877bb59797a3c0ea.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+              "initiator": "script",
+              "encodedBodySize": 84350,
+              "decodedBodySize": 357041,
+              "transferSize": 0,
+              "duration": 0
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+              "initiator": "script",
+              "encodedBodySize": 69327,
+              "decodedBodySize": 262501,
+              "transferSize": 0,
+              "duration": 0
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+            "timing": {
+              "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+              "initiator": "fetch",
+              "encodedBodySize": 392354,
+              "decodedBodySize": 585536,
+              "transferSize": 300,
+              "duration": 3.899999976158142
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "fetch"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/_next/static/chunks/287.a76f2f26e2e93633.js",
+            "timing": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/287.a76f2f26e2e93633.js",
+              "initiator": "script",
+              "encodedBodySize": 6717,
+              "decodedBodySize": 24038,
+              "transferSize": 0,
+              "duration": 0
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/_next/static/chunks/287.a76f2f26e2e93633.js",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "script"
+            }
+          },
+          {
+            "url": "http://127.0.0.1:4193/studio/assistant-apprentice-v03.glb",
+            "timing": {
+              "url": "http://127.0.0.1:4193/studio/assistant-apprentice-v03.glb",
+              "initiator": "fetch",
+              "encodedBodySize": 483118,
+              "decodedBodySize": 673144,
+              "transferSize": 300,
+              "duration": 6.5
+            },
+            "response": {
+              "url": "http://127.0.0.1:4193/studio/assistant-apprentice-v03.glb",
+              "status": 200,
+              "encoding": "gzip",
+              "type": "fetch"
+            }
+          }
+        ],
+        "complete": true,
+        "encodedBodyBytes": 1191788,
+        "decodedBodyBytes": 2406984,
+        "transferSize": 600
+      },
+      "additionalJsAfterAsk": []
+    }
+  ]
+}

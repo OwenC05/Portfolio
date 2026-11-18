@@ -1,0 +1,59 @@
+{
+  "candidateId": "selected-a-v01-meshy-001",
+  "status": "SUCCEEDED",
+  "userConfirmation": "confirm",
+  "submitted": true,
+  "providerTaskId": "01a1e47c-e987-71f8-8089-30c181b86660",
+  "createAttempted": true,
+  "createAttempts": 3,
+  "retryAuthorization": "User explicitly requested: i upgraded the plan try again",
+  "retryOutcome": "One task successfully created after user reported plan upgrade",
+  "priorRejectedAttempts": 2,
+  "priorRejectionEvidence": {
+    "balance": 70,
+    "imageTo3dTasks": 0,
+    "creditsSpent": 0,
+    "providerTaskId": null
+  },
+  "verifiedOn": "2026-11-16",
+  "tool": "mcp__meshy_mcp_server__meshy_image_to_3d",
+  "inputSha256": "9b94d861e18d5c95f439847e30a81aa7a036110f0105585a8914126bfc9c8cc7",
+  "args": {
+    "file_path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/higgsfield-concepts/selected-a-v01/outputs/02-front.png",
+    "model_type": "smart-topology",
+    "ai_model": "meshy-t2.5",
+    "topology": "triangle",
+    "target_polycount": 8000,
+    "should_texture": false,
+    "enable_pbr": false,
+    "target_formats": [
+      "glb"
+    ],
+    "auto_size": false,
+    "response_format": "json"
+  },
+  "cost": {
+    "credits": 5,
+    "candidateLimit": 1,
+    "automaticCreateRetries": 0,
+    "automaticRegeneration": false,
+    "balanceBefore": 1070,
+    "evidence": "Current Meshy connector price table agrees with the worker's 2026-11-16 official API pricing check; live meshy_check_balance returned 70.",
+    "newPurchaseRequired": false,
+    "additionalPaidJobsIncluded": false,
+    "chargedCredits": 5,
+    "balanceAfter": 1065
+  },
+  "connectorReadiness": {
+    "schemaRead": true,
+    "mandatoryWorkflowRead": true,
+    "localInputHashVerified": true,
+    "transport": "Connector file_path; no manually encoded REST payload",
+    "remainingGate": null
+  },
+  "reviewedBuildDecisions": "design/assistant/robot/selected-a-build-decisions.md",
+  "plannedRawDownload": "design/assistant/robot/asset-pipeline/selected-a-v01/candidate-001/raw/model.glb",
+  "downloadFormat": "glb",
+  "cleanup": "Inspect raw output, then separate and rebuild precise face, gaze, lids, ribbon, collar and tray in isolated Blender. Preserve provider raw output and source image; no shared Studio scene edits.",
+  "limits": "8000 is an approximate generation target, not a proven runtime allocation. Final bindings, bounds, topology, bytes, room composition and mobile performance remain unverified."
+}

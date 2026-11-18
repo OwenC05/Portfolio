@@ -1,0 +1,455 @@
+{
+  "results": [
+    {
+      "mode": "robot-transport",
+      "contextIdentity": "task_bc61c9989863-robot-transport",
+      "interceptions": [
+        {
+          "url": "http://127.0.0.1:4193/studio/assistant-apprentice-v03.glb",
+          "mode": "robot-transport"
+        },
+        {
+          "url": "http://127.0.0.1:4193/studio/assistant-apprentice-v03.glb",
+          "mode": "robot-transport"
+        }
+      ],
+      "checks": [
+        {
+          "name": "Robot unavailable while room stays ready and former head position has no target",
+          "passed": true,
+          "evidence": {
+            "token": "0585fc92-6ac0-45fd-99e1-48deecf65a91",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "2",
+              "studioDrawCalls": "73",
+              "studioTriangles": "56836",
+              "studioGeometries": "17",
+              "studioTextures": "12"
+            },
+            "hasCanvas": true,
+            "status": "ready",
+            "dialog": false,
+            "focus": "",
+            "chips": 0,
+            "links": [],
+            "clicks": [
+              {
+                "trusted": true,
+                "x": 1130,
+                "y": 310,
+                "target": "CANVAS"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Named Ask, exact source results and contact link remain available",
+          "passed": false,
+          "evidence": {
+            "token": "0585fc92-6ac0-45fd-99e1-48deecf65a91",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "3",
+              "studioDrawCalls": "73",
+              "studioTriangles": "56836",
+              "studioGeometries": "17",
+              "studioTextures": "12"
+            },
+            "hasCanvas": true,
+            "status": "ready",
+            "dialog": true,
+            "focus": "_r_0_-question",
+            "chips": 4,
+            "links": [
+              {
+                "text": "LexisNexis Risk Solutions",
+                "href": "/work/lexisnexis#lexisnexis-role"
+              },
+              {
+                "text": "LexisNexis Risk Solutions",
+                "href": "/work/lexisnexis#lexisnexis-limits"
+              },
+              {
+                "text": "LexisNexis Risk Solutions",
+                "href": "/work/lexisnexis#lexisnexis-pilot"
+              },
+              {
+                "text": "LexisNexis Risk Solutions",
+                "href": "/work/lexisnexis#lexisnexis-tooling"
+              },
+              {
+                "text": "email Owen at oc608@bath.ac.uk",
+                "href": "mailto:oc608@bath.ac.uk"
+              }
+            ],
+            "clicks": [
+              {
+                "trusted": true,
+                "x": 1130,
+                "y": 310,
+                "target": "CANVAS"
+              },
+              {
+                "trusted": true,
+                "x": 0,
+                "y": 0,
+                "target": "BUTTON"
+              }
+            ]
+          }
+        }
+      ],
+      "console": [
+        "Failed to load resource: net::ERR_FAILED",
+        "Failed to load resource: net::ERR_FAILED"
+      ],
+      "errors": [],
+      "sourceNavigation": "http://127.0.0.1:4193/work/lexisnexis#lexisnexis-role",
+      "failure": "TimeoutError: locator.press: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('dialog a[href=\"#contact\"]')\u001b[22m\n",
+      "failureState": {
+        "token": "940b1e8a-3825-44aa-9f26-42d5164d0a37",
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1.0000000149011612",
+          "studioRenderCount": "3",
+          "studioDrawCalls": "73",
+          "studioTriangles": "56836",
+          "studioGeometries": "17",
+          "studioTextures": "12"
+        },
+        "hasCanvas": true,
+        "status": "ready",
+        "dialog": true,
+        "focus": "_r_0_-question",
+        "chips": 0,
+        "links": [
+          {
+            "text": "email Owen at oc608@bath.ac.uk",
+            "href": "mailto:oc608@bath.ac.uk"
+          }
+        ],
+        "clicks": [
+          {
+            "trusted": true,
+            "x": 0,
+            "y": 0,
+            "target": "BUTTON"
+          }
+        ]
+      },
+      "closed": true
+    },
+    {
+      "mode": "robot-malformed",
+      "contextIdentity": "task_bc61c9989863-robot-malformed",
+      "interceptions": [
+        {
+          "url": "http://127.0.0.1:4193/studio/assistant-apprentice-v03.glb",
+          "mode": "robot-malformed"
+        },
+        {
+          "url": "http://127.0.0.1:4193/studio/assistant-apprentice-v03.glb",
+          "mode": "robot-malformed"
+        }
+      ],
+      "checks": [
+        {
+          "name": "Robot unavailable while room stays ready and former head position has no target",
+          "passed": true,
+          "evidence": {
+            "token": "ae413852-55ec-4a49-85ed-723a0fcfb031",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "2",
+              "studioDrawCalls": "73",
+              "studioTriangles": "56836",
+              "studioGeometries": "17",
+              "studioTextures": "12"
+            },
+            "hasCanvas": true,
+            "status": "ready",
+            "dialog": false,
+            "focus": "",
+            "chips": 0,
+            "links": [],
+            "clicks": [
+              {
+                "trusted": true,
+                "x": 1130,
+                "y": 310,
+                "target": "CANVAS"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Named Ask, exact source results and contact link remain available",
+          "passed": false,
+          "evidence": {
+            "token": "ae413852-55ec-4a49-85ed-723a0fcfb031",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "3",
+              "studioDrawCalls": "73",
+              "studioTriangles": "56836",
+              "studioGeometries": "17",
+              "studioTextures": "12"
+            },
+            "hasCanvas": true,
+            "status": "ready",
+            "dialog": true,
+            "focus": "_r_0_-question",
+            "chips": 4,
+            "links": [
+              {
+                "text": "LexisNexis Risk Solutions",
+                "href": "/work/lexisnexis#lexisnexis-role"
+              },
+              {
+                "text": "LexisNexis Risk Solutions",
+                "href": "/work/lexisnexis#lexisnexis-limits"
+              },
+              {
+                "text": "LexisNexis Risk Solutions",
+                "href": "/work/lexisnexis#lexisnexis-pilot"
+              },
+              {
+                "text": "LexisNexis Risk Solutions",
+                "href": "/work/lexisnexis#lexisnexis-tooling"
+              },
+              {
+                "text": "email Owen at oc608@bath.ac.uk",
+                "href": "mailto:oc608@bath.ac.uk"
+              }
+            ],
+            "clicks": [
+              {
+                "trusted": true,
+                "x": 1130,
+                "y": 310,
+                "target": "CANVAS"
+              },
+              {
+                "trusted": true,
+                "x": 0,
+                "y": 0,
+                "target": "BUTTON"
+              }
+            ]
+          }
+        }
+      ],
+      "console": [],
+      "errors": [],
+      "sourceNavigation": "http://127.0.0.1:4193/work/lexisnexis#lexisnexis-role",
+      "failure": "TimeoutError: locator.press: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('dialog a[href=\"#contact\"]')\u001b[22m\n",
+      "failureState": {
+        "token": "9010a16b-094d-4746-8b26-371b4c385b8c",
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1.0000000149011612",
+          "studioRenderCount": "3",
+          "studioDrawCalls": "73",
+          "studioTriangles": "56836",
+          "studioGeometries": "17",
+          "studioTextures": "12"
+        },
+        "hasCanvas": true,
+        "status": "ready",
+        "dialog": true,
+        "focus": "_r_0_-question",
+        "chips": 0,
+        "links": [
+          {
+            "text": "email Owen at oc608@bath.ac.uk",
+            "href": "mailto:oc608@bath.ac.uk"
+          }
+        ],
+        "clicks": [
+          {
+            "trusted": true,
+            "x": 0,
+            "y": 0,
+            "target": "BUTTON"
+          }
+        ]
+      },
+      "closed": true
+    },
+    {
+      "mode": "context-loss",
+      "contextIdentity": "task_bc61c9989863-context-loss",
+      "interceptions": [],
+      "checks": [
+        {
+          "name": "Real context loss removes scene; HTML close/reopen survives without document reload",
+          "passed": true,
+          "evidence": {
+            "before": {
+              "token": "398f06fb-8b28-415b-9af8-a186ff50a8e0",
+              "canvas": {
+                "engine": "three.js r187",
+                "studioInteractionEnabled": "false",
+                "studioYaw": "-4",
+                "studioPitch": "-6",
+                "studioEye": "-0.7,2.8,3.4",
+                "studioFov": "58",
+                "studioDpr": "1.0000000149011612",
+                "studioRenderCount": "6",
+                "studioDrawCalls": "94",
+                "studioTriangles": "94512",
+                "studioGeometries": "38",
+                "studioTextures": "12",
+                "assistantRunId": "105955e5-23fa-4ad1-980e-01085f3cfd47:1",
+                "assistantRevision": "2",
+                "assistantCardCount": "0"
+              },
+              "hasCanvas": true,
+              "status": "ready",
+              "dialog": true,
+              "focus": "_r_0_-question",
+              "chips": 0,
+              "links": [],
+              "clicks": [
+                {
+                  "trusted": true,
+                  "x": 0,
+                  "y": 0,
+                  "target": "BUTTON"
+                }
+              ]
+            },
+            "after": {
+              "token": "398f06fb-8b28-415b-9af8-a186ff50a8e0",
+              "canvas": {},
+              "hasCanvas": false,
+              "status": "unavailable",
+              "dialog": true,
+              "focus": "studio-ask-heading",
+              "chips": 0,
+              "links": [],
+              "clicks": [
+                {
+                  "trusted": true,
+                  "x": 0,
+                  "y": 0,
+                  "target": "BUTTON"
+                },
+                {
+                  "trusted": true,
+                  "x": 0,
+                  "y": 0,
+                  "target": "BUTTON"
+                },
+                {
+                  "trusted": true,
+                  "x": 0,
+                  "y": 0,
+                  "target": "BUTTON"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "HTML retrieval still works after context loss",
+          "passed": true,
+          "evidence": {
+            "token": "398f06fb-8b28-415b-9af8-a186ff50a8e0",
+            "canvas": {},
+            "hasCanvas": false,
+            "status": "unavailable",
+            "dialog": true,
+            "focus": "_r_1_-question",
+            "chips": 4,
+            "links": [
+              {
+                "text": "LexisNexis Risk Solutions",
+                "href": "/work/lexisnexis#lexisnexis-role"
+              },
+              {
+                "text": "LexisNexis Risk Solutions",
+                "href": "/work/lexisnexis#lexisnexis-limits"
+              },
+              {
+                "text": "LexisNexis Risk Solutions",
+                "href": "/work/lexisnexis#lexisnexis-pilot"
+              },
+              {
+                "text": "LexisNexis Risk Solutions",
+                "href": "/work/lexisnexis#lexisnexis-tooling"
+              },
+              {
+                "text": "email Owen at oc608@bath.ac.uk",
+                "href": "mailto:oc608@bath.ac.uk"
+              }
+            ],
+            "clicks": [
+              {
+                "trusted": true,
+                "x": 0,
+                "y": 0,
+                "target": "BUTTON"
+              },
+              {
+                "trusted": true,
+                "x": 0,
+                "y": 0,
+                "target": "BUTTON"
+              },
+              {
+                "trusted": true,
+                "x": 0,
+                "y": 0,
+                "target": "BUTTON"
+              }
+            ]
+          }
+        }
+      ],
+      "console": [],
+      "errors": [],
+      "extension": true,
+      "closed": true
+    }
+  ],
+  "limits": [
+    "Malformed bytes fail the pinned-byte import boundary; this does not bypass the SHA guard to exercise every GLTFLoader branch.",
+    "Context closure removes local routes and fetch overrides. Browser GPU reclamation and dev StrictMode are not established."
+  ]
+}

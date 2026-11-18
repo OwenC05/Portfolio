@@ -1,0 +1,22 @@
+{
+  "requirement": "state-contract.md:145 requires chip arrow navigation while preserving Tab access",
+  "observations": [
+    {
+      "key": "ArrowRight",
+      "keydownHandlersOnChipOrAncestors": 0,
+      "prevented": false,
+      "newActionCalls": [],
+      "focused": "source-chip-1",
+      "selectedKey": null
+    },
+    {
+      "key": "ArrowLeft",
+      "keydownHandlersOnChipOrAncestors": 0,
+      "prevented": false,
+      "newActionCalls": [],
+      "focused": "source-chip-1",
+      "selectedKey": null
+    }
+  ],
+  "interpretation": "No application arrow navigation is attached to chips or their panel ancestors; this is a missing contract feature, not a browser or WCAG verdict."
+}

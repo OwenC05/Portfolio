@@ -40,6 +40,25 @@ export interface StudioShellProps {
   onProjectsKeyDown: KeyboardEventHandler<HTMLElement>
   onScenePointerDown: PointerEventHandler<HTMLDivElement>
   onLookKeyDown: KeyboardEventHandler<HTMLDivElement>
+  /**
+   * Which content the one native dialog shows. Root still owns opening,
+   * closing, history, scroll and focus. Defaults to the project sheet.
+   */
+  dialogVariant?: StudioDialogVariant
+  /** Rendered in the dialog when `dialogVariant` is 'assistant'. */
+  assistantContent?: ReactNode
+  /**
+   * The Ask entry for the dock, normally `<AssistantEntry />`. Leave it
+   * undefined until its open action exists; no entry is rendered without it.
+   */
+  assistantEntry?: ReactNode
+}
+
+export type StudioDialogVariant = 'project' | 'assistant'
+
+const DIALOG_LABEL: Record<StudioDialogVariant, string> = {
+  project: 'Selected work',
+  assistant: 'Ask · source search',
 }
 
 type RoomState = 'still' | SceneStatus
@@ -105,6 +124,9 @@ export default function StudioShell({
   onProjectsKeyDown,
   onScenePointerDown,
   onLookKeyDown,
+  dialogVariant = 'project',
+  assistantContent,
+  assistantEntry,
 }: StudioShellProps) {
   const roomState: RoomState = enhanced ? sceneStatus : 'still'
   const lookDisabled = !enhanced || selectedProjectId !== null
@@ -208,6 +230,10 @@ export default function StudioShell({
               </ol>
             </nav>
 
+            {assistantEntry ? (
+              <div className={styles.ask}>{assistantEntry}</div>
+            ) : null}
+
             <div
               className={styles.look}
               role="group"
@@ -261,13 +287,14 @@ export default function StudioShell({
       <dialog
         ref={dialogRef}
         className={styles.panel}
+        data-panel-variant={dialogVariant}
         aria-labelledby={dialogTitleId}
         onCancel={onDialogCancel}
         onClose={onDialogClose}
       >
         <div className={styles.panelBar}>
           <p className={styles.panelLabel} aria-hidden="true">
-            Selected work
+            {DIALOG_LABEL[dialogVariant]}
           </p>
           <button
             type="button"
@@ -285,7 +312,9 @@ export default function StudioShell({
             </svg>
           </button>
         </div>
-        <div ref={panelScrollRef} className={styles.panelScroll}>{projectContent}</div>
+        <div ref={panelScrollRef} className={styles.panelScroll}>
+          {dialogVariant === 'assistant' ? assistantContent : projectContent}
+        </div>
       </dialog>
     </div>
   )

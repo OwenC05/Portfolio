@@ -1,0 +1,92 @@
+{
+  "checkedAt": "2026-11-16T13:00:24.575Z",
+  "result": "PASS-preflight-static-only",
+  "verifiedPins": [
+    "design/assistant/robot/selected-a-build-decisions.md",
+    "design/assistant/robot/review/selected-a-v01/review.md",
+    "design/assistant/robot/higgsfield-concepts/selected-a-v01/README.md",
+    "design/assistant/robot/higgsfield-concepts/selected-a-v01/handoff.md",
+    "design/assistant/robot/higgsfield-concepts/selected-a-v01/outputs/01-three-quarter.png",
+    "design/assistant/robot/higgsfield-concepts/selected-a-v01/outputs/02-front.png",
+    "design/assistant/robot/higgsfield-concepts/selected-a-v01/outputs/03-side.png",
+    "design/assistant/robot/higgsfield-concepts/selected-a-v01/outputs/04-back.png",
+    "design/assistant/robot/asset-pipeline/production-runbook.md",
+    "design/assistant/robot/asset-pipeline/asset-contract.md",
+    "design/assistant/robot/asset-pipeline/readiness.md",
+    "design/assistant/robot/asset-pipeline/profile.example.json",
+    "design/assistant/robot/integration/state-contract.md",
+    "C:/Program Files/Blender Foundation/Blender 5.2/blender.exe",
+    "C:/Program Files/Blender Foundation/Blender 5.2/5.2/scripts/addons_core/io_scene_gltf2/__init__.py"
+  ],
+  "checks": {
+    "jsonExamples": 3,
+    "proposedNodes": 22,
+    "independentlyControlledNodes": 10,
+    "parentsAcyclic": true,
+    "materialReferencesResolve": true,
+    "relativeLinksResolve": true,
+    "budgetsRemainUnallocated": true,
+    "historicalSourceHashesUnchanged": true,
+    "pythonAst": "PASS-without-importing-bpy"
+  },
+  "preparedPayload": {
+    "mode": "--check",
+    "inputSha256": "9b94d861e18d5c95f439847e30a81aa7a036110f0105585a8914126bfc9c8cc7",
+    "width": 1792,
+    "height": 2240,
+    "pixels": 4014080,
+    "imageBytes": 4037510,
+    "base64Characters": 5383348,
+    "createRequestBytes": 5383617,
+    "createRequestSha256": "d474419b555c577d6a901618ddefb7d8f0e2defad652fb129263e096a289add8",
+    "wrotePayload": false,
+    "networkRequests": 0
+  },
+  "files": [
+    {
+      "path": "evidence.json",
+      "bytes": 5053,
+      "sha256": "4219e301f0fed8530ff65c08984bfcfab474ed2fb2987985f21179dacb15f6a5"
+    },
+    {
+      "path": "preflight.md",
+      "bytes": 10346,
+      "sha256": "3a95dd0155d4afc849c2f9ebcf3f6dd8df8eb005005505d155ccab2da83a7746"
+    },
+    {
+      "path": "prepare-request.mjs",
+      "bytes": 3050,
+      "sha256": "262147b31462d63891d34b7c78de599ce0038f7838305000c1d468dc48ef9f03"
+    },
+    {
+      "path": "profile.example.json",
+      "bytes": 14242,
+      "sha256": "f2309a8229580d12939f404aa3d066199689099b767c613769329b498fb208a7"
+    },
+    {
+      "path": "request.example.json",
+      "bytes": 2700,
+      "sha256": "61afb1229dea24671482cd87fbf5b2150cdfe32a17d1081ed8aa37c2dabd9f1a"
+    },
+    {
+      "path": "stage-cleanup.py",
+      "bytes": 4407,
+      "sha256": "fece2804e5dea25f8148db89c951e975c6c315912e3085b201f03ca45126dd64"
+    },
+    {
+      "path": "validate.mjs",
+      "bytes": 5802,
+      "sha256": "8ce78589b4c414ec33560edc379e0c16257cff8db1c8b9118192ef98df4e4f21"
+    }
+  ],
+  "providerCreates": 0,
+  "blenderProcesses": 0,
+  "appTestsOrBuilds": 0,
+  "unresolved": [
+    "Live Meshy connector schema/instructions and billing surface unavailable here",
+    "Current account balance unavailable",
+    "Raw candidate and cleanup execution pending",
+    "Final dimensions, pivots, pose limits, swept bounds, export bytes/topology and combined runtime allocation unmeasured"
+  ],
+  "reproduce": "node design/assistant/robot/asset-pipeline/selected-a-v01/validate.mjs"
+}

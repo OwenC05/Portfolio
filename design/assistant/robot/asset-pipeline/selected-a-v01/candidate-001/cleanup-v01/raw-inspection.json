@@ -1,0 +1,33 @@
+{
+  "rawSha256": "412c0c213e0c6adc6baa80fa0686b6cbd9a1d259348bb96c571ef28b2f59bec7",
+  "rawBytes": 151996,
+  "blenderVersion": "5.2.3 LTS",
+  "stage": "raw-import-only-before-manual-cleanup",
+  "productionReady": false,
+  "inventory": [
+    {
+      "name": "geometry_0",
+      "parent": null,
+      "vertices": 4220,
+      "triangles": 8386,
+      "materialSlots": 0
+    }
+  ],
+  "trianglesSummedAcrossObjects": 8386,
+  "importBoundsBlender": {
+    "min": [
+      -0.234130859375,
+      -0.221923828125,
+      -0.475341796875
+    ],
+    "max": [
+      0.230224609375,
+      0.223876953125,
+      0.475830078125
+    ]
+  },
+  "providerUnitsAndFrontVerified": false,
+  "connectedComponentsVerified": false,
+  "profileBindingsValidated": false,
+  "finalGlbExported": false
+}

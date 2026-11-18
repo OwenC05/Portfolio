@@ -1,0 +1,544 @@
+TAP version 13
+# Subtest: G2 cleanup: root detach failure still drains every imported identity once
+not ok 1 - G2 cleanup: root detach failure still drains every imported identity once
+  ---
+  duration_ms: 89.5105
+  type: 'test'
+  location: 'C:\\Users\\Owenc\\orca\\Portfolio-assistant\\components\\studio\\scene\\robot\\verify-cleanup.mjs:16:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+      [
+    +   0,
+    +   0,
+    +   0,
+    +   0,
+    +   0,
+    +   0,
+    +   0,
+    +   0,
+    +   0,
+    +   0,
+    +   0,
+    +   0,
+    +   0,
+    +   0,
+    +   0,
+    +   0,
+    +   0,
+    +   0,
+    +   0,
+    +   0,
+    +   0,
+    +   0,
+    +   0,
+    +   0,
+    +   0,
+    +   0,
+    +   0,
+    +   0
+    -   1,
+    -   1,
+    -   1,
+    -   1,
+    -   1,
+    -   1,
+    -   1,
+    -   1,
+    -   1,
+    -   1,
+    -   1,
+    -   1,
+    -   1,
+    -   1,
+    -   1,
+    -   1,
+    -   1,
+    -   1,
+    -   1,
+    -   1,
+    -   1,
+    -   1,
+    -   1,
+    -   1,
+    -   1,
+    -   1,
+    -   1,
+    -   1
+      ]
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    0: 1
+    1: 1
+    2: 1
+    3: 1
+    4: 1
+    5: 1
+    6: 1
+    7: 1
+    8: 1
+    9: 1
+    10: 1
+    11: 1
+    12: 1
+    13: 1
+    14: 1
+    15: 1
+    16: 1
+    17: 1
+    18: 1
+    19: 1
+    20: 1
+    21: 1
+    22: 1
+    23: 1
+    24: 1
+    25: 1
+    26: 1
+    27: 1
+  actual:
+    0: 0
+    1: 0
+    2: 0
+    3: 0
+    4: 0
+    5: 0
+    6: 0
+    7: 0
+    8: 0
+    9: 0
+    10: 0
+    11: 0
+    12: 0
+    13: 0
+    14: 0
+    15: 0
+    16: 0
+    17: 0
+    18: 0
+    19: 0
+    20: 0
+    21: 0
+    22: 0
+    23: 0
+    24: 0
+    25: 0
+    26: 0
+    27: 0
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:31:10)
+    async Test.run (node:internal/test_runner/test:1409:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3)
+  ...
+# Subtest: G2 cleanup: card owner completes independent releases once with none throwing
+ok 2 - G2 cleanup: card owner completes independent releases once with none throwing
+  ---
+  duration_ms: 8.0451
+  type: 'test'
+  ...
+# Subtest: G2 cleanup: card owner completes independent releases once with card0 throwing
+not ok 3 - G2 cleanup: card owner completes independent releases once with card0 throwing
+  ---
+  duration_ms: 3.6896
+  type: 'test'
+  location: 'C:\\Users\\Owenc\\orca\\Portfolio-assistant\\components\\studio\\scene\\robot\\verify-cleanup.mjs:36:3'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + Error: detach 0
+    +     at Mesh.callback (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:42:102)
+    +     at Mesh.dispatchEvent (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:2283:16)
+    +     at Group.remove (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:12711:11)
+    +     at Mesh.removeFromParent (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:12736:11)
+    +     at ./cards.ts:79:42
+    +     at Array.forEach (<anonymous>)
+    +     at Object.dispose (./cards.ts:79:19)
+    +     at TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:51:17)
+    +     at Test.runInAsyncScope (node:async_hooks:227:14)
+    +     at Test.run (node:internal/test_runner/test:1402:25)
+    - undefined
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  actual:
+  error: 'detach 0'
+  stack: |-
+    Mesh.callback (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:42:102)
+    Mesh.dispatchEvent (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:2283:16)
+    Group.remove (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:12711:11)
+    Mesh.removeFromParent (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:12736:11)
+    ./cards.ts:79:42
+    Array.forEach (<anonymous>)
+    Object.dispose (./cards.ts:79:19)
+    TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:51:17)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:57:12)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: G2 cleanup: card owner completes independent releases once with card1 throwing
+not ok 4 - G2 cleanup: card owner completes independent releases once with card1 throwing
+  ---
+  duration_ms: 1.0383
+  type: 'test'
+  location: 'C:\\Users\\Owenc\\orca\\Portfolio-assistant\\components\\studio\\scene\\robot\\verify-cleanup.mjs:36:3'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + Error: detach 1
+    +     at Mesh.callback (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:42:102)
+    +     at Mesh.dispatchEvent (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:2283:16)
+    +     at Group.remove (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:12711:11)
+    +     at Mesh.removeFromParent (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:12736:11)
+    +     at ./cards.ts:79:42
+    +     at Array.forEach (<anonymous>)
+    +     at Object.dispose (./cards.ts:79:19)
+    +     at TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:51:17)
+    +     at Test.runInAsyncScope (node:async_hooks:227:14)
+    +     at Test.run (node:internal/test_runner/test:1402:25)
+    - undefined
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  actual:
+  error: 'detach 1'
+  stack: |-
+    Mesh.callback (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:42:102)
+    Mesh.dispatchEvent (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:2283:16)
+    Group.remove (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:12711:11)
+    Mesh.removeFromParent (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:12736:11)
+    ./cards.ts:79:42
+    Array.forEach (<anonymous>)
+    Object.dispose (./cards.ts:79:19)
+    TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:51:17)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:57:12)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: G2 cleanup: card owner completes independent releases once with card2 throwing
+not ok 5 - G2 cleanup: card owner completes independent releases once with card2 throwing
+  ---
+  duration_ms: 1.0926
+  type: 'test'
+  location: 'C:\\Users\\Owenc\\orca\\Portfolio-assistant\\components\\studio\\scene\\robot\\verify-cleanup.mjs:36:3'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + Error: detach 2
+    +     at Mesh.callback (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:42:102)
+    +     at Mesh.dispatchEvent (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:2283:16)
+    +     at Group.remove (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:12711:11)
+    +     at Mesh.removeFromParent (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:12736:11)
+    +     at ./cards.ts:79:42
+    +     at Array.forEach (<anonymous>)
+    +     at Object.dispose (./cards.ts:79:19)
+    +     at TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:51:17)
+    +     at Test.runInAsyncScope (node:async_hooks:227:14)
+    +     at Test.run (node:internal/test_runner/test:1402:25)
+    - undefined
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  actual:
+  error: 'detach 2'
+  stack: |-
+    Mesh.callback (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:42:102)
+    Mesh.dispatchEvent (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:2283:16)
+    Group.remove (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:12711:11)
+    Mesh.removeFromParent (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:12736:11)
+    ./cards.ts:79:42
+    Array.forEach (<anonymous>)
+    Object.dispose (./cards.ts:79:19)
+    TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:51:17)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:57:12)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: G2 cleanup: card owner completes independent releases once with card3 throwing
+not ok 6 - G2 cleanup: card owner completes independent releases once with card3 throwing
+  ---
+  duration_ms: 0.9779
+  type: 'test'
+  location: 'C:\\Users\\Owenc\\orca\\Portfolio-assistant\\components\\studio\\scene\\robot\\verify-cleanup.mjs:36:3'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + Error: detach 3
+    +     at Mesh.callback (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:42:102)
+    +     at Mesh.dispatchEvent (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:2283:16)
+    +     at Group.remove (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:12711:11)
+    +     at Mesh.removeFromParent (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:12736:11)
+    +     at ./cards.ts:79:42
+    +     at Array.forEach (<anonymous>)
+    +     at Object.dispose (./cards.ts:79:19)
+    +     at TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:51:17)
+    +     at Test.runInAsyncScope (node:async_hooks:227:14)
+    +     at Test.run (node:internal/test_runner/test:1402:25)
+    - undefined
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  actual:
+  error: 'detach 3'
+  stack: |-
+    Mesh.callback (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:42:102)
+    Mesh.dispatchEvent (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:2283:16)
+    Group.remove (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:12711:11)
+    Mesh.removeFromParent (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:12736:11)
+    ./cards.ts:79:42
+    Array.forEach (<anonymous>)
+    Object.dispose (./cards.ts:79:19)
+    TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:51:17)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:57:12)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: G2 cleanup: card owner completes independent releases once with first throwing
+not ok 7 - G2 cleanup: card owner completes independent releases once with first throwing
+  ---
+  duration_ms: 0.837
+  type: 'test'
+  location: 'C:\\Users\\Owenc\\orca\\Portfolio-assistant\\components\\studio\\scene\\robot\\verify-cleanup.mjs:36:3'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + Error: dispose 0
+    +     at ExtrudeGeometry.callback (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:47:38)
+    +     at ExtrudeGeometry.dispatchEvent (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:2283:16)
+    +     at ExtrudeGeometry.dispose (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:19868:8)
+    +     at Object.dispose (./cards.ts:80:19)
+    +     at TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:51:17)
+    +     at Test.runInAsyncScope (node:async_hooks:227:14)
+    +     at Test.run (node:internal/test_runner/test:1402:25)
+    +     at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    +     at Test.postRun (node:internal/test_runner/test:1542:19)
+    +     at Test.run (node:internal/test_runner/test:1467:12)
+    - undefined
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  actual:
+  error: 'dispose 0'
+  stack: |-
+    ExtrudeGeometry.callback (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:47:38)
+    ExtrudeGeometry.dispatchEvent (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:2283:16)
+    ExtrudeGeometry.dispose (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:19868:8)
+    Object.dispose (./cards.ts:80:19)
+    TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:51:17)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:57:12)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: G2 cleanup: card owner completes independent releases once with remaining throwing
+not ok 8 - G2 cleanup: card owner completes independent releases once with remaining throwing
+  ---
+  duration_ms: 0.7375
+  type: 'test'
+  location: 'C:\\Users\\Owenc\\orca\\Portfolio-assistant\\components\\studio\\scene\\robot\\verify-cleanup.mjs:36:3'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + Error: dispose 1
+    +     at ExtrudeGeometry.callback (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:47:38)
+    +     at ExtrudeGeometry.dispatchEvent (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:2283:16)
+    +     at ExtrudeGeometry.dispose (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:19868:8)
+    +     at Object.dispose (./cards.ts:81:23)
+    +     at TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:51:17)
+    +     at Test.runInAsyncScope (node:async_hooks:227:14)
+    +     at Test.run (node:internal/test_runner/test:1402:25)
+    +     at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    +     at Test.postRun (node:internal/test_runner/test:1542:19)
+    +     at Test.run (node:internal/test_runner/test:1467:12)
+    - undefined
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  actual:
+  error: 'dispose 1'
+  stack: |-
+    ExtrudeGeometry.callback (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:47:38)
+    ExtrudeGeometry.dispatchEvent (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:2283:16)
+    ExtrudeGeometry.dispose (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:19868:8)
+    Object.dispose (./cards.ts:81:23)
+    TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:51:17)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:57:12)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: G2 cleanup: card owner completes independent releases once with material throwing
+not ok 9 - G2 cleanup: card owner completes independent releases once with material throwing
+  ---
+  duration_ms: 2.3381
+  type: 'test'
+  location: 'C:\\Users\\Owenc\\orca\\Portfolio-assistant\\components\\studio\\scene\\robot\\verify-cleanup.mjs:36:3'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + Error: dispose 2
+    +     at MeshStandardMaterial.callback (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:47:38)
+    +     at MeshStandardMaterial.dispatchEvent (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:2283:16)
+    +     at MeshStandardMaterial.dispose (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:22369:8)
+    +     at Object.dispose (./cards.ts:82:22)
+    +     at TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:51:17)
+    +     at Test.runInAsyncScope (node:async_hooks:227:14)
+    +     at Test.run (node:internal/test_runner/test:1402:25)
+    +     at Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    +     at Test.postRun (node:internal/test_runner/test:1542:19)
+    +     at Test.run (node:internal/test_runner/test:1467:12)
+    - undefined
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  actual:
+  error: 'dispose 2'
+  stack: |-
+    MeshStandardMaterial.callback (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:47:38)
+    MeshStandardMaterial.dispatchEvent (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:2283:16)
+    MeshStandardMaterial.dispose (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:22369:8)
+    Object.dispose (./cards.ts:82:22)
+    TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:51:17)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:57:12)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: G2 cleanup: card owner completes independent releases once with all throwing
+not ok 10 - G2 cleanup: card owner completes independent releases once with all throwing
+  ---
+  duration_ms: 1.4587
+  type: 'test'
+  location: 'C:\\Users\\Owenc\\orca\\Portfolio-assistant\\components\\studio\\scene\\robot\\verify-cleanup.mjs:36:3'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + Error: detach 0
+    +     at Mesh.callback (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:42:102)
+    +     at Mesh.dispatchEvent (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:2283:16)
+    +     at Group.remove (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:12711:11)
+    +     at Mesh.removeFromParent (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:12736:11)
+    +     at ./cards.ts:79:42
+    +     at Array.forEach (<anonymous>)
+    +     at Object.dispose (./cards.ts:79:19)
+    +     at TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:51:17)
+    +     at Test.runInAsyncScope (node:async_hooks:227:14)
+    +     at Test.run (node:internal/test_runner/test:1402:25)
+    - undefined
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  actual:
+  error: 'detach 0'
+  stack: |-
+    Mesh.callback (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:42:102)
+    Mesh.dispatchEvent (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:2283:16)
+    Group.remove (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:12711:11)
+    Mesh.removeFromParent (file:///C:/Users/Owenc/orca/Portfolio-assistant/node_modules/three/build/three.core.js:12736:11)
+    ./cards.ts:79:42
+    Array.forEach (<anonymous>)
+    Object.dispose (./cards.ts:79:19)
+    TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:51:17)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/verify-cleanup.mjs:57:12)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+1..10
+# tests 10
+# suites 0
+# pass 1
+# fail 9
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 697.939

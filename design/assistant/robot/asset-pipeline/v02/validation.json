@@ -1,0 +1,92 @@
+{
+  "checkedAt": "2026-11-15T18:57:09.761Z",
+  "command": "node design/assistant/robot/asset-pipeline/v02/verify-v02.mjs",
+  "node": "v24.21.0",
+  "scope": "v02 static source/example/hash/link/arithmetic validation only; no Blender/app/runtime/GLB acceptance",
+  "passed": true,
+  "checks": [
+    "JSON: profile.example.json",
+    "JSON: manifest.example.json",
+    "JSON: source-receipt.json",
+    "Pinned source: readme",
+    "Pinned source: spec",
+    "Pinned source: passport",
+    "Pinned source: script",
+    "Pinned source: blend",
+    "Pinned source: review",
+    "Pinned source: decisions",
+    "Pinned source: stateContract",
+    "Original B preserved: ../asset-contract.md",
+    "Original B preserved: ../budget-and-validation.md",
+    "Original B preserved: ../capture-evidence.mjs",
+    "Original B preserved: ../evidence-snapshot.json",
+    "Original B preserved: ../manifest.example.json",
+    "Original B preserved: ../production-runbook.md",
+    "Original B preserved: ../profile.example.json",
+    "Original B preserved: ../provider-schema-notes.json",
+    "Original B preserved: ../readiness.md",
+    "Original B preserved: ../validation.json",
+    "Original B preserved: ../verify-package.mjs",
+    "Passport matches exact v02 source and script",
+    "Source constructor inventory and parent identities",
+    "Exactly eight moving bindings and forbidden demo data",
+    "Eye origins, source neutral pivots and tray pose values",
+    "Held-depth arithmetic and coordinate-box conversion",
+    "Material source scope and unresolved production fields",
+    "Local Markdown references"
+  ],
+  "failures": [],
+  "sourceFiles": 8,
+  "preservedOriginalBFiles": 11,
+  "sourceMasterObjects": 19,
+  "sourceBindings": 15,
+  "movingNodes": 8,
+  "localLinks": 6,
+  "artifacts": [
+    {
+      "path": "alignment.md",
+      "bytes": 7052,
+      "sha256": "add4cd207836c931f8ad9b52605186e1dfd2b884d21d3b00b01fc6ebdc6eae13"
+    },
+    {
+      "path": "manifest.example.json",
+      "bytes": 7458,
+      "sha256": "9479bfcbf7f45dbbc15a43f6a8f78de389533dbf82de9de6839efaeef0deaadc"
+    },
+    {
+      "path": "profile.example.json",
+      "bytes": 13226,
+      "sha256": "fb442b03fdb0726a3b6a9b76be536cff55ce12b34a35de43ebbcba004aa6787b"
+    },
+    {
+      "path": "source-receipt.json",
+      "bytes": 5489,
+      "sha256": "075f27b5969d778facac429bd8785fe99a52ca3b8864b97e6af3f193515e25b8"
+    },
+    {
+      "path": "verify-v02.mjs",
+      "bytes": 11086,
+      "sha256": "8ba8112089080eba0d5dfa45a1eb7b449056f267a70c5e7b956d122496a448f9"
+    }
+  ],
+  "remainingAuthorTextNotes": [
+    {
+      "path": "../../apprentice/design-spec.md",
+      "lines": [
+        208,
+        282
+      ],
+      "issue": "Still defers pose blending/cards to step D; D1 decision 5 has selected finite runtime poses and generated marks",
+      "blockingThisAlignment": false
+    },
+    {
+      "path": "../../apprentice/README.md",
+      "lines": [
+        79
+      ],
+      "issue": "Open-tradeoff row still says baked or runtime cards; D1 decision 5 resolves the plan",
+      "blockingThisAlignment": false
+    }
+  ],
+  "remaining": "Appearance and placement, allocation, cleanup/export/profile freeze, full swept bounds and optional selection cue; future runtime/browser validation"
+}

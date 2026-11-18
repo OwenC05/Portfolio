@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-11-16T14:39:05.104Z",
+  "method": "Reverse only the listed edits in memory and match the full original SHA-256; no Git or application writes",
+  "files": [
+    {
+      "path": "components/assistant/AssistantWorkbench.tsx",
+      "currentSha256": "f1769caa1ef1bc97b1902e9b9294b0dbdf3cd73a17c184213f641dcf364b43fe",
+      "reconstructedOriginalSha256": "6db017bdc1c252f5db0cbae59a16fe844ed71b1f553e580557ceae2037e1c989",
+      "originalHashMatched": true,
+      "exactChanges": [
+        {
+          "currentLine": 189,
+          "before": "'0 passages ? response pending'",
+          "after": "'0 passages; response pending'"
+        },
+        {
+          "currentLine": 468,
+          "before": "onClick={() => void ask(run.question)}",
+          "after": "onClick={() => void ask(question)}"
+        },
+        {
+          "currentLine": 469,
+          "before": null,
+          "after": "disabled={!question.trim()}"
+        }
+      ]
+    },
+    {
+      "path": "tests/assistant/run-transport.test.cjs",
+      "currentSha256": "e1e0dbfa149ca78a56a58685251efc5be220e6c374f17949c111df03b319412f",
+      "reconstructedOriginalSha256": "18a73f6019ae5cbb94324df550c8b97ab5bb0d31117757d51926ce771f2c1107",
+      "originalHashMatched": true,
+      "exactChanges": [
+        "Extract existing submit draft editing into edit(value), expose edit, call edit(value) from submit",
+        "Add five regressions at current lines 303-450"
+      ],
+      "addedRegressions": "for (const phase of ['error', 'cancelled']) {\n  test(`Workbench Retry submits the edited draft after ${phase} with Ask normalization and a new run identity`, async (t) => {\n    const bodies = []\n    const stream = delayedReader()\n    const draft =\n      phase === 'error'\n        ? ' \\tEdited current draft\\n '\n        : ` \\tEdited current draft ${'x'.repeat(610)}\\n `\n    const expected =\n      phase === 'error'\n        ? 'Edited current draft'\n        : `Edited current draft ${'x'.repeat(579)}`\n    await withWorkbench(\n      t,\n      async (_url, init) => {\n        bodies.push(JSON.parse(init.body))\n        if (phase === 'cancelled' && bodies.length === 1) return stream.response\n        return Response.json({ error: 'Fixture HTTP failure' }, { status: 503 })\n      },\n      {},\n      async (ui) => {\n        ui.submit(question)\n        if (phase === 'cancelled') {\n          await stream.chunk(`${wire(events().slice(0, 2))}\\n`)\n          ui.render()\n          ui.nodes()\n            .find(\n              (node) => node.type === 'button' && ui.text(node) === 'Cancel'\n            )\n            .props.onClick()\n        }\n        await until(() => {\n          ui.render()\n          return ui.state().phase === phase\n        })\n        const previousId = ui.state().runId\n        assert.ok(previousId)\n        ui.edit(draft)\n        const retry = ui\n          .nodes()\n          .find(\n            (node) => node.type === 'button' && ui.text(node) === 'Try again'\n          )\n        assert.ok(!retry.props.disabled)\n        retry.props.onClick()\n        ui.render()\n        const retryId = ui.state().runId\n        assert.ok(retryId)\n        assert.notEqual(retryId, previousId)\n        assert.deepEqual(bodies, [{ question }, { question: expected }])\n        assert.equal(\n          ui.nodes().find((node) => node.type === 'textarea').props.value,\n          draft\n        )\n        await until(() => {\n          ui.render()\n          return ui.state().phase === 'error'\n        })\n        // The form handler must produce the same wire value as Retry.\n        ui.nodes()\n          .find((node) => node.type === 'form')\n          .props.onSubmit({ preventDefault() {} })\n        ui.render()\n        assert.deepEqual(bodies[2], bodies[1])\n        assert.notEqual(ui.state().runId, retryId)\n      }\n    )\n  })\n\n  test(`Workbench Retry is disabled for a blank edited draft after ${phase}`, async (t) => {\n    let calls = 0\n    await withWorkbench(\n      t,\n      async () => {\n        calls++\n        return Response.json({ error: 'Fixture HTTP failure' }, { status: 503 })\n      },\n      {},\n      async (ui) => {\n        ui.submit(question)\n        if (phase === 'cancelled')\n          ui.nodes()\n            .find(\n              (node) => node.type === 'button' && ui.text(node) === 'Cancel'\n            )\n            .props.onClick()\n        await until(() => {\n          ui.render()\n          return ui.state().phase === phase\n        })\n        const previousId = ui.state().runId\n        for (const draft of ['', ' \\t\\n ']) {\n          ui.edit(draft)\n          const retry = ui\n            .nodes()\n            .find(\n              (node) => node.type === 'button' && ui.text(node) === 'Try again'\n            )\n          assert.equal(retry.props.disabled, true)\n          // Even a programmatic invocation is rejected by the shared submit path.\n          retry.props.onClick()\n          ui.render()\n          assert.equal(calls, 1)\n          assert.equal(ui.state().runId, previousId)\n          assert.equal(ui.state().phase, phase)\n        }\n      }\n    )\n  })\n}\n\ntest('Workbench zero-hit pending caption is rendered by the nested Constellation', async (t) => {\n  const stream = delayedReader()\n  await withWorkbench(\n    t,\n    async () => stream.response,\n    {},\n    async (ui) => {\n      ui.submit(question)\n      await stream.chunk(`${wire(events([]).slice(0, 2))}\\n`)\n      ui.render()\n      assert.equal(ui.state().phase, 'retrieved')\n      assert.equal(ui.state().hits.length, 0)\n      assert.equal(ui.state().answer, undefined)\n      const graph = ui\n        .nodes()\n        .find((node) => node.type?.name === 'Constellation')\n      // The JSX walker does not execute nested components: render the real function.\n      const svg = graph.type(graph.props)\n      assert.equal(svg.type, 'svg')\n      const caption = ui\n        .nodes(svg)\n        .find((node) => node.type === 'text' && node.props.y === 20)\n      assert.equal(ui.text(caption), '0 passages; response pending')\n      assert.ok(\n        ui\n          .text()\n          .includes('Zero passages retrieved; the response is still pending.')\n      )\n      assert.ok(!ui.text(svg).includes('no passages matched'))\n      await stream.chunk(`${wire(events([]).slice(2))}\\n`)\n      await stream.end()\n      ui.render()\n      assert.equal(ui.state().completion, 'complete')\n      assert.equal(ui.state().answer.mode, 'abstained')\n    }\n  )\n})\n\n"
+    }
+  ]
+}

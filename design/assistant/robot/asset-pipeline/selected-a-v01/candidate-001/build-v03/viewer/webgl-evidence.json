@@ -1,0 +1,654 @@
+{
+  "assetSha256": "65f1dea3b1d35a748bdfc2089dea0feed1d054cc8b0eb957645ea2d669578a12",
+  "threeRevision": "187",
+  "renderer": "WebKit WebGL",
+  "unmaskedRenderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A60) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "outputColorSpace": "srgb",
+  "toneMapping": "ACESFilmicToneMapping",
+  "exposure": 1.2,
+  "pixelRatio": 1,
+  "viewport": [
+    800,
+    900
+  ],
+  "anchorWorld": [
+    0.8,
+    2.8,
+    -0.2
+  ],
+  "anchorQuaternion": [
+    0,
+    -0.19611998129015468,
+    0,
+    0.9805799064526813
+  ],
+  "effectiveWrapperScale": 1.6,
+  "worldUnitsPerMetre": 2,
+  "provisionalArtScale": 0.8,
+  "roomGeometry": "createStudio current source with current pilot and adapter",
+  "lights": [
+    {
+      "type": "HemisphereLight",
+      "color": [
+        0.7156935005005721,
+        0.7011018919268015,
+        0.6307571363387763
+      ],
+      "intensity": 1.15,
+      "position": [
+        0,
+        1,
+        0
+      ],
+      "castShadow": false
+    },
+    {
+      "type": "DirectionalLight",
+      "color": [
+        1,
+        0.6938717612856897,
+        0.3915724777393922
+      ],
+      "intensity": 2.6,
+      "position": [
+        2.4,
+        7.6,
+        6.4
+      ],
+      "target": [
+        -0.6,
+        1.2,
+        -0.5
+      ],
+      "castShadow": true
+    },
+    {
+      "type": "PointLight",
+      "color": [
+        1,
+        0.6444796819634361,
+        0.3515325994898463
+      ],
+      "intensity": 12,
+      "position": [
+        -1.6,
+        3.85,
+        0.3
+      ],
+      "distance": 7,
+      "decay": 2,
+      "castShadow": false
+    },
+    {
+      "type": "PointLight",
+      "color": [
+        1,
+        0.4396571738310091,
+        0.10702310296918527
+      ],
+      "intensity": 8,
+      "position": [
+        0.55,
+        3.8,
+        -1.45
+      ],
+      "distance": 6,
+      "decay": 2,
+      "castShadow": false
+    },
+    {
+      "type": "PointLight",
+      "color": [
+        1,
+        0.7304607400847158,
+        0.4452011945063733
+      ],
+      "intensity": 9,
+      "position": [
+        4.56,
+        3.5,
+        -0.02
+      ],
+      "distance": 6.5,
+      "decay": 2,
+      "castShadow": false
+    },
+    {
+      "type": "PointLight",
+      "color": [
+        0.3371636150376657,
+        0.45641102317066595,
+        0.6038273388475408
+      ],
+      "intensity": 4,
+      "position": [
+        4.35,
+        3,
+        1.5
+      ],
+      "distance": 6,
+      "decay": 2,
+      "castShadow": false
+    },
+    {
+      "type": "PointLight",
+      "color": [
+        1,
+        0.7304607400847158,
+        0.4452011945063733
+      ],
+      "intensity": 3,
+      "position": [
+        3.3,
+        3.3,
+        3.2
+      ],
+      "distance": 5,
+      "decay": 2,
+      "castShadow": false
+    }
+  ],
+  "materials": [
+    {
+      "name": "MAT_APA_porcelain",
+      "color": [
+        0.8069522380828857,
+        0.7379103899002075,
+        0.6239603757858276
+      ],
+      "emissive": [
+        0,
+        0,
+        0
+      ],
+      "emissiveIntensity": 1,
+      "metalness": 0,
+      "roughness": 0.3700000047683716
+    },
+    {
+      "name": "MAT_APA_brass",
+      "color": [
+        0.5647115111351013,
+        0.3324515223503113,
+        0.0802198201417923
+      ],
+      "emissive": [
+        0,
+        0,
+        0
+      ],
+      "emissiveIntensity": 1,
+      "metalness": 0.7799999713897705,
+      "roughness": 0.30000001192092896
+    },
+    {
+      "name": "MAT_APA_ribbon",
+      "color": [
+        0.366252601146698,
+        0.02518685907125473,
+        0.020288562402129173
+      ],
+      "emissive": [
+        0,
+        0,
+        0
+      ],
+      "emissiveIntensity": 1,
+      "metalness": 0,
+      "roughness": 0.5799999833106995
+    },
+    {
+      "name": "MAT_APA_eye_emit",
+      "color": [
+        1,
+        0.8713670969009399,
+        0.5972017645835876
+      ],
+      "emissive": [
+        1,
+        0.8713670969009399,
+        0.5972017645835876
+      ],
+      "emissiveIntensity": 1,
+      "metalness": 0,
+      "roughness": 0.4000000059604645
+    },
+    {
+      "name": "MAT_APA_ink",
+      "color": [
+        0.022173885256052017,
+        0.017641954123973846,
+        0.013702083379030228
+      ],
+      "emissive": [
+        0,
+        0,
+        0
+      ],
+      "emissiveIntensity": 1,
+      "metalness": 0,
+      "roughness": 0.5799999833106995
+    },
+    {
+      "name": "MAT_APA_highlight",
+      "color": [
+        1,
+        0.9301108717918396,
+        0.7912979125976562
+      ],
+      "emissive": [
+        0.25,
+        0.2325277179479599,
+        0.19782447814941406
+      ],
+      "emissiveIntensity": 1,
+      "metalness": 0,
+      "roughness": 0.2800000011920929
+    },
+    {
+      "name": "MAT_APA_tray_emit",
+      "color": [
+        0.5647115111351013,
+        0.3324515223503113,
+        0.0802198201417923
+      ],
+      "emissive": [
+        0.05647115195499586,
+        0.0332451527304225,
+        0.008021982133716077
+      ],
+      "emissiveIntensity": 1,
+      "metalness": 0.7799999713897705,
+      "roughness": 0.6499999761581421
+    }
+  ],
+  "environmentMap": null,
+  "limitations": [
+    "P2 provisional anchor; inspection cameras except fixed-eye room view; no placement approval",
+    "Browser isolated material evidence only; no main app integration or device performance acceptance",
+    "Robot shadows disabled per asset contract; actual room shadow sun retained",
+    "No bloom or runtime source cards"
+  ],
+  "poseResult": {
+    "pose": "neutral",
+    "view": "front",
+    "camera": [
+      0.011523617081294013,
+      2.88,
+      1.6923015070488723
+    ],
+    "cameraQuaternion": [
+      0,
+      -0.19611998129015468,
+      0,
+      0.9805799064526814
+    ],
+    "lookDirection": [
+      0.384622625814003,
+      0,
+      -0.9230739058774987
+    ],
+    "fov": 38,
+    "viewport": [
+      800,
+      900
+    ],
+    "renderInfo": {
+      "frame": 1,
+      "calls": 110,
+      "triangles": 117456,
+      "points": 0,
+      "lines": 0
+    }
+  },
+  "resourceIdentities": {
+    "geometries": [
+      {
+        "node": "APA_body",
+        "id": 25,
+        "uuid": "e3f5cddc-61a5-4b9c-afca-3d8e01f69da4"
+      },
+      {
+        "node": "APA_body_cap",
+        "id": 26,
+        "uuid": "6bf3638e-1573-46e9-946a-eb08bb9a28a2"
+      },
+      {
+        "node": "APA_collar",
+        "id": 27,
+        "uuid": "b909b0c7-e3fe-4d46-b021-381b653f674a"
+      },
+      {
+        "node": "APA_mitten_L",
+        "id": 28,
+        "uuid": "c579c3a6-d9dd-4969-8f70-d1e3dd49f264"
+      },
+      {
+        "node": "APA_mitten_R",
+        "id": 29,
+        "uuid": "fb6e1029-e027-4eb3-82ad-220c4c99d468"
+      },
+      {
+        "node": "APA_head",
+        "id": 30,
+        "uuid": "06080ada-5a3d-4017-b90b-673b8316a9ef"
+      },
+      {
+        "node": "APA_bookmark_post",
+        "id": 31,
+        "uuid": "3c119316-e9a1-48e5-9479-62839d59c9b0"
+      },
+      {
+        "node": "APA_bookmark_ribbon",
+        "id": 32,
+        "uuid": "4833ccbe-e03d-48bd-8f1b-725b6f8deeed"
+      },
+      {
+        "node": "APA_eye_L",
+        "id": 33,
+        "uuid": "6d96a81a-c62b-4b64-b749-f4835ab2a643"
+      },
+      {
+        "node": "APA_pupil_L",
+        "id": 34,
+        "uuid": "218dc67b-c685-4f03-a04c-0ff7c1d969ce"
+      },
+      {
+        "node": "APA_highlight_L",
+        "id": 35,
+        "uuid": "04dc3124-199f-4e36-93b6-6510e7a5fa6b"
+      },
+      {
+        "node": "APA_eye_R",
+        "id": 36,
+        "uuid": "caf3cf49-a384-42fa-8204-abdea6241d39"
+      },
+      {
+        "node": "APA_pupil_R",
+        "id": 37,
+        "uuid": "06994ac8-60b2-48cf-a721-e38ac82f618e"
+      },
+      {
+        "node": "APA_highlight_R",
+        "id": 38,
+        "uuid": "92757757-81b6-4d25-9c38-3699075a1d30"
+      },
+      {
+        "node": "APA_face",
+        "id": 39,
+        "uuid": "c156f107-4621-4bc4-a257-015b30f2823d"
+      },
+      {
+        "node": "APA_face_rim",
+        "id": 40,
+        "uuid": "9ce31ad2-694a-4cdb-97ea-4cfbc71aaee2"
+      },
+      {
+        "node": "APA_lid_lower_L",
+        "id": 41,
+        "uuid": "cd4ae4b2-22dc-4ef4-afbd-19e20eb115e0"
+      },
+      {
+        "node": "APA_lid_lower_R",
+        "id": 42,
+        "uuid": "6ef48505-0c07-419d-994d-7a535641184c"
+      },
+      {
+        "node": "APA_seam",
+        "id": 43,
+        "uuid": "6b9d6395-c58d-44b4-a86d-8f6136dbb5c7"
+      },
+      {
+        "node": "APA_tray",
+        "id": 44,
+        "uuid": "22055582-c284-4221-baaa-cccd936abd4a"
+      },
+      {
+        "node": "APA_tray_glow",
+        "id": 45,
+        "uuid": "6ed3ab26-2377-4542-9c28-ffdf3e04dc0b"
+      }
+    ],
+    "materials": [
+      {
+        "name": "MAT_APA_porcelain",
+        "id": 62,
+        "uuid": "17d3da84-233b-4088-a133-347030b47d75"
+      },
+      {
+        "name": "MAT_APA_brass",
+        "id": 63,
+        "uuid": "cf943186-583d-4a89-b686-797bf447753d"
+      },
+      {
+        "name": "MAT_APA_ribbon",
+        "id": 64,
+        "uuid": "9756e941-9728-4585-8180-ccef27592dbe"
+      },
+      {
+        "name": "MAT_APA_eye_emit",
+        "id": 65,
+        "uuid": "0da3c8bd-d153-488f-85d2-7e584cad50c0"
+      },
+      {
+        "name": "MAT_APA_ink",
+        "id": 66,
+        "uuid": "4b9aefac-f324-43bb-aa70-3e64909e025f"
+      },
+      {
+        "name": "MAT_APA_highlight",
+        "id": 67,
+        "uuid": "756fd6c9-9e2a-443b-93bb-ce665d410f5e"
+      },
+      {
+        "name": "MAT_APA_tray_emit",
+        "id": 68,
+        "uuid": "645d5290-d118-4b2d-a8d6-71534583fb3d"
+      }
+    ],
+    "textureCount": 0
+  },
+  "sourceAssetUrl": "/asset.glb",
+  "capturedAt": "2026-11-17T14:19:34.704Z",
+  "captures": [
+    {
+      "file": "webgl-neutral-face.png",
+      "pose": "neutral",
+      "view": "face",
+      "camera": [
+        0.40383869541157696,
+        3.1199999999999997,
+        0.7507661230538238
+      ],
+      "cameraQuaternion": [
+        -0.033263135908825556,
+        -0.19600711162469248,
+        -0.0066527628693618755,
+        0.9800155696356361
+      ],
+      "lookDirection": [
+        0.38373745879203186,
+        -0.06780475983980577,
+        -0.9209495519641127
+      ],
+      "fov": 30,
+      "viewport": [
+        800,
+        900
+      ],
+      "renderInfo": {
+        "frame": 2,
+        "calls": 105,
+        "triangles": 114636,
+        "points": 0,
+        "lines": 0
+      }
+    },
+    {
+      "file": "webgl-room-neutral.png",
+      "pose": "neutral",
+      "view": "room",
+      "camera": [
+        -0.7,
+        2.8,
+        3.4
+      ],
+      "cameraQuaternion": [
+        -0.05230407459247078,
+        0.034851668155187344,
+        0.0018264985323228518,
+        0.9980211966240684
+      ],
+      "lookDirection": [
+        -0.06937434048221473,
+        -0.10452846326765337,
+        -0.9920992900156521
+      ],
+      "fov": 58,
+      "viewport": [
+        1440,
+        900
+      ],
+      "renderInfo": {
+        "frame": 3,
+        "calls": 140,
+        "triangles": 132636,
+        "points": 0,
+        "lines": 0
+      }
+    },
+    {
+      "file": "webgl-room-attention.png",
+      "pose": "attention",
+      "view": "room",
+      "camera": [
+        -0.7,
+        2.8,
+        3.4
+      ],
+      "cameraQuaternion": [
+        -0.05230407459247078,
+        0.034851668155187344,
+        0.0018264985323228518,
+        0.9980211966240684
+      ],
+      "lookDirection": [
+        -0.06937434048221473,
+        -0.10452846326765337,
+        -0.9920992900156521
+      ],
+      "fov": 58,
+      "viewport": [
+        1440,
+        900
+      ],
+      "renderInfo": {
+        "frame": 4,
+        "calls": 140,
+        "triangles": 132636,
+        "points": 0,
+        "lines": 0
+      }
+    },
+    {
+      "file": "webgl-room-sources.png",
+      "pose": "sources",
+      "view": "room",
+      "camera": [
+        -0.7,
+        2.8,
+        3.4
+      ],
+      "cameraQuaternion": [
+        -0.05230407459247078,
+        0.034851668155187344,
+        0.0018264985323228518,
+        0.9980211966240684
+      ],
+      "lookDirection": [
+        -0.06937434048221473,
+        -0.10452846326765337,
+        -0.9920992900156521
+      ],
+      "fov": 58,
+      "viewport": [
+        1440,
+        900
+      ],
+      "renderInfo": {
+        "frame": 5,
+        "calls": 140,
+        "triangles": 132636,
+        "points": 0,
+        "lines": 0
+      }
+    },
+    {
+      "file": "webgl-room-no-match.png",
+      "pose": "no-match",
+      "view": "room",
+      "camera": [
+        -0.7,
+        2.8,
+        3.4
+      ],
+      "cameraQuaternion": [
+        -0.05230407459247078,
+        0.034851668155187344,
+        0.0018264985323228518,
+        0.9980211966240684
+      ],
+      "lookDirection": [
+        -0.06937434048221473,
+        -0.10452846326765337,
+        -0.9920992900156521
+      ],
+      "fov": 58,
+      "viewport": [
+        1440,
+        900
+      ],
+      "renderInfo": {
+        "frame": 6,
+        "calls": 140,
+        "triangles": 132636,
+        "points": 0,
+        "lines": 0
+      }
+    },
+    {
+      "file": "webgl-room-dismissal.png",
+      "pose": "dismissal",
+      "view": "room",
+      "camera": [
+        -0.7,
+        2.8,
+        3.4
+      ],
+      "cameraQuaternion": [
+        -0.05230407459247078,
+        0.034851668155187344,
+        0.0018264985323228518,
+        0.9980211966240684
+      ],
+      "lookDirection": [
+        -0.06937434048221473,
+        -0.10452846326765337,
+        -0.9920992900156521
+      ],
+      "fov": 58,
+      "viewport": [
+        1440,
+        900
+      ],
+      "renderInfo": {
+        "frame": 7,
+        "calls": 140,
+        "triangles": 132636,
+        "points": 0,
+        "lines": 0
+      }
+    }
+  ],
+  "pageErrors": []
+}

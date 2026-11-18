@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-11-18T19:16:28.236Z",
+  "node": "v24.21.0",
+  "commands": [
+    {
+      "argv": [
+        "node",
+        "design/assistant/robot/review/export-validator-v03/probe.mjs"
+      ],
+      "exitCode": 0,
+      "results": [
+        "full-results.json",
+        "guard-results.json",
+        "summary.json"
+      ],
+      "detail": "Two invalid current-child exits of 1 are expected; old false accepts are separately labelled sensitivity evidence"
+    },
+    {
+      "argv": [
+        "node",
+        "node_modules/eslint/bin/eslint.js",
+        "design/assistant/robot/asset-pipeline/validator-v03/validate_asset.mjs",
+        "design/assistant/robot/asset-pipeline/validator-v03/validate_contract.mjs",
+        "design/assistant/robot/asset-pipeline/validator-v03/verify.mjs",
+        "design/assistant/robot/review/export-validator-v03/probe.mjs",
+        "--max-warnings",
+        "0"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "reviewedRootReceipts": {
+    "beforePassed": 2,
+    "beforeTotal": 11,
+    "afterPassed": 11,
+    "afterTotal": 11,
+    "originalSourcePinsMatch": true
+  },
+  "excluded": [
+    "root verify.mjs not executed",
+    "old review probe not executed in place",
+    "Blender",
+    "asset exports",
+    "application tests",
+    "build/browser/Git"
+  ]
+}

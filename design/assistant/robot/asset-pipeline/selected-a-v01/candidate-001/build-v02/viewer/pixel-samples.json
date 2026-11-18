@@ -1,0 +1,47 @@
+{
+    "source":  "webgl-neutral-front.png",
+    "sha256":  "d7c4c4d5d9f97bf73ed2981064899f4b9db419d2dc26fed4387a533617db67cd",
+    "method":  "representative manually located screenshot pixels, sRGB 8-bit; no whole-object luminance or artistic approval claim",
+    "samples":  [
+                    {
+                        "part":  "eye",
+                        "x":  321,
+                        "y":  366,
+                        "rgb":  [
+                                    252,
+                                    251,
+                                    248
+                                ]
+                    },
+                    {
+                        "part":  "eye",
+                        "x":  475,
+                        "y":  367,
+                        "rgb":  [
+                                    252,
+                                    251,
+                                    248
+                                ]
+                    },
+                    {
+                        "part":  "porcelain",
+                        "x":  401,
+                        "y":  265,
+                        "rgb":  [
+                                    232,
+                                    218,
+                                    194
+                                ]
+                    },
+                    {
+                        "part":  "ribbon",
+                        "x":  497,
+                        "y":  195,
+                        "rgb":  [
+                                    183,
+                                    39,
+                                    30
+                                ]
+                    }
+                ]
+}

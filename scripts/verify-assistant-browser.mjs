@@ -80,7 +80,7 @@ ask('Who is Owen?')
 orca('wait', '--text', 'could not read')
 check('Valid JSON with missing hits shows a recoverable error', status().includes('could not read') && evaluate("JSON.stringify(!!document.querySelector('textarea') && Array.from(document.querySelectorAll('button')).some(button=>button.textContent.trim()==='Try again'))"))
 
-evaluate(`window.__qaCalls=0; window.fetch=async()=>{const n=++window.__qaCalls; if(n===1) await new Promise(r=>setTimeout(r,7000)); const text=[{type:'retrieval-start',question:'fixture'},{type:'retrieval',hits:[],durationMs:1},{type:'answer',answer:{mode:'abstained',text:n===1?'STALE RESULT':'FRESH RESULT',citations:[]}},{type:'done',durationMs:2}].map(x=>JSON.stringify(x)).join('\\n'); const bytes=new TextEncoder().encode(text); return new Response(new ReadableStream({start(c){c.enqueue(bytes.slice(0,23));c.enqueue(bytes.slice(23));c.close()}}))}; JSON.stringify(true)`)
+evaluate(`window.__qaCalls=0; window.fetch=async(_url,options)=>{const question=JSON.parse(options.body).question.trim(); const n=++window.__qaCalls; if(n===1) await new Promise(r=>setTimeout(r,7000)); const text=[{type:'retrieval-start',question},{type:'retrieval',hits:[],durationMs:1},{type:'answer',answer:{mode:'abstained',text:n===1?'STALE RESULT':'FRESH RESULT',citations:[]}},{type:'done',durationMs:2}].map(x=>JSON.stringify(x)).join('\\n'); const bytes=new TextEncoder().encode(text); return new Response(new ReadableStream({start(c){c.enqueue(bytes.slice(0,23));c.enqueue(bytes.slice(23));c.close()}}))}; JSON.stringify(true)`)
 ask('Old question')
 ask('New question')
 orca('wait', '--text', 'FRESH RESULT')

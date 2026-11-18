@@ -1,0 +1,69 @@
+{
+  "candidateId": "selected-a-v01-candidate-001-build-v01",
+  "productionReady": false,
+  "status": "for-independent-review",
+  "rawSource": {
+    "path": "../raw/model.glb",
+    "sha256": "412c0c213e0c6adc6baa80fa0686b6cbd9a1d259348bb96c571ef28b2f59bec7"
+  },
+  "export": {
+    "path": "selected-a.glb",
+    "sha256": "775733a18559d7f52dd6bd71e7ec518a9783ef3c9e95dd753b3072e553587232",
+    "rawGlbBytes": 328960,
+    "gzipBytes": 214023,
+    "brotliBytes": 149706,
+    "triangles": 18330,
+    "exportedVertexRecords": 9341,
+    "nodes": 22,
+    "meshes": 21,
+    "materials": 7,
+    "primitives": 21,
+    "textures": 0,
+    "animations": 0
+  },
+  "editable": {
+    "path": "selected-a.blend",
+    "sha256": "23c6fdf90d48bee4f3a82fd811f312b6eb798dd40712544fa7afa6bdb67a22fc"
+  },
+  "profile": {
+    "path": "profile.json",
+    "sha256": "3c8d967715892f5ee2430b252bafdc3d1a55c767fb949cf55f6475b260c6f550"
+  },
+  "poses": {
+    "path": "poses.json",
+    "sha256": "6e32e89bd68e47ea2638302211e0d45da38f078e9201e6c71b903ca4c05aacc6"
+  },
+  "script": {
+    "path": "build_asset.py",
+    "sha256": "f03b30650b0eff3389bfd0d830b58e4f5ada4608832bd09bb2e2f8240d26572c"
+  },
+  "neutralBoundsGltfMetres": {
+    "min": [
+      -0.14062344492413104,
+      -0.2358040977269411,
+      -0.1354877119883895
+    ],
+    "max": [
+      0.1372770096641034,
+      0.30068186298012733,
+      0.1254333845572546
+    ]
+  },
+  "sweptBoundsBlenderMetres": {
+    "min": [
+      -0.1429218412182589,
+      -0.1354826004050036,
+      -0.24962987609126763
+    ],
+    "max": [
+      0.14795153446414666,
+      0.13634890921333032,
+      0.3060847581169863
+    ]
+  },
+  "externalRoomScale": 2,
+  "floorOffset": 0,
+  "worldPlacement": null,
+  "allocationApproved": false,
+  "independentReview": null
+}

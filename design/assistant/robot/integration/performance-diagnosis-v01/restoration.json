@@ -1,0 +1,175 @@
+{
+  "records": [
+    {
+      "command": "goto",
+      "args": [
+        "--url",
+        "http://127.0.0.1:4193/studio"
+      ],
+      "result": {
+        "id": "01d84ead-5b74-493a-8fe5-c3241c791a72",
+        "ok": true,
+        "result": {
+          "url": "http://127.0.0.1:4193/studio",
+          "title": "Owen Cheung — After-hours Studio",
+          "effects": {
+            "settled": false,
+            "page": {
+              "lines": [
+                "- generic [ref=e30] clickable [onclick]",
+                "  - link \"Skip to selected work\" [ref=e31]",
+                "  - main",
+                "    - region \"Owen Cheung\" [ref=e33]",
+                "      - sectionheader",
+                "        - heading \"Owen Cheung\" [level=1, ref=e44]",
+                "        - paragraph",
+                "          - StaticText \"SOFTWARE ENGINEERING / APPLIED AI\"",
+                "        - navigation \"Studio sections\" [ref=e45]",
+                "          - link \"Work\" [ref=e48]",
+                "          - link \"About\" [ref=e49]",
+                "          - link \"Contact\" [ref=e50]",
+                "      - generic",
+                "        - status",
+                "          - StaticText \"Drag to look · Select a screen\"",
+                "        - navigation \"Selected projects\" [ref=e46]",
+                "          - list",
+                "            - listitem [level=1]",
+                "              - link \"From a model to an inspectable comparison →\" [ref=e56]",
+                "                - StaticText \"From a model to an inspectable comparison\"",
+                "                - StaticText \"→\"",
+                "            - listitem [level=1]",
+                "              - link \"Application Copilot →\" [ref=e57]",
+                "                - StaticText \"Application Copilot\"",
+                "                - StaticText \"→\"",
+                "            - listitem [level=1]",
+                "              - link \"TypeForge →\" [ref=e58]",
+                "                - StaticText \"TypeForge\"",
+                "                - StaticText \"→\"",
+                "        - button \"Ask about Owen’s work\" [ref=e47]",
+                "        - group \"Look around the studio\"",
+                "          - button \"Look left\" [ref=e51]",
+                "          - button \"Look up\" [ref=e52]",
+                "          - button \"Look down\" [ref=e53]",
+                "          - button \"Look right\" [ref=e54]",
+                "          - button \"Reset view\" [ref=e55]",
+                "  - region \"ABOUT\" [ref=e32]",
+                "    - heading \"ABOUT\" [level=2, ref=e34]",
+                "    - paragraph",
+                "      - StaticText \"SOFTWARE ENGINEERING / APPLIED AI\"",
+                "    - paragraph",
+                "      - StaticText \"I build software around AI: retrieval, evaluation and workflows people can inspect. My experience at LexisNexis Risk Solutions includes developer enablement through instructions, s…",
+                "    - paragraph",
+                "      - StaticText \"Off the clock, it's listening to and making music, coffee, custom keyboards and snowboarding.\"",
+                "  - contentinfo \"Get in touch.\"",
+                "    - heading \"Get in touch.\" [level=2, ref=e35]",
+                "    - navigation \"Contact and profiles\" [ref=e36]",
+                "      - link \"Ask the portfolio\" [ref=e38]",
+                "      - link \"Work & background\" [ref=e39]",
+                "      - link \"Writing\" [ref=e40]",
+                "      - link \"Email Owen\" [ref=e41]",
+                "      - link \"GitHub\" [ref=e42]",
+                "      - link \"LinkedIn\" [ref=e43]",
+                "    - link \"↑ Back to studio\" [ref=e37]",
+                "      - StaticText \"↑\"",
+                "      - StaticText \"Back to studio\"",
+                "- alert"
+              ],
+              "removedLines": 0,
+              "full": true,
+              "truncated": true
+            }
+          }
+        },
+        "_meta": {
+          "runtimeId": "19e04513-1ef5-4d38-9d02-d9354525c5f3"
+        }
+      }
+    },
+    {
+      "command": "viewport",
+      "args": [
+        "--width",
+        "1440",
+        "--height",
+        "900",
+        "--scale",
+        "1"
+      ],
+      "result": {
+        "id": "fcab23ac-0a28-4b96-b9bc-f196024cbb57",
+        "ok": true,
+        "result": {
+          "width": 1440,
+          "height": 900,
+          "deviceScaleFactor": 1,
+          "mobile": false
+        },
+        "_meta": {
+          "runtimeId": "19e04513-1ef5-4d38-9d02-d9354525c5f3"
+        }
+      }
+    },
+    {
+      "command": "wait",
+      "args": [
+        "--selector",
+        "canvas[data-assistant-revision]"
+      ],
+      "result": {
+        "id": "f4ae67de-8501-4abb-a681-e861d03b7e3f",
+        "ok": true,
+        "result": {
+          "selector": "canvas[data-assistant-revision]",
+          "waited": "selector"
+        },
+        "_meta": {
+          "runtimeId": "19e04513-1ef5-4d38-9d02-d9354525c5f3"
+        }
+      }
+    },
+    {
+      "command": "eval",
+      "args": [
+        "--expression",
+        "JSON.stringify({url:location.href,width:innerWidth,height:innerHeight,dpr:devicePixelRatio,dialogOpen:document.querySelector('dialog')?.open,canvas:{...document.querySelector('canvas')?.dataset},probePresent:!!(window.__diagnosis||window.__attentionFocus),fetchNative:Function.prototype.toString.call(fetch).includes('[native code]')})"
+      ],
+      "result": {
+        "id": "cd3c703c-626c-45f2-986d-6d4215ac02a2",
+        "ok": true,
+        "result": {
+          "result": "{\"url\":\"http://127.0.0.1:4193/studio\",\"width\":1440,\"height\":900,\"dpr\":1.0000000149011612,\"dialogOpen\":false,\"canvas\":{\"engine\":\"three.js r187\",\"studioInteractionEnabled\":\"true\",\"studioYaw\":\"-4\",\"studioPitch\":\"-6\",\"studioEye\":\"-0.7,2.8,3.4\",\"studioFov\":\"58\",\"studioDpr\":\"1.0000000149011612\",\"studioRenderCount\":\"3\",\"studioDrawCalls\":\"94\",\"studioTriangles\":\"94512\",\"studioGeometries\":\"38\",\"studioTextures\":\"12\",\"assistantRunId\":\"\",\"assistantRevision\":\"0\",\"assistantCardCount\":\"0\"},\"probePresent\":false,\"fetchNative\":true}",
+          "origin": "http://127.0.0.1:4193/studio"
+        },
+        "_meta": {
+          "runtimeId": "19e04513-1ef5-4d38-9d02-d9354525c5f3"
+        }
+      }
+    }
+  ],
+  "value": {
+    "url": "http://127.0.0.1:4193/studio",
+    "width": 1440,
+    "height": 900,
+    "dpr": 1.0000000149011612,
+    "dialogOpen": false,
+    "canvas": {
+      "engine": "three.js r187",
+      "studioInteractionEnabled": "true",
+      "studioYaw": "-4",
+      "studioPitch": "-6",
+      "studioEye": "-0.7,2.8,3.4",
+      "studioFov": "58",
+      "studioDpr": "1.0000000149011612",
+      "studioRenderCount": "3",
+      "studioDrawCalls": "94",
+      "studioTriangles": "94512",
+      "studioGeometries": "38",
+      "studioTextures": "12",
+      "assistantRunId": "",
+      "assistantRevision": "0",
+      "assistantCardCount": "0"
+    },
+    "probePresent": false,
+    "fetchNative": true
+  }
+}

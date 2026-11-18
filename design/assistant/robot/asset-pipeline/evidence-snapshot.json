@@ -1,0 +1,321 @@
+{
+  "checkedAt": "2026-11-15T18:29:17.964Z",
+  "scope": "Read-only source/hash/version discovery; no scene, app, build, render or generation run.",
+  "roots": {
+    "assistant": "C:\\Users\\Owenc\\orca\\Portfolio-assistant",
+    "studio": "C:/Users/Owenc/orca/Portfolio",
+    "blender": "C:/Program Files/Blender Foundation/Blender 5.2"
+  },
+  "revisions": {
+    "assistant": {
+      "head": "c0348b77adbfe09034e82a9e1a3cee34052d4735",
+      "branch": "feature/portfolio-assistant"
+    },
+    "studio": {
+      "head": "8b565b23290c1faa5a47e2bd62586ac4b25e09df",
+      "branch": "feature/studio-v2-after-hours"
+    }
+  },
+  "priorSnapshotTime": "2026-11-15T17:16:41.314Z",
+  "files": [
+    {
+      "root": "studio",
+      "path": "components/studio/scene/view-config.ts",
+      "bytes": 756,
+      "sha256": "1fea7adbcfd730a56920389c8ac4ecf8323c9739fd4882c15f3e134a11f1a450",
+      "earlierEngineeringSha256": "1fea7adbcfd730a56920389c8ac4ecf8323c9739fd4882c15f3e134a11f1a450",
+      "changedSinceEngineeringSnapshot": false
+    },
+    {
+      "root": "studio",
+      "path": "components/studio/scene/controller.ts",
+      "bytes": 19515,
+      "sha256": "cc76055ea4bfe596e0d3ab49c84ca55c55b8a9bad3b33627e08adeb78f0969f0",
+      "earlierEngineeringSha256": "cc76055ea4bfe596e0d3ab49c84ca55c55b8a9bad3b33627e08adeb78f0969f0",
+      "changedSinceEngineeringSnapshot": false
+    },
+    {
+      "root": "studio",
+      "path": "components/studio/scene/load-full-kit.ts",
+      "bytes": 16066,
+      "sha256": "37549d60af2eb7f5e1feaf0914fd0da496ec38441ebe088ce445d2914b5ad68f",
+      "earlierEngineeringSha256": "37549d60af2eb7f5e1feaf0914fd0da496ec38441ebe088ce445d2914b5ad68f",
+      "changedSinceEngineeringSnapshot": false
+    },
+    {
+      "root": "studio",
+      "path": "components/studio/scene/build-full-studio.ts",
+      "bytes": 3998,
+      "sha256": "5a4e8296e04d66cfeaedf59bedee8c633b378c84126de52b78eaabe421c0f02f",
+      "earlierEngineeringSha256": "5a4e8296e04d66cfeaedf59bedee8c633b378c84126de52b78eaabe421c0f02f",
+      "changedSinceEngineeringSnapshot": false
+    },
+    {
+      "root": "studio",
+      "path": "package.json",
+      "bytes": 710,
+      "sha256": "74b49915fac2ee8cd0f896a1aaadbab0fd68427b52d31979f4ded4273a133d54",
+      "earlierEngineeringSha256": "74b49915fac2ee8cd0f896a1aaadbab0fd68427b52d31979f4ded4273a133d54",
+      "changedSinceEngineeringSnapshot": false
+    },
+    {
+      "root": "studio",
+      "path": "package-lock.json",
+      "bytes": 220145,
+      "sha256": "e2d26d355bf292c7c880469ad295b7cb9356f51136ecc5d7f79ba0a15b34515d",
+      "earlierEngineeringSha256": null,
+      "changedSinceEngineeringSnapshot": null
+    },
+    {
+      "root": "studio",
+      "path": "node_modules/three/package.json",
+      "bytes": 3818,
+      "sha256": "87f2c99a8718e5fdd6f5e51427fde52c6075f2f698ddf8f7b4e162882df93940",
+      "earlierEngineeringSha256": null,
+      "changedSinceEngineeringSnapshot": null
+    },
+    {
+      "root": "studio",
+      "path": "design/studio-v2/asset-pipeline/full-kit/full-kit-profile-v1.json",
+      "bytes": 7379,
+      "sha256": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+      "earlierEngineeringSha256": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+      "changedSinceEngineeringSnapshot": false
+    },
+    {
+      "root": "studio",
+      "path": "design/studio-v2/asset-pipeline/full-kit/technical/profile-core.mjs",
+      "bytes": 27085,
+      "sha256": "02b65feddb651f41a4a9d5eab4f55e41ae15c321d850a26fba00b3a92889ae71",
+      "earlierEngineeringSha256": "02b65feddb651f41a4a9d5eab4f55e41ae15c321d850a26fba00b3a92889ae71",
+      "changedSinceEngineeringSnapshot": false
+    },
+    {
+      "root": "studio",
+      "path": "design/studio-v2/asset-pipeline/full-kit/exports/studio-full-kit-m4-proposal-v02.glb",
+      "bytes": 2206200,
+      "sha256": "baa1a43bd343359edb217fa077bde0678a931cc3ed3991d5ee059e04813ed32f",
+      "earlierEngineeringSha256": null,
+      "changedSinceEngineeringSnapshot": null
+    },
+    {
+      "root": "studio",
+      "path": "design/studio-v2/scene-coordination/m4-v02-assembled-audit.json",
+      "bytes": 19598,
+      "sha256": "f7f8a7217b12c64caaa612d7a4957e549378897f9a0fb45dfe03b581a1f4d2f0",
+      "earlierEngineeringSha256": null,
+      "changedSinceEngineeringSnapshot": null
+    },
+    {
+      "root": "studio",
+      "path": "design/studio-v2/scene-coordination/m4-v02-forecast-review.md",
+      "bytes": 4109,
+      "sha256": "eee569820116ecae8ee0bbeaad0f94ec6ceb6ed30f744c84ddc526b6798e69c7",
+      "earlierEngineeringSha256": null,
+      "changedSinceEngineeringSnapshot": null
+    },
+    {
+      "root": "studio",
+      "path": "design/studio-v2/scene-coordination/m4-v02-restoration-root-disposition.md",
+      "bytes": 1744,
+      "sha256": "a41d26f1d46bf4a0fd88ca55f87bc7f4fc86f8b21858fcc2d0bd8ba2f06bd731",
+      "earlierEngineeringSha256": null,
+      "changedSinceEngineeringSnapshot": null
+    },
+    {
+      "root": "studio",
+      "path": "design/studio-v2/scene-coordination/m4-v02-preview-hold-and-skill-routing.md",
+      "bytes": 4204,
+      "sha256": "b2473f9dd46a94c91b5ff1419dc2bf3ca0faf0e2f20d82a37890c4b478280181",
+      "earlierEngineeringSha256": null,
+      "changedSinceEngineeringSnapshot": null
+    },
+    {
+      "root": "studio",
+      "path": "design/studio-v2/scene-coordination/m4-v03-preparation-task.md",
+      "bytes": 4653,
+      "sha256": "8e475f647ae038f53c1b2f41f742353d71017fd64434f70169e5f8ec2c153e91",
+      "earlierEngineeringSha256": null,
+      "changedSinceEngineeringSnapshot": null
+    },
+    {
+      "root": "studio",
+      "path": "design/studio-v2/scene-coordination/production-static-js-budget-20261115.json",
+      "bytes": 5387,
+      "sha256": "d044d7a9485f101282160bcdc48f5d3d6e4f3493ac60750765f3fe463f069dfd",
+      "earlierEngineeringSha256": "d044d7a9485f101282160bcdc48f5d3d6e4f3493ac60750765f3fe463f069dfd",
+      "changedSinceEngineeringSnapshot": false
+    },
+    {
+      "root": "studio",
+      "path": "design/studio-v2/scene-coordination/full-kit-ledger-v01-root-disposition.md",
+      "bytes": 8551,
+      "sha256": "0d3fdeb349fa668a66a5ae81a1f4f3b1a749df0d36ee82c1067f559d9492c8f1",
+      "earlierEngineeringSha256": "0d3fdeb349fa668a66a5ae81a1f4f3b1a749df0d36ee82c1067f559d9492c8f1",
+      "changedSinceEngineeringSnapshot": false
+    },
+    {
+      "root": "studio",
+      "path": "design/studio-v2/scene-coordination/m3-v03-stage-disposition-and-m4-release.md",
+      "bytes": 6812,
+      "sha256": "e64706a567175518577eda43a1592a8f621505bf146544dc2f5dd8e1c67f9503",
+      "earlierEngineeringSha256": "e64706a567175518577eda43a1592a8f621505bf146544dc2f5dd8e1c67f9503",
+      "changedSinceEngineeringSnapshot": false
+    },
+    {
+      "root": "studio",
+      "path": ".omx/plans/test-spec-immersive-studio-v2.md",
+      "bytes": 6421,
+      "sha256": "e5822f3d02bc17ef074f7fd6ed61a7b0f9fde3d05e162f0f15d5823656fbad9b",
+      "earlierEngineeringSha256": "e5822f3d02bc17ef074f7fd6ed61a7b0f9fde3d05e162f0f15d5823656fbad9b",
+      "changedSinceEngineeringSnapshot": false
+    },
+    {
+      "root": "studio",
+      "path": "design/studio-v2/browser-verification/README.md",
+      "bytes": 9273,
+      "sha256": "839cac7d8a6884f68350c0fe969af25449ecf3567d14f1071a5d50e2dcfd1ad5",
+      "earlierEngineeringSha256": "839cac7d8a6884f68350c0fe969af25449ecf3567d14f1071a5d50e2dcfd1ad5",
+      "changedSinceEngineeringSnapshot": false
+    },
+    {
+      "root": "studio",
+      "path": ".omx/context/studio-pilot-runtime-capture-v02.json",
+      "bytes": 19840,
+      "sha256": "bef69d512eb7210d0fe33d449b75e3dcbbb594fdb9733dacdcb4b51071801537",
+      "earlierEngineeringSha256": "bef69d512eb7210d0fe33d449b75e3dcbbb594fdb9733dacdcb4b51071801537",
+      "changedSinceEngineeringSnapshot": false
+    },
+    {
+      "root": "studio",
+      "path": ".omx/context/full-kit-m3-v03-runtime-capture-v01.json",
+      "bytes": 3526678,
+      "sha256": "641328d42c029b00979d41324df213190e168526af5447689cb50713652098b0",
+      "earlierEngineeringSha256": "641328d42c029b00979d41324df213190e168526af5447689cb50713652098b0",
+      "changedSinceEngineeringSnapshot": false
+    },
+    {
+      "root": "assistant",
+      "path": ".omx/plans/studio-apprentice-robot.md",
+      "bytes": 21729,
+      "sha256": "9c4639a1b78042599b9410b42dfaf5b868b4c29f58e44a4bd33ff5dfe9b043a5",
+      "earlierEngineeringSha256": null,
+      "changedSinceEngineeringSnapshot": null
+    },
+    {
+      "root": "assistant",
+      "path": "design/assistant/robot/brief.md",
+      "bytes": 7187,
+      "sha256": "d8c4a85fc5b9ff164ca4f520b6c99e8436b6b7b8d5b9401996de9508915ec84a",
+      "earlierEngineeringSha256": "52fbc0ef55a73fa61cca369797961bcbe9fe1ab421d2bdf66714f33fbf3ed50e",
+      "changedSinceEngineeringSnapshot": true
+    },
+    {
+      "root": "assistant",
+      "path": "design/assistant/robot/engineering-constraints.md",
+      "bytes": 18704,
+      "sha256": "0deff2b890587cb67aba0e6dd7e533cb138637b9c91c61e9807a4702abfa98bb",
+      "earlierEngineeringSha256": null,
+      "changedSinceEngineeringSnapshot": null
+    },
+    {
+      "root": "assistant",
+      "path": "design/assistant/robot/engineering/source-snapshot.json",
+      "bytes": 18804,
+      "sha256": "f656877c22df48da9ed29a978772ea96358adcb64be9feb272c6fb89b1d40cff",
+      "earlierEngineeringSha256": null,
+      "changedSinceEngineeringSnapshot": null
+    },
+    {
+      "root": "assistant",
+      "path": "design/assistant/robot/apprentice/design-spec.md",
+      "bytes": 22292,
+      "sha256": "1ee755cc5c85794a2916bd2188e455cc350a59d2dffdeed2c726ecd9bd2a91be",
+      "earlierEngineeringSha256": null,
+      "changedSinceEngineeringSnapshot": null
+    },
+    {
+      "root": "assistant",
+      "path": "design/assistant/robot/apprentice/blockout/README.md",
+      "bytes": 7121,
+      "sha256": "a4f2955a612c2c65abd09a4e8a1a7526a7c95dfdd65a53d25bcb4eb88a99330c",
+      "earlierEngineeringSha256": null,
+      "changedSinceEngineeringSnapshot": null
+    },
+    {
+      "root": "assistant",
+      "path": "design/assistant/robot/apprentice/blockout/build_apprentice_blockout.py",
+      "bytes": 29030,
+      "sha256": "19cadc39e8f2e722ef6ffbdc76e698499778a2a465d8070d73641562a3eb7b90",
+      "earlierEngineeringSha256": null,
+      "changedSinceEngineeringSnapshot": null
+    },
+    {
+      "root": "assistant",
+      "path": "design/assistant/robot/apprentice/blockout/apprentice-blockout.blend",
+      "bytes": 294705,
+      "sha256": "a580620ffbcc23449738bb2ef7ee8db7b2b2f82dd4af3b06babc45f8933b047b",
+      "earlierEngineeringSha256": null,
+      "changedSinceEngineeringSnapshot": null
+    },
+    {
+      "root": "assistant",
+      "path": "design/assistant/robot/review/blockout-v01/review.md",
+      "bytes": 19082,
+      "sha256": "3b4a1fba2b7e7267a16324c1f363f0b04cb9d0a01bb91a7a039ad430cbfff35c",
+      "earlierEngineeringSha256": null,
+      "changedSinceEngineeringSnapshot": null
+    },
+    {
+      "root": "blender",
+      "path": "5.2/scripts/addons_core/io_scene_gltf2/__init__.py",
+      "bytes": 89287,
+      "sha256": "29b040a623c4f32ab12d00e795e3d6610bbae67f6c517302f122e7a6b2ecaa0a",
+      "earlierEngineeringSha256": null,
+      "changedSinceEngineeringSnapshot": null
+    }
+  ],
+  "blenderVersionOutput": [
+    "Blender 5.2.3 LTS",
+    "\tbuild date: 2026-10-22",
+    "\tbuild time: 01:37:16",
+    "\tbuild commit date: 2026-10-21",
+    "\tbuild commit time: 09:21",
+    "\tbuild hash: e13b728c6880",
+    "\tbuild branch: blender-v5.2-release",
+    "\tbuild platform: Windows",
+    "\tbuild type: Release"
+  ],
+  "threeInstalled": "0.187.0",
+  "priorReceiptNotNewMeasurement": {
+    "compression": {
+      "raw": 2206200,
+      "gzip": 882581,
+      "brotli": 683040
+    },
+    "transfer": {
+      "geometryGzip": 644603,
+      "geometryBrotli": 415640,
+      "jsonGzip": 12531,
+      "jsonBrotli": 9570,
+      "images": 414144,
+      "assetGzip": 1071278,
+      "assetBrotli": 839354,
+      "assetPlusHostedJsGzip": 1462612,
+      "assetPlusHostedJsBrotli": 1172643,
+      "geometryPlus15PercentGzipWithHostedJs": 1559302
+    }
+  },
+  "arithmetic": {
+    "pointForecast": 1462612,
+    "pointMargin": 37388,
+    "sensitivityForecast": 1559302,
+    "sensitivityMargin": -59302,
+    "conditionalAssetTarget": 1070000,
+    "assetPointOverTarget": 1278,
+    "designMainMargin": 9,
+    "designRefreshMargin": 24,
+    "designWeightedTriangleMargin": 54212,
+    "planningMarginsAreAllocation": false
+  }
+}

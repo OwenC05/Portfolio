@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-11-16T14:19:56.864Z",
+  "original": "design/assistant/robot/integration/verification-g1/verify-assistant-browser.before.mjs",
+  "current": "scripts/verify-assistant-browser.mjs",
+  "originalSha256": "f715ebe1ba74727a7ef19c176d3a3aa61ade5be30738e2b0c07252bba0049fe0",
+  "currentSha256": "7deba8aae3ec21f7b8c2444d9917a166e65e12b220ad721938ee96a5e7bdc31a",
+  "originalLines": 101,
+  "currentLines": 101,
+  "changedLines": [
+    {
+      "line": 83,
+      "original": "evaluate(`window.__qaCalls=0; window.fetch=async()=>{const n=++window.__qaCalls; if(n===1) await new Promise(r=>setTimeout(r,7000)); const text=[{type:'retrieval-start',question:'fixture'},{type:'retrieval',hits:[],durationMs:1},{type:'answer',answer:{mode:'abstained',text:n===1?'STALE RESULT':'FRESH RESULT',citations:[]}},{type:'done',durationMs:2}].map(x=>JSON.stringify(x)).join('\\\\n'); const bytes=new TextEncoder().encode(text); return new Response(new ReadableStream({start(c){c.enqueue(bytes.slice(0,23));c.enqueue(bytes.slice(23));c.close()}}))}; JSON.stringify(true)`)",
+      "current": "evaluate(`window.__qaCalls=0; window.fetch=async(_url,options)=>{const question=JSON.parse(options.body).question.trim(); const n=++window.__qaCalls; if(n===1) await new Promise(r=>setTimeout(r,7000)); const text=[{type:'retrieval-start',question},{type:'retrieval',hits:[],durationMs:1},{type:'answer',answer:{mode:'abstained',text:n===1?'STALE RESULT':'FRESH RESULT',citations:[]}},{type:'done',durationMs:2}].map(x=>JSON.stringify(x)).join('\\\\n'); const bytes=new TextEncoder().encode(text); return new Response(new ReadableStream({start(c){c.enqueue(bytes.slice(0,23));c.enqueue(bytes.slice(23));c.close()}}))}; JSON.stringify(true)`)"
+    }
+  ]
+}

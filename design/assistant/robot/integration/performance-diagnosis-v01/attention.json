@@ -1,0 +1,453 @@
+{
+  "identity": "task_aa4db155162f-settled-attention",
+  "buildId": "cFKSWm6Bayf__QstZY2CC",
+  "captures": [
+    {
+      "view": "home",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/performance-diagnosis-v01/attention-home-dpr2.png",
+      "settleStart": {
+        "at": 2964.2999999523163,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "devicePixelRatio": 2.0000000298023224,
+        "hidden": false,
+        "dialogOpen": false,
+        "focusedAsk": true,
+        "activeText": "Ask about Owen’s work",
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "11",
+          "studioDrawCalls": "94",
+          "studioTriangles": "94512",
+          "studioGeometries": "38",
+          "studioTextures": "12",
+          "assistantRunId": "",
+          "assistantRevision": "0",
+          "assistantCardCount": "0"
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1424.800048828125,
+          "height": 900,
+          "top": 0,
+          "right": 1424.800048828125,
+          "bottom": 900,
+          "left": 0
+        },
+        "buffer": {
+          "width": 2849,
+          "height": 1800
+        },
+        "focusTrace": [
+          {
+            "at": 2217.5,
+            "trusted": true,
+            "text": "Reset"
+          },
+          {
+            "at": 2262.7999999523163,
+            "trusted": true,
+            "text": ""
+          },
+          {
+            "at": 2284.2999999523163,
+            "trusted": true,
+            "text": "Ask about Owen’s work"
+          }
+        ]
+      },
+      "before": {
+        "at": 3286.399999976158,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "devicePixelRatio": 2.0000000298023224,
+        "hidden": false,
+        "dialogOpen": false,
+        "focusedAsk": true,
+        "activeText": "Ask about Owen’s work",
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "11",
+          "studioDrawCalls": "94",
+          "studioTriangles": "94512",
+          "studioGeometries": "38",
+          "studioTextures": "12",
+          "assistantRunId": "",
+          "assistantRevision": "0",
+          "assistantCardCount": "0"
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1424.800048828125,
+          "height": 900,
+          "top": 0,
+          "right": 1424.800048828125,
+          "bottom": 900,
+          "left": 0
+        },
+        "buffer": {
+          "width": 2849,
+          "height": 1800
+        },
+        "focusTrace": [
+          {
+            "at": 2217.5,
+            "trusted": true,
+            "text": "Reset"
+          },
+          {
+            "at": 2262.7999999523163,
+            "trusted": true,
+            "text": ""
+          },
+          {
+            "at": 2284.2999999523163,
+            "trusted": true,
+            "text": "Ask about Owen’s work"
+          }
+        ]
+      },
+      "after": {
+        "at": 4388.699999988079,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "devicePixelRatio": 2.0000000298023224,
+        "hidden": false,
+        "dialogOpen": false,
+        "focusedAsk": true,
+        "activeText": "Ask about Owen’s work",
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "11",
+          "studioDrawCalls": "94",
+          "studioTriangles": "94512",
+          "studioGeometries": "38",
+          "studioTextures": "12",
+          "assistantRunId": "",
+          "assistantRevision": "0",
+          "assistantCardCount": "0"
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1424.800048828125,
+          "height": 900,
+          "top": 0,
+          "right": 1424.800048828125,
+          "bottom": 900,
+          "left": 0
+        },
+        "buffer": {
+          "width": 2849,
+          "height": 1800
+        },
+        "focusTrace": [
+          {
+            "at": 2217.5,
+            "trusted": true,
+            "text": "Reset"
+          },
+          {
+            "at": 2262.7999999523163,
+            "trusted": true,
+            "text": ""
+          },
+          {
+            "at": 2284.2999999523163,
+            "trusted": true,
+            "text": "Ask about Owen’s work"
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "view": "neighbour",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/performance-diagnosis-v01/attention-neighbour-dpr2.png",
+      "settleStart": {
+        "at": 5977,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "devicePixelRatio": 2.0000000298023224,
+        "hidden": false,
+        "dialogOpen": false,
+        "focusedAsk": true,
+        "activeText": "Ask about Owen’s work",
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "26",
+          "studioPitch": "4",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "28",
+          "studioDrawCalls": "94",
+          "studioTriangles": "89418",
+          "studioGeometries": "41",
+          "studioTextures": "15",
+          "assistantRunId": "",
+          "assistantRevision": "0",
+          "assistantCardCount": "0"
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1424.800048828125,
+          "height": 900,
+          "top": 0,
+          "right": 1424.800048828125,
+          "bottom": 900,
+          "left": 0
+        },
+        "buffer": {
+          "width": 2849,
+          "height": 1800
+        },
+        "focusTrace": [
+          {
+            "at": 2217.5,
+            "trusted": true,
+            "text": "Reset"
+          },
+          {
+            "at": 2262.7999999523163,
+            "trusted": true,
+            "text": ""
+          },
+          {
+            "at": 2284.2999999523163,
+            "trusted": true,
+            "text": "Ask about Owen’s work"
+          },
+          {
+            "at": 4443.699999988079,
+            "trusted": true,
+            "text": "Reset"
+          },
+          {
+            "at": 4503.099999964237,
+            "trusted": true,
+            "text": ""
+          },
+          {
+            "at": 5263.5,
+            "trusted": true,
+            "text": ""
+          },
+          {
+            "at": 5299.299999952316,
+            "trusted": true,
+            "text": ""
+          },
+          {
+            "at": 5303.5,
+            "trusted": true,
+            "text": "Ask about Owen’s work"
+          }
+        ]
+      },
+      "before": {
+        "at": 6292.799999952316,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "devicePixelRatio": 2.0000000298023224,
+        "hidden": false,
+        "dialogOpen": false,
+        "focusedAsk": true,
+        "activeText": "Ask about Owen’s work",
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "26",
+          "studioPitch": "4",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "28",
+          "studioDrawCalls": "94",
+          "studioTriangles": "89418",
+          "studioGeometries": "41",
+          "studioTextures": "15",
+          "assistantRunId": "",
+          "assistantRevision": "0",
+          "assistantCardCount": "0"
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1424.800048828125,
+          "height": 900,
+          "top": 0,
+          "right": 1424.800048828125,
+          "bottom": 900,
+          "left": 0
+        },
+        "buffer": {
+          "width": 2849,
+          "height": 1800
+        },
+        "focusTrace": [
+          {
+            "at": 2217.5,
+            "trusted": true,
+            "text": "Reset"
+          },
+          {
+            "at": 2262.7999999523163,
+            "trusted": true,
+            "text": ""
+          },
+          {
+            "at": 2284.2999999523163,
+            "trusted": true,
+            "text": "Ask about Owen’s work"
+          },
+          {
+            "at": 4443.699999988079,
+            "trusted": true,
+            "text": "Reset"
+          },
+          {
+            "at": 4503.099999964237,
+            "trusted": true,
+            "text": ""
+          },
+          {
+            "at": 5263.5,
+            "trusted": true,
+            "text": ""
+          },
+          {
+            "at": 5299.299999952316,
+            "trusted": true,
+            "text": ""
+          },
+          {
+            "at": 5303.5,
+            "trusted": true,
+            "text": "Ask about Owen’s work"
+          }
+        ]
+      },
+      "after": {
+        "at": 7399.799999952316,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "devicePixelRatio": 2.0000000298023224,
+        "hidden": false,
+        "dialogOpen": false,
+        "focusedAsk": true,
+        "activeText": "Ask about Owen’s work",
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "26",
+          "studioPitch": "4",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "28",
+          "studioDrawCalls": "94",
+          "studioTriangles": "89418",
+          "studioGeometries": "41",
+          "studioTextures": "15",
+          "assistantRunId": "",
+          "assistantRevision": "0",
+          "assistantCardCount": "0"
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1424.800048828125,
+          "height": 900,
+          "top": 0,
+          "right": 1424.800048828125,
+          "bottom": 900,
+          "left": 0
+        },
+        "buffer": {
+          "width": 2849,
+          "height": 1800
+        },
+        "focusTrace": [
+          {
+            "at": 2217.5,
+            "trusted": true,
+            "text": "Reset"
+          },
+          {
+            "at": 2262.7999999523163,
+            "trusted": true,
+            "text": ""
+          },
+          {
+            "at": 2284.2999999523163,
+            "trusted": true,
+            "text": "Ask about Owen’s work"
+          },
+          {
+            "at": 4443.699999988079,
+            "trusted": true,
+            "text": "Reset"
+          },
+          {
+            "at": 4503.099999964237,
+            "trusted": true,
+            "text": ""
+          },
+          {
+            "at": 5263.5,
+            "trusted": true,
+            "text": ""
+          },
+          {
+            "at": 5299.299999952316,
+            "trusted": true,
+            "text": ""
+          },
+          {
+            "at": 5303.5,
+            "trusted": true,
+            "text": "Ask about Owen’s work"
+          }
+        ]
+      },
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "closed": true
+}

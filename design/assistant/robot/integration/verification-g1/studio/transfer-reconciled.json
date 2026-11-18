@@ -1,0 +1,144 @@
+{
+  "at": "2026-11-16T14:01:31.234Z",
+  "basis": "Post-run reconciliation of all resource timing entries retained by the helper, including route prefetches triggered while scrolling; no new runtime run.",
+  "configuredInitialSceneJsPlusGlbEncodedBytes": 693771,
+  "configuredCompleteIsNotGlobalClosure": true,
+  "allObservedJsPlusGlbEncodedBytes": 703643,
+  "allObservedJsPlusGlbWireBytes": 707843,
+  "allObservedResourcesExceptDocumentEncodedBytes": 722775,
+  "additionalJs": [
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/app/ask/page-25ae038d4bb8e8c4.js",
+      "initiator": "script",
+      "transferSize": 8822,
+      "encodedBodySize": 8522,
+      "decodedBodySize": 24801,
+      "localPath": ".next/static/chunks/app/ask/page-25ae038d4bb8e8c4.js",
+      "sha256": "9b2503c8bf7e98ab5f56d5afacf9131bf0e929637b1f5659437b29721072f3eb"
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/app/work/page-6f291c0daaf44503.js",
+      "initiator": "script",
+      "transferSize": 975,
+      "encodedBodySize": 675,
+      "decodedBodySize": 675,
+      "localPath": ".next/static/chunks/app/work/page-6f291c0daaf44503.js",
+      "sha256": "8a9e79fe1a122aa9ddb0e83e447b718a736fd381e89e850ca6bbca00f33bef74"
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/app/writing/page-6f291c0daaf44503.js",
+      "initiator": "script",
+      "transferSize": 975,
+      "encodedBodySize": 675,
+      "decodedBodySize": 675,
+      "localPath": ".next/static/chunks/app/writing/page-6f291c0daaf44503.js",
+      "sha256": "8a9e79fe1a122aa9ddb0e83e447b718a736fd381e89e850ca6bbca00f33bef74"
+    }
+  ],
+  "zeroSizedResources": [],
+  "allObservedJsPlusGlb": [
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-e1ff4172c76c0361.js",
+      "initiator": "link",
+      "transferSize": 2191,
+      "encodedBodySize": 1891,
+      "decodedBodySize": 3644
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "initiator": "script",
+      "transferSize": 54658,
+      "encodedBodySize": 54358,
+      "decodedBodySize": 173019
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+      "initiator": "script",
+      "transferSize": 47007,
+      "encodedBodySize": 46707,
+      "decodedBodySize": 174133
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+      "initiator": "script",
+      "transferSize": 857,
+      "encodedBodySize": 557,
+      "decodedBodySize": 557
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+      "initiator": "script",
+      "transferSize": 3689,
+      "encodedBodySize": 3389,
+      "decodedBodySize": 8537
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-154eaaedc7527911.js",
+      "initiator": "script",
+      "transferSize": 9032,
+      "encodedBodySize": 8732,
+      "decodedBodySize": 25137
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+      "initiator": "script",
+      "transferSize": 84650,
+      "encodedBodySize": 84350,
+      "decodedBodySize": 357041
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+      "initiator": "script",
+      "transferSize": 69627,
+      "encodedBodySize": 69327,
+      "decodedBodySize": 262501
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+      "initiator": "script",
+      "transferSize": 14433,
+      "encodedBodySize": 14133,
+      "decodedBodySize": 47753
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/703.9b57ff8b5aa079ef.js",
+      "initiator": "script",
+      "transferSize": 18273,
+      "encodedBodySize": 17973,
+      "decodedBodySize": 47208
+    },
+    {
+      "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+      "initiator": "fetch",
+      "transferSize": 392654,
+      "encodedBodySize": 392354,
+      "decodedBodySize": 585536
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/app/ask/page-25ae038d4bb8e8c4.js",
+      "initiator": "script",
+      "transferSize": 8822,
+      "encodedBodySize": 8522,
+      "decodedBodySize": 24801
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/app/work/page-6f291c0daaf44503.js",
+      "initiator": "script",
+      "transferSize": 975,
+      "encodedBodySize": 675,
+      "decodedBodySize": 675
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/app/writing/page-6f291c0daaf44503.js",
+      "initiator": "script",
+      "transferSize": 975,
+      "encodedBodySize": 675,
+      "decodedBodySize": 675
+    }
+  ],
+  "limits": [
+    "All observed URLs for this run, not a proof of every possible navigation/request.",
+    "CSS, favicon and prefetched RSC/data appear in full resource total, outside JS-plus-GLB subtotal.",
+    "No robot allowance assigned."
+  ]
+}

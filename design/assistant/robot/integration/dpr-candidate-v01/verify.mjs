@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import {readFileSync,writeFileSync,readdirSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {execFileSync} from 'node:child_process';
+import {join} from 'node:path';
+const dir='design/assistant/robot/integration/dpr-candidate-v01';
+const read=f=>JSON.parse(readFileSync(join(dir,f),'utf8'));
+const pins=execFileSync(process.execPath,[join(dir,'pin.mjs'),'after'],{encoding:'utf8',windowsHide:true,shell:false});
+const before=readFileSync(join(dir,'verify-controller.before.mjs.txt'),'utf8'),after=readFileSync('components/studio/scene/verify-controller.mjs','utf8');
+const start=after.indexOf("test('renderer density preserves low native ratios and CSS-space picking through desktop and small resizes'"),end=after.indexOf("test('real Three raycasting uses the offset canvas, supports touch, and ignores drags'",start);
+assert.ok(start>=0&&end>start);assert.equal((after.slice(0,start)+after.slice(end)).replace('  assert.equal(h.renderers[0].dpr, 1.5);','  assert.equal(h.renderers[0].dpr, 2);'),before,'Only one expectation and one test added');
+assert.equal(read('existing-before.json').status,0);assert.equal(read('candidate-tests-old-source.json').status,1);for(const file of ['candidate-after.json','typescript.json','eslint.json'])assert.equal(read(file).status,0);
+const priorFailures=readFileSync(join(dir,'candidate-tests-old-source.log'),'utf8');assert.equal(priorFailures.match(/2 !== 1\.5/g)?.length,2);
+const verification={at:new Date().toISOString(),pins:JSON.parse(pins),checks:{productionExpressionOnly:true,testExpectationAndOneBoundaryOnly:true,oldValidBaselinePassed:true,oldSourceRejectedAtTwoIntendedCapAssertions:true,candidateTestsPassed:true,directTypeScriptPassed:true,scopedEslintPassed:true},disposition:'Authored candidate ready for root review; browser/performance/design acceptance pending'};
+writeFileSync(join(dir,'verification.json'),JSON.stringify(verification,null,2));
+const files=readdirSync(dir).filter(f=>f!=='artifact-index.json').map(path=>{const bytes=readFileSync(join(dir,path));return{path,bytes:bytes.length,sha256:createHash('sha256').update(bytes).digest('hex')};});
+writeFileSync(join(dir,'artifact-index.json'),JSON.stringify({at:new Date().toISOString(),files},null,2));console.log(JSON.stringify({checks:verification.checks,source:verification.pins.owned,artifactCount:files.length}));

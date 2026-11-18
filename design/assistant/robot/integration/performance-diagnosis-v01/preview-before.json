@@ -1,0 +1,5 @@
+{
+    "ProcessId":  52772,
+    "CreationDate":  "\/Date(1795028939905)\/",
+    "CommandLine":  "\"C:\\Program Files\\nodejs\\node.exe\" node_modules/next/dist/bin/next start --hostname 127.0.0.1 --port 4193 "
+}

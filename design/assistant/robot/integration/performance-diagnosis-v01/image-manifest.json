@@ -1,0 +1,701 @@
+{
+  "buildId": "cFKSWm6Bayf__QstZY2CC",
+  "sourcePins": "pins-before.json and pins-after.json",
+  "projection": "Eye[-0.7,2.8,3.4], FOV58, viewport1440x900; camera/state/DPR receipts adjacent to each image",
+  "images": [
+    {
+      "purpose": "Page-local density experiment for actual Claude quality judgment; not source policy or acceptance",
+      "path": "normal-dpr2.png",
+      "before": {
+        "at": 15640.199999988079,
+        "timeOrigin": 1795031785160.6,
+        "hidden": false,
+        "visibility": "visible",
+        "focused": true,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "devicePixelRatio": 2.0000000298023224,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "113",
+          "studioDrawCalls": "94",
+          "studioTriangles": "94512",
+          "studioGeometries": "38",
+          "studioTextures": "12",
+          "assistantRunId": "",
+          "assistantRevision": "0",
+          "assistantCardCount": "0"
+        },
+        "buffer": {
+          "width": 2849,
+          "height": 1800
+        },
+        "pending": 0,
+        "frames": 115
+      },
+      "after": {
+        "at": 16694.80000001192,
+        "timeOrigin": 1795031785160.6,
+        "hidden": false,
+        "visibility": "visible",
+        "focused": true,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "devicePixelRatio": 2.0000000298023224,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "113",
+          "studioDrawCalls": "94",
+          "studioTriangles": "94512",
+          "studioGeometries": "38",
+          "studioTextures": "12",
+          "assistantRunId": "",
+          "assistantRevision": "0",
+          "assistantCardCount": "0"
+        },
+        "buffer": {
+          "width": 2849,
+          "height": 1800
+        },
+        "pending": 0,
+        "frames": 115
+      },
+      "condition": {
+        "mode": "full",
+        "dpr": 2,
+        "replicate": 1
+      },
+      "bytes": 2043992,
+      "sha256": "1543c611bf998e7170113954f435e040c9a644ce154697892a7f0d51b6654b4a"
+    },
+    {
+      "purpose": "Page-local density experiment for actual Claude quality judgment; not source policy or acceptance",
+      "path": "normal-dpr1.5.png",
+      "before": {
+        "at": 14097.800000011921,
+        "timeOrigin": 1795031815754.9,
+        "hidden": false,
+        "visibility": "visible",
+        "focused": true,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "devicePixelRatio": 1.5000000596046448,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1.5000000596046448",
+          "studioRenderCount": "165",
+          "studioDrawCalls": "94",
+          "studioTriangles": "94512",
+          "studioGeometries": "38",
+          "studioTextures": "12",
+          "assistantRunId": "",
+          "assistantRevision": "0",
+          "assistantCardCount": "0"
+        },
+        "buffer": {
+          "width": 2137,
+          "height": 1350
+        },
+        "pending": 0,
+        "frames": 167
+      },
+      "after": {
+        "at": 14665,
+        "timeOrigin": 1795031815754.9,
+        "hidden": false,
+        "visibility": "visible",
+        "focused": true,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "devicePixelRatio": 1.5000000596046448,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1.5000000596046448",
+          "studioRenderCount": "165",
+          "studioDrawCalls": "94",
+          "studioTriangles": "94512",
+          "studioGeometries": "38",
+          "studioTextures": "12",
+          "assistantRunId": "",
+          "assistantRevision": "0",
+          "assistantCardCount": "0"
+        },
+        "buffer": {
+          "width": 2137,
+          "height": 1350
+        },
+        "pending": 0,
+        "frames": 167
+      },
+      "condition": {
+        "mode": "light",
+        "dpr": 1.5,
+        "replicate": 1
+      },
+      "bytes": 1273833,
+      "sha256": "86ead9fee7a2c6f6c0877fb5b5e0107042c8efc02cc8ed799a1824e56595771b"
+    },
+    {
+      "purpose": "Page-local density experiment for actual Claude quality judgment; not source policy or acceptance",
+      "path": "normal-dpr1.png",
+      "before": {
+        "at": 13474.100000023842,
+        "timeOrigin": 1795031830794.5,
+        "hidden": false,
+        "visibility": "visible",
+        "focused": true,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "devicePixelRatio": 1.0000000149011612,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1.0000000149011612",
+          "studioRenderCount": "213",
+          "studioDrawCalls": "94",
+          "studioTriangles": "94512",
+          "studioGeometries": "38",
+          "studioTextures": "12",
+          "assistantRunId": "",
+          "assistantRevision": "0",
+          "assistantCardCount": "0"
+        },
+        "buffer": {
+          "width": 1424,
+          "height": 900
+        },
+        "pending": 0,
+        "frames": 214
+      },
+      "after": {
+        "at": 13799.699999988079,
+        "timeOrigin": 1795031830794.5,
+        "hidden": false,
+        "visibility": "visible",
+        "focused": true,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "devicePixelRatio": 1.0000000149011612,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1.0000000149011612",
+          "studioRenderCount": "213",
+          "studioDrawCalls": "94",
+          "studioTriangles": "94512",
+          "studioGeometries": "38",
+          "studioTextures": "12",
+          "assistantRunId": "",
+          "assistantRevision": "0",
+          "assistantCardCount": "0"
+        },
+        "buffer": {
+          "width": 1424,
+          "height": 900
+        },
+        "pending": 0,
+        "frames": 214
+      },
+      "condition": {
+        "mode": "light",
+        "dpr": 1,
+        "replicate": 1
+      },
+      "bytes": 670290,
+      "sha256": "3e247c76756dddec687a53f54bcbea5557bd029a49ae00fecec52928352d555d"
+    },
+    {
+      "purpose": "Root-requested settled attention, closed panel, native Ask focus",
+      "view": "home",
+      "path": "attention-home-dpr2.png",
+      "settleStart": {
+        "at": 2964.2999999523163,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "devicePixelRatio": 2.0000000298023224,
+        "hidden": false,
+        "dialogOpen": false,
+        "focusedAsk": true,
+        "activeText": "Ask about Owen’s work",
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "11",
+          "studioDrawCalls": "94",
+          "studioTriangles": "94512",
+          "studioGeometries": "38",
+          "studioTextures": "12",
+          "assistantRunId": "",
+          "assistantRevision": "0",
+          "assistantCardCount": "0"
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1424.800048828125,
+          "height": 900,
+          "top": 0,
+          "right": 1424.800048828125,
+          "bottom": 900,
+          "left": 0
+        },
+        "buffer": {
+          "width": 2849,
+          "height": 1800
+        },
+        "focusTrace": [
+          {
+            "at": 2217.5,
+            "trusted": true,
+            "text": "Reset"
+          },
+          {
+            "at": 2262.7999999523163,
+            "trusted": true,
+            "text": ""
+          },
+          {
+            "at": 2284.2999999523163,
+            "trusted": true,
+            "text": "Ask about Owen’s work"
+          }
+        ]
+      },
+      "before": {
+        "at": 3286.399999976158,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "devicePixelRatio": 2.0000000298023224,
+        "hidden": false,
+        "dialogOpen": false,
+        "focusedAsk": true,
+        "activeText": "Ask about Owen’s work",
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "11",
+          "studioDrawCalls": "94",
+          "studioTriangles": "94512",
+          "studioGeometries": "38",
+          "studioTextures": "12",
+          "assistantRunId": "",
+          "assistantRevision": "0",
+          "assistantCardCount": "0"
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1424.800048828125,
+          "height": 900,
+          "top": 0,
+          "right": 1424.800048828125,
+          "bottom": 900,
+          "left": 0
+        },
+        "buffer": {
+          "width": 2849,
+          "height": 1800
+        },
+        "focusTrace": [
+          {
+            "at": 2217.5,
+            "trusted": true,
+            "text": "Reset"
+          },
+          {
+            "at": 2262.7999999523163,
+            "trusted": true,
+            "text": ""
+          },
+          {
+            "at": 2284.2999999523163,
+            "trusted": true,
+            "text": "Ask about Owen’s work"
+          }
+        ]
+      },
+      "after": {
+        "at": 4388.699999988079,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "devicePixelRatio": 2.0000000298023224,
+        "hidden": false,
+        "dialogOpen": false,
+        "focusedAsk": true,
+        "activeText": "Ask about Owen’s work",
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "11",
+          "studioDrawCalls": "94",
+          "studioTriangles": "94512",
+          "studioGeometries": "38",
+          "studioTextures": "12",
+          "assistantRunId": "",
+          "assistantRevision": "0",
+          "assistantCardCount": "0"
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1424.800048828125,
+          "height": 900,
+          "top": 0,
+          "right": 1424.800048828125,
+          "bottom": 900,
+          "left": 0
+        },
+        "buffer": {
+          "width": 2849,
+          "height": 1800
+        },
+        "focusTrace": [
+          {
+            "at": 2217.5,
+            "trusted": true,
+            "text": "Reset"
+          },
+          {
+            "at": 2262.7999999523163,
+            "trusted": true,
+            "text": ""
+          },
+          {
+            "at": 2284.2999999523163,
+            "trusted": true,
+            "text": "Ask about Owen’s work"
+          }
+        ]
+      },
+      "passed": true,
+      "bytes": 2040978,
+      "sha256": "59d5a502c263cdb4ab73f1ee43938563c5129d4c1e28075491857c785bffab2b"
+    },
+    {
+      "purpose": "Root-requested settled attention, closed panel, native Ask focus",
+      "view": "neighbour",
+      "path": "attention-neighbour-dpr2.png",
+      "settleStart": {
+        "at": 5977,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "devicePixelRatio": 2.0000000298023224,
+        "hidden": false,
+        "dialogOpen": false,
+        "focusedAsk": true,
+        "activeText": "Ask about Owen’s work",
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "26",
+          "studioPitch": "4",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "28",
+          "studioDrawCalls": "94",
+          "studioTriangles": "89418",
+          "studioGeometries": "41",
+          "studioTextures": "15",
+          "assistantRunId": "",
+          "assistantRevision": "0",
+          "assistantCardCount": "0"
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1424.800048828125,
+          "height": 900,
+          "top": 0,
+          "right": 1424.800048828125,
+          "bottom": 900,
+          "left": 0
+        },
+        "buffer": {
+          "width": 2849,
+          "height": 1800
+        },
+        "focusTrace": [
+          {
+            "at": 2217.5,
+            "trusted": true,
+            "text": "Reset"
+          },
+          {
+            "at": 2262.7999999523163,
+            "trusted": true,
+            "text": ""
+          },
+          {
+            "at": 2284.2999999523163,
+            "trusted": true,
+            "text": "Ask about Owen’s work"
+          },
+          {
+            "at": 4443.699999988079,
+            "trusted": true,
+            "text": "Reset"
+          },
+          {
+            "at": 4503.099999964237,
+            "trusted": true,
+            "text": ""
+          },
+          {
+            "at": 5263.5,
+            "trusted": true,
+            "text": ""
+          },
+          {
+            "at": 5299.299999952316,
+            "trusted": true,
+            "text": ""
+          },
+          {
+            "at": 5303.5,
+            "trusted": true,
+            "text": "Ask about Owen’s work"
+          }
+        ]
+      },
+      "before": {
+        "at": 6292.799999952316,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "devicePixelRatio": 2.0000000298023224,
+        "hidden": false,
+        "dialogOpen": false,
+        "focusedAsk": true,
+        "activeText": "Ask about Owen’s work",
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "26",
+          "studioPitch": "4",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "28",
+          "studioDrawCalls": "94",
+          "studioTriangles": "89418",
+          "studioGeometries": "41",
+          "studioTextures": "15",
+          "assistantRunId": "",
+          "assistantRevision": "0",
+          "assistantCardCount": "0"
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1424.800048828125,
+          "height": 900,
+          "top": 0,
+          "right": 1424.800048828125,
+          "bottom": 900,
+          "left": 0
+        },
+        "buffer": {
+          "width": 2849,
+          "height": 1800
+        },
+        "focusTrace": [
+          {
+            "at": 2217.5,
+            "trusted": true,
+            "text": "Reset"
+          },
+          {
+            "at": 2262.7999999523163,
+            "trusted": true,
+            "text": ""
+          },
+          {
+            "at": 2284.2999999523163,
+            "trusted": true,
+            "text": "Ask about Owen’s work"
+          },
+          {
+            "at": 4443.699999988079,
+            "trusted": true,
+            "text": "Reset"
+          },
+          {
+            "at": 4503.099999964237,
+            "trusted": true,
+            "text": ""
+          },
+          {
+            "at": 5263.5,
+            "trusted": true,
+            "text": ""
+          },
+          {
+            "at": 5299.299999952316,
+            "trusted": true,
+            "text": ""
+          },
+          {
+            "at": 5303.5,
+            "trusted": true,
+            "text": "Ask about Owen’s work"
+          }
+        ]
+      },
+      "after": {
+        "at": 7399.799999952316,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "devicePixelRatio": 2.0000000298023224,
+        "hidden": false,
+        "dialogOpen": false,
+        "focusedAsk": true,
+        "activeText": "Ask about Owen’s work",
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "26",
+          "studioPitch": "4",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "28",
+          "studioDrawCalls": "94",
+          "studioTriangles": "89418",
+          "studioGeometries": "41",
+          "studioTextures": "15",
+          "assistantRunId": "",
+          "assistantRevision": "0",
+          "assistantCardCount": "0"
+        },
+        "hostRect": {
+          "x": 0,
+          "y": 0,
+          "width": 1424.800048828125,
+          "height": 900,
+          "top": 0,
+          "right": 1424.800048828125,
+          "bottom": 900,
+          "left": 0
+        },
+        "buffer": {
+          "width": 2849,
+          "height": 1800
+        },
+        "focusTrace": [
+          {
+            "at": 2217.5,
+            "trusted": true,
+            "text": "Reset"
+          },
+          {
+            "at": 2262.7999999523163,
+            "trusted": true,
+            "text": ""
+          },
+          {
+            "at": 2284.2999999523163,
+            "trusted": true,
+            "text": "Ask about Owen’s work"
+          },
+          {
+            "at": 4443.699999988079,
+            "trusted": true,
+            "text": "Reset"
+          },
+          {
+            "at": 4503.099999964237,
+            "trusted": true,
+            "text": ""
+          },
+          {
+            "at": 5263.5,
+            "trusted": true,
+            "text": ""
+          },
+          {
+            "at": 5299.299999952316,
+            "trusted": true,
+            "text": ""
+          },
+          {
+            "at": 5303.5,
+            "trusted": true,
+            "text": "Ask about Owen’s work"
+          }
+        ]
+      },
+      "passed": true,
+      "bytes": 2211956,
+      "sha256": "ce1db3418ad08936ee273feb4a2048a23e0f507a169224a81a708963a021ac78"
+    }
+  ]
+}

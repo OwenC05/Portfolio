@@ -1,0 +1,52 @@
+import * as THREE from 'three';
+
+// Approved paper vocabulary; fit recomputed for APA's 117.558 mm inner tray.
+export const CARD_LAYOUT = {
+  radius: 0.09, angles: [-56, -18, 18, 56], baseY: -0.0020,
+  width: [0.034, 0.030, 0.030, 0.030], height: [0.046, 0.036, 0.036, 0.036],
+  thickness: 0.005, corner: 0.006, lean: 10, lift: 0.006, selectedScale: 1.15,
+} as const;
+
+function geometry(width: number, height: number) {
+  const r = CARD_LAYOUT.corner;
+  const shape = new THREE.Shape();
+  shape.moveTo(-width / 2 + r, 0);
+  shape.lineTo(width / 2 - r, 0);
+  shape.quadraticCurveTo(width / 2, 0, width / 2, r);
+  shape.lineTo(width / 2, height - r);
+  shape.quadraticCurveTo(width / 2, height, width / 2 - r, height);
+  shape.lineTo(-width / 2 + r, height);
+  shape.quadraticCurveTo(-width / 2, height, -width / 2, height - r);
+  shape.lineTo(-width / 2, r);
+  shape.quadraticCurveTo(-width / 2, 0, -width / 2 + r, 0);
+  const result = new THREE.ExtrudeGeometry(shape, { depth: CARD_LAYOUT.thickness, bevelEnabled: false, steps: 1, curveSegments: 4 });
+  result.translate(0, 0, -CARD_LAYOUT.thickness / 2);
+  return result;
+}
+
+export function createCards(tray: THREE.Object3D) {
+  const material = new THREE.MeshStandardMaterial({ color: '#F4E8CC', roughness: 0.6, metalness: 0 });
+  const first = geometry(CARD_LAYOUT.width[0], CARD_LAYOUT.height[0]);
+  const remaining = geometry(CARD_LAYOUT.width[1], CARD_LAYOUT.height[1]);
+  const cards = CARD_LAYOUT.angles.map((angle, i) => {
+    const mesh = new THREE.Mesh(i === 0 ? first : remaining, material);
+    mesh.name = `AssistantSourceMark${i + 1}`;
+    mesh.position.set(CARD_LAYOUT.radius * Math.sin(THREE.MathUtils.degToRad(angle)), CARD_LAYOUT.baseY,
+      CARD_LAYOUT.radius * Math.cos(THREE.MathUtils.degToRad(angle)));
+    mesh.rotation.x = THREE.MathUtils.degToRad(CARD_LAYOUT.lean);
+    mesh.visible = false;
+    tray.add(mesh);
+    return mesh;
+  });
+  let disposed = false;
+  return { cards, dispose() {
+    if (disposed) return;
+    disposed = true;
+    cards.forEach((card) => {
+      try { card.removeFromParent(); } catch { /* Continue independent releases. */ }
+    });
+    for (const resource of [first, remaining, material]) {
+      try { resource.dispose(); } catch { /* Continue independent releases. */ }
+    }
+  } };
+}

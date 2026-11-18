@@ -1,0 +1,4509 @@
+{
+  "authority": "Actual Claude visual/motion/clearance assessment pending; Codex supplied technical capture evidence and authored earlier runtime changes.",
+  "captures": [
+    {
+      "file": "desktop-home-idle.png",
+      "kind": "PNG browser screenshot",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "before": {
+        "at": 3054.199999988079,
+        "phase": "home-idle",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 2.0000000298023224
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "3",
+          "studioDrawCalls": "94",
+          "studioTriangles": "94512",
+          "studioGeometries": "38",
+          "studioTextures": "12",
+          "assistantRunId": "",
+          "assistantRevision": "0",
+          "assistantCardCount": "0"
+        },
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "after": {
+        "at": 4071.899999976158,
+        "phase": "home-idle",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 2.0000000298023224
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "3",
+          "studioDrawCalls": "94",
+          "studioTriangles": "94512",
+          "studioGeometries": "38",
+          "studioTextures": "12",
+          "assistantRunId": "",
+          "assistantRevision": "0",
+          "assistantCardCount": "0"
+        },
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "frameState": "Exact before/after DOM and canvas receipt; image exposure falls inside this interval.",
+      "bytes": 2043680,
+      "sha256": "55337a6afac7911911dd044cb5f854e7472eec279ba259fbcdaf0d9c329bb010"
+    },
+    {
+      "file": "desktop-home-no-match-settled.png",
+      "kind": "PNG browser screenshot",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "before": {
+        "at": 5659.300000011921,
+        "phase": "home-no-match",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 2.0000000298023224
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "17",
+          "studioDrawCalls": "94",
+          "studioTriangles": "94512",
+          "studioGeometries": "40",
+          "studioTextures": "12",
+          "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:2",
+          "assistantRevision": "13",
+          "assistantCardCount": "0"
+        },
+        "result": "no-match",
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "after": {
+        "at": 6747.699999988079,
+        "phase": "home-no-match",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 2.0000000298023224
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "18",
+          "studioDrawCalls": "94",
+          "studioTriangles": "94512",
+          "studioGeometries": "40",
+          "studioTextures": "12",
+          "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:2",
+          "assistantRevision": "13",
+          "assistantCardCount": "0"
+        },
+        "result": "no-match",
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "frameState": "Exact before/after DOM and canvas receipt; image exposure falls inside this interval.",
+      "bytes": 1276944,
+      "sha256": "de39a709f134ea27b1a99572e140413fa73d63504071d31440fc7a8a58bcf436"
+    },
+    {
+      "file": "desktop-left-low-idle.png",
+      "kind": "PNG browser screenshot",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "before": {
+        "at": 8291.399999976158,
+        "phase": "left-low-idle",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 2.0000000298023224
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-38",
+          "studioPitch": "-16",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "31",
+          "studioDrawCalls": "63",
+          "studioTriangles": "44976",
+          "studioGeometries": "40",
+          "studioTextures": "12",
+          "assistantRunId": "",
+          "assistantRevision": "14",
+          "assistantCardCount": "0"
+        },
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "after": {
+        "at": 9321.300000011921,
+        "phase": "left-low-idle",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 2.0000000298023224
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-38",
+          "studioPitch": "-16",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "31",
+          "studioDrawCalls": "63",
+          "studioTriangles": "44976",
+          "studioGeometries": "40",
+          "studioTextures": "12",
+          "assistantRunId": "",
+          "assistantRevision": "14",
+          "assistantCardCount": "0"
+        },
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "frameState": "Exact before/after DOM and canvas receipt; image exposure falls inside this interval.",
+      "bytes": 2130653,
+      "sha256": "7b5ec1ee07407936b67240e1f41127deced9aab0c342603ef026fcff4341fbce"
+    },
+    {
+      "file": "desktop-left-low-no-match-settled.png",
+      "kind": "PNG browser screenshot",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "before": {
+        "at": 10626.199999988079,
+        "phase": "left-low-no-match",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 2.0000000298023224
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-38",
+          "studioPitch": "-16",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "45",
+          "studioDrawCalls": "63",
+          "studioTriangles": "44976",
+          "studioGeometries": "40",
+          "studioTextures": "12",
+          "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:4",
+          "assistantRevision": "27",
+          "assistantCardCount": "0"
+        },
+        "result": "no-match",
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "after": {
+        "at": 11737.199999988079,
+        "phase": "left-low-no-match",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 2.0000000298023224
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-38",
+          "studioPitch": "-16",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "46",
+          "studioDrawCalls": "63",
+          "studioTriangles": "44976",
+          "studioGeometries": "40",
+          "studioTextures": "12",
+          "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:4",
+          "assistantRevision": "27",
+          "assistantCardCount": "0"
+        },
+        "result": "no-match",
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "frameState": "Exact before/after DOM and canvas receipt; image exposure falls inside this interval.",
+      "bytes": 1271731,
+      "sha256": "7c2d5d7d46245da4ed1c9aa5ac19f90f863b62d72a11ba867c2bccd380dd2d12"
+    },
+    {
+      "file": "desktop-right-high-idle.png",
+      "kind": "PNG browser screenshot",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "before": {
+        "at": 13806.600000023842,
+        "phase": "right-high-idle",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 2.0000000298023224
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "58",
+          "studioPitch": "12",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "65",
+          "studioDrawCalls": "81",
+          "studioTriangles": "88694",
+          "studioGeometries": "43",
+          "studioTextures": "16",
+          "assistantRunId": "",
+          "assistantRevision": "28",
+          "assistantCardCount": "0"
+        },
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "after": {
+        "at": 14851.699999988079,
+        "phase": "right-high-idle",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 2.0000000298023224
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "58",
+          "studioPitch": "12",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "65",
+          "studioDrawCalls": "81",
+          "studioTriangles": "88694",
+          "studioGeometries": "43",
+          "studioTextures": "16",
+          "assistantRunId": "",
+          "assistantRevision": "28",
+          "assistantCardCount": "0"
+        },
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "frameState": "Exact before/after DOM and canvas receipt; image exposure falls inside this interval.",
+      "bytes": 2024480,
+      "sha256": "f04fc185222b8645a83c07efcec55bf95f4a42bc9154586c3591c0e9459b7b74"
+    },
+    {
+      "file": "desktop-right-high-no-match-settled.png",
+      "kind": "PNG browser screenshot",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "before": {
+        "at": 16065.600000023842,
+        "phase": "right-high-no-match",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 2.0000000298023224
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "58",
+          "studioPitch": "12",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "76",
+          "studioDrawCalls": "81",
+          "studioTriangles": "88694",
+          "studioGeometries": "43",
+          "studioTextures": "16",
+          "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:6",
+          "assistantRevision": "41",
+          "assistantCardCount": "0"
+        },
+        "result": "no-match",
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "after": {
+        "at": 16915.30000001192,
+        "phase": "right-high-no-match",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 2.0000000298023224
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "58",
+          "studioPitch": "12",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "76",
+          "studioDrawCalls": "81",
+          "studioTriangles": "88694",
+          "studioGeometries": "43",
+          "studioTextures": "16",
+          "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:6",
+          "assistantRevision": "41",
+          "assistantCardCount": "0"
+        },
+        "result": "no-match",
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "frameState": "Exact before/after DOM and canvas receipt; image exposure falls inside this interval.",
+      "bytes": 1213144,
+      "sha256": "a6b17bb34b2a1024e01e853ce8a2717d1562469d8c306fc3fd720255504c50e0"
+    },
+    {
+      "file": "desktop-robot-neighbour-idle.png",
+      "kind": "PNG browser screenshot",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "before": {
+        "at": 18153.19999998808,
+        "phase": "robot-neighbour-idle",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 2.0000000298023224
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "26",
+          "studioPitch": "4",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "85",
+          "studioDrawCalls": "94",
+          "studioTriangles": "89418",
+          "studioGeometries": "43",
+          "studioTextures": "16",
+          "assistantRunId": "",
+          "assistantRevision": "42",
+          "assistantCardCount": "0"
+        },
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "after": {
+        "at": 19216.899999976158,
+        "phase": "robot-neighbour-idle",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 2.0000000298023224
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "26",
+          "studioPitch": "4",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "85",
+          "studioDrawCalls": "94",
+          "studioTriangles": "89418",
+          "studioGeometries": "43",
+          "studioTextures": "16",
+          "assistantRunId": "",
+          "assistantRevision": "42",
+          "assistantCardCount": "0"
+        },
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "frameState": "Exact before/after DOM and canvas receipt; image exposure falls inside this interval.",
+      "bytes": 2212021,
+      "sha256": "43a2249193da9b0b0f2f1471fbbc6b90084f53efd4d3b0d1b58f6916da48a856"
+    },
+    {
+      "file": "desktop-robot-neighbour-no-match-settled.png",
+      "kind": "PNG browser screenshot",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "before": {
+        "at": 20397.30000001192,
+        "phase": "robot-neighbour-no-match",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 2.0000000298023224
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "26",
+          "studioPitch": "4",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "98",
+          "studioDrawCalls": "94",
+          "studioTriangles": "89418",
+          "studioGeometries": "43",
+          "studioTextures": "16",
+          "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:8",
+          "assistantRevision": "55",
+          "assistantCardCount": "0"
+        },
+        "result": "no-match",
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "after": {
+        "at": 21453.100000023842,
+        "phase": "robot-neighbour-no-match",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 2.0000000298023224
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "26",
+          "studioPitch": "4",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "99",
+          "studioDrawCalls": "94",
+          "studioTriangles": "89418",
+          "studioGeometries": "43",
+          "studioTextures": "16",
+          "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:8",
+          "assistantRevision": "55",
+          "assistantCardCount": "0"
+        },
+        "result": "no-match",
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "frameState": "Exact before/after DOM and canvas receipt; image exposure falls inside this interval.",
+      "bytes": 1278215,
+      "sha256": "1d1c06a84b3dc55643a68fb5ed8dde9da4542494aff8ef20482f272beea1518e"
+    },
+    {
+      "file": "phone-home.png",
+      "kind": "PNG browser screenshot",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-phone",
+      "before": {
+        "at": 1627.699999988079,
+        "phase": "load",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.5000000596046448
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-13",
+          "studioPitch": "-8",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1.5",
+          "studioRenderCount": "2",
+          "studioDrawCalls": "54",
+          "studioTriangles": "41300",
+          "studioGeometries": "17",
+          "studioTextures": "12",
+          "assistantRunId": "",
+          "assistantRevision": "0",
+          "assistantCardCount": "0"
+        },
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "after": {
+        "at": 1849.1000000238419,
+        "phase": "load",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.5000000596046448
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-13",
+          "studioPitch": "-8",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1.5",
+          "studioRenderCount": "2",
+          "studioDrawCalls": "54",
+          "studioTriangles": "41300",
+          "studioGeometries": "17",
+          "studioTextures": "12",
+          "assistantRunId": "",
+          "assistantRevision": "0",
+          "assistantCardCount": "0"
+        },
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "frameState": "Exact before/after DOM and canvas receipt; image exposure falls inside this interval.",
+      "bytes": 326116,
+      "sha256": "4c4000f8763d40aaf9253ea0cb033d51d29370ef7ff2d4b255c46df8422fea9a"
+    },
+    {
+      "file": "phone-pending.png",
+      "kind": "PNG browser screenshot",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-phone",
+      "before": {
+        "at": 2120.399999976158,
+        "phase": "phone-pending",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.5000000596046448
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-13",
+          "studioPitch": "-8",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1.5",
+          "studioRenderCount": "12",
+          "studioDrawCalls": "54",
+          "studioTriangles": "41300",
+          "studioGeometries": "17",
+          "studioTextures": "12",
+          "assistantRunId": "28833ad6-2f43-4be5-9ef0-ee128ce51b92:1",
+          "assistantRevision": "2",
+          "assistantCardCount": "0"
+        },
+        "result": "pending",
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "after": {
+        "at": 2434,
+        "phase": "phone-pending",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.5000000596046448
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-13",
+          "studioPitch": "-8",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1.5",
+          "studioRenderCount": "22",
+          "studioDrawCalls": "54",
+          "studioTriangles": "41300",
+          "studioGeometries": "17",
+          "studioTextures": "12",
+          "assistantRunId": "28833ad6-2f43-4be5-9ef0-ee128ce51b92:1",
+          "assistantRevision": "2",
+          "assistantCardCount": "0"
+        },
+        "result": "pending",
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "frameState": "Exact before/after DOM and canvas receipt; image exposure falls inside this interval.",
+      "bytes": 67995,
+      "sha256": "1b7f9cb80019a7491dc4b06e03bca00409f41fd0fcaa2ccb97687dacac75c28f"
+    },
+    {
+      "file": "phone-no-match.png",
+      "kind": "PNG browser screenshot",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-phone",
+      "before": {
+        "at": 2480.5,
+        "phase": "phone-no-match",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.5000000596046448
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-13",
+          "studioPitch": "-8",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1.5",
+          "studioRenderCount": "24",
+          "studioDrawCalls": "54",
+          "studioTriangles": "41300",
+          "studioGeometries": "17",
+          "studioTextures": "12",
+          "assistantRunId": "28833ad6-2f43-4be5-9ef0-ee128ce51b92:1",
+          "assistantRevision": "6",
+          "assistantCardCount": "0"
+        },
+        "result": "no-match",
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "after": {
+        "at": 2678.300000011921,
+        "phase": "phone-no-match",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.5000000596046448
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-13",
+          "studioPitch": "-8",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1.5",
+          "studioRenderCount": "36",
+          "studioDrawCalls": "54",
+          "studioTriangles": "41300",
+          "studioGeometries": "17",
+          "studioTextures": "12",
+          "assistantRunId": "28833ad6-2f43-4be5-9ef0-ee128ce51b92:1",
+          "assistantRevision": "6",
+          "assistantCardCount": "0"
+        },
+        "result": "no-match",
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "frameState": "Exact before/after DOM and canvas receipt; image exposure falls inside this interval.",
+      "bytes": 92206,
+      "sha256": "6d3edc3aaefe3d43ffa41f227719904161cf6e7ff92df97251fe4f6a1558fa60"
+    },
+    {
+      "file": "phone-error.png",
+      "kind": "PNG browser screenshot",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-phone",
+      "before": {
+        "at": 2799.300000011921,
+        "phase": "phone-error",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.5000000596046448
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-13",
+          "studioPitch": "-8",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1.5",
+          "studioRenderCount": "43",
+          "studioDrawCalls": "54",
+          "studioTriangles": "41300",
+          "studioGeometries": "17",
+          "studioTextures": "12",
+          "assistantRunId": "28833ad6-2f43-4be5-9ef0-ee128ce51b92:2",
+          "assistantRevision": "8",
+          "assistantCardCount": "0"
+        },
+        "result": "none",
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "after": {
+        "at": 3006.600000023842,
+        "phase": "phone-error",
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "dpr": 1.5000000596046448
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-13",
+          "studioPitch": "-8",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "64",
+          "studioDpr": "1.5",
+          "studioRenderCount": "54",
+          "studioDrawCalls": "54",
+          "studioTriangles": "41300",
+          "studioGeometries": "17",
+          "studioTextures": "12",
+          "assistantRunId": "28833ad6-2f43-4be5-9ef0-ee128ce51b92:2",
+          "assistantRevision": "8",
+          "assistantCardCount": "0"
+        },
+        "result": "none",
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "frameState": "Exact before/after DOM and canvas receipt; image exposure falls inside this interval.",
+      "bytes": 99157,
+      "sha256": "e0022ee1fc9ac53b3f5ff1e13a2f8d46f0c7c60503de9c9f8ddf90df44d3143b"
+    },
+    {
+      "file": "desktop-home-motion-gathering.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": -4,
+        "pitch": -6
+      },
+      "requestedSampleTime": 4809.5,
+      "compositorTimestampRelativeToTimeOrigin": 4697.59912109375,
+      "timestampErrorMs": -111.90087890625,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030655.421999,
+        "monotonicTimestamp": 516744.097013
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 4665,
+          "rafTime": 4331.3,
+          "phase": "home-attention",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "9",
+            "studioDrawCalls": "94",
+            "studioTriangles": "94512",
+            "studioGeometries": "38",
+            "studioTextures": "12",
+            "assistantRunId": "",
+            "assistantRevision": "0",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 4738.699999988079,
+          "rafTime": 4664.2,
+          "phase": "home-attention",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "10",
+            "studioDrawCalls": "94",
+            "studioTriangles": "94512",
+            "studioGeometries": "38",
+            "studioTextures": "12",
+            "assistantRunId": "",
+            "assistantRevision": "0",
+            "assistantCardCount": "0"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 122166,
+      "sha256": "455dcabb3f35191420fe026f76b282d3eee84d59b45e0ca8367e4e5a9e9ce89a"
+    },
+    {
+      "file": "desktop-home-motion-presenting.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": -4,
+        "pitch": -6
+      },
+      "requestedSampleTime": 4944.699999988079,
+      "compositorTimestampRelativeToTimeOrigin": 4980.921142578125,
+      "timestampErrorMs": 36.22114259004593,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030655.705321,
+        "monotonicTimestamp": 516744.380335
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 4738.699999988079,
+          "rafTime": 4664.2,
+          "phase": "home-attention",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "10",
+            "studioDrawCalls": "94",
+            "studioTriangles": "94512",
+            "studioGeometries": "38",
+            "studioTextures": "12",
+            "assistantRunId": "",
+            "assistantRevision": "0",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 5006.800000011921,
+          "rafTime": 4964.2,
+          "phase": "home-presenting",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "11",
+            "studioDrawCalls": "98",
+            "studioTriangles": "94816",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:1",
+            "assistantRevision": "6",
+            "assistantCardCount": "4"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 122719,
+      "sha256": "1a2b5a240f0c6f41e67142a1ae9ef166197b7a9e12cbf4f754d04efaae20a9a7"
+    },
+    {
+      "file": "desktop-home-motion-dismiss-interruption.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": -4,
+        "pitch": -6
+      },
+      "requestedSampleTime": 5048.5,
+      "compositorTimestampRelativeToTimeOrigin": 5030.7470703125,
+      "timestampErrorMs": -17.7529296875,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030655.755147,
+        "monotonicTimestamp": 516744.430161
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 5018.600000023842,
+          "rafTime": 4997.5,
+          "phase": "home-close",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "12",
+            "studioDrawCalls": "98",
+            "studioTriangles": "94816",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:1",
+            "assistantRevision": "6",
+            "assistantCardCount": "4"
+          }
+        },
+        "next": {
+          "at": 5037.899999976158,
+          "rafTime": 5030.8,
+          "phase": "home-close",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "true",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "13",
+            "studioDrawCalls": "94",
+            "studioTriangles": "94512",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "",
+            "assistantRevision": "7",
+            "assistantCardCount": "0"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 144512,
+      "sha256": "6da4b3793591d3520d8ab6183bedc5594b43737041a8d6c3690e816606441e9a"
+    },
+    {
+      "file": "desktop-home-motion-no-match-early.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": -4,
+        "pitch": -6
+      },
+      "requestedSampleTime": 5295.300000011921,
+      "compositorTimestampRelativeToTimeOrigin": 5264.344970703125,
+      "timestampErrorMs": -30.95502930879593,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030655.988745,
+        "monotonicTimestamp": 516744.663759
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 5251.300000011921,
+          "rafTime": 5230.9,
+          "phase": "home-close",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "14",
+            "studioDrawCalls": "94",
+            "studioTriangles": "94512",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:2",
+            "assistantRevision": "9",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 5270.100000023842,
+          "rafTime": 5247.6,
+          "phase": "home-close",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "15",
+            "studioDrawCalls": "94",
+            "studioTriangles": "94512",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:2",
+            "assistantRevision": "9",
+            "assistantCardCount": "0"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 152733,
+      "sha256": "c890b1ae7fa5a005a288c54139ed3b3f04369dee310ad0a41411adfcbc9d17ac"
+    },
+    {
+      "file": "desktop-home-motion-no-match-middle.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": -4,
+        "pitch": -6
+      },
+      "requestedSampleTime": 5400.300000011921,
+      "compositorTimestampRelativeToTimeOrigin": 5264.344970703125,
+      "timestampErrorMs": -135.95502930879593,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030655.988745,
+        "monotonicTimestamp": 516744.663759
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 5251.300000011921,
+          "rafTime": 5230.9,
+          "phase": "home-close",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "14",
+            "studioDrawCalls": "94",
+            "studioTriangles": "94512",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:2",
+            "assistantRevision": "9",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 5270.100000023842,
+          "rafTime": 5247.6,
+          "phase": "home-close",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "15",
+            "studioDrawCalls": "94",
+            "studioTriangles": "94512",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:2",
+            "assistantRevision": "9",
+            "assistantCardCount": "0"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 152733,
+      "sha256": "c890b1ae7fa5a005a288c54139ed3b3f04369dee310ad0a41411adfcbc9d17ac",
+      "duplicateOf": "desktop-home-motion-no-match-early.jpg"
+    },
+    {
+      "file": "desktop-home-motion-no-match-settled.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": -4,
+        "pitch": -6
+      },
+      "requestedSampleTime": 5560.300000011921,
+      "compositorTimestampRelativeToTimeOrigin": 5264.344970703125,
+      "timestampErrorMs": -295.95502930879593,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030655.988745,
+        "monotonicTimestamp": 516744.663759
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 5251.300000011921,
+          "rafTime": 5230.9,
+          "phase": "home-close",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "14",
+            "studioDrawCalls": "94",
+            "studioTriangles": "94512",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:2",
+            "assistantRevision": "9",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 5270.100000023842,
+          "rafTime": 5247.6,
+          "phase": "home-close",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "15",
+            "studioDrawCalls": "94",
+            "studioTriangles": "94512",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:2",
+            "assistantRevision": "9",
+            "assistantCardCount": "0"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 152733,
+      "sha256": "c890b1ae7fa5a005a288c54139ed3b3f04369dee310ad0a41411adfcbc9d17ac",
+      "duplicateOf": "desktop-home-motion-no-match-early.jpg"
+    },
+    {
+      "file": "desktop-left-low-motion-gathering.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": -38,
+        "pitch": -16
+      },
+      "requestedSampleTime": 9568.800000011921,
+      "compositorTimestampRelativeToTimeOrigin": 9613.62109375,
+      "timestampErrorMs": 44.82109373807907,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030660.338021,
+        "monotonicTimestamp": 516749.013035
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 9508.699999988079,
+          "rafTime": 9496.8,
+          "phase": "left-low-attention",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-38",
+            "studioPitch": "-16",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "36",
+            "studioDrawCalls": "63",
+            "studioTriangles": "44976",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "",
+            "assistantRevision": "14",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 9891.199999988079,
+          "rafTime": 9596.9,
+          "phase": "left-low-gathering",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-38",
+            "studioPitch": "-16",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "37",
+            "studioDrawCalls": "63",
+            "studioTriangles": "44976",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:3",
+            "assistantRevision": "16",
+            "assistantCardCount": "0"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 138884,
+      "sha256": "c931fd383604c31fefb34cf1cfff122b5ea5bb4cb8ac3f80fceb24700990d5e0"
+    },
+    {
+      "file": "desktop-left-low-motion-presenting.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": -38,
+        "pitch": -16
+      },
+      "requestedSampleTime": 9935.100000023842,
+      "compositorTimestampRelativeToTimeOrigin": 9913.686279296875,
+      "timestampErrorMs": -21.413720726966858,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030660.638086,
+        "monotonicTimestamp": 516749.3131
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 9910.5,
+          "rafTime": 9880.1,
+          "phase": "left-low-gathering",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-38",
+            "studioPitch": "-16",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "38",
+            "studioDrawCalls": "63",
+            "studioTriangles": "44976",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:3",
+            "assistantRevision": "16",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 10113.600000023842,
+          "rafTime": 10096.8,
+          "phase": "left-low-close",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-38",
+            "studioPitch": "-16",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "39",
+            "studioDrawCalls": "63",
+            "studioTriangles": "44976",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "",
+            "assistantRevision": "21",
+            "assistantCardCount": "0"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 104073,
+      "sha256": "bdc0aaaa2d00fe79fed4e0e5534ac05e2a8dc495d7e6f4b862fc44b139ced17b"
+    },
+    {
+      "file": "desktop-left-low-motion-dismiss-interruption.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": -38,
+        "pitch": -16
+      },
+      "requestedSampleTime": 10037.800000011921,
+      "compositorTimestampRelativeToTimeOrigin": 10113.531005859375,
+      "timestampErrorMs": 75.73100584745407,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030660.837931,
+        "monotonicTimestamp": 516749.512945
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 9910.5,
+          "rafTime": 9880.1,
+          "phase": "left-low-gathering",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-38",
+            "studioPitch": "-16",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "38",
+            "studioDrawCalls": "63",
+            "studioTriangles": "44976",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:3",
+            "assistantRevision": "16",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 10113.600000023842,
+          "rafTime": 10096.8,
+          "phase": "left-low-close",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-38",
+            "studioPitch": "-16",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "39",
+            "studioDrawCalls": "63",
+            "studioTriangles": "44976",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "",
+            "assistantRevision": "21",
+            "assistantCardCount": "0"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 104073,
+      "sha256": "bdc0aaaa2d00fe79fed4e0e5534ac05e2a8dc495d7e6f4b862fc44b139ced17b",
+      "duplicateOf": "desktop-left-low-motion-presenting.jpg"
+    },
+    {
+      "file": "desktop-left-low-motion-no-match-early.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": -38,
+        "pitch": -16
+      },
+      "requestedSampleTime": 10285.600000023842,
+      "compositorTimestampRelativeToTimeOrigin": 10396.787109375,
+      "timestampErrorMs": 111.18710935115814,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030661.121187,
+        "monotonicTimestamp": 516749.796201
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 10390.899999976158,
+          "rafTime": 10380,
+          "phase": "left-low-no-match",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-38",
+            "studioPitch": "-16",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "42",
+            "studioDrawCalls": "63",
+            "studioTriangles": "44976",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:4",
+            "assistantRevision": "27",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 10402.399999976158,
+          "rafTime": 10396.8,
+          "phase": "left-low-no-match",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-38",
+            "studioPitch": "-16",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "43",
+            "studioDrawCalls": "63",
+            "studioTriangles": "44976",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:4",
+            "assistantRevision": "27",
+            "assistantCardCount": "0"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 108727,
+      "sha256": "f9212ae83c527dbc40a8f15ee8f0bd993d5e88984fa2efe479fcc2d17350b8c9"
+    },
+    {
+      "file": "desktop-left-low-motion-no-match-middle.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": -38,
+        "pitch": -16
+      },
+      "requestedSampleTime": 10390.600000023842,
+      "compositorTimestampRelativeToTimeOrigin": 10396.787109375,
+      "timestampErrorMs": 6.187109351158142,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030661.121187,
+        "monotonicTimestamp": 516749.796201
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 10390.899999976158,
+          "rafTime": 10380,
+          "phase": "left-low-no-match",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-38",
+            "studioPitch": "-16",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "42",
+            "studioDrawCalls": "63",
+            "studioTriangles": "44976",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:4",
+            "assistantRevision": "27",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 10402.399999976158,
+          "rafTime": 10396.8,
+          "phase": "left-low-no-match",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-38",
+            "studioPitch": "-16",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "43",
+            "studioDrawCalls": "63",
+            "studioTriangles": "44976",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:4",
+            "assistantRevision": "27",
+            "assistantCardCount": "0"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 108727,
+      "sha256": "f9212ae83c527dbc40a8f15ee8f0bd993d5e88984fa2efe479fcc2d17350b8c9",
+      "duplicateOf": "desktop-left-low-motion-no-match-early.jpg"
+    },
+    {
+      "file": "desktop-left-low-motion-no-match-settled.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": -38,
+        "pitch": -16
+      },
+      "requestedSampleTime": 10550.600000023842,
+      "compositorTimestampRelativeToTimeOrigin": 10396.787109375,
+      "timestampErrorMs": -153.81289064884186,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030661.121187,
+        "monotonicTimestamp": 516749.796201
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 10390.899999976158,
+          "rafTime": 10380,
+          "phase": "left-low-no-match",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-38",
+            "studioPitch": "-16",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "42",
+            "studioDrawCalls": "63",
+            "studioTriangles": "44976",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:4",
+            "assistantRevision": "27",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 10402.399999976158,
+          "rafTime": 10396.8,
+          "phase": "left-low-no-match",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-38",
+            "studioPitch": "-16",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "43",
+            "studioDrawCalls": "63",
+            "studioTriangles": "44976",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:4",
+            "assistantRevision": "27",
+            "assistantCardCount": "0"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 108727,
+      "sha256": "f9212ae83c527dbc40a8f15ee8f0bd993d5e88984fa2efe479fcc2d17350b8c9",
+      "duplicateOf": "desktop-left-low-motion-no-match-early.jpg"
+    },
+    {
+      "file": "desktop-right-high-motion-gathering.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": 58,
+        "pitch": 12
+      },
+      "requestedSampleTime": 15074.899999976158,
+      "compositorTimestampRelativeToTimeOrigin": 15162.934326171875,
+      "timestampErrorMs": 88.03432619571686,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030665.887334,
+        "monotonicTimestamp": 516754.562348
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 14937.699999988079,
+          "rafTime": 14929.7,
+          "phase": "right-high-attention",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "true",
+            "studioYaw": "58",
+            "studioPitch": "12",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "69",
+            "studioDrawCalls": "81",
+            "studioTriangles": "88694",
+            "studioGeometries": "43",
+            "studioTextures": "16",
+            "assistantRunId": "",
+            "assistantRevision": "28",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 15166,
+          "rafTime": 15146.2,
+          "phase": "right-high-presenting",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "58",
+            "studioPitch": "12",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "70",
+            "studioDrawCalls": "85",
+            "studioTriangles": "88998",
+            "studioGeometries": "43",
+            "studioTextures": "16",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:5",
+            "assistantRevision": "34",
+            "assistantCardCount": "4"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 122599,
+      "sha256": "6f48ddf48f78f32b7d09e7d2ee51e4d914c87f6dd4b366c3b321d4d5bdce3503"
+    },
+    {
+      "file": "desktop-right-high-motion-presenting.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": 58,
+        "pitch": 12
+      },
+      "requestedSampleTime": 15160,
+      "compositorTimestampRelativeToTimeOrigin": 15162.934326171875,
+      "timestampErrorMs": 2.934326171875,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030665.887334,
+        "monotonicTimestamp": 516754.562348
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 14937.699999988079,
+          "rafTime": 14929.7,
+          "phase": "right-high-attention",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "true",
+            "studioYaw": "58",
+            "studioPitch": "12",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "69",
+            "studioDrawCalls": "81",
+            "studioTriangles": "88694",
+            "studioGeometries": "43",
+            "studioTextures": "16",
+            "assistantRunId": "",
+            "assistantRevision": "28",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 15166,
+          "rafTime": 15146.2,
+          "phase": "right-high-presenting",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "58",
+            "studioPitch": "12",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "70",
+            "studioDrawCalls": "85",
+            "studioTriangles": "88998",
+            "studioGeometries": "43",
+            "studioTextures": "16",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:5",
+            "assistantRevision": "34",
+            "assistantCardCount": "4"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 122599,
+      "sha256": "6f48ddf48f78f32b7d09e7d2ee51e4d914c87f6dd4b366c3b321d4d5bdce3503",
+      "duplicateOf": "desktop-right-high-motion-gathering.jpg"
+    },
+    {
+      "file": "desktop-right-high-motion-dismiss-interruption.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": 58,
+        "pitch": 12
+      },
+      "requestedSampleTime": 15428,
+      "compositorTimestampRelativeToTimeOrigin": 15396.1171875,
+      "timestampErrorMs": -31.8828125,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030666.120517,
+        "monotonicTimestamp": 516754.795531
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 15395.699999988079,
+          "rafTime": 15379.4,
+          "phase": "right-high-close",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "58",
+            "studioPitch": "12",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "72",
+            "studioDrawCalls": "85",
+            "studioTriangles": "88998",
+            "studioGeometries": "43",
+            "studioTextures": "16",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:5",
+            "assistantRevision": "34",
+            "assistantCardCount": "4"
+          }
+        },
+        "next": {
+          "at": 15405.100000023842,
+          "rafTime": 15395.9,
+          "phase": "right-high-close",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "true",
+            "studioYaw": "58",
+            "studioPitch": "12",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "73",
+            "studioDrawCalls": "81",
+            "studioTriangles": "88694",
+            "studioGeometries": "43",
+            "studioTextures": "16",
+            "assistantRunId": "",
+            "assistantRevision": "35",
+            "assistantCardCount": "0"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 127438,
+      "sha256": "2d41bb3dedbb9885cb7e0fa923ef5e7eef157154aaf7067575cac53c12bdac1d"
+    },
+    {
+      "file": "desktop-right-high-motion-no-match-early.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": 58,
+        "pitch": 12
+      },
+      "requestedSampleTime": 15712.5,
+      "compositorTimestampRelativeToTimeOrigin": 15712.6162109375,
+      "timestampErrorMs": 0.1162109375,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030666.437016,
+        "monotonicTimestamp": 516755.11203
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 15708.100000023842,
+          "rafTime": 15695.9,
+          "phase": "right-high-no-match",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "58",
+            "studioPitch": "12",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "74",
+            "studioDrawCalls": "81",
+            "studioTriangles": "88694",
+            "studioGeometries": "43",
+            "studioTextures": "16",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:6",
+            "assistantRevision": "41",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 15743.699999988079,
+          "rafTime": 15729.3,
+          "phase": "right-high-no-match",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "58",
+            "studioPitch": "12",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "75",
+            "studioDrawCalls": "81",
+            "studioTriangles": "88694",
+            "studioGeometries": "43",
+            "studioTextures": "16",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:6",
+            "assistantRevision": "41",
+            "assistantCardCount": "0"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 127379,
+      "sha256": "e835a329f42b054de2a55e9e780e3b0106dbb6aab44ca478f4dfebdd9d000ea9"
+    },
+    {
+      "file": "desktop-right-high-motion-no-match-middle.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": 58,
+        "pitch": 12
+      },
+      "requestedSampleTime": 15817.5,
+      "compositorTimestampRelativeToTimeOrigin": 15746.05712890625,
+      "timestampErrorMs": -71.44287109375,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030666.470457,
+        "monotonicTimestamp": 516755.145471
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 15743.699999988079,
+          "rafTime": 15729.3,
+          "phase": "right-high-no-match",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "58",
+            "studioPitch": "12",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "75",
+            "studioDrawCalls": "81",
+            "studioTriangles": "88694",
+            "studioGeometries": "43",
+            "studioTextures": "16",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:6",
+            "assistantRevision": "41",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 15986.399999976158,
+          "rafTime": 15979.3,
+          "phase": "right-high-no-match",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "58",
+            "studioPitch": "12",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "76",
+            "studioDrawCalls": "81",
+            "studioTriangles": "88694",
+            "studioGeometries": "43",
+            "studioTextures": "16",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:6",
+            "assistantRevision": "41",
+            "assistantCardCount": "0"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 122467,
+      "sha256": "b8e26c3ad4a79ed294f335ab3746db08645b4e7b1071d1787e3ab3ab302d8674"
+    },
+    {
+      "file": "desktop-right-high-motion-no-match-settled.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": 58,
+        "pitch": 12
+      },
+      "requestedSampleTime": 15977.5,
+      "compositorTimestampRelativeToTimeOrigin": 15746.05712890625,
+      "timestampErrorMs": -231.44287109375,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030666.470457,
+        "monotonicTimestamp": 516755.145471
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 15743.699999988079,
+          "rafTime": 15729.3,
+          "phase": "right-high-no-match",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "58",
+            "studioPitch": "12",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "75",
+            "studioDrawCalls": "81",
+            "studioTriangles": "88694",
+            "studioGeometries": "43",
+            "studioTextures": "16",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:6",
+            "assistantRevision": "41",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 15986.399999976158,
+          "rafTime": 15979.3,
+          "phase": "right-high-no-match",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "58",
+            "studioPitch": "12",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "76",
+            "studioDrawCalls": "81",
+            "studioTriangles": "88694",
+            "studioGeometries": "43",
+            "studioTextures": "16",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:6",
+            "assistantRevision": "41",
+            "assistantCardCount": "0"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 122467,
+      "sha256": "b8e26c3ad4a79ed294f335ab3746db08645b4e7b1071d1787e3ab3ab302d8674",
+      "duplicateOf": "desktop-right-high-motion-no-match-middle.jpg"
+    },
+    {
+      "file": "desktop-robot-neighbour-motion-gathering.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": 26,
+        "pitch": 4
+      },
+      "requestedSampleTime": 19406.30000001192,
+      "compositorTimestampRelativeToTimeOrigin": 19412.189208984375,
+      "timestampErrorMs": 5.889208972454071,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030670.136589,
+        "monotonicTimestamp": 516758.8116
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 19300.399999976158,
+          "rafTime": 19295.4,
+          "phase": "robot-neighbour-attention",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "true",
+            "studioYaw": "26",
+            "studioPitch": "4",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "89",
+            "studioDrawCalls": "94",
+            "studioTriangles": "89418",
+            "studioGeometries": "43",
+            "studioTextures": "16",
+            "assistantRunId": "",
+            "assistantRevision": "42",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 19415.600000023842,
+          "rafTime": 19395.4,
+          "phase": "robot-neighbour-gathering",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "26",
+            "studioPitch": "4",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "90",
+            "studioDrawCalls": "94",
+            "studioTriangles": "89418",
+            "studioGeometries": "43",
+            "studioTextures": "16",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:7",
+            "assistantRevision": "44",
+            "assistantCardCount": "0"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 145688,
+      "sha256": "6d2a4db98b0898242d0d1814a538bd58eceb0e7782ebfed3c3f64ced59996587"
+    },
+    {
+      "file": "desktop-robot-neighbour-motion-presenting.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": 26,
+        "pitch": 4
+      },
+      "requestedSampleTime": 19502.600000023842,
+      "compositorTimestampRelativeToTimeOrigin": 19512.3681640625,
+      "timestampErrorMs": 9.768164038658142,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030670.236768,
+        "monotonicTimestamp": 516758.911779
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 19415.600000023842,
+          "rafTime": 19395.4,
+          "phase": "robot-neighbour-gathering",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "26",
+            "studioPitch": "4",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "90",
+            "studioDrawCalls": "94",
+            "studioTriangles": "89418",
+            "studioGeometries": "43",
+            "studioTextures": "16",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:7",
+            "assistantRevision": "44",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 19757.69999998808,
+          "rafTime": 19495.7,
+          "phase": "robot-neighbour-presenting",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "26",
+            "studioPitch": "4",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "91",
+            "studioDrawCalls": "98",
+            "studioTriangles": "89722",
+            "studioGeometries": "43",
+            "studioTextures": "16",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:7",
+            "assistantRevision": "48",
+            "assistantCardCount": "4"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 145630,
+      "sha256": "0f823dc1e2e59deda15a3c4624bfcd803e975a7c7ace1cb9565945d4b4301f71"
+    },
+    {
+      "file": "desktop-robot-neighbour-motion-dismiss-interruption.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": 26,
+        "pitch": 4
+      },
+      "requestedSampleTime": 19797.80000001192,
+      "compositorTimestampRelativeToTimeOrigin": 19778.93603515625,
+      "timestampErrorMs": -18.86396485567093,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030670.503336,
+        "monotonicTimestamp": 516759.178347
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 19767.600000023842,
+          "rafTime": 19745.6,
+          "phase": "robot-neighbour-close",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "26",
+            "studioPitch": "4",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "92",
+            "studioDrawCalls": "98",
+            "studioTriangles": "89722",
+            "studioGeometries": "43",
+            "studioTextures": "16",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:7",
+            "assistantRevision": "48",
+            "assistantCardCount": "4"
+          }
+        },
+        "next": {
+          "at": 19787.600000023842,
+          "rafTime": 19779.7,
+          "phase": "robot-neighbour-close",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "true",
+            "studioYaw": "26",
+            "studioPitch": "4",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "93",
+            "studioDrawCalls": "94",
+            "studioTriangles": "89418",
+            "studioGeometries": "43",
+            "studioTextures": "16",
+            "assistantRunId": "",
+            "assistantRevision": "49",
+            "assistantCardCount": "0"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 137995,
+      "sha256": "af8d073c1d0932e13f7082593bd0bfa8a0d0be5b26e5caeaa9d9f52f89a69157"
+    },
+    {
+      "file": "desktop-robot-neighbour-motion-no-match-early.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": 26,
+        "pitch": 4
+      },
+      "requestedSampleTime": 20054.100000023842,
+      "compositorTimestampRelativeToTimeOrigin": 20128.776123046875,
+      "timestampErrorMs": 74.67612302303314,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030670.853176,
+        "monotonicTimestamp": 516759.528187
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 20123.69999998808,
+          "rafTime": 20112.1,
+          "phase": "robot-neighbour-no-match",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "26",
+            "studioPitch": "4",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "95",
+            "studioDrawCalls": "94",
+            "studioTriangles": "89418",
+            "studioGeometries": "43",
+            "studioTextures": "16",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:8",
+            "assistantRevision": "55",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 20147.100000023842,
+          "rafTime": 20128.6,
+          "phase": "robot-neighbour-no-match",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "26",
+            "studioPitch": "4",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "96",
+            "studioDrawCalls": "94",
+            "studioTriangles": "89418",
+            "studioGeometries": "43",
+            "studioTextures": "16",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:8",
+            "assistantRevision": "55",
+            "assistantCardCount": "0"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 146017,
+      "sha256": "d3d166960e5c757e15ae314cb7f33501ebe48c57886b932bda30164f7afd5a23"
+    },
+    {
+      "file": "desktop-robot-neighbour-motion-no-match-middle.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": 26,
+        "pitch": 4
+      },
+      "requestedSampleTime": 20159.100000023842,
+      "compositorTimestampRelativeToTimeOrigin": 20128.776123046875,
+      "timestampErrorMs": -30.323876976966858,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030670.853176,
+        "monotonicTimestamp": 516759.528187
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 20123.69999998808,
+          "rafTime": 20112.1,
+          "phase": "robot-neighbour-no-match",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "26",
+            "studioPitch": "4",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "95",
+            "studioDrawCalls": "94",
+            "studioTriangles": "89418",
+            "studioGeometries": "43",
+            "studioTextures": "16",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:8",
+            "assistantRevision": "55",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 20147.100000023842,
+          "rafTime": 20128.6,
+          "phase": "robot-neighbour-no-match",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "26",
+            "studioPitch": "4",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "96",
+            "studioDrawCalls": "94",
+            "studioTriangles": "89418",
+            "studioGeometries": "43",
+            "studioTextures": "16",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:8",
+            "assistantRevision": "55",
+            "assistantCardCount": "0"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 146017,
+      "sha256": "d3d166960e5c757e15ae314cb7f33501ebe48c57886b932bda30164f7afd5a23",
+      "duplicateOf": "desktop-robot-neighbour-motion-no-match-early.jpg"
+    },
+    {
+      "file": "desktop-robot-neighbour-motion-no-match-settled.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-v02.json",
+      "context": "task_bc61c9989863-capture-desktop",
+      "viewport": {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "dpr": 2
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": 26,
+        "pitch": 4
+      },
+      "requestedSampleTime": 20319.100000023842,
+      "compositorTimestampRelativeToTimeOrigin": 20128.776123046875,
+      "timestampErrorMs": -190.32387697696686,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030670.853176,
+        "monotonicTimestamp": 516759.528187
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 20123.69999998808,
+          "rafTime": 20112.1,
+          "phase": "robot-neighbour-no-match",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "26",
+            "studioPitch": "4",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "95",
+            "studioDrawCalls": "94",
+            "studioTriangles": "89418",
+            "studioGeometries": "43",
+            "studioTextures": "16",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:8",
+            "assistantRevision": "55",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 20147.100000023842,
+          "rafTime": 20128.6,
+          "phase": "robot-neighbour-no-match",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "26",
+            "studioPitch": "4",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "2",
+            "studioRenderCount": "96",
+            "studioDrawCalls": "94",
+            "studioTriangles": "89418",
+            "studioGeometries": "43",
+            "studioTextures": "16",
+            "assistantRunId": "f99c7f11-10a7-4d4e-91bf-72f52d6a026e:8",
+            "assistantRevision": "55",
+            "assistantCardCount": "0"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 146017,
+      "sha256": "d3d166960e5c757e15ae314cb7f33501ebe48c57886b932bda30164f7afd5a23",
+      "duplicateOf": "desktop-robot-neighbour-motion-no-match-early.jpg"
+    },
+    {
+      "file": "desktop-dpr1-home-idle.png",
+      "kind": "PNG browser screenshot",
+      "source": "captures-dpr1.json",
+      "context": "task_bc61c9989863-capture-desktop-dpr1",
+      "before": {
+        "at": 2029.300000011921,
+        "phase": "home-idle",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1.0000000149011612
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1.0000000149011612",
+          "studioRenderCount": "3",
+          "studioDrawCalls": "94",
+          "studioTriangles": "94512",
+          "studioGeometries": "38",
+          "studioTextures": "12",
+          "assistantRunId": "",
+          "assistantRevision": "0",
+          "assistantCardCount": "0"
+        },
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "after": {
+        "at": 2310.5,
+        "phase": "home-idle",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1.0000000149011612
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1.0000000149011612",
+          "studioRenderCount": "3",
+          "studioDrawCalls": "94",
+          "studioTriangles": "94512",
+          "studioGeometries": "38",
+          "studioTextures": "12",
+          "assistantRunId": "",
+          "assistantRevision": "0",
+          "assistantCardCount": "0"
+        },
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "frameState": "Exact before/after DOM and canvas receipt; image exposure falls inside this interval.",
+      "bytes": 669837,
+      "sha256": "59aa2b61490cf60859bdde028e8901da0b8988d575660462fadb507a34dee645"
+    },
+    {
+      "file": "desktop-dpr1-home-no-match-settled.png",
+      "kind": "PNG browser screenshot",
+      "source": "captures-dpr1.json",
+      "context": "task_bc61c9989863-capture-desktop-dpr1",
+      "before": {
+        "at": 4217.899999976158,
+        "phase": "home-no-match",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1.0000000149011612
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1.0000000149011612",
+          "studioRenderCount": "27",
+          "studioDrawCalls": "94",
+          "studioTriangles": "94512",
+          "studioGeometries": "40",
+          "studioTextures": "12",
+          "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:2",
+          "assistantRevision": "13",
+          "assistantCardCount": "0"
+        },
+        "result": "no-match",
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "after": {
+        "at": 4608.099999964237,
+        "phase": "home-no-match",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1.0000000149011612
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1.0000000149011612",
+          "studioRenderCount": "27",
+          "studioDrawCalls": "94",
+          "studioTriangles": "94512",
+          "studioGeometries": "40",
+          "studioTextures": "12",
+          "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:2",
+          "assistantRevision": "13",
+          "assistantCardCount": "0"
+        },
+        "result": "no-match",
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "frameState": "Exact before/after DOM and canvas receipt; image exposure falls inside this interval.",
+      "bytes": 439921,
+      "sha256": "f82b2a1d3c75ffc788d98ba7cc68bfc3b4cfaf9bb1db9781965e210b05eec5b2"
+    },
+    {
+      "file": "desktop-dpr1-robot-neighbour-idle.png",
+      "kind": "PNG browser screenshot",
+      "source": "captures-dpr1.json",
+      "context": "task_bc61c9989863-capture-desktop-dpr1",
+      "before": {
+        "at": 6158.800000011921,
+        "phase": "robot-neighbour-idle",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1.0000000149011612
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "26",
+          "studioPitch": "4",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1.0000000149011612",
+          "studioRenderCount": "42",
+          "studioDrawCalls": "94",
+          "studioTriangles": "89418",
+          "studioGeometries": "43",
+          "studioTextures": "15",
+          "assistantRunId": "",
+          "assistantRevision": "14",
+          "assistantCardCount": "0"
+        },
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "after": {
+        "at": 6523,
+        "phase": "robot-neighbour-idle",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1.0000000149011612
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "26",
+          "studioPitch": "4",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1.0000000149011612",
+          "studioRenderCount": "42",
+          "studioDrawCalls": "94",
+          "studioTriangles": "89418",
+          "studioGeometries": "43",
+          "studioTextures": "15",
+          "assistantRunId": "",
+          "assistantRevision": "14",
+          "assistantCardCount": "0"
+        },
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "frameState": "Exact before/after DOM and canvas receipt; image exposure falls inside this interval.",
+      "bytes": 730445,
+      "sha256": "720585a14b408782f953e13868f9f723ea67fc733c5bc65132fc1659b1f6be08"
+    },
+    {
+      "file": "desktop-dpr1-robot-neighbour-no-match-settled.png",
+      "kind": "PNG browser screenshot",
+      "source": "captures-dpr1.json",
+      "context": "task_bc61c9989863-capture-desktop-dpr1",
+      "before": {
+        "at": 8105.599999964237,
+        "phase": "robot-neighbour-no-match",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1.0000000149011612
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "26",
+          "studioPitch": "4",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1.0000000149011612",
+          "studioRenderCount": "64",
+          "studioDrawCalls": "94",
+          "studioTriangles": "89418",
+          "studioGeometries": "43",
+          "studioTextures": "15",
+          "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:4",
+          "assistantRevision": "27",
+          "assistantCardCount": "0"
+        },
+        "result": "no-match",
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "after": {
+        "at": 8581.199999988079,
+        "phase": "robot-neighbour-no-match",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1.0000000149011612
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "26",
+          "studioPitch": "4",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1.0000000149011612",
+          "studioRenderCount": "65",
+          "studioDrawCalls": "94",
+          "studioTriangles": "89418",
+          "studioGeometries": "43",
+          "studioTextures": "15",
+          "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:4",
+          "assistantRevision": "27",
+          "assistantCardCount": "0"
+        },
+        "result": "no-match",
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "frameState": "Exact before/after DOM and canvas receipt; image exposure falls inside this interval.",
+      "bytes": 428040,
+      "sha256": "34b484d1ca67090b49ec756a873c12d32adf9d68343651444162dfcf3abfc91f"
+    },
+    {
+      "file": "desktop-dpr1-home-motion-gathering.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-dpr1.json",
+      "context": "task_bc61c9989863-capture-desktop-dpr1",
+      "viewport": {
+        "name": "desktop-dpr1",
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": -4,
+        "pitch": -6
+      },
+      "requestedSampleTime": 2709.199999988079,
+      "compositorTimestampRelativeToTimeOrigin": 2785.183837890625,
+      "timestampErrorMs": 75.98383790254593,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030925.773984,
+        "monotonicTimestamp": 517014.448998
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 2627.399999976158,
+          "rafTime": 2618.6,
+          "phase": "home-attention",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1.0000000149011612",
+            "studioRenderCount": "11",
+            "studioDrawCalls": "94",
+            "studioTriangles": "94512",
+            "studioGeometries": "38",
+            "studioTextures": "12",
+            "assistantRunId": "",
+            "assistantRevision": "0",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 2794.800000011921,
+          "rafTime": 2768.5,
+          "phase": "home-gathering",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1.0000000149011612",
+            "studioRenderCount": "12",
+            "studioDrawCalls": "94",
+            "studioTriangles": "94512",
+            "studioGeometries": "38",
+            "studioTextures": "12",
+            "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:1",
+            "assistantRevision": "2",
+            "assistantCardCount": "0"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 117293,
+      "sha256": "a78d5f13e2db36dfa01fb41d9260621239f5b4ca7da0d213ddec8b7319b843dc"
+    },
+    {
+      "file": "desktop-dpr1-home-motion-presenting.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-dpr1.json",
+      "context": "task_bc61c9989863-capture-desktop-dpr1",
+      "viewport": {
+        "name": "desktop-dpr1",
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": -4,
+        "pitch": -6
+      },
+      "requestedSampleTime": 2814,
+      "compositorTimestampRelativeToTimeOrigin": 2818.390869140625,
+      "timestampErrorMs": 4.390869140625,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030925.807191,
+        "monotonicTimestamp": 517014.482205
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 2794.800000011921,
+          "rafTime": 2768.5,
+          "phase": "home-gathering",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1.0000000149011612",
+            "studioRenderCount": "12",
+            "studioDrawCalls": "94",
+            "studioTriangles": "94512",
+            "studioGeometries": "38",
+            "studioTextures": "12",
+            "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:1",
+            "assistantRevision": "2",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 2833,
+          "rafTime": 2801.7,
+          "phase": "home-presenting",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1.0000000149011612",
+            "studioRenderCount": "13",
+            "studioDrawCalls": "98",
+            "studioTriangles": "94816",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:1",
+            "assistantRevision": "6",
+            "assistantCardCount": "4"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 117286,
+      "sha256": "659d2ba4eab749783af4347c6d480079fdde8fa356a0b95ef8b83eca38ed75e5"
+    },
+    {
+      "file": "desktop-dpr1-home-motion-dismiss-interruption.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-dpr1.json",
+      "context": "task_bc61c9989863-capture-desktop-dpr1",
+      "viewport": {
+        "name": "desktop-dpr1",
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": -4,
+        "pitch": -6
+      },
+      "requestedSampleTime": 2918.099999964237,
+      "compositorTimestampRelativeToTimeOrigin": 2935.186767578125,
+      "timestampErrorMs": 17.086767613887787,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030925.923987,
+        "monotonicTimestamp": 517014.599001
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 2929.099999964237,
+          "rafTime": 2918.5,
+          "phase": "home-close",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "true",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1.0000000149011612",
+            "studioRenderCount": "15",
+            "studioDrawCalls": "94",
+            "studioTriangles": "94512",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "",
+            "assistantRevision": "7",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 3183.399999976158,
+          "rafTime": 2985,
+          "phase": "home-close",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "true",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1.0000000149011612",
+            "studioRenderCount": "16",
+            "studioDrawCalls": "94",
+            "studioTriangles": "94512",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "",
+            "assistantRevision": "7",
+            "assistantCardCount": "0"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 141896,
+      "sha256": "67a7d3e4d8495cd854ccf8c2afd6b4bb8d26ee7882001ed77af18a33b379af17"
+    },
+    {
+      "file": "desktop-dpr1-home-motion-no-match-early.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-dpr1.json",
+      "context": "task_bc61c9989863-capture-desktop-dpr1",
+      "viewport": {
+        "name": "desktop-dpr1",
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": -4,
+        "pitch": -6
+      },
+      "requestedSampleTime": 3701.5,
+      "compositorTimestampRelativeToTimeOrigin": 3701.556884765625,
+      "timestampErrorMs": 0.056884765625,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030926.690357,
+        "monotonicTimestamp": 517015.365371
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 3698.199999988079,
+          "rafTime": 3684.8,
+          "phase": "home-no-match",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1.0000000149011612",
+            "studioRenderCount": "24",
+            "studioDrawCalls": "94",
+            "studioTriangles": "94512",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:2",
+            "assistantRevision": "13",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 3780.5,
+          "rafTime": 3768.3,
+          "phase": "home-no-match",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1.0000000149011612",
+            "studioRenderCount": "25",
+            "studioDrawCalls": "94",
+            "studioTriangles": "94512",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:2",
+            "assistantRevision": "13",
+            "assistantCardCount": "0"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 119964,
+      "sha256": "add0da07d9e84a753fac40d9870b865b4e4ad9a11d3083b714cd7fc52df22204"
+    },
+    {
+      "file": "desktop-dpr1-home-motion-no-match-middle.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-dpr1.json",
+      "context": "task_bc61c9989863-capture-desktop-dpr1",
+      "viewport": {
+        "name": "desktop-dpr1",
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": -4,
+        "pitch": -6
+      },
+      "requestedSampleTime": 3806.5,
+      "compositorTimestampRelativeToTimeOrigin": 3784.98291015625,
+      "timestampErrorMs": -21.51708984375,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030926.773783,
+        "monotonicTimestamp": 517015.448797
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 3780.5,
+          "rafTime": 3768.3,
+          "phase": "home-no-match",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1.0000000149011612",
+            "studioRenderCount": "25",
+            "studioDrawCalls": "94",
+            "studioTriangles": "94512",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:2",
+            "assistantRevision": "13",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 3880.5,
+          "rafTime": 3851.6,
+          "phase": "home-no-match",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1.0000000149011612",
+            "studioRenderCount": "26",
+            "studioDrawCalls": "94",
+            "studioTriangles": "94512",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:2",
+            "assistantRevision": "13",
+            "assistantCardCount": "0"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 122322,
+      "sha256": "03b5b224a91bbb651577a8c986f989f49824efbf16faf16db4854fa0d9192ae7"
+    },
+    {
+      "file": "desktop-dpr1-home-motion-no-match-settled.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-dpr1.json",
+      "context": "task_bc61c9989863-capture-desktop-dpr1",
+      "viewport": {
+        "name": "desktop-dpr1",
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": -4,
+        "pitch": -6
+      },
+      "requestedSampleTime": 3966.5,
+      "compositorTimestampRelativeToTimeOrigin": 3951.5810546875,
+      "timestampErrorMs": -14.9189453125,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030926.940381,
+        "monotonicTimestamp": 517015.615395
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 3880.5,
+          "rafTime": 3851.6,
+          "phase": "home-no-match",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1.0000000149011612",
+            "studioRenderCount": "26",
+            "studioDrawCalls": "94",
+            "studioTriangles": "94512",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:2",
+            "assistantRevision": "13",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 3953.5,
+          "rafTime": 3934.8,
+          "phase": "home-no-match",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1.0000000149011612",
+            "studioRenderCount": "27",
+            "studioDrawCalls": "94",
+            "studioTriangles": "94512",
+            "studioGeometries": "40",
+            "studioTextures": "12",
+            "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:2",
+            "assistantRevision": "13",
+            "assistantCardCount": "0"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 122262,
+      "sha256": "c796ab3afa6defb7a53a96645881ae7c8f3e2ceec66db5493d93b91c3a0666f9"
+    },
+    {
+      "file": "desktop-dpr1-robot-neighbour-motion-gathering.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-dpr1.json",
+      "context": "task_bc61c9989863-capture-desktop-dpr1",
+      "viewport": {
+        "name": "desktop-dpr1",
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": 26,
+        "pitch": 4
+      },
+      "requestedSampleTime": 6953.199999988079,
+      "compositorTimestampRelativeToTimeOrigin": 7034.43701171875,
+      "timestampErrorMs": 81.23701173067093,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030930.023237,
+        "monotonicTimestamp": 517018.698251
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 6894,
+          "rafTime": 6867.9,
+          "phase": "robot-neighbour-attention",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "26",
+            "studioPitch": "4",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1.0000000149011612",
+            "studioRenderCount": "50",
+            "studioDrawCalls": "94",
+            "studioTriangles": "89418",
+            "studioGeometries": "43",
+            "studioTextures": "15",
+            "assistantRunId": "",
+            "assistantRevision": "14",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 7043.399999976158,
+          "rafTime": 7017.7,
+          "phase": "robot-neighbour-presenting",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "26",
+            "studioPitch": "4",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1.0000000149011612",
+            "studioRenderCount": "51",
+            "studioDrawCalls": "98",
+            "studioTriangles": "89722",
+            "studioGeometries": "43",
+            "studioTextures": "15",
+            "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:3",
+            "assistantRevision": "20",
+            "assistantCardCount": "4"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 113396,
+      "sha256": "e1b93bb236384f0e46587223bd7030f9dee154e64ee702d7bbcd2dad623f435d"
+    },
+    {
+      "file": "desktop-dpr1-robot-neighbour-motion-presenting.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-dpr1.json",
+      "context": "task_bc61c9989863-capture-desktop-dpr1",
+      "viewport": {
+        "name": "desktop-dpr1",
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": 26,
+        "pitch": 4
+      },
+      "requestedSampleTime": 7051.300000011921,
+      "compositorTimestampRelativeToTimeOrigin": 7067.754150390625,
+      "timestampErrorMs": 16.45415037870407,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030930.056554,
+        "monotonicTimestamp": 517018.731569
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 7065.899999976158,
+          "rafTime": 7051.1,
+          "phase": "robot-neighbour-presenting",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "26",
+            "studioPitch": "4",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1.0000000149011612",
+            "studioRenderCount": "52",
+            "studioDrawCalls": "98",
+            "studioTriangles": "89722",
+            "studioGeometries": "43",
+            "studioTextures": "15",
+            "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:3",
+            "assistantRevision": "20",
+            "assistantCardCount": "4"
+          }
+        },
+        "next": {
+          "at": 7135,
+          "rafTime": 7117.8,
+          "phase": "robot-neighbour-close",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "true",
+            "studioYaw": "26",
+            "studioPitch": "4",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1.0000000149011612",
+            "studioRenderCount": "53",
+            "studioDrawCalls": "94",
+            "studioTriangles": "89418",
+            "studioGeometries": "43",
+            "studioTextures": "15",
+            "assistantRunId": "",
+            "assistantRevision": "21",
+            "assistantCardCount": "0"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 113417,
+      "sha256": "d64d389518b2a74f58f8aabe37c595e5425aa41d1901899aa827800de9db6b09"
+    },
+    {
+      "file": "desktop-dpr1-robot-neighbour-motion-dismiss-interruption.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-dpr1.json",
+      "context": "task_bc61c9989863-capture-desktop-dpr1",
+      "viewport": {
+        "name": "desktop-dpr1",
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": 26,
+        "pitch": 4
+      },
+      "requestedSampleTime": 7147.199999988079,
+      "compositorTimestampRelativeToTimeOrigin": 7134.464111328125,
+      "timestampErrorMs": -12.735888659954071,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030930.123264,
+        "monotonicTimestamp": 517018.798278
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 7065.899999976158,
+          "rafTime": 7051.1,
+          "phase": "robot-neighbour-presenting",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "26",
+            "studioPitch": "4",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1.0000000149011612",
+            "studioRenderCount": "52",
+            "studioDrawCalls": "98",
+            "studioTriangles": "89722",
+            "studioGeometries": "43",
+            "studioTextures": "15",
+            "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:3",
+            "assistantRevision": "20",
+            "assistantCardCount": "4"
+          }
+        },
+        "next": {
+          "at": 7135,
+          "rafTime": 7117.8,
+          "phase": "robot-neighbour-close",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "true",
+            "studioYaw": "26",
+            "studioPitch": "4",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1.0000000149011612",
+            "studioRenderCount": "53",
+            "studioDrawCalls": "94",
+            "studioTriangles": "89418",
+            "studioGeometries": "43",
+            "studioTextures": "15",
+            "assistantRunId": "",
+            "assistantRevision": "21",
+            "assistantCardCount": "0"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 135936,
+      "sha256": "cb9d3cc6ec82c99e31ca8462456ff35cb602c626f7ce6ab93e6cc68dea1382d7"
+    },
+    {
+      "file": "desktop-dpr1-robot-neighbour-motion-no-match-early.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-dpr1.json",
+      "context": "task_bc61c9989863-capture-desktop-dpr1",
+      "viewport": {
+        "name": "desktop-dpr1",
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": 26,
+        "pitch": 4
+      },
+      "requestedSampleTime": 7751.199999988079,
+      "compositorTimestampRelativeToTimeOrigin": 7784.35888671875,
+      "timestampErrorMs": 33.15888673067093,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030930.773159,
+        "monotonicTimestamp": 517019.448173
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 7641.099999964237,
+          "rafTime": 7634.5,
+          "phase": "robot-neighbour-close",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "26",
+            "studioPitch": "4",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1.0000000149011612",
+            "studioRenderCount": "59",
+            "studioDrawCalls": "94",
+            "studioTriangles": "89418",
+            "studioGeometries": "43",
+            "studioTextures": "15",
+            "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:4",
+            "assistantRevision": "23",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 7795.5,
+          "rafTime": 7784.3,
+          "phase": "robot-neighbour-no-match",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "26",
+            "studioPitch": "4",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1.0000000149011612",
+            "studioRenderCount": "60",
+            "studioDrawCalls": "94",
+            "studioTriangles": "89418",
+            "studioGeometries": "43",
+            "studioTextures": "15",
+            "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:4",
+            "assistantRevision": "27",
+            "assistantCardCount": "0"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 106913,
+      "sha256": "63f7bb82272f88c4cf0b7fedeb9f4e70bf53e21bb158ce8b920698bd778599db"
+    },
+    {
+      "file": "desktop-dpr1-robot-neighbour-motion-no-match-middle.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-dpr1.json",
+      "context": "task_bc61c9989863-capture-desktop-dpr1",
+      "viewport": {
+        "name": "desktop-dpr1",
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": 26,
+        "pitch": 4
+      },
+      "requestedSampleTime": 7856.199999988079,
+      "compositorTimestampRelativeToTimeOrigin": 7884.47412109375,
+      "timestampErrorMs": 28.27412110567093,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030930.873274,
+        "monotonicTimestamp": 517019.548288
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 7819.699999988079,
+          "rafTime": 7801.1,
+          "phase": "robot-neighbour-no-match",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "26",
+            "studioPitch": "4",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1.0000000149011612",
+            "studioRenderCount": "61",
+            "studioDrawCalls": "94",
+            "studioTriangles": "89418",
+            "studioGeometries": "43",
+            "studioTextures": "15",
+            "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:4",
+            "assistantRevision": "27",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 7885.800000011921,
+          "rafTime": 7867.8,
+          "phase": "robot-neighbour-no-match",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "26",
+            "studioPitch": "4",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1.0000000149011612",
+            "studioRenderCount": "62",
+            "studioDrawCalls": "94",
+            "studioTriangles": "89418",
+            "studioGeometries": "43",
+            "studioTextures": "15",
+            "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:4",
+            "assistantRevision": "27",
+            "assistantCardCount": "0"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 116389,
+      "sha256": "b1fb843da0a18137fe3849522c5c0925289e9384836028fd6092fc89372f167c"
+    },
+    {
+      "file": "desktop-dpr1-robot-neighbour-motion-no-match-settled.jpg",
+      "kind": "CDP JPEG compositor sample",
+      "source": "captures-dpr1.json",
+      "context": "task_bc61c9989863-capture-desktop-dpr1",
+      "viewport": {
+        "name": "desktop-dpr1",
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "camera": {
+        "eye": [
+          -0.7,
+          2.8,
+          3.4
+        ],
+        "fov": 58,
+        "yaw": 26,
+        "pitch": 4
+      },
+      "requestedSampleTime": 8016.199999988079,
+      "compositorTimestampRelativeToTimeOrigin": 7884.47412109375,
+      "timestampErrorMs": -131.72587889432907,
+      "metadata": {
+        "offsetTop": 0,
+        "pageScaleFactor": 1,
+        "deviceWidth": 1440,
+        "deviceHeight": 900,
+        "scrollOffsetX": 0,
+        "scrollOffsetY": 0,
+        "timestamp": 1795030930.873274,
+        "monotonicTimestamp": 517019.548288
+      },
+      "nearbyCpuState": {
+        "previous": {
+          "at": 7819.699999988079,
+          "rafTime": 7801.1,
+          "phase": "robot-neighbour-no-match",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "26",
+            "studioPitch": "4",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1.0000000149011612",
+            "studioRenderCount": "61",
+            "studioDrawCalls": "94",
+            "studioTriangles": "89418",
+            "studioGeometries": "43",
+            "studioTextures": "15",
+            "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:4",
+            "assistantRevision": "27",
+            "assistantCardCount": "0"
+          }
+        },
+        "next": {
+          "at": 7885.800000011921,
+          "rafTime": 7867.8,
+          "phase": "robot-neighbour-no-match",
+          "canvas": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "26",
+            "studioPitch": "4",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1.0000000149011612",
+            "studioRenderCount": "62",
+            "studioDrawCalls": "94",
+            "studioTriangles": "89418",
+            "studioGeometries": "43",
+            "studioTextures": "15",
+            "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:4",
+            "assistantRevision": "27",
+            "assistantCardCount": "0"
+          }
+        }
+      },
+      "frameState": "Filename is requested phase, NOT certified depicted phase. Visible compositor lag was observed; nearby CPU snapshot is advisory, not exact image/run association. Duplicate frames are explicitly identified by hash. Use stable PNGs for exact 0/1/4 state; Claude must judge the actual images.",
+      "bytes": 116389,
+      "sha256": "b1fb843da0a18137fe3849522c5c0925289e9384836028fd6092fc89372f167c",
+      "duplicateOf": "desktop-dpr1-robot-neighbour-motion-no-match-middle.jpg"
+    },
+    {
+      "file": "desktop-one-source.png",
+      "kind": "Stable reduced-motion PNG",
+      "source": "lifecycle-v02.json",
+      "context": "task_bc61c9989863-lifecycle",
+      "state": {
+        "at": 2808.199999988079,
+        "hidden": false,
+        "reduced": true,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "10",
+          "studioDrawCalls": "95",
+          "studioTriangles": "94588",
+          "studioGeometries": "39",
+          "studioTextures": "12",
+          "assistantRunId": "284ba08a-d50b-414e-bedb-c68bc352c593:1",
+          "assistantRevision": "6",
+          "assistantCardCount": "1"
+        },
+        "chips": [
+          {
+            "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+            "run": "284ba08a-d50b-414e-bedb-c68bc352c593:1",
+            "selected": "false"
+          }
+        ],
+        "rows": [
+          {
+            "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+            "run": "284ba08a-d50b-414e-bedb-c68bc352c593:1"
+          }
+        ],
+        "result": "sources",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "top": 0,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "raf": 14
+      },
+      "frameState": "Captured following this stable snapshot; reduced motion was ON for one-hit cases. Four-hit case settled under no-preference.",
+      "bytes": 1331020,
+      "sha256": "fc7f7b24d6c4c2de17b8e7721003dd2293dbed62da27ff1670602ebf8ccbfd50"
+    },
+    {
+      "file": "desktop-one-selected.png",
+      "kind": "Stable reduced-motion PNG",
+      "source": "lifecycle-v02.json",
+      "context": "task_bc61c9989863-lifecycle",
+      "state": {
+        "at": 3590.800000011921,
+        "hidden": false,
+        "reduced": true,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "11",
+          "studioDrawCalls": "95",
+          "studioTriangles": "94588",
+          "studioGeometries": "39",
+          "studioTextures": "12",
+          "assistantRunId": "284ba08a-d50b-414e-bedb-c68bc352c593:1",
+          "assistantRevision": "7",
+          "assistantCardCount": "1"
+        },
+        "chips": [
+          {
+            "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+            "run": "284ba08a-d50b-414e-bedb-c68bc352c593:1",
+            "selected": "true"
+          }
+        ],
+        "rows": [
+          {
+            "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+            "run": "284ba08a-d50b-414e-bedb-c68bc352c593:1"
+          }
+        ],
+        "result": "sources",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "top": 0,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "raf": 15
+      },
+      "frameState": "Captured following this stable snapshot; reduced motion was ON for one-hit cases. Four-hit case settled under no-preference.",
+      "bytes": 1349622,
+      "sha256": "1348b6a4551e0cc73ac98df3fb40717f45e50765176576f1e5875aa50c3e8de7"
+    },
+    {
+      "file": "desktop-one-deselected.png",
+      "kind": "Stable reduced-motion PNG",
+      "source": "lifecycle-v02.json",
+      "context": "task_bc61c9989863-lifecycle",
+      "state": {
+        "at": 4234.399999976158,
+        "hidden": false,
+        "reduced": true,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "11",
+          "studioDrawCalls": "95",
+          "studioTriangles": "94588",
+          "studioGeometries": "39",
+          "studioTextures": "12",
+          "assistantRunId": "284ba08a-d50b-414e-bedb-c68bc352c593:1",
+          "assistantRevision": "7",
+          "assistantCardCount": "1"
+        },
+        "chips": [
+          {
+            "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+            "run": "284ba08a-d50b-414e-bedb-c68bc352c593:1",
+            "selected": "false"
+          }
+        ],
+        "rows": [
+          {
+            "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+            "run": "284ba08a-d50b-414e-bedb-c68bc352c593:1"
+          }
+        ],
+        "result": "sources",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "top": 0,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "raf": 15
+      },
+      "frameState": "Captured following this stable snapshot; reduced motion was ON for one-hit cases. Four-hit case settled under no-preference.",
+      "bytes": 1329708,
+      "sha256": "9a4d13ad0399650fbc49878c44ab49bd4faef7dc8c1300431b65b49326f998e2"
+    },
+    {
+      "file": "desktop-four-sources.png",
+      "kind": "Stable reduced-motion PNG",
+      "source": "lifecycle-v02.json",
+      "context": "task_bc61c9989863-lifecycle",
+      "state": {
+        "at": 6556.199999988079,
+        "hidden": false,
+        "reduced": false,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "2",
+          "studioRenderCount": "20",
+          "studioDrawCalls": "98",
+          "studioTriangles": "94816",
+          "studioGeometries": "40",
+          "studioTextures": "12",
+          "assistantRunId": "284ba08a-d50b-414e-bedb-c68bc352c593:2",
+          "assistantRevision": "14",
+          "assistantCardCount": "4"
+        },
+        "chips": [
+          {
+            "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+            "run": "284ba08a-d50b-414e-bedb-c68bc352c593:2",
+            "selected": "false"
+          },
+          {
+            "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-limits:0\"]",
+            "run": "284ba08a-d50b-414e-bedb-c68bc352c593:2",
+            "selected": "false"
+          },
+          {
+            "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-pilot:0\"]",
+            "run": "284ba08a-d50b-414e-bedb-c68bc352c593:2",
+            "selected": "false"
+          },
+          {
+            "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-tooling:0\"]",
+            "run": "284ba08a-d50b-414e-bedb-c68bc352c593:2",
+            "selected": "false"
+          }
+        ],
+        "rows": [
+          {
+            "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-role:0\"]",
+            "run": "284ba08a-d50b-414e-bedb-c68bc352c593:2"
+          },
+          {
+            "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-limits:0\"]",
+            "run": "284ba08a-d50b-414e-bedb-c68bc352c593:2"
+          },
+          {
+            "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-pilot:0\"]",
+            "run": "284ba08a-d50b-414e-bedb-c68bc352c593:2"
+          },
+          {
+            "key": "[\"lexisnexis\",\"lexisnexis:lexisnexis-tooling:0\"]",
+            "run": "284ba08a-d50b-414e-bedb-c68bc352c593:2"
+          }
+        ],
+        "result": "sources",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "top": 0,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "raf": 25
+      },
+      "frameState": "Captured following this stable snapshot; reduced motion was ON for one-hit cases. Four-hit case settled under no-preference.",
+      "bytes": 1345119,
+      "sha256": "de8d601ab845ff1fb15f1c3d974aec41e3019891365ef44ea245e08e706477a3"
+    }
+  ],
+  "precisionLimit": "Screencast samples can lag current DOM/RAF state. Requested phase labels are not ground truth; timestamp errors and adjacent CPU states are retained without claiming exact pose correspondence. The DPR1 supplement is a capture aid, not a replacement for failed desktop DPR2 performance."
+}

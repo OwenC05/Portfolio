@@ -1,0 +1,100 @@
+{
+  "buildId": "XH_oOqBftWO8em8L7m4E6",
+  "checks": [
+    {
+      "name": "Studio has one canvas and one native dialog",
+      "passed": true
+    },
+    {
+      "name": "Desktop has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Corrected native pointer click reaches the Ask button",
+      "passed": true
+    },
+    {
+      "name": "Ask opens the assistant variant and focuses the heading",
+      "passed": true
+    },
+    {
+      "name": "Ask does not add a URL or history fragment",
+      "passed": true
+    },
+    {
+      "name": "Real same-origin source-only request completes",
+      "passed": true
+    },
+    {
+      "name": "HTML rows, chips and rendered cards have the same real count",
+      "passed": true
+    },
+    {
+      "name": "Rendered cards and source rows use the same current run",
+      "passed": true
+    },
+    {
+      "name": "All retrieved passage text appears in the source rows",
+      "passed": true
+    },
+    {
+      "name": "390px source sheet stays within viewport",
+      "passed": true
+    },
+    {
+      "name": "390px first passage has a visible text line without scrolling",
+      "passed": true
+    },
+    {
+      "name": "390px matching query repeat is hidden and field is compact",
+      "passed": true
+    },
+    {
+      "name": "320px source sheet stays within viewport",
+      "passed": true
+    },
+    {
+      "name": "320px first passage has a visible text line without scrolling",
+      "passed": true
+    },
+    {
+      "name": "320px matching query repeat is hidden and field is compact",
+      "passed": true
+    },
+    {
+      "name": "Edited long phone draft preserves searched question and current results without submitting",
+      "passed": true
+    },
+    {
+      "name": "Whitespace-only draft edits still suppress the redundant query",
+      "passed": true
+    },
+    {
+      "name": "390px closed Studio keeps a visible 44px HTML Ask entry",
+      "passed": true
+    },
+    {
+      "name": "320px closed Studio keeps a visible 44px HTML Ask entry",
+      "passed": true
+    },
+    {
+      "name": "Escape closes and returns focus to the HTML Ask entry",
+      "passed": true
+    },
+    {
+      "name": "Closing clears rendered cards and preserves the URL",
+      "passed": true
+    },
+    {
+      "name": "Corrected native pointer click reaches the Ask button",
+      "passed": true
+    },
+    {
+      "name": "Reopening retains the draft with no previous result",
+      "passed": true
+    }
+  ],
+  "limits": [
+    "Initial desktop source-search smoke only; full failure, keyboard, mobile, placement and lifecycle matrix remains."
+  ]
+}

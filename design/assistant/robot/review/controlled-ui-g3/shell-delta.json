@@ -1,0 +1,195 @@
+{
+  "checkedAt": "2026-11-17T14:27:02.742Z",
+  "baselineMethod": "Read-only main CSS byte-identical to pre-G3 pin; three nullable ref annotations reconstruct pre-G3 Shell and match its exact pin; no copies into application paths",
+  "files": [
+    {
+      "path": "app/studio/studio.module.css",
+      "beforeSha256": "ce72d40af43223b33bc77dbdfd810ac38caaadb50af30916b25f1e3907bf1432",
+      "afterSha256": "81bd8787a6259212d7244702ffeb14ce0815aa9a1a51f5f47bb2d3ef4b0549ea",
+      "changes": [
+        {
+          "oldLine": 242,
+          "newLine": 242,
+          "removed": [
+            "  grid-template-rows: minmax(0, 1fr) auto auto;"
+          ],
+          "added": [
+            "  grid-template-rows: minmax(0, 1fr) auto auto auto;"
+          ]
+        },
+        {
+          "oldLine": 245,
+          "newLine": 245,
+          "removed": [],
+          "added": [
+            "    'projects . ask'"
+          ]
+        },
+        {
+          "oldLine": 271,
+          "newLine": 272,
+          "removed": [],
+          "added": [
+            "/* Ask entry slot. Empty of everything but the button, so the room shows through. */",
+            ".ask {",
+            "  grid-area: ask;",
+            "  justify-self: end;",
+            "  display: flex;",
+            "  margin-bottom: 0.5rem;",
+            "}",
+            ""
+          ]
+        },
+        {
+          "oldLine": 461,
+          "newLine": 470,
+          "removed": [
+            "    grid-template-rows: minmax(0, 1fr) auto auto auto;"
+          ],
+          "added": [
+            "    grid-template-rows: minmax(0, 1fr) auto auto auto auto;"
+          ]
+        },
+        {
+          "oldLine": 466,
+          "newLine": 475,
+          "removed": [],
+          "added": [
+            "      'ask ask'"
+          ]
+        },
+        {
+          "oldLine": 597,
+          "newLine": 607,
+          "removed": [],
+          "added": [
+            "      'ask ask'"
+          ]
+        },
+        {
+          "oldLine": 734,
+          "newLine": 745,
+          "removed": [],
+          "added": [
+            "/*",
+            " * Ask sheet: the same dialog showing the assistant. Left of centre on wide",
+            " * screens so the room's right side stays in view, under a lighter backdrop.",
+            " * Nothing here applies to the project sheet.",
+            " */",
+            ".panel[data-panel-variant='assistant']::backdrop {",
+            "  background: rgba(15, 13, 11, 0.32);",
+            "}",
+            "",
+            "@media (min-width: 48rem) {",
+            "  .panel[data-panel-variant='assistant'] {",
+            "    width: min(38rem, calc(100% - 3rem));",
+            "    margin-left: max(1.5rem, calc(50% - 28rem));",
+            "    margin-right: auto;",
+            "  }",
+            "",
+            "  .panel[data-panel-variant='assistant'] .panelBar {",
+            "    padding-left: 2.25rem;",
+            "  }",
+            "",
+            "  .panel[data-panel-variant='assistant'] .panelScroll {",
+            "    padding: 1.75rem 2.25rem 2.25rem;",
+            "  }",
+            "}",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "path": "app/studio/StudioShell.tsx",
+      "beforeSha256": "03b735a31b74ace0ee22d41acbc7b82ab0d70ba1cb1dbed9f11a65df23d82306",
+      "afterSha256": "ef637b1d61f39fd0cddc34f2697ce35546735f05219acb435d9e7d7c314c6738",
+      "changes": [
+        {
+          "oldLine": 43,
+          "newLine": 43,
+          "removed": [],
+          "added": [
+            "  /**",
+            "   * Which content the one native dialog shows. Root still owns opening,",
+            "   * closing, history, scroll and focus. Defaults to the project sheet.",
+            "   */",
+            "  dialogVariant?: StudioDialogVariant",
+            "  /** Rendered in the dialog when `dialogVariant` is 'assistant'. */",
+            "  assistantContent?: ReactNode",
+            "  /**",
+            "   * The Ask entry for the dock, normally `<AssistantEntry />`. Leave it",
+            "   * undefined until its open action exists; no entry is rendered without it.",
+            "   */",
+            "  assistantEntry?: ReactNode"
+          ]
+        },
+        {
+          "oldLine": 45,
+          "newLine": 57,
+          "removed": [],
+          "added": [
+            "export type StudioDialogVariant = 'project' | 'assistant'",
+            "",
+            "const DIALOG_LABEL: Record<StudioDialogVariant, string> = {",
+            "  project: 'Selected work',",
+            "  assistant: 'Ask · source search',",
+            "}",
+            ""
+          ]
+        },
+        {
+          "oldLine": 108,
+          "newLine": 127,
+          "removed": [],
+          "added": [
+            "  dialogVariant = 'project',",
+            "  assistantContent,",
+            "  assistantEntry,"
+          ]
+        },
+        {
+          "oldLine": 211,
+          "newLine": 233,
+          "removed": [],
+          "added": [
+            "            {assistantEntry ? (",
+            "              <div className={styles.ask}>{assistantEntry}</div>",
+            "            ) : null}",
+            ""
+          ]
+        },
+        {
+          "oldLine": 264,
+          "newLine": 290,
+          "removed": [],
+          "added": [
+            "        data-panel-variant={dialogVariant}"
+          ]
+        },
+        {
+          "oldLine": 270,
+          "newLine": 297,
+          "removed": [
+            "            Selected work"
+          ],
+          "added": [
+            "            {DIALOG_LABEL[dialogVariant]}"
+          ]
+        },
+        {
+          "oldLine": 288,
+          "newLine": 315,
+          "removed": [
+            "        <div ref={panelScrollRef} className={styles.panelScroll}>{projectContent}</div>"
+          ],
+          "added": [
+            "        <div ref={panelScrollRef} className={styles.panelScroll}>",
+            "          {dialogVariant === 'assistant' ? assistantContent : projectContent}",
+            "        </div>"
+          ]
+        }
+      ]
+    }
+  ]
+}

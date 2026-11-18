@@ -1,0 +1,11 @@
+{
+  "checkedAt": "2026-11-18T17:43:36.949Z",
+  "roots": [
+    "components/studio/assistant/StudioAssistantPanel.tsx"
+  ],
+  "ambient": "node_modules/next/types/global.d.ts",
+  "diagnostics": 0,
+  "noEmit": true,
+  "incremental": false,
+  "details": ""
+}

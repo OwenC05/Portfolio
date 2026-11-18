@@ -1,0 +1,1 @@
+0 TypeScript diagnostics; explicit G2 roots and imported dependencies only.

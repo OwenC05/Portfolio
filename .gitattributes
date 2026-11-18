@@ -16,3 +16,30 @@
 /public/studio/** -text
 /package.json -text
 /package-lock.json -text
+
+# Preserve the assistant implementation/test hashes recorded in robot reviews.
+/components/assistant/** -text
+/lib/assistant/** -text
+/tests/assistant/** -text
+/scripts/verify-assistant*.mjs -text
+/scripts/verify-studio-assistant*.mjs -text
+/docs/assistant-delivery.md -text
+
+# These inherited files are also byte-pinned by the integrated build receipts.
+# Keep their existing working bytes; this changes Git storage, not application logic.
+/.eslintrc.json -text
+/app/layout.tsx -text
+/app/page.tsx -text
+/components/Footer.tsx -text
+/components/Hero.tsx -text
+/components/Navbar.tsx -text
+/components/ProjectsTeaser.tsx -text
+/components/Skills.tsx -text
+/components/ThemeToggle.tsx -text
+/lib/utils.ts -text
+/next-env.d.ts -text
+/next.config.mjs -text
+/postcss.config.js -text
+/public/favicon.ico -text
+/tailwind.config.ts -text
+/tsconfig.json -text

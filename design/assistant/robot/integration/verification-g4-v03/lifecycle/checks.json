@@ -1,0 +1,131 @@
+{
+  "buildId": "cFKSWm6Bayf__QstZY2CC",
+  "checks": [
+    {
+      "name": "Settled idle scene does not continuously render",
+      "passed": true
+    },
+    {
+      "name": "Trusted click on visible robot head opens Ask",
+      "passed": true
+    },
+    {
+      "name": "Tab remains inside the native assistant dialog",
+      "passed": true
+    },
+    {
+      "name": "Real source query renders four source chips and cards",
+      "passed": true
+    },
+    {
+      "name": "Left arrow wraps focus without selecting or submitting",
+      "passed": true
+    },
+    {
+      "name": "Enter selects source four and focuses its disclosure",
+      "passed": true
+    },
+    {
+      "name": "Submitting pending work clears every previous row and rendered card",
+      "passed": true
+    },
+    {
+      "name": "Cancel aborts and focuses persistent Search",
+      "passed": true
+    },
+    {
+      "name": "Failure has one alert, no stale sources and no duplicate status text",
+      "passed": true
+    },
+    {
+      "name": "Real unsupported topic presents no-match with no cards and a contact link",
+      "passed": true
+    },
+    {
+      "name": "Native hash navigation closes Ask without restoring it",
+      "passed": true
+    },
+    {
+      "name": "Keyboard Ask focuses the substantive heading",
+      "passed": true
+    },
+    {
+      "name": "Project takeover aborts Ask, reuses the dialog and focuses only its heading",
+      "passed": true
+    },
+    {
+      "name": "Keyboard Ask focuses the substantive heading",
+      "passed": true
+    },
+    {
+      "name": "Keyboard source navigation reaches its article without an intermediate Ask return",
+      "passed": true
+    }
+  ],
+  "observations": {
+    "idle": {
+      "before": "2",
+      "after": "2"
+    },
+    "robotClick": {
+      "x": 1130,
+      "y": 310,
+      "trusted": true,
+      "target": "CANVAS"
+    },
+    "selected": {
+      "engine": "three.js r187",
+      "studioInteractionEnabled": "false",
+      "studioYaw": "-4",
+      "studioPitch": "-6",
+      "studioEye": "-0.7,2.8,3.4",
+      "studioFov": "58",
+      "studioDpr": "1.0000000149011612",
+      "studioRenderCount": "21",
+      "studioDrawCalls": "98",
+      "studioTriangles": "94816",
+      "studioGeometries": "40",
+      "studioTextures": "12",
+      "assistantRunId": "83df7c8a-12f0-4340-a700-77dfc04f6288:1",
+      "assistantRevision": "7",
+      "assistantCardCount": "4"
+    },
+    "history": {
+      "focus": [],
+      "open": false,
+      "active": {
+        "id": "",
+        "tag": "BODY"
+      },
+      "hash": "#contact",
+      "bodyPosition": "",
+      "cards": "0"
+    },
+    "takeover": {
+      "sameDialog": true,
+      "aborted": true,
+      "focus": [
+        {
+          "id": "panel-project-typeforge-heading",
+          "tag": "H2",
+          "text": "TypeForge"
+        }
+      ],
+      "active": "panel-project-typeforge-heading",
+      "cards": "0",
+      "interaction": "false"
+    },
+    "route": {
+      "url": "http://127.0.0.1:4193/work/lexisnexis#lexisnexis-role",
+      "focus": [],
+      "active": {
+        "tag": "BODY",
+        "id": ""
+      }
+    }
+  },
+  "limits": [
+    "Controlled pending/error fetches test state handling, not provider quality.",
+    "Real Chromium input and native navigation; no physical touch, screen reader, full pose sweep, GPU lifetime or full performance certification."
+  ]
+}

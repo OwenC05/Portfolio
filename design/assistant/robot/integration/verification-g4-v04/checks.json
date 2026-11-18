@@ -1,0 +1,15 @@
+{
+  "at": "2026-11-18T20:22:23.928Z",
+  "results": [
+    {
+      "name": "build-with-type-and-lint-checks",
+      "args": [
+        "node_modules/next/dist/bin/next",
+        "build"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 25970
+    }
+  ],
+  "targetedTests": "Fresh 14-case author receipt in dpr-candidate-v01; reviewed by root, no unrelated suite repeated."
+}

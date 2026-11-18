@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-18T18:23:45.825Z",
+  "result": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.7871.250 Safari/537.36",
+    "location": "http://127.0.0.1:4193/studio",
+    "nativeControl": {
+      "events": [
+        "g4-probe-invoker"
+      ],
+      "returned": true
+    },
+    "navigationPolicy": {
+      "events": [],
+      "returned": false,
+      "active": "H2"
+    },
+    "explicitOrdinaryReturn": true
+  },
+  "limit": "Isolated real native dialog primitive on the owned Chromium page, not a rebuilt application route/focus verification."
+}

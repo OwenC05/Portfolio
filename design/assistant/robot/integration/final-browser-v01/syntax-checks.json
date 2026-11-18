@@ -1,0 +1,47 @@
+[
+    {
+        "command":  "node --check C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\integration\\final-browser-v01\\captures-dpr1-supplement.run.mjs",
+        "exitCode":  0,
+        "output":  ""
+    },
+    {
+        "command":  "node --check C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\integration\\final-browser-v01\\captures-screencast.run.mjs",
+        "exitCode":  0,
+        "output":  ""
+    },
+    {
+        "command":  "node --check C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\integration\\final-browser-v01\\captures.run.mjs",
+        "exitCode":  0,
+        "output":  ""
+    },
+    {
+        "command":  "node --check C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\integration\\final-browser-v01\\faults-contact-corrected.run.mjs",
+        "exitCode":  0,
+        "output":  ""
+    },
+    {
+        "command":  "node --check C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\integration\\final-browser-v01\\faults.run.mjs",
+        "exitCode":  0,
+        "output":  ""
+    },
+    {
+        "command":  "node --check C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\integration\\final-browser-v01\\finalize.mjs",
+        "exitCode":  0,
+        "output":  ""
+    },
+    {
+        "command":  "node --check C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\integration\\final-browser-v01\\lifecycle.run.mjs",
+        "exitCode":  0,
+        "output":  ""
+    },
+    {
+        "command":  "node --check C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\integration\\final-browser-v01\\look-resize-reference.run.mjs",
+        "exitCode":  0,
+        "output":  ""
+    },
+    {
+        "command":  "node --check C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\integration\\final-browser-v01\\performance.run.mjs",
+        "exitCode":  0,
+        "output":  ""
+    }
+]

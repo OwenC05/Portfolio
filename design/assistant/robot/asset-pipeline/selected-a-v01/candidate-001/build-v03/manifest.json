@@ -1,0 +1,101 @@
+{
+  "candidateId": "selected-a-v01-candidate-001-build-v03",
+  "productionReady": false,
+  "status": "emission-only-for-independent-recheck",
+  "rawSource": {
+    "path": "../raw/model.glb",
+    "sha256": "412c0c213e0c6adc6baa80fa0686b6cbd9a1d259348bb96c571ef28b2f59bec7"
+  },
+  "export": {
+    "path": "selected-a.glb",
+    "sha256": "65f1dea3b1d35a748bdfc2089dea0feed1d054cc8b0eb957645ea2d669578a12",
+    "rawGlbBytes": 673144,
+    "gzipBytes": 482957,
+    "brotliBytes": 334311,
+    "triangles": 37676,
+    "exportedVertexRecords": 19131,
+    "nodes": 22,
+    "meshes": 21,
+    "materials": 7,
+    "primitives": 21,
+    "textures": 0,
+    "animations": 0
+  },
+  "editable": {
+    "path": "selected-a.blend",
+    "sha256": "0668d1492f34b9b4488a0118bb90339aefaa2551d818ff56db3f407ae33aea46"
+  },
+  "profile": {
+    "path": "profile.json",
+    "sha256": "f154a64bb9da20e113c4979238ec613c4cf0f75ec8c18dba04b9c6f79a807c80"
+  },
+  "poses": {
+    "path": "poses.json",
+    "sha256": "6dd7ce35a027352b4f2cffbe673081910837e69d56c9f4ec866e970381c6e96d"
+  },
+  "script": {
+    "path": "build_eye.py",
+    "sha256": "b0752ff421ae25a6a184a1cece2ccc584353a0455bfdc161da24129b8bb45850"
+  },
+  "neutralBoundsGltfMetres": {
+    "min": [
+      -0.13927824888378382,
+      -0.23599659092724323,
+      -0.133880446664989
+    ],
+    "max": [
+      0.13787991914432496,
+      0.3456544801592827,
+      0.12633870140416548
+    ]
+  },
+  "sweptBoundsBlenderMetres": {
+    "min": [
+      -0.15611222708698808,
+      -0.15385064805027543,
+      -0.2774551245021492
+    ],
+    "max": [
+      0.1572461458491951,
+      0.13578670049187241,
+      0.3570718797492653
+    ]
+  },
+  "externalRoomScale": 2,
+  "floorOffset": 0,
+  "worldPlacement": null,
+  "allocationApproved": false,
+  "independentReview": null,
+  "delta": {
+    "path": "delta-validation.json",
+    "sha256": "be29aad9c5a637f61ce2cefcd6e90f183a90318b5f934c50cd9b14804362db93"
+  },
+  "eyeEmissionStrength": 1,
+  "carriedEvidence": [
+    {
+      "path": "../build-v02/validation.json",
+      "sha256": "abb15cbe35a845179e05e5f23db0d58112edea5e2f7c60d730c474140da5bd4c",
+      "status": "unchanged geometry/pose evidence carried by exact byte and structure identity; not rerun for v03"
+    },
+    {
+      "path": "../build-v02/reimport-validation.json",
+      "sha256": "00f04fcbbf22b94f48daf91f91d3fb59bd0c8f831acfa822a7b483b34e3b284a",
+      "status": "unchanged geometry/pose evidence carried by exact byte and structure identity; not rerun for v03"
+    },
+    {
+      "path": "../build-v02/validator-probes.json",
+      "sha256": "b626a5fc4753b982c16514e8a099f1d6e82d52fbdd1899c351156ef8d17700e4",
+      "status": "unchanged geometry/pose evidence carried by exact byte and structure identity; not rerun for v03"
+    },
+    {
+      "path": "../build-v02/placement-check.json",
+      "sha256": "522f25f426b800506adaad8c2bf824cd075b6685ce9719bf9aa13e4dbe0ea8a9",
+      "status": "unchanged geometry/pose evidence carried by exact byte and structure identity; not rerun for v03"
+    },
+    {
+      "path": "../build-v02/retained-mesh.json",
+      "sha256": "0df0a802dafc81ce45425b4877bbacd5246725ccb7dbee509b3a2931193568a6",
+      "status": "unchanged geometry/pose evidence carried by exact byte and structure identity; not rerun for v03"
+    }
+  ]
+}

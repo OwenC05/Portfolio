@@ -1,0 +1,72 @@
+{
+  "at": "2026-11-18T18:33:23.363Z",
+  "results": [
+    {
+      "name": "typecheck",
+      "args": [
+        "node_modules/next/dist/bin/next",
+        "typegen"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 1546
+    },
+    {
+      "name": "typescript",
+      "args": [
+        "node_modules/typescript/bin/tsc",
+        "--noEmit",
+        "--incremental",
+        "false"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 5910
+    },
+    {
+      "name": "assistant-tests",
+      "args": [
+        "--test",
+        "tests/assistant/*.test.cjs",
+        "lib/knowledge/catalog.test.mjs"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 3990
+    },
+    {
+      "name": "assistant-eval",
+      "args": [
+        "scripts/assistant-eval.cjs"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 486
+    },
+    {
+      "name": "scene-tests",
+      "args": [
+        "--test",
+        "components/studio/scene/verify-controller.mjs",
+        "components/studio/scene/verify-pilot.mjs",
+        "components/studio/scene/verify-full-kit.mjs"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 45925
+    },
+    {
+      "name": "lint",
+      "args": [
+        "node_modules/next/dist/bin/next",
+        "lint"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 6146
+    },
+    {
+      "name": "build",
+      "args": [
+        "node_modules/next/dist/bin/next",
+        "build"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 34206
+    }
+  ]
+}

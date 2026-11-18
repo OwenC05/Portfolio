@@ -1,0 +1,527 @@
+{
+  "profileId": "selected-a-v01-neutral-runtime-PROPOSED",
+  "revision": 1,
+  "productionReady": false,
+  "status": "PROPOSED-A-bindings-not-D1-or-v02-replacement",
+  "sourcePins": {
+    "canonicalImage": {
+      "path": "design/assistant/robot/higgsfield-concepts/selected-a-v01/outputs/02-front.png",
+      "sha256": "9b94d861e18d5c95f439847e30a81aa7a036110f0105585a8914126bfc9c8cc7",
+      "bytes": 4037510
+    },
+    "buildDecisions": {
+      "path": "design/assistant/robot/selected-a-build-decisions.md",
+      "sha256": "face0b2be9557a6f55d3a2106a7a2ebf5a0617b14701c5d3e7de9c9408e27a11",
+      "bytes": 3831
+    },
+    "visualReview": {
+      "path": "design/assistant/robot/review/selected-a-v01/review.md",
+      "sha256": "491c25cfc863e3e27a718b4e4971916fcfa01d6204aa9a615d0b7934e3ed5b77",
+      "bytes": 10156
+    },
+    "stateContract": {
+      "path": "design/assistant/robot/integration/state-contract.md",
+      "sha256": "e9c1916fd9a0529b6f3a11bdc7a1829b67c1e3b29ccdc5b58d6c05d970f9b26d",
+      "bytes": 21582
+    }
+  },
+  "approval": {
+    "directionASelected": true,
+    "boundedVisualBuildReview": "PASS",
+    "finalAssetAccepted": false,
+    "bindingFreezePending": true
+  },
+  "coordinates": {
+    "units": "metres",
+    "authorUp": "+Z",
+    "authorForward": "-Y",
+    "gltfUp": "+Y",
+    "gltfForward": "+Z",
+    "characterLeftBlender": "+X",
+    "blenderToGltf": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        -1,
+        0
+      ]
+    ],
+    "rootNeutral": {
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "rotationConversion": "C * R * inverse(C); do not swap Euler components",
+    "placement": {
+      "worldUnitsPerMetre": 2,
+      "applications": 1,
+      "addRoomFloorOffset": false,
+      "anchorWorld": null,
+      "rotationXyzw": null,
+      "facingFixedEye": "external placement assumption only"
+    }
+  },
+  "requiredMovingNodes": [
+    "APA_root",
+    "APA_head",
+    "APA_pupil_L",
+    "APA_lid_lower_L",
+    "APA_pupil_R",
+    "APA_lid_lower_R",
+    "APA_body",
+    "APA_mitten_L",
+    "APA_mitten_R",
+    "APA_tray"
+  ],
+  "bindings": [
+    {
+      "name": "APA_root",
+      "parent": null,
+      "moving": true,
+      "materialRoles": [],
+      "pivotDefinition": "centre of neutral head/body gap",
+      "neutralTranslationBlenderMetres": [0, 0, 0],
+      "neutralRotationXyzw": [0, 0, 0, 1],
+      "geometryOrigin": "Blender empty"
+    },
+    {
+      "name": "APA_head",
+      "parent": "APA_root",
+      "moving": true,
+      "materialRoles": [
+        "porcelain"
+      ],
+      "pivotDefinition": "centre of head volume",
+      "neutralTranslationBlenderMetres": null,
+      "neutralRotationXyzw": null,
+      "geometryOrigin": "Meshy shell, repaired"
+    },
+    {
+      "name": "APA_seam",
+      "parent": "APA_head",
+      "moving": false,
+      "materialRoles": [
+        "brass"
+      ],
+      "pivotDefinition": "fixed to head",
+      "neutralTranslationBlenderMetres": null,
+      "neutralRotationXyzw": null,
+      "geometryOrigin": "Blender coronal ring; plain back"
+    },
+    {
+      "name": "APA_face_rim",
+      "parent": "APA_head",
+      "moving": false,
+      "materialRoles": [
+        "brass"
+      ],
+      "pivotDefinition": "fixed to head",
+      "neutralTranslationBlenderMetres": null,
+      "neutralRotationXyzw": null,
+      "geometryOrigin": "Blender thin rim"
+    },
+    {
+      "name": "APA_face",
+      "parent": "APA_head",
+      "moving": false,
+      "materialRoles": [
+        "ink"
+      ],
+      "pivotDefinition": "fixed to head",
+      "neutralTranslationBlenderMetres": null,
+      "neutralRotationXyzw": null,
+      "geometryOrigin": "Blender opaque curved inset"
+    },
+    {
+      "name": "APA_eye_L",
+      "parent": "APA_head",
+      "moving": false,
+      "materialRoles": [
+        "eyeGlow"
+      ],
+      "pivotDefinition": "fixed eye centre",
+      "neutralTranslationBlenderMetres": null,
+      "neutralRotationXyzw": null,
+      "geometryOrigin": "Blender disc"
+    },
+    {
+      "name": "APA_pupil_L",
+      "parent": "APA_eye_L",
+      "moving": true,
+      "materialRoles": [
+        "ink"
+      ],
+      "pivotDefinition": "pupil centre, eye tangent translation",
+      "neutralTranslationBlenderMetres": null,
+      "neutralRotationXyzw": null,
+      "geometryOrigin": "Blender pupil"
+    },
+    {
+      "name": "APA_highlight_L",
+      "parent": "APA_pupil_L",
+      "moving": false,
+      "materialRoles": [
+        "highlight"
+      ],
+      "pivotDefinition": "fixed offset on pupil; inherits gaze",
+      "neutralTranslationBlenderMetres": null,
+      "neutralRotationXyzw": null,
+      "geometryOrigin": "Blender highlight"
+    },
+    {
+      "name": "APA_lid_lower_L",
+      "parent": "APA_head",
+      "moving": true,
+      "materialRoles": [
+        "ink"
+      ],
+      "pivotDefinition": "eye-local lower edge; precise travel pending",
+      "neutralTranslationBlenderMetres": null,
+      "neutralRotationXyzw": null,
+      "geometryOrigin": "Blender rounded lid"
+    },
+    {
+      "name": "APA_eye_R",
+      "parent": "APA_head",
+      "moving": false,
+      "materialRoles": [
+        "eyeGlow"
+      ],
+      "pivotDefinition": "fixed eye centre",
+      "neutralTranslationBlenderMetres": null,
+      "neutralRotationXyzw": null,
+      "geometryOrigin": "Blender disc"
+    },
+    {
+      "name": "APA_pupil_R",
+      "parent": "APA_eye_R",
+      "moving": true,
+      "materialRoles": [
+        "ink"
+      ],
+      "pivotDefinition": "pupil centre, eye tangent translation",
+      "neutralTranslationBlenderMetres": null,
+      "neutralRotationXyzw": null,
+      "geometryOrigin": "Blender pupil"
+    },
+    {
+      "name": "APA_highlight_R",
+      "parent": "APA_pupil_R",
+      "moving": false,
+      "materialRoles": [
+        "highlight"
+      ],
+      "pivotDefinition": "fixed offset on pupil; inherits gaze",
+      "neutralTranslationBlenderMetres": null,
+      "neutralRotationXyzw": null,
+      "geometryOrigin": "Blender highlight"
+    },
+    {
+      "name": "APA_lid_lower_R",
+      "parent": "APA_head",
+      "moving": true,
+      "materialRoles": [
+        "ink"
+      ],
+      "pivotDefinition": "eye-local lower edge; precise travel pending",
+      "neutralTranslationBlenderMetres": null,
+      "neutralRotationXyzw": null,
+      "geometryOrigin": "Blender rounded lid"
+    },
+    {
+      "name": "APA_bookmark_post",
+      "parent": "APA_head",
+      "moving": false,
+      "materialRoles": [
+        "brass"
+      ],
+      "pivotDefinition": "character-left crown",
+      "neutralTranslationBlenderMetres": null,
+      "neutralRotationXyzw": null,
+      "geometryOrigin": "Blender rigid outward-leaning post"
+    },
+    {
+      "name": "APA_bookmark_ribbon",
+      "parent": "APA_bookmark_post",
+      "moving": false,
+      "materialRoles": [
+        "redRibbon"
+      ],
+      "pivotDefinition": "fixed to post outer side",
+      "neutralTranslationBlenderMetres": null,
+      "neutralRotationXyzw": null,
+      "geometryOrigin": "Blender solid-thickness rigid notched ribbon"
+    },
+    {
+      "name": "APA_body",
+      "parent": "APA_root",
+      "moving": true,
+      "materialRoles": [
+        "porcelain"
+      ],
+      "pivotDefinition": "top of teardrop",
+      "neutralTranslationBlenderMetres": null,
+      "neutralRotationXyzw": null,
+      "geometryOrigin": "Meshy body, repaired"
+    },
+    {
+      "name": "APA_collar",
+      "parent": "APA_body",
+      "moving": false,
+      "materialRoles": [
+        "brass"
+      ],
+      "pivotDefinition": "fixed to body top",
+      "neutralTranslationBlenderMetres": null,
+      "neutralRotationXyzw": null,
+      "geometryOrigin": "Blender collar"
+    },
+    {
+      "name": "APA_body_cap",
+      "parent": "APA_body",
+      "moving": false,
+      "materialRoles": [
+        "brass"
+      ],
+      "pivotDefinition": "closed slightly domed body top",
+      "neutralTranslationBlenderMetres": null,
+      "neutralRotationXyzw": null,
+      "geometryOrigin": "Blender cap, no recess"
+    },
+    {
+      "name": "APA_mitten_L",
+      "parent": "APA_body",
+      "moving": true,
+      "materialRoles": [
+        "porcelain"
+      ],
+      "pivotDefinition": "inner upper end nearest body",
+      "neutralTranslationBlenderMetres": null,
+      "neutralRotationXyzw": null,
+      "geometryOrigin": "Meshy mitten, separated/repaired"
+    },
+    {
+      "name": "APA_mitten_R",
+      "parent": "APA_body",
+      "moving": true,
+      "materialRoles": [
+        "porcelain"
+      ],
+      "pivotDefinition": "inner upper end nearest body",
+      "neutralTranslationBlenderMetres": null,
+      "neutralRotationXyzw": null,
+      "geometryOrigin": "Meshy mitten, separated/repaired"
+    },
+    {
+      "name": "APA_tray",
+      "parent": "APA_root",
+      "moving": true,
+      "materialRoles": [
+        "brass"
+      ],
+      "pivotDefinition": "dish centre; level rest",
+      "neutralTranslationBlenderMetres": null,
+      "neutralRotationXyzw": null,
+      "geometryOrigin": "Blender shallow round dish"
+    },
+    {
+      "name": "APA_tray_glow",
+      "parent": "APA_tray",
+      "moving": false,
+      "materialRoles": [
+        "trayGlow"
+      ],
+      "pivotDefinition": "fixed inner tray surface",
+      "neutralTranslationBlenderMetres": null,
+      "neutralRotationXyzw": null,
+      "geometryOrigin": "Blender surface, no light or bloom geometry"
+    }
+  ],
+  "poseContract": {
+    "headAxesBlender": {
+      "pitch": "+X",
+      "yaw": "+Z",
+      "roll": "+Y"
+    },
+    "gazeBasisBlender": {
+      "horizontal": [
+        1,
+        0,
+        0
+      ],
+      "vertical": [
+        0,
+        0,
+        1
+      ],
+      "normalOffset": "authored to stay on curved face"
+    },
+    "gazeLimits": null,
+    "lidLimits": null,
+    "finitePoses": null,
+    "trayNeutralEulerXyzDegrees": [
+      0,
+      0,
+      0
+    ],
+    "trayPresentedTRS": null
+  },
+  "appearanceConstraints": {
+    "headWidthToHeightApprox": 1.1,
+    "headDepthToHeightApprox": 1,
+    "trayWidthToHeadWidthApprox": 0.9,
+    "restLowerLidOcclusionApprox": 0.2,
+    "ratiosAreAbsoluteDimensions": false,
+    "absoluteDimensionsMetres": null,
+    "bakedWindowReflections": false,
+    "bakedCraze": false,
+    "transparentDome": false,
+    "bodyCapClosed": true,
+    "ribbonRigid": true,
+    "restTrayEmpty": true
+  },
+  "materials": {
+    "roles": {
+      "porcelain": {
+        "binding": "MAT_APA_porcelain",
+        "scope": "head/body/mittens"
+      },
+      "brass": {
+        "binding": "MAT_APA_brass",
+        "scope": "seam/rim/post/collar/cap/tray"
+      },
+      "ink": {
+        "binding": "MAT_APA_ink",
+        "scope": "opaque face/lids/pupils"
+      },
+      "eyeGlow": {
+        "binding": "MAT_APA_eye_emit",
+        "scope": "eye discs only"
+      },
+      "highlight": {
+        "binding": "MAT_APA_highlight",
+        "scope": "one white fixed-relative dot per pupil"
+      },
+      "redRibbon": {
+        "binding": "MAT_APA_ribbon",
+        "scope": "rigid ribbon only"
+      },
+      "trayGlow": {
+        "binding": "MAT_APA_tray_emit",
+        "scope": "inner tray only; independent of eyes"
+      }
+    },
+    "finalPbrValues": null,
+    "exportedMaterialCount": null,
+    "exportedTextureCount": null,
+    "texturePolicy": "none-proposed; plain PBR/emission, no photographic texture or new light/postprocess"
+  },
+  "format": {
+    "glbVersion": 2,
+    "sceneCount": 1,
+    "rootCount": 1,
+    "externalUris": false,
+    "primitiveMode": 4,
+    "requiredAttributes": [
+      "POSITION",
+      "NORMAL"
+    ],
+    "animations": false,
+    "skins": false,
+    "morphs": false,
+    "cameras": false,
+    "lights": false,
+    "textures": false,
+    "alphaModes": [
+      "OPAQUE"
+    ],
+    "doubleSided": false,
+    "allowedExtensions": [
+      "KHR_materials_emissive_strength"
+    ],
+    "compressionDecoders": []
+  },
+  "runtime": {
+    "textGenerationEnabled": false,
+    "motion": "finite poses through existing single controller only",
+    "idleLoops": false,
+    "eyeGeometryOwner": "private-per-load-import-owner",
+    "eyeTransformsAndEmissionOwner": "robot-presentation-owner",
+    "highlightMotion": "inherits pupil transform; no independent wandering",
+    "marks": {
+      "baked": false,
+      "min": 0,
+      "max": 4,
+      "source": "same current validated snapshot as HTML",
+      "overflowPolicy": "protocol-error-clear-all-views",
+      "selection": "HTML-only runId + source/chunk key",
+      "pickable": false,
+      "clearOn": "new submission, terminal failure, cancel, close; next rendered frame",
+      "resourceOwner": "robot-presentation-owner"
+    },
+    "trayStates": {
+      "carried": "idle/attention/waiting; empty while retrieval pending",
+      "presented": "valid current 1-4 hits or valid abstained answer after zero-hit retrieval",
+      "glowMeaning": "presentation only; does not establish hits",
+      "glowValues": null
+    },
+    "reducedMotion": "snap newest settled pose; OFF starts no replay",
+    "suspension": "cancel frames; resume latest snapshot without replay",
+    "dispose": "deduplicate import resources once; keep runtime markers separately owned"
+  },
+  "rejectExportedSemanticKinds": [
+    "source cards/marks/text",
+    "demo clips",
+    "upper lids/brows",
+    "skeleton",
+    "glass face",
+    "baked room/world placement"
+  ],
+  "productionMeasurements": {
+    "rawGlbBytes": null,
+    "gzipBytes": null,
+    "brotliBytes": null,
+    "triangles": null,
+    "peakRenderedTriangles": null,
+    "peakDrawCalls": null,
+    "localBoundsMetres": null,
+    "fullSweptBoundsMetres": null,
+    "sourceBlendSha256": null,
+    "exportSha256": null
+  },
+  "allocation": {
+    "approved": false,
+    "glbEncodedBytes": null,
+    "assistantJsBytes": null,
+    "eyeAndMarkerResourcesBytes": null,
+    "peakCalls": null,
+    "peakRenderedTriangles": null,
+    "texturePixels": null
+  },
+  "inheritedRoomPolicy": {
+    "modify": false,
+    "note": "Existing room gates and animation-free profile remain unchanged; historical forecasts allocate nothing to A."
+  }
+}

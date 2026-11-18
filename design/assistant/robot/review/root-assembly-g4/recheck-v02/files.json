@@ -1,0 +1,46 @@
+{
+  "at": "2026-11-18T19:05:49.565Z",
+  "newEvidence": [
+    {
+      "path": "design/assistant/robot/review/root-assembly-g4/recheck-v02/checks.json",
+      "bytes": 1031,
+      "sha256": "090b43a0adc9886d0659d8e89f2bcb727db2f90318f63059c99c772c942e8d46"
+    },
+    {
+      "path": "design/assistant/robot/review/root-assembly-g4/recheck-v02/old-source-sensitivity.cjs",
+      "bytes": 1652,
+      "sha256": "50f6d359e5e210594fe99e0b4afaf317ed4202a7737a15895ac91ee619e77e9c"
+    },
+    {
+      "path": "design/assistant/robot/review/root-assembly-g4/recheck-v02/old-source-sensitivity.txt",
+      "bytes": 1887,
+      "sha256": "1a4cbd2853cf2dc6f7ab25f0d9f464cb7c296a8a68e56b6d5e73be7cce7065b6"
+    },
+    {
+      "path": "design/assistant/robot/review/root-assembly-g4/recheck-v02/review.md",
+      "bytes": 6332,
+      "sha256": "f47ddd9b436f1668262da8bcb520f7a9dcd995c83e96269e1e8586bf5dc143a3"
+    },
+    {
+      "path": "design/assistant/robot/review/root-assembly-g4/recheck-v02/scoped-lint.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "design/assistant/robot/review/root-assembly-g4/recheck-v02/source-after.json",
+      "bytes": 1693,
+      "sha256": "5b570e92f8e644b8bd773c992fa2658ad44cb7d4004454fa9fcd6174629bfdd4"
+    },
+    {
+      "path": "design/assistant/robot/review/root-assembly-g4/recheck-v02/source-before.json",
+      "bytes": 410,
+      "sha256": "dec61eecb8f708930e6a90c9121db4e5ed7ab36077eecf37ae8e547929e9ea6d"
+    },
+    {
+      "path": "design/assistant/robot/review/root-assembly-g4/recheck-v02/targeted-current.txt",
+      "bytes": 2067,
+      "sha256": "a3a10c7755cbae1ead1830e7655079c0572967f0c4f6f2a6a339520ec30e7702"
+    }
+  ],
+  "rootSourceAndTestUnchanged": true
+}

@@ -1,0 +1,12 @@
+{
+  "at": "2026-11-18T20:15:52.535Z",
+  "command": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "--test",
+    "--test-name-pattern=loading precedes|real Three raycasting|renderer density|desktop and mobile cameras|perspective 390px|first usable viewport|pose survives|mouse, pen and touch commit|mouse and pen claim|touch horizontal|G2 robot uses|G2 feedback",
+    "components/studio/scene/verify-controller.mjs"
+  ],
+  "status": 0,
+  "signal": null,
+  "log": "candidate-after.log"
+}

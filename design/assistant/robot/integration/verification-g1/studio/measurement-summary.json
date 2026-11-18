@@ -1,0 +1,276 @@
+{
+  "at": "2026-11-16T14:00:22.112Z",
+  "buildId": "O1RTOH0qRVqxRHQExjvm4",
+  "render": {
+    "initialFrames": [
+      {
+        "time": 804.9,
+        "requested": 812.1999999880791,
+        "started": 816.6999999880791,
+        "calls": 125,
+        "triangles": 98876,
+        "duration": 1876.3999999761581
+      }
+    ],
+    "sampledRawMaxCalls": 125,
+    "sampledRawMaxTriangles": 98876,
+    "captureCounterMaxCalls": 125,
+    "captureCounterMaxTriangles": 98876,
+    "renderSamples": 86,
+    "exhaustiveForcedRefresh": false,
+    "coldFirstCallbackDurationMs": 1876.3999999761581,
+    "coldLongTasks": [
+      {
+        "start": 259.89999997615814,
+        "duration": 72,
+        "name": "self",
+        "attribution": [
+          {
+            "name": "unknown",
+            "containerType": "window",
+            "containerSrc": ""
+          }
+        ]
+      },
+      {
+        "start": 472.5999999642372,
+        "duration": 56,
+        "name": "self",
+        "attribution": [
+          {
+            "name": "unknown",
+            "containerType": "window",
+            "containerSrc": ""
+          }
+        ]
+      },
+      {
+        "start": 534.8999999761581,
+        "duration": 66,
+        "name": "self",
+        "attribution": [
+          {
+            "name": "unknown",
+            "containerType": "window",
+            "containerSrc": ""
+          }
+        ]
+      },
+      {
+        "start": 690.3999999761581,
+        "duration": 121,
+        "name": "self",
+        "attribution": [
+          {
+            "name": "unknown",
+            "containerType": "window",
+            "containerSrc": ""
+          }
+        ]
+      },
+      {
+        "start": 812.3000000119209,
+        "duration": 1882,
+        "name": "self",
+        "attribution": [
+          {
+            "name": "unknown",
+            "containerType": "window",
+            "containerSrc": ""
+          }
+        ]
+      }
+    ]
+  },
+  "transfer": {
+    "resources": [
+      {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-e1ff4172c76c0361.js",
+        "initiator": "link",
+        "transferSize": 2191,
+        "encodedBodySize": 1891,
+        "decodedBodySize": 3644
+      },
+      {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+        "initiator": "script",
+        "transferSize": 54658,
+        "encodedBodySize": 54358,
+        "decodedBodySize": 173019
+      },
+      {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+        "initiator": "script",
+        "transferSize": 47007,
+        "encodedBodySize": 46707,
+        "decodedBodySize": 174133
+      },
+      {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+        "initiator": "script",
+        "transferSize": 857,
+        "encodedBodySize": 557,
+        "decodedBodySize": 557
+      },
+      {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+        "initiator": "script",
+        "transferSize": 3689,
+        "encodedBodySize": 3389,
+        "decodedBodySize": 8537
+      },
+      {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-154eaaedc7527911.js",
+        "initiator": "script",
+        "transferSize": 9032,
+        "encodedBodySize": 8732,
+        "decodedBodySize": 25137
+      },
+      {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+        "initiator": "script",
+        "transferSize": 84650,
+        "encodedBodySize": 84350,
+        "decodedBodySize": 357041
+      },
+      {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+        "initiator": "script",
+        "transferSize": 69627,
+        "encodedBodySize": 69327,
+        "decodedBodySize": 262501
+      },
+      {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+        "initiator": "script",
+        "transferSize": 14433,
+        "encodedBodySize": 14133,
+        "decodedBodySize": 47753
+      },
+      {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/703.9b57ff8b5aa079ef.js",
+        "initiator": "script",
+        "transferSize": 18273,
+        "encodedBodySize": 17973,
+        "decodedBodySize": 47208
+      },
+      {
+        "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+        "initiator": "fetch",
+        "transferSize": 392654,
+        "encodedBodySize": 392354,
+        "decodedBodySize": 585536
+      }
+    ],
+    "missing": [],
+    "encodedBodyBytes": 693771,
+    "wireBytes": 697071,
+    "complete": true,
+    "note": "Encoded body bytes measure delivered compression, wire bytes include headers. Embedded GLB textures counted once inside GLB; external textures must be listed. Zero sizes can mean cache or absent Timing-Allow-Origin, not free transfer. Root must supply full final scene dependency closure.",
+    "observedJs": 13,
+    "configuredJs": 10,
+    "unattributedObservedJs": [
+      "http://127.0.0.1:4193/_next/static/chunks/app/ask/page-25ae038d4bb8e8c4.js",
+      "http://127.0.0.1:4193/_next/static/chunks/app/work/page-6f291c0daaf44503.js",
+      "http://127.0.0.1:4193/_next/static/chunks/app/writing/page-6f291c0daaf44503.js"
+    ],
+    "configMissingFromCaptureClosure": [],
+    "jsEncodedBytes": 301417,
+    "glbEncodedBytes": 392354,
+    "includesHtmlCssFavicon": false,
+    "reconciliation": "transfer-reconciled.json",
+    "configurationClosureQualification": "Initial configured 10-JS-plus-GLB subset only; three additional route-prefetch chunks observed during Contact scroll, fully listed with measured sizes in reconciliation.",
+    "allObservedJsPlusGlbEncodedBytes": 703643
+  },
+  "timing": {
+    "elapsedMs": 10524.800000011921,
+    "requestedRafP95Ms": 9.899999976158142,
+    "callbackDurationP95Ms": 33,
+    "longTasksOver100Ms": 0,
+    "gpuTime": null
+  },
+  "idle": {
+    "before": "1",
+    "after": "1",
+    "pass": true
+  },
+  "offscreen": {
+    "coverage": "blocked: Contact scroll did not hide canvas",
+    "before": "1",
+    "afterResize": "3",
+    "afterReturn": "3",
+    "pass": null
+  },
+  "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A60) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "dpr": [
+    {
+      "width": 390,
+      "devicePixelRatio": 3,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-14",
+        "studioPitch": "-6",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1.5",
+        "studioRenderCount": "92",
+        "studioDrawCalls": "53",
+        "studioTriangles": "41240",
+        "studioGeometries": "17",
+        "studioTextures": "12"
+      },
+      "pixels": {
+        "width": 585,
+        "height": 1266
+      }
+    },
+    {
+      "width": 320,
+      "devicePixelRatio": 3,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-14",
+        "studioPitch": "-6",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1.5",
+        "studioRenderCount": "94",
+        "studioDrawCalls": "52",
+        "studioTriangles": "41180",
+        "studioGeometries": "17",
+        "studioTextures": "12"
+      },
+      "pixels": {
+        "width": 480,
+        "height": 1266
+      }
+    },
+    {
+      "width": 1440,
+      "devicePixelRatio": 3,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-14",
+        "studioPitch": "-6",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "58",
+        "studioDpr": "2",
+        "studioRenderCount": "96",
+        "studioDrawCalls": "71",
+        "studioTriangles": "49568",
+        "studioGeometries": "17",
+        "studioTextures": "12"
+      },
+      "pixels": {
+        "width": 2880,
+        "height": 1800
+      }
+    }
+  ],
+  "limits": "Ten seconds of trusted v2 look buttons and real viewport resizing. Inter-render intervals include automation/input gaps and are not an FPS gate; use request-to-start latency for requested-RAF target. Initial raw draw totals retain shadow passes and must not be replaced by renderer.info settled main-pass counters. Browser CPU callback spans and long-task attribution are not GPU timer queries. DPR=3 is deliberately capped by application; physical mobile is not tested. CDP freeze/resume does not by itself establish hidden-document visibility events.",
+  "robotAllowance": null,
+  "timestamp": "2026-11-16T14:01:31.242Z"
+}

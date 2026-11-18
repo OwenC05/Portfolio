@@ -1,0 +1,142 @@
+TAP version 13
+# Subtest: G4: one actual request owner supplies the identical current snapshot to HTML and scene
+ok 1 - G4: one actual request owner supplies the identical current snapshot to HTML and scene
+  ---
+  duration_ms: 509.0608
+  type: 'test'
+  ...
+# Subtest: G4: ordinary close aborts and clears before commit, retains draft and rejects queued close after reopening
+ok 2 - G4: ordinary close aborts and clears before commit, retains draft and rejects queued close after reopening
+  ---
+  duration_ms: 202.6507
+  type: 'test'
+  ...
+# Subtest: G4: assistant-to-project takeover clears once, retains the dialog and focuses only the destination
+ok 3 - G4: assistant-to-project takeover clears once, retains the dialog and focuses only the destination
+  ---
+  duration_ms: 177.8581
+  type: 'test'
+  ...
+# Subtest: G4: project activation wins both orders in the same uncommitted batch
+ok 4 - G4: project activation wins both orders in the same uncommitted batch
+  ---
+  duration_ms: 274.8449
+  type: 'test'
+  ...
+# Subtest: G4: project Back/reopen arbitration and Forward use the actual navigation helper
+ok 5 - G4: project Back/reopen arbitration and Forward use the actual navigation helper
+  ---
+  duration_ms: 124.1581
+  type: 'test'
+  ...
+# Subtest: G4: route links clear before native navigation while modifiers and new-tab links stay native
+ok 6 - G4: route links clear before native navigation while modifiers and new-tab links stay native
+  ---
+  duration_ms: 159.2612
+  type: 'test'
+  ...
+# Subtest: G4: history navigation clears Ask and unlocks before the commit without Ask return
+ok 7 - G4: history navigation clears Ask and unlocks before the commit without Ask return
+  ---
+  duration_ms: 106.8147
+  type: 'test'
+  ...
+# Subtest: G4: failed scene leaves Ask and the single root owner available; successful scene stays mounted under modals
+ok 8 - G4: failed scene leaves Ask and the single root owner available; successful scene stays mounted under modals
+  ---
+  duration_ms: 92.9423
+  type: 'test'
+  ...
+# Subtest: G4: missing native dialog enhancement keeps SSR and routes character fallback to ask
+ok 9 - G4: missing native dialog enhancement keeps SSR and routes character fallback to ask
+  ---
+  duration_ms: 87.7627
+  type: 'test'
+  ...
+# Subtest: G4: showModal failure clears and falls back for Ask; projects retain the SSR article destination
+ok 10 - G4: showModal failure clears and falls back for Ask; projects retain the SSR article destination
+  ---
+  duration_ms: 161.4682
+  type: 'test'
+  ...
+# Subtest: G4: setup-cleanup-setup creates one live owner and one listener set, then unmount aborts and unlocks
+ok 11 - G4: setup-cleanup-setup creates one live owner and one listener set, then unmount aborts and unlocks
+  ---
+  duration_ms: 68.013
+  type: 'test'
+  ...
+# Subtest: G4: native cancel and unexpected current close clear Ask while old close notifications cannot close an open project
+ok 12 - G4: native cancel and unexpected current close clear Ask while old close notifications cannot close an open project
+  ---
+  duration_ms: 76.1891
+  type: 'test'
+  ...
+# Subtest: G4: project modality suppresses a previously qualified robot attention hint
+not ok 13 - G4: project modality suppresses a previously qualified robot attention hint
+  ---
+  duration_ms: 75.5268
+  type: 'test'
+  location: 'C:\\Users\\Owenc\\orca\\Portfolio-assistant\\tests\\assistant\\studio-experience.test.cjs:857:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    true !== false
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: false
+  actual: true
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (C:\Users\Owenc\orca\Portfolio-assistant\tests\assistant\studio-experience.test.cjs:865:10)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: G4: source navigation must not restore Ask through the native dialog close algorithm
+not ok 14 - G4: source navigation must not restore Ask through the native dialog close algorithm
+  ---
+  duration_ms: 108.6193
+  type: 'test'
+  location: 'C:\\Users\\Owenc\\orca\\Portfolio-assistant\\tests\\assistant\\studio-experience.test.cjs:868:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    true !== false
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: false
+  actual: true
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (C:\Users\Owenc\orca\Portfolio-assistant\tests\assistant\studio-experience.test.cjs:882:10)
+    async Test.run (node:internal/test_runner/test:1409:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: G4: fresh project deep links close by replacement and project switches retain one owned history entry
+ok 15 - G4: fresh project deep links close by replacement and project switches retain one owned history entry
+  ---
+  duration_ms: 141.3562
+  type: 'test'
+  ...
+# Subtest: G4: native focus-restoration model permits ordinary Ask return and keeps project takeover open
+ok 16 - G4: native focus-restoration model permits ordinary Ask return and keeps project takeover open
+  ---
+  duration_ms: 74.8516
+  type: 'test'
+  ...
+1..16
+# tests 16
+# suites 0
+# pass 14
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2834.6712

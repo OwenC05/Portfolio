@@ -1,0 +1,208 @@
+{
+  "buildId": "KEhdfJ0NJBO2q0ASaHcHN",
+  "sourcePinsVerified": 83,
+  "captures": [
+    {
+      "file": "native-dpr2-neutral.png",
+      "before": {
+        "at": 13614.5,
+        "nativeDpr": 2,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "hidden": false,
+        "focused": true,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1.5",
+          "studioRenderCount": "194",
+          "studioDrawCalls": "94",
+          "studioTriangles": "94512",
+          "studioGeometries": "38",
+          "studioTextures": "12",
+          "assistantRunId": "",
+          "assistantRevision": "0",
+          "assistantCardCount": "0"
+        },
+        "buffer": {
+          "width": 2160,
+          "height": 1350
+        },
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "top": 0,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "dialogOpen": false,
+        "active": {
+          "tag": "BODY",
+          "id": ""
+        },
+        "bodyText": true
+      },
+      "after": {
+        "at": 14571.800000011921,
+        "nativeDpr": 2,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "hidden": false,
+        "focused": true,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1.5",
+          "studioRenderCount": "194",
+          "studioDrawCalls": "94",
+          "studioTriangles": "94512",
+          "studioGeometries": "38",
+          "studioTextures": "12",
+          "assistantRunId": "",
+          "assistantRevision": "0",
+          "assistantCardCount": "0"
+        },
+        "buffer": {
+          "width": 2160,
+          "height": 1350
+        },
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "top": 0,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "dialogOpen": false,
+        "active": {
+          "tag": "BODY",
+          "id": ""
+        },
+        "bodyText": true
+      },
+      "sha256": "71005badb402115218ccf38a81852dfc3210876928a7ddcd8ce19926541790e1"
+    },
+    {
+      "file": "native-dpr2-four-sources.png",
+      "before": {
+        "at": 16293.900000035763,
+        "nativeDpr": 2,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "hidden": false,
+        "focused": true,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1.5",
+          "studioRenderCount": "218",
+          "studioDrawCalls": "98",
+          "studioTriangles": "94816",
+          "studioGeometries": "40",
+          "studioTextures": "12",
+          "assistantRunId": "0fc6a5c4-cdd5-480a-8a51-4e919ec567d2:1",
+          "assistantRevision": "6",
+          "assistantCardCount": "4"
+        },
+        "buffer": {
+          "width": 2160,
+          "height": 1350
+        },
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "top": 0,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "dialogOpen": true,
+        "active": {
+          "tag": "TEXTAREA",
+          "id": "_r_0_-question"
+        },
+        "bodyText": true
+      },
+      "after": {
+        "at": 16949.69999998808,
+        "nativeDpr": 2,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "hidden": false,
+        "focused": true,
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1.5",
+          "studioRenderCount": "218",
+          "studioDrawCalls": "98",
+          "studioTriangles": "94816",
+          "studioGeometries": "40",
+          "studioTextures": "12",
+          "assistantRunId": "0fc6a5c4-cdd5-480a-8a51-4e919ec567d2:1",
+          "assistantRevision": "6",
+          "assistantCardCount": "4"
+        },
+        "buffer": {
+          "width": 2160,
+          "height": 1350
+        },
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 900,
+          "top": 0,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "dialogOpen": true,
+        "active": {
+          "tag": "TEXTAREA",
+          "id": "_r_0_-question"
+        },
+        "bodyText": true
+      },
+      "sha256": "469df3963c38ada14bc56d6fafb5c25f3d3b1ecef4f69fdc211ba2b023dbcbf5"
+    }
+  ],
+  "browser": "157.0.8103.79",
+  "limits": [
+    "CPU request delay and callback spans, not GPU FPS.",
+    "Two desktop windows and one small window, shared host; earlier adverse evidence remains.",
+    "Isolated browser tool because ordinary tool reported existing profile busy; same Chromium157, graphics identity recorded."
+  ]
+}

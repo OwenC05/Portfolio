@@ -1,0 +1,1690 @@
+{
+  "config": {
+    "baseURL": "http://127.0.0.1:4193",
+    "previewMode": "production",
+    "sceneJS": [
+      "http://127.0.0.1:4193/_next/static/chunks/webpack-e1ff4172c76c0361.js",
+      "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+      "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+      "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+      "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-154eaaedc7527911.js",
+      "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+      "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+      "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+      "http://127.0.0.1:4193/_next/static/chunks/703.9b57ff8b5aa079ef.js"
+    ],
+    "glbs": [
+      "/studio/pilot-right-limit-v03.glb"
+    ],
+    "textures": [],
+    "hashes": {
+      "build": "O1RTOH0qRVqxRHQExjvm4",
+      "source": "0f1baa67effb3106ac9abd13076507d0006c039be485fb6c934469fe16e947c3",
+      "assets": {
+        "/studio/pilot-right-limit-v03.glb": "2b9a4182c3024485680c1e066c8a22ef0dc0f541acca4bd958486bced2c4063e"
+      }
+    },
+    "artifactDir": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio"
+  },
+  "errors": [],
+  "transferEvidence": {
+    "resources": [
+      {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-e1ff4172c76c0361.js",
+        "initiator": "link",
+        "transferSize": 2191,
+        "encodedBodySize": 1891,
+        "decodedBodySize": 3644
+      },
+      {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+        "initiator": "script",
+        "transferSize": 54658,
+        "encodedBodySize": 54358,
+        "decodedBodySize": 173019
+      },
+      {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+        "initiator": "script",
+        "transferSize": 47007,
+        "encodedBodySize": 46707,
+        "decodedBodySize": 174133
+      },
+      {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+        "initiator": "script",
+        "transferSize": 857,
+        "encodedBodySize": 557,
+        "decodedBodySize": 557
+      },
+      {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+        "initiator": "script",
+        "transferSize": 3689,
+        "encodedBodySize": 3389,
+        "decodedBodySize": 8537
+      },
+      {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-154eaaedc7527911.js",
+        "initiator": "script",
+        "transferSize": 9032,
+        "encodedBodySize": 8732,
+        "decodedBodySize": 25137
+      },
+      {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+        "initiator": "script",
+        "transferSize": 84650,
+        "encodedBodySize": 84350,
+        "decodedBodySize": 357041
+      },
+      {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+        "initiator": "script",
+        "transferSize": 69627,
+        "encodedBodySize": 69327,
+        "decodedBodySize": 262501
+      },
+      {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+        "initiator": "script",
+        "transferSize": 14433,
+        "encodedBodySize": 14133,
+        "decodedBodySize": 47753
+      },
+      {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/703.9b57ff8b5aa079ef.js",
+        "initiator": "script",
+        "transferSize": 18273,
+        "encodedBodySize": 17973,
+        "decodedBodySize": 47208
+      },
+      {
+        "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+        "initiator": "fetch",
+        "transferSize": 392654,
+        "encodedBodySize": 392354,
+        "decodedBodySize": 585536
+      }
+    ],
+    "missing": [],
+    "encodedBodyBytes": 693771,
+    "wireBytes": 697071,
+    "complete": true,
+    "note": "Encoded body bytes measure delivered compression, wire bytes include headers. Embedded GLB textures counted once inside GLB; external textures must be listed. Zero sizes can mean cache or absent Timing-Allow-Origin, not free transfer. Root must supply full final scene dependency closure."
+  },
+  "initial": {
+    "frames": [
+      {
+        "time": 804.9,
+        "requested": 812.1999999880791,
+        "started": 816.6999999880791,
+        "calls": 125,
+        "triangles": 98876,
+        "duration": 1876.3999999761581
+      }
+    ],
+    "canvas": {
+      "engine": "three.js r187",
+      "studioInteractionEnabled": "true",
+      "studioYaw": "-4",
+      "studioPitch": "-6",
+      "studioEye": "-0.7,2.8,3.4",
+      "studioFov": "58",
+      "studioDpr": "2",
+      "studioRenderCount": "1",
+      "studioDrawCalls": "125",
+      "studioTriangles": "98876",
+      "studioGeometries": "17",
+      "studioTextures": "12"
+    },
+    "buffer": {
+      "width": 2880,
+      "height": 1800
+    },
+    "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A60) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "vendor": "Google Inc. (Intel)",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+    "hardwareConcurrency": 16,
+    "longtasks": [
+      {
+        "start": 259.89999997615814,
+        "duration": 72,
+        "name": "self",
+        "attribution": [
+          {
+            "name": "unknown",
+            "containerType": "window",
+            "containerSrc": ""
+          }
+        ]
+      },
+      {
+        "start": 472.5999999642372,
+        "duration": 56,
+        "name": "self",
+        "attribution": [
+          {
+            "name": "unknown",
+            "containerType": "window",
+            "containerSrc": ""
+          }
+        ]
+      },
+      {
+        "start": 534.8999999761581,
+        "duration": 66,
+        "name": "self",
+        "attribution": [
+          {
+            "name": "unknown",
+            "containerType": "window",
+            "containerSrc": ""
+          }
+        ]
+      },
+      {
+        "start": 690.3999999761581,
+        "duration": 121,
+        "name": "self",
+        "attribution": [
+          {
+            "name": "unknown",
+            "containerType": "window",
+            "containerSrc": ""
+          }
+        ]
+      },
+      {
+        "start": 812.3000000119209,
+        "duration": 1882,
+        "name": "self",
+        "attribution": [
+          {
+            "name": "unknown",
+            "containerType": "window",
+            "containerSrc": ""
+          }
+        ]
+      }
+    ]
+  },
+  "idle": {
+    "before": "1",
+    "after": "1",
+    "pass": true
+  },
+  "offscreen": {
+    "coverage": "blocked: Contact scroll did not hide canvas",
+    "before": "1",
+    "afterResize": "3",
+    "afterReturn": "3",
+    "pass": null
+  },
+  "lifecycle": {
+    "hidden": false,
+    "state": "visible",
+    "renderCount": "3"
+  },
+  "dpr": [
+    {
+      "width": 390,
+      "devicePixelRatio": 3,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-14",
+        "studioPitch": "-6",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1.5",
+        "studioRenderCount": "92",
+        "studioDrawCalls": "53",
+        "studioTriangles": "41240",
+        "studioGeometries": "17",
+        "studioTextures": "12"
+      },
+      "pixels": {
+        "width": 585,
+        "height": 1266
+      }
+    },
+    {
+      "width": 320,
+      "devicePixelRatio": 3,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-14",
+        "studioPitch": "-6",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "64",
+        "studioDpr": "1.5",
+        "studioRenderCount": "94",
+        "studioDrawCalls": "52",
+        "studioTriangles": "41180",
+        "studioGeometries": "17",
+        "studioTextures": "12"
+      },
+      "pixels": {
+        "width": 480,
+        "height": 1266
+      }
+    },
+    {
+      "width": 1440,
+      "devicePixelRatio": 3,
+      "canvas": {
+        "engine": "three.js r187",
+        "studioInteractionEnabled": "true",
+        "studioYaw": "-14",
+        "studioPitch": "-6",
+        "studioEye": "-0.7,2.8,3.4",
+        "studioFov": "58",
+        "studioDpr": "2",
+        "studioRenderCount": "96",
+        "studioDrawCalls": "71",
+        "studioTriangles": "49568",
+        "studioGeometries": "17",
+        "studioTextures": "12"
+      },
+      "pixels": {
+        "width": 2880,
+        "height": 1800
+      }
+    }
+  ],
+  "sample": {
+    "elapsed": 10524.800000011921,
+    "frames": [
+      {
+        "time": 5987.498,
+        "requested": 6013.800000011921,
+        "started": 6014.699999988079,
+        "calls": 71,
+        "triangles": 49568,
+        "duration": 4.300000011920929
+      },
+      {
+        "time": 6154.1,
+        "requested": 6163.800000011921,
+        "started": 6164.399999976158,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 5.699999988079071
+      },
+      {
+        "time": 6354.096,
+        "requested": 6365.5,
+        "started": 6367.5,
+        "calls": 71,
+        "triangles": 49568,
+        "duration": 10.199999988079071
+      },
+      {
+        "time": 6487.6,
+        "requested": 6495.599999964237,
+        "started": 6500.399999976158,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 7.800000011920929
+      },
+      {
+        "time": 6687.696,
+        "requested": 6703.399999976158,
+        "started": 6703.899999976158,
+        "calls": 71,
+        "triangles": 49568,
+        "duration": 3.699999988079071
+      },
+      {
+        "time": 6820.798,
+        "requested": 6828.5,
+        "started": 6829,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 2.800000011920929
+      },
+      {
+        "time": 6937.766,
+        "requested": 6952.099999964237,
+        "started": 6952.5,
+        "calls": 71,
+        "triangles": 49568,
+        "duration": 4.699999988079071
+      },
+      {
+        "time": 7137.298,
+        "requested": 7152.599999964237,
+        "started": 7153.099999964237,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 3.200000047683716
+      },
+      {
+        "time": 7320.6,
+        "requested": 7325.699999988079,
+        "started": 7326.199999988079,
+        "calls": 71,
+        "triangles": 49568,
+        "duration": 2.699999988079071
+      },
+      {
+        "time": 7420.5,
+        "requested": 7410,
+        "started": 7420.899999976158,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 7.400000035762787
+      },
+      {
+        "time": 7470.666,
+        "requested": 7479.5,
+        "started": 7480.899999976158,
+        "calls": 71,
+        "triangles": 49568,
+        "duration": 7.900000035762787
+      },
+      {
+        "time": 7520.8,
+        "requested": 7526.599999964237,
+        "started": 7526.800000011921,
+        "calls": 70,
+        "triangles": 49544,
+        "duration": 40.69999998807907
+      },
+      {
+        "time": 7554.3,
+        "requested": 7568.699999988079,
+        "started": 7570.800000011921,
+        "calls": 70,
+        "triangles": 49544,
+        "duration": 2.199999988079071
+      },
+      {
+        "time": 7654.2,
+        "requested": 7665,
+        "started": 7665.399999976158,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 3
+      },
+      {
+        "time": 7770.732,
+        "requested": 7782.5,
+        "started": 7783.300000011921,
+        "calls": 70,
+        "triangles": 49544,
+        "duration": 3.599999964237213
+      },
+      {
+        "time": 7837.266,
+        "requested": 7843.800000011921,
+        "started": 7844.300000011921,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 2.799999952316284
+      },
+      {
+        "time": 7903.966,
+        "requested": 7907.599999964237,
+        "started": 7908.399999976158,
+        "calls": 70,
+        "triangles": 49544,
+        "duration": 6.5
+      },
+      {
+        "time": 7987.3,
+        "requested": 7999.399999976158,
+        "started": 8000.099999964237,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 4.600000023841858
+      },
+      {
+        "time": 8054,
+        "requested": 8057.300000011921,
+        "started": 8058.699999988079,
+        "calls": 70,
+        "triangles": 49544,
+        "duration": 7.600000023841858
+      },
+      {
+        "time": 8137.1,
+        "requested": 8136.899999976158,
+        "started": 8137.5,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 3.199999988079071
+      },
+      {
+        "time": 8253.8,
+        "requested": 8245.800000011921,
+        "started": 8254.199999988079,
+        "calls": 70,
+        "triangles": 49544,
+        "duration": 4.399999976158142
+      },
+      {
+        "time": 8337.3,
+        "requested": 8335.399999976158,
+        "started": 8338,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 4.899999976158142
+      },
+      {
+        "time": 8587.1,
+        "requested": 8591.300000011921,
+        "started": 8591.699999988079,
+        "calls": 70,
+        "triangles": 49544,
+        "duration": 5
+      },
+      {
+        "time": 8737.4,
+        "requested": 8748.199999988079,
+        "started": 8748.300000011921,
+        "calls": 71,
+        "triangles": 49568,
+        "duration": 33
+      },
+      {
+        "time": 8770.7,
+        "requested": 8782,
+        "started": 8783.899999976158,
+        "calls": 71,
+        "triangles": 49568,
+        "duration": 2.600000023841858
+      },
+      {
+        "time": 8920.7,
+        "requested": 8938.300000011921,
+        "started": 8938.699999988079,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 2.800000011920929
+      },
+      {
+        "time": 9153.664,
+        "requested": 9161.899999976158,
+        "started": 9162.300000011921,
+        "calls": 71,
+        "triangles": 49568,
+        "duration": 2.5
+      },
+      {
+        "time": 9303.7,
+        "requested": 9298.800000011921,
+        "started": 9304.199999988079,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 3.100000023841858
+      },
+      {
+        "time": 9470.3,
+        "requested": 9482.300000011921,
+        "started": 9482.800000011921,
+        "calls": 71,
+        "triangles": 49568,
+        "duration": 2
+      },
+      {
+        "time": 9686.964,
+        "requested": 9698.099999964237,
+        "started": 9698.599999964237,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 2.400000035762787
+      },
+      {
+        "time": 9820.266,
+        "requested": 9835.399999976158,
+        "started": 9835.800000011921,
+        "calls": 71,
+        "triangles": 49568,
+        "duration": 2.199999988079071
+      },
+      {
+        "time": 9953.6,
+        "requested": 9958,
+        "started": 9958.599999964237,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 3
+      },
+      {
+        "time": 10104.966,
+        "requested": 10113.399999976158,
+        "started": 10113.899999976158,
+        "calls": 71,
+        "triangles": 49568,
+        "duration": 2.100000023841858
+      },
+      {
+        "time": 10203.6,
+        "requested": 10212.699999988079,
+        "started": 10213,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 2
+      },
+      {
+        "time": 10270.8,
+        "requested": 10269.599999964237,
+        "started": 10272.300000011921,
+        "calls": 71,
+        "triangles": 49568,
+        "duration": 5.099999964237213
+      },
+      {
+        "time": 10320.2,
+        "requested": 10326.099999964237,
+        "started": 10326.399999976158,
+        "calls": 70,
+        "triangles": 49544,
+        "duration": 26.5
+      },
+      {
+        "time": 10353.532,
+        "requested": 10354,
+        "started": 10355.399999976158,
+        "calls": 70,
+        "triangles": 49544,
+        "duration": 2.800000011920929
+      },
+      {
+        "time": 10637,
+        "requested": 10627.800000011921,
+        "started": 10637.699999988079,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 70.69999998807907
+      },
+      {
+        "time": 10953.5,
+        "requested": 10967.5,
+        "started": 10968,
+        "calls": 70,
+        "triangles": 49544,
+        "duration": 2.5
+      },
+      {
+        "time": 11136.7,
+        "requested": 11126.399999976158,
+        "started": 11137.300000011921,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 3.5
+      },
+      {
+        "time": 11220.166,
+        "requested": 11238.599999964237,
+        "started": 11239,
+        "calls": 70,
+        "triangles": 49544,
+        "duration": 2.399999976158142
+      },
+      {
+        "time": 11386.7,
+        "requested": 11378.5,
+        "started": 11387.199999988079,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 3.199999988079071
+      },
+      {
+        "time": 11470,
+        "requested": 11468.899999976158,
+        "started": 11470.800000011921,
+        "calls": 70,
+        "triangles": 49544,
+        "duration": 2.5
+      },
+      {
+        "time": 11553.566,
+        "requested": 11563.699999988079,
+        "started": 11564.199999988079,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 1.899999976158142
+      },
+      {
+        "time": 11653.3,
+        "requested": 11656.599999964237,
+        "started": 11657,
+        "calls": 70,
+        "triangles": 49544,
+        "duration": 4.199999988079071
+      },
+      {
+        "time": 11903.596,
+        "requested": 11906.599999964237,
+        "started": 11908.300000011921,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 5.399999976158142
+      },
+      {
+        "time": 12153.3,
+        "requested": 12170.199999988079,
+        "started": 12171,
+        "calls": 70,
+        "triangles": 49544,
+        "duration": 2.5
+      },
+      {
+        "time": 12236.7,
+        "requested": 12239.300000011921,
+        "started": 12239.5,
+        "calls": 71,
+        "triangles": 49568,
+        "duration": 54.80000001192093
+      },
+      {
+        "time": 12287,
+        "requested": 12295.099999964237,
+        "started": 12298.800000011921,
+        "calls": 71,
+        "triangles": 49568,
+        "duration": 2.199999988079071
+      },
+      {
+        "time": 12453.2,
+        "requested": 12444.699999988079,
+        "started": 12453.599999964237,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 3
+      },
+      {
+        "time": 12553.4,
+        "requested": 12554,
+        "started": 12556.099999964237,
+        "calls": 71,
+        "triangles": 49568,
+        "duration": 4.800000011920929
+      },
+      {
+        "time": 12686.7,
+        "requested": 12692.899999976158,
+        "started": 12693.599999964237,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 2.400000035762787
+      },
+      {
+        "time": 12786.8,
+        "requested": 12817,
+        "started": 12818.800000011921,
+        "calls": 71,
+        "triangles": 49568,
+        "duration": 4.399999976158142
+      },
+      {
+        "time": 12870,
+        "requested": 12890.5,
+        "started": 12891,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 2.599999964237213
+      },
+      {
+        "time": 12936.7,
+        "requested": 12947.300000011921,
+        "started": 12947.800000011921,
+        "calls": 71,
+        "triangles": 49568,
+        "duration": 2.699999988079071
+      },
+      {
+        "time": 12986.7,
+        "requested": 12997.800000011921,
+        "started": 12998.199999988079,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 4.300000011920929
+      },
+      {
+        "time": 13086.5,
+        "requested": 13088.699999988079,
+        "started": 13089.300000011921,
+        "calls": 71,
+        "triangles": 49568,
+        "duration": 2.799999952316284
+      },
+      {
+        "time": 13169.866,
+        "requested": 13173.800000011921,
+        "started": 13174.399999976158,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 2.300000011920929
+      },
+      {
+        "time": 13253.1,
+        "requested": 13248.199999988079,
+        "started": 13253.399999976158,
+        "calls": 71,
+        "triangles": 49568,
+        "duration": 2.300000011920929
+      },
+      {
+        "time": 13320,
+        "requested": 13324.5,
+        "started": 13324.699999988079,
+        "calls": 70,
+        "triangles": 49544,
+        "duration": 8
+      },
+      {
+        "time": 13336.4,
+        "requested": 13333.399999976158,
+        "started": 13337.800000011921,
+        "calls": 70,
+        "triangles": 49544,
+        "duration": 2.799999952316284
+      },
+      {
+        "time": 13586.5,
+        "requested": 13359.399999976158,
+        "started": 13597.899999976158,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 2.300000011920929
+      },
+      {
+        "time": 13703.2,
+        "requested": 13703.199999988079,
+        "started": 13704.399999976158,
+        "calls": 70,
+        "triangles": 49544,
+        "duration": 2.900000035762787
+      },
+      {
+        "time": 13803.1,
+        "requested": 13805.899999976158,
+        "started": 13806.599999964237,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 2.400000035762787
+      },
+      {
+        "time": 13936.4,
+        "requested": 13930.099999964237,
+        "started": 13936.699999988079,
+        "calls": 70,
+        "triangles": 49544,
+        "duration": 3.100000023841858
+      },
+      {
+        "time": 14203.16,
+        "requested": 14208.800000011921,
+        "started": 14210.199999988079,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 4.5
+      },
+      {
+        "time": 14353.066,
+        "requested": 14356.300000011921,
+        "started": 14356.800000011921,
+        "calls": 70,
+        "triangles": 49544,
+        "duration": 2.699999988079071
+      },
+      {
+        "time": 14452.9,
+        "requested": 14442.300000011921,
+        "started": 14453.5,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 3.599999964237213
+      },
+      {
+        "time": 14536.3,
+        "requested": 14541.699999988079,
+        "started": 14542.099999964237,
+        "calls": 70,
+        "triangles": 49544,
+        "duration": 1.9000000357627869
+      },
+      {
+        "time": 14636.3,
+        "requested": 14633.699999988079,
+        "started": 14636.899999976158,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 2.199999988079071
+      },
+      {
+        "time": 14752.9,
+        "requested": 14752.899999976158,
+        "started": 14753.5,
+        "calls": 70,
+        "triangles": 49544,
+        "duration": 3.099999964237213
+      },
+      {
+        "time": 14803,
+        "requested": 14808,
+        "started": 14808.099999964237,
+        "calls": 71,
+        "triangles": 49568,
+        "duration": 37.10000002384186
+      },
+      {
+        "time": 14836.4,
+        "requested": 14845.899999976158,
+        "started": 14847.399999976158,
+        "calls": 71,
+        "triangles": 49568,
+        "duration": 2.600000023841858
+      },
+      {
+        "time": 15019.7,
+        "requested": 15026.099999964237,
+        "started": 15027,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 4.300000011920929
+      },
+      {
+        "time": 15186.166,
+        "requested": 15205.099999964237,
+        "started": 15205.399999976158,
+        "calls": 71,
+        "triangles": 49568,
+        "duration": 2.800000011920929
+      },
+      {
+        "time": 15286.466,
+        "requested": 15293,
+        "started": 15293.5,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 2.300000011920929
+      },
+      {
+        "time": 15386.2,
+        "requested": 15385.099999964237,
+        "started": 15386.5,
+        "calls": 71,
+        "triangles": 49568,
+        "duration": 2.800000011920929
+      },
+      {
+        "time": 15553.1,
+        "requested": 15562.5,
+        "started": 15563.399999976158,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 4.300000011920929
+      },
+      {
+        "time": 15669.6,
+        "requested": 15687.800000011921,
+        "started": 15690.599999964237,
+        "calls": 71,
+        "triangles": 49568,
+        "duration": 9
+      },
+      {
+        "time": 15752.8,
+        "requested": 15754.800000011921,
+        "started": 15755.399999976158,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 2.699999988079071
+      },
+      {
+        "time": 15836.1,
+        "requested": 15830.300000011921,
+        "started": 15837.099999964237,
+        "calls": 71,
+        "triangles": 49568,
+        "duration": 9.600000023841858
+      },
+      {
+        "time": 16052.9,
+        "requested": 16064.199999988079,
+        "started": 16064.599999964237,
+        "calls": 69,
+        "triangles": 45932,
+        "duration": 2.600000023841858
+      },
+      {
+        "time": 16119.4,
+        "requested": 16117.199999988079,
+        "started": 16120.699999988079,
+        "calls": 71,
+        "triangles": 49568,
+        "duration": 4
+      },
+      {
+        "time": 16152.8,
+        "requested": 16155,
+        "started": 16155,
+        "calls": 70,
+        "triangles": 49544,
+        "duration": 11.800000011920929
+      },
+      {
+        "time": 16169.466,
+        "requested": 16167.699999988079,
+        "started": 16170.199999988079,
+        "calls": 70,
+        "triangles": 49544,
+        "duration": 2.399999976158142
+      }
+    ],
+    "longtasks": [
+      {
+        "start": 10637.5,
+        "duration": 72,
+        "name": "self",
+        "attribution": [
+          {
+            "name": "unknown",
+            "containerType": "window",
+            "containerSrc": ""
+          }
+        ]
+      },
+      {
+        "start": 12237,
+        "duration": 59,
+        "name": "self",
+        "attribution": [
+          {
+            "name": "unknown",
+            "containerType": "window",
+            "containerSrc": ""
+          }
+        ]
+      }
+    ],
+    "pose": {
+      "engine": "three.js r187",
+      "studioInteractionEnabled": "true",
+      "studioYaw": "-14",
+      "studioPitch": "-6",
+      "studioEye": "-0.7,2.8,3.4",
+      "studioFov": "58",
+      "studioDpr": "2",
+      "studioRenderCount": "90",
+      "studioDrawCalls": "70",
+      "studioTriangles": "49544",
+      "studioGeometries": "17",
+      "studioTextures": "12"
+    },
+    "actions": [
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 71
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 289
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 433
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 627
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 746
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 899
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 1097
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 1229
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 1299
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 1394
+      },
+      {
+        "kind": "viewport-resize",
+        "width": 1380,
+        "elapsed": 1420
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 1559
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 1686
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 1736
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 1813
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 1903
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 1969
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 2040
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 2134
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 2252
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 2520
+      },
+      {
+        "kind": "viewport-resize",
+        "width": 1440,
+        "elapsed": 2539
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 2930
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 3090
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 3265
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 3456
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 3635
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 3750
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 3920
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 4025
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 4115
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 4180
+      },
+      {
+        "kind": "viewport-resize",
+        "width": 1380,
+        "elapsed": 4216
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 4607
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 4898
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 5047
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 5157
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 5302
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 5376
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 5469
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 5569
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 5872
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 6097
+      },
+      {
+        "kind": "viewport-resize",
+        "width": 1440,
+        "elapsed": 6139
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 6336
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 6464
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 6602
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 6720
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 6784
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 6841
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 6893
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 7003
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 7080
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 7147
+      },
+      {
+        "kind": "viewport-resize",
+        "width": 1380,
+        "elapsed": 7169
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 7253
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 7624
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 7722
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 7844
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 8174
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 8271
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 8332
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 8447
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 8535
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 8677
+      },
+      {
+        "kind": "viewport-resize",
+        "width": 1440,
+        "elapsed": 8744
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 8989
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 9116
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 9195
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 9309
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 9493
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 9606
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 9651
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 9743
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look left",
+        "elapsed": 9960
+      },
+      {
+        "kind": "trusted-look-button",
+        "direction": "Look right",
+        "elapsed": 10016
+      },
+      {
+        "kind": "viewport-resize",
+        "width": 1380,
+        "elapsed": 10040
+      }
+    ],
+    "p95Interval": 250.10000000000036,
+    "p95RequestLatency": 9.899999976158142,
+    "p95CallbackDuration": 33,
+    "maxInterval": 316.5,
+    "longTasksOver100": []
+  },
+  "transfer": [
+    {
+      "url": "http://127.0.0.1:4193/_next/static/css/d442c5091e55dc0c.css",
+      "initiator": "link",
+      "transferSize": 4298,
+      "encodedBodySize": 3998,
+      "decodedBodySize": 19519
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/css/3b3b1d7e1b1dd5a8.css",
+      "initiator": "link",
+      "transferSize": 4780,
+      "encodedBodySize": 4480,
+      "decodedBodySize": 17183
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-e1ff4172c76c0361.js",
+      "initiator": "link",
+      "transferSize": 2191,
+      "encodedBodySize": 1891,
+      "decodedBodySize": 3644
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "initiator": "script",
+      "transferSize": 54658,
+      "encodedBodySize": 54358,
+      "decodedBodySize": 173019
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+      "initiator": "script",
+      "transferSize": 47007,
+      "encodedBodySize": 46707,
+      "decodedBodySize": 174133
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+      "initiator": "script",
+      "transferSize": 857,
+      "encodedBodySize": 557,
+      "decodedBodySize": 557
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+      "initiator": "script",
+      "transferSize": 3689,
+      "encodedBodySize": 3389,
+      "decodedBodySize": 8537
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-154eaaedc7527911.js",
+      "initiator": "script",
+      "transferSize": 9032,
+      "encodedBodySize": 8732,
+      "decodedBodySize": 25137
+    },
+    {
+      "url": "http://127.0.0.1:4193/favicon.ico",
+      "initiator": "other",
+      "transferSize": 429,
+      "encodedBodySize": 129,
+      "decodedBodySize": 129
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+      "initiator": "script",
+      "transferSize": 84650,
+      "encodedBodySize": 84350,
+      "decodedBodySize": 357041
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+      "initiator": "script",
+      "transferSize": 69627,
+      "encodedBodySize": 69327,
+      "decodedBodySize": 262501
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+      "initiator": "script",
+      "transferSize": 14433,
+      "encodedBodySize": 14133,
+      "decodedBodySize": 47753
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/703.9b57ff8b5aa079ef.js",
+      "initiator": "script",
+      "transferSize": 18273,
+      "encodedBodySize": 17973,
+      "decodedBodySize": 47208
+    },
+    {
+      "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+      "initiator": "fetch",
+      "transferSize": 392654,
+      "encodedBodySize": 392354,
+      "decodedBodySize": 585536
+    },
+    {
+      "url": "http://127.0.0.1:4193/ask?_rsc=Vz6qu5B-2QktzCp6",
+      "initiator": "fetch",
+      "transferSize": 1996,
+      "encodedBodySize": 1696,
+      "decodedBodySize": 4583
+    },
+    {
+      "url": "http://127.0.0.1:4193/work?_rsc=Vz6qu5B-2QktzCp6",
+      "initiator": "fetch",
+      "transferSize": 2950,
+      "encodedBodySize": 2650,
+      "decodedBodySize": 8835
+    },
+    {
+      "url": "http://127.0.0.1:4193/writing?_rsc=Vz6qu5B-2QktzCp6",
+      "initiator": "fetch",
+      "transferSize": 2296,
+      "encodedBodySize": 1996,
+      "decodedBodySize": 5778
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/app/ask/page-25ae038d4bb8e8c4.js",
+      "initiator": "script",
+      "transferSize": 8822,
+      "encodedBodySize": 8522,
+      "decodedBodySize": 24801
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/css/62e2ea1363450ec6.css",
+      "initiator": "link",
+      "transferSize": 3667,
+      "encodedBodySize": 3367,
+      "decodedBodySize": 11828
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/app/work/page-6f291c0daaf44503.js",
+      "initiator": "script",
+      "transferSize": 975,
+      "encodedBodySize": 675,
+      "decodedBodySize": 675
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/css/632b87a23d228bbc.css",
+      "initiator": "link",
+      "transferSize": 1116,
+      "encodedBodySize": 816,
+      "decodedBodySize": 1837
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/app/writing/page-6f291c0daaf44503.js",
+      "initiator": "script",
+      "transferSize": 975,
+      "encodedBodySize": 675,
+      "decodedBodySize": 675
+    }
+  ],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:4193/studio",
+      "status": 200,
+      "encoding": "gzip"
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/css/d442c5091e55dc0c.css",
+      "status": 200,
+      "encoding": "gzip"
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/css/3b3b1d7e1b1dd5a8.css",
+      "status": 200,
+      "encoding": "gzip"
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+      "status": 200,
+      "encoding": null
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-e1ff4172c76c0361.js",
+      "status": 200,
+      "encoding": "gzip"
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+      "status": 200,
+      "encoding": "gzip"
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "status": 200,
+      "encoding": "gzip"
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+      "status": 200,
+      "encoding": "gzip"
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-154eaaedc7527911.js",
+      "status": 200,
+      "encoding": "gzip"
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+      "status": 200,
+      "encoding": "gzip"
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/703.9b57ff8b5aa079ef.js",
+      "status": 200,
+      "encoding": "gzip"
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+      "status": 200,
+      "encoding": "gzip"
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+      "status": 200,
+      "encoding": "gzip"
+    },
+    {
+      "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+      "status": 200,
+      "encoding": "gzip"
+    },
+    {
+      "url": "http://127.0.0.1:4193/ask?_rsc=Vz6qu5B-2QktzCp6",
+      "status": 200,
+      "encoding": "gzip"
+    },
+    {
+      "url": "http://127.0.0.1:4193/work?_rsc=Vz6qu5B-2QktzCp6",
+      "status": 200,
+      "encoding": "gzip"
+    },
+    {
+      "url": "http://127.0.0.1:4193/writing?_rsc=Vz6qu5B-2QktzCp6",
+      "status": 200,
+      "encoding": "gzip"
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/app/work/page-6f291c0daaf44503.js",
+      "status": 200,
+      "encoding": null
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/css/632b87a23d228bbc.css",
+      "status": 200,
+      "encoding": "gzip"
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/css/62e2ea1363450ec6.css",
+      "status": 200,
+      "encoding": "gzip"
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/app/writing/page-6f291c0daaf44503.js",
+      "status": 200,
+      "encoding": null
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/app/ask/page-25ae038d4bb8e8c4.js",
+      "status": 200,
+      "encoding": "gzip"
+    }
+  ],
+  "limits": {
+    "compressedBytes": 1500000,
+    "drawCalls": 200,
+    "triangles": 200000,
+    "targetP95ms": 33
+  },
+  "limitations": "Ten seconds of trusted v2 look buttons and real viewport resizing. Inter-render intervals include automation/input gaps and are not an FPS gate; use request-to-start latency for requested-RAF target. Initial raw draw totals retain shadow passes and must not be replaced by renderer.info settled main-pass counters. Browser CPU callback spans and long-task attribution are not GPU timer queries. DPR=3 is deliberately capped by application; physical mobile is not tested. CDP freeze/resume does not by itself establish hidden-document visibility events."
+}

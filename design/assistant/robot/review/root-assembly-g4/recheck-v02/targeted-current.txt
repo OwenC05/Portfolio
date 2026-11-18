@@ -1,0 +1,58 @@
+TAP version 13
+# Subtest: G4: ordinary close aborts and clears before commit, retains draft and rejects queued close after reopening
+ok 1 - G4: ordinary close aborts and clears before commit, retains draft and rejects queued close after reopening
+  ---
+  duration_ms: 489.695
+  type: 'test'
+  ...
+# Subtest: G4: assistant-to-project takeover clears once, retains the dialog and focuses only the destination
+ok 2 - G4: assistant-to-project takeover clears once, retains the dialog and focuses only the destination
+  ---
+  duration_ms: 156.7203
+  type: 'test'
+  ...
+# Subtest: G4: history navigation clears Ask and unlocks before the commit without Ask return
+ok 3 - G4: history navigation clears Ask and unlocks before the commit without Ask return
+  ---
+  duration_ms: 152.3926
+  type: 'test'
+  ...
+# Subtest: G4: project modality suppresses a previously qualified robot attention hint
+ok 4 - G4: project modality suppresses a previously qualified robot attention hint
+  ---
+  duration_ms: 89.9133
+  type: 'test'
+  ...
+# Subtest: G4: source navigation must not restore Ask through the native dialog close algorithm
+ok 5 - G4: source navigation must not restore Ask through the native dialog close algorithm
+  ---
+  duration_ms: 106.7478
+  type: 'test'
+  ...
+# Subtest: G4: native focus-restoration model permits ordinary Ask return and keeps project takeover open
+ok 6 - G4: native focus-restoration model permits ordinary Ask return and keeps project takeover open
+  ---
+  duration_ms: 127.147
+  type: 'test'
+  ...
+# Subtest: G4: native history close does not return Ask and leaves the entry reusable
+ok 7 - G4: native history close does not return Ask and leaves the entry reusable
+  ---
+  duration_ms: 118.5885
+  type: 'test'
+  ...
+# Subtest: G4: Ask owns its close focus even when opened with another room control focused
+ok 8 - G4: Ask owns its close focus even when opened with another room control focused
+  ---
+  duration_ms: 126.4901
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1724.1727

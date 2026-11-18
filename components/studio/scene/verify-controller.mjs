@@ -6,6 +6,7 @@ import vm from 'node:vm';
 import ts from 'typescript';
 import * as THREE from 'three';
 import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
+import * as robotTest from './robot/test-support.mjs';
 
 function loadTs(path, modules, globals = {}) {
   const source = readFileSync(new URL(path, import.meta.url), 'utf8');
@@ -161,9 +162,12 @@ function harness(options = {}) {
     setSize(width, height) { this.size = [width, height]; }
     render(scene, camera) {
       if (options.renderFailure) throw new Error('Injected render failure');
+      if (options.robotRenderFailure && scene.getObjectByName('StudioAssistantPlacement')) throw new Error('Injected optional robot draw failure');
       this.camera = camera;
       this.renderCount++;
       scene.updateMatrixWorld(true);
+      this.robotFrames ??= [];
+      this.robotFrames.push(builtModel.assistant?.occluders.filter((mesh) => mesh.visible && mesh.userData.identity).map((mesh) => mesh.userData.identity) ?? []);
       if (this.shadowMap.needsUpdate) {
         this.shadowPasses++;
         builtModel.light.shadow.map = track(new THREE.WebGLRenderTarget(8, 8));
@@ -189,7 +193,19 @@ function harness(options = {}) {
     else if (!options.deferLoad) request.resolve();
     return promise;
   };
-  const { createStudioController } = loadTs('./controller.ts', {
+  const robotLoads = [];
+  let robotImports = 0;
+  const robotStatuses = [], assistantHovers = [], assistantActivations = [];
+  const robotRuntime = {
+    createPresentation: robotTest.presentationModule.createPresentation,
+    loadRobot(signal) {
+      let resolve, reject;
+      const promise = new Promise((yes, no) => { resolve = yes; reject = no; });
+      robotLoads.push({ signal, resolve, reject });
+      return promise;
+    },
+  };
+  const controllerModules = {
     three: { ...THREE, WebGLRenderer: Renderer },
     '@/lib/studio-contract': contract,
     './build-studio': { createStudio },
@@ -197,7 +213,9 @@ function harness(options = {}) {
     './view-config': { STUDIO_VIEW: view },
     './picking': picking,
     './load-pilot': { loadStudioPilot },
-  }, { ResizeObserver: Observer, IntersectionObserver: Observer, AbortController });
+    get './robot/runtime'() { robotImports++; return robotRuntime; },
+  };
+  const { createStudioController } = loadTs('./controller.ts', controllerModules, { ResizeObserver: Observer, IntersectionObserver: Observer, AbortController });
   const statuses = [];
   const selections = [];
   let controller;
@@ -207,17 +225,22 @@ function harness(options = {}) {
       reducedMotion: options.reducedMotion ?? false,
       interactionEnabled: options.interactionEnabled,
       viewCommand: options.viewCommand,
+      assistant: options.assistant,
+      onRobotStatusChange: (status) => robotStatuses.push(status),
+      onAssistantHoverChange: (hovered) => { assistantHovers.push(hovered); options.onAssistantHoverChange?.(hovered); },
+      onActivateAssistant: () => assistantActivations.push(true),
       onStatusChange: (status) => statuses.push(status),
       onSelectProject: (id) => { selections.push(id); options.onSelectProject?.(id); },
     });
     return controller;
   };
-  const flush = async () => {
-    await Promise.resolve();
-    await Promise.resolve();
+  let nowMs = 0;
+  const flush = async (now = nowMs) => {
+    nowMs = now;
+    for (let i = 0; i < 8; i++) await Promise.resolve();
     const queued = [...frames.values()];
     frames.clear();
-    queued.forEach((callback) => callback(0));
+    queued.forEach((callback) => callback(now));
   };
   const pressed = new Set();
   const event = (type, point, overrides = {}, target = canvas) => {
@@ -255,6 +278,7 @@ function harness(options = {}) {
   };
   return {
     view, loads, attachedPilots, mount, flush, event, pointFor, assertReleased, rect, host, document, window, frames, observers, statuses, selections, renderers,
+    robotLoads, robotStatuses, assistantHovers, assistantActivations, get robotImports() { return robotImports; },
     get canvas() { return canvas; }, get model() { return builtModel; }, get buildCount() { return buildCount; },
     get ledger() { return ledger; },
   };
@@ -698,8 +722,37 @@ test('loading precedes a successful render; demand updates coalesce and reuse th
   assert.equal(h.frames.size, 0, 'Motion preference changes need no animated work');
   assert.equal(h.buildCount, 1);
   assert.equal(h.renderers[0].shadowPasses, 1);
-  assert.equal(h.renderers[0].dpr, 2);
+  assert.equal(h.renderers[0].dpr, 1.5);
   controller.dispose();
+  controller.dispose();
+  h.assertReleased();
+});
+
+test('renderer density preserves low native ratios and CSS-space picking through desktop and small resizes', async () => {
+  const h = harness();
+  h.window.devicePixelRatio = 1.25;
+  const controller = h.mount();
+  await h.flush();
+  const pose = cameraPose(h);
+  const desktopPoint = h.pointFor(1);
+  for (const [width, height, viewportWidth, nativeDpr, renderDpr] of [
+    [900, 620, 1440, 1.25, 1.25],
+    [390, 520, 390, 0.75, 0.75],
+    [900, 620, 1440, 1.25, 1.25],
+    [900, 620, 1440, 2, 1.5],
+  ]) {
+    Object.assign(h.rect, { width, height });
+    Object.assign(h.window, { innerWidth: viewportWidth, devicePixelRatio: nativeDpr });
+    h.observers[0].callback([]);
+    await h.flush();
+    assert.equal(h.renderers[0].dpr, renderDpr);
+    assert.equal(h.window.devicePixelRatio, nativeDpr, 'Only renderer density changes');
+    assert.deepEqual(h.renderers[0].size, [width, height], 'Renderer receives CSS dimensions');
+    assert.deepEqual(cameraPose(h), pose, 'Density and aspect changes preserve the fixed eye and look');
+    const point = h.pointFor(1);
+    if (width === 900) assert.deepEqual(point, desktopPoint, 'Desktop CSS target stays fixed across density changes');
+    for (const pointerType of ['mouse', 'pen', 'touch']) assert.equal(tap(h, point, pointerType), 'copilot');
+  }
   controller.dispose();
   h.assertReleased();
 });
@@ -882,7 +935,7 @@ test('React adapter keeps one controller and forwards the latest callbacks and s
       const slot = cursor++;
       return hooks[slot] ??= { current: value };
     },
-    useEffect(effect, dependencies) {
+    useLayoutEffect(effect, dependencies) {
       const slot = cursor++;
       const previous = hooks[slot];
       if (!previous || dependencies.some((value, index) => value !== previous.dependencies[index])) {
@@ -920,15 +973,25 @@ test('React adapter keeps one controller and forwards the latest callbacks and s
     onStatusChange: (status) => messages.push(`old:${status}`),
   };
   commit(original);
+  const sharedAssistant = robotTest.input({ count: 2 });
   commit({
     ...original, selectedProjectId: 'copilot', reducedMotion: true,
+    assistant: sharedAssistant,
     onSelectProject: (id) => messages.push(`new:${id}`),
     onStatusChange: (status) => messages.push(`new:${status}`),
+    onActivateAssistant: () => messages.push('new:assistant'),
+    onAssistantHoverChange: (hovered) => messages.push(`new:hover:${hovered}`),
+    onRobotStatusChange: (status) => messages.push(`new:robot:${status}`),
   });
   assert.equal(mountedControllers.length, 1);
   mountedControllers[0].props.onSelectProject('typeforge');
   mountedControllers[0].props.onStatusChange('ready');
   assert.deepEqual(messages, ['old:loading', 'new:typeforge', 'new:ready']);
+  assert.equal(mountedControllers[0].updates.at(-1).assistant.snapshot, sharedAssistant.snapshot, 'commit-phase delivery preserves the one snapshot identity');
+  mountedControllers[0].props.onActivateAssistant();
+  mountedControllers[0].props.onAssistantHoverChange(true);
+  mountedControllers[0].props.onRobotStatusChange('ready');
+  assert.deepEqual(messages.slice(-3), ['new:assistant', 'new:hover:true', 'new:robot:ready']);
   assert.equal(mountedControllers[0].updates.at(-1).selectedProjectId, 'copilot');
   assert.equal(mountedControllers[0].updates.at(-1).reducedMotion, true);
   commit({ ...original, selectedProjectId: 'copilot', viewCommand: { action: 'right', sequence: 7 }, interactionEnabled: false });
@@ -1392,7 +1455,7 @@ test('S-T2 qualified click-negative matrix detects removal of identity or displa
     let selectedPromise;
     try {
       vm.runInNewContext(body, {
-        assert, ts, THREE, RoundedBoxGeometry, vm, URL, EventTarget, Event, AbortController, existsSync,
+        assert, ts, THREE, RoundedBoxGeometry, robotTest, vm, URL, EventTarget, Event, AbortController, existsSync,
         readFileSync(url, encoding) {
           const source = readFileSync(url, encoding);
           if (!url.href.endsWith('/controller.ts')) return source;
@@ -1504,4 +1567,191 @@ test('remount gets a separate generation and pilot; a previous late success cann
 test('pilot dispose failure cannot prevent renderer, procedural ledger and subscription release', async () => {
   const h = harness({ pilotDisposeFailure: true }); const controller = h.mount(); await h.flush();
   assert.doesNotThrow(() => controller.dispose()); controller.dispose(); h.assertReleased();
+});
+
+async function robotHarness(assistant = robotTest.input({ panelOpen: false }), options = {}) {
+  const h = harness({ assistant, ...options });
+  const controller = h.mount(); await h.flush();
+  assert.equal(h.robotLoads.length, 1);
+  const asset = await robotTest.realAsset();
+  let disposals = 0;
+  const dispose = asset.dispose;
+  asset.dispose = () => { disposals++; dispose(); };
+  h.robotLoads[0].resolve(asset); await h.flush();
+  return { h, controller, asset, get disposals() { return disposals; } };
+}
+
+test('G2 absent optional input never imports/loads/notifies; adding and removing it has its own lifetime', async () => {
+  const h = harness(); const controller = h.mount(); await h.flush();
+  assert.equal(h.robotImports, 0); assert.equal(h.robotLoads.length, 0); assert.deepEqual(h.robotStatuses, []);
+  const assistant = robotTest.input({ panelOpen: false });
+  await update(h, controller, { assistant }); assert.equal(h.robotLoads.length, 1);
+  await update(h, controller); assert.equal(h.robotLoads[0].signal.aborted, true);
+  const late = await robotTest.realAsset(); let disposed = 0; const dispose = late.dispose;
+  late.dispose = () => { disposed++; dispose(); };
+  h.robotLoads[0].resolve(late); await h.flush();
+  assert.equal(disposed, 1); assert.equal(h.model.assistant, undefined); assert.deepEqual(h.robotStatuses, ['loading']);
+  assert.equal(tap(h, h.pointFor(0)), 'dissertation');
+  controller.dispose(); h.assertReleased();
+});
+
+test('G2 optional load/render failure leaves the ready room and project picking alive', async () => {
+  const assistant = robotTest.input({ panelOpen: false });
+  const h = harness({ assistant }); const controller = h.mount(); await h.flush();
+  h.robotLoads[0].reject(new Error('decode failure')); await h.flush();
+  assert.deepEqual(h.robotStatuses, ['loading', 'unavailable']); assert.deepEqual(h.statuses, ['loading', 'ready']);
+  assert.equal(tap(h, h.pointFor(0)), 'dissertation'); controller.dispose(); h.assertReleased();
+  const loaded = await robotHarness(assistant, { robotRenderFailure: true });
+  assert.deepEqual(loaded.h.robotStatuses, ['loading', 'unavailable']); assert.deepEqual(loaded.h.statuses, ['loading', 'ready']);
+  assert.equal(loaded.disposals, 1); loaded.controller.dispose(); loaded.h.assertReleased();
+});
+
+test('G2 late load adopts current snapshot settled and robot ready requires a visible successful render', async () => {
+  const h = harness({ assistant: robotTest.input({ count: 4 }) }); const controller = h.mount(); await h.flush();
+  h.document.hidden = true; h.document.dispatchEvent(new Event('visibilitychange'));
+  const current = robotTest.input({ count: 1, runId: 'newer', epoch: 3 });
+  await update(h, controller, { assistant: current });
+  const asset = await robotTest.realAsset(); h.robotLoads[0].resolve(asset); await h.flush();
+  assert.deepEqual(h.robotStatuses, ['loading']); assert.equal(h.frames.size, 0);
+  h.document.hidden = false; h.document.dispatchEvent(new Event('visibilitychange')); await h.flush(1000);
+  assert.deepEqual(h.robotStatuses, ['loading', 'ready']); assert.equal(h.canvas.dataset.assistantCardCount, '1');
+  assert.deepEqual(Array.from(h.renderers[0].robotFrames.at(-1)), ['["newer","key-0"]']); assert.equal(h.frames.size, 0);
+  controller.dispose(); h.assertReleased();
+});
+
+test('G2 data replacement/clearing reaches first next frame even when attention pose is unchanged', async () => {
+  const { h, controller } = await robotHarness(robotTest.input({ count: 4 }));
+  for (const phase of ['requesting', 'error', 'cancelled', 'idle']) {
+    await update(h, controller, { assistant: robotTest.input({ count: 4 }) });
+    const before = h.renderers[0].robotFrames.length;
+    controller.update({ selectedProjectId: null, reducedMotion: false, assistant: robotTest.input({ phase, revision: 9 }) });
+    await h.flush();
+    assert.equal(h.renderers[0].robotFrames.length, before + 1);
+    assert.deepEqual(Array.from(h.renderers[0].robotFrames.at(-1)), [], phase);
+  }
+  await update(h, controller, { assistant: robotTest.input({ count: 4, runId: 'a' }) });
+  await update(h, controller, { assistant: robotTest.input({ count: 1, runId: 'b', epoch: 2 }) });
+  assert.deepEqual(Array.from(h.renderers[0].robotFrames.at(-1)), ['["b","key-0"]']);
+  controller.dispose(); h.assertReleased();
+});
+
+test('G2 finite scheduler, live reduced-motion ON/OFF and all suspension modes resume settled', async () => {
+  for (const mode of ['hidden', 'offscreen', 'zero']) {
+    const { h, controller, asset } = await robotHarness(robotTest.input());
+    const result = robotTest.input({ count: 4, epoch: 2 });
+    await update(h, controller, { assistant: result }); await h.flush(75); assert.equal(h.frames.size, 1);
+    if (mode === 'hidden') { h.document.hidden = true; h.document.dispatchEvent(new Event('visibilitychange')); }
+    if (mode === 'offscreen') h.observers[1].callback([{ target: h.host, isIntersecting: false }]);
+    if (mode === 'zero') { h.rect.width = 0; h.observers[0].callback([]); await h.flush(90); }
+    const newest = robotTest.input({ pose: 'no-match', epoch: 3 });
+    await update(h, controller, { assistant: newest }); assert.equal(h.frames.size, 0, mode);
+    if (mode === 'hidden') { h.document.hidden = false; h.document.dispatchEvent(new Event('visibilitychange')); }
+    if (mode === 'offscreen') h.observers[1].callback([{ target: h.host, isIntersecting: true }]);
+    if (mode === 'zero') { h.rect.width = 900; h.observers[0].callback([]); }
+    await h.flush(1000); assert.equal(h.frames.size, 0); assert.equal(h.canvas.dataset.assistantCardCount, '0');
+    const expected = robotTest.profile.poses['no-match'].APA_head.rotationXyzw;
+    assert.ok(asset.bindings.get('APA_head').quaternion.angleTo(new THREE.Quaternion().fromArray(expected).normalize()) < 1e-6);
+    const next = robotTest.input({ count: 2, epoch: 4 });
+    await update(h, controller, { assistant: next }); await h.flush(1050); assert.equal(h.frames.size, 1);
+    await update(h, controller, { assistant: next, reducedMotion: true }); assert.equal(h.frames.size, 0);
+    controller.update({ selectedProjectId: null, reducedMotion: false, assistant: next }); assert.equal(h.frames.size, 0, 'OFF schedules nothing');
+    await update(h, controller, { assistant: robotTest.input({ epoch: 5 }) });
+    await h.flush(1100); await h.flush(1400); assert.equal(h.frames.size, 0, 'finite animation stops');
+    controller.dispose(); h.assertReleased();
+  }
+});
+
+test('G2 robot uses the same qualified mouse/pen/touch pipeline, hover edges and modal cancellation', async () => {
+  const assistant = robotTest.input({ panelOpen: false });
+  const { h, controller, asset } = await robotHarness(assistant);
+  const center = asset.bindings.get('APA_head').getWorldPosition(new THREE.Vector3()).project(h.renderers[0].camera);
+  const point = { x: h.rect.left + (center.x + 1) * h.rect.width / 2, y: h.rect.top + (1 - center.y) * h.rect.height / 2 };
+  assert.equal(picking.pickScene(h.model, h.renderers[0].camera, point.x - h.rect.left, point.y - h.rect.top, h.rect.width, h.rect.height, false)?.kind, 'assistant');
+  h.event('pointermove', point); h.event('pointermove', point); assert.deepEqual(h.assistantHovers, [true]);
+  h.window.dispatchEvent(new Event('blur')); assert.deepEqual(h.assistantHovers, [true, false]);
+  for (const pointerType of ['mouse', 'pen', 'touch']) {
+    const n = h.assistantActivations.length; tap(h, point, pointerType); assert.equal(h.assistantActivations.length, n + 1, pointerType);
+  }
+  const n = h.assistantActivations.length;
+  for (const invalid of ['untrusted', 'missing-down', 'drag', 'second', 'cancel', 'modal']) {
+    h.event('pointerdown', point, { pointerType: 'touch', isTrusted: invalid !== 'untrusted' });
+    if (invalid === 'drag') h.event('pointermove', { x: point.x + 20, y: point.y + 40 }, { pointerType: 'touch' });
+    if (invalid === 'second') { h.event('pointerdown', point, { pointerId: 2, isPrimary: false, pointerType: 'touch' }); h.event('pointercancel', point, { pointerId: 2 }); }
+    if (invalid === 'cancel') h.event('pointercancel', point, { pointerType: 'touch' });
+    if (invalid === 'modal') await update(h, controller, { assistant: { ...assistant, panelOpen: true } });
+    h.event('pointerup', point, { pointerType: 'touch' });
+    if (invalid === 'missing-down') h.event('click', point, { pointerType: 'touch' }); else finishClick(h, point);
+    assert.equal(h.assistantActivations.length, n, invalid);
+    h.window.dispatchEvent(new Event('blur'));
+  }
+  assert.deepEqual(h.selections, []); controller.dispose(); h.assertReleased();
+});
+
+test('G2 dispose fences late robot resolution and rejection without callbacks or attachment', async () => {
+  for (const lateResult of ['resolve', 'reject']) {
+    const h = harness({ assistant: robotTest.input() }); const controller = h.mount(); await h.flush(); controller.dispose();
+    assert.equal(h.robotLoads[0].signal.aborted, true);
+    let disposed = 0;
+    if (lateResult === 'resolve') { const asset = await robotTest.realAsset(); const dispose = asset.dispose; asset.dispose = () => { disposed++; dispose(); }; h.robotLoads[0].resolve(asset); }
+    else h.robotLoads[0].reject(new Error('late'));
+    await h.flush(); assert.deepEqual(h.robotStatuses, ['loading']); assert.equal(disposed, lateResult === 'resolve' ? 1 : 0); h.assertReleased();
+  }
+});
+
+async function feedbackRobotHarness() {
+  let queuedHover;
+  const initial = robotTest.input({ panelOpen: false });
+  const loaded = await robotHarness(initial, { onAssistantHoverChange: (hovered) => { queuedHover = hovered; } });
+  const { h, controller, asset } = loaded;
+  let assistant = initial;
+  // StudioExperience commits robotHovered into attentionRequested; StudioScene
+  // forwards that input in its layout effect. Deliberately allow this commit
+  // between native events, without inserting a render before compatibility down.
+  const commitHover = () => {
+    if (queuedHover === undefined) return;
+    assistant = { ...assistant, attentionRequested: queuedHover };
+    queuedHover = undefined;
+    controller.update({ selectedProjectId: null, reducedMotion: false, assistant });
+  };
+  const point = () => {
+    const center = asset.bindings.get('APA_head').getWorldPosition(new THREE.Vector3()).project(h.renderers[0].camera);
+    return { x: h.rect.left + (center.x + 1) * h.rect.width / 2, y: h.rect.top + (1 - center.y) * h.rect.height / 2 };
+  };
+  h.event('pointermove', point()); commitHover(); await h.flush(100); await h.flush(400);
+  assert.equal(h.assistantHovers.at(-1), true);
+  assert.equal(h.frames.size, 0, 'hover attention has settled');
+  return { ...loaded, commitHover, point, get assistant() { return assistant; } };
+}
+
+for (const paintDuringHold of [false, true]) {
+  test(`G2 feedback: one native mouse mousedown qualifies with root commits and paintDuringHold=${paintDuringHold}`, async () => {
+    const { h, controller, commitHover, point } = await feedbackRobotHarness();
+    const target = point();
+    h.event('pointerdown', target);
+    commitHover();
+    h.event('mousedown', target); // Exactly one: the native mouse sequence.
+    if (paintDuringHold) { await h.flush(410); await h.flush(710); }
+    assert.equal(picking.pickScene(h.model, h.renderers[0].camera, target.x - h.rect.left, target.y - h.rect.top, h.rect.width, h.rect.height, false)?.kind, 'assistant');
+    h.event('pointerup', target);
+    h.event('mouseup', target);
+    h.event('click', target, { isPrimary: false });
+    const activated = h.assistantActivations.length;
+    const hoverTrace = [...h.assistantHovers];
+    controller.dispose(); h.assertReleased();
+    assert.equal(activated, 1, `root hover trace ${JSON.stringify(hoverTrace)}; paintDuringHold=${paintDuringHold}`);
+  });
+}
+
+test('G2 feedback: a fresh presentation still blocks gestures until its geometry is rendered', async () => {
+  const loaded = await feedbackRobotHarness();
+  const { h, controller, commitHover, point } = loaded;
+  const target = point();
+  controller.update({ selectedProjectId: null, reducedMotion: false, assistant: { ...loaded.assistant, attentionRequested: false } });
+  h.event('pointerdown', target); commitHover(); h.event('mousedown', target);
+  h.event('pointerup', target); h.event('mouseup', target); h.event('click', target, { isPrimary: false });
+  assert.equal(h.assistantActivations.length, 0, 'pending geometry cannot qualify a new gesture');
+  await h.flush(410); await h.flush(710);
+  h.event('click', point(), { isPrimary: false });
+  assert.equal(h.assistantActivations.length, 0, 'rendering cannot resurrect the rejected gesture');
+  controller.dispose(); h.assertReleased();
 });

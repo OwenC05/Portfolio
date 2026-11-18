@@ -1,0 +1,32 @@
+{
+  "at": "2026-11-18T20:37:50.255Z",
+  "buildId": "KEhdfJ0NJBO2q0ASaHcHN",
+  "sourcePins": 83,
+  "totalUnchangedFiles": 152,
+  "sampleFrames": 657,
+  "checks": {
+    "rawPercentilesMatch": true,
+    "frameSlicesMatch": true,
+    "sceneRenderDeltasMatch": true,
+    "trustedActionsMatch": true,
+    "oldMatrixPercentilesMatch": true,
+    "rootFunctionalReceiptsConsistent": true,
+    "captureHashesMatch": true,
+    "inputsUnchanged": true
+  },
+  "disposition": "Measurement audit PASS within scope; desktop performance gate remains FAIL on repeat; no additional source correction supported.",
+  "captures": [
+    {
+      "file": "native-dpr2-neutral.png",
+      "sha256": "71005badb402115218ccf38a81852dfc3210876928a7ddcd8ce19926541790e1",
+      "width": 2880,
+      "height": 1800
+    },
+    {
+      "file": "native-dpr2-four-sources.png",
+      "sha256": "469df3963c38ada14bc56d6fafb5c25f3d3b1ecef4f69fdc211ba2b023dbcbf5",
+      "width": 2880,
+      "height": 1800
+    }
+  ]
+}

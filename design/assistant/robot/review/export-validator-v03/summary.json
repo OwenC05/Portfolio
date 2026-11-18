@@ -1,0 +1,14 @@
+{
+  "fullCases": 6,
+  "fullPassed": 6,
+  "documentAccessorCases": 34,
+  "documentAccessorPassed": 34,
+  "failures": [],
+  "protectedInputCount": 22,
+  "protectedInputsUnchanged": true,
+  "limits": [
+    "actual candidate-directory scripts; no Blender or runtime/browser execution",
+    "old false accepts are sensitivity evidence only",
+    "six required full-validator controls include their existing pose checks, not a new independent resampling campaign"
+  ]
+}

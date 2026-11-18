@@ -1,0 +1,242 @@
+TAP version 13
+# Subtest: G3 arrows: four current ordered chips wrap both ways synchronously without actions or queued focus
+not ok 1 - G3 arrows: four current ordered chips wrap both ways synchronously without actions or queued focus
+  ---
+  duration_ms: 209.7089
+  type: 'test'
+  location: 'C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\review\\controlled-ui-g3\\recheck-v02\\counterfactual-tests.cjs:875:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+      [
+    +   undefined,
+    +   undefined,
+    +   undefined,
+    +   undefined
+    -   '["s3","c3"]',
+    -   '["s2","c2"]',
+    -   '["s1","c1"]',
+    -   '["s0","c0"]'
+      ]
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    0: '["s3","c3"]'
+    1: '["s2","c2"]'
+    2: '["s1","c1"]'
+    3: '["s0","c0"]'
+  actual:
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (C:\Users\Owenc\orca\Portfolio-assistant\design\assistant\robot\review\controlled-ui-g3\recheck-v02\counterfactual-tests.cjs:881:10)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.start (node:internal/test_runner/test:1262:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17)
+  ...
+# Subtest: G3 arrows: one hit consumes either arrow without moving focus, selecting or submitting
+not ok 2 - G3 arrows: one hit consumes either arrow without moving focus, selecting or submitting
+  ---
+  duration_ms: 87.9886
+  type: 'test'
+  location: 'C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\review\\controlled-ui-g3\\recheck-v02\\counterfactual-tests.cjs:910:1'
+  failureType: 'testCodeFailure'
+  error: "Cannot set properties of undefined (setting 'focus')"
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    TestContext.<anonymous> (C:\Users\Owenc\orca\Portfolio-assistant\design\assistant\robot\review\controlled-ui-g3\recheck-v02\counterfactual-tests.cjs:917:38)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3)
+  ...
+# Subtest: G3 arrows: focus navigation preserves existing selection and passage disclosure
+not ok 3 - G3 arrows: focus navigation preserves existing selection and passage disclosure
+  ---
+  duration_ms: 85.3638
+  type: 'test'
+  location: 'C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\review\\controlled-ui-g3\\recheck-v02\\counterfactual-tests.cjs:929:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Chip key handler exists
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    chipKey (C:\Users\Owenc\orca\Portfolio-assistant\design\assistant\robot\review\controlled-ui-g3\recheck-v02\counterfactual-tests.cjs:859:10)
+    TestContext.<anonymous> (C:\Users\Owenc\orca\Portfolio-assistant\design\assistant\robot\review\controlled-ui-g3\recheck-v02\counterfactual-tests.cjs:940:18)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: G3 arrows: modified arrows and other keys leave focus, defaults, state and actions untouched
+not ok 4 - G3 arrows: modified arrows and other keys leave focus, defaults, state and actions untouched
+  ---
+  duration_ms: 53.2315
+  type: 'test'
+  location: 'C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\review\\controlled-ui-g3\\recheck-v02\\counterfactual-tests.cjs:951:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Chip key handler exists
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    chipKey (C:\Users\Owenc\orca\Portfolio-assistant\design\assistant\robot\review\controlled-ui-g3\recheck-v02\counterfactual-tests.cjs:859:10)
+    TestContext.<anonymous> (C:\Users\Owenc\orca\Portfolio-assistant\design\assistant\robot\review\controlled-ui-g3\recheck-v02\counterfactual-tests.cjs:970:18)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: G3 arrows: missing target and target DOM run/key mismatches cannot receive focus
+not ok 5 - G3 arrows: missing target and target DOM run/key mismatches cannot receive focus
+  ---
+  duration_ms: 45.3059
+  type: 'test'
+  location: 'C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\review\\controlled-ui-g3\\recheck-v02\\counterfactual-tests.cjs:979:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Chip key handler exists
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    chipKey (C:\Users\Owenc\orca\Portfolio-assistant\design\assistant\robot\review\controlled-ui-g3\recheck-v02\counterfactual-tests.cjs:859:10)
+    TestContext.<anonymous> (C:\Users\Owenc\orca\Portfolio-assistant\design\assistant\robot\review\controlled-ui-g3\recheck-v02\counterfactual-tests.cjs:992:18)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: G3 arrows: old handlers cannot focus cleared or replacement chips after supersession, cancel, close or failure
+not ok 6 - G3 arrows: old handlers cannot focus cleared or replacement chips after supersession, cancel, close or failure
+  ---
+  duration_ms: 46.8306
+  type: 'test'
+  location: 'C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\review\\controlled-ui-g3\\recheck-v02\\counterfactual-tests.cjs:1004:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Chip key handler exists
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    chipKey (C:\Users\Owenc\orca\Portfolio-assistant\design\assistant\robot\review\controlled-ui-g3\recheck-v02\counterfactual-tests.cjs:859:10)
+    invokeOld (C:\Users\Owenc\orca\Portfolio-assistant\design\assistant\robot\review\controlled-ui-g3\recheck-v02\counterfactual-tests.cjs:1020:7)
+    TestContext.<anonymous> (C:\Users\Owenc\orca\Portfolio-assistant\design\assistant\robot\review\controlled-ui-g3\recheck-v02\counterfactual-tests.cjs:1028:5)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: G3 arrows: synchronous focus remains valid across a same-run selection revision
+not ok 7 - G3 arrows: synchronous focus remains valid across a same-run selection revision
+  ---
+  duration_ms: 45.271
+  type: 'test'
+  location: 'C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\review\\controlled-ui-g3\\recheck-v02\\counterfactual-tests.cjs:1041:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Chip key handler exists
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    chipKey (C:\Users\Owenc\orca\Portfolio-assistant\design\assistant\robot\review\controlled-ui-g3\recheck-v02\counterfactual-tests.cjs:859:10)
+    TestContext.<anonymous> (C:\Users\Owenc\orca\Portfolio-assistant\design\assistant\robot\review\controlled-ui-g3\recheck-v02\counterfactual-tests.cjs:1052:16)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: G3 arrows: ordinary Tab and native button activation remain available with guarded select-and-reveal
+not ok 8 - G3 arrows: ordinary Tab and native button activation remain available with guarded select-and-reveal
+  ---
+  duration_ms: 37.5265
+  type: 'test'
+  location: 'C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\review\\controlled-ui-g3\\recheck-v02\\counterfactual-tests.cjs:1060:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Chip key handler exists
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    chipKey (C:\Users\Owenc\orca\Portfolio-assistant\design\assistant\robot\review\controlled-ui-g3\recheck-v02\counterfactual-tests.cjs:859:10)
+    TestContext.<anonymous> (C:\Users\Owenc\orca\Portfolio-assistant\design\assistant\robot\review\controlled-ui-g3\recheck-v02\counterfactual-tests.cjs:1070:20)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 0
+# fail 8
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 998.6398

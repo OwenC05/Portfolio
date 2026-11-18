@@ -1,0 +1,92 @@
+{
+  "checkedAt": "2026-11-18T18:29:26.922Z",
+  "node": "v24.21.0",
+  "results": [
+    {
+      "command": "node --test --test-reporter=tap design/assistant/robot/review/scene-runtime-g2/probe.test.mjs",
+      "exitCode": 1,
+      "log": "independent-probes.txt"
+    },
+    {
+      "command": "node --test --test-reporter=tap --test-name-pattern='G2 |React adapter|format mutations|real installed parser|robot/card foreground' components/studio/scene/verify-controller.mjs components/studio/scene/robot/verify-robot.mjs",
+      "exitCode": 0,
+      "log": "targeted-existing.txt",
+      "argv": [
+        "--test",
+        "--test-reporter=tap",
+        "--test-name-pattern=G2 |React adapter|format mutations|real installed parser|robot/card foreground",
+        "components/studio/scene/verify-controller.mjs",
+        "components/studio/scene/robot/verify-robot.mjs"
+      ]
+    },
+    {
+      "command": "node components/studio/scene/robot/derive-profile.mjs --check",
+      "exitCode": 0,
+      "log": "profile-check.txt"
+    },
+    {
+      "command": "node node_modules/eslint/bin/eslint.js components/studio/StudioScene.tsx components/studio/scene/controller.ts components/studio/scene/picking.ts components/studio/scene/types.ts lib/studio-contract.ts components/studio/scene/robot design/assistant/robot/review/scene-runtime-g2/probe.test.mjs design/assistant/robot/review/scene-runtime-g2/run-checks.mjs --ext .ts,.mjs",
+      "exitCode": 0,
+      "log": "scoped-lint.txt"
+    },
+    {
+      "command": "TypeScript createProgram; pinned G2 TS/TSX roots; noEmit=true incremental=false",
+      "diagnostics": 0,
+      "sourceFiles": [
+        "C:/Users/Owenc/orca/Portfolio-assistant/lib/assistant/types.ts",
+        "C:/Users/Owenc/orca/Portfolio-assistant/lib/assistant/run-state.ts",
+        "C:/Users/Owenc/orca/Portfolio-assistant/lib/studio-contract.ts",
+        "C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/resources.ts",
+        "C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/textures.ts",
+        "C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/types.ts",
+        "C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/build-studio.ts",
+        "C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/types.ts",
+        "C:/Users/Owenc/orca/Portfolio-assistant/design/studio-v2/asset-pipeline/integration-contract/pilot-profile.json",
+        "C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/load-pilot.ts",
+        "C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/view-config.ts",
+        "C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/picking.ts",
+        "C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/runtime-profile.json",
+        "C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/resources.ts",
+        "C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/load-robot.ts",
+        "C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/cards.ts",
+        "C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/presentation.ts",
+        "C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/robot/runtime.ts",
+        "C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/controller.ts",
+        "C:/Users/Owenc/orca/Portfolio-assistant/components/studio/StudioScene.tsx"
+      ],
+      "log": "scoped-types.txt"
+    },
+    {
+      "check": "40 pinned inputs before/after including 24 owned",
+      "pinsUnchanged": true,
+      "immutableClaimsExclude": [
+        "components/studio/StudioExperience.tsx",
+        "tests/assistant/studio-experience.test.cjs"
+      ]
+    },
+    {
+      "command": "node --test --test-reporter=tap design/assistant/robot/review/scene-runtime-g2/probe.test.mjs",
+      "exitCode": 1,
+      "log": "independent-probes.txt",
+      "finalDelta": true
+    },
+    {
+      "command": "node node_modules/eslint/bin/eslint.js design/assistant/robot/review/scene-runtime-g2/probe.test.mjs design/assistant/robot/review/scene-runtime-g2/run-checks.mjs design/assistant/robot/review/scene-runtime-g2/payload-evidence.mjs",
+      "exitCode": 0,
+      "log": "review-probe-lint.txt",
+      "finalDelta": true
+    },
+    {
+      "command": "node design/assistant/robot/review/scene-runtime-g2/payload-evidence.mjs",
+      "exitCode": 0,
+      "evidence": "payload-evidence.json",
+      "actualExecution": "separate tool execution recorded successfully"
+    }
+  ],
+  "probeDevelopmentCorrections": [
+    "Initial probe used Card rather than actual Mark node names; corrected private probe.",
+    "Initial G1 comparison encountered arrays from separate VM realms; normalized with Array.from.",
+    "Final failure action uses actual G1 fail/network action shape."
+  ],
+  "expectedFailure": "Final independent probes: 10 tests, 8 pass, 2 expected nonzero cleanup-contract failures; normal disposal control passes"
+}

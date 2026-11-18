@@ -13,7 +13,11 @@ export interface StudioModel {
   targets: StudioTarget[];
   /** Live opaque blockers after batching; excludes target faces and dedicated highlight planes. */
   occluders: THREE.Mesh[];
+  /** Optional live surfaces; generated cards are blockers only. */
+  assistant?: { activationSurfaces: readonly THREE.Mesh[]; occluders: readonly THREE.Mesh[] };
 }
+
+export type SceneActivation = { kind: 'project'; projectId: ProjectId } | { kind: 'assistant' };
 
 /** A validated, placed pilot with its own idempotent imported-resource owner. */
 export interface StudioPilotAsset {

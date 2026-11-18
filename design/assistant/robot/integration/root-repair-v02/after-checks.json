@@ -1,0 +1,47 @@
+{
+  "at": "2026-11-18T18:23:12.825Z",
+  "pins": [
+    {
+      "path": "components/studio/StudioExperience.tsx",
+      "sha256": "1c1af8cc3bd9a77a108d9ff21cd9cad09056c0c31755db61db887bf6b97923ca"
+    },
+    {
+      "path": "tests/assistant/studio-experience.test.cjs",
+      "sha256": "4678443279847c541c63a163461b106a58cf524f73c5f71561f1ccda79c70812"
+    }
+  ],
+  "checks": [
+    {
+      "command": [
+        "node",
+        "--test",
+        "tests/assistant/studio-experience.test.cjs"
+      ],
+      "exitCode": 0,
+      "log": "after-0.log"
+    },
+    {
+      "command": [
+        "node",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit",
+        "--incremental",
+        "false"
+      ],
+      "exitCode": 0,
+      "log": "after-1.log"
+    },
+    {
+      "command": [
+        "node",
+        "node_modules/eslint/bin/eslint.js",
+        "components/studio/StudioExperience.tsx",
+        "tests/assistant/studio-experience.test.cjs",
+        "--max-warnings",
+        "0"
+      ],
+      "exitCode": 0,
+      "log": "after-2.log"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+    "pid":  37052,
+    "port":  4195,
+    "host":  "127.0.0.1",
+    "startedAt":  "2026-11-17T14:16:37.519Z",
+    "script":  "C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\asset-pipeline\\selected-a-v01\\candidate-001\\build-v03\\viewer-server.mjs",
+    "status":  "closed",
+    "closedAt":  "2026-11-17T14:22:51.3506366Z"
+}

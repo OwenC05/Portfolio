@@ -1,0 +1,383 @@
+{
+  "at": "2026-11-16T14:03:19.997Z",
+  "pngs": [
+    {
+      "path": "design/assistant/robot/integration/verification-g1/ask/cancel-cleared.png",
+      "sha256": "3b4bd72e96e12f0df4f416820d6d38a9a5bf31b429487bc3c26c2b67e8b36dec",
+      "bytes": 63449,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/ask/focused-real-1440-citations.png",
+      "sha256": "c60b817089405b3a9d71aa70f1f8b70f2f2eeb6a969e5354520a8203690c7e8b",
+      "bytes": 145482,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/ask/focused-real-1440-top.png",
+      "sha256": "79e09fa7e2f3ee224a02fbc5d6eda12d17f8f75a7468e2175072615fc2fb0c27",
+      "bytes": 84348,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/ask/focused-real-320-citations.png",
+      "sha256": "6bf953d08e48fd7165828dc5313e3ecd441ff2b0f1165a2aa5a34a13649333df",
+      "bytes": 44534,
+      "width": 320,
+      "height": 844
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/ask/focused-real-320-top.png",
+      "sha256": "a5c8e41a8cc6d18432998733b36f3e62b848ecbfa980fb90c79b85b611f1a589",
+      "bytes": 38409,
+      "width": 320,
+      "height": 844
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/ask/focused-real-390-citations.png",
+      "sha256": "e11de658a37cb4968ba7d55ec672048618e53b2fdc05364803754791d28af6fe",
+      "bytes": 49497,
+      "width": 390,
+      "height": 844
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/ask/focused-real-390-top.png",
+      "sha256": "2b34848e17a66c7b643c07982147e9129e750ad46052c61f36646fad15e12aec",
+      "bytes": 45825,
+      "width": 390,
+      "height": 844
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/ask/original-fixed/desktop-sources.png",
+      "sha256": "194cf2fde42ee47f92c5eb4bb43d706e04b036083fef136c5db7e150245f09ce",
+      "bytes": 99608,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/ask/original-fixed/mobile-answer.png",
+      "sha256": "b4703bd9516ff7a819f1d98dd13ebe79c35ccbcc2b00f9e97c2d53009adf2423",
+      "bytes": 44110,
+      "width": 320,
+      "height": 844
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/ask/original-fixed/mobile-passage.png",
+      "sha256": "e0e07b63186fec3d112be1315cd054d7a5567ef3fb7080368f3bc6f836e609d1",
+      "bytes": 40266,
+      "width": 320,
+      "height": 844
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/ask/original-fixed/mobile-top.png",
+      "sha256": "54e57e43802d32c471a3730c0141a69d3294498df4e13b6d6ffcfbedfeabc8d2",
+      "bytes": 39814,
+      "width": 320,
+      "height": 844
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/ask/original-fixed/mobile-trace.png",
+      "sha256": "84ddc3b9fa741072e308d3bc982fcce3650b70b0e953812ae44c905d7b587223",
+      "bytes": 39018,
+      "width": 320,
+      "height": 844
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/ask/original-initial/desktop-sources.png",
+      "sha256": "7adeb1b8f3b335fd6946709eec368788fdb230a004e86e6417088fe4a7f88c3c",
+      "bytes": 99733,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/ask/original-initial/mobile-answer.png",
+      "sha256": "b4703bd9516ff7a819f1d98dd13ebe79c35ccbcc2b00f9e97c2d53009adf2423",
+      "bytes": 44110,
+      "width": 320,
+      "height": 844
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/ask/original-initial/mobile-passage.png",
+      "sha256": "d873c71cb1ca5220157db715b9a8f1f50eea17b2060a156e513761616b3ed7e8",
+      "bytes": 40363,
+      "width": 320,
+      "height": 844
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/ask/original-initial/mobile-top.png",
+      "sha256": "e3b1b2df5543846a146228454f2792596fcb06f145b199345913a0aca5dba691",
+      "bytes": 39803,
+      "width": 320,
+      "height": 844
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/ask/original-initial/mobile-trace.png",
+      "sha256": "8281ba6ddd6099cc52b57186e711f52e7de0cc488f8c5c3478c169ca19783dd3",
+      "bytes": 39108,
+      "width": 320,
+      "height": 844
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/ask/zero-hits-pending.png",
+      "sha256": "6b65cb289b52f305f26b41ecd4da6625355131bc8703a196dec3993944af33d4",
+      "bytes": 70413,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/1440x900-dpr1-home.png",
+      "sha256": "b55b0f2b4f425c2592fbdb67056f9eb4c1c7541324b39cb55185f3657870870d",
+      "bytes": 648843,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/1440x900-dpr1-left-down.png",
+      "sha256": "d317affcde297109f46dabcffe516c233c422b7e2514ab2193dc245b38ae888f",
+      "bytes": 695562,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/1440x900-dpr1-left-up.png",
+      "sha256": "9f6b3d65cbc10e5867e07ed271a018e32c322c9919c2b01816c512d4ce76b29d",
+      "bytes": 548115,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/1440x900-dpr1-project-dialog.png",
+      "sha256": "cc3b190482d05a6ccf50163dc8def0f8a2706f550522355c03905c83151a231e",
+      "bytes": 340433,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/1440x900-dpr1-projects-open.png",
+      "sha256": "6ed994b3e4b569055be2c66744d80dc1e0cb32d4c23253cdd6730eed77008f36",
+      "bytes": 648815,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/1440x900-dpr1-right-down.png",
+      "sha256": "0e372bb286a5ad6eeb51c2a922b0e7d0cb2b2d707ce2d63f71b79a3ef98b8561",
+      "bytes": 1039322,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/1440x900-dpr1-right-up.png",
+      "sha256": "f653ebef7fb3a3039ca22f618fc04f8531c7e35aa66681a0dd8d0befc1b51a09",
+      "bytes": 658394,
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/1440x900-dpr3-home.png",
+      "sha256": "eecececf31874fef7284185cc9550cae6af1e5119f21a32c497ea8163eb3f96e",
+      "bytes": 3460779,
+      "width": 4320,
+      "height": 2700
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/1440x900-dpr3-projects-open.png",
+      "sha256": "eecececf31874fef7284185cc9550cae6af1e5119f21a32c497ea8163eb3f96e",
+      "bytes": 3460779,
+      "width": 4320,
+      "height": 2700
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/320x568-dpr1-home.png",
+      "sha256": "e7da9f2e4731c0055d4502fc52fb83016277eb31ac4421af22f06b247d5930bc",
+      "bytes": 112963,
+      "width": 320,
+      "height": 568
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/320x568-dpr1-left-down.png",
+      "sha256": "15fde5ed1d4892423c167aeab21577aa089cf32897c9aaadd604b053d5ad36c1",
+      "bytes": 138415,
+      "width": 320,
+      "height": 568
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/320x568-dpr1-left-up.png",
+      "sha256": "5e4a8819c333c0cc2017f21c48bacc4e39887b8b105ad2e1ecfe592e80f46775",
+      "bytes": 115777,
+      "width": 320,
+      "height": 568
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/320x568-dpr1-project-dialog.png",
+      "sha256": "c03c77182d07cc02c637cf352f6232bbb36ff00cccf62cd43e322616c779a014",
+      "bytes": 33584,
+      "width": 320,
+      "height": 568
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/320x568-dpr1-projects-open.png",
+      "sha256": "d46b51f550d771c6beffd2c35bf496ba6f19b4a566c57890bb6a41176baa480b",
+      "bytes": 98775,
+      "width": 320,
+      "height": 568
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/320x568-dpr1-right-down.png",
+      "sha256": "c64e28846c04b20b5b20f9557cc66bf16e0e42807afd6c0634a3783c7e8415f1",
+      "bytes": 167147,
+      "width": 320,
+      "height": 568
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/320x568-dpr1-right-up.png",
+      "sha256": "7c4a0f8dec6c506d8d89693a6b48e40b1fcb0de6c03b471a4e6cc2f467e50a2c",
+      "bytes": 107516,
+      "width": 320,
+      "height": 568
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/320x568-dpr3-home.png",
+      "sha256": "dbe475485fac0de809fe6bca484834c004a2d52108fbea8a6b88ab0fc9157f3a",
+      "bytes": 521472,
+      "width": 960,
+      "height": 1704
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/320x568-dpr3-projects-open.png",
+      "sha256": "acc3f6fedcc7047ce727accfd27c7fe7b276d77f00df9c78b14408a3ca81ae5a",
+      "bytes": 439158,
+      "width": 960,
+      "height": 1704
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/320x844-dpr1-home.png",
+      "sha256": "0d0b20b7dc1452aaa1dfe361b562cc8de0fb9f45b1701d4537a9879df0d72a71",
+      "bytes": 140632,
+      "width": 320,
+      "height": 844
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/320x844-dpr1-left-down.png",
+      "sha256": "e105f222f13b3d96ab5f9c167c1229c9957aec57bdd178acd5032675c17ad723",
+      "bytes": 175686,
+      "width": 320,
+      "height": 844
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/320x844-dpr1-left-up.png",
+      "sha256": "7c7ce20b492c6d93fa638462816228f19d1dd4d61dbd8f2183c80ce43e9de5b6",
+      "bytes": 149142,
+      "width": 320,
+      "height": 844
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/320x844-dpr1-project-dialog.png",
+      "sha256": "6df0ffcd1d1075b68f8e45345135beeebfe5a86871c64d91a4d1d91f55d95a48",
+      "bytes": 41275,
+      "width": 320,
+      "height": 844
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/320x844-dpr1-projects-open.png",
+      "sha256": "25e5f38c67e93e773d43e84a321474cf9ea48097ec7542c356f3691a30249492",
+      "bytes": 125650,
+      "width": 320,
+      "height": 844
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/320x844-dpr1-right-down.png",
+      "sha256": "aa1267086fc93ad935b0dce36cff73198c4cdee0d30e7bf7d338520ea0a88ed9",
+      "bytes": 232321,
+      "width": 320,
+      "height": 844
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/320x844-dpr1-right-up.png",
+      "sha256": "a41cbeea07fd7ed31dcf85977d48974db10dfeadc185f5abc196182bcad1b4f1",
+      "bytes": 140772,
+      "width": 320,
+      "height": 844
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/320x844-dpr3-home.png",
+      "sha256": "201d403fd0dd27e77eb153e4bfbbe0283233822668dd0d897ca338e8faaabe97",
+      "bytes": 621521,
+      "width": 960,
+      "height": 2532
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/320x844-dpr3-projects-open.png",
+      "sha256": "1a25da5af5191a4176e2e8bdb0dac03fc50b2a22de88d66ac7822f4c6fe2a269",
+      "bytes": 543898,
+      "width": 960,
+      "height": 2532
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/390x844-dpr1-home.png",
+      "sha256": "16f6407538466a2cfa05b286ec70a145efb50b5b4d49ec9f55b17215d8692c7b",
+      "bytes": 175079,
+      "width": 390,
+      "height": 844
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/390x844-dpr1-left-down.png",
+      "sha256": "9fcc6a9ab27c9584f7a2348a5e245854f8b23720579ee0f53bb160fa46dfc113",
+      "bytes": 221491,
+      "width": 390,
+      "height": 844
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/390x844-dpr1-left-up.png",
+      "sha256": "c963d26faca796f8144f00f39d443b1d58766528c97ed1ff487a5cf22110b92c",
+      "bytes": 183255,
+      "width": 390,
+      "height": 844
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/390x844-dpr1-project-dialog.png",
+      "sha256": "0de4bd4adadba3b3f95c53cff6afe5176f835b839ec73c5767a47216c14be8c4",
+      "bytes": 45836,
+      "width": 390,
+      "height": 844
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/390x844-dpr1-projects-open.png",
+      "sha256": "8a87f345a5920e991b52962034c151622df854375da45147d86505ff95efdef0",
+      "bytes": 157782,
+      "width": 390,
+      "height": 844
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/390x844-dpr1-right-down.png",
+      "sha256": "5b1e82ed8930b74bda1224995d166a143d589d8bd76862e54365c59038bf6747",
+      "bytes": 285345,
+      "width": 390,
+      "height": 844
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/390x844-dpr1-right-up.png",
+      "sha256": "bdc0a371d13f2270b5b0ca93400ad76ac35eaff050e35cd49b789ffef8b6be81",
+      "bytes": 172682,
+      "width": 390,
+      "height": 844
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/390x844-dpr3-home.png",
+      "sha256": "0beeca33b8dd34abaf574035442d2c3565032f8e5729a3f592d7e7a9ce4f6220",
+      "bytes": 762476,
+      "width": 1170,
+      "height": 2532
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g1/studio/390x844-dpr3-projects-open.png",
+      "sha256": "25e79e7641990c235d9c648d322f39ed6d847593bc3d9941ca515dd162c86124",
+      "bytes": 676381,
+      "width": 1170,
+      "height": 2532
+    }
+  ]
+}

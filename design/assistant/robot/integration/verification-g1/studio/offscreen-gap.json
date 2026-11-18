@@ -1,0 +1,51 @@
+{
+  "before": {
+    "height": 1709,
+    "scrollY": 0,
+    "contact": {
+      "x": 64,
+      "y": 1444.21875,
+      "width": 1312,
+      "height": 264.359375,
+      "top": 1444.21875,
+      "right": 1376,
+      "bottom": 1708.578125,
+      "left": 64
+    },
+    "canvas": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 900,
+      "top": 0,
+      "right": 1440,
+      "bottom": 900,
+      "left": 0
+    }
+  },
+  "after": {
+    "scrollY": 809,
+    "innerHeight": 900,
+    "height": 1709,
+    "contact": {
+      "x": 64,
+      "y": 635.21875,
+      "width": 1312,
+      "height": 264.359375,
+      "top": 635.21875,
+      "right": 1376,
+      "bottom": 899.578125,
+      "left": 64
+    },
+    "canvas": {
+      "x": 0,
+      "y": -809,
+      "width": 1440,
+      "height": 900,
+      "top": -809,
+      "right": 1440,
+      "bottom": 91,
+      "left": 0
+    }
+  }
+}

@@ -1,0 +1,471 @@
+{
+  "status": "PASS-receipt-agreement",
+  "exactPins": [
+    {
+      "name": "selected-a.glb",
+      "bytes": 673268,
+      "sha256": "bc1a4d6d968dd53eda3480936959d0ebf292e76652a6bbdd201e15f4cd665270"
+    },
+    {
+      "name": "selected-a.blend",
+      "bytes": 572151,
+      "sha256": "80704c8f2989683dffa59f9616b1ef146eab944f7d05ae0e0bf55e1964bc508e"
+    },
+    {
+      "name": "profile.json",
+      "bytes": 32679,
+      "sha256": "f5dbf7f2a9e3e57332c62c21e27013d6ce05d11085fac94ec979631e4728e33e"
+    },
+    {
+      "name": "poses.json",
+      "bytes": 86562,
+      "sha256": "6dd7ce35a027352b4f2cffbe673081910837e69d56c9f4ec866e970381c6e96d"
+    },
+    {
+      "name": "manifest.json",
+      "bytes": 1770,
+      "sha256": "5ab01dc63a952d618877e150729b443ecb4cf9922cd3bdf1df7a985e6f6f7423"
+    },
+    {
+      "name": "files.json",
+      "bytes": 15346,
+      "sha256": "4724ffa328e9f647eb8893c1dc9a83274accee3947448f7b1658593169ce8db6"
+    },
+    {
+      "name": "validate_asset.mjs",
+      "bytes": 11497,
+      "sha256": "dc1231aa8c824a184582a69fd6b7d7603c2de979ff5e05e6421a3e2ace5ea0ad"
+    },
+    {
+      "name": "validate_contract.mjs",
+      "bytes": 10053,
+      "sha256": "b65ea4dbf9dcd034791b53203d41c98de5d94abaccffef0fb0aca3e4b13b3a87"
+    },
+    {
+      "name": "validator-probes.json",
+      "bytes": 13796,
+      "sha256": "b626a5fc4753b982c16514e8a099f1d6e82d52fbdd1899c351156ef8d17700e4"
+    },
+    {
+      "name": "build_asset.py",
+      "bytes": 30984,
+      "sha256": "2412f0f4bd6498784c96b7d722ca3cb5d4454e7526a4ef5f6c1957b1ede84bc4"
+    },
+    {
+      "name": "validation.json",
+      "bytes": 6276,
+      "sha256": "abb15cbe35a845179e05e5f23db0d58112edea5e2f7c60d730c474140da5bd4c"
+    },
+    {
+      "name": "viewer/webgl-evidence.json",
+      "bytes": 15742,
+      "sha256": "30e6ea6ffd4f2d5da92e876d015c5146efcfe438c3d76ede34084c50e348253e"
+    }
+  ],
+  "frozenV01": [
+    {
+      "name": "build-summary.json",
+      "actual": "77272303f3b21551c52ccb6b619de1bae501c0996d007e36f3a9e7e74e2da3b6",
+      "expected": "77272303f3b21551c52ccb6b619de1bae501c0996d007e36f3a9e7e74e2da3b6"
+    },
+    {
+      "name": "build_asset.py",
+      "actual": "f03b30650b0eff3389bfd0d830b58e4f5ada4608832bd09bb2e2f8240d26572c",
+      "expected": "f03b30650b0eff3389bfd0d830b58e4f5ada4608832bd09bb2e2f8240d26572c"
+    },
+    {
+      "name": "files.json",
+      "actual": "4557842973bdc5b32c22e96e87641d6c98403703bb3a97d5dd823620372d159f",
+      "expected": "4557842973bdc5b32c22e96e87641d6c98403703bb3a97d5dd823620372d159f"
+    },
+    {
+      "name": "finalize_report.mjs",
+      "actual": "ef74051440e6f4c03e18f35ec66051acc0670fc53e435afc29fc9816d2ab0ccd",
+      "expected": "ef74051440e6f4c03e18f35ec66051acc0670fc53e435afc29fc9816d2ab0ccd"
+    },
+    {
+      "name": "five-poses.png",
+      "actual": "551db1ccd3ef705088b37849394d3f8098f8efb5c7a730ecad6e8dd8c6fe8f34",
+      "expected": "551db1ccd3ef705088b37849394d3f8098f8efb5c7a730ecad6e8dd8c6fe8f34"
+    },
+    {
+      "name": "inspect_raw.py",
+      "actual": "303f89a1eff62545bd4666af46fbc28652eed564abdd629eaa9d3538ddab0e14",
+      "expected": "303f89a1eff62545bd4666af46fbc28652eed564abdd629eaa9d3538ddab0e14"
+    },
+    {
+      "name": "make_sheets.ps1",
+      "actual": "20969596fcc02e9b02792df5ccfe42783ae189cd6f23b26cef8177c676997835",
+      "expected": "20969596fcc02e9b02792df5ccfe42783ae189cd6f23b26cef8177c676997835"
+    },
+    {
+      "name": "manifest.json",
+      "actual": "c6c53f0748d228e159ea6e883dd0624ced59e832096c09f72c0f01c91c5d1e68",
+      "expected": "c6c53f0748d228e159ea6e883dd0624ced59e832096c09f72c0f01c91c5d1e68"
+    },
+    {
+      "name": "neutral-contact-sheet.png",
+      "actual": "cf65edf645cd34ffed793c3e4f8d816852861f5c372ac2fbc0bf162afaaa2ff6",
+      "expected": "cf65edf645cd34ffed793c3e4f8d816852861f5c372ac2fbc0bf162afaaa2ff6"
+    },
+    {
+      "name": "poses.json",
+      "actual": "6e32e89bd68e47ea2638302211e0d45da38f078e9201e6c71b903ca4c05aacc6",
+      "expected": "6e32e89bd68e47ea2638302211e0d45da38f078e9201e6c71b903ca4c05aacc6"
+    },
+    {
+      "name": "profile.json",
+      "actual": "3c8d967715892f5ee2430b252bafdc3d1a55c767fb949cf55f6475b260c6f550",
+      "expected": "3c8d967715892f5ee2430b252bafdc3d1a55c767fb949cf55f6475b260c6f550"
+    },
+    {
+      "name": "projection-calibration.json",
+      "actual": "9d4da7e42c78c6c1671b7d645d9350095ee27a932d2f24f5ceac86d22ab3b430",
+      "expected": "9d4da7e42c78c6c1671b7d645d9350095ee27a932d2f24f5ceac86d22ab3b430"
+    },
+    {
+      "name": "raw-components.json",
+      "actual": "7512299a6d7ffa73d5c52db90c9a6255a7e937fe61dab9313acb5ab37513c20f",
+      "expected": "7512299a6d7ffa73d5c52db90c9a6255a7e937fe61dab9313acb5ab37513c20f"
+    },
+    {
+      "name": "raw-contact-sheet.png",
+      "actual": "e487f0eed592beb43ffc19fe9dea1bfce7bb20333e00961c99ce89570017840d",
+      "expected": "e487f0eed592beb43ffc19fe9dea1bfce7bb20333e00961c99ce89570017840d"
+    },
+    {
+      "name": "README.md",
+      "actual": "2f672d00dd43d61804799656b28c16ade8a050ac8710eb733e82851edb5d2b63",
+      "expected": "2f672d00dd43d61804799656b28c16ade8a050ac8710eb733e82851edb5d2b63"
+    },
+    {
+      "name": "reimport-validation.json",
+      "actual": "2765042e09661084d8814fd15ebbbb64d3ce042d6e1fd9a26ca002b78f9b3a2a",
+      "expected": "2765042e09661084d8814fd15ebbbb64d3ce042d6e1fd9a26ca002b78f9b3a2a"
+    },
+    {
+      "name": "reimport_validate.py",
+      "actual": "a4ac5f7b7e090544a1026ef5db1d32b41b631bc88db1ed8979facadafad126b3",
+      "expected": "a4ac5f7b7e090544a1026ef5db1d32b41b631bc88db1ed8979facadafad126b3"
+    },
+    {
+      "name": "retained-mesh.json",
+      "actual": "b130d7b5b880f0f91540312107388fa9be7a577307eecbd819cd8e66891e3d38",
+      "expected": "b130d7b5b880f0f91540312107388fa9be7a577307eecbd819cd8e66891e3d38"
+    },
+    {
+      "name": "selected-a.blend",
+      "actual": "23c6fdf90d48bee4f3a82fd811f312b6eb798dd40712544fa7afa6bdb67a22fc",
+      "expected": "23c6fdf90d48bee4f3a82fd811f312b6eb798dd40712544fa7afa6bdb67a22fc"
+    },
+    {
+      "name": "selected-a.glb",
+      "actual": "775733a18559d7f52dd6bd71e7ec518a9783ef3c9e95dd753b3072e553587232",
+      "expected": "775733a18559d7f52dd6bd71e7ec518a9783ef3c9e95dd753b3072e553587232"
+    },
+    {
+      "name": "validate_asset.mjs",
+      "actual": "dc0383731656d792f99af43879e2c2cca53cca3868b1f31e27fbafc6b77f5ea9",
+      "expected": "dc0383731656d792f99af43879e2c2cca53cca3868b1f31e27fbafc6b77f5ea9"
+    },
+    {
+      "name": "validation.json",
+      "actual": "1d4f30feb75849cfb62ea8ab22b5f540fbb29881f69114212fb36644b50ec2bd",
+      "expected": "1d4f30feb75849cfb62ea8ab22b5f540fbb29881f69114212fb36644b50ec2bd"
+    },
+    {
+      "name": "raw-renders\\back.png",
+      "actual": "f8642f5d85ef3c97f239d95b98c8853b97c8dab18d66bc7563517a387a474c8c",
+      "expected": "f8642f5d85ef3c97f239d95b98c8853b97c8dab18d66bc7563517a387a474c8c"
+    },
+    {
+      "name": "raw-renders\\front.png",
+      "actual": "6006c33e748278f65b1ebbc926cc2f08edc8bfca6cc9b29d920fbf1de113ae50",
+      "expected": "6006c33e748278f65b1ebbc926cc2f08edc8bfca6cc9b29d920fbf1de113ae50"
+    },
+    {
+      "name": "raw-renders\\side.png",
+      "actual": "1c7b8d54c28713f780a7861776ec484919513dc657ca582d49f9452a8e434e3d",
+      "expected": "1c7b8d54c28713f780a7861776ec484919513dc657ca582d49f9452a8e434e3d"
+    },
+    {
+      "name": "raw-renders\\three-quarter.png",
+      "actual": "01df3390e6a40aeeb5bff3fe0ca314160682083f47058af164c077fd4916a40b",
+      "expected": "01df3390e6a40aeeb5bff3fe0ca314160682083f47058af164c077fd4916a40b"
+    },
+    {
+      "name": "renders\\isolated-mobile-fov64-at-2m.png",
+      "actual": "dc4e60c44556fdcc5a859dda877131d4271bb1f0bcae011ab1843de8f64e4894",
+      "expected": "dc4e60c44556fdcc5a859dda877131d4271bb1f0bcae011ab1843de8f64e4894"
+    },
+    {
+      "name": "renders\\neutral-back.png",
+      "actual": "bde72fd77476c19ea57db84c77df1569d1eb317d63d81a18a90b0894170bd29f",
+      "expected": "bde72fd77476c19ea57db84c77df1569d1eb317d63d81a18a90b0894170bd29f"
+    },
+    {
+      "name": "renders\\neutral-front.png",
+      "actual": "506b2e20ea33a52c349aa62616ae690e064e0247151402890d2d10d361dc3a36",
+      "expected": "506b2e20ea33a52c349aa62616ae690e064e0247151402890d2d10d361dc3a36"
+    },
+    {
+      "name": "renders\\neutral-side.png",
+      "actual": "8cdd2d95d3e264cd7bdef7f4647e1e32fd1856e6a9b690eceadb03079e33ef56",
+      "expected": "8cdd2d95d3e264cd7bdef7f4647e1e32fd1856e6a9b690eceadb03079e33ef56"
+    },
+    {
+      "name": "renders\\neutral-three-quarter.png",
+      "actual": "b15d7ed171227f24b5e7ec19069ba83f74a1b9dbe165ed74d24b0e38a2b976fe",
+      "expected": "b15d7ed171227f24b5e7ec19069ba83f74a1b9dbe165ed74d24b0e38a2b976fe"
+    },
+    {
+      "name": "renders\\pose-attention.png",
+      "actual": "8fe153a29fda8634ff18a0efa69e49dd493b77dbc7ba152c0332e5108f03fa5c",
+      "expected": "8fe153a29fda8634ff18a0efa69e49dd493b77dbc7ba152c0332e5108f03fa5c"
+    },
+    {
+      "name": "renders\\pose-dismissal.png",
+      "actual": "44f4ea06af92d5e7b5c37e7bd4816ab476e4d98d095e1dff995749e74c387f6c",
+      "expected": "44f4ea06af92d5e7b5c37e7bd4816ab476e4d98d095e1dff995749e74c387f6c"
+    },
+    {
+      "name": "renders\\pose-neutral.png",
+      "actual": "f38352a862246781a79b1106dc011fc56bd6ebb72e6ee817959b205e5963f905",
+      "expected": "f38352a862246781a79b1106dc011fc56bd6ebb72e6ee817959b205e5963f905"
+    },
+    {
+      "name": "renders\\pose-no-match.png",
+      "actual": "bfb26b2ae468628fd23e168ce950e6fb59dfe706f829e657a46bc01340ff5735",
+      "expected": "bfb26b2ae468628fd23e168ce950e6fb59dfe706f829e657a46bc01340ff5735"
+    },
+    {
+      "name": "renders\\pose-sources.png",
+      "actual": "74e66c8c776e51635da5c97ac0109fa85a20e6ccb0d1c4b22bd8845177c19e8d",
+      "expected": "74e66c8c776e51635da5c97ac0109fa85a20e6ccb0d1c4b22bd8845177c19e8d"
+    },
+    {
+      "name": "renders\\reimport-front.png",
+      "actual": "1c23461bbf6f2445fbfac31e31beedaa043229709f2328864cbf048cefbbd433",
+      "expected": "1c23461bbf6f2445fbfac31e31beedaa043229709f2328864cbf048cefbbd433"
+    }
+  ],
+  "sourcePins": [
+    {
+      "name": "canonicalImage",
+      "path": "design/assistant/robot/higgsfield-concepts/selected-a-v01/outputs/02-front.png",
+      "actual": "9b94d861e18d5c95f439847e30a81aa7a036110f0105585a8914126bfc9c8cc7",
+      "expected": "9b94d861e18d5c95f439847e30a81aa7a036110f0105585a8914126bfc9c8cc7",
+      "bytes": 4037510,
+      "expectedBytes": 4037510
+    },
+    {
+      "name": "buildDecisions",
+      "path": "design/assistant/robot/selected-a-build-decisions.md",
+      "actual": "face0b2be9557a6f55d3a2106a7a2ebf5a0617b14701c5d3e7de9c9408e27a11",
+      "expected": "face0b2be9557a6f55d3a2106a7a2ebf5a0617b14701c5d3e7de9c9408e27a11",
+      "bytes": 3831,
+      "expectedBytes": 3831
+    },
+    {
+      "name": "visualReview",
+      "path": "design/assistant/robot/review/selected-a-v01/review.md",
+      "actual": "491c25cfc863e3e27a718b4e4971916fcfa01d6204aa9a615d0b7934e3ed5b77",
+      "expected": "491c25cfc863e3e27a718b4e4971916fcfa01d6204aa9a615d0b7934e3ed5b77",
+      "bytes": 10156,
+      "expectedBytes": 10156
+    },
+    {
+      "name": "stateContract",
+      "path": "design/assistant/robot/integration/state-contract.md",
+      "actual": "e9c1916fd9a0529b6f3a11bdc7a1829b67c1e3b29ccdc5b58d6c05d970f9b26d",
+      "expected": "e9c1916fd9a0529b6f3a11bdc7a1829b67c1e3b29ccdc5b58d6c05d970f9b26d",
+      "bytes": 21582,
+      "expectedBytes": 21582
+    },
+    {
+      "name": "v01VisualRepairReview",
+      "path": "design/assistant/robot/review/build-v01/visual/review.md",
+      "actual": "9a2248c880cd407f6b57576a994733664b8f7502359bb7387c52497ae7b3ce5c",
+      "expected": "9a2248c880cd407f6b57576a994733664b8f7502359bb7387c52497ae7b3ce5c",
+      "bytes": 13774,
+      "expectedBytes": 13774
+    },
+    {
+      "name": "v01TechnicalReview",
+      "path": "design/assistant/robot/review/build-v01/technical/review.md",
+      "actual": "961dd9a84def15a9a0ea9b83030f68f4ffde73717114c08e145acdd4bc8165b2",
+      "expected": "961dd9a84def15a9a0ea9b83030f68f4ffde73717114c08e145acdd4bc8165b2",
+      "bytes": 19871,
+      "expectedBytes": 19871
+    },
+    {
+      "name": "placementPrototypeDecisions",
+      "path": "design/assistant/robot/placement-selected-a/coordinator-decisions.md",
+      "actual": "ed8a585d7abf10717ca91be39a178b11eee06f3d08d2573ca43484a6a376ba46",
+      "expected": "ed8a585d7abf10717ca91be39a178b11eee06f3d08d2573ca43484a6a376ba46",
+      "bytes": 3327,
+      "expectedBytes": 3327
+    }
+  ],
+  "viewerInputs": [
+    {
+      "path": "components\\studio\\scene\\build-studio.ts",
+      "pinned": "e23588e2702ece52c5b8a2ed25adb2debac366fdf90c66609a5ef4299ffc11ae",
+      "current": "e23588e2702ece52c5b8a2ed25adb2debac366fdf90c66609a5ef4299ffc11ae"
+    },
+    {
+      "path": "components\\studio\\scene\\resources.ts",
+      "pinned": "756a26fba1840696fd7b8f0a24dfa588a50488a55fbc99bec60ca3c0e14cb509",
+      "current": "756a26fba1840696fd7b8f0a24dfa588a50488a55fbc99bec60ca3c0e14cb509"
+    },
+    {
+      "path": "components\\studio\\scene\\textures.ts",
+      "pinned": "09f6ff6cc7bb8910f09838566dfcf840d85a0d2ce1be8d064deafb0989c63aa6",
+      "current": "09f6ff6cc7bb8910f09838566dfcf840d85a0d2ce1be8d064deafb0989c63aa6"
+    },
+    {
+      "path": "components/studio/scene/controller.ts",
+      "pinned": "cc76055ea4bfe596e0d3ab49c84ca55c55b8a9bad3b33627e08adeb78f0969f0",
+      "current": "cc76055ea4bfe596e0d3ab49c84ca55c55b8a9bad3b33627e08adeb78f0969f0"
+    },
+    {
+      "path": "components/studio/scene/load-pilot.ts",
+      "pinned": "b5cd61c682dd69d2336b10b508b516999e72d73a00edbd6e2cebcf0323d39d11",
+      "current": "b5cd61c682dd69d2336b10b508b516999e72d73a00edbd6e2cebcf0323d39d11"
+    },
+    {
+      "path": "design/studio-v2/asset-pipeline/integration-contract/pilot-profile.json",
+      "pinned": "02a9b364ed42127988747660ac61d6efca8bc3af9f151a0e41eb0d50bc0baa08",
+      "current": "02a9b364ed42127988747660ac61d6efca8bc3af9f151a0e41eb0d50bc0baa08"
+    },
+    {
+      "path": "public/studio/pilot-right-limit-v03.glb",
+      "pinned": "2b9a4182c3024485680c1e066c8a22ef0dc0f541acca4bd958486bced2c4063e",
+      "current": "2b9a4182c3024485680c1e066c8a22ef0dc0f541acca4bd958486bced2c4063e"
+    },
+    {
+      "path": "node_modules/three/build/three.module.js",
+      "pinned": "104f56145899722094556490d787aae0617cc2fc3382f31df02d724ea1aee341",
+      "current": "104f56145899722094556490d787aae0617cc2fc3382f31df02d724ea1aee341"
+    },
+    {
+      "path": "node_modules/three/build/three.core.js",
+      "pinned": "613e370f76638fdef83926642bf256dc9615684922de1ce1f63a8583e5d78578",
+      "current": "613e370f76638fdef83926642bf256dc9615684922de1ce1f63a8583e5d78578"
+    },
+    {
+      "path": "node_modules/three/examples/jsm/loaders/GLTFLoader.js",
+      "pinned": "532ac726e120039acbcd6cf54328c57acbf7b438176afaa6951257126d11bff1",
+      "current": "532ac726e120039acbcd6cf54328c57acbf7b438176afaa6951257126d11bff1"
+    }
+  ],
+  "viewerInputsCurrentlyMatch": true,
+  "rootMidpointErrorRaw": [
+    0,
+    0,
+    3.725290298461914e-9
+  ],
+  "unchangedMassGeometry": [
+    {
+      "name": "APA_body",
+      "v01": {
+        "POSITION": "e891728860a00cbf83cc35e5b8b4c08a7de15e42d214dcb47787fb61de2d22b4",
+        "NORMAL": "fc024f5da97490b787237a283372af5d8f8a683eb6acc3d6262b0721f8a23301",
+        "indices": "6511910a0d6869de89725527a2dd5ffdebc55fe58a79c66fc8269b9187d84156"
+      },
+      "v02": {
+        "POSITION": "e891728860a00cbf83cc35e5b8b4c08a7de15e42d214dcb47787fb61de2d22b4",
+        "NORMAL": "fc024f5da97490b787237a283372af5d8f8a683eb6acc3d6262b0721f8a23301",
+        "indices": "6511910a0d6869de89725527a2dd5ffdebc55fe58a79c66fc8269b9187d84156"
+      }
+    },
+    {
+      "name": "APA_mitten_L",
+      "v01": {
+        "POSITION": "3839ab6c2e563ee6dbd858b9ece3fc35e1a9a78d159b0beb84d81dc41f20f3d5",
+        "NORMAL": "e15ce54abd38ddc28611db4766c617c8c4f13eba45e10fc0500231cbe0a761a9",
+        "indices": "de5e26893853e0552cd0e98f73c271f9f3fe8a792d1e3b5429a265aa0bf4e14c"
+      },
+      "v02": {
+        "POSITION": "3839ab6c2e563ee6dbd858b9ece3fc35e1a9a78d159b0beb84d81dc41f20f3d5",
+        "NORMAL": "e15ce54abd38ddc28611db4766c617c8c4f13eba45e10fc0500231cbe0a761a9",
+        "indices": "de5e26893853e0552cd0e98f73c271f9f3fe8a792d1e3b5429a265aa0bf4e14c"
+      }
+    },
+    {
+      "name": "APA_mitten_R",
+      "v01": {
+        "POSITION": "62e869333280a6a9e27d7f9bd1d28bdbf5aa69ccd70eed3cf79789a3092d9903",
+        "NORMAL": "3830d5491edcbd566f514073b7ddc2f64f9b16a7cb8348978780b33e6e9b07cb",
+        "indices": "c8d28d7f6ccc1ff1fbc4f6831da953586f7f4813944ae2219b15077e7bc6dad9"
+      },
+      "v02": {
+        "POSITION": "62e869333280a6a9e27d7f9bd1d28bdbf5aa69ccd70eed3cf79789a3092d9903",
+        "NORMAL": "3830d5491edcbd566f514073b7ddc2f64f9b16a7cb8348978780b33e6e9b07cb",
+        "indices": "c8d28d7f6ccc1ff1fbc4f6831da953586f7f4813944ae2219b15077e7bc6dad9"
+      }
+    }
+  ],
+  "costChange": {
+    "oldRaw": 328960,
+    "newRaw": 673268,
+    "increaseRaw": 344308,
+    "oldTriangles": 18330,
+    "newTriangles": 37676,
+    "increaseTriangles": 19346
+  },
+  "placement": {
+    "assetSha256": "bc1a4d6d968dd53eda3480936959d0ebf292e76652a6bbdd201e15f4cd665270",
+    "method": "new v02 conservative swept AABB transformed by root P2 prototype; compare source-projection neighbour angles from placement.md, not actual triangle occlusion",
+    "anchorWorld": [
+      0.8,
+      2.8,
+      -0.2
+    ],
+    "quaternion": [
+      0,
+      -0.19611998129015468,
+      0,
+      0.9805799064526813
+    ],
+    "wrapperScale": 1.6,
+    "worldUnitsPerMetre": 2,
+    "artScale": 0.8,
+    "floorOffset": 0,
+    "worldSweptAabb": {
+      "min": [
+        0.4747558984820735,
+        2.356071800796561,
+        -0.49661672750899205
+      ],
+      "max": [
+        1.1158023221232047,
+        3.3713150075988243,
+        0.12399351061312197
+      ]
+    },
+    "angularDegrees": {
+      "azimuth": [
+        18.70913257176177,
+        26.558857501006408
+      ],
+      "elevation": [
+        -6.911299952269536,
+        8.866454511144692
+      ]
+    },
+    "marginsAgainstP2ApproximateAngles": {
+      "typeforgeDegrees": 1.7491325717617698,
+      "wallLightsDegrees": -0.9864545111446921,
+      "speakerDegrees": 0.5087000477304642
+    },
+    "anchorAccepted": false,
+    "runtimeCardsIncluded": false,
+    "limitations": [
+      "Negative box margin is a conservative overlap warning, not proof of silhouette collision; enlarged bookmark may sit right of lights",
+      "No shrinking/redesign/moving room authorized or performed",
+      "Runtime card bounds and interrupted transitions remain unmeasured"
+    ]
+  },
+  "scope": "Read-only agreement checks; author browser evidence is reviewed, not independently recaptured; no final placement or total room/assistant budget acceptance."
+}

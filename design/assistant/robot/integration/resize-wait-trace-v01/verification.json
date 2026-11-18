@@ -1,0 +1,21 @@
+{
+  "at": "2026-11-18T20:56:19.999Z",
+  "buildId": "KEhdfJ0NJBO2q0ASaHcHN",
+  "sourcePins": 83,
+  "unchangedInputs": 171,
+  "rawTrace": {
+    "path": "design/assistant/robot/integration/resize-wait-trace-v01/chromium-trace.json",
+    "bytes": 98562463,
+    "sha256": "57a9ec45ae4eabd556bd1b94cf601bc91e1c9be3120d8c64d702ca146d8c6a57"
+  },
+  "singleTrace": true,
+  "singleScenario": true,
+  "privateContextClosed": true,
+  "rootPageRestored": true,
+  "samplerEndedNaturally": true,
+  "previewIdentityUnchanged": true,
+  "allVisibleFocused": true,
+  "traceDiagnosticP95Passed": true,
+  "priorAcceptanceFailureStillOpen": true,
+  "noProductionPatchRecommended": true
+}

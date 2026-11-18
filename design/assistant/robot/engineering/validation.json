@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-11-15T17:19:44.503Z",
+  "checks": {
+    "paths": true,
+    "snapshotStable": true,
+    "links": true,
+    "forecastRemainder": true,
+    "sensitivityRemainder": true,
+    "conditionalRemainder": true
+  },
+  "changedSources": [],
+  "fileCount": 65,
+  "linkChecks": [
+    {
+      "target": "engineering/source-snapshot.json",
+      "exists": true
+    },
+    {
+      "target": "brief.md",
+      "exists": true
+    }
+  ],
+  "report": {
+    "path": "C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\engineering-constraints.md",
+    "sha256": "0deff2b890587cb67aba0e6dd7e533cb138637b9c91c61e9807a4702abfa98bb",
+    "words": 2355,
+    "lines": 92
+  },
+  "limitations": "No application tests, browser, build, Blender or runtime performance checks run; validates this specification only."
+}

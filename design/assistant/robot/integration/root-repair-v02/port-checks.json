@@ -1,0 +1,24 @@
+{
+  "at": "2026-11-18T18:22:25.944Z",
+  "pins": [
+    {
+      "path": "components/studio/StudioExperience.tsx",
+      "sha256": "d65b4aeb2f00af40700ebb90e42087a267d6135c520c37582a12f4ffc39f3403"
+    },
+    {
+      "path": "tests/assistant/studio-experience.test.cjs",
+      "sha256": "5e9e9626142641473c3f3961f24639834e7b8c0c7f0b0c966ce50f00ee6dbfd0"
+    }
+  ],
+  "checks": [
+    {
+      "command": [
+        "node",
+        "--test",
+        "tests/assistant/studio-experience.test.cjs"
+      ],
+      "exitCode": 1,
+      "log": "port-0.log"
+    }
+  ]
+}

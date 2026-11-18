@@ -1,0 +1,658 @@
+{
+  "captures": [
+    {
+      "strength": 4,
+      "file": "eye-strength-4.png",
+      "pose": "neutral",
+      "view": "face",
+      "camera": [
+        0.40383869541157696,
+        3.1199999999999997,
+        0.7507661230538238
+      ],
+      "cameraQuaternion": [
+        -0.033263135908825556,
+        -0.19600711162469248,
+        -0.0066527628693618755,
+        0.9800155696356361
+      ],
+      "lookDirection": [
+        0.38373745879203186,
+        -0.06780475983980577,
+        -0.9209495519641127
+      ],
+      "fov": 30,
+      "viewport": [
+        800,
+        900
+      ],
+      "renderInfo": {
+        "frame": 2,
+        "calls": 105,
+        "triangles": 114636,
+        "points": 0,
+        "lines": 0
+      }
+    },
+    {
+      "strength": 1,
+      "file": "eye-strength-1.png",
+      "pose": "neutral",
+      "view": "face",
+      "camera": [
+        0.40383869541157696,
+        3.1199999999999997,
+        0.7507661230538238
+      ],
+      "cameraQuaternion": [
+        -0.033263135908825556,
+        -0.19600711162469248,
+        -0.0066527628693618755,
+        0.9800155696356361
+      ],
+      "lookDirection": [
+        0.38373745879203186,
+        -0.06780475983980577,
+        -0.9209495519641127
+      ],
+      "fov": 30,
+      "viewport": [
+        800,
+        900
+      ],
+      "renderInfo": {
+        "frame": 3,
+        "calls": 105,
+        "triangles": 114636,
+        "points": 0,
+        "lines": 0
+      }
+    },
+    {
+      "strength": 1.25,
+      "file": "eye-strength-1.25.png",
+      "pose": "neutral",
+      "view": "face",
+      "camera": [
+        0.40383869541157696,
+        3.1199999999999997,
+        0.7507661230538238
+      ],
+      "cameraQuaternion": [
+        -0.033263135908825556,
+        -0.19600711162469248,
+        -0.0066527628693618755,
+        0.9800155696356361
+      ],
+      "lookDirection": [
+        0.38373745879203186,
+        -0.06780475983980577,
+        -0.9209495519641127
+      ],
+      "fov": 30,
+      "viewport": [
+        800,
+        900
+      ],
+      "renderInfo": {
+        "frame": 4,
+        "calls": 105,
+        "triangles": 114636,
+        "points": 0,
+        "lines": 0
+      }
+    },
+    {
+      "strength": 1.5,
+      "file": "eye-strength-1.5.png",
+      "pose": "neutral",
+      "view": "face",
+      "camera": [
+        0.40383869541157696,
+        3.1199999999999997,
+        0.7507661230538238
+      ],
+      "cameraQuaternion": [
+        -0.033263135908825556,
+        -0.19600711162469248,
+        -0.0066527628693618755,
+        0.9800155696356361
+      ],
+      "lookDirection": [
+        0.38373745879203186,
+        -0.06780475983980577,
+        -0.9209495519641127
+      ],
+      "fov": 30,
+      "viewport": [
+        800,
+        900
+      ],
+      "renderInfo": {
+        "frame": 5,
+        "calls": 105,
+        "triangles": 114636,
+        "points": 0,
+        "lines": 0
+      }
+    }
+  ],
+  "evidence": {
+    "threeRevision": "187",
+    "renderer": "WebKit WebGL",
+    "unmaskedRenderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A60) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "outputColorSpace": "srgb",
+    "toneMapping": "ACESFilmicToneMapping",
+    "exposure": 1.2,
+    "pixelRatio": 1,
+    "viewport": [
+      800,
+      900
+    ],
+    "anchorWorld": [
+      0.8,
+      2.8,
+      -0.2
+    ],
+    "anchorQuaternion": [
+      0,
+      -0.19611998129015468,
+      0,
+      0.9805799064526813
+    ],
+    "effectiveWrapperScale": 1.6,
+    "worldUnitsPerMetre": 2,
+    "provisionalArtScale": 0.8,
+    "roomGeometry": "createStudio current source with current pilot and adapter",
+    "lights": [
+      {
+        "type": "HemisphereLight",
+        "color": [
+          0.7156935005005721,
+          0.7011018919268015,
+          0.6307571363387763
+        ],
+        "intensity": 1.15,
+        "position": [
+          0,
+          1,
+          0
+        ],
+        "castShadow": false
+      },
+      {
+        "type": "DirectionalLight",
+        "color": [
+          1,
+          0.6938717612856897,
+          0.3915724777393922
+        ],
+        "intensity": 2.6,
+        "position": [
+          2.4,
+          7.6,
+          6.4
+        ],
+        "target": [
+          -0.6,
+          1.2,
+          -0.5
+        ],
+        "castShadow": true
+      },
+      {
+        "type": "PointLight",
+        "color": [
+          1,
+          0.6444796819634361,
+          0.3515325994898463
+        ],
+        "intensity": 12,
+        "position": [
+          -1.6,
+          3.85,
+          0.3
+        ],
+        "distance": 7,
+        "decay": 2,
+        "castShadow": false
+      },
+      {
+        "type": "PointLight",
+        "color": [
+          1,
+          0.4396571738310091,
+          0.10702310296918527
+        ],
+        "intensity": 8,
+        "position": [
+          0.55,
+          3.8,
+          -1.45
+        ],
+        "distance": 6,
+        "decay": 2,
+        "castShadow": false
+      },
+      {
+        "type": "PointLight",
+        "color": [
+          1,
+          0.7304607400847158,
+          0.4452011945063733
+        ],
+        "intensity": 9,
+        "position": [
+          4.56,
+          3.5,
+          -0.02
+        ],
+        "distance": 6.5,
+        "decay": 2,
+        "castShadow": false
+      },
+      {
+        "type": "PointLight",
+        "color": [
+          0.3371636150376657,
+          0.45641102317066595,
+          0.6038273388475408
+        ],
+        "intensity": 4,
+        "position": [
+          4.35,
+          3,
+          1.5
+        ],
+        "distance": 6,
+        "decay": 2,
+        "castShadow": false
+      },
+      {
+        "type": "PointLight",
+        "color": [
+          1,
+          0.7304607400847158,
+          0.4452011945063733
+        ],
+        "intensity": 3,
+        "position": [
+          3.3,
+          3.3,
+          3.2
+        ],
+        "distance": 5,
+        "decay": 2,
+        "castShadow": false
+      }
+    ],
+    "materials": [
+      {
+        "name": "MAT_APA_porcelain",
+        "color": [
+          0.8069522380828857,
+          0.7379103899002075,
+          0.6239603757858276
+        ],
+        "emissive": [
+          0,
+          0,
+          0
+        ],
+        "emissiveIntensity": 1,
+        "metalness": 0,
+        "roughness": 0.3700000047683716
+      },
+      {
+        "name": "MAT_APA_brass",
+        "color": [
+          0.5647115111351013,
+          0.3324515223503113,
+          0.0802198201417923
+        ],
+        "emissive": [
+          0,
+          0,
+          0
+        ],
+        "emissiveIntensity": 1,
+        "metalness": 0.7799999713897705,
+        "roughness": 0.30000001192092896
+      },
+      {
+        "name": "MAT_APA_ribbon",
+        "color": [
+          0.366252601146698,
+          0.02518685907125473,
+          0.020288562402129173
+        ],
+        "emissive": [
+          0,
+          0,
+          0
+        ],
+        "emissiveIntensity": 1,
+        "metalness": 0,
+        "roughness": 0.5799999833106995
+      },
+      {
+        "name": "MAT_APA_eye_emit",
+        "color": [
+          1,
+          0.8713670969009399,
+          0.5972017645835876
+        ],
+        "emissive": [
+          1,
+          0.8713670969009399,
+          0.5972017645835876
+        ],
+        "emissiveIntensity": 4,
+        "metalness": 0,
+        "roughness": 0.4000000059604645
+      },
+      {
+        "name": "MAT_APA_ink",
+        "color": [
+          0.022173885256052017,
+          0.017641954123973846,
+          0.013702083379030228
+        ],
+        "emissive": [
+          0,
+          0,
+          0
+        ],
+        "emissiveIntensity": 1,
+        "metalness": 0,
+        "roughness": 0.5799999833106995
+      },
+      {
+        "name": "MAT_APA_highlight",
+        "color": [
+          1,
+          0.9301108717918396,
+          0.7912979125976562
+        ],
+        "emissive": [
+          0.25,
+          0.2325277179479599,
+          0.19782447814941406
+        ],
+        "emissiveIntensity": 1,
+        "metalness": 0,
+        "roughness": 0.2800000011920929
+      },
+      {
+        "name": "MAT_APA_tray_emit",
+        "color": [
+          0.5647115111351013,
+          0.3324515223503113,
+          0.0802198201417923
+        ],
+        "emissive": [
+          0.05647115195499586,
+          0.0332451527304225,
+          0.008021982133716077
+        ],
+        "emissiveIntensity": 1,
+        "metalness": 0.7799999713897705,
+        "roughness": 0.6499999761581421
+      }
+    ],
+    "environmentMap": null,
+    "limitations": [
+      "P2 provisional anchor; inspection cameras except fixed-eye room view; no placement approval",
+      "Browser isolated material evidence only; no main app integration or device performance acceptance",
+      "Robot shadows disabled per asset contract; actual room shadow sun retained",
+      "No bloom or runtime source cards"
+    ],
+    "poseResult": {
+      "pose": "neutral",
+      "view": "front",
+      "camera": [
+        0.011523617081294013,
+        2.88,
+        1.6923015070488723
+      ],
+      "cameraQuaternion": [
+        0,
+        -0.19611998129015468,
+        0,
+        0.9805799064526814
+      ],
+      "lookDirection": [
+        0.384622625814003,
+        0,
+        -0.9230739058774987
+      ],
+      "fov": 38,
+      "viewport": [
+        800,
+        900
+      ],
+      "renderInfo": {
+        "frame": 1,
+        "calls": 110,
+        "triangles": 117456,
+        "points": 0,
+        "lines": 0
+      }
+    },
+    "resourceIdentities": {
+      "geometries": [
+        {
+          "node": "APA_body",
+          "id": 25,
+          "uuid": "66a72b33-be4c-4945-87a0-a1e50bffe48c"
+        },
+        {
+          "node": "APA_body_cap",
+          "id": 26,
+          "uuid": "a44fee4a-0d23-4447-9448-651a677aaaf9"
+        },
+        {
+          "node": "APA_collar",
+          "id": 27,
+          "uuid": "79b96a69-3863-432b-9bba-4f83c6c7a4c3"
+        },
+        {
+          "node": "APA_mitten_L",
+          "id": 28,
+          "uuid": "eeff481c-8f5c-423d-bebc-8d178b5dd282"
+        },
+        {
+          "node": "APA_mitten_R",
+          "id": 29,
+          "uuid": "f4d1bd8a-c7d4-473e-8d83-6bb592991d13"
+        },
+        {
+          "node": "APA_head",
+          "id": 30,
+          "uuid": "682ed344-153f-4a3a-91f2-4b3f9fc38e77"
+        },
+        {
+          "node": "APA_bookmark_post",
+          "id": 31,
+          "uuid": "450f521d-fa52-4d95-ae45-8dd10dc45bba"
+        },
+        {
+          "node": "APA_bookmark_ribbon",
+          "id": 32,
+          "uuid": "f31e5f51-b57c-41ae-9944-e9d64abb0150"
+        },
+        {
+          "node": "APA_eye_L",
+          "id": 33,
+          "uuid": "fa1f19ac-e611-41fe-a0f0-da573bd26b55"
+        },
+        {
+          "node": "APA_pupil_L",
+          "id": 34,
+          "uuid": "0f96d161-5d38-472a-b14d-d2c3408da10a"
+        },
+        {
+          "node": "APA_highlight_L",
+          "id": 35,
+          "uuid": "6a36c397-7cfa-4cac-a162-327e87d9b68f"
+        },
+        {
+          "node": "APA_eye_R",
+          "id": 36,
+          "uuid": "4cfd49c0-3b90-44ec-80e7-ed8de49772a6"
+        },
+        {
+          "node": "APA_pupil_R",
+          "id": 37,
+          "uuid": "1dd1ebd9-1965-452c-a5d5-26e391a63a34"
+        },
+        {
+          "node": "APA_highlight_R",
+          "id": 38,
+          "uuid": "e79c097e-f60f-4f01-a6cb-36176e108808"
+        },
+        {
+          "node": "APA_face",
+          "id": 39,
+          "uuid": "8f90d45c-b914-469a-8cb7-b1355c71f56d"
+        },
+        {
+          "node": "APA_face_rim",
+          "id": 40,
+          "uuid": "428202ee-31aa-4031-9675-dc61aedc3e59"
+        },
+        {
+          "node": "APA_lid_lower_L",
+          "id": 41,
+          "uuid": "dcae35dc-416e-45ec-a96c-e681b6581575"
+        },
+        {
+          "node": "APA_lid_lower_R",
+          "id": 42,
+          "uuid": "0c91dd97-40e2-4b87-8500-8e7952c7bc11"
+        },
+        {
+          "node": "APA_seam",
+          "id": 43,
+          "uuid": "109fcc38-bf16-4791-8cec-b2d015be739f"
+        },
+        {
+          "node": "APA_tray",
+          "id": 44,
+          "uuid": "9dd6f0c8-1aff-480c-bcf3-8f14c26fd57a"
+        },
+        {
+          "node": "APA_tray_glow",
+          "id": 45,
+          "uuid": "c82fec85-6fa6-4b2d-a3f6-de8bae055336"
+        }
+      ],
+      "materials": [
+        {
+          "name": "MAT_APA_porcelain",
+          "id": 62,
+          "uuid": "6b851153-902a-448f-960e-8fa6464cc2df"
+        },
+        {
+          "name": "MAT_APA_brass",
+          "id": 63,
+          "uuid": "311b6f6a-5e3b-471d-8e54-f947e41672db"
+        },
+        {
+          "name": "MAT_APA_ribbon",
+          "id": 64,
+          "uuid": "f2e0ff4d-ab30-4092-ae20-36be93af8251"
+        },
+        {
+          "name": "MAT_APA_eye_emit",
+          "id": 65,
+          "uuid": "c5433fba-edcd-447f-9c7f-afe34ede9155"
+        },
+        {
+          "name": "MAT_APA_ink",
+          "id": 66,
+          "uuid": "9f90bdb7-0db3-442b-a2a3-b7c369649b12"
+        },
+        {
+          "name": "MAT_APA_highlight",
+          "id": 67,
+          "uuid": "87099e14-8f85-4278-8e07-739fe3de8ae0"
+        },
+        {
+          "name": "MAT_APA_tray_emit",
+          "id": 68,
+          "uuid": "aeec8019-7256-49dc-a721-e52b7f9db78d"
+        }
+      ],
+      "textureCount": 0
+    },
+    "sourceAssetUrl": "/baseline.glb"
+  },
+  "selectedStrength": 1,
+  "selectionReason": "Warmest of the three authorized tests, bright readable eyes with intact pupils; exact reference RGB not reached or fabricated",
+  "samples": [
+    {
+      "strength": 4,
+      "left": [
+        252,
+        251,
+        248
+      ],
+      "right": [
+        252,
+        251,
+        248
+      ]
+    },
+    {
+      "strength": 1,
+      "left": [
+        244,
+        239,
+        228
+      ],
+      "right": [
+        243,
+        239,
+        229
+      ]
+    },
+    {
+      "strength": 1.25,
+      "left": [
+        245,
+        241,
+        233
+      ],
+      "right": [
+        245,
+        242,
+        233
+      ]
+    },
+    {
+      "strength": 1.5,
+      "left": [
+        246,
+        243,
+        236
+      ],
+      "right": [
+        246,
+        243,
+        236
+      ]
+    }
+  ],
+  "sampleCoordinates": {
+    "left": [
+      175,
+      540
+    ],
+    "right": [
+      610,
+      530
+    ]
+  },
+  "inputGlbSha256": "bc1a4d6d968dd53eda3480936959d0ebf292e76652a6bbdd201e15f4cd665270"
+}

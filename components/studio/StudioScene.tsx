@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useLayoutEffect, useRef } from 'react';
 import type { StudioSceneProps } from '@/lib/studio-contract';
 import { createStudioController, type StudioController } from './scene/controller';
 
@@ -9,17 +9,20 @@ export default function StudioScene(props: StudioSceneProps) {
   const controller = useRef<StudioController | null>(null);
   const current = useRef(props);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     current.current = props;
     controller.current?.update(props);
   }, [props]);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!host.current) return;
     const mounted = createStudioController(host.current, {
       ...current.current,
       onSelectProject: (id) => current.current.onSelectProject(id),
       onStatusChange: (status) => current.current.onStatusChange(status),
+      onActivateAssistant: () => current.current.onActivateAssistant?.(),
+      onAssistantHoverChange: (hovered) => current.current.onAssistantHoverChange?.(hovered),
+      onRobotStatusChange: (status) => current.current.onRobotStatusChange?.(status),
     });
     controller.current = mounted;
     return () => {

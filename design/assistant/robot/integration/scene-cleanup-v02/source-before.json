@@ -1,0 +1,125 @@
+{
+  "at": "2026-11-18T18:55:47.368Z",
+  "records": [
+    {
+      "path": "components/studio/scene/controller.ts",
+      "bytes": 24979,
+      "sha256": "88f24c7ac899c1639ec2596d3545f92dbe845473d901c6d805ca28b33ebb6ffd"
+    },
+    {
+      "path": "components/studio/scene/verify-controller.mjs",
+      "bytes": 90856,
+      "sha256": "0fe3abe45e84747832b1e3a4c2e463acec1ddfeddab6020ab1392424348ed816"
+    },
+    {
+      "path": "components/studio/scene/robot/load-robot.ts",
+      "bytes": 9685,
+      "sha256": "33d2cd75b3e146a76a744023d25d2bc80158336c5f121a40ffc4cd6656829fca"
+    },
+    {
+      "path": "components/studio/scene/robot/cards.ts",
+      "bytes": 2138,
+      "sha256": "6c37eb87147aaf4d290dce4e5bbefe46c361c30b86c55fe4f4a7080ee9b45f58"
+    },
+    {
+      "path": "components/studio/scene/robot/verify-robot.mjs",
+      "bytes": 18662,
+      "sha256": "391ead023fda086398cb7bde8a54053030d9a5258f6d8af9f7ea754c1d98930f"
+    },
+    {
+      "path": "components/studio/StudioExperience.tsx",
+      "bytes": 19149,
+      "sha256": "1c1af8cc3bd9a77a108d9ff21cd9cad09056c0c31755db61db887bf6b97923ca"
+    },
+    {
+      "path": "tests/assistant/studio-experience.test.cjs",
+      "bytes": 30932,
+      "sha256": "4678443279847c541c63a163461b106a58cf524f73c5f71561f1ccda79c70812"
+    },
+    {
+      "path": "components/studio/StudioScene.tsx",
+      "bytes": 1323,
+      "sha256": "bed95661809ae444829c0daaf30222a84c8c16e6bef721b417f342a5ef4a31b1"
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-implementation/source-pins.json",
+      "bytes": 7710,
+      "sha256": "1e28ce86ee9f1a72b05cdfd8d9598f5c3daea16227d817ec33e0c4ea5dfce28d"
+    },
+    {
+      "path": "public/studio/assistant-apprentice-v03.glb",
+      "bytes": 673144,
+      "sha256": "65f1dea3b1d35a748bdfc2089dea0feed1d054cc8b0eb957645ea2d669578a12"
+    },
+    {
+      "path": "design/assistant/robot/review/scene-runtime-g2/checks.json",
+      "bytes": 4995,
+      "sha256": "ab1221821f801f7aa293e4d966b4ad5edc51e97e00274119dee0cfa806148941"
+    },
+    {
+      "path": "design/assistant/robot/review/scene-runtime-g2/independent-probes.txt",
+      "bytes": 4159,
+      "sha256": "0f26561c379d1f4acb5d2d47f5e6eb56823b4863d1cd90f84aafa2035655c698"
+    },
+    {
+      "path": "design/assistant/robot/review/scene-runtime-g2/payload-evidence.json",
+      "bytes": 5730,
+      "sha256": "389c8e1906f4dc8db18841a13b35a4046a89a13f06964dd0a9a066cbdd52ddb8"
+    },
+    {
+      "path": "design/assistant/robot/review/scene-runtime-g2/payload-evidence.mjs",
+      "bytes": 5386,
+      "sha256": "7f67f99e142df1e376e651f755f641d6142c20d95242b5515802556bee1aa741"
+    },
+    {
+      "path": "design/assistant/robot/review/scene-runtime-g2/probe.test.mjs",
+      "bytes": 14588,
+      "sha256": "9ed2de98db6d4330fc09e57124c8b1e87efe2fb862aebcdb0a389a32a7394529"
+    },
+    {
+      "path": "design/assistant/robot/review/scene-runtime-g2/profile-check.txt",
+      "bytes": 104,
+      "sha256": "43e9a045bc6fb4355f4bb2090da4b5e69037d38d62acbbd25f97ad66dea35591"
+    },
+    {
+      "path": "design/assistant/robot/review/scene-runtime-g2/review-probe-lint.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "design/assistant/robot/review/scene-runtime-g2/review.md",
+      "bytes": 15424,
+      "sha256": "22074e7c6abdb0011038c004335a6539744161bb32ef70370be8230ddedc233c"
+    },
+    {
+      "path": "design/assistant/robot/review/scene-runtime-g2/run-checks.mjs",
+      "bytes": 5323,
+      "sha256": "eb19f4a3d3ac9cf3a48cf169e121122666eb9d08405d3bf6e8a0bc31251ea3ad"
+    },
+    {
+      "path": "design/assistant/robot/review/scene-runtime-g2/scoped-lint.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "design/assistant/robot/review/scene-runtime-g2/scoped-types.txt",
+      "bytes": 76,
+      "sha256": "2d58338b9565fea29ab1520ea7703440c9fbf4f113cfb10eb791076522d81864"
+    },
+    {
+      "path": "design/assistant/robot/review/scene-runtime-g2/source-after.json",
+      "bytes": 13431,
+      "sha256": "71e6c03d58bcc86fe4c91d43c231d9295840f1f3b8cec9ffe440fbe95d43543a"
+    },
+    {
+      "path": "design/assistant/robot/review/scene-runtime-g2/source-before.json",
+      "bytes": 13431,
+      "sha256": "24ea4b5986b41c677710c67a2c9380de2d3dd830fcaf726c3597ba88a181095a"
+    },
+    {
+      "path": "design/assistant/robot/review/scene-runtime-g2/targeted-existing.txt",
+      "bytes": 2861,
+      "sha256": "ffcd8e0ae90fdfd735ff7ac84b2fd47c60ef9d6dccfe42fab120b8cf3ec49248"
+    }
+  ]
+}

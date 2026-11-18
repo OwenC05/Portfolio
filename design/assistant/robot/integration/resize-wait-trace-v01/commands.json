@@ -1,0 +1,67 @@
+{
+  "at": "2026-11-18T20:56:19.997Z",
+  "commands": [
+    {
+      "executable": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "--check",
+        "design/assistant/robot/integration/resize-wait-trace-v01/trace.run.mjs"
+      ],
+      "status": 0,
+      "stderr": ""
+    },
+    {
+      "executable": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "--check",
+        "design/assistant/robot/integration/resize-wait-trace-v01/analyze.mjs"
+      ],
+      "status": 0,
+      "stderr": ""
+    },
+    {
+      "executable": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "--check",
+        "design/assistant/robot/integration/resize-wait-trace-v01/pin.mjs"
+      ],
+      "status": 0,
+      "stderr": ""
+    },
+    {
+      "executable": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "--check",
+        "design/assistant/robot/integration/resize-wait-trace-v01/verify.mjs"
+      ],
+      "status": 0,
+      "stderr": ""
+    },
+    {
+      "executable": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "design/assistant/robot/integration/resize-wait-trace-v01/analyze.mjs"
+      ],
+      "status": 0,
+      "stderr": ""
+    },
+    {
+      "executable": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "design/assistant/robot/integration/resize-wait-trace-v01/pin.mjs",
+        "after"
+      ],
+      "status": 0,
+      "stderr": ""
+    }
+  ],
+  "executedScenarios": 1,
+  "executedTraces": 1,
+  "failedFilenameAttempt": "Denied before browser code; filename-denial.json",
+  "offlineParserFailures": 2,
+  "unusedPermittedArtifactHelper": {
+    "path": "C:/Users/Owenc/orca/Portfolio/.playwright-mcp/robot-resize-wait-trace-v01/trace.run.mjs",
+    "bytes": 11692,
+    "sha256": "8b056278eb2a8206ecec781ea505d2df45397aa3a8bd319bfe910a079d3fa50e"
+  }
+}

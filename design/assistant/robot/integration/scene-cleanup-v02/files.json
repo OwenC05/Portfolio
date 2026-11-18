@@ -1,0 +1,133 @@
+{
+  "at": "2026-11-18T19:05:49.551Z",
+  "modifiedSource": [
+    "components/studio/scene/controller.ts",
+    "components/studio/scene/verify-controller.mjs",
+    "components/studio/scene/robot/load-robot.ts",
+    "components/studio/scene/robot/cards.ts",
+    "components/studio/scene/robot/verify-cleanup.mjs"
+  ],
+  "newEvidence": [
+    {
+      "path": "design/assistant/robot/integration/scene-cleanup-v02/after-checks.json",
+      "bytes": 1605,
+      "sha256": "6cdea76309ff13fc6ca7203cb41589b16729b8cb5df38e08cb20d18a2a2ec5b6"
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-cleanup-v02/after-durable-cleanup.txt",
+      "bytes": 2371,
+      "sha256": "3e97b16824b87477782cd9fe606eddc41c9eb29e5f20b315942366aca3a3440b"
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-cleanup-v02/after-feedback.txt",
+      "bytes": 872,
+      "sha256": "3b5d4c1679491296e4d38bad7b0fdafa77e859594f526dc8f7213085c5414110"
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-cleanup-v02/after-original-probes.txt",
+      "bytes": 2739,
+      "sha256": "bbb22b82c514522fea6af55c9794e4d623bb5dfdd15326150942f373311ad613"
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-cleanup-v02/before-checks.json",
+      "bytes": 658,
+      "sha256": "a42e274110c7614a98b4c357218005fe5162ead10c116e9ccea859adcfa5d0e4"
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-cleanup-v02/before-durable-cleanup.txt",
+      "bytes": 25408,
+      "sha256": "a016b468cc63d35eeed71dd15dff6a8ee9dc08057cef7d644c96f268ea26c646"
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-cleanup-v02/before-feedback.txt",
+      "bytes": 2120,
+      "sha256": "90d9f3a71bcf13418ddb08d4c930d32a3060761f2874a465ac4d01120d447393"
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-cleanup-v02/before-independent-cleanup.txt",
+      "bytes": 2270,
+      "sha256": "65b5e453c8ef5b2fa81924b4558e592f3f88ac21d7de57152a6717651584a150"
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-cleanup-v02/cards.ts.after.txt",
+      "bytes": 2292,
+      "sha256": "4a27a76b1327a55c5a4df80124ddb0b8676eec3ae51c1d8e22e49943acd8faa2"
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-cleanup-v02/cards.ts.before.txt",
+      "bytes": 2138,
+      "sha256": "6c37eb87147aaf4d290dce4e5bbefe46c361c30b86c55fe4f4a7080ee9b45f58"
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-cleanup-v02/controller.ts.after.txt",
+      "bytes": 25265,
+      "sha256": "dbc91da47931fbbd592278ef5e82fe9db8c40d02fc29806b050161585f822afc"
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-cleanup-v02/controller.ts.before.txt",
+      "bytes": 24979,
+      "sha256": "88f24c7ac899c1639ec2596d3545f92dbe845473d901c6d805ca28b33ebb6ffd"
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-cleanup-v02/handoff.md",
+      "bytes": 9286,
+      "sha256": "c7f8ebb96659f85d2378732195f84646804e645491d0adca316c79db8bfe58df"
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-cleanup-v02/load-robot.ts.after.txt",
+      "bytes": 9715,
+      "sha256": "f237471d54e2837fab90eab6767ae9a8a70ae15ff5e97daf82dd4a30c2eeb695"
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-cleanup-v02/load-robot.ts.before.txt",
+      "bytes": 9685,
+      "sha256": "33d2cd75b3e146a76a744023d25d2bc80158336c5f121a40ffc4cd6656829fca"
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-cleanup-v02/scoped-lint.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-cleanup-v02/source-before.json",
+      "bytes": 4630,
+      "sha256": "41e94b801b526cbac346b15adb59f42d6cd2298cf19ea9f9ec85cd4f5f7571a2"
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-cleanup-v02/source-pin-delta.json",
+      "bytes": 9469,
+      "sha256": "29b1045906a6fdfdc9bec39bb1008198cc53bfccac1d2dad657d80de4db5e697"
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-cleanup-v02/targeted-guards.txt",
+      "bytes": 4500,
+      "sha256": "d444f5c907ef3b8bbd1079ee367e40c204678f8192cf8b62f45d5168b72d270e"
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-cleanup-v02/typescript.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-cleanup-v02/verify-cleanup.mjs.after.txt",
+      "bytes": 3231,
+      "sha256": "fe0c84687ca89ca4894321456bcafd3f0ab9f9e9ee4f89b5dd822d2e2a6ffd40"
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-cleanup-v02/verify-controller.mjs.after.txt",
+      "bytes": 94270,
+      "sha256": "cc58de1b838a67a452481a9b9e750f578c95c570de8c04d4fe634db91a7283b0"
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-cleanup-v02/verify-controller.mjs.before.txt",
+      "bytes": 90856,
+      "sha256": "0fe3abe45e84747832b1e3a4c2e463acec1ddfeddab6020ab1392424348ed816"
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-cleanup-v02/verify-robot.mjs.before.txt",
+      "bytes": 18662,
+      "sha256": "391ead023fda086398cb7bde8a54053030d9a5258f6d8af9f7ea754c1d98930f"
+    }
+  ],
+  "protectedInputsUnchanged": 20
+}

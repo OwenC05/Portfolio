@@ -1,0 +1,35 @@
+{
+  "at": "2026-11-18T20:19:50.143Z",
+  "pins": {
+    "stage": "after",
+    "baselineFiles": 83,
+    "protected": 81,
+    "priorEvidenceFiles": 123,
+    "owned": [
+      {
+        "path": "components/studio/scene/controller.ts",
+        "bytes": 25252,
+        "sha256": "3061a5644f7c1281e12dcb1032d186238aa83047090960d6ef3555d7d0657687",
+        "matchesBaseline": false,
+        "owned": true
+      },
+      {
+        "path": "components/studio/scene/verify-controller.mjs",
+        "bytes": 95656,
+        "sha256": "a182b86ebcbc5a940a72705c08f4684e09229a16fa9a14005e67cfb0356d6293",
+        "matchesBaseline": false,
+        "owned": true
+      }
+    ]
+  },
+  "checks": {
+    "productionExpressionOnly": true,
+    "testExpectationAndOneBoundaryOnly": true,
+    "oldValidBaselinePassed": true,
+    "oldSourceRejectedAtTwoIntendedCapAssertions": true,
+    "candidateTestsPassed": true,
+    "directTypeScriptPassed": true,
+    "scopedEslintPassed": true
+  },
+  "disposition": "Authored candidate ready for root review; browser/performance/design acceptance pending"
+}

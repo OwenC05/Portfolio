@@ -1,0 +1,25 @@
+{
+  "stage": "reference-review",
+  "userApprovedReference": false,
+  "asset": {
+    "file": "mechanical-key-study.png",
+    "provider": "Higgsfield",
+    "model": "gpt_image_2_6",
+    "jobId": "a3ddbc0c-7249-475b-bcc0-cd9e1ccc5d12",
+    "status": "completed",
+    "quotedCredits": 2.75,
+    "sha256": "1BA6C0DF4CCB56320CBB17B739658EB0B1E04A9C4D720459F26877A93513D4F2",
+    "description": "Generated illustrative mechanical-key material study, not a photograph of the user's hardware",
+    "review": "Material edges and contact shadows are readable; clear warm-stone space remains on the left for composition. No text or logos. Not an engineering drawing or specification."
+  },
+  "composition": {
+    "project": "owen-working-table-20261114",
+    "mode": "Local Codex",
+    "requestId": "e7d03a94-e0a8-48aa-965a-a24a8b0ce5bf",
+    "runId": "a6bdcc47-d7d9-4aad-8852-3a84a45119f0",
+    "brief": "Showcase work; rich single page; editorial bold, with the user's selected expressive engineering studio direction",
+    "statusAtRecord": "succeeded; reference reviewed and locally refined",
+    "connection": "Session-local installed MCP daemon-url override. No global settings changed."
+  },
+  "scope": "New visual reference only. Existing draft and production application preserved. No deployment."
+}

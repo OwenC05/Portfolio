@@ -1,0 +1,780 @@
+{
+  "testedAt": "2026-11-16T13:54:02.135Z",
+  "origin": "http://127.0.0.1:4193",
+  "checks": [
+    {
+      "name": "Hydrated source-only page",
+      "pass": true,
+      "evidence": {
+        "status": "Ready. Ask a question to search Owen’s portfolio sources.",
+        "article": "RESULTS\n\nYour answer will appear here, with links to the exact passages it draws on.",
+        "pipeline": "QUESTION\nwaiting\nRETRIEVE\nwaiting\nGENERATE\nwaiting\nANSWER\nwaiting",
+        "sources": 0,
+        "quotes": [],
+        "open": 0,
+        "focusedRow": null,
+        "focusTag": "BODY",
+        "focusText": null,
+        "noMatch": false,
+        "overflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "dpr": 1
+      }
+    },
+    {
+      "name": "Real source-only stream and exact citations",
+      "pass": true,
+      "evidence": {
+        "events": [
+          {
+            "type": "retrieval-start",
+            "question": "What has Owen worked on at LexisNexis?"
+          },
+          {
+            "type": "retrieval",
+            "hits": [
+              {
+                "sourceId": "lexisnexis",
+                "chunkId": "lexisnexis:lexisnexis-role:0",
+                "title": "LexisNexis Risk Solutions",
+                "heading": "Placement and continuing work",
+                "text": "Owen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.",
+                "href": "/work/lexisnexis#lexisnexis-role",
+                "score": 8.364
+              },
+              {
+                "sourceId": "lexisnexis",
+                "chunkId": "lexisnexis:lexisnexis-limits:0",
+                "title": "LexisNexis Risk Solutions",
+                "heading": "Evidence and disclosure",
+                "text": "These employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.",
+                "href": "/work/lexisnexis#lexisnexis-limits",
+                "score": 3.414
+              },
+              {
+                "sourceId": "lexisnexis",
+                "chunkId": "lexisnexis:lexisnexis-pilot:0",
+                "title": "LexisNexis Risk Solutions",
+                "heading": "From demonstration to internal pilot",
+                "text": "According to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.",
+                "href": "/work/lexisnexis#lexisnexis-pilot",
+                "score": 3.414
+              },
+              {
+                "sourceId": "lexisnexis",
+                "chunkId": "lexisnexis:lexisnexis-tooling:0",
+                "title": "LexisNexis Risk Solutions",
+                "heading": "ML tooling for the team",
+                "text": "Owen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence.",
+                "href": "/work/lexisnexis#lexisnexis-tooling",
+                "score": 3.414
+              }
+            ],
+            "durationMs": 1
+          },
+          {
+            "type": "answer",
+            "answer": {
+              "mode": "sources",
+              "text": "A generated answer is unavailable. These are matching published excerpts, not confirmation of any premise in your question. If they do not establish the answer, please contact Owen.",
+              "citations": [
+                {
+                  "sourceId": "lexisnexis",
+                  "chunkId": "lexisnexis:lexisnexis-role:0",
+                  "title": "LexisNexis Risk Solutions",
+                  "href": "/work/lexisnexis#lexisnexis-role",
+                  "quote": "Owen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing."
+                },
+                {
+                  "sourceId": "lexisnexis",
+                  "chunkId": "lexisnexis:lexisnexis-limits:0",
+                  "title": "LexisNexis Risk Solutions",
+                  "href": "/work/lexisnexis#lexisnexis-limits",
+                  "quote": "These employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system."
+                },
+                {
+                  "sourceId": "lexisnexis",
+                  "chunkId": "lexisnexis:lexisnexis-pilot:0",
+                  "title": "LexisNexis Risk Solutions",
+                  "href": "/work/lexisnexis#lexisnexis-pilot",
+                  "quote": "According to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale."
+                },
+                {
+                  "sourceId": "lexisnexis",
+                  "chunkId": "lexisnexis:lexisnexis-tooling:0",
+                  "title": "LexisNexis Risk Solutions",
+                  "href": "/work/lexisnexis#lexisnexis-tooling",
+                  "quote": "Owen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence."
+                }
+              ],
+              "fallbackReason": "disabled"
+            }
+          },
+          {
+            "type": "done",
+            "durationMs": 1
+          }
+        ],
+        "status": 200
+      }
+    },
+    {
+      "name": "Show passage focuses current row and expands it",
+      "pass": true,
+      "evidence": {
+        "status": "Finished in 1 ms · sources only.",
+        "article": "RESULTS\n\nYOU ASKED\nWhat has Owen worked on at LexisNexis?\n\nSOURCES ONLY\nThese are matching published passages. They do not confirm a premise in your question; check what each source establishes.\n\nFor anything not covered here, email Owen at oc608@bath.ac.uk.\n\nCITED PASSAGES\nOwen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 1\n\nThese employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 2\n\nAccording to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 3\n\nOwen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 4",
+        "pipeline": "QUESTION\nreceived\nRETRIEVE\n4 hits · 1 ms\nGENERATE\nnot used\nANSWER\nsources only",
+        "sources": 4,
+        "quotes": [
+          "Owen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.",
+          "These employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.",
+          "According to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.",
+          "Owen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence."
+        ],
+        "open": 1,
+        "focusedRow": "_R_15fivb_-s-1",
+        "focusTag": "BUTTON",
+        "focusText": "01Placement and continuing workLexisNexis Risk Solutionscitedrelevance 8.36",
+        "noMatch": false,
+        "overflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "dpr": 1
+      }
+    },
+    {
+      "name": "Already selected passage still receives focus",
+      "pass": true,
+      "evidence": {
+        "status": "Finished in 1 ms · sources only.",
+        "article": "RESULTS\n\nYOU ASKED\nWhat has Owen worked on at LexisNexis?\n\nSOURCES ONLY\nThese are matching published passages. They do not confirm a premise in your question; check what each source establishes.\n\nFor anything not covered here, email Owen at oc608@bath.ac.uk.\n\nCITED PASSAGES\nOwen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 1\n\nThese employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 2\n\nAccording to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 3\n\nOwen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 4",
+        "pipeline": "QUESTION\nreceived\nRETRIEVE\n4 hits · 1 ms\nGENERATE\nnot used\nANSWER\nsources only",
+        "sources": 4,
+        "quotes": [
+          "Owen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.",
+          "These employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.",
+          "According to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.",
+          "Owen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence."
+        ],
+        "open": 1,
+        "focusedRow": "_R_15fivb_-s-1",
+        "focusTag": "BUTTON",
+        "focusText": "01Placement and continuing workLexisNexis Risk Solutionscitedrelevance 8.36",
+        "noMatch": false,
+        "overflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "dpr": 1
+      }
+    },
+    {
+      "name": "Graph selection focuses matching current passage",
+      "pass": true,
+      "evidence": {
+        "status": "Finished in 1 ms · sources only.",
+        "article": "RESULTS\n\nYOU ASKED\nWhat has Owen worked on at LexisNexis?\n\nSOURCES ONLY\nThese are matching published passages. They do not confirm a premise in your question; check what each source establishes.\n\nFor anything not covered here, email Owen at oc608@bath.ac.uk.\n\nCITED PASSAGES\nOwen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 1\n\nThese employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 2\n\nAccording to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 3\n\nOwen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 4",
+        "pipeline": "QUESTION\nreceived\nRETRIEVE\n4 hits · 1 ms\nGENERATE\nnot used\nANSWER\nsources only",
+        "sources": 4,
+        "quotes": [
+          "Owen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.",
+          "These employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.",
+          "According to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.",
+          "Owen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence."
+        ],
+        "open": 1,
+        "focusedRow": "_R_15fivb_-s-4",
+        "focusTag": "BUTTON",
+        "focusText": "04ML tooling for the teamLexisNexis Risk Solutionscitedrelevance 3.41",
+        "noMatch": false,
+        "overflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "dpr": 1
+      }
+    },
+    {
+      "name": "1440px has readable source text and no horizontal overflow",
+      "pass": true,
+      "evidence": {
+        "status": "Finished in 1 ms · sources only.",
+        "article": "RESULTS\n\nYOU ASKED\nWhat has Owen worked on at LexisNexis?\n\nSOURCES ONLY\nThese are matching published passages. They do not confirm a premise in your question; check what each source establishes.\n\nFor anything not covered here, email Owen at oc608@bath.ac.uk.\n\nCITED PASSAGES\nOwen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 1\n\nThese employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 2\n\nAccording to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 3\n\nOwen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 4",
+        "pipeline": "QUESTION\nreceived\nRETRIEVE\n4 hits · 1 ms\nGENERATE\nnot used\nANSWER\nsources only",
+        "sources": 4,
+        "quotes": [
+          "Owen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.",
+          "These employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.",
+          "According to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.",
+          "Owen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence."
+        ],
+        "open": 1,
+        "focusedRow": "_R_15fivb_-s-4",
+        "focusTag": "BUTTON",
+        "focusText": "04ML tooling for the teamLexisNexis Risk Solutionscitedrelevance 3.41",
+        "noMatch": false,
+        "overflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "dpr": 1
+      }
+    },
+    {
+      "name": "390px has readable source text and no horizontal overflow",
+      "pass": true,
+      "evidence": {
+        "status": "Finished in 1 ms · sources only.",
+        "article": "RESULTS\n\nYOU ASKED\nWhat has Owen worked on at LexisNexis?\n\nSOURCES ONLY\nThese are matching published passages. They do not confirm a premise in your question; check what each source establishes.\n\nFor anything not covered here, email Owen at oc608@bath.ac.uk.\n\nCITED PASSAGES\nOwen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 1\n\nThese employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 2\n\nAccording to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 3\n\nOwen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 4",
+        "pipeline": "QUESTION\nreceived\nRETRIEVE\n4 hits · 1 ms\nGENERATE\nnot used\nANSWER\nsources only",
+        "sources": 4,
+        "quotes": [
+          "Owen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.",
+          "These employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.",
+          "According to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.",
+          "Owen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence."
+        ],
+        "open": 1,
+        "focusedRow": "_R_15fivb_-s-4",
+        "focusTag": "BUTTON",
+        "focusText": "04ML tooling for the teamLexisNexis Risk Solutionscitedrelevance 3.41",
+        "noMatch": false,
+        "overflow": false,
+        "viewport": [
+          390,
+          844
+        ],
+        "dpr": 1
+      }
+    },
+    {
+      "name": "320px has readable source text and no horizontal overflow",
+      "pass": true,
+      "evidence": {
+        "status": "Finished in 1 ms · sources only.",
+        "article": "RESULTS\n\nYOU ASKED\nWhat has Owen worked on at LexisNexis?\n\nSOURCES ONLY\nThese are matching published passages. They do not confirm a premise in your question; check what each source establishes.\n\nFor anything not covered here, email Owen at oc608@bath.ac.uk.\n\nCITED PASSAGES\nOwen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 1\n\nThese employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 2\n\nAccording to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 3\n\nOwen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 4",
+        "pipeline": "QUESTION\nreceived\nRETRIEVE\n4 hits · 1 ms\nGENERATE\nnot used\nANSWER\nsources only",
+        "sources": 4,
+        "quotes": [
+          "Owen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.",
+          "These employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.",
+          "According to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.",
+          "Owen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence."
+        ],
+        "open": 1,
+        "focusedRow": "_R_15fivb_-s-4",
+        "focusTag": "BUTTON",
+        "focusText": "04ML tooling for the teamLexisNexis Risk Solutionscitedrelevance 3.41",
+        "noMatch": false,
+        "overflow": false,
+        "viewport": [
+          320,
+          844
+        ],
+        "dpr": 1
+      }
+    },
+    {
+      "name": "New run immediately clears previous sources and answer",
+      "pass": true,
+      "evidence": {
+        "status": "Sending your question…",
+        "article": "RESULTS\n\nYOU ASKED\nCancel fixture\n\nNo answer yet. Progress is shown in the panel alongside.",
+        "pipeline": "QUESTION\nsending\nRETRIEVE\nwaiting\nGENERATE\nwaiting\nANSWER\nwaiting",
+        "sources": 0,
+        "quotes": [],
+        "open": 0,
+        "focusedRow": null,
+        "focusTag": "TEXTAREA",
+        "focusText": "Cancel fixture",
+        "noMatch": false,
+        "overflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "dpr": 1
+      }
+    },
+    {
+      "name": "Pending retrieved response is selected before cancellation",
+      "pass": true,
+      "evidence": {
+        "status": "Answer received.",
+        "article": "RESULTS\n\nYOU ASKED\nCancel fixture\n\nSOURCES ONLY\nThese are matching published passages. They do not confirm a premise in your question; check what each source establishes.\n\nFor anything not covered here, email Owen at oc608@bath.ac.uk.\n\nCITED PASSAGES\nOwen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 1\n\nThese employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 2\n\nAccording to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 3\n\nOwen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 4",
+        "pipeline": "QUESTION\nreceived\nRETRIEVE\n4 hits · 731 ms\nGENERATE\nnot used\nANSWER\nsources only",
+        "sources": 4,
+        "quotes": [
+          "Owen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.",
+          "These employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.",
+          "According to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.",
+          "Owen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence."
+        ],
+        "open": 1,
+        "focusedRow": "_R_15fivb_-s-1",
+        "focusTag": "BUTTON",
+        "focusText": "01Placement and continuing workLexisNexis Risk Solutionscitedrelevance 8.36",
+        "noMatch": false,
+        "overflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "dpr": 1
+      }
+    },
+    {
+      "name": "Cancel clears hits, citations, selection, answer and timings",
+      "pass": true,
+      "evidence": {
+        "status": "Cancelled. Your question is still in the box.",
+        "article": "RESULTS\n\nYOU ASKED\nCancel fixture\n\nCancelled. Your question is still in the box.\n\nTRY AGAIN",
+        "pipeline": "QUESTION\nstopped\nRETRIEVE\nwaiting\nGENERATE\nwaiting\nANSWER\nwaiting",
+        "sources": 0,
+        "quotes": [],
+        "open": 0,
+        "focusedRow": null,
+        "focusTag": "BODY",
+        "focusText": null,
+        "noMatch": false,
+        "overflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "dpr": 1
+      }
+    },
+    {
+      "name": "Keyboard cancel does not return focus to removed source",
+      "pass": true,
+      "evidence": {
+        "status": "Cancelled. Your question is still in the box.",
+        "article": "RESULTS\n\nYOU ASKED\nCancel fixture\n\nCancelled. Your question is still in the box.\n\nTRY AGAIN",
+        "pipeline": "QUESTION\nstopped\nRETRIEVE\nwaiting\nGENERATE\nwaiting\nANSWER\nwaiting",
+        "sources": 0,
+        "quotes": [],
+        "open": 0,
+        "focusedRow": null,
+        "focusTag": "BODY",
+        "focusText": null,
+        "noMatch": false,
+        "overflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "dpr": 1
+      }
+    },
+    {
+      "name": "Malformed trailing chunk clears all visible result state",
+      "pass": true,
+      "evidence": {
+        "status": "The assistant sent a response this page could not read.",
+        "article": "RESULTS\n\nYOU ASKED\nError fixture\n\nThe assistant sent a response this page could not read.\n\nTRY AGAIN",
+        "pipeline": "QUESTION\nstopped\nRETRIEVE\nwaiting\nGENERATE\nwaiting\nANSWER\nwaiting",
+        "sources": 0,
+        "quotes": [],
+        "open": 0,
+        "focusedRow": null,
+        "focusTag": "TEXTAREA",
+        "focusText": "Error fixture",
+        "noMatch": false,
+        "overflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "dpr": 1
+      }
+    },
+    {
+      "name": "Truncated JSON is an error with cleared sources/timings",
+      "pass": true,
+      "evidence": {
+        "status": "The assistant sent a response this page could not read.",
+        "article": "RESULTS\n\nYOU ASKED\nTruncated fixture\n\nThe assistant sent a response this page could not read.\n\nTRY AGAIN",
+        "pipeline": "QUESTION\nstopped\nRETRIEVE\nwaiting\nGENERATE\nwaiting\nANSWER\nwaiting",
+        "sources": 0,
+        "quotes": [],
+        "open": 0,
+        "focusedRow": null,
+        "focusTag": "TEXTAREA",
+        "focusText": "Truncated fixture",
+        "noMatch": false,
+        "overflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "dpr": 1
+      }
+    },
+    {
+      "name": "EOF without answer clears retrieval and is not no-match",
+      "pass": true,
+      "evidence": {
+        "status": "The connection closed before an answer arrived. Please try again.",
+        "article": "RESULTS\n\nYOU ASKED\nEOF fixture\n\nThe connection closed before an answer arrived. Please try again.\n\nTRY AGAIN",
+        "pipeline": "QUESTION\nstopped\nRETRIEVE\nwaiting\nGENERATE\nwaiting\nANSWER\nwaiting",
+        "sources": 0,
+        "quotes": [],
+        "open": 0,
+        "focusedRow": null,
+        "focusTag": "TEXTAREA",
+        "focusText": "EOF fixture",
+        "noMatch": false,
+        "overflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "dpr": 1
+      }
+    },
+    {
+      "name": "Zero retrieval remains waiting without abstention UI",
+      "pass": true,
+      "evidence": {
+        "status": "Retrieved 0 passages in 731 ms. Waiting for the answer.",
+        "article": "RESULTS\n\nYOU ASKED\nZero pending fixture\n\nNo answer yet. Progress is shown in the panel alongside.",
+        "pipeline": "QUESTION\nreceived\nRETRIEVE\n0 hits · 731 ms\nGENERATE\nwaiting\nANSWER\nwaiting",
+        "sources": 0,
+        "quotes": [],
+        "open": 0,
+        "focusedRow": null,
+        "focusTag": "TEXTAREA",
+        "focusText": "Zero pending fixture",
+        "noMatch": false,
+        "overflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "dpr": 1
+      }
+    },
+    {
+      "name": "Valid abstention completes zero-result state",
+      "pass": true,
+      "evidence": {
+        "status": "Finished in 947 ms · not supported.",
+        "article": "RESULTS\n\nYOU ASKED\nZero pending fixture\n\nNOT SUPPORTED\nOwen’s portfolio sources don’t support an answer to this, so the assistant won’t guess.\n\nZERO ABSTENTION\n\nFor anything not covered here, email Owen at oc608@bath.ac.uk.",
+        "pipeline": "QUESTION\nreceived\nRETRIEVE\n0 hits · 731 ms\nGENERATE\nnot used\nANSWER\nnot supported",
+        "sources": 0,
+        "quotes": [],
+        "open": 0,
+        "focusedRow": null,
+        "focusTag": "TEXTAREA",
+        "focusText": "Zero pending fixture",
+        "noMatch": false,
+        "overflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "dpr": 1
+      }
+    },
+    {
+      "name": "Late old fetch cannot restore hits, answer, timings or focus",
+      "pass": true,
+      "evidence": {
+        "status": "Finished in 3 ms · not supported.",
+        "article": "RESULTS\n\nYOU ASKED\nNew fixture\n\nNOT SUPPORTED\nOwen’s portfolio sources don’t support an answer to this, so the assistant won’t guess.\n\nCURRENT RESPONSE\n\nFor anything not covered here, email Owen at oc608@bath.ac.uk.",
+        "pipeline": "QUESTION\nreceived\nRETRIEVE\n0 hits · 2 ms\nGENERATE\nnot used\nANSWER\nnot supported",
+        "sources": 0,
+        "quotes": [],
+        "open": 0,
+        "focusedRow": null,
+        "focusTag": "TEXTAREA",
+        "focusText": "New fixture",
+        "noMatch": false,
+        "overflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "dpr": 1
+      }
+    },
+    {
+      "name": "Superseded request received abort",
+      "pass": true
+    },
+    {
+      "name": "Nonblank content after done fails and clears current result",
+      "pass": true,
+      "evidence": {
+        "status": "The assistant sent an inconsistent response. Please try again.",
+        "article": "RESULTS\n\nYOU ASKED\nPost-done fixture\n\nThe assistant sent an inconsistent response. Please try again.\n\nTRY AGAIN",
+        "pipeline": "QUESTION\nstopped\nRETRIEVE\nwaiting\nGENERATE\nwaiting\nANSWER\nwaiting",
+        "sources": 0,
+        "quotes": [],
+        "open": 0,
+        "focusedRow": null,
+        "focusTag": "TEXTAREA",
+        "focusText": "Post-done fixture",
+        "noMatch": false,
+        "overflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "dpr": 1
+      }
+    },
+    {
+      "name": "Selection and resubmit in one task leave no old row focus",
+      "pass": true,
+      "evidence": {
+        "status": "Sending your question…",
+        "article": "RESULTS\n\nYOU ASKED\nFocus old fixture\n\nNo answer yet. Progress is shown in the panel alongside.",
+        "pipeline": "QUESTION\nsending\nRETRIEVE\nwaiting\nGENERATE\nwaiting\nANSWER\nwaiting",
+        "sources": 0,
+        "quotes": [],
+        "open": 0,
+        "focusedRow": null,
+        "focusTag": "TEXTAREA",
+        "focusText": "Focus old fixture",
+        "noMatch": false,
+        "overflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "dpr": 1
+      }
+    },
+    {
+      "name": "No React hydration or runtime page errors",
+      "pass": true,
+      "evidence": []
+    }
+  ],
+  "captures": [
+    {
+      "name": "focused-real-1440-top",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/ask/focused-real-1440-top.png",
+      "state": {
+        "status": "Finished in 1 ms · sources only.",
+        "article": "RESULTS\n\nYOU ASKED\nWhat has Owen worked on at LexisNexis?\n\nSOURCES ONLY\nThese are matching published passages. They do not confirm a premise in your question; check what each source establishes.\n\nFor anything not covered here, email Owen at oc608@bath.ac.uk.\n\nCITED PASSAGES\nOwen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 1\n\nThese employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 2\n\nAccording to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 3\n\nOwen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 4",
+        "pipeline": "QUESTION\nreceived\nRETRIEVE\n4 hits · 1 ms\nGENERATE\nnot used\nANSWER\nsources only",
+        "sources": 4,
+        "quotes": [
+          "Owen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.",
+          "These employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.",
+          "According to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.",
+          "Owen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence."
+        ],
+        "open": 1,
+        "focusedRow": "_R_15fivb_-s-4",
+        "focusTag": "BUTTON",
+        "focusText": "04ML tooling for the teamLexisNexis Risk Solutionscitedrelevance 3.41",
+        "noMatch": false,
+        "overflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "dpr": 1
+      }
+    },
+    {
+      "name": "focused-real-1440-citations",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/ask/focused-real-1440-citations.png",
+      "state": {
+        "status": "Finished in 1 ms · sources only.",
+        "article": "RESULTS\n\nYOU ASKED\nWhat has Owen worked on at LexisNexis?\n\nSOURCES ONLY\nThese are matching published passages. They do not confirm a premise in your question; check what each source establishes.\n\nFor anything not covered here, email Owen at oc608@bath.ac.uk.\n\nCITED PASSAGES\nOwen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 1\n\nThese employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 2\n\nAccording to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 3\n\nOwen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 4",
+        "pipeline": "QUESTION\nreceived\nRETRIEVE\n4 hits · 1 ms\nGENERATE\nnot used\nANSWER\nsources only",
+        "sources": 4,
+        "quotes": [
+          "Owen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.",
+          "These employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.",
+          "According to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.",
+          "Owen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence."
+        ],
+        "open": 1,
+        "focusedRow": "_R_15fivb_-s-4",
+        "focusTag": "BUTTON",
+        "focusText": "04ML tooling for the teamLexisNexis Risk Solutionscitedrelevance 3.41",
+        "noMatch": false,
+        "overflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "dpr": 1
+      }
+    },
+    {
+      "name": "focused-real-390-top",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/ask/focused-real-390-top.png",
+      "state": {
+        "status": "Finished in 1 ms · sources only.",
+        "article": "RESULTS\n\nYOU ASKED\nWhat has Owen worked on at LexisNexis?\n\nSOURCES ONLY\nThese are matching published passages. They do not confirm a premise in your question; check what each source establishes.\n\nFor anything not covered here, email Owen at oc608@bath.ac.uk.\n\nCITED PASSAGES\nOwen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 1\n\nThese employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 2\n\nAccording to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 3\n\nOwen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 4",
+        "pipeline": "QUESTION\nreceived\nRETRIEVE\n4 hits · 1 ms\nGENERATE\nnot used\nANSWER\nsources only",
+        "sources": 4,
+        "quotes": [
+          "Owen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.",
+          "These employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.",
+          "According to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.",
+          "Owen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence."
+        ],
+        "open": 1,
+        "focusedRow": "_R_15fivb_-s-4",
+        "focusTag": "BUTTON",
+        "focusText": "04ML tooling for the teamLexisNexis Risk Solutionscitedrelevance 3.41",
+        "noMatch": false,
+        "overflow": false,
+        "viewport": [
+          390,
+          844
+        ],
+        "dpr": 1
+      }
+    },
+    {
+      "name": "focused-real-390-citations",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/ask/focused-real-390-citations.png",
+      "state": {
+        "status": "Finished in 1 ms · sources only.",
+        "article": "RESULTS\n\nYOU ASKED\nWhat has Owen worked on at LexisNexis?\n\nSOURCES ONLY\nThese are matching published passages. They do not confirm a premise in your question; check what each source establishes.\n\nFor anything not covered here, email Owen at oc608@bath.ac.uk.\n\nCITED PASSAGES\nOwen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 1\n\nThese employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 2\n\nAccording to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 3\n\nOwen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 4",
+        "pipeline": "QUESTION\nreceived\nRETRIEVE\n4 hits · 1 ms\nGENERATE\nnot used\nANSWER\nsources only",
+        "sources": 4,
+        "quotes": [
+          "Owen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.",
+          "These employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.",
+          "According to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.",
+          "Owen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence."
+        ],
+        "open": 1,
+        "focusedRow": "_R_15fivb_-s-4",
+        "focusTag": "BUTTON",
+        "focusText": "04ML tooling for the teamLexisNexis Risk Solutionscitedrelevance 3.41",
+        "noMatch": false,
+        "overflow": false,
+        "viewport": [
+          390,
+          844
+        ],
+        "dpr": 1
+      }
+    },
+    {
+      "name": "focused-real-320-top",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/ask/focused-real-320-top.png",
+      "state": {
+        "status": "Finished in 1 ms · sources only.",
+        "article": "RESULTS\n\nYOU ASKED\nWhat has Owen worked on at LexisNexis?\n\nSOURCES ONLY\nThese are matching published passages. They do not confirm a premise in your question; check what each source establishes.\n\nFor anything not covered here, email Owen at oc608@bath.ac.uk.\n\nCITED PASSAGES\nOwen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 1\n\nThese employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 2\n\nAccording to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 3\n\nOwen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 4",
+        "pipeline": "QUESTION\nreceived\nRETRIEVE\n4 hits · 1 ms\nGENERATE\nnot used\nANSWER\nsources only",
+        "sources": 4,
+        "quotes": [
+          "Owen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.",
+          "These employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.",
+          "According to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.",
+          "Owen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence."
+        ],
+        "open": 1,
+        "focusedRow": "_R_15fivb_-s-4",
+        "focusTag": "BUTTON",
+        "focusText": "04ML tooling for the teamLexisNexis Risk Solutionscitedrelevance 3.41",
+        "noMatch": false,
+        "overflow": false,
+        "viewport": [
+          320,
+          844
+        ],
+        "dpr": 1
+      }
+    },
+    {
+      "name": "focused-real-320-citations",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/ask/focused-real-320-citations.png",
+      "state": {
+        "status": "Finished in 1 ms · sources only.",
+        "article": "RESULTS\n\nYOU ASKED\nWhat has Owen worked on at LexisNexis?\n\nSOURCES ONLY\nThese are matching published passages. They do not confirm a premise in your question; check what each source establishes.\n\nFor anything not covered here, email Owen at oc608@bath.ac.uk.\n\nCITED PASSAGES\nOwen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 1\n\nThese employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 2\n\nAccording to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 3\n\nOwen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence.\n\nLexisNexis Risk Solutions\nSHOW PASSAGE 4",
+        "pipeline": "QUESTION\nreceived\nRETRIEVE\n4 hits · 1 ms\nGENERATE\nnot used\nANSWER\nsources only",
+        "sources": 4,
+        "quotes": [
+          "Owen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.",
+          "These employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.",
+          "According to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.",
+          "Owen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence."
+        ],
+        "open": 1,
+        "focusedRow": "_R_15fivb_-s-4",
+        "focusTag": "BUTTON",
+        "focusText": "04ML tooling for the teamLexisNexis Risk Solutionscitedrelevance 3.41",
+        "noMatch": false,
+        "overflow": false,
+        "viewport": [
+          320,
+          844
+        ],
+        "dpr": 1
+      }
+    },
+    {
+      "name": "cancel-cleared",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/ask/cancel-cleared.png",
+      "state": {
+        "status": "Cancelled. Your question is still in the box.",
+        "article": "RESULTS\n\nYOU ASKED\nCancel fixture\n\nCancelled. Your question is still in the box.\n\nTRY AGAIN",
+        "pipeline": "QUESTION\nstopped\nRETRIEVE\nwaiting\nGENERATE\nwaiting\nANSWER\nwaiting",
+        "sources": 0,
+        "quotes": [],
+        "open": 0,
+        "focusedRow": null,
+        "focusTag": "BODY",
+        "focusText": null,
+        "noMatch": false,
+        "overflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "dpr": 1
+      }
+    },
+    {
+      "name": "zero-hits-pending",
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/ask/zero-hits-pending.png",
+      "state": {
+        "status": "Retrieved 0 passages in 731 ms. Waiting for the answer.",
+        "article": "RESULTS\n\nYOU ASKED\nZero pending fixture\n\nNo answer yet. Progress is shown in the panel alongside.",
+        "pipeline": "QUESTION\nreceived\nRETRIEVE\n0 hits · 731 ms\nGENERATE\nwaiting\nANSWER\nwaiting",
+        "sources": 0,
+        "quotes": [],
+        "open": 0,
+        "focusedRow": null,
+        "focusTag": "TEXTAREA",
+        "focusText": "Zero pending fixture",
+        "noMatch": false,
+        "overflow": false,
+        "viewport": [
+          1440,
+          900
+        ],
+        "dpr": 1
+      }
+    }
+  ],
+  "errors": [],
+  "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36",
+  "limits": [
+    "Controlled streams test client semantics, not model quality.",
+    "No generated answer mode enabled.",
+    "Keyboard/browser focus observed; no screen-reader or physical-device audit."
+  ]
+}

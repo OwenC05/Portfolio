@@ -1,0 +1,989 @@
+{
+  "studyId": "portfolio-source-navigation-challenge-2026-11-15",
+  "status": "valid-offline-run",
+  "frozenAtUtc": "2026-11-15T16:14:52.4859000Z",
+  "startedAtUtc": "2026-11-15T16:38:09.590Z",
+  "finishedAtUtc": "2026-11-15T16:38:09.607Z",
+  "frozenQuestionsSha256": "1fa0b7c7a7d65dc23456142bd393f1d52ea5de6191f95c458db0c6128f25454f",
+  "catalogVersion": "2026-11-15.2",
+  "catalogSha256": "145e04a8296e8815ff6c4f9da94f663df3c5a993223a5fb1b41c365a2b09d52b",
+  "provenance": {
+    "nodeVersion": "v24.21.0",
+    "typescriptVersion": "5.9.2",
+    "platform": "win32",
+    "execution": "Existing createLoader() and retrieve(question, publishedKnowledge, knowledgeHref), no overrides",
+    "dependencySha256": {
+      "lib/assistant/retrieval.ts": "c86f1347ba314320dd2017906971757f26e1efec77200ac0c697f83a813325b4",
+      "lib/knowledge/catalog.ts": "145e04a8296e8815ff6c4f9da94f663df3c5a993223a5fb1b41c365a2b09d52b",
+      "tests/helpers/assistant-loader.cjs": "59f342b6c2b1dc0b4419b9bf3079c8a1ff5169bc0953655747ea3b8224fe067a",
+      "tests/assistant/retrieval-fixtures.json": "2f154d44b94ee1c7da322fcdb5ea05a60c768fd0193399447f8a321efb08b4f6",
+      "package.json": "665e51bf618feb94e031f297ef5c8b25986a25450ffdcae6b39663d0a5c04790",
+      "node_modules/typescript/package.json": "5a0bb7f286c4b3f1413a42c05f902311b161f70e5f52d9da10490443bfd595a3",
+      "design/assistant/challenge/run-challenge.cjs": "ef729f94fd673e59d5a7e8ac1c2f791312fe7dfa276237e5f639bfc3753363f7"
+    },
+    "inputsUnchangedDuringRun": true,
+    "generation": "not invoked; only catalog and retrieval modules loaded",
+    "fixtures": {
+      "inspectedOnlyAfterFreeze": true,
+      "fixtureVersion": "2026-11-15.3",
+      "fixtureQuestionCount": 17,
+      "normalizedExactOverlaps": [],
+      "limitation": "Exact textual overlap audit only; shared topics and catalog-derived author bias remain."
+    }
+  },
+  "summary": {
+    "questions": 20,
+    "scoredQuestions": 19,
+    "passedQuestions": 16,
+    "failedQuestions": 3,
+    "observationOnlyQuestions": 1,
+    "requiredGroups": 22,
+    "hitGroups": 19,
+    "emptySelections": 4
+  },
+  "byAnswerability": {
+    "qualified": {
+      "questions": 5,
+      "scoredQuestions": 5,
+      "passedQuestions": 5,
+      "failedQuestions": 0,
+      "observationOnlyQuestions": 0,
+      "requiredGroups": 8,
+      "hitGroups": 8,
+      "emptySelections": 0
+    },
+    "supported": {
+      "questions": 8,
+      "scoredQuestions": 8,
+      "passedQuestions": 6,
+      "failedQuestions": 2,
+      "observationOnlyQuestions": 0,
+      "requiredGroups": 8,
+      "hitGroups": 6,
+      "emptySelections": 2
+    },
+    "unsupported": {
+      "questions": 4,
+      "scoredQuestions": 3,
+      "passedQuestions": 2,
+      "failedQuestions": 1,
+      "observationOnlyQuestions": 1,
+      "requiredGroups": 3,
+      "hitGroups": 2,
+      "emptySelections": 2
+    },
+    "misleading-premise": {
+      "questions": 2,
+      "scoredQuestions": 2,
+      "passedQuestions": 2,
+      "failedQuestions": 0,
+      "observationOnlyQuestions": 0,
+      "requiredGroups": 2,
+      "hitGroups": 2,
+      "emptySelections": 0
+    },
+    "mixed": {
+      "questions": 1,
+      "scoredQuestions": 1,
+      "passedQuestions": 1,
+      "failedQuestions": 0,
+      "observationOnlyQuestions": 0,
+      "requiredGroups": 1,
+      "hitGroups": 1,
+      "emptySelections": 0
+    }
+  },
+  "cases": [
+    {
+      "id": "C01",
+      "question": "I'm hiring for a role that mixes building software with applied AI. What is Owen's background, and has he worked with customers?",
+      "answerability": "qualified",
+      "explanation": "The public profile supplies education and technical focus; the employment account supplies customer-facing experience. These are owner-reported accounts, not independent verification or a hiring recommendation.",
+      "expectedSourceIds": [
+        "about-owen",
+        "lexisnexis"
+      ],
+      "scored": true,
+      "passed": true,
+      "groups": [
+        {
+          "id": "background",
+          "kind": "support",
+          "anyOf": [
+            "about-owen:about-owen-background:0"
+          ],
+          "hit": true,
+          "matchedPassageIds": [
+            "about-owen:about-owen-background:0"
+          ]
+        },
+        {
+          "id": "customer-work",
+          "kind": "support",
+          "anyOf": [
+            "lexisnexis:lexisnexis-role:0"
+          ],
+          "hit": true,
+          "matchedPassageIds": [
+            "lexisnexis:lexisnexis-role:0"
+          ]
+        }
+      ],
+      "selected": [
+        {
+          "sourceId": "about-owen",
+          "chunkId": "about-owen:about-owen-background:0",
+          "title": "About Owen",
+          "heading": "Background",
+          "text": "Owen Cheung is a final-year Computer Science and Artificial Intelligence student at the University of Bath, with graduation expected in 2027. His work combines software engineering and applied AI, including retrieval, evaluation and workflows people can inspect.",
+          "href": "/work/about-owen#about-owen-background",
+          "score": 3.479
+        },
+        {
+          "sourceId": "lexisnexis",
+          "chunkId": "lexisnexis:lexisnexis-role:0",
+          "title": "LexisNexis Risk Solutions",
+          "heading": "Placement and continuing work",
+          "text": "Owen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.",
+          "href": "/work/lexisnexis#lexisnexis-role",
+          "score": 3.479
+        },
+        {
+          "sourceId": "lexisnexis",
+          "chunkId": "lexisnexis:lexisnexis-limits:0",
+          "title": "LexisNexis Risk Solutions",
+          "heading": "Evidence and disclosure",
+          "text": "These employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.",
+          "href": "/work/lexisnexis#lexisnexis-limits",
+          "score": 1.265
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "question": "After his student placement, did Owen stay on with the same employer, and what did he do next?",
+      "answerability": "supported",
+      "explanation": "The employment chronology explicitly covers the transition from placement to AI engineering contractor, including dates; broader subsequent career history is not implied.",
+      "expectedSourceIds": [
+        "lexisnexis"
+      ],
+      "scored": true,
+      "passed": true,
+      "groups": [
+        {
+          "id": "continuing-role",
+          "kind": "support",
+          "anyOf": [
+            "lexisnexis:lexisnexis-role:0"
+          ],
+          "hit": true,
+          "matchedPassageIds": [
+            "lexisnexis:lexisnexis-role:0"
+          ]
+        }
+      ],
+      "selected": [
+        {
+          "sourceId": "lexisnexis",
+          "chunkId": "lexisnexis:lexisnexis-role:0",
+          "title": "LexisNexis Risk Solutions",
+          "heading": "Placement and continuing work",
+          "text": "Owen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.",
+          "href": "/work/lexisnexis#lexisnexis-role",
+          "score": 1.89
+        }
+      ]
+    },
+    {
+      "id": "C03",
+      "question": "Which language and data platform did he use for financial analysis at LexisNexis?",
+      "answerability": "supported",
+      "explanation": "The role passage names Python, SQL and Snowflake for financial-data analysis. It does not publish employer datasets or quantitative outcomes.",
+      "expectedSourceIds": [
+        "lexisnexis"
+      ],
+      "scored": true,
+      "passed": true,
+      "groups": [
+        {
+          "id": "analysis-tools",
+          "kind": "support",
+          "anyOf": [
+            "lexisnexis:lexisnexis-role:0"
+          ],
+          "hit": true,
+          "matchedPassageIds": [
+            "lexisnexis:lexisnexis-role:0"
+          ]
+        }
+      ],
+      "selected": [
+        {
+          "sourceId": "lexisnexis",
+          "chunkId": "lexisnexis:lexisnexis-role:0",
+          "title": "LexisNexis Risk Solutions",
+          "heading": "Placement and continuing work",
+          "text": "Owen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.",
+          "href": "/work/lexisnexis#lexisnexis-role",
+          "score": 5.78
+        },
+        {
+          "sourceId": "lexisnexis",
+          "chunkId": "lexisnexis:lexisnexis-tooling:0",
+          "title": "LexisNexis Risk Solutions",
+          "heading": "ML tooling for the team",
+          "text": "Owen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence.",
+          "href": "/work/lexisnexis#lexisnexis-tooling",
+          "score": 4.268
+        },
+        {
+          "sourceId": "lexisnexis",
+          "chunkId": "lexisnexis:lexisnexis-limits:0",
+          "title": "LexisNexis Risk Solutions",
+          "heading": "Evidence and disclosure",
+          "text": "These employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.",
+          "href": "/work/lexisnexis#lexisnexis-limits",
+          "score": 3.512
+        },
+        {
+          "sourceId": "lexisnexis",
+          "chunkId": "lexisnexis:lexisnexis-pilot:0",
+          "title": "LexisNexis Risk Solutions",
+          "heading": "From demonstration to internal pilot",
+          "text": "According to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.",
+          "href": "/work/lexisnexis#lexisnexis-pilot",
+          "score": 3.512
+        }
+      ]
+    },
+    {
+      "id": "C04",
+      "question": "How has he helped colleagues get usable rules out of boosted-tree models?",
+      "answerability": "supported",
+      "explanation": "The tooling passage describes improving LightGBM rule mining for team data scientists. It supports an activity-level account only; numerical improvement is explicitly absent.",
+      "expectedSourceIds": [
+        "lexisnexis"
+      ],
+      "scored": true,
+      "passed": true,
+      "groups": [
+        {
+          "id": "rule-mining",
+          "kind": "support",
+          "anyOf": [
+            "lexisnexis:lexisnexis-tooling:0"
+          ],
+          "hit": true,
+          "matchedPassageIds": [
+            "lexisnexis:lexisnexis-tooling:0"
+          ]
+        }
+      ],
+      "selected": [
+        {
+          "sourceId": "lexisnexis",
+          "chunkId": "lexisnexis:lexisnexis-tooling:0",
+          "title": "LexisNexis Risk Solutions",
+          "heading": "ML tooling for the team",
+          "text": "Owen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence.",
+          "href": "/work/lexisnexis#lexisnexis-tooling",
+          "score": 2.121
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "question": "Is the employer AI project a funded trial, or is it already rolled out across the whole organisation?",
+      "answerability": "qualified",
+      "explanation": "The pilot passage reports a funded internal pilot and explicitly distinguishes intended organisational scope from established deployment or tested production scale.",
+      "expectedSourceIds": [
+        "lexisnexis"
+      ],
+      "scored": true,
+      "passed": true,
+      "groups": [
+        {
+          "id": "pilot-scope",
+          "kind": "support-and-limit",
+          "anyOf": [
+            "lexisnexis:lexisnexis-pilot:0"
+          ],
+          "hit": true,
+          "matchedPassageIds": [
+            "lexisnexis:lexisnexis-pilot:0"
+          ]
+        }
+      ],
+      "selected": [
+        {
+          "sourceId": "lexisnexis",
+          "chunkId": "lexisnexis:lexisnexis-pilot:0",
+          "title": "LexisNexis Risk Solutions",
+          "heading": "From demonstration to internal pilot",
+          "text": "According to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.",
+          "href": "/work/lexisnexis#lexisnexis-pilot",
+          "score": 1.809
+        },
+        {
+          "sourceId": "lexisnexis",
+          "chunkId": "lexisnexis:lexisnexis-limits:0",
+          "title": "LexisNexis Risk Solutions",
+          "heading": "Evidence and disclosure",
+          "text": "These employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.",
+          "href": "/work/lexisnexis#lexisnexis-limits",
+          "score": 0.603
+        }
+      ]
+    },
+    {
+      "id": "C06",
+      "question": "If an application-drafting step is repeated or interrupted, what engineering choices make the workflow inspectable?",
+      "answerability": "qualified",
+      "explanation": "Copilot describes durable jobs, explicit state and idempotency. Its validation caveat is also needed because full end-to-end recovery remains unqualified; the question must not become a claim that interruption recovery is proven.",
+      "expectedSourceIds": [
+        "copilot"
+      ],
+      "scored": true,
+      "passed": true,
+      "groups": [
+        {
+          "id": "workflow-mechanisms",
+          "kind": "support",
+          "anyOf": [
+            "copilot:copilot-engineering:0"
+          ],
+          "hit": true,
+          "matchedPassageIds": [
+            "copilot:copilot-engineering:0"
+          ]
+        },
+        {
+          "id": "recovery-limit",
+          "kind": "limit",
+          "anyOf": [
+            "copilot:copilot-limits:0"
+          ],
+          "hit": true,
+          "matchedPassageIds": [
+            "copilot:copilot-limits:0"
+          ]
+        }
+      ],
+      "selected": [
+        {
+          "sourceId": "copilot",
+          "chunkId": "copilot:copilot-problem:0",
+          "title": "Application Copilot",
+          "heading": "Evidence behind a draft",
+          "text": "Application Copilot focuses on the workflow around a model call: finding relevant evidence, making citations inspectable and keeping human review part of application drafting.",
+          "href": "/work/copilot#copilot-problem",
+          "score": 3.618
+        },
+        {
+          "sourceId": "copilot",
+          "chunkId": "copilot:copilot-engineering:0",
+          "title": "Application Copilot",
+          "heading": "Recorded stages",
+          "text": "The engineering work connects retrieval, drafting and review through durable jobs, explicit job state, idempotency and controls around selected-data model calls. The aim is a workflow that can be inspected and supervised.",
+          "href": "/work/copilot#copilot-engineering",
+          "score": 3.015
+        },
+        {
+          "sourceId": "copilot",
+          "chunkId": "copilot:copilot-limits:0",
+          "title": "Application Copilot",
+          "heading": "Validation so far",
+          "text": "The curated project account reports synthetic tests of workflow behaviour. Full end-to-end recovery and semantic quality remain to be qualified. Synthetic tests do not establish live-model quality or production readiness; the linked repository is implementation evidence, not proof of those outcomes.",
+          "href": "/work/copilot#copilot-limits",
+          "score": 1.809
+        },
+        {
+          "sourceId": "about-owen",
+          "chunkId": "about-owen:about-owen-reading:0",
+          "title": "About Owen",
+          "heading": "Reading and application",
+          "text": "Owen reads and applies research papers. Specific titles, personal opinions and accounts of how an individual paper changed his work have not yet been supplied for publication. The writing section will hold reviewed research notes, experiments, engineering and personal writing.",
+          "href": "/work/about-owen#about-owen-reading",
+          "score": 1.508
+        }
+      ]
+    },
+    {
+      "id": "C07",
+      "question": "For his language-model comparison, did both sides receive the same questions and settings?",
+      "answerability": "supported",
+      "explanation": "The preparatory dissertation method passage explicitly records matched questions and generation settings. This is evidence about a small teaching comparison, not dissertation novelty or model superiority.",
+      "expectedSourceIds": [
+        "dissertation"
+      ],
+      "scored": true,
+      "passed": true,
+      "groups": [
+        {
+          "id": "matched-comparison",
+          "kind": "support",
+          "anyOf": [
+            "dissertation:dissertation-method:0"
+          ],
+          "hit": true,
+          "matchedPassageIds": [
+            "dissertation:dissertation-method:0"
+          ]
+        }
+      ],
+      "selected": [
+        {
+          "sourceId": "dissertation",
+          "chunkId": "dissertation:dissertation-method:0",
+          "title": "Dissertation preparation: plain versus RAG",
+          "heading": "Making the comparison inspectable",
+          "text": "Both conditions use the same questions and matching generation settings. Reference answers and scoring labels are excluded from generation; warm-up calls are excluded from primary results. Saved answers, configuration and source provenance support inspection. Scoring separates required facts, unsupported claims, paragraph-ID citation support and abstention.",
+          "href": "/work/dissertation#dissertation-method",
+          "score": 3.667
+        },
+        {
+          "sourceId": "dissertation",
+          "chunkId": "dissertation:dissertation-scope:0",
+          "title": "Dissertation preparation: plain versus RAG",
+          "heading": "Teaching scope",
+          "text": "The preparatory build compares plain Qwen inference with the same model given context from a paragraph-level TF-IDF retriever. It uses fictional equipment-hire documents, 20 questions and 40 primary outputs on a university GPU. This is preparation for dissertation work, not a completed dissertation result or a general model-accuracy benchmark.",
+          "href": "/work/dissertation#dissertation-scope",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "id": "C08",
+      "question": "What went wrong when he first ran the small language model, and how did he catch invalid numeric output?",
+      "answerability": "supported",
+      "explanation": "The observations passage records unusable output, nonfinite scores, a corrected attention configuration and a guard; it does not expose all diagnostic details or exact configuration values.",
+      "expectedSourceIds": [
+        "dissertation"
+      ],
+      "scored": true,
+      "passed": false,
+      "groups": [
+        {
+          "id": "numeric-failure",
+          "kind": "support",
+          "anyOf": [
+            "dissertation:dissertation-observations:0"
+          ],
+          "hit": false,
+          "matchedPassageIds": []
+        }
+      ],
+      "selected": []
+    },
+    {
+      "id": "C09",
+      "question": "What exactly does the typing model predict, and does that demonstrate people learn to type faster?",
+      "answerability": "qualified",
+      "explanation": "TypeForge's limits identify transition-timing prediction and explicitly say learning and user benefit are not established by that benchmark.",
+      "expectedSourceIds": [
+        "typeforge"
+      ],
+      "scored": true,
+      "passed": true,
+      "groups": [
+        {
+          "id": "prediction-versus-benefit",
+          "kind": "support-and-limit",
+          "anyOf": [
+            "typeforge:typeforge-limits:0"
+          ],
+          "hit": true,
+          "matchedPassageIds": [
+            "typeforge:typeforge-limits:0"
+          ]
+        }
+      ],
+      "selected": [
+        {
+          "sourceId": "typeforge",
+          "chunkId": "typeforge:typeforge-limits:0",
+          "title": "TypeForge",
+          "heading": "What the evidence supports",
+          "text": "The benchmark evaluates transition-timing prediction, not changes in typing speed, practice selection or learning. User benefit remains unestablished. The public demo and repository describe work in development, not a completed product release.",
+          "href": "/work/typeforge#typeforge-limits",
+          "score": 3.333
+        },
+        {
+          "sourceId": "typeforge",
+          "chunkId": "typeforge:typeforge-product:0",
+          "title": "TypeForge",
+          "heading": "The product",
+          "text": "TypeForge is a browser-local typing application using native browser interaction and on-device storage. Current product priorities are daily practice and feature polish. Owen describes the current experience as a typing test with a disconnected ML study; a trained timing model is not automatically a useful practice-selection policy.",
+          "href": "/work/typeforge#typeforge-product",
+          "score": 2.667
+        },
+        {
+          "sourceId": "typeforge",
+          "chunkId": "typeforge:typeforge-model:0",
+          "title": "TypeForge",
+          "heading": "From evaluation to inference",
+          "text": "A Python benchmark compares a baseline with a candidate model. A versioned model artifact supports browser inference. The public benchmark and methods are linked below; this page does not independently reproduce their results.",
+          "href": "/work/typeforge#typeforge-model",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "question": "Can the typing tool keep data on my device, and what stage is the product at?",
+      "answerability": "qualified",
+      "explanation": "The product passage describes browser-local interaction and on-device storage; the limits passage explicitly marks work in development rather than a completed release. This is not a security audit.",
+      "expectedSourceIds": [
+        "typeforge"
+      ],
+      "scored": true,
+      "passed": true,
+      "groups": [
+        {
+          "id": "device-storage",
+          "kind": "support",
+          "anyOf": [
+            "typeforge:typeforge-product:0"
+          ],
+          "hit": true,
+          "matchedPassageIds": [
+            "typeforge:typeforge-product:0"
+          ]
+        },
+        {
+          "id": "development-status",
+          "kind": "limit",
+          "anyOf": [
+            "typeforge:typeforge-limits:0"
+          ],
+          "hit": true,
+          "matchedPassageIds": [
+            "typeforge:typeforge-limits:0"
+          ]
+        }
+      ],
+      "selected": [
+        {
+          "sourceId": "typeforge",
+          "chunkId": "typeforge:typeforge-product:0",
+          "title": "TypeForge",
+          "heading": "The product",
+          "text": "TypeForge is a browser-local typing application using native browser interaction and on-device storage. Current product priorities are daily practice and feature polish. Owen describes the current experience as a typing test with a disconnected ML study; a trained timing model is not automatically a useful practice-selection policy.",
+          "href": "/work/typeforge#typeforge-product",
+          "score": 4.158
+        },
+        {
+          "sourceId": "typeforge",
+          "chunkId": "typeforge:typeforge-limits:0",
+          "title": "TypeForge",
+          "heading": "What the evidence supports",
+          "text": "The benchmark evaluates transition-timing prediction, not changes in typing speed, practice selection or learning. User benefit remains unestablished. The public demo and repository describe work in development, not a completed product release.",
+          "href": "/work/typeforge#typeforge-limits",
+          "score": 2.268
+        },
+        {
+          "sourceId": "copilot",
+          "chunkId": "copilot:copilot-engineering:0",
+          "title": "Application Copilot",
+          "heading": "Recorded stages",
+          "text": "The engineering work connects retrieval, drafting and review through durable jobs, explicit job state, idempotency and controls around selected-data model calls. The aim is a workflow that can be inspected and supervised.",
+          "href": "/work/copilot#copilot-engineering",
+          "score": 1.89
+        }
+      ]
+    },
+    {
+      "id": "C11",
+      "question": "Why am I seeing extracts rather than a reply written by the bot, and can I check where they came from?",
+      "answerability": "supported",
+      "explanation": "The assistant's current-behavior passage says generated answers are off and source excerpts have citations. This evaluates locating that explanation, not whether the running UI actually obeys it.",
+      "expectedSourceIds": [
+        "portfolio-assistant"
+      ],
+      "scored": true,
+      "passed": true,
+      "groups": [
+        {
+          "id": "source-only-explanation",
+          "kind": "support",
+          "anyOf": [
+            "portfolio-assistant:portfolio-assistant-design:0"
+          ],
+          "hit": true,
+          "matchedPassageIds": [
+            "portfolio-assistant:portfolio-assistant-design:0"
+          ]
+        }
+      ],
+      "selected": [
+        {
+          "sourceId": "portfolio-assistant",
+          "chunkId": "portfolio-assistant:portfolio-assistant-design:0",
+          "title": "An inspectable portfolio assistant",
+          "heading": "Current behaviour",
+          "text": "The preview uses deterministic lexical retrieval and displays source excerpts with citations. Generated answers are switched off at Owen’s request. When no passages match, it suggests contacting Owen. Drafts, employer-confidential material and private study notes are excluded from the public catalog. An optional generation path is implemented but has not been evaluated with a live model.",
+          "href": "/work/portfolio-assistant#portfolio-assistant-design",
+          "score": 2.268
+        },
+        {
+          "sourceId": "portfolio-assistant",
+          "chunkId": "portfolio-assistant:portfolio-assistant-evaluation:0",
+          "title": "An inspectable portfolio assistant",
+          "heading": "Evaluation and limits",
+          "text": "Offline checks cover retrieval, citation validation, failure handling and the source-only interface. The retrieval fixtures are a developer-visible regression suite, not a held-out measure of general answer quality. Live generated answers, semantic support and injection resistance still require model evaluation and human review. A small-model adaptation experiment is planned as a separate comparison; no training or improvement is claimed.",
+          "href": "/work/portfolio-assistant#portfolio-assistant-evaluation",
+          "score": 2.268
+        },
+        {
+          "sourceId": "portfolio-assistant",
+          "chunkId": "portfolio-assistant:portfolio-assistant-purpose:0",
+          "title": "An inspectable portfolio assistant",
+          "heading": "The question",
+          "text": "Can a visitor explore Owen’s work through a conversational interface while inspecting the evidence behind each answer? This preview searches a curated public source catalog and shows the retrieved passages, their source pages and a map of the retrieval process.",
+          "href": "/work/portfolio-assistant#portfolio-assistant-purpose",
+          "score": 1.512
+        }
+      ]
+    },
+    {
+      "id": "C12",
+      "question": "When is Owen due to finish university, and what is he studying?",
+      "answerability": "supported",
+      "explanation": "The profile gives degree subject, university and expected graduation year; expected graduation is not a claim that he has already graduated.",
+      "expectedSourceIds": [
+        "about-owen"
+      ],
+      "scored": true,
+      "passed": true,
+      "groups": [
+        {
+          "id": "education",
+          "kind": "support",
+          "anyOf": [
+            "about-owen:about-owen-background:0"
+          ],
+          "hit": true,
+          "matchedPassageIds": [
+            "about-owen:about-owen-background:0"
+          ]
+        }
+      ],
+      "selected": [
+        {
+          "sourceId": "about-owen",
+          "chunkId": "about-owen:about-owen-background:0",
+          "title": "About Owen",
+          "heading": "Background",
+          "text": "Owen Cheung is a final-year Computer Science and Artificial Intelligence student at the University of Bath, with graduation expected in 2027. His work combines software engineering and applied AI, including retrieval, evaluation and workflows people can inspect.",
+          "href": "/work/about-owen#about-owen-background",
+          "score": 2
+        },
+        {
+          "sourceId": "reinforcement-learning",
+          "chunkId": "reinforcement-learning:reinforcement-learning-status:0",
+          "title": "Reinforcement learning coursework",
+          "heading": "Publication status",
+          "text": "A substantive public coursework write-up is not yet available. A local study companion is separate from the coursework itself. This entry does not claim that Owen trained an RL agent, achieved a particular score or authored an unreviewed coursework artifact.",
+          "href": "/work/reinforcement-learning#reinforcement-learning-status",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "id": "C13",
+      "question": "When he's away from programming, what does Owen like doing?",
+      "answerability": "supported",
+      "explanation": "The interests passage lists leisure activities. It does not support specific equipment, artist or destination preferences.",
+      "expectedSourceIds": [
+        "about-owen"
+      ],
+      "scored": true,
+      "passed": false,
+      "groups": [
+        {
+          "id": "leisure-interests",
+          "kind": "support",
+          "anyOf": [
+            "about-owen:about-owen-interests:0"
+          ],
+          "hit": false,
+          "matchedPassageIds": []
+        }
+      ],
+      "selected": []
+    },
+    {
+      "id": "C14",
+      "question": "Which paper most changed Owen's approach, and where can I read his personal take on it?",
+      "answerability": "unsupported",
+      "explanation": "No individual paper title or personal interpretation is supplied. The reading passage explicitly states that gap; it is a useful boundary locator, not an answer to which paper. Contact Owen for the missing view.",
+      "expectedSourceIds": [
+        "about-owen"
+      ],
+      "scored": true,
+      "passed": true,
+      "groups": [
+        {
+          "id": "unpublished-reading-view",
+          "kind": "limit",
+          "anyOf": [
+            "about-owen:about-owen-reading:0"
+          ],
+          "hit": true,
+          "matchedPassageIds": [
+            "about-owen:about-owen-reading:0"
+          ]
+        }
+      ],
+      "selected": [
+        {
+          "sourceId": "about-owen",
+          "chunkId": "about-owen:about-owen-reading:0",
+          "title": "About Owen",
+          "heading": "Reading and application",
+          "text": "Owen reads and applies research papers. Specific titles, personal opinions and accounts of how an individual paper changed his work have not yet been supplied for publication. The writing section will hold reviewed research notes, experiments, engineering and personal writing.",
+          "href": "/work/about-owen#about-owen-reading",
+          "score": 3.024
+        }
+      ]
+    },
+    {
+      "id": "C15",
+      "question": "What brand of espresso machine does he recommend for a beginner?",
+      "answerability": "unsupported",
+      "explanation": "Coffee is a listed interest, but no equipment preference or recommendation is published. The interests caveat is the target boundary locator; coffee-related retrieval cannot establish a recommendation. Contact Owen.",
+      "expectedSourceIds": [
+        "about-owen"
+      ],
+      "scored": true,
+      "passed": false,
+      "groups": [
+        {
+          "id": "no-equipment-preference",
+          "kind": "limit",
+          "anyOf": [
+            "about-owen:about-owen-interests:0"
+          ],
+          "hit": false,
+          "matchedPassageIds": []
+        }
+      ],
+      "selected": []
+    },
+    {
+      "id": "C16",
+      "question": "Is Owen available for a freelance project next month, and what is his day rate?",
+      "answerability": "unsupported",
+      "explanation": "The catalog contains neither availability nor pricing and has no specific published caveat about them. Contact Owen; any related career or profile selections are observations only and do not supply either fact.",
+      "expectedSourceIds": [],
+      "scored": false,
+      "passed": null,
+      "groups": [],
+      "selected": []
+    },
+    {
+      "id": "C17",
+      "question": "Can I see the names of his employer's customers and their fraud-detection results?",
+      "answerability": "unsupported",
+      "explanation": "The LexisNexis disclosure passage explicitly withholds customer identities and internal evaluation results. It supports the publication boundary only, not the requested details; contact Owen for what can be shared.",
+      "expectedSourceIds": [
+        "lexisnexis"
+      ],
+      "scored": true,
+      "passed": true,
+      "groups": [
+        {
+          "id": "employer-disclosure-limit",
+          "kind": "limit",
+          "anyOf": [
+            "lexisnexis:lexisnexis-limits:0"
+          ],
+          "hit": true,
+          "matchedPassageIds": [
+            "lexisnexis:lexisnexis-limits:0"
+          ]
+        }
+      ],
+      "selected": [
+        {
+          "sourceId": "lexisnexis",
+          "chunkId": "lexisnexis:lexisnexis-limits:0",
+          "title": "LexisNexis Risk Solutions",
+          "heading": "Evidence and disclosure",
+          "text": "These employment and contribution claims are Owen’s account, not independently verified performance results. Employer code, transaction data, customer identities and internal evaluation results are not published here. Production monitoring and retraining remain gaps in the experience described; this page does not claim ownership of a deployed monitoring or retraining system.",
+          "href": "/work/lexisnexis#lexisnexis-limits",
+          "score": 3.78
+        },
+        {
+          "sourceId": "lexisnexis",
+          "chunkId": "lexisnexis:lexisnexis-role:0",
+          "title": "LexisNexis Risk Solutions",
+          "heading": "Placement and continuing work",
+          "text": "Owen worked as a Data Scientist on industrial placement at LexisNexis Risk Solutions from July 2025 to August 2026, then continued as an AI engineering contractor from August 2026. His owner-supplied account describes two fraud-model optimisations, financial-data analysis using Python, SQL and Snowflake, and research into self-supervised representations. Much of his Lexis work is customer-facing.",
+          "href": "/work/lexisnexis#lexisnexis-role",
+          "score": 3.024
+        },
+        {
+          "sourceId": "lexisnexis",
+          "chunkId": "lexisnexis:lexisnexis-tooling:0",
+          "title": "LexisNexis Risk Solutions",
+          "heading": "ML tooling for the team",
+          "text": "Owen reports responsibility for ML tooling, including improving the speed, quality and ease of use of LightGBM rule mining for the team’s data scientists. No numerical speed-up, quality metric or customer-specific result is supplied. Detailed case studies still need a publishable problem statement, personal contribution, constraints and outcome evidence.",
+          "href": "/work/lexisnexis#lexisnexis-tooling",
+          "score": 3.024
+        },
+        {
+          "sourceId": "lexisnexis",
+          "chunkId": "lexisnexis:lexisnexis-pilot:0",
+          "title": "LexisNexis Risk Solutions",
+          "heading": "From demonstration to internal pilot",
+          "text": "According to Owen’s account, he architected an AI workflow intended for organisation-wide use, built an end-to-end demonstration and presented the concept, value and scaling approach to senior stakeholders. He was retained to develop a funded internal pilot toward production. Persistent state, audit trails and human-review gates are part of the described approach. Intended scope does not establish organisation-wide deployment or tested production scale.",
+          "href": "/work/lexisnexis#lexisnexis-pilot",
+          "score": 1.512
+        }
+      ]
+    },
+    {
+      "id": "C18",
+      "question": "Which reinforcement-learning agent did Owen train, and what score did it achieve?",
+      "answerability": "misleading-premise",
+      "explanation": "The coursework status explicitly does not claim an agent was trained or a score achieved. Retrieving that correction is useful; topical coursework sources do not confirm the premise.",
+      "expectedSourceIds": [
+        "reinforcement-learning"
+      ],
+      "scored": true,
+      "passed": true,
+      "groups": [
+        {
+          "id": "no-training-or-score-claim",
+          "kind": "correction",
+          "anyOf": [
+            "reinforcement-learning:reinforcement-learning-status:0"
+          ],
+          "hit": true,
+          "matchedPassageIds": [
+            "reinforcement-learning:reinforcement-learning-status:0"
+          ]
+        }
+      ],
+      "selected": [
+        {
+          "sourceId": "reinforcement-learning",
+          "chunkId": "reinforcement-learning:reinforcement-learning-status:0",
+          "title": "Reinforcement learning coursework",
+          "heading": "Publication status",
+          "text": "A substantive public coursework write-up is not yet available. A local study companion is separate from the coursework itself. This entry does not claim that Owen trained an RL agent, achieved a particular score or authored an unreviewed coursework artifact.",
+          "href": "/work/reinforcement-learning#reinforcement-learning-status",
+          "score": 5.266
+        },
+        {
+          "sourceId": "reinforcement-learning",
+          "chunkId": "reinforcement-learning:reinforcement-learning-next:0",
+          "title": "Reinforcement learning coursework",
+          "heading": "What a write-up needs",
+          "text": "A publishable account needs the actual task, Owen’s personal contribution, permitted artifacts, evaluation conditions and limitations. Assessment submissions and learner notes are not reproduced in this portfolio.",
+          "href": "/work/reinforcement-learning#reinforcement-learning-next",
+          "score": 3.633
+        },
+        {
+          "sourceId": "typeforge",
+          "chunkId": "typeforge:typeforge-limits:0",
+          "title": "TypeForge",
+          "heading": "What the evidence supports",
+          "text": "The benchmark evaluates transition-timing prediction, not changes in typing speed, practice selection or learning. User benefit remains unestablished. The public demo and repository describe work in development, not a completed product release.",
+          "href": "/work/typeforge#typeforge-limits",
+          "score": 1.633
+        }
+      ]
+    },
+    {
+      "id": "C19",
+      "question": "Now that the portfolio assistant's small-model training has improved answer quality, how big was the gain?",
+      "answerability": "misleading-premise",
+      "explanation": "The assistant evaluation passage says adaptation is only planned and no training or improvement is claimed. The requested gain has no published support; the target is the explicit correction.",
+      "expectedSourceIds": [
+        "portfolio-assistant"
+      ],
+      "scored": true,
+      "passed": true,
+      "groups": [
+        {
+          "id": "no-adaptation-gain-claim",
+          "kind": "correction",
+          "anyOf": [
+            "portfolio-assistant:portfolio-assistant-evaluation:0"
+          ],
+          "hit": true,
+          "matchedPassageIds": [
+            "portfolio-assistant:portfolio-assistant-evaluation:0"
+          ]
+        }
+      ],
+      "selected": [
+        {
+          "sourceId": "portfolio-assistant",
+          "chunkId": "portfolio-assistant:portfolio-assistant-evaluation:0",
+          "title": "An inspectable portfolio assistant",
+          "heading": "Evaluation and limits",
+          "text": "Offline checks cover retrieval, citation validation, failure handling and the source-only interface. The retrieval fixtures are a developer-visible regression suite, not a held-out measure of general answer quality. Live generated answers, semantic support and injection resistance still require model evaluation and human review. A small-model adaptation experiment is planned as a separate comparison; no training or improvement is claimed.",
+          "href": "/work/portfolio-assistant#portfolio-assistant-evaluation",
+          "score": 6.221
+        },
+        {
+          "sourceId": "portfolio-assistant",
+          "chunkId": "portfolio-assistant:portfolio-assistant-design:0",
+          "title": "An inspectable portfolio assistant",
+          "heading": "Current behaviour",
+          "text": "The preview uses deterministic lexical retrieval and displays source excerpts with citations. Generated answers are switched off at Owen’s request. When no passages match, it suggests contacting Owen. Drafts, employer-confidential material and private study notes are excluded from the public catalog. An optional generation path is implemented but has not been evaluated with a live model.",
+          "href": "/work/portfolio-assistant#portfolio-assistant-design",
+          "score": 4.412
+        },
+        {
+          "sourceId": "portfolio-assistant",
+          "chunkId": "portfolio-assistant:portfolio-assistant-purpose:0",
+          "title": "An inspectable portfolio assistant",
+          "heading": "The question",
+          "text": "Can a visitor explore Owen’s work through a conversational interface while inspecting the evidence behind each answer? This preview searches a curated public source catalog and shows the retrieved passages, their source pages and a map of the retrieval process.",
+          "href": "/work/portfolio-assistant#portfolio-assistant-purpose",
+          "score": 3.809
+        }
+      ]
+    },
+    {
+      "id": "C20",
+      "question": "What did his Qwen exercise show about citations, and what does he personally think about letting AI make hiring decisions?",
+      "answerability": "mixed",
+      "explanation": "The dissertation observations describe unrelated paragraph citations and distinguish finding from supporting evidence. No personal hiring-policy view is published; only the first clause has a scored evidence target, and the second needs contact with Owen rather than inference from his projects.",
+      "expectedSourceIds": [
+        "dissertation"
+      ],
+      "scored": true,
+      "passed": true,
+      "groups": [
+        {
+          "id": "citation-observation",
+          "kind": "support",
+          "anyOf": [
+            "dissertation:dissertation-observations:0"
+          ],
+          "hit": true,
+          "matchedPassageIds": [
+            "dissertation:dissertation-observations:0"
+          ]
+        }
+      ],
+      "selected": [
+        {
+          "sourceId": "dissertation",
+          "chunkId": "dissertation:dissertation-observations:0",
+          "title": "Dissertation preparation: plain versus RAG",
+          "heading": "What the exercise exposed",
+          "text": "An early run produced unusable output with nonfinite model scores; a corrected attention configuration and a nonfinite-score guard were checked before the comparison. The exercise also exposed answers that contradicted themselves, missed a condition or cited an unrelated paragraph. Finding evidence and supporting an answer are separate problems.",
+          "href": "/work/dissertation#dissertation-observations",
+          "score": 2.111
+        }
+      ]
+    }
+  ],
+  "interpretation": "Coverage of predeclared passage targets only; unsupported-question hits locate limits, not requested facts. No generated answer, UI behavior or semantic entailment was evaluated."
+}

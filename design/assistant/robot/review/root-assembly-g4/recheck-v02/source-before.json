@@ -1,0 +1,15 @@
+{
+  "at": "2026-11-18T18:55:47.369Z",
+  "records": [
+    {
+      "path": "components/studio/StudioExperience.tsx",
+      "bytes": 19149,
+      "sha256": "1c1af8cc3bd9a77a108d9ff21cd9cad09056c0c31755db61db887bf6b97923ca"
+    },
+    {
+      "path": "tests/assistant/studio-experience.test.cjs",
+      "bytes": 30932,
+      "sha256": "4678443279847c541c63a163461b106a58cf524f73c5f71561f1ccda79c70812"
+    }
+  ]
+}

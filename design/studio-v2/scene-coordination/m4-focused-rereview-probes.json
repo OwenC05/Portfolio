@@ -1,0 +1,510 @@
+{
+  "scope": "focused independent helper repair only; no actual M4, structural/visual/stage acceptance",
+  "protectedPinsBefore": {
+    "m4-transition-guard.py": "ad62627f0683806ace2c8ebbb133ba83e72c7d95f1df8adc291a3706aa40da6b",
+    "m4-transition-guard-tests.py": "d17413ab80c0da964926f46c97cfc61f21f832fc25cddd521e8a49e19badf1c9",
+    "m4-transition-guard-tests-v2.json": "4b84d112964c0d1aa671aebab511f4ff250d8c0feb268531e1cc36fa29434b46",
+    "m4-scene-provenance-amendment-v01.json": "3b3a011d5d2f599dc63a4bf31aacd115513eb06c31267ddee0201209cebb2229",
+    "m4-transition-guard-v2.diff": "59f16120771211f964509554f71e6fdf06cb53b489604831c995a8c37759bcfb",
+    "m4-model-contract.json": "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98",
+    "m4-transition-guard-tests-v1.json": "6a90cc5c69c79ec676ebdd08db96b5ac80be97cee6b0e2154692ff9f7afc3134",
+    "m4-transition-guard-independent-review.md": "f46c07f30991c0e65b0bd104e381c1b1b6919e772058d27b7e641c437f58dcac"
+  },
+  "protectedPinsAfter": {
+    "m4-transition-guard.py": "ad62627f0683806ace2c8ebbb133ba83e72c7d95f1df8adc291a3706aa40da6b",
+    "m4-transition-guard-tests.py": "d17413ab80c0da964926f46c97cfc61f21f832fc25cddd521e8a49e19badf1c9",
+    "m4-transition-guard-tests-v2.json": "4b84d112964c0d1aa671aebab511f4ff250d8c0feb268531e1cc36fa29434b46",
+    "m4-scene-provenance-amendment-v01.json": "3b3a011d5d2f599dc63a4bf31aacd115513eb06c31267ddee0201209cebb2229",
+    "m4-transition-guard-v2.diff": "59f16120771211f964509554f71e6fdf06cb53b489604831c995a8c37759bcfb",
+    "m4-model-contract.json": "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98",
+    "m4-transition-guard-tests-v1.json": "6a90cc5c69c79ec676ebdd08db96b5ac80be97cee6b0e2154692ff9f7afc3134",
+    "m4-transition-guard-independent-review.md": "f46c07f30991c0e65b0bd104e381c1b1b6919e772058d27b7e641c437f58dcac"
+  },
+  "allWriterProtectedHashesRechecked": true,
+  "preimageCommit": "fbe08dae8bbf3f565382d804adafc7dec162563a",
+  "exactPreimageHashesVerified": true,
+  "reproducedFullHelperAndTestDiff": true,
+  "changedFunctionNames": [
+    "_audit",
+    "audit_m4_transition"
+  ],
+  "retainedChecksThroughBudgetsAstIdentical": true,
+  "cliAstIdentical": true,
+  "amendmentMatchesActualParentAndAuthorRequestAndRootValues": true,
+  "parentSceneBefore": {
+    "fk_variant": "proposal",
+    "fk_tag": "m3-v02",
+    "fk_profile": "studio-full-kit-v1",
+    "fk_stage": "M3",
+    "fk_m2_tag": "v04-pc",
+    "fk_m3_tag": "v02"
+  },
+  "approvedSceneAfter": {
+    "fk_variant": "proposal",
+    "fk_tag": "m4-v01",
+    "fk_profile": "studio-full-kit-v1",
+    "fk_stage": "M4",
+    "fk_m2_tag": "v04-pc",
+    "fk_m3_tag": "v02",
+    "fk_m4_tag": "v01"
+  },
+  "writerReceiptReviewedNotRerun": {
+    "passed": 81,
+    "total": 81,
+    "cli": {
+      "name": "receipt-only CLI and exclusive existing-path refusal",
+      "passed": true,
+      "evidence": {
+        "validExit": 0,
+        "invalidExit": 1,
+        "malformedExit": 1,
+        "existingReceiptExit": 2,
+        "candidateAsReceiptExit": 2,
+        "candidateBytesUnchanged": true
+      }
+    }
+  },
+  "syntheticPositiveMetrics": {
+    "retainedLeaves": 92,
+    "retainedAccessorComparisons": 368,
+    "retainedComponentDifferences": 0,
+    "leaves": 110,
+    "assetIds": 58,
+    "remainingProxies": 17,
+    "provisionalContacts": 3,
+    "placedTriangles": 33708,
+    "stageMainCallsEstimate": 18,
+    "stageShadowCallsEstimate": 9,
+    "stageRefreshCallsEstimate": 27,
+    "stagePlacedTriangles": 216,
+    "rows": [
+      {
+        "node": "ctl_body__shell",
+        "triangles": 12,
+        "main": 1,
+        "shadow": 1
+      },
+      {
+        "node": "ctl_body__indicators",
+        "triangles": 12,
+        "main": 1,
+        "shadow": 0
+      },
+      {
+        "node": "ctl_keys__keys",
+        "triangles": 12,
+        "main": 1,
+        "shadow": 0
+      },
+      {
+        "node": "ctl_stand__frame",
+        "triangles": 12,
+        "main": 1,
+        "shadow": 1
+      },
+      {
+        "node": "ctl_sustain_pedal__pedal",
+        "triangles": 12,
+        "main": 1,
+        "shadow": 0
+      },
+      {
+        "node": "stool_keys__stool",
+        "triangles": 12,
+        "main": 1,
+        "shadow": 1
+      },
+      {
+        "node": "drum_rack__rack",
+        "triangles": 12,
+        "main": 1,
+        "shadow": 1
+      },
+      {
+        "node": "drum_pads__shells",
+        "triangles": 12,
+        "main": 1,
+        "shadow": 1
+      },
+      {
+        "node": "drum_pads__heads",
+        "triangles": 12,
+        "main": 1,
+        "shadow": 0
+      },
+      {
+        "node": "drum_cymbals__cymbals",
+        "triangles": 12,
+        "main": 1,
+        "shadow": 1
+      },
+      {
+        "node": "drum_hihat_pedal__pedal",
+        "triangles": 12,
+        "main": 1,
+        "shadow": 0
+      },
+      {
+        "node": "drum_kick__tower",
+        "triangles": 12,
+        "main": 1,
+        "shadow": 1
+      },
+      {
+        "node": "drum_module__body",
+        "triangles": 12,
+        "main": 1,
+        "shadow": 1
+      },
+      {
+        "node": "drum_module__display",
+        "triangles": 12,
+        "main": 1,
+        "shadow": 0
+      },
+      {
+        "node": "drum_sticks__pair",
+        "triangles": 12,
+        "main": 1,
+        "shadow": 0
+      },
+      {
+        "node": "drum_throne__throne",
+        "triangles": 12,
+        "main": 1,
+        "shadow": 1
+      },
+      {
+        "node": "rug__rug",
+        "triangles": 12,
+        "main": 1,
+        "shadow": 0
+      },
+      {
+        "node": "music_cables__runs",
+        "triangles": 12,
+        "main": 1,
+        "shadow": 0
+      }
+    ],
+    "rendererDrawMeasurements": false
+  },
+  "results": [
+    {
+      "name": "exact approved M4 v01 metadata with pinned corrected parent",
+      "passed": true,
+      "valid": true,
+      "codes": [],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "stale entire M3 metadata rejected",
+      "passed": true,
+      "valid": false,
+      "codes": [
+        "sceneMetadata"
+      ],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "unapproved future M4 tag rejected",
+      "passed": true,
+      "valid": false,
+      "codes": [
+        "sceneMetadata"
+      ],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "wrong stage rejected",
+      "passed": true,
+      "valid": false,
+      "codes": [
+        "sceneMetadata"
+      ],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "wrong M4 revision rejected",
+      "passed": true,
+      "valid": false,
+      "codes": [
+        "sceneMetadata"
+      ],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "missing exact key fk_variant",
+      "passed": true,
+      "valid": false,
+      "codes": [
+        "sceneMetadata"
+      ],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "missing exact key fk_tag",
+      "passed": true,
+      "valid": false,
+      "codes": [
+        "sceneMetadata"
+      ],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "missing exact key fk_profile",
+      "passed": true,
+      "valid": false,
+      "codes": [
+        "sceneMetadata"
+      ],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "missing exact key fk_stage",
+      "passed": true,
+      "valid": false,
+      "codes": [
+        "sceneMetadata"
+      ],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "missing exact key fk_m2_tag",
+      "passed": true,
+      "valid": false,
+      "codes": [
+        "sceneMetadata"
+      ],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "missing exact key fk_m3_tag",
+      "passed": true,
+      "valid": false,
+      "codes": [
+        "sceneMetadata"
+      ],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "missing exact key fk_m4_tag",
+      "passed": true,
+      "valid": false,
+      "codes": [
+        "sceneMetadata"
+      ],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "inherited value remains exact fk_variant",
+      "passed": true,
+      "valid": false,
+      "codes": [
+        "sceneMetadata"
+      ],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "inherited value remains exact fk_profile",
+      "passed": true,
+      "valid": false,
+      "codes": [
+        "sceneMetadata"
+      ],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "inherited value remains exact fk_m2_tag",
+      "passed": true,
+      "valid": false,
+      "codes": [
+        "sceneMetadata"
+      ],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "inherited value remains exact fk_m3_tag",
+      "passed": true,
+      "valid": false,
+      "codes": [
+        "sceneMetadata"
+      ],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "additional extras key rejected",
+      "passed": true,
+      "valid": false,
+      "codes": [
+        "sceneMetadata"
+      ],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "additional scene field rejected",
+      "passed": true,
+      "valid": false,
+      "codes": [
+        "sceneMetadata"
+      ],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "scene name stays exact",
+      "passed": true,
+      "valid": false,
+      "codes": [
+        "sceneMetadata"
+      ],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "asset generator stays exact",
+      "passed": true,
+      "valid": false,
+      "codes": [
+        "documentMetadata"
+      ],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "asset version stays exact",
+      "passed": true,
+      "valid": false,
+      "codes": [
+        "documentMetadata"
+      ],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "other document metadata stays exact",
+      "passed": true,
+      "valid": false,
+      "codes": [
+        "documentMetadata"
+      ],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "former null-record escape now structured: scenes",
+      "passed": true,
+      "valid": false,
+      "codes": [
+        "malformedInput"
+      ],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "former null-record escape now structured: images",
+      "passed": true,
+      "valid": false,
+      "codes": [
+        "malformedInput"
+      ],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "former null-record escape now structured: textures",
+      "passed": true,
+      "valid": false,
+      "codes": [
+        "malformedInput"
+      ],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "semantic reindexing and BIN relocation still pass",
+      "passed": true,
+      "valid": true,
+      "codes": [],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "retained UV storage repacking still passes",
+      "passed": true,
+      "valid": true,
+      "codes": [],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "retained prior-noise UV word still rejected",
+      "passed": true,
+      "valid": false,
+      "codes": [
+        "retainedAccessorBytes"
+      ],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "retained boolean drift still rejected",
+      "passed": true,
+      "valid": false,
+      "codes": [
+        "retainedNode"
+      ],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "new row flags stay binding",
+      "passed": true,
+      "valid": false,
+      "codes": [
+        "newRowFlags"
+      ],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "palette bytes stay exact",
+      "passed": true,
+      "valid": false,
+      "codes": [
+        "imageBytes"
+      ],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    },
+    {
+      "name": "material definition stays exact",
+      "passed": true,
+      "valid": false,
+      "codes": [
+        "materialDefinition"
+      ],
+      "jsonSafe": true,
+      "inputsPreserved": true
+    }
+  ],
+  "passed": 32,
+  "total": 32
+}

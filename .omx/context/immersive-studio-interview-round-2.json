@@ -1,0 +1,58 @@
+{
+    "active":  true,
+    "current_phase":  "deep-interview",
+    "mode":  "deep-interview",
+    "state":  {
+                  "rounds":  [
+                                 {
+                                     "round":  1,
+                                     "target":  "outcome-and-scope",
+                                     "question":  "Inside eye-level studio, orbitable room, or free exploration?",
+                                     "answer":  "yes eye level i think is a good starting point, i think just a 3d room you can looking around is good enough, it should sitll act like a portfolio not like a game",
+                                     "source":  "from-user",
+                                     "accepted":  [
+                                                      "Eye-level interior viewpoint.",
+                                                      "Room look-around is sufficient.",
+                                                      "Portfolio purpose takes priority over game-like exploration."
+                                                  ],
+                                     "inferences":  [
+                                                        "Use a fixed viewing position with restrained look controls; no walking controls or game loop."
+                                                    ],
+                                     "ambiguity_after":  0.155
+                                 },
+                                 {
+                                     "round":  2,
+                                     "target":  "Project-reading transition",
+                                     "question":  "When someone clicks a project monitor, move closer first, read immediately over the room, or open a case-study page?",
+                                     "answer":  "yes it shoudl read immediately",
+                                     "source":  "from-user",
+                                     "accepted":  [
+                                                      "Clicking a project monitor opens readable project content immediately.",
+                                                      "No camera move or waiting animation before reading."
+                                                  ],
+                                     "inferences":  [
+                                                        "Use a large accessible HTML panel over the room; closing preserves the viewing direction."
+                                                    ],
+                                     "ambiguity_after":  0.1175
+                                 }
+                             ],
+                  "decision_boundaries_ready":  false,
+                  "current_focus":  "Final visual-fidelity closure",
+                  "pressure_pass_complete":  true,
+                  "closure_gate":  "Interaction tradeoff settled. One material visual-style decision remains because the user explicitly rejected the basic room appearance; it determines modelling, materials and acceptance rather than minor polish.",
+                  "pending_question":  {
+                                           "round":  3,
+                                           "reason":  "Avoid retaining the rejected basic geometry while only changing camera controls.",
+                                           "topic":  "Richly detailed stylised room versus realistic interior"
+                                       },
+                  "current_ambiguity":  0.1175,
+                  "clarity_scores":  {
+                                         "scope":  0.85,
+                                         "outcome":  0.9,
+                                         "constraints":  0.9,
+                                         "success":  0.65,
+                                         "intent":  0.95,
+                                         "context":  0.95
+                                     }
+              }
+}

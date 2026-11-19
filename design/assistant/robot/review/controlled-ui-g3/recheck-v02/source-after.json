@@ -1,0 +1,178 @@
+{
+  "capturedAt": "2026-11-18T17:44:09.334Z",
+  "files": [
+    {
+      "path": "app/studio/StudioShell.tsx",
+      "sha256": "ef637b1d61f39fd0cddc34f2697ce35546735f05219acb435d9e7d7c314c6738"
+    },
+    {
+      "path": "app/studio/studio.module.css",
+      "sha256": "81bd8787a6259212d7244702ffeb14ce0815aa9a1a51f5f47bb2d3ef4b0549ea"
+    },
+    {
+      "path": "components/studio/assistant/AssistantEntry.tsx",
+      "sha256": "065d4115428f0dc042a6a3c7e599179ddd7b5aa88495eaed90f9c546c60853a9"
+    },
+    {
+      "path": "components/studio/assistant/StudioAssistantPanel.tsx",
+      "sha256": "103327ed46ee44cb7364873cd72daa7d271c086bcee75d6a5bef4446dabd5511"
+    },
+    {
+      "path": "components/studio/assistant/assistant.module.css",
+      "sha256": "bd3e77104680db29d09bef5e4abd8314a6de5de33b26ee1d40dca9769c2f5452"
+    },
+    {
+      "path": "components/studio/StudioExperience.tsx",
+      "sha256": "4e8628d8b91c840a494174d559e30b7967bc062f773aa37d74f53f3094891e16"
+    },
+    {
+      "path": "lib/assistant/run-state.ts",
+      "sha256": "1b804c6b9e0f528ef197e5a01efd5f39dafe8176f9dadb4a36268c96e69e5df7"
+    },
+    {
+      "path": "lib/assistant/run-transport.ts",
+      "sha256": "932db03394adddf2d568a1ea002bbaaf142da4151b1f70a9733e7b7f8a33283e"
+    },
+    {
+      "path": "components/assistant/useAssistantRun.ts",
+      "sha256": "b6149c54687f02605f7f5448641f34741482e10527df4ecbd9736e510bad96c7"
+    },
+    {
+      "path": "lib/assistant/events.ts",
+      "sha256": "95e37b16c181cb13e663695f73c5555608d873c12d4e9505c888d71c87f5e491"
+    },
+    {
+      "path": "lib/studio-content.ts",
+      "sha256": "36e08b40cfb779f3f05cc17623766f1a2fb7b8f876cac73ac9b12db381764662"
+    },
+    {
+      "path": "lib/studio-contract.ts",
+      "sha256": "08ba5af18af6c8ed41de7a74cbe6492d6974bd81ad83b7a7aea5c00b83bdd2e8"
+    },
+    {
+      "path": "design/assistant/robot/integration/controlled-ui-implementation.md",
+      "sha256": "37cdcce2060d8261881e238fa7a6e81def383e41817e1b5f927bf61e8c4572cb"
+    },
+    {
+      "path": "design/assistant/robot/placement-selected-a/coordinator-decisions.md",
+      "sha256": "ed8a585d7abf10717ca91be39a178b11eee06f3d08d2573ca43484a6a376ba46"
+    },
+    {
+      "path": "design/assistant/robot/placement-selected-a/ask-interface.md",
+      "sha256": "8ee74dbabe23a6a59a3ae9e51dce6d478bf43db5c654e93a2ed3577e6df84022"
+    },
+    {
+      "path": "design/assistant/robot/integration/state-contract.md",
+      "sha256": "e9c1916fd9a0529b6f3a11bdc7a1829b67c1e3b29ccdc5b58d6c05d970f9b26d"
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-matrix.md",
+      "sha256": "f4902daa932a0b3f3252a05dd3cb88892c4c77d76e01f5c0149440e485a0ec59"
+    },
+    {
+      "path": "design/assistant/robot/review/controlled-ui-g3/author-panel-check.cjs",
+      "sha256": "27d0de7323388e147e30a1ae8f7b8bb7c4f1717104fd840a29bd274ac2501485"
+    },
+    {
+      "path": "design/assistant/robot/review/controlled-ui-g3/author-panel-check.cjs",
+      "sha256": "27d0de7323388e147e30a1ae8f7b8bb7c4f1717104fd840a29bd274ac2501485"
+    },
+    {
+      "path": "design/assistant/robot/review/controlled-ui-g3/author-probe-rerun.log",
+      "sha256": "0ff0051f2aa47b24923f4d7c9bb030e089844fe6875fc5e30c54d00dd87639ef"
+    },
+    {
+      "path": "design/assistant/robot/review/controlled-ui-g3/chip-keyboard-probe.json",
+      "sha256": "593fc56082c26628b9ecda9a6297dcc1d2b413bac2e6834955f399049ed53f1f"
+    },
+    {
+      "path": "design/assistant/robot/review/controlled-ui-g3/panel-tests.log",
+      "sha256": "f9c5d8cb440c5740d265ad56e75c7b6a0574295d4068cba19e72b4928bc697f0"
+    },
+    {
+      "path": "design/assistant/robot/review/controlled-ui-g3/review-probes.cjs",
+      "sha256": "779add9ea4f3e3c38aa9fdfe5f7d6be8009b067721dfa0a41c77161b82c5c33a"
+    },
+    {
+      "path": "design/assistant/robot/review/controlled-ui-g3/review-probes.log",
+      "sha256": "c076a00ea90dde465298a1474d4d0439cd5e93f77a7cd18aefe4cae8725df624"
+    },
+    {
+      "path": "design/assistant/robot/review/controlled-ui-g3/review.md",
+      "sha256": "ca3eb51c43786159341b8e81cfadabd93f5d948dece34b8492bb07b75f2a5499"
+    },
+    {
+      "path": "design/assistant/robot/review/controlled-ui-g3/scoped-lint.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "design/assistant/robot/review/controlled-ui-g3/shell-delta.json",
+      "sha256": "671f2877ea5c139f2a531afbb96dbe34770ada95e6224b47cd4bef504cdf0a8d"
+    },
+    {
+      "path": "design/assistant/robot/review/controlled-ui-g3/source-after.json",
+      "sha256": "9c4fd3457ae0d708398900044c79b454431748d2fd5183d35d01726ef8429e8f"
+    },
+    {
+      "path": "design/assistant/robot/review/controlled-ui-g3/source-before.json",
+      "sha256": "2829dfedd8f7339c7cd8f468521c60dceb0ee1d600a15bd51808f8039fae0954"
+    },
+    {
+      "path": "design/assistant/robot/review/controlled-ui-g3/static-check.cjs",
+      "sha256": "6562e2573cbba33ecad10b51b0f41c684504cc5d160313c4cce65a9fe85b9c16"
+    },
+    {
+      "path": "design/assistant/robot/review/controlled-ui-g3/typescript-initial-missing-ambient.json",
+      "sha256": "160e75c209499e68a2caa97bad2c9adbb510e7a36ac37aac63e2ad30f12f7edd"
+    },
+    {
+      "path": "design/assistant/robot/review/controlled-ui-g3/typescript-initial-missing-ambient.log",
+      "sha256": "cc02d84fd14bf2db566d1d7ae501c33449bf48f6b96259a973487ed7f8961a54"
+    },
+    {
+      "path": "design/assistant/robot/review/controlled-ui-g3/typescript-result.json",
+      "sha256": "f828668123a58454bd58785cdb7665d7bdf276d2de3ddb114101c60e0c1e057b"
+    },
+    {
+      "path": "design/assistant/robot/review/controlled-ui-g3/typescript.log",
+      "sha256": "a2d4ad05d1f8d285c74106359af86d8a07072af8a3be8aa51b0e639864ac58e7"
+    },
+    {
+      "path": "tests/assistant/studio-panel.test.cjs",
+      "sha256": "2b464d963025a0f642f48cdd117bfeb484d4a358b3b7b4e411a9503c562a777a"
+    }
+  ],
+  "changedDuringReview": [
+    {
+      "path": "tests/assistant/studio-panel.test.cjs",
+      "sha256": "2b464d963025a0f642f48cdd117bfeb484d4a358b3b7b4e411a9503c562a777a"
+    }
+  ],
+  "sinceOriginalReview": [
+    {
+      "path": "components/studio/assistant/StudioAssistantPanel.tsx",
+      "original": "9af87603bfe18017e86a254457e33a3dba8064069ed94c2d90436b3162290bfa",
+      "current": "103327ed46ee44cb7364873cd72daa7d271c086bcee75d6a5bef4446dabd5511"
+    },
+    {
+      "path": "lib/studio-contract.ts",
+      "original": "64f88fd30b896c88c87a5631349bbb2bb9a3bc8676c0a1a816f1e5720902c84d",
+      "current": "08ba5af18af6c8ed41de7a74cbe6492d6974bd81ad83b7a7aea5c00b83bdd2e8"
+    },
+    {
+      "path": "design/assistant/robot/integration/controlled-ui-implementation.md",
+      "original": "c35bba47c361a6500932f4653c1393a63fdb011f90e291c4499b5f5aa46ba1ed",
+      "current": "37cdcce2060d8261881e238fa7a6e81def383e41817e1b5f927bf61e8c4572cb"
+    }
+  ],
+  "handoffFocusInstructions": [
+    {
+      "line": 102,
+      "text": "2. **Ordinary Close or Escape:** `actions.close()` first, then close the dialog. Return focus to whatever opened Ask if it is still valid; otherwise, and always when the open came from the character on the canvas, return it to the HTML entry (`askEntryRef`)."
+    },
+    {
+      "line": 103,
+      "text": "3. **Source navigation or project takeover:** `actions.close()` first, so the run is cleared and aborted, then switch the dialog or navigate. The destination receives focus: the project heading for a takeover. Do **not** return focus to the Ask entry in between."
+    }
+  ]
+}

@@ -1,0 +1,631 @@
+{
+  "checks": [
+    {
+      "name": "Fresh bare route does not programmatically focus or scroll",
+      "pass": true,
+      "details": {
+        "focus": "BODY",
+        "probe": {
+          "scroll": [],
+          "focus": [],
+          "audio": 0
+        },
+        "history": 2
+      }
+    },
+    {
+      "name": "Actual mouse hotspot dissertation at 1440",
+      "pass": true,
+      "details": {
+        "hash": "#project-dissertation",
+        "focus": "project-dissertation-heading",
+        "selected": "dissertation",
+        "scrollY": 1173,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Actual mouse hotspot copilot at 1440",
+      "pass": true,
+      "details": {
+        "hash": "#project-copilot",
+        "focus": "project-copilot-heading",
+        "selected": "copilot",
+        "scrollY": 3370,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Actual mouse hotspot typeforge at 1440",
+      "pass": true,
+      "details": {
+        "hash": "#project-typeforge",
+        "focus": "project-typeforge-heading",
+        "selected": "typeforge",
+        "scrollY": 4409,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Bare route Back then Tab at 1440",
+      "pass": true,
+      "details": {
+        "back": {
+          "hash": "",
+          "focus": "studio",
+          "scrollY": 0,
+          "overflow": false
+        },
+        "tab": {
+          "text": "After-hours Studio",
+          "hash": "#studio"
+        }
+      }
+    },
+    {
+      "name": "Direct fragment and reload 1440",
+      "pass": true,
+      "details": {
+        "hash": "#project-dissertation",
+        "focus": "project-dissertation-heading",
+        "selected": "dissertation",
+        "scrollY": 1173,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Keyboard Enter opens evidence 1440",
+      "pass": true,
+      "details": {
+        "hash": "#project-dissertation",
+        "focus": "project-dissertation-heading",
+        "selected": "dissertation",
+        "scrollY": 1173,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Keyboard return 1440",
+      "pass": true,
+      "details": {
+        "hash": "#studio",
+        "focus": "studio",
+        "scrollY": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Actual mouse hotspot dissertation at 390",
+      "pass": true,
+      "details": {
+        "hash": "#project-dissertation",
+        "focus": "project-dissertation-heading",
+        "selected": "dissertation",
+        "scrollY": 1395,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Actual mouse hotspot copilot at 390",
+      "pass": true,
+      "details": {
+        "hash": "#project-copilot",
+        "focus": "project-copilot-heading",
+        "selected": "copilot",
+        "scrollY": 4561,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Actual mouse hotspot typeforge at 390",
+      "pass": true,
+      "details": {
+        "hash": "#project-typeforge",
+        "focus": "project-typeforge-heading",
+        "selected": "typeforge",
+        "scrollY": 6009,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Trusted touch center and final focus dissertation at 390",
+      "pass": true,
+      "details": {
+        "hash": "#project-dissertation",
+        "focus": "project-dissertation-heading",
+        "selected": "dissertation",
+        "scrollY": 1395,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Trusted touch center and final focus copilot at 390",
+      "pass": true,
+      "details": {
+        "hash": "#project-copilot",
+        "focus": "project-copilot-heading",
+        "selected": "copilot",
+        "scrollY": 4561,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Trusted touch center and final focus typeforge at 390",
+      "pass": true,
+      "details": {
+        "hash": "#project-typeforge",
+        "focus": "project-typeforge-heading",
+        "selected": "typeforge",
+        "scrollY": 6009,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Trusted expanded portrait and final focus left-top at 390",
+      "pass": true,
+      "details": {
+        "hash": "#project-copilot",
+        "focus": "project-copilot-heading",
+        "selected": "copilot",
+        "scrollY": 4561,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Trusted expanded portrait and final focus left-bottom at 390",
+      "pass": true,
+      "details": {
+        "hash": "#project-copilot",
+        "focus": "project-copilot-heading",
+        "selected": "copilot",
+        "scrollY": 4561,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Trusted expanded portrait and final focus left-edge at 390",
+      "pass": true,
+      "details": {
+        "hash": "#project-copilot",
+        "focus": "project-copilot-heading",
+        "selected": "copilot",
+        "scrollY": 4561,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Trusted complete mouse gesture remains precise at 390",
+      "pass": true,
+      "details": {
+        "position": {
+          "hash": "#studio",
+          "focus": "",
+          "scrollY": 0,
+          "overflow": false
+        },
+        "trace": [
+          {
+            "type": "pointerdown",
+            "pointerType": "mouse",
+            "trusted": true
+          },
+          {
+            "type": "pointerup",
+            "pointerType": "mouse",
+            "trusted": true
+          },
+          {
+            "type": "click",
+            "pointerType": "mouse",
+            "trusted": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Trusted complete pen gesture remains precise at 390",
+      "pass": true,
+      "details": {
+        "position": {
+          "hash": "#studio",
+          "focus": "",
+          "scrollY": 0,
+          "overflow": false
+        },
+        "trace": [
+          {
+            "type": "pointerdown",
+            "pointerType": "pen",
+            "trusted": true
+          },
+          {
+            "type": "pointerup",
+            "pointerType": "pen",
+            "trusted": true
+          },
+          {
+            "type": "click",
+            "pointerType": "pen",
+            "trusted": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Deterministic touch overlap at 390",
+      "pass": true,
+      "details": [
+        "#project-dissertation",
+        "#project-dissertation",
+        "#project-dissertation"
+      ]
+    },
+    {
+      "name": "Trusted touch scroll cancels selection at 390",
+      "pass": true,
+      "details": {
+        "hash": "#studio",
+        "focus": "studio",
+        "scrollY": 75,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Bare route Back then Tab at 390",
+      "pass": true,
+      "details": {
+        "back": {
+          "hash": "",
+          "focus": "studio",
+          "scrollY": 32,
+          "overflow": false
+        },
+        "tab": {
+          "text": "After-hours Studio",
+          "hash": "#studio"
+        }
+      }
+    },
+    {
+      "name": "Direct fragment and reload 390",
+      "pass": true,
+      "details": {
+        "hash": "#project-dissertation",
+        "focus": "project-dissertation-heading",
+        "selected": "dissertation",
+        "scrollY": 1395,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Keyboard Enter opens evidence 390",
+      "pass": true,
+      "details": {
+        "hash": "#project-dissertation",
+        "focus": "project-dissertation-heading",
+        "selected": "dissertation",
+        "scrollY": 1395,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Keyboard return 390",
+      "pass": true,
+      "details": {
+        "hash": "#studio",
+        "focus": "studio",
+        "scrollY": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Actual mouse hotspot dissertation at 320",
+      "pass": true,
+      "details": {
+        "hash": "#project-dissertation",
+        "focus": "project-dissertation-heading",
+        "selected": "dissertation",
+        "scrollY": 1421,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Actual mouse hotspot copilot at 320",
+      "pass": true,
+      "details": {
+        "hash": "#project-copilot",
+        "focus": "project-copilot-heading",
+        "selected": "copilot",
+        "scrollY": 4944,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Actual mouse hotspot typeforge at 320",
+      "pass": true,
+      "details": {
+        "hash": "#project-typeforge",
+        "focus": "project-typeforge-heading",
+        "selected": "typeforge",
+        "scrollY": 6580,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Trusted touch center and final focus dissertation at 320",
+      "pass": true,
+      "details": {
+        "hash": "#project-dissertation",
+        "focus": "project-dissertation-heading",
+        "selected": "dissertation",
+        "scrollY": 1421,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Trusted touch center and final focus copilot at 320",
+      "pass": true,
+      "details": {
+        "hash": "#project-copilot",
+        "focus": "project-copilot-heading",
+        "selected": "copilot",
+        "scrollY": 4944,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Trusted touch center and final focus typeforge at 320",
+      "pass": true,
+      "details": {
+        "hash": "#project-typeforge",
+        "focus": "project-typeforge-heading",
+        "selected": "typeforge",
+        "scrollY": 6580,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Trusted expanded portrait and final focus left-top at 320",
+      "pass": true,
+      "details": {
+        "hash": "#project-copilot",
+        "focus": "project-copilot-heading",
+        "selected": "copilot",
+        "scrollY": 4944,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Trusted expanded portrait and final focus left-bottom at 320",
+      "pass": true,
+      "details": {
+        "hash": "#project-copilot",
+        "focus": "project-copilot-heading",
+        "selected": "copilot",
+        "scrollY": 4944,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Trusted expanded portrait and final focus left-edge at 320",
+      "pass": true,
+      "details": {
+        "hash": "#project-copilot",
+        "focus": "project-copilot-heading",
+        "selected": "copilot",
+        "scrollY": 4944,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Trusted complete mouse gesture remains precise at 320",
+      "pass": true,
+      "details": {
+        "position": {
+          "hash": "#studio",
+          "focus": "",
+          "scrollY": 0,
+          "overflow": false
+        },
+        "trace": [
+          {
+            "type": "pointerdown",
+            "pointerType": "mouse",
+            "trusted": true
+          },
+          {
+            "type": "pointerup",
+            "pointerType": "mouse",
+            "trusted": true
+          },
+          {
+            "type": "click",
+            "pointerType": "mouse",
+            "trusted": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Trusted complete pen gesture remains precise at 320",
+      "pass": true,
+      "details": {
+        "position": {
+          "hash": "#studio",
+          "focus": "",
+          "scrollY": 0,
+          "overflow": false
+        },
+        "trace": [
+          {
+            "type": "pointerdown",
+            "pointerType": "pen",
+            "trusted": true
+          },
+          {
+            "type": "pointerup",
+            "pointerType": "pen",
+            "trusted": true
+          },
+          {
+            "type": "click",
+            "pointerType": "pen",
+            "trusted": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "Deterministic touch overlap at 320",
+      "pass": true,
+      "details": [
+        "#project-dissertation",
+        "#project-dissertation",
+        "#project-dissertation"
+      ]
+    },
+    {
+      "name": "Trusted touch scroll cancels selection at 320",
+      "pass": true,
+      "details": {
+        "hash": "#studio",
+        "focus": "studio",
+        "scrollY": 75,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Bare route Back then Tab at 320",
+      "pass": true,
+      "details": {
+        "back": {
+          "hash": "",
+          "focus": "studio",
+          "scrollY": 70,
+          "overflow": false
+        },
+        "tab": {
+          "text": "After-hours Studio",
+          "hash": "#studio"
+        }
+      }
+    },
+    {
+      "name": "Direct fragment and reload 320",
+      "pass": true,
+      "details": {
+        "hash": "#project-dissertation",
+        "focus": "project-dissertation-heading",
+        "selected": "dissertation",
+        "scrollY": 1421,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Keyboard Enter opens evidence 320",
+      "pass": true,
+      "details": {
+        "hash": "#project-dissertation",
+        "focus": "project-dissertation-heading",
+        "selected": "dissertation",
+        "scrollY": 1421,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Keyboard return 320",
+      "pass": true,
+      "details": {
+        "hash": "#studio",
+        "focus": "studio",
+        "scrollY": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Explicit history Back restores Copilot",
+      "pass": true,
+      "details": {
+        "hash": "#project-copilot",
+        "focus": "project-copilot-heading",
+        "selected": "copilot",
+        "scrollY": 4944,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Explicit history Forward restores studio",
+      "pass": true,
+      "details": {
+        "hash": "#studio",
+        "focus": "studio",
+        "scrollY": 0,
+        "overflow": false
+      }
+    },
+    {
+      "name": "Same destination does not add history",
+      "pass": true,
+      "details": {
+        "before": 50,
+        "after": 50
+      }
+    },
+    {
+      "name": "Reduced motion before load and live toggle",
+      "pass": true,
+      "details": {
+        "motionBefore": "auto",
+        "motionAllowed": "smooth",
+        "motionAfter": {
+          "css": "auto",
+          "call": {
+            "id": "project-dissertation-heading",
+            "options": {
+              "block": "start",
+              "behavior": "instant"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "No audio creation/media/autoplay controls",
+      "pass": true,
+      "details": {
+        "constructed": 0,
+        "media": 0,
+        "controls": []
+      }
+    },
+    {
+      "name": "No-JS complete server evidence equals JS evidence",
+      "pass": true,
+      "details": {
+        "expected": 58,
+        "actual": 58
+      }
+    },
+    {
+      "name": "No-JS Work anchor",
+      "pass": true,
+      "details": {
+        "url": "http://127.0.0.1:4181/studio#work"
+      }
+    },
+    {
+      "name": "No-JS return anchor",
+      "pass": true,
+      "details": {
+        "url": "http://127.0.0.1:4181/studio#studio"
+      }
+    },
+    {
+      "name": "No-JS no canvas, overflow or smooth reduced scroll",
+      "pass": true
+    }
+  ],
+  "failures": [],
+  "pageErrors": [],
+  "limitations": "Chromium viewport/touch emulation and trusted CDP pen gestures; no physical device or actual screen-reader session. Target coordinates are independently projected by project-targets.mjs from authored geometry; navigation results are actual browser observations."
+}

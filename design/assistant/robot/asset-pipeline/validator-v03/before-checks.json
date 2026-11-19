@@ -1,0 +1,105 @@
+{
+  "at": "2026-11-18T18:58:42.132Z",
+  "mode": "before",
+  "sourcePins": {
+    "validate_asset.mjs": "dc1231aa8c824a184582a69fd6b7d7603c2de979ff5e05e6421a3e2ace5ea0ad",
+    "validate_contract.mjs": "b65ea4dbf9dcd034791b53203d41c98de5d94abaccffef0fb0aca3e4b13b3a87",
+    "selected-a.glb": "bc1a4d6d968dd53eda3480936959d0ebf292e76652a6bbdd201e15f4cd665270",
+    "selected-a.blend": "80704c8f2989683dffa59f9616b1ef146eab944f7d05ae0e0bf55e1964bc508e",
+    "profile.json": "f5dbf7f2a9e3e57332c62c21e27013d6ce05d11085fac94ec979631e4728e33e",
+    "poses.json": "6dd7ce35a027352b4f2cffbe673081910837e69d56c9f4ec866e970381c6e96d",
+    "build-summary.json": "213051dc027261b842269b076afb744277b7e30340bac1513cb22daa120d0ed6",
+    "build_asset.py": "2412f0f4bd6498784c96b7d722ca3cb5d4454e7526a4ef5f6c1957b1ede84bc4"
+  },
+  "newPins": {
+    "validate_asset.mjs": "dc1231aa8c824a184582a69fd6b7d7603c2de979ff5e05e6421a3e2ace5ea0ad",
+    "validate_contract.mjs": "b65ea4dbf9dcd034791b53203d41c98de5d94abaccffef0fb0aca3e4b13b3a87",
+    "verify.mjs": "4e359632c83bc6699d0c485978c8af3afaf63cec5f6a122a6a0c3195abb4f430"
+  },
+  "originalInputsUnchanged": true,
+  "results": [
+    {
+      "name": "valid-v02",
+      "kind": "actual full validator on private GLB",
+      "expectedExit": 0,
+      "exitCode": 0,
+      "passed": true,
+      "diagnostic": ""
+    },
+    {
+      "name": "missing-POSITION-bounds",
+      "kind": "actual full validator on private GLB",
+      "expectedExit": 1,
+      "exitCode": 0,
+      "passed": false,
+      "diagnostic": ""
+    },
+    {
+      "name": "dangling-zero-skin",
+      "kind": "actual full validator on private GLB",
+      "expectedExit": 1,
+      "exitCode": 0,
+      "passed": false,
+      "diagnostic": ""
+    },
+    {
+      "name": "valid-document",
+      "kind": "document guard on actual candidate metadata",
+      "expectedReject": false,
+      "rejected": false,
+      "passed": true
+    },
+    {
+      "name": "missing-min",
+      "kind": "document guard on actual candidate metadata",
+      "expectedReject": true,
+      "rejected": false,
+      "passed": false
+    },
+    {
+      "name": "missing-max",
+      "kind": "document guard on actual candidate metadata",
+      "expectedReject": true,
+      "rejected": false,
+      "passed": false
+    },
+    {
+      "name": "null-bounds",
+      "kind": "document guard on actual candidate metadata",
+      "expectedReject": true,
+      "rejected": false,
+      "passed": false
+    },
+    {
+      "name": "short-bounds",
+      "kind": "document guard on actual candidate metadata",
+      "expectedReject": true,
+      "rejected": false,
+      "passed": false
+    },
+    {
+      "name": "inverted-bounds",
+      "kind": "document guard on actual candidate metadata",
+      "expectedReject": true,
+      "rejected": false,
+      "passed": false
+    },
+    {
+      "name": "nonfinite-bounds",
+      "kind": "document guard on actual candidate metadata",
+      "expectedReject": true,
+      "rejected": false,
+      "passed": false
+    },
+    {
+      "name": "null-skin-reference",
+      "kind": "document guard on actual candidate metadata",
+      "expectedReject": true,
+      "rejected": false,
+      "passed": false
+    }
+  ],
+  "limits": [
+    "Two known format gaps plus bounded adjacent document guards; not comprehensive glTF fuzzing or asset/runtime acceptance."
+  ]
+}

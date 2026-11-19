@@ -1,0 +1,65 @@
+{
+  "contexts": [
+    {
+      "index": 0,
+      "contextLossRequested": true,
+      "isContextLost": true,
+      "canvasConnected": false
+    },
+    {
+      "index": 1,
+      "contextLossRequested": true,
+      "isContextLost": true,
+      "canvasConnected": false
+    },
+    {
+      "index": 2,
+      "contextLossRequested": true,
+      "isContextLost": true,
+      "canvasConnected": false
+    },
+    {
+      "index": 3,
+      "contextLossRequested": true,
+      "isContextLost": true,
+      "canvasConnected": false
+    },
+    {
+      "index": 4,
+      "contextLossRequested": true,
+      "isContextLost": true,
+      "canvasConnected": false
+    },
+    {
+      "index": 5,
+      "contextLossRequested": true,
+      "isContextLost": true,
+      "canvasConnected": false
+    },
+    {
+      "index": 6,
+      "contextLossRequested": true,
+      "isContextLost": true,
+      "canvasConnected": false
+    },
+    {
+      "index": 7,
+      "contextLossRequested": true,
+      "isContextLost": true,
+      "canvasConnected": false
+    },
+    {
+      "index": 8,
+      "contextLossRequested": true,
+      "isContextLost": true,
+      "canvasConnected": false
+    },
+    {
+      "index": 9,
+      "contextLossRequested": true,
+      "isContextLost": true,
+      "canvasConnected": false
+    }
+  ],
+  "documentToken": 0.6150820176988103
+}

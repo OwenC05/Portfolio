@@ -1,0 +1,84 @@
+{
+  "sceneChunks": [
+    "http://127.0.0.1:4181/_next/static/chunks/31.53493164e55910ac.js"
+  ],
+  "checks": [
+    {
+      "mode": "lazy-chunk",
+      "pass": true,
+      "fallback": {
+        "status": "unavailable",
+        "canvas": 0,
+        "caption": "The studio is unavailable. Reload to try again, or read every project below.",
+        "sketchVisible": true,
+        "sections": 3
+      },
+      "journey": {
+        "hash": "#project-dissertation",
+        "focus": "project-dissertation-heading",
+        "evidenceCharacters": 2923,
+        "back": {
+          "hash": "#studio",
+          "focus": "studio"
+        }
+      },
+      "errors": [],
+      "consoleErrors": [
+        "Failed to load resource: net::ERR_FAILED",
+        "ChunkLoadError: Loading chunk 31 failed.\n(error: http://127.0.0.1:4181/_next/static/chunks/31.53493164e55910ac.js)\n    at l.f.j (http://127.0.0.1:4181/_next/static/chunks/webpack-63be727659054193.js:1:3110)\n    at http://127.0.0.1:4181/_next/static/chunks/webpack-63be727659054193.js:1:1385\n    at Array.reduce (<anonymous>)\n    at l.e (http://127.0.0.1:4181/_next/static/chunks/webpack-63be727659054193.js:1:1351)\n    at i.loadableGenerated.webpack (http://127.0.0.1:4181/_next/static/chunks/app/studio/page-b496cbb3eaed3b19.js:1:367)\n    at loader (http://127.0.0.1:4181/_next/static/chunks/app/studio/page-b496cbb3eaed3b19.js:1:5269)\n    at M (http://127.0.0.1:4181/_next/static/chunks/938-936cd42000408a93.js:1:93379)\n    at iU (http://127.0.0.1:4181/_next/static/chunks/fd9d1056-a609a526229acf68.js:1:116588)\n    at o2 (http://127.0.0.1:4181/_next/static/chunks/fd9d1056-a609a526229acf68.js:1:94369)\n    at http://127.0.0.1:4181/_next/static/chunks/fd9d1056-a609a526229acf68.js:1:94191"
+      ]
+    },
+    {
+      "mode": "webgl-creation",
+      "pass": true,
+      "fallback": {
+        "status": "unavailable",
+        "canvas": 0,
+        "caption": "The studio is unavailable. Reload to try again, or read every project below.",
+        "sketchVisible": true,
+        "sections": 3
+      },
+      "journey": {
+        "hash": "#project-dissertation",
+        "focus": "project-dissertation-heading",
+        "evidenceCharacters": 2923,
+        "back": {
+          "hash": "#studio",
+          "focus": "studio"
+        }
+      },
+      "errors": [],
+      "consoleErrors": [
+        "THREE.WebGLRenderer: THREE.WebGLRenderer: Error creating WebGL context."
+      ]
+    },
+    {
+      "mode": "context-loss",
+      "pass": true,
+      "fallback": {
+        "status": "unavailable",
+        "canvas": 0,
+        "caption": "The studio is unavailable. Reload to try again, or read every project below.",
+        "sketchVisible": true,
+        "sections": 3,
+        "lost": true
+      },
+      "journey": {
+        "hash": "#project-dissertation",
+        "focus": "project-dissertation-heading",
+        "evidenceCharacters": 2923,
+        "back": {
+          "hash": "#studio",
+          "focus": "studio"
+        }
+      },
+      "loss": {
+        "supported": true
+      },
+      "errors": [],
+      "consoleErrors": []
+    }
+  ],
+  "failures": [],
+  "note": "Injected lazy-load failures are logged by the React boundary as expected; full HTML survives. WebGL creation and context loss are tested separately in fresh contexts."
+}

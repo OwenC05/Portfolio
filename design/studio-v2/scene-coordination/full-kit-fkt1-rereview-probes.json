@@ -1,0 +1,476 @@
+{
+  "task": "task_970928fa77f8",
+  "dispatch": "ctx_9621515e57ff",
+  "atUtc": "2026-11-15T12:51:08.666Z",
+  "node": "v24.21.0",
+  "scope": "FKT-1 only; real installed loader; author instrumentation reused; image/Canvas2D shims; no browser/GPU",
+  "sourcesBefore": {
+    "components/studio/scene/full-kit-types.ts": "19269dc5acf09fc9ebac3de6b5ac37157608b258a1b0ac288a85fd13021a4a56",
+    "components/studio/scene/load-full-kit.ts": "37549d60af2eb7f5e1feaf0914fd0da496ec38441ebe088ce445d2914b5ad68f",
+    "components/studio/scene/bind-full-kit.ts": "0ee8bbe6e0fb83ab4bf219343655c4260a8f5193f5624dc69fb802634a2294eb",
+    "components/studio/scene/build-full-studio.ts": "5a4e8296e04d66cfeaedf59bedee8c633b378c84126de52b78eaabe421c0f02f",
+    "components/studio/scene/verify-full-kit.mjs": "ea836ba70da71020ba78b70b78311b46d2eacec798da4f8163e7b03a54b3b531",
+    "components/studio/scene/resources.ts": "756a26fba1840696fd7b8f0a24dfa588a50488a55fbc99bec60ca3c0e14cb509",
+    "components/studio/scene/picking.ts": "c427b0553dd2403500f7ac0e306a42c5b1476a6a8ab3175186704261d638261c",
+    "components/studio/scene/textures.ts": "09f6ff6cc7bb8910f09838566dfcf840d85a0d2ce1be8d064deafb0989c63aa6",
+    "components/studio/scene/controller.ts": "cc76055ea4bfe596e0d3ab49c84ca55c55b8a9bad3b33627e08adeb78f0969f0",
+    "design/studio-v2/asset-pipeline/full-kit/full-kit-profile-v1.json": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+    "design/studio-v2/asset-pipeline/full-kit/asset-inventory.json": "eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87",
+    "design/studio-v2/asset-pipeline/full-kit/technical/profile-core.mjs": "02b65feddb651f41a4a9d5eab4f55e41ae15c321d850a26fba00b3a92889ae71",
+    "design/studio-v2/asset-pipeline/full-kit/technical/validate-full-kit.mjs": "66ee9d342cbded31994e6e8655e385c5b7945916b5ec68ad3404af9beda8bd75",
+    "design/studio-v2/asset-pipeline/full-kit/technical/export-manifest.mjs": "4eaf46c760931c5862776fc55573ec0eb2b969481b255460a2a300193431ff9d",
+    "design/studio-v2/asset-pipeline/full-kit/technical/synthetic-fixture.mjs": "66b4882de30d7766b266262f7a0204a2749916e6f7c9f251b9ed1f2af09800bf",
+    "design/studio-v2/scene-coordination/full-kit-contract.md": "f6749989a3fd25c224ae33ea6aa75499558719f8f713bec7effcb37d18cd9651",
+    "design/studio-v2/asset-pipeline/integration-contract/pilot-profile.json": "02a9b364ed42127988747660ac61d6efca8bc3af9f151a0e41eb0d50bc0baa08",
+    "design/studio-v2/asset-pipeline/full-kit/exports/studio-full-kit-m1-baseline-v01.glb": "d0875582846783e4cdde3bd877efbabd7926dfa8d29e647967799549affe34ee",
+    "design/studio-v2/asset-pipeline/full-kit/manifests/studio-full-kit-m1-baseline-v01.manifest.json": "52e24bfa6f39239138943029a7b904589efdf8ec6eb485ce169c16c750c9a061",
+    "design/studio-v2/asset-pipeline/full-kit/exports/studio-full-kit-m1-baseline-v02.glb": "04994845f62236c6230dce1ba8af7d9811e21fc1e45c0fff6a89be7f06777093",
+    "design/studio-v2/asset-pipeline/full-kit/manifests/studio-full-kit-m1-baseline-v02.manifest.json": "fab5ed35086773ee380103014a7c05760953fcea3437f71b0e20da9d1d858b3f",
+    "design/studio-v2/asset-pipeline/full-kit/exports/studio-full-kit-m1-proposal-v01.glb": "3d5194e039d85d309d899f1629d30ddc0a45a4439690ae89a5fff747d529e331",
+    "design/studio-v2/asset-pipeline/full-kit/manifests/studio-full-kit-m1-proposal-v01.manifest.json": "5855959d60331d50f8b2c24c62b4d37ad44b2c30e80f664c07aa05d78d014440",
+    "design/studio-v2/asset-pipeline/full-kit/exports/studio-full-kit-m1-proposal-v02.glb": "bdc997b45917be0c72480af9738362e9940e5159b07781eac2bfa6b86b01fe76",
+    "design/studio-v2/asset-pipeline/full-kit/manifests/studio-full-kit-m1-proposal-v02.manifest.json": "8c290bbe555b8d0737e07639b2b34ee289a0b6d903c91380e13f133b074773aa",
+    "design/studio-v2/scene-coordination/full-kit-review-author-suite.tap": "6a9568370a6f97c786ef9708856c96565232481dd34fffd090ad27cc18507f09",
+    "design/studio-v2/scene-coordination/full-kit-review-final-hashes.json": "b8c219d45054991d3e0adc464e54a9a6c62535101f44e3578565fddd68151ab5",
+    "design/studio-v2/scene-coordination/full-kit-review-native-decode.json": "7595883347bb20ede9bff6b3a84b8c6bf0a31604ab089daf288d28e7aad7b829",
+    "design/studio-v2/scene-coordination/full-kit-review-probes-initial.json": "107e8df336458a9b3299f9eb528f34984deb26400f1b8c312f68b2263b0a16a0",
+    "design/studio-v2/scene-coordination/full-kit-review-probes.json": "6213a549b27fdaad82b6226f70811d747c7842dbd9775d8fc2610749b5c6662b",
+    "design/studio-v2/scene-coordination/full-kit-review-probes.mjs": "e066676a47392d2e8a063f59c32daf6bc90f10864751fc9d30986a1200c87813",
+    "design/studio-v2/scene-coordination/full-kit-review-run.txt": "971daca8da22a2a6bc79ec04a61bdf9c3f40acf3ed3c970ec4c52f36500615fa",
+    "design/studio-v2/scene-full-kit-technical-critique.md": "3422dee200550ecd07821b91364267c38f32d65e8733fc2a090176e77a297b1b"
+  },
+  "sourcesAfter": {
+    "components/studio/scene/full-kit-types.ts": "19269dc5acf09fc9ebac3de6b5ac37157608b258a1b0ac288a85fd13021a4a56",
+    "components/studio/scene/load-full-kit.ts": "37549d60af2eb7f5e1feaf0914fd0da496ec38441ebe088ce445d2914b5ad68f",
+    "components/studio/scene/bind-full-kit.ts": "0ee8bbe6e0fb83ab4bf219343655c4260a8f5193f5624dc69fb802634a2294eb",
+    "components/studio/scene/build-full-studio.ts": "5a4e8296e04d66cfeaedf59bedee8c633b378c84126de52b78eaabe421c0f02f",
+    "components/studio/scene/verify-full-kit.mjs": "ea836ba70da71020ba78b70b78311b46d2eacec798da4f8163e7b03a54b3b531",
+    "components/studio/scene/resources.ts": "756a26fba1840696fd7b8f0a24dfa588a50488a55fbc99bec60ca3c0e14cb509",
+    "components/studio/scene/picking.ts": "c427b0553dd2403500f7ac0e306a42c5b1476a6a8ab3175186704261d638261c",
+    "components/studio/scene/textures.ts": "09f6ff6cc7bb8910f09838566dfcf840d85a0d2ce1be8d064deafb0989c63aa6",
+    "components/studio/scene/controller.ts": "cc76055ea4bfe596e0d3ab49c84ca55c55b8a9bad3b33627e08adeb78f0969f0",
+    "design/studio-v2/asset-pipeline/full-kit/full-kit-profile-v1.json": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+    "design/studio-v2/asset-pipeline/full-kit/asset-inventory.json": "eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87",
+    "design/studio-v2/asset-pipeline/full-kit/technical/profile-core.mjs": "02b65feddb651f41a4a9d5eab4f55e41ae15c321d850a26fba00b3a92889ae71",
+    "design/studio-v2/asset-pipeline/full-kit/technical/validate-full-kit.mjs": "66ee9d342cbded31994e6e8655e385c5b7945916b5ec68ad3404af9beda8bd75",
+    "design/studio-v2/asset-pipeline/full-kit/technical/export-manifest.mjs": "4eaf46c760931c5862776fc55573ec0eb2b969481b255460a2a300193431ff9d",
+    "design/studio-v2/asset-pipeline/full-kit/technical/synthetic-fixture.mjs": "66b4882de30d7766b266262f7a0204a2749916e6f7c9f251b9ed1f2af09800bf",
+    "design/studio-v2/scene-coordination/full-kit-contract.md": "f6749989a3fd25c224ae33ea6aa75499558719f8f713bec7effcb37d18cd9651",
+    "design/studio-v2/asset-pipeline/integration-contract/pilot-profile.json": "02a9b364ed42127988747660ac61d6efca8bc3af9f151a0e41eb0d50bc0baa08",
+    "design/studio-v2/asset-pipeline/full-kit/exports/studio-full-kit-m1-baseline-v01.glb": "d0875582846783e4cdde3bd877efbabd7926dfa8d29e647967799549affe34ee",
+    "design/studio-v2/asset-pipeline/full-kit/manifests/studio-full-kit-m1-baseline-v01.manifest.json": "52e24bfa6f39239138943029a7b904589efdf8ec6eb485ce169c16c750c9a061",
+    "design/studio-v2/asset-pipeline/full-kit/exports/studio-full-kit-m1-baseline-v02.glb": "04994845f62236c6230dce1ba8af7d9811e21fc1e45c0fff6a89be7f06777093",
+    "design/studio-v2/asset-pipeline/full-kit/manifests/studio-full-kit-m1-baseline-v02.manifest.json": "fab5ed35086773ee380103014a7c05760953fcea3437f71b0e20da9d1d858b3f",
+    "design/studio-v2/asset-pipeline/full-kit/exports/studio-full-kit-m1-proposal-v01.glb": "3d5194e039d85d309d899f1629d30ddc0a45a4439690ae89a5fff747d529e331",
+    "design/studio-v2/asset-pipeline/full-kit/manifests/studio-full-kit-m1-proposal-v01.manifest.json": "5855959d60331d50f8b2c24c62b4d37ad44b2c30e80f664c07aa05d78d014440",
+    "design/studio-v2/asset-pipeline/full-kit/exports/studio-full-kit-m1-proposal-v02.glb": "bdc997b45917be0c72480af9738362e9940e5159b07781eac2bfa6b86b01fe76",
+    "design/studio-v2/asset-pipeline/full-kit/manifests/studio-full-kit-m1-proposal-v02.manifest.json": "8c290bbe555b8d0737e07639b2b34ee289a0b6d903c91380e13f133b074773aa",
+    "design/studio-v2/scene-coordination/full-kit-review-author-suite.tap": "6a9568370a6f97c786ef9708856c96565232481dd34fffd090ad27cc18507f09",
+    "design/studio-v2/scene-coordination/full-kit-review-final-hashes.json": "b8c219d45054991d3e0adc464e54a9a6c62535101f44e3578565fddd68151ab5",
+    "design/studio-v2/scene-coordination/full-kit-review-native-decode.json": "7595883347bb20ede9bff6b3a84b8c6bf0a31604ab089daf288d28e7aad7b829",
+    "design/studio-v2/scene-coordination/full-kit-review-probes-initial.json": "107e8df336458a9b3299f9eb528f34984deb26400f1b8c312f68b2263b0a16a0",
+    "design/studio-v2/scene-coordination/full-kit-review-probes.json": "6213a549b27fdaad82b6226f70811d747c7842dbd9775d8fc2610749b5c6662b",
+    "design/studio-v2/scene-coordination/full-kit-review-probes.mjs": "e066676a47392d2e8a063f59c32daf6bc90f10864751fc9d30986a1200c87813",
+    "design/studio-v2/scene-coordination/full-kit-review-run.txt": "971daca8da22a2a6bc79ec04a61bdf9c3f40acf3ed3c970ec4c52f36500615fa",
+    "design/studio-v2/scene-full-kit-technical-critique.md": "3422dee200550ecd07821b91364267c38f32d65e8733fc2a090176e77a297b1b"
+  },
+  "changedDuringRun": [],
+  "results": [
+    {
+      "name": "held repair hashes and preserved old FKT-1 failures",
+      "passed": true,
+      "evidence": {
+        "changedFiles": [
+          "components/studio/scene/load-full-kit.ts",
+          "components/studio/scene/verify-full-kit.mjs",
+          "design/studio-v2/asset-pipeline/full-kit/technical/profile-core.mjs",
+          "design/studio-v2/asset-pipeline/full-kit/technical/validate-full-kit.mjs"
+        ],
+        "originalFailures": [
+          {
+            "name": "runtime/offline manifest parity wrongInventoryHash",
+            "executed": true,
+            "evidence": {
+              "offlineErrors": [
+                "Studio full kit: art inventory hash mismatch"
+              ],
+              "runtimeAccepted": true
+            }
+          },
+          {
+            "name": "runtime/offline manifest parity incompleteFinal",
+            "executed": true,
+            "evidence": {
+              "offlineErrors": [
+                "Studio full kit: final inventory incomplete"
+              ],
+              "runtimeAccepted": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "raw and canonical pins independently match frozen source",
+      "passed": true,
+      "evidence": {
+        "rawSha256": "eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87",
+        "canonicalSha256": "4c654f241a29a3ce83229132bdbf085798690af56beaca388e1b5fb3e361b8d2",
+        "expectedOrigin": "raw hash preserved in original review; canonical serialization independently computed from actual file"
+      }
+    },
+    {
+      "name": "original synthetic positive retained",
+      "passed": true,
+      "evidence": {
+        "byteHash": "89a776af8b476f32348d1fbd77ebf4104c79bcd83a47b36967cbea3e3f61290d",
+        "stage": "synthetic",
+        "runtime": {
+          "accepted": true,
+          "parserAllocated": true,
+          "images": 2,
+          "targets": 3,
+          "blockers": 4,
+          "cleanupPassed": true
+        }
+      }
+    },
+    {
+      "name": "original synthetic repaired wrongInventoryHash",
+      "passed": true,
+      "evidence": {
+        "byteHash": "89a776af8b476f32348d1fbd77ebf4104c79bcd83a47b36967cbea3e3f61290d",
+        "offlineReason": "Studio full kit: art inventory hash mismatch",
+        "runtime": {
+          "accepted": false,
+          "error": "Studio full kit: art inventory hash mismatch",
+          "parserAllocated": false,
+          "images": 0,
+          "cleanupPassed": true
+        }
+      }
+    },
+    {
+      "name": "original synthetic repaired incompleteFinal",
+      "passed": true,
+      "evidence": {
+        "byteHash": "89a776af8b476f32348d1fbd77ebf4104c79bcd83a47b36967cbea3e3f61290d",
+        "offlineReason": "Studio full kit: final inventory incomplete",
+        "runtime": {
+          "accepted": false,
+          "error": "Studio full kit: final inventory incomplete",
+          "parserAllocated": false,
+          "images": 0,
+          "cleanupPassed": true
+        }
+      }
+    },
+    {
+      "name": "actual baseline v02 positive retained",
+      "passed": true,
+      "evidence": {
+        "byteHash": "04994845f62236c6230dce1ba8af7d9811e21fc1e45c0fff6a89be7f06777093",
+        "stage": "M1",
+        "runtime": {
+          "accepted": true,
+          "parserAllocated": true,
+          "images": 5,
+          "targets": 3,
+          "blockers": 113,
+          "cleanupPassed": true
+        }
+      }
+    },
+    {
+      "name": "actual baseline v02 repaired wrongInventoryHash",
+      "passed": true,
+      "evidence": {
+        "byteHash": "04994845f62236c6230dce1ba8af7d9811e21fc1e45c0fff6a89be7f06777093",
+        "offlineReason": "Studio full kit: art inventory hash mismatch",
+        "runtime": {
+          "accepted": false,
+          "error": "Studio full kit: art inventory hash mismatch",
+          "parserAllocated": false,
+          "images": 0,
+          "cleanupPassed": true
+        }
+      }
+    },
+    {
+      "name": "actual baseline v02 repaired incompleteFinal",
+      "passed": true,
+      "evidence": {
+        "byteHash": "04994845f62236c6230dce1ba8af7d9811e21fc1e45c0fff6a89be7f06777093",
+        "offlineReason": "Studio full kit: final inventory incomplete",
+        "runtime": {
+          "accepted": false,
+          "error": "Studio full kit: final inventory incomplete",
+          "parserAllocated": false,
+          "images": 0,
+          "cleanupPassed": true
+        }
+      }
+    },
+    {
+      "name": "actual proposal v02 positive retained",
+      "passed": true,
+      "evidence": {
+        "byteHash": "bdc997b45917be0c72480af9738362e9940e5159b07781eac2bfa6b86b01fe76",
+        "stage": "M1",
+        "runtime": {
+          "accepted": true,
+          "parserAllocated": true,
+          "images": 5,
+          "targets": 3,
+          "blockers": 129,
+          "cleanupPassed": true
+        }
+      }
+    },
+    {
+      "name": "actual proposal v02 repaired wrongInventoryHash",
+      "passed": true,
+      "evidence": {
+        "byteHash": "bdc997b45917be0c72480af9738362e9940e5159b07781eac2bfa6b86b01fe76",
+        "offlineReason": "Studio full kit: art inventory hash mismatch",
+        "runtime": {
+          "accepted": false,
+          "error": "Studio full kit: art inventory hash mismatch",
+          "parserAllocated": false,
+          "images": 0,
+          "cleanupPassed": true
+        }
+      }
+    },
+    {
+      "name": "actual proposal v02 repaired incompleteFinal",
+      "passed": true,
+      "evidence": {
+        "byteHash": "bdc997b45917be0c72480af9738362e9940e5159b07781eac2bfa6b86b01fe76",
+        "offlineReason": "Studio full kit: final inventory incomplete",
+        "runtime": {
+          "accepted": false,
+          "error": "Studio full kit: final inventory incomplete",
+          "parserAllocated": false,
+          "images": 0,
+          "cleanupPassed": true
+        }
+      }
+    },
+    {
+      "name": "exact stage \"M7\"",
+      "passed": true,
+      "evidence": {
+        "byteHash": "89a776af8b476f32348d1fbd77ebf4104c79bcd83a47b36967cbea3e3f61290d",
+        "offlineReason": "Studio full kit: manifest identity/stage",
+        "runtime": {
+          "accepted": false,
+          "error": "Studio full kit: manifest identity/stage",
+          "parserAllocated": false,
+          "images": 0,
+          "cleanupPassed": true
+        }
+      }
+    },
+    {
+      "name": "exact stage \"final\\n\"",
+      "passed": true,
+      "evidence": {
+        "byteHash": "89a776af8b476f32348d1fbd77ebf4104c79bcd83a47b36967cbea3e3f61290d",
+        "offlineReason": "Studio full kit: manifest identity/stage",
+        "runtime": {
+          "accepted": false,
+          "error": "Studio full kit: manifest identity/stage",
+          "parserAllocated": false,
+          "images": 0,
+          "cleanupPassed": true
+        }
+      }
+    },
+    {
+      "name": "exact stage [\"M1\"]",
+      "passed": true,
+      "evidence": {
+        "byteHash": "89a776af8b476f32348d1fbd77ebf4104c79bcd83a47b36967cbea3e3f61290d",
+        "offlineReason": "Studio full kit: manifest identity/stage",
+        "runtime": {
+          "accepted": false,
+          "error": "Studio full kit: manifest identity/stage",
+          "parserAllocated": false,
+          "images": 0,
+          "cleanupPassed": true
+        }
+      }
+    },
+    {
+      "name": "exact variant \"proposal\\n\"",
+      "passed": true,
+      "evidence": {
+        "byteHash": "89a776af8b476f32348d1fbd77ebf4104c79bcd83a47b36967cbea3e3f61290d",
+        "offlineReason": "Studio full kit: explicit baseline/proposal required",
+        "runtime": {
+          "accepted": false,
+          "error": "Studio full kit: explicit baseline/proposal required",
+          "parserAllocated": false,
+          "images": 0,
+          "cleanupPassed": true
+        }
+      }
+    },
+    {
+      "name": "exact variant [\"baseline\"]",
+      "passed": true,
+      "evidence": {
+        "byteHash": "89a776af8b476f32348d1fbd77ebf4104c79bcd83a47b36967cbea3e3f61290d",
+        "offlineReason": "Studio full kit: explicit baseline/proposal required",
+        "runtime": {
+          "accepted": false,
+          "error": "Studio full kit: explicit baseline/proposal required",
+          "parserAllocated": false,
+          "images": 0,
+          "cleanupPassed": true
+        }
+      }
+    },
+    {
+      "name": "all59 final positive",
+      "passed": true,
+      "evidence": {
+        "representedAssets": 59,
+        "runtime": {
+          "accepted": true,
+          "parserAllocated": true,
+          "images": 2,
+          "cleanupPassed": true
+        },
+        "scope": "structural semantic control; not final art"
+      }
+    },
+    {
+      "name": "all59 final flag",
+      "passed": true,
+      "evidence": {
+        "representedAssets": 59,
+        "byteHash": "c02772b3aeea0cc1768d79944828aba050ad2b9d9dfff7a9177b54c73aed59e3",
+        "offlineReason": "Studio full kit: final contains proxy",
+        "runtime": {
+          "accepted": false,
+          "error": "Studio full kit: final contains proxy",
+          "parserAllocated": false,
+          "images": 0,
+          "cleanupPassed": true
+        }
+      }
+    },
+    {
+      "name": "all59 final name",
+      "passed": true,
+      "evidence": {
+        "representedAssets": 59,
+        "byteHash": "d735959709bdf5241719be03d424b1cc001938c2bc98f2115a80b104f4a21f39",
+        "offlineReason": "Studio full kit: final contains proxy",
+        "runtime": {
+          "accepted": false,
+          "error": "Studio full kit: final contains proxy",
+          "parserAllocated": false,
+          "images": 0,
+          "cleanupPassed": true
+        }
+      }
+    },
+    {
+      "name": "bundled JSON semantic drift blocked despite unchanged candidate bytes/manifest",
+      "passed": true,
+      "evidence": {
+        "runtime": {
+          "accepted": false,
+          "error": "Studio full kit: bundled art inventory identity mismatch",
+          "parserAllocated": false,
+          "images": 0,
+          "cleanupPassed": true
+        },
+        "changed": "nonstructural asset note; IDs and candidate identity unchanged"
+      }
+    },
+    {
+      "name": "guard sensitivity rawHash",
+      "passed": true,
+      "evidence": {
+        "original": {
+          "accepted": false,
+          "error": "Studio full kit: art inventory hash mismatch",
+          "parserAllocated": false,
+          "images": 0,
+          "cleanupPassed": true
+        },
+        "mutant": {
+          "accepted": true,
+          "parserAllocated": true,
+          "images": 2,
+          "cleanupPassed": true
+        },
+        "singleGuardRemoved": "check(manifest.artInventorySha256 === artInventorySha256, 'art inventory hash mismatch');"
+      }
+    },
+    {
+      "name": "guard sensitivity finalCoverage",
+      "passed": true,
+      "evidence": {
+        "original": {
+          "accepted": false,
+          "error": "Studio full kit: final inventory incomplete",
+          "parserAllocated": false,
+          "images": 0,
+          "cleanupPassed": true
+        },
+        "mutant": {
+          "accepted": true,
+          "parserAllocated": true,
+          "images": 2,
+          "cleanupPassed": true
+        },
+        "singleGuardRemoved": "check(inventory.assets.every((a) => ids.has(a.id)), 'final inventory incomplete');"
+      }
+    },
+    {
+      "name": "guard sensitivity finalProxy",
+      "passed": true,
+      "evidence": {
+        "original": {
+          "accepted": false,
+          "error": "Studio full kit: final contains proxy",
+          "parserAllocated": false,
+          "images": 0,
+          "cleanupPassed": true
+        },
+        "mutant": {
+          "accepted": true,
+          "parserAllocated": true,
+          "images": 2,
+          "cleanupPassed": true
+        },
+        "singleGuardRemoved": "check(inspection.snapshot.nodes.every((n) => !n.extras.proxy && !n.name.includes('__proxy')), 'final contains proxy');"
+      }
+    },
+    {
+      "name": "guard sensitivity canonicalPin",
+      "passed": true,
+      "evidence": {
+        "original": {
+          "accepted": false,
+          "error": "Studio full kit: bundled art inventory identity mismatch",
+          "parserAllocated": false,
+          "images": 0,
+          "cleanupPassed": true
+        },
+        "mutant": {
+          "accepted": true,
+          "parserAllocated": true,
+          "images": 2,
+          "cleanupPassed": true
+        },
+        "singleGuardRemoved": "check(canonicalSha256 === artInventoryCanonicalSha256, 'bundled art inventory identity mismatch');"
+      }
+    }
+  ]
+}

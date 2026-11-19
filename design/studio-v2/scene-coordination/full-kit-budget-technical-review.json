@@ -1,0 +1,3674 @@
+{
+  "scope": "Independent static accounting, not GPU or final performance proof; no art decisions",
+  "capturedAtUtc": "2026-11-15T13:38:31.475202+00:00",
+  "method": "Parse actual GLB JSON chunk and indexed/nonindexed accessor counts; aggregate one primitive per mesh leaf, attribute to frozen inventory assetId; GLB doubleSided BLEND adds one main pass under unchanged installed r187 loader/material defaults; all-visible PCF directional refresh adds every castShadow primitive once. No culling credit; no extra renderer pass assumed.",
+  "sourceSha256": {
+    "design/studio-v2/scene-coordination/m2-stage-budget-reconciliation.md": "44d15cde77687cdfe172e9d3b0659c0a18d8fa14b9c7d2c060a9b87ed67fe92f",
+    "design/studio-v2/scene-coordination/full-kit-contract.md": "f6749989a3fd25c224ae33ea6aa75499558719f8f713bec7effcb37d18cd9651",
+    "design/studio-v2/asset-pipeline/full-kit/art-direction.md": "fd1c6d0edc96b7736b32de6397957ce8c549a838aabf67631adc52a0011a68bb",
+    "design/studio-v2/asset-pipeline/full-kit/render-gates.md": "15f10d9d9e8ba2b9e4cf938263b66b481267f824422f12ce63982862858f5fb3",
+    ".omx/context/full-kit-m2-runtime-capture-v01.json": "1da664b90227c9869801f7f0b950b59c64c24cc52f84bb584e197a4a6add49b2",
+    "node_modules/three/src/renderers/WebGLRenderer.js": "d0cee0351c6dab0d57e6de2ca2560378c69605ce3a85e6fb0f3912639e3c4c11",
+    "node_modules/three/src/renderers/webgl/WebGLShadowMap.js": "b416c424d555e3c248e691db7d0b238d5660ac95df77a649695af7a89ddafc32",
+    "node_modules/three/src/materials/Material.js": "4c1058c0bfbf1d43add69638b8249cb5b54812c027a9b84267a57da879b3ce14",
+    "node_modules/three/examples/jsm/loaders/GLTFLoader.js": "532ac726e120039acbcd6cf54328c57acbf7b438176afaa6951257126d11bff1",
+    "components/studio/scene/controller.ts": "cc76055ea4bfe596e0d3ab49c84ca55c55b8a9bad3b33627e08adeb78f0969f0",
+    "components/studio/scene/resources.ts": "756a26fba1840696fd7b8f0a24dfa588a50488a55fbc99bec60ca3c0e14cb509",
+    "components/studio/scene/textures.ts": "09f6ff6cc7bb8910f09838566dfcf840d85a0d2ce1be8d064deafb0989c63aa6",
+    "components/studio/scene/view-config.ts": "1fea7adbcfd730a56920389c8ac4ecf8323c9739fd4882c15f3e134a11f1a450",
+    "components/studio/scene/full-kit-types.ts": "19269dc5acf09fc9ebac3de6b5ac37157608b258a1b0ac288a85fd13021a4a56",
+    "components/studio/scene/bind-full-kit.ts": "0ee8bbe6e0fb83ab4bf219343655c4260a8f5193f5624dc69fb802634a2294eb",
+    "components/studio/scene/load-full-kit.ts": "37549d60af2eb7f5e1feaf0914fd0da496ec38441ebe088ce445d2914b5ad68f",
+    "components/studio/scene/build-full-studio.ts": "5a4e8296e04d66cfeaedf59bedee8c633b378c84126de52b78eaabe421c0f02f",
+    "lib/studio-contract.ts": "64f88fd30b896c88c87a5631349bbb2bb9a3bc8676c0a1a816f1e5720902c84d",
+    "design/studio-v2/asset-pipeline/full-kit/technical/profile-core.mjs": "02b65feddb651f41a4a9d5eab4f55e41ae15c321d850a26fba00b3a92889ae71",
+    "design/studio-v2/asset-pipeline/full-kit/full-kit-profile-v1.json": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+    "design/studio-v2/asset-pipeline/full-kit/asset-inventory.json": "eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87",
+    "design/studio-v2/asset-pipeline/full-kit/manifests/studio-full-kit-m2-proposal-v02.manifest.json": "a3bd983a582d58875ed024e6815fa891f511b51e72b4d3b835c50692a9a48c51",
+    "design/studio-v2/asset-pipeline/full-kit/exports/studio-full-kit-m2-proposal-v02.glb": "2089a4f0b955c2730d167a8ee4258f7939b29f51057d9944678b44b4f2555411",
+    ".omx/context/full-kit-m1-preview/preview.mjs": "a829adb7842d9df00fb619ac6643aefbf71a84643774eaaab9c65b705c0e12e7",
+    ".omx/context/full-kit-m1-preview/server.mjs": "c4f81fb58001438f231ad892c4b15a6fb7266126c7323a6e49465555a052f695",
+    "node_modules/three/package.json": "87f2c99a8718e5fdd6f5e51427fde52c6075f2f698ddf8f7b4e162882df93940",
+    "design/studio-v2/asset-pipeline/full-kit/technical/validate-full-kit.mjs": "66ee9d342cbded31994e6e8655e385c5b7945916b5ec68ad3404af9beda8bd75"
+  },
+  "captureSourceHashesMatch": {
+    "components/studio/scene/controller.ts": true,
+    "components/studio/scene/resources.ts": true,
+    "components/studio/scene/textures.ts": true,
+    "components/studio/scene/view-config.ts": true,
+    "components/studio/scene/full-kit-types.ts": true,
+    "components/studio/scene/bind-full-kit.ts": true,
+    "components/studio/scene/load-full-kit.ts": true,
+    "components/studio/scene/build-full-studio.ts": true,
+    "lib/studio-contract.ts": true,
+    "design/studio-v2/asset-pipeline/full-kit/technical/profile-core.mjs": true,
+    "design/studio-v2/asset-pipeline/full-kit/full-kit-profile-v1.json": true,
+    "design/studio-v2/asset-pipeline/full-kit/asset-inventory.json": true,
+    "design/studio-v2/asset-pipeline/full-kit/manifests/studio-full-kit-m2-proposal-v02.manifest.json": true,
+    "design/studio-v2/asset-pipeline/full-kit/exports/studio-full-kit-m2-proposal-v02.glb": true,
+    "design/studio-v2/scene-coordination/full-kit-contract.md": true,
+    ".omx/context/full-kit-m1-preview/preview.mjs": true,
+    ".omx/context/full-kit-m1-preview/server.mjs": true,
+    "node_modules/three/package.json": true,
+    "design/studio-v2/asset-pipeline/full-kit/technical/validate-full-kit.mjs": true
+  },
+  "manifestCountsRecomputed": {
+    "uniqueGeometryTriangles": 22658,
+    "placedTriangles": 24722,
+    "shadowTriangles": 12680,
+    "primitiveInstances": 117,
+    "shadowInstances": 48
+  },
+  "stages": {
+    "M1": {
+      "currentInstances": 41,
+      "currentCasters": 3,
+      "placedTriangles": 5890,
+      "shadowTriangles": 996,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "plannedDraws": 10,
+      "designCeilingDraws": 12,
+      "proxyLeaves": 1,
+      "allVisibleMainCalls": 41,
+      "allVisibleRefreshCalls": 44,
+      "allVisibleRefreshTriangles": 6886
+    },
+    "M2": {
+      "currentInstances": 23,
+      "currentCasters": 9,
+      "placedTriangles": 17716,
+      "shadowTriangles": 10772,
+      "extraTransparentCalls": 1,
+      "extraTransparentTriangles": 2,
+      "plannedDraws": 19,
+      "designCeilingDraws": 20,
+      "proxyLeaves": 0,
+      "allVisibleMainCalls": 24,
+      "allVisibleRefreshCalls": 33,
+      "allVisibleRefreshTriangles": 28490
+    },
+    "M3": {
+      "currentInstances": 11,
+      "currentCasters": 11,
+      "placedTriangles": 180,
+      "shadowTriangles": 180,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "plannedDraws": 7,
+      "designCeilingDraws": 9,
+      "proxyLeaves": 11,
+      "allVisibleMainCalls": 11,
+      "allVisibleRefreshCalls": 22,
+      "allVisibleRefreshTriangles": 360
+    },
+    "M4": {
+      "currentInstances": 23,
+      "currentCasters": 22,
+      "placedTriangles": 708,
+      "shadowTriangles": 696,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "plannedDraws": 14,
+      "designCeilingDraws": 16,
+      "proxyLeaves": 23,
+      "allVisibleMainCalls": 23,
+      "allVisibleRefreshCalls": 45,
+      "allVisibleRefreshTriangles": 1404
+    },
+    "M5": {
+      "currentInstances": 16,
+      "currentCasters": 3,
+      "placedTriangles": 192,
+      "shadowTriangles": 36,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "plannedDraws": 8,
+      "designCeilingDraws": 10,
+      "proxyLeaves": 16,
+      "allVisibleMainCalls": 16,
+      "allVisibleRefreshCalls": 19,
+      "allVisibleRefreshTriangles": 228
+    },
+    "M6": {
+      "currentInstances": 3,
+      "currentCasters": 0,
+      "placedTriangles": 36,
+      "shadowTriangles": 0,
+      "extraTransparentCalls": 3,
+      "extraTransparentTriangles": 36,
+      "plannedDraws": 3,
+      "designCeilingDraws": 3,
+      "proxyLeaves": 0,
+      "allVisibleMainCalls": 6,
+      "allVisibleRefreshCalls": 6,
+      "allVisibleRefreshTriangles": 72
+    }
+  },
+  "assets": [
+    {
+      "assetId": "arch_shell",
+      "stage": "M1",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 1,
+      "currentCasters": 0,
+      "placedTriangles": 10,
+      "shadowTriangles": 0,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "arch_shell__walls_ceiling",
+          "meshIndex": 8,
+          "materialIndex": 3,
+          "materialName": "lib_plaster",
+          "triangles": 10,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_shell",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "arch_cornice",
+      "stage": "M1",
+      "plannedDraws": 0,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 4,
+      "currentCasters": 0,
+      "placedTriangles": 48,
+      "shadowTriangles": 0,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "arch_cornice__back",
+          "meshIndex": 3,
+          "materialIndex": 3,
+          "materialName": "lib_plaster",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_cornice",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "arch_cornice__front",
+          "meshIndex": 3,
+          "materialIndex": 3,
+          "materialName": "lib_plaster",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_cornice",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "arch_cornice__left",
+          "meshIndex": 3,
+          "materialIndex": 3,
+          "materialName": "lib_plaster",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_cornice",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "arch_cornice__right",
+          "meshIndex": 3,
+          "materialIndex": 3,
+          "materialName": "lib_plaster",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_cornice",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "arch_floor",
+      "stage": "M1",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 1,
+      "currentCasters": 0,
+      "placedTriangles": 2,
+      "shadowTriangles": 0,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "arch_floor__boards",
+          "meshIndex": 7,
+          "materialIndex": 5,
+          "materialName": "lib_floor",
+          "triangles": 2,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_floor",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "arch_skirting",
+      "stage": "M1",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 4,
+      "currentCasters": 0,
+      "placedTriangles": 48,
+      "shadowTriangles": 0,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "arch_skirting__back",
+          "meshIndex": 1,
+          "materialIndex": 1,
+          "materialName": "lib_dark_oak",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_skirting",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "arch_skirting__front",
+          "meshIndex": 1,
+          "materialIndex": 1,
+          "materialName": "lib_dark_oak",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_skirting",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "arch_skirting__left",
+          "meshIndex": 1,
+          "materialIndex": 1,
+          "materialName": "lib_dark_oak",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_skirting",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "arch_skirting__right",
+          "meshIndex": 1,
+          "materialIndex": 1,
+          "materialName": "lib_dark_oak",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_skirting",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "arch_beams",
+      "stage": "M1",
+      "plannedDraws": 0,
+      "plannedLinkedInstances": 4,
+      "currentInstances": 4,
+      "currentCasters": 0,
+      "placedTriangles": 48,
+      "shadowTriangles": 0,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "arch_beams__beam_1",
+          "meshIndex": 1,
+          "materialIndex": 1,
+          "materialName": "lib_dark_oak",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_beams",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "arch_beams__beam_2",
+          "meshIndex": 1,
+          "materialIndex": 1,
+          "materialName": "lib_dark_oak",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_beams",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "arch_beams__beam_3",
+          "meshIndex": 1,
+          "materialIndex": 1,
+          "materialName": "lib_dark_oak",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_beams",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "arch_beams__beam_4",
+          "meshIndex": 1,
+          "materialIndex": 1,
+          "materialName": "lib_dark_oak",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_beams",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "arch_window",
+      "stage": "M1",
+      "plannedDraws": 0,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 6,
+      "currentCasters": 0,
+      "placedTriangles": 72,
+      "shadowTriangles": 0,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "arch_window__foot",
+          "meshIndex": 1,
+          "materialIndex": 1,
+          "materialName": "lib_dark_oak",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_window",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "arch_window__head",
+          "meshIndex": 1,
+          "materialIndex": 1,
+          "materialName": "lib_dark_oak",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_window",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "arch_window__jamb_a",
+          "meshIndex": 1,
+          "materialIndex": 1,
+          "materialName": "lib_dark_oak",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_window",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "arch_window__jamb_b",
+          "meshIndex": 1,
+          "materialIndex": 1,
+          "materialName": "lib_dark_oak",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_window",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "arch_window__mullion",
+          "meshIndex": 1,
+          "materialIndex": 1,
+          "materialName": "lib_dark_oak",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_window",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "arch_window__sill",
+          "meshIndex": 1,
+          "materialIndex": 1,
+          "materialName": "lib_dark_oak",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_window",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "rt_window_dusk",
+      "stage": "M1",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 1,
+      "currentCasters": 0,
+      "placedTriangles": 2,
+      "shadowTriangles": 0,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "rt_window_dusk",
+          "meshIndex": 45,
+          "materialIndex": 6,
+          "materialName": "rt_placeholder",
+          "triangles": 2,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "rt_window_dusk",
+            "role": "runtime-dusk",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": false
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "arch_blind",
+      "stage": "M1",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 14,
+      "currentInstances": 10,
+      "currentCasters": 0,
+      "placedTriangles": 120,
+      "shadowTriangles": 0,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "arch_blind__head_rail",
+          "meshIndex": 2,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_blind",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "arch_blind__slat_1",
+          "meshIndex": 2,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_blind",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "arch_blind__slat_2",
+          "meshIndex": 2,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_blind",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "arch_blind__slat_3",
+          "meshIndex": 2,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_blind",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "arch_blind__slat_4",
+          "meshIndex": 2,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_blind",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "arch_blind__slat_5",
+          "meshIndex": 2,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_blind",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "arch_blind__slat_6",
+          "meshIndex": 2,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_blind",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "arch_blind__slat_7",
+          "meshIndex": 2,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_blind",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "arch_blind__slat_8",
+          "meshIndex": 2,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_blind",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "arch_blind__slat_9",
+          "meshIndex": 2,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_blind",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "arch_door",
+      "stage": "M1",
+      "plannedDraws": 2,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 3,
+      "currentCasters": 0,
+      "placedTriangles": 2920,
+      "shadowTriangles": 0,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "arch_door__architrave",
+          "meshIndex": 4,
+          "materialIndex": 1,
+          "materialName": "lib_dark_oak",
+          "triangles": 432,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_door",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "arch_door__hardware",
+          "meshIndex": 5,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 652,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_door",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "arch_door__leaf",
+          "meshIndex": 6,
+          "materialIndex": 4,
+          "materialName": "lib_oak",
+          "triangles": 1836,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "arch_door",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "arch_switches",
+      "stage": "M1",
+      "plannedDraws": 0,
+      "plannedLinkedInstances": 3,
+      "currentInstances": 1,
+      "currentCasters": 0,
+      "placedTriangles": 12,
+      "shadowTriangles": 0,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "arch_switches__proxy_switch_door",
+          "meshIndex": 2,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "arch_switches",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "fix_floor_lamp",
+      "stage": "M1",
+      "plannedDraws": 3,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 6,
+      "currentCasters": 3,
+      "placedTriangles": 2608,
+      "shadowTriangles": 996,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "fix_floor_lamp__base",
+          "meshIndex": 25,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 204,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "fix_floor_lamp",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "fix_floor_lamp__bulb",
+          "meshIndex": 26,
+          "materialIndex": 8,
+          "materialName": "lib_glow",
+          "triangles": 440,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "fix_floor_lamp",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "fix_floor_lamp__fittings",
+          "meshIndex": 27,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 732,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "fix_floor_lamp",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "fix_floor_lamp__pole",
+          "meshIndex": 28,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 60,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "fix_floor_lamp",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "fix_floor_lamp__shade",
+          "meshIndex": 29,
+          "materialIndex": 9,
+          "materialName": "lib_linen_shade",
+          "triangles": 384,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "fix_floor_lamp",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "fix_floor_lamp__shade_trim",
+          "meshIndex": 30,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 788,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "fix_floor_lamp",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "desk_top",
+      "stage": "M2",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 1,
+      "currentCasters": 1,
+      "placedTriangles": 288,
+      "shadowTriangles": 288,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "desk_top__top",
+          "meshIndex": 18,
+          "materialIndex": 4,
+          "materialName": "lib_oak",
+          "triangles": 288,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "desk_top",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "desk_frame",
+      "stage": "M2",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 1,
+      "currentCasters": 1,
+      "placedTriangles": 2512,
+      "shadowTriangles": 2512,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "desk_frame__steel",
+          "meshIndex": 16,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 2512,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "desk_frame",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "desk_mat",
+      "stage": "M2",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 1,
+      "currentCasters": 0,
+      "placedTriangles": 124,
+      "shadowTriangles": 0,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "desk_mat__felt",
+          "meshIndex": 17,
+          "materialIndex": 0,
+          "materialName": "lib_weave",
+          "triangles": 124,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "desk_mat",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "mon_central",
+      "stage": "M2",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 1,
+      "currentCasters": 1,
+      "placedTriangles": 1020,
+      "shadowTriangles": 1020,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "mon_central__body",
+          "meshIndex": 38,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 1020,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "mon_central",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "mon_side",
+      "stage": "M2",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 2,
+      "currentInstances": 2,
+      "currentCasters": 2,
+      "placedTriangles": 2040,
+      "shadowTriangles": 2040,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "mon_side__copilot",
+          "meshIndex": 39,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 1020,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "mon_side",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "mon_side__typeforge",
+          "meshIndex": 39,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 1020,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "mon_side",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "mon_top",
+      "stage": "M2",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 1,
+      "currentCasters": 1,
+      "placedTriangles": 1432,
+      "shadowTriangles": 1432,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "mon_top__body",
+          "meshIndex": 40,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 1432,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "mon_top",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "target_faces",
+      "stage": "M2",
+      "plannedDraws": 3,
+      "plannedLinkedInstances": 3,
+      "currentInstances": 3,
+      "currentCasters": 0,
+      "placedTriangles": 6,
+      "shadowTriangles": 0,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "target_copilot",
+          "meshIndex": 49,
+          "materialIndex": 6,
+          "materialName": "rt_placeholder",
+          "triangles": 2,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "target_faces",
+            "role": "target",
+            "occluder": false,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": false
+          }
+        },
+        {
+          "name": "target_dissertation",
+          "meshIndex": 50,
+          "materialIndex": 6,
+          "materialName": "rt_placeholder",
+          "triangles": 2,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "target_faces",
+            "role": "target",
+            "occluder": false,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": false
+          }
+        },
+        {
+          "name": "target_typeforge",
+          "meshIndex": 51,
+          "materialIndex": 6,
+          "materialName": "rt_placeholder",
+          "triangles": 2,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "target_faces",
+            "role": "target",
+            "occluder": false,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": false
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "target_borders",
+      "stage": "M2",
+      "plannedDraws": 3,
+      "plannedLinkedInstances": 3,
+      "currentInstances": 3,
+      "currentCasters": 0,
+      "placedTriangles": 6,
+      "shadowTriangles": 0,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "border_copilot",
+          "meshIndex": 9,
+          "materialIndex": 6,
+          "materialName": "rt_placeholder",
+          "triangles": 2,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "target_borders",
+            "role": "border",
+            "occluder": false,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": false
+          }
+        },
+        {
+          "name": "border_dissertation",
+          "meshIndex": 10,
+          "materialIndex": 6,
+          "materialName": "rt_placeholder",
+          "triangles": 2,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "target_borders",
+            "role": "border",
+            "occluder": false,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": false
+          }
+        },
+        {
+          "name": "border_typeforge",
+          "meshIndex": 11,
+          "materialIndex": 6,
+          "materialName": "rt_placeholder",
+          "triangles": 2,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "target_borders",
+            "role": "border",
+            "occluder": false,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": false
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "display_studio",
+      "stage": "M2",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 1,
+      "currentCasters": 0,
+      "placedTriangles": 2,
+      "shadowTriangles": 0,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "display_studio",
+          "meshIndex": 19,
+          "materialIndex": 6,
+          "materialName": "rt_placeholder",
+          "triangles": 2,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "display_studio",
+            "role": "decorative-screen",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": false
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "mon_cables",
+      "stage": "M2",
+      "plannedDraws": 0,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 1,
+      "currentCasters": 0,
+      "placedTriangles": 3908,
+      "shadowTriangles": 0,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "mon_cables__runs",
+          "meshIndex": 37,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 3908,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "mon_cables",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "pc_tower",
+      "stage": "M2",
+      "plannedDraws": 3,
+      "plannedLinkedInstances": 3,
+      "currentInstances": 3,
+      "currentCasters": 1,
+      "placedTriangles": 2454,
+      "shadowTriangles": 2440,
+      "extraTransparentCalls": 1,
+      "extraTransparentTriangles": 2,
+      "leaves": [
+        {
+          "name": "pc_tower__case",
+          "meshIndex": 42,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 2440,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "pc_tower",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "pc_tower__glass",
+          "meshIndex": 43,
+          "materialIndex": 10,
+          "materialName": "lib_glass",
+          "triangles": 2,
+          "castsShadow": false,
+          "extraTransparentPass": 1,
+          "proxy": false,
+          "flags": {
+            "assetId": "pc_tower",
+            "role": "transparent",
+            "occluder": false,
+            "transparent": true,
+            "nocast": true,
+            "receiveShadow": false,
+            "renderOrder": 2
+          }
+        },
+        {
+          "name": "pc_tower__glow",
+          "meshIndex": 44,
+          "materialIndex": 8,
+          "materialName": "lib_glow",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "pc_tower",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "sub_woofer",
+      "stage": "M2",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 2,
+      "currentCasters": 2,
+      "placedTriangles": 1040,
+      "shadowTriangles": 1040,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "sub_woofer__cabinet",
+          "meshIndex": 47,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 932,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "sub_woofer",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "sub_woofer__grille",
+          "meshIndex": 48,
+          "materialIndex": 0,
+          "materialName": "lib_weave",
+          "triangles": 108,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "sub_woofer",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "under_desk_power",
+      "stage": "M2",
+      "plannedDraws": 0,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 1,
+      "currentCasters": 0,
+      "placedTriangles": 1644,
+      "shadowTriangles": 0,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "under_desk_power__strip_loom",
+          "meshIndex": 52,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 1644,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "under_desk_power",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "fix_pendant",
+      "stage": "M2",
+      "plannedDraws": 2,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 2,
+      "currentCasters": 0,
+      "placedTriangles": 1240,
+      "shadowTriangles": 0,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "fix_pendant__body",
+          "meshIndex": 31,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 1228,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "fix_pendant",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "fix_pendant__lens",
+          "meshIndex": 32,
+          "materialIndex": 8,
+          "materialName": "lib_glow",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": false,
+          "flags": {
+            "assetId": "fix_pendant",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "kb_case",
+      "stage": "M3",
+      "plannedDraws": 2,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 1,
+      "currentCasters": 1,
+      "placedTriangles": 12,
+      "shadowTriangles": 12,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "kb_case__proxy_case",
+          "meshIndex": 35,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "kb_case",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "kb_keycaps",
+      "stage": "M3",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 67,
+      "currentInstances": 2,
+      "currentCasters": 2,
+      "placedTriangles": 24,
+      "shadowTriangles": 24,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "kb_keycaps__proxy_accent_caps",
+          "meshIndex": 36,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "kb_keycaps",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "kb_keycaps__proxy_cap_field",
+          "meshIndex": 14,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "kb_keycaps",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "mouse_native",
+      "stage": "M3",
+      "plannedDraws": 0,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 1,
+      "currentCasters": 1,
+      "placedTriangles": 12,
+      "shadowTriangles": 12,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "mouse_native__proxy_body",
+          "meshIndex": 2,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "mouse_native",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "mug_coaster",
+      "stage": "M3",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 1,
+      "currentCasters": 1,
+      "placedTriangles": 60,
+      "shadowTriangles": 60,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "mug_coaster__proxy_mug",
+          "meshIndex": 41,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 60,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "mug_coaster",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "notebook_pen",
+      "stage": "M3",
+      "plannedDraws": 0,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 1,
+      "currentCasters": 1,
+      "placedTriangles": 12,
+      "shadowTriangles": 12,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "notebook_pen__proxy_notebook",
+          "meshIndex": 35,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "notebook_pen",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "mic_boom",
+      "stage": "M3",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 3,
+      "currentCasters": 3,
+      "placedTriangles": 36,
+      "shadowTriangles": 36,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "mic_boom__proxy_arm",
+          "meshIndex": 15,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "mic_boom",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "mic_boom__proxy_capsule",
+          "meshIndex": 34,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "mic_boom",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "mic_boom__proxy_clamp",
+          "meshIndex": 15,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "mic_boom",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "headphones",
+      "stage": "M3",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 1,
+      "currentCasters": 1,
+      "placedTriangles": 12,
+      "shadowTriangles": 12,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "headphones__proxy_on_stand",
+          "meshIndex": 34,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "headphones",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "speaker_nearfield",
+      "stage": "M3",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 1,
+      "currentCasters": 1,
+      "placedTriangles": 12,
+      "shadowTriangles": 12,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "speaker_nearfield__proxy_cabinet",
+          "meshIndex": 15,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "speaker_nearfield",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "ctl_body",
+      "stage": "M4",
+      "plannedDraws": 3,
+      "plannedLinkedInstances": 19,
+      "currentInstances": 1,
+      "currentCasters": 1,
+      "placedTriangles": 12,
+      "shadowTriangles": 12,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "ctl_body__proxy_body",
+          "meshIndex": 13,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "ctl_body",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "ctl_keys",
+      "stage": "M4",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 49,
+      "currentInstances": 1,
+      "currentCasters": 1,
+      "placedTriangles": 12,
+      "shadowTriangles": 12,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "ctl_keys__proxy_key_bed",
+          "meshIndex": 14,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "ctl_keys",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "ctl_stand",
+      "stage": "M4",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 2,
+      "currentCasters": 2,
+      "placedTriangles": 24,
+      "shadowTriangles": 24,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "ctl_stand__proxy_leg_1",
+          "meshIndex": 15,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "ctl_stand",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "ctl_stand__proxy_leg_2",
+          "meshIndex": 15,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "ctl_stand",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "ctl_sustain_pedal",
+      "stage": "M4",
+      "plannedDraws": 0,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 1,
+      "currentCasters": 1,
+      "placedTriangles": 12,
+      "shadowTriangles": 12,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "ctl_sustain_pedal__proxy_pedal",
+          "meshIndex": 15,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "ctl_sustain_pedal",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "stool_keys",
+      "stage": "M4",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 2,
+      "currentCasters": 2,
+      "placedTriangles": 72,
+      "shadowTriangles": 72,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "stool_keys__proxy_post",
+          "meshIndex": 22,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "stool_keys",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "stool_keys__proxy_seat",
+          "meshIndex": 24,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 60,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "stool_keys",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "drum_rack",
+      "stage": "M4",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 10,
+      "currentInstances": 3,
+      "currentCasters": 3,
+      "placedTriangles": 36,
+      "shadowTriangles": 36,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "drum_rack__proxy_crossbar",
+          "meshIndex": 22,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "drum_rack",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "drum_rack__proxy_upright_1",
+          "meshIndex": 22,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "drum_rack",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "drum_rack__proxy_upright_2",
+          "meshIndex": 22,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "drum_rack",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "drum_pads",
+      "stage": "M4",
+      "plannedDraws": 2,
+      "plannedLinkedInstances": 4,
+      "currentInstances": 4,
+      "currentCasters": 4,
+      "placedTriangles": 240,
+      "shadowTriangles": 240,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "drum_pads__proxy_pad_1",
+          "meshIndex": 21,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 60,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "drum_pads",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "drum_pads__proxy_pad_2",
+          "meshIndex": 21,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 60,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "drum_pads",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "drum_pads__proxy_pad_3",
+          "meshIndex": 21,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 60,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "drum_pads",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "drum_pads__proxy_pad_4",
+          "meshIndex": 21,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 60,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "drum_pads",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "drum_cymbals",
+      "stage": "M4",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 3,
+      "currentInstances": 3,
+      "currentCasters": 3,
+      "placedTriangles": 180,
+      "shadowTriangles": 180,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "drum_cymbals__proxy_cymbal_1",
+          "meshIndex": 20,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 60,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "drum_cymbals",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "drum_cymbals__proxy_cymbal_2",
+          "meshIndex": 20,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 60,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "drum_cymbals",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "drum_cymbals__proxy_cymbal_3",
+          "meshIndex": 20,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 60,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "drum_cymbals",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "drum_hihat_pedal",
+      "stage": "M4",
+      "plannedDraws": 0,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 1,
+      "currentCasters": 1,
+      "placedTriangles": 12,
+      "shadowTriangles": 12,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "drum_hihat_pedal__proxy_pedal",
+          "meshIndex": 15,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "drum_hihat_pedal",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "drum_kick",
+      "stage": "M4",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 1,
+      "currentCasters": 1,
+      "placedTriangles": 12,
+      "shadowTriangles": 12,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "drum_kick__proxy_tower_pedal",
+          "meshIndex": 15,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "drum_kick",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "drum_module",
+      "stage": "M4",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 1,
+      "currentCasters": 1,
+      "placedTriangles": 12,
+      "shadowTriangles": 12,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "drum_module__proxy_module",
+          "meshIndex": 15,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "drum_module",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "drum_sticks",
+      "stage": "M4",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 2,
+      "currentInstances": 1,
+      "currentCasters": 1,
+      "placedTriangles": 12,
+      "shadowTriangles": 12,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "drum_sticks__proxy_pair",
+          "meshIndex": 23,
+          "materialIndex": 4,
+          "materialName": "lib_oak",
+          "triangles": 12,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "drum_sticks",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "drum_throne",
+      "stage": "M4",
+      "plannedDraws": 0,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 1,
+      "currentCasters": 1,
+      "placedTriangles": 60,
+      "shadowTriangles": 60,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "drum_throne__proxy_seat",
+          "meshIndex": 24,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 60,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "drum_throne",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "rug",
+      "stage": "M4",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 1,
+      "currentCasters": 0,
+      "placedTriangles": 12,
+      "shadowTriangles": 0,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "rug__proxy_rug",
+          "meshIndex": 0,
+          "materialIndex": 0,
+          "materialName": "lib_weave",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "rug",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "music_cables",
+      "stage": "M4",
+      "plannedDraws": 0,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 0,
+      "currentCasters": 0,
+      "placedTriangles": 0,
+      "shadowTriangles": 0,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": []
+    },
+    {
+      "assetId": "wall_shelf",
+      "stage": "M5",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 1,
+      "currentCasters": 0,
+      "placedTriangles": 12,
+      "shadowTriangles": 0,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "wall_shelf__proxy_board",
+          "meshIndex": 23,
+          "materialIndex": 4,
+          "materialName": "lib_oak",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "wall_shelf",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "shelf_books",
+      "stage": "M5",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 9,
+      "currentInstances": 1,
+      "currentCasters": 0,
+      "placedTriangles": 12,
+      "shadowTriangles": 0,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "shelf_books__proxy_row",
+          "meshIndex": 35,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "shelf_books",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "shelf_plant",
+      "stage": "M5",
+      "plannedDraws": 0,
+      "plannedLinkedInstances": 9,
+      "currentInstances": 1,
+      "currentCasters": 0,
+      "placedTriangles": 12,
+      "shadowTriangles": 0,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "shelf_plant__proxy_plant",
+          "meshIndex": 46,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "shelf_plant",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "shelf_speaker",
+      "stage": "M5",
+      "plannedDraws": 0,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 1,
+      "currentCasters": 0,
+      "placedTriangles": 12,
+      "shadowTriangles": 0,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "shelf_speaker__proxy_cabinet",
+          "meshIndex": 15,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "shelf_speaker",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "wall_print",
+      "stage": "M5",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 1,
+      "currentCasters": 0,
+      "placedTriangles": 12,
+      "shadowTriangles": 0,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "wall_print__proxy_frame",
+          "meshIndex": 15,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "wall_print",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "snowboard_deck",
+      "stage": "M5",
+      "plannedDraws": 1,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 1,
+      "currentCasters": 1,
+      "placedTriangles": 12,
+      "shadowTriangles": 12,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "snowboard_deck__proxy_deck",
+          "meshIndex": 2,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "snowboard_deck",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "snowboard_bindings",
+      "stage": "M5",
+      "plannedDraws": 0,
+      "plannedLinkedInstances": 2,
+      "currentInstances": 2,
+      "currentCasters": 2,
+      "placedTriangles": 24,
+      "shadowTriangles": 24,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "snowboard_bindings__proxy_binding_1",
+          "meshIndex": 15,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "snowboard_bindings",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "snowboard_bindings__proxy_binding_2",
+          "meshIndex": 15,
+          "materialIndex": 2,
+          "materialName": "lib_palette",
+          "triangles": 12,
+          "castsShadow": true,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "snowboard_bindings",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": false,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "acoustic_panels",
+      "stage": "M5",
+      "plannedDraws": 2,
+      "plannedLinkedInstances": 3,
+      "currentInstances": 3,
+      "currentCasters": 0,
+      "placedTriangles": 36,
+      "shadowTriangles": 0,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "acoustic_panels__proxy_panel_1",
+          "meshIndex": 0,
+          "materialIndex": 0,
+          "materialName": "lib_weave",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "acoustic_panels",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "acoustic_panels__proxy_panel_2",
+          "meshIndex": 0,
+          "materialIndex": 0,
+          "materialName": "lib_weave",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "acoustic_panels",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "acoustic_panels__proxy_panel_3",
+          "meshIndex": 0,
+          "materialIndex": 0,
+          "materialName": "lib_weave",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "acoustic_panels",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "fix_wall_triangles",
+      "stage": "M5",
+      "plannedDraws": 2,
+      "plannedLinkedInstances": 5,
+      "currentInstances": 5,
+      "currentCasters": 0,
+      "placedTriangles": 60,
+      "shadowTriangles": 0,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": [
+        {
+          "name": "fix_wall_triangles__proxy_light_1",
+          "meshIndex": 33,
+          "materialIndex": 8,
+          "materialName": "lib_glow",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "fix_wall_triangles",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "fix_wall_triangles__proxy_light_2",
+          "meshIndex": 33,
+          "materialIndex": 8,
+          "materialName": "lib_glow",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "fix_wall_triangles",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "fix_wall_triangles__proxy_light_3",
+          "meshIndex": 33,
+          "materialIndex": 8,
+          "materialName": "lib_glow",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "fix_wall_triangles",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "fix_wall_triangles__proxy_light_4",
+          "meshIndex": 33,
+          "materialIndex": 8,
+          "materialName": "lib_glow",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "fix_wall_triangles",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        },
+        {
+          "name": "fix_wall_triangles__proxy_light_5",
+          "meshIndex": 33,
+          "materialIndex": 8,
+          "materialName": "lib_glow",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 0,
+          "proxy": true,
+          "flags": {
+            "assetId": "fix_wall_triangles",
+            "role": "opaque",
+            "occluder": true,
+            "transparent": false,
+            "nocast": true,
+            "receiveShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "assetId": "wall_cable_run",
+      "stage": "M5",
+      "plannedDraws": 0,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 0,
+      "currentCasters": 0,
+      "placedTriangles": 0,
+      "shadowTriangles": 0,
+      "extraTransparentCalls": 0,
+      "extraTransparentTriangles": 0,
+      "leaves": []
+    },
+    {
+      "assetId": "contact_decals",
+      "stage": "M6",
+      "plannedDraws": 3,
+      "plannedLinkedInstances": 1,
+      "currentInstances": 3,
+      "currentCasters": 0,
+      "placedTriangles": 36,
+      "shadowTriangles": 0,
+      "extraTransparentCalls": 3,
+      "extraTransparentTriangles": 36,
+      "leaves": [
+        {
+          "name": "contact_decals__desk_gear",
+          "meshIndex": 12,
+          "materialIndex": 7,
+          "materialName": "lib_contact",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 1,
+          "proxy": false,
+          "flags": {
+            "assetId": "contact_decals",
+            "role": "transparent",
+            "occluder": false,
+            "transparent": true,
+            "nocast": true,
+            "receiveShadow": false
+          }
+        },
+        {
+          "name": "contact_decals__music_corner",
+          "meshIndex": 12,
+          "materialIndex": 7,
+          "materialName": "lib_contact",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 1,
+          "proxy": false,
+          "flags": {
+            "assetId": "contact_decals",
+            "role": "transparent",
+            "occluder": false,
+            "transparent": true,
+            "nocast": true,
+            "receiveShadow": false
+          }
+        },
+        {
+          "name": "contact_decals__under_desk",
+          "meshIndex": 12,
+          "materialIndex": 7,
+          "materialName": "lib_contact",
+          "triangles": 12,
+          "castsShadow": false,
+          "extraTransparentPass": 1,
+          "proxy": false,
+          "flags": {
+            "assetId": "contact_decals",
+            "role": "transparent",
+            "occluder": false,
+            "transparent": true,
+            "nocast": true,
+            "receiveShadow": false
+          }
+        }
+      ]
+    }
+  ],
+  "proxyLeaves": [
+    {
+      "stage": "M1",
+      "name": "arch_switches__proxy_switch_door"
+    },
+    {
+      "stage": "M3",
+      "name": "kb_case__proxy_case"
+    },
+    {
+      "stage": "M3",
+      "name": "kb_keycaps__proxy_accent_caps"
+    },
+    {
+      "stage": "M3",
+      "name": "kb_keycaps__proxy_cap_field"
+    },
+    {
+      "stage": "M3",
+      "name": "mouse_native__proxy_body"
+    },
+    {
+      "stage": "M3",
+      "name": "mug_coaster__proxy_mug"
+    },
+    {
+      "stage": "M3",
+      "name": "notebook_pen__proxy_notebook"
+    },
+    {
+      "stage": "M3",
+      "name": "mic_boom__proxy_arm"
+    },
+    {
+      "stage": "M3",
+      "name": "mic_boom__proxy_capsule"
+    },
+    {
+      "stage": "M3",
+      "name": "mic_boom__proxy_clamp"
+    },
+    {
+      "stage": "M3",
+      "name": "headphones__proxy_on_stand"
+    },
+    {
+      "stage": "M3",
+      "name": "speaker_nearfield__proxy_cabinet"
+    },
+    {
+      "stage": "M4",
+      "name": "ctl_body__proxy_body"
+    },
+    {
+      "stage": "M4",
+      "name": "ctl_keys__proxy_key_bed"
+    },
+    {
+      "stage": "M4",
+      "name": "ctl_stand__proxy_leg_1"
+    },
+    {
+      "stage": "M4",
+      "name": "ctl_stand__proxy_leg_2"
+    },
+    {
+      "stage": "M4",
+      "name": "ctl_sustain_pedal__proxy_pedal"
+    },
+    {
+      "stage": "M4",
+      "name": "stool_keys__proxy_post"
+    },
+    {
+      "stage": "M4",
+      "name": "stool_keys__proxy_seat"
+    },
+    {
+      "stage": "M4",
+      "name": "drum_rack__proxy_crossbar"
+    },
+    {
+      "stage": "M4",
+      "name": "drum_rack__proxy_upright_1"
+    },
+    {
+      "stage": "M4",
+      "name": "drum_rack__proxy_upright_2"
+    },
+    {
+      "stage": "M4",
+      "name": "drum_pads__proxy_pad_1"
+    },
+    {
+      "stage": "M4",
+      "name": "drum_pads__proxy_pad_2"
+    },
+    {
+      "stage": "M4",
+      "name": "drum_pads__proxy_pad_3"
+    },
+    {
+      "stage": "M4",
+      "name": "drum_pads__proxy_pad_4"
+    },
+    {
+      "stage": "M4",
+      "name": "drum_cymbals__proxy_cymbal_1"
+    },
+    {
+      "stage": "M4",
+      "name": "drum_cymbals__proxy_cymbal_2"
+    },
+    {
+      "stage": "M4",
+      "name": "drum_cymbals__proxy_cymbal_3"
+    },
+    {
+      "stage": "M4",
+      "name": "drum_hihat_pedal__proxy_pedal"
+    },
+    {
+      "stage": "M4",
+      "name": "drum_kick__proxy_tower_pedal"
+    },
+    {
+      "stage": "M4",
+      "name": "drum_module__proxy_module"
+    },
+    {
+      "stage": "M4",
+      "name": "drum_sticks__proxy_pair"
+    },
+    {
+      "stage": "M4",
+      "name": "drum_throne__proxy_seat"
+    },
+    {
+      "stage": "M4",
+      "name": "rug__proxy_rug"
+    },
+    {
+      "stage": "M5",
+      "name": "wall_shelf__proxy_board"
+    },
+    {
+      "stage": "M5",
+      "name": "shelf_books__proxy_row"
+    },
+    {
+      "stage": "M5",
+      "name": "shelf_plant__proxy_plant"
+    },
+    {
+      "stage": "M5",
+      "name": "shelf_speaker__proxy_cabinet"
+    },
+    {
+      "stage": "M5",
+      "name": "wall_print__proxy_frame"
+    },
+    {
+      "stage": "M5",
+      "name": "snowboard_deck__proxy_deck"
+    },
+    {
+      "stage": "M5",
+      "name": "snowboard_bindings__proxy_binding_1"
+    },
+    {
+      "stage": "M5",
+      "name": "snowboard_bindings__proxy_binding_2"
+    },
+    {
+      "stage": "M5",
+      "name": "acoustic_panels__proxy_panel_1"
+    },
+    {
+      "stage": "M5",
+      "name": "acoustic_panels__proxy_panel_2"
+    },
+    {
+      "stage": "M5",
+      "name": "acoustic_panels__proxy_panel_3"
+    },
+    {
+      "stage": "M5",
+      "name": "fix_wall_triangles__proxy_light_1"
+    },
+    {
+      "stage": "M5",
+      "name": "fix_wall_triangles__proxy_light_2"
+    },
+    {
+      "stage": "M5",
+      "name": "fix_wall_triangles__proxy_light_3"
+    },
+    {
+      "stage": "M5",
+      "name": "fix_wall_triangles__proxy_light_4"
+    },
+    {
+      "stage": "M5",
+      "name": "fix_wall_triangles__proxy_light_5"
+    }
+  ],
+  "missingAssetIds": [
+    "music_cables",
+    "wall_cable_run"
+  ],
+  "zeroDrawAssetIds": [
+    "arch_cornice",
+    "arch_beams",
+    "arch_window",
+    "arch_switches",
+    "mon_cables",
+    "under_desk_power",
+    "mouse_native",
+    "notebook_pen",
+    "ctl_sustain_pedal",
+    "drum_hihat_pedal",
+    "drum_throne",
+    "music_cables",
+    "shelf_plant",
+    "shelf_speaker",
+    "snowboard_bindings",
+    "wall_cable_run"
+  ],
+  "embeddedImageBytes": 325195,
+  "nodeCompression": {
+    "runtime": "v24.21.0",
+    "zlib": "1.3.2.1-motley-8002e91",
+    "method": "node:zlib gzipSync and brotliCompressSync defaults; candidate only",
+    "rawBytes": 1228272,
+    "gzipBytes": 586950,
+    "brotliBytes": 483718
+  },
+  "captureSamples": [
+    {
+      "filename": "scene-home-1440x900-f58.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "settled": {
+        "calls": 83,
+        "triangles": 18702
+      },
+      "initial": {
+        "calls": 131,
+        "triangles": 31382
+      }
+    },
+    {
+      "filename": "scene-music-1440x900-f58.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "settled": {
+        "calls": 98,
+        "triangles": 21274
+      },
+      "initial": {
+        "calls": 131,
+        "triangles": 31382
+      }
+    },
+    {
+      "filename": "scene-left-up-1440x900-f58.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "settled": {
+        "calls": 51,
+        "triangles": 14606
+      },
+      "initial": {
+        "calls": 131,
+        "triangles": 31382
+      }
+    },
+    {
+      "filename": "scene-left-down-1440x900-f58.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "settled": {
+        "calls": 61,
+        "triangles": 18198
+      },
+      "initial": {
+        "calls": 131,
+        "triangles": 31382
+      }
+    },
+    {
+      "filename": "scene-right-up-1440x900-f58.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "settled": {
+        "calls": 77,
+        "triangles": 11910
+      },
+      "initial": {
+        "calls": 131,
+        "triangles": 31382
+      }
+    },
+    {
+      "filename": "scene-right-down-1440x900-f58.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "settled": {
+        "calls": 87,
+        "triangles": 14678
+      },
+      "initial": {
+        "calls": 131,
+        "triangles": 31382
+      }
+    },
+    {
+      "filename": "scene-mid-left-1440x900-f58.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "settled": {
+        "calls": 75,
+        "triangles": 18414
+      },
+      "initial": {
+        "calls": 131,
+        "triangles": 31382
+      }
+    },
+    {
+      "filename": "scene-mid-right-1440x900-f58.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "settled": {
+        "calls": 101,
+        "triangles": 21876
+      },
+      "initial": {
+        "calls": 131,
+        "triangles": 31382
+      }
+    },
+    {
+      "filename": "scene-home-1024x768-f58.png",
+      "viewport": [
+        1024,
+        768
+      ],
+      "settled": {
+        "calls": 76,
+        "triangles": 18522
+      },
+      "initial": {
+        "calls": 124,
+        "triangles": 31202
+      }
+    },
+    {
+      "filename": "scene-home-390x844-f74.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "settled": {
+        "calls": 53,
+        "triangles": 18102
+      },
+      "initial": {
+        "calls": 101,
+        "triangles": 30782
+      }
+    },
+    {
+      "filename": "scene-music-390x844-f74.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "settled": {
+        "calls": 77,
+        "triangles": 9054
+      },
+      "initial": {
+        "calls": 101,
+        "triangles": 30782
+      }
+    },
+    {
+      "filename": "scene-left-up-390x844-f74.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "settled": {
+        "calls": 46,
+        "triangles": 14478
+      },
+      "initial": {
+        "calls": 101,
+        "triangles": 30782
+      }
+    },
+    {
+      "filename": "scene-left-down-390x844-f74.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "settled": {
+        "calls": 47,
+        "triangles": 14586
+      },
+      "initial": {
+        "calls": 101,
+        "triangles": 30782
+      }
+    },
+    {
+      "filename": "scene-right-up-390x844-f74.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "settled": {
+        "calls": 65,
+        "triangles": 6150
+      },
+      "initial": {
+        "calls": 101,
+        "triangles": 30782
+      }
+    },
+    {
+      "filename": "scene-right-down-390x844-f74.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "settled": {
+        "calls": 67,
+        "triangles": 8674
+      },
+      "initial": {
+        "calls": 101,
+        "triangles": 30782
+      }
+    },
+    {
+      "filename": "scene-home-320x844-f74.png",
+      "viewport": [
+        320,
+        844
+      ],
+      "settled": {
+        "calls": 48,
+        "triangles": 15614
+      },
+      "initial": {
+        "calls": 96,
+        "triangles": 28294
+      }
+    },
+    {
+      "filename": "scene-music-320x844-f74.png",
+      "viewport": [
+        320,
+        844
+      ],
+      "settled": {
+        "calls": 75,
+        "triangles": 8982
+      },
+      "initial": {
+        "calls": 96,
+        "triangles": 28294
+      }
+    },
+    {
+      "filename": "scene-left-up-320x844-f74.png",
+      "viewport": [
+        320,
+        844
+      ],
+      "settled": {
+        "calls": 46,
+        "triangles": 14478
+      },
+      "initial": {
+        "calls": 96,
+        "triangles": 28294
+      }
+    },
+    {
+      "filename": "scene-left-down-320x844-f74.png",
+      "viewport": [
+        320,
+        844
+      ],
+      "settled": {
+        "calls": 46,
+        "triangles": 14584
+      },
+      "initial": {
+        "calls": 96,
+        "triangles": 28294
+      }
+    },
+    {
+      "filename": "scene-right-up-320x844-f74.png",
+      "viewport": [
+        320,
+        844
+      ],
+      "settled": {
+        "calls": 60,
+        "triangles": 5766
+      },
+      "initial": {
+        "calls": 96,
+        "triangles": 28294
+      }
+    },
+    {
+      "filename": "scene-right-down-320x844-f74.png",
+      "viewport": [
+        320,
+        844
+      ],
+      "settled": {
+        "calls": 67,
+        "triangles": 8674
+      },
+      "initial": {
+        "calls": 96,
+        "triangles": 28294
+      }
+    },
+    {
+      "filename": "scene-home-previous-yaw-320x844-f74.png",
+      "viewport": [
+        320,
+        844
+      ],
+      "settled": {
+        "calls": 48,
+        "triangles": 15614
+      },
+      "initial": {
+        "calls": 96,
+        "triangles": 28294
+      }
+    },
+    {
+      "filename": "scene-home-320x568-f74.png",
+      "viewport": [
+        320,
+        568
+      ],
+      "settled": {
+        "calls": 58,
+        "triangles": 18162
+      },
+      "initial": {
+        "calls": 106,
+        "triangles": 30842
+      }
+    }
+  ],
+  "currentAllVisibleBound": {
+    "calls": 169,
+    "triangles": 37440
+  },
+  "retainedM1M2Bound": {
+    "calls": 77,
+    "triangles": 35376
+  },
+  "futureFinalStructure": "unknown; no numeric final forecast supplied"
+}

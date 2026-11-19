@@ -1,0 +1,69 @@
+﻿{
+    "capturedUtc":  "2026-11-15T00:03:13.3238453Z",
+    "taskId":  "task_c55e30985f95",
+    "dispatchId":  "ctx_3aa540fbbb15",
+    "browserBindingsMatch":  true,
+    "historicalProbeAndReportUnchanged":  true,
+    "files":  [
+                  {
+                      "file":  "components/studio/StudioExperience.tsx",
+                      "sha256":  "4e8628d8b91c840a494174d559e30b7967bc062f773aa37d74f53f3094891e16"
+                  },
+                  {
+                      "file":  "app/studio/panel-navigation.ts",
+                      "sha256":  "e67abf654d6fd286edc536ec3f29290ca5a6f2e67daeb91ca596ae3fd976e347"
+                  },
+                  {
+                      "file":  "components/studio/ProjectEvidence.tsx",
+                      "sha256":  "7242983f72892b81591848fbb5d81d39d61a4e6ae8f9ee3a7333e0a4b54b4e91"
+                  },
+                  {
+                      "file":  "app/studio/panel-scroll.ts",
+                      "sha256":  "ef13a9d34aec31eb245232ada5675bc1cf010dd41bdd352ecbefc72fe0daa188"
+                  },
+                  {
+                      "file":  "app/studio/StudioShell.tsx",
+                      "sha256":  "bcae10c0b983b1295b4d13e4ff1777c25fe9af224ebf2aee865c146fdb62eca8"
+                  },
+                  {
+                      "file":  "app/studio/page.tsx",
+                      "sha256":  "f811dc5eca892e911650eb61cf3f859fe9ceba2b725cd95d3ac39a546f4d7314"
+                  },
+                  {
+                      "file":  "app/studio/studio.module.css",
+                      "sha256":  "04b55c973d556b8a4c2fe396f3a7f4ccbb422a3e9577e55d373cdc608582691a"
+                  },
+                  {
+                      "file":  "design/studio-v2/interface/verify-behavior.mjs",
+                      "sha256":  "0a213d7f9bca63594b60ee3d39a83eb7d37ef76829ec8f3f7655ff2c973c4bd9"
+                  },
+                  {
+                      "file":  "design/studio-v2/interface/verify-lint.mjs",
+                      "sha256":  "0ad5d73cd235946f4cadcfdafce52fc0ae087e2562e9e7466520cfb53991f636"
+                  },
+                  {
+                      "file":  "design/studio-v2/interface/behavior-performer.md",
+                      "sha256":  "7e95e2d61fe3c9212aa38bece4b121bdda5ece8050858c642bfe0a7b1d8bf6e9"
+                  },
+                  {
+                      "file":  "design/studio-v2/interface/technical-critique.md",
+                      "sha256":  "2d24a613bcb24cc5eba9a6b85b5f76cf2ec682c39c825bcf9d5cd36ec17698a0"
+                  },
+                  {
+                      "file":  "design/studio-v2/interface/technical-critique-probes.mjs",
+                      "sha256":  "ee925fd9eca48078bda841a2fa884c3e7210d4ba1b53cbff7e5cdd600b996f2c"
+                  },
+                  {
+                      "file":  "design/studio-v2/interface/technical-critique-hashes.json",
+                      "sha256":  "dbcd273423545037bfbbfa959fb4f8e20b424590cdcf5b8882cf7d6dead05d86"
+                  },
+                  {
+                      "file":  "design/studio-v2/interface/technical-critique-post-repair-probes.mjs",
+                      "sha256":  "9edc520ad9870914c85203aa8b64b318b371f2a709dc50cb5125839695d71292"
+                  },
+                  {
+                      "file":  ".omx/context/immersive-v2-interface-browser-repair.json",
+                      "sha256":  "018b241e5c57fb3c05a864fcc6accb907c8529d131e638d1bded5951ecbdebdb"
+                  }
+              ]
+}

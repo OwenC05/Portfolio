@@ -1,0 +1,171 @@
+{
+  "capturedAtUtc": "2026-11-14T20:24:20.067Z",
+  "root": "C:\\Users\\Owenc\\orca\\Portfolio",
+  "stage": "after",
+  "method": "Independent SHA-256 of exact file bytes; globals whole-file hash is identity only, review limited to lines 14-19.",
+  "sources": [
+    {
+      "file": "app/globals.css",
+      "bytes": 1701,
+      "sha256": "38A5427299238E2BE46AD5062E798EF3C68D13DFA884A1272BFDB2C55946F13F",
+      "inventorySha256": "38A5427299238E2BE46AD5062E798EF3C68D13DFA884A1272BFDB2C55946F13F",
+      "matchesInventory": true
+    },
+    {
+      "file": "app/studio/page.tsx",
+      "bytes": 3316,
+      "sha256": "7A3E95A799A27041229ED70F496607B376D9097BB5A0D0194C186F0DD1A66152",
+      "inventorySha256": "7A3E95A799A27041229ED70F496607B376D9097BB5A0D0194C186F0DD1A66152",
+      "matchesInventory": true
+    },
+    {
+      "file": "app/studio/studio.module.css",
+      "bytes": 13917,
+      "sha256": "30BA6D8C4AC62F3F7A9120D41D7774B531E53891A504634ED91E2EF62DF052AC",
+      "inventorySha256": "30BA6D8C4AC62F3F7A9120D41D7774B531E53891A504634ED91E2EF62DF052AC",
+      "matchesInventory": true
+    },
+    {
+      "file": "components/studio/ProjectEvidence.tsx",
+      "bytes": 2268,
+      "sha256": "078C749B8BAD50D88DCD47EC29CD9CF97A5C3621B3E98D21FAD455B3420905C5",
+      "inventorySha256": "078C749B8BAD50D88DCD47EC29CD9CF97A5C3621B3E98D21FAD455B3420905C5",
+      "matchesInventory": true
+    },
+    {
+      "file": "components/studio/StudioExperience.tsx",
+      "bytes": 7787,
+      "sha256": "75B57B83F0D8F93EDFFBDDC5F2CB26457F227F6D7A9643A8167487C62C2CB3E3",
+      "inventorySha256": "75B57B83F0D8F93EDFFBDDC5F2CB26457F227F6D7A9643A8167487C62C2CB3E3",
+      "matchesInventory": true
+    },
+    {
+      "file": "components/studio/StudioScene.tsx",
+      "bytes": 1051,
+      "sha256": "29586D8A880AD079627E9E8D670F46A60C4614B221B17BBCEFEB54112327E5AC",
+      "inventorySha256": "29586D8A880AD079627E9E8D670F46A60C4614B221B17BBCEFEB54112327E5AC",
+      "matchesInventory": true
+    },
+    {
+      "file": "components/studio/scene/build-studio.ts",
+      "bytes": 18373,
+      "sha256": "DBAF86527A207C09DB45F19125316FD8C929B97CFE16B14E52CC25B6D386DDEE",
+      "inventorySha256": "DBAF86527A207C09DB45F19125316FD8C929B97CFE16B14E52CC25B6D386DDEE",
+      "matchesInventory": true
+    },
+    {
+      "file": "components/studio/scene/controller.ts",
+      "bytes": 13418,
+      "sha256": "BD46EDE4D8CD0525AC89A8A491866BBC065554918D663A4830D5DB51FFC9FB63",
+      "inventorySha256": "BD46EDE4D8CD0525AC89A8A491866BBC065554918D663A4830D5DB51FFC9FB63",
+      "matchesInventory": true
+    },
+    {
+      "file": "components/studio/scene/resources.ts",
+      "bytes": 4210,
+      "sha256": "756A26FBA1840696FD7B8F0A24DFA588A50488A55FBC99BEC60CA3C0E14CB509",
+      "inventorySha256": "756A26FBA1840696FD7B8F0A24DFA588A50488A55FBC99BEC60CA3C0E14CB509",
+      "matchesInventory": true
+    },
+    {
+      "file": "components/studio/scene/textures.ts",
+      "bytes": 5059,
+      "sha256": "EF7E5E025D21DEB88350B79A994DFB5AB1D9A1296D57EB0000CFDE813FB2BC84",
+      "inventorySha256": "EF7E5E025D21DEB88350B79A994DFB5AB1D9A1296D57EB0000CFDE813FB2BC84",
+      "matchesInventory": true
+    },
+    {
+      "file": "components/studio/scene/types.ts",
+      "bytes": 361,
+      "sha256": "F5A0A0F6F174124FF6C0ABBFD6C9BEF46E6FB6BCC4900404719B4928C4FEF5C6",
+      "inventorySha256": "F5A0A0F6F174124FF6C0ABBFD6C9BEF46E6FB6BCC4900404719B4928C4FEF5C6",
+      "matchesInventory": true
+    },
+    {
+      "file": "components/studio/scene/verify-controller.mjs",
+      "bytes": 28476,
+      "sha256": "7F9F21EE10458B676D548AFEDCEFFCEF84A21892CE42DE80D6677310EB325A6F",
+      "inventorySha256": "7F9F21EE10458B676D548AFEDCEFFCEF84A21892CE42DE80D6677310EB325A6F",
+      "matchesInventory": true
+    },
+    {
+      "file": "lib/studio-content.ts",
+      "bytes": 8095,
+      "sha256": "36E08B40CFB779F3F05CC17623766F1A2FB7B8F876CAC73AC9B12DB381764662",
+      "inventorySha256": "36E08B40CFB779F3F05CC17623766F1A2FB7B8F876CAC73AC9B12DB381764662",
+      "matchesInventory": true
+    },
+    {
+      "file": "lib/studio-contract.ts",
+      "bytes": 924,
+      "sha256": "7F00624980E4E89ECFF7E90ABF371595FE8A0DDF3CDC0401DB4B679A872A9097",
+      "inventorySha256": "7F00624980E4E89ECFF7E90ABF371595FE8A0DDF3CDC0401DB4B679A872A9097",
+      "matchesInventory": true
+    }
+  ],
+  "missingFiles": [],
+  "globalsAddition": {
+    "startLine": 14,
+    "lineCount": 6,
+    "text": "@media (prefers-reduced-motion: reduce) {\r\n  html {\r\n    scroll-behavior: auto;\r\n  }\r\n}\r\n\r\n",
+    "sha256": "AE9CFD1E017A63A058E98FD3F56CC6A6C3B1421B76A32E989BE29D1AD15DE4A8",
+    "inventorySha256": "AE9CFD1E017A63A058E98FD3F56CC6A6C3B1421B76A32E989BE29D1AD15DE4A8",
+    "matchesInventory": true
+  },
+  "inputs": [
+    {
+      "file": ".omx/specs/studio-v1/common.md",
+      "sha256": "05310063B89DA8E4D002DF0011BB48BDFFC15EED59E862625F94D87BADAA9F56"
+    },
+    {
+      "file": ".omx/specs/studio-v1/cleanup-review.md",
+      "sha256": "CCF6F740D0D0CE4F17190D4A368D2C708E4626769C3FB013FD4B8E0C5B553998"
+    },
+    {
+      "file": ".omx/plans/prd-after-hours-studio-v1.md",
+      "sha256": "7D26366C994AEC8B6C2CEA8A5375275851A112DEF8A1479F0AA589CE55F07189"
+    },
+    {
+      "file": ".omx/plans/test-spec-after-hours-studio-v1.md",
+      "sha256": "3CD888FF3B7FD36B19A820997811139607EEC986C5551A142E9D6163E1678CEF"
+    },
+    {
+      "file": "design/studio-v1/cleanup-coordination/plan.md",
+      "sha256": "91AE6E87D7004A1C08483B00AE098BC4B720033A6E5E053B401FA59B5964351D"
+    },
+    {
+      "file": "design/studio-v1/foundation-report.md",
+      "sha256": "4E7CEF33FC4B83D03E6A9D7F2E3BEB6C48BD70AD6AAC1800DFC8348D2DD6F8FD"
+    },
+    {
+      "file": "design/studio-v1/content-report.md",
+      "sha256": "830BBF9A36573696DFA6335839CF134BFB55856DCEE17EBB9217682787188ADA"
+    },
+    {
+      "file": "design/studio-v1/scene-report.md",
+      "sha256": "FD9BD6D1035CBB99E467FD05DE54CBBEAC2AAB6D3C1CFA8F7F3122D65DC06346"
+    },
+    {
+      "file": "design/studio-v1/interface-report.md",
+      "sha256": "EE757F135228EA7EB8CE1BB6D4A9B5DF54B14A304784BCFF09A4720AA6B150D2"
+    },
+    {
+      "file": "design/studio-v1/interface-coordination/critique-report.md",
+      "sha256": "1BF9E2C7EFBBCB960E2601152538D04F1FE4CD11AD1D3F5DD392BFF5C69DFF9F"
+    },
+    {
+      "file": "design/studio-v1/cleanup-coordination/inventory.md",
+      "sha256": "930D92FDDD172DBE8FEA47D7032B10A37C11D60FCA91D450C60F2427239DCE51"
+    },
+    {
+      "file": "design/studio-v1/cleanup-coordination/inventory-checks.json",
+      "sha256": "E090FFDC441D51BB73219EF75D26564470AD84C4D5818FEAF392EA9CB32DFEF7"
+    },
+    {
+      "file": "design/studio-v1/cleanup-coordination/inventory-hashes.json",
+      "sha256": "1C44C238DF44AE6B43771F5034A362B3F6E860C194D17FE6738CACA6F9428431"
+    }
+  ],
+  "changedSinceCritiqueStarted": [],
+  "inputsChangedSinceCritiqueStarted": []
+}

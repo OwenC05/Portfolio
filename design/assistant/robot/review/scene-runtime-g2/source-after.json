@@ -1,0 +1,331 @@
+{
+  "checkedAt": "2026-11-18T18:29:26.922Z",
+  "sourcePinsSha256": "1e28ce86ee9f1a72b05cdfd8d9598f5c3daea16227d817ec33e0c4ea5dfce28d",
+  "ownedCount": 24,
+  "records": [
+    {
+      "path": "components/studio/StudioScene.tsx",
+      "bytes": 1323,
+      "sha256": "bed95661809ae444829c0daaf30222a84c8c16e6bef721b417f342a5ef4a31b1",
+      "actualBytes": 1323,
+      "actualSha256": "bed95661809ae444829c0daaf30222a84c8c16e6bef721b417f342a5ef4a31b1",
+      "matches": true
+    },
+    {
+      "path": "components/studio/scene/controller.ts",
+      "bytes": 24979,
+      "sha256": "88f24c7ac899c1639ec2596d3545f92dbe845473d901c6d805ca28b33ebb6ffd",
+      "actualBytes": 24979,
+      "actualSha256": "88f24c7ac899c1639ec2596d3545f92dbe845473d901c6d805ca28b33ebb6ffd",
+      "matches": true
+    },
+    {
+      "path": "components/studio/scene/picking.ts",
+      "bytes": 10961,
+      "sha256": "cefc0ca653b44ea4892fe54e82d5676a700741f5e6766cc841453795216fddc9",
+      "actualBytes": 10961,
+      "actualSha256": "cefc0ca653b44ea4892fe54e82d5676a700741f5e6766cc841453795216fddc9",
+      "matches": true
+    },
+    {
+      "path": "components/studio/scene/robot/cards.ts",
+      "bytes": 2138,
+      "sha256": "6c37eb87147aaf4d290dce4e5bbefe46c361c30b86c55fe4f4a7080ee9b45f58",
+      "actualBytes": 2138,
+      "actualSha256": "6c37eb87147aaf4d290dce4e5bbefe46c361c30b86c55fe4f4a7080ee9b45f58",
+      "matches": true
+    },
+    {
+      "path": "components/studio/scene/robot/derive-profile.mjs",
+      "bytes": 2245,
+      "sha256": "3e7ccb2ae6f4ec7f0bb4ddcbfe33f78968484fa480a191a363fbb6fec2542588",
+      "actualBytes": 2245,
+      "actualSha256": "3e7ccb2ae6f4ec7f0bb4ddcbfe33f78968484fa480a191a363fbb6fec2542588",
+      "matches": true
+    },
+    {
+      "path": "components/studio/scene/robot/load-robot.ts",
+      "bytes": 9685,
+      "sha256": "33d2cd75b3e146a76a744023d25d2bc80158336c5f121a40ffc4cd6656829fca",
+      "actualBytes": 9685,
+      "actualSha256": "33d2cd75b3e146a76a744023d25d2bc80158336c5f121a40ffc4cd6656829fca",
+      "matches": true
+    },
+    {
+      "path": "components/studio/scene/robot/presentation.ts",
+      "bytes": 6640,
+      "sha256": "733e0885712fdb23f6103146e74de8f8c9faff389bdeac28524d51601f8847a3",
+      "actualBytes": 6640,
+      "actualSha256": "733e0885712fdb23f6103146e74de8f8c9faff389bdeac28524d51601f8847a3",
+      "matches": true
+    },
+    {
+      "path": "components/studio/scene/robot/resources.ts",
+      "bytes": 1942,
+      "sha256": "375fdf233e6128c613c64aa52ffa762d941b47090af990a20652b6ffae0f687f",
+      "actualBytes": 1942,
+      "actualSha256": "375fdf233e6128c613c64aa52ffa762d941b47090af990a20652b6ffae0f687f",
+      "matches": true
+    },
+    {
+      "path": "components/studio/scene/robot/runtime-profile.json",
+      "bytes": 14212,
+      "sha256": "102cfdd0178f4cb9e301ce2feaeb82df0b9701ab60f9379f8cdaac18e208a447",
+      "actualBytes": 14212,
+      "actualSha256": "102cfdd0178f4cb9e301ce2feaeb82df0b9701ab60f9379f8cdaac18e208a447",
+      "matches": true
+    },
+    {
+      "path": "components/studio/scene/robot/runtime.ts",
+      "bytes": 176,
+      "sha256": "93e8ff8f6d56b518da7b53ded84aae748369def0c54b1277871d44a5791add8a",
+      "actualBytes": 176,
+      "actualSha256": "93e8ff8f6d56b518da7b53ded84aae748369def0c54b1277871d44a5791add8a",
+      "matches": true
+    },
+    {
+      "path": "components/studio/scene/robot/test-support.mjs",
+      "bytes": 2627,
+      "sha256": "58a131bdbbe3a7d07a2a5fea9f44c2405dff68934bb0c7643b576e108542b61b",
+      "actualBytes": 2627,
+      "actualSha256": "58a131bdbbe3a7d07a2a5fea9f44c2405dff68934bb0c7643b576e108542b61b",
+      "matches": true
+    },
+    {
+      "path": "components/studio/scene/robot/types.ts",
+      "bytes": 643,
+      "sha256": "a5c23f38bfae89830545660c2ee30a0b1fd54ad8cf8614042f256127235f37a6",
+      "actualBytes": 643,
+      "actualSha256": "a5c23f38bfae89830545660c2ee30a0b1fd54ad8cf8614042f256127235f37a6",
+      "matches": true
+    },
+    {
+      "path": "components/studio/scene/robot/verify-envelope.mjs",
+      "bytes": 10759,
+      "sha256": "fa76ec7514d3236db1867eac1b5043f2a3f0be319322c1af0f6532bfb308b922",
+      "actualBytes": 10759,
+      "actualSha256": "fa76ec7514d3236db1867eac1b5043f2a3f0be319322c1af0f6532bfb308b922",
+      "matches": true
+    },
+    {
+      "path": "components/studio/scene/robot/verify-robot.mjs",
+      "bytes": 18662,
+      "sha256": "391ead023fda086398cb7bde8a54053030d9a5258f6d8af9f7ea754c1d98930f",
+      "actualBytes": 18662,
+      "actualSha256": "391ead023fda086398cb7bde8a54053030d9a5258f6d8af9f7ea754c1d98930f",
+      "matches": true
+    },
+    {
+      "path": "components/studio/scene/types.ts",
+      "bytes": 1322,
+      "sha256": "4b7aacd6d5dafda407a989a10c00cfa46689fca72df455ad50554527717405d4",
+      "actualBytes": 1322,
+      "actualSha256": "4b7aacd6d5dafda407a989a10c00cfa46689fca72df455ad50554527717405d4",
+      "matches": true
+    },
+    {
+      "path": "components/studio/scene/verify-controller.mjs",
+      "bytes": 90856,
+      "sha256": "0fe3abe45e84747832b1e3a4c2e463acec1ddfeddab6020ab1392424348ed816",
+      "actualBytes": 90856,
+      "actualSha256": "0fe3abe45e84747832b1e3a4c2e463acec1ddfeddab6020ab1392424348ed816",
+      "matches": true
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-implementation/checkpoints.md",
+      "bytes": 2182,
+      "sha256": "0da107d35b9c5c37f740e180a8e701ecdbebc81c06d06e628101b43ecb437544",
+      "actualBytes": 2182,
+      "actualSha256": "0da107d35b9c5c37f740e180a8e701ecdbebc81c06d06e628101b43ecb437544",
+      "matches": true
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-implementation/envelope.json",
+      "bytes": 3149,
+      "sha256": "fe6e0225b585c8fc5be37f27d68d5d2cff4eee324c40d2dbd57e1fa762943184",
+      "actualBytes": 3149,
+      "actualSha256": "fe6e0225b585c8fc5be37f27d68d5d2cff4eee324c40d2dbd57e1fa762943184",
+      "matches": true
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-implementation/envelope.md",
+      "bytes": 5497,
+      "sha256": "33b9c5f71b8972f19bb44d4b19a76d6fdec98f8ae12f22d12a6644a3d25b1f8b",
+      "actualBytes": 5497,
+      "actualSha256": "33b9c5f71b8972f19bb44d4b19a76d6fdec98f8ae12f22d12a6644a3d25b1f8b",
+      "matches": true
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-implementation/handoff.md",
+      "bytes": 7777,
+      "sha256": "15ccc23fbdfebf3dddada3c7cf0b551a7524e15c487c61e297c0aa400e1eded7",
+      "actualBytes": 7777,
+      "actualSha256": "15ccc23fbdfebf3dddada3c7cf0b551a7524e15c487c61e297c0aa400e1eded7",
+      "matches": true
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-implementation/interface.md",
+      "bytes": 1824,
+      "sha256": "1a64deaedd2870dd3649c65a6eef7b2465208928aab704b37132ff9142023a18",
+      "actualBytes": 1824,
+      "actualSha256": "1a64deaedd2870dd3649c65a6eef7b2465208928aab704b37132ff9142023a18",
+      "matches": true
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-implementation/verification.json",
+      "bytes": 2374,
+      "sha256": "068e4316fce88addc5b6fe65277f66987c690d50a390fe043a5a5322dfb68ba7",
+      "actualBytes": 2374,
+      "actualSha256": "068e4316fce88addc5b6fe65277f66987c690d50a390fe043a5a5322dfb68ba7",
+      "matches": true
+    },
+    {
+      "path": "lib/studio-contract.ts",
+      "bytes": 1756,
+      "sha256": "08ba5af18af6c8ed41de7a74cbe6492d6974bd81ad83b7a7aea5c00b83bdd2e8",
+      "actualBytes": 1756,
+      "actualSha256": "08ba5af18af6c8ed41de7a74cbe6492d6974bd81ad83b7a7aea5c00b83bdd2e8",
+      "matches": true
+    },
+    {
+      "path": "public/studio/assistant-apprentice-v03.glb",
+      "bytes": 673144,
+      "sha256": "65f1dea3b1d35a748bdfc2089dea0feed1d054cc8b0eb957645ea2d669578a12",
+      "actualBytes": 673144,
+      "actualSha256": "65f1dea3b1d35a748bdfc2089dea0feed1d054cc8b0eb957645ea2d669578a12",
+      "matches": true
+    },
+    {
+      "path": "lib/assistant/run-state.ts",
+      "bytes": 10480,
+      "sha256": "1b804c6b9e0f528ef197e5a01efd5f39dafe8176f9dadb4a36268c96e69e5df7",
+      "actualBytes": 10480,
+      "actualSha256": "1b804c6b9e0f528ef197e5a01efd5f39dafe8176f9dadb4a36268c96e69e5df7",
+      "matches": true
+    },
+    {
+      "path": "components/assistant/useAssistantRun.ts",
+      "bytes": 1589,
+      "sha256": "b6149c54687f02605f7f5448641f34741482e10527df4ecbd9736e510bad96c7",
+      "actualBytes": 1589,
+      "actualSha256": "b6149c54687f02605f7f5448641f34741482e10527df4ecbd9736e510bad96c7",
+      "matches": true
+    },
+    {
+      "path": "components/studio/scene/view-config.ts",
+      "bytes": 756,
+      "sha256": "1fea7adbcfd730a56920389c8ac4ecf8323c9739fd4882c15f3e134a11f1a450",
+      "actualBytes": 756,
+      "actualSha256": "1fea7adbcfd730a56920389c8ac4ecf8323c9739fd4882c15f3e134a11f1a450",
+      "matches": true
+    },
+    {
+      "path": "components/studio/scene/build-studio.ts",
+      "bytes": 34789,
+      "sha256": "e23588e2702ece52c5b8a2ed25adb2debac366fdf90c66609a5ef4299ffc11ae",
+      "actualBytes": 34789,
+      "actualSha256": "e23588e2702ece52c5b8a2ed25adb2debac366fdf90c66609a5ef4299ffc11ae",
+      "matches": true
+    },
+    {
+      "path": "components/studio/scene/resources.ts",
+      "bytes": 4210,
+      "sha256": "756a26fba1840696fd7b8f0a24dfa588a50488a55fbc99bec60ca3c0e14cb509",
+      "actualBytes": 4210,
+      "actualSha256": "756a26fba1840696fd7b8f0a24dfa588a50488a55fbc99bec60ca3c0e14cb509",
+      "matches": true
+    },
+    {
+      "path": "components/studio/scene/load-pilot.ts",
+      "bytes": 15772,
+      "sha256": "b5cd61c682dd69d2336b10b508b516999e72d73a00edbd6e2cebcf0323d39d11",
+      "actualBytes": 15772,
+      "actualSha256": "b5cd61c682dd69d2336b10b508b516999e72d73a00edbd6e2cebcf0323d39d11",
+      "matches": true
+    },
+    {
+      "path": "design/assistant/robot/review/build-v02/technical/review.md",
+      "bytes": 17432,
+      "sha256": "12511bb72e256abd88e5a0bf9706c6dc5ea379c80c478058486542c7d5b7d80b",
+      "actualBytes": 17432,
+      "actualSha256": "12511bb72e256abd88e5a0bf9706c6dc5ea379c80c478058486542c7d5b7d80b",
+      "matches": true
+    },
+    {
+      "path": "design/assistant/robot/placement-selected-a/placement.md",
+      "bytes": 12540,
+      "sha256": "47ce7f9b46eadf2115b23a352c1b287aea405a1672ffb8948c3e4db7bfb6bc14",
+      "actualBytes": 12540,
+      "actualSha256": "47ce7f9b46eadf2115b23a352c1b287aea405a1672ffb8948c3e4db7bfb6bc14",
+      "matches": true
+    },
+    {
+      "path": "design/assistant/robot/apprentice/ui-and-state-spec.md",
+      "bytes": 19100,
+      "sha256": "819fc53275b5f48cf5973d7d74b7d2d198e7792abe6d608268a07b92dcf7326e",
+      "actualBytes": 19100,
+      "actualSha256": "819fc53275b5f48cf5973d7d74b7d2d198e7792abe6d608268a07b92dcf7326e",
+      "matches": true
+    },
+    {
+      "path": "design/assistant/robot/apprentice/blockout-v02/build_apprentice_blockout_v02.py",
+      "bytes": 31380,
+      "sha256": "2fd5ecdf58dd9d0298eddee2beea5af613189bbe2836dbe87f1b73b26fc6709b",
+      "actualBytes": 31380,
+      "actualSha256": "2fd5ecdf58dd9d0298eddee2beea5af613189bbe2836dbe87f1b73b26fc6709b",
+      "matches": true
+    },
+    {
+      "path": "node_modules/three/examples/jsm/loaders/GLTFLoader.js",
+      "bytes": 119861,
+      "sha256": "532ac726e120039acbcd6cf54328c57acbf7b438176afaa6951257126d11bff1",
+      "actualBytes": 119861,
+      "actualSha256": "532ac726e120039acbcd6cf54328c57acbf7b438176afaa6951257126d11bff1",
+      "matches": true
+    },
+    {
+      "path": "design/assistant/robot/asset-pipeline/selected-a-v01/candidate-001/build-v03/selected-a.glb",
+      "sha256": "65f1dea3b1d35a748bdfc2089dea0feed1d054cc8b0eb957645ea2d669578a12",
+      "bytes": 673144,
+      "actualBytes": 673144,
+      "actualSha256": "65f1dea3b1d35a748bdfc2089dea0feed1d054cc8b0eb957645ea2d669578a12",
+      "matches": true
+    },
+    {
+      "path": "design/assistant/robot/asset-pipeline/selected-a-v01/candidate-001/build-v03/profile.json",
+      "sha256": "f154a64bb9da20e113c4979238ec613c4cf0f75ec8c18dba04b9c6f79a807c80",
+      "bytes": 32666,
+      "actualBytes": 32666,
+      "actualSha256": "f154a64bb9da20e113c4979238ec613c4cf0f75ec8c18dba04b9c6f79a807c80",
+      "matches": true
+    },
+    {
+      "path": "design/assistant/robot/asset-pipeline/selected-a-v01/candidate-001/build-v03/poses.json",
+      "sha256": "6dd7ce35a027352b4f2cffbe673081910837e69d56c9f4ec866e970381c6e96d",
+      "bytes": 86562,
+      "actualBytes": 86562,
+      "actualSha256": "6dd7ce35a027352b4f2cffbe673081910837e69d56c9f4ec866e970381c6e96d",
+      "matches": true
+    },
+    {
+      "path": "design/assistant/robot/asset-pipeline/selected-a-v01/candidate-001/build-v02/validation.json",
+      "sha256": "abb15cbe35a845179e05e5f23db0d58112edea5e2f7c60d730c474140da5bd4c",
+      "bytes": 6276,
+      "actualBytes": 6276,
+      "actualSha256": "abb15cbe35a845179e05e5f23db0d58112edea5e2f7c60d730c474140da5bd4c",
+      "matches": true
+    },
+    {
+      "path": "design/assistant/robot/asset-pipeline/selected-a-v01/candidate-001/build-v02/README.md",
+      "sha256": "05c2686f4ca6e8aba43d4c63a17da31f61a8bdae60fed0c62e0e0fe0330ad3e7",
+      "bytes": 7557,
+      "actualBytes": 7557,
+      "actualSha256": "05c2686f4ca6e8aba43d4c63a17da31f61a8bdae60fed0c62e0e0fe0330ad3e7",
+      "matches": true
+    }
+  ],
+  "excluded": [
+    "components/studio/StudioExperience.tsx",
+    "tests/assistant/studio-experience.test.cjs"
+  ]
+}

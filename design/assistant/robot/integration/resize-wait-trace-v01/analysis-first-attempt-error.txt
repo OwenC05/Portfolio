@@ -1,0 +1,10 @@
+The first offline analysis command exited 1 before writing derived JSON:
+node design/assistant/robot/integration/resize-wait-trace-v01/analyze.mjs
+SyntaxError: Unexpected non-whitespace character after JSON at position 120.
+The final trace event shares its line with the closing array/document characters.
+The private parser was corrected to read one balanced JSON object, respecting quoted strings, and validate the remaining terminator characters.
+Raw trace and browser measurements were not changed or rerun.
+
+The second offline parse also failed closed: the actual final suffix was ],"metadata": rather than only closing punctuation.
+The parser now recognizes that exact suffix and skips the separate document metadata object after completing the traceEvents array.
+These two failures affected only offline analysis, not the single trace or scenario.

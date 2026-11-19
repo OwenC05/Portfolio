@@ -1,0 +1,1810 @@
+{
+  "status": "PASS-independent-parser-loader-and-transform-checks",
+  "assetSha256": "bc1a4d6d968dd53eda3480936959d0ebf292e76652a6bbdd201e15f4cd665270",
+  "nodeVersion": "v24.21.0",
+  "threeRevision": "187",
+  "hashes": [
+    {
+      "path": "build-summary.json",
+      "bytes": 635,
+      "sha256": "213051dc027261b842269b076afb744277b7e30340bac1513cb22daa120d0ed6",
+      "matches": true
+    },
+    {
+      "path": "build_asset.py",
+      "bytes": 30984,
+      "sha256": "2412f0f4bd6498784c96b7d722ca3cb5d4454e7526a4ef5f6c1957b1ede84bc4",
+      "matches": true
+    },
+    {
+      "path": "check_editable.py",
+      "bytes": 1354,
+      "sha256": "9c82e137c1405780e6e354790e533d4b7ea53bdfa50de2951afb40d48e1c6078",
+      "matches": true
+    },
+    {
+      "path": "cleanup-plan.md",
+      "bytes": 599,
+      "sha256": "48c0dda3a2500a49ff98d271f10b785640eea562c94a347825e3d1948d4e509f",
+      "matches": true
+    },
+    {
+      "path": "editable-reexport.glb",
+      "bytes": 673268,
+      "sha256": "bc1a4d6d968dd53eda3480936959d0ebf292e76652a6bbdd201e15f4cd665270",
+      "matches": true
+    },
+    {
+      "path": "editable-validation.json",
+      "bytes": 393,
+      "sha256": "7cf93efda8a7a4a07a29f907bbd2a0367978666de2b8fbbbb26082c871d68396",
+      "matches": true
+    },
+    {
+      "path": "finalize_report.mjs",
+      "bytes": 15362,
+      "sha256": "5e353ab469479b0f7f4d8c4c86021d21db2d056078da31fb2ed5ffbbe5e3c22c",
+      "matches": true
+    },
+    {
+      "path": "five-poses.png",
+      "bytes": 373647,
+      "sha256": "16c08330a246ac92c3f76b799d560cb14229550bd88bc860cfa6faa5233e931a",
+      "matches": true
+    },
+    {
+      "path": "frozen-v01.json",
+      "bytes": 3544,
+      "sha256": "3e241a6108ca9e451441f478f531e9f78d09f506cff29381e840084566477673",
+      "matches": true
+    },
+    {
+      "path": "make_sheets.ps1",
+      "bytes": 1974,
+      "sha256": "8e7b489843212aa94fb636e117741146deb8101d457076304f51eab9f484939a",
+      "matches": true
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 1770,
+      "sha256": "5ab01dc63a952d618877e150729b443ecb4cf9922cd3bdf1df7a985e6f6f7423",
+      "matches": true
+    },
+    {
+      "path": "neutral-contact-sheet.png",
+      "bytes": 266123,
+      "sha256": "bfe323dc4cf873533622110cc6892b37dae8aafee3255a77cfb2d08e2e895e02",
+      "matches": true
+    },
+    {
+      "path": "placement-check.json",
+      "bytes": 1421,
+      "sha256": "522f25f426b800506adaad8c2bf824cd075b6685ce9719bf9aa13e4dbe0ea8a9",
+      "matches": true
+    },
+    {
+      "path": "placement_check.mjs",
+      "bytes": 2158,
+      "sha256": "be060d80e5c6b3220aac2d9a8e3fe525f5432f61340c7d1a05f4a47fb60f0612",
+      "matches": true
+    },
+    {
+      "path": "poses.json",
+      "bytes": 86562,
+      "sha256": "6dd7ce35a027352b4f2cffbe673081910837e69d56c9f4ec866e970381c6e96d",
+      "matches": true
+    },
+    {
+      "path": "prepare_viewer.mjs",
+      "bytes": 2029,
+      "sha256": "224e324a3dc76487c75f3f9aef169e3e2d2a9063396ece85e7a6fbca53e37b52",
+      "matches": true
+    },
+    {
+      "path": "probe-validator.mjs",
+      "bytes": 4345,
+      "sha256": "fd3bbf603b13fcd89c9979f1f86078c923c9380b774ca08fb84dc691c624ac1d",
+      "matches": true
+    },
+    {
+      "path": "profile.json",
+      "bytes": 32679,
+      "sha256": "f5dbf7f2a9e3e57332c62c21e27013d6ce05d11085fac94ec979631e4728e33e",
+      "matches": true
+    },
+    {
+      "path": "projection-calibration.json",
+      "bytes": 2270,
+      "sha256": "7fba0ed8bf16726006cdfaf45eda2dfb12fea1daa6b7b012b3612071304637bf",
+      "matches": true
+    },
+    {
+      "path": "raw-components.json",
+      "bytes": 190662,
+      "sha256": "7512299a6d7ffa73d5c52db90c9a6255a7e937fe61dab9313acb5ab37513c20f",
+      "matches": true
+    },
+    {
+      "path": "README.md",
+      "bytes": 7557,
+      "sha256": "05c2686f4ca6e8aba43d4c63a17da31f61a8bdae60fed0c62e0e0fe0330ad3e7",
+      "matches": true
+    },
+    {
+      "path": "reimport-validation.json",
+      "bytes": 12023,
+      "sha256": "00f04fcbbf22b94f48daf91f91d3fb59bd0c8f831acfa822a7b483b34e3b284a",
+      "matches": true
+    },
+    {
+      "path": "reimport_validate.py",
+      "bytes": 9603,
+      "sha256": "7e09df3ad6e6212833efadc4d5fb3c101eed8d42f81e2353f05b1d3512a3a10f",
+      "matches": true
+    },
+    {
+      "path": "renders/isolated-mobile-fov64-at-2m.png",
+      "bytes": 152739,
+      "sha256": "5ba53ded5da0f4f7e3e7017cf7e93e636be37a1c0b548d7fc9fa938379872439",
+      "matches": true
+    },
+    {
+      "path": "renders/neutral-back.png",
+      "bytes": 465058,
+      "sha256": "53d40c281d4409162998899a1219c9ccff671ff8573ad04ba4a58fa692660468",
+      "matches": true
+    },
+    {
+      "path": "renders/neutral-front.png",
+      "bytes": 504468,
+      "sha256": "55d3188e02af93f31448f00091c2f32d816845b5541bc5fd6a5397120e874338",
+      "matches": true
+    },
+    {
+      "path": "renders/neutral-side.png",
+      "bytes": 459600,
+      "sha256": "183ca6bc0e568a38a604fa9dcd003b9ac8c27be39062853c01be873d41ab1b27",
+      "matches": true
+    },
+    {
+      "path": "renders/neutral-three-quarter.png",
+      "bytes": 508692,
+      "sha256": "5d1a595d4a3e27f2a6a2353552e4ce75a0b1948e2bba7d7e37a8c6019508f1ca",
+      "matches": true
+    },
+    {
+      "path": "renders/pose-attention.png",
+      "bytes": 512924,
+      "sha256": "7fa669f3e1e571015962b3899780081ed3a14773afca45c29235f722b5b70b26",
+      "matches": true
+    },
+    {
+      "path": "renders/pose-dismissal.png",
+      "bytes": 506238,
+      "sha256": "da50c523ee3fc0ca1ddebfe1c5909264fd6144a50cfafd7aabf2450fc41a7fd0",
+      "matches": true
+    },
+    {
+      "path": "renders/pose-neutral.png",
+      "bytes": 510532,
+      "sha256": "653b354b27bd1b047b48df67c44375545d80126c12a835586b4a19f9eef5d31a",
+      "matches": true
+    },
+    {
+      "path": "renders/pose-no-match.png",
+      "bytes": 517665,
+      "sha256": "3e5ce0204564e05db4c00f73f8a2513d01bf6b3a261b8344e0d5cf27b70f4afa",
+      "matches": true
+    },
+    {
+      "path": "renders/pose-sources.png",
+      "bytes": 523323,
+      "sha256": "5260e101c833fbcaa20c0d34965649be184b9fbcb2fd5c4b2b8bf1c926358d84",
+      "matches": true
+    },
+    {
+      "path": "renders/reimport-front.png",
+      "bytes": 504261,
+      "sha256": "3a6113f8d52e6d1404a91cb3ccc93da768e1f07a473ab18e202dfbb6aa0771fc",
+      "matches": true
+    },
+    {
+      "path": "retained-mesh.json",
+      "bytes": 2185,
+      "sha256": "0df0a802dafc81ce45425b4877bbacd5246725ccb7dbee509b3a2931193568a6",
+      "matches": true
+    },
+    {
+      "path": "review-response.md",
+      "bytes": 2934,
+      "sha256": "77fd84168c985f051b7bd46cdd88487b6f91a4a6d34124b04593559224dc7e1d",
+      "matches": true
+    },
+    {
+      "path": "selected-a.blend",
+      "bytes": 572151,
+      "sha256": "80704c8f2989683dffa59f9616b1ef146eab944f7d05ae0e0bf55e1964bc508e",
+      "matches": true
+    },
+    {
+      "path": "selected-a.glb",
+      "bytes": 673268,
+      "sha256": "bc1a4d6d968dd53eda3480936959d0ebf292e76652a6bbdd201e15f4cd665270",
+      "matches": true
+    },
+    {
+      "path": "validate_asset.mjs",
+      "bytes": 11497,
+      "sha256": "dc1231aa8c824a184582a69fd6b7d7603c2de979ff5e05e6421a3e2ace5ea0ad",
+      "matches": true
+    },
+    {
+      "path": "validate_contract.mjs",
+      "bytes": 10053,
+      "sha256": "b65ea4dbf9dcd034791b53203d41c98de5d94abaccffef0fb0aca3e4b13b3a87",
+      "matches": true
+    },
+    {
+      "path": "validation.json",
+      "bytes": 6276,
+      "sha256": "abb15cbe35a845179e05e5f23db0d58112edea5e2f7c60d730c474140da5bd4c",
+      "matches": true
+    },
+    {
+      "path": "validator-copy/build-summary.json",
+      "bytes": 635,
+      "sha256": "213051dc027261b842269b076afb744277b7e30340bac1513cb22daa120d0ed6",
+      "matches": true
+    },
+    {
+      "path": "validator-copy/build_asset.py",
+      "bytes": 30984,
+      "sha256": "2412f0f4bd6498784c96b7d722ca3cb5d4454e7526a4ef5f6c1957b1ede84bc4",
+      "matches": true
+    },
+    {
+      "path": "validator-copy/manifest.json",
+      "bytes": 1770,
+      "sha256": "5ab01dc63a952d618877e150729b443ecb4cf9922cd3bdf1df7a985e6f6f7423",
+      "matches": true
+    },
+    {
+      "path": "validator-copy/poses.json",
+      "bytes": 86562,
+      "sha256": "6dd7ce35a027352b4f2cffbe673081910837e69d56c9f4ec866e970381c6e96d",
+      "matches": true
+    },
+    {
+      "path": "validator-copy/profile.json",
+      "bytes": 32679,
+      "sha256": "f5dbf7f2a9e3e57332c62c21e27013d6ce05d11085fac94ec979631e4728e33e",
+      "matches": true
+    },
+    {
+      "path": "validator-copy/selected-a.blend",
+      "bytes": 572151,
+      "sha256": "80704c8f2989683dffa59f9616b1ef146eab944f7d05ae0e0bf55e1964bc508e",
+      "matches": true
+    },
+    {
+      "path": "validator-copy/selected-a.glb",
+      "bytes": 673268,
+      "sha256": "bc1a4d6d968dd53eda3480936959d0ebf292e76652a6bbdd201e15f4cd665270",
+      "matches": true
+    },
+    {
+      "path": "validator-copy/validate_asset.mjs",
+      "bytes": 11497,
+      "sha256": "dc1231aa8c824a184582a69fd6b7d7603c2de979ff5e05e6421a3e2ace5ea0ad",
+      "matches": true
+    },
+    {
+      "path": "validator-copy/validate_contract.mjs",
+      "bytes": 10053,
+      "sha256": "b65ea4dbf9dcd034791b53203d41c98de5d94abaccffef0fb0aca3e4b13b3a87",
+      "matches": true
+    },
+    {
+      "path": "validator-copy/validation.json",
+      "bytes": 6276,
+      "sha256": "b88ef58e6c199482ff1538c81e912f0a48e4d34b3c451064e2714f25c3d56f63",
+      "matches": true
+    },
+    {
+      "path": "validator-probes.json",
+      "bytes": 13796,
+      "sha256": "b626a5fc4753b982c16514e8a099f1d6e82d52fbdd1899c351156ef8d17700e4",
+      "matches": true
+    },
+    {
+      "path": "viewer/build-studio.js",
+      "bytes": 35797,
+      "sha256": "5f73bc680c191ec15ac451e8e5bafe1c97d397eaa94bc2adb0fec5e26192cd81",
+      "matches": true
+    },
+    {
+      "path": "viewer/index.html",
+      "bytes": 5722,
+      "sha256": "62c85cc584c301ba5faa44f8c823c4ee26762da91ea4cb1beb423fb2410d6e4e",
+      "matches": true
+    },
+    {
+      "path": "viewer/lease-release.json",
+      "bytes": 600,
+      "sha256": "607e8644b8eb8fc762de609b599075f5b5a17dfbd05433a126069e43cb05ed2a",
+      "matches": true
+    },
+    {
+      "path": "viewer/lease.json",
+      "bytes": 359,
+      "sha256": "1617133e775210292979283c64e86641933096288a930489a315a54e8b800da0",
+      "matches": true
+    },
+    {
+      "path": "viewer/pilot-profile.json",
+      "bytes": 1214,
+      "sha256": "02a9b364ed42127988747660ac61d6efca8bc3af9f151a0e41eb0d50bc0baa08",
+      "matches": true
+    },
+    {
+      "path": "viewer/pixel-samples.json",
+      "bytes": 1730,
+      "sha256": "fd0db0559bf1f91ecd4cc329f21b0edfb749a19a39acb3e2e1f1b67e655e0156",
+      "matches": true
+    },
+    {
+      "path": "viewer/resources.js",
+      "bytes": 4115,
+      "sha256": "37a112aec7b261a36be2b25374b1225db7b354b7e1e16120a80dc2a91b8e409b",
+      "matches": true
+    },
+    {
+      "path": "viewer/source-receipt.json",
+      "bytes": 1817,
+      "sha256": "405cf30900984dbffc7cd0a1c2e3828e72de366819641013236da7e69b6c6e16",
+      "matches": true
+    },
+    {
+      "path": "viewer/textures.js",
+      "bytes": 12388,
+      "sha256": "988126e77cacfbd6260a2a84b66383c6186324a2589d5829569d24f9d1296126",
+      "matches": true
+    },
+    {
+      "path": "viewer/webgl-attention-quarter.png",
+      "bytes": 310533,
+      "sha256": "87a04c0e52dcee211c0c8db313432d859aa66d0dca0ba9ee34502f0755dc64a4",
+      "matches": true
+    },
+    {
+      "path": "viewer/webgl-dismissal-face.png",
+      "bytes": 303151,
+      "sha256": "b41756e3abb99746d80175f37bf6d88b5f16dff014519e73ea07762283223bd1",
+      "matches": true
+    },
+    {
+      "path": "viewer/webgl-evidence.json",
+      "bytes": 15742,
+      "sha256": "30e6ea6ffd4f2d5da92e876d015c5146efcfe438c3d76ede34084c50e348253e",
+      "matches": true
+    },
+    {
+      "path": "viewer/webgl-neutral-face.png",
+      "bytes": 305940,
+      "sha256": "c299855900d46629afae076ee044c44a16c8ae736092db9e56a02f43fd3af56c",
+      "matches": true
+    },
+    {
+      "path": "viewer/webgl-neutral-front.png",
+      "bytes": 294621,
+      "sha256": "d7c4c4d5d9f97bf73ed2981064899f4b9db419d2dc26fed4387a533617db67cd",
+      "matches": true
+    },
+    {
+      "path": "viewer/webgl-neutral-quarter.png",
+      "bytes": 308897,
+      "sha256": "a702db43c781543efd3fdd1df22e7e2f9890045fd350b9f4c39e5547bd5bbbf1",
+      "matches": true
+    },
+    {
+      "path": "viewer/webgl-neutral-side.png",
+      "bytes": 343122,
+      "sha256": "395192b38f1c023a18cebba58c1d77981e9a06c9801fd5cdda2b2cc26c222b99",
+      "matches": true
+    },
+    {
+      "path": "viewer/webgl-no-match-quarter.png",
+      "bytes": 310549,
+      "sha256": "c1fddd405b42f9fe3dd86ab8165b12fb70dd99becc7524b936e11717a3bf6d58",
+      "matches": true
+    },
+    {
+      "path": "viewer/webgl-room-desktop-home.png",
+      "bytes": 674179,
+      "sha256": "22a4b9abf97cc65c7544a44103ba24d68936deb5f31794c639dc11cf1b76ecd5",
+      "matches": true
+    },
+    {
+      "path": "viewer/webgl-sources-quarter.png",
+      "bytes": 313113,
+      "sha256": "3837e67ab7232f2530d8e2d3ccabc13b3f0c9a7e224e9f24db4337322cb56a1e",
+      "matches": true
+    },
+    {
+      "path": "viewer-server.mjs",
+      "bytes": 2168,
+      "sha256": "75c6752c3d2f1171778d61283b58f1bc6715c2ce5b542397d049811638e04165",
+      "matches": true
+    },
+    {
+      "path": "..\\raw\\model.glb",
+      "bytes": 151996,
+      "sha256": "412c0c213e0c6adc6baa80fa0686b6cbd9a1d259348bb96c571ef28b2f59bec7",
+      "matches": true
+    },
+    {
+      "path": "..\\cleanup-v01\\selected-a-cleanup-start.blend",
+      "bytes": 265404,
+      "sha256": "1506ea45bd007cfd6855770348969fb36ab379a26a9e1de9690dbd78c4f586b1",
+      "matches": true
+    },
+    {
+      "path": "..\\cleanup-v01\\raw-inspection.json",
+      "bytes": 804,
+      "sha256": "a56827cd61b980e149f28cbc079a35642fa6d5ff7945e0980a1bd547759c81ba",
+      "matches": true
+    },
+    {
+      "path": "..\\production-receipt.json",
+      "bytes": 1236,
+      "sha256": "6e9a50de02f91c3a90e894af5c3f69cf2f094e90af9a82009b3963339218a277",
+      "matches": true
+    },
+    {
+      "path": "..\\..\\preflight.md",
+      "bytes": 10346,
+      "sha256": "3a95dd0155d4afc849c2f9ebcf3f6dd8df8eb005005505d155ccab2da83a7746",
+      "matches": true
+    },
+    {
+      "path": "..\\..\\profile.example.json",
+      "bytes": 14242,
+      "sha256": "f2309a8229580d12939f404aa3d066199689099b767c613769329b498fb208a7",
+      "matches": true
+    },
+    {
+      "path": "..\\..\\..\\..\\selected-a-build-decisions.md",
+      "bytes": 3831,
+      "sha256": "face0b2be9557a6f55d3a2106a7a2ebf5a0617b14701c5d3e7de9c9408e27a11",
+      "matches": true
+    },
+    {
+      "path": "..\\..\\..\\..\\review\\selected-a-v01\\review.md",
+      "bytes": 10156,
+      "sha256": "491c25cfc863e3e27a718b4e4971916fcfa01d6204aa9a615d0b7934e3ed5b77",
+      "matches": true
+    },
+    {
+      "path": "..\\..\\..\\..\\higgsfield-concepts\\selected-a-v01\\outputs\\02-front.png",
+      "bytes": 4037510,
+      "sha256": "9b94d861e18d5c95f439847e30a81aa7a036110f0105585a8914126bfc9c8cc7",
+      "matches": true
+    },
+    {
+      "path": "..\\..\\..\\..\\higgsfield-concepts\\selected-a-v01\\outputs\\03-side.png",
+      "bytes": 3957524,
+      "sha256": "d33e551a1018d70e155ec2dba413ee296050918f20c7b440df550e3f367864bd",
+      "matches": true
+    },
+    {
+      "path": "..\\..\\..\\..\\review\\build-v01\\visual\\review.md",
+      "bytes": 13774,
+      "sha256": "9a2248c880cd407f6b57576a994733664b8f7502359bb7387c52497ae7b3ce5c",
+      "matches": true
+    },
+    {
+      "path": "..\\..\\..\\..\\review\\build-v01\\visual\\evidence\\face-reference-vs-build-vs-side.png",
+      "bytes": 747333,
+      "sha256": "1b16f75f6c541932fb3bc4f73e7c79df6aef99f0ce6a7135a80f7b37f912b73d",
+      "matches": true
+    },
+    {
+      "path": "..\\..\\..\\..\\review\\build-v01\\visual\\evidence\\sources-tray-closeup.png",
+      "bytes": 232248,
+      "sha256": "bf19100578154351a2c0bbdf5c07ea8e76788f39e5afb346ffbd1ce8789b9479",
+      "matches": true
+    },
+    {
+      "path": "..\\..\\..\\..\\review\\build-v01\\technical\\review.md",
+      "bytes": 19871,
+      "sha256": "961dd9a84def15a9a0ea9b83030f68f4ffde73717114c08e145acdd4bc8165b2",
+      "matches": true
+    },
+    {
+      "path": "..\\..\\..\\..\\review\\build-v01\\technical\\probe-validator.mjs",
+      "bytes": 4364,
+      "sha256": "2e88db09e692f50d973b3ec4d21794479ca64da79ea9e298fab1593ca336682e",
+      "matches": true
+    },
+    {
+      "path": "..\\..\\..\\..\\placement-selected-a\\coordinator-decisions.md",
+      "bytes": 3327,
+      "sha256": "ed8a585d7abf10717ca91be39a178b11eee06f3d08d2573ca43484a6a376ba46",
+      "matches": true
+    },
+    {
+      "path": "..\\..\\..\\..\\placement-selected-a\\placement.md",
+      "bytes": 12540,
+      "sha256": "47ce7f9b46eadf2115b23a352c1b287aea405a1672ffb8948c3e4db7bfb6bc14",
+      "matches": true
+    }
+  ],
+  "counts": {
+    "nodes": 22,
+    "meshes": 21,
+    "primitives": 21,
+    "uniqueGeometries": 21,
+    "uniqueMaterials": 7,
+    "vertexRecords": 19131,
+    "triangles": 37676,
+    "degenerate": 0,
+    "maxNormalError": 1.517521723837234e-7
+  },
+  "compression": {
+    "raw": 673268,
+    "gzip9": 483001,
+    "brotli11": 335697
+  },
+  "absent": {
+    "animations": 0,
+    "skins": 0,
+    "cameras": 0,
+    "images": 0,
+    "textures": 0
+  },
+  "extensionsUsed": [
+    "KHR_materials_emissive_strength"
+  ],
+  "nodes": [
+    {
+      "name": "APA_body_cap",
+      "parent": "APA_body",
+      "mesh": 0,
+      "moving": false,
+      "trs": {
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "extras": {
+        "semanticBinding": "APA_body_cap",
+        "movingBinding": false,
+        "geometryOrigin": "Blender cap, no recess",
+        "castShadow": false,
+        "receiveShadow": false,
+        "opaquePickingBlocker": true
+      },
+      "vertices": 258,
+      "triangles": 512,
+      "material": "MAT_APA_brass"
+    },
+    {
+      "name": "APA_collar",
+      "parent": "APA_body",
+      "mesh": 1,
+      "moving": false,
+      "trs": {
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "extras": {
+        "semanticBinding": "APA_collar",
+        "movingBinding": false,
+        "geometryOrigin": "Blender collar",
+        "castShadow": false,
+        "receiveShadow": false,
+        "opaquePickingBlocker": true
+      },
+      "vertices": 384,
+      "triangles": 768,
+      "material": "MAT_APA_brass"
+    },
+    {
+      "name": "APA_mitten_L",
+      "parent": "APA_body",
+      "mesh": 2,
+      "moving": true,
+      "trs": {
+        "translation": [
+          0.0795942023396492,
+          -0.04582696408033371,
+          -0.0006029864307492971
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "extras": {
+        "sourceComponent": 3,
+        "sourceRawSha256": "412c0c213e0c6adc6baa80fa0686b6cbd9a1d259348bb96c571ef28b2f59bec7",
+        "semanticBinding": "APA_mitten_L",
+        "movingBinding": true,
+        "geometryOrigin": "Meshy mitten, separated/repaired",
+        "castShadow": false,
+        "receiveShadow": false,
+        "opaquePickingBlocker": true
+      },
+      "vertices": 416,
+      "triangles": 828,
+      "material": "MAT_APA_porcelain"
+    },
+    {
+      "name": "APA_mitten_R",
+      "parent": "APA_body",
+      "mesh": 3,
+      "moving": true,
+      "trs": {
+        "translation": [
+          -0.0765792578458786,
+          -0.04582696408033371,
+          -0.0006029864307492971
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "extras": {
+        "sourceComponent": 4,
+        "sourceRawSha256": "412c0c213e0c6adc6baa80fa0686b6cbd9a1d259348bb96c571ef28b2f59bec7",
+        "semanticBinding": "APA_mitten_R",
+        "movingBinding": true,
+        "geometryOrigin": "Meshy mitten, separated/repaired",
+        "castShadow": false,
+        "receiveShadow": false,
+        "opaquePickingBlocker": true
+      },
+      "vertices": 412,
+      "triangles": 820,
+      "material": "MAT_APA_porcelain"
+    },
+    {
+      "name": "APA_body",
+      "parent": "APA_root",
+      "mesh": 4,
+      "moving": true,
+      "trs": {
+        "translation": [
+          0.0014177522389218211,
+          -0.009273719973862171,
+          0.002750651678070426
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "extras": {
+        "sourceComponent": 1,
+        "sourceRawSha256": "412c0c213e0c6adc6baa80fa0686b6cbd9a1d259348bb96c571ef28b2f59bec7",
+        "semanticBinding": "APA_body",
+        "movingBinding": true,
+        "geometryOrigin": "Meshy body, repaired",
+        "castShadow": false,
+        "receiveShadow": false,
+        "opaquePickingBlocker": true
+      },
+      "vertices": 788,
+      "triangles": 1572,
+      "material": "MAT_APA_porcelain"
+    },
+    {
+      "name": "APA_bookmark_ribbon",
+      "parent": "APA_bookmark_post",
+      "mesh": 5,
+      "moving": false,
+      "trs": {
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "extras": {
+        "semanticBinding": "APA_bookmark_ribbon",
+        "movingBinding": false,
+        "geometryOrigin": "Blender solid-thickness rigid notched ribbon",
+        "castShadow": false,
+        "receiveShadow": false,
+        "opaquePickingBlocker": true
+      },
+      "vertices": 70,
+      "triangles": 136,
+      "material": "MAT_APA_ribbon"
+    },
+    {
+      "name": "APA_bookmark_post",
+      "parent": "APA_head",
+      "mesh": 6,
+      "moving": false,
+      "trs": {
+        "translation": [
+          0.05243154615163803,
+          0.11161136627197266,
+          0.0206263717263937
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "extras": {
+        "semanticBinding": "APA_bookmark_post",
+        "movingBinding": false,
+        "geometryOrigin": "Blender rigid outward-leaning post",
+        "castShadow": false,
+        "receiveShadow": false,
+        "opaquePickingBlocker": true
+      },
+      "vertices": 362,
+      "triangles": 720,
+      "material": "MAT_APA_brass"
+    },
+    {
+      "name": "APA_highlight_L",
+      "parent": "APA_pupil_L",
+      "mesh": 7,
+      "moving": false,
+      "trs": {
+        "translation": [
+          0.004220906645059586,
+          0.006029859185218811,
+          -0.000633537769317627
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "extras": {
+        "semanticBinding": "APA_highlight_L",
+        "movingBinding": false,
+        "geometryOrigin": "Blender highlight",
+        "castShadow": false,
+        "receiveShadow": false,
+        "opaquePickingBlocker": true
+      },
+      "vertices": 146,
+      "triangles": 288,
+      "material": "MAT_APA_highlight"
+    },
+    {
+      "name": "APA_pupil_L",
+      "parent": "APA_eye_L",
+      "mesh": 8,
+      "moving": true,
+      "trs": {
+        "translation": [
+          0,
+          0.005426868796348572,
+          0.0010771676898002625
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "extras": {
+        "semanticBinding": "APA_pupil_L",
+        "movingBinding": true,
+        "geometryOrigin": "Blender pupil",
+        "castShadow": false,
+        "receiveShadow": false,
+        "opaquePickingBlocker": true
+      },
+      "vertices": 322,
+      "triangles": 640,
+      "material": "MAT_APA_ink"
+    },
+    {
+      "name": "APA_eye_L",
+      "parent": "APA_head",
+      "mesh": 9,
+      "moving": false,
+      "trs": {
+        "translation": [
+          0.05065084993839264,
+          -0.008985906839370728,
+          0.11665036529302597
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "extras": {
+        "semanticBinding": "APA_eye_L",
+        "movingBinding": false,
+        "geometryOrigin": "Blender disc",
+        "castShadow": false,
+        "receiveShadow": false,
+        "opaquePickingBlocker": true
+      },
+      "vertices": 1026,
+      "triangles": 2048,
+      "material": "MAT_APA_eye_emit"
+    },
+    {
+      "name": "APA_highlight_R",
+      "parent": "APA_pupil_R",
+      "mesh": 10,
+      "moving": false,
+      "trs": {
+        "translation": [
+          0.004220906645059586,
+          0.006029859185218811,
+          0.0023556575179100037
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "extras": {
+        "semanticBinding": "APA_highlight_R",
+        "movingBinding": false,
+        "geometryOrigin": "Blender highlight",
+        "castShadow": false,
+        "receiveShadow": false,
+        "opaquePickingBlocker": true
+      },
+      "vertices": 146,
+      "triangles": 288,
+      "material": "MAT_APA_highlight"
+    },
+    {
+      "name": "APA_pupil_R",
+      "parent": "APA_eye_R",
+      "mesh": 11,
+      "moving": true,
+      "trs": {
+        "translation": [
+          0,
+          0.005426868796348572,
+          0.0010771676898002625
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "extras": {
+        "semanticBinding": "APA_pupil_R",
+        "movingBinding": true,
+        "geometryOrigin": "Blender pupil",
+        "castShadow": false,
+        "receiveShadow": false,
+        "opaquePickingBlocker": true
+      },
+      "vertices": 322,
+      "triangles": 640,
+      "material": "MAT_APA_ink"
+    },
+    {
+      "name": "APA_eye_R",
+      "parent": "APA_head",
+      "mesh": 12,
+      "moving": false,
+      "trs": {
+        "translation": [
+          -0.05065085366368294,
+          -0.008985906839370728,
+          0.11665036529302597
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "extras": {
+        "semanticBinding": "APA_eye_R",
+        "movingBinding": false,
+        "geometryOrigin": "Blender disc",
+        "castShadow": false,
+        "receiveShadow": false,
+        "opaquePickingBlocker": true
+      },
+      "vertices": 1026,
+      "triangles": 2048,
+      "material": "MAT_APA_eye_emit"
+    },
+    {
+      "name": "APA_face",
+      "parent": "APA_head",
+      "mesh": 13,
+      "moving": false,
+      "trs": {
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "extras": {
+        "semanticBinding": "APA_face",
+        "movingBinding": false,
+        "geometryOrigin": "Blender opaque curved inset",
+        "castShadow": false,
+        "receiveShadow": false,
+        "opaquePickingBlocker": true
+      },
+      "vertices": 4098,
+      "triangles": 8192,
+      "material": "MAT_APA_ink"
+    },
+    {
+      "name": "APA_face_rim",
+      "parent": "APA_head",
+      "mesh": 14,
+      "moving": false,
+      "trs": {
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "extras": {
+        "semanticBinding": "APA_face_rim",
+        "movingBinding": false,
+        "geometryOrigin": "Blender thin rim",
+        "castShadow": false,
+        "receiveShadow": false,
+        "opaquePickingBlocker": true
+      },
+      "vertices": 576,
+      "triangles": 1152,
+      "material": "MAT_APA_brass"
+    },
+    {
+      "name": "APA_lid_lower_L",
+      "parent": "APA_head",
+      "mesh": 15,
+      "moving": true,
+      "trs": {
+        "translation": [
+          0.05065084993839264,
+          0,
+          -0.0024119457229971886
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "extras": {
+        "semanticBinding": "APA_lid_lower_L",
+        "movingBinding": true,
+        "geometryOrigin": "Blender rounded lid",
+        "castShadow": false,
+        "receiveShadow": false,
+        "opaquePickingBlocker": true
+      },
+      "vertices": 1274,
+      "triangles": 2544,
+      "material": "MAT_APA_ink"
+    },
+    {
+      "name": "APA_lid_lower_R",
+      "parent": "APA_head",
+      "mesh": 16,
+      "moving": true,
+      "trs": {
+        "translation": [
+          -0.05065085366368294,
+          0,
+          -0.0024119457229971886
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "extras": {
+        "semanticBinding": "APA_lid_lower_R",
+        "movingBinding": true,
+        "geometryOrigin": "Blender rounded lid",
+        "castShadow": false,
+        "receiveShadow": false,
+        "opaquePickingBlocker": true
+      },
+      "vertices": 1274,
+      "triangles": 2544,
+      "material": "MAT_APA_ink"
+    },
+    {
+      "name": "APA_seam",
+      "parent": "APA_head",
+      "mesh": 17,
+      "moving": false,
+      "trs": {
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "extras": {
+        "semanticBinding": "APA_seam",
+        "movingBinding": false,
+        "geometryOrigin": "Blender coronal ring; plain back",
+        "castShadow": false,
+        "receiveShadow": false,
+        "opaquePickingBlocker": true
+      },
+      "vertices": 768,
+      "triangles": 1536,
+      "material": "MAT_APA_brass"
+    },
+    {
+      "name": "APA_head",
+      "parent": "APA_root",
+      "mesh": 18,
+      "moving": true,
+      "trs": {
+        "translation": [
+          -0.0015689143911004066,
+          0.13357515633106232,
+          -0.0082279397174716
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "extras": {
+        "sourceComponent": 0,
+        "sourceRawSha256": "412c0c213e0c6adc6baa80fa0686b6cbd9a1d259348bb96c571ef28b2f59bec7",
+        "semanticBinding": "APA_head",
+        "movingBinding": true,
+        "geometryOrigin": "Meshy shell, repaired",
+        "castShadow": false,
+        "receiveShadow": false,
+        "opaquePickingBlocker": true
+      },
+      "vertices": 4693,
+      "triangles": 9252,
+      "material": "MAT_APA_porcelain"
+    },
+    {
+      "name": "APA_tray_glow",
+      "parent": "APA_tray",
+      "mesh": 19,
+      "moving": false,
+      "trs": {
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "extras": {
+        "semanticBinding": "APA_tray_glow",
+        "movingBinding": false,
+        "geometryOrigin": "Blender surface, no light or bloom geometry",
+        "castShadow": false,
+        "receiveShadow": false,
+        "opaquePickingBlocker": true
+      },
+      "vertices": 384,
+      "triangles": 380,
+      "material": "MAT_APA_tray_emit"
+    },
+    {
+      "name": "APA_tray",
+      "parent": "APA_root",
+      "mesh": 20,
+      "moving": true,
+      "trs": {
+        "translation": [
+          -0.0015689143911004066,
+          -0.2275547832250595,
+          -0.0008672664989717305
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "extras": {
+        "semanticBinding": "APA_tray",
+        "movingBinding": true,
+        "geometryOrigin": "Blender shallow round dish",
+        "castShadow": false,
+        "receiveShadow": false,
+        "opaquePickingBlocker": true
+      },
+      "vertices": 386,
+      "triangles": 768,
+      "material": "MAT_APA_brass"
+    },
+    {
+      "name": "APA_root",
+      "parent": null,
+      "moving": true,
+      "trs": {
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "extras": {
+        "semanticBinding": "APA_root",
+        "movingBinding": true,
+        "geometryOrigin": "Blender empty",
+        "castShadow": false,
+        "receiveShadow": false,
+        "opaquePickingBlocker": false
+      }
+    }
+  ],
+  "materialSharing": {
+    "MAT_APA_brass": [
+      "APA_body_cap",
+      "APA_collar",
+      "APA_bookmark_post",
+      "APA_face_rim",
+      "APA_seam",
+      "APA_tray"
+    ],
+    "MAT_APA_porcelain": [
+      "APA_mitten_L",
+      "APA_mitten_R",
+      "APA_body",
+      "APA_head"
+    ],
+    "MAT_APA_ribbon": [
+      "APA_bookmark_ribbon"
+    ],
+    "MAT_APA_highlight": [
+      "APA_highlight_L",
+      "APA_highlight_R"
+    ],
+    "MAT_APA_ink": [
+      "APA_pupil_L",
+      "APA_pupil_R",
+      "APA_face",
+      "APA_lid_lower_L",
+      "APA_lid_lower_R"
+    ],
+    "MAT_APA_eye_emit": [
+      "APA_eye_L",
+      "APA_eye_R"
+    ],
+    "MAT_APA_tray_emit": [
+      "APA_tray_glow"
+    ]
+  },
+  "loaderNodes": [
+    {
+      "name": "APA_body",
+      "geometryUuid": "5d268df1-ca3f-4908-9f46-b5a9dfe0c4d1",
+      "materialUuid": "65dab595-2855-40a5-8730-8a5300093676",
+      "material": "MAT_APA_porcelain",
+      "emissive": [
+        0,
+        0,
+        0
+      ],
+      "emissiveIntensity": 1,
+      "castShadow": false,
+      "receiveShadow": false
+    },
+    {
+      "name": "APA_body_cap",
+      "geometryUuid": "d0bff790-89c7-4084-9ef7-749b999e7b52",
+      "materialUuid": "be465c1f-bb5e-45e9-9b42-83d87f4dcb8e",
+      "material": "MAT_APA_brass",
+      "emissive": [
+        0,
+        0,
+        0
+      ],
+      "emissiveIntensity": 1,
+      "castShadow": false,
+      "receiveShadow": false
+    },
+    {
+      "name": "APA_collar",
+      "geometryUuid": "c71f1e2d-b634-4824-95c6-7962f112c33e",
+      "materialUuid": "be465c1f-bb5e-45e9-9b42-83d87f4dcb8e",
+      "material": "MAT_APA_brass",
+      "emissive": [
+        0,
+        0,
+        0
+      ],
+      "emissiveIntensity": 1,
+      "castShadow": false,
+      "receiveShadow": false
+    },
+    {
+      "name": "APA_mitten_L",
+      "geometryUuid": "ec6f30aa-427f-4935-8bfa-f1d971585cd5",
+      "materialUuid": "65dab595-2855-40a5-8730-8a5300093676",
+      "material": "MAT_APA_porcelain",
+      "emissive": [
+        0,
+        0,
+        0
+      ],
+      "emissiveIntensity": 1,
+      "castShadow": false,
+      "receiveShadow": false
+    },
+    {
+      "name": "APA_mitten_R",
+      "geometryUuid": "8006854c-1938-4c94-afb1-e86f07de42ff",
+      "materialUuid": "65dab595-2855-40a5-8730-8a5300093676",
+      "material": "MAT_APA_porcelain",
+      "emissive": [
+        0,
+        0,
+        0
+      ],
+      "emissiveIntensity": 1,
+      "castShadow": false,
+      "receiveShadow": false
+    },
+    {
+      "name": "APA_head",
+      "geometryUuid": "9e7607df-940d-41ea-9418-cb3f2d1a08c2",
+      "materialUuid": "65dab595-2855-40a5-8730-8a5300093676",
+      "material": "MAT_APA_porcelain",
+      "emissive": [
+        0,
+        0,
+        0
+      ],
+      "emissiveIntensity": 1,
+      "castShadow": false,
+      "receiveShadow": false
+    },
+    {
+      "name": "APA_bookmark_post",
+      "geometryUuid": "8499b23f-1ef0-40f2-b66a-04b686605807",
+      "materialUuid": "be465c1f-bb5e-45e9-9b42-83d87f4dcb8e",
+      "material": "MAT_APA_brass",
+      "emissive": [
+        0,
+        0,
+        0
+      ],
+      "emissiveIntensity": 1,
+      "castShadow": false,
+      "receiveShadow": false
+    },
+    {
+      "name": "APA_bookmark_ribbon",
+      "geometryUuid": "8b1403f7-07f6-4af4-8040-176300550e17",
+      "materialUuid": "c9a81781-4904-4014-bdeb-d54a9e666c11",
+      "material": "MAT_APA_ribbon",
+      "emissive": [
+        0,
+        0,
+        0
+      ],
+      "emissiveIntensity": 1,
+      "castShadow": false,
+      "receiveShadow": false
+    },
+    {
+      "name": "APA_eye_L",
+      "geometryUuid": "995ca838-c01f-47cf-8a0e-9fb22cdb55eb",
+      "materialUuid": "738b7135-1ce9-43a3-a42a-b8845718820c",
+      "material": "MAT_APA_eye_emit",
+      "emissive": [
+        1,
+        0.8713670969009399,
+        0.5972017645835876
+      ],
+      "emissiveIntensity": 4,
+      "castShadow": false,
+      "receiveShadow": false
+    },
+    {
+      "name": "APA_pupil_L",
+      "geometryUuid": "b9de3905-f0b2-4996-9717-c41f5c4d0327",
+      "materialUuid": "f2f8b603-057f-412d-b3b2-3f777ca0dc64",
+      "material": "MAT_APA_ink",
+      "emissive": [
+        0,
+        0,
+        0
+      ],
+      "emissiveIntensity": 1,
+      "castShadow": false,
+      "receiveShadow": false
+    },
+    {
+      "name": "APA_highlight_L",
+      "geometryUuid": "b8fa4f64-3aef-45de-864a-00d903d81306",
+      "materialUuid": "24b69328-28ed-4872-9840-1576947f91ce",
+      "material": "MAT_APA_highlight",
+      "emissive": [
+        0.25,
+        0.2325277179479599,
+        0.19782447814941406
+      ],
+      "emissiveIntensity": 1,
+      "castShadow": false,
+      "receiveShadow": false
+    },
+    {
+      "name": "APA_eye_R",
+      "geometryUuid": "06a9f853-0f31-4816-958b-61cebb7b3605",
+      "materialUuid": "738b7135-1ce9-43a3-a42a-b8845718820c",
+      "material": "MAT_APA_eye_emit",
+      "emissive": [
+        1,
+        0.8713670969009399,
+        0.5972017645835876
+      ],
+      "emissiveIntensity": 4,
+      "castShadow": false,
+      "receiveShadow": false
+    },
+    {
+      "name": "APA_pupil_R",
+      "geometryUuid": "f147b433-0a51-43b3-b871-c51cb237e976",
+      "materialUuid": "f2f8b603-057f-412d-b3b2-3f777ca0dc64",
+      "material": "MAT_APA_ink",
+      "emissive": [
+        0,
+        0,
+        0
+      ],
+      "emissiveIntensity": 1,
+      "castShadow": false,
+      "receiveShadow": false
+    },
+    {
+      "name": "APA_highlight_R",
+      "geometryUuid": "e952911e-1ac2-4765-90e7-a8f3bf7b1e49",
+      "materialUuid": "24b69328-28ed-4872-9840-1576947f91ce",
+      "material": "MAT_APA_highlight",
+      "emissive": [
+        0.25,
+        0.2325277179479599,
+        0.19782447814941406
+      ],
+      "emissiveIntensity": 1,
+      "castShadow": false,
+      "receiveShadow": false
+    },
+    {
+      "name": "APA_face",
+      "geometryUuid": "ef688fc2-a6aa-4ed8-9b8d-909411906244",
+      "materialUuid": "f2f8b603-057f-412d-b3b2-3f777ca0dc64",
+      "material": "MAT_APA_ink",
+      "emissive": [
+        0,
+        0,
+        0
+      ],
+      "emissiveIntensity": 1,
+      "castShadow": false,
+      "receiveShadow": false
+    },
+    {
+      "name": "APA_face_rim",
+      "geometryUuid": "e46dd222-0163-46e7-8ecc-f8e268cfffb1",
+      "materialUuid": "be465c1f-bb5e-45e9-9b42-83d87f4dcb8e",
+      "material": "MAT_APA_brass",
+      "emissive": [
+        0,
+        0,
+        0
+      ],
+      "emissiveIntensity": 1,
+      "castShadow": false,
+      "receiveShadow": false
+    },
+    {
+      "name": "APA_lid_lower_L",
+      "geometryUuid": "9133f79b-8842-4e6e-955c-42de0c1087b6",
+      "materialUuid": "f2f8b603-057f-412d-b3b2-3f777ca0dc64",
+      "material": "MAT_APA_ink",
+      "emissive": [
+        0,
+        0,
+        0
+      ],
+      "emissiveIntensity": 1,
+      "castShadow": false,
+      "receiveShadow": false
+    },
+    {
+      "name": "APA_lid_lower_R",
+      "geometryUuid": "00deaa68-7a4a-4de3-9687-b4608d6db545",
+      "materialUuid": "f2f8b603-057f-412d-b3b2-3f777ca0dc64",
+      "material": "MAT_APA_ink",
+      "emissive": [
+        0,
+        0,
+        0
+      ],
+      "emissiveIntensity": 1,
+      "castShadow": false,
+      "receiveShadow": false
+    },
+    {
+      "name": "APA_seam",
+      "geometryUuid": "3350ee3c-5745-4bd5-98cc-64a5f534b60a",
+      "materialUuid": "be465c1f-bb5e-45e9-9b42-83d87f4dcb8e",
+      "material": "MAT_APA_brass",
+      "emissive": [
+        0,
+        0,
+        0
+      ],
+      "emissiveIntensity": 1,
+      "castShadow": false,
+      "receiveShadow": false
+    },
+    {
+      "name": "APA_tray",
+      "geometryUuid": "d3a0f0c5-2cc1-4859-9d22-84f337e35431",
+      "materialUuid": "be465c1f-bb5e-45e9-9b42-83d87f4dcb8e",
+      "material": "MAT_APA_brass",
+      "emissive": [
+        0,
+        0,
+        0
+      ],
+      "emissiveIntensity": 1,
+      "castShadow": false,
+      "receiveShadow": false
+    },
+    {
+      "name": "APA_tray_glow",
+      "geometryUuid": "4a075967-1645-4fdd-8bde-ffbc3a7c017c",
+      "materialUuid": "52a094c7-c6da-4ba8-bcf6-c571cc07b63f",
+      "material": "MAT_APA_tray_emit",
+      "emissive": [
+        0.05647115195499586,
+        0.0332451527304225,
+        0.008021982133716077
+      ],
+      "emissiveIntensity": 1,
+      "castShadow": false,
+      "receiveShadow": false
+    }
+  ],
+  "emissionMapping": {
+    "authoredNeutral": 0.1,
+    "loadedTrayColor": [
+      0.05647115195499586,
+      0.0332451527304225,
+      0.008021982133716077
+    ],
+    "loadedTrayIntensity": 1,
+    "loadedNeutralProduct": [
+      0.05647115195499586,
+      0.0332451527304225,
+      0.008021982133716077
+    ],
+    "naiveIntensityAssignmentProduct": [
+      0.005647115195499586,
+      0.0033245152730422504,
+      0.0008021982133716078
+    ],
+    "naiveToCorrectRatio": 0.1,
+    "adaptation": "Use profile trayGlow baseColorLinear as emission color and authored strength as intensity, or rescale loaded intensity by target/neutral authored strength; do not multiply the baked neutral twice."
+  },
+  "neutralGltfBounds": {
+    "min": [
+      -0.13927824888378382,
+      -0.23599659092724323,
+      -0.133880446664989
+    ],
+    "max": [
+      0.13787991914432496,
+      0.3456544801592827,
+      0.12633870140416548
+    ]
+  },
+  "poseConversionMaxMatrixError": 4.92730574119804e-8,
+  "endpointGltfBounds": [
+    {
+      "pose": "neutral",
+      "min": [
+        -0.13927824888378382,
+        -0.23599659092724323,
+        -0.133880446664989
+      ],
+      "max": [
+        0.13787991914432496,
+        0.3456544801592827,
+        0.12633870140416548
+      ]
+    },
+    {
+      "pose": "attention",
+      "min": [
+        -0.15033143173900726,
+        -0.22699659131467342,
+        -0.13436184119205327
+      ],
+      "max": [
+        0.15585201126152076,
+        0.3556777357414862,
+        0.12633870140416548
+      ]
+    },
+    {
+      "pose": "sources",
+      "min": [
+        -0.14378629469019394,
+        -0.2760609921932848,
+        -0.13386478268184102
+      ],
+      "max": [
+        0.14982008298456412,
+        0.34944333372302205,
+        0.15245652332418794
+      ]
+    },
+    {
+      "pose": "no-match",
+      "min": [
+        -0.1547180852054622,
+        -0.2689103418565258,
+        -0.1340718990606522
+      ],
+      "max": [
+        0.13951323458739964,
+        0.3423694035659234,
+        0.15176735684005285
+      ]
+    },
+    {
+      "pose": "dismissal",
+      "min": [
+        -0.14528927685494583,
+        -0.23999659111723304,
+        -0.13439257171908353
+      ],
+      "max": [
+        0.15117031050224547,
+        0.34080543720141393,
+        0.12633870140416548
+      ]
+    }
+  ],
+  "sweep": {
+    "samples": 2025,
+    "intervalsPerPair": 80,
+    "min": [
+      -0.1547180852054622,
+      -0.2760609921932848,
+      -0.13439257171908353
+    ],
+    "max": [
+      0.15585201126152076,
+      0.3556777357414862,
+      0.15245652332418794
+    ],
+    "insidePublishedContinuousBound": true,
+    "maxSpeedMetresPerNormalizedTransition": 0.11145000064404736,
+    "paddingForOriginal40Intervals": 0.001394125008050592,
+    "assumptions": "complete pose local TRS; unit scale; common nonovershooting interpolation parameter; shortest slerp; excludes runtime markers",
+    "independentContinuousGltfBounds": {
+      "min": [
+        -0.15541564770948751,
+        -0.2767585546973101,
+        -0.13509013422310884
+      ],
+      "max": [
+        0.15654957376554607,
+        0.3563752982455115,
+        0.15315408582821324
+      ]
+    },
+    "independentContinuousBoundInsidePublished": true
+  },
+  "runtimeOwnership": "21 unique imported geometry identities and 7 material identities; dispose each once; no imported textures; generated marker allocations separately owned"
+}

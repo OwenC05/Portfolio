@@ -1,0 +1,429 @@
+{
+  "checkedAt": "2026-11-15T18:30:06.121Z",
+  "scope": "Read-only working-file refresh for package C; no application tests, builds, servers, browser or asset execution.",
+  "roots": {
+    "assistant": {
+      "path": "C:\\Users\\Owenc\\orca\\Portfolio-assistant",
+      "head": "c0348b77adbfe09034e82a9e1a3cee34052d4735"
+    },
+    "studio": {
+      "path": "C:/Users/Owenc/orca/Portfolio",
+      "head": "8b565b23290c1faa5a47e2bd62586ac4b25e09df"
+    }
+  },
+  "startingSnapshot": "2026-11-15T17:16:41.314Z",
+  "files": [
+    {
+      "root": "assistant",
+      "path": "components/studio/scene/controller.ts",
+      "bytes": 19515,
+      "sha256": "cc76055ea4bfe596e0d3ab49c84ca55c55b8a9bad3b33627e08adeb78f0969f0",
+      "lines": 457,
+      "startingSnapshotSha256": "cc76055ea4bfe596e0d3ab49c84ca55c55b8a9bad3b33627e08adeb78f0969f0",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "assistant",
+      "path": "components/studio/scene/picking.ts",
+      "bytes": 9120,
+      "sha256": "c427b0553dd2403500f7ac0e306a42c5b1476a6a8ab3175186704261d638261c",
+      "lines": 186,
+      "startingSnapshotSha256": "c427b0553dd2403500f7ac0e306a42c5b1476a6a8ab3175186704261d638261c",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "assistant",
+      "path": "components/studio/scene/load-pilot.ts",
+      "bytes": 15772,
+      "sha256": "b5cd61c682dd69d2336b10b508b516999e72d73a00edbd6e2cebcf0323d39d11",
+      "lines": 285,
+      "startingSnapshotSha256": "b5cd61c682dd69d2336b10b508b516999e72d73a00edbd6e2cebcf0323d39d11",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "assistant",
+      "path": "components/studio/scene/view-config.ts",
+      "bytes": 756,
+      "sha256": "1fea7adbcfd730a56920389c8ac4ecf8323c9739fd4882c15f3e134a11f1a450",
+      "lines": 21,
+      "startingSnapshotSha256": "1fea7adbcfd730a56920389c8ac4ecf8323c9739fd4882c15f3e134a11f1a450",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "assistant",
+      "path": "components/studio/StudioExperience.tsx",
+      "bytes": 13141,
+      "sha256": "4e8628d8b91c840a494174d559e30b7967bc062f773aa37d74f53f3094891e16",
+      "lines": 405,
+      "startingSnapshotSha256": "4e8628d8b91c840a494174d559e30b7967bc062f773aa37d74f53f3094891e16",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "assistant",
+      "path": "components/studio/StudioScene.tsx",
+      "bytes": 1051,
+      "sha256": "29586d8a880ad079627e9e8d670f46a60c4614b221b17bbcefeb54112327e5ac",
+      "lines": 33,
+      "startingSnapshotSha256": "29586d8a880ad079627e9e8d670f46a60c4614b221b17bbcefeb54112327e5ac",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "assistant",
+      "path": "lib/studio-contract.ts",
+      "bytes": 1157,
+      "sha256": "64f88fd30b896c88c87a5631349bbb2bb9a3bc8676c0a1a816f1e5720902c84d",
+      "lines": 35,
+      "startingSnapshotSha256": "64f88fd30b896c88c87a5631349bbb2bb9a3bc8676c0a1a816f1e5720902c84d",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "assistant",
+      "path": "app/studio/StudioShell.tsx",
+      "bytes": 8879,
+      "sha256": "03b735a31b74ace0ee22d41acbc7b82ab0d70ba1cb1dbed9f11a65df23d82306",
+      "lines": 293,
+      "startingSnapshotSha256": "03b735a31b74ace0ee22d41acbc7b82ab0d70ba1cb1dbed9f11a65df23d82306",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "assistant",
+      "path": "app/studio/panel-navigation.ts",
+      "bytes": 3713,
+      "sha256": "e67abf654d6fd286edc536ec3f29290ca5a6f2e67daeb91ca596ae3fd976e347",
+      "lines": 117,
+      "startingSnapshotSha256": "e67abf654d6fd286edc536ec3f29290ca5a6f2e67daeb91ca596ae3fd976e347",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "assistant",
+      "path": "app/studio/panel-scroll.ts",
+      "bytes": 1168,
+      "sha256": "ef13a9d34aec31eb245232ada5675bc1cf010dd41bdd352ecbefc72fe0daa188",
+      "lines": 33,
+      "startingSnapshotSha256": "ef13a9d34aec31eb245232ada5675bc1cf010dd41bdd352ecbefc72fe0daa188",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "assistant",
+      "path": "components/assistant/AssistantWorkbench.tsx",
+      "bytes": 25475,
+      "sha256": "fb34ea410581d32627ffe02593915ba1417ce4b0636b4bb395a04096c29327b6",
+      "lines": 784,
+      "startingSnapshotSha256": "fb34ea410581d32627ffe02593915ba1417ce4b0636b4bb395a04096c29327b6",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "assistant",
+      "path": "lib/assistant/types.ts",
+      "bytes": 973,
+      "sha256": "6842f79d2d7547fb811cb25e72e38ecd6da45efbd82445a267bbb152f476d836",
+      "lines": 46,
+      "startingSnapshotSha256": "6842f79d2d7547fb811cb25e72e38ecd6da45efbd82445a267bbb152f476d836",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "assistant",
+      "path": "lib/assistant/events.ts",
+      "bytes": 2982,
+      "sha256": "95e37b16c181cb13e663695f73c5555608d873c12d4e9505c888d71c87f5e491",
+      "lines": 106,
+      "startingSnapshotSha256": "95e37b16c181cb13e663695f73c5555608d873c12d4e9505c888d71c87f5e491",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "assistant",
+      "path": "lib/assistant/handler.ts",
+      "bytes": 6642,
+      "sha256": "2836c4f60915e15583d9910923ca7c2ef72c78ca47a1b2d97cb6247692a92458",
+      "lines": 203,
+      "startingSnapshotSha256": "2836c4f60915e15583d9910923ca7c2ef72c78ca47a1b2d97cb6247692a92458",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "assistant",
+      "path": "lib/assistant/generation.ts",
+      "bytes": 7717,
+      "sha256": "28bee687ea18b91e7ab2ac340b4ebcb4a403223b4c825b0a6d49f8e030c83635",
+      "lines": 227,
+      "startingSnapshotSha256": "28bee687ea18b91e7ab2ac340b4ebcb4a403223b4c825b0a6d49f8e030c83635",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "assistant",
+      "path": "lib/assistant/retrieval.ts",
+      "bytes": 7971,
+      "sha256": "99c5b5af5e85d43289d97d31c25b7b826425838ab4e576de99f3b6648c356445",
+      "lines": 236,
+      "startingSnapshotSha256": "99c5b5af5e85d43289d97d31c25b7b826425838ab4e576de99f3b6648c356445",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "assistant",
+      "path": "components/studio/scene/types.ts",
+      "bytes": 1061,
+      "sha256": "5aa65f769bd2077bd6a16cc5834ef1b47db5c76b6a4e0ff1abda226892178364",
+      "lines": 36,
+      "startingSnapshotSha256": "5aa65f769bd2077bd6a16cc5834ef1b47db5c76b6a4e0ff1abda226892178364",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "assistant",
+      "path": "components/studio/scene/resources.ts",
+      "bytes": 4210,
+      "sha256": "756a26fba1840696fd7b8f0a24dfa588a50488a55fbc99bec60ca3c0e14cb509",
+      "lines": 118,
+      "startingSnapshotSha256": "756a26fba1840696fd7b8f0a24dfa588a50488a55fbc99bec60ca3c0e14cb509",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "assistant",
+      "path": "components/studio/scene/verify-controller.mjs",
+      "bytes": 79186,
+      "sha256": "3e31288159afdf35c3e17cf6e75446addd64011a839cc366ba86b247b37891f3",
+      "lines": 1508,
+      "startingSnapshotSha256": null,
+      "matchesStartingSnapshot": null
+    },
+    {
+      "root": "assistant",
+      "path": "components/studio/scene/verify-pilot.mjs",
+      "bytes": 19288,
+      "sha256": "8b0e9b33ef874ddd412cd92fd99b60420f8f8263fd32cdb7c9d96c3e9c3ad295",
+      "lines": 326,
+      "startingSnapshotSha256": null,
+      "matchesStartingSnapshot": null
+    },
+    {
+      "root": "assistant",
+      "path": "components/studio/scene/verify-full-kit.mjs",
+      "bytes": 33885,
+      "sha256": "ea836ba70da71020ba78b70b78311b46d2eacec798da4f8163e7b03a54b3b531",
+      "lines": 528,
+      "startingSnapshotSha256": null,
+      "matchesStartingSnapshot": null
+    },
+    {
+      "root": "assistant",
+      "path": "tests/assistant/events.test.cjs",
+      "bytes": 7094,
+      "sha256": "9cb990b0fb0df0e883f4c46c4e1d4c45a67bed132724030427057c0b9555e2a8",
+      "lines": 250,
+      "startingSnapshotSha256": null,
+      "matchesStartingSnapshot": null
+    },
+    {
+      "root": "assistant",
+      "path": "tests/assistant/backend.test.cjs",
+      "bytes": 16741,
+      "sha256": "5e6dcca794b3d65017ac301d6187d7cf69b8b8328a2d142e02c71108242d87b2",
+      "lines": 526,
+      "startingSnapshotSha256": null,
+      "matchesStartingSnapshot": null
+    },
+    {
+      "root": "assistant",
+      "path": "tests/assistant/README.md",
+      "bytes": 2234,
+      "sha256": "b91e0106bca9a1e8518fb629648267e233ddf35a7f0a7f296f2996efd7a94c72",
+      "lines": 12,
+      "startingSnapshotSha256": null,
+      "matchesStartingSnapshot": null
+    },
+    {
+      "root": "assistant",
+      "path": "scripts/verify-assistant-browser.mjs",
+      "bytes": 8792,
+      "sha256": "f715ebe1ba74727a7ef19c176d3a3aa61ade5be30738e2b0c07252bba0049fe0",
+      "lines": 101,
+      "startingSnapshotSha256": null,
+      "matchesStartingSnapshot": null
+    },
+    {
+      "root": "assistant",
+      "path": "CONTRIBUTING.md",
+      "bytes": 4332,
+      "sha256": "ce04bcc7cf81d459465fe7e3c68662cb2abfb0263c953f9a3f1bbe1261c0e4bf",
+      "lines": 50,
+      "startingSnapshotSha256": "ce04bcc7cf81d459465fe7e3c68662cb2abfb0263c953f9a3f1bbe1261c0e4bf",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "assistant",
+      "path": "package.json",
+      "bytes": 1007,
+      "sha256": "665e51bf618feb94e031f297ef5c8b25986a25450ffdcae6b39663d0a5c04790",
+      "lines": 37,
+      "startingSnapshotSha256": "665e51bf618feb94e031f297ef5c8b25986a25450ffdcae6b39663d0a5c04790",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "studio",
+      "path": "components/studio/scene/controller.ts",
+      "bytes": 19515,
+      "sha256": "cc76055ea4bfe596e0d3ab49c84ca55c55b8a9bad3b33627e08adeb78f0969f0",
+      "lines": 457,
+      "startingSnapshotSha256": "cc76055ea4bfe596e0d3ab49c84ca55c55b8a9bad3b33627e08adeb78f0969f0",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "studio",
+      "path": "components/studio/scene/picking.ts",
+      "bytes": 9120,
+      "sha256": "c427b0553dd2403500f7ac0e306a42c5b1476a6a8ab3175186704261d638261c",
+      "lines": 186,
+      "startingSnapshotSha256": "c427b0553dd2403500f7ac0e306a42c5b1476a6a8ab3175186704261d638261c",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "studio",
+      "path": "components/studio/scene/load-pilot.ts",
+      "bytes": 15772,
+      "sha256": "b5cd61c682dd69d2336b10b508b516999e72d73a00edbd6e2cebcf0323d39d11",
+      "lines": 285,
+      "startingSnapshotSha256": "b5cd61c682dd69d2336b10b508b516999e72d73a00edbd6e2cebcf0323d39d11",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "studio",
+      "path": "components/studio/scene/view-config.ts",
+      "bytes": 756,
+      "sha256": "1fea7adbcfd730a56920389c8ac4ecf8323c9739fd4882c15f3e134a11f1a450",
+      "lines": 21,
+      "startingSnapshotSha256": "1fea7adbcfd730a56920389c8ac4ecf8323c9739fd4882c15f3e134a11f1a450",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "studio",
+      "path": "components/studio/StudioExperience.tsx",
+      "bytes": 13141,
+      "sha256": "4e8628d8b91c840a494174d559e30b7967bc062f773aa37d74f53f3094891e16",
+      "lines": 405,
+      "startingSnapshotSha256": "4e8628d8b91c840a494174d559e30b7967bc062f773aa37d74f53f3094891e16",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "studio",
+      "path": "components/studio/StudioScene.tsx",
+      "bytes": 1051,
+      "sha256": "29586d8a880ad079627e9e8d670f46a60c4614b221b17bbcefeb54112327e5ac",
+      "lines": 33,
+      "startingSnapshotSha256": "29586d8a880ad079627e9e8d670f46a60c4614b221b17bbcefeb54112327e5ac",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "studio",
+      "path": "lib/studio-contract.ts",
+      "bytes": 1157,
+      "sha256": "64f88fd30b896c88c87a5631349bbb2bb9a3bc8676c0a1a816f1e5720902c84d",
+      "lines": 35,
+      "startingSnapshotSha256": "64f88fd30b896c88c87a5631349bbb2bb9a3bc8676c0a1a816f1e5720902c84d",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "studio",
+      "path": "app/studio/StudioShell.tsx",
+      "bytes": 8858,
+      "sha256": "bcae10c0b983b1295b4d13e4ff1777c25fe9af224ebf2aee865c146fdb62eca8",
+      "lines": 293,
+      "startingSnapshotSha256": "bcae10c0b983b1295b4d13e4ff1777c25fe9af224ebf2aee865c146fdb62eca8",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "studio",
+      "path": "app/studio/panel-navigation.ts",
+      "bytes": 3713,
+      "sha256": "e67abf654d6fd286edc536ec3f29290ca5a6f2e67daeb91ca596ae3fd976e347",
+      "lines": 117,
+      "startingSnapshotSha256": "e67abf654d6fd286edc536ec3f29290ca5a6f2e67daeb91ca596ae3fd976e347",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "studio",
+      "path": "app/studio/panel-scroll.ts",
+      "bytes": 1168,
+      "sha256": "ef13a9d34aec31eb245232ada5675bc1cf010dd41bdd352ecbefc72fe0daa188",
+      "lines": 33,
+      "startingSnapshotSha256": "ef13a9d34aec31eb245232ada5675bc1cf010dd41bdd352ecbefc72fe0daa188",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "studio",
+      "path": "design/studio-v2/browser-verification/README.md",
+      "bytes": 9273,
+      "sha256": "839cac7d8a6884f68350c0fe969af25449ecf3567d14f1071a5d50e2dcfd1ad5",
+      "lines": 62,
+      "startingSnapshotSha256": "839cac7d8a6884f68350c0fe969af25449ecf3567d14f1071a5d50e2dcfd1ad5",
+      "matchesStartingSnapshot": true
+    },
+    {
+      "root": "studio",
+      "path": "design/studio-v2/browser-verification/performance-validation.mjs",
+      "bytes": 8786,
+      "sha256": "cea87bcd61494c2ee60a6e1a71b961623d6de177398a46d660e554d63b76fb71",
+      "lines": 48,
+      "startingSnapshotSha256": null,
+      "matchesStartingSnapshot": null
+    },
+    {
+      "root": "studio",
+      "path": "design/studio-v2/browser-verification/failure-validation.mjs",
+      "bytes": 13220,
+      "sha256": "49f90c80fe5e9e05c7f7a5926fa97144ea13ad67272b63859f745ccb12b6041f",
+      "lines": 170,
+      "startingSnapshotSha256": null,
+      "matchesStartingSnapshot": null
+    }
+  ],
+  "comparisons": [
+    {
+      "path": "components/studio/scene/controller.ts",
+      "equalAcrossRoots": true,
+      "studioMatchesStartingSnapshot": true
+    },
+    {
+      "path": "components/studio/scene/picking.ts",
+      "equalAcrossRoots": true,
+      "studioMatchesStartingSnapshot": true
+    },
+    {
+      "path": "components/studio/scene/load-pilot.ts",
+      "equalAcrossRoots": true,
+      "studioMatchesStartingSnapshot": true
+    },
+    {
+      "path": "components/studio/scene/view-config.ts",
+      "equalAcrossRoots": true,
+      "studioMatchesStartingSnapshot": true
+    },
+    {
+      "path": "components/studio/StudioExperience.tsx",
+      "equalAcrossRoots": true,
+      "studioMatchesStartingSnapshot": true
+    },
+    {
+      "path": "components/studio/StudioScene.tsx",
+      "equalAcrossRoots": true,
+      "studioMatchesStartingSnapshot": true
+    },
+    {
+      "path": "lib/studio-contract.ts",
+      "equalAcrossRoots": true,
+      "studioMatchesStartingSnapshot": true
+    },
+    {
+      "path": "app/studio/StudioShell.tsx",
+      "equalAcrossRoots": false,
+      "studioMatchesStartingSnapshot": true
+    },
+    {
+      "path": "app/studio/panel-navigation.ts",
+      "equalAcrossRoots": true,
+      "studioMatchesStartingSnapshot": true
+    },
+    {
+      "path": "app/studio/panel-scroll.ts",
+      "equalAcrossRoots": true,
+      "studioMatchesStartingSnapshot": true
+    }
+  ]
+}

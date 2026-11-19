@@ -1,0 +1,42 @@
+✔ published records have stable unique IDs, anchors, metadata and valid links (1.7556ms)
+✔ draft template slugs and text are not published or retrievable (1.6229ms)
+✔ public summaries retain important evidence boundaries (0.2794ms)
+✔ retrieval ranks tags and passages, has stable bounded IDs and excludes drafts at the boundary (27.6242ms)
+✔ citation validation rejects unknown IDs, invented quotes, empty references and malformed schemas (2.7762ms)
+✔ generation is disabled by default; fixed model and runtime-specific credentials are required (33.9183ms)
+✔ provider request isolates hostile passage text as data with a fixed endpoint and bounded settings (3.215ms)
+✔ provider failures retain safe diagnostic reasons without leaking raw errors or credentials (3.6859ms)
+✔ provider timeout and caller cancellation abort the request, without retry (19.589ms)
+✔ request boundary rejects oversized bodies, invalid queries and cross-origin browsers (5.913ms)
+✔ browser origin uses public Host when Next reconstructs an internal URL, without trusting forwarded hosts (4.5966ms)
+✔ sources-only NDJSON events are actual retrieval; unsupported and misleading questions claim no facts (1.3809ms)
+✔ missing configuration and credentials retain reasons through the endpoint without calling a model (0.8917ms)
+✔ configured generation emits its stage and validated answer; stream cancellation aborts fetch (1.4604ms)
+✔ bounded per-process throttle expires and refuses map overflow (1.8596ms)
+✔ request disconnect aborts generation and closes the response stream (3.7289ms)
+✔ versioned public-catalogue retrieval fixtures match topical and empty expectations (20.4086ms)
+✔ retrieval without hits is rejected before it can enter render state (2.161ms)
+✔ valid empty retrieval and malformed JSON retain their behavior (1.2117ms)
+✔ all supported event variants and answer modes preserve valid payloads (0.5708ms)
+✔ source fallback diagnostics remain valid for every supported reason (0.4581ms)
+✔ non-object events, unknown types and missing variant payloads are rejected (0.4755ms)
+✔ hit payloads reject missing or non-string render fields and invalid scores (0.9739ms)
+✔ answer and citation payloads reject values that would break rendering (0.9015ms)
+✔ durations must be finite nonnegative numbers in retrieval and done events (0.4437ms)
+✔ actual source-only handler events parse without calling a provider (166.0667ms)
+✔ natural inflections find customer work without a project name (2.2991ms)
+✔ bounded vocabulary connects visitor terms to excerpts and assistant behavior (0.5303ms)
+✔ education and boosted-tree vocabulary generalize beyond question templates (0.4538ms)
+✔ contractions retain useful multiword headings (0.321ms)
+✔ one overlapping limitation can accompany direct project evidence within the budget (17.7721ms)
+✔ metadata alone does not attach every caveat and unrelated topics stay empty (0.6636ms)
+✔ context completion preserves sole passages from other sources and never invents zero-overlap context (0.9737ms)
+✔ normalization preserves publication, identity, text and request/context bounds (1.3478ms)
+ℹ tests 34
+ℹ suites 0
+ℹ pass 34
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 594.6291

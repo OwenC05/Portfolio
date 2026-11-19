@@ -1,0 +1,752 @@
+{
+  "assetSha256": "bc1a4d6d968dd53eda3480936959d0ebf292e76652a6bbdd201e15f4cd665270",
+  "threeRevision": "187",
+  "renderer": "WebKit WebGL",
+  "unmaskedRenderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A60) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "outputColorSpace": "srgb",
+  "toneMapping": "ACESFilmicToneMapping",
+  "exposure": 1.2,
+  "pixelRatio": 1,
+  "viewport": [
+    800,
+    900
+  ],
+  "anchorWorld": [
+    0.8,
+    2.8,
+    -0.2
+  ],
+  "anchorQuaternion": [
+    0,
+    -0.19611998129015468,
+    0,
+    0.9805799064526813
+  ],
+  "effectiveWrapperScale": 1.6,
+  "worldUnitsPerMetre": 2,
+  "provisionalArtScale": 0.8,
+  "roomGeometry": "createStudio current source with current pilot and adapter",
+  "lights": [
+    {
+      "type": "HemisphereLight",
+      "color": [
+        0.7156935005005721,
+        0.7011018919268015,
+        0.6307571363387763
+      ],
+      "intensity": 1.15,
+      "position": [
+        0,
+        1,
+        0
+      ],
+      "castShadow": false
+    },
+    {
+      "type": "DirectionalLight",
+      "color": [
+        1,
+        0.6938717612856897,
+        0.3915724777393922
+      ],
+      "intensity": 2.6,
+      "position": [
+        2.4,
+        7.6,
+        6.4
+      ],
+      "target": [
+        -0.6,
+        1.2,
+        -0.5
+      ],
+      "castShadow": true
+    },
+    {
+      "type": "PointLight",
+      "color": [
+        1,
+        0.6444796819634361,
+        0.3515325994898463
+      ],
+      "intensity": 12,
+      "position": [
+        -1.6,
+        3.85,
+        0.3
+      ],
+      "distance": 7,
+      "decay": 2,
+      "castShadow": false
+    },
+    {
+      "type": "PointLight",
+      "color": [
+        1,
+        0.4396571738310091,
+        0.10702310296918527
+      ],
+      "intensity": 8,
+      "position": [
+        0.55,
+        3.8,
+        -1.45
+      ],
+      "distance": 6,
+      "decay": 2,
+      "castShadow": false
+    },
+    {
+      "type": "PointLight",
+      "color": [
+        1,
+        0.7304607400847158,
+        0.4452011945063733
+      ],
+      "intensity": 9,
+      "position": [
+        4.56,
+        3.5,
+        -0.02
+      ],
+      "distance": 6.5,
+      "decay": 2,
+      "castShadow": false
+    },
+    {
+      "type": "PointLight",
+      "color": [
+        0.3371636150376657,
+        0.45641102317066595,
+        0.6038273388475408
+      ],
+      "intensity": 4,
+      "position": [
+        4.35,
+        3,
+        1.5
+      ],
+      "distance": 6,
+      "decay": 2,
+      "castShadow": false
+    },
+    {
+      "type": "PointLight",
+      "color": [
+        1,
+        0.7304607400847158,
+        0.4452011945063733
+      ],
+      "intensity": 3,
+      "position": [
+        3.3,
+        3.3,
+        3.2
+      ],
+      "distance": 5,
+      "decay": 2,
+      "castShadow": false
+    }
+  ],
+  "materials": [
+    {
+      "name": "MAT_APA_porcelain",
+      "color": [
+        0.8069522380828857,
+        0.7379103899002075,
+        0.6239603757858276
+      ],
+      "emissive": [
+        0,
+        0,
+        0
+      ],
+      "emissiveIntensity": 1,
+      "metalness": 0,
+      "roughness": 0.3700000047683716
+    },
+    {
+      "name": "MAT_APA_brass",
+      "color": [
+        0.5647115111351013,
+        0.3324515223503113,
+        0.0802198201417923
+      ],
+      "emissive": [
+        0,
+        0,
+        0
+      ],
+      "emissiveIntensity": 1,
+      "metalness": 0.7799999713897705,
+      "roughness": 0.30000001192092896
+    },
+    {
+      "name": "MAT_APA_ribbon",
+      "color": [
+        0.366252601146698,
+        0.02518685907125473,
+        0.020288562402129173
+      ],
+      "emissive": [
+        0,
+        0,
+        0
+      ],
+      "emissiveIntensity": 1,
+      "metalness": 0,
+      "roughness": 0.5799999833106995
+    },
+    {
+      "name": "MAT_APA_eye_emit",
+      "color": [
+        1,
+        0.8713670969009399,
+        0.5972017645835876
+      ],
+      "emissive": [
+        1,
+        0.8713670969009399,
+        0.5972017645835876
+      ],
+      "emissiveIntensity": 4,
+      "metalness": 0,
+      "roughness": 0.4000000059604645
+    },
+    {
+      "name": "MAT_APA_ink",
+      "color": [
+        0.022173885256052017,
+        0.017641954123973846,
+        0.013702083379030228
+      ],
+      "emissive": [
+        0,
+        0,
+        0
+      ],
+      "emissiveIntensity": 1,
+      "metalness": 0,
+      "roughness": 0.5799999833106995
+    },
+    {
+      "name": "MAT_APA_highlight",
+      "color": [
+        1,
+        0.9301108717918396,
+        0.7912979125976562
+      ],
+      "emissive": [
+        0.25,
+        0.2325277179479599,
+        0.19782447814941406
+      ],
+      "emissiveIntensity": 1,
+      "metalness": 0,
+      "roughness": 0.2800000011920929
+    },
+    {
+      "name": "MAT_APA_tray_emit",
+      "color": [
+        0.5647115111351013,
+        0.3324515223503113,
+        0.0802198201417923
+      ],
+      "emissive": [
+        0.05647115195499586,
+        0.0332451527304225,
+        0.008021982133716077
+      ],
+      "emissiveIntensity": 1,
+      "metalness": 0.7799999713897705,
+      "roughness": 0.6499999761581421
+    }
+  ],
+  "environmentMap": null,
+  "limitations": [
+    "P2 provisional anchor; inspection cameras except fixed-eye room view; no placement approval",
+    "Browser isolated material evidence only; no main app integration or device performance acceptance",
+    "Robot shadows disabled per asset contract; actual room shadow sun retained",
+    "No bloom or runtime source cards"
+  ],
+  "poseResult": {
+    "pose": "neutral",
+    "view": "front",
+    "camera": [
+      0.011523617081294013,
+      2.88,
+      1.6923015070488723
+    ],
+    "cameraQuaternion": [
+      0,
+      -0.19611998129015468,
+      0,
+      0.9805799064526814
+    ],
+    "lookDirection": [
+      0.384622625814003,
+      0,
+      -0.9230739058774987
+    ],
+    "fov": 38,
+    "viewport": [
+      800,
+      900
+    ],
+    "renderInfo": {
+      "frame": 1,
+      "calls": 110,
+      "triangles": 117456,
+      "points": 0,
+      "lines": 0
+    }
+  },
+  "resourceIdentities": {
+    "geometries": [
+      {
+        "node": "APA_body",
+        "id": 25,
+        "uuid": "177bf017-b08d-40e8-b07c-f324aaca36d5"
+      },
+      {
+        "node": "APA_body_cap",
+        "id": 26,
+        "uuid": "6a1a7968-9ee4-4bec-8c9f-98382d3e077f"
+      },
+      {
+        "node": "APA_collar",
+        "id": 27,
+        "uuid": "47b204bc-9a94-4a26-91dc-6546b9793ae3"
+      },
+      {
+        "node": "APA_mitten_L",
+        "id": 28,
+        "uuid": "e6ad9625-4d77-44e0-827d-6e0717a69985"
+      },
+      {
+        "node": "APA_mitten_R",
+        "id": 29,
+        "uuid": "294ec99e-e868-4e05-abef-ef7d870a96fb"
+      },
+      {
+        "node": "APA_head",
+        "id": 30,
+        "uuid": "75dcaea7-65bf-4ce7-be4a-21f5aa1b8960"
+      },
+      {
+        "node": "APA_bookmark_post",
+        "id": 31,
+        "uuid": "1fe963cb-fcda-4c81-bbd2-c8250284632a"
+      },
+      {
+        "node": "APA_bookmark_ribbon",
+        "id": 32,
+        "uuid": "99beb23e-f033-4f11-8285-f25d0e1a2e54"
+      },
+      {
+        "node": "APA_eye_L",
+        "id": 33,
+        "uuid": "53ee7b74-8c84-4717-97bd-93b9d277d2c7"
+      },
+      {
+        "node": "APA_pupil_L",
+        "id": 34,
+        "uuid": "0065e8f1-61c4-4c34-8640-20c136220cda"
+      },
+      {
+        "node": "APA_highlight_L",
+        "id": 35,
+        "uuid": "e332779d-197f-4a68-b4a2-ab794e32d275"
+      },
+      {
+        "node": "APA_eye_R",
+        "id": 36,
+        "uuid": "01c09aba-be4e-4f8c-b147-3ed5ecb1cae8"
+      },
+      {
+        "node": "APA_pupil_R",
+        "id": 37,
+        "uuid": "85f398ea-010f-4038-a529-a40a26c12f4b"
+      },
+      {
+        "node": "APA_highlight_R",
+        "id": 38,
+        "uuid": "e5953535-b0a2-4376-be89-042b10b2b09b"
+      },
+      {
+        "node": "APA_face",
+        "id": 39,
+        "uuid": "430f73d2-8d74-482e-858c-d23df198c838"
+      },
+      {
+        "node": "APA_face_rim",
+        "id": 40,
+        "uuid": "f626a228-4097-4e68-82e3-a9b3ee801f2b"
+      },
+      {
+        "node": "APA_lid_lower_L",
+        "id": 41,
+        "uuid": "6f57c558-fe07-49a6-be1d-04169e02646f"
+      },
+      {
+        "node": "APA_lid_lower_R",
+        "id": 42,
+        "uuid": "4ff2f95a-c4c1-471e-b5de-8bd7969c0098"
+      },
+      {
+        "node": "APA_seam",
+        "id": 43,
+        "uuid": "5c411575-423a-4e87-9f30-b444f273bc9d"
+      },
+      {
+        "node": "APA_tray",
+        "id": 44,
+        "uuid": "3278c1a8-d3c7-4111-97f9-f94da44adfe6"
+      },
+      {
+        "node": "APA_tray_glow",
+        "id": 45,
+        "uuid": "80731d2d-a6ff-4d91-aff8-18a432dc51ff"
+      }
+    ],
+    "materials": [
+      {
+        "name": "MAT_APA_porcelain",
+        "id": 62,
+        "uuid": "9539f9f4-7a0e-4872-b4d6-0cc9bf168d94"
+      },
+      {
+        "name": "MAT_APA_brass",
+        "id": 63,
+        "uuid": "f82b4724-3947-41b7-af15-e487f9861433"
+      },
+      {
+        "name": "MAT_APA_ribbon",
+        "id": 64,
+        "uuid": "4832078b-ca1c-4069-8c28-480b661ac048"
+      },
+      {
+        "name": "MAT_APA_eye_emit",
+        "id": 65,
+        "uuid": "a0ef9b00-98a6-4d84-beec-cd95bdbd597c"
+      },
+      {
+        "name": "MAT_APA_ink",
+        "id": 66,
+        "uuid": "e30d0c59-6d81-4050-bf95-f50468f6f3fb"
+      },
+      {
+        "name": "MAT_APA_highlight",
+        "id": 67,
+        "uuid": "f4406c1d-a173-42b6-932d-571bfb20da94"
+      },
+      {
+        "name": "MAT_APA_tray_emit",
+        "id": 68,
+        "uuid": "d7ad396f-daf5-4a0f-9bd1-2d9442d2f776"
+      }
+    ],
+    "textureCount": 0
+  },
+  "capturedAt": "2026-11-17T13:58:56.410Z",
+  "captures": [
+    {
+      "file": "webgl-neutral-front.png",
+      "pose": "neutral",
+      "view": "front",
+      "camera": [
+        0.011523617081294013,
+        2.88,
+        1.6923015070488723
+      ],
+      "cameraQuaternion": [
+        0,
+        -0.19611998129015468,
+        0,
+        0.9805799064526814
+      ],
+      "lookDirection": [
+        0.384622625814003,
+        0,
+        -0.9230739058774987
+      ],
+      "fov": 38,
+      "viewport": [
+        800,
+        900
+      ],
+      "renderInfo": {
+        "frame": 2,
+        "calls": 110,
+        "triangles": 117456,
+        "points": 0,
+        "lines": 0
+      }
+    },
+    {
+      "file": "webgl-neutral-face.png",
+      "pose": "neutral",
+      "view": "face",
+      "camera": [
+        0.40383869541157696,
+        3.1199999999999997,
+        0.7507661230538238
+      ],
+      "cameraQuaternion": [
+        -0.033263135908825556,
+        -0.19600711162469248,
+        -0.0066527628693618755,
+        0.9800155696356361
+      ],
+      "lookDirection": [
+        0.38373745879203186,
+        -0.06780475983980577,
+        -0.9209495519641127
+      ],
+      "fov": 30,
+      "viewport": [
+        800,
+        900
+      ],
+      "renderInfo": {
+        "frame": 3,
+        "calls": 105,
+        "triangles": 114636,
+        "points": 0,
+        "lines": 0
+      }
+    },
+    {
+      "file": "webgl-neutral-quarter.png",
+      "pose": "neutral",
+      "view": "quarter",
+      "camera": [
+        1.1384434354249926,
+        3.3499999999999996,
+        2.107694962731801
+      ],
+      "cameraQuaternion": [
+        -0.09899722108094702,
+        0.07238669798205076,
+        0.0072207786288724304,
+        0.992425098699896
+      ],
+      "lookDirection": [
+        -0.14224707774219444,
+        -0.19754003044815543,
+        -0.969919432347011
+      ],
+      "fov": 38,
+      "viewport": [
+        800,
+        900
+      ],
+      "renderInfo": {
+        "frame": 4,
+        "calls": 112,
+        "triangles": 117708,
+        "points": 0,
+        "lines": 0
+      }
+    },
+    {
+      "file": "webgl-neutral-side.png",
+      "pose": "neutral",
+      "view": "side",
+      "camera": [
+        2.6923015070488723,
+        2.88,
+        0.5884763829187061
+      ],
+      "cameraQuaternion": [
+        0,
+        0.5546969326515142,
+        0,
+        0.8320524700444086
+      ],
+      "lookDirection": [
+        -0.9230739058774989,
+        0,
+        -0.3846226258140031
+      ],
+      "fov": 38,
+      "viewport": [
+        800,
+        900
+      ],
+      "renderInfo": {
+        "frame": 5,
+        "calls": 127,
+        "triangles": 119770,
+        "points": 0,
+        "lines": 0
+      }
+    },
+    {
+      "file": "webgl-sources-quarter.png",
+      "pose": "sources",
+      "view": "quarter",
+      "camera": [
+        1.1384434354249926,
+        3.3499999999999996,
+        2.107694962731801
+      ],
+      "cameraQuaternion": [
+        -0.09899722108094702,
+        0.07238669798205076,
+        0.0072207786288724304,
+        0.992425098699896
+      ],
+      "lookDirection": [
+        -0.14224707774219444,
+        -0.19754003044815543,
+        -0.969919432347011
+      ],
+      "fov": 38,
+      "viewport": [
+        800,
+        900
+      ],
+      "renderInfo": {
+        "frame": 6,
+        "calls": 112,
+        "triangles": 117708,
+        "points": 0,
+        "lines": 0
+      }
+    },
+    {
+      "file": "webgl-no-match-quarter.png",
+      "pose": "no-match",
+      "view": "quarter",
+      "camera": [
+        1.1384434354249926,
+        3.3499999999999996,
+        2.107694962731801
+      ],
+      "cameraQuaternion": [
+        -0.09899722108094702,
+        0.07238669798205076,
+        0.0072207786288724304,
+        0.992425098699896
+      ],
+      "lookDirection": [
+        -0.14224707774219444,
+        -0.19754003044815543,
+        -0.969919432347011
+      ],
+      "fov": 38,
+      "viewport": [
+        800,
+        900
+      ],
+      "renderInfo": {
+        "frame": 7,
+        "calls": 112,
+        "triangles": 117708,
+        "points": 0,
+        "lines": 0
+      }
+    },
+    {
+      "file": "webgl-attention-quarter.png",
+      "pose": "attention",
+      "view": "quarter",
+      "camera": [
+        1.1384434354249926,
+        3.3499999999999996,
+        2.107694962731801
+      ],
+      "cameraQuaternion": [
+        -0.09899722108094702,
+        0.07238669798205076,
+        0.0072207786288724304,
+        0.992425098699896
+      ],
+      "lookDirection": [
+        -0.14224707774219444,
+        -0.19754003044815543,
+        -0.969919432347011
+      ],
+      "fov": 38,
+      "viewport": [
+        800,
+        900
+      ],
+      "renderInfo": {
+        "frame": 8,
+        "calls": 112,
+        "triangles": 117708,
+        "points": 0,
+        "lines": 0
+      }
+    },
+    {
+      "file": "webgl-dismissal-face.png",
+      "pose": "dismissal",
+      "view": "face",
+      "camera": [
+        0.40383869541157696,
+        3.1199999999999997,
+        0.7507661230538238
+      ],
+      "cameraQuaternion": [
+        -0.033263135908825556,
+        -0.19600711162469248,
+        -0.0066527628693618755,
+        0.9800155696356361
+      ],
+      "lookDirection": [
+        0.38373745879203186,
+        -0.06780475983980577,
+        -0.9209495519641127
+      ],
+      "fov": 30,
+      "viewport": [
+        800,
+        900
+      ],
+      "renderInfo": {
+        "frame": 9,
+        "calls": 105,
+        "triangles": 114636,
+        "points": 0,
+        "lines": 0
+      }
+    },
+    {
+      "file": "webgl-room-desktop-home.png",
+      "pose": "neutral",
+      "view": "room",
+      "camera": [
+        -0.7,
+        2.8,
+        3.4
+      ],
+      "cameraQuaternion": [
+        -0.05230407459247078,
+        0.034851668155187344,
+        0.0018264985323228518,
+        0.9980211966240684
+      ],
+      "lookDirection": [
+        -0.06937434048221473,
+        -0.10452846326765337,
+        -0.9920992900156521
+      ],
+      "fov": 58,
+      "viewport": [
+        1440,
+        900
+      ],
+      "renderInfo": {
+        "frame": 10,
+        "calls": 140,
+        "triangles": 132636,
+        "points": 0,
+        "lines": 0
+      }
+    }
+  ],
+  "pageErrors": []
+}

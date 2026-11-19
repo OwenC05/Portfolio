@@ -1,0 +1,49 @@
+{
+  "mode": "deep-interview",
+  "active": true,
+  "current_phase": "deep-interview",
+  "state": {
+    "rounds": [
+      {
+        "round": 1,
+        "target": "outcome-and-scope",
+        "question": "Inside eye-level studio, orbitable room, or free exploration?",
+        "answer": "yes eye level i think is a good starting point, i think just a 3d room you can looking around is good enough, it should sitll act like a portfolio not like a game",
+        "source": "from-user",
+        "accepted": [
+          "Eye-level interior viewpoint.",
+          "Room look-around is sufficient.",
+          "Portfolio purpose takes priority over game-like exploration."
+        ],
+        "inferences": [
+          "Use a fixed viewing position with restrained look controls; no walking controls or game loop."
+        ],
+        "ambiguity_after": 0.155
+      }
+    ],
+    "current_ambiguity": 0.155,
+    "clarity_scores": {
+      "intent": 0.95,
+      "outcome": 0.8,
+      "scope": 0.8,
+      "constraints": 0.85,
+      "success": 0.65,
+      "context": 0.95
+    },
+    "non_goals_ready": true,
+    "non_goals": [
+      "No walking/game mechanics.",
+      "No invented personal audio or unsupported professional claims.",
+      "Existing private-photo/paid-generation/deployment boundaries remain."
+    ],
+    "decision_boundaries_ready": false,
+    "pressure_pass_complete": false,
+    "current_focus": "Project-reading transition: pressure-test immersion against portfolio usability.",
+    "closure_gate": "Below threshold; ask only material closure question about monitor-click reading experience before crystallizing.",
+    "pending_question": {
+      "round": 2,
+      "topic": "Clicking a project monitor",
+      "reason": "Determines whether camera/object focus remains part of reading or navigation immediately exits to the HTML evidence view."
+    }
+  }
+}

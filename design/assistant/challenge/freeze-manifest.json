@@ -1,0 +1,20 @@
+{
+    "studyId":  "portfolio-source-navigation-challenge-2026-11-15",
+    "frozenAtUtc":  "2026-11-15T16:14:52.4859000Z",
+    "questionsFile":  "frozen-questions.json",
+    "questionsSha256":  "1fa0b7c7a7d65dc23456142bd393f1d52ea5de6191f95c458db0c6128f25454f",
+    "catalogVersion":  "2026-11-15.2",
+    "catalogFile":  "lib/knowledge/catalog.ts",
+    "catalogSha256":  "145e04a8296e8815ff6c4f9da94f663df3c5a993223a5fb1b41c365a2b09d52b",
+    "catalogSnapshot":  "catalog.snapshot.ts",
+    "questionCount":  20,
+    "scoredQuestionCount":  19,
+    "requiredEvidenceGroupCount":  22,
+    "preFreezeBoundary":  "No retrieval implementation, loader, evaluation script or fixture contents inspected; no retrieval execution performed.",
+    "publicDocumentHashes":  {
+                                 "docs/assistant-delivery.md":  "3b8ed7812ed876bc8d299ef4eb20a528150ebc8dd0f8743093be976b75a46fbc",
+                                 "docs/assistant-architecture.md":  "554a3347c627c2a1294178a76e826afd5e9c786f57bcc90b1b83a35c88eceeb3"
+                             },
+    "localInstructions":  "Supplied AGENTS.md and dispatch followed; no filesystem AGENTS.md found in cwd ancestry or design/docs/lib subtrees.",
+    "historyLookup":  "Memory registry search found no assistant-challenge history used; no previous retrieval results or fixtures were imported."
+}

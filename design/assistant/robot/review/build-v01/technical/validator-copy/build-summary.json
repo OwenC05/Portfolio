@@ -1,0 +1,22 @@
+{
+  "neutralBoundsBlenderMetres": {
+    "min": [
+      -0.14062345027923584,
+      -0.12543338537216187,
+      -0.23580409586429596
+    ],
+    "max": [
+      0.1372770071029663,
+      0.13548770546913147,
+      0.30068185925483704
+    ]
+  },
+  "nodes": 22,
+  "meshes": 21,
+  "materials": 7,
+  "blenderVersion": "5.2.3 LTS",
+  "blenderBuildHash": "e13b728c6880",
+  "gltfSha256": "775733a18559d7f52dd6bd71e7ec518a9783ef3c9e95dd753b3072e553587232",
+  "blendSha256": "23c6fdf90d48bee4f3a82fd811f312b6eb798dd40712544fa7afa6bdb67a22fc",
+  "rawSha256": "412c0c213e0c6adc6baa80fa0686b6cbd9a1d259348bb96c571ef28b2f59bec7"
+}

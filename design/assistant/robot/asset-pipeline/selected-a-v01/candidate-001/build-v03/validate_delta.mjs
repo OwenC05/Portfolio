@@ -1,0 +1,32 @@
+import fs from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';import assert from 'node:assert/strict';import {createHash} from 'node:crypto';import zlib from 'node:zlib';
+const B=path.dirname(fileURLToPath(import.meta.url)),V=path.resolve(B,'../build-v02'),sha=b=>createHash('sha256').update(b).digest('hex'),read=(dir,n)=>JSON.parse(fs.readFileSync(path.join(dir,n))),write=(n,x)=>fs.writeFileSync(path.join(B,n),JSON.stringify(x,null,2)+'\n');
+function glb(dir){const bytes=fs.readFileSync(path.join(dir,'selected-a.glb'));assert.equal(bytes.readUInt32LE(0),0x46546c67);assert.equal(bytes.readUInt32LE(4),2);assert.equal(bytes.readUInt32LE(8),bytes.length);const n=bytes.readUInt32LE(12);assert.equal(bytes.readUInt32LE(16),0x4e4f534a);assert.equal(bytes.readUInt32LE(24+n),0x004e4942);return {bytes,doc:JSON.parse(bytes.subarray(20,20+n)),bin:bytes.subarray(28+n)};}
+const a=glb(V),b=glb(B);assert.equal(sha(a.bytes),'bc1a4d6d968dd53eda3480936959d0ebf292e76652a6bbdd201e15f4cd665270');
+assert.deepEqual(b.bin,a.bin,'All vertex/index/normal buffer bytes must match');
+const ai=a.doc.materials.findIndex(m=>m.name==='MAT_APA_eye_emit'),bi=b.doc.materials.findIndex(m=>m.name==='MAT_APA_eye_emit');assert.equal(ai,bi);
+const strength=read(B,'viewer/comparison.json').selectedStrength;assert.equal(strength,1);
+assert.equal(a.doc.materials[ai].extensions.KHR_materials_emissive_strength.emissiveStrength,4);
+assert.equal(b.doc.materials[bi].extensions?.KHR_materials_emissive_strength?.emissiveStrength??1,strength);
+const oldClean=structuredClone(a.doc),newClean=structuredClone(b.doc);
+delete oldClean.materials[ai].extensions;delete newClean.materials[bi].extensions;
+assert.deepEqual(a.doc.extensionsUsed,['KHR_materials_emissive_strength']);assert.deepEqual(b.doc.extensionsUsed??[],[]);
+delete oldClean.extensionsUsed;delete newClean.extensionsUsed;
+assert.deepEqual(newClean,oldClean,'Only eye strength and now-unused extension declaration may differ');
+assert.deepEqual(fs.readFileSync(path.join(B,'poses.json')),fs.readFileSync(path.join(V,'poses.json')),'All pose bytes immutable');
+const p=read(B,'profile.json'),oldProfile=read(V,'profile.json'),normalized=structuredClone(p);
+for(const key of ['profileId','revision','status'])normalized[key]=oldProfile[key];
+for(const key of ['rawGlbBytes','gzipBytes','brotliBytes','sourceBlendSha256','exportSha256'])normalized.productionMeasurements[key]=oldProfile.productionMeasurements[key];
+normalized.materials.finalPbrValues.eyeGlow.emissionStrength=4;assert.deepEqual(normalized,oldProfile,'Profile scope');assert.equal(p.materials.finalPbrValues.eyeGlow.emissionStrength,strength);
+assert.deepEqual(b.doc.materials[bi].emissiveFactor,p.materials.finalPbrValues.eyeGlow.baseColorLinear.slice(0,3));
+let triangles=0,vertices=0,primitives=0;const payloads=[];
+for(let mi=0;mi<b.doc.meshes.length;mi++)for(const prim of b.doc.meshes[mi].primitives){primitives++;triangles+=b.doc.accessors[prim.indices].count/3;vertices+=b.doc.accessors[prim.attributes.POSITION].count;for(const [kind,index]of Object.entries({...prim.attributes,INDICES:prim.indices})){const accessor=b.doc.accessors[index],bv=b.doc.bufferViews[accessor.bufferView],slice=b.bin.subarray(bv.byteOffset??0,(bv.byteOffset??0)+bv.byteLength);payloads.push({mesh:b.doc.meshes[mi].name,kind,accessor:index,bufferView:accessor.bufferView,sha256:sha(slice)});}}
+const gzip=zlib.gzipSync(b.bytes,{level:9}),brotli=zlib.brotliCompressSync(b.bytes,{params:{[zlib.constants.BROTLI_PARAM_QUALITY]:11}});
+const measures={rawGlbBytes:b.bytes.length,gzipBytes:gzip.length,brotliBytes:brotli.length,triangles,exportedVertexRecords:vertices,nodes:b.doc.nodes.length,meshes:b.doc.meshes.length,materials:b.doc.materials.length,primitives,textures:b.doc.textures?.length??0,animations:b.doc.animations?.length??0};
+const oldValidation=read(V,'validation.json');for(const key of ['triangles','exportedVertexRecords','nodes','meshes','materials','primitives','textures','animations'])assert.equal(measures[key],oldValidation.measurements[key]);
+p.productionMeasurements={...p.productionMeasurements,...measures,sourceBlendSha256:sha(fs.readFileSync(path.join(B,'selected-a.blend'))),exportSha256:sha(b.bytes)};write('profile.json',p);
+const carried=['validation.json','reimport-validation.json','validator-probes.json','placement-check.json','retained-mesh.json'].map(name=>({path:'../build-v02/'+name,sha256:sha(fs.readFileSync(path.join(V,name))),status:'unchanged geometry/pose evidence carried by exact byte and structure identity; not rerun for v03'}));
+write('delta-validation.json',{checkedAt:new Date().toISOString(),status:'PASS-emission-only-delta',sourceGlbSha256:sha(a.bytes),exportSha256:sha(b.bytes),binaryPayloadSha256:sha(b.bin),allBinaryBytesIdentical:true,allJsonExceptEyeStrengthAndUnusedExtensionDeclarationIdentical:true,posesSha256:sha(fs.readFileSync(path.join(B,'poses.json'))),poseBytesIdentical:true,profileGeometryPoseAndOtherMaterialsIdentical:true,changedFields:['materials['+bi+'].extensions.KHR_materials_emissive_strength: 4 -> implicit 1','extensionsUsed: removed now-unused KHR_materials_emissive_strength'],measurements:measures,payloads,carriedEvidence:carried});
+const original=read(V,'manifest.json'),manifest={...original,candidateId:'selected-a-v01-candidate-001-build-v03',status:'emission-only-for-independent-recheck',export:{path:'selected-a.glb',sha256:sha(b.bytes),...measures},editable:{path:'selected-a.blend',sha256:p.productionMeasurements.sourceBlendSha256},profile:{path:'profile.json',sha256:sha(fs.readFileSync(path.join(B,'profile.json')))},poses:{path:'poses.json',sha256:sha(fs.readFileSync(path.join(B,'poses.json')))},script:{path:'build_eye.py',sha256:sha(fs.readFileSync(path.join(B,'build_eye.py')))},delta:{path:'delta-validation.json',sha256:sha(fs.readFileSync(path.join(B,'delta-validation.json')))},eyeEmissionStrength:strength,carriedEvidence:carried};write('manifest.json',manifest);
+for(const key of ['export','editable','profile','poses','script','delta'])assert.equal(sha(fs.readFileSync(path.join(B,manifest[key].path))),manifest[key].sha256);
+for(const input of read(B,'input-receipt.json').files)assert.equal(sha(fs.readFileSync(path.resolve(B,input.path))),input.sha256,'Frozen input '+input.path);
+console.log(JSON.stringify({status:'PASS-emission-only-delta',measurements:measures,changedMaterialIndex:bi,exportSha256:sha(b.bytes)},null,2));

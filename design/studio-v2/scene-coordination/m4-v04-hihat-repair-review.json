@@ -1,0 +1,1558 @@
+{
+ "schema": "m4-v04-hihat-repair-review/1",
+ "status": "FINAL for this dispatch. Selected construction and criteria for the author (source recommendation). NOT visual, export or candidate acceptance; all fourteen image gates remain open.",
+ "date": "2026-11-16",
+ "reviewer": {
+  "model": "claude-fable-5-2",
+  "effort": "high",
+  "observed": "own process argv, claude.exe pid 11168",
+  "role": "retained actual-Claude critic; same session as reviews 4157a176 and 1af11ba5"
+ },
+ "task": {
+  "taskId": "task_6e9285291cc1",
+  "dispatchId": "ctx_7107a0b44854",
+  "coordinator": "term_34bea5af-b5f0-436e-8732-79ef0aa2e6c5",
+  "worker": "term_84f0a65e-3928-4af3-ad0f-303fd4046fa0",
+  "ack": "msg_9ec4298dd0e3"
+ },
+ "report": {
+  "path": "scene-m4-v04-hihat-repair-review.md",
+  "sha256": "5bc3d79f802894763f66a877516a9c1f6827821a998d82b4fbc9d5d8306e39ad"
+ },
+ "release": {
+  "path": "scene-coordination/m4-v04-hihat-repair-release.md",
+  "sha256": "038dc8afe9ab795539c57c3dba120f7f33232909a48f5d846d5f22db1498dc68"
+ },
+ "frozenInputs": {
+  "commit": "005955c6b2b01c694b3b771b7028682ffa731abd",
+  "readWith": "git show <commit>:<path> (read-only)",
+  "files": {
+   "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py": "5d01ed7c094d2983d9a597a6b7271eedfa662cfdcfa435929fa258898caca20a",
+   "asset-pipeline/full-kit/manifests/m4-v04-author-declarations.json": "476a17e3acbf4e50a1fcec5d7cac33fcf6b123e43253630dffe704d4875bd5d6",
+   "asset-pipeline/full-kit/source/build_fullkit_m4_v04.py": "74476be0316cee121436ceb7c06308bc159e046bbab71677c566b16c5374f524",
+   "scene-m4-v04-preparation-report.md": "f8f5342ce3b2e6452119f8fc43e6ce4beb0841201d97d26bbd3a7e76b3f42c82"
+  },
+  "allFourMatchRelease": true
+ },
+ "withinReleaseBounds": true,
+ "escalationNeeded": false,
+ "selectedRemedy": {
+  "summary": "Seat the hinge barrel 3.0 mm into the flat top of hihat.base by lowering its axis 6.0 mm, and re-aim the footboard about that pivot so its underside rests on the front edge of the housing top cap with the 0.3 mm resting gap.",
+  "frame": "pedal frame M = T(cx, cy, ON_RUG) @ Rz(yaw): x across, y heel to toe, z up from the resting height (metres)",
+  "geometry": {
+   "hingeAxisLocalZ": {
+    "from": 0.022,
+    "to": 0.016,
+    "intent": "base top 0.010 + barrel radius 0.009 - seat 0.003"
+   },
+   "boardOrigin": "same point as the hinge axis; heel edge stays on the axis",
+   "boardPitch": {
+    "derivedFrom": "rise = atan2(dz, dy) + asin(EPS / hypot(dy, dz))",
+    "lipLocalYZ": [
+     0.083125,
+     0.07
+    ],
+    "lipY": "l/2 - 0.085 + bev(casing)",
+    "dy": 0.218125,
+    "dz": 0.054,
+    "EPS": 0.0003,
+    "riseDeg": {
+     "from": 12.2648,
+     "to": 13.9813
+    },
+    "planRun": 0.23,
+    "liftOverRun_mm": {
+     "from": 50.0,
+     "to": 57.27
+    }
+   },
+   "unchanged": [
+    "hihat.base",
+    "hihat.housing",
+    "hihat.heel",
+    "board outline and thickness",
+    "barrel extent, radius, sides, material",
+    "HIHAT_PEDAL",
+    "hi-hat cable jack",
+    "P14",
+    "cheeks and every other row"
+   ],
+   "newParts": 0,
+   "newTriangles": 0,
+   "rowTriangles": 300,
+   "rowCeiling": 600
+  },
+  "optionsConsidered": {
+   "hinge": {
+    "rest tangent on the base (author a, axis -3 mm)": "not as stated: a 12-gon ridge touches along one line at zero depth; not a mount; criterion would be an equality",
+    "seat 3 mm in the base (axis -6 mm)": "SELECTED: same accepted construction as spur arm in kick.base and footboard in kick.heel; zero triangles, no new part or edge",
+    "two end brackets (author b)": "rejected: board (104 mm) overhangs the barrel (90 mm) ends by up to 7 mm so brackets cut its corners; alternative needs a longer barrel and brackets in 9.9 mm strips; new sharp-edged parts covered by no grant (new scope decision); does nothing for the toe",
+    "accept the gap (author c)": "excluded by root"
+   },
+   "toe": {
+    "designed clearance only": "rejected: nothing visible carries the toe",
+    "constructed seat in the housing": "rejected: a rising board over the front edge cannot enter through one flat face; board is 4 mm wider than the housing",
+    "added stop pad": "rejected: new part and edges for no gain",
+    "rest on the housing lip with 0.3 mm resting gap": "SELECTED: existing depiction made exact; no overlap; same relation as display face on bezel"
+   }
+  }
+ },
+ "identities": {
+  "row": "drum_hihat_pedal__pedal",
+  "rowVertices": 160,
+  "rowFaces": 114,
+  "topologyUnchangedByRemedy": true,
+  "groups": {
+   "hihat.base": {
+    "vertices": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37,
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     47
+    ],
+    "faces": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32,
+     33,
+     34,
+     35,
+     36,
+     37
+    ],
+    "triangles": 92
+   },
+   "hihat.housing": {
+    "vertices": [
+     48,
+     49,
+     50,
+     51,
+     52,
+     53,
+     54,
+     55,
+     56,
+     57,
+     58,
+     59,
+     60,
+     61,
+     62,
+     63,
+     64,
+     65,
+     66,
+     67,
+     68,
+     69,
+     70,
+     71,
+     72,
+     73,
+     74,
+     75,
+     76,
+     77,
+     78,
+     79,
+     80,
+     81,
+     82,
+     83,
+     84,
+     85,
+     86,
+     87,
+     88,
+     89,
+     90,
+     91,
+     92,
+     93,
+     94,
+     95
+    ],
+    "faces": [
+     38,
+     39,
+     40,
+     41,
+     42,
+     43,
+     44,
+     45,
+     46,
+     47,
+     48,
+     49,
+     50,
+     51,
+     52,
+     53,
+     54,
+     55,
+     56,
+     57,
+     58,
+     59,
+     60,
+     61,
+     62,
+     63,
+     64,
+     65,
+     66,
+     67,
+     68,
+     69,
+     70,
+     71,
+     72,
+     73,
+     74,
+     75
+    ],
+    "triangles": 92
+   },
+   "hihat.footboard": {
+    "vertices": [
+     96,
+     97,
+     98,
+     99,
+     100,
+     101,
+     102,
+     103,
+     104,
+     105,
+     106,
+     107,
+     108,
+     109,
+     110,
+     111,
+     112,
+     113,
+     114,
+     115,
+     116,
+     117,
+     118,
+     119,
+     120,
+     121,
+     122,
+     123,
+     124,
+     125,
+     126,
+     127
+    ],
+    "faces": [
+     76,
+     77,
+     78,
+     79,
+     80,
+     81,
+     82,
+     83,
+     84,
+     85,
+     86,
+     87,
+     88,
+     89,
+     90,
+     91,
+     92,
+     93
+    ],
+    "triangles": 60
+   },
+   "hihat.hinge": {
+    "vertices": [
+     128,
+     129,
+     130,
+     131,
+     132,
+     133,
+     134,
+     135,
+     136,
+     137,
+     138,
+     139,
+     140,
+     141,
+     142,
+     143,
+     144,
+     145,
+     146,
+     147,
+     148,
+     149,
+     150,
+     151
+    ],
+    "faces": [
+     94,
+     95,
+     96,
+     97,
+     98,
+     99,
+     100,
+     101,
+     102,
+     103,
+     104,
+     105,
+     106,
+     107
+    ],
+    "triangles": 44
+   },
+   "hihat.heel": {
+    "vertices": [
+     152,
+     153,
+     154,
+     155,
+     156,
+     157,
+     158,
+     159
+    ],
+    "faces": [
+     108,
+     109,
+     110,
+     111,
+     112,
+     113
+    ],
+    "triangles": 12
+   }
+  },
+  "baseReceivingSurface": {
+   "group": "hihat.base",
+   "topCapFace": 1,
+   "topCapVertices": [
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47
+   ],
+   "undersideFace": 0,
+   "outwardNormalLocal": [
+    0,
+    0,
+    1
+   ],
+   "heightAboveUndersideM": 0.01,
+   "planExtentLocal_mm": [
+    [
+     -61.875,
+     -161.875
+    ],
+    [
+     61.875,
+     161.875
+    ]
+   ]
+  },
+  "barrel": {
+   "group": "hihat.hinge",
+   "ring0": [
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139
+   ],
+   "ring1": [
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151
+   ],
+   "sideFaces": [
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105
+   ],
+   "endDiscFaces": [
+    106,
+    107
+   ]
+  },
+  "board": {
+   "group": "hihat.footboard",
+   "undersideFace": 76,
+   "undersideVertices": [
+    111,
+    110,
+    109,
+    108,
+    107,
+    106,
+    105,
+    104,
+    103,
+    102,
+    101,
+    100,
+    99,
+    98,
+    97,
+    96
+   ],
+   "topFace": 77,
+   "topVertices": [
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127
+   ],
+   "sideFaces": [
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93
+   ],
+   "heelAxisVertices": [
+    107,
+    108
+   ],
+   "toeTipUndersideVertices": [
+    99,
+    100
+   ]
+  },
+  "housing": {
+   "group": "hihat.housing",
+   "vertices": [
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95
+   ],
+   "topCapFace": 39,
+   "topCapVertices": [
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95
+   ],
+   "lipVertices": [
+    86,
+    87
+   ],
+   "lipVerticesLocal_mm": [
+    [
+     -46.0377,
+     83.125,
+     70.0
+    ],
+    [
+     46.0377,
+     83.125,
+     70.0
+    ]
+   ]
+  }
+ },
+ "meanings": {
+  "axis": "line through the centroids of ring 0 and ring 1",
+  "radius": "vertex radius 9.0 mm; inscribed radius 8.693 mm",
+  "seatDepth": "greatest perpendicular distance of a barrel vertex below the plane of base top-cap face 1; not the axis drop (6 mm), not the trough width",
+  "axisHeight": "perpendicular height of each ring centroid above that plane; equals radius minus seat depth",
+  "thickness": "distance between two parallel cap planes: board faces 76 and 77 (8.0 mm); base faces 0 and 1 (10.0 mm)",
+  "clearanceToe": "signed perpendicular distance from a housing vertex to the plane of board underside face 76, positive on its outward (lower) side",
+  "indexLists": "explicit lists everywhere; no ranges (the checkpoint criterion mixes inclusive sideFaceRange [94, 105] with half-open vertexRange [96, 128])",
+  "frame": "state for each coordinate whether it is pedal-frame or Blender world metres"
+ },
+ "criteria": {
+  "A_hinge_in_base": {
+   "pair": [
+    "hihat.hinge",
+    "hihat.base"
+   ],
+   "relation": "embedded",
+   "new": true,
+   "intent": "the hinge barrel is a knuckle seated in the base plate",
+   "conditions": [
+    "exactly this pair; not a same-row overlap allowance",
+    "exactly vertices [133, 134, 135, 145, 146, 147] are below the plane of face 1; every other barrel vertex at least 1.0 mm above it",
+    "seat depth 3.0 mm +/- 0.05, reached by vertices 134 and 146",
+    "every seated vertex inside the outline of face 1 in plan by at least 10 mm; no barrel vertex less than 5 mm above the base underside",
+    "both ring centroids 6.0 mm +/- 0.05 above the plane of face 1",
+    "designed clearance: no barrel vertex closer than 2.5 mm to hihat.heel"
+   ],
+   "whatIf": {
+    "seatedVertices": [
+     133,
+     134,
+     135,
+     145,
+     146,
+     147
+    ],
+    "depths_mm": [
+     1.7942,
+     3.0,
+     1.7942,
+     1.7942,
+     3.0,
+     1.7942
+    ],
+    "minInsideTopCapOutline_mm": 16.875,
+    "lowestAboveBaseUnderside_mm": 7.0,
+    "crossingChordAboutAxis_mm": [
+     -6.2942,
+     6.2942
+    ],
+    "axisHeightAboveBaseTop_mm": 6.0,
+    "barrelToHeel_mm": 3.0,
+    "otherVerticesAbovePlane_mm": "1.5 by 12-gon geometry (not printed by the script)"
+   }
+  },
+  "B_board_in_hinge": {
+   "pair": [
+    "hihat.footboard",
+    "hihat.hinge"
+   ],
+   "relation": "hinged",
+   "new": false,
+   "updates": [
+    "axis coordinates (world z 0.0306 -> 0.0246) and the no-change wording",
+    "board minimum above base top 12.0 -> 6.0 mm",
+    "remove barrelMountingNote",
+    "replace sideFaceRange and vertexRange with explicit lists"
+   ],
+   "whatIf": {
+    "heelAxisVertices": [
+     107,
+     108
+    ],
+    "withinBarrel": [
+     107,
+     108,
+     123,
+     124
+    ],
+    "maxRadial_mm": 8.0,
+    "inscribedRadius_mm": 8.6933,
+    "boardMinAboveBaseTop_mm": 6.0
+   }
+  },
+  "C_board_on_housing": {
+   "pair": [
+    "hihat.footboard",
+    "hihat.housing"
+   ],
+   "relation": "rests_on",
+   "gapM": 0.0003,
+   "new": true,
+   "intent": "the board's toe rests on the front lip of the sensor housing; it does not enter the housing",
+   "conditions": [
+    "exactly this pair",
+    "every housing vertex 48-95 has clearance of at least 0.25 mm (separating plane: no intersection)",
+    "vertices 86 and 87 have clearance 0.30 mm +/- 0.05; every other housing vertex has more",
+    "the feet of the perpendiculars from 86 and 87 fall inside the outline of face 76 by at least 5.0 mm"
+   ],
+   "reportedOnly": "toe-tip underside vertices 99 and 100 stand 3.27 mm above the housing top; board overhangs the lip by about 12 mm",
+   "whatIf": {
+    "minClearance_mm": 0.3,
+    "lipVertices": [
+     86,
+     87
+    ],
+    "nextSmallestClearance_mm": 0.374,
+    "lipInsideBoardOutline_mm": 5.84,
+    "toeTipAboveHousingTop_mm": 3.2658,
+    "penetratingVertices": []
+   },
+   "checkpoint": {
+    "penetratingVertices": [
+     84,
+     85,
+     86,
+     87,
+     88,
+     89
+    ],
+    "penetration_mm": [
+     0.3904,
+     0.5031,
+     0.5682,
+     0.5682,
+     0.5031,
+     0.3904
+    ]
+   }
+  }
+ },
+ "authorReportsBack": [
+  "new helper, declaration, builder and report hashes",
+  "row count (expected 300) and row bounds (what-if: top z 0.0884 -> 0.0896)",
+  "observed values for every number in criteria A, B, C",
+  "section 7 items 1 and 2 rewritten as repaired by construction, history kept",
+  "thin-margins list gains the 0.30 mm lip rest and the 0.374 mm next clearance"
+ ],
+ "imageGates": {
+  "count": 14,
+  "allOpen": true,
+  "passed": 0,
+  "relevant": [
+   "K1",
+   "HH1",
+   "E1b"
+  ],
+  "export": "exported positions keep the 0.30 mm lip gap positive and the barrel seated after quantisation"
+ },
+ "limits": [
+  "Part B is a scratch what-if built with the helper primitives; not the author implementation and not a measurement of record",
+  "no-intersection rests on the separating-plane argument; no mesh intersection test was run",
+  "the look of the seated barrel was not assessed; from the planning eye the heel rubber stands in front of it",
+  "wrote only the report and this evidence file; no source, declaration, builder, report or coordination file changed",
+  "no Blender, browser, render, export, image tool, helper worker, pose search or prior-review rerun; Git read-only (show, rev-parse, log, status)",
+  "observation for S only: kick criteria mix range conventions the same way (boardVertexRange half-open, boardSideFaceRange inclusive)"
+ ],
+ "spotCheck": {
+  "python": "3.11.9, -B, plain CPython; one build_all() plus one scratch rebuild of the hi-hat row; under one second",
+  "helperCopySha256": "5d01ed7c094d2983d9a597a6b7271eedfa662cfdcfa435929fa258898caca20a",
+  "scriptSha256": "fbb4a1135c65c310533f6a27276eaf8be0fe1081c98e06d07d21190454f42f54",
+  "script": "\"\"\"Reviewer spot check for the hi-hat repair recommendation. Read-only.\nPart A reads the frozen helper copy (git show 005955c6:..., sha 5d01ed7c...) and reports the hi-hat row as it is.\nPart B is a WHAT-IF built in this scratch script with the helper's own primitives and the recommended numbers; it edits no\nsource and is not the author's implementation. Not a measurement of record: Codex measures.\"\"\"\nimport hashlib, json, math, os, sys\nimport numpy as np\n\nHERE = os.path.dirname(os.path.abspath(__file__))\nsys.path.insert(0, HERE)\nsha = hashlib.sha256(open(os.path.join(HERE, 'helper.py'), 'rb').read()).hexdigest()\nimport helper as H\n\nmm = lambda x: round(float(x) * 1000.0, 4)\nh = H.HIHAT_PEDAL\nM = H.T(h['cx'], h['cy'], H.ON_RUG) @ H.Rz(h['yaw'])\nMi = np.linalg.inv(M)\nR, HALF, AX_Y = 0.009, 0.045, -h['l'] / 2 + 0.03\nBASE_TOP, HOUSE_TOP = 0.010, 0.070\n\n\ndef local(part):\n    V = np.asarray(part.v, float)\n    return (Mi @ np.c_[V, np.ones(len(V))].T).T[:, :3]\n\n\ndef groups(part):\n    return {gid: dict(label=g[0], verts=list(range(g[1], g[2])), faces=list(range(g[3], g[4])),\n                      tris=sum(len(part.f[i][0]) - 2 for i in range(g[3], g[4]))) for gid, g in zip(part.ids, part.groups)}\n\n\ndef analyse(part):\n    L = local(part)\n    G = groups(part)\n    out = {'rowVertices': len(part.v), 'rowFaces': len(part.f), 'rowTriangles': part.tris, 'ceiling': part.ceiling,\n           'groups': {k: dict(vertexFirst=v['verts'][0], vertexCount=len(v['verts']), faceFirst=v['faces'][0], faceCount=len(v['faces']),\n                              triangles=v['tris']) for k, v in G.items()}}\n    # --- base top cap (prism: face 0 underside cap, face 1 top cap)\n    bf = G['hihat.base']['faces']\n    base_under, base_top = bf[0], bf[1]\n    top_poly = list(part.f[base_top][0])\n    under_poly = list(part.f[base_under][0])\n    out['base'] = dict(undersideFace=base_under, topCapFace=base_top, topCapVertices=top_poly,\n                       topCapZ_mm=sorted({mm(L[i][2]) for i in top_poly}), undersideZ_mm=sorted({mm(L[i][2]) for i in under_poly}),\n                       topCapBBoxLocal_mm=[[mm(L[top_poly][:, 0].min()), mm(L[top_poly][:, 1].min())], [mm(L[top_poly][:, 0].max()), mm(L[top_poly][:, 1].max())]],\n                       thickness_mm=mm(L[top_poly][:, 2].mean() - L[under_poly][:, 2].mean()))\n    base_top_z = float(L[top_poly][:, 2].mean())\n    # --- barrel\n    hv, hf = G['hihat.hinge']['verts'], G['hihat.hinge']['faces']\n    ring0, ring1 = hv[:12], hv[12:]\n    c0, c1 = L[ring0].mean(0), L[ring1].mean(0)\n    below = [i for i in hv if L[i][2] < base_top_z - 1e-9]\n    out['barrel'] = dict(ring0=ring0, ring1=ring1, sideFaces=hf[:12], endDiscFaces=[hf[12], hf[13]],\n                         axisLocal_mm=[[mm(c) for c in c0], [mm(c) for c in c1]],\n                         axisHeightAboveBaseTop_mm=mm(c0[2] - base_top_z), lowestVertexAboveBaseTop_mm=mm(L[hv][:, 2].min() - base_top_z),\n                         vertexRadius_mm=[mm(min(np.hypot(L[i][1] - c0[1], L[i][2] - c0[2]) for i in ring0)), mm(max(np.hypot(L[i][1] - c0[1], L[i][2] - c0[2]) for i in ring0))],\n                         verticesBelowBaseTop=below, depthBelowBaseTop_mm=[mm(base_top_z - L[i][2]) for i in below])\n    if below:\n        # inside the base top-cap outline (convex polygon, plan): signed margin to every outline edge\n        P = L[top_poly][:, :2]\n        cen = P.mean(0)\n        marg = 1e9\n        for k in range(len(P)):\n            a, b = P[k], P[(k + 1) % len(P)]\n            e = b - a\n            n = np.array([-e[1], e[0]]) / np.linalg.norm(e)\n            if np.dot(n, cen - a) < 0:\n                n = -n\n            marg = min(marg, min(float(np.dot(n, L[i][:2] - a)) for i in below))\n        out['barrel']['seatedVerticesMinInsideTopCapOutline_mm'] = mm(marg)\n        # chord where the side faces cross the top plane\n        ys = []\n        for ring in (ring0, ring1):\n            for k in range(12):\n                a, b = L[ring[k]], L[ring[(k + 1) % 12]]\n                if (a[2] - base_top_z) * (b[2] - base_top_z) < 0:\n                    t = (base_top_z - a[2]) / (b[2] - a[2])\n                    ys.append(float(a[1] + t * (b[1] - a[1]) - AX_Y))\n        out['barrel']['crossingChordAboutAxis_mm'] = [mm(min(ys)), mm(max(ys))]\n        out['barrel']['lowestVertexAboveBaseUnderside_mm'] = mm(L[hv][:, 2].min() - float(L[under_poly][:, 2].mean()))\n    # --- heel rubber\n    ev = G['hihat.heel']['verts']\n    out['heel'] = dict(vertices=ev, yLocal_mm=[mm(L[ev][:, 1].min()), mm(L[ev][:, 1].max())], zLocal_mm=[mm(L[ev][:, 2].min()), mm(L[ev][:, 2].max())],\n                       barrelBackToHeelFront_mm=mm(L[hv][:, 1].min() - L[ev][:, 1].max()))\n    # --- board\n    fv, ff = G['hihat.footboard']['verts'], G['hihat.footboard']['faces']\n    under, top = ff[0], ff[1]\n    Pu = L[list(part.f[under][0])]\n    nrm = np.cross(Pu[1] - Pu[0], Pu[2] - Pu[0]); nrm /= np.linalg.norm(nrm)\n    if nrm[2] > 0:\n        nrm = -nrm                                       # outward normal of the underside points down\n    Pt = L[list(part.f[top][0])]\n    rad = {i: float(np.hypot(L[i][1] - c0[1], L[i][2] - c0[2])) for i in fv}\n    axis_v = [i for i in fv if rad[i] < 1e-6]\n    within = [i for i in fv if abs(L[i][0]) <= HALF and rad[i] < R]\n    out['board'] = dict(undersideFace=under, topFace=top, undersideVertices=list(part.f[under][0]), topVertices=list(part.f[top][0]),\n                        sideFaces=ff[2:], thickness_mm=mm(abs(np.dot(Pt[0] - Pu[0], nrm))), riseDeg=round(math.degrees(math.atan2(-nrm[1], -nrm[2])), 4),\n                        heelAxisVertices=axis_v, withinBarrel=within, maxRadialWithinBarrel_mm=mm(max(rad[i] for i in within)),\n                        inscribedRadius_mm=mm(R * math.cos(math.pi / 12)), minAboveBaseTop_mm=mm(L[fv][:, 2].min() - base_top_z),\n                        zLocal_mm=[mm(L[fv][:, 2].min()), mm(L[fv][:, 2].max())], yLocal_mm=[mm(L[fv][:, 1].min()), mm(L[fv][:, 1].max())],\n                        halfWidth_mm=mm(np.abs(L[fv][:, 0]).max()))\n    # --- housing against the board underside plane (signed: + = housing vertex below the plane, i.e. clear of the board)\n    gv, gf = G['hihat.housing']['verts'], G['hihat.housing']['faces']\n    h_top = gf[1]\n    h_top_poly = list(part.f[h_top][0])\n    clear = {i: float(np.dot(L[i] - Pu[0], nrm)) for i in gv}\n    cmin = min(clear.values())\n    lip = [i for i in gv if clear[i] < cmin + 1e-7]\n    pen = sorted(i for i in gv if clear[i] < 0)\n    # projection of lip vertices into the board underside outline (board-plane coords)\n    ex = np.array([1.0, 0, 0]); ey = np.cross(nrm, ex); ey /= np.linalg.norm(ey)\n    Q = np.array([[np.dot(p - Pu[0], ex), np.dot(p - Pu[0], ey)] for p in Pu])\n    qc = Q.mean(0)\n    inside = 1e9\n    for i in lip:\n        q = np.array([np.dot(L[i] - Pu[0], ex), np.dot(L[i] - Pu[0], ey)])\n        for k in range(len(Q)):\n            a, b = Q[k], Q[(k + 1) % len(Q)]\n            e = b - a\n            n = np.array([-e[1], e[0]]) / np.linalg.norm(e)\n            if np.dot(n, qc - a) < 0:\n                n = -n\n            inside = min(inside, float(np.dot(n, q - a)))\n    toe_v = [i for i in part.f[under][0] if L[i][1] > L[list(part.f[under][0])][:, 1].max() - 1e-9]\n    out['housing'] = dict(vertices=[gv[0], gv[-1]], undersideFace=gf[0], topCapFace=h_top, topCapVertices=h_top_poly,\n                          topCapZ_mm=sorted({mm(L[i][2]) for i in h_top_poly}),\n                          minSignedClearanceToBoardUnderside_mm=mm(cmin), lipVertices=lip,\n                          lipVerticesLocal_mm=[[mm(c) for c in L[i]] for i in lip],\n                          lipVerticesAreTopCap=all(i in h_top_poly for i in lip),\n                          verticesPenetratingBoardUnderside=pen, penetration_mm=[mm(-clear[i]) for i in pen],\n                          lipInsideBoardUndersideOutline_mm=mm(inside),\n                          nextSmallestClearance_mm=mm(min(v for i, v in clear.items() if i not in lip)),\n                          toeTipUndersideVertices=toe_v, toeTipAboveHousingTop_mm=[mm(L[i][2] - HOUSE_TOP) for i in toe_v])\n    bb = np.asarray(part.v, float)\n    out['rowBoundsWorld'] = [[round(float(c), 4) for c in bb.min(0)], [round(float(c), 4) for c in bb.max(0)]]\n    out['hardEdgeTally'] = {}\n    for rec in H.edge_records(part):\n        lab = part.groups[rec['group']][0]\n        s = H.edge_set(lab, rec['kind'], rec['band'])\n        key = f\"{s['id'] if s else 'UNDECLARED'}|{lab}|{rec['kind']}|{rec['band']}\"\n        t = out['hardEdgeTally'].setdefault(key, [0, 0.0]); t[0] += 1; t[1] = round(t[1] + rec['length'], 5)\n    return out\n\n\n# ---------------------------------------------------------------- A: frozen checkpoint\nparts, _ = H.build_all()\nfrozen = parts['drum_hihat_pedal__pedal']\nres = {'helperSha256': sha, 'selectedPose': dict(H.SELECTED_POSE), 'A_frozen': analyse(frozen)}\n\n# ---------------------------------------------------------------- B: what-if (scratch only)\nSEAT = 0.003                                             # barrel seated 3.0 mm into the base top\nAX_Z = BASE_TOP + R - SEAT                               # 0.016: axis 6.0 mm above the base top\nb = H.bev('casing')\nLIP_Y, LIP_Z = h['l'] / 2 - 0.085 + b, HOUSE_TOP          # housing top-cap front edge (flat top inset by the casing bevel)\ndy, dz = LIP_Y - AX_Y, LIP_Z - AX_Z\nrise = math.atan2(dz, dy) + math.asin(H.EPS / math.hypot(dy, dz))    # underside plane EPS above the lip, through the axis\nrun = h['l'] - 0.10                                      # plan run of the board, unchanged (0.23)\n\n\ndef whatif():\n    p = H.Part('drum_hihat_pedal__pedal')\n    with H.label('hihat.base'):\n        H.prism(p, H.rrect(h['w'] + 0.016, h['l'], 0.014, 2), 0.0, 0.010, 'black', M, top='casing')\n    with H.label('hihat.housing'):\n        H.prism(p, H.bevel_corners([(-0.05, h['l'] / 2 - 0.085), (0.05, h['l'] / 2 - 0.085), (0.05, h['l'] / 2 - 0.005), (-0.05, h['l'] / 2 - 0.005)], 'casing'),\n                0.010, 0.070, 'black', M, top='casing')\n    fb = M @ H.T(0, AX_Y, AX_Z) @ H.Rx(rise)\n    H._LABEL[0] = 'hihat.footboard'\n    H.extrude(p, H.rrect(h['w'] - 0.01, run / math.cos(rise), 0.012, 3), 0.0, 0.008, 'black_metal', fb @ H.T(0, run / math.cos(rise) / 2, 0))\n    H._LABEL[0] = 'hihat.hinge'\n    H.rod(p, H.apply(M, (-HALF, AX_Y, AX_Z)), H.apply(M, (HALF, AX_Y, AX_Z)), R, 12, 'black_metal')\n    H._LABEL[0] = 'hihat.heel'\n    H.box(p, (-0.045, -h['l'] / 2 + 0.005, 0.010), (0.045, -h['l'] / 2 + 0.018, 0.018), 'rubber', M)\n    p.finish()\n    return p\n\n\nw = whatif()\nres['B_whatIf'] = dict(inputs=dict(seat_mm=mm(SEAT), axisHeightLocal_mm=mm(AX_Z), lipLocal_mm=[mm(LIP_Y), mm(LIP_Z)], restGap_mm=mm(H.EPS),\n                                   riseDeg=round(math.degrees(rise), 4), riseFrozenDeg=round(math.degrees(math.atan2(0.050, run)), 4),\n                                   toeLiftOverRun_mm=mm(run * math.tan(rise)), planRun_mm=mm(run)),\n                       result=analyse(w))\n# same topology as the frozen row?\nres['B_sameTopologyAsFrozen'] = (len(w.v) == len(frozen.v) and [f for f, _ in w.f] == [f for f, _ in frozen.f] and w.ids == frozen.ids\n                                 and w.cls == frozen.cls and w.roles == frozen.roles and w.runs == frozen.runs)\nmoved = [i for i in range(len(w.v)) if np.linalg.norm(np.asarray(w.v[i]) - np.asarray(frozen.v[i])) > 1e-9]\nG = groups(frozen)\nres['B_movedVerticesByGroup'] = {k: sum(1 for i in v['verts'] if i in set(moved)) for k, v in G.items()}\n# hard-edge identity: same hard edges, same sets?\nres['B_hardEdgeTallySameAsFrozen'] = res['B_whatIf']['result']['hardEdgeTally'].keys() == res['A_frozen']['hardEdgeTally'].keys() and \\\n    all(res['B_whatIf']['result']['hardEdgeTally'][k][0] == res['A_frozen']['hardEdgeTally'][k][0] for k in res['A_frozen']['hardEdgeTally'])\njson.dump(res, sys.stdout, indent=1)\n",
+  "outputSha256": "655a06e7020f3d0d26dfa7341d45830d2dbbdbaa646dd620d8f389c7a5955542",
+  "output": {
+   "helperSha256": "5d01ed7c094d2983d9a597a6b7271eedfa662cfdcfa435929fa258898caca20a",
+   "selectedPose": {
+    "cx": 1.375,
+    "cy": -0.825,
+    "yaw": -0.95
+   },
+   "A_frozen": {
+    "rowVertices": 160,
+    "rowFaces": 114,
+    "rowTriangles": 300,
+    "ceiling": 600,
+    "groups": {
+     "hihat.base": {
+      "vertexFirst": 0,
+      "vertexCount": 48,
+      "faceFirst": 0,
+      "faceCount": 38,
+      "triangles": 92
+     },
+     "hihat.housing": {
+      "vertexFirst": 48,
+      "vertexCount": 48,
+      "faceFirst": 38,
+      "faceCount": 38,
+      "triangles": 92
+     },
+     "hihat.footboard": {
+      "vertexFirst": 96,
+      "vertexCount": 32,
+      "faceFirst": 76,
+      "faceCount": 18,
+      "triangles": 60
+     },
+     "hihat.hinge": {
+      "vertexFirst": 128,
+      "vertexCount": 24,
+      "faceFirst": 94,
+      "faceCount": 14,
+      "triangles": 44
+     },
+     "hihat.heel": {
+      "vertexFirst": 152,
+      "vertexCount": 8,
+      "faceFirst": 108,
+      "faceCount": 6,
+      "triangles": 12
+     }
+    },
+    "base": {
+     "undersideFace": 0,
+     "topCapFace": 1,
+     "topCapVertices": [
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47
+     ],
+     "topCapZ_mm": [
+      10.0
+     ],
+     "undersideZ_mm": [
+      0.0
+     ],
+     "topCapBBoxLocal_mm": [
+      [
+       -61.875,
+       -161.875
+      ],
+      [
+       61.875,
+       161.875
+      ]
+     ],
+     "thickness_mm": 10.0
+    },
+    "barrel": {
+     "ring0": [
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139
+     ],
+     "ring1": [
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151
+     ],
+     "sideFaces": [
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105
+     ],
+     "endDiscFaces": [
+      106,
+      107
+     ],
+     "axisLocal_mm": [
+      [
+       -45.0,
+       -135.0,
+       22.0
+      ],
+      [
+       45.0,
+       -135.0,
+       22.0
+      ]
+     ],
+     "axisHeightAboveBaseTop_mm": 12.0,
+     "lowestVertexAboveBaseTop_mm": 3.0,
+     "vertexRadius_mm": [
+      9.0,
+      9.0
+     ],
+     "verticesBelowBaseTop": [],
+     "depthBelowBaseTop_mm": []
+    },
+    "heel": {
+     "vertices": [
+      152,
+      153,
+      154,
+      155,
+      156,
+      157,
+      158,
+      159
+     ],
+     "yLocal_mm": [
+      -160.0,
+      -147.0
+     ],
+     "zLocal_mm": [
+      10.0,
+      18.0
+     ],
+     "barrelBackToHeelFront_mm": 3.0
+    },
+    "board": {
+     "undersideFace": 76,
+     "topFace": 77,
+     "undersideVertices": [
+      111,
+      110,
+      109,
+      108,
+      107,
+      106,
+      105,
+      104,
+      103,
+      102,
+      101,
+      100,
+      99,
+      98,
+      97,
+      96
+     ],
+     "topVertices": [
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127
+     ],
+     "sideFaces": [
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93
+     ],
+     "thickness_mm": 8.0,
+     "riseDeg": -12.2648,
+     "heelAxisVertices": [
+      107,
+      108
+     ],
+     "withinBarrel": [
+      107,
+      108,
+      123,
+      124
+     ],
+     "maxRadialWithinBarrel_mm": 8.0,
+     "inscribedRadius_mm": 8.6933,
+     "minAboveBaseTop_mm": 12.0,
+     "zLocal_mm": [
+      22.0,
+      79.8174
+     ],
+     "yLocal_mm": [
+      -136.6994,
+      95.0
+     ],
+     "halfWidth_mm": 52.0
+    },
+    "housing": {
+     "vertices": [
+      48,
+      95
+     ],
+     "undersideFace": 38,
+     "topCapFace": 39,
+     "topCapVertices": [
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95
+     ],
+     "topCapZ_mm": [
+      70.0
+     ],
+     "minSignedClearanceToBoardUnderside_mm": -0.5682,
+     "lipVertices": [
+      86,
+      87
+     ],
+     "lipVerticesLocal_mm": [
+      [
+       -46.0377,
+       83.125,
+       70.0
+      ],
+      [
+       46.0377,
+       83.125,
+       70.0
+      ]
+     ],
+     "lipVerticesAreTopCap": true,
+     "verticesPenetratingBoardUnderside": [
+      84,
+      85,
+      86,
+      87,
+      88,
+      89
+     ],
+     "penetration_mm": [
+      0.3904,
+      0.5031,
+      0.5682,
+      0.5682,
+      0.5031,
+      0.3904
+     ],
+     "lipInsideBoardUndersideOutline_mm": 5.7666,
+     "nextSmallestClearance_mm": -0.5031,
+     "toeTipUndersideVertices": [
+      100,
+      99
+     ],
+     "toeTipAboveHousingTop_mm": [
+      2.0,
+      2.0
+     ]
+    },
+    "rowBoundsWorld": [
+     [
+      0.9174,
+      -0.0699,
+      0.0086
+     ],
+     [
+      1.0826,
+      0.2699,
+      0.0884
+     ]
+    ],
+    "hardEdgeTally": {
+     "hihat.base.contact|hihat.base|cap|convex>=80": [
+      12,
+      0.89376
+     ],
+     "hihat.housing.contact|hihat.housing|cap|convex>=80": [
+      12,
+      0.35332
+     ],
+     "granted.thin_plates|hihat.footboard|cap|convex>=80": [
+      32,
+      1.31452
+     ],
+     "pedal.hinges|hihat.hinge|cap|convex>=80": [
+      24,
+      0.11184
+     ],
+     "granted.small_dark_blocks|hihat.heel|block|convex>=80": [
+      12,
+      0.444
+     ]
+    }
+   },
+   "B_whatIf": {
+    "inputs": {
+     "seat_mm": 3.0,
+     "axisHeightLocal_mm": 16.0,
+     "lipLocal_mm": [
+      83.125,
+      70.0
+     ],
+     "restGap_mm": 0.3,
+     "riseDeg": 13.9813,
+     "riseFrozenDeg": 12.2648,
+     "toeLiftOverRun_mm": 57.2658,
+     "planRun_mm": 230.0
+    },
+    "result": {
+     "rowVertices": 160,
+     "rowFaces": 114,
+     "rowTriangles": 300,
+     "ceiling": 600,
+     "groups": {
+      "hihat.base": {
+       "vertexFirst": 0,
+       "vertexCount": 48,
+       "faceFirst": 0,
+       "faceCount": 38,
+       "triangles": 92
+      },
+      "hihat.housing": {
+       "vertexFirst": 48,
+       "vertexCount": 48,
+       "faceFirst": 38,
+       "faceCount": 38,
+       "triangles": 92
+      },
+      "hihat.footboard": {
+       "vertexFirst": 96,
+       "vertexCount": 32,
+       "faceFirst": 76,
+       "faceCount": 18,
+       "triangles": 60
+      },
+      "hihat.hinge": {
+       "vertexFirst": 128,
+       "vertexCount": 24,
+       "faceFirst": 94,
+       "faceCount": 14,
+       "triangles": 44
+      },
+      "hihat.heel": {
+       "vertexFirst": 152,
+       "vertexCount": 8,
+       "faceFirst": 108,
+       "faceCount": 6,
+       "triangles": 12
+      }
+     },
+     "base": {
+      "undersideFace": 0,
+      "topCapFace": 1,
+      "topCapVertices": [
+       36,
+       37,
+       38,
+       39,
+       40,
+       41,
+       42,
+       43,
+       44,
+       45,
+       46,
+       47
+      ],
+      "topCapZ_mm": [
+       10.0
+      ],
+      "undersideZ_mm": [
+       0.0
+      ],
+      "topCapBBoxLocal_mm": [
+       [
+        -61.875,
+        -161.875
+       ],
+       [
+        61.875,
+        161.875
+       ]
+      ],
+      "thickness_mm": 10.0
+     },
+     "barrel": {
+      "ring0": [
+       128,
+       129,
+       130,
+       131,
+       132,
+       133,
+       134,
+       135,
+       136,
+       137,
+       138,
+       139
+      ],
+      "ring1": [
+       140,
+       141,
+       142,
+       143,
+       144,
+       145,
+       146,
+       147,
+       148,
+       149,
+       150,
+       151
+      ],
+      "sideFaces": [
+       94,
+       95,
+       96,
+       97,
+       98,
+       99,
+       100,
+       101,
+       102,
+       103,
+       104,
+       105
+      ],
+      "endDiscFaces": [
+       106,
+       107
+      ],
+      "axisLocal_mm": [
+       [
+        -45.0,
+        -135.0,
+        16.0
+       ],
+       [
+        45.0,
+        -135.0,
+        16.0
+       ]
+      ],
+      "axisHeightAboveBaseTop_mm": 6.0,
+      "lowestVertexAboveBaseTop_mm": -3.0,
+      "vertexRadius_mm": [
+       9.0,
+       9.0
+      ],
+      "verticesBelowBaseTop": [
+       133,
+       134,
+       135,
+       145,
+       146,
+       147
+      ],
+      "depthBelowBaseTop_mm": [
+       1.7942,
+       3.0,
+       1.7942,
+       1.7942,
+       3.0,
+       1.7942
+      ],
+      "seatedVerticesMinInsideTopCapOutline_mm": 16.875,
+      "crossingChordAboutAxis_mm": [
+       -6.2942,
+       6.2942
+      ],
+      "lowestVertexAboveBaseUnderside_mm": 7.0
+     },
+     "heel": {
+      "vertices": [
+       152,
+       153,
+       154,
+       155,
+       156,
+       157,
+       158,
+       159
+      ],
+      "yLocal_mm": [
+       -160.0,
+       -147.0
+      ],
+      "zLocal_mm": [
+       10.0,
+       18.0
+      ],
+      "barrelBackToHeelFront_mm": 3.0
+     },
+     "board": {
+      "undersideFace": 76,
+      "topFace": 77,
+      "undersideVertices": [
+       111,
+       110,
+       109,
+       108,
+       107,
+       106,
+       105,
+       104,
+       103,
+       102,
+       101,
+       100,
+       99,
+       98,
+       97,
+       96
+      ],
+      "topVertices": [
+       112,
+       113,
+       114,
+       115,
+       116,
+       117,
+       118,
+       119,
+       120,
+       121,
+       122,
+       123,
+       124,
+       125,
+       126,
+       127
+      ],
+      "sideFaces": [
+       78,
+       79,
+       80,
+       81,
+       82,
+       83,
+       84,
+       85,
+       86,
+       87,
+       88,
+       89,
+       90,
+       91,
+       92,
+       93
+      ],
+      "thickness_mm": 8.0,
+      "riseDeg": -13.9813,
+      "heelAxisVertices": [
+       107,
+       108
+      ],
+      "withinBarrel": [
+       107,
+       108,
+       123,
+       124
+      ],
+      "maxRadialWithinBarrel_mm": 8.0,
+      "inscribedRadius_mm": 8.6933,
+      "minAboveBaseTop_mm": 6.0,
+      "zLocal_mm": [
+       16.0,
+       81.0288
+      ],
+      "yLocal_mm": [
+       -136.9328,
+       95.0
+      ],
+      "halfWidth_mm": 52.0
+     },
+     "housing": {
+      "vertices": [
+       48,
+       95
+      ],
+      "undersideFace": 38,
+      "topCapFace": 39,
+      "topCapVertices": [
+       84,
+       85,
+       86,
+       87,
+       88,
+       89,
+       90,
+       91,
+       92,
+       93,
+       94,
+       95
+      ],
+      "topCapZ_mm": [
+       70.0
+      ],
+      "minSignedClearanceToBoardUnderside_mm": 0.3,
+      "lipVertices": [
+       86,
+       87
+      ],
+      "lipVerticesLocal_mm": [
+       [
+        -46.0377,
+        83.125,
+        70.0
+       ],
+       [
+        46.0377,
+        83.125,
+        70.0
+       ]
+      ],
+      "lipVerticesAreTopCap": true,
+      "verticesPenetratingBoardUnderside": [],
+      "penetration_mm": [],
+      "lipInsideBoardUndersideOutline_mm": 5.84,
+      "nextSmallestClearance_mm": 0.374,
+      "toeTipUndersideVertices": [
+       100,
+       99
+      ],
+      "toeTipAboveHousingTop_mm": [
+       3.2658,
+       3.2658
+      ]
+     },
+     "rowBoundsWorld": [
+      [
+       0.9174,
+       -0.0699,
+       0.0086
+      ],
+      [
+       1.0826,
+       0.2699,
+       0.0896
+      ]
+     ],
+     "hardEdgeTally": {
+      "hihat.base.contact|hihat.base|cap|convex>=80": [
+       12,
+       0.89376
+      ],
+      "hihat.housing.contact|hihat.housing|cap|convex>=80": [
+       12,
+       0.35332
+      ],
+      "granted.thin_plates|hihat.footboard|cap|convex>=80": [
+       32,
+       1.32112
+      ],
+      "pedal.hinges|hihat.hinge|cap|convex>=80": [
+       24,
+       0.11184
+      ],
+      "granted.small_dark_blocks|hihat.heel|block|convex>=80": [
+       12,
+       0.444
+      ]
+     }
+    }
+   },
+   "B_sameTopologyAsFrozen": true,
+   "B_movedVerticesByGroup": {
+    "hihat.base": 0,
+    "hihat.housing": 0,
+    "hihat.footboard": 32,
+    "hihat.hinge": 24,
+    "hihat.heel": 0
+   },
+   "B_hardEdgeTallySameAsFrozen": true
+  }
+ }
+}

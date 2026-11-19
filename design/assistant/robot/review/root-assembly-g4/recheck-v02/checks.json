@@ -1,0 +1,34 @@
+[
+  {
+    "argv": [
+      "--test",
+      "--test-reporter=tap",
+      "--test-name-pattern=project modality|source navigation must|native focus-restoration|native history close|Ask owns|ordinary close aborts|assistant-to-project takeover|history navigation clears",
+      "tests/assistant/studio-experience.test.cjs"
+    ],
+    "exitCode": 0,
+    "log": "targeted-current.txt"
+  },
+  {
+    "argv": [
+      "--test",
+      "--test-reporter=tap",
+      "--test-name-pattern=project modality|source navigation must",
+      "design/assistant/robot/review/root-assembly-g4/recheck-v02/old-source-sensitivity.cjs"
+    ],
+    "exitCode": 1,
+    "log": "old-source-sensitivity.txt"
+  },
+  {
+    "argv": [
+      "node_modules/eslint/bin/eslint.js",
+      "components/studio/StudioExperience.tsx",
+      "tests/assistant/studio-experience.test.cjs",
+      "design/assistant/robot/review/root-assembly-g4/recheck-v02/old-source-sensitivity.cjs",
+      "--max-warnings",
+      "0"
+    ],
+    "exitCode": 0,
+    "log": "scoped-lint.txt"
+  }
+]

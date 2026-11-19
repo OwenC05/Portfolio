@@ -1,0 +1,529 @@
+{
+  "checkedAt": "2026-11-15T18:33:02.378Z",
+  "scope": "Document links, refreshed source anchors, in-memory TypeScript sketch consistency only; no application tests/build/browser/asset/visual checks executed.",
+  "documents": [
+    "implementation-plan.md",
+    "state-contract.md",
+    "verification-matrix.md",
+    "integration-handoff.md"
+  ],
+  "linksChecked": 45,
+  "links": [
+    {
+      "document": "implementation-plan.md",
+      "target": "../../../../.omx/plans/studio-apprentice-robot.md",
+      "present": true
+    },
+    {
+      "document": "implementation-plan.md",
+      "target": "state-contract.md",
+      "present": true
+    },
+    {
+      "document": "implementation-plan.md",
+      "target": "verification-matrix.md",
+      "present": true
+    },
+    {
+      "document": "implementation-plan.md",
+      "target": "integration-handoff.md",
+      "present": true
+    },
+    {
+      "document": "implementation-plan.md",
+      "target": "source-evidence.json",
+      "present": true
+    },
+    {
+      "document": "implementation-plan.md",
+      "target": "../../../../components/assistant/AssistantWorkbench.tsx",
+      "present": true
+    },
+    {
+      "document": "implementation-plan.md",
+      "target": "../../../../lib/assistant/events.ts",
+      "present": true
+    },
+    {
+      "document": "implementation-plan.md",
+      "target": "../../../../lib/assistant/types.ts",
+      "present": true
+    },
+    {
+      "document": "implementation-plan.md",
+      "target": "../../../../lib/assistant/handler.ts",
+      "present": true
+    },
+    {
+      "document": "implementation-plan.md",
+      "target": "../../../../lib/assistant/generation.ts",
+      "present": true
+    },
+    {
+      "document": "implementation-plan.md",
+      "target": "../../../../lib/assistant/retrieval.ts",
+      "present": true
+    },
+    {
+      "document": "implementation-plan.md",
+      "target": "../../../../components/studio/StudioExperience.tsx",
+      "present": true
+    },
+    {
+      "document": "implementation-plan.md",
+      "target": "../../../../components/studio/StudioScene.tsx",
+      "present": true
+    },
+    {
+      "document": "implementation-plan.md",
+      "target": "../../../../lib/studio-contract.ts",
+      "present": true
+    },
+    {
+      "document": "implementation-plan.md",
+      "target": "../../../../components/studio/scene/controller.ts",
+      "present": true
+    },
+    {
+      "document": "implementation-plan.md",
+      "target": "../../../../components/studio/scene/picking.ts",
+      "present": true
+    },
+    {
+      "document": "implementation-plan.md",
+      "target": "../../../../components/studio/scene/types.ts",
+      "present": true
+    },
+    {
+      "document": "implementation-plan.md",
+      "target": "../../../../components/studio/scene/load-pilot.ts",
+      "present": true
+    },
+    {
+      "document": "implementation-plan.md",
+      "target": "../../../../components/studio/scene/resources.ts",
+      "present": true
+    },
+    {
+      "document": "implementation-plan.md",
+      "target": "../../../../app/studio/panel-navigation.ts",
+      "present": true
+    },
+    {
+      "document": "implementation-plan.md",
+      "target": "../../../../app/studio/panel-scroll.ts",
+      "present": true
+    },
+    {
+      "document": "implementation-plan.md",
+      "target": "../../../../components/studio/scene/view-config.ts",
+      "present": true
+    },
+    {
+      "document": "implementation-plan.md",
+      "target": "../engineering-constraints.md",
+      "present": true
+    },
+    {
+      "document": "implementation-plan.md",
+      "target": "../engineering/source-snapshot.json",
+      "present": true
+    },
+    {
+      "document": "implementation-plan.md",
+      "target": "../brief.md",
+      "present": true
+    },
+    {
+      "document": "implementation-plan.md",
+      "target": "../review/blockout-v01/review.md",
+      "present": true
+    },
+    {
+      "document": "state-contract.md",
+      "target": "implementation-plan.md",
+      "present": true
+    },
+    {
+      "document": "verification-matrix.md",
+      "target": "../../../../.omx/plans/studio-apprentice-robot.md",
+      "present": true
+    },
+    {
+      "document": "verification-matrix.md",
+      "target": "state-contract.md",
+      "present": true
+    },
+    {
+      "document": "verification-matrix.md",
+      "target": "../../../../tests/assistant/events.test.cjs",
+      "present": true
+    },
+    {
+      "document": "verification-matrix.md",
+      "target": "../../../../tests/assistant/backend.test.cjs",
+      "present": true
+    },
+    {
+      "document": "verification-matrix.md",
+      "target": "../../../../scripts/verify-assistant-browser.mjs",
+      "present": true
+    },
+    {
+      "document": "verification-matrix.md",
+      "target": "../../../../components/studio/scene/verify-controller.mjs",
+      "present": true
+    },
+    {
+      "document": "verification-matrix.md",
+      "target": "../../../../components/studio/scene/verify-pilot.mjs",
+      "present": true
+    },
+    {
+      "document": "verification-matrix.md",
+      "target": "../../../../components/studio/scene/verify-full-kit.mjs",
+      "present": true
+    },
+    {
+      "document": "verification-matrix.md",
+      "target": "../../../../design/studio-v2/browser-verification/README.md",
+      "present": true
+    },
+    {
+      "document": "verification-matrix.md",
+      "target": "../../../../CONTRIBUTING.md",
+      "present": true
+    },
+    {
+      "document": "integration-handoff.md",
+      "target": "implementation-plan.md",
+      "present": true
+    },
+    {
+      "document": "integration-handoff.md",
+      "target": "state-contract.md",
+      "present": true
+    },
+    {
+      "document": "integration-handoff.md",
+      "target": "verification-matrix.md",
+      "present": true
+    },
+    {
+      "document": "integration-handoff.md",
+      "target": "../review/blockout-v01/review.md",
+      "present": true
+    },
+    {
+      "document": "integration-handoff.md",
+      "target": "source-evidence.json",
+      "present": true
+    },
+    {
+      "document": "integration-handoff.md",
+      "target": "verification-matrix.md",
+      "present": true
+    },
+    {
+      "document": "integration-handoff.md",
+      "target": "validation.json",
+      "present": true
+    },
+    {
+      "document": "integration-handoff.md",
+      "target": "source-evidence.json",
+      "present": true
+    }
+  ],
+  "sourceAnchors": [
+    {
+      "file": "components/assistant/AssistantWorkbench.tsx",
+      "line": 31,
+      "symbol": "interface Run",
+      "pass": true
+    },
+    {
+      "file": "components/assistant/AssistantWorkbench.tsx",
+      "line": 325,
+      "symbol": "const stop",
+      "pass": true
+    },
+    {
+      "file": "components/assistant/AssistantWorkbench.tsx",
+      "line": 341,
+      "symbol": "const ask",
+      "pass": true
+    },
+    {
+      "file": "components/assistant/AssistantWorkbench.tsx",
+      "line": 381,
+      "symbol": "const handle",
+      "pass": true
+    },
+    {
+      "file": "components/assistant/AssistantWorkbench.tsx",
+      "line": 489,
+      "symbol": "const reveal",
+      "pass": true
+    },
+    {
+      "file": "lib/assistant/events.ts",
+      "line": 97,
+      "symbol": "parseAssistantEvent",
+      "pass": true
+    },
+    {
+      "file": "lib/assistant/types.ts",
+      "line": 40,
+      "symbol": "AssistantEvent",
+      "pass": true
+    },
+    {
+      "file": "lib/assistant/handler.ts",
+      "line": 106,
+      "symbol": "createAssistantHandler",
+      "pass": true
+    },
+    {
+      "file": "lib/assistant/handler.ts",
+      "line": 158,
+      "symbol": "retrieval-start",
+      "pass": true
+    },
+    {
+      "file": "lib/assistant/generation.ts",
+      "line": 13,
+      "symbol": "sourcesAnswer",
+      "pass": true
+    },
+    {
+      "file": "lib/assistant/retrieval.ts",
+      "line": 5,
+      "symbol": "MAX_HITS",
+      "pass": true
+    },
+    {
+      "file": "lib/assistant/retrieval.ts",
+      "line": 119,
+      "symbol": "selectPassages",
+      "pass": true
+    },
+    {
+      "file": "components/studio/StudioExperience.tsx",
+      "line": 121,
+      "symbol": "synchronize",
+      "pass": true
+    },
+    {
+      "file": "components/studio/StudioExperience.tsx",
+      "line": 231,
+      "symbol": "selectProject",
+      "pass": true
+    },
+    {
+      "file": "components/studio/StudioExperience.tsx",
+      "line": 300,
+      "symbol": "onDialogClose",
+      "pass": true
+    },
+    {
+      "file": "components/studio/StudioScene.tsx",
+      "line": 12,
+      "symbol": "useEffect",
+      "pass": true
+    },
+    {
+      "file": "lib/studio-contract.ts",
+      "line": 9,
+      "symbol": "StudioSceneProps",
+      "pass": true
+    },
+    {
+      "file": "components/studio/scene/controller.ts",
+      "line": 72,
+      "symbol": "function dispose",
+      "pass": true
+    },
+    {
+      "file": "components/studio/scene/controller.ts",
+      "line": 108,
+      "symbol": "function schedule",
+      "pass": true
+    },
+    {
+      "file": "components/studio/scene/controller.ts",
+      "line": 113,
+      "symbol": "function invalidate",
+      "pass": true
+    },
+    {
+      "file": "components/studio/scene/controller.ts",
+      "line": 121,
+      "symbol": "function render",
+      "pass": true
+    },
+    {
+      "file": "components/studio/scene/controller.ts",
+      "line": 217,
+      "symbol": "function canInteract",
+      "pass": true
+    },
+    {
+      "file": "components/studio/scene/controller.ts",
+      "line": 357,
+      "symbol": "const controller",
+      "pass": true
+    },
+    {
+      "file": "components/studio/scene/controller.ts",
+      "line": 421,
+      "symbol": "const token",
+      "pass": true
+    },
+    {
+      "file": "components/studio/scene/picking.ts",
+      "line": 112,
+      "symbol": "pickProject",
+      "pass": true
+    },
+    {
+      "file": "components/studio/scene/types.ts",
+      "line": 11,
+      "symbol": "StudioModel",
+      "pass": true
+    },
+    {
+      "file": "components/studio/scene/load-pilot.ts",
+      "line": 139,
+      "symbol": "trackParser",
+      "pass": true
+    },
+    {
+      "file": "components/studio/scene/load-pilot.ts",
+      "line": 187,
+      "symbol": "validateLoaded",
+      "pass": true
+    },
+    {
+      "file": "components/studio/scene/load-pilot.ts",
+      "line": 246,
+      "symbol": "loadStudioPilot",
+      "pass": true
+    },
+    {
+      "file": "components/studio/scene/resources.ts",
+      "line": 28,
+      "symbol": "dispose",
+      "pass": true
+    },
+    {
+      "file": "components/studio/scene/resources.ts",
+      "line": 92,
+      "symbol": "instanceStaticMeshes",
+      "pass": true
+    },
+    {
+      "file": "app/studio/panel-navigation.ts",
+      "line": 17,
+      "symbol": "createPanelNavigation",
+      "pass": true
+    },
+    {
+      "file": "app/studio/panel-scroll.ts",
+      "line": 2,
+      "symbol": "lockPanelScroll",
+      "pass": true
+    },
+    {
+      "file": "components/studio/scene/view-config.ts",
+      "line": 9,
+      "symbol": "STUDIO_VIEW",
+      "pass": true
+    }
+  ],
+  "sketch": {
+    "method": "TypeScript noEmit in-memory program of fenced type sketch with existing Assistant/Studio/Three type imports; no file emitted and no application entry points compiled",
+    "diagnostics": []
+  },
+  "matrix": {
+    "testableRows": 36,
+    "totalRows": 36,
+    "specificationCoveragePercent": 100,
+    "requirements": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5",
+      "R6",
+      "R7",
+      "R8",
+      "R9",
+      "R10"
+    ],
+    "ids": [
+      "V01",
+      "V02",
+      "V03",
+      "V04",
+      "V05",
+      "V06",
+      "V07",
+      "V08",
+      "V09",
+      "V10",
+      "V11",
+      "V12",
+      "V13",
+      "V14",
+      "V15",
+      "V16",
+      "V17",
+      "V18",
+      "V19",
+      "V20",
+      "V21",
+      "V22",
+      "V23",
+      "V24",
+      "V25",
+      "V26",
+      "V27",
+      "V28",
+      "V29",
+      "V30",
+      "V31",
+      "V32",
+      "V33",
+      "V34",
+      "V35",
+      "V36"
+    ],
+    "robotChecksExecuted": 0
+  },
+  "reviewHandshakes": [
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6",
+    "H7",
+    "H8",
+    "H9",
+    "H10",
+    "H11"
+  ],
+  "sourceStability": {
+    "files": 40,
+    "changed": []
+  },
+  "errors": [],
+  "passed": true,
+  "documentHashes": {
+    "implementation-plan.md": "1668eecb8e0874f625bcd9ff129b149142aeb617f0928e54376cc5d74313e789",
+    "state-contract.md": "e9c1916fd9a0529b6f3a11bdc7a1829b67c1e3b29ccdc5b58d6c05d970f9b26d",
+    "verification-matrix.md": "f4902daa932a0b3f3252a05dd3cb88892c4c77d76e01f5c0149440e485a0ec59",
+    "integration-handoff.md": "331b25afedb609e71d9bb468eab1c317930ee776c6d25228334b6190f4a95994"
+  }
+}

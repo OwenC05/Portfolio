@@ -1,0 +1,103 @@
+{
+  "profileId": "studio-full-kit-v1",
+  "revision": 1,
+  "status": "frozen-interface-for-M1-and-adapter-implementation",
+  "candidateAcceptance": "requires-exact-export-manifest-offline-validation-and-root-visual-gate",
+  "pilotProfileModificationAllowed": false,
+  "sourceArtInventory": "asset-inventory.json",
+  "packaging": "staged-editable-Blender-sources-one-self-contained-GLB-per-versioned-candidate",
+  "root": {"name": "studio_full_kit", "identity": true, "sceneCount": 1, "maxDepth": 8, "maxNodes": 2048},
+  "coordinates": {
+    "authorUnits": "metres", "authorUp": "Z", "exportUp": "Y",
+    "worldToBlender": "[x/2,-z/2,(y-0.11)/2]",
+    "blenderToGltf": "[X,Z,-Y]",
+    "placementNode": "studio-full-kit-placement",
+    "scale": [2,2,2], "translation": [0,0.11,0], "rotation": [0,0,0,1], "applications": 1,
+    "fixedEyeWorld": [-0.7,2.8,3.4],
+    "maxAbsoluteGltfCoordinateMetres": 10,
+    "exactBounds": "required-per-candidate-manifest; measured-and-compared-before-runtime",
+    "anchorToleranceMetres": 0.0001,
+    "forbid": ["recenter", "fit-to-view", "second-transform", "pilot-plus-full-kit"]
+  },
+  "hierarchy": {
+    "tree": "acyclic-single-parent-all-reachable-unique-names",
+    "transforms": "finite-matrix-XOR-TRS; positive-decomposable-no-shear-no-reflection",
+    "targetAncestorScale": [1,1,1],
+    "leaf": "one-mesh-one-triangle-primitive-one-material",
+    "nodeNamePolicy": "reserved-binding-names-or-assetId__partName; exact-manifest-list",
+    "linkedMeshes": "allowed-shared-glTF-indices-and-loaded-identities; no-draw-reduction-claim",
+    "globalProceduralBatcherAllowed": false,
+    "runtimeInstancing": "deferred-until-measurement-and-separate-batch-manifest-review"
+  },
+  "geometry": {
+    "mode": 4, "attributesRequired": ["POSITION","NORMAL","TEXCOORD_0"],
+    "attributesOptional": ["COLOR_0"], "indicesOptional": true,
+    "color0": {"type": "VEC3", "components": "FLOAT-or-normalized-UNSIGNED_BYTE-or-UNSIGNED_SHORT", "range": [0,1], "alphaAllowed": false, "materials": ["lib_plaster","lib_floor","lib_weave"]},
+    "unknownAttributesAllowed": false,
+    "allowedExtensions": ["KHR_materials_emissive_strength","KHR_materials_ior","KHR_materials_specular"],
+    "excluded": ["animation","skin","morph","camera","light","MASK","mixed-material-leaf","TEXCOORD_1","TANGENT","compression","external-uri","data-uri","gpu-instancing-extension"]
+  },
+  "materials": {
+    "names": ["lib_plaster","lib_floor","lib_oak","lib_dark_oak","lib_weave","lib_linen_shade","lib_palette","lib_glow","lib_frost","lib_glass","lib_contact","rt_placeholder"],
+    "blendNames": ["lib_frost","lib_glass","lib_contact"],
+    "opaque": "opacity1-alphaTest0-depthWriteTrue-visible",
+    "blend": "depthWriteFalse-occluderFalse-nocastTrue-receiveShadowFalse; explicit-manifest-order",
+    "images": "embedded-PNG-or-JPEG-bufferView-only",
+    "maxImageDimension": 2048, "maxUniqueImagePixels": 4194304,
+    "requiredSlots": "manifest-records-every-referenced-material-texture-slot; actual-decode-and-nonnull-loaded-slot-required",
+    "appearanceOwner": "Claude"
+  },
+  "leafMetadata": {
+    "required": ["assetId","role","occluder","transparent","nocast","receiveShadow"],
+    "roles": ["opaque","transparent","target","border","decorative-screen","runtime-dusk"],
+    "opaqueBlockers": "every-opaque-leaf-including-nocast-and-decorative-display-and-dusk",
+    "ordinaryBlockerExceptions": ["target_dissertation","target_copilot","target_typeforge","border_dissertation","border_copilot","border_typeforge"],
+    "exceptionIdentity": "validated-reserved-object-only; never-generic-interactive-metadata",
+    "targetBackBlocksExpandedFingerRay": true
+  },
+  "bindings": {
+    "projectIds": ["dissertation","copilot","typeforge"],
+    "surfaces": ["target_dissertation","target_copilot","target_typeforge"],
+    "borders": ["border_dissertation","border_copilot","border_typeforge"],
+    "decorative": "display_studio", "dusk": "rt_window_dusk",
+    "geometry": "two-triangle-rectangle-four-indexed-or-six-duplicated-vertices; local-front+Z-CCW; upright-UV0",
+    "content": "existing-screenTexture; same-truthful-content; four-unlit-toneMappedFalse-faces",
+    "borderMaterials": "three-exclusive-runtime-MeshBasicMaterial-identities",
+    "runtimeMaterialOwner": "SceneResources",
+    "placeholderOwner": "private-import-owner; retained-until-disposal; no-rescan-after-rebinding",
+    "castShadow": false, "receiveShadow": false,
+    "variants": {
+      "baseline": {"geometry": "currentPlacement-and-current-borderSizeM-from-art-inventory; exact-current-source-matrix-math", "borderSeparationMetres": 0.0025, "mobileFov": 64, "mobileHome": [-13,-8]},
+      "proposal": {"geometry": "Claude-proposedPlacement-when-present-otherwise-currentPlacement; proposed-borderSizeM", "borderSeparationMetres": 0.004, "mobileFovCandidates": [70,74,76], "mobileHome": [-14,-7]}
+    },
+    "productionChangeGate": "root-M1-actual-blockout-visual-verdict; no-auto-promotion"
+  },
+  "assembly": {
+    "assetShape": {"root": "THREE.Group", "dispose": "idempotent-void"},
+    "load": "loadFullKit(signal:AbortSignal):Promise<StudioFullKitAsset>",
+    "bind": "bindFullKit(resources:SceneResources,root:THREE.Group):{targets:StudioTarget[],occluders:THREE.Mesh[]}",
+    "create": "createFullStudio(resources:SceneResources,root:THREE.Group):StudioModel",
+    "replace": "all-room-and-equipment-geometry; no-procedural-room-built-in-full-mode",
+    "contacts": "imported-lib_contact-planes-only; renderOrder1; no-duplicated-procedural-decals",
+    "dusk": "imported-quad-runtime-Claude-authored-texture-and-unlit-material; opaque-blocker",
+    "lights": "Claude-authored-runtime-only; one-shadow-light; maximum-five-point-lights",
+    "environmentMap": "none-for-M1; later-art-proposal-requires-measured-budget-and-runtime-comparison",
+    "swatchBoard": "optional-offline-author-artifact; not-in-shipped-room-or-required-before-M1"
+  },
+  "ownership": {
+    "privatePerLoad": true, "registerAtAllocation": true, "drainLateDependencies": true,
+    "deduplicateByIdentity": true, "disposeReplacedPlaceholders": true,
+    "allReferencedTextureSlots": true, "ownedBitmapsCloseOnceAfterTextures": true,
+    "lateResult": "dispose-without-attach-render-notify", "failure": "existing-unavailable; no-silent-fallback"
+  },
+  "guards": {"maxRawGlbBytes": 12000000,"maxPlacedTriangles": 100000,"maxPrimitiveInstances": 512},
+  "wholeSceneHardLimits": {"compressedAssetsPlusSceneJsBytes": 1500000,"peakRendererDrawCalls": 200,"peakRendererTriangles": 200000,"shadowLights": 1,"desktopDpr": 2,"smallDpr": 1.5},
+  "measurements": "guards-and-proposals-are-not-budget-passes; report-unique-placed-shadow-and-runtime-first-refresh-and-settled-costs-separately",
+  "candidateManifest": {
+    "required": ["profileId","variant","stage","glbSha256","artInventorySha256","boundsGltfMetres","nodes","materials","textures","targetWorldCorners","counts"],
+    "nodes": "exact-name-parent-assetId-role-materialIndex-transform-flags; each-assetId-in-bound-inventory",
+    "M1": "architecture-plus-explicit-grey-proxies-and-all-seven-binding-planes; blockout-not-final-kit",
+    "final": "all59-inventory-assets-accounted; no-proxies; native-Blender-mouse; complete-required-gear",
+    "trust": "independent-validator-recomputes-structure-bounds-corners-counts-from-bytes; manifest-is-not-proof"
+  }
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "command": "git",
+    "args": [
+      "-c",
+      "core.whitespace=cr-at-eol",
+      "diff",
+      "--check",
+      "--",
+      "components/studio/scene/load-full-kit.ts",
+      "components/studio/scene/verify-full-kit.mjs",
+      "design/studio-v2/asset-pipeline/full-kit/technical/profile-core.mjs",
+      "design/studio-v2/asset-pipeline/full-kit/technical/validate-full-kit.mjs",
+      "design/studio-v2/asset-pipeline/full-kit/implementation-technical-report.md"
+    ],
+    "exit": 0,
+    "output": ""
+  },
+  {
+    "command": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "--check",
+      "components/studio/scene/verify-full-kit.mjs"
+    ],
+    "exit": 0,
+    "output": ""
+  },
+  {
+    "command": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "--check",
+      "design/studio-v2/asset-pipeline/full-kit/technical/profile-core.mjs"
+    ],
+    "exit": 0,
+    "output": ""
+  },
+  {
+    "command": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "--check",
+      "design/studio-v2/asset-pipeline/full-kit/technical/validate-full-kit.mjs"
+    ],
+    "exit": 0,
+    "output": ""
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "scope": "Independent unchanged-validator/paired-manifest evidence only; no stage or performance acceptance",
+  "valid": true,
+  "errors": [],
+  "pins": {
+    "technical/validate-full-kit.mjs": "66ee9d342cbded31994e6e8655e385c5b7945916b5ec68ad3404af9beda8bd75",
+    "technical/profile-core.mjs": "02b65feddb651f41a4a9d5eab4f55e41ae15c321d850a26fba00b3a92889ae71",
+    "full-kit-profile-v1.json": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+    "asset-inventory.json": "eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87",
+    "exports/studio-full-kit-m4-proposal-v02.glb": "baa1a43bd343359edb217fa077bde0678a931cc3ed3991d5ee059e04813ed32f",
+    "manifests/studio-full-kit-m4-proposal-v02.manifest.json": "42597f1b859fdae354063e09ee925d4d2dc9be8ae0ac8556663e391db6906b82",
+    "manifests/studio-full-kit-m3-proposal-v03.manifest.json": "060bab9af5dd23b4258e03aef10de21faa7c32aa0a6010cd4e09b35089026405"
+  },
+  "recomputedManifestByteIdentical": true,
+  "allEightReservedWorldCornerArraysExact": true,
+  "negativeManifestMutationsRejected": [
+    [
+      "Studio full kit: GLB hash mismatch"
+    ],
+    [
+      "Studio full kit: manifest targetWorldCorners differs from bytes"
+    ]
+  ],
+  "protectedHashesUnchanged": true,
+  "deferred": [
+    "Actual browser PNG/JPEG decode",
+    "Runtime renderer first-refresh/settled draws and triangles",
+    "Scene JS plus assets transfer",
+    "Root visual gate and independent review"
+  ]
+}

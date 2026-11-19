@@ -1,0 +1,2401 @@
+{
+  "schemaVersion": 1,
+  "taskId": "task_68ddf1006519",
+  "dispatchId": "ctx_a72e3502ac1c",
+  "observedAtUtc": "2026-11-16T13:38:10.987Z",
+  "result": "Current source baseline pinned; fresh runtime baseline pending coordinator build/browser slot.",
+  "scope": {
+    "writes": "Only NEW design/assistant/robot/integration/baseline-2026-11-16/",
+    "main": "Read-only named integration seams and referenced room/capture handoffs.",
+    "notRun": [
+      "app/build/tests",
+      "server or service changes",
+      "browser capture",
+      "Blender or paid generation",
+      "Git mutations"
+    ],
+    "sharedWork": "Assistant state and creative files remain owned by other lanes; whole-checkout state is not frozen."
+  },
+  "dispatchedExpectedAssistantHead": "c0348b77adbfe09034e82a9e1a3cee34052d4735",
+  "checkouts": {
+    "assistant": {
+      "root": "C:/Users/Owenc/orca/Portfolio-assistant",
+      "head": "c0348b77adbfe09034e82a9e1a3cee34052d4735",
+      "branch": "feature/portfolio-assistant",
+      "scope": "Only named scene/controller/camera/loader/profile/shell/framework seams; no whole-checkout cleanliness claim.",
+      "scopedPorcelain": "",
+      "dirtySeams": [],
+      "sourceSetSha256": "93b90521fd619b98127fb893c038e49faf420d46a631e5d277ec9da5f1c976a4",
+      "frameworks": {
+        "next": {
+          "declared": "15.5.29",
+          "lockfile": "15.5.29",
+          "installed": "15.5.29"
+        },
+        "react": {
+          "declared": "19.3.1",
+          "lockfile": "19.3.1",
+          "installed": "19.3.1"
+        },
+        "react-dom": {
+          "declared": "19.3.1",
+          "lockfile": "19.3.1",
+          "installed": "19.3.1"
+        },
+        "three": {
+          "declared": "0.187.0",
+          "lockfile": "0.187.0",
+          "installed": "0.187.0"
+        },
+        "typescript": {
+          "declared": "^5",
+          "lockfile": "5.9.2",
+          "installed": "5.9.2"
+        }
+      },
+      "files": [
+        {
+          "relativePath": "components/studio/StudioScene.tsx",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/components/studio/StudioScene.tsx",
+          "exists": true,
+          "sha256": "29586d8a880ad079627e9e8d670f46a60c4614b221b17bbcefeb54112327e5ac",
+          "bytes": 1051,
+          "lastModifiedUtc": "2026-11-15T14:24:05.813Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "6b2bb24497799a782e5f0bd840e906da84eefade"
+        },
+        {
+          "relativePath": "components/studio/StudioExperience.tsx",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/components/studio/StudioExperience.tsx",
+          "exists": true,
+          "sha256": "4e8628d8b91c840a494174d559e30b7967bc062f773aa37d74f53f3094891e16",
+          "bytes": 13141,
+          "lastModifiedUtc": "2026-11-15T14:24:05.812Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "6b29d4dbd9a2597d87b4aad1b7336b84320b7084"
+        },
+        {
+          "relativePath": "components/studio/scene/controller.ts",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/controller.ts",
+          "exists": true,
+          "sha256": "cc76055ea4bfe596e0d3ab49c84ca55c55b8a9bad3b33627e08adeb78f0969f0",
+          "bytes": 19515,
+          "lastModifiedUtc": "2026-11-15T14:24:05.818Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "cdfa1c772cc2ac1a0d9945475f46bee7dabe3cd4"
+        },
+        {
+          "relativePath": "components/studio/scene/view-config.ts",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/view-config.ts",
+          "exists": true,
+          "sha256": "1fea7adbcfd730a56920389c8ac4ecf8323c9739fd4882c15f3e134a11f1a450",
+          "bytes": 756,
+          "lastModifiedUtc": "2026-11-15T14:24:05.836Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "304224903e4c106c339b422d19d3588546b5b604"
+        },
+        {
+          "relativePath": "components/studio/scene/build-studio.ts",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/build-studio.ts",
+          "exists": true,
+          "sha256": "e23588e2702ece52c5b8a2ed25adb2debac366fdf90c66609a5ef4299ffc11ae",
+          "bytes": 34789,
+          "lastModifiedUtc": "2026-11-15T14:24:05.817Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "68308a877d1fab591d8c3188a40eb658221d491b"
+        },
+        {
+          "relativePath": "components/studio/scene/load-pilot.ts",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/load-pilot.ts",
+          "exists": true,
+          "sha256": "b5cd61c682dd69d2336b10b508b516999e72d73a00edbd6e2cebcf0323d39d11",
+          "bytes": 15772,
+          "lastModifiedUtc": "2026-11-15T14:24:05.823Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "73e2b6a88dc951d905c562c2a01f82ec2983daa8"
+        },
+        {
+          "relativePath": "components/studio/scene/load-full-kit.ts",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/load-full-kit.ts",
+          "exists": true,
+          "sha256": "37549d60af2eb7f5e1feaf0914fd0da496ec38441ebe088ce445d2914b5ad68f",
+          "bytes": 16066,
+          "lastModifiedUtc": "2026-11-15T14:24:05.822Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "5fb958a57b995036155399e7e215ba07afb6a412"
+        },
+        {
+          "relativePath": "components/studio/scene/build-full-studio.ts",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/build-full-studio.ts",
+          "exists": true,
+          "sha256": "5a4e8296e04d66cfeaedf59bedee8c633b378c84126de52b78eaabe421c0f02f",
+          "bytes": 3998,
+          "lastModifiedUtc": "2026-11-15T14:24:05.816Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "5ffe886706738d11c6bfdb85715229d20c9aac9e"
+        },
+        {
+          "relativePath": "components/studio/scene/bind-full-kit.ts",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/bind-full-kit.ts",
+          "exists": true,
+          "sha256": "0ee8bbe6e0fb83ab4bf219343655c4260a8f5193f5624dc69fb802634a2294eb",
+          "bytes": 2075,
+          "lastModifiedUtc": "2026-11-15T14:24:05.815Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "742d87a5ad114f0b79b2e82261bfbd59c60bd5d4"
+        },
+        {
+          "relativePath": "components/studio/scene/picking.ts",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/picking.ts",
+          "exists": true,
+          "sha256": "c427b0553dd2403500f7ac0e306a42c5b1476a6a8ab3175186704261d638261c",
+          "bytes": 9120,
+          "lastModifiedUtc": "2026-11-15T14:24:05.824Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "bccd0dbd0096a45dc82e36eb167244ba44379724"
+        },
+        {
+          "relativePath": "components/studio/scene/resources.ts",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/resources.ts",
+          "exists": true,
+          "sha256": "756a26fba1840696fd7b8f0a24dfa588a50488a55fbc99bec60ca3c0e14cb509",
+          "bytes": 4210,
+          "lastModifiedUtc": "2026-11-15T14:24:05.826Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "24c9e62503bf42b229d54b807251af23ea5842e4"
+        },
+        {
+          "relativePath": "components/studio/scene/textures.ts",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/textures.ts",
+          "exists": true,
+          "sha256": "09f6ff6cc7bb8910f09838566dfcf840d85a0d2ce1be8d064deafb0989c63aa6",
+          "bytes": 11246,
+          "lastModifiedUtc": "2026-11-15T14:24:05.828Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "dcbd34810133ee712fd7eabb9f1fc348929d3cd5"
+        },
+        {
+          "relativePath": "components/studio/scene/types.ts",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/types.ts",
+          "exists": true,
+          "sha256": "5aa65f769bd2077bd6a16cc5834ef1b47db5c76b6a4e0ff1abda226892178364",
+          "bytes": 1061,
+          "lastModifiedUtc": "2026-11-15T14:24:05.829Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "3cbd79c702538eb3676626a755970d89e267c623"
+        },
+        {
+          "relativePath": "components/studio/scene/full-kit-types.ts",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/full-kit-types.ts",
+          "exists": true,
+          "sha256": "19269dc5acf09fc9ebac3de6b5ac37157608b258a1b0ac288a85fd13021a4a56",
+          "bytes": 490,
+          "lastModifiedUtc": "2026-11-15T14:24:05.819Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "8902b6809afba0dfc8eb2d6019c4e2fb772e37f0"
+        },
+        {
+          "relativePath": "lib/studio-contract.ts",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/lib/studio-contract.ts",
+          "exists": true,
+          "sha256": "64f88fd30b896c88c87a5631349bbb2bb9a3bc8676c0a1a816f1e5720902c84d",
+          "bytes": 1157,
+          "lastModifiedUtc": "2026-11-15T14:24:06.605Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "8e5f241320310db8b50db5dfb46d12057c3311f7"
+        },
+        {
+          "relativePath": "app/studio/StudioShell.tsx",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/app/studio/StudioShell.tsx",
+          "exists": true,
+          "sha256": "03b735a31b74ace0ee22d41acbc7b82ab0d70ba1cb1dbed9f11a65df23d82306",
+          "bytes": 8879,
+          "lastModifiedUtc": "2026-11-15T15:14:01.915Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "08446f1c3ddae39688df47819499849ad7da016e"
+        },
+        {
+          "relativePath": "app/studio/page.tsx",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/app/studio/page.tsx",
+          "exists": true,
+          "sha256": "298294562717d8fc8f30e7b6444c45dc18dd5d103815414f4e687ac80b04044d",
+          "bytes": 2416,
+          "lastModifiedUtc": "2026-11-15T15:15:50.474Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "307277ee5aef0f118acd741207555904410db800"
+        },
+        {
+          "relativePath": "app/studio/studio.module.css",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/app/studio/studio.module.css",
+          "exists": true,
+          "sha256": "ce72d40af43223b33bc77dbdfd810ac38caaadb50af30916b25f1e3907bf1432",
+          "bytes": 19871,
+          "lastModifiedUtc": "2026-11-15T14:24:05.799Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "2af547303b2090ac4f024b5ec6bf72c38d8368c2"
+        },
+        {
+          "relativePath": "design/studio-v2/asset-pipeline/integration-contract/pilot-profile.json",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/design/studio-v2/asset-pipeline/integration-contract/pilot-profile.json",
+          "exists": true,
+          "sha256": "02a9b364ed42127988747660ac61d6efca8bc3af9f151a0e41eb0d50bc0baa08",
+          "bytes": 1214,
+          "lastModifiedUtc": "2026-11-15T14:24:06.198Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "61b0935026e218ce542cc0c7d7cc7e3bedb3f221"
+        },
+        {
+          "relativePath": "design/studio-v2/asset-pipeline/full-kit/full-kit-profile-v1.json",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/design/studio-v2/asset-pipeline/full-kit/full-kit-profile-v1.json",
+          "exists": true,
+          "sha256": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+          "bytes": 7379,
+          "lastModifiedUtc": "2026-11-15T14:24:05.995Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "14a91ea98ef917c5bb3c7b656a17f773bd8f505e"
+        },
+        {
+          "relativePath": "design/studio-v2/asset-pipeline/full-kit/technical/profile-core.mjs",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/design/studio-v2/asset-pipeline/full-kit/technical/profile-core.mjs",
+          "exists": true,
+          "sha256": "02b65feddb651f41a4a9d5eab4f55e41ae15c321d850a26fba00b3a92889ae71",
+          "bytes": 27085,
+          "lastModifiedUtc": "2026-11-15T14:24:06.175Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "476fe235504f7fbbd876a43a6bccb487055d3aee"
+        },
+        {
+          "relativePath": "design/studio-v2/asset-pipeline/full-kit/asset-inventory.json",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/design/studio-v2/asset-pipeline/full-kit/asset-inventory.json",
+          "exists": true,
+          "sha256": "eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87",
+          "bytes": 53425,
+          "lastModifiedUtc": "2026-11-15T14:24:05.957Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "d031c7049afdd24c25c4331b82f6c581b12d522e"
+        },
+        {
+          "relativePath": "design/studio-v2/asset-pipeline/full-kit/technical/fixtures/baseline.manifest.json",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/design/studio-v2/asset-pipeline/full-kit/technical/fixtures/baseline.manifest.json",
+          "exists": true,
+          "sha256": "b54fa15f3c40848595f681b71791fbefb9376ed11c95f3d4aba740e7e7c2edae",
+          "bytes": 13922,
+          "lastModifiedUtc": "2026-11-15T14:24:06.170Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "0e920bd944d8d0b522c525068ee306a9da574892"
+        },
+        {
+          "relativePath": "public/studio/pilot-right-limit-v03.glb",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/public/studio/pilot-right-limit-v03.glb",
+          "exists": true,
+          "sha256": "2b9a4182c3024485680c1e066c8a22ef0dc0f541acca4bd958486bced2c4063e",
+          "bytes": 585536,
+          "lastModifiedUtc": "2026-11-15T14:24:06.620Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "54595854c53104c20a0370cf60301d1ab1e1eed9"
+        },
+        {
+          "relativePath": "package.json",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/package.json",
+          "exists": true,
+          "sha256": "665e51bf618feb94e031f297ef5c8b25986a25450ffdcae6b39663d0a5c04790",
+          "bytes": 1007,
+          "lastModifiedUtc": "2026-11-15T15:38:40.601Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "d959855e3d8dc10509b45e3692a196fd8b84901e"
+        },
+        {
+          "relativePath": "package-lock.json",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/package-lock.json",
+          "exists": true,
+          "sha256": "85c9c38951d29d2d1e2b71dcd06cd287f845cc9841278d971e8846ee2fe296be",
+          "bytes": 235583,
+          "lastModifiedUtc": "2026-11-15T15:31:42.332Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "a736b6037c9f2d46c4c0af7669cb62ff24c43218"
+        }
+      ]
+    },
+    "mainReadOnly": {
+      "root": "C:/Users/Owenc/orca/Portfolio",
+      "head": "5f201d60ebb8db48945ff3e65abff400f22be74d",
+      "branch": "feature/studio-v2-after-hours",
+      "scope": "Only named scene/controller/camera/loader/profile/shell/framework seams; no whole-checkout cleanliness claim.",
+      "scopedPorcelain": "",
+      "dirtySeams": [],
+      "sourceSetSha256": "268bb0fa91ddcbb94ff2c54cc3b15f3e734523448903158a57c8fbff1220daab",
+      "frameworks": {
+        "next": {
+          "declared": "14.0.4",
+          "lockfile": "14.0.4",
+          "installed": "14.0.4"
+        },
+        "react": {
+          "declared": "^18",
+          "lockfile": "18.3.1",
+          "installed": "18.3.1"
+        },
+        "react-dom": {
+          "declared": "^18",
+          "lockfile": "18.3.1",
+          "installed": "18.3.1"
+        },
+        "three": {
+          "declared": "0.187.0",
+          "lockfile": "0.187.0",
+          "installed": "0.187.0"
+        },
+        "typescript": {
+          "declared": "^5",
+          "lockfile": "5.9.2",
+          "installed": "5.9.2"
+        }
+      },
+      "files": [
+        {
+          "relativePath": "components/studio/StudioScene.tsx",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio/components/studio/StudioScene.tsx",
+          "exists": true,
+          "sha256": "29586d8a880ad079627e9e8d670f46a60c4614b221b17bbcefeb54112327e5ac",
+          "bytes": 1051,
+          "lastModifiedUtc": "2026-11-14T19:28:47.252Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "6b2bb24497799a782e5f0bd840e906da84eefade"
+        },
+        {
+          "relativePath": "components/studio/StudioExperience.tsx",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio/components/studio/StudioExperience.tsx",
+          "exists": true,
+          "sha256": "4e8628d8b91c840a494174d559e30b7967bc062f773aa37d74f53f3094891e16",
+          "bytes": 13141,
+          "lastModifiedUtc": "2026-11-14T23:26:30.918Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "6b29d4dbd9a2597d87b4aad1b7336b84320b7084"
+        },
+        {
+          "relativePath": "components/studio/scene/controller.ts",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio/components/studio/scene/controller.ts",
+          "exists": true,
+          "sha256": "cc76055ea4bfe596e0d3ab49c84ca55c55b8a9bad3b33627e08adeb78f0969f0",
+          "bytes": 19515,
+          "lastModifiedUtc": "2026-11-15T00:39:39.353Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "cdfa1c772cc2ac1a0d9945475f46bee7dabe3cd4"
+        },
+        {
+          "relativePath": "components/studio/scene/view-config.ts",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio/components/studio/scene/view-config.ts",
+          "exists": true,
+          "sha256": "1fea7adbcfd730a56920389c8ac4ecf8323c9739fd4882c15f3e134a11f1a450",
+          "bytes": 756,
+          "lastModifiedUtc": "2026-11-14T22:41:42.463Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "304224903e4c106c339b422d19d3588546b5b604"
+        },
+        {
+          "relativePath": "components/studio/scene/build-studio.ts",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio/components/studio/scene/build-studio.ts",
+          "exists": true,
+          "sha256": "e23588e2702ece52c5b8a2ed25adb2debac366fdf90c66609a5ef4299ffc11ae",
+          "bytes": 34789,
+          "lastModifiedUtc": "2026-11-15T00:50:25.563Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "68308a877d1fab591d8c3188a40eb658221d491b"
+        },
+        {
+          "relativePath": "components/studio/scene/load-pilot.ts",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio/components/studio/scene/load-pilot.ts",
+          "exists": true,
+          "sha256": "b5cd61c682dd69d2336b10b508b516999e72d73a00edbd6e2cebcf0323d39d11",
+          "bytes": 15772,
+          "lastModifiedUtc": "2026-11-15T00:39:36.152Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "73e2b6a88dc951d905c562c2a01f82ec2983daa8"
+        },
+        {
+          "relativePath": "components/studio/scene/load-full-kit.ts",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio/components/studio/scene/load-full-kit.ts",
+          "exists": true,
+          "sha256": "37549d60af2eb7f5e1feaf0914fd0da496ec38441ebe088ce445d2914b5ad68f",
+          "bytes": 16066,
+          "lastModifiedUtc": "2026-11-15T12:44:38.189Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "5fb958a57b995036155399e7e215ba07afb6a412"
+        },
+        {
+          "relativePath": "components/studio/scene/build-full-studio.ts",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio/components/studio/scene/build-full-studio.ts",
+          "exists": true,
+          "sha256": "5a4e8296e04d66cfeaedf59bedee8c633b378c84126de52b78eaabe421c0f02f",
+          "bytes": 3998,
+          "lastModifiedUtc": "2026-11-15T11:47:32.620Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "5ffe886706738d11c6bfdb85715229d20c9aac9e"
+        },
+        {
+          "relativePath": "components/studio/scene/bind-full-kit.ts",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio/components/studio/scene/bind-full-kit.ts",
+          "exists": true,
+          "sha256": "0ee8bbe6e0fb83ab4bf219343655c4260a8f5193f5624dc69fb802634a2294eb",
+          "bytes": 2075,
+          "lastModifiedUtc": "2026-11-15T11:42:17.582Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "742d87a5ad114f0b79b2e82261bfbd59c60bd5d4"
+        },
+        {
+          "relativePath": "components/studio/scene/picking.ts",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio/components/studio/scene/picking.ts",
+          "exists": true,
+          "sha256": "c427b0553dd2403500f7ac0e306a42c5b1476a6a8ab3175186704261d638261c",
+          "bytes": 9120,
+          "lastModifiedUtc": "2026-11-14T23:15:00.321Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "bccd0dbd0096a45dc82e36eb167244ba44379724"
+        },
+        {
+          "relativePath": "components/studio/scene/resources.ts",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio/components/studio/scene/resources.ts",
+          "exists": true,
+          "sha256": "756a26fba1840696fd7b8f0a24dfa588a50488a55fbc99bec60ca3c0e14cb509",
+          "bytes": 4210,
+          "lastModifiedUtc": "2026-11-14T19:44:58.095Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "24c9e62503bf42b229d54b807251af23ea5842e4"
+        },
+        {
+          "relativePath": "components/studio/scene/textures.ts",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio/components/studio/scene/textures.ts",
+          "exists": true,
+          "sha256": "09f6ff6cc7bb8910f09838566dfcf840d85a0d2ce1be8d064deafb0989c63aa6",
+          "bytes": 11246,
+          "lastModifiedUtc": "2026-11-14T22:47:15.144Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "dcbd34810133ee712fd7eabb9f1fc348929d3cd5"
+        },
+        {
+          "relativePath": "components/studio/scene/types.ts",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio/components/studio/scene/types.ts",
+          "exists": true,
+          "sha256": "5aa65f769bd2077bd6a16cc5834ef1b47db5c76b6a4e0ff1abda226892178364",
+          "bytes": 1061,
+          "lastModifiedUtc": "2026-11-15T00:27:54.130Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "3cbd79c702538eb3676626a755970d89e267c623"
+        },
+        {
+          "relativePath": "components/studio/scene/full-kit-types.ts",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio/components/studio/scene/full-kit-types.ts",
+          "exists": true,
+          "sha256": "19269dc5acf09fc9ebac3de6b5ac37157608b258a1b0ac288a85fd13021a4a56",
+          "bytes": 490,
+          "lastModifiedUtc": "2026-11-15T11:41:39.434Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "8902b6809afba0dfc8eb2d6019c4e2fb772e37f0"
+        },
+        {
+          "relativePath": "lib/studio-contract.ts",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio/lib/studio-contract.ts",
+          "exists": true,
+          "sha256": "64f88fd30b896c88c87a5631349bbb2bb9a3bc8676c0a1a816f1e5720902c84d",
+          "bytes": 1157,
+          "lastModifiedUtc": "2026-11-14T22:34:19.110Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "8e5f241320310db8b50db5dfb46d12057c3311f7"
+        },
+        {
+          "relativePath": "app/studio/StudioShell.tsx",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio/app/studio/StudioShell.tsx",
+          "exists": true,
+          "sha256": "bcae10c0b983b1295b4d13e4ff1777c25fe9af224ebf2aee865c146fdb62eca8",
+          "bytes": 8858,
+          "lastModifiedUtc": "2026-11-14T22:47:12.448Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "763a0c904b54a035f0e6536217e7c27389e7b63f"
+        },
+        {
+          "relativePath": "app/studio/page.tsx",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio/app/studio/page.tsx",
+          "exists": true,
+          "sha256": "f811dc5eca892e911650eb61cf3f859fe9ceba2b725cd95d3ac39a546f4d7314",
+          "bytes": 2233,
+          "lastModifiedUtc": "2026-11-14T22:41:08.087Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "4500bc0f5014b198d897037ee34566e18957c22d"
+        },
+        {
+          "relativePath": "app/studio/studio.module.css",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio/app/studio/studio.module.css",
+          "exists": true,
+          "sha256": "ce72d40af43223b33bc77dbdfd810ac38caaadb50af30916b25f1e3907bf1432",
+          "bytes": 19871,
+          "lastModifiedUtc": "2026-11-15T00:11:04.510Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "2af547303b2090ac4f024b5ec6bf72c38d8368c2"
+        },
+        {
+          "relativePath": "design/studio-v2/asset-pipeline/integration-contract/pilot-profile.json",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio/design/studio-v2/asset-pipeline/integration-contract/pilot-profile.json",
+          "exists": true,
+          "sha256": "02a9b364ed42127988747660ac61d6efca8bc3af9f151a0e41eb0d50bc0baa08",
+          "bytes": 1214,
+          "lastModifiedUtc": "2026-11-14T23:21:20.461Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "61b0935026e218ce542cc0c7d7cc7e3bedb3f221"
+        },
+        {
+          "relativePath": "design/studio-v2/asset-pipeline/full-kit/full-kit-profile-v1.json",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio/design/studio-v2/asset-pipeline/full-kit/full-kit-profile-v1.json",
+          "exists": true,
+          "sha256": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+          "bytes": 7379,
+          "lastModifiedUtc": "2026-11-15T11:29:02.320Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "14a91ea98ef917c5bb3c7b656a17f773bd8f505e"
+        },
+        {
+          "relativePath": "design/studio-v2/asset-pipeline/full-kit/technical/profile-core.mjs",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio/design/studio-v2/asset-pipeline/full-kit/technical/profile-core.mjs",
+          "exists": true,
+          "sha256": "02b65feddb651f41a4a9d5eab4f55e41ae15c321d850a26fba00b3a92889ae71",
+          "bytes": 27085,
+          "lastModifiedUtc": "2026-11-15T12:44:38.187Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "476fe235504f7fbbd876a43a6bccb487055d3aee"
+        },
+        {
+          "relativePath": "design/studio-v2/asset-pipeline/full-kit/asset-inventory.json",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio/design/studio-v2/asset-pipeline/full-kit/asset-inventory.json",
+          "exists": true,
+          "sha256": "eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87",
+          "bytes": 53425,
+          "lastModifiedUtc": "2026-11-15T01:03:35.888Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "d031c7049afdd24c25c4331b82f6c581b12d522e"
+        },
+        {
+          "relativePath": "design/studio-v2/asset-pipeline/full-kit/technical/fixtures/baseline.manifest.json",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio/design/studio-v2/asset-pipeline/full-kit/technical/fixtures/baseline.manifest.json",
+          "exists": true,
+          "sha256": "b54fa15f3c40848595f681b71791fbefb9376ed11c95f3d4aba740e7e7c2edae",
+          "bytes": 13922,
+          "lastModifiedUtc": "2026-11-15T11:44:00.822Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "0e920bd944d8d0b522c525068ee306a9da574892"
+        },
+        {
+          "relativePath": "public/studio/pilot-right-limit-v03.glb",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio/public/studio/pilot-right-limit-v03.glb",
+          "exists": true,
+          "sha256": "2b9a4182c3024485680c1e066c8a22ef0dc0f541acca4bd958486bced2c4063e",
+          "bytes": 585536,
+          "lastModifiedUtc": "2026-11-15T00:04:45.861Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "54595854c53104c20a0370cf60301d1ab1e1eed9"
+        },
+        {
+          "relativePath": "package.json",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio/package.json",
+          "exists": true,
+          "sha256": "74b49915fac2ee8cd0f896a1aaadbab0fd68427b52d31979f4ded4273a133d54",
+          "bytes": 710,
+          "lastModifiedUtc": "2026-11-14T19:14:22.174Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "6205f857a121947ae28c7d87439a6f3399fccecc"
+        },
+        {
+          "relativePath": "package-lock.json",
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio/package-lock.json",
+          "exists": true,
+          "sha256": "e2d26d355bf292c7c880469ad295b7cb9356f51136ecc5d7f79ba0a15b34515d",
+          "bytes": 220145,
+          "lastModifiedUtc": "2026-11-14T19:14:22.277Z",
+          "gitStatus": "tracked-clean",
+          "headBlobOid": "7965b68cb32b0afa4df97337c61e9a28e476822c"
+        }
+      ]
+    }
+  },
+  "historicalInputs": [
+    {
+      "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/prototype-subtasks.md",
+      "exists": true,
+      "sha256": "09823a4bb013b8aa945d39d13021e906f209fc2a4cd260a3cebca10c1041f1f6",
+      "bytes": 14707,
+      "lastModifiedUtc": "2026-11-16T12:37:04.763Z"
+    },
+    {
+      "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/implementation-plan.md",
+      "exists": true,
+      "sha256": "1668eecb8e0874f625bcd9ff129b149142aeb617f0928e54376cc5d74313e789",
+      "bytes": 12893,
+      "lastModifiedUtc": "2026-11-15T18:31:36.577Z"
+    },
+    {
+      "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/engineering-constraints.md",
+      "exists": true,
+      "sha256": "0deff2b890587cb67aba0e6dd7e533cb138637b9c91c61e9807a4702abfa98bb",
+      "bytes": 18704,
+      "lastModifiedUtc": "2026-11-15T17:19:10.387Z"
+    },
+    {
+      "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/asset-pipeline/v02/alignment.md",
+      "exists": true,
+      "sha256": "add4cd207836c931f8ad9b52605186e1dfd2b884d21d3b00b01fc6ebdc6eae13",
+      "bytes": 7052,
+      "lastModifiedUtc": "2026-11-15T18:53:22.330Z"
+    }
+  ],
+  "currentRoom": {
+    "candidateId": "assistant-production-pilot-v03-c0348b7-baseline-2026-11-16",
+    "route": "/studio",
+    "assembly": "StudioExperience -> StudioScene -> createStudioController -> loadStudioPilot -> createStudio(resources, asset.root)",
+    "builder": "components/studio/scene/build-studio.ts",
+    "assetUrl": "/studio/pilot-right-limit-v03.glb",
+    "asset": {
+      "relativePath": "public/studio/pilot-right-limit-v03.glb",
+      "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/public/studio/pilot-right-limit-v03.glb",
+      "exists": true,
+      "sha256": "2b9a4182c3024485680c1e066c8a22ef0dc0f541acca4bd958486bced2c4063e",
+      "bytes": 585536,
+      "lastModifiedUtc": "2026-11-15T14:24:06.620Z",
+      "gitStatus": "tracked-clean",
+      "headBlobOid": "54595854c53104c20a0370cf60301d1ab1e1eed9"
+    },
+    "profile": {
+      "path": "design/studio-v2/asset-pipeline/integration-contract/pilot-profile.json",
+      "id": "right-limit-pilot-v1",
+      "coordinateSpace": "metres-Y-up-baked-world",
+      "adapter": {
+        "scale": [
+          2,
+          2,
+          2
+        ],
+        "translation": [
+          0,
+          0.11,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    "identity": "Procedural enclosed room, with imported nine-mesh door and floor-lamp pilot; no full-kit room or robot loaded.",
+    "unitsPerMetre": 2,
+    "gltfToWorld": "world = 2 * gltf + [0,0.11,0], applied once in load-pilot.ts; builder attaches already adapted root unchanged.",
+    "roomInnerPlanesWorldUnits": {
+      "x": [
+        -4.5,
+        5.1
+      ],
+      "y": [
+        0.11,
+        5.3
+      ],
+      "z": [
+        -2.12,
+        6.6
+      ]
+    },
+    "eyeHeightAboveFloorMetres": 1.345,
+    "projectMonitorGroups": [
+      {
+        "id": "dissertation",
+        "position": [
+          -1.61,
+          2.38,
+          -0.27
+        ],
+        "faceWidth": 1.88,
+        "faceHeight": 1.06,
+        "yawRadians": 0
+      },
+      {
+        "id": "copilot",
+        "position": [
+          -3.11,
+          2.44,
+          -0.13
+        ],
+        "faceWidth": 0.8,
+        "faceHeight": 1.34,
+        "yawRadians": 0.3
+      },
+      {
+        "id": "typeforge",
+        "position": [
+          -0.11,
+          2.44,
+          -0.13
+        ],
+        "faceWidth": 0.8,
+        "faceHeight": 1.34,
+        "yawRadians": -0.3
+      }
+    ],
+    "monitorNote": "Group positions, not flat world screen planes; each face is at local z=0.054 and rotated by group yaw. Raised studio monitor is decorative.",
+    "inactiveFullKit": {
+      "loader": "components/studio/scene/load-full-kit.ts:12",
+      "url": "/studio/full-kit-uninstalled-synthetic-baseline.glb",
+      "publicAssetExists": false,
+      "wiredByController": false
+    }
+  },
+  "camera": {
+    "source": "components/studio/scene/view-config.ts:9",
+    "type": "PerspectiveCamera",
+    "eyeWorldUnits": [
+      -0.7,
+      2.8,
+      3.4
+    ],
+    "verticalFovDegrees": {
+      "desktop": 58,
+      "mobile": 64
+    },
+    "homeDegrees": {
+      "desktop": {
+        "yaw": -4,
+        "pitch": -6
+      },
+      "mobile": {
+        "yaw": -13,
+        "pitch": -8
+      }
+    },
+    "yawBoundsDegrees": [
+      -38,
+      58
+    ],
+    "pitchBoundsDegrees": [
+      -16,
+      12
+    ],
+    "nearWorldUnits": 0.1,
+    "farWorldUnits": 30,
+    "convention": "Y up; heading zero faces -Z, positive yaw faces +X, positive pitch up; eye never translates.",
+    "mobilePredicate": "window.innerWidth <= 640 || host.width / host.height < 0.9",
+    "rendererDprCaps": {
+      "desktop": 2,
+      "mobile": 1.5
+    },
+    "resizeBehavior": "FOV/aspect/DPR update; home chosen once on first nonzero host render, existing yaw/pitch retained on resize.",
+    "sourceOnly": true
+  },
+  "limitedDrift": {
+    "samePaths": [
+      "components/studio/StudioScene.tsx",
+      "components/studio/StudioExperience.tsx",
+      "components/studio/scene/controller.ts",
+      "components/studio/scene/view-config.ts",
+      "components/studio/scene/build-studio.ts",
+      "components/studio/scene/load-pilot.ts",
+      "components/studio/scene/load-full-kit.ts",
+      "components/studio/scene/build-full-studio.ts",
+      "components/studio/scene/bind-full-kit.ts",
+      "components/studio/scene/picking.ts",
+      "components/studio/scene/resources.ts",
+      "components/studio/scene/textures.ts",
+      "components/studio/scene/types.ts",
+      "components/studio/scene/full-kit-types.ts",
+      "lib/studio-contract.ts",
+      "app/studio/studio.module.css",
+      "design/studio-v2/asset-pipeline/integration-contract/pilot-profile.json",
+      "design/studio-v2/asset-pipeline/full-kit/full-kit-profile-v1.json",
+      "design/studio-v2/asset-pipeline/full-kit/technical/profile-core.mjs",
+      "design/studio-v2/asset-pipeline/full-kit/asset-inventory.json",
+      "design/studio-v2/asset-pipeline/full-kit/technical/fixtures/baseline.manifest.json",
+      "public/studio/pilot-right-limit-v03.glb"
+    ],
+    "differentPaths": [
+      "app/studio/StudioShell.tsx",
+      "app/studio/page.tsx",
+      "package.json",
+      "package-lock.json"
+    ],
+    "implications": [
+      "Scene/camera/loader/profile/CSS seams match despite main HEAD advancing.",
+      "Assistant shell uses three nullable React RefObject types; main uses nonnullable declarations.",
+      "Assistant Studio page adds Next Link entries to /ask, /work, /writing.",
+      "Next 15/React 19 assistant and Next 14/React 18 main require deliberate integration; do not transplant the shell or framework baseline."
+    ],
+    "stagedMainHandoff": {
+      "candidate": "studio-full-kit-m4-proposal-v02",
+      "files": [
+        {
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio/.omx/context/full-kit-m4-v02-preview-handoff.md",
+          "exists": true,
+          "sha256": "3a8dd0657b8d6f718b890da334e447b986d025a8e0419fec7e0b08f007ca6bf3",
+          "bytes": 2359,
+          "lastModifiedUtc": "2026-11-15T17:38:18.512Z"
+        },
+        {
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio/.omx/context/full-kit-m4-v02-capture-plan-v01.md",
+          "exists": true,
+          "sha256": "e9c5274cebeac8fcfb50547eb855a78553718b6c60936ff74593bbf3a2806af5",
+          "bytes": 5061,
+          "lastModifiedUtc": "2026-11-15T17:38:18.472Z"
+        },
+        {
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio/design/studio-v2/asset-pipeline/full-kit/exports/studio-full-kit-m4-proposal-v02.glb",
+          "exists": true,
+          "sha256": "baa1a43bd343359edb217fa077bde0678a931cc3ed3991d5ee059e04813ed32f",
+          "bytes": 2206200,
+          "lastModifiedUtc": "2026-11-15T17:35:40.261Z"
+        },
+        {
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio/design/studio-v2/asset-pipeline/full-kit/manifests/studio-full-kit-m4-proposal-v02.manifest.json",
+          "exists": true,
+          "sha256": "42597f1b859fdae354063e09ee925d4d2dc9be8ae0ac8556663e391db6906b82",
+          "bytes": 82350,
+          "lastModifiedUtc": "2026-11-15T17:36:17.636Z"
+        }
+      ],
+      "assistantHasGlb": false,
+      "assistantHasManifest": false,
+      "runtimeResultAtExpectedPathExists": false,
+      "qualification": "A concrete staged handoff inspected, not a global latest-art audit and not current production selection.",
+      "needed": "Studio owner must name/release the intended room GLB plus paired manifest/profile/builder/camera hashes and review status; root explicitly chooses pilot preview or imports that pinned release in a later owned integration. No copying performed."
+    }
+  },
+  "existingEvidence": {
+    "pilot": {
+      "kind": "historical-production-path-development-capture",
+      "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/.omx/context/studio-pilot-runtime-capture-v02.json",
+      "exists": true,
+      "sha256": "bef69d512eb7210d0fe33d449b75e3dcbbb594fdb9733dacdcb4b51071801537",
+      "bytes": 19840,
+      "lastModifiedUtc": "2026-11-15T14:24:05.683Z",
+      "recordedHead": null,
+      "exactSourcePins": {
+        "loader": "B5CD61C682DD69D2336B10B508B516999E72D73A00EDBD6E2CEBCF0323D39D11",
+        "model": "E23588E2702ECE52C5B8A2ED25ADB2DEBAC366FDF90C66609A5EF4299FFC11AE",
+        "controller": "CC76055EA4BFE596E0D3AB49C84CA55C55B8A9BAD3B33627E08ADEB78F0969F0",
+        "glb": "2B9A4182C3024485680C1E066C8A22EF0DC0F541ACCA4BD958486BCED2C4063E"
+      },
+      "pinsMatchCurrentComparedFiles": true,
+      "observedResponseTimeRangeUtc": [
+        "2026-11-15T00:53:12.000Z",
+        "2026-11-15T00:53:22.000Z"
+      ],
+      "timeBasis": "HTTP response Date fields; JSON has no capturedAt. Copy mtime is not capture time.",
+      "ageHoursFromLatestResponse": 36.747,
+      "origin": "http://127.0.0.1:4181",
+      "mode": "development",
+      "scope": "Actual imported-pilot render capture only; no full-room, production, lifecycle or performance acceptance.",
+      "sampledMax": {
+        "calls": 125,
+        "triangles": 98876
+      },
+      "records": [
+        {
+          "filename": "home-1440.png",
+          "artifactPath": "C:/Users/Owenc/orca/Portfolio/.omx/artifacts/visual-ralph/portfolio-immersive-v2/pilot-runtime-v02/home-1440.png",
+          "viewportCssPx": [
+            1440,
+            900
+          ],
+          "pose": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "true",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1",
+            "studioRenderCount": "1",
+            "studioDrawCalls": "125",
+            "studioTriangles": "98876",
+            "studioGeometries": "17",
+            "studioTextures": "12"
+          },
+          "status": "ready"
+        },
+        {
+          "filename": "right-up-1440.png",
+          "artifactPath": "C:/Users/Owenc/orca/Portfolio/.omx/artifacts/visual-ralph/portfolio-immersive-v2/pilot-runtime-v02/right-up-1440.png",
+          "viewportCssPx": [
+            1440,
+            900
+          ],
+          "pose": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "true",
+            "studioYaw": "58",
+            "studioPitch": "12",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1",
+            "studioRenderCount": "13",
+            "studioDrawCalls": "60",
+            "studioTriangles": "51018",
+            "studioGeometries": "20",
+            "studioTextures": "16"
+          },
+          "status": "ready"
+        },
+        {
+          "filename": "right-down-1440.png",
+          "artifactPath": "C:/Users/Owenc/orca/Portfolio/.omx/artifacts/visual-ralph/portfolio-immersive-v2/pilot-runtime-v02/right-down-1440.png",
+          "viewportCssPx": [
+            1440,
+            900
+          ],
+          "pose": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "true",
+            "studioYaw": "58",
+            "studioPitch": "-16",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1",
+            "studioRenderCount": "17",
+            "studioDrawCalls": "70",
+            "studioTriangles": "60172",
+            "studioGeometries": "20",
+            "studioTextures": "16"
+          },
+          "status": "ready"
+        },
+        {
+          "filename": "music-1440.png",
+          "artifactPath": "C:/Users/Owenc/orca/Portfolio/.omx/artifacts/visual-ralph/portfolio-immersive-v2/pilot-runtime-v02/music-1440.png",
+          "viewportCssPx": [
+            1440,
+            900
+          ],
+          "pose": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "true",
+            "studioYaw": "43.99999755859375",
+            "studioPitch": "-7.999998779296875",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1",
+            "studioRenderCount": "24",
+            "studioDrawCalls": "74",
+            "studioTriangles": "60488",
+            "studioGeometries": "20",
+            "studioTextures": "16"
+          },
+          "status": "ready"
+        },
+        {
+          "filename": "project-open-1440.png",
+          "artifactPath": "C:/Users/Owenc/orca/Portfolio/.omx/artifacts/visual-ralph/portfolio-immersive-v2/pilot-runtime-v02/project-open-1440.png",
+          "viewportCssPx": [
+            1440,
+            900
+          ],
+          "pose": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-4",
+            "studioPitch": "-6",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "58",
+            "studioDpr": "1",
+            "studioRenderCount": "26",
+            "studioDrawCalls": "73",
+            "studioTriangles": "56836",
+            "studioGeometries": "20",
+            "studioTextures": "16"
+          },
+          "status": "ready"
+        },
+        {
+          "filename": "home-390.png",
+          "artifactPath": "C:/Users/Owenc/orca/Portfolio/.omx/artifacts/visual-ralph/portfolio-immersive-v2/pilot-runtime-v02/home-390.png",
+          "viewportCssPx": [
+            390,
+            844
+          ],
+          "pose": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "true",
+            "studioYaw": "-13",
+            "studioPitch": "-8",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "64",
+            "studioDpr": "1",
+            "studioRenderCount": "1",
+            "studioDrawCalls": "106",
+            "studioTriangles": "83340",
+            "studioGeometries": "17",
+            "studioTextures": "12"
+          },
+          "status": "ready"
+        },
+        {
+          "filename": "right-up-390.png",
+          "artifactPath": "C:/Users/Owenc/orca/Portfolio/.omx/artifacts/visual-ralph/portfolio-immersive-v2/pilot-runtime-v02/right-up-390.png",
+          "viewportCssPx": [
+            390,
+            844
+          ],
+          "pose": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "true",
+            "studioYaw": "58",
+            "studioPitch": "12",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "64",
+            "studioDpr": "1",
+            "studioRenderCount": "13",
+            "studioDrawCalls": "47",
+            "studioTriangles": "48574",
+            "studioGeometries": "20",
+            "studioTextures": "16"
+          },
+          "status": "ready"
+        },
+        {
+          "filename": "right-down-390.png",
+          "artifactPath": "C:/Users/Owenc/orca/Portfolio/.omx/artifacts/visual-ralph/portfolio-immersive-v2/pilot-runtime-v02/right-down-390.png",
+          "viewportCssPx": [
+            390,
+            844
+          ],
+          "pose": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "true",
+            "studioYaw": "58",
+            "studioPitch": "-16",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "64",
+            "studioDpr": "1",
+            "studioRenderCount": "17",
+            "studioDrawCalls": "51",
+            "studioTriangles": "49926",
+            "studioGeometries": "20",
+            "studioTextures": "16"
+          },
+          "status": "ready"
+        },
+        {
+          "filename": "music-390.png",
+          "artifactPath": "C:/Users/Owenc/orca/Portfolio/.omx/artifacts/visual-ralph/portfolio-immersive-v2/pilot-runtime-v02/music-390.png",
+          "viewportCssPx": [
+            390,
+            844
+          ],
+          "pose": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "true",
+            "studioYaw": "44",
+            "studioPitch": "-8",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "64",
+            "studioDpr": "1",
+            "studioRenderCount": "25",
+            "studioDrawCalls": "56",
+            "studioTriangles": "55102",
+            "studioGeometries": "20",
+            "studioTextures": "16"
+          },
+          "status": "ready"
+        },
+        {
+          "filename": "project-open-390.png",
+          "artifactPath": "C:/Users/Owenc/orca/Portfolio/.omx/artifacts/visual-ralph/portfolio-immersive-v2/pilot-runtime-v02/project-open-390.png",
+          "viewportCssPx": [
+            390,
+            844
+          ],
+          "pose": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-13",
+            "studioPitch": "-8",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "64",
+            "studioDpr": "1",
+            "studioRenderCount": "27",
+            "studioDrawCalls": "54",
+            "studioTriangles": "41300",
+            "studioGeometries": "20",
+            "studioTextures": "16"
+          },
+          "status": "ready"
+        },
+        {
+          "filename": "home-320.png",
+          "artifactPath": "C:/Users/Owenc/orca/Portfolio/.omx/artifacts/visual-ralph/portfolio-immersive-v2/pilot-runtime-v02/home-320.png",
+          "viewportCssPx": [
+            320,
+            844
+          ],
+          "pose": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "true",
+            "studioYaw": "-13",
+            "studioPitch": "-8",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "64",
+            "studioDpr": "1",
+            "studioRenderCount": "1",
+            "studioDrawCalls": "104",
+            "studioTriangles": "83220",
+            "studioGeometries": "16",
+            "studioTextures": "12"
+          },
+          "status": "ready"
+        },
+        {
+          "filename": "right-up-320.png",
+          "artifactPath": "C:/Users/Owenc/orca/Portfolio/.omx/artifacts/visual-ralph/portfolio-immersive-v2/pilot-runtime-v02/right-up-320.png",
+          "viewportCssPx": [
+            320,
+            844
+          ],
+          "pose": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "true",
+            "studioYaw": "58",
+            "studioPitch": "12",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "64",
+            "studioDpr": "1",
+            "studioRenderCount": "13",
+            "studioDrawCalls": "43",
+            "studioTriangles": "41690",
+            "studioGeometries": "20",
+            "studioTextures": "16"
+          },
+          "status": "ready"
+        },
+        {
+          "filename": "right-down-320.png",
+          "artifactPath": "C:/Users/Owenc/orca/Portfolio/.omx/artifacts/visual-ralph/portfolio-immersive-v2/pilot-runtime-v02/right-down-320.png",
+          "viewportCssPx": [
+            320,
+            844
+          ],
+          "pose": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "true",
+            "studioYaw": "58",
+            "studioPitch": "-16",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "64",
+            "studioDpr": "1",
+            "studioRenderCount": "17",
+            "studioDrawCalls": "48",
+            "studioTriangles": "45770",
+            "studioGeometries": "20",
+            "studioTextures": "16"
+          },
+          "status": "ready"
+        },
+        {
+          "filename": "music-320.png",
+          "artifactPath": "C:/Users/Owenc/orca/Portfolio/.omx/artifacts/visual-ralph/portfolio-immersive-v2/pilot-runtime-v02/music-320.png",
+          "viewportCssPx": [
+            320,
+            844
+          ],
+          "pose": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "true",
+            "studioYaw": "44",
+            "studioPitch": "-8",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "64",
+            "studioDpr": "1",
+            "studioRenderCount": "25",
+            "studioDrawCalls": "53",
+            "studioTriangles": "53788",
+            "studioGeometries": "20",
+            "studioTextures": "16"
+          },
+          "status": "ready"
+        },
+        {
+          "filename": "project-open-320.png",
+          "artifactPath": "C:/Users/Owenc/orca/Portfolio/.omx/artifacts/visual-ralph/portfolio-immersive-v2/pilot-runtime-v02/project-open-320.png",
+          "viewportCssPx": [
+            320,
+            844
+          ],
+          "pose": {
+            "engine": "three.js r187",
+            "studioInteractionEnabled": "false",
+            "studioYaw": "-13",
+            "studioPitch": "-8",
+            "studioEye": "-0.7,2.8,3.4",
+            "studioFov": "64",
+            "studioDpr": "1",
+            "studioRenderCount": "27",
+            "studioDrawCalls": "52",
+            "studioTriangles": "41180",
+            "studioGeometries": "20",
+            "studioTextures": "16"
+          },
+          "status": "ready"
+        }
+      ],
+      "limitations": [
+        "Historical main-checkout development capture, not fresh assistant runtime.",
+        "Only four source pins are supplied; not a complete build fingerprint.",
+        "Sample maxima are not exhaustive forced-refresh peaks; no encoded-byte totals or ten-second timing."
+      ]
+    },
+    "assistantStagedM2": {
+      "kind": "historical-isolated-staged-room-capture",
+      "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/.omx/context/full-kit-m2-v03-runtime-capture-v01.json",
+      "exists": true,
+      "sha256": "6ba13644b5217383ff4bf70706f2d5468fe287ed92c40b9d7f324a510994bb8c",
+      "bytes": 405779,
+      "lastModifiedUtc": "2026-11-15T14:24:05.570Z",
+      "capturedAt": "2026-11-15T13:56:17.029Z",
+      "ageHours": 23.698,
+      "recordedHead": null,
+      "selected": null,
+      "provenance": [
+        {
+          "revision": "v03",
+          "stage": "M2",
+          "mode": "actual-full-kit-loader-builder",
+          "threeVersion": "0.187.0",
+          "sourcePins": {
+            "components/studio/scene/controller.ts": {
+              "sha256": "cc76055ea4bfe596e0d3ab49c84ca55c55b8a9bad3b33627e08adeb78f0969f0",
+              "bytes": 19515
+            },
+            "components/studio/scene/resources.ts": {
+              "sha256": "756a26fba1840696fd7b8f0a24dfa588a50488a55fbc99bec60ca3c0e14cb509",
+              "bytes": 4210
+            },
+            "components/studio/scene/textures.ts": {
+              "sha256": "09f6ff6cc7bb8910f09838566dfcf840d85a0d2ce1be8d064deafb0989c63aa6",
+              "bytes": 11246
+            },
+            "components/studio/scene/view-config.ts": {
+              "sha256": "1fea7adbcfd730a56920389c8ac4ecf8323c9739fd4882c15f3e134a11f1a450",
+              "bytes": 756
+            },
+            "components/studio/scene/full-kit-types.ts": {
+              "sha256": "19269dc5acf09fc9ebac3de6b5ac37157608b258a1b0ac288a85fd13021a4a56",
+              "bytes": 490
+            },
+            "components/studio/scene/bind-full-kit.ts": {
+              "sha256": "0ee8bbe6e0fb83ab4bf219343655c4260a8f5193f5624dc69fb802634a2294eb",
+              "bytes": 2075
+            },
+            "components/studio/scene/load-full-kit.ts": {
+              "sha256": "37549d60af2eb7f5e1feaf0914fd0da496ec38441ebe088ce445d2914b5ad68f",
+              "bytes": 16066
+            },
+            "components/studio/scene/build-full-studio.ts": {
+              "sha256": "5a4e8296e04d66cfeaedf59bedee8c633b378c84126de52b78eaabe421c0f02f",
+              "bytes": 3998
+            },
+            "lib/studio-contract.ts": {
+              "sha256": "64f88fd30b896c88c87a5631349bbb2bb9a3bc8676c0a1a816f1e5720902c84d",
+              "bytes": 1157
+            },
+            "design/studio-v2/asset-pipeline/full-kit/technical/profile-core.mjs": {
+              "sha256": "02b65feddb651f41a4a9d5eab4f55e41ae15c321d850a26fba00b3a92889ae71",
+              "bytes": 27085
+            },
+            "design/studio-v2/asset-pipeline/full-kit/full-kit-profile-v1.json": {
+              "sha256": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+              "bytes": 7379
+            },
+            "design/studio-v2/asset-pipeline/full-kit/asset-inventory.json": {
+              "sha256": "eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87",
+              "bytes": 53425
+            },
+            "design/studio-v2/asset-pipeline/full-kit/manifests/studio-full-kit-m2-proposal-v03.manifest.json": {
+              "sha256": "5e1cb075b377c3ce3d7656601eef55afdd5d59aeef5be6d3c4b28500f83228d9",
+              "bytes": 89726
+            },
+            "design/studio-v2/asset-pipeline/full-kit/exports/studio-full-kit-m2-proposal-v03.glb": {
+              "sha256": "7c0d30428065d0024bb1c4a631a3b54504008edcccab91c75e7367a53fa57752",
+              "bytes": 1228192
+            },
+            "design/studio-v2/scene-coordination/full-kit-contract.md": {
+              "sha256": "f6749989a3fd25c224ae33ea6aa75499558719f8f713bec7effcb37d18cd9651",
+              "bytes": 6219
+            },
+            ".omx/context/full-kit-m1-preview/preview.mjs": {
+              "sha256": "a829adb7842d9df00fb619ac6643aefbf71a84643774eaaab9c65b705c0e12e7",
+              "bytes": 5920
+            },
+            ".omx/context/full-kit-m1-preview/server.mjs": {
+              "sha256": "8fadec7d7eaf30e199f5acef61e8a83bafd8f68132336427589a677b880cd6b4",
+              "bytes": 13555
+            },
+            "node_modules/three/package.json": {
+              "sha256": "87f2c99a8718e5fdd6f5e51427fde52c6075f2f698ddf8f7b4e162882df93940",
+              "bytes": 3818
+            },
+            "design/studio-v2/asset-pipeline/full-kit/technical/validate-full-kit.mjs": {
+              "sha256": "66ee9d342cbded31994e6e8655e385c5b7945916b5ec68ad3404af9beda8bd75",
+              "bytes": 2963
+            }
+          },
+          "candidates": {
+            "proposal": {
+              "glbPath": "design/studio-v2/asset-pipeline/full-kit/exports/studio-full-kit-m2-proposal-v03.glb",
+              "manifestPath": "design/studio-v2/asset-pipeline/full-kit/manifests/studio-full-kit-m2-proposal-v03.manifest.json",
+              "sha256": "7c0d30428065d0024bb1c4a631a3b54504008edcccab91c75e7367a53fa57752",
+              "bytes": 1228192
+            }
+          },
+          "loaderInjection": {
+            "originalCandidate": "const candidate = { url: '/studio/full-kit-uninstalled-synthetic-baseline.glb', manifest: fixtureManifest };",
+            "injectedCandidate": "const candidate = { url: '/asset/' + (new URLSearchParams(location.search).get('variant') ?? 'baseline') + '.glb', manifest: fixtureManifest };",
+            "manifestImportReplacement": "/data/candidate-manifest.js"
+          }
+        }
+      ],
+      "origin": "http://127.0.0.1:4182",
+      "mode": "Isolated authored-loader/builder harness; separately labelled static UI composites use product DOM at 4181.",
+      "records": [
+        {
+          "filename": "scene-home-1440x900-f58.png",
+          "viewportCssPx": [
+            1440,
+            900
+          ],
+          "eye": [
+            -0.7,
+            2.8,
+            3.4
+          ],
+          "fov": 58,
+          "dpr": 1,
+          "pose": {
+            "yaw": -4,
+            "pitch": -6
+          },
+          "renderer": {
+            "calls": 83,
+            "triangles": 18702,
+            "memory": {
+              "geometries": 44,
+              "textures": 10
+            }
+          },
+          "firstRender": {
+            "calls": 131,
+            "triangles": 31382
+          },
+          "imageSha256": "a89bdf6a2edf49a31403afd6944f5187c3f1676684fc5121ee1e5f3eeafce717"
+        },
+        {
+          "filename": "scene-music-1440x900-f58.png",
+          "viewportCssPx": [
+            1440,
+            900
+          ],
+          "eye": [
+            -0.7,
+            2.8,
+            3.4
+          ],
+          "fov": 58,
+          "dpr": 1,
+          "pose": {
+            "yaw": 44,
+            "pitch": -8
+          },
+          "renderer": {
+            "calls": 98,
+            "triangles": 21274,
+            "memory": {
+              "geometries": 51,
+              "textures": 13
+            }
+          },
+          "firstRender": {
+            "calls": 131,
+            "triangles": 31382
+          },
+          "imageSha256": "031c02c6f37725f095474b0634c0d889e48009ccd17fe6355c8d8783ebdcd2ee"
+        },
+        {
+          "filename": "scene-left-up-1440x900-f58.png",
+          "viewportCssPx": [
+            1440,
+            900
+          ],
+          "eye": [
+            -0.7,
+            2.8,
+            3.4
+          ],
+          "fov": 58,
+          "dpr": 1,
+          "pose": {
+            "yaw": -38,
+            "pitch": 12
+          },
+          "renderer": {
+            "calls": 51,
+            "triangles": 14606,
+            "memory": {
+              "geometries": 52,
+              "textures": 13
+            }
+          },
+          "firstRender": {
+            "calls": 131,
+            "triangles": 31382
+          },
+          "imageSha256": "8c656a495b2b8ff445812e95800540bc2f28f495d121c59634d962692b00a646"
+        },
+        {
+          "filename": "scene-right-up-1440x900-f58.png",
+          "viewportCssPx": [
+            1440,
+            900
+          ],
+          "eye": [
+            -0.7,
+            2.8,
+            3.4
+          ],
+          "fov": 58,
+          "dpr": 1,
+          "pose": {
+            "yaw": 58,
+            "pitch": 12
+          },
+          "renderer": {
+            "calls": 77,
+            "triangles": 11910,
+            "memory": {
+              "geometries": 52,
+              "textures": 13
+            }
+          },
+          "firstRender": {
+            "calls": 131,
+            "triangles": 31382
+          },
+          "imageSha256": "a892e0714fdf252580bf01d02c6cb5c6b22d803d052e72bcb06ae30faf22e6b3"
+        },
+        {
+          "filename": "scene-right-down-1440x900-f58.png",
+          "viewportCssPx": [
+            1440,
+            900
+          ],
+          "eye": [
+            -0.7,
+            2.8,
+            3.4
+          ],
+          "fov": 58,
+          "dpr": 1,
+          "pose": {
+            "yaw": 58,
+            "pitch": -16
+          },
+          "renderer": {
+            "calls": 87,
+            "triangles": 14678,
+            "memory": {
+              "geometries": 53,
+              "textures": 13
+            }
+          },
+          "firstRender": {
+            "calls": 131,
+            "triangles": 31382
+          },
+          "imageSha256": "9abd79860a218f40c47a2405a370156307cd8a5b14a49c7c2b1483fa8690a7de"
+        },
+        {
+          "filename": "scene-mid-left-1440x900-f58.png",
+          "viewportCssPx": [
+            1440,
+            900
+          ],
+          "eye": [
+            -0.7,
+            2.8,
+            3.4
+          ],
+          "fov": 58,
+          "dpr": 1,
+          "pose": {
+            "yaw": -20,
+            "pitch": -6
+          },
+          "renderer": {
+            "calls": 75,
+            "triangles": 18414,
+            "memory": {
+              "geometries": 53,
+              "textures": 13
+            }
+          },
+          "firstRender": {
+            "calls": 131,
+            "triangles": 31382
+          },
+          "imageSha256": "78c8020944abc5085d9034bc9ec687e4a42036185f77672e1ce2aa839f872474"
+        },
+        {
+          "filename": "scene-mid-right-1440x900-f58.png",
+          "viewportCssPx": [
+            1440,
+            900
+          ],
+          "eye": [
+            -0.7,
+            2.8,
+            3.4
+          ],
+          "fov": 58,
+          "dpr": 1,
+          "pose": {
+            "yaw": 30,
+            "pitch": -6
+          },
+          "renderer": {
+            "calls": 101,
+            "triangles": 21876,
+            "memory": {
+              "geometries": 53,
+              "textures": 13
+            }
+          },
+          "firstRender": {
+            "calls": 131,
+            "triangles": 31382
+          },
+          "imageSha256": "7c9454d33e04331030431d8be39f2422b8fb4157a0eb6317f37cd310c92d8770"
+        },
+        {
+          "filename": "scene-home-1024x768-f58.png",
+          "viewportCssPx": [
+            1024,
+            768
+          ],
+          "eye": [
+            -0.7,
+            2.8,
+            3.4
+          ],
+          "fov": 58,
+          "dpr": 1,
+          "pose": {
+            "yaw": -4,
+            "pitch": -6
+          },
+          "renderer": {
+            "calls": 76,
+            "triangles": 18522,
+            "memory": {
+              "geometries": 44,
+              "textures": 10
+            }
+          },
+          "firstRender": {
+            "calls": 124,
+            "triangles": 31202
+          },
+          "imageSha256": "770e221c2afb696ddece70981e68a81e11873f8798492e30b38ee1dddb151941"
+        },
+        {
+          "filename": "scene-home-390x844-f74.png",
+          "viewportCssPx": [
+            390,
+            844
+          ],
+          "eye": [
+            -0.7,
+            2.8,
+            3.4
+          ],
+          "fov": 74,
+          "dpr": 1,
+          "pose": {
+            "yaw": -13.5,
+            "pitch": -7
+          },
+          "renderer": {
+            "calls": 53,
+            "triangles": 18102,
+            "memory": {
+              "geometries": 44,
+              "textures": 10
+            }
+          },
+          "firstRender": {
+            "calls": 101,
+            "triangles": 30782
+          },
+          "imageSha256": "24f6150660774a7d6035b9e65217cbd596bf815ed205c6ae62cae1a569a3c98f"
+        },
+        {
+          "filename": "scene-music-390x844-f74.png",
+          "viewportCssPx": [
+            390,
+            844
+          ],
+          "eye": [
+            -0.7,
+            2.8,
+            3.4
+          ],
+          "fov": 74,
+          "dpr": 1,
+          "pose": {
+            "yaw": 44,
+            "pitch": -8
+          },
+          "renderer": {
+            "calls": 77,
+            "triangles": 9054,
+            "memory": {
+              "geometries": 49,
+              "textures": 13
+            }
+          },
+          "firstRender": {
+            "calls": 101,
+            "triangles": 30782
+          },
+          "imageSha256": "e3c5270e79403e62436b9dac488ecd631b08c0276f5bd2125f15568a04f9cfe8"
+        },
+        {
+          "filename": "scene-left-up-390x844-f74.png",
+          "viewportCssPx": [
+            390,
+            844
+          ],
+          "eye": [
+            -0.7,
+            2.8,
+            3.4
+          ],
+          "fov": 74,
+          "dpr": 1,
+          "pose": {
+            "yaw": -38,
+            "pitch": 12
+          },
+          "renderer": {
+            "calls": 46,
+            "triangles": 14478,
+            "memory": {
+              "geometries": 50,
+              "textures": 13
+            }
+          },
+          "firstRender": {
+            "calls": 101,
+            "triangles": 30782
+          },
+          "imageSha256": "04329224556b760028f7d9a9107f4cd320efe4adcdeb895958f1ee62d7133a38"
+        },
+        {
+          "filename": "scene-home-320x844-f74.png",
+          "viewportCssPx": [
+            320,
+            844
+          ],
+          "eye": [
+            -0.7,
+            2.8,
+            3.4
+          ],
+          "fov": 74,
+          "dpr": 1,
+          "pose": {
+            "yaw": -13.5,
+            "pitch": -7
+          },
+          "renderer": {
+            "calls": 48,
+            "triangles": 15614,
+            "memory": {
+              "geometries": 43,
+              "textures": 10
+            }
+          },
+          "firstRender": {
+            "calls": 96,
+            "triangles": 28294
+          },
+          "imageSha256": "d9bb31c03cd33730e8585a4c355556144dcd96f872d0807431f66ab4a4817676"
+        },
+        {
+          "filename": "scene-home-320x568-f74.png",
+          "viewportCssPx": [
+            320,
+            568
+          ],
+          "eye": [
+            -0.7,
+            2.8,
+            3.4
+          ],
+          "fov": 74,
+          "dpr": 1,
+          "pose": {
+            "yaw": -13.5,
+            "pitch": -7
+          },
+          "renderer": {
+            "calls": 58,
+            "triangles": 18162,
+            "memory": {
+              "geometries": 44,
+              "textures": 10
+            }
+          },
+          "firstRender": {
+            "calls": 106,
+            "triangles": 30842
+          },
+          "imageSha256": "2ed26b3c4078995bf0181862a35423d360cf349e5efe1503b8ec0ab1e192cc79"
+        }
+      ],
+      "sampledMax": {
+        "settledCalls": 101,
+        "settledTriangles": 21876,
+        "firstCalls": 131,
+        "firstTriangles": 31382
+      },
+      "scope": "Actual M2 v03 material-repair loader/binder/builder renders with provisional lighting and remaining proxies; focused pendant and shared-material collateral checks. Separately labelled static authored-chrome composites; no production integration, trusted-input, lifecycle or device-performance acceptance. Image hashes added immediately from saved files.",
+      "limitations": [
+        "Not current /studio integration.",
+        "74-degree phone FOV and phone home -13.5/-7 differ from production 64 degrees and -13/-8.",
+        "First-render counters do not prove forced shadow-refresh maxima at every pose.",
+        "Images were not recaptured or visually accepted in this task."
+      ]
+    },
+    "mainStagedM3": {
+      "kind": "historical-isolated-staged-room-capture",
+      "absolutePath": "C:/Users/Owenc/orca/Portfolio/.omx/context/full-kit-m3-v03-runtime-capture-v01.json",
+      "exists": true,
+      "sha256": "641328d42c029b00979d41324df213190e168526af5447689cb50713652098b0",
+      "bytes": 3526678,
+      "lastModifiedUtc": "2026-11-15T16:01:02.415Z",
+      "capturedAt": "2026-11-15T16:00:06.456Z",
+      "ageHours": 21.635,
+      "recordedHead": null,
+      "selected": {
+        "revision": "v03",
+        "glbSha256": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+        "manifestSha256": "060bab9af5dd23b4258e03aef10de21faa7c32aa0a6010cd4e09b35089026405"
+      },
+      "provenance": [
+        {
+          "revision": "v03",
+          "stage": "M3",
+          "mode": "actual-full-kit-loader-builder",
+          "threeVersion": "0.187.0",
+          "sourcePins": {
+            "components/studio/scene/controller.ts": {
+              "sha256": "cc76055ea4bfe596e0d3ab49c84ca55c55b8a9bad3b33627e08adeb78f0969f0",
+              "bytes": 19515
+            },
+            "components/studio/scene/resources.ts": {
+              "sha256": "756a26fba1840696fd7b8f0a24dfa588a50488a55fbc99bec60ca3c0e14cb509",
+              "bytes": 4210
+            },
+            "components/studio/scene/textures.ts": {
+              "sha256": "09f6ff6cc7bb8910f09838566dfcf840d85a0d2ce1be8d064deafb0989c63aa6",
+              "bytes": 11246
+            },
+            "components/studio/scene/view-config.ts": {
+              "sha256": "1fea7adbcfd730a56920389c8ac4ecf8323c9739fd4882c15f3e134a11f1a450",
+              "bytes": 756
+            },
+            "components/studio/scene/full-kit-types.ts": {
+              "sha256": "19269dc5acf09fc9ebac3de6b5ac37157608b258a1b0ac288a85fd13021a4a56",
+              "bytes": 490
+            },
+            "components/studio/scene/bind-full-kit.ts": {
+              "sha256": "0ee8bbe6e0fb83ab4bf219343655c4260a8f5193f5624dc69fb802634a2294eb",
+              "bytes": 2075
+            },
+            "components/studio/scene/load-full-kit.ts": {
+              "sha256": "37549d60af2eb7f5e1feaf0914fd0da496ec38441ebe088ce445d2914b5ad68f",
+              "bytes": 16066
+            },
+            "components/studio/scene/build-full-studio.ts": {
+              "sha256": "5a4e8296e04d66cfeaedf59bedee8c633b378c84126de52b78eaabe421c0f02f",
+              "bytes": 3998
+            },
+            "lib/studio-contract.ts": {
+              "sha256": "64f88fd30b896c88c87a5631349bbb2bb9a3bc8676c0a1a816f1e5720902c84d",
+              "bytes": 1157
+            },
+            "design/studio-v2/asset-pipeline/full-kit/technical/profile-core.mjs": {
+              "sha256": "02b65feddb651f41a4a9d5eab4f55e41ae15c321d850a26fba00b3a92889ae71",
+              "bytes": 27085
+            },
+            "design/studio-v2/asset-pipeline/full-kit/full-kit-profile-v1.json": {
+              "sha256": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+              "bytes": 7379
+            },
+            "design/studio-v2/asset-pipeline/full-kit/asset-inventory.json": {
+              "sha256": "eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87",
+              "bytes": 53425
+            },
+            "design/studio-v2/asset-pipeline/full-kit/manifests/studio-full-kit-m3-proposal-v03.manifest.json": {
+              "sha256": "060bab9af5dd23b4258e03aef10de21faa7c32aa0a6010cd4e09b35089026405",
+              "bytes": 87856
+            },
+            "design/studio-v2/asset-pipeline/full-kit/exports/studio-full-kit-m3-proposal-v03.glb": {
+              "sha256": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+              "bytes": 1628664
+            },
+            "design/studio-v2/scene-coordination/full-kit-contract.md": {
+              "sha256": "f6749989a3fd25c224ae33ea6aa75499558719f8f713bec7effcb37d18cd9651",
+              "bytes": 6219
+            },
+            ".omx/context/full-kit-m1-preview/preview.mjs": {
+              "sha256": "a829adb7842d9df00fb619ac6643aefbf71a84643774eaaab9c65b705c0e12e7",
+              "bytes": 5920
+            },
+            ".omx/context/full-kit-m1-preview/server.mjs": {
+              "sha256": "4f0c1f331937d1356a7a2b0e75e3df4a27c302bd154b28b0f255d33c583271b8",
+              "bytes": 14788
+            },
+            "node_modules/three/package.json": {
+              "sha256": "87f2c99a8718e5fdd6f5e51427fde52c6075f2f698ddf8f7b4e162882df93940",
+              "bytes": 3818
+            },
+            "design/studio-v2/asset-pipeline/full-kit/technical/validate-full-kit.mjs": {
+              "sha256": "66ee9d342cbded31994e6e8655e385c5b7945916b5ec68ad3404af9beda8bd75",
+              "bytes": 2963
+            }
+          },
+          "candidates": {
+            "proposal": {
+              "glbPath": "design/studio-v2/asset-pipeline/full-kit/exports/studio-full-kit-m3-proposal-v03.glb",
+              "manifestPath": "design/studio-v2/asset-pipeline/full-kit/manifests/studio-full-kit-m3-proposal-v03.manifest.json",
+              "sha256": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+              "bytes": 1628664
+            }
+          },
+          "loaderInjection": {
+            "originalCandidate": "const candidate = { url: '/studio/full-kit-uninstalled-synthetic-baseline.glb', manifest: fixtureManifest };",
+            "injectedCandidate": "const candidate = { url: '/asset/' + (new URLSearchParams(location.search).get('variant') ?? 'baseline') + '.glb', manifest: fixtureManifest };",
+            "manifestImportReplacement": "/data/candidate-manifest.js"
+          }
+        }
+      ],
+      "origin": "http://127.0.0.1:4182",
+      "mode": "Isolated authored-loader/builder harness; separately labelled static UI composites use product DOM at 4181.",
+      "records": [
+        {
+          "filename": "scene-home-1440x900-f58.png",
+          "viewportCssPx": [
+            1440,
+            900
+          ],
+          "eye": [
+            -0.7,
+            2.8,
+            3.4
+          ],
+          "fov": 58,
+          "dpr": 1,
+          "pose": {
+            "yaw": -4,
+            "pitch": -6
+          },
+          "renderer": {
+            "calls": 82,
+            "triangles": 28192,
+            "memory": {
+              "geometries": 51,
+              "textures": 10
+            }
+          },
+          "firstRender": {
+            "calls": 126,
+            "triangles": 47386
+          },
+          "imageSha256": "d7a99c4bd330d4fd4a5773dee5d745b57c2e7c25d786c41e464870c8736edbc1"
+        },
+        {
+          "filename": "scene-left-down-1440x900-f58.png",
+          "viewportCssPx": [
+            1440,
+            900
+          ],
+          "eye": [
+            -0.7,
+            2.8,
+            3.4
+          ],
+          "fov": 58,
+          "dpr": 1,
+          "pose": {
+            "yaw": -38,
+            "pitch": -16
+          },
+          "renderer": {
+            "calls": 58,
+            "triangles": 24340,
+            "memory": {
+              "geometries": 52,
+              "textures": 10
+            }
+          },
+          "firstRender": {
+            "calls": 126,
+            "triangles": 47386
+          },
+          "imageSha256": "371021a4fc77085342d53cce65003c7807fa6bc9af000fd22ac4cf3a2ba58839"
+        },
+        {
+          "filename": "scene-right-down-1440x900-f58.png",
+          "viewportCssPx": [
+            1440,
+            900
+          ],
+          "eye": [
+            -0.7,
+            2.8,
+            3.4
+          ],
+          "fov": 58,
+          "dpr": 1,
+          "pose": {
+            "yaw": 58,
+            "pitch": -16
+          },
+          "renderer": {
+            "calls": 87,
+            "triangles": 18002,
+            "memory": {
+              "geometries": 59,
+              "textures": 13
+            }
+          },
+          "firstRender": {
+            "calls": 126,
+            "triangles": 47386
+          },
+          "imageSha256": "cca919714ec936e5ee34ad19d136e0c9caa6d3adaafac6c5fcae4a6ddd2c61d5"
+        },
+        {
+          "filename": "scene-music-1440x900-f58.png",
+          "viewportCssPx": [
+            1440,
+            900
+          ],
+          "eye": [
+            -0.7,
+            2.8,
+            3.4
+          ],
+          "fov": 58,
+          "dpr": 1,
+          "pose": {
+            "yaw": 44,
+            "pitch": -8
+          },
+          "renderer": {
+            "calls": 98,
+            "triangles": 25292,
+            "memory": {
+              "geometries": 59,
+              "textures": 13
+            }
+          },
+          "firstRender": {
+            "calls": 126,
+            "triangles": 47386
+          },
+          "imageSha256": "8dd3710e4bf0da96c557bf2f96f5af61d297f3f1ab7374b1d30c2dd0741ac5d5"
+        },
+        {
+          "filename": "scene-mid-right-1440x900-f58.png",
+          "viewportCssPx": [
+            1440,
+            900
+          ],
+          "eye": [
+            -0.7,
+            2.8,
+            3.4
+          ],
+          "fov": 58,
+          "dpr": 1,
+          "pose": {
+            "yaw": 30,
+            "pitch": -6
+          },
+          "renderer": {
+            "calls": 101,
+            "triangles": 29470,
+            "memory": {
+              "geometries": 59,
+              "textures": 13
+            }
+          },
+          "firstRender": {
+            "calls": 126,
+            "triangles": 47386
+          },
+          "imageSha256": "2505ac0076f720e9e32ad2a26efa151554105bd5106f95a59d177e69136d4811"
+        },
+        {
+          "filename": "scene-home-1024x768-f58.png",
+          "viewportCssPx": [
+            1024,
+            768
+          ],
+          "eye": [
+            -0.7,
+            2.8,
+            3.4
+          ],
+          "fov": 58,
+          "dpr": 1,
+          "pose": {
+            "yaw": -4,
+            "pitch": -6
+          },
+          "renderer": {
+            "calls": 76,
+            "triangles": 28024,
+            "memory": {
+              "geometries": 51,
+              "textures": 10
+            }
+          },
+          "firstRender": {
+            "calls": 120,
+            "triangles": 47218
+          },
+          "imageSha256": "62da4d52647e01249cdcec824c3b288a1edc9e8ed53cb1d6ca3b80025e7c0644"
+        },
+        {
+          "filename": "scene-home-390x844-f74.png",
+          "viewportCssPx": [
+            390,
+            844
+          ],
+          "eye": [
+            -0.7,
+            2.8,
+            3.4
+          ],
+          "fov": 74,
+          "dpr": 1,
+          "pose": {
+            "yaw": -13.5,
+            "pitch": -7
+          },
+          "renderer": {
+            "calls": 53,
+            "triangles": 24280,
+            "memory": {
+              "geometries": 49,
+              "textures": 10
+            }
+          },
+          "firstRender": {
+            "calls": 97,
+            "triangles": 43474
+          },
+          "imageSha256": "fc370298151a31354a352d0d82cc1fc3e0498752e5c6b4ec5b10a8e17304dc00"
+        },
+        {
+          "filename": "scene-music-390x844-f74.png",
+          "viewportCssPx": [
+            390,
+            844
+          ],
+          "eye": [
+            -0.7,
+            2.8,
+            3.4
+          ],
+          "fov": 74,
+          "dpr": 1,
+          "pose": {
+            "yaw": 44,
+            "pitch": -8
+          },
+          "renderer": {
+            "calls": 76,
+            "triangles": 11658,
+            "memory": {
+              "geometries": 53,
+              "textures": 13
+            }
+          },
+          "firstRender": {
+            "calls": 97,
+            "triangles": 43474
+          },
+          "imageSha256": "f3fbfacde63e93f3346044f54ebf4d579c62f1e613e576c9cba59e90df10506d"
+        },
+        {
+          "filename": "scene-left-down-390x844-f74.png",
+          "viewportCssPx": [
+            390,
+            844
+          ],
+          "eye": [
+            -0.7,
+            2.8,
+            3.4
+          ],
+          "fov": 74,
+          "dpr": 1,
+          "pose": {
+            "yaw": -38,
+            "pitch": -16
+          },
+          "renderer": {
+            "calls": 47,
+            "triangles": 20070,
+            "memory": {
+              "geometries": 55,
+              "textures": 13
+            }
+          },
+          "firstRender": {
+            "calls": 97,
+            "triangles": 43474
+          },
+          "imageSha256": "5c4f1c1039478b74f2d890fa7ad222cf19b958f873cb017aad61ac84436c06c6"
+        },
+        {
+          "filename": "scene-home-320x844-f74.png",
+          "viewportCssPx": [
+            320,
+            844
+          ],
+          "eye": [
+            -0.7,
+            2.8,
+            3.4
+          ],
+          "fov": 74,
+          "dpr": 1,
+          "pose": {
+            "yaw": -13.5,
+            "pitch": -7
+          },
+          "renderer": {
+            "calls": 48,
+            "triangles": 21596,
+            "memory": {
+              "geometries": 48,
+              "textures": 10
+            }
+          },
+          "firstRender": {
+            "calls": 92,
+            "triangles": 40790
+          },
+          "imageSha256": "48a97844be27f28ae8bb5bbd19384e14f69548f828eb5009190d6b5202c35b78"
+        },
+        {
+          "filename": "scene-music-320x844-f74.png",
+          "viewportCssPx": [
+            320,
+            844
+          ],
+          "eye": [
+            -0.7,
+            2.8,
+            3.4
+          ],
+          "fov": 74,
+          "dpr": 1,
+          "pose": {
+            "yaw": 44,
+            "pitch": -8
+          },
+          "renderer": {
+            "calls": 74,
+            "triangles": 11586,
+            "memory": {
+              "geometries": 52,
+              "textures": 13
+            }
+          },
+          "firstRender": {
+            "calls": 92,
+            "triangles": 40790
+          },
+          "imageSha256": "2f848afa443f1841cf701e87017a19d2e747edcdc4a50f3a641246f4861b9fec"
+        },
+        {
+          "filename": "scene-left-down-320x844-f74.png",
+          "viewportCssPx": [
+            320,
+            844
+          ],
+          "eye": [
+            -0.7,
+            2.8,
+            3.4
+          ],
+          "fov": 74,
+          "dpr": 1,
+          "pose": {
+            "yaw": -38,
+            "pitch": -16
+          },
+          "renderer": {
+            "calls": 46,
+            "triangles": 20068,
+            "memory": {
+              "geometries": 54,
+              "textures": 13
+            }
+          },
+          "firstRender": {
+            "calls": 92,
+            "triangles": 40790
+          },
+          "imageSha256": "bfa2a61be44bb979c7afc594185aa4502fdf4bd3642c36795a976527f4ee5778"
+        }
+      ],
+      "sampledMax": {
+        "settledCalls": 101,
+        "settledTriangles": 29470,
+        "firstCalls": 126,
+        "firstTriangles": 47386
+      },
+      "scope": "Actual pinned M3 proposal loader/binder/builder renders with provisional lighting and remaining proxies; focused nearfield views. Separately labelled static authored-chrome composites; no production integration, trusted-input, lifecycle or device-performance acceptance. Hash saved images separately and retain the returned evidence.",
+      "limitations": [
+        "Not current /studio integration.",
+        "74-degree phone FOV and phone home -13.5/-7 differ from production 64 degrees and -13/-8.",
+        "First-render counters do not prove forced shadow-refresh maxima at every pose.",
+        "Images were not recaptured or visually accepted in this task."
+      ]
+    },
+    "localBuild": {
+      "buildId": "y-B3AVJ4r6mRb4PDZAs-6",
+      "files": [
+        {
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/.next/BUILD_ID",
+          "exists": true,
+          "sha256": "f45aed76582db1b94bf6692833e595b8df6c561e4659ac7a1fc47d5fef18c164",
+          "bytes": 21,
+          "lastModifiedUtc": "2026-11-15T16:46:38.436Z"
+        },
+        {
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/.next/build-manifest.json",
+          "exists": true,
+          "sha256": "3853924c1a3d504c77a36c53aab8f968145372a00a202c3e7886ea3db4da61cc",
+          "bytes": 995,
+          "lastModifiedUtc": "2026-11-15T16:46:33.889Z"
+        },
+        {
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/.next/app-build-manifest.json",
+          "exists": true,
+          "sha256": "7396c9c9e8a4756677181d8ebd9a1063dedda8c47ae28831a2ae5c1d4c29edd4",
+          "bytes": 3496,
+          "lastModifiedUtc": "2026-11-15T16:46:33.890Z"
+        },
+        {
+          "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/.next/required-server-files.json",
+          "exists": true,
+          "sha256": "be134c70b8a8bbe1bdaa1e7996475285a7deecfeed18b13fc2119ce19b283a14",
+          "bytes": 9018,
+          "lastModifiedUtc": "2026-11-15T16:46:38.440Z"
+        }
+      ],
+      "ageHoursFromBuildIdMtime": 20.859,
+      "appDir": "C:\\Users\\Owenc\\orca\\Portfolio-assistant",
+      "sourceRevision": null,
+      "camera": null,
+      "viewport": null,
+      "origin": null,
+      "mode": "Production build artifacts present; no current running preview inspected.",
+      "limitation": "BUILD_ID and mtimes do not bind the build to current dirty source or establish a fresh runtime capture."
+    },
+    "historicalStaticJs": {
+      "absolutePath": "C:/Users/Owenc/orca/Portfolio-assistant/design/studio-v2/scene-coordination/production-static-js-budget-20261115.json",
+      "exists": true,
+      "sha256": "d044d7a9485f101282160bcdc48f5d3d6e4f3493ac60750765f3fe463f069dfd",
+      "bytes": 5387,
+      "lastModifiedUtc": "2026-11-15T14:24:06.502Z",
+      "sourceRevision": "df5a598dac14a749010bd1685205e3b3602a1dce",
+      "evidence": {
+        "repository": "OwenC05/Portfolio",
+        "headCommit": "482a81cc5f78cab8a6425d99d7b3b73d69e663d9",
+        "workflowRunId": 43722493152,
+        "jobId": 132837282840,
+        "jobConclusion": "success",
+        "url": "https://github.com/OwenC05/Portfolio/actions/runs/43722493152/job/132837282840",
+        "retrievedAt": "2026-11-15 14:08:01 UTC"
+      },
+      "scope": "ALL-ROUTE static JavaScript: conservative upper bound for studio generated static chunks. This is not actual network transfer or an exact route graph; not all files load in studio. Excludes dynamic runtime external code and future full-kit integration.",
+      "totals": {
+        "rawBytes": 1379523,
+        "gzipBytes": 391334,
+        "brotliBytes": 333289
+      },
+      "fileCount": 19,
+      "ageHoursFromRetrieval": 23.503,
+      "camera": null,
+      "viewport": null,
+      "mode": "Older CI static build; offline per-file compression, not network transfer."
+    }
+  },
+  "unmeasured": {
+    "currentOrigin": null,
+    "currentBuildMode": null,
+    "freshBuildSourceFingerprint": null,
+    "freshRuntimeViewportAndDpr": null,
+    "encodedSceneJsAndAssetsBytes": null,
+    "firstFrameRawCallsAndTriangles": null,
+    "forcedShadowRefreshPeak": null,
+    "settledRenderCounters": null,
+    "tenSecondRequestedRafP95Ms": null,
+    "currentPhysicalDeviceEvidence": null,
+    "robotPixelSizeAndOcclusion": null,
+    "robotSweptBounds": null,
+    "robotIncrementalRenderAndTransferCost": null,
+    "assignedRobotAllowance": null
+  },
+  "captureRecipe": "See baseline.md: root alone reserves/fingerprints build and browser, captures actual /studio at 1440x900, 390x844 and 320x844 plus short 320x568; verifies production 58/64 FOV and DPR; records raw initial/settled counts and encoded resource closure using existing performance helper. Exhaustive forced-refresh and physical-device gaps remain explicit.",
+  "commandRecoveryNotes": [
+    {
+      "issue": "Initial optional environment/AGENTS search returned 1 with no matches; src and camera.ts guesses were absent.",
+      "recovery": "Explicit existence checks confirmed no filesystem AGENTS in checked ancestors/design; rg inventory recovered actual app/components/lib paths and view-config.ts."
+    },
+    {
+      "issue": "One evidence parse failed on UTF-8 BOM in the M3 preflight JSON.",
+      "recovery": "Read-only parser stripped leading U+FEFF; preflight parsed successfully. No input files modified."
+    }
+  ],
+  "validation": {
+    "sourceHashAlgorithm": "SHA-256 over exact working-file bytes, no newline normalization.",
+    "headObjectAlgorithm": "Git repository blob OID recorded separately.",
+    "runtimeExecuted": false,
+    "testsExecuted": false,
+    "notes": "Documentation and source receipt only; runtime fields intentionally null. No historical forecast margin assigned to robot.",
+    "sourceRecheckAtUtc": "2026-11-16T13:38:11.673Z",
+    "sourceRecheckPassed": true,
+    "sourceSetHashAlgorithm": "SHA-256 of UTF-8 JSON.stringify(files.map(f => [f.relativePath, f.sha256])) in the recorded file order; no pretty-printing or trailing newline.",
+    "finalArtifactCheck": {
+      "atUtc": "2026-11-16T13:41:04.963Z",
+      "sourceFilesRehashed": 52,
+      "sourceMismatches": [],
+      "bothHeadsStillMatch": true,
+      "markdownHashReferencesMatchReceipt": true,
+      "onlyOwnedOutputs": [
+        "baseline.md",
+        "source-receipt.json"
+      ],
+      "testsOrRuntimeExecuted": false
+    }
+  }
+}

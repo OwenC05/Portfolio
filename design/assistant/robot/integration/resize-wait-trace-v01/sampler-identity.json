@@ -1,0 +1,7 @@
+{
+    "pid":  58304,
+    "started":  "2026-11-18T20:45:33.1270811Z",
+    "deadline":  "2026-11-18T20:46:48.1270811Z",
+    "intervalSeconds":  1,
+    "method":  "CIM formatted total CPU and available memory; no process inventory"
+}

@@ -1,0 +1,21 @@
+﻿{
+    "sources":  {
+                    "lib/studio-contract.ts":  "64f88fd30b896c88c87a5631349bbb2bb9a3bc8676c0a1a816f1e5720902c84d",
+                    ".omx/context/full-kit-m1-preview/server.mjs":  "4f0c1f331937d1356a7a2b0e75e3df4a27c302bd154b28b0f255d33c583271b8",
+                    ".omx/context/full-kit-m3-v03-capture-v01.mjs":  "4562a6151bb3b59124a276d1d3431cd3a99cce4fd76efd69d100ec74e7d4fd76",
+                    ".omx/context/full-kit-m1-preview/preview.mjs":  "a829adb7842d9df00fb619ac6643aefbf71a84643774eaaab9c65b705c0e12e7",
+                    "components/studio/StudioExperience.tsx":  "4e8628d8b91c840a494174d559e30b7967bc062f773aa37d74f53f3094891e16",
+                    "design/studio-v2/asset-pipeline/full-kit/source/build_fullkit_m3.py":  "dccfa2885919a84b03ff472cecbf76da35e0cd2a8b32baaca2dc8cb31929a209"
+                },
+    "uiServerStatus":  200,
+    "timestamp":  "2026-11-15T15:58:35.2073826Z",
+    "captureScope":  "M3 isolated real renderer plus static actual-UI composites",
+    "isolatedServerPid":  8264,
+    "uiSourceHashesBefore":  {
+                                 "lib/studio-contract.ts":  "64f88fd30b896c88c87a5631349bbb2bb9a3bc8676c0a1a816f1e5720902c84d",
+                                 "app/studio/studio.module.css":  "ce72d40af43223b33bc77dbdfd810ac38caaadb50af30916b25f1e3907bf1432",
+                                 "app/studio/StudioShell.tsx":  "bcae10c0b983b1295b4d13e4ff1777c25fe9af224ebf2aee865c146fdb62eca8",
+                                 "components/studio/StudioExperience.tsx":  "4e8628d8b91c840a494174d559e30b7967bc062f773aa37d74f53f3094891e16"
+                             },
+    "preflightCorrection":  "UI paths resolved under app/studio; initial incomplete hash attempt corrected before any capture."
+}

@@ -1,0 +1,45 @@
+{
+  "originalTestsPreserved": 20,
+  "applicationUnchanged": true,
+  "preRepairHashVerified": true,
+  "results": [
+    {
+      "name": "exact-pre-repair",
+      "sha256": "9af87603bfe18017e86a254457e33a3dba8064069ed94c2d90436b3162290bfa",
+      "exitCode": 1,
+      "failures": 8,
+      "expectedFailures": 8,
+      "failedAssertions": [
+        "G3 arrows: four current ordered chips wrap both ways synchronously without actions or queued focus",
+        "G3 arrows: one hit consumes either arrow without moving focus, selecting or submitting",
+        "G3 arrows: focus navigation preserves existing selection and passage disclosure",
+        "G3 arrows: modified arrows and other keys leave focus, defaults, state and actions untouched",
+        "G3 arrows: missing target and target DOM run/key mismatches cannot receive focus",
+        "G3 arrows: old handlers cannot focus cleared or replacement chips after supersession, cancel, close or failure",
+        "G3 arrows: synchronous focus remains valid across a same-run selection revision",
+        "G3 arrows: ordinary Tab and native button activation remain available with guarded select-and-reveal"
+      ]
+    },
+    {
+      "name": "remove-arrow-run-identity-guard",
+      "sha256": "6643897611bd333e07edbd6554b20bb282314489861a5fb4b7e0b830f0503ce7",
+      "exitCode": 1,
+      "failures": 2,
+      "expectedFailures": 2,
+      "failedAssertions": [
+        "G3 arrows: missing target and target DOM run/key mismatches cannot receive focus",
+        "G3 arrows: old handlers cannot focus cleared or replacement chips after supersession, cancel, close or failure"
+      ]
+    },
+    {
+      "name": "remove-arrow-hit-key-guard",
+      "sha256": "26ba2fde6ea059fd0c5dc0ce89b2093648763615e0b9098ef1a0cfe79fc7d326",
+      "exitCode": 1,
+      "failures": 1,
+      "expectedFailures": 1,
+      "failedAssertions": [
+        "G3 arrows: missing target and target DOM run/key mismatches cannot receive focus"
+      ]
+    }
+  ]
+}

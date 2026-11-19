@@ -1,0 +1,5 @@
+# Bounded diagnosis plan
+
+Measure the unchanged production candidate, preserve original adverse evidence and do not repair source. First audit the original nearest-rank percentile and RAF records. Then compare eight maximum ten-second samples: full DPR2, light DPR2, light DPR1.5, light DPR1, followed by reverse order. Two replicates maximum per condition; no looping until green. All use the same idle semantic state, viewport, native alternating mouse controls and resize schedule. Warmup and startup are separately labelled. Inspect visibility, callback ownership, actual dimensions, action rate and coarse concurrent host CPU load.
+
+If this matrix leaves attribution ambiguous, use at most one additional explicitly changed control (same-DPR robot failure or no-resize) and one short supported CPU trace. No production patch or DPR policy approval. Capture comparable settled normal screenshots if density sensitivity supports a candidate tradeoff. Finish with source/evidence pin equality, owned-context cleanup and clean leased-page restoration.

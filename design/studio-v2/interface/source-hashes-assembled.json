@@ -1,0 +1,38 @@
+﻿[
+    {
+        "path":  "app/studio/page.tsx",
+        "sha256":  "f811dc5eca892e911650eb61cf3f859fe9ceba2b725cd95d3ac39a546f4d7314"
+    },
+    {
+        "path":  "app/studio/StudioShell.tsx",
+        "sha256":  "bcae10c0b983b1295b4d13e4ff1777c25fe9af224ebf2aee865c146fdb62eca8"
+    },
+    {
+        "path":  "app/studio/studio.module.css",
+        "sha256":  "04b55c973d556b8a4c2fe396f3a7f4ccbb422a3e9577e55d373cdc608582691a"
+    },
+    {
+        "path":  "components/studio/StudioExperience.tsx",
+        "sha256":  "e4a2207e8664a1f755d81fbf00442223f99c55bf5b93ca22cb0063a9a7a30ed6"
+    },
+    {
+        "path":  "components/studio/ProjectEvidence.tsx",
+        "sha256":  "7242983f72892b81591848fbb5d81d39d61a4e6ae8f9ee3a7333e0a4b54b4e91"
+    },
+    {
+        "path":  "app/studio/panel-navigation.ts",
+        "sha256":  "e0d78f392b3b68ee115c56fe2e3c4c662e424b7a6629e88f8cebdf48b9a2733b"
+    },
+    {
+        "path":  "app/studio/panel-scroll.ts",
+        "sha256":  "ef13a9d34aec31eb245232ada5675bc1cf010dd41bdd352ecbefc72fe0daa188"
+    },
+    {
+        "path":  "design/studio-v2/interface/verify-behavior.mjs",
+        "sha256":  "904116dbee8f5ec21262fda9faa053b4b5366a51ca684ca06b031fd9dfea3837"
+    },
+    {
+        "path":  "design/studio-v2/interface/verify-lint.mjs",
+        "sha256":  "0ad5d73cd235946f4cadcfdafce52fc0ae087e2562e9e7466520cfb53991f636"
+    }
+]

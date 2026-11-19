@@ -1,0 +1,157 @@
+{
+  "checkedAt": "2026-11-15T18:54:23.336Z",
+  "scope": "v02-only source alignment: no room, provider, app, Blender, runtime or export execution",
+  "sources": {
+    "readme": {
+      "relativePath": "../../apprentice/README.md",
+      "bytes": 8006,
+      "sha256": "f1beb117af5e1602dae2b8691a222983d9a996b550b7332e67338521716607d6"
+    },
+    "spec": {
+      "relativePath": "../../apprentice/design-spec.md",
+      "bytes": 25824,
+      "sha256": "00474adfac3e349ce7dfd1ca2b28aeb831a3e79906427d5cb5fb4274f3d303f6"
+    },
+    "passport": {
+      "relativePath": "../../apprentice/blockout-v02/README.md",
+      "bytes": 9515,
+      "sha256": "c6437173a403ab96eda415c794f4a8167844c56094cacfc7ae8ca88bef29e589"
+    },
+    "script": {
+      "relativePath": "../../apprentice/blockout-v02/build_apprentice_blockout_v02.py",
+      "bytes": 31380,
+      "sha256": "2fd5ecdf58dd9d0298eddee2beea5af613189bbe2836dbe87f1b73b26fc6709b"
+    },
+    "blend": {
+      "relativePath": "../../apprentice/blockout-v02/apprentice-blockout-v02.blend",
+      "bytes": 303382,
+      "sha256": "ac48061fa08e53008be541e14f9e970c1bef9710089804c9fac17a683e1d7e1c"
+    },
+    "review": {
+      "relativePath": "../../review/blockout-v02/review.md",
+      "bytes": 11637,
+      "sha256": "50f285bb6c3ce18b17c4099dbb84a127866f3eabe3d5dffcb1d42b45c0c58043"
+    },
+    "decisions": {
+      "relativePath": "../../integration-decisions.md",
+      "bytes": 8151,
+      "sha256": "d354b650d30970de9573b1aed07f6d4a99b13e13045c8cc4723d3fcc9c7baa26"
+    },
+    "stateContract": {
+      "relativePath": "../../integration/state-contract.md",
+      "bytes": 21582,
+      "sha256": "e9c1916fd9a0529b6f3a11bdc7a1829b67c1e3b29ccdc5b58d6c05d970f9b26d"
+    }
+  },
+  "examplePredecessors": {
+    "profile": {
+      "relativePath": "../profile.example.json",
+      "bytes": 2401,
+      "sha256": "ae17ab6abf03ac10785ac09ab7b7f6c23e6071f579d0be7095bd087bf560793d"
+    },
+    "manifest": {
+      "relativePath": "../manifest.example.json",
+      "bytes": 2551,
+      "sha256": "2fd563fb63b624906b64db5cbd375433ff07af6887466b79aedaa43f4add8e0e"
+    }
+  },
+  "preservedOriginalB": [
+    {
+      "relativePath": "../asset-contract.md",
+      "bytes": 12014,
+      "sha256": "d23baf59c94c692cde0b0082e49dfbfa6cdc38c435d9ea0a94f51295b5b26c12"
+    },
+    {
+      "relativePath": "../budget-and-validation.md",
+      "bytes": 12269,
+      "sha256": "f606fcd50c89ddf8d32f08508ca67b05ff8007c44c1d1ac35a709713e1ace0e7"
+    },
+    {
+      "relativePath": "../capture-evidence.mjs",
+      "bytes": 5017,
+      "sha256": "c8e7aa3663cb840392e6ad8178bb1dc80f676842f614c09e35c7663b62d9dca5"
+    },
+    {
+      "relativePath": "../evidence-snapshot.json",
+      "bytes": 12481,
+      "sha256": "fc525c4ff0a9d69070bfd181be39700167e1fa8d4ace745d2a7c29f06ecea764"
+    },
+    {
+      "relativePath": "../manifest.example.json",
+      "bytes": 2551,
+      "sha256": "2fd563fb63b624906b64db5cbd375433ff07af6887466b79aedaa43f4add8e0e"
+    },
+    {
+      "relativePath": "../production-runbook.md",
+      "bytes": 12899,
+      "sha256": "0b3c7646d66216355d8fa3f5f3d178593fbd4db0205c9ac2633f031a67642cfc"
+    },
+    {
+      "relativePath": "../profile.example.json",
+      "bytes": 2401,
+      "sha256": "ae17ab6abf03ac10785ac09ab7b7f6c23e6071f579d0be7095bd087bf560793d"
+    },
+    {
+      "relativePath": "../provider-schema-notes.json",
+      "bytes": 13379,
+      "sha256": "c82d6d05517b1a652514a77b1ebf0c96c1503f576462e40b6807e93c95a91247"
+    },
+    {
+      "relativePath": "../readiness.md",
+      "bytes": 6623,
+      "sha256": "b907fc78d87308b3d0ad31b7dfb2a258e18b23a087f2ffb767bd8bbd799e61b2"
+    },
+    {
+      "relativePath": "../validation.json",
+      "bytes": 12851,
+      "sha256": "d453d9f5958017b035c9d00102d4830fcb17a9394f91da1e5c8306ba7322e01c"
+    },
+    {
+      "relativePath": "../verify-package.mjs",
+      "bytes": 6107,
+      "sha256": "5b72d8db81c072636db87fb0b7bc29b313afc59a0b2c0322cbdcec85af889eba"
+    }
+  ],
+  "arithmetic": {
+    "carriedHalfDepth": 0.11777169750652686,
+    "presentedHalfDepth": 0.11225180982603987,
+    "presentedMin": -0.14225180982603985,
+    "presentedMax": 0.08225180982603987,
+    "heldTrayMin": -0.14225180982603985,
+    "heldTrayMax": 0.11777169750652686,
+    "heldTrayDepth": 0.26002350733256674,
+    "heldTrayMidpoint": -0.012240056159756499,
+    "boxFrontMargin": 0.009748190173960142,
+    "boxRearMargin": 0.010228302493473146,
+    "centreMinus003RearOverrun": 0.007771697506526856,
+    "centreZeroFrontOverrun": 0.002251809826039841,
+    "reportedFinMargin": 0.017999999999999988,
+    "reportedLowMargin": 0.014000000000000012,
+    "reportedHighMargin": 0.014000000000000012,
+    "eyeOriginSpacing": 0.0684096
+  },
+  "qualifications": [
+    "Static source structure, not bpy readback",
+    "Rounded reported tray depths validated by formula, not whole geometry/swept measurement",
+    "Original B snapshot remains historical and was not refreshed"
+  ],
+  "authorTextConflicts": [
+    {
+      "path": "../../apprentice/design-spec.md",
+      "lines": [
+        208,
+        282
+      ],
+      "issue": "Still defers pose blending/cards to step D; D1 decision 5 has selected finite runtime poses and generated marks",
+      "blockingThisAlignment": false
+    },
+    {
+      "path": "../../apprentice/README.md",
+      "lines": [
+        79
+      ],
+      "issue": "Open-tradeoff row still says baked or runtime cards; D1 decision 5 resolves the plan",
+      "blockingThisAlignment": false
+    }
+  ]
+}

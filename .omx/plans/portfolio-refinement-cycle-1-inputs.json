@@ -1,0 +1,29 @@
+﻿{
+    "inputs":  [
+                   {
+                       "sha256":  "469845a1bb083678139ca6752394c72138dca555b9603e508d6f09aacb67b21c",
+                       "path":  ".omx/plans/prd-portfolio-refinement.md"
+                   },
+                   {
+                       "sha256":  "abeeb3a070426a0cfbb218f4f2f7151b74a4adc970f6a9c5344b7f428fb981c3",
+                       "path":  ".omx/plans/test-spec-portfolio-refinement.md"
+                   },
+                   {
+                       "sha256":  "33444fa14cdde35bfcc1e211e7c20c722f13db3cea2ce0658119e03d03f56524",
+                       "path":  ".omx/context/portfolio-refinement-20261114T153100Z.md"
+                   },
+                   {
+                       "sha256":  "8ef4e194dc04050de483f8eb502e29c949abfd317d4e9e47717b06bb36bbdc4e",
+                       "path":  ".omx/context/portfolio-target-roles-20261114.md"
+                   },
+                   {
+                       "sha256":  "66c229fbe029a4057149790ec6332bc636d08973448950e7779a2b28621c1a47",
+                       "path":  ".omx/context/portfolio-refinement-research-20261114.md"
+                   }
+               ],
+    "review_cycle":  1,
+    "session_id":  "01a1daa7-0ca8-77a0-9bcc-da11ad109c99",
+    "captured_at":  "2026-11-14T15:33:57.6467615Z",
+    "architect_agent":  "/root/portfolio_architect_review",
+    "status":  "architect_review"
+}

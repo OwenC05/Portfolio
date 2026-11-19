@@ -1,0 +1,6707 @@
+{
+  "checks": [
+    {
+      "name": "390 reduce center dissertation",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "",
+          "pushes": 0
+        },
+        "geometry": {
+          "rect": {
+            "x": 21,
+            "y": 203.625,
+            "width": 348,
+            "height": 352,
+            "top": 203.625,
+            "right": 369,
+            "bottom": 555.625,
+            "left": 21
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 116.34103118448638,
+              "y": 178.5642290792208
+            },
+            {
+              "id": "copilot",
+              "x": 76.89445754716984,
+              "y": 183.43606939954608
+            },
+            {
+              "id": "typeforge",
+              "x": 157.82999213836482,
+              "y": 172.48161349526865
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-dissertation",
+          "focus": "project-dissertation-heading",
+          "selected": "dissertation",
+          "history": 3,
+          "pushes": 1,
+          "trace": [
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "BODY"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "BODY"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "BODY"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            }
+          ],
+          "scrollY": 1395
+        }
+      }
+    },
+    {
+      "name": "390 reduce center copilot",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 2
+        },
+        "geometry": {
+          "rect": {
+            "x": 21,
+            "y": 203.625,
+            "width": 348,
+            "height": 352,
+            "top": 203.625,
+            "right": 369,
+            "bottom": 555.625,
+            "left": 21
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 116.34103118448638,
+              "y": 178.5642290792208
+            },
+            {
+              "id": "copilot",
+              "x": 76.89445754716984,
+              "y": 183.43606939954608
+            },
+            {
+              "id": "typeforge",
+              "x": 157.82999213836482,
+              "y": 172.48161349526865
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-copilot",
+          "focus": "project-copilot-heading",
+          "selected": "copilot",
+          "history": 5,
+          "pushes": 3,
+          "trace": [
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            }
+          ],
+          "scrollY": 4561
+        }
+      }
+    },
+    {
+      "name": "390 reduce center typeforge",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 4
+        },
+        "geometry": {
+          "rect": {
+            "x": 21,
+            "y": 203.625,
+            "width": 348,
+            "height": 352,
+            "top": 203.625,
+            "right": 369,
+            "bottom": 555.625,
+            "left": 21
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 116.34103118448638,
+              "y": 178.5642290792208
+            },
+            {
+              "id": "copilot",
+              "x": 76.89445754716984,
+              "y": 183.43606939954608
+            },
+            {
+              "id": "typeforge",
+              "x": 157.82999213836482,
+              "y": 172.48161349526865
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-typeforge",
+          "focus": "project-typeforge-heading",
+          "selected": "typeforge",
+          "history": 7,
+          "pushes": 5,
+          "trace": [
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-typeforge-heading",
+              "trusted": true,
+              "focus": "project-typeforge-heading"
+            }
+          ],
+          "scrollY": 6009
+        }
+      }
+    },
+    {
+      "name": "390 reduce outer top corner copilot",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 6
+        },
+        "geometry": {
+          "rect": {
+            "x": 21,
+            "y": 203.625,
+            "width": 348,
+            "height": 352,
+            "top": 203.625,
+            "right": 369,
+            "bottom": 555.625,
+            "left": 21
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 116.34103118448638,
+              "y": 178.5642290792208
+            },
+            {
+              "id": "copilot",
+              "x": 76.89445754716984,
+              "y": 183.43606939954608
+            },
+            {
+              "id": "typeforge",
+              "x": 157.82999213836482,
+              "y": 172.48161349526865
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-copilot",
+          "focus": "project-copilot-heading",
+          "selected": "copilot",
+          "history": 9,
+          "pushes": 7,
+          "trace": [
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-typeforge-heading",
+              "trusted": true,
+              "focus": "project-typeforge-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-typeforge-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-typeforge-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            }
+          ],
+          "scrollY": 4561
+        }
+      }
+    },
+    {
+      "name": "390 reduce outer bottom corner copilot",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 8
+        },
+        "geometry": {
+          "rect": {
+            "x": 21,
+            "y": 203.625,
+            "width": 348,
+            "height": 352,
+            "top": 203.625,
+            "right": 369,
+            "bottom": 555.625,
+            "left": 21
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 116.34103118448638,
+              "y": 178.5642290792208
+            },
+            {
+              "id": "copilot",
+              "x": 76.89445754716984,
+              "y": 183.43606939954608
+            },
+            {
+              "id": "typeforge",
+              "x": 157.82999213836482,
+              "y": 172.48161349526865
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-copilot",
+          "focus": "project-copilot-heading",
+          "selected": "copilot",
+          "history": 11,
+          "pushes": 9,
+          "trace": [
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            }
+          ],
+          "scrollY": 4561
+        }
+      }
+    },
+    {
+      "name": "390 reduce outer edge copilot",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 10
+        },
+        "geometry": {
+          "rect": {
+            "x": 21,
+            "y": 203.625,
+            "width": 348,
+            "height": 352,
+            "top": 203.625,
+            "right": 369,
+            "bottom": 555.625,
+            "left": 21
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 116.34103118448638,
+              "y": 178.5642290792208
+            },
+            {
+              "id": "copilot",
+              "x": 76.89445754716984,
+              "y": 183.43606939954608
+            },
+            {
+              "id": "typeforge",
+              "x": 157.82999213836482,
+              "y": 172.48161349526865
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-copilot",
+          "focus": "project-copilot-heading",
+          "selected": "copilot",
+          "history": 13,
+          "pushes": 11,
+          "trace": [
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            }
+          ],
+          "scrollY": 4561
+        }
+      }
+    },
+    {
+      "name": "390 reduce center dissertation",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 12
+        },
+        "geometry": {
+          "rect": {
+            "x": 21,
+            "y": 203.625,
+            "width": 348,
+            "height": 352,
+            "top": 203.625,
+            "right": 369,
+            "bottom": 555.625,
+            "left": 21
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 116.34103118448638,
+              "y": 178.5642290792208
+            },
+            {
+              "id": "copilot",
+              "x": 76.89445754716984,
+              "y": 183.43606939954608
+            },
+            {
+              "id": "typeforge",
+              "x": 157.82999213836482,
+              "y": 172.48161349526865
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-dissertation",
+          "focus": "project-dissertation-heading",
+          "selected": "dissertation",
+          "history": 15,
+          "pushes": 13,
+          "trace": [
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            }
+          ],
+          "scrollY": 1395
+        }
+      }
+    },
+    {
+      "name": "390 reduce repeat destination dissertation",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#project-dissertation",
+          "pushes": 13
+        },
+        "geometry": {
+          "rect": {
+            "x": 21,
+            "y": 203.625,
+            "width": 348,
+            "height": 352,
+            "top": 203.625,
+            "right": 369,
+            "bottom": 555.625,
+            "left": 21
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 116.34103118448638,
+              "y": 178.5642290792208
+            },
+            {
+              "id": "copilot",
+              "x": 76.89445754716984,
+              "y": 183.43606939954608
+            },
+            {
+              "id": "typeforge",
+              "x": 157.82999213836482,
+              "y": 172.48161349526865
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-dissertation",
+          "focus": "project-dissertation-heading",
+          "selected": "dissertation",
+          "history": 15,
+          "pushes": 13,
+          "trace": [
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            }
+          ],
+          "scrollY": 1395
+        }
+      }
+    },
+    {
+      "name": "390 reduce normal touch scrolling",
+      "pass": true,
+      "details": {
+        "hash": "#studio",
+        "focus": "studio",
+        "history": 16,
+        "pushes": 14,
+        "trace": [
+          {
+            "type": "click",
+            "target": "CANVAS",
+            "id": "",
+            "pointerType": "touch",
+            "trusted": true,
+            "focus": "CANVAS"
+          },
+          {
+            "type": "focusin",
+            "target": "H2",
+            "id": "project-dissertation-heading",
+            "trusted": true,
+            "focus": "project-dissertation-heading"
+          },
+          {
+            "type": "pointerdown",
+            "target": "CANVAS",
+            "id": "",
+            "pointerType": "touch",
+            "trusted": true,
+            "focus": "project-dissertation-heading"
+          },
+          {
+            "type": "pointerup",
+            "target": "CANVAS",
+            "id": "",
+            "pointerType": "touch",
+            "trusted": true,
+            "focus": "project-dissertation-heading"
+          },
+          {
+            "type": "mousedown",
+            "target": "CANVAS",
+            "id": "",
+            "trusted": true,
+            "focus": "project-dissertation-heading"
+          },
+          {
+            "type": "focusin",
+            "target": "CANVAS",
+            "id": "",
+            "trusted": true,
+            "focus": "CANVAS"
+          },
+          {
+            "type": "click",
+            "target": "CANVAS",
+            "id": "",
+            "pointerType": "touch",
+            "trusted": true,
+            "focus": "CANVAS"
+          },
+          {
+            "type": "focusin",
+            "target": "H2",
+            "id": "project-dissertation-heading",
+            "trusted": true,
+            "focus": "project-dissertation-heading"
+          },
+          {
+            "type": "pointerdown",
+            "target": "A",
+            "id": "",
+            "pointerType": "mouse",
+            "trusted": true,
+            "focus": "project-dissertation-heading"
+          },
+          {
+            "type": "mousedown",
+            "target": "A",
+            "id": "",
+            "trusted": true,
+            "focus": "project-dissertation-heading"
+          },
+          {
+            "type": "focusin",
+            "target": "A",
+            "id": "",
+            "trusted": true,
+            "focus": "A"
+          },
+          {
+            "type": "pointerup",
+            "target": "A",
+            "id": "",
+            "pointerType": "mouse",
+            "trusted": true,
+            "focus": "A"
+          },
+          {
+            "type": "click",
+            "target": "A",
+            "id": "",
+            "pointerType": "mouse",
+            "trusted": true,
+            "focus": "A"
+          },
+          {
+            "type": "focusin",
+            "target": "SECTION",
+            "id": "studio",
+            "trusted": true,
+            "focus": "studio"
+          },
+          {
+            "type": "pointerdown",
+            "target": "CANVAS",
+            "id": "",
+            "pointerType": "touch",
+            "trusted": true,
+            "focus": "studio"
+          }
+        ],
+        "scrollY": 75
+      }
+    },
+    {
+      "name": "390 landscape no overflow",
+      "pass": true
+    },
+    {
+      "name": "390 reduce landscape after resize dissertation",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 14
+        },
+        "geometry": {
+          "rect": {
+            "x": 38.96875,
+            "y": -92.75,
+            "width": 766.0625,
+            "height": 576,
+            "top": -92.75,
+            "right": 805.03125,
+            "bottom": 483.25,
+            "left": 38.96875
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 266.5397418184158,
+              "y": 303.0218280837013
+            },
+            {
+              "id": "copilot",
+              "x": 193.10420155802012,
+              "y": 318.47443857509023
+            },
+            {
+              "id": "typeforge",
+              "x": 347.83999155186024,
+              "y": 283.3432691265238
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-dissertation",
+          "focus": "project-dissertation-heading",
+          "selected": "dissertation",
+          "history": 17,
+          "pushes": 15,
+          "trace": [
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            }
+          ],
+          "scrollY": 1776
+        }
+      }
+    },
+    {
+      "name": "390 reduce portrait after orientation return copilot",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 16
+        },
+        "geometry": {
+          "rect": {
+            "x": 21,
+            "y": 203.625,
+            "width": 348,
+            "height": 352,
+            "top": 203.625,
+            "right": 369,
+            "bottom": 555.625,
+            "left": 21
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 116.34103118448638,
+              "y": 178.5642290792208
+            },
+            {
+              "id": "copilot",
+              "x": 76.89445754716984,
+              "y": 183.43606939954608
+            },
+            {
+              "id": "typeforge",
+              "x": 157.82999213836482,
+              "y": 172.48161349526865
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-copilot",
+          "focus": "project-copilot-heading",
+          "selected": "copilot",
+          "history": 19,
+          "pushes": 17,
+          "trace": [
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            }
+          ],
+          "scrollY": 4561
+        }
+      }
+    },
+    {
+      "name": "390 no-preference center dissertation",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "",
+          "pushes": 0
+        },
+        "geometry": {
+          "rect": {
+            "x": 21,
+            "y": 203.625,
+            "width": 348,
+            "height": 352,
+            "top": 203.625,
+            "right": 369,
+            "bottom": 555.625,
+            "left": 21
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 116.34103118448638,
+              "y": 178.5642290792208
+            },
+            {
+              "id": "copilot",
+              "x": 76.89445754716984,
+              "y": 183.43606939954608
+            },
+            {
+              "id": "typeforge",
+              "x": 157.82999213836482,
+              "y": 172.48161349526865
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-dissertation",
+          "focus": "project-dissertation-heading",
+          "selected": "dissertation",
+          "history": 3,
+          "pushes": 1,
+          "trace": [
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "BODY"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "BODY"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "BODY"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            }
+          ],
+          "scrollY": 86
+        }
+      }
+    },
+    {
+      "name": "390 no-preference center copilot",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 2
+        },
+        "geometry": {
+          "rect": {
+            "x": 21,
+            "y": 203.625,
+            "width": 348,
+            "height": 352,
+            "top": 203.625,
+            "right": 369,
+            "bottom": 555.625,
+            "left": 21
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 116.34103118448638,
+              "y": 178.5642290792208
+            },
+            {
+              "id": "copilot",
+              "x": 76.89445754716984,
+              "y": 183.43606939954608
+            },
+            {
+              "id": "typeforge",
+              "x": 157.82999213836482,
+              "y": 172.48161349526865
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-copilot",
+          "focus": "project-copilot-heading",
+          "selected": "copilot",
+          "history": 5,
+          "pushes": 3,
+          "trace": [
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            }
+          ],
+          "scrollY": 100
+        }
+      }
+    },
+    {
+      "name": "390 no-preference center typeforge",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 4
+        },
+        "geometry": {
+          "rect": {
+            "x": 21,
+            "y": 203.625,
+            "width": 348,
+            "height": 352,
+            "top": 203.625,
+            "right": 369,
+            "bottom": 555.625,
+            "left": 21
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 116.34103118448638,
+              "y": 178.5642290792208
+            },
+            {
+              "id": "copilot",
+              "x": 76.89445754716984,
+              "y": 183.43606939954608
+            },
+            {
+              "id": "typeforge",
+              "x": 157.82999213836482,
+              "y": 172.48161349526865
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-typeforge",
+          "focus": "project-typeforge-heading",
+          "selected": "typeforge",
+          "history": 7,
+          "pushes": 5,
+          "trace": [
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-typeforge-heading",
+              "trusted": true,
+              "focus": "project-typeforge-heading"
+            }
+          ],
+          "scrollY": 97
+        }
+      }
+    },
+    {
+      "name": "390 no-preference outer top corner copilot",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 6
+        },
+        "geometry": {
+          "rect": {
+            "x": 21,
+            "y": 203.625,
+            "width": 348,
+            "height": 352,
+            "top": 203.625,
+            "right": 369,
+            "bottom": 555.625,
+            "left": 21
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 116.34103118448638,
+              "y": 178.5642290792208
+            },
+            {
+              "id": "copilot",
+              "x": 76.89445754716984,
+              "y": 183.43606939954608
+            },
+            {
+              "id": "typeforge",
+              "x": 157.82999213836482,
+              "y": 172.48161349526865
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-copilot",
+          "focus": "project-copilot-heading",
+          "selected": "copilot",
+          "history": 9,
+          "pushes": 7,
+          "trace": [
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-typeforge-heading",
+              "trusted": true,
+              "focus": "project-typeforge-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-typeforge-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-typeforge-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            }
+          ],
+          "scrollY": 101
+        }
+      }
+    },
+    {
+      "name": "390 no-preference outer bottom corner copilot",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 8
+        },
+        "geometry": {
+          "rect": {
+            "x": 21,
+            "y": 203.625,
+            "width": 348,
+            "height": 352,
+            "top": 203.625,
+            "right": 369,
+            "bottom": 555.625,
+            "left": 21
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 116.34103118448638,
+              "y": 178.5642290792208
+            },
+            {
+              "id": "copilot",
+              "x": 76.89445754716984,
+              "y": 183.43606939954608
+            },
+            {
+              "id": "typeforge",
+              "x": 157.82999213836482,
+              "y": 172.48161349526865
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-copilot",
+          "focus": "project-copilot-heading",
+          "selected": "copilot",
+          "history": 11,
+          "pushes": 9,
+          "trace": [
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            }
+          ],
+          "scrollY": 101
+        }
+      }
+    },
+    {
+      "name": "390 no-preference outer edge copilot",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 10
+        },
+        "geometry": {
+          "rect": {
+            "x": 21,
+            "y": 203.625,
+            "width": 348,
+            "height": 352,
+            "top": 203.625,
+            "right": 369,
+            "bottom": 555.625,
+            "left": 21
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 116.34103118448638,
+              "y": 178.5642290792208
+            },
+            {
+              "id": "copilot",
+              "x": 76.89445754716984,
+              "y": 183.43606939954608
+            },
+            {
+              "id": "typeforge",
+              "x": 157.82999213836482,
+              "y": 172.48161349526865
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-copilot",
+          "focus": "project-copilot-heading",
+          "selected": "copilot",
+          "history": 13,
+          "pushes": 11,
+          "trace": [
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            }
+          ],
+          "scrollY": 101
+        }
+      }
+    },
+    {
+      "name": "390 no-preference center dissertation",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 12
+        },
+        "geometry": {
+          "rect": {
+            "x": 21,
+            "y": 203.625,
+            "width": 348,
+            "height": 352,
+            "top": 203.625,
+            "right": 369,
+            "bottom": 555.625,
+            "left": 21
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 116.34103118448638,
+              "y": 178.5642290792208
+            },
+            {
+              "id": "copilot",
+              "x": 76.89445754716984,
+              "y": 183.43606939954608
+            },
+            {
+              "id": "typeforge",
+              "x": 157.82999213836482,
+              "y": 172.48161349526865
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-dissertation",
+          "focus": "project-dissertation-heading",
+          "selected": "dissertation",
+          "history": 15,
+          "pushes": 13,
+          "trace": [
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            }
+          ],
+          "scrollY": 142
+        }
+      }
+    },
+    {
+      "name": "390 no-preference repeat destination dissertation",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#project-dissertation",
+          "pushes": 13
+        },
+        "geometry": {
+          "rect": {
+            "x": 21,
+            "y": 115.625,
+            "width": 348,
+            "height": 352,
+            "top": 115.625,
+            "right": 369,
+            "bottom": 467.625,
+            "left": 21
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 116.34103118448638,
+              "y": 178.5642290792208
+            },
+            {
+              "id": "copilot",
+              "x": 76.89445754716984,
+              "y": 183.43606939954608
+            },
+            {
+              "id": "typeforge",
+              "x": 157.82999213836482,
+              "y": 172.48161349526865
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-dissertation",
+          "focus": "project-dissertation-heading",
+          "selected": "dissertation",
+          "history": 15,
+          "pushes": 13,
+          "trace": [
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            }
+          ],
+          "scrollY": 175
+        }
+      }
+    },
+    {
+      "name": "390 no-preference normal touch scrolling",
+      "pass": true,
+      "details": {
+        "hash": "#studio",
+        "focus": "studio",
+        "history": 16,
+        "pushes": 14,
+        "trace": [
+          {
+            "type": "click",
+            "target": "CANVAS",
+            "id": "",
+            "pointerType": "touch",
+            "trusted": true,
+            "focus": "CANVAS"
+          },
+          {
+            "type": "focusin",
+            "target": "H2",
+            "id": "project-dissertation-heading",
+            "trusted": true,
+            "focus": "project-dissertation-heading"
+          },
+          {
+            "type": "pointerdown",
+            "target": "CANVAS",
+            "id": "",
+            "pointerType": "touch",
+            "trusted": true,
+            "focus": "project-dissertation-heading"
+          },
+          {
+            "type": "pointerup",
+            "target": "CANVAS",
+            "id": "",
+            "pointerType": "touch",
+            "trusted": true,
+            "focus": "project-dissertation-heading"
+          },
+          {
+            "type": "mousedown",
+            "target": "CANVAS",
+            "id": "",
+            "trusted": true,
+            "focus": "project-dissertation-heading"
+          },
+          {
+            "type": "focusin",
+            "target": "CANVAS",
+            "id": "",
+            "trusted": true,
+            "focus": "CANVAS"
+          },
+          {
+            "type": "click",
+            "target": "CANVAS",
+            "id": "",
+            "pointerType": "touch",
+            "trusted": true,
+            "focus": "CANVAS"
+          },
+          {
+            "type": "focusin",
+            "target": "H2",
+            "id": "project-dissertation-heading",
+            "trusted": true,
+            "focus": "project-dissertation-heading"
+          },
+          {
+            "type": "pointerdown",
+            "target": "A",
+            "id": "",
+            "pointerType": "mouse",
+            "trusted": true,
+            "focus": "project-dissertation-heading"
+          },
+          {
+            "type": "mousedown",
+            "target": "A",
+            "id": "",
+            "trusted": true,
+            "focus": "project-dissertation-heading"
+          },
+          {
+            "type": "focusin",
+            "target": "A",
+            "id": "",
+            "trusted": true,
+            "focus": "A"
+          },
+          {
+            "type": "pointerup",
+            "target": "A",
+            "id": "",
+            "pointerType": "mouse",
+            "trusted": true,
+            "focus": "A"
+          },
+          {
+            "type": "click",
+            "target": "A",
+            "id": "",
+            "pointerType": "mouse",
+            "trusted": true,
+            "focus": "A"
+          },
+          {
+            "type": "focusin",
+            "target": "SECTION",
+            "id": "studio",
+            "trusted": true,
+            "focus": "studio"
+          },
+          {
+            "type": "pointerdown",
+            "target": "CANVAS",
+            "id": "",
+            "pointerType": "touch",
+            "trusted": true,
+            "focus": "studio"
+          }
+        ],
+        "scrollY": 75
+      }
+    },
+    {
+      "name": "390 landscape no overflow",
+      "pass": true
+    },
+    {
+      "name": "390 no-preference landscape after resize dissertation",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 14
+        },
+        "geometry": {
+          "rect": {
+            "x": 38.96875,
+            "y": -92.75,
+            "width": 766.0625,
+            "height": 576,
+            "top": -92.75,
+            "right": 805.03125,
+            "bottom": 483.25,
+            "left": 38.96875
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 266.5397418184158,
+              "y": 303.0218280837013
+            },
+            {
+              "id": "copilot",
+              "x": 193.10420155802012,
+              "y": 318.47443857509023
+            },
+            {
+              "id": "typeforge",
+              "x": 347.83999155186024,
+              "y": 283.3432691265238
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-dissertation",
+          "focus": "project-dissertation-heading",
+          "selected": "dissertation",
+          "history": 17,
+          "pushes": 15,
+          "trace": [
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            }
+          ],
+          "scrollY": 1142
+        }
+      }
+    },
+    {
+      "name": "390 no-preference portrait after orientation return copilot",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 16
+        },
+        "geometry": {
+          "rect": {
+            "x": 21,
+            "y": 203.625,
+            "width": 348,
+            "height": 352,
+            "top": 203.625,
+            "right": 369,
+            "bottom": 555.625,
+            "left": 21
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 116.34103118448638,
+              "y": 178.5642290792208
+            },
+            {
+              "id": "copilot",
+              "x": 76.89445754716984,
+              "y": 183.43606939954608
+            },
+            {
+              "id": "typeforge",
+              "x": 157.82999213836482,
+              "y": 172.48161349526865
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-copilot",
+          "focus": "project-copilot-heading",
+          "selected": "copilot",
+          "history": 19,
+          "pushes": 17,
+          "trace": [
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            }
+          ],
+          "scrollY": 101
+        }
+      }
+    },
+    {
+      "name": "320 reduce center dissertation",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "",
+          "pushes": 0
+        },
+        "geometry": {
+          "rect": {
+            "x": 17,
+            "y": 197.046875,
+            "width": 286,
+            "height": 352,
+            "top": 197.046875,
+            "right": 303,
+            "bottom": 549.046875,
+            "left": 17
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 95.61360608839972,
+              "y": 178.10738366855506
+            },
+            {
+              "id": "copilot",
+              "x": 63.1948702830189,
+              "y": 182.111252437558
+            },
+            {
+              "id": "typeforge",
+              "x": 129.7108556079665,
+              "y": 173.10845247024952
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-dissertation",
+          "focus": "project-dissertation-heading",
+          "selected": "dissertation",
+          "history": 3,
+          "pushes": 1,
+          "trace": [
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "BODY"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "BODY"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "BODY"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            }
+          ],
+          "scrollY": 1421
+        }
+      }
+    },
+    {
+      "name": "320 reduce center copilot",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 2
+        },
+        "geometry": {
+          "rect": {
+            "x": 17,
+            "y": 197.046875,
+            "width": 286,
+            "height": 352,
+            "top": 197.046875,
+            "right": 303,
+            "bottom": 549.046875,
+            "left": 17
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 95.61360608839972,
+              "y": 178.10738366855506
+            },
+            {
+              "id": "copilot",
+              "x": 63.1948702830189,
+              "y": 182.111252437558
+            },
+            {
+              "id": "typeforge",
+              "x": 129.7108556079665,
+              "y": 173.10845247024952
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-copilot",
+          "focus": "project-copilot-heading",
+          "selected": "copilot",
+          "history": 5,
+          "pushes": 3,
+          "trace": [
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            }
+          ],
+          "scrollY": 4944
+        }
+      }
+    },
+    {
+      "name": "320 reduce center typeforge",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 4
+        },
+        "geometry": {
+          "rect": {
+            "x": 17,
+            "y": 197.046875,
+            "width": 286,
+            "height": 352,
+            "top": 197.046875,
+            "right": 303,
+            "bottom": 549.046875,
+            "left": 17
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 95.61360608839972,
+              "y": 178.10738366855506
+            },
+            {
+              "id": "copilot",
+              "x": 63.1948702830189,
+              "y": 182.111252437558
+            },
+            {
+              "id": "typeforge",
+              "x": 129.7108556079665,
+              "y": 173.10845247024952
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-typeforge",
+          "focus": "project-typeforge-heading",
+          "selected": "typeforge",
+          "history": 7,
+          "pushes": 5,
+          "trace": [
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-typeforge-heading",
+              "trusted": true,
+              "focus": "project-typeforge-heading"
+            }
+          ],
+          "scrollY": 6580
+        }
+      }
+    },
+    {
+      "name": "320 reduce outer top corner copilot",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 6
+        },
+        "geometry": {
+          "rect": {
+            "x": 17,
+            "y": 197.046875,
+            "width": 286,
+            "height": 352,
+            "top": 197.046875,
+            "right": 303,
+            "bottom": 549.046875,
+            "left": 17
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 95.61360608839972,
+              "y": 178.10738366855506
+            },
+            {
+              "id": "copilot",
+              "x": 63.1948702830189,
+              "y": 182.111252437558
+            },
+            {
+              "id": "typeforge",
+              "x": 129.7108556079665,
+              "y": 173.10845247024952
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-copilot",
+          "focus": "project-copilot-heading",
+          "selected": "copilot",
+          "history": 9,
+          "pushes": 7,
+          "trace": [
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-typeforge-heading",
+              "trusted": true,
+              "focus": "project-typeforge-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-typeforge-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-typeforge-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            }
+          ],
+          "scrollY": 4944
+        }
+      }
+    },
+    {
+      "name": "320 reduce outer bottom corner copilot",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 8
+        },
+        "geometry": {
+          "rect": {
+            "x": 17,
+            "y": 197.046875,
+            "width": 286,
+            "height": 352,
+            "top": 197.046875,
+            "right": 303,
+            "bottom": 549.046875,
+            "left": 17
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 95.61360608839972,
+              "y": 178.10738366855506
+            },
+            {
+              "id": "copilot",
+              "x": 63.1948702830189,
+              "y": 182.111252437558
+            },
+            {
+              "id": "typeforge",
+              "x": 129.7108556079665,
+              "y": 173.10845247024952
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-copilot",
+          "focus": "project-copilot-heading",
+          "selected": "copilot",
+          "history": 11,
+          "pushes": 9,
+          "trace": [
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            }
+          ],
+          "scrollY": 4944
+        }
+      }
+    },
+    {
+      "name": "320 reduce outer edge copilot",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 10
+        },
+        "geometry": {
+          "rect": {
+            "x": 17,
+            "y": 197.046875,
+            "width": 286,
+            "height": 352,
+            "top": 197.046875,
+            "right": 303,
+            "bottom": 549.046875,
+            "left": 17
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 95.61360608839972,
+              "y": 178.10738366855506
+            },
+            {
+              "id": "copilot",
+              "x": 63.1948702830189,
+              "y": 182.111252437558
+            },
+            {
+              "id": "typeforge",
+              "x": 129.7108556079665,
+              "y": 173.10845247024952
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-copilot",
+          "focus": "project-copilot-heading",
+          "selected": "copilot",
+          "history": 13,
+          "pushes": 11,
+          "trace": [
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            }
+          ],
+          "scrollY": 4944
+        }
+      }
+    },
+    {
+      "name": "320 reduce center dissertation",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 12
+        },
+        "geometry": {
+          "rect": {
+            "x": 17,
+            "y": 197.046875,
+            "width": 286,
+            "height": 352,
+            "top": 197.046875,
+            "right": 303,
+            "bottom": 549.046875,
+            "left": 17
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 95.61360608839972,
+              "y": 178.10738366855506
+            },
+            {
+              "id": "copilot",
+              "x": 63.1948702830189,
+              "y": 182.111252437558
+            },
+            {
+              "id": "typeforge",
+              "x": 129.7108556079665,
+              "y": 173.10845247024952
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-dissertation",
+          "focus": "project-dissertation-heading",
+          "selected": "dissertation",
+          "history": 15,
+          "pushes": 13,
+          "trace": [
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            }
+          ],
+          "scrollY": 1421
+        }
+      }
+    },
+    {
+      "name": "320 reduce repeat destination dissertation",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#project-dissertation",
+          "pushes": 13
+        },
+        "geometry": {
+          "rect": {
+            "x": 17,
+            "y": 197.046875,
+            "width": 286,
+            "height": 352,
+            "top": 197.046875,
+            "right": 303,
+            "bottom": 549.046875,
+            "left": 17
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 95.61360608839972,
+              "y": 178.10738366855506
+            },
+            {
+              "id": "copilot",
+              "x": 63.1948702830189,
+              "y": 182.111252437558
+            },
+            {
+              "id": "typeforge",
+              "x": 129.7108556079665,
+              "y": 173.10845247024952
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-dissertation",
+          "focus": "project-dissertation-heading",
+          "selected": "dissertation",
+          "history": 15,
+          "pushes": 13,
+          "trace": [
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            }
+          ],
+          "scrollY": 1421
+        }
+      }
+    },
+    {
+      "name": "320 reduce normal touch scrolling",
+      "pass": true,
+      "details": {
+        "hash": "#studio",
+        "focus": "studio",
+        "history": 16,
+        "pushes": 14,
+        "trace": [
+          {
+            "type": "click",
+            "target": "CANVAS",
+            "id": "",
+            "pointerType": "touch",
+            "trusted": true,
+            "focus": "CANVAS"
+          },
+          {
+            "type": "focusin",
+            "target": "H2",
+            "id": "project-dissertation-heading",
+            "trusted": true,
+            "focus": "project-dissertation-heading"
+          },
+          {
+            "type": "pointerdown",
+            "target": "CANVAS",
+            "id": "",
+            "pointerType": "touch",
+            "trusted": true,
+            "focus": "project-dissertation-heading"
+          },
+          {
+            "type": "pointerup",
+            "target": "CANVAS",
+            "id": "",
+            "pointerType": "touch",
+            "trusted": true,
+            "focus": "project-dissertation-heading"
+          },
+          {
+            "type": "mousedown",
+            "target": "CANVAS",
+            "id": "",
+            "trusted": true,
+            "focus": "project-dissertation-heading"
+          },
+          {
+            "type": "focusin",
+            "target": "CANVAS",
+            "id": "",
+            "trusted": true,
+            "focus": "CANVAS"
+          },
+          {
+            "type": "click",
+            "target": "CANVAS",
+            "id": "",
+            "pointerType": "touch",
+            "trusted": true,
+            "focus": "CANVAS"
+          },
+          {
+            "type": "focusin",
+            "target": "H2",
+            "id": "project-dissertation-heading",
+            "trusted": true,
+            "focus": "project-dissertation-heading"
+          },
+          {
+            "type": "pointerdown",
+            "target": "A",
+            "id": "",
+            "pointerType": "mouse",
+            "trusted": true,
+            "focus": "project-dissertation-heading"
+          },
+          {
+            "type": "mousedown",
+            "target": "A",
+            "id": "",
+            "trusted": true,
+            "focus": "project-dissertation-heading"
+          },
+          {
+            "type": "focusin",
+            "target": "A",
+            "id": "",
+            "trusted": true,
+            "focus": "A"
+          },
+          {
+            "type": "pointerup",
+            "target": "A",
+            "id": "",
+            "pointerType": "mouse",
+            "trusted": true,
+            "focus": "A"
+          },
+          {
+            "type": "click",
+            "target": "A",
+            "id": "",
+            "pointerType": "mouse",
+            "trusted": true,
+            "focus": "A"
+          },
+          {
+            "type": "focusin",
+            "target": "SECTION",
+            "id": "studio",
+            "trusted": true,
+            "focus": "studio"
+          },
+          {
+            "type": "pointerdown",
+            "target": "CANVAS",
+            "id": "",
+            "pointerType": "touch",
+            "trusted": true,
+            "focus": "studio"
+          }
+        ],
+        "scrollY": 75
+      }
+    },
+    {
+      "name": "320 landscape no overflow",
+      "pass": true
+    },
+    {
+      "name": "320 reduce landscape after resize dissertation",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 14
+        },
+        "geometry": {
+          "rect": {
+            "x": 38.96875,
+            "y": -127.75,
+            "width": 766.0625,
+            "height": 576,
+            "top": -127.75,
+            "right": 805.03125,
+            "bottom": 448.25,
+            "left": 38.96875
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 266.5397418184158,
+              "y": 303.0218280837013
+            },
+            {
+              "id": "copilot",
+              "x": 193.10420155802012,
+              "y": 318.47443857509023
+            },
+            {
+              "id": "typeforge",
+              "x": 347.83999155186024,
+              "y": 283.3432691265238
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-dissertation",
+          "focus": "project-dissertation-heading",
+          "selected": "dissertation",
+          "history": 17,
+          "pushes": 15,
+          "trace": [
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            }
+          ],
+          "scrollY": 1776
+        }
+      }
+    },
+    {
+      "name": "320 reduce portrait after orientation return copilot",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 16
+        },
+        "geometry": {
+          "rect": {
+            "x": 17,
+            "y": 197.046875,
+            "width": 286,
+            "height": 352,
+            "top": 197.046875,
+            "right": 303,
+            "bottom": 549.046875,
+            "left": 17
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 95.61360608839972,
+              "y": 178.10738366855506
+            },
+            {
+              "id": "copilot",
+              "x": 63.1948702830189,
+              "y": 182.111252437558
+            },
+            {
+              "id": "typeforge",
+              "x": 129.7108556079665,
+              "y": 173.10845247024952
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-copilot",
+          "focus": "project-copilot-heading",
+          "selected": "copilot",
+          "history": 19,
+          "pushes": 17,
+          "trace": [
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            }
+          ],
+          "scrollY": 4944
+        }
+      }
+    },
+    {
+      "name": "320 no-preference center dissertation",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "",
+          "pushes": 0
+        },
+        "geometry": {
+          "rect": {
+            "x": 17,
+            "y": 197.046875,
+            "width": 286,
+            "height": 352,
+            "top": 197.046875,
+            "right": 303,
+            "bottom": 549.046875,
+            "left": 17
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 95.61360608839972,
+              "y": 178.10738366855506
+            },
+            {
+              "id": "copilot",
+              "x": 63.1948702830189,
+              "y": 182.111252437558
+            },
+            {
+              "id": "typeforge",
+              "x": 129.7108556079665,
+              "y": 173.10845247024952
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-dissertation",
+          "focus": "project-dissertation-heading",
+          "selected": "dissertation",
+          "history": 3,
+          "pushes": 1,
+          "trace": [
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "BODY"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "BODY"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "BODY"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            }
+          ],
+          "scrollY": 140
+        }
+      }
+    },
+    {
+      "name": "320 no-preference center copilot",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 2
+        },
+        "geometry": {
+          "rect": {
+            "x": 17,
+            "y": 197.046875,
+            "width": 286,
+            "height": 352,
+            "top": 197.046875,
+            "right": 303,
+            "bottom": 549.046875,
+            "left": 17
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 95.61360608839972,
+              "y": 178.10738366855506
+            },
+            {
+              "id": "copilot",
+              "x": 63.1948702830189,
+              "y": 182.111252437558
+            },
+            {
+              "id": "typeforge",
+              "x": 129.7108556079665,
+              "y": 173.10845247024952
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-copilot",
+          "focus": "project-copilot-heading",
+          "selected": "copilot",
+          "history": 5,
+          "pushes": 3,
+          "trace": [
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            }
+          ],
+          "scrollY": 65
+        }
+      }
+    },
+    {
+      "name": "320 no-preference center typeforge",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 4
+        },
+        "geometry": {
+          "rect": {
+            "x": 17,
+            "y": 197.046875,
+            "width": 286,
+            "height": 352,
+            "top": 197.046875,
+            "right": 303,
+            "bottom": 549.046875,
+            "left": 17
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 95.61360608839972,
+              "y": 178.10738366855506
+            },
+            {
+              "id": "copilot",
+              "x": 63.1948702830189,
+              "y": 182.111252437558
+            },
+            {
+              "id": "typeforge",
+              "x": 129.7108556079665,
+              "y": 173.10845247024952
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-typeforge",
+          "focus": "project-typeforge-heading",
+          "selected": "typeforge",
+          "history": 7,
+          "pushes": 5,
+          "trace": [
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-typeforge-heading",
+              "trusted": true,
+              "focus": "project-typeforge-heading"
+            }
+          ],
+          "scrollY": 63
+        }
+      }
+    },
+    {
+      "name": "320 no-preference outer top corner copilot",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 6
+        },
+        "geometry": {
+          "rect": {
+            "x": 17,
+            "y": 197.046875,
+            "width": 286,
+            "height": 352,
+            "top": 197.046875,
+            "right": 303,
+            "bottom": 549.046875,
+            "left": 17
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 95.61360608839972,
+              "y": 178.10738366855506
+            },
+            {
+              "id": "copilot",
+              "x": 63.1948702830189,
+              "y": 182.111252437558
+            },
+            {
+              "id": "typeforge",
+              "x": 129.7108556079665,
+              "y": 173.10845247024952
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-copilot",
+          "focus": "project-copilot-heading",
+          "selected": "copilot",
+          "history": 9,
+          "pushes": 7,
+          "trace": [
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-typeforge-heading",
+              "trusted": true,
+              "focus": "project-typeforge-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-typeforge-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-typeforge-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            }
+          ],
+          "scrollY": 99
+        }
+      }
+    },
+    {
+      "name": "320 no-preference outer bottom corner copilot",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 8
+        },
+        "geometry": {
+          "rect": {
+            "x": 17,
+            "y": 197.046875,
+            "width": 286,
+            "height": 352,
+            "top": 197.046875,
+            "right": 303,
+            "bottom": 549.046875,
+            "left": 17
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 95.61360608839972,
+              "y": 178.10738366855506
+            },
+            {
+              "id": "copilot",
+              "x": 63.1948702830189,
+              "y": 182.111252437558
+            },
+            {
+              "id": "typeforge",
+              "x": 129.7108556079665,
+              "y": 173.10845247024952
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-copilot",
+          "focus": "project-copilot-heading",
+          "selected": "copilot",
+          "history": 11,
+          "pushes": 9,
+          "trace": [
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            }
+          ],
+          "scrollY": 99
+        }
+      }
+    },
+    {
+      "name": "320 no-preference outer edge copilot",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 10
+        },
+        "geometry": {
+          "rect": {
+            "x": 17,
+            "y": 197.046875,
+            "width": 286,
+            "height": 352,
+            "top": 197.046875,
+            "right": 303,
+            "bottom": 549.046875,
+            "left": 17
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 95.61360608839972,
+              "y": 178.10738366855506
+            },
+            {
+              "id": "copilot",
+              "x": 63.1948702830189,
+              "y": 182.111252437558
+            },
+            {
+              "id": "typeforge",
+              "x": 129.7108556079665,
+              "y": 173.10845247024952
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-copilot",
+          "focus": "project-copilot-heading",
+          "selected": "copilot",
+          "history": 13,
+          "pushes": 11,
+          "trace": [
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            }
+          ],
+          "scrollY": 99
+        }
+      }
+    },
+    {
+      "name": "320 no-preference center dissertation",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 12
+        },
+        "geometry": {
+          "rect": {
+            "x": 17,
+            "y": 197.046875,
+            "width": 286,
+            "height": 352,
+            "top": 197.046875,
+            "right": 303,
+            "bottom": 549.046875,
+            "left": 17
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 95.61360608839972,
+              "y": 178.10738366855506
+            },
+            {
+              "id": "copilot",
+              "x": 63.1948702830189,
+              "y": 182.111252437558
+            },
+            {
+              "id": "typeforge",
+              "x": 129.7108556079665,
+              "y": 173.10845247024952
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-dissertation",
+          "focus": "project-dissertation-heading",
+          "selected": "dissertation",
+          "history": 15,
+          "pushes": 13,
+          "trace": [
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            }
+          ],
+          "scrollY": 141
+        }
+      }
+    },
+    {
+      "name": "320 no-preference repeat destination dissertation",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#project-dissertation",
+          "pushes": 13
+        },
+        "geometry": {
+          "rect": {
+            "x": 17,
+            "y": 70.046875,
+            "width": 286,
+            "height": 352,
+            "top": 70.046875,
+            "right": 303,
+            "bottom": 422.046875,
+            "left": 17
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 95.61360608839972,
+              "y": 178.10738366855506
+            },
+            {
+              "id": "copilot",
+              "x": 63.1948702830189,
+              "y": 182.111252437558
+            },
+            {
+              "id": "typeforge",
+              "x": 129.7108556079665,
+              "y": 173.10845247024952
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-dissertation",
+          "focus": "project-dissertation-heading",
+          "selected": "dissertation",
+          "history": 15,
+          "pushes": 13,
+          "trace": [
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            }
+          ],
+          "scrollY": 214
+        }
+      }
+    },
+    {
+      "name": "320 no-preference normal touch scrolling",
+      "pass": true,
+      "details": {
+        "hash": "#studio",
+        "focus": "studio",
+        "history": 16,
+        "pushes": 14,
+        "trace": [
+          {
+            "type": "click",
+            "target": "CANVAS",
+            "id": "",
+            "pointerType": "touch",
+            "trusted": true,
+            "focus": "CANVAS"
+          },
+          {
+            "type": "focusin",
+            "target": "H2",
+            "id": "project-dissertation-heading",
+            "trusted": true,
+            "focus": "project-dissertation-heading"
+          },
+          {
+            "type": "pointerdown",
+            "target": "CANVAS",
+            "id": "",
+            "pointerType": "touch",
+            "trusted": true,
+            "focus": "project-dissertation-heading"
+          },
+          {
+            "type": "pointerup",
+            "target": "CANVAS",
+            "id": "",
+            "pointerType": "touch",
+            "trusted": true,
+            "focus": "project-dissertation-heading"
+          },
+          {
+            "type": "mousedown",
+            "target": "CANVAS",
+            "id": "",
+            "trusted": true,
+            "focus": "project-dissertation-heading"
+          },
+          {
+            "type": "focusin",
+            "target": "CANVAS",
+            "id": "",
+            "trusted": true,
+            "focus": "CANVAS"
+          },
+          {
+            "type": "click",
+            "target": "CANVAS",
+            "id": "",
+            "pointerType": "touch",
+            "trusted": true,
+            "focus": "CANVAS"
+          },
+          {
+            "type": "focusin",
+            "target": "H2",
+            "id": "project-dissertation-heading",
+            "trusted": true,
+            "focus": "project-dissertation-heading"
+          },
+          {
+            "type": "pointerdown",
+            "target": "A",
+            "id": "",
+            "pointerType": "mouse",
+            "trusted": true,
+            "focus": "project-dissertation-heading"
+          },
+          {
+            "type": "mousedown",
+            "target": "A",
+            "id": "",
+            "trusted": true,
+            "focus": "project-dissertation-heading"
+          },
+          {
+            "type": "focusin",
+            "target": "A",
+            "id": "",
+            "trusted": true,
+            "focus": "A"
+          },
+          {
+            "type": "pointerup",
+            "target": "A",
+            "id": "",
+            "pointerType": "mouse",
+            "trusted": true,
+            "focus": "A"
+          },
+          {
+            "type": "click",
+            "target": "A",
+            "id": "",
+            "pointerType": "mouse",
+            "trusted": true,
+            "focus": "A"
+          },
+          {
+            "type": "focusin",
+            "target": "SECTION",
+            "id": "studio",
+            "trusted": true,
+            "focus": "studio"
+          },
+          {
+            "type": "pointerdown",
+            "target": "CANVAS",
+            "id": "",
+            "pointerType": "touch",
+            "trusted": true,
+            "focus": "studio"
+          }
+        ],
+        "scrollY": 75
+      }
+    },
+    {
+      "name": "320 landscape no overflow",
+      "pass": true
+    },
+    {
+      "name": "320 no-preference landscape after resize dissertation",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 14
+        },
+        "geometry": {
+          "rect": {
+            "x": 38.96875,
+            "y": -127.75,
+            "width": 766.0625,
+            "height": 576,
+            "top": -127.75,
+            "right": 805.03125,
+            "bottom": 448.25,
+            "left": 38.96875
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 266.5397418184158,
+              "y": 303.0218280837013
+            },
+            {
+              "id": "copilot",
+              "x": 193.10420155802012,
+              "y": 318.47443857509023
+            },
+            {
+              "id": "typeforge",
+              "x": 347.83999155186024,
+              "y": 283.3432691265238
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-dissertation",
+          "focus": "project-dissertation-heading",
+          "selected": "dissertation",
+          "history": 17,
+          "pushes": 15,
+          "trace": [
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            }
+          ],
+          "scrollY": 1182
+        }
+      }
+    },
+    {
+      "name": "320 no-preference portrait after orientation return copilot",
+      "pass": true,
+      "details": {
+        "before": {
+          "hash": "#studio",
+          "pushes": 16
+        },
+        "geometry": {
+          "rect": {
+            "x": 17,
+            "y": 197.046875,
+            "width": 286,
+            "height": 352,
+            "top": 197.046875,
+            "right": 303,
+            "bottom": 549.046875,
+            "left": 17
+          },
+          "targets": [
+            {
+              "id": "dissertation",
+              "x": 95.61360608839972,
+              "y": 178.10738366855506
+            },
+            {
+              "id": "copilot",
+              "x": 63.1948702830189,
+              "y": 182.111252437558
+            },
+            {
+              "id": "typeforge",
+              "x": 129.7108556079665,
+              "y": 173.10845247024952
+            }
+          ]
+        },
+        "after": {
+          "hash": "#project-copilot",
+          "focus": "project-copilot-heading",
+          "selected": "copilot",
+          "history": 19,
+          "pushes": 17,
+          "trace": [
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-dissertation-heading",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "pointerdown",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "mousedown",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "project-dissertation-heading"
+            },
+            {
+              "type": "focusin",
+              "target": "A",
+              "id": "",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "pointerup",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "click",
+              "target": "A",
+              "id": "",
+              "pointerType": "mouse",
+              "trusted": true,
+              "focus": "A"
+            },
+            {
+              "type": "focusin",
+              "target": "SECTION",
+              "id": "studio",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerdown",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "pointerup",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "mousedown",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "studio"
+            },
+            {
+              "type": "focusin",
+              "target": "CANVAS",
+              "id": "",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "click",
+              "target": "CANVAS",
+              "id": "",
+              "pointerType": "touch",
+              "trusted": true,
+              "focus": "CANVAS"
+            },
+            {
+              "type": "focusin",
+              "target": "H2",
+              "id": "project-copilot-heading",
+              "trusted": true,
+              "focus": "project-copilot-heading"
+            }
+          ],
+          "scrollY": 99
+        }
+      }
+    }
+  ],
+  "failures": [],
+  "errors": [],
+  "method": "Trusted touchscreen gestures in fresh isMobile contexts; matching heading focus sampled after compatibility click; both motion settings at320/390 plus landscape/portrait resize. History spy only records and forwards calls. Canvas-relative coordinates independently projected from authored camera/plane geometry."
+}

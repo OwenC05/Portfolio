@@ -1,0 +1,298 @@
+{
+  "results": [
+    {
+      "reducedMotion": "reduce",
+      "boundaryInstrumentation": false,
+      "pass": true,
+      "hash": "#project-dissertation",
+      "focus": "project-dissertation-heading",
+      "selected": "dissertation",
+      "pushes": 1,
+      "trace": [
+        {
+          "type": "pointerdown",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "pointerType": "pen",
+          "pointerId": 2,
+          "buttons": 1,
+          "focus": "BODY"
+        },
+        {
+          "type": "mousedown",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "buttons": 1,
+          "focus": "BODY"
+        },
+        {
+          "type": "focusin",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "focus": "CANVAS"
+        },
+        {
+          "type": "pointerup",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "pointerType": "pen",
+          "pointerId": 2,
+          "buttons": 0,
+          "focus": "CANVAS"
+        },
+        {
+          "type": "click",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "pointerType": "pen",
+          "pointerId": 2,
+          "buttons": 0,
+          "focus": "CANVAS"
+        },
+        {
+          "type": "focusin",
+          "target": "H2",
+          "id": "project-dissertation-heading",
+          "trusted": true,
+          "focus": "project-dissertation-heading"
+        }
+      ]
+    },
+    {
+      "reducedMotion": "reduce",
+      "boundaryInstrumentation": true,
+      "pass": true,
+      "hash": "#project-dissertation",
+      "focus": "project-dissertation-heading",
+      "selected": "dissertation",
+      "pushes": 1,
+      "trace": [
+        {
+          "type": "pointerdown",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "pointerType": "pen",
+          "pointerId": 2,
+          "buttons": 1,
+          "focus": "BODY"
+        },
+        {
+          "type": "mousedown",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "buttons": 1,
+          "focus": "BODY"
+        },
+        {
+          "type": "focusin",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "focus": "CANVAS"
+        },
+        {
+          "type": "pointerup",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "pointerType": "pen",
+          "pointerId": 2,
+          "buttons": 0,
+          "focus": "CANVAS"
+        },
+        {
+          "type": "pointerout",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": false,
+          "pointerType": "pen",
+          "pointerId": 2,
+          "buttons": 0,
+          "focus": "CANVAS"
+        },
+        {
+          "type": "pointerleave",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": false,
+          "pointerType": "pen",
+          "pointerId": 2,
+          "buttons": 0,
+          "focus": "CANVAS"
+        },
+        {
+          "type": "click",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "pointerType": "pen",
+          "pointerId": 2,
+          "buttons": 0,
+          "focus": "CANVAS"
+        },
+        {
+          "type": "focusin",
+          "target": "H2",
+          "id": "project-dissertation-heading",
+          "trusted": true,
+          "focus": "project-dissertation-heading"
+        }
+      ]
+    },
+    {
+      "reducedMotion": "no-preference",
+      "boundaryInstrumentation": false,
+      "pass": true,
+      "hash": "#project-dissertation",
+      "focus": "project-dissertation-heading",
+      "selected": "dissertation",
+      "pushes": 1,
+      "trace": [
+        {
+          "type": "pointerdown",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "pointerType": "pen",
+          "pointerId": 2,
+          "buttons": 1,
+          "focus": "BODY"
+        },
+        {
+          "type": "mousedown",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "buttons": 1,
+          "focus": "BODY"
+        },
+        {
+          "type": "focusin",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "focus": "CANVAS"
+        },
+        {
+          "type": "pointerup",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "pointerType": "pen",
+          "pointerId": 2,
+          "buttons": 0,
+          "focus": "CANVAS"
+        },
+        {
+          "type": "click",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "pointerType": "pen",
+          "pointerId": 2,
+          "buttons": 0,
+          "focus": "CANVAS"
+        },
+        {
+          "type": "focusin",
+          "target": "H2",
+          "id": "project-dissertation-heading",
+          "trusted": true,
+          "focus": "project-dissertation-heading"
+        }
+      ]
+    },
+    {
+      "reducedMotion": "no-preference",
+      "boundaryInstrumentation": true,
+      "pass": true,
+      "hash": "#project-dissertation",
+      "focus": "project-dissertation-heading",
+      "selected": "dissertation",
+      "pushes": 1,
+      "trace": [
+        {
+          "type": "pointerdown",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "pointerType": "pen",
+          "pointerId": 2,
+          "buttons": 1,
+          "focus": "BODY"
+        },
+        {
+          "type": "mousedown",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "buttons": 1,
+          "focus": "BODY"
+        },
+        {
+          "type": "focusin",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "focus": "CANVAS"
+        },
+        {
+          "type": "pointerup",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "pointerType": "pen",
+          "pointerId": 2,
+          "buttons": 0,
+          "focus": "CANVAS"
+        },
+        {
+          "type": "pointerout",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": false,
+          "pointerType": "pen",
+          "pointerId": 2,
+          "buttons": 0,
+          "focus": "CANVAS"
+        },
+        {
+          "type": "pointerleave",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": false,
+          "pointerType": "pen",
+          "pointerId": 2,
+          "buttons": 0,
+          "focus": "CANVAS"
+        },
+        {
+          "type": "click",
+          "target": "CANVAS",
+          "id": "",
+          "trusted": true,
+          "pointerType": "pen",
+          "pointerId": 2,
+          "buttons": 0,
+          "focus": "CANVAS"
+        },
+        {
+          "type": "focusin",
+          "target": "H2",
+          "id": "project-dissertation-heading",
+          "trusted": true,
+          "focus": "project-dissertation-heading"
+        }
+      ]
+    }
+  ],
+  "failures": [],
+  "limitations": "Trusted CDP pen down/up/click; when indicated, post-up out/leave are explicitly untrusted boundary instrumentation to model non-hover pen release order. This is not real non-hover pen hardware evidence."
+}

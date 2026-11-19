@@ -1,0 +1,82 @@
+{
+  "candidateId": "selected-a-v01-meshy-001",
+  "status": "PROPOSED-single-candidate",
+  "submitted": false,
+  "endpoint": "https://api.meshy.ai/openapi/v1/image-to-3d",
+  "method": "POST",
+  "schemaEvidence": {
+    "surface": "official-public-REST",
+    "verifiedAt": "2026-11-16T12:52:56.3907266Z",
+    "url": "https://docs.meshy.ai/en/api/image-to-3d",
+    "connectorSchemaVerified": false,
+    "connectorRequirements": null
+  },
+  "input": {
+    "path": "design/assistant/robot/higgsfield-concepts/selected-a-v01/outputs/02-front.png",
+    "sha256": "9b94d861e18d5c95f439847e30a81aa7a036110f0105585a8914126bfc9c8cc7",
+    "bytes": 4037510,
+    "width": 1792,
+    "height": 2240,
+    "mimeType": "image/png"
+  },
+  "quote": {
+    "checkedAt": "2026-11-16T12:52:56.3907266Z",
+    "source": "https://docs.meshy.ai/en/api/pricing",
+    "apiCreditsPerCandidate": 5,
+    "candidateLimit": 1,
+    "automaticCreateRetries": 0,
+    "automaticRegeneration": false,
+    "remeshTextureRigJobsIncluded": 0,
+    "liveAccountBalance": null,
+    "liveConnectorQuote": null
+  },
+  "body": {
+    "image_url": null,
+    "model_type": "smart-topology",
+    "ai_model": "meshy-t2.5",
+    "topology": "triangle",
+    "target_polycount": 8000,
+    "should_texture": false,
+    "enable_pbr": false,
+    "target_formats": [
+      "glb"
+    ],
+    "auto_size": false
+  },
+  "payload": {
+    "exampleExecutable": false,
+    "reason": "image_url is populated from the pinned PNG by prepare-request.mjs; metadata in this envelope is never sent",
+    "prepareCheckCommand": "node design/assistant/robot/asset-pipeline/selected-a-v01/prepare-request.mjs --check",
+    "prepareWriteCommand": "node design/assistant/robot/asset-pipeline/selected-a-v01/prepare-request.mjs --write",
+    "outputRelativePath": "candidate-001/create-request.json",
+    "sendsNetworkRequest": false
+  },
+  "productionReceipt": {
+    "providerTaskId": null,
+    "createRequestSha256": null,
+    "submittedAt": null,
+    "completedAt": null,
+    "chargedCredits": null,
+    "rawGlbSha256": null,
+    "rawGlbBytes": null
+  },
+  "decisionSources": [
+    {
+      "path": "design/assistant/robot/selected-a-build-decisions.md",
+      "sha256": "face0b2be9557a6f55d3a2106a7a2ebf5a0617b14701c5d3e7de9c9408e27a11",
+      "bytes": 3831
+    },
+    {
+      "path": "design/assistant/robot/review/selected-a-v01/review.md",
+      "sha256": "491c25cfc863e3e27a718b4e4971916fcfa01d6204aa9a615d0b7934e3ed5b77",
+      "bytes": 10156
+    }
+  ],
+  "constraints": {
+    "targetIsProductionAllocation": false,
+    "outputCountsAndSize": null,
+    "extraArtworkRequired": false,
+    "canonicalReferenceReviewComplete": true,
+    "noAutomaticProviderFallback": true
+  }
+}

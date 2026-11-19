@@ -1,0 +1,814 @@
+{
+ "schema": "m4-correction-matrix/v1",
+ "status": "PROPOSAL ONLY. Author recommendation for root decision; no correction, variance or waiver is approved. No source, asset, report or pair was changed.",
+ "authority": "scene-coordination/m4-correction-plan-task.md / root msg_aee326c1fb5d / coordinator msg_164779cb41e3",
+ "author": "actual Claude Opus 5.5/high, task_23314c669e03 / ctx_569e786e8807",
+ "date": "2026-11-15",
+ "companionReport": "scene-m4-correction-plan.md",
+ "units": "Blender metres = glTF metres (Blender +Z up; glTF +Y up). Runtime world units = 2 x metres, +0.11 on Y. Percentages are signed (measured - target) / target against the stated target or the violated range bound. Gate: |deviation| <= 3.000% (render-gates.md:65); -3.077% fails.",
+ "frozenInputs": {
+  "source": [
+   "asset-pipeline/full-kit/source/build_fullkit_m4.py",
+   "aa9724dcd14dbc428ca5c2ba84cffdcbb469fa14c53cf3866ac46164ec04dc22"
+  ],
+  "helper": [
+   "asset-pipeline/full-kit/source/build_fullkit_m4_geometry.py",
+   "c7ce9d8e1792273d6aeffdc5b536233413fdca6c6fd16abf344827d6433ab1c0"
+  ],
+  "editable": [
+   "asset-pipeline/full-kit/source/fk-40-music-proposal-v01.blend",
+   "0ae40460b9a2cb578fc35a96497a9016e5f116a1efe98cac4809568fd68c4665"
+  ],
+  "raw": [
+   "asset-pipeline/full-kit/exports/studio-full-kit-m4-proposal-v01.raw-export.glb",
+   "c10e6453b6bee5c1cf09b3d1c905151a4567e5360116a0495bc1398eb20f5906"
+  ],
+  "pairGlb": [
+   "asset-pipeline/full-kit/exports/studio-full-kit-m4-proposal-v02.glb",
+   "baa1a43bd343359edb217fa077bde0678a931cc3ed3991d5ee059e04813ed32f"
+  ],
+  "pairManifest": [
+   "asset-pipeline/full-kit/manifests/studio-full-kit-m4-proposal-v02.manifest.json",
+   "42597f1b859fdae354063e09ee925d4d2dc9be8ae0ac8556663e391db6906b82"
+  ],
+  "authorReport": [
+   "asset-pipeline/full-kit/m4-author-report.md",
+   "93d7c5c124a846240173b0a04fed1dffd4fb9743e15971d3ea41a966feb3ee79"
+  ],
+  "tierLedger": [
+   "asset-pipeline/full-kit/manifests/m4-v01-tier-ledger.json",
+   "63848642fde09d4d5762c9c5054129c22df51f0838bcc8f1b7c450fd80ffae63"
+  ],
+  "evidenceScript": [
+   "asset-pipeline/full-kit/source/render_m4_v01_evidence.py",
+   "bfa6fc9bf22707dc08f44f0bd4a7033e3817d54d2d142d5dea7a969fca161e18"
+  ],
+  "mapping": [
+   "scene-coordination/m4-model-contract.json",
+   "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98"
+  ],
+  "guard": [
+   "scene-coordination/m4-transition-guard.py",
+   "ad62627f0683806ace2c8ebbb133ba83e72c7d95f1df8adc291a3706aa40da6b"
+  ],
+  "prototypeBaseline": [
+   "asset-pipeline/full-kit/exports/studio-full-kit-m1-baseline-v02.glb",
+   "04994845f62236c6230dce1ba8af7d9811e21fc1e45c0fff6a89be7f06777093"
+  ],
+  "inventory": [
+   "asset-pipeline/full-kit/asset-inventory.json",
+   "eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87"
+  ],
+  "renderGates": [
+   "asset-pipeline/full-kit/render-gates.md",
+   "15f10d9d9e8ba2b9e4cf938263b66b481267f824422f12ce63982862858f5fb3"
+  ],
+  "artDirection": [
+   "asset-pipeline/full-kit/art-direction.md",
+   "fd1c6d0edc96b7736b32de6397957ce8c549a838aabf67631adc52a0011a68bb"
+  ],
+  "renderCam": [
+   "asset-pipeline/full-kit/source/render_cam.py",
+   "d417c68f (prefix; frozen, unchanged)"
+  ]
+ },
+ "method": {
+  "measurement": "Pure CPython/numpy on the frozen helper c7ce9d8e. Each vertex range is tagged by the exact helper source line that authored it, which separates sub-parts: shell vs cheeks vs knobs, rack frame vs stubs vs booms, sustain base vs cable, pad head vs rim vs lugs. Cross-checked against the frozen v02 GLB baa1a43b: all 18 rows have equal triangle counts and world AABBs within 1e-7 m. No Blender, no browser.",
+  "projection": "A parameter-patched COPY of the helper in the scratchpad (never the repo) was rebuilt with the proposed values. Checks: tri-tri intersections against the frozen M3 v03 parent triangles; eye rays from Blender (-0.35, -1.70, 1.345); pinhole projections with the M1 builder cameras. Planning evidence only: ray samples and projected boxes are not rendered pixels or visual approval.",
+  "scratchEvidence (non-durable scratchpad; hashes for traceability)": {
+   "m4c_measure.py": "6aa1221def599f9cce20b27bc8e618c583981996803a806dd952e7c007dec53d",
+   "m4c_measure.json": "076805a5c2961cc162f757832160c3f475e4a2240e99a73cd5271a2f0b863b75",
+   "m4c_edges.py": "0b5d7d48ff09c319d2e22f3f86a62246b1844b54784c14be6853c4a23f3cc5e9",
+   "m4c_edges.json": "fab59003d5902b3f493f8e4a4ee312f27b8a5515549553709c74ea97ab0af789",
+   "m4c_proposal.py": "28c6f38112d72096950baddce53e0a3e6803dfd31ca168a6fdd669316d4ef854",
+   "m4c_proposal.json": "b08a7fe5d1ffb5d3df38f8beda93bad975a8f34c9437961005ae36154a4d0c8d",
+   "m4c_variants.py": "f54c3ea5d397ac477a53f1ba5ef14572e6a52e4fb7c2230892aaa9902309326c",
+   "m4c_variants.json": "bd7c104462d306192d1d1093bbef6e7c65aafbf57eecc42c3cbe0077b9c85457",
+   "lib.py": "40ae5cce9d84e67bf92c8902ffc44a6feb23d6aac02b24e17d150f63d31b3a0a",
+   "parent_tris.npz": "48d6b3d4fd8dd09f71e2962a96a75e430d27b2758b8defaafaee66ee086c2e2b"
+  }
+ },
+ "ledgerCorrections": [
+  {
+   "item": "drum_hihat_pedal width",
+   "ledgerSaid": "0.126 vs 0.13 listed under within3pct (-3.1%, at the limit)",
+   "correct": "Base footprint 0.126 m vs 0.13 m = -3.077%. This is OUTSIDE the 3% gate and was misclassified in tier ledger 63848642; see row C9."
+  },
+  {
+   "item": "drum_rack width",
+   "ledgerSaid": "within3pct as 'upright centres 1.16'",
+   "correct": "Centre spacing is not a width. Outer tube width 1.202 m = +3.621%; frame including wing clamps 1.232 m = +6.207%. Both are OUTSIDE: an undisclosed failure, row C4."
+  },
+  {
+   "item": "drum_rack height",
+   "ledgerSaid": "'top bar 0.80'",
+   "correct": "There is no top bar. The uprights end 0.80 m above the floor; the frame's own height is 0.7914 m above its feet on the rug; cymbal booms reach 1.0024 m. Row C3."
+  },
+  {
+   "item": "drum_pads heads",
+   "ledgerSaid": "tom head 0.27, snare head 0.32",
+   "correct": "Head discs are 0.2488 m (toms) and 0.2988 m (snare); 0.27/0.32 were 2 x shell radius. Rim outer 0.282/0.332, lugs 0.2906/0.3405. Row C5."
+  },
+  {
+   "item": "ctl_body height",
+   "ledgerSaid": "slab 0.095, cheeks 0.099, knobs to 0.104 (+9.4%)",
+   "correct": "There is no 0.095 slab. White_pc shell top 0.092 (-3.158%), cheeks 0.099 (+4.211%), envelope including knobs 0.10389 (+9.358%). Every reading fails. Row C1."
+  },
+  {
+   "item": "ctl_stand",
+   "ledgerSaid": "0.564 vs 0.68 (-17%)",
+   "correct": "Stand own height 0.5641 m = -17.044%; top above floor 0.5727 m = -15.779%. Row C2."
+  }
+ ],
+ "rows": [
+  {
+   "id": "C1",
+   "asset": "ctl_body",
+   "leaves": [
+    "ctl_body__shell"
+   ],
+   "requirement": {
+    "text": "targetSizeM '0.99 x 0.32 x 0.095'",
+    "source": "asset-pipeline/full-kit/asset-inventory.json@eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87 line 1515",
+    "gate": "asset-pipeline/full-kit/render-gates.md:65@15f10d9d9e8ba2b9e4cf938263b66b481267f824422f12ce63982862858f5fb3 ('tier size within 3%')"
+   },
+   "semantics": "Strict whole-asset envelope W x D x H in the controller frame (underside to highest point), including the protruding knobs, pads and transport keys. The inventory title lists shell, cheeks, panel, pads, knobs, wheels, display and ports as this asset, and the prototype counterpart is one box. Shell-only readings are reported but not used to pass.",
+   "measured": {
+    "frame": "controller local MC (x along keys, y front->back, z from underside)",
+    "envelopeWDH": [
+     0.99,
+     0.32,
+     0.10389
+    ],
+    "whitePcShellTop": 0.092,
+    "cheekTop": 0.099,
+    "knobTop": 0.10389,
+    "padTop": 0.09505
+   },
+   "deviationPct": {
+    "width": 0.0,
+    "depth": 0.0,
+    "envelopeHeight": 9.358,
+    "cheekHeight": 4.211,
+    "whiteShellHeight": -3.158
+   },
+   "gate": "FAIL (height)",
+   "recommendation": {
+    "type": "correction",
+    "geometry": "Lower the rear control panel 9 mm (z_front 0.080 -> 0.071, z_back 0.092 -> 0.083) and move the cheek's rear profile point from 0.099 to 0.095. Knobs keep their 16 mm height, so the knob top is 0.0940 and the envelope exactly 0.095. The panel front wall stays 6.2 mm above the black-key tops (0.0648).",
+    "projected": {
+     "envelopeWDH": [
+      0.99,
+      0.32,
+      0.095
+     ],
+     "triangles": "unchanged (1132)",
+     "occlusion": "The controller is 9 mm lower at the back: no measured loss; the azimuth is not affected by height."
+    }
+   },
+   "validation": "Builder assert on envelope <= 0.095 m; Blender ray/visibility re-measure; independent image review of panel controls at music-1440.",
+   "owner": "actual-Claude author (source); S audit; root decision"
+  },
+  {
+   "id": "C2",
+   "asset": "ctl_stand",
+   "leaves": [
+    "ctl_stand__frame",
+    "ctl_body__shell",
+    "ctl_body__indicators",
+    "ctl_keys__keys",
+    "ctl_sustain_pedal__pedal",
+    "stool_keys__stool",
+    "music_cables__runs"
+   ],
+   "requirement": {
+    "text": "targetSizeM '0.68 high' (tier A)",
+    "source": "asset-pipeline/full-kit/asset-inventory.json@eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87 line 1559",
+    "gate": "asset-pipeline/full-kit/render-gates.md:65@15f10d9d9e8ba2b9e4cf938263b66b481267f824422f12ce63982862858f5fb3 ('tier size within 3%')"
+   },
+   "semantics": "Stand own height, from foot underside to the top of the support arms. Rug thickness is not counted as stand.",
+   "measured": {
+    "ownHeight": 0.5641,
+    "footUndersideZ": 0.0086,
+    "armTopZ": 0.5727,
+    "controllerUndersideZ": 0.573,
+    "whiteKeyTopZ": 0.6265,
+    "stoolSeatZ": 0.5
+   },
+   "deviationPct": {
+    "ownHeight": -17.044,
+    "topAboveFloor": -15.779
+   },
+   "gate": "FAIL",
+   "recommendation": {
+    "type": "correction (recommended) with a placement dependency; fallback variance below",
+    "geometry": "Raise CTL zb from 0.573 to 0.6889, giving arm top 0.6886 and stand own height 0.680. The stand X frame, sustain cable and controller cable follow zb. White-key tops rise to 0.7424 m, i.e. 0.24 m above the 0.50 stool seat. Today they are only 0.127 m above it, which is ergonomically implausible.",
+    "projectedOptions": {
+     "A raised, placement kept (1.2, -0.8, yaw -0.6)": {
+      "throneSeatClear": "15/73 (was 54/73)",
+      "azimuthDeg": 30.96,
+      "phoneWhiteKeyPx": [
+       8.52,
+       9.97
+      ],
+      "intersections": "none",
+      "verdict": "rejected: throne mostly hidden"
+     },
+     "B raised, x +0.10": {
+      "throneSeatClear": "35/73",
+      "azimuthDeg": 29.5,
+      "verdict": "rejected: azimuth below 30"
+     },
+     "C raised, x +0.20, y -0.05": {
+      "throneSeatClear": "59/73",
+      "azimuthDeg": 28.34,
+      "intersections": "rug x stool 25",
+      "verdict": "rejected: azimuth"
+     },
+     "D raised, x +0.10, y -0.10, yaw -0.70 (preferred)": {
+      "throneSeatClear": "50/73",
+      "kickPedalClear": "76/87 (unchanged)",
+      "azimuthDeg": 30.36,
+      "music1440WhiteKeyPx": [
+       13.48,
+       14.38
+      ],
+      "phoneWhiteKeyPx": [
+       9.3,
+       9.92
+      ],
+      "targets": "25/25 each",
+      "intersections": "stool_keys__stool x rug__rug 25 pairs: stool legs reach the rug binding; needs stool local y about +0.04 (not projected)",
+      "verdict": "candidate, thin 0.36 deg azimuth margin; must be re-projected with the stool shift"
+     }
+    },
+    "triangles": "unchanged (stand 776; sweeps keep counts)"
+   },
+   "varianceAlternative": {
+    "label": "PROPOSED, UNAPPROVED",
+    "scope": "M4 corrected candidate only, controller at (1.2, -0.8, yaw -0.6) with zb 0.573",
+    "reason": "Keeps throne 56/73 and azimuth 30.96 deg with no intersections (projection E)",
+    "against": "Fails the stated 0.68 m by -17.0%, and the low keyboard is ergonomically wrong. The author does not recommend it.",
+    "invalidation": "Any change to controller, stool, throne or stand geometry; any change of camera pose or FOV; root rejection after actual images"
+   },
+   "validation": "Blender re-measure of azimuth (>= 30 deg with the exact visible-sample method), throne/kick visibility and intersections including stool/rug; independent music-1440, right-down and phone images.",
+   "owner": "author source; root decision on correction vs variance"
+  },
+  {
+   "id": "C3",
+   "asset": "drum_rack",
+   "leaves": [
+    "drum_rack__rack",
+    "drum_pads__shells",
+    "drum_module__body",
+    "drum_cymbals__cymbals (boom anchors only)"
+   ],
+   "requirement": {
+    "text": "targetSizeM '1.16 wide, 0.75 high' (height part)",
+    "source": "asset-pipeline/full-kit/asset-inventory.json@eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87 line 1623",
+    "gate": "asset-pipeline/full-kit/render-gates.md:65@15f10d9d9e8ba2b9e4cf938263b66b481267f824422f12ce63982862858f5fb3 ('tier size within 3%')"
+   },
+   "semantics": "Frame own height: foot underside to the top of the uprights. Booms are reported separately: the inventory title gives 'boom arms' to drum_cymbals, although the geometry lives in the rack row.",
+   "measured": {
+    "frameOwnHeight": 0.7914,
+    "uprightTopAboveFloor": 0.8,
+    "crossbarZ": 0.66,
+    "sideBarZ": 0.48,
+    "boomsTopZ": 1.0024,
+    "stubsZ": [
+     0.4497,
+     0.744
+    ]
+   },
+   "deviationPct": {
+    "frameOwnHeight": 5.52,
+    "uprightTopAboveFloor": 6.667
+   },
+   "gate": "FAIL",
+   "recommendation": {
+    "type": "correction",
+    "geometry": "RACK top 0.80 -> 0.7586 (own height 0.750). Re-lay the upright clamps: module stub 0.72 -> 0.57 and ride boom clamp 0.715 -> 0.57. The hi-hat and crash boom clamps follow top - 0.035 = 0.7236.",
+    "projected": {
+     "frameOwnHeight": 0.75,
+     "intersections": "none (with tom3 x 1.80 -> 1.785, see C4)",
+     "triangles": "unchanged (2084)",
+     "cymbals": "bells 16/16; crash/ride edges 32/32; hi-hat edge 25/32 (speaker), unchanged"
+    }
+   },
+   "validation": "Blender intersection/contact re-check; image review of the rack read.",
+   "owner": "author"
+  },
+  {
+   "id": "C4",
+   "asset": "drum_rack",
+   "leaves": [
+    "drum_rack__rack",
+    "drum_pads__shells"
+   ],
+   "requirement": {
+    "text": "targetSizeM '1.16 wide, 0.75 high' (width part)",
+    "source": "asset-pipeline/full-kit/asset-inventory.json@eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87 line 1623",
+    "gate": "asset-pipeline/full-kit/render-gates.md:65@15f10d9d9e8ba2b9e4cf938263b66b481267f824422f12ce63982862858f5fb3 ('tier size within 3%')"
+   },
+   "semantics": "Outer width of the rack frame: uprights, feet, side bars, crossbar and frame wing clamps. Upright centre spacing is not an outer width, so the earlier ledger pass is withdrawn.",
+   "measured": {
+    "uprightCentres": 1.16,
+    "outerTubeWidth": 1.202,
+    "frameInclClamps": 1.232,
+    "rowInclusiveWithBoomsAndStubs": 1.2572
+   },
+   "deviationPct": {
+    "outerTubeWidth": 3.621,
+    "frameInclClamps": 6.207,
+    "rowInclusive": 8.379
+   },
+   "gate": "FAIL (newly disclosed)",
+   "recommendation": {
+    "type": "correction",
+    "geometry": "Uprights 0.82/1.98 -> 0.841/1.959 (tube outer 1.160). Frame clamp wing bolts point +y (to the back) instead of +x. Side-bar stub clamps (snare, tom3) bolt down (0,0,-1). Boom clamps bolt perpendicular to the boom, toward the rack centre. tom3 centre x 1.80 -> 1.785; otherwise its rim cuts the right upright (15 triangle pairs in projection).",
+    "projected": {
+     "frameInclClamps": 1.17,
+     "frameDeviationPct": 0.862,
+     "rowInclusive": 1.198,
+     "rowInclusiveDeviationPct": 3.276,
+     "note": "The row-inclusive width exceeds 3% only because the ride boom reaches the ride cymbal at x 1.98, outside the right upright. If root reads the target as row-inclusive, moving the ride to x <= 1.955 brings the row envelope within 3% (not projected).",
+     "triangles": "unchanged"
+    }
+   },
+   "validation": "Blender intersections including same-asset hardware; image review.",
+   "owner": "author"
+  },
+  {
+   "id": "C5",
+   "asset": "drum_pads",
+   "leaves": [
+    "drum_pads__shells",
+    "drum_pads__heads",
+    "drum_sticks__pair",
+    "music_cables__runs"
+   ],
+   "requirement": {
+    "text": "targetSizeM '0.25 to 0.31 dia'",
+    "source": "asset-pipeline/full-kit/asset-inventory.json@eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87 line 1644",
+    "gate": "asset-pipeline/full-kit/render-gates.md:65@15f10d9d9e8ba2b9e4cf938263b66b481267f824422f12ce63982862858f5fb3 ('tier size within 3%')"
+   },
+   "semantics": "Pad diameter = rim outer diameter (the pad's round body). Head disc and lug envelope are reported separately; lugs are protruding hardware.",
+   "measured": {
+    "tom1/tom2/tom3": {
+     "head": 0.2488,
+     "rimOuter": 0.282,
+     "lugs": 0.2906
+    },
+    "snare": {
+     "head": 0.2988,
+     "rimOuter": 0.332,
+     "lugs": 0.3405
+    }
+   },
+   "deviationPct": {
+    "snareRimVsUpperBound": 7.097,
+    "snareLugsVsUpperBound": 9.839,
+    "snareHead": 0.0,
+    "tomHeadVsLowerBound": -0.48,
+    "tomRim": 0.0
+   },
+   "gate": "FAIL (snare); toms pass",
+   "recommendation": {
+    "type": "correction",
+    "geometry": "Snare radius 0.16 -> 0.147: head 0.2728, rim 0.306 (inside the range), lugs 0.3145 (+1.45% over the bound, within the gate). Sticks, the jack and the cable follow the snare frame.",
+    "projected": {
+     "intersections": "none",
+     "triangles": "unchanged"
+    }
+   },
+   "validation": "Blender sticks/snare contact (0.3 mm rest) and cable route.",
+   "owner": "author"
+  },
+  {
+   "id": "C6",
+   "asset": "drum_cymbals",
+   "leaves": [
+    "drum_cymbals__cymbals",
+    "drum_rack__rack (boom end)"
+   ],
+   "requirement": {
+    "text": "targetSizeM '0.38 dia'",
+    "source": "asset-pipeline/full-kit/asset-inventory.json@eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87 line 1666",
+    "gate": "asset-pipeline/full-kit/render-gates.md:65@15f10d9d9e8ba2b9e4cf938263b66b481267f824422f12ce63982862858f5fb3 ('tier size within 3%')"
+   },
+   "semantics": "crash outer lip diameter (lathed profile maximum radius), measured individually",
+   "measured": {
+    "dia": 0.4,
+    "hihatDia": 0.38,
+    "centre": [
+     1.68,
+     0.67,
+     1.06
+    ],
+    "tiltDeg": 12
+   },
+   "deviationPct": {
+    "dia": 5.263
+   },
+   "gate": "FAIL",
+   "recommendation": {
+    "type": "correction",
+    "geometry": "crash radius 0.20 -> 0.19 (dia 0.380). The bell profile is unchanged. All three cymbals then share 0.38 m.",
+    "projected": {
+     "bell": "16/16 clear",
+     "edge": "32/32 clear",
+     "intersections": "none",
+     "triangles": "unchanged",
+     "loss": "Crash/ride lose their size hierarchy over the hi-hat. No variance is requested for this."
+    }
+   },
+   "validation": "Blender bell/edge visibility; image review of bell and edge at music-1440.",
+   "owner": "author"
+  },
+  {
+   "id": "C7",
+   "asset": "drum_cymbals",
+   "leaves": [
+    "drum_cymbals__cymbals",
+    "drum_rack__rack (boom end)"
+   ],
+   "requirement": {
+    "text": "targetSizeM '0.38 dia'",
+    "source": "asset-pipeline/full-kit/asset-inventory.json@eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87 line 1666",
+    "gate": "asset-pipeline/full-kit/render-gates.md:65@15f10d9d9e8ba2b9e4cf938263b66b481267f824422f12ce63982862858f5fb3 ('tier size within 3%')"
+   },
+   "semantics": "ride outer lip diameter (lathed profile maximum radius), measured individually",
+   "measured": {
+    "dia": 0.4,
+    "hihatDia": 0.38,
+    "centre": [
+     1.98,
+     0.445,
+     0.95
+    ],
+    "tiltDeg": 9
+   },
+   "deviationPct": {
+    "dia": 5.263
+   },
+   "gate": "FAIL",
+   "recommendation": {
+    "type": "correction",
+    "geometry": "ride radius 0.20 -> 0.19 (dia 0.380). The bell profile is unchanged. All three cymbals then share 0.38 m.",
+    "projected": {
+     "bell": "16/16 clear",
+     "edge": "32/32 clear",
+     "intersections": "none",
+     "triangles": "unchanged",
+     "loss": "Crash/ride lose their size hierarchy over the hi-hat. No variance is requested for this."
+    }
+   },
+   "validation": "Blender bell/edge visibility; image review of bell and edge at music-1440.",
+   "owner": "author"
+  },
+  {
+   "id": "C8",
+   "asset": "drum_hihat_pedal",
+   "leaves": [
+    "drum_hihat_pedal__pedal",
+    "music_cables__runs"
+   ],
+   "requirement": {
+    "text": "targetSizeM '0.13 x 0.33' (length)",
+    "source": "asset-pipeline/full-kit/asset-inventory.json@eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87 line 1687",
+    "gate": "asset-pipeline/full-kit/render-gates.md:65@15f10d9d9e8ba2b9e4cf938263b66b481267f824422f12ce63982862858f5fb3 ('tier size within 3%')"
+   },
+   "semantics": "Pedal base footprint, width x length, in the local frame. The base defines the whole footprint.",
+   "measured": {
+    "baseWL": [
+     0.126,
+     0.3
+    ],
+    "inclusiveWL": [
+     0.126,
+     0.3
+    ]
+   },
+   "deviationPct": {
+    "length": -9.091
+   },
+   "gate": "FAIL",
+   "recommendation": {
+    "type": "correction",
+    "geometry": "HIHAT_PEDAL l 0.30 -> 0.33. The footboard, sensor housing and jack follow l.",
+    "projected": {
+     "footprintWL": [
+      0.13,
+      0.33
+     ],
+     "eyeVisibility": "59/96 clear (was 63/96; the desk frame blocks more samples)",
+     "intersections": "none",
+     "triangles": "unchanged"
+    }
+   },
+   "validation": "Blender visibility in right-down; image identification of the pedal.",
+   "owner": "author"
+  },
+  {
+   "id": "C9",
+   "asset": "drum_hihat_pedal",
+   "leaves": [
+    "drum_hihat_pedal__pedal"
+   ],
+   "requirement": {
+    "text": "targetSizeM '0.13 x 0.33' (width)",
+    "source": "asset-pipeline/full-kit/asset-inventory.json@eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87 line 1687",
+    "gate": "asset-pipeline/full-kit/render-gates.md:65@15f10d9d9e8ba2b9e4cf938263b66b481267f824422f12ce63982862858f5fb3 ('tier size within 3%')"
+   },
+   "semantics": "Base width",
+   "measured": {
+    "baseWidth": 0.126
+   },
+   "deviationPct": {
+    "width": -3.077
+   },
+   "gate": "FAIL (-3.077%); tier ledger 63848642 misclassified it as within 3%",
+   "recommendation": {
+    "type": "correction",
+    "geometry": "HIHAT_PEDAL w 0.11 -> 0.114 (base 0.130). The footboard widens 4 mm.",
+    "projected": {
+     "baseWidth": 0.13,
+     "triangles": "unchanged"
+    }
+   },
+   "validation": "as C8",
+   "owner": "author"
+  },
+  {
+   "id": "C10",
+   "asset": "drum_module",
+   "leaves": [
+    "drum_module__body",
+    "drum_module__display",
+    "music_cables__runs"
+   ],
+   "requirement": {
+    "text": "targetSizeM '0.20 x 0.15'",
+    "source": "asset-pipeline/full-kit/asset-inventory.json@eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87 line 1730",
+    "gate": "asset-pipeline/full-kit/render-gates.md:65@15f10d9d9e8ba2b9e4cf938263b66b481267f824422f12ce63982862858f5fb3 ('tier size within 3%')"
+   },
+   "semantics": "Case face width x height in the module's own face frame: X horizontal across the face, Y up the face (tilted 35 deg), Z the face normal (azimuth 165 deg). The world AABB 0.2195 x 0.1576 x 0.1352 is inflated by rotation and is not the semantic size.",
+   "measured": {
+    "caseWHD": [
+     0.2,
+     0.13,
+     0.05
+    ],
+    "faceNormalWorld": [
+     0.212,
+     -0.7912,
+     0.5736
+    ]
+   },
+   "deviationPct": {
+    "width": 0.0,
+    "height": -13.333
+   },
+   "gate": "FAIL",
+   "recommendation": {
+    "type": "correction",
+    "geometry": "MODULE h 0.13 -> 0.15. The display, knob and six pad buttons keep their positions inside +/-0.075; the snake and power mounts follow h.",
+    "projected": {
+     "caseClear": "131/138 (was 132/158; the headphones block 5 instead of 24)",
+     "displayClear": "7/8",
+     "intersections": "none",
+     "triangles": "unchanged"
+    }
+   },
+   "validation": "Blender display visibility; image review.",
+   "owner": "author"
+  },
+  {
+   "id": "C11",
+   "asset": "rug",
+   "leaves": [
+    "rug__rug"
+   ],
+   "requirement": {
+    "text": "targetSizeM '1.85 x 2.25'",
+    "source": "asset-pipeline/full-kit/asset-inventory.json@eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87 line 1795",
+    "gate": "asset-pipeline/full-kit/render-gates.md:65@15f10d9d9e8ba2b9e4cf938263b66b481267f824422f12ce63982862858f5fb3 ('tier size within 3%')"
+   },
+   "semantics": "Authored outline (bound edge) width x depth",
+   "measured": {
+    "outlineWD": [
+     1.655,
+     2.25
+    ],
+    "xRange": [
+     0.56,
+     2.215
+    ],
+    "yRange": [
+     -1.36,
+     0.89
+    ],
+    "maxThickness": 0.0108
+   },
+   "deviationPct": {
+    "width": -10.541,
+    "depth": 0.0
+   },
+   "gate": "FAIL",
+   "constraints (frozen retained geometry, Blender m)": {
+    "fix_floor_lamp__base": "x 2.235..2.485, y -0.115..0.135 (inside the rug's y span)",
+    "desk_frame__steel floor runner": "x 0.450..0.490, y -0.510..0.262",
+    "contact_decals__under_desk": "x <= 0.550, y -0.550..0.250",
+    "pc_tower__case": "x <= 0.376, y -0.395..0.165",
+    "rightWallSkirting": "x 2.525"
+   },
+   "feasibility": "With 20 mm clearances and no decal overlap, the widest axis-aligned rug is 2.215 - 0.56 = 1.655 m (-10.5%). Accepting overlap of the provisional under-desk decal reaches 2.215 - 0.51 = 1.705 m (-7.8%), which still fails. A rectangular rug spanning the kit cannot meet the target without moving retained non-M4 assets.",
+   "recommendation": {
+    "type": "variance (PROPOSED, UNAPPROVED)",
+    "scope": "M4 corrected candidate; rug 1.655 x 2.25 at x 0.56..2.215, y -1.36..0.89",
+    "reason": "Physically infeasible against the frozen retained lamp base, desk runner and under-desk decal",
+    "rejectedAlternatives": [
+     "notched/L-shaped rug around the lamp (departs from the rug form)",
+     "shallower rug avoiding the lamp band (kit off the rug)",
+     "moving the lamp/desk (outside M4 ownership)"
+    ],
+    "invalidation": "Any move of fix_floor_lamp, desk_frame, pc_tower or contact_decals__under_desk (M5/M6); root restating the target; any M4 rug-bound item leaving the rug"
+   },
+   "validation": "Root decision; S records the variance in the audit",
+   "owner": "root decision; author documents"
+  },
+  {
+   "id": "C12",
+   "asset": "music_cables",
+   "leaves": [
+    "music_cables__runs",
+    "ctl_sustain_pedal__pedal (sustain lead)",
+    "drum_module__body (snake, unchanged)"
+   ],
+   "requirement": {
+    "text": "targetSizeM '6 mm round'",
+    "source": "asset-pipeline/full-kit/asset-inventory.json@eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87 line 1816",
+    "gate": "asset-pipeline/full-kit/render-gates.md:65@15f10d9d9e8ba2b9e4cf938263b66b481267f824422f12ce63982862858f5fb3 ('tier size within 3%')"
+   },
+   "semantics": "Diameter of each single-conductor run in music_cables: 8 runs (tom1, tom2, snare, tom3, kick, hi-hat pedal, controller, module power). The sustain lead belongs to the sustain asset, which states no diameter. The 18 mm module snake is a multicore bundle in drum_module, which also states no diameter.",
+   "measured": {
+    "musicCablesDiaMm": 6.4,
+    "sustainLeadDiaMm": 7.0,
+    "moduleSnakeDiaMm": 18.0
+   },
+   "deviationPct": {
+    "musicCables": 6.667,
+    "sustainLeadIf6mmConvention": 16.667
+   },
+   "gate": "FAIL (music_cables)",
+   "recommendation": {
+    "type": "correction",
+    "geometry": "CABLE_R 0.0032 -> 0.0030 (6.0 mm) on all 8 runs. Optionally, the sustain lead 0.0035 -> 0.0030 for one cable convention (it has no stated target). The snake is kept at 18 mm as a bundle.",
+    "projected": {
+     "intersections": "none",
+     "triangles": "unchanged"
+    }
+   },
+   "validation": "Blender contact gaps at the jacks (0.3 mm)",
+   "owner": "author"
+  },
+  {
+   "id": "C13",
+   "asset": "all M4 rows",
+   "leaves": [
+    "ctl_body__shell",
+    "drum_kick__tower",
+    "drum_module__body",
+    "drum_hihat_pedal__pedal",
+    "ctl_sustain_pedal__pedal",
+    "drum_pads__shells",
+    "others by variance"
+   ],
+   "requirement": {
+    "text": "'bevel class correct' (render-gates.md:65). Bevel family: equipment casings 2.5 mm/2 segments, hand-scale 1.2 mm before tier/1-2 segments, furniture 4 mm/2 segments; 'Only screen faces and paper have sharp edges' (art-direction.md:129-138). Detail floor: features under 12 mm across the room are omitted or exaggerated (art-direction.md:140).",
+    "source": "asset-pipeline/full-kit/art-direction.md@fd1c6d0edc96b7736b32de6397957ce8c549a838aabf67631adc52a0011a68bb lines 129-140; asset-pipeline/full-kit/render-gates.md:65@15f10d9d9e8ba2b9e4cf938263b66b481267f824422f12ce63982862858f5fb3 ('tier size within 3%')"
+   },
+   "semantics": "The bevel shape must exist in the exported geometry. A modifier is only one way to author it; explicit vertices can carry it too. Tier F model sizes: casing 3.125 mm, hand-scale 1.5 mm.",
+   "measured": {
+    "method": "Dihedral audit of every helper face pair: convex hard corner >= 80 deg, chamfer/round-section facet 20-80 deg, profile facet < 20 deg; grouped by authoring primitive",
+    "alreadySupplied": {
+     "drum_cymbals__cymbals lathe": "0 hard corners, 216 chamfer edges (bell, bow and lip fully profiled)",
+     "drum_pads__heads": "0 hard",
+     "drum_sticks__pair": "0 hard (tapered tip profile)",
+     "stool/throne seats": "0 hard in seat lathes (rounded 12-16 mm profile)",
+     "rack clamps": "octagonal plan = chamfered corners in plan (cap perimeters sharp)",
+     "pad rims": "lathe with a 4 mm bottom chamfer; rim top corners sharp",
+     "rug": "binding outer edge chamfered by a 5 mm inset ring",
+     "tubes/rods/sweeps": "round sections, no corners"
+    },
+    "absentOnCasings (hard convex edge length m)": {
+     "ctl_body__shell box/hexa/extrude": 19.6,
+     "drum_kick__tower boxes/extrude": 8.21,
+     "drum_module__body case extrude": 1.27,
+     "drum_hihat_pedal__pedal base/housing": 4.23,
+     "ctl_sustain_pedal__pedal base/plate": 2.46,
+     "drum_pads__shells rim corners (lathe)": 6.98
+    },
+    "absentOnHandScale (hard convex edge length m)": {
+     "ctl_keys__keys": 41.68,
+     "pad lugs/mount blocks": 5.9,
+     "rack clamp caps/bolts": 7.35,
+     "knobs/pads/transport/teeth/wings": "remaining box and cylinder caps"
+    },
+    "screenFacesExempt": [
+     "ctl_body__indicators",
+     "drum_module__display"
+    ],
+    "pixelScale": "music-1440: 1.23 mm per metre of distance per px (controller 1.93 m: 2.38 mm/px; module 2.48 m: 3.06; hi-hat pedal 2.61 m: 3.21; kick 3.00 m: 3.70). music-320-f74: 1.79 mm per metre per px (controller 3.45 mm/px). A 3.125 mm casing bevel is about 1.3 px at best and sub-pixel on phones; a 1.5 mm hand-scale bevel is 0.4-0.6 px."
+   },
+   "deviation": "Casing bevels are absent on the rows listed; hand-scale bevels are absent; screen faces are correct.",
+   "gate": "FAIL as written",
+   "recommendation": {
+    "type": "correction for casings + variance for hand-scale",
+    "correction": {
+     "geometry": "Explicit authored 2-segment 3.125 mm bevels on exposed casing edges. The two faces sit at 30/60 deg, below the 40 deg normal split, so they shade as rounded highlights. ctl_body: slab top-front edge, rear-panel front-top and back-top edges, bay-block front-top edges, cheek outer perimeters (7 edges each). kick: tower top and vertical edges, base-frame top and vertical edges. module: front and back case perimeters. hi-hat pedal: base top perimeter, sensor housing top and vertical edges. sustain: base and plate top perimeters. pads: one extra 2-segment round at the outer rim top corner (the inner corner is kept; see variance). Contact faces stay sharp.",
+     "estimatedTriangleDelta": {
+      "ctl_body__shell": "+124 -> 1256 / 2500",
+      "drum_kick__tower": "+128 -> 824 / 1500",
+      "drum_module__body": "+96 -> 416 / 640",
+      "drum_hihat_pedal__pedal": "+112 -> 284 / 600",
+      "ctl_sustain_pedal__pedal": "+96 -> 312 / 500",
+      "drum_pads__shells": "+384 -> 2312 / 2600 (also shadow 2312 / 2600)"
+     },
+     "stage": "placed 12528 -> about 13468 / 22500; refresh triangles 22412 -> about 24084 (casters count twice); calls unchanged 18/9/27",
+     "bytes": "About +940 unique triangles at about 12.5 gzip B/triangle (v02 geometry+JSON gzip about 557 KB / 44544 unique) = about +12 KB gzip against a full-room forecast with no margin; S must re-forecast",
+     "note": "Estimates; the builder must assert the exact counts. The bevels are authored in the helper's explicit-vertex grammar, not as modifiers."
+    },
+    "variance": {
+     "label": "PROPOSED, UNAPPROVED",
+     "scope": "keys (29+20), knobs, panel pads, transport keys, pad lugs and mount blocks, rack/stub/boom clamp caps and wing bolts, stand pivot plates and teeth, cymbal wing nuts, pedal hinges, pad rim inner corner, rug inner binding step",
+     "reason": "Below the approved detail floor: features under 12 mm across the room are omitted or exaggerated (art-direction.md:140). At 1.5 mm model size the bevel is 0.4-0.6 px. Full bevels on 49 keys would also exceed the keys row ceiling (936 + about 2496 > 1540).",
+     "invalidation": "Any closer camera, zoom, larger FOV/viewport or close-up evidence; a reviewer finding key fronts or gaps unreadable for lack of an edge highlight"
+    }
+   },
+   "validation": "Builder exact counts; S ledger and bytes; independent review at music-1440/right-down. Bevel highlights are a runtime-lighting question: with no environment map they depend on direct lights.",
+   "owner": "author source; S budget/bytes; root decision"
+  }
+ ],
+ "verifiedWithinGate (unchanged)": {
+  "ctl_body width/depth": "0.990 x 0.320 (0%)",
+  "ctl_keys": "29.4 mm pitch, 29 + 20",
+  "ctl_sustain_pedal": "base 0.100 x 0.260 (0%); body excluding cable 0.100 x 0.260 x 0.052; the cable-inclusive 0.118 x 0.463 x 0.608 is not the target measure",
+  "stool_keys": "seat 0.500",
+  "drum_throne": "seat 0.480 (top 0.482, +0.42%)",
+  "drum_kick": "tower 0.450 above the rug",
+  "drum_cymbals hihat": "0.380",
+  "drum_pads toms": "rim 0.282 inside the range; head 0.2488 is -0.48% under the lower bound (within the gate)",
+  "drum_sticks": "0.510 vs 0.5125 (-0.49%)"
+ },
+ "sharedDependencies": {
+  "zeroTriangleSizeCorrections": "C1 and C3-C12 change no row counts: the projection rebuilt every row with identical triangle counts.",
+  "projectedCombined (variant A plus tom3 shift)": {
+   "intersections": "none",
+   "targets": "25/25 each",
+   "kickPedal": "76/87",
+   "moduleCase": "131/138",
+   "hihatPedal": "59/96",
+   "sustainBody": "62/92",
+   "cymbalEdges": "hihat 25/32, crash 32/32, ride 32/32"
+  },
+  "provenance": "A corrected candidate needs new versioned source/editable/raw outputs (never overwriting v01/v02), a NEW scene provenance amendment, and a Codex guard amendment. The frozen guard authorizes only the pinned first-M4-v01 extras transition (AMENDMENT_SHA 3b3a011d; m4-transition-guard.py lines 19, 38, 194-209). Mapping 8f0474aa need not change: rows, materials, flags and ceilings are unchanged, and all deltas fit the per-row and stage ceilings. Any retained-word export noise must again be evidenced exactly; no v02 restoration wildcard or inherited UV allowance.",
+  "inventory": "Targets are not edited. If approved, variances are recorded by root/S, not by rewriting targetSizeM."
+ },
+ "lowMemoryEvidencePath": {
+  "priorPeak": "UNKNOWN. No measured Blender process peak exists in my logs (m4_dryrun_*.log and m4_export_v01.log print no memory) or in the repo. M1/M2 reports record only system free memory (0.6-1.7 GB and 0.57-0.94 GB free of 15.7 GB) while their runs completed. That is not a peak and not a safety argument.",
+  "rootObservation": "2.43 GiB free of 15.73 GiB, no Blender running (msg_aee326c1fb5d). Rule (art-direction.md section 10): under 5 GB free, wait and report.",
+  "steps (none executed)": [
+   "L0 (no Blender): CPU software turnarounds from the frozen helper/GLB with numpy + matplotlib 3.11.2 / Pillow 12.3.0 (both installed): grey Lambert orthographic views at 0/90/180/270 deg per family, a 1 m rule, and M1 baseline v02 proxies (04994845) at the same scale. Shape/scale evidence only, not the Blender library or bevel shading. Measure the python process peak with a passive sampler. Files: renders/m4-vNN_turn-{controller,drums}_cpu.png plus a receipt.",
+   "L1 (Blender Workbench, script bfa6fc9b, untested): modes turn-controller, turn-drums and contact, one hidden process each. A passive PowerShell sampler logs that Blender PID's WorkingSet64/PrivateMemorySize64 every 0.5 s and its peak, plus system free memory before and after. Stop if Workbench cannot create a background GPU context (no automatic switch to Cycles), or on any script failure.",
+   "L2 (Cycles previews, frozen render_cam.py d417c68f): music-1440 and right-down at 50%, music-320-f74 at 50%, 16 samples, 300 s limit. Its denoiser is on, which raises memory. Launch each only if free memory exceeds the measured L1/L2 peak plus root's margin.",
+   "L3 (at most 2 full-size stills, 48 samples, 900 s): only if the previews read and memory allows."
+  ],
+  "stopConditions": [
+   "free memory below root's threshold before any launch",
+   "any other process change would be needed (never kill or stop anything)",
+   "first-run script failure",
+   "peak unknown and root has not set a threshold"
+  ],
+  "expectedReceipt": "manifests/m4-vNN-g2g5-evidence-receipt.json: image paths/sizes/sha256, Blender RenderTime, sampled peak working set/private bytes, free memory before/after, and script, blend and GLB hashes",
+  "sequencingRecommendation": "Render the G2-G5 evidence once, from the corrected candidate if root adopts corrections, so scarce memory is not spent on superseded v01 geometry. Root may also decide whether its runtime R1 captures (music-1440, right-down, phone music) substitute for the Blender hero/phone stills, which render-gates.md calls direction only."
+ },
+ "skillsConsulted": {
+  "threejs-geometry (.agents/skills, ab48fbd3...)": "Applies: normals drive lighting; edges at a threshold angle; segment-count trade-off. Verified: the full-kit runtime uses the exported NORMAL attributes (computeVertexNormals appears only in the procedural build-studio.ts fallback), and the M4 export splits normals above 40 deg. Bevels must therefore be authored geometry whose step angles stay below 40 deg to shade round. Not adopted: ExtrudeGeometry bevel/runtime geometry, merging/instancing (conflict with the frozen named leaves and draw contract).",
+  "threejs-materials (a31247ec...)": "Applies: flat vs smooth normals; roughness sets highlight width. Library materials are frozen, and this runtime has no envMap (art-direction section 6), so small bevel highlights depend on direct lights. No material change proposed.",
+  "threejs-lighting (e99170ed...)": "Applies as a risk only: shadow acne/normalBias with the 8-11 mm rug and 0.3 mm rest gaps. Conflict: its fake contact-shadow recipes vs imported contact decals and no procedural contacts. No lighting change proposed (runtime-owned).",
+  "webgl-landing-steering (892ba3bc...)": "Lanes C/D (orbit cameras, postprocessing, DRACO/KTX2) conflict with the frozen camera, compression and dependency contracts. Only its performance-gate/mobile-fallback principle aligns with the existing budgets.",
+  "version": "Skills target r186; installed three is 0.187.0 (package.json line 16, node_modules/three/package.json). No version-sensitive API advice adopted."
+ },
+ "missingMeasurements": [
+  "Variant D with the stool local y shift (+0.04) has not been projected: stool/rug clearance, throne visibility and azimuth must be re-measured.",
+  "Ride moved to x <= 1.955 (row-inclusive rack width) has not been projected.",
+  "Bevel triangle and byte deltas are estimates; no bevel geometry was built.",
+  "No rendered pixels: occlusion and readability are ray/projection estimates; G2-G5 renders remain missing; the Blender memory peak is unknown."
+ ],
+ "notDone": [
+  "No Blender, browser, render, export, Git, dependency, paid action, service, process change or wait loop.",
+  "No source, asset, report, ledger, script, mapping, guard or pair edited.",
+  "No acceptance claimed; root decides before any implementation."
+ ]
+}

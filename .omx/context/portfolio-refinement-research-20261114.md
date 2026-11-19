@@ -1,0 +1,10 @@
+# Portfolio planning research
+
+Retrieved 2026-11-14 by native researcher under `$best-practice-research`. Planning input only; no implementation.
+
+- [GitHub job-search profile guidance](https://docs.github.com/en/account-and-profile/tutorials/using-your-github-profile-to-enhance-your-resume) recommends 3-5 relevant projects, easy exploration, demos and useful documentation covering setup/tests. Inference: launch around three complementary flagship studies with problem, contribution, decisions, evidence and limitations, rather than an indiscriminate project grid. No aesthetic or hiring outcome is established by this guidance.
+- [WCAG 2.2](https://www.w3.org/TR/WCAG22/) supports text contrast 4.5:1 (3:1 large text), visible focus, narrow-width reflow and pointer target requirements with exceptions. Plan for 320px reflow, 200% text resize, both themes, keyboard access and visible unobscured focus. Choose 44px principal controls as a design goal; actual AA minimum is 24px with exceptions. These scoped checks do not certify complete WCAG conformance.
+- [W3C interaction animation guidance](https://www.w3.org/WAI/WCAG22/Understanding/animation-from-interactions.html) supports disabling unnecessary motion/respecting reduced-motion. Interaction animation criterion 2.3.3 is AAA, not AA. Long autoplay content requires appropriate controls where applicable. Use user-controlled recordings and static fallbacks.
+- [Google Web Vitals](https://web.dev/articles/vitals) defines good field p75 thresholds LCP <=2.5s, INP <=200ms, CLS <=0.1 for mobile/desktop separately. Production-build mobile lab measurements are diagnostic; Lighthouse load testing cannot establish INP and uses TBT as a proxy. Record fixed test conditions and before/after LCP/CLS/TBT; report field evidence unavailable when traffic is insufficient.
+
+These sources are framework-independent. No stack upgrade or dependency decision was researched or authorized. Specific layouts/colors and which projects lead are planning judgments grounded in the repository and target audience.

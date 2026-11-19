@@ -1,0 +1,20 @@
+# S lane ownership and frozen conventions
+
+The approved PRD cross-lane additions are the only changes to `lib/studio-contract.ts`: StudioViewAction, StudioViewCommand, and optional viewCommand / interactionEnabled. Defaults are null / true. S lead owns that file and `scene/types.ts`; no child edits either without a lead handoff.
+
+## Internal camera/model agreement
+
+Coordinates are +Y up, heading zero toward -Z, positive yaw looks right (+X), positive pitch looks up. Camera translation is forbidden after initial placement. Angles in the art configuration are degrees; controller converts as necessary. Selection updates styling only. Resize/visibility/panel transitions preserve yaw/pitch. Initial home is chosen once from the first usable viewport; reset uses that initial home, avoiding resize-driven orientation changes.
+
+Claude owns `scene/view-config.ts` and exports `STUDIO_VIEW: StudioViewConfiguration` from `./types`. The schema freezes eye, desktopFov, mobileFov, desktopHome, mobileHome, yawBounds, pitchBounds, near and far. The art-direction document supplies proposals only; Claude reviews/owns those choices before implementing. Codex may report geometry constraints but does not independently tune aesthetic values. Once implementation lands, root's actual render provides the tuning evidence.
+
+`StudioModel` adds `occluders: THREE.Mesh[]`. The art owner collects live meshes after `instanceStaticMeshes` and matrix updates; include all visible opaque non-target geometry (including InstancedMesh) capable of blocking a project surface. Exclude selectable target surfaces and transparent contact/translucent layers. The current procedural prototype also excludes exactly the three dedicated unlit target-border planes, identified by the corresponding target.border material; they are selection styling behind the target faces at local z=0.049 versus 0.054. This is a narrow exception approved by the model owner in msg_c3afbb1cc9b3 after independent S-T3 review found zero changed picks in 3023 samples. A model-inventory regression must reject arbitrary other opaque omissions; userData.interactive is not a general occlusion exemption for future decorations/assets. Do not collect detached pre-batch meshes. Controller tests effective ancestor visibility and material opacity/side, finite clip-space and front-facing eligibility, and compares actual ray depth against these occluders. A foreground opaque hit cannot be bypassed by touch expansion. For expansion, reject a target crossing the near/camera plane and use only a finite viewport-clipped visible projection; independently test behind-camera, music view, near crossing, back faces, clipping and occlusion as well as visible positives. All other existing target fields stay unchanged.
+
+## Exclusive ownership
+
+- S lead (Codex): lib/studio-contract.ts, scene/types.ts, scene/resources.ts, this contracts document, dispatch receipts and scene-report.md. resources.ts API/implementation remains unchanged initially; children request needed changes upward.
+- Art performer (Claude): scene/build-studio.ts, scene/textures.ts, scene/view-config.ts, design/studio-v2/scene-art*.md. All composition, visible geometry, materials, textures, lighting and camera art decisions. Collect the occluder list in build-studio.ts after batching.
+- Technical performer (Codex): scene/controller.ts, StudioScene.tsx, scene/verify-controller.mjs and any new nonvisual picking/input helper or CPU verification file under scene; design/studio-v2/scene-technical*.md. No resources/types/view-config/model/texture writes.
+- Independent critics: separate read-only source reviewers with exclusive report files; visual critique must be Claude and must inspect actual root-captured images before a visual verdict. Technical/input/geometry/resource critique is Codex.
+
+All performers share the workspace, preserve others' edits and use no further helpers. No UI/CSS/content/package files; no build, server or browser without root's explicit lease. Send assembled-ready before exhaustive tests. Actual browser validation and final product acceptance remain root-owned.

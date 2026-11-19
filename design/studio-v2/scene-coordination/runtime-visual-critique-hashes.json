@@ -1,0 +1,54 @@
+{
+ "reviewer": "independent Claude critic",
+ "task": "task_9560165b832f",
+ "dispatch": "ctx_defc23196721",
+ "note": "SHA256 computed by reviewer; capture manifests do not record per-image hashes",
+ "manifests": {
+  "v01": "4939e287eff6289883fa4e6f3f7ec17ccc2a80281ebb20e64e99af4f6c1955be",
+  "v02": "bef69d512eb7210d0fe33d449b75e3dcbbb594fdb9733dacdcb4b51071801537"
+ },
+ "images": {
+  "v01": {
+   "home-1440.png": "cc1d6a2ad7371dcd3358b982cf07ebd1486829e02bed842c4789d96cf5bd08c2",
+   "home-320.png": "2867e36a4f5084cf5583a8a2fe2ee19aec72b837f79c6bc457c284455286b357",
+   "home-390.png": "6efbbf629113ce4ae1e46251a4e763a2f9cf5e982095211c91fe27c400fb004d",
+   "music-1440.png": "7f3b97facb655acb432e098a07ac9105bee8054dca208b8968ef33c695a6760d",
+   "music-320.png": "bfe2f969b23dd15b1a5036a0d1a7c256cee416f09119a50f39244cfb72f1e249",
+   "music-390.png": "b64aa8ec5f295dfee3c3012a47286029703e8e2f36ea1e6680ad7d7e2be0e333",
+   "project-open-1440.png": "492aa7d0f81560a6404d6e82c418d6c2a0fdc73ee068225e4f2312d11aa74491",
+   "project-open-320.png": "ac54aba55a120696bac9fd6712e23eb6d5abf825ddc50cea6ba9e178e72db992",
+   "project-open-390.png": "1fb6101f355ed323e392bd62c9ecada1d20d0898239c95e8fa22c197cf16475b",
+   "right-down-1440.png": "6161ce67cb9cd5eda6fd028412b3af0c94a16ba422af1948bc4c6634d1e5b0c5",
+   "right-down-320.png": "841bb3c0b5164321a0fa708d5b19d7d893f5665f7a0441f260b7d6e87227a8ef",
+   "right-down-390.png": "dff7a2cfbb638e42f4561af4ad499ed288f5c16ea2b3ba7f4b71c4319d9678ac",
+   "right-up-1440.png": "9a881ae954c0694b17198fd2af897db297b180a9262a93c343a5ecc28dbb8f67",
+   "right-up-320.png": "dd0dc44160d7e882b88a24e20294923f0d7ca9ec1abd7b7fe377fd23b06edc35",
+   "right-up-390.png": "a838e707f7504f3a84f0bb13d49c5500f6dcd3c3d65647e652c0af3869db1c89"
+  },
+  "v02": {
+   "home-1440.png": "b55b0f2b4f425c2592fbdb67056f9eb4c1c7541324b39cb55185f3657870870d",
+   "home-320.png": "0d0b20b7dc1452aaa1dfe361b562cc8de0fb9f45b1701d4537a9879df0d72a71",
+   "home-390.png": "16f6407538466a2cfa05b286ec70a145efb50b5b4d49ec9f55b17215d8692c7b",
+   "music-1440.png": "d797c4d584480ce0cae44715ba8ffac4b56bc4dc31dd3ca7ec69efd68dd6fb91",
+   "music-320.png": "f997ea3afe63f64265d76baffe5c1b8e23830be0bd6c0e8e6f733704d8ce3849",
+   "music-390.png": "354c68a2c5690b0f43fb6f673abc25eaacd5d0b1764f5b34babe72f2f48611c1",
+   "project-open-1440.png": "cc3b190482d05a6ccf50163dc8def0f8a2706f550522355c03905c83151a231e",
+   "project-open-320.png": "6df0ffcd1d1075b68f8e45345135beeebfe5a86871c64d91a4d1d91f55d95a48",
+   "project-open-390.png": "0de4bd4adadba3b3f95c53cff6afe5176f835b839ec73c5767a47216c14be8c4",
+   "right-down-1440.png": "1c1fabfb9a51a556801d6d1b0a6705e8d9c31f47fa9b5dd5df7509494c2597e4",
+   "right-down-320.png": "dc1b861b091fcf18d3c61e60442fa3bf9e7b1c8a7b4178b2486d8af5cd2a69bb",
+   "right-down-390.png": "704a97cf06595fc381aff3acc2081a65d3ce5cf1c23d2ffb7142945b7f8971a7",
+   "right-up-1440.png": "7f775b7df31e0d1b9e565db33059e5c45f824edbad230df4200c7b2d2e32cb69",
+   "right-up-320.png": "2c117f53fc904ffd9d7055d9ff2047202d016499cb6c12a7858971cc11d22a4c",
+   "right-up-390.png": "dd8acbc8d372cd7b8efbf15e670ca0c1b1d5926f92bce1434e40cee13f3b7aa8"
+  }
+ },
+ "sourcesAfterReview": {
+  "components/studio/scene/build-studio.ts": "e23588e2702ece52c5b8a2ed25adb2debac366fdf90c66609a5ef4299ffc11ae",
+  "components/studio/scene/controller.ts": "cc76055ea4bfe596e0d3ab49c84ca55c55b8a9bad3b33627e08adeb78f0969f0",
+  "components/studio/scene/load-pilot.ts": "b5cd61c682dd69d2336b10b508b516999e72d73a00edbd6e2cebcf0323d39d11",
+  "components/studio/scene/textures.ts": "09f6ff6cc7bb8910f09838566dfcf840d85a0d2ce1be8d064deafb0989c63aa6",
+  "components/studio/scene/view-config.ts": "1fea7adbcfd730a56920389c8ac4ecf8323c9739fd4882c15f3e134a11f1a450",
+  "public/studio/pilot-right-limit-v03.glb": "2b9a4182c3024485680c1e066c8a22ef0dc0f541acca4bd958486bced2c4063e"
+ }
+}

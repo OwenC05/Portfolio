@@ -1,0 +1,131 @@
+{
+  "scope": "Selected A production preflight only; fresh file hashes and public documentation reads, no app or scene run",
+  "checkedAt": "2026-11-16T12:52:56.3907266Z",
+  "files": [
+    {
+      "path": "design/assistant/robot/selected-a-build-decisions.md",
+      "sha256": "face0b2be9557a6f55d3a2106a7a2ebf5a0617b14701c5d3e7de9c9408e27a11",
+      "bytes": 3831
+    },
+    {
+      "path": "design/assistant/robot/review/selected-a-v01/review.md",
+      "sha256": "491c25cfc863e3e27a718b4e4971916fcfa01d6204aa9a615d0b7934e3ed5b77",
+      "bytes": 10156
+    },
+    {
+      "path": "design/assistant/robot/higgsfield-concepts/selected-a-v01/README.md",
+      "sha256": "daa6a27c350a08dbc95cd7d0045e0435f843ca3ef729b2d568fb3162360a9f5e",
+      "bytes": 10412
+    },
+    {
+      "path": "design/assistant/robot/higgsfield-concepts/selected-a-v01/handoff.md",
+      "sha256": "cff5201f3556ee80acdab52265f91b3457165df6db43b4b0c0375d2ae72fc7d8",
+      "bytes": 7879
+    },
+    {
+      "path": "design/assistant/robot/higgsfield-concepts/selected-a-v01/outputs/01-three-quarter.png",
+      "sha256": "a187617976eaaa61b7173798a05b2e845a4f9205e9f72fe4250452cff66f3458",
+      "bytes": 4070774
+    },
+    {
+      "path": "design/assistant/robot/higgsfield-concepts/selected-a-v01/outputs/02-front.png",
+      "sha256": "9b94d861e18d5c95f439847e30a81aa7a036110f0105585a8914126bfc9c8cc7",
+      "bytes": 4037510
+    },
+    {
+      "path": "design/assistant/robot/higgsfield-concepts/selected-a-v01/outputs/03-side.png",
+      "sha256": "d33e551a1018d70e155ec2dba413ee296050918f20c7b440df550e3f367864bd",
+      "bytes": 3957524
+    },
+    {
+      "path": "design/assistant/robot/higgsfield-concepts/selected-a-v01/outputs/04-back.png",
+      "sha256": "d6384f1cf0616587a138f6b8f8ebd859fc2f10ee580db5231ab35a270e89c541",
+      "bytes": 3924839
+    },
+    {
+      "path": "design/assistant/robot/asset-pipeline/production-runbook.md",
+      "sha256": "0b3c7646d66216355d8fa3f5f3d178593fbd4db0205c9ac2633f031a67642cfc",
+      "bytes": 12899
+    },
+    {
+      "path": "design/assistant/robot/asset-pipeline/asset-contract.md",
+      "sha256": "d23baf59c94c692cde0b0082e49dfbfa6cdc38c435d9ea0a94f51295b5b26c12",
+      "bytes": 12014
+    },
+    {
+      "path": "design/assistant/robot/asset-pipeline/readiness.md",
+      "sha256": "b907fc78d87308b3d0ad31b7dfb2a258e18b23a087f2ffb767bd8bbd799e61b2",
+      "bytes": 6623
+    },
+    {
+      "path": "design/assistant/robot/asset-pipeline/profile.example.json",
+      "sha256": "ae17ab6abf03ac10785ac09ab7b7f6c23e6071f579d0be7095bd087bf560793d",
+      "bytes": 2401
+    },
+    {
+      "path": "design/assistant/robot/integration/state-contract.md",
+      "sha256": "e9c1916fd9a0529b6f3a11bdc7a1829b67c1e3b29ccdc5b58d6c05d970f9b26d",
+      "bytes": 21582
+    },
+    {
+      "path": "C:/Program Files/Blender Foundation/Blender 5.2/blender.exe",
+      "sha256": "9d5df7a9ac2a7c5085aa0669700021bfa5c5e92de167a2510b0d0942c34deab0",
+      "bytes": 113041880
+    },
+    {
+      "path": "C:/Program Files/Blender Foundation/Blender 5.2/5.2/scripts/addons_core/io_scene_gltf2/__init__.py",
+      "sha256": "29b040a623c4f32ab12d00e795e3d6610bbae67f6c517302f122e7a6b2ecaa0a",
+      "bytes": 89287
+    }
+  ],
+  "imagesVisuallyInspected": [
+    "01-three-quarter.png",
+    "02-front.png"
+  ],
+  "toolDiscovery": {
+    "exposedMeshyTools": [],
+    "pluginSearchQuery": "Meshy",
+    "pluginSearchMatches": 0,
+    "meshyCliOnPath": false,
+    "liveAccountBalance": null,
+    "connectorSchemaRefresh": "unavailable in this worker",
+    "connectorRequiredInstructions": "unavailable; historical provider-schema-notes is not current authority"
+  },
+  "localBlender": {
+    "executableExists": true,
+    "currentFileVersion": "5.2",
+    "currentProductVersion": "5.2",
+    "historicalExactVersion": "5.2.3 LTS",
+    "historicalBuildHash": "e13b728c6880",
+    "historicalCheckedAt": "2026-11-15T18:29:17.964Z",
+    "historicalEvidence": "../evidence-snapshot.json",
+    "freshVersionProcessRun": false,
+    "liveSceneContacted": false,
+    "importerSourceHashMatchesPriorReceipt": true,
+    "importerExecutionValidated": false,
+    "isolatedCleanupTemplateExecuted": false
+  },
+  "officialDocs": [
+    {
+      "url": "https://docs.meshy.ai/en/api/image-to-3d",
+      "evidence": "POST schema, PNG/data URI, T2.5 triangle settings, target range, unsupported controls"
+    },
+    {
+      "url": "https://docs.meshy.ai/en/api/models",
+      "evidence": "T2.5 fidelity vs T2 separation, 15-second median not delivery SLA"
+    },
+    {
+      "url": "https://docs.meshy.ai/en/api/multi-image-to-3d",
+      "evidence": "same-object angled inputs, standard models only"
+    },
+    {
+      "url": "https://docs.meshy.ai/en/api/pricing",
+      "evidence": "single T2.5 geometry 5 API credits; multi 6-lite 5, 6/7.1 20"
+    }
+  ],
+  "context7Library": "/websites/meshy_ai_en",
+  "paidCalls": 0,
+  "productionTaskId": null,
+  "productionMeasurements": null,
+  "validation": "See validation.json; source/profile checking is not generated-asset acceptance"
+}

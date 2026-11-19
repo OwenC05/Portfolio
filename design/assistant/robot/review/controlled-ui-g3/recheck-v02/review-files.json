@@ -1,0 +1,110 @@
+{
+  "scope": "design/assistant/robot/review/controlled-ui-g3/recheck-v02",
+  "files": [
+    {
+      "path": "baseline-tests.log",
+      "bytes": 3838,
+      "sha256": "3755595f61613de92c0283a2f43defcd294efab944d5e69e47d5177d6d1c0a9e"
+    },
+    {
+      "path": "counterfactual-results.json",
+      "bytes": 1981,
+      "sha256": "7f96b76164f0ea43a5a670cdd0b32790178b25218039b6e417a57d0c89d92621"
+    },
+    {
+      "path": "counterfactual-tests.cjs",
+      "bytes": 36683,
+      "sha256": "470987341af0515c703d4e62621b64a5b804bc026f250ee761c93e24dead0f3e"
+    },
+    {
+      "path": "counterfactual.cjs",
+      "bytes": 4574,
+      "sha256": "8fca4abf776c374484d335c40573499548aabef40ea454e85bfa9a1ce3aa39fa"
+    },
+    {
+      "path": "exact-pre-repair.log",
+      "bytes": 10811,
+      "sha256": "8cf1518269fc4d86d2027244b8377948066c6ae77feb074dc2f51c9c049b83d6"
+    },
+    {
+      "path": "exact-pre-repair.tsx",
+      "bytes": 13261,
+      "sha256": "9af87603bfe18017e86a254457e33a3dba8064069ed94c2d90436b3162290bfa"
+    },
+    {
+      "path": "lint-result.json",
+      "bytes": 260,
+      "sha256": "985e49d17c512b2da1df4ae6577297a808866d0a4627839ac3b3d9caafa7d791"
+    },
+    {
+      "path": "panel-probe.tsx",
+      "bytes": 14628,
+      "sha256": "103327ed46ee44cb7364873cd72daa7d271c086bcee75d6a5bef4446dabd5511"
+    },
+    {
+      "path": "panel-tests.log",
+      "bytes": 5542,
+      "sha256": "f3e6386eda2a28bff5f53001806ec1f17f69412e590eac7abb1014e71cb4c982"
+    },
+    {
+      "path": "remove-arrow-hit-key-guard.log",
+      "bytes": 3096,
+      "sha256": "4c9792a9cd06c4f8ec11702090543030374a062eb17220aeda16892207f944c9"
+    },
+    {
+      "path": "remove-arrow-hit-key-guard.tsx",
+      "bytes": 14584,
+      "sha256": "26ba2fde6ea059fd0c5dc0ce89b2093648763615e0b9098ef1a0cfe79fc7d326"
+    },
+    {
+      "path": "remove-arrow-run-identity-guard.log",
+      "bytes": 4213,
+      "sha256": "b3ca2a8fdb6c0bec97aeb91c3781d2a09267afb26b87f3a936dcf977023d1870"
+    },
+    {
+      "path": "remove-arrow-run-identity-guard.tsx",
+      "bytes": 14586,
+      "sha256": "6643897611bd333e07edbd6554b20bb282314489861a5fb4b7e0b830f0503ce7"
+    },
+    {
+      "path": "review.md",
+      "bytes": 9197,
+      "sha256": "50a3ebb353675fd7fe169fade7350d4a8c2c1bb0a1e8dd9e39032b1f78361ea3"
+    },
+    {
+      "path": "scoped-lint.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "source-after.json",
+      "bytes": 7545,
+      "sha256": "cf190f7af74d28b2590ad110a21831c9bf35c4b9b889088b3cbd65e807d0eb49"
+    },
+    {
+      "path": "source-before.json",
+      "bytes": 5935,
+      "sha256": "89893383b2ad51dd4e88fb99765b420de47c2ebbfca0e944cd741962bb643bd2"
+    },
+    {
+      "path": "static-check.cjs",
+      "bytes": 1607,
+      "sha256": "77c7871cf98a6caa1952bb724846a4c8b94a4398ff926d2e7ecf854cbe471ccd"
+    },
+    {
+      "path": "tests-before.cjs",
+      "bytes": 27597,
+      "sha256": "d69a3613c4679d427a650089fab8e05122d34ed82da688792e024a82d6c33a7c"
+    },
+    {
+      "path": "typescript-result.json",
+      "bytes": 254,
+      "sha256": "540b4ea17ebd4546d2b80fd3be80fe7734e266b402f2f8baabcc85773eff9193"
+    },
+    {
+      "path": "typescript.log",
+      "bytes": 206,
+      "sha256": "ab5df42cbecaf7ec33238ac91fd9c3a8a5d7c55ca54caa2859c48a144ba56dbe"
+    }
+  ]
+}

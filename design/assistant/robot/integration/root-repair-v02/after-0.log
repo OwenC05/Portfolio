@@ -1,0 +1,26 @@
+✔ G4: one actual request owner supplies the identical current snapshot to HTML and scene (323.2777ms)
+✔ G4: ordinary close aborts and clears before commit, retains draft and rejects queued close after reopening (140.4215ms)
+✔ G4: assistant-to-project takeover clears once, retains the dialog and focuses only the destination (124.4924ms)
+✔ G4: project activation wins both orders in the same uncommitted batch (177.6782ms)
+✔ G4: project Back/reopen arbitration and Forward use the actual navigation helper (70.8546ms)
+✔ G4: route links clear before native navigation while modifiers and new-tab links stay native (88.7743ms)
+✔ G4: history navigation clears Ask and unlocks before the commit without Ask return (68.0783ms)
+✔ G4: failed scene leaves Ask and the single root owner available; successful scene stays mounted under modals (77.0493ms)
+✔ G4: missing native dialog enhancement keeps SSR and routes character fallback to ask (92.1165ms)
+✔ G4: showModal failure clears and falls back for Ask; projects retain the SSR article destination (142.6381ms)
+✔ G4: setup-cleanup-setup creates one live owner and one listener set, then unmount aborts and unlocks (63.6126ms)
+✔ G4: native cancel and unexpected current close clear Ask while old close notifications cannot close an open project (84.0606ms)
+✔ G4: project modality suppresses a previously qualified robot attention hint (74.3048ms)
+✔ G4: source navigation must not restore Ask through the native dialog close algorithm (86.4196ms)
+✔ G4: fresh project deep links close by replacement and project switches retain one owned history entry (138.1555ms)
+✔ G4: native focus-restoration model permits ordinary Ask return and keeps project takeover open (82.8866ms)
+✔ G4: native history close does not return Ask and leaves the entry reusable (64.6087ms)
+✔ G4: Ask owns its close focus even when opened with another room control focused (87.0025ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2329.3659

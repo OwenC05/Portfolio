@@ -1,0 +1,509 @@
+{
+    "at":  "2026-11-18T19:48:05.8815317Z",
+    "buildId":  "cFKSWm6Bayf__QstZY2CC",
+    "server":  {
+                   "ProcessId":  52772,
+                   "CreationDate":  "\/Date(1795028939905)\/",
+                   "CommandLine":  "\"C:\\Program Files\\nodejs\\node.exe\" node_modules/next/dist/bin/next start --hostname 127.0.0.1 --port 4193 "
+               },
+    "files":  [
+                  {
+                      "path":  ".eslintrc.json",
+                      "bytes":  461,
+                      "sha256":  "3448ee6d1528d25b0dbb4003b1489cc2fdebda1c64509c7d64dfb5506ff4ff5d",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "app/api/assistant/route.ts",
+                      "bytes":  315,
+                      "sha256":  "d595a6d3c3296a305b68889cd89c3a0a0d9ad6120ac77306574485049f788c15",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "app/ask/page.tsx",
+                      "bytes":  1180,
+                      "sha256":  "411bc2894ec464d72e1cb5047549606b515dae867ac840c5f4d152f5af1c7c71",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "app/globals.css",
+                      "bytes":  1701,
+                      "sha256":  "38a5427299238e2be46ad5062e798ef3c68d13dfa884a1272bfdb2c55946f13f",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "app/layout.tsx",
+                      "bytes":  453,
+                      "sha256":  "8a9bc8229a6486f517f630aa1e30e9b88bb9c76d89d643351fc01c769f80385b",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "app/page.tsx",
+                      "bytes":  2333,
+                      "sha256":  "1355de8be21a12fad889dae7b9bd20cc2b5bf3b3f5943ec05bbd8b64b3a170ef",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "app/studio/StudioShell.tsx",
+                      "bytes":  9870,
+                      "sha256":  "ef637b1d61f39fd0cddc34f2697ce35546735f05219acb435d9e7d7c314c6738",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "app/studio/page.tsx",
+                      "bytes":  2416,
+                      "sha256":  "298294562717d8fc8f30e7b6444c45dc18dd5d103815414f4e687ac80b04044d",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "app/studio/panel-navigation.ts",
+                      "bytes":  3713,
+                      "sha256":  "e67abf654d6fd286edc536ec3f29290ca5a6f2e67daeb91ca596ae3fd976e347",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "app/studio/panel-scroll.ts",
+                      "bytes":  1168,
+                      "sha256":  "ef13a9d34aec31eb245232ada5675bc1cf010dd41bdd352ecbefc72fe0daa188",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "app/studio/studio.module.css",
+                      "bytes":  20785,
+                      "sha256":  "81bd8787a6259212d7244702ffeb14ce0815aa9a1a51f5f47bb2d3ef4b0549ea",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "app/work/[slug]/page.tsx",
+                      "bytes":  2778,
+                      "sha256":  "9ed10b1d426cbb7c366b6521db629e4d16021e4422a2e0df2bc1730b9dfb56b3",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "app/work/content.module.css",
+                      "bytes":  1856,
+                      "sha256":  "4d99f4dd26dbc1d1bcf9c4523dcca8c2dc04d1ad724580697bb50667856e5f22",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "app/work/page.tsx",
+                      "bytes":  2145,
+                      "sha256":  "74acf2db22188d6fe9aac43066fe7fb3b859195f72d7425e9147fb383c546ef1",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "app/writing/[slug]/page.tsx",
+                      "bytes":  2234,
+                      "sha256":  "e5699fc8e861993d21101278e87d21f9930bfd58fee935718c2e3a45216015e3",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "app/writing/page.tsx",
+                      "bytes":  2738,
+                      "sha256":  "bd495a287f3f779ea2987116a114e088e1c13c461a6b11a8a4c9126dc99b47da",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/Footer.tsx",
+                      "bytes":  5243,
+                      "sha256":  "450fad3b3c3f36ae035db620800b25e1c04b5c39ed724e8cef1b3c5bbf10ecb6",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/Hero.tsx",
+                      "bytes":  2118,
+                      "sha256":  "4a221443a7626679a485bddf5714d1152b3f3e7ee2d3779f7b3b5e23e128e164",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/Navbar.tsx",
+                      "bytes":  4702,
+                      "sha256":  "7b3dd34079273926b440a6788f0d9815cdb0e05e733ee6f564cb0f9608653251",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/ProjectsTeaser.tsx",
+                      "bytes":  2517,
+                      "sha256":  "d6494145843dfa4f9ca4292aa2a1abccdab726bd380b6d192b71e88d99715473",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/Skills.tsx",
+                      "bytes":  1006,
+                      "sha256":  "59a009ed70cee2790d05e5331f044a867d57242af599e825c7e65814b018dd1a",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/ThemeToggle.tsx",
+                      "bytes":  2112,
+                      "sha256":  "aa1b20001c70a767ee2902bcb813c50f81746a56b1a90bb05a479777cca610f5",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/assistant/AssistantWorkbench.tsx",
+                      "bytes":  21149,
+                      "sha256":  "f1769caa1ef1bc97b1902e9b9294b0dbdf3cd73a17c184213f641dcf364b43fe",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/assistant/assistant.module.css",
+                      "bytes":  11655,
+                      "sha256":  "eaa316e29f646c718112cd841ea6028eb72929fff0133c01b6d566d92105b3c4",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/assistant/useAssistantRun.ts",
+                      "bytes":  1589,
+                      "sha256":  "b6149c54687f02605f7f5448641f34741482e10527df4ecbd9736e510bad96c7",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/ProjectEvidence.tsx",
+                      "bytes":  2321,
+                      "sha256":  "7242983f72892b81591848fbb5d81d39d61a4e6ae8f9ee3a7333e0a4b54b4e91",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/StudioExperience.tsx",
+                      "bytes":  19149,
+                      "sha256":  "1c1af8cc3bd9a77a108d9ff21cd9cad09056c0c31755db61db887bf6b97923ca",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/StudioScene.tsx",
+                      "bytes":  1323,
+                      "sha256":  "bed95661809ae444829c0daaf30222a84c8c16e6bef721b417f342a5ef4a31b1",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/assistant/AssistantEntry.tsx",
+                      "bytes":  705,
+                      "sha256":  "065d4115428f0dc042a6a3c7e599179ddd7b5aa88495eaed90f9c546c60853a9",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/assistant/StudioAssistantPanel.tsx",
+                      "bytes":  14955,
+                      "sha256":  "174d06c105483718298e674b4fe2f034f20ada0117cc8baa4a0ae8bf3df35619",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/assistant/assistant.module.css",
+                      "bytes":  8665,
+                      "sha256":  "42605b4b98542d322e94d67d3657733f5563899df8768c55967c55ccce98fbf5",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/scene/bind-full-kit.ts",
+                      "bytes":  2075,
+                      "sha256":  "0ee8bbe6e0fb83ab4bf219343655c4260a8f5193f5624dc69fb802634a2294eb",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/scene/build-full-studio.ts",
+                      "bytes":  3998,
+                      "sha256":  "5a4e8296e04d66cfeaedf59bedee8c633b378c84126de52b78eaabe421c0f02f",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/scene/build-studio.ts",
+                      "bytes":  34789,
+                      "sha256":  "e23588e2702ece52c5b8a2ed25adb2debac366fdf90c66609a5ef4299ffc11ae",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/scene/controller.ts",
+                      "bytes":  25265,
+                      "sha256":  "dbc91da47931fbbd592278ef5e82fe9db8c40d02fc29806b050161585f822afc",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/scene/full-kit-types.ts",
+                      "bytes":  490,
+                      "sha256":  "19269dc5acf09fc9ebac3de6b5ac37157608b258a1b0ac288a85fd13021a4a56",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/scene/load-full-kit.ts",
+                      "bytes":  16066,
+                      "sha256":  "37549d60af2eb7f5e1feaf0914fd0da496ec38441ebe088ce445d2914b5ad68f",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/scene/load-pilot.ts",
+                      "bytes":  15772,
+                      "sha256":  "b5cd61c682dd69d2336b10b508b516999e72d73a00edbd6e2cebcf0323d39d11",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/scene/picking.ts",
+                      "bytes":  10961,
+                      "sha256":  "cefc0ca653b44ea4892fe54e82d5676a700741f5e6766cc841453795216fddc9",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/scene/resources.ts",
+                      "bytes":  4210,
+                      "sha256":  "756a26fba1840696fd7b8f0a24dfa588a50488a55fbc99bec60ca3c0e14cb509",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/scene/robot/cards.ts",
+                      "bytes":  2292,
+                      "sha256":  "4a27a76b1327a55c5a4df80124ddb0b8676eec3ae51c1d8e22e49943acd8faa2",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/scene/robot/derive-profile.mjs",
+                      "bytes":  2245,
+                      "sha256":  "3e7ccb2ae6f4ec7f0bb4ddcbfe33f78968484fa480a191a363fbb6fec2542588",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/scene/robot/load-robot.ts",
+                      "bytes":  9715,
+                      "sha256":  "f237471d54e2837fab90eab6767ae9a8a70ae15ff5e97daf82dd4a30c2eeb695",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/scene/robot/presentation.ts",
+                      "bytes":  6640,
+                      "sha256":  "733e0885712fdb23f6103146e74de8f8c9faff389bdeac28524d51601f8847a3",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/scene/robot/resources.ts",
+                      "bytes":  1942,
+                      "sha256":  "375fdf233e6128c613c64aa52ffa762d941b47090af990a20652b6ffae0f687f",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/scene/robot/runtime-profile.json",
+                      "bytes":  14212,
+                      "sha256":  "102cfdd0178f4cb9e301ce2feaeb82df0b9701ab60f9379f8cdaac18e208a447",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/scene/robot/runtime.ts",
+                      "bytes":  176,
+                      "sha256":  "93e8ff8f6d56b518da7b53ded84aae748369def0c54b1277871d44a5791add8a",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/scene/robot/test-support.mjs",
+                      "bytes":  2627,
+                      "sha256":  "58a131bdbbe3a7d07a2a5fea9f44c2405dff68934bb0c7643b576e108542b61b",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/scene/robot/types.ts",
+                      "bytes":  643,
+                      "sha256":  "a5c23f38bfae89830545660c2ee30a0b1fd54ad8cf8614042f256127235f37a6",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/scene/robot/verify-cleanup.mjs",
+                      "bytes":  3231,
+                      "sha256":  "fe0c84687ca89ca4894321456bcafd3f0ab9f9e9ee4f89b5dd822d2e2a6ffd40",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/scene/robot/verify-envelope.mjs",
+                      "bytes":  10759,
+                      "sha256":  "fa76ec7514d3236db1867eac1b5043f2a3f0be319322c1af0f6532bfb308b922",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/scene/robot/verify-robot.mjs",
+                      "bytes":  18662,
+                      "sha256":  "391ead023fda086398cb7bde8a54053030d9a5258f6d8af9f7ea754c1d98930f",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/scene/textures.ts",
+                      "bytes":  11246,
+                      "sha256":  "09f6ff6cc7bb8910f09838566dfcf840d85a0d2ce1be8d064deafb0989c63aa6",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/scene/types.ts",
+                      "bytes":  1322,
+                      "sha256":  "4b7aacd6d5dafda407a989a10c00cfa46689fca72df455ad50554527717405d4",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/scene/verify-controller.mjs",
+                      "bytes":  94270,
+                      "sha256":  "cc58de1b838a67a452481a9b9e750f578c95c570de8c04d4fe634db91a7283b0",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/scene/verify-full-kit.mjs",
+                      "bytes":  33885,
+                      "sha256":  "ea836ba70da71020ba78b70b78311b46d2eacec798da4f8163e7b03a54b3b531",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/scene/verify-pilot.mjs",
+                      "bytes":  19288,
+                      "sha256":  "8b0e9b33ef874ddd412cd92fd99b60420f8f8263fd32cdb7c9d96c3e9c3ad295",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/scene/verify-types.mjs",
+                      "bytes":  1202,
+                      "sha256":  "7a684d6e38384c80b57fecb63d24db6fcf6e8eac24cdb6f4918c451ebe066947",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "components/studio/scene/view-config.ts",
+                      "bytes":  756,
+                      "sha256":  "1fea7adbcfd730a56920389c8ac4ecf8323c9739fd4882c15f3e134a11f1a450",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "lib/assistant/events.ts",
+                      "bytes":  2982,
+                      "sha256":  "95e37b16c181cb13e663695f73c5555608d873c12d4e9505c888d71c87f5e491",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "lib/assistant/generation.ts",
+                      "bytes":  7717,
+                      "sha256":  "28bee687ea18b91e7ab2ac340b4ebcb4a403223b4c825b0a6d49f8e030c83635",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "lib/assistant/handler.ts",
+                      "bytes":  6642,
+                      "sha256":  "2836c4f60915e15583d9910923ca7c2ef72c78ca47a1b2d97cb6247692a92458",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "lib/assistant/retrieval.ts",
+                      "bytes":  7971,
+                      "sha256":  "99c5b5af5e85d43289d97d31c25b7b826425838ab4e576de99f3b6648c356445",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "lib/assistant/run-state.ts",
+                      "bytes":  10480,
+                      "sha256":  "1b804c6b9e0f528ef197e5a01efd5f39dafe8176f9dadb4a36268c96e69e5df7",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "lib/assistant/run-transport.ts",
+                      "bytes":  6870,
+                      "sha256":  "932db03394adddf2d568a1ea002bbaaf142da4151b1f70a9733e7b7f8a33283e",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "lib/assistant/types.ts",
+                      "bytes":  973,
+                      "sha256":  "6842f79d2d7547fb811cb25e72e38ecd6da45efbd82445a267bbb152f476d836",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "lib/knowledge/catalog.test.mjs",
+                      "bytes":  3535,
+                      "sha256":  "6c94c147c732eb51ffa24a959ffe3f7cc106964b1a0ae2a1ca06967b6d94b22d",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "lib/knowledge/catalog.ts",
+                      "bytes":  15118,
+                      "sha256":  "145e04a8296e8815ff6c4f9da94f663df3c5a993223a5fb1b41c365a2b09d52b",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "lib/knowledge/types.ts",
+                      "bytes":  562,
+                      "sha256":  "3230b52be190bc74a6c881a6bc10184dcd1e01ccd962b9be017982108553ba7a",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "lib/site.config.ts",
+                      "bytes":  1687,
+                      "sha256":  "d1886b8c9f9240aaeaef05f706a90379681e6ecb2a82861dee054bce70d2e9ee",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "lib/studio-content.ts",
+                      "bytes":  8095,
+                      "sha256":  "36e08b40cfb779f3f05cc17623766f1a2fb7b8f876cac73ac9b12db381764662",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "lib/studio-contract.ts",
+                      "bytes":  1756,
+                      "sha256":  "08ba5af18af6c8ed41de7a74cbe6492d6974bd81ad83b7a7aea5c00b83bdd2e8",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "lib/utils.ts",
+                      "bytes":  918,
+                      "sha256":  "632d5f54be6664c2a4e9735cf3719f55c92c0c977904fd603f9f89d1c0978c39",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "next-env.d.ts",
+                      "bytes":  268,
+                      "sha256":  "f4e8976c19fc926644d72610bf1058bd6bf52add97e46a02bc0b912a751625c0",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "next.config.mjs",
+                      "bytes":  120,
+                      "sha256":  "dd271e8790c673110c668e2825e6684864fbaa2bdb3a9ae5836d8ccbc8961345",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "package-lock.json",
+                      "bytes":  235583,
+                      "sha256":  "85c9c38951d29d2d1e2b71dcd06cd287f845cc9841278d971e8846ee2fe296be",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "package.json",
+                      "bytes":  1007,
+                      "sha256":  "665e51bf618feb94e031f297ef5c8b25986a25450ffdcae6b39663d0a5c04790",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "postcss.config.js",
+                      "bytes":  90,
+                      "sha256":  "2b8a1cb7003456256e96f3d832878af90f08b3677ff62dd52b73c972ed6a8d37",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "public/favicon.ico",
+                      "bytes":  129,
+                      "sha256":  "65f9c208d088eb7e9e1a8a10d7468e8a6afffd7328d4a82953a2abafcd5f732c",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "public/studio/assistant-apprentice-v03.glb",
+                      "bytes":  673144,
+                      "sha256":  "65f1dea3b1d35a748bdfc2089dea0feed1d054cc8b0eb957645ea2d669578a12",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "public/studio/pilot-right-limit-v03.glb",
+                      "bytes":  585536,
+                      "sha256":  "2b9a4182c3024485680c1e066c8a22ef0dc0f541acca4bd958486bced2c4063e",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "tailwind.config.ts",
+                      "bytes":  318,
+                      "sha256":  "e627efc6978c4c486ae6f617facd4f061d5ab3e3defa7f01a91fa9a872eb0337",
+                      "matches":  true
+                  },
+                  {
+                      "path":  "tsconfig.json",
+                      "bytes":  686,
+                      "sha256":  "16ed5e2babbdcd10e424eeaa5f5e054c3b0cf34d50dc9caa37c5d72f17b443af",
+                      "matches":  true
+                  }
+              ]
+}

@@ -1,0 +1,134 @@
+[
+  {
+    "version": "old",
+    "name": "valid-exact-v02",
+    "node": "APA_body_cap",
+    "argv": [
+      "C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\review\\export-validator-v03\\old-valid-exact-v02-7ChGT2\\validate_asset.mjs"
+    ],
+    "inputSha256": "bc1a4d6d968dd53eda3480936959d0ebf292e76652a6bbdd201e15f4cd665270",
+    "binaryUnchanged": true,
+    "directory": "old-valid-exact-v02-7ChGT2",
+    "validatorSha256": "dc1231aa8c824a184582a69fd6b7d7603c2de979ff5e05e6421a3e2ace5ea0ad",
+    "contractSha256": "b65ea4dbf9dcd034791b53203d41c98de5d94abaccffef0fb0aca3e4b13b3a87",
+    "expectedExit": 0,
+    "exitCode": 0,
+    "elapsedMs": 4811,
+    "matchedDiagnostic": true,
+    "passed": true,
+    "role": "current rejection or valid control",
+    "generatedStatus": "PASS-offline-asset-structure-not-production-acceptance",
+    "stdout": "old-valid-exact-v02.stdout.txt",
+    "stderr": "old-valid-exact-v02.stderr.txt"
+  },
+  {
+    "version": "old",
+    "name": "body-cap-skin-zero",
+    "node": "APA_body_cap",
+    "argv": [
+      "C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\review\\export-validator-v03\\old-body-cap-skin-zero-gzoUpX\\validate_asset.mjs"
+    ],
+    "inputSha256": "3561165ff04cac56d97ad943a2f11ee154c33c336090f7b8b00103bb2bc24822",
+    "binaryUnchanged": true,
+    "directory": "old-body-cap-skin-zero-gzoUpX",
+    "validatorSha256": "dc1231aa8c824a184582a69fd6b7d7603c2de979ff5e05e6421a3e2ace5ea0ad",
+    "contractSha256": "b65ea4dbf9dcd034791b53203d41c98de5d94abaccffef0fb0aca3e4b13b3a87",
+    "expectedExit": 0,
+    "exitCode": 0,
+    "elapsedMs": 5111,
+    "matchedDiagnostic": true,
+    "passed": true,
+    "role": "reproduce historical false accept, not current acceptance",
+    "generatedStatus": "PASS-offline-asset-structure-not-production-acceptance",
+    "stdout": "old-body-cap-skin-zero.stdout.txt",
+    "stderr": "old-body-cap-skin-zero.stderr.txt"
+  },
+  {
+    "version": "old",
+    "name": "body-cap-missing-position-bounds",
+    "node": "APA_body_cap",
+    "argv": [
+      "C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\review\\export-validator-v03\\old-body-cap-missing-position-bounds-A9ZiKl\\validate_asset.mjs"
+    ],
+    "inputSha256": "02c5a8c656ca23c55571a4e32241fd36afc2a12d96bfa704b9896c5661b19c0b",
+    "binaryUnchanged": true,
+    "directory": "old-body-cap-missing-position-bounds-A9ZiKl",
+    "validatorSha256": "dc1231aa8c824a184582a69fd6b7d7603c2de979ff5e05e6421a3e2ace5ea0ad",
+    "contractSha256": "b65ea4dbf9dcd034791b53203d41c98de5d94abaccffef0fb0aca3e4b13b3a87",
+    "expectedExit": 0,
+    "exitCode": 0,
+    "elapsedMs": 5023,
+    "matchedDiagnostic": true,
+    "passed": true,
+    "role": "reproduce historical false accept, not current acceptance",
+    "generatedStatus": "PASS-offline-asset-structure-not-production-acceptance",
+    "stdout": "old-body-cap-missing-position-bounds.stdout.txt",
+    "stderr": "old-body-cap-missing-position-bounds.stderr.txt"
+  },
+  {
+    "version": "current",
+    "name": "valid-exact-v02",
+    "node": "APA_body_cap",
+    "argv": [
+      "C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\review\\export-validator-v03\\current-valid-exact-v02-w0qiFc\\validate_asset.mjs"
+    ],
+    "inputSha256": "bc1a4d6d968dd53eda3480936959d0ebf292e76652a6bbdd201e15f4cd665270",
+    "binaryUnchanged": true,
+    "directory": "current-valid-exact-v02-w0qiFc",
+    "validatorSha256": "ba1990472d6697c3efc89b3930c37ba123313c4340ff2af9a0460ceb028e8e59",
+    "contractSha256": "7331dbc75d24aeae8553922f50a4ebcd31bd3ed945d3617bbfbb2422b5e32c8e",
+    "expectedExit": 0,
+    "exitCode": 0,
+    "elapsedMs": 4997,
+    "matchedDiagnostic": true,
+    "passed": true,
+    "role": "current rejection or valid control",
+    "generatedStatus": "PASS-offline-asset-structure-not-production-acceptance",
+    "stdout": "current-valid-exact-v02.stdout.txt",
+    "stderr": "current-valid-exact-v02.stderr.txt"
+  },
+  {
+    "version": "current",
+    "name": "body-cap-skin-zero",
+    "node": "APA_body_cap",
+    "argv": [
+      "C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\review\\export-validator-v03\\current-body-cap-skin-zero-qmj3No\\validate_asset.mjs"
+    ],
+    "inputSha256": "3561165ff04cac56d97ad943a2f11ee154c33c336090f7b8b00103bb2bc24822",
+    "binaryUnchanged": true,
+    "directory": "current-body-cap-skin-zero-qmj3No",
+    "validatorSha256": "ba1990472d6697c3efc89b3930c37ba123313c4340ff2af9a0460ceb028e8e59",
+    "contractSha256": "7331dbc75d24aeae8553922f50a4ebcd31bd3ed945d3617bbfbb2422b5e32c8e",
+    "expectedExit": 1,
+    "exitCode": 1,
+    "elapsedMs": 224,
+    "matchedDiagnostic": true,
+    "passed": true,
+    "role": "current rejection or valid control",
+    "generatedStatus": null,
+    "stdout": "current-body-cap-skin-zero.stdout.txt",
+    "stderr": "current-body-cap-skin-zero.stderr.txt"
+  },
+  {
+    "version": "current",
+    "name": "body-cap-missing-position-bounds",
+    "node": "APA_body_cap",
+    "argv": [
+      "C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\review\\export-validator-v03\\current-body-cap-missing-position-bounds-6x2ju4\\validate_asset.mjs"
+    ],
+    "inputSha256": "02c5a8c656ca23c55571a4e32241fd36afc2a12d96bfa704b9896c5661b19c0b",
+    "binaryUnchanged": true,
+    "directory": "current-body-cap-missing-position-bounds-6x2ju4",
+    "validatorSha256": "ba1990472d6697c3efc89b3930c37ba123313c4340ff2af9a0460ceb028e8e59",
+    "contractSha256": "7331dbc75d24aeae8553922f50a4ebcd31bd3ed945d3617bbfbb2422b5e32c8e",
+    "expectedExit": 1,
+    "exitCode": 1,
+    "elapsedMs": 176,
+    "matchedDiagnostic": true,
+    "passed": true,
+    "role": "current rejection or valid control",
+    "generatedStatus": null,
+    "stdout": "current-body-cap-missing-position-bounds.stdout.txt",
+    "stderr": "current-body-cap-missing-position-bounds.stderr.txt"
+  }
+]

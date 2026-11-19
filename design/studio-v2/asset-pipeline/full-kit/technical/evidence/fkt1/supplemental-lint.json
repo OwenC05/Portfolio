@@ -1,0 +1,12 @@
+{
+  "label": "Supplemental installed Next rules, configured TypeScript-plugin rules unavailable",
+  "files": [
+    "components/studio/scene/load-full-kit.ts",
+    "components/studio/scene/verify-full-kit.mjs",
+    "design/studio-v2/asset-pipeline/full-kit/technical/profile-core.mjs",
+    "design/studio-v2/asset-pipeline/full-kit/technical/validate-full-kit.mjs"
+  ],
+  "errors": 0,
+  "warnings": 0,
+  "output": ""
+}

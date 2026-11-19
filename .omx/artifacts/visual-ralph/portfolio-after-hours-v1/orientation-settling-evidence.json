@@ -1,0 +1,9 @@
+{
+  "method": "Fresh320x844 mobile/reduced context, load ready, navigate Work so scene offscreen, resize844x320, wait150ms, scroll canvas into view, then wait two animation frames. No source change.",
+  "offscreen": { "renderCount": 2, "cssWidth": 766.0625, "cssHeight": 576, "bufferWidth": 286, "bufferHeight": 352, "scrollY": 1528, "time": 1397.199999988079 },
+  "justScrolled": { "renderCount": 2, "cssWidth": 766.0625, "cssHeight": 576, "bufferWidth": 286, "bufferHeight": 352, "scrollY": 982, "time": 1433.5999999940395 },
+  "afterTwoFrames": { "renderCount": 3, "cssWidth": 766.0625, "cssHeight": 576, "bufferWidth": 766, "bufferHeight": 576, "scrollY": 982, "time": 1473.5999999940395 },
+  "disposition": "The first sample tapped immediately after scrolling before the resized scene had rendered. Actual buffer/counter evidence demonstrates this missing fixture precondition. Controller intentionally rejects sizeDirty/unready picks. Original47-of48result retained; two-frame readiness barrier yields48of48 with no application change.",
+  "original": "touch-after-repair.json",
+  "settled": "touch-after-repair-settled.json"
+}

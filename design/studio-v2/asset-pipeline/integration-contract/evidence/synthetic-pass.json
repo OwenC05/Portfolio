@@ -1,0 +1,252 @@
+{
+  "candidate": "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\integration-contract\\evidence\\synthetic-cli-only.glb",
+  "profile": "right-limit-pilot-v1",
+  "sha256": "ff3c12500309d410b7f2bb855e5461695c76c04a90cf36559dfe9648246418b2",
+  "profileSha256": "02a9b364ed42127988747660ac61d6efca8bc3af9f151a0e41eb0d50bc0baa08",
+  "valid": true,
+  "errors": [],
+  "metrics": {
+    "bytes": 8320,
+    "images": [
+      {
+        "index": 0,
+        "name": "synthetic-one-pixel",
+        "mimeType": "image/png",
+        "bytes": 68,
+        "width": 1,
+        "height": 1,
+        "sha256": "68217425f10a7364c5b36f4ba4ea7c4c1669f1ea12b600328d5aef86ba212799"
+      }
+    ],
+    "imagePixels": 1,
+    "nodes": [
+      {
+        "name": "pilot_door_leaf",
+        "material": "lib_oak",
+        "triangles": 1,
+        "primitives": 1,
+        "boundsMetres": {
+          "min": [
+            2.4000000953674316,
+            0,
+            1.5
+          ],
+          "max": [
+            2.4000000953674316,
+            2,
+            1.600000023841858
+          ]
+        },
+        "occluder": true,
+        "nocast": false
+      },
+      {
+        "name": "pilot_door_architrave",
+        "material": "lib_dark_oak",
+        "triangles": 1,
+        "primitives": 1,
+        "boundsMetres": {
+          "min": [
+            2.4000000953674316,
+            0,
+            1.5
+          ],
+          "max": [
+            2.4000000953674316,
+            2,
+            1.600000023841858
+          ]
+        },
+        "occluder": true,
+        "nocast": false
+      },
+      {
+        "name": "pilot_door_hardware",
+        "material": "lib_brass",
+        "triangles": 1,
+        "primitives": 1,
+        "boundsMetres": {
+          "min": [
+            2.4000000953674316,
+            0,
+            1.5
+          ],
+          "max": [
+            2.4000000953674316,
+            2,
+            1.600000023841858
+          ]
+        },
+        "occluder": true,
+        "nocast": false
+      },
+      {
+        "name": "pilot_lamp_base",
+        "material": "lib_black_metal",
+        "triangles": 1,
+        "primitives": 1,
+        "boundsMetres": {
+          "min": [
+            2.4000000953674316,
+            0,
+            0
+          ],
+          "max": [
+            2.4000000953674316,
+            1.850000023841858,
+            0.10000000149011612
+          ]
+        },
+        "occluder": true,
+        "nocast": false
+      },
+      {
+        "name": "pilot_lamp_pole",
+        "material": "lib_brushed_metal",
+        "triangles": 1,
+        "primitives": 1,
+        "boundsMetres": {
+          "min": [
+            2.4000000953674316,
+            0,
+            0
+          ],
+          "max": [
+            2.4000000953674316,
+            1.850000023841858,
+            0.10000000149011612
+          ]
+        },
+        "occluder": true,
+        "nocast": false
+      },
+      {
+        "name": "pilot_lamp_fittings",
+        "material": "lib_brass",
+        "triangles": 1,
+        "primitives": 1,
+        "boundsMetres": {
+          "min": [
+            2.4000000953674316,
+            0,
+            0
+          ],
+          "max": [
+            2.4000000953674316,
+            1.850000023841858,
+            0.10000000149011612
+          ]
+        },
+        "occluder": true,
+        "nocast": false
+      },
+      {
+        "name": "pilot_lamp_shade",
+        "material": "lib_linen_shade",
+        "triangles": 1,
+        "primitives": 1,
+        "boundsMetres": {
+          "min": [
+            2.4000000953674316,
+            0,
+            0
+          ],
+          "max": [
+            2.4000000953674316,
+            1.850000023841858,
+            0.10000000149011612
+          ]
+        },
+        "occluder": true,
+        "nocast": false
+      },
+      {
+        "name": "pilot_lamp_shade_trim",
+        "material": "lib_linen_trim",
+        "triangles": 1,
+        "primitives": 1,
+        "boundsMetres": {
+          "min": [
+            2.4000000953674316,
+            0,
+            0
+          ],
+          "max": [
+            2.4000000953674316,
+            1.850000023841858,
+            0.10000000149011612
+          ]
+        },
+        "occluder": true,
+        "nocast": false
+      },
+      {
+        "name": "pilot_lamp_bulb",
+        "material": "lib_bulb",
+        "triangles": 1,
+        "primitives": 1,
+        "boundsMetres": {
+          "min": [
+            2.4000000953674316,
+            0,
+            0
+          ],
+          "max": [
+            2.4000000953674316,
+            1.850000023841858,
+            0.10000000149011612
+          ]
+        },
+        "occluder": true,
+        "nocast": false
+      }
+    ],
+    "instantiatedTriangles": 9,
+    "uniqueGeometryTriangles": 9,
+    "primitiveInstances": 9,
+    "materials": 8,
+    "textures": 1,
+    "groupBoundsMetres": {
+      "door": {
+        "min": [
+          2.4000000953674316,
+          0,
+          1.5
+        ],
+        "max": [
+          2.4000000953674316,
+          2,
+          1.600000023841858
+        ]
+      },
+      "lamp": {
+        "min": [
+          2.4000000953674316,
+          0,
+          0
+        ],
+        "max": [
+          2.4000000953674316,
+          1.850000023841858,
+          0.10000000149011612
+        ]
+      }
+    },
+    "extensions": [],
+    "gzipBytesEstimate": 1312,
+    "brotliBytesEstimate": 1013
+  },
+  "limits": {
+    "fileBytes": 1500000,
+    "triangles": 20000,
+    "primitives": 18,
+    "imageDimension": 2048,
+    "totalImagePixels": 12582912
+  },
+  "deferred": [
+    "Image decode and browser GLTFLoader parsing",
+    "GPU/material/normal appearance and artistic placement",
+    "Live target/occlusion adapter, cancellation and disposal",
+    "Actual renderer/network/frame budgets and independent critique"
+  ]
+}

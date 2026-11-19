@@ -1,0 +1,13 @@
+{
+  "id": "b9fb01bb-693b-4b72-b3db-6dfa61b55b53",
+  "ok": true,
+  "result": {
+    "width": 1440,
+    "height": 900,
+    "deviceScaleFactor": 1,
+    "mobile": false
+  },
+  "_meta": {
+    "runtimeId": "19e04513-1ef5-4d38-9d02-d9354525c5f3"
+  }
+}

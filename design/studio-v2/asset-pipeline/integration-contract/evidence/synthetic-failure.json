@@ -1,0 +1,41 @@
+{
+  "candidate": "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\integration-contract\\evidence\\synthetic-cli-only.glb",
+  "profile": "right-limit-pilot-v1",
+  "sha256": "e87117be5a6d3db8f12c8b935079453e634d38da75d84dc478d667fb70fbc133",
+  "profileSha256": "02a9b364ed42127988747660ac61d6efca8bc3af9f151a0e41eb0d50bc0baa08",
+  "valid": false,
+  "errors": [
+    {
+      "code": "OCCLUSION_METADATA",
+      "message": "pilot_lamp_bulb: opaque pilot needs occluder=true; nocast is independent"
+    }
+  ],
+  "metrics": {
+    "bytes": 8320,
+    "images": [
+      {
+        "index": 0,
+        "name": "synthetic-one-pixel",
+        "mimeType": "image/png",
+        "bytes": 68,
+        "width": 1,
+        "height": 1,
+        "sha256": "68217425f10a7364c5b36f4ba4ea7c4c1669f1ea12b600328d5aef86ba212799"
+      }
+    ],
+    "imagePixels": 1
+  },
+  "limits": {
+    "fileBytes": 1500000,
+    "triangles": 20000,
+    "primitives": 18,
+    "imageDimension": 2048,
+    "totalImagePixels": 12582912
+  },
+  "deferred": [
+    "Image decode and browser GLTFLoader parsing",
+    "GPU/material/normal appearance and artistic placement",
+    "Live target/occlusion adapter, cancellation and disposal",
+    "Actual renderer/network/frame budgets and independent critique"
+  ]
+}

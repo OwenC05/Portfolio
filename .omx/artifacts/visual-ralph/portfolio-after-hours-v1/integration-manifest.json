@@ -1,0 +1,471 @@
+{
+  "createdUTC": "2026-11-14T21:25:27.362Z",
+  "buildId": "SWplwMoiIE-2Vby4TGU5f",
+  "preview": {
+    "url": "http://127.0.0.1:4181/studio",
+    "mode": "production",
+    "executionSession": 85094,
+    "listenerPID": 12912,
+    "ownership": "Integration I started; released to root for review; leave running"
+  },
+  "sources": [
+    {
+      "path": "app/globals.css",
+      "bytes": 1701,
+      "sha256": "38a5427299238e2be46ad5062e798ef3c68d13dfa884a1272bfdb2c55946f13f"
+    },
+    {
+      "path": "app/studio/page.tsx",
+      "bytes": 3316,
+      "sha256": "7a3e95a799a27041229ed70f496607b376d9097bb5a0d0194c186f0dd1a66152"
+    },
+    {
+      "path": "app/studio/studio.module.css",
+      "bytes": 13917,
+      "sha256": "30ba6d8c4ac62f3f7a9120d41d7774b531e53891a504634ed91e2ef62df052ac"
+    },
+    {
+      "path": "components/studio/ProjectEvidence.tsx",
+      "bytes": 2268,
+      "sha256": "078c749b8bad50d88dcd47ec29cd9cf97a5c3621b3e98d21fad455b3420905c5"
+    },
+    {
+      "path": "components/studio/StudioExperience.tsx",
+      "bytes": 7787,
+      "sha256": "e186ac78acfc51583be852b115046e28cfd20779f23af5f6eaa2f0c83e6d15d1"
+    },
+    {
+      "path": "components/studio/StudioScene.tsx",
+      "bytes": 1051,
+      "sha256": "29586d8a880ad079627e9e8d670f46a60c4614b221b17bbcefeb54112327e5ac"
+    },
+    {
+      "path": "components/studio/scene/build-studio.ts",
+      "bytes": 18373,
+      "sha256": "dbaf86527a207c09db45f19125316fd8c929b97cfe16b14e52cc25b6d386ddee"
+    },
+    {
+      "path": "components/studio/scene/controller.ts",
+      "bytes": 15896,
+      "sha256": "728c12affd53a069fd684a725c53ceb39a046ad569a43314a9ac2dd5348222b0"
+    },
+    {
+      "path": "components/studio/scene/resources.ts",
+      "bytes": 4210,
+      "sha256": "756a26fba1840696fd7b8f0a24dfa588a50488a55fbc99bec60ca3c0e14cb509"
+    },
+    {
+      "path": "components/studio/scene/textures.ts",
+      "bytes": 5059,
+      "sha256": "ef7e5e025d21deb88350b79a994dfb5ab1d9a1296d57eb0000cfde813fb2bc84"
+    },
+    {
+      "path": "components/studio/scene/types.ts",
+      "bytes": 361,
+      "sha256": "f5a0a0f6f174124ff6c0abbfd6c9bef46e6fb6bcc4900404719b4928c4fef5c6"
+    },
+    {
+      "path": "components/studio/scene/verify-controller.mjs",
+      "bytes": 40775,
+      "sha256": "d26a7f4eb94678f1dba7c32922f1ff35f3019231e71a712117e5e3d1ab49e2c4"
+    },
+    {
+      "path": "lib/studio-content.ts",
+      "bytes": 8095,
+      "sha256": "36e08b40cfb779f3f05cc17623766f1a2fb7b8f876cac73ac9b12db381764662"
+    },
+    {
+      "path": "lib/studio-contract.ts",
+      "bytes": 924,
+      "sha256": "7f00624980e4e89ecff7e90abf371595fe8a0ddf3cdc0401db4b679a872a9097"
+    },
+    {
+      "path": "package.json",
+      "bytes": 710,
+      "sha256": "74b49915fac2ee8cd0f896a1aaadbab0fd68427b52d31979f4ded4273a133d54"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 220145,
+      "sha256": "e2d26d355bf292c7c880469ad295b7cb9356f51136ecc5d7f79ba0a15b34515d"
+    }
+  ],
+  "scripts": [
+    {
+      "path": "design/studio-v1/browser-validation.mjs",
+      "bytes": 10593,
+      "sha256": "ca0f132d6d0d8ae2a9b3f58b979912dd235cacba62e540617cbd82b7ce405587"
+    },
+    {
+      "path": "design/studio-v1/dev-lifecycle-validation.mjs",
+      "bytes": 5960,
+      "sha256": "e9afa29728b33816ea9ae037da82606582acec4d0fc3e3c0793c3cf186e139ce"
+    },
+    {
+      "path": "design/studio-v1/failure-validation.mjs",
+      "bytes": 3452,
+      "sha256": "82000748cec61ece67e0c4c4218d1de7bbddd8e3479624feab5eb43409892ac6"
+    },
+    {
+      "path": "design/studio-v1/pen-release-validation.mjs",
+      "bytes": 2955,
+      "sha256": "5a39796b24b342a232c2166b39e47876bb0691d4bc97945e6dd292b470c0257d"
+    },
+    {
+      "path": "design/studio-v1/performance-validation.mjs",
+      "bytes": 6701,
+      "sha256": "6715ea5bb1570fa6f46c302358e1a1802767bbff292308687764e75f191e03e8"
+    },
+    {
+      "path": "design/studio-v1/project-targets.mjs",
+      "bytes": 1629,
+      "sha256": "f9019c6a4456e1856a01fd7a589cd5ebc89ff5eda2d9071c9e688761421812fb"
+    },
+    {
+      "path": "design/studio-v1/touch-focus-validation.mjs",
+      "bytes": 1523,
+      "sha256": "1a2843d633a5cb529b0a505a1e049a3b64b40b833c23f2b8343edfbe6d465096"
+    },
+    {
+      "path": "design/studio-v1/touch-repair-validation.mjs",
+      "bytes": 5340,
+      "sha256": "138765141d8e1e028ea8c0bc6304f5701606a9eb1cdd4983e93ad30ce1454e4c"
+    },
+    {
+      "path": "design/studio-v1/verification-manifest.mjs",
+      "bytes": 2545,
+      "sha256": "6edaef0cd97fc27b6cbebf5be92abb4924bb3e1d764ac38743e3bcba84aa54c1"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/browser-after-repair.json",
+      "bytes": 15448,
+      "sha256": "cd35993250ec9276b4568da4d5d945d21fa3c56905840d2e36c9e8481d618095"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/browser-evidence.json",
+      "bytes": 13293,
+      "sha256": "6006f8761288388aade7c0cef868c0d2abb194687e8f3220794507c7a4de0e9e"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/build.log",
+      "bytes": 4112,
+      "sha256": "ff85805668206e2bad6fe3a653fee76296ef33033667a337ff8da706b4af9cf0"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/context-loss-390.png",
+      "bytes": 101858,
+      "sha256": "4870d3c4f43ec04993e38e3c95be94b230cea80b72657b9a70fb984788d0e290"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/failure-after-repair.json",
+      "bytes": 3296,
+      "sha256": "09d5ec5d00b237bd0709bce00e412eea221f29cc5c5c74331ad8f9aa07136cc4"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/failure-evidence.json",
+      "bytes": 3296,
+      "sha256": "f566530901bd6c199595402f297be5207b33ecc88a38c386ad31be0f7bc0c99b"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/final-build.log",
+      "bytes": 3820,
+      "sha256": "1c8b8ae15e071376d2aa8f46ecce723118c5b345c8e4e9bbc2d561a3e1deef12"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/final-cpu-tests.log",
+      "bytes": 6222,
+      "sha256": "a4b95caf03261e583604307673d18464ffc173d9882185cfabfa9e3ed7c91dbc"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/final-first-1440.png",
+      "bytes": 343947,
+      "sha256": "98f487a439d3afe7384c02b72494acd4b2d75d5713b0f960b732464ae0c9d9b4"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/final-first-390.png",
+      "bytes": 112712,
+      "sha256": "a36c989cf04e0a680644dd70ead193cc691dc8b405caa6f78ea6e68aecd99046"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/final-lint.log",
+      "bytes": 1212,
+      "sha256": "eafbd049667b4c5cfb096b8cc65a0ede776efffc277891d4c05e2d480f7e5c16"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/final-scoped-lint.json",
+      "bytes": 140,
+      "sha256": "170248e4f90b9d2e951b08a8294abfee6b64b2bc87e27e3d5342ab12e1c1ceab"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/first-desktop-1440.png",
+      "bytes": 343598,
+      "sha256": "e611ee552d0ffccacc0ab27ed8873a047329dca29fdbf51195880d050a7fed37"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/first-mobile-390.png",
+      "bytes": 47630,
+      "sha256": "88d8fea8b276bb62ad28277737d6c57336ee36d12dbab156e045f64ea502a181"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/first-mobile-scene-390.png",
+      "bytes": 119295,
+      "sha256": "b03227fa2bdb690563cf25057f36fe20d21bfc058c0bca9aea9abe12bd8792f2"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/lazy-chunk-390.png",
+      "bytes": 101858,
+      "sha256": "4870d3c4f43ec04993e38e3c95be94b230cea80b72657b9a70fb984788d0e290"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/lifecycle-after-repair.json",
+      "bytes": 54519,
+      "sha256": "aad5086200dc69f78d44f652ee6415d06a3ff9f2b448efd1c232577eefa5104f"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/lifecycle-context-loss-observation.json",
+      "bytes": 1332,
+      "sha256": "dc010ab7c698538b9a75632727024717aaec93c78a68c61859b5b3496d89281d"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/lifecycle-evidence.json",
+      "bytes": 6977,
+      "sha256": "178cbacb5ba5bc0502bc6694b84f2d03d5d8699aa2d69acd463c4be013fd0393"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/lint.log",
+      "bytes": 1212,
+      "sha256": "eafbd049667b4c5cfb096b8cc65a0ede776efffc277891d4c05e2d480f7e5c16"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/orientation-settling-evidence.json",
+      "bytes": 1134,
+      "sha256": "fa7901679653e67ce268d19e5d06f9d6170d7301f5965ea6535773f96e9df8f9"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/pen-final-activation.json",
+      "bytes": 7311,
+      "sha256": "44fab355d15aa141e2225fa3fab832c521bece7f0a847de9591c02ccb40985b2"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/pen-final-build.log",
+      "bytes": 3820,
+      "sha256": "545715180215469b596d4eae5158f79ffe4aab66ef00b95b90cfad34991b143e"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/pen-final-check-receipts.json",
+      "bytes": 1242,
+      "sha256": "2576749989efc823149e99e8249ee596b7ea106052177954880de2cff7528a2b"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/pen-final-core.json",
+      "bytes": 15448,
+      "sha256": "cd35993250ec9276b4568da4d5d945d21fa3c56905840d2e36c9e8481d618095"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/pen-final-cpu-tests.log",
+      "bytes": 6716,
+      "sha256": "4408cebcb8be9b6ab87f704647ddb76ee20a0d31da1a318cd52e2d35052e75fe"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/pen-final-desktop.png",
+      "bytes": 343947,
+      "sha256": "98f487a439d3afe7384c02b72494acd4b2d75d5713b0f960b732464ae0c9d9b4"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/pen-final-failure.json",
+      "bytes": 3296,
+      "sha256": "1781a9d618eabbe21173f027411c5aa28ac05923c22b7cf146d89816c73fa8b3"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/pen-final-mobile.png",
+      "bytes": 112712,
+      "sha256": "a36c989cf04e0a680644dd70ead193cc691dc8b405caa6f78ea6e68aecd99046"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/pen-final-scoped-lint.json",
+      "bytes": 140,
+      "sha256": "170248e4f90b9d2e951b08a8294abfee6b64b2bc87e27e3d5342ab12e1c1ceab"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/pen-final-source-delta.json",
+      "bytes": 4259,
+      "sha256": "7eaa9e5d87d0205bc5c45746c5eca5ab1f19df956aa2fc0a42c039c7c4e25a91"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/pen-final-transfer-smoke.json",
+      "bytes": 2366,
+      "sha256": "8404d98ad4b87bbff077c30b72a3d98d127460fb2a655855b69af46aca28d6db"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/pen-release-before-correction.json",
+      "bytes": 10212,
+      "sha256": "bce55cc94cab58928d175328ec6eff1a7a5a007938c6d9fc60f5841e9435536d"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/performance-after-repair.json",
+      "bytes": 128679,
+      "sha256": "ae5bd0a2ea0a94e2a471f4a1e9c9b69bccfcff5264e7ed2200759c2349970646"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/performance-event-only-evidence.json",
+      "bytes": 127949,
+      "sha256": "d099e4493964a36a988e47d826a9fffdfd45c23df8d6447020efc783938d4d1c"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/performance-evidence.json",
+      "bytes": 128149,
+      "sha256": "dea1bd25a1c1bfa4947052b913a60c2ecc2803d56697183238dde1c3cbfe9d4e"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/production-1440.png",
+      "bytes": 709651,
+      "sha256": "a6d3c9abcbedbc9f00da229384a5618491f1bf17a2646924fbf1e8b95163bd60"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/production-320.png",
+      "bytes": 376483,
+      "sha256": "bf5d2ce41cd497845ca1cff1e45eaebc93e6c3ce95e181bf0cd2285922ad7b75"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/production-390.png",
+      "bytes": 417566,
+      "sha256": "5394e90ebc9fda94511734e5cc9279671c6798d963ff7ac36375594dc41de724"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/production-first-1440.png",
+      "bytes": 343947,
+      "sha256": "98f487a439d3afe7384c02b72494acd4b2d75d5713b0f960b732464ae0c9d9b4"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/production-first-320.png",
+      "bytes": 95109,
+      "sha256": "0aede9a6e0cb54236ce74100098850841f6852f7b7c1ecb8dd3dc35f440cc2f8"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/production-first-390.png",
+      "bytes": 112712,
+      "sha256": "a36c989cf04e0a680644dd70ead193cc691dc8b405caa6f78ea6e68aecd99046"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/production-homepage.png",
+      "bytes": 73661,
+      "sha256": "bdb6eddac6173022b86bc19e81c1ee7530dc59a286e57f84029a4b07fd1fd706"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/production-layout.json",
+      "bytes": 4943,
+      "sha256": "b54e2bd1f35a2697e0b50506c4c37e76950b7f3b755bf34fca7e3467315508e1"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/production-nojs-320.png",
+      "bytes": 369889,
+      "sha256": "526d696620e7cda83699603fc6e4e5f248b302ca223938d9543d1bc6d34cb954"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/production-project-1440.png",
+      "bytes": 92552,
+      "sha256": "d883b3831b0f3f30ad5df83740a6fb4a7687b1c443ecfa2ea473615a63fddf40"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/production-project-320.png",
+      "bytes": 39371,
+      "sha256": "3411bfa32d2b6cd25af6bf92dd55fc2d9b53b013eb04f56b33048ab6fd20c2b8"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/production-project-390.png",
+      "bytes": 43928,
+      "sha256": "a806fcc3633a0a5c3f083b50f66fa4e28b8a8d9d4506eee0eb5d7f2dcfcf3f60"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/production-selected-desktop.png",
+      "bytes": 344193,
+      "sha256": "b118ced3ba840298fa740580af7e84b95a530a68478e704b69f6b025386a93b2"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/root-project-dissertation-1440.png",
+      "bytes": 92552,
+      "sha256": "d883b3831b0f3f30ad5df83740a6fb4a7687b1c443ecfa2ea473615a63fddf40"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/root-project-dissertation-390.png",
+      "bytes": 43928,
+      "sha256": "a806fcc3633a0a5c3f083b50f66fa4e28b8a8d9d4506eee0eb5d7f2dcfcf3f60"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/scoped-lint.json",
+      "bytes": 140,
+      "sha256": "170248e4f90b9d2e951b08a8294abfee6b64b2bc87e27e3d5342ab12e1c1ceab"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/touch-after-repair-settled.json",
+      "bytes": 178658,
+      "sha256": "64eb1550cbae5cbde9ee79e046ddc4a638811f1e3a723c29c8cae7470a069721"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/touch-after-repair.json",
+      "bytes": 152848,
+      "sha256": "288579b724350603fabc023ce9c8bb5e0608984b1fe80615396d950f1cd9631f"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/touch-focus-defect.json",
+      "bytes": 23640,
+      "sha256": "f4f09dc0eb50e831c4ffc3e2d55fb19979a301b0b7b9df0f16ea016437e21599"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/touch-original-repro-after-repair.json",
+      "bytes": 11254,
+      "sha256": "30e46989079858585087bd7840a1d646f998d6dd0bff3432996a83ba70252519"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/visibility-evidence.json",
+      "bytes": 1201,
+      "sha256": "b8ae81f8d6f6c266783fea2f4552aca6d16917166a931665d2a4c0d19649797b"
+    },
+    {
+      "path": ".omx/artifacts/visual-ralph/portfolio-after-hours-v1/webgl-creation-390.png",
+      "bytes": 101858,
+      "sha256": "4870d3c4f43ec04993e38e3c95be94b230cea80b72657b9a70fb984788d0e290"
+    }
+  ],
+  "reports": [
+    {
+      "path": "design/studio-v1/verification.md",
+      "bytes": 25501,
+      "sha256": "8fca98e401cefb22d9ceff569b8839692a79816045416bf0cb57fae70df6fad7"
+    },
+    {
+      "path": "design/studio-v1/asset-provenance.md",
+      "bytes": 6511,
+      "sha256": "e6be344f91f459be2ca79be63318d5c760d7091525b22e0e64a7988830a072bb"
+    },
+    {
+      "path": "design/studio-v1/integration-coordination/static-review.md",
+      "bytes": 14249,
+      "sha256": "84ad578e7565dd41434d7e90063c44924dbb533ade78b5e50f4d850e54df1040"
+    },
+    {
+      "path": "design/studio-v1/integration-coordination/evidence-critique.md",
+      "bytes": 27071,
+      "sha256": "ac621d50c064abab18b99e3e3430f828f494a941c39c768d2a4da80edc69de94"
+    },
+    {
+      "path": "design/studio-v1/scene-touch-focus-repair.md",
+      "bytes": 9502,
+      "sha256": "be1a9cd960aab3f125ccc23e362b56ee844d17bd0de8694370969584539a2f49"
+    },
+    {
+      "path": "design/studio-v1/scene-coordination/touch-focus-critique-report.md",
+      "bytes": 33484,
+      "sha256": "a986e7585d7188c27c6129628ef2ca692cca6226a61f3d939c047726e330eb63"
+    }
+  ],
+  "limits": [
+    "Configured lint missing baseline plugin",
+    "No physical mobile or actual screen-reader run",
+    "Native OS visibility not proved; instrumented branch and real offscreen checks only",
+    "No heap or physical GPU-memory accounting",
+    "Inherited invalid favicon; old untracked drafts have only review-window preservation evidence"
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "generatedAt": "2026-11-16T14:16:14.070Z",
+  "scope": "Actual production modules; simulated React hook host only",
+  "results": [
+    {
+      "name": "retry-current-draft",
+      "findingReproduced": true,
+      "draft": "Edited current draft",
+      "requestBodies": [
+        "Previous submitted question",
+        "Previous submitted question"
+      ],
+      "expectedByStateContract": "Second request equals Edited current draft",
+      "actual": "Second request repeats previous submitted question"
+    },
+    {
+      "name": "zero-hit-svg-caption",
+      "findingReproduced": true,
+      "caption": "0 passages ? response pending",
+      "codePoints": [
+        48,
+        32,
+        112,
+        97,
+        115,
+        115,
+        97,
+        103,
+        101,
+        115,
+        32,
+        63,
+        32,
+        114,
+        101,
+        115,
+        112,
+        111,
+        110,
+        115,
+        101,
+        32,
+        112,
+        101,
+        110,
+        100,
+        105,
+        110,
+        103
+      ]
+    },
+    {
+      "name": "late-fetch-http-body-matrix",
+      "passed": true,
+      "cases": 16,
+      "stages": [
+        "fetch",
+        "http-json"
+      ],
+      "stops": [
+        "cancel",
+        "close",
+        "dispose",
+        "supersede"
+      ],
+      "settlements": [
+        "resolve",
+        "reject"
+      ]
+    },
+    {
+      "name": "real-handler-opt-in-generation-fixtures",
+      "passed": true,
+      "realNetworkCalls": 0,
+      "results": [
+        {
+          "fixture": "generated",
+          "answerMode": "generated",
+          "completion": "complete",
+          "providerFixtureCalls": 1
+        },
+        {
+          "fixture": "abstained",
+          "answerMode": "abstained",
+          "completion": "complete",
+          "providerFixtureCalls": 1
+        },
+        {
+          "fixture": "provider-error",
+          "answerMode": "sources",
+          "completion": "complete",
+          "providerFixtureCalls": 1
+        }
+      ]
+    },
+    {
+      "name": "native-readable-stream-release",
+      "passed": true,
+      "cases": [
+        {
+          "stop": "cancel",
+          "locked": false,
+          "cancelCalls": 1
+        },
+        {
+          "stop": "close",
+          "locked": false,
+          "cancelCalls": 1
+        },
+        {
+          "stop": "dispose",
+          "locked": false,
+          "cancelCalls": 1
+        }
+      ]
+    }
+  ]
+}

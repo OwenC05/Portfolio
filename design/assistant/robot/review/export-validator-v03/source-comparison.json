@@ -1,0 +1,7 @@
+{
+  "assetOnlyChange": "binding skin falsy check becomes undefined check",
+  "unchangedRuntimeGuard": true,
+  "unchangedHelperDefinitions": true,
+  "documentChanges": "all-node skin reference absence; required finite ordered POSITION bounds",
+  "accessorChange": "optional bounds checked when !== undefined instead of truthy"
+}

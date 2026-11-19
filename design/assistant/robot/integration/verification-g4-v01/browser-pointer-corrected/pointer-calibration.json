@@ -1,0 +1,27 @@
+{
+  "points": [
+    {
+      "x": 250,
+      "y": 250,
+      "trusted": true
+    },
+    {
+      "x": 500,
+      "y": 375,
+      "trusted": true
+    }
+  ],
+  "scaleX": 2.5,
+  "scaleY": 2.5,
+  "offsetX": 0,
+  "offsetY": 0,
+  "center": {
+    "x": 1302.4969482421875,
+    "y": 719.1500244140625
+  },
+  "click": {
+    "trusted": true,
+    "x": 1302,
+    "y": 719
+  }
+}

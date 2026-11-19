@@ -1,0 +1,44 @@
+{
+  "status": "PROPOSED exact first M4 v01 provenance allowance; root decision required before guard/contract edits",
+  "authorMessage": "msg_73ae299f6383",
+  "parentSha256": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+  "frozenMappingSha256": "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98",
+  "path": "scenes[0].extras",
+  "before": {
+    "fk_variant": "proposal",
+    "fk_tag": "m3-v02",
+    "fk_profile": "studio-full-kit-v1",
+    "fk_stage": "M3",
+    "fk_m2_tag": "v04-pc",
+    "fk_m3_tag": "v02"
+  },
+  "after": {
+    "fk_variant": "proposal",
+    "fk_tag": "m4-v01",
+    "fk_profile": "studio-full-kit-v1",
+    "fk_stage": "M4",
+    "fk_m2_tag": "v04-pc",
+    "fk_m3_tag": "v02",
+    "fk_m4_tag": "v01"
+  },
+  "changedKeys": [
+    "fk_tag",
+    "fk_stage"
+  ],
+  "addedKeys": [
+    "fk_m4_tag"
+  ],
+  "unchangedKeys": [
+    "fk_variant",
+    "fk_profile",
+    "fk_m2_tag",
+    "fk_m3_tag"
+  ],
+  "unchangedSceneName": "Scene",
+  "unchangedRoot": "studio_full_kit",
+  "unchangedAssetMetadata": {
+    "generator": "Khronos glTF Blender I/O v5.2.41",
+    "version": "2.0"
+  },
+  "scope": "Only exact v01 provenance values proposed; all other scene/document metadata and retained art stays exact. Future version suffixes are not implicitly authorized by this request. No guard, contract, source or asset modified."
+}

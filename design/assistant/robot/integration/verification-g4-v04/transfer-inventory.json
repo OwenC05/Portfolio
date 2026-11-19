@@ -1,0 +1,290 @@
+{
+  "buildId": "KEhdfJ0NJBO2q0ASaHcHN",
+  "at": "2026-11-18T21:04:57.724Z",
+  "closure": [
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-128bbc5a0214192c.js",
+      "encodedBodySize": 1911,
+      "decodedBodySize": 3666,
+      "transferSize": 2211,
+      "response": {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-128bbc5a0214192c.js",
+        "status": 200,
+        "encoding": "gzip",
+        "type": "script"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "encodedBodySize": 54358,
+      "decodedBodySize": 173019,
+      "transferSize": 54658,
+      "response": {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+        "status": 200,
+        "encoding": "gzip",
+        "type": "script"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+      "encodedBodySize": 46707,
+      "decodedBodySize": 174133,
+      "transferSize": 47007,
+      "response": {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+        "status": 200,
+        "encoding": "gzip",
+        "type": "script"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+      "encodedBodySize": 557,
+      "decodedBodySize": 557,
+      "transferSize": 857,
+      "response": {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+        "status": 200,
+        "encoding": "identity",
+        "type": "script"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+      "encodedBodySize": 3389,
+      "decodedBodySize": 8537,
+      "transferSize": 3689,
+      "response": {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+        "status": 200,
+        "encoding": "gzip",
+        "type": "script"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/0-09907f8dc8534979.js",
+      "encodedBodySize": 3237,
+      "decodedBodySize": 9005,
+      "transferSize": 3537,
+      "response": {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/0-09907f8dc8534979.js",
+        "status": 200,
+        "encoding": "gzip",
+        "type": "script"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-33a6621dd63a6088.js",
+      "encodedBodySize": 12445,
+      "decodedBodySize": 36850,
+      "transferSize": 12745,
+      "response": {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-33a6621dd63a6088.js",
+        "status": 200,
+        "encoding": "gzip",
+        "type": "script"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+      "encodedBodySize": 84350,
+      "decodedBodySize": 357041,
+      "transferSize": 84650,
+      "response": {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+        "status": 200,
+        "encoding": "gzip",
+        "type": "script"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+      "encodedBodySize": 69327,
+      "decodedBodySize": 262501,
+      "transferSize": 69627,
+      "response": {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+        "status": 200,
+        "encoding": "gzip",
+        "type": "script"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+      "encodedBodySize": 14133,
+      "decodedBodySize": 47753,
+      "transferSize": 14433,
+      "response": {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+        "status": 200,
+        "encoding": "gzip",
+        "type": "script"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/703.4dfe8c9ab28805fd.js",
+      "encodedBodySize": 19182,
+      "decodedBodySize": 51200,
+      "transferSize": 19482,
+      "response": {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/703.4dfe8c9ab28805fd.js",
+        "status": 200,
+        "encoding": "gzip",
+        "type": "script"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+      "encodedBodySize": 392354,
+      "decodedBodySize": 585536,
+      "transferSize": 392654,
+      "response": {
+        "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+        "status": 200,
+        "encoding": "gzip",
+        "type": "fetch"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/287.a76f2f26e2e93633.js",
+      "encodedBodySize": 6717,
+      "decodedBodySize": 24038,
+      "transferSize": 7017,
+      "response": {
+        "url": "http://127.0.0.1:4193/_next/static/chunks/287.a76f2f26e2e93633.js",
+        "status": 200,
+        "encoding": "gzip",
+        "type": "script"
+      }
+    },
+    {
+      "url": "http://127.0.0.1:4193/studio/assistant-apprentice-v03.glb",
+      "encodedBodySize": 483118,
+      "decodedBodySize": 673144,
+      "transferSize": 483418,
+      "response": {
+        "url": "http://127.0.0.1:4193/studio/assistant-apprentice-v03.glb",
+        "status": 200,
+        "encoding": "gzip",
+        "type": "fetch"
+      }
+    }
+  ],
+  "totalEncoded": 1191785,
+  "completePositiveSizes": true,
+  "resources": [
+    {
+      "url": "http://127.0.0.1:4193/_next/static/css/d442c5091e55dc0c.css",
+      "encodedBodySize": 3998,
+      "decodedBodySize": 19519,
+      "transferSize": 4298
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/css/1e588107469233a4.css",
+      "encodedBodySize": 5966,
+      "decodedBodySize": 24928,
+      "transferSize": 6266
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/webpack-128bbc5a0214192c.js",
+      "encodedBodySize": 1911,
+      "decodedBodySize": 3666,
+      "transferSize": 2211
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "encodedBodySize": 54358,
+      "decodedBodySize": 173019,
+      "transferSize": 54658
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+      "encodedBodySize": 46707,
+      "decodedBodySize": 174133,
+      "transferSize": 47007
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+      "encodedBodySize": 557,
+      "decodedBodySize": 557,
+      "transferSize": 857
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+      "encodedBodySize": 3389,
+      "decodedBodySize": 8537,
+      "transferSize": 3689
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/0-09907f8dc8534979.js",
+      "encodedBodySize": 3237,
+      "decodedBodySize": 9005,
+      "transferSize": 3537
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-33a6621dd63a6088.js",
+      "encodedBodySize": 12445,
+      "decodedBodySize": 36850,
+      "transferSize": 12745
+    },
+    {
+      "url": "http://127.0.0.1:4193/favicon.ico",
+      "encodedBodySize": 129,
+      "decodedBodySize": 129,
+      "transferSize": 429
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+      "encodedBodySize": 84350,
+      "decodedBodySize": 357041,
+      "transferSize": 84650
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+      "encodedBodySize": 69327,
+      "decodedBodySize": 262501,
+      "transferSize": 69627
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+      "encodedBodySize": 14133,
+      "decodedBodySize": 47753,
+      "transferSize": 14433
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/703.4dfe8c9ab28805fd.js",
+      "encodedBodySize": 19182,
+      "decodedBodySize": 51200,
+      "transferSize": 19482
+    },
+    {
+      "url": "http://127.0.0.1:4193/studio/pilot-right-limit-v03.glb",
+      "encodedBodySize": 392354,
+      "decodedBodySize": 585536,
+      "transferSize": 392654
+    },
+    {
+      "url": "http://127.0.0.1:4193/_next/static/chunks/287.a76f2f26e2e93633.js",
+      "encodedBodySize": 6717,
+      "decodedBodySize": 24038,
+      "transferSize": 7017
+    },
+    {
+      "url": "http://127.0.0.1:4193/studio/assistant-apprentice-v03.glb",
+      "encodedBodySize": 483118,
+      "decodedBodySize": 673144,
+      "transferSize": 483418
+    },
+    {
+      "url": "http://127.0.0.1:4193/api/assistant",
+      "encodedBodySize": 5112,
+      "decodedBodySize": 5112,
+      "transferSize": 5412
+    }
+  ],
+  "limits": [
+    "Current isolated cold context plus Ask and real four-source completion; CSS/fonts/API response outside scene-JS-and-assets limit.",
+    "Transfer measurement only; no timing benchmark or performance-gate repair."
+  ]
+}

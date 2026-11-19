@@ -1,0 +1,124 @@
+{
+  "candidate": "65f1dea3b1d35a748bdfc2089dea0feed1d054cc8b0eb957645ea2d669578a12",
+  "method": "identity-centered geodesically-convex quaternion caps plus translation intervals and recursive rotational displacement bounds",
+  "assumptions": [
+    "all imported scales exactly one",
+    "normalized shortest slerp with common nonovershooting smoothstep parameter",
+    "arbitrary finite retarget count",
+    "card layout/lift/scale exactly cards.ts",
+    "wrapper applied once"
+  ],
+  "localMetres": {
+    "min": [
+      -0.203774842545682,
+      -0.2999632093617204,
+      -0.1983770403268872
+    ],
+    "max": [
+      0.20061725482373816,
+      0.4191511734337507,
+      0.20030532037182477
+    ]
+  },
+  "placedWorldUnits": {
+    "min": [
+      0.37577408301737386,
+      2.320058865021247,
+      -0.6183889351451409
+    ],
+    "max": [
+      1.2183757618372915,
+      3.470641877494001,
+      0.21929367964410745
+    ]
+  },
+  "maxAnglesRadians": {
+    "APA_seam": 0,
+    "APA_face_rim": 0,
+    "APA_face": 0,
+    "APA_highlight_L": 0,
+    "APA_pupil_L": 0,
+    "APA_eye_L": 0,
+    "APA_lid_lower_L": 0.08148860856255148,
+    "APA_highlight_R": 0,
+    "APA_pupil_R": 0,
+    "APA_eye_R": 0,
+    "APA_lid_lower_R": 0.08148860856255148,
+    "APA_bookmark_ribbon": 0,
+    "APA_bookmark_post": 0,
+    "APA_head": 0.2274622521628041,
+    "APA_collar": 0,
+    "APA_body_cap": 0,
+    "APA_mitten_L": 0.4188790819237175,
+    "APA_mitten_R": 0.5585052789613354,
+    "APA_body": 0,
+    "APA_tray_glow": 0,
+    "APA_tray": 0.2443461365175909,
+    "APA_root": 0
+  },
+  "approximateP2NeighbourComparison": {
+    "method": "conservative world AABB angular enclosure versus approximate P2 neighbour angles; not silhouette intersection",
+    "eye": [
+      -0.7,
+      2.8,
+      3.4
+    ],
+    "angularDegrees": {
+      "azimuth": [
+        14.98736132470383,
+        31.095390918351267
+      ],
+      "elevation": [
+        -8.134600680168418,
+        11.29517935756761
+      ]
+    },
+    "marginsDegrees": {
+      "typeforge": -1.9726386752961709,
+      "wallLights": -3.4151793575676104,
+      "speaker": -0.7146006801684184
+    }
+  },
+  "discreteSamples": 5000,
+  "sampledWorldMeshAabbUnion": {
+    "min": [
+      0.5156297777672209,
+      2.3559684070457787,
+      -0.515297392708089
+    ],
+    "max": [
+      1.1047596833744229,
+      3.3718792537315725,
+      0.10334416762678214
+    ]
+  },
+  "maxQuaternionLengthError": 2.220446049250313e-16,
+  "continuousIndependentPupilLidGapMetres": {
+    "L": 0.00034901362477007813,
+    "R": 0.00034901362477007813
+  },
+  "cards": {
+    "maxVisible": 4,
+    "geometries": 2,
+    "materials": 1,
+    "trianglesAtFour": 304,
+    "maxPrimaryDraws": 4,
+    "supportRadiusMetres": 0.11227482810674412,
+    "trayInnerRadiusMetres": 0.11755819618701935,
+    "radialMarginMetres": 0.0052833680802752275
+  },
+  "imported": {
+    "primaryDraws": 21,
+    "triangles": 37676,
+    "geometries": 21,
+    "materials": 7
+  },
+  "doesNotProve": [
+    "continuous mesh nonintersection",
+    "room or wall-light clearance",
+    "final placement",
+    "browser draw counts",
+    "mobile performance",
+    "appearance acceptance"
+  ]
+}

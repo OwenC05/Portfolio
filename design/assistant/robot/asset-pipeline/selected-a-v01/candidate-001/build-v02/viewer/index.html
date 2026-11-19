@@ -1,0 +1,40 @@
+<!doctype html><meta charset="utf-8"><title>A build v02 isolated material review</title>
+<style>body{margin:0;background:#222;font:14px sans-serif;color:#fff}canvas{display:block}#label{position:absolute;top:8px;left:8px;background:#222b;padding:8px;pointer-events:none}</style>
+<div id="label">Loading exported candidate…</div>
+<script type="importmap">{"imports":{"three":"/three/build/three.module.js","three/addons/":"/three/examples/jsm/"}}</script>
+<script type="module">
+import * as THREE from 'three';import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {SceneResources} from './resources.js';import {createStudio} from './build-studio.js';
+const renderer=new THREE.WebGLRenderer({antialias:true,alpha:true,preserveDrawingBuffer:true,powerPreference:'high-performance'});
+renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.2;
+renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFShadowMap;renderer.shadowMap.autoUpdate=false;
+renderer.setPixelRatio(1);renderer.setSize(800,900);document.body.append(renderer.domElement);
+const loader=new GLTFLoader();const pilot=await loader.loadAsync('/pilot.glb');const pilotProfile=await(await fetch('/pilot-profile.json')).json();
+pilot.scene.scale.fromArray(pilotProfile.adapter.scale);pilot.scene.position.fromArray(pilotProfile.adapter.translation);
+const resources=new SceneResources();const model=createStudio(resources,pilot.scene);const scene=model.scene;
+const asset=await loader.loadAsync('/asset.glb');const poses=await(await fetch('/poses.json')).json();
+const anchor=new THREE.Group();anchor.position.set(.80,2.80,-.20);anchor.quaternion.set(0,-.19612,0,.98058).normalize();anchor.scale.setScalar(1.6);scene.add(anchor);anchor.add(asset.scene);
+asset.scene.traverse(o=>{if(o.isMesh){o.castShadow=false;o.receiveShadow=false;}});
+const camera=new THREE.PerspectiveCamera(38,800/900,.1,30);const nodes=new Map();asset.scene.traverse(o=>nodes.set(o.name,o));
+const gl=renderer.getContext();const ext=gl.getExtension('WEBGL_debug_renderer_info');
+const lights=[];scene.traverse(o=>{if(o.isLight)lights.push({type:o.type,color:o.color.toArray(),intensity:o.intensity,position:o.position.toArray(),target:o.target?.position.toArray(),distance:o.distance,decay:o.decay,castShadow:o.castShadow});});
+const materials=[];const seen=new Set();asset.scene.traverse(o=>{if(o.isMesh&&!seen.has(o.material)){seen.add(o.material);materials.push({name:o.material.name,color:o.material.color.toArray(),emissive:o.material.emissive.toArray(),emissiveIntensity:o.material.emissiveIntensity,metalness:o.material.metalness,roughness:o.material.roughness});}});
+const resourceIdentities={geometries:[],materials:[],textureCount:0};const geoSeen=new Set();
+asset.scene.traverse(o=>{if(o.isMesh&&!geoSeen.has(o.geometry)){geoSeen.add(o.geometry);resourceIdentities.geometries.push({node:o.name,id:o.geometry.id,uuid:o.geometry.uuid});}});
+for(const m of seen)resourceIdentities.materials.push({name:m.name,id:m.id,uuid:m.uuid});
+function render(pose='neutral',view='front'){
+ const p=poses.poses.find(p=>p.name===pose);if(!p)throw Error('Unknown finite pose');
+ for(const [name,t]of Object.entries(p.localGltfTRS)){const n=nodes.get(name);n.position.fromArray(t.translation);n.quaternion.fromArray(t.rotationXyzw);n.scale.fromArray(t.scale);}
+ const a=anchor.position;const views={front:[0,.08,2.05],quarter:[1.2,.55,2],side:[2.05,.08,0],back:[0,.08,-2.05],room:[0,.8,2.4],face:[0,.32,1.03]};
+ camera.fov=view==='room'?58:view==='face'?30:38;camera.position.copy(a).add(new THREE.Vector3(...views[view]).applyQuaternion(anchor.quaternion));camera.lookAt(a.x,a.y+(view==='face'?.25:.08),a.z);
+ if(view==='room'){camera.position.set(-.7,2.8,3.4);const yaw=-4*Math.PI/180,pitch=-6*Math.PI/180;camera.lookAt(camera.position.clone().add(new THREE.Vector3(Math.sin(yaw)*Math.cos(pitch),Math.sin(pitch),-Math.cos(yaw)*Math.cos(pitch))));}
+ camera.updateProjectionMatrix();
+ scene.updateMatrixWorld(true);renderer.shadowMap.needsUpdate=true;renderer.render(scene,camera);
+ document.querySelector('#label').textContent=`v02 ${pose} / ${view} — real room geometry and lights; provisional anchor; no placement approval`;
+ return {pose,view,camera:camera.position.toArray(),cameraQuaternion:camera.quaternion.toArray(),lookDirection:camera.getWorldDirection(new THREE.Vector3()).toArray(),fov:camera.fov,viewport:renderer.getSize(new THREE.Vector2()).toArray(),renderInfo:JSON.parse(JSON.stringify(renderer.info.render))};
+}
+window.resizeReview=(w,h)=>{renderer.setSize(w,h);camera.aspect=w/h;camera.updateProjectionMatrix();};
+window.assetReview={render,canvas:renderer.domElement,evidence:{threeRevision:THREE.REVISION,renderer:gl.getParameter(gl.RENDERER),unmaskedRenderer:ext?gl.getParameter(ext.UNMASKED_RENDERER_WEBGL):null,outputColorSpace:renderer.outputColorSpace,toneMapping:'ACESFilmicToneMapping',exposure:renderer.toneMappingExposure,pixelRatio:1,viewport:[800,900],anchorWorld:anchor.position.toArray(),anchorQuaternion:anchor.quaternion.toArray(),effectiveWrapperScale:1.6,worldUnitsPerMetre:2,provisionalArtScale:.8,roomGeometry:'createStudio current source with current pilot and adapter',lights,materials,environmentMap:null,limitations:['P2 provisional anchor; inspection cameras except fixed-eye room view; no placement approval','Browser isolated material evidence only; no main app integration or device performance acceptance','Robot shadows disabled per asset contract; actual room shadow sun retained','No bloom or runtime source cards'],poseResult:render()}};
+document.body.dataset.ready='true';
+assetReview.evidence.resourceIdentities=resourceIdentities;
+</script>

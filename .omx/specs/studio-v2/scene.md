@@ -1,0 +1,18 @@
+# S — immersive scene secondary coordinator
+
+You are a Codex technical coordinator. Under the latest user routing, your room/art performer MUST be `--agent claude`; controller/input/adapter/tests performers MUST be `--agent codex`. Claude owns artistic framing, geometry appearance, materials/textures/lighting and reviews the existing art-direction proposal before implementation. Independent visual critique also uses Claude; correctness/geometry-test/resource critique uses Codex. Assign build-studio.ts/textures.ts to Claude and controller/adapter/tests to Codex; freeze helpers and internal occluder contracts with one owner per file. Do not make visual design choices yourself. Read the routing addendum.
+
+Read `.omx/specs/studio-v2/common.md`. Implement the S lane of approved v2 PRD.
+
+Own only `lib/studio-contract.ts`, `components/studio/StudioScene.tsx`, `components/studio/scene/**`, and `design/studio-v2/scene*` reports/subfolder. No UI/CSS/content/package edits. First add the exact additive StudioViewAction/StudioViewCommand plus optional viewCommand/interactionEnabled props from the PRD, freeze with hash and send root a contract-ready message. No additional shared fields without root agreement. Publish camera/model conventions before child performers depend on them.
+
+Create a child Orca Run. Split at least model/art performer and controller/adapter/input performer, assigning types/resources/textures clearly to one owner or lead; never overlap helpers. Independent critique follows implementation (separate writer/reviewer). Browser stays root-owned until lease. S may perform targeted CPU/static checks; no full build/server.
+
+Replace whole-room orthographic fitting with fixed eye-level perspective and bounded yaw/pitch. Use designer numeric seeds as proposals, tune on actual render; retain no-translation semantics. Preserve trusted click commitment after compatibilitymousedown and pen-release matching, adapting drag/capture/blur cancellation and no scroll-jacking. Touch horizontal look plus native verticalscroll/pinch; explicit UI direction/reset commands. interactionEnabled=false immediately cancels gestures/hover, prevents look and selection; UI command sequencing is once-only and no stale replay. Selection never changes camera pose.
+
+Enclose/extend architecture around all reachable frusta; preserve useful gear detail, improve materials/contact/light. Required white music keyboard and drum kit remain on right. Near desk/keycap detail, monitor scale and layered depth are art gates; basic external dollhouse fails. Use original procedural assets only; no backend/media/paidgeneration/newdep. Keep demand-render/DPR/shadow/resource limits and no idle loops. Adapt meaningful CPU geometry/input/lifecycle tests without weakening unrelated behavior.
+
+Send assembled-ready early for root's actual visual gate; do not wait for exhaustive tests first. Fix source/art defects through owning performer, then independent critique and report `design/studio-v2/scene-report.md` with camera poses/bounds, source freeze, test scope and actual visual feedback. Do not self-approve screenshots without inspection. No overall product completion claim.
+
+Architect A1 amendment: replace orthographic touch-projection assumptions with visible, in-front, finite/clipped and occlusion-safe selection. Right-side music-view touches must not activate behind-camera screens. Conservatively omit expansion for near-plane crossing. Freeze internal model/occluder representation before parallel work. Test independent geometry preconditions, exact and expanded negative cases plus positive visible selection. Preserve yaw/pitch through resize/visibility/panel state; process commands/interactionEnabled independently of selectedProjectId changes.
+

@@ -1,0 +1,442 @@
+TAP version 13
+# Subtest: synthetic bytes: actual installed loader, linked identities, COLOR_0 and one placement
+ok 1 - synthetic bytes: actual installed loader, linked identities, COLOR_0 and one placement
+  ---
+  duration_ms: 105.6064
+  type: 'test'
+  ...
+# Subtest: baseline: binder exact targets/borders, truthful canvases, blocker coverage and replacement isolation
+ok 2 - baseline: binder exact targets/borders, truthful canvases, blocker coverage and replacement isolation
+  ---
+  duration_ms: 57.2211
+  type: 'test'
+  ...
+# Subtest: proposal: binder exact targets/borders, truthful canvases, blocker coverage and replacement isolation
+ok 3 - proposal: binder exact targets/borders, truthful canvases, blocker coverage and replacement isolation
+  ---
+  duration_ms: 57.4316
+  type: 'test'
+  ...
+# Subtest: COLOR_0 real allocation path 5126
+ok 4 - COLOR_0 real allocation path 5126
+  ---
+  duration_ms: 45.4515
+  type: 'test'
+  ...
+# Subtest: COLOR_0 real allocation path 5121
+ok 5 - COLOR_0 real allocation path 5121
+  ---
+  duration_ms: 41.77
+  type: 'test'
+  ...
+# Subtest: COLOR_0 real allocation path 5123
+ok 6 - COLOR_0 real allocation path 5123
+  ---
+  duration_ms: 36.4298
+  type: 'test'
+  ...
+# Subtest: validator rejects COLOR_0 alpha VEC4 even with recomputed candidate hash
+ok 7 - validator rejects COLOR_0 alpha VEC4 even with recomputed candidate hash
+  ---
+  duration_ms: 4.535
+  type: 'test'
+  ...
+# Subtest: validator rejects COLOR_0 forbidden material even with recomputed candidate hash
+ok 8 - validator rejects COLOR_0 forbidden material even with recomputed candidate hash
+  ---
+  duration_ms: 4.1319
+  type: 'test'
+  ...
+# Subtest: validator rejects COLOR_0 outside unit range even with recomputed candidate hash
+ok 9 - validator rejects COLOR_0 outside unit range even with recomputed candidate hash
+  ---
+  duration_ms: 3.3859
+  type: 'test'
+  ...
+# Subtest: validator rejects COLOR_0 NaN even with recomputed candidate hash
+ok 10 - validator rejects COLOR_0 NaN even with recomputed candidate hash
+  ---
+  duration_ms: 3.3281
+  type: 'test'
+  ...
+# Subtest: validator rejects COLOR_0 unnormalized bytes even with recomputed candidate hash
+ok 11 - validator rejects COLOR_0 unnormalized bytes even with recomputed candidate hash
+  ---
+  duration_ms: 6.007
+  type: 'test'
+  ...
+# Subtest: validator rejects unknown attribute even with recomputed candidate hash
+ok 12 - validator rejects unknown attribute even with recomputed candidate hash
+  ---
+  duration_ms: 3.5855
+  type: 'test'
+  ...
+# Subtest: validator rejects cycle even with recomputed candidate hash
+ok 13 - validator rejects cycle even with recomputed candidate hash
+  ---
+  duration_ms: 3.4421
+  type: 'test'
+  ...
+# Subtest: validator rejects duplicate node even with recomputed candidate hash
+ok 14 - validator rejects duplicate node even with recomputed candidate hash
+  ---
+  duration_ms: 4.3093
+  type: 'test'
+  ...
+# Subtest: validator rejects missing reserved target even with recomputed candidate hash
+ok 15 - validator rejects missing reserved target even with recomputed candidate hash
+  ---
+  duration_ms: 5.2929
+  type: 'test'
+  ...
+# Subtest: validator rejects matrix and TRS even with recomputed candidate hash
+ok 16 - validator rejects matrix and TRS even with recomputed candidate hash
+  ---
+  duration_ms: 3.4653
+  type: 'test'
+  ...
+# Subtest: validator rejects double root transform even with recomputed candidate hash
+ok 17 - validator rejects double root transform even with recomputed candidate hash
+  ---
+  duration_ms: 3.2904
+  type: 'test'
+  ...
+# Subtest: validator rejects reflection even with recomputed candidate hash
+ok 18 - validator rejects reflection even with recomputed candidate hash
+  ---
+  duration_ms: 5.1255
+  type: 'test'
+  ...
+# Subtest: validator rejects shear even with recomputed candidate hash
+ok 19 - validator rejects shear even with recomputed candidate hash
+  ---
+  duration_ms: 5.5005
+  type: 'test'
+  ...
+# Subtest: validator rejects arbitrary opaque omission even with recomputed candidate hash
+ok 20 - validator rejects arbitrary opaque omission even with recomputed candidate hash
+  ---
+  duration_ms: 3.6546
+  type: 'test'
+  ...
+# Subtest: validator rejects interactive loophole even with recomputed candidate hash
+ok 21 - validator rejects interactive loophole even with recomputed candidate hash
+  ---
+  duration_ms: 3.0421
+  type: 'test'
+  ...
+# Subtest: validator rejects generic target-role exception even with recomputed candidate hash
+ok 22 - validator rejects generic target-role exception even with recomputed candidate hash
+  ---
+  duration_ms: 3.1768
+  type: 'test'
+  ...
+# Subtest: validator rejects transparent caster even with recomputed candidate hash
+ok 23 - validator rejects transparent caster even with recomputed candidate hash
+  ---
+  duration_ms: 3.592
+  type: 'test'
+  ...
+# Subtest: validator rejects external URI even with recomputed candidate hash
+ok 24 - validator rejects external URI even with recomputed candidate hash
+  ---
+  duration_ms: 2.6889
+  type: 'test'
+  ...
+# Subtest: validator rejects forged declared bounds even with recomputed candidate hash
+ok 25 - validator rejects forged declared bounds even with recomputed candidate hash
+  ---
+  duration_ms: 2.9011
+  type: 'test'
+  ...
+# Subtest: validator rejects reversed target UV even with recomputed candidate hash
+ok 26 - validator rejects reversed target UV even with recomputed candidate hash
+  ---
+  duration_ms: 3.4205
+  type: 'test'
+  ...
+# Subtest: validator rejects target front winding even with recomputed candidate hash
+ok 27 - validator rejects target front winding even with recomputed candidate hash
+  ---
+  duration_ms: 3.7826
+  type: 'test'
+  ...
+# Subtest: validator rejects overlapping binding triangles with equal summed area even with recomputed candidate hash
+ok 28 - validator rejects overlapping binding triangles with equal summed area even with recomputed candidate hash
+  ---
+  duration_ms: 3.8494
+  type: 'test'
+  ...
+# Subtest: validator rejects rounded or displaced exact binding even with recomputed candidate hash
+ok 29 - validator rejects rounded or displaced exact binding even with recomputed candidate hash
+  ---
+  duration_ms: 3.1152
+  type: 'test'
+  ...
+# Subtest: manifest is evidence to compare, never proof: forged counts and hashes rejected
+ok 30 - manifest is evidence to compare, never proof: forged counts and hashes rejected
+  ---
+  duration_ms: 14.2728
+  type: 'test'
+  ...
+# Subtest: actual picker retains linked leaf and ancestor visibility plus nocast blocking
+ok 31 - actual picker retains linked leaf and ancestor visibility plus nocast blocking
+  ---
+  duration_ms: 54.0391
+  type: 'test'
+  ...
+# Subtest: bound target opaque back blocks expanded finger; near, behind-camera and nonfinite input reject
+ok 32 - bound target opaque back blocks expanded finger; near, behind-camera and nonfinite input reject
+  ---
+  duration_ms: 52.0769
+  type: 'test'
+  ...
+# Subtest: imported-geometry instanced blocker obeys instance depth and ancestor visibility in existing picker
+ok 33 - imported-geometry instanced blocker obeys instance depth and ancestor visibility in existing picker
+  ---
+  duration_ms: 38.8412
+  type: 'test'
+  ...
+# Subtest: binder rejects postparse arbitrary opaque omission before allocating replacements
+ok 34 - binder rejects postparse arbitrary opaque omission before allocating replacements
+  ---
+  duration_ms: 32.3376
+  type: 'test'
+  ...
+# Subtest: null slot from swallowed decode failure rejects; late sibling drains after pending decode
+ok 35 - null slot from swallowed decode failure rejects; late sibling drains after pending decode
+  ---
+  duration_ms: 51.1219
+  type: 'test'
+  ...
+# Subtest: late abort during decode closes all allocations once after last sharing texture
+ok 36 - late abort during decode closes all allocations once after last sharing texture
+  ---
+  duration_ms: 26.7476
+  type: 'test'
+  ...
+# Subtest: accessorFailure: independent allocation cleanup
+ok 37 - accessorFailure: independent allocation cleanup
+  ---
+  duration_ms: 29.3974
+  type: 'test'
+  ...
+# Subtest: materialFailure: independent allocation cleanup
+ok 38 - materialFailure: independent allocation cleanup
+  ---
+  duration_ms: 30.2865
+  type: 'test'
+  ...
+# Subtest: throwDispose: independent allocation cleanup
+ok 39 - throwDispose: independent allocation cleanup
+  ---
+  duration_ms: 51.9441
+  type: 'test'
+  ...
+# Subtest: late postparse abort never returns an attachable root
+ok 40 - late postparse abort never returns an attachable root
+  ---
+  duration_ms: 55.2717
+  type: 'test'
+  ...
+# Subtest: repeated load has independent resources, no global cache
+ok 41 - repeated load has independent resources, no global cache
+  ---
+  duration_ms: 105.9706
+  type: 'test'
+  ...
+# Subtest: HTMLImage fallback success: URLs and handlers cleaned
+ok 42 - HTMLImage fallback success: URLs and handlers cleaned
+  ---
+  duration_ms: 56.1548
+  type: 'test'
+  ...
+# Subtest: HTMLImage fallback failure: URLs and handlers cleaned
+ok 43 - HTMLImage fallback failure: URLs and handlers cleaned
+  ---
+  duration_ms: 65.3313
+  type: 'test'
+  ...
+# Subtest: HTMLImage fallback abort: URLs and handlers cleaned
+ok 44 - HTMLImage fallback abort: URLs and handlers cleaned
+  ---
+  duration_ms: 51.105
+  type: 'test'
+  ...
+# Subtest: FKT-1 inventory pins bind exact source bytes and bundled JSON content
+ok 45 - FKT-1 inventory pins bind exact source bytes and bundled JSON content
+  ---
+  duration_ms: 3.2389
+  type: 'test'
+  ...
+# Subtest: FKT-1 real M1 baseline: exact author manifest, permitted proxies and missing later gear
+ok 46 - FKT-1 real M1 baseline: exact author manifest, permitted proxies and missing later gear
+  ---
+  duration_ms: 1936.3895
+  type: 'test'
+  ...
+# Subtest: FKT-1 real M1 baseline: rejects zero inventory hash with original valid bytes
+ok 47 - FKT-1 real M1 baseline: rejects zero inventory hash with original valid bytes
+  ---
+  duration_ms: 1980.4348
+  type: 'test'
+  ...
+# Subtest: FKT-1 real M1 baseline: rejects incomplete final with original valid bytes
+ok 48 - FKT-1 real M1 baseline: rejects incomplete final with original valid bytes
+  ---
+  duration_ms: 2081.3978
+  type: 'test'
+  ...
+# Subtest: FKT-1 real M1 baseline: rejects stage trailing newline with original valid bytes
+ok 49 - FKT-1 real M1 baseline: rejects stage trailing newline with original valid bytes
+  ---
+  duration_ms: 1791.8844
+  type: 'test'
+  ...
+# Subtest: FKT-1 real M1 baseline: rejects unknown stage with original valid bytes
+ok 50 - FKT-1 real M1 baseline: rejects unknown stage with original valid bytes
+  ---
+  duration_ms: 2028.1725
+  type: 'test'
+  ...
+# Subtest: FKT-1 real M1 baseline: rejects non-string stage with original valid bytes
+ok 51 - FKT-1 real M1 baseline: rejects non-string stage with original valid bytes
+  ---
+  duration_ms: 2125.4382
+  type: 'test'
+  ...
+# Subtest: FKT-1 real M1 baseline: rejects variant trailing newline with original valid bytes
+ok 52 - FKT-1 real M1 baseline: rejects variant trailing newline with original valid bytes
+  ---
+  duration_ms: 1926.0125
+  type: 'test'
+  ...
+# Subtest: FKT-1 real M1 baseline: rejects non-string variant with original valid bytes
+ok 53 - FKT-1 real M1 baseline: rejects non-string variant with original valid bytes
+  ---
+  duration_ms: 1868.593
+  type: 'test'
+  ...
+# Subtest: FKT-1 real M1 proposal: exact author manifest, permitted proxies and missing later gear
+ok 54 - FKT-1 real M1 proposal: exact author manifest, permitted proxies and missing later gear
+  ---
+  duration_ms: 2424.071
+  type: 'test'
+  ...
+# Subtest: FKT-1 real M1 proposal: rejects zero inventory hash with original valid bytes
+ok 55 - FKT-1 real M1 proposal: rejects zero inventory hash with original valid bytes
+  ---
+  duration_ms: 2045.5636
+  type: 'test'
+  ...
+# Subtest: FKT-1 real M1 proposal: rejects incomplete final with original valid bytes
+ok 56 - FKT-1 real M1 proposal: rejects incomplete final with original valid bytes
+  ---
+  duration_ms: 2137.3933
+  type: 'test'
+  ...
+# Subtest: FKT-1 real M1 proposal: rejects stage trailing newline with original valid bytes
+ok 57 - FKT-1 real M1 proposal: rejects stage trailing newline with original valid bytes
+  ---
+  duration_ms: 2056.5877
+  type: 'test'
+  ...
+# Subtest: FKT-1 real M1 proposal: rejects unknown stage with original valid bytes
+ok 58 - FKT-1 real M1 proposal: rejects unknown stage with original valid bytes
+  ---
+  duration_ms: 2409.6166
+  type: 'test'
+  ...
+# Subtest: FKT-1 real M1 proposal: rejects non-string stage with original valid bytes
+ok 59 - FKT-1 real M1 proposal: rejects non-string stage with original valid bytes
+  ---
+  duration_ms: 2234.1778
+  type: 'test'
+  ...
+# Subtest: FKT-1 real M1 proposal: rejects variant trailing newline with original valid bytes
+ok 60 - FKT-1 real M1 proposal: rejects variant trailing newline with original valid bytes
+  ---
+  duration_ms: 2330.3194
+  type: 'test'
+  ...
+# Subtest: FKT-1 real M1 proposal: rejects non-string variant with original valid bytes
+ok 61 - FKT-1 real M1 proposal: rejects non-string variant with original valid bytes
+  ---
+  duration_ms: 2679.5025
+  type: 'test'
+  ...
+# Subtest: FKT-1 original synthetic: rejects zero inventory hash with original valid bytes
+ok 62 - FKT-1 original synthetic: rejects zero inventory hash with original valid bytes
+  ---
+  duration_ms: 56.0299
+  type: 'test'
+  ...
+# Subtest: FKT-1 original synthetic: rejects incomplete final with original valid bytes
+ok 63 - FKT-1 original synthetic: rejects incomplete final with original valid bytes
+  ---
+  duration_ms: 56.666
+  type: 'test'
+  ...
+# Subtest: FKT-1 original synthetic: rejects stage trailing newline with original valid bytes
+ok 64 - FKT-1 original synthetic: rejects stage trailing newline with original valid bytes
+  ---
+  duration_ms: 60.6587
+  type: 'test'
+  ...
+# Subtest: FKT-1 original synthetic: rejects unknown stage with original valid bytes
+ok 65 - FKT-1 original synthetic: rejects unknown stage with original valid bytes
+  ---
+  duration_ms: 58.6153
+  type: 'test'
+  ...
+# Subtest: FKT-1 original synthetic: rejects non-string stage with original valid bytes
+ok 66 - FKT-1 original synthetic: rejects non-string stage with original valid bytes
+  ---
+  duration_ms: 65.2449
+  type: 'test'
+  ...
+# Subtest: FKT-1 original synthetic: rejects variant trailing newline with original valid bytes
+ok 67 - FKT-1 original synthetic: rejects variant trailing newline with original valid bytes
+  ---
+  duration_ms: 63.2928
+  type: 'test'
+  ...
+# Subtest: FKT-1 original synthetic: rejects non-string variant with original valid bytes
+ok 68 - FKT-1 original synthetic: rejects non-string variant with original valid bytes
+  ---
+  duration_ms: 51.7907
+  type: 'test'
+  ...
+# Subtest: FKT-1 all 59 IDs: admit structurally complete synthetic final
+ok 69 - FKT-1 all 59 IDs: admit structurally complete synthetic final
+  ---
+  duration_ms: 111.857
+  type: 'test'
+  ...
+# Subtest: FKT-1 all 59 IDs: reject final proxy flag
+ok 70 - FKT-1 all 59 IDs: reject final proxy flag
+  ---
+  duration_ms: 49.8428
+  type: 'test'
+  ...
+# Subtest: FKT-1 all 59 IDs: reject final proxy name
+ok 71 - FKT-1 all 59 IDs: reject final proxy name
+  ---
+  duration_ms: 43.1803
+  type: 'test'
+  ...
+# Subtest: FKT-1 bundled inventory drift rejects despite unchanged candidate identity
+ok 72 - FKT-1 bundled inventory drift rejects despite unchanged candidate identity
+  ---
+  duration_ms: 32.0565
+  type: 'test'
+  ...
+1..72
+# tests 72
+# suites 0
+# pass 72
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 36772.6567

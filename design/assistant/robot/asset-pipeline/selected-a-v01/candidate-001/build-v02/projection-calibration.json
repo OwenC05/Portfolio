@@ -1,0 +1,74 @@
+{
+  "baselineReceiptPath": "C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\integration\\baseline-2026-11-16\\source-receipt.json",
+  "baselineSha256": "5594217fe60a926cdb74f7ccebcde6cef7c72d85d6baaef8737e21af8858bbc6",
+  "baselineObservedAt": "2026-11-16T13:38:10.987Z",
+  "baselineCamera": {
+    "source": "components/studio/scene/view-config.ts:9",
+    "type": "PerspectiveCamera",
+    "eyeWorldUnits": [
+      -0.7,
+      2.8,
+      3.4
+    ],
+    "verticalFovDegrees": {
+      "desktop": 58,
+      "mobile": 64
+    },
+    "homeDegrees": {
+      "desktop": {
+        "yaw": -4,
+        "pitch": -6
+      },
+      "mobile": {
+        "yaw": -13,
+        "pitch": -8
+      }
+    },
+    "yawBoundsDegrees": [
+      -38,
+      58
+    ],
+    "pitchBoundsDegrees": [
+      -16,
+      12
+    ],
+    "nearWorldUnits": 0.1,
+    "farWorldUnits": 30,
+    "convention": "Y up; heading zero faces -Z, positive yaw faces +X, positive pitch up; eye never translates.",
+    "mobilePredicate": "window.innerWidth <= 640 || host.width / host.height < 0.9",
+    "rendererDprCaps": {
+      "desktop": 2,
+      "mobile": 1.5
+    },
+    "resizeBehavior": "FOV/aspect/DPR update; home chosen once on first nonzero host render, existing yaw/pitch retained on resize.",
+    "sourceOnly": true
+  },
+  "baselineRoomCandidate": "assistant-production-pilot-v03-c0348b7-baseline-2026-11-16",
+  "projection": "isolated sensitivity image at actual fixed eye, mobile home yaw/pitch and FOV; assumed asset centre two metres along home ray; studio lighting, no room",
+  "viewport": [
+    320,
+    568
+  ],
+  "verticalFovDegrees": 64,
+  "assumedDistanceMetres": 2,
+  "externalRoomScaleLater": 2,
+  "evidenceOnlyRootAnchorBlenderMetres": [
+    -0.793994128704071,
+    0.22625812888145447,
+    1.0668247938156128
+  ],
+  "actualEyeBlenderMetres": [
+    -0.3499999940395355,
+    -1.7000000476837158,
+    1.399999976158142
+  ],
+  "cssPixelScale": 1,
+  "actualRoomPlacement": null,
+  "actualRoomOcclusionTested": false,
+  "mobileAcceptance": false,
+  "pixelEstimatesAtImageCentre": {
+    "assetHeight": 132.17875486355825,
+    "pupilDiameter": 6.851356897546195,
+    "highlightDiameter": 1.9183799313129342
+  }
+}

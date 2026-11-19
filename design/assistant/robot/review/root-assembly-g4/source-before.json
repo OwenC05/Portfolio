@@ -1,0 +1,62 @@
+{
+  "capturedAt": "2026-11-18T17:53:19.622Z",
+  "scope": "Root assembly and fixed consumers/helpers; actively edited G2 implementation and lib/studio-contract.ts are excluded from immutable-source claims",
+  "files": [
+    {
+      "path": "components/studio/StudioExperience.tsx",
+      "sha256": "d65b4aeb2f00af40700ebb90e42087a267d6135c520c37582a12f4ffc39f3403"
+    },
+    {
+      "path": ".omx/artifacts/StudioExperience.pre-g4.tsx",
+      "sha256": "4e8628d8b91c840a494174d559e30b7967bc062f773aa37d74f53f3094891e16"
+    },
+    {
+      "path": "design/assistant/robot/integration/root-assembly.md",
+      "sha256": "d55e3f9c44c9e198800a908339e7a3911de21bd76e5b3a9c198d5f8857ffe8ab"
+    },
+    {
+      "path": "design/assistant/robot/integration/scene-implementation/interface.md",
+      "sha256": "1a64deaedd2870dd3649c65a6eef7b2465208928aab704b37132ff9142023a18"
+    },
+    {
+      "path": "components/assistant/useAssistantRun.ts",
+      "sha256": "b6149c54687f02605f7f5448641f34741482e10527df4ecbd9736e510bad96c7"
+    },
+    {
+      "path": "lib/assistant/run-state.ts",
+      "sha256": "1b804c6b9e0f528ef197e5a01efd5f39dafe8176f9dadb4a36268c96e69e5df7"
+    },
+    {
+      "path": "lib/assistant/run-transport.ts",
+      "sha256": "932db03394adddf2d568a1ea002bbaaf142da4151b1f70a9733e7b7f8a33283e"
+    },
+    {
+      "path": "lib/assistant/events.ts",
+      "sha256": "95e37b16c181cb13e663695f73c5555608d873c12d4e9505c888d71c87f5e491"
+    },
+    {
+      "path": "app/studio/panel-navigation.ts",
+      "sha256": "e67abf654d6fd286edc536ec3f29290ca5a6f2e67daeb91ca596ae3fd976e347"
+    },
+    {
+      "path": "app/studio/panel-scroll.ts",
+      "sha256": "ef13a9d34aec31eb245232ada5675bc1cf010dd41bdd352ecbefc72fe0daa188"
+    },
+    {
+      "path": "app/studio/StudioShell.tsx",
+      "sha256": "ef637b1d61f39fd0cddc34f2697ce35546735f05219acb435d9e7d7c314c6738"
+    },
+    {
+      "path": "components/studio/assistant/AssistantEntry.tsx",
+      "sha256": "065d4115428f0dc042a6a3c7e599179ddd7b5aa88495eaed90f9c546c60853a9"
+    },
+    {
+      "path": "components/studio/assistant/StudioAssistantPanel.tsx",
+      "sha256": "103327ed46ee44cb7364873cd72daa7d271c086bcee75d6a5bef4446dabd5511"
+    },
+    {
+      "path": "lib/studio-content.ts",
+      "sha256": "36e08b40cfb779f3f05cc17623766f1a2fb7b8f876cac73ac9b12db381764662"
+    }
+  ]
+}

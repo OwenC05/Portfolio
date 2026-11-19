@@ -1,0 +1,152 @@
+{
+  "schema": "studio-v2-generation-request/1",
+  "preparedAt": "2026-11-14",
+  "preparedBy": "Claude art author, Orca task task_2db318b9a465",
+  "status": "approvalPending",
+  "submission": "notSubmitted",
+  "creditsSpentByPreparation": 0,
+  "authority": "Root owns paid approval and submission. Each request is approved separately, for exactly one job, after a requote with the exact params below. Approval of one does not approve the other.",
+  "privacy": "Text-only conditioning for both requests. No image, private photo, capture, owner name or project text is sent. Analytics/context fields must stay generic.",
+  "requests": [
+    {
+      "id": "higgsfield-look-frame-c-right-limit",
+      "status": "approvalPending",
+      "submission": "notSubmitted",
+      "purpose": "One still look-reference frame for the right-limit view: target for door timber tone and moulding readability, linen lamp-shade emission shape, and warm light pooling on wall and ceiling. Compared by eye with the Blender pilot renders and the runtime right-up capture. A painting of intent only; geometry is never taken from it.",
+      "provider": "Higgsfield",
+      "tool": "mcp__higgsfield__generate_image",
+      "toolArguments": {
+        "context": "Single look-reference still for an interior 3D scene lighting and material study.",
+        "params": {
+          "model": "gpt_image_2_6",
+          "prompt": "Interior of a small, cosy home music studio at night: a rectangular room about 4.8 m wide, 4.4 m deep and 2.6 m high. Eye-level view from a seated position, eye about 1.35 m above the floor, near the middle of the room, looking toward the right-hand wall and tilted slightly upward so the junction of wall and ceiling is in frame. Natural perspective, moderate lens, about 58 degrees vertical field of view, level horizon, no distortion.\n\nOn the right of the frame, set in the right-hand wall, a closed warm honey-oak frame-and-panel door with two raised rectangular panels, bevelled mouldings, a dark oak architrave and a round brass knob. The timber grain and the panel mouldings are clearly visible and softly lit; the door is as bright as the wall around it.\n\nLeft of the door, a square window with a dark oak frame and sill, an ivory slatted blind drawn halfway, and behind it a deep blue dusk sky with a low dark roofline and a few small lit windows.\n\nLeft of the window, a slim floor lamp: round dark base, thin brushed pale-metal pole, and a tapered linen drum shade. The shade glows warm amber at its centre and falls gradually darker toward its top and bottom rims, with visible fabric weave, a narrow trim band at each rim and one vertical seam. No part of the shade is flat white. The lamp throws a soft warm pool of light onto the wall behind it and onto the door.\n\nWalls are matte olive-charcoal plaster with gentle tonal variation. Overhead, exposed dark oak ceiling beams catch warm light along their lower edges; a plain cornice joins wall and ceiling; dark skirting runs along smoked timber floorboards. Every surface in view is readable; the darkest areas still show form and colour.\n\nPalette: olive-charcoal plaster, honey oak, dark oak, ivory, brushed pale metal, brass, smoked timber, warm tungsten light with one cool dusk-blue counterpoint from the window.\n\nStyle: stylised 3D illustration, clean hand-modelled forms with soft bevels, matte painted materials with gentle roughness variation, soft contact shadows, light pooling on walls, restrained glow.\n\nNo people, no logos, no brand names, no readable text or signage, no neon, no cyberpunk, no photorealism, no fisheye or wide-angle distortion, no exterior view, no cutaway, dollhouse or isometric view, no extra furniture, no instruments, no audio or computer equipment, no screens, no posters or wall art, no glass in the door, no black door, no blown-out white lamp, no lens flare, no heavy bloom, no fog.",
+          "size": "1440x900",
+          "quality": "high",
+          "resolution": "2k",
+          "output_format": "png",
+          "count": 1,
+          "use_unlim": false
+        }
+      },
+      "parameterNotes": {
+        "model": "gpt_image_2_6 confirmed live by models_explore(get) in this session: GPT Image 2.6, provider OpenAI.",
+        "documentedOptions": {
+          "quality": ["auto", "low", "medium", "high", "xhigh", "max"],
+          "resolution": ["1k", "2k", "4k"],
+          "output_format": ["png", "jpeg", "webp", "gif", "svg"],
+          "size": "WIDTHxHEIGHT or auto; catalogue text adds 'dimensions must divide by 16'",
+          "aspect_ratios": ["auto", "1:1", "3:2", "2:3", "4:3", "3:4", "16:9", "9:16", "21:9", "27:16", "16:27", "9:8", "8:9", "4:5", "5:4"]
+        },
+        "negativePrompt": "No negative-prompt field is documented for this model or tool. Constraints are therefore the final 'No ...' paragraph of prompt.",
+        "aspectRatio": "Omitted on purpose. 16:10 is not a listed ratio; the explicit size carries the frame. Root's earlier quote sent aspect_ratio 'auto' alongside size.",
+        "count": "Tool-level count 1. The model's own batch_size parameter (default 1) is left unset.",
+        "use_unlim": "false = pay from credits. The catalogue reported the unlimited allowance as unavailable for this account, so no allowance choice should arise.",
+        "notSent": ["medias (no reference images)", "folder_id (no project or folder is to be created)", "background", "get_cost (add true only for the requote)"]
+      },
+      "openItemsForRoot": [
+        "SIZE RISK: 900 is not divisible by 16 (1440 is). The catalogue wording may apply to all outputs, not only GIF. The requote with these exact params must be checked for a rejection or a returned 'adjustments' entry. If 1440x900 is refused or altered, the prepared substitute is size '1920x1200' (exact 16:10, both divisible by 16, fits the 2k tier, downscales by 0.75 to 1440x900); that substitute needs its own quote.",
+        "How 'resolution: 2k' interacts with an explicit smaller 'size' is not documented in the catalogue entry. Record the delivered pixel dimensions.",
+        "Seed is not an exposed parameter; the result is not reproducible on demand."
+      ],
+      "expectedCredits": {
+        "amount": 2.75,
+        "unit": "Higgsfield credits",
+        "provenance": "Root cost-only preflight recorded in .omx/context/higgsfield-studio-reference-quote.json (model gpt_image_2_6, quality high, resolution 2k, png, size 1440x900, count 1, aspect_ratio auto, get_cost true). Not re-quoted by me: I did not call the generation tool, even in cost mode.",
+        "differsFromQuotedCall": ["prompt text (longer, self-contained)", "aspect_ratio omitted instead of 'auto'", "use_unlim false added", "context added"],
+        "requoteRequired": true,
+        "requoteMethod": "Same toolArguments with params.get_cost true; documented as returning cost without submitting a job. Approval ceiling: 2.75 credits. A higher quote needs fresh approval.",
+        "balanceObserved": "1157.25 credits, plan 'plus', read-only balance call in this session on 2026-11-14."
+      },
+      "expectedOutput": {
+        "count": 1,
+        "format": "PNG",
+        "dimensions": "1440x900 landscape (16:10), or as delivered if the server adjusts; record actual",
+        "saveTo": "design/studio-v2/asset-pipeline/pilot-right-limit/look-frames/frame-c-right-limit.png",
+        "recordBeside": ["exact prompt and params", "job id", "delivered dimensions", "credits charged", "any server adjustments"]
+      },
+      "successCriteria": [
+        "Door reads as lit honey-oak with two panels, visible mouldings and grain, brass knob; no black or hole-like panels",
+        "Lamp shade shows a warm centre-to-rim gradient with weave or seam; no flat white patch",
+        "Right wall and ceiling beams sit in a readable tonal range with visible light pooling; nothing falls to black",
+        "Eye-level interior view, olive-charcoal / oak / ivory / brass palette with one dusk-blue counterpoint",
+        "No added objects, people, text or branding"
+      ],
+      "failCriteria": [
+        "Door dark, glazed, or missing its panels",
+        "Shade clipped to white or shown as a bare bulb",
+        "Photoreal, neon, fisheye, cutaway or exterior result",
+        "Any instrument, equipment, screen, poster, person, logo or readable text",
+        "Palette departs from the established one"
+      ],
+      "stopCriteria": [
+        "Exactly one image. No retry, variant, upscale, edit or prompt iteration without a new recorded approval.",
+        "Stop before submitting if the requote exceeds 2.75 credits, returns adjustments, or returns an allowance (unlim) choice.",
+        "On a transport timeout do not resubmit; resolve the original job's outcome first.",
+        "On a fail result: record why, keep the file as a rejected reference, stop."
+      ]
+    },
+    {
+      "id": "meshy-mouse-base-mesh",
+      "status": "approvalPending",
+      "submission": "notSubmitted",
+      "purpose": "One untextured, editable base mesh of the desk mouse (the weakest desk object in the critique: 'a white box with a notch'). Cleaned, scaled and shaded in Blender with the shared ivory-plastic and rubber library materials. For a real-time web scene, hence the low face budget.",
+      "provider": "Meshy",
+      "tool": "mcp__meshy-mcp-server__meshy_text_to_3d",
+      "toolArguments": {
+        "prompt": "A simple modern computer mouse, generic and unbranded, one whole object. Low, smooth, left-right symmetrical ambidextrous shell: flat underside, sides that curve inward slightly at the waist, an arched back that is highest just behind the middle and slopes down to a rounded front. The top front half is split into two primary buttons by one thin straight groove along the centre line. A small ribbed scroll wheel sits in a short slot in that groove and stands slightly proud of the surface. One fine seam line runs around the shell where the top cover meets the base. Soft rounded edges, clean hard-surface product design, plain smooth surface. Proportions: 10 cm long, 6 cm wide, 3.5 cm tall. No cable, no logo, no text, no side buttons, no thumb rest, no lights, no vents, no mouse pad, no stand.",
+        "model_type": "smart-topology",
+        "ai_model": "meshy-t2.5",
+        "target_polycount": 3000,
+        "target_formats": ["glb"],
+        "response_format": "json"
+      },
+      "parameterNotes": {
+        "schemaSource": "Tool schema and server instructions loaded live in this session. Smart Topology: 'a clean, part-separated, triangle-only mesh made directly at target_polycount, ignoring remesh/decimation'; meshy-t2.5 range 100-30,000 faces.",
+        "untextured": "meshy_text_to_3d produces an untextured preview mesh. The texture stage is a separate tool (meshy_text_to_3d_refine, 10 credits) and is NOT part of this request.",
+        "correctionsToEarlierDraft": "pilot-right-limit/generation-prompts.md asked for 'quad-dominant' and 'symmetry on'. Per the live schema, Smart Topology is triangle-only (topology and should_remesh are ignored) and symmetry_mode is 'Deprecated: has no effect'. Both are dropped; symmetry is asked for in the prompt and enforced in Blender.",
+        "negativePrompt": "No negative-prompt field exists. Constraints are the closing 'No ...' sentence. Prompt limit is 800 characters; this prompt was measured under it (see notes file).",
+        "target_polycount": "3000 keeps the wheel slot, groove and seam legible in the base mesh; Blender cleanup reduces to the plan's ceiling of under 1,500 triangles.",
+        "notSent": ["auto_size (scale is set in Blender)", "origin_at (origin is set in Blender)", "pose_mode", "topology", "should_remesh", "geometry_resolution (standard models only, +5 credits)", "symmetry_mode (deprecated)"]
+      },
+      "openItemsForRoot": [
+        "Model choice is mine: meshy-t2.5 (schema: 'newest, sharper detail for game assets'). meshy-t2 is the documented alternative at the same listed price; root may substitute it.",
+        "No separate cost-preflight call exists on this server; the price is from documentation only. Confirm the charge afterwards against the balance (75 before).",
+        "No prop-sheet image job is requested. The plan's image route (frame E prop sheet, then image-to-3D) is an UNAPPROVED dependency and would cost more (image 3-9 credits plus mesh 5); it is not needed for this request."
+      ],
+      "expectedCredits": {
+        "amount": 5,
+        "unit": "Meshy credits",
+        "provenance": "Meshy MCP tool description and server instructions as loaded in this session: text-to-3d preview with meshy-t2 / meshy-t2.5 = 5 credits ('Prices match docs.meshy.ai/en/api/pricing as of 2026-10-12'). Agrees with root's handoff figure of 5 (untextured) and 15 (textured). Documentation price, not a live quote.",
+        "requoteRequired": true,
+        "requoteMethod": "Re-read the tool's cost line at submission time and compare balance before and after. Any change to ai_model (meshy-7.1 / latest / meshy-6 = 20) or adding geometry_resolution (+5) changes the price and needs fresh approval. target_polycount is not listed as affecting price.",
+        "balanceObserved": "75 credits (70 monthly, 5 permanent; monthly resets 2026-12-01), read-only meshy_check_balance in this session on 2026-11-14. Agrees with root's handoff."
+      },
+      "expectedOutput": {
+        "count": 1,
+        "format": "GLB, untextured, triangle mesh of about 3,000 faces, possibly in separate parts (shell, wheel)",
+        "retrieval": "meshy_get_task_status until SUCCEEDED, then meshy_download_model { task_id, format: 'glb', save_to } (both listed as free)",
+        "saveTo": "design/studio-v2/asset-pipeline/pilot-right-limit/meshy-raw/mouse-base.glb",
+        "recordBeside": ["exact prompt and params", "task id", "face count", "credits charged", "balance after"],
+        "scaleTarget": "Blender, metres, Z up: 0.100 m long (Y), 0.060 m wide (X), 0.035 m tall (Z); origin at ground contact; raw import kept untouched in collection MESHY_RAW",
+        "blenderCleanup": "Scale to 0.10 m length, mirror-symmetrise, remove floaters and internal faces, reduce to under 1,500 triangles, one UV set, shared ivory-plastic shell and rubber wheel materials; remodel the wheel as a clean cylinder if the generated one is soft."
+      },
+      "successCriteria": [
+        "One whole closed mouse shell, left-right symmetrical or trivially symmetrisable",
+        "Silhouette reads as a mouse: arched back highest behind the middle, tapered rounded front, flat underside",
+        "Centre groove and wheel are present and separable; a seam line or clean break exists around the base",
+        "Proportions close to 10 : 6 : 3.5",
+        "Blender cleanup estimated at under one hour"
+      ],
+      "failCriteria": [
+        "Box-like or lumpy form, missing wheel, or fused mushy button area",
+        "Cable, base plate, pad, extra buttons, branding or multiple objects",
+        "Open, self-intersecting or noisy surface that needs more than an hour of repair"
+      ],
+      "stopCriteria": [
+        "Exactly one generation. No retry, refine/texture, remesh, retexture or image job without a new recorded approval.",
+        "If the create call times out or errors, check meshy_list_tasks (task_type text-to-3d) before any second call; the task may already exist and be charged.",
+        "On a fail result: the mouse is hand-modelled in Blender, and Meshy is reconsidered for the remaining props before any further spend."
+      ]
+    }
+  ]
+}

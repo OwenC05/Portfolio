@@ -1,0 +1,36 @@
+{
+  "recordedUTC": "2026-11-14 21:16:34 UTC",
+  "sourceControllerSHA256": "728C12AFFD53A069FD684A725C53CEB39A046AD569A43314A9AC2DD5348222B0",
+  "harnessSHA256": "D26A7F4EB94678F1DBA7C32922F1FF35F3019231E71A712117E5E3D1AB49E2C4",
+  "cwd": "C:/Users/Owenc/orca/Portfolio",
+  "checks": [
+    {
+      "command": "node components/studio/scene/verify-controller.mjs",
+      "exitCode": 0,
+      "toolChunk": "bb4a51",
+      "log": "pen-final-cpu-tests.log",
+      "tests": 33,
+      "passed": 33
+    },
+    {
+      "command": "npm.cmd run build",
+      "exitCode": 0,
+      "toolChunk": "a3fde5",
+      "log": "pen-final-build.log",
+      "limitation": "Build prints known ESLint missing-plugin error despite exit0"
+    },
+    {
+      "command": ".\\node_modules\\.bin\\tsc.cmd --noEmit --incremental false --pretty false",
+      "exitCode": 0,
+      "toolChunk": "7c5dba",
+      "output": ""
+    },
+    {
+      "command": "Installed ESLint API in-memory next/core-web-vitals for11files",
+      "exitCode": 0,
+      "toolChunk": "1caf4e",
+      "output": "{\"files\":11,\"errors\":0,\"warnings\":0,\"scope\":\"Supplemental installed Next rules only; full configured lint remains blocked\"}\n",
+      "log": "pen-final-scoped-lint.json"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+name: Portfolio CI
+
+# Feature pushes are checked through their PR, avoiding duplicate push/PR runs.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
+env:
+  NEXT_TELEMETRY_DISABLED: '1'
+
+jobs:
+  check:
+    name: ${{ matrix.name }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: TypeScript
+            command: npm run typecheck
+          - name: Studio tests (CPU)
+            command: node --test components/studio/scene/verify-controller.mjs components/studio/scene/verify-pilot.mjs components/studio/scene/verify-full-kit.mjs
+          - name: Assistant tests and retrieval evaluation
+            command: npm run test:assistant && npm run eval:assistant
+          - name: ESLint
+            command: npm run lint
+          - name: Production build
+            # ESLint has its own failing gate; do not suppress its failure.
+            command: npm run build -- --no-lint
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Set up Node.js
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: package-lock.json
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Run ${{ matrix.name }}
+        run: ${{ matrix.command }}
+      - name: Measure all-route static JavaScript ceiling
+        if: success() && matrix.name == 'Production build'
+        run: node .github/scripts/measure-studio-js-budget.mjs

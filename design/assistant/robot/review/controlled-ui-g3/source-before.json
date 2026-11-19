@@ -1,0 +1,77 @@
+{
+  "capturedAt": "2026-11-17T14:18:07.170Z",
+  "files": [
+    {
+      "path": "app/studio/StudioShell.tsx",
+      "sha256": "ef637b1d61f39fd0cddc34f2697ce35546735f05219acb435d9e7d7c314c6738"
+    },
+    {
+      "path": "app/studio/studio.module.css",
+      "sha256": "81bd8787a6259212d7244702ffeb14ce0815aa9a1a51f5f47bb2d3ef4b0549ea"
+    },
+    {
+      "path": "components/studio/assistant/AssistantEntry.tsx",
+      "sha256": "065d4115428f0dc042a6a3c7e599179ddd7b5aa88495eaed90f9c546c60853a9"
+    },
+    {
+      "path": "components/studio/assistant/StudioAssistantPanel.tsx",
+      "sha256": "9af87603bfe18017e86a254457e33a3dba8064069ed94c2d90436b3162290bfa"
+    },
+    {
+      "path": "components/studio/assistant/assistant.module.css",
+      "sha256": "bd3e77104680db29d09bef5e4abd8314a6de5de33b26ee1d40dca9769c2f5452"
+    },
+    {
+      "path": "components/studio/StudioExperience.tsx",
+      "sha256": "4e8628d8b91c840a494174d559e30b7967bc062f773aa37d74f53f3094891e16"
+    },
+    {
+      "path": "lib/assistant/run-state.ts",
+      "sha256": "1b804c6b9e0f528ef197e5a01efd5f39dafe8176f9dadb4a36268c96e69e5df7"
+    },
+    {
+      "path": "lib/assistant/run-transport.ts",
+      "sha256": "932db03394adddf2d568a1ea002bbaaf142da4151b1f70a9733e7b7f8a33283e"
+    },
+    {
+      "path": "components/assistant/useAssistantRun.ts",
+      "sha256": "b6149c54687f02605f7f5448641f34741482e10527df4ecbd9736e510bad96c7"
+    },
+    {
+      "path": "lib/assistant/events.ts",
+      "sha256": "95e37b16c181cb13e663695f73c5555608d873c12d4e9505c888d71c87f5e491"
+    },
+    {
+      "path": "lib/studio-content.ts",
+      "sha256": "36e08b40cfb779f3f05cc17623766f1a2fb7b8f876cac73ac9b12db381764662"
+    },
+    {
+      "path": "lib/studio-contract.ts",
+      "sha256": "64f88fd30b896c88c87a5631349bbb2bb9a3bc8676c0a1a816f1e5720902c84d"
+    },
+    {
+      "path": "design/assistant/robot/integration/controlled-ui-implementation.md",
+      "sha256": "c35bba47c361a6500932f4653c1393a63fdb011f90e291c4499b5f5aa46ba1ed"
+    },
+    {
+      "path": "design/assistant/robot/placement-selected-a/coordinator-decisions.md",
+      "sha256": "ed8a585d7abf10717ca91be39a178b11eee06f3d08d2573ca43484a6a376ba46"
+    },
+    {
+      "path": "design/assistant/robot/placement-selected-a/ask-interface.md",
+      "sha256": "8ee74dbabe23a6a59a3ae9e51dce6d478bf43db5c654e93a2ed3577e6df84022"
+    },
+    {
+      "path": "design/assistant/robot/integration/state-contract.md",
+      "sha256": "e9c1916fd9a0529b6f3a11bdc7a1829b67c1e3b29ccdc5b58d6c05d970f9b26d"
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-matrix.md",
+      "sha256": "f4902daa932a0b3f3252a05dd3cb88892c4c77d76e01f5c0149440e485a0ec59"
+    },
+    {
+      "path": "design/assistant/robot/review/controlled-ui-g3/author-panel-check.cjs",
+      "sha256": "27d0de7323388e147e30a1ae8f7b8bb7c4f1717104fd840a29bd274ac2501485"
+    }
+  ]
+}

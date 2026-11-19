@@ -1,0 +1,12 @@
+{
+    "checkedAt":  "2026-11-17T14:00:48.8080200Z",
+    "pid":  22076,
+    "script":  "C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\asset-pipeline\\selected-a-v01\\candidate-001\\build-v02\\viewer-server.mjs",
+    "port":  4195,
+    "priorPidCommandLineAndPortOwnerVerified":  true,
+    "stopMethod":  "Stop-Process on verified owned PID; stdin route unavailable",
+    "immediateExitCheck":  "process exit was not yet observed immediately after Stop-Process",
+    "processAbsentAfter":  true,
+    "listenerAbsentAfter":  true,
+    "ownedBrowserTabClosed":  true
+}

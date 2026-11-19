@@ -1,0 +1,430 @@
+{
+  "schema": "m4-v04-inspection-transition-writer-fixtures/1",
+  "scope": "synthetic only; no candidate export or prior audit/suite rerun",
+  "exportAuthorization": false,
+  "candidateAcceptance": false,
+  "sourceHashes": {
+    "guard": "b79fca8ae91c97a8d817154a948e4b7388664e1ddbc5b11c1ffc744de513524c",
+    "tests": "c315f99d1f33afa4ed90a3c215ccf286e557fb9ebd3355f11afec21a0265bece"
+  },
+  "protectedBefore": {
+    "scene-coordination\\m4-v04-inspection-transition-guard.py": "b79fca8ae91c97a8d817154a948e4b7388664e1ddbc5b11c1ffc744de513524c",
+    "scene-coordination\\m4-v04-inspection-transition-guard-tests.py": "c315f99d1f33afa4ed90a3c215ccf286e557fb9ebd3355f11afec21a0265bece",
+    "scene-coordination\\m4-transition-guard.py": "ad62627f0683806ace2c8ebbb133ba83e72c7d95f1df8adc291a3706aa40da6b",
+    "scene-coordination\\m4-transition-guard-tests.py": "d17413ab80c0da964926f46c97cfc61f21f832fc25cddd521e8a49e19badf1c9",
+    "scene-coordination\\m4-transition-guard-tests-v2.json": "4b84d112964c0d1aa671aebab511f4ff250d8c0feb268531e1cc36fa29434b46",
+    "scene-coordination\\m4-transition-guard-focused-rereview.md": "d85af790831a221decac728f5dbc494dfe5914bb9f80531ea077678165aae6a4",
+    "scene-coordination\\m4-v04-inspection-export-contract.md": "baa9dad00bfb21e6d11aef841216364c9c1286d9b5c4d6a5a8a829e5e8c90e21",
+    "scene-coordination\\m4-v04-inspection-provenance-proposal.json": "8004a15019e3dcb8a522d01c4026679b639ea05e92bda45de166b507ee91bd6f",
+    "scene-coordination\\m4-v04-root-expected-pins.json": "48d7925416bd1ffab4ddfed0935f18ef074522d23c6a678af150fa3d6351ef72",
+    "scene-coordination\\m4-v04-candidate-audit.py": "b19797d1c48520890f0fc3d984360614885034b7d17ff32233368b8e2e64eb01",
+    "scene-coordination\\m4-v04-candidate-audit.json": "ece4bff6f1a768835a3b2f9cd9f932acb270e6f2c1d250e48de363c098da9fdc",
+    "scene-coordination\\m4-v04-candidate-audit.md": "81c669676d33529562c699538527a8d483b78ea1a987dd5d579faca5d19d4d31",
+    "scene-coordination\\m4-model-contract.json": "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98",
+    "asset-pipeline\\full-kit\\source\\build_fullkit_m3.py": "dccfa2885919a84b03ff472cecbf76da35e0cd2a8b32baaca2dc8cb31929a209",
+    "asset-pipeline\\full-kit\\full-kit-profile-v1.json": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+    "asset-pipeline\\full-kit\\asset-inventory.json": "eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87",
+    "asset-pipeline\\full-kit\\exports\\studio-full-kit-m3-proposal-v03.glb": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+    "asset-pipeline\\full-kit\\manifests\\studio-full-kit-m3-proposal-v03.manifest.json": "060bab9af5dd23b4258e03aef10de21faa7c32aa0a6010cd4e09b35089026405",
+    "asset-pipeline\\full-kit\\source\\build_fullkit_m4_v04.py": "0d01536c36481021e8ff7026a6608998eb44dce0d88505dae105f94834909826",
+    "asset-pipeline\\full-kit\\source\\build_fullkit_m4_geometry_v04.py": "8d814874ee0ac1317827297d2a729b34f4789fffd891212ae03e2c440a73b792",
+    "asset-pipeline\\full-kit\\source\\produce_fullkit_m4_v04.py": "3c9fe150d859087050fed73d3fed54d3a97a5998774c455203e6a00462dc08d1",
+    "asset-pipeline\\full-kit\\source\\measure_fullkit_m4_v04.py": "d56efb031e843320625b610181885ff9110f1789b8bced9bef475f75f50ccf1b",
+    "asset-pipeline\\full-kit\\manifests\\m4-v04-rows.json": "1fa5fdd3f267896a76743aca986af9cadd1dd84610395e6049fc799009489992",
+    "asset-pipeline\\full-kit\\manifests\\m4-v04-verifier-declaration.json": "5d04a051398e09c9b2aeb309e2893efe09ed286a18e27113785ff487a7074d42",
+    "asset-pipeline\\full-kit\\manifests\\m4-v04-cpu-measurements.json": "be6c205db283f86ce8a8048c0dde58ae11e0cdb38ff326e1a4c62d26a9265bea",
+    "asset-pipeline\\full-kit\\manifests\\m4-v04-author-declarations.json": "8ce8db34b40a3ce053d037c5152fec8c8ed19d586b0968439abf64e3308f32bb"
+  },
+  "protectedAfter": {
+    "scene-coordination\\m4-v04-inspection-transition-guard.py": "b79fca8ae91c97a8d817154a948e4b7388664e1ddbc5b11c1ffc744de513524c",
+    "scene-coordination\\m4-v04-inspection-transition-guard-tests.py": "c315f99d1f33afa4ed90a3c215ccf286e557fb9ebd3355f11afec21a0265bece",
+    "scene-coordination\\m4-transition-guard.py": "ad62627f0683806ace2c8ebbb133ba83e72c7d95f1df8adc291a3706aa40da6b",
+    "scene-coordination\\m4-transition-guard-tests.py": "d17413ab80c0da964926f46c97cfc61f21f832fc25cddd521e8a49e19badf1c9",
+    "scene-coordination\\m4-transition-guard-tests-v2.json": "4b84d112964c0d1aa671aebab511f4ff250d8c0feb268531e1cc36fa29434b46",
+    "scene-coordination\\m4-transition-guard-focused-rereview.md": "d85af790831a221decac728f5dbc494dfe5914bb9f80531ea077678165aae6a4",
+    "scene-coordination\\m4-v04-inspection-export-contract.md": "baa9dad00bfb21e6d11aef841216364c9c1286d9b5c4d6a5a8a829e5e8c90e21",
+    "scene-coordination\\m4-v04-inspection-provenance-proposal.json": "8004a15019e3dcb8a522d01c4026679b639ea05e92bda45de166b507ee91bd6f",
+    "scene-coordination\\m4-v04-root-expected-pins.json": "48d7925416bd1ffab4ddfed0935f18ef074522d23c6a678af150fa3d6351ef72",
+    "scene-coordination\\m4-v04-candidate-audit.py": "b19797d1c48520890f0fc3d984360614885034b7d17ff32233368b8e2e64eb01",
+    "scene-coordination\\m4-v04-candidate-audit.json": "ece4bff6f1a768835a3b2f9cd9f932acb270e6f2c1d250e48de363c098da9fdc",
+    "scene-coordination\\m4-v04-candidate-audit.md": "81c669676d33529562c699538527a8d483b78ea1a987dd5d579faca5d19d4d31",
+    "scene-coordination\\m4-model-contract.json": "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98",
+    "asset-pipeline\\full-kit\\source\\build_fullkit_m3.py": "dccfa2885919a84b03ff472cecbf76da35e0cd2a8b32baaca2dc8cb31929a209",
+    "asset-pipeline\\full-kit\\full-kit-profile-v1.json": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+    "asset-pipeline\\full-kit\\asset-inventory.json": "eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87",
+    "asset-pipeline\\full-kit\\exports\\studio-full-kit-m3-proposal-v03.glb": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+    "asset-pipeline\\full-kit\\manifests\\studio-full-kit-m3-proposal-v03.manifest.json": "060bab9af5dd23b4258e03aef10de21faa7c32aa0a6010cd4e09b35089026405",
+    "asset-pipeline\\full-kit\\source\\build_fullkit_m4_v04.py": "0d01536c36481021e8ff7026a6608998eb44dce0d88505dae105f94834909826",
+    "asset-pipeline\\full-kit\\source\\build_fullkit_m4_geometry_v04.py": "8d814874ee0ac1317827297d2a729b34f4789fffd891212ae03e2c440a73b792",
+    "asset-pipeline\\full-kit\\source\\produce_fullkit_m4_v04.py": "3c9fe150d859087050fed73d3fed54d3a97a5998774c455203e6a00462dc08d1",
+    "asset-pipeline\\full-kit\\source\\measure_fullkit_m4_v04.py": "d56efb031e843320625b610181885ff9110f1789b8bced9bef475f75f50ccf1b",
+    "asset-pipeline\\full-kit\\manifests\\m4-v04-rows.json": "1fa5fdd3f267896a76743aca986af9cadd1dd84610395e6049fc799009489992",
+    "asset-pipeline\\full-kit\\manifests\\m4-v04-verifier-declaration.json": "5d04a051398e09c9b2aeb309e2893efe09ed286a18e27113785ff487a7074d42",
+    "asset-pipeline\\full-kit\\manifests\\m4-v04-cpu-measurements.json": "be6c205db283f86ce8a8048c0dde58ae11e0cdb38ff326e1a4c62d26a9265bea",
+    "asset-pipeline\\full-kit\\manifests\\m4-v04-author-declarations.json": "8ce8db34b40a3ce053d037c5152fec8c8ed19d586b0968439abf64e3308f32bb"
+  },
+  "results": [
+    {
+      "name": "reviewed enforcement/parser/accessor/CLI AST unchanged",
+      "passed": true,
+      "evidence": {
+        "allEnforcementFunctionsAstIdentical": true,
+        "changedFunctionOnlyScopeText": true
+      }
+    },
+    {
+      "name": "exact v04 synthetic substitution against pinned real parent",
+      "passed": true,
+      "evidence": {
+        "valid": true,
+        "codes": [],
+        "retainedComparisons": 368,
+        "inputUnchanged": true
+      }
+    },
+    {
+      "name": "storage remapping and BIN relocation preserve exact semantics",
+      "passed": true,
+      "evidence": {
+        "valid": true,
+        "codes": [],
+        "retainedComparisons": 368,
+        "inputUnchanged": true
+      }
+    },
+    {
+      "name": "missing provenance fk_variant",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "codes": [
+          "sceneMetadata"
+        ],
+        "retainedComparisons": 368,
+        "inputUnchanged": true
+      }
+    },
+    {
+      "name": "missing provenance fk_tag",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "codes": [
+          "sceneMetadata"
+        ],
+        "retainedComparisons": 368,
+        "inputUnchanged": true
+      }
+    },
+    {
+      "name": "missing provenance fk_profile",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "codes": [
+          "sceneMetadata"
+        ],
+        "retainedComparisons": 368,
+        "inputUnchanged": true
+      }
+    },
+    {
+      "name": "missing provenance fk_stage",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "codes": [
+          "sceneMetadata"
+        ],
+        "retainedComparisons": 368,
+        "inputUnchanged": true
+      }
+    },
+    {
+      "name": "missing provenance fk_m2_tag",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "codes": [
+          "sceneMetadata"
+        ],
+        "retainedComparisons": 368,
+        "inputUnchanged": true
+      }
+    },
+    {
+      "name": "missing provenance fk_m3_tag",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "codes": [
+          "sceneMetadata"
+        ],
+        "retainedComparisons": 368,
+        "inputUnchanged": true
+      }
+    },
+    {
+      "name": "missing provenance fk_m4_tag",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "codes": [
+          "sceneMetadata"
+        ],
+        "retainedComparisons": 368,
+        "inputUnchanged": true
+      }
+    },
+    {
+      "name": "wrong exact provenance fk_tag=m4-v01",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "codes": [
+          "sceneMetadata"
+        ],
+        "retainedComparisons": 368,
+        "inputUnchanged": true
+      }
+    },
+    {
+      "name": "wrong exact provenance fk_m4_tag=v01",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "codes": [
+          "sceneMetadata"
+        ],
+        "retainedComparisons": 368,
+        "inputUnchanged": true
+      }
+    },
+    {
+      "name": "wrong exact provenance fk_tag=m4-v04-inspection",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "codes": [
+          "sceneMetadata"
+        ],
+        "retainedComparisons": 368,
+        "inputUnchanged": true
+      }
+    },
+    {
+      "name": "wrong exact provenance fk_m4_tag=v05",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "codes": [
+          "sceneMetadata"
+        ],
+        "retainedComparisons": 368,
+        "inputUnchanged": true
+      }
+    },
+    {
+      "name": "wrong exact provenance fk_m3_tag=v03",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "codes": [
+          "sceneMetadata"
+        ],
+        "retainedComparisons": 368,
+        "inputUnchanged": true
+      }
+    },
+    {
+      "name": "wrong exact provenance fk_stage=M3",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "codes": [
+          "sceneMetadata"
+        ],
+        "retainedComparisons": 368,
+        "inputUnchanged": true
+      }
+    },
+    {
+      "name": "extra provenance key",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "codes": [
+          "sceneMetadata"
+        ],
+        "retainedComparisons": 368,
+        "inputUnchanged": true
+      }
+    },
+    {
+      "name": "unrelated scene field",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "codes": [
+          "sceneMetadata"
+        ],
+        "retainedComparisons": 368,
+        "inputUnchanged": true
+      }
+    },
+    {
+      "name": "exporter substitution",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "codes": [
+          "documentMetadata"
+        ],
+        "retainedComparisons": 368,
+        "inputUnchanged": true
+      }
+    },
+    {
+      "name": "target reparenting",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "codes": [
+          "hierarchy"
+        ],
+        "retainedComparisons": null,
+        "inputUnchanged": true
+      }
+    },
+    {
+      "name": "single retained word target_dissertation/POSITION",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "codes": [
+          "retainedAccessorBytes"
+        ],
+        "retainedComparisons": 368,
+        "inputUnchanged": true
+      }
+    },
+    {
+      "name": "single retained word desk_top__top/TEXCOORD_0",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "codes": [
+          "retainedAccessorBytes"
+        ],
+        "retainedComparisons": 368,
+        "inputUnchanged": true
+      }
+    },
+    {
+      "name": "single retained word desk_top__top/NORMAL",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "codes": [
+          "retainedAccessorBytes"
+        ],
+        "retainedComparisons": 368,
+        "inputUnchanged": true
+      }
+    },
+    {
+      "name": "single retained word desk_top__top/indices",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "codes": [
+          "retainedAccessorBytes"
+        ],
+        "retainedComparisons": 368,
+        "inputUnchanged": true
+      }
+    },
+    {
+      "name": "encoded image bytes",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "codes": [
+          "imageBytes"
+        ],
+        "retainedComparisons": 368,
+        "inputUnchanged": true
+      }
+    },
+    {
+      "name": "material factor",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "codes": [
+          "materialDefinition"
+        ],
+        "retainedComparisons": 368,
+        "inputUnchanged": true
+      }
+    },
+    {
+      "name": "row flag boolean substitution",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "codes": [
+          "newRowFlags"
+        ],
+        "retainedComparisons": 368,
+        "inputUnchanged": true
+      }
+    },
+    {
+      "name": "row identity substitution",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "codes": [
+          "hierarchy"
+        ],
+        "retainedComparisons": null,
+        "inputUnchanged": true
+      }
+    },
+    {
+      "name": "malformed scene is structured failure",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "codes": [
+          "malformedInput"
+        ],
+        "retainedComparisons": null,
+        "inputUnchanged": true
+      }
+    },
+    {
+      "name": "exact accepted parent required",
+      "passed": true,
+      "evidence": [
+        {
+          "code": "parentHashMismatch",
+          "expected": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf"
+        }
+      ]
+    },
+    {
+      "name": "receipt CLI exclusive creation and existing-path refusal without candidate file",
+      "passed": true,
+      "evidence": {
+        "freshReceiptMode": "x",
+        "freshCliTestUsesMemorySink": true,
+        "existingFileRejectedBeforeCandidateRead": true
+      }
+    }
+  ],
+  "passed": 31,
+  "total": 31,
+  "elapsedSeconds": 5.89000000001397
+}

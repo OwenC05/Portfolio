@@ -1,0 +1,22 @@
+{
+  "task": "task_bc61c9989863",
+  "executedBrowserFiles": ["performance.run.mjs", "lifecycle.run.mjs (two attempts)", "faults.run.mjs", "faults-contact-corrected.run.mjs", "captures.run.mjs (video setup failed)", "captures-screencast.run.mjs", "captures-dpr1-supplement.run.mjs", "look-resize-reference.run.mjs"],
+  "browserInvocation": "mcp__playwright__browser_run_code_unsafe with absolute filename under this directory",
+  "retainedFailures": [
+    {"file":"lifecycle.json","cause":"Harness used Fetch Response.status() instead of status property; corrected attempt lifecycle-v02.json"},
+    {"file":"faults.json","cause":"Contact assumed #contact; actual panel link is mailto; corrected robot cases in faults-v02.json; context-loss case already passed"},
+    {"file":"capture-video-failure.json","cause":"Installed Playwright FFmpeg executable absent; no install authorized or attempted"},
+    {"file":"restored-page-receipt.json","cause":"PowerShell/native argument quote loss in eval; structured Node execFileSync fixed it"},
+    {"command":"PowerShell .Replace chain to create corrected fault harness","cause":"Missing ')' parser error; output file was not created; dependent browser attempt returned ENOENT; rewritten through apply_patch"},
+    {"command":"dynamic import('node:fs/promises') capability probe in browser runner","cause":"ERR_VM_DYNAMIC_IMPORT_CALLBACK_MISSING; no bypass attempted; supported browser download.saveAs saved screencast images"},
+    {"command":"first finalize.mjs","cause":"Exact DPR === 1 assertion rejected host value1.0000000149011612; corrected to1e-6 tolerance without altering requested scale1"},
+    {"command":"bounded rg/Get-Command discovery","cause":"Missing guessed lighting.ts/StudioAssistantPanel paths and no ffmpeg on PATH; actual paths discovered; no source edits"}
+  ],
+  "contextCleanup": {
+    "videoSetupFailure": "Public browser context inventory showed exactly default about:blank plus one newly empty context after this task's failed setup; only that unique task context closed",
+    "final": [{"default":true,"pages":["about:blank"]}],
+    "leasedOrcaPage": "restored separately; root preview left running"
+  },
+  "notRun": ["build", "typegen", "server commands", "broad assistant/scene tests", "physical device input", "screen reader", "GPU timing/reclamation", "dev StrictMode", "document.hidden branch"],
+  "readOnlyVerification": "83 baseline SHA256/byte-size entries, BUILD_ID and exact root preview PID/creation/command verified before and after"
+}

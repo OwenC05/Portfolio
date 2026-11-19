@@ -1,0 +1,49 @@
+{
+  "viewport": [
+    390,
+    844
+  ],
+  "overflow": false,
+  "dialog": {
+    "x": 0,
+    "y": 20,
+    "width": 390,
+    "height": 824,
+    "top": 20,
+    "right": 390,
+    "bottom": 844,
+    "left": 0
+  },
+  "canvas": {
+    "engine": "three.js r187",
+    "studioInteractionEnabled": "false",
+    "studioYaw": "-4",
+    "studioPitch": "-6",
+    "studioEye": "-0.7,2.8,3.4",
+    "studioFov": "64",
+    "studioDpr": "1.0000000149011612",
+    "studioRenderCount": "26",
+    "studioDrawCalls": "55",
+    "studioTriangles": "41928",
+    "studioGeometries": "40",
+    "studioTextures": "12",
+    "assistantRunId": "34adacd6-37a4-465c-a6e7-291cacecbfcf:1",
+    "assistantRevision": "6",
+    "assistantCardCount": "4"
+  },
+  "passage": {
+    "x": 56.400001525878906,
+    "y": 701.7999877929688,
+    "width": 313.6000061035156,
+    "height": 69.75,
+    "top": 701.7999877929688,
+    "right": 370.00000762939453,
+    "bottom": 771.5499877929688,
+    "left": 56.400001525878906
+  },
+  "lineHeight": 23.25,
+  "askedDisplay": "none",
+  "fieldHeight": 47.20000076293945,
+  "rootFont": 16,
+  "fieldSizing": "content"
+}

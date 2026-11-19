@@ -1,0 +1,35 @@
+{
+  "at": "2026-11-18T19:08:37.843Z",
+  "results": [
+    {
+      "name": "runtime-tests",
+      "args": [
+        "--test",
+        "components/studio/scene/verify-controller.mjs",
+        "components/studio/scene/robot/verify-robot.mjs",
+        "components/studio/scene/robot/verify-cleanup.mjs",
+        "design/assistant/robot/review/scene-runtime-g2/probe.test.mjs"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 9134
+    },
+    {
+      "name": "lint",
+      "args": [
+        "node_modules/next/dist/bin/next",
+        "lint"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 4532
+    },
+    {
+      "name": "build",
+      "args": [
+        "node_modules/next/dist/bin/next",
+        "build"
+      ],
+      "exitCode": 0,
+      "elapsedMs": 29412
+    }
+  ]
+}

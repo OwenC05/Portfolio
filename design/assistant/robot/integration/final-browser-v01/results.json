@@ -1,0 +1,199 @@
+{
+  "buildId": "cFKSWm6Bayf__QstZY2CC",
+  "gateVerdict": "REVISE / HOLD PERFORMANCE ACCEPTANCE",
+  "authorMeasurementNotIndependentApproval": true,
+  "gates": [
+    {
+      "gate": "Current source/build/asset",
+      "status": "PASS",
+      "evidence": [
+        "source-before.json",
+        "source-after.json"
+      ],
+      "scope": "All 83 exact hashes, build ID and published GLB; preview PID retained."
+    },
+    {
+      "gate": "Integrated encoded-byte closure",
+      "status": "PASS",
+      "evidence": [
+        "transfer-inventory.json",
+        "performance.json"
+      ],
+      "scope": "Current pilot-room integrated candidate only; not future full-kit room allocation."
+    },
+    {
+      "gate": "V34 measured draw/triangle/DPR/light limits",
+      "status": "PASS",
+      "evidence": [
+        "performance.json",
+        "captures-v02.json"
+      ],
+      "scope": "Observed first/finite/settled/4-card/look-bound frames; peak 125 calls / 98876 triangles; one static casting light by source check; DPR2 and1.5."
+    },
+    {
+      "gate": "V34 desktop scheduling",
+      "status": "ACTUAL MEASURED FAILURE",
+      "evidence": [
+        "look-resize-reference.json",
+        "performance.json"
+      ],
+      "scope": "Reference mouse scenario p95 215.5 ms; broader keyboard stress p95 262.5 ms; 33 ms limit unchanged. Cause not isolated; CPU measurements are not GPU timing."
+    },
+    {
+      "gate": "V34 small scheduling",
+      "status": "PASS",
+      "evidence": [
+        "look-resize-reference.json",
+        "performance.json"
+      ],
+      "scope": "Reference p95 12.5 ms at390x844 DPR1.5; emulation, not physical phone."
+    },
+    {
+      "gate": "V27 live reduced motion",
+      "status": "PASS",
+      "evidence": [
+        "lifecycle-v02.json"
+      ],
+      "scope": "Live ON during attention, settled OFF no replay, data preserved, new event rendered."
+    },
+    {
+      "gate": "V28 offscreen and zero-size",
+      "status": "PASS",
+      "evidence": [
+        "lifecycle-v02.json"
+      ],
+      "scope": "Real host geometry and native observers; latest results adopted on resume, no catch-up. Document-hidden branch separately unrun."
+    },
+    {
+      "gate": "V29 finite render stop",
+      "status": "PASS",
+      "evidence": [
+        "performance.json",
+        "lifecycle-v02.json"
+      ],
+      "scope": "Idle, attention and result fixed observation windows650/700 ms; no permanent-loop claim beyond observed windows and existing source/CPU evidence."
+    },
+    {
+      "gate": "V30 robot failure fallback",
+      "status": "PASS",
+      "evidence": [
+        "faults-v02.json"
+      ],
+      "scope": "Transport abort and malformed bytes: room ready, no robot target, HTML retrieval/source route/contact navigation usable; no texture requirement, partial allocation and GPU reclamation not established here."
+    },
+    {
+      "gate": "V32 actual context loss",
+      "status": "PASS",
+      "evidence": [
+        "faults.json"
+      ],
+      "scope": "WEBGL_lose_context during pending request, canvas removed, HTML close/reopen/retrieval without document reload."
+    },
+    {
+      "gate": "0/1/4 sources and phone capture delivery",
+      "status": "PASS FOR CAPTURE DELIVERY",
+      "evidence": [
+        "capture-manifest.json",
+        "lifecycle-v02.json",
+        "captures-v02.json"
+      ],
+      "scope": "Real-source seed plus labelled valid fixtures. Exact chip/list key and canvas run/revision/count checked; individual mesh key not browser-exposed. Visual judgment remains Claude."
+    },
+    {
+      "gate": "Interrupted motion/clearance",
+      "status": "PARTIAL; VISUAL REVIEW AND PRECISE FRAME ASSOCIATION OPEN",
+      "evidence": [
+        "capture-manifest.json",
+        "captures-v02.json",
+        "captures-dpr1.json"
+      ],
+      "scope": "Native finite interrupted sequences at home/look extremes/neighbour view; actual compositor frames retained, some delayed/duplicated and not exact current-snapshot proof. No continuous nonintersection certification."
+    },
+    {
+      "gate": "V31 dev StrictMode / real document-hidden / GPU lifetime and timing",
+      "status": "TOOL/SLOT-LIMITED UNRUN",
+      "scope": "Production preview cannot certify dev StrictMode; offscreen/zero-size tested instead of document.hidden; video binary absent; no GPU timers or reclamation proof."
+    },
+    {
+      "gate": "Physical touch/pen / software keyboard / screen reader",
+      "status": "PHYSICAL-DEVICE UNRUN",
+      "scope": "Viewport/DPR emulation does not certify physical input or assistive technology."
+    }
+  ],
+  "behaviorChecks": {
+    "lifecycle": [
+      {
+        "name": "Reduced motion ON during finite attention settles and stops",
+        "passed": true
+      },
+      {
+        "name": "One current source has matching chip/list run and key plus one tray card",
+        "passed": true
+      },
+      {
+        "name": "Native chip activation selects and deselects the same current source",
+        "passed": true
+      },
+      {
+        "name": "Reduced motion OFF preserves data and does not replay",
+        "passed": true
+      },
+      {
+        "name": "Subsequent semantic event renders four sources then stops",
+        "passed": true
+      },
+      {
+        "name": "offscreen: new result while suspended, one settled resume and no catch-up",
+        "passed": true
+      },
+      {
+        "name": "zero-size: new result while suspended, one settled resume and no catch-up",
+        "passed": true
+      }
+    ],
+    "faults": [
+      {
+        "mode": "robot-transport",
+        "checks": [
+          {
+            "name": "Robot unavailable while room stays ready and former head position has no target",
+            "passed": true
+          },
+          {
+            "name": "Named Ask, exact source results and contact link remain available",
+            "passed": true
+          }
+        ],
+        "sourceNavigation": "http://127.0.0.1:4193/work/lexisnexis#lexisnexis-role",
+        "contactNavigation": "http://127.0.0.1:4193/studio#contact",
+        "emailLinkFocused": true
+      },
+      {
+        "mode": "robot-malformed",
+        "checks": [
+          {
+            "name": "Robot unavailable while room stays ready and former head position has no target",
+            "passed": true
+          },
+          {
+            "name": "Named Ask, exact source results and contact link remain available",
+            "passed": true
+          }
+        ],
+        "sourceNavigation": "http://127.0.0.1:4193/work/lexisnexis#lexisnexis-role",
+        "contactNavigation": "http://127.0.0.1:4193/studio#contact",
+        "emailLinkFocused": true
+      }
+    ],
+    "contextLoss": [
+      {
+        "name": "Real context loss removes scene; HTML close/reopen survives without document reload",
+        "passed": true
+      },
+      {
+        "name": "HTML retrieval still works after context loss",
+        "passed": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "name": "cpu",
+    "command": "node components/studio/scene/verify-controller.mjs",
+    "startedAt": "2026-11-14T20:10:10.550Z",
+    "chunk_id": "c3508f",
+    "wall_time_seconds": 2.130168,
+    "exit_code": 0,
+    "original_token_count": 509,
+    "output": "✔ guttered 390px and 320px portraits accept 44px touch corners and edges before and after resize (357.0609ms)\n✔ overlapping touch regions use nearest centers, canonical ties, then exact-surface priority (64.5152ms)\n✔ enlarged regions stay bounded and cancel touches on page scroll, drag, or pointer cancellation (26.0774ms)\n✔ ledger instances failure attempts all later disposals, clears sets, and rethrows the first error (3.436ms)\n✔ controller releases renderer/canvas after an early instances disposal throws (21.2955ms)\n✔ ledger geometries failure attempts all later disposals, clears sets, and rethrows the first error (0.4289ms)\n✔ controller releases renderer/canvas after an early geometries disposal throws (23.5684ms)\n✔ loading precedes a successful render; demand updates coalesce and reuse the model (28.5367ms)\n✔ real Three raycasting uses the offset canvas, supports touch, and ignores drags (24.192ms)\n✔ desktop and mobile camera projection contains all supplied room bounds (40.2936ms)\n✔ sibling model integrates: three real surfaces pick after instancing at both viewport sizes (150.787ms)\n✔ hidden and offscreen scenes cancel work and resume with the latest size (17.5607ms)\n✔ zero-size host waits without a loop or premature ready status (23.6129ms)\n✔ rendererFailure reports unavailable and releases all acquired resources (18.0751ms)\n✔ modelFailure reports unavailable and releases all acquired resources (20.7859ms)\n✔ renderFailure reports unavailable and releases all acquired resources (31.0241ms)\n✔ lossDuringRender reports unavailable and releases all acquired resources (19.8461ms)\n✔ context loss after ready cleans up once even when renderer disposal throws (15.1975ms)\n✔ five mount/cleanup cycles guard retained RAF, observer and event callbacks (16.9253ms)\n✔ React adapter keeps one controller and forwards the latest callbacks and state (13.4685ms)\nℹ tests 20\nℹ suites 0\nℹ pass 20\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 958.3621\n"
+  },
+  {
+    "name": "typecheck",
+    "command": ".\\node_modules\\.bin\\tsc.cmd --noEmit --incremental false --pretty false",
+    "startedAt": "2026-11-14T20:10:10.570Z",
+    "chunk_id": "43b8b0",
+    "wall_time_seconds": 5.5867787,
+    "exit_code": 0,
+    "original_token_count": 0,
+    "output": ""
+  },
+  {
+    "name": "lint",
+    "command": "npm.cmd run lint -- --no-cache",
+    "startedAt": "2026-11-14T20:10:10.570Z",
+    "chunk_id": "b38013",
+    "wall_time_seconds": 8.4467124,
+    "exit_code": 1,
+    "original_token_count": 79,
+    "output": "\n> owen-cheung-portfolio@0.1.0 lint\n> next lint --no-cache\n\nFailed to load plugin '@typescript-eslint' declared in '.eslintrc.json': Cannot find module '@typescript-eslint/eslint-plugin'\nRequire stack:\n- C:\\Users\\Owenc\\orca\\Portfolio\\__placeholder__.js\nReferenced from: C:\\Users\\Owenc\\orca\\Portfolio\\.eslintrc.json\n"
+  }
+]

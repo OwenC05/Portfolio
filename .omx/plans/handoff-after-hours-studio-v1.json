@@ -1,0 +1,52 @@
+{
+    "planning_artifacts":  {
+                               "prd":  ".omx/plans/prd-after-hours-studio-v1.md",
+                               "context":  ".omx/context/after-hours-studio-v1-20261114.md",
+                               "prd_sha256":  "7D26366C994AEC8B6C2CEA8A5375275851A112DEF8A1479F0AA589CE55F07189",
+                               "test_spec_sha256":  "3CD888FF3B7FD36B19A820997811139607EEC986C5551A142E9D6163E1678CEF",
+                               "test_spec":  ".omx/plans/test-spec-after-hours-studio-v1.md"
+                           },
+    "review_cycle":  1,
+    "iteration":  1,
+    "ralplan_architect_review":  {
+                                     "review_cycle":  1,
+                                     "agent":  "/root/studio_v1_architect",
+                                     "verdict":  "APPROVE",
+                                     "completed":  true,
+                                     "artifact":  ".omx/plans/review-after-hours-studio-v1-architect.md",
+                                     "completed_at":  "2026-11-14T19:05:25Z"
+                                 },
+    "current_phase":  "complete",
+    "ralplan_consensus_gate":  {
+                                   "complete":  true,
+                                   "scope":  "local workflow lifecycle, not host security authority",
+                                   "qualityGateResults":  [
+
+                                                          ],
+                                   "review_cycle":  1
+                               },
+    "ralplan_critic_review":  {
+                                  "review_cycle":  1,
+                                  "agent":  "/root/studio_v1_critic",
+                                  "verdict":  "APPROVE",
+                                  "completed":  true,
+                                  "artifact":  ".omx/plans/review-after-hours-studio-v1-critic.md",
+                                  "completed_at":  "2026-11-14T19:09:01Z"
+                              },
+    "mode":  "ralplan",
+    "session_id":  "01a1daa7-0ca8-77a0-9bcc-da11ad109c99",
+    "completed_at":  "2026-11-14T19:10:13.0163030Z",
+    "ralplan_execution_handoff":  {
+                                      "source":  "user",
+                                      "review_cycle":  1,
+                                      "authorized_at":  "2026-11-14T19:10:13.0163030Z",
+                                      "requested_lane":  "orchestration",
+                                      "session_id":  "01a1daa7-0ca8-77a0-9bcc-da11ad109c99",
+                                      "scope":  "local implementation and verification; no deployment",
+                                      "tracking":  "ultragoal",
+                                      "reason":  "User explicitly requested planning followed by Orca build of local first version",
+                                      "authorized":  true
+                                  },
+    "active":  false,
+    "run_outcome":  "complete"
+}

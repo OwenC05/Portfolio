@@ -1,0 +1,48 @@
+{
+  "at": "2026-11-18T19:02:04.342Z",
+  "records": [
+    {
+      "path": "components/studio/StudioExperience.tsx",
+      "bytes": 19149,
+      "sha256": "1c1af8cc3bd9a77a108d9ff21cd9cad09056c0c31755db61db887bf6b97923ca"
+    },
+    {
+      "path": "tests/assistant/studio-experience.test.cjs",
+      "bytes": 30932,
+      "sha256": "4678443279847c541c63a163461b106a58cf524f73c5f71561f1ccda79c70812"
+    }
+  ],
+  "unchanged": true,
+  "readOnlyReceiptPins": [
+    {
+      "path": "design/assistant/robot/integration/root-repair-v02/handoff.md",
+      "sha256": "af1220e5502af5a7ddd07035191f0604c4f6f0dec133c86e3a3bb96c49328a72",
+      "bytes": 3297
+    },
+    {
+      "path": "design/assistant/robot/integration/root-repair-v02/before-checks.json",
+      "sha256": "59dc8a97a4d6c0fcd6ffc8de0bc421ebc257860932ab1ebee89ad1a0d2075fd4",
+      "bytes": 557
+    },
+    {
+      "path": "design/assistant/robot/integration/root-repair-v02/port-checks.json",
+      "sha256": "6c4ad4210becafdb89e3b17dee2220b2cc234f8f58bd4225e3f84e702e7263c3",
+      "bytes": 555
+    },
+    {
+      "path": "design/assistant/robot/integration/root-repair-v02/after-checks.json",
+      "sha256": "eed92e1079d76fce7068d9a657df61377a245a4a65ab5b0bea70587c43a764ee",
+      "bytes": 1057
+    },
+    {
+      "path": "design/assistant/robot/integration/root-repair-v02/native-dialog-probe.json",
+      "sha256": "b6b9ec8bf19e41b934eddb7ac942c14b47fd7d63539dc25e843f962090416f47",
+      "bytes": 615
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g4-v02/lifecycle-history/checks.json",
+      "sha256": "1107d09beda67a439e5901fa11b4fd3bbefbf0c7df719dcc91c64f79da38ae88",
+      "bytes": 1834
+    }
+  ]
+}

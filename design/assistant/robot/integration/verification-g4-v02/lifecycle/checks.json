@@ -1,0 +1,30 @@
+{
+  "buildId": "XH_oOqBftWO8em8L7m4E6",
+  "checks": [
+    {
+      "name": "Settled idle scene does not continuously render",
+      "passed": true
+    },
+    {
+      "name": "Trusted click on visible robot head opens Ask",
+      "passed": false
+    }
+  ],
+  "observations": {
+    "idle": {
+      "before": "101",
+      "after": "101"
+    },
+    "robotClick": {
+      "x": 1130,
+      "y": 310,
+      "trusted": true,
+      "target": "CANVAS"
+    },
+    "error": "AssertionError [ERR_ASSERTION]: Trusted click on visible robot head opens Ask"
+  },
+  "limits": [
+    "Controlled pending/error fetches test state handling, not provider quality.",
+    "Real Chromium input and native navigation; no physical touch, screen reader, full pose sweep, GPU lifetime or full performance certification."
+  ]
+}

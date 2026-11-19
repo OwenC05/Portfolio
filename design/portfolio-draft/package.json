@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-ui-sdk-draft",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check app.mjs && node --check server.mjs && node --check browser-tests.mjs"
+  },
+  "dependencies": {
+    "@ui-sdk/core": "0.1.0-beta.1",
+    "@ui-sdk/web": "0.1.0-beta.1"
+  }
+}

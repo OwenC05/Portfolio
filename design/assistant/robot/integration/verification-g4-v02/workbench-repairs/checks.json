@@ -1,0 +1,44 @@
+{
+  "buildId": "XH_oOqBftWO8em8L7m4E6",
+  "checks": [
+    {
+      "name": "error: blank draft disables Retry",
+      "passed": true
+    },
+    {
+      "name": "error: blank submission sends no request",
+      "passed": true
+    },
+    {
+      "name": "error: Retry sends edited draft and preserves the field",
+      "passed": true
+    },
+    {
+      "name": "Workbench Cancel aborts its pending request",
+      "passed": true
+    },
+    {
+      "name": "cancel: blank draft disables Retry",
+      "passed": true
+    },
+    {
+      "name": "cancel: blank submission sends no request",
+      "passed": true
+    },
+    {
+      "name": "cancel: Retry sends edited draft and preserves the field",
+      "passed": true
+    },
+    {
+      "name": "Actual pending SVG caption is explicit while no answer is present",
+      "passed": true
+    },
+    {
+      "name": "Pending empty retrieval completes as validated abstention",
+      "passed": true
+    }
+  ],
+  "limits": [
+    "Controlled transport fixtures validate the previous Workbench repairs in Chromium; no live model or screen-reader testing."
+  ]
+}

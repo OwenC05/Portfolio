@@ -1,0 +1,26 @@
+﻿{
+    "checkedAtUtc":  "2026-11-16T14:05:02.5278907Z",
+    "ownedPid":  30700,
+    "commandLine":  "\"C:\\Program Files\\nodejs\\node.exe\" node_modules/next/dist/bin/next start --hostname 127.0.0.1 --port 4193 ",
+    "creationDate":  "2026-11-16T13:48:20.7686110Z",
+    "ports":  [
+                  {
+                      "LocalAddress":  "127.0.0.1",
+                      "LocalPort":  4193,
+                      "OwningProcess":  30700
+                  },
+                  {
+                      "LocalAddress":  "127.0.0.1",
+                      "LocalPort":  4181,
+                      "OwningProcess":  34212
+                  }
+              ],
+    "askHttp":  200,
+    "studioHttp":  200,
+    "buildId":  "O1RTOH0qRVqxRHQExjvm4",
+    "askHtmlBindsBuild":  true,
+    "studioHtmlBindsBuild":  true,
+    "leftRunning":  true,
+    "handoffOwner":  "root term_82b2cfc1-b7b9-4afc-b66a-4bbb727f7004 after worker_done",
+    "nextWriterActive":  false
+}

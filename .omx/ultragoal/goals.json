@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "createdAt": "2026-11-14T22:30:18.156Z",
+  "updatedAt": "2026-11-14T23:07:18.546Z",
+  "briefPath": ".omx/ultragoal/brief.md",
+  "goalsPath": ".omx/ultragoal/goals.json",
+  "ledgerPath": ".omx/ultragoal/ledger.jsonl",
+  "codexGoalMode": "aggregate",
+  "goals": [
+    {
+      "id": "G003-refined-authored-studio-assets",
+      "title": "Refined authored studio assets",
+      "objective": "Use actual Claude art direction and Higgsfield, Meshy and Blender asset authoring to refine the personal studio before Three.js presentation; prepare and obtain any required quoted generation authorization, prove a representative asset through Blender and GLB integration, then complete the coherent room and required equipment with editable sources, provenance, actual render review and preserved interaction/performance contracts. Follow .omx/plans/asset-authoring-addendum.md; no platform migration or public deployment.",
+      "status": "pending",
+      "attempt": 0,
+      "createdAt": "2026-11-14T23:06:00.100Z",
+      "updatedAt": "2026-11-14T23:06:00.100Z",
+      "evidence": "User explicitly requested Higgsfield, Blender and Meshy before Three.js to refine the look; subsequent website-builder comparison supports preserving the existing application and improving assets. Current prototype visual defects remain unaccepted."
+    },
+    {
+      "id": "G002-verified-immersive-v2",
+      "title": "Verified refined immersive studio",
+      "objective": "Verify the final studio including Higgsfield/Meshy/Blender-authored assets and async GLB integration against the approved v2 test specification and asset-authoring addendum; resolve all prototype and new findings through the correct Claude/Codex owners, complete independent cleanup/code/architecture/visual reviews, and leave a working local production preview with source/provenance/build evidence and honest limitations.",
+      "status": "pending",
+      "attempt": 0,
+      "createdAt": "2026-11-14T22:30:18.156Z",
+      "updatedAt": "2026-11-14T23:06:37.908Z",
+      "steeringEvidence": "New user steering adds authored assets before Three.js; final verification must bind those assets and cannot reuse procedural-only proof as full acceptance.",
+      "steeringRationale": "Keep the final verification scope aligned with the full accepted result, including unresolved prototype findings."
+    },
+    {
+      "id": "G001-immersive-scene-and-reading",
+      "title": "Immersive scene and reading",
+      "objective": "Implement the approved eye-level warm stylised room and immediate project reading through Orca S/U, with all design and visual review assigned to Claude and all other work to Codex; pass the early actual-render gate and independent lane critiques.",
+      "status": "in_progress",
+      "attempt": 1,
+      "createdAt": "2026-11-14T22:30:18.156Z",
+      "updatedAt": "2026-11-14T22:30:18.694Z",
+      "startedAt": "2026-11-14T22:30:18.694Z"
+    }
+  ],
+  "codexObjective": "Complete the durable ultragoal plan in .omx/ultragoal/goals.json, including later accepted/appended stories, under the original brief constraints; use .omx/ultragoal/ledger.jsonl as the audit trail.",
+  "activeGoalId": "G001-immersive-scene-and-reading"
+}

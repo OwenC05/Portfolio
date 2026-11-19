@@ -1,0 +1,22 @@
+✔ mouse, pen and touch commit once per complete gesture; repeated/double activation needs a new gesture (143.3124ms)
+✔ perspective 390px and 320px fixtures accept 44px touch corners and edges before and after resize (102.706ms)
+✔ loading precedes a successful render; demand updates coalesce and reuse the model (29.9558ms)
+✔ renderer density preserves low native ratios and CSS-space picking through desktop and small resizes (27.6301ms)
+✔ real Three raycasting uses the offset canvas, supports touch, and ignores drags (28.3576ms)
+✔ desktop and mobile cameras use configured fixed eye and perspective; whole-room orthographic fit is intentionally removed (42.1551ms)
+✔ first usable viewport determines immutable reset home; pre-ready commands and disabled initial commands are consumed once (41.0517ms)
+✔ pose survives selection, panel disable/resize/enable, visibility and offscreen transitions and reduced-motion changes (19.3026ms)
+✔ mouse and pen claim capture only past threshold, drag changes look directly, clamps, and never activates (48.5804ms)
+✔ touch horizontal axis changes yaw only; vertical axis remains native and cannot later become look (48.7464ms)
+✔ G2 robot uses the same qualified mouse/pen/touch pipeline, hover edges and modal cancellation (182.6109ms)
+✔ G2 feedback: one native mouse mousedown qualifies with root commits and paintDuringHold=false (121.1067ms)
+✔ G2 feedback: one native mouse mousedown qualifies with root commits and paintDuringHold=true (84.3982ms)
+✔ G2 feedback: a fresh presentation still blocks gestures until its geometry is rendered (75.4361ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1589.8451

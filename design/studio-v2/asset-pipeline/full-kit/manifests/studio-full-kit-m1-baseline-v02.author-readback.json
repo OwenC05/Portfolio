@@ -1,0 +1,6763 @@
+{
+ "profileId": "studio-full-kit-v1",
+ "variant": "baseline",
+ "stage": "M1",
+ "tag": "v02",
+ "statement": "Blockout. Architecture plus pilot door and lamp are modelled; every node whose name contains __proxy is a grey stand-in, not a finished asset.",
+ "glb": "exports/studio-full-kit-m1-baseline-v02.glb",
+ "glbBytes": 667520,
+ "glbSha256": "04994845f62236c6230dce1ba8af7d9811e21fc1e45c0fff6a89be7f06777093",
+ "artInventorySha256": "eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87",
+ "sourceScript": "source/build_fullkit.py",
+ "sourceScriptSha256": "1a66c8be156c8ef7208f8ccba8c0fee7130f962ba2ba280a98f8aa450404d3a5",
+ "sourceBlend": "source/fk-10-arch-blockout-baseline-v02.blend",
+ "sourceBlendSha256": "7d1b72fd45f776e0bf237eb65fb305afdf33b06b970f065a19034ed05e67da12",
+ "blender": "5.2.3 LTS",
+ "generator": "Khronos glTF Blender I/O v5.2.41",
+ "extensionsUsed": [
+  "KHR_materials_emissive_strength"
+ ],
+ "sceneCount": 1,
+ "boundsGltfMetres": [
+  [
+   -2.25,
+   -0.02,
+   -1.06
+  ],
+  [
+   2.55,
+   2.595,
+   3.3
+  ]
+ ],
+ "counts": {
+  "nodes": 123,
+  "meshLeaves": 122,
+  "uniqueMeshes": 39,
+  "sharedMeshes": 17,
+  "placedTriangles": 7272,
+  "shadowCastingTriangles": 2124,
+  "proxyLeaves": 72,
+  "materials": 10,
+  "images": 5,
+  "inventoryAssetsRepresented": 55,
+  "inventoryAssetsTotal": 59
+ },
+ "assetIdsNotInInventory": [],
+ "inventoryAssetsNotYetRepresented": [
+  "mon_cables",
+  "music_cables",
+  "under_desk_power",
+  "wall_cable_run"
+ ],
+ "bindingVariant": {
+  "borderSeparationMetres": 0.0025,
+  "borderOverhangPerSideMetres": 0.01375,
+  "centralMonitorGroupZWorld": -0.27,
+  "bezelPerSideWorld": 0.065
+ },
+ "cameraCandidates_notProduction": {
+  "home-1440": {
+   "yaw": -4,
+   "pitch": -6,
+   "fov": 58,
+   "size": [
+    1440,
+    900
+   ],
+   "dissertation": {
+    "outerLeftPx": 356.4,
+    "outerRightPx": 799.1,
+    "marginLeftPx": 356.4,
+    "marginRightPx": 640.9,
+    "outerWidthPx": 442.7
+   },
+   "copilot": {
+    "outerLeftPx": 112.5,
+    "outerRightPx": 361.8,
+    "marginLeftPx": 112.5,
+    "marginRightPx": 1078.2,
+    "outerWidthPx": 249.3
+   },
+   "typeforge": {
+    "outerLeftPx": 803.9,
+    "outerRightPx": 1036.4,
+    "marginLeftPx": 803.9,
+    "marginRightPx": 403.6,
+    "outerWidthPx": 232.4
+   }
+  },
+  "home-1024": {
+   "yaw": -4,
+   "pitch": -6,
+   "fov": 58,
+   "size": [
+    1024,
+    768
+   ],
+   "dissertation": {
+    "outerLeftPx": 201.7,
+    "outerRightPx": 579.5,
+    "marginLeftPx": 201.7,
+    "marginRightPx": 444.5,
+    "outerWidthPx": 377.8
+   },
+   "copilot": {
+    "outerLeftPx": -6.4,
+    "outerRightPx": 206.4,
+    "marginLeftPx": -6.4,
+    "marginRightPx": 817.6,
+    "outerWidthPx": 212.7
+   },
+   "typeforge": {
+    "outerLeftPx": 583.6,
+    "outerRightPx": 782.0,
+    "marginLeftPx": 583.6,
+    "marginRightPx": 242.0,
+    "outerWidthPx": 198.3
+   }
+  },
+  "music-1440": {
+   "yaw": 44,
+   "pitch": -8,
+   "fov": 58,
+   "size": [
+    1440,
+    900
+   ],
+   "dissertation": {
+    "outerLeftPx": -1838.5,
+    "outerRightPx": 7.1,
+    "marginLeftPx": -1838.5,
+    "marginRightPx": 1432.9,
+    "outerWidthPx": 1845.5
+   },
+   "copilot": {
+    "outerLeftPx": -8717.0,
+    "outerRightPx": -1571.4,
+    "marginLeftPx": -8717.0,
+    "marginRightPx": 3011.4,
+    "outerWidthPx": 7145.6
+   },
+   "typeforge": {
+    "outerLeftPx": -31.4,
+    "outerRightPx": 321.1,
+    "marginLeftPx": -31.4,
+    "marginRightPx": 1118.9,
+    "outerWidthPx": 352.5
+   }
+  },
+  "left-up": {
+   "yaw": -38,
+   "pitch": 12,
+   "fov": 58,
+   "size": [
+    1440,
+    900
+   ],
+   "dissertation": {
+    "outerLeftPx": 866.4,
+    "outerRightPx": 1461.6,
+    "marginLeftPx": 866.4,
+    "marginRightPx": -21.6,
+    "outerWidthPx": 595.2
+   },
+   "copilot": {
+    "outerLeftPx": 684.0,
+    "outerRightPx": 870.0,
+    "marginLeftPx": 684.0,
+    "marginRightPx": 570.0,
+    "outerWidthPx": 185.9
+   },
+   "typeforge": {
+    "outerLeftPx": 1398.3,
+    "outerRightPx": 2058.4,
+    "marginLeftPx": 1398.3,
+    "marginRightPx": -618.4,
+    "outerWidthPx": 660.1
+   }
+  },
+  "left-down": {
+   "yaw": -38,
+   "pitch": -16,
+   "fov": 58,
+   "size": [
+    1440,
+    900
+   ],
+   "dissertation": {
+    "outerLeftPx": 860.2,
+    "outerRightPx": 1429.1,
+    "marginLeftPx": 860.2,
+    "marginRightPx": 10.9,
+    "outerWidthPx": 568.8
+   },
+   "copilot": {
+    "outerLeftPx": 684.5,
+    "outerRightPx": 867.7,
+    "marginLeftPx": 684.5,
+    "marginRightPx": 572.3,
+    "outerWidthPx": 183.3
+   },
+   "typeforge": {
+    "outerLeftPx": 1357.8,
+    "outerRightPx": 1992.1,
+    "marginLeftPx": 1357.8,
+    "marginRightPx": -552.1,
+    "outerWidthPx": 634.3
+   }
+  },
+  "right-up": {
+   "yaw": 58,
+   "pitch": 12,
+   "fov": 58,
+   "size": [
+    1440,
+    900
+   ],
+   "dissertation": {
+    "outerLeftPx": -43599.2,
+    "outerRightPx": -510.8,
+    "marginLeftPx": -43599.2,
+    "marginRightPx": 1950.8,
+    "outerWidthPx": 43088.4
+   },
+   "copilot": "behind camera",
+   "typeforge": {
+    "outerLeftPx": -667.2,
+    "outerRightPx": 18.5,
+    "marginLeftPx": -667.2,
+    "marginRightPx": 1421.5,
+    "outerWidthPx": 685.7
+   }
+  },
+  "right-down": {
+   "yaw": 58,
+   "pitch": -16,
+   "fov": 58,
+   "size": [
+    1440,
+    900
+   ],
+   "dissertation": {
+    "outerLeftPx": -13523.4,
+    "outerRightPx": -393.4,
+    "marginLeftPx": -13523.4,
+    "marginRightPx": 1833.4,
+    "outerWidthPx": 13130.0
+   },
+   "copilot": "behind camera",
+   "typeforge": {
+    "outerLeftPx": -599.5,
+    "outerRightPx": 62.9,
+    "marginLeftPx": -599.5,
+    "marginRightPx": 1377.1,
+    "outerWidthPx": 662.4
+   }
+  },
+  "home-390-f64": {
+   "yaw": -13,
+   "pitch": -8,
+   "fov": 64,
+   "size": [
+    390,
+    844
+   ],
+   "dissertation": {
+    "outerLeftPx": 12.3,
+    "outerRightPx": 372.7,
+    "marginLeftPx": 12.3,
+    "marginRightPx": 17.3,
+    "outerWidthPx": 360.3
+   },
+   "copilot": {
+    "outerLeftPx": -162.6,
+    "outerRightPx": 15.0,
+    "marginLeftPx": -162.6,
+    "marginRightPx": 375.0,
+    "outerWidthPx": 177.5
+   },
+   "typeforge": {
+    "outerLeftPx": 370.7,
+    "outerRightPx": 594.9,
+    "marginLeftPx": 370.7,
+    "marginRightPx": -204.9,
+    "outerWidthPx": 224.2
+   }
+  },
+  "home-320-f64": {
+   "yaw": -13,
+   "pitch": -8,
+   "fov": 64,
+   "size": [
+    320,
+    844
+   ],
+   "dissertation": {
+    "outerLeftPx": -22.7,
+    "outerRightPx": 337.7,
+    "marginLeftPx": -22.7,
+    "marginRightPx": -17.7,
+    "outerWidthPx": 360.3
+   },
+   "copilot": {
+    "outerLeftPx": -197.6,
+    "outerRightPx": -20.0,
+    "marginLeftPx": -197.6,
+    "marginRightPx": 340.0,
+    "outerWidthPx": 177.5
+   },
+   "typeforge": {
+    "outerLeftPx": 335.7,
+    "outerRightPx": 559.9,
+    "marginLeftPx": 335.7,
+    "marginRightPx": -239.9,
+    "outerWidthPx": 224.2
+   }
+  },
+  "home-320-f70": {
+   "yaw": -14,
+   "pitch": -7,
+   "fov": 70,
+   "size": [
+    320,
+    844
+   ],
+   "dissertation": {
+    "outerLeftPx": 8.9,
+    "outerRightPx": 329.5,
+    "marginLeftPx": 8.9,
+    "marginRightPx": -9.5,
+    "outerWidthPx": 320.6
+   },
+   "copilot": {
+    "outerLeftPx": -144.3,
+    "outerRightPx": 9.9,
+    "marginLeftPx": -144.3,
+    "marginRightPx": 310.1,
+    "outerWidthPx": 154.2
+   },
+   "typeforge": {
+    "outerLeftPx": 328.3,
+    "outerRightPx": 529.8,
+    "marginLeftPx": 328.3,
+    "marginRightPx": -209.8,
+    "outerWidthPx": 201.6
+   }
+  },
+  "home-320-f74": {
+   "yaw": -14,
+   "pitch": -7,
+   "fov": 74,
+   "size": [
+    320,
+    844
+   ],
+   "dissertation": {
+    "outerLeftPx": 19.6,
+    "outerRightPx": 317.5,
+    "marginLeftPx": 19.6,
+    "marginRightPx": 2.5,
+    "outerWidthPx": 297.9
+   },
+   "copilot": {
+    "outerLeftPx": -122.8,
+    "outerRightPx": 20.5,
+    "marginLeftPx": -122.8,
+    "marginRightPx": 299.5,
+    "outerWidthPx": 143.3
+   },
+   "typeforge": {
+    "outerLeftPx": 316.3,
+    "outerRightPx": 503.6,
+    "marginLeftPx": 316.3,
+    "marginRightPx": -183.6,
+    "outerWidthPx": 187.3
+   }
+  },
+  "home-320-f76": {
+   "yaw": -14,
+   "pitch": -7,
+   "fov": 76,
+   "size": [
+    320,
+    844
+   ],
+   "dissertation": {
+    "outerLeftPx": 24.5,
+    "outerRightPx": 311.9,
+    "marginLeftPx": 24.5,
+    "marginRightPx": 8.1,
+    "outerWidthPx": 287.4
+   },
+   "copilot": {
+    "outerLeftPx": -112.7,
+    "outerRightPx": 25.5,
+    "marginLeftPx": -112.7,
+    "marginRightPx": 294.5,
+    "outerWidthPx": 138.2
+   },
+   "typeforge": {
+    "outerLeftPx": 310.8,
+    "outerRightPx": 491.4,
+    "marginLeftPx": 310.8,
+    "marginRightPx": -171.4,
+    "outerWidthPx": 180.6
+   }
+  },
+  "home-390-f74": {
+   "yaw": -14,
+   "pitch": -7,
+   "fov": 74,
+   "size": [
+    390,
+    844
+   ],
+   "dissertation": {
+    "outerLeftPx": 54.6,
+    "outerRightPx": 352.5,
+    "marginLeftPx": 54.6,
+    "marginRightPx": 37.5,
+    "outerWidthPx": 297.9
+   },
+   "copilot": {
+    "outerLeftPx": -87.8,
+    "outerRightPx": 55.5,
+    "marginLeftPx": -87.8,
+    "marginRightPx": 334.5,
+    "outerWidthPx": 143.3
+   },
+   "typeforge": {
+    "outerLeftPx": 351.3,
+    "outerRightPx": 538.6,
+    "marginLeftPx": 351.3,
+    "marginRightPx": -148.6,
+    "outerWidthPx": 187.3
+   }
+  },
+  "home-320x568-f74": {
+   "yaw": -14,
+   "pitch": -7,
+   "fov": 74,
+   "size": [
+    320,
+    568
+   ],
+   "dissertation": {
+    "outerLeftPx": 65.5,
+    "outerRightPx": 266.0,
+    "marginLeftPx": 65.5,
+    "marginRightPx": 54.0,
+    "outerWidthPx": 200.5
+   },
+   "copilot": {
+    "outerLeftPx": -30.3,
+    "outerRightPx": 66.1,
+    "marginLeftPx": -30.3,
+    "marginRightPx": 253.9,
+    "outerWidthPx": 96.4
+   },
+   "typeforge": {
+    "outerLeftPx": 265.2,
+    "outerRightPx": 391.3,
+    "marginLeftPx": 265.2,
+    "marginRightPx": -71.3,
+    "outerWidthPx": 126.0
+   }
+  },
+  "music-320-f64": {
+   "yaw": 44,
+   "pitch": -8,
+   "fov": 64,
+   "size": [
+    320,
+    844
+   ],
+   "dissertation": {
+    "outerLeftPx": -1968.4,
+    "outerRightPx": -433.1,
+    "marginLeftPx": -1968.4,
+    "marginRightPx": 753.1,
+    "outerWidthPx": 1535.3
+   },
+   "copilot": {
+    "outerLeftPx": -7690.5,
+    "outerRightPx": -1746.2,
+    "marginLeftPx": -7690.5,
+    "marginRightPx": 2066.2,
+    "outerWidthPx": 5944.3
+   },
+   "typeforge": {
+    "outerLeftPx": -465.1,
+    "outerRightPx": -171.8,
+    "marginLeftPx": -465.1,
+    "marginRightPx": 491.8,
+    "outerWidthPx": 293.3
+   }
+  },
+  "music-320-f74": {
+   "yaw": 44,
+   "pitch": -8,
+   "fov": 74,
+   "size": [
+    320,
+    844
+   ],
+   "dissertation": {
+    "outerLeftPx": -1604.9,
+    "outerRightPx": -331.8,
+    "marginLeftPx": -1604.9,
+    "marginRightPx": 651.8,
+    "outerWidthPx": 1273.1
+   },
+   "copilot": {
+    "outerLeftPx": -6349.8,
+    "outerRightPx": -1420.7,
+    "marginLeftPx": -6349.8,
+    "marginRightPx": 1740.7,
+    "outerWidthPx": 4929.2
+   },
+   "typeforge": {
+    "outerLeftPx": -358.3,
+    "outerRightPx": -115.2,
+    "marginLeftPx": -358.3,
+    "marginRightPx": 435.2,
+    "outerWidthPx": 243.2
+   }
+  }
+ },
+ "materials": [
+  {
+   "index": 0,
+   "name": "lib_weave",
+   "alphaMode": "OPAQUE",
+   "textureSlotsToImageIndex": {},
+   "extensions": []
+  },
+  {
+   "index": 1,
+   "name": "lib_dark_oak",
+   "alphaMode": "OPAQUE",
+   "textureSlotsToImageIndex": {},
+   "extensions": []
+  },
+  {
+   "index": 2,
+   "name": "lib_palette",
+   "alphaMode": "OPAQUE",
+   "textureSlotsToImageIndex": {
+    "baseColor": 0,
+    "metallicRoughness": 1
+   },
+   "extensions": []
+  },
+  {
+   "index": 3,
+   "name": "lib_plaster",
+   "alphaMode": "OPAQUE",
+   "textureSlotsToImageIndex": {},
+   "extensions": []
+  },
+  {
+   "index": 4,
+   "name": "lib_oak",
+   "alphaMode": "OPAQUE",
+   "textureSlotsToImageIndex": {
+    "baseColor": 2
+   },
+   "extensions": []
+  },
+  {
+   "index": 5,
+   "name": "lib_floor",
+   "alphaMode": "OPAQUE",
+   "textureSlotsToImageIndex": {},
+   "extensions": []
+  },
+  {
+   "index": 6,
+   "name": "rt_placeholder",
+   "alphaMode": "OPAQUE",
+   "textureSlotsToImageIndex": {},
+   "extensions": []
+  },
+  {
+   "index": 7,
+   "name": "lib_contact",
+   "alphaMode": "BLEND",
+   "textureSlotsToImageIndex": {},
+   "extensions": []
+  },
+  {
+   "index": 8,
+   "name": "lib_glow",
+   "alphaMode": "OPAQUE",
+   "textureSlotsToImageIndex": {},
+   "extensions": [
+    "KHR_materials_emissive_strength"
+   ]
+  },
+  {
+   "index": 9,
+   "name": "lib_linen_shade",
+   "alphaMode": "OPAQUE",
+   "textureSlotsToImageIndex": {
+    "baseColor": 4,
+    "emissive": 3
+   },
+   "extensions": [
+    "KHR_materials_emissive_strength"
+   ]
+  }
+ ],
+ "textures": [
+  {
+   "index": 0,
+   "name": "fk_palette_colour",
+   "mimeType": "image/png",
+   "bytes": 745,
+   "px": [
+    128,
+    128
+   ],
+   "sha256": "a1aa4bf775d31be69e5b97bbdad3cf5f06bc9fb2243383263cef570606b1b11a"
+  },
+  {
+   "index": 1,
+   "name": "fk_palette_orm",
+   "mimeType": "image/png",
+   "bytes": 951,
+   "px": [
+    128,
+    128
+   ],
+   "sha256": "0923eef60b99ca698b043d750fdc6b5f2a6392b89c25c104960f94867ee25ff5"
+  },
+  {
+   "index": 2,
+   "name": "pilot_timber_albedo",
+   "mimeType": "image/png",
+   "bytes": 144594,
+   "px": [
+    1024,
+    256
+   ],
+   "sha256": "ab1b820b394d7fa97125b92a384a29633117bcceef9cbd8214a1ca31245b0429"
+  },
+  {
+   "index": 3,
+   "name": "pilot_linen_emissive",
+   "mimeType": "image/png",
+   "bytes": 85552,
+   "px": [
+    256,
+    256
+   ],
+   "sha256": "ad2cfc3d67e0e2e975fe1464c9e3ecdbedf1e455e7219ebcdd17babce1bd9ff0"
+  },
+  {
+   "index": 4,
+   "name": "pilot_linen_albedo",
+   "mimeType": "image/png",
+   "bytes": 93353,
+   "px": [
+    256,
+    256
+   ],
+   "sha256": "47eeaa04e00157247fd99e475947ab9c74a3d3196a119df1ac27568e65136809"
+  }
+ ],
+ "targetWorldCorners": {
+  "border_copilot": {
+   "vertexCount": 4,
+   "triangles": 2,
+   "cornersGltfMetres": [
+    [
+     -1.751963,
+     0.81625,
+     0.021573
+    ],
+    [
+     -1.343557,
+     0.81625,
+     -0.104762
+    ],
+    [
+     -1.343557,
+     1.51375,
+     -0.104762
+    ],
+    [
+     -1.751963,
+     1.51375,
+     0.021573
+    ]
+   ],
+   "cornersRuntimeWorld": [
+    [
+     -3.503926,
+     1.7425,
+     0.043146
+    ],
+    [
+     -2.687113,
+     1.7425,
+     -0.209523
+    ],
+    [
+     -2.687113,
+     3.1375,
+     -0.209523
+    ],
+    [
+     -3.503926,
+     3.1375,
+     0.043146
+    ]
+   ],
+   "uv": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0
+    ],
+    [
+     1.0,
+     1.0
+    ],
+    [
+     0.0,
+     1.0
+    ]
+   ],
+   "frontNormalGltf": [
+    0.29552,
+    0.0,
+    0.955337
+   ]
+  },
+  "border_dissertation": {
+   "vertexCount": 4,
+   "triangles": 2,
+   "cornersGltfMetres": [
+    [
+     -1.28875,
+     0.85625,
+     -0.1105
+    ],
+    [
+     -0.32125,
+     0.85625,
+     -0.1105
+    ],
+    [
+     -0.32125,
+     1.41375,
+     -0.1105
+    ],
+    [
+     -1.28875,
+     1.41375,
+     -0.1105
+    ]
+   ],
+   "cornersRuntimeWorld": [
+    [
+     -2.5775,
+     1.8225,
+     -0.221
+    ],
+    [
+     -0.6425,
+     1.8225,
+     -0.221
+    ],
+    [
+     -0.6425,
+     2.9375,
+     -0.221
+    ],
+    [
+     -2.5775,
+     2.9375,
+     -0.221
+    ]
+   ],
+   "uv": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0
+    ],
+    [
+     1.0,
+     1.0
+    ],
+    [
+     0.0,
+     1.0
+    ]
+   ],
+   "frontNormalGltf": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "border_typeforge": {
+   "vertexCount": 4,
+   "triangles": 2,
+   "cornersGltfMetres": [
+    [
+     -0.266443,
+     0.81625,
+     -0.104762
+    ],
+    [
+     0.141963,
+     0.81625,
+     0.021573
+    ],
+    [
+     0.141963,
+     1.51375,
+     0.021573
+    ],
+    [
+     -0.266443,
+     1.51375,
+     -0.104762
+    ]
+   ],
+   "cornersRuntimeWorld": [
+    [
+     -0.532887,
+     1.7425,
+     -0.209523
+    ],
+    [
+     0.283926,
+     1.7425,
+     0.043146
+    ],
+    [
+     0.283926,
+     3.1375,
+     0.043146
+    ],
+    [
+     -0.532887,
+     3.1375,
+     -0.209523
+    ]
+   ],
+   "uv": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0
+    ],
+    [
+     1.0,
+     1.0
+    ],
+    [
+     0.0,
+     1.0
+    ]
+   ],
+   "frontNormalGltf": [
+    -0.29552,
+    0.0,
+    0.955337
+   ]
+  },
+  "display_studio": {
+   "vertexCount": 4,
+   "triangles": 2,
+   "cornersGltfMetres": [
+    [
+     -1.1275,
+     1.5225,
+     -0.293
+    ],
+    [
+     -0.4825,
+     1.5225,
+     -0.293
+    ],
+    [
+     -0.4825,
+     1.8875,
+     -0.293
+    ],
+    [
+     -1.1275,
+     1.8875,
+     -0.293
+    ]
+   ],
+   "cornersRuntimeWorld": [
+    [
+     -2.255,
+     3.155,
+     -0.586
+    ],
+    [
+     -0.965,
+     3.155,
+     -0.586
+    ],
+    [
+     -0.965,
+     3.885,
+     -0.586
+    ],
+    [
+     -2.255,
+     3.885,
+     -0.586
+    ]
+   ],
+   "uv": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0
+    ],
+    [
+     1.0,
+     1.0
+    ],
+    [
+     0.0,
+     1.0
+    ]
+   ],
+   "frontNormalGltf": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "rt_window_dusk": {
+   "vertexCount": 4,
+   "triangles": 2,
+   "cornersGltfMetres": [
+    [
+     2.5425,
+     0.945,
+     0.25
+    ],
+    [
+     2.5425,
+     0.945,
+     1.25
+    ],
+    [
+     2.5425,
+     1.945,
+     1.25
+    ],
+    [
+     2.5425,
+     1.945,
+     0.25
+    ]
+   ],
+   "cornersRuntimeWorld": [
+    [
+     5.085,
+     2.0,
+     0.5
+    ],
+    [
+     5.085,
+     2.0,
+     2.5
+    ],
+    [
+     5.085,
+     4.0,
+     2.5
+    ],
+    [
+     5.085,
+     4.0,
+     0.5
+    ]
+   ],
+   "uv": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0
+    ],
+    [
+     1.0,
+     1.0
+    ],
+    [
+     0.0,
+     1.0
+    ]
+   ],
+   "frontNormalGltf": [
+    -1.0,
+    0.0,
+    -0.0
+   ]
+  },
+  "target_copilot": {
+   "vertexCount": 4,
+   "triangles": 2,
+   "cornersGltfMetres": [
+    [
+     -1.738088,
+     0.83,
+     0.019898
+    ],
+    [
+     -1.355954,
+     0.83,
+     -0.09831
+    ],
+    [
+     -1.355954,
+     1.5,
+     -0.09831
+    ],
+    [
+     -1.738088,
+     1.5,
+     0.019898
+    ]
+   ],
+   "cornersRuntimeWorld": [
+    [
+     -3.476177,
+     1.77,
+     0.039796
+    ],
+    [
+     -2.711907,
+     1.77,
+     -0.19662
+    ],
+    [
+     -2.711907,
+     3.11,
+     -0.19662
+    ],
+    [
+     -3.476177,
+     3.11,
+     0.039796
+    ]
+   ],
+   "uv": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0
+    ],
+    [
+     1.0,
+     1.0
+    ],
+    [
+     0.0,
+     1.0
+    ]
+   ],
+   "frontNormalGltf": [
+    0.29552,
+    0.0,
+    0.955337
+   ]
+  },
+  "target_dissertation": {
+   "vertexCount": 4,
+   "triangles": 2,
+   "cornersGltfMetres": [
+    [
+     -1.275,
+     0.87,
+     -0.108
+    ],
+    [
+     -0.335,
+     0.87,
+     -0.108
+    ],
+    [
+     -0.335,
+     1.4,
+     -0.108
+    ],
+    [
+     -1.275,
+     1.4,
+     -0.108
+    ]
+   ],
+   "cornersRuntimeWorld": [
+    [
+     -2.55,
+     1.85,
+     -0.216
+    ],
+    [
+     -0.67,
+     1.85,
+     -0.216
+    ],
+    [
+     -0.67,
+     2.91,
+     -0.216
+    ],
+    [
+     -2.55,
+     2.91,
+     -0.216
+    ]
+   ],
+   "uv": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0
+    ],
+    [
+     1.0,
+     1.0
+    ],
+    [
+     0.0,
+     1.0
+    ]
+   ],
+   "frontNormalGltf": [
+    0.0,
+    0.0,
+    1.0
+   ]
+  },
+  "target_typeforge": {
+   "vertexCount": 4,
+   "triangles": 2,
+   "cornersGltfMetres": [
+    [
+     -0.254046,
+     0.83,
+     -0.09831
+    ],
+    [
+     0.128088,
+     0.83,
+     0.019898
+    ],
+    [
+     0.128088,
+     1.5,
+     0.019898
+    ],
+    [
+     -0.254046,
+     1.5,
+     -0.09831
+    ]
+   ],
+   "cornersRuntimeWorld": [
+    [
+     -0.508093,
+     1.77,
+     -0.19662
+    ],
+    [
+     0.256177,
+     1.77,
+     0.039796
+    ],
+    [
+     0.256177,
+     3.11,
+     0.039796
+    ],
+    [
+     -0.508093,
+     3.11,
+     -0.19662
+    ]
+   ],
+   "uv": [
+    [
+     0.0,
+     0.0
+    ],
+    [
+     1.0,
+     0.0
+    ],
+    [
+     1.0,
+     1.0
+    ],
+    [
+     0.0,
+     1.0
+    ]
+   ],
+   "frontNormalGltf": [
+    -0.29552,
+    0.0,
+    0.955337
+   ]
+  }
+ },
+ "nodes": [
+  {
+   "name": "acoustic_panels__proxy_panel_1",
+   "parent": "studio_full_kit",
+   "assetId": "acoustic_panels",
+   "role": "opaque",
+   "meshIndex": 0,
+   "materialIndex": 0,
+   "material": "lib_weave",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     0.6825,
+     0.925,
+     -1.0575
+    ],
+    [
+     1.1175,
+     1.815,
+     -1.0125
+    ]
+   ],
+   "transform": {
+    "translation": [
+     0.8999999761581421,
+     1.3700000047683716,
+     -1.034999966621399
+    ],
+    "scale": [
+     0.4350000023841858,
+     0.8899999856948853,
+     0.04500000178813934
+    ]
+   }
+  },
+  {
+   "name": "acoustic_panels__proxy_panel_2",
+   "parent": "studio_full_kit",
+   "assetId": "acoustic_panels",
+   "role": "opaque",
+   "meshIndex": 0,
+   "materialIndex": 0,
+   "material": "lib_weave",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     1.2425,
+     0.925,
+     -1.0575
+    ],
+    [
+     1.6775,
+     1.815,
+     -1.0125
+    ]
+   ],
+   "transform": {
+    "translation": [
+     1.4600000381469727,
+     1.3700000047683716,
+     -1.034999966621399
+    ],
+    "scale": [
+     0.4350000023841858,
+     0.8899999856948853,
+     0.04500000178813934
+    ]
+   }
+  },
+  {
+   "name": "acoustic_panels__proxy_panel_3",
+   "parent": "studio_full_kit",
+   "assetId": "acoustic_panels",
+   "role": "opaque",
+   "meshIndex": 0,
+   "materialIndex": 0,
+   "material": "lib_weave",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     1.8025,
+     0.925,
+     -1.0575
+    ],
+    [
+     2.2375,
+     1.815,
+     -1.0125
+    ]
+   ],
+   "transform": {
+    "translation": [
+     2.0199999809265137,
+     1.3700000047683716,
+     -1.034999966621399
+    ],
+    "scale": [
+     0.4350000023841858,
+     0.8899999856948853,
+     0.04500000178813934
+    ]
+   }
+  },
+  {
+   "name": "arch_beams__beam_1",
+   "parent": "studio_full_kit",
+   "assetId": "arch_beams",
+   "role": "opaque",
+   "meshIndex": 1,
+   "materialIndex": 1,
+   "material": "lib_dark_oak",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -2.25,
+     2.485,
+     -0.51
+    ],
+    [
+     2.55,
+     2.595,
+     -0.39
+    ]
+   ],
+   "transform": {
+    "translation": [
+     0.15000000596046448,
+     2.5399999618530273,
+     -0.44999998807907104
+    ],
+    "scale": [
+     4.800000190734863,
+     0.10999999940395355,
+     0.11999999731779099
+    ]
+   }
+  },
+  {
+   "name": "arch_beams__beam_2",
+   "parent": "studio_full_kit",
+   "assetId": "arch_beams",
+   "role": "opaque",
+   "meshIndex": 1,
+   "materialIndex": 1,
+   "material": "lib_dark_oak",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -2.25,
+     2.485,
+     0.49
+    ],
+    [
+     2.55,
+     2.595,
+     0.61
+    ]
+   ],
+   "transform": {
+    "translation": [
+     0.15000000596046448,
+     2.5399999618530273,
+     0.550000011920929
+    ],
+    "scale": [
+     4.800000190734863,
+     0.10999999940395355,
+     0.11999999731779099
+    ]
+   }
+  },
+  {
+   "name": "arch_beams__beam_3",
+   "parent": "studio_full_kit",
+   "assetId": "arch_beams",
+   "role": "opaque",
+   "meshIndex": 1,
+   "materialIndex": 1,
+   "material": "lib_dark_oak",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -2.25,
+     2.485,
+     1.49
+    ],
+    [
+     2.55,
+     2.595,
+     1.61
+    ]
+   ],
+   "transform": {
+    "translation": [
+     0.15000000596046448,
+     2.5399999618530273,
+     1.5499999523162842
+    ],
+    "scale": [
+     4.800000190734863,
+     0.10999999940395355,
+     0.11999999731779099
+    ]
+   }
+  },
+  {
+   "name": "arch_beams__beam_4",
+   "parent": "studio_full_kit",
+   "assetId": "arch_beams",
+   "role": "opaque",
+   "meshIndex": 1,
+   "materialIndex": 1,
+   "material": "lib_dark_oak",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -2.25,
+     2.485,
+     2.49
+    ],
+    [
+     2.55,
+     2.595,
+     2.61
+    ]
+   ],
+   "transform": {
+    "translation": [
+     0.15000000596046448,
+     2.5399999618530273,
+     2.549999952316284
+    ],
+    "scale": [
+     4.800000190734863,
+     0.10999999940395355,
+     0.11999999731779099
+    ]
+   }
+  },
+  {
+   "name": "arch_blind__head_rail",
+   "parent": "studio_full_kit",
+   "assetId": "arch_blind",
+   "role": "opaque",
+   "meshIndex": 2,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     2.4875,
+     1.9075,
+     0.245
+    ],
+    [
+     2.5325,
+     1.9425,
+     1.255
+    ]
+   ],
+   "transform": {
+    "translation": [
+     2.509999990463257,
+     1.9249999523162842,
+     0.75
+    ],
+    "scale": [
+     0.04500000178813934,
+     0.03500000014901161,
+     1.0099999904632568
+    ]
+   }
+  },
+  {
+   "name": "arch_blind__slat_1",
+   "parent": "studio_full_kit",
+   "assetId": "arch_blind",
+   "role": "opaque",
+   "meshIndex": 2,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     2.495,
+     1.877,
+     0.255
+    ],
+    [
+     2.53,
+     1.883,
+     1.245
+    ]
+   ],
+   "transform": {
+    "translation": [
+     2.512500047683716,
+     1.8799999952316284,
+     0.75
+    ],
+    "scale": [
+     0.03500000014901161,
+     0.006000000052154064,
+     0.9900000095367432
+    ]
+   }
+  },
+  {
+   "name": "arch_blind__slat_2",
+   "parent": "studio_full_kit",
+   "assetId": "arch_blind",
+   "role": "opaque",
+   "meshIndex": 2,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     2.495,
+     1.8345,
+     0.255
+    ],
+    [
+     2.53,
+     1.8405,
+     1.245
+    ]
+   ],
+   "transform": {
+    "translation": [
+     2.512500047683716,
+     1.837499976158142,
+     0.75
+    ],
+    "scale": [
+     0.03500000014901161,
+     0.006000000052154064,
+     0.9900000095367432
+    ]
+   }
+  },
+  {
+   "name": "arch_blind__slat_3",
+   "parent": "studio_full_kit",
+   "assetId": "arch_blind",
+   "role": "opaque",
+   "meshIndex": 2,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     2.495,
+     1.792,
+     0.255
+    ],
+    [
+     2.53,
+     1.798,
+     1.245
+    ]
+   ],
+   "transform": {
+    "translation": [
+     2.512500047683716,
+     1.7949999570846558,
+     0.75
+    ],
+    "scale": [
+     0.03500000014901161,
+     0.006000000052154064,
+     0.9900000095367432
+    ]
+   }
+  },
+  {
+   "name": "arch_blind__slat_4",
+   "parent": "studio_full_kit",
+   "assetId": "arch_blind",
+   "role": "opaque",
+   "meshIndex": 2,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     2.495,
+     1.7495,
+     0.255
+    ],
+    [
+     2.53,
+     1.7555,
+     1.245
+    ]
+   ],
+   "transform": {
+    "translation": [
+     2.512500047683716,
+     1.752500057220459,
+     0.75
+    ],
+    "scale": [
+     0.03500000014901161,
+     0.006000000052154064,
+     0.9900000095367432
+    ]
+   }
+  },
+  {
+   "name": "arch_blind__slat_5",
+   "parent": "studio_full_kit",
+   "assetId": "arch_blind",
+   "role": "opaque",
+   "meshIndex": 2,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     2.495,
+     1.707,
+     0.255
+    ],
+    [
+     2.53,
+     1.713,
+     1.245
+    ]
+   ],
+   "transform": {
+    "translation": [
+     2.512500047683716,
+     1.7100000381469727,
+     0.75
+    ],
+    "scale": [
+     0.03500000014901161,
+     0.006000000052154064,
+     0.9900000095367432
+    ]
+   }
+  },
+  {
+   "name": "arch_blind__slat_6",
+   "parent": "studio_full_kit",
+   "assetId": "arch_blind",
+   "role": "opaque",
+   "meshIndex": 2,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     2.495,
+     1.6645,
+     0.255
+    ],
+    [
+     2.53,
+     1.6705,
+     1.245
+    ]
+   ],
+   "transform": {
+    "translation": [
+     2.512500047683716,
+     1.6675000190734863,
+     0.75
+    ],
+    "scale": [
+     0.03500000014901161,
+     0.006000000052154064,
+     0.9900000095367432
+    ]
+   }
+  },
+  {
+   "name": "arch_blind__slat_7",
+   "parent": "studio_full_kit",
+   "assetId": "arch_blind",
+   "role": "opaque",
+   "meshIndex": 2,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     2.495,
+     1.622,
+     0.255
+    ],
+    [
+     2.53,
+     1.628,
+     1.245
+    ]
+   ],
+   "transform": {
+    "translation": [
+     2.512500047683716,
+     1.625,
+     0.75
+    ],
+    "scale": [
+     0.03500000014901161,
+     0.006000000052154064,
+     0.9900000095367432
+    ]
+   }
+  },
+  {
+   "name": "arch_blind__slat_8",
+   "parent": "studio_full_kit",
+   "assetId": "arch_blind",
+   "role": "opaque",
+   "meshIndex": 2,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     2.495,
+     1.5795,
+     0.255
+    ],
+    [
+     2.53,
+     1.5855,
+     1.245
+    ]
+   ],
+   "transform": {
+    "translation": [
+     2.512500047683716,
+     1.5824999809265137,
+     0.75
+    ],
+    "scale": [
+     0.03500000014901161,
+     0.006000000052154064,
+     0.9900000095367432
+    ]
+   }
+  },
+  {
+   "name": "arch_blind__slat_9",
+   "parent": "studio_full_kit",
+   "assetId": "arch_blind",
+   "role": "opaque",
+   "meshIndex": 2,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     2.495,
+     1.537,
+     0.255
+    ],
+    [
+     2.53,
+     1.543,
+     1.245
+    ]
+   ],
+   "transform": {
+    "translation": [
+     2.512500047683716,
+     1.5399999618530273,
+     0.75
+    ],
+    "scale": [
+     0.03500000014901161,
+     0.006000000052154064,
+     0.9900000095367432
+    ]
+   }
+  },
+  {
+   "name": "arch_cornice__back",
+   "parent": "studio_full_kit",
+   "assetId": "arch_cornice",
+   "role": "opaque",
+   "meshIndex": 3,
+   "materialIndex": 3,
+   "material": "lib_plaster",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -2.25,
+     2.535,
+     -1.06
+    ],
+    [
+     2.55,
+     2.595,
+     -1.02
+    ]
+   ],
+   "transform": {
+    "translation": [
+     0.15000000596046448,
+     2.565000057220459,
+     -1.0399999618530273
+    ],
+    "scale": [
+     4.800000190734863,
+     0.05999999865889549,
+     0.03999999910593033
+    ]
+   }
+  },
+  {
+   "name": "arch_cornice__front",
+   "parent": "studio_full_kit",
+   "assetId": "arch_cornice",
+   "role": "opaque",
+   "meshIndex": 3,
+   "materialIndex": 3,
+   "material": "lib_plaster",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -2.25,
+     2.535,
+     3.26
+    ],
+    [
+     2.55,
+     2.595,
+     3.3
+    ]
+   ],
+   "transform": {
+    "translation": [
+     0.15000000596046448,
+     2.565000057220459,
+     3.2799999713897705
+    ],
+    "scale": [
+     4.800000190734863,
+     0.05999999865889549,
+     0.03999999910593033
+    ]
+   }
+  },
+  {
+   "name": "arch_cornice__left",
+   "parent": "studio_full_kit",
+   "assetId": "arch_cornice",
+   "role": "opaque",
+   "meshIndex": 3,
+   "materialIndex": 3,
+   "material": "lib_plaster",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -2.25,
+     2.535,
+     -1.06
+    ],
+    [
+     -2.21,
+     2.595,
+     3.3
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -2.2300000190734863,
+     2.565000057220459,
+     1.1200000047683716
+    ],
+    "scale": [
+     0.03999999910593033,
+     0.05999999865889549,
+     4.360000133514404
+    ]
+   }
+  },
+  {
+   "name": "arch_cornice__right",
+   "parent": "studio_full_kit",
+   "assetId": "arch_cornice",
+   "role": "opaque",
+   "meshIndex": 3,
+   "materialIndex": 3,
+   "material": "lib_plaster",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     2.51,
+     2.535,
+     -1.06
+    ],
+    [
+     2.55,
+     2.595,
+     3.3
+    ]
+   ],
+   "transform": {
+    "translation": [
+     2.5299999713897705,
+     2.565000057220459,
+     1.1200000047683716
+    ],
+    "scale": [
+     0.03999999910593033,
+     0.05999999865889549,
+     4.360000133514404
+    ]
+   }
+  },
+  {
+   "name": "arch_door__architrave",
+   "parent": "studio_full_kit",
+   "assetId": "arch_door",
+   "role": "opaque",
+   "meshIndex": 4,
+   "materialIndex": 1,
+   "material": "lib_dark_oak",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 432,
+   "boundsGltfMetres": [
+    [
+     2.488,
+     0.0,
+     1.418
+    ],
+    [
+     2.55,
+     2.146,
+     2.282
+    ]
+   ],
+   "transform": {}
+  },
+  {
+   "name": "arch_door__hardware",
+   "parent": "studio_full_kit",
+   "assetId": "arch_door",
+   "role": "opaque",
+   "meshIndex": 5,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 652,
+   "boundsGltfMetres": [
+    [
+     2.423,
+     0.903,
+     1.52
+    ],
+    [
+     2.51,
+     1.03,
+     1.58
+    ]
+   ],
+   "transform": {}
+  },
+  {
+   "name": "arch_door__leaf",
+   "parent": "studio_full_kit",
+   "assetId": "arch_door",
+   "role": "opaque",
+   "meshIndex": 6,
+   "materialIndex": 4,
+   "material": "lib_oak",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 1836,
+   "boundsGltfMetres": [
+    [
+     2.506,
+     0.008,
+     1.5
+    ],
+    [
+     2.55,
+     2.05,
+     2.2
+    ]
+   ],
+   "transform": {}
+  },
+  {
+   "name": "arch_floor__boards",
+   "parent": "studio_full_kit",
+   "assetId": "arch_floor",
+   "role": "opaque",
+   "meshIndex": 7,
+   "materialIndex": 5,
+   "material": "lib_floor",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 2,
+   "boundsGltfMetres": [
+    [
+     -2.25,
+     0.0,
+     -1.06
+    ],
+    [
+     2.55,
+     0.0,
+     3.3
+    ]
+   ],
+   "transform": {}
+  },
+  {
+   "name": "arch_shell__walls_ceiling",
+   "parent": "studio_full_kit",
+   "assetId": "arch_shell",
+   "role": "opaque",
+   "meshIndex": 8,
+   "materialIndex": 3,
+   "material": "lib_plaster",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 10,
+   "boundsGltfMetres": [
+    [
+     -2.25,
+     0.0,
+     -1.06
+    ],
+    [
+     2.55,
+     2.595,
+     3.3
+    ]
+   ],
+   "transform": {}
+  },
+  {
+   "name": "arch_skirting__back",
+   "parent": "studio_full_kit",
+   "assetId": "arch_skirting",
+   "role": "opaque",
+   "meshIndex": 1,
+   "materialIndex": 1,
+   "material": "lib_dark_oak",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -2.25,
+     0.0,
+     -1.06
+    ],
+    [
+     2.55,
+     0.11,
+     -1.035
+    ]
+   ],
+   "transform": {
+    "translation": [
+     0.15000000596046448,
+     0.054999999701976776,
+     -1.0475000143051147
+    ],
+    "scale": [
+     4.800000190734863,
+     0.10999999940395355,
+     0.02500000037252903
+    ]
+   }
+  },
+  {
+   "name": "arch_skirting__front",
+   "parent": "studio_full_kit",
+   "assetId": "arch_skirting",
+   "role": "opaque",
+   "meshIndex": 1,
+   "materialIndex": 1,
+   "material": "lib_dark_oak",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -2.25,
+     0.0,
+     3.275
+    ],
+    [
+     2.55,
+     0.11,
+     3.3
+    ]
+   ],
+   "transform": {
+    "translation": [
+     0.15000000596046448,
+     0.054999999701976776,
+     3.2874999046325684
+    ],
+    "scale": [
+     4.800000190734863,
+     0.10999999940395355,
+     0.02500000037252903
+    ]
+   }
+  },
+  {
+   "name": "arch_skirting__left",
+   "parent": "studio_full_kit",
+   "assetId": "arch_skirting",
+   "role": "opaque",
+   "meshIndex": 1,
+   "materialIndex": 1,
+   "material": "lib_dark_oak",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -2.25,
+     0.0,
+     -1.06
+    ],
+    [
+     -2.225,
+     0.11,
+     3.3
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -2.237499952316284,
+     0.054999999701976776,
+     1.1200000047683716
+    ],
+    "scale": [
+     0.02500000037252903,
+     0.10999999940395355,
+     4.360000133514404
+    ]
+   }
+  },
+  {
+   "name": "arch_skirting__right",
+   "parent": "studio_full_kit",
+   "assetId": "arch_skirting",
+   "role": "opaque",
+   "meshIndex": 1,
+   "materialIndex": 1,
+   "material": "lib_dark_oak",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     2.525,
+     0.0,
+     -1.06
+    ],
+    [
+     2.55,
+     0.11,
+     3.3
+    ]
+   ],
+   "transform": {
+    "translation": [
+     2.5374999046325684,
+     0.054999999701976776,
+     1.1200000047683716
+    ],
+    "scale": [
+     0.02500000037252903,
+     0.10999999940395355,
+     4.360000133514404
+    ]
+   }
+  },
+  {
+   "name": "arch_switches__proxy_switch_door",
+   "parent": "studio_full_kit",
+   "assetId": "arch_switches",
+   "role": "opaque",
+   "meshIndex": 2,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     2.535,
+     1.1525,
+     1.3325
+    ],
+    [
+     2.55,
+     1.2375,
+     1.4175
+    ]
+   ],
+   "transform": {
+    "translation": [
+     2.5425000190734863,
+     1.1950000524520874,
+     1.375
+    ],
+    "scale": [
+     0.014999999664723873,
+     0.08500000089406967,
+     0.08500000089406967
+    ]
+   }
+  },
+  {
+   "name": "arch_window__foot",
+   "parent": "studio_full_kit",
+   "assetId": "arch_window",
+   "role": "opaque",
+   "meshIndex": 1,
+   "materialIndex": 1,
+   "material": "lib_dark_oak",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     2.5,
+     0.9025,
+     0.2075
+    ],
+    [
+     2.55,
+     0.9475,
+     1.2925
+    ]
+   ],
+   "transform": {
+    "translation": [
+     2.5250000953674316,
+     0.925000011920929,
+     0.75
+    ],
+    "scale": [
+     0.05000000074505806,
+     0.04500000178813934,
+     1.0850000381469727
+    ]
+   }
+  },
+  {
+   "name": "arch_window__head",
+   "parent": "studio_full_kit",
+   "assetId": "arch_window",
+   "role": "opaque",
+   "meshIndex": 1,
+   "materialIndex": 1,
+   "material": "lib_dark_oak",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     2.5,
+     1.9425,
+     0.2075
+    ],
+    [
+     2.55,
+     1.9875,
+     1.2925
+    ]
+   ],
+   "transform": {
+    "translation": [
+     2.5250000953674316,
+     1.965000033378601,
+     0.75
+    ],
+    "scale": [
+     0.05000000074505806,
+     0.04500000178813934,
+     1.0850000381469727
+    ]
+   }
+  },
+  {
+   "name": "arch_window__jamb_a",
+   "parent": "studio_full_kit",
+   "assetId": "arch_window",
+   "role": "opaque",
+   "meshIndex": 1,
+   "materialIndex": 1,
+   "material": "lib_dark_oak",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     2.5,
+     0.9025,
+     0.2075
+    ],
+    [
+     2.55,
+     1.9875,
+     0.2525
+    ]
+   ],
+   "transform": {
+    "translation": [
+     2.5250000953674316,
+     1.4450000524520874,
+     0.23000000417232513
+    ],
+    "scale": [
+     0.05000000074505806,
+     1.0850000381469727,
+     0.04500000178813934
+    ]
+   }
+  },
+  {
+   "name": "arch_window__jamb_b",
+   "parent": "studio_full_kit",
+   "assetId": "arch_window",
+   "role": "opaque",
+   "meshIndex": 1,
+   "materialIndex": 1,
+   "material": "lib_dark_oak",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     2.5,
+     0.9025,
+     1.2475
+    ],
+    [
+     2.55,
+     1.9875,
+     1.2925
+    ]
+   ],
+   "transform": {
+    "translation": [
+     2.5250000953674316,
+     1.4450000524520874,
+     1.2699999809265137
+    ],
+    "scale": [
+     0.05000000074505806,
+     1.0850000381469727,
+     0.04500000178813934
+    ]
+   }
+  },
+  {
+   "name": "arch_window__mullion",
+   "parent": "studio_full_kit",
+   "assetId": "arch_window",
+   "role": "opaque",
+   "meshIndex": 1,
+   "materialIndex": 1,
+   "material": "lib_dark_oak",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     2.52,
+     0.945,
+     0.7375
+    ],
+    [
+     2.545,
+     1.945,
+     0.7625
+    ]
+   ],
+   "transform": {
+    "translation": [
+     2.5325000286102295,
+     1.4450000524520874,
+     0.75
+    ],
+    "scale": [
+     0.02500000037252903,
+     1,
+     0.02500000037252903
+    ]
+   }
+  },
+  {
+   "name": "arch_window__sill",
+   "parent": "studio_full_kit",
+   "assetId": "arch_window",
+   "role": "opaque",
+   "meshIndex": 1,
+   "materialIndex": 1,
+   "material": "lib_dark_oak",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     2.43,
+     0.8775,
+     0.175
+    ],
+    [
+     2.55,
+     0.9025,
+     1.325
+    ]
+   ],
+   "transform": {
+    "translation": [
+     2.490000009536743,
+     0.8899999856948853,
+     0.75
+    ],
+    "scale": [
+     0.11999999731779099,
+     0.02500000037252903,
+     1.149999976158142
+    ]
+   }
+  },
+  {
+   "name": "border_copilot",
+   "parent": "studio_full_kit",
+   "assetId": "target_borders",
+   "role": "border",
+   "meshIndex": 9,
+   "materialIndex": 6,
+   "material": "rt_placeholder",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": false,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": false
+   },
+   "proxy": false,
+   "triangles": 2,
+   "boundsGltfMetres": [
+    [
+     -1.751963,
+     0.81625,
+     -0.104762
+    ],
+    [
+     -1.343557,
+     1.51375,
+     0.021573
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -1.547759771347046,
+     1.1649999618530273,
+     -0.0415942557156086
+    ],
+    "rotation": [
+     0,
+     0.14943814277648926,
+     0,
+     0.9887710809707642
+    ]
+   }
+  },
+  {
+   "name": "border_dissertation",
+   "parent": "studio_full_kit",
+   "assetId": "target_borders",
+   "role": "border",
+   "meshIndex": 10,
+   "materialIndex": 6,
+   "material": "rt_placeholder",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": false,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": false
+   },
+   "proxy": false,
+   "triangles": 2,
+   "boundsGltfMetres": [
+    [
+     -1.28875,
+     0.85625,
+     -0.1105
+    ],
+    [
+     -0.32125,
+     1.41375,
+     -0.1105
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -0.8050000071525574,
+     1.1349999904632568,
+     -0.11050000041723251
+    ]
+   }
+  },
+  {
+   "name": "border_typeforge",
+   "parent": "studio_full_kit",
+   "assetId": "target_borders",
+   "role": "border",
+   "meshIndex": 11,
+   "materialIndex": 6,
+   "material": "rt_placeholder",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": false,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": false
+   },
+   "proxy": false,
+   "triangles": 2,
+   "boundsGltfMetres": [
+    [
+     -0.266443,
+     0.81625,
+     -0.104762
+    ],
+    [
+     0.141963,
+     1.51375,
+     0.021573
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -0.062240246683359146,
+     1.1649999618530273,
+     -0.0415942557156086
+    ],
+    "rotation": [
+     0,
+     -0.14943814277648926,
+     0,
+     0.9887710809707642
+    ]
+   }
+  },
+  {
+   "name": "contact_decals__desk_gear",
+   "parent": "studio_full_kit",
+   "assetId": "contact_decals",
+   "role": "transparent",
+   "meshIndex": 12,
+   "materialIndex": 7,
+   "material": "lib_contact",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": false,
+    "transparent": true,
+    "nocast": true,
+    "receiveShadow": false
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -1.35,
+     0.7355,
+     0.05
+    ],
+    [
+     -0.15,
+     0.7365,
+     0.55
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -0.75,
+     0.7360000014305115,
+     0.30000001192092896
+    ],
+    "scale": [
+     1.2000000476837158,
+     0.0010000000474974513,
+     0.5
+    ]
+   }
+  },
+  {
+   "name": "contact_decals__music_corner",
+   "parent": "studio_full_kit",
+   "assetId": "contact_decals",
+   "role": "transparent",
+   "meshIndex": 12,
+   "materialIndex": 7,
+   "material": "lib_contact",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": false,
+    "transparent": true,
+    "nocast": true,
+    "receiveShadow": false
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     0.525,
+     0.0205,
+     -0.8
+    ],
+    [
+     2.225,
+     0.0215,
+     1.0
+    ]
+   ],
+   "transform": {
+    "translation": [
+     1.375,
+     0.020999999716877937,
+     0.10000000149011612
+    ],
+    "scale": [
+     1.7000000476837158,
+     0.0010000000474974513,
+     1.7999999523162842
+    ]
+   }
+  },
+  {
+   "name": "contact_decals__under_desk",
+   "parent": "studio_full_kit",
+   "assetId": "contact_decals",
+   "role": "transparent",
+   "meshIndex": 12,
+   "materialIndex": 7,
+   "material": "lib_contact",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": false,
+    "transparent": true,
+    "nocast": true,
+    "receiveShadow": false
+   },
+   "proxy": false,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -1.75,
+     0.0015,
+     -0.25
+    ],
+    [
+     0.55,
+     0.0025,
+     0.55
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -0.6000000238418579,
+     0.0020000000949949026,
+     0.15000000596046448
+    ],
+    "scale": [
+     2.299999952316284,
+     0.0010000000474974513,
+     0.800000011920929
+    ]
+   }
+  },
+  {
+   "name": "ctl_body__proxy_body",
+   "parent": "studio_full_kit",
+   "assetId": "ctl_body",
+   "role": "opaque",
+   "meshIndex": 13,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     0.6075,
+     0.58,
+     0.19
+    ],
+    [
+     2.0925,
+     0.66,
+     0.64
+    ]
+   ],
+   "transform": {
+    "translation": [
+     1.350000023841858,
+     0.6200000047683716,
+     0.41499999165534973
+    ],
+    "scale": [
+     1.4850000143051147,
+     0.07999999821186066,
+     0.44999998807907104
+    ]
+   }
+  },
+  {
+   "name": "ctl_keys__proxy_key_bed",
+   "parent": "studio_full_kit",
+   "assetId": "ctl_keys",
+   "role": "opaque",
+   "meshIndex": 14,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     0.7,
+     0.665,
+     0.36
+    ],
+    [
+     2.0,
+     0.685,
+     0.62
+    ]
+   ],
+   "transform": {
+    "translation": [
+     1.350000023841858,
+     0.675000011920929,
+     0.49000000953674316
+    ],
+    "scale": [
+     1.2999999523162842,
+     0.019999999552965164,
+     0.25999999046325684
+    ]
+   }
+  },
+  {
+   "name": "ctl_stand__proxy_leg_1",
+   "parent": "studio_full_kit",
+   "assetId": "ctl_stand",
+   "role": "opaque",
+   "meshIndex": 15,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     0.815,
+     -0.02,
+     0.265
+    ],
+    [
+     0.855,
+     0.58,
+     0.565
+    ]
+   ],
+   "transform": {
+    "translation": [
+     0.8349999785423279,
+     0.2800000011920929,
+     0.41499999165534973
+    ],
+    "scale": [
+     0.03999999910593033,
+     0.6000000238418579,
+     0.30000001192092896
+    ]
+   }
+  },
+  {
+   "name": "ctl_stand__proxy_leg_2",
+   "parent": "studio_full_kit",
+   "assetId": "ctl_stand",
+   "role": "opaque",
+   "meshIndex": 15,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     1.845,
+     -0.02,
+     0.265
+    ],
+    [
+     1.885,
+     0.58,
+     0.565
+    ]
+   ],
+   "transform": {
+    "translation": [
+     1.8650000095367432,
+     0.2800000011920929,
+     0.41499999165534973
+    ],
+    "scale": [
+     0.03999999910593033,
+     0.6000000238418579,
+     0.30000001192092896
+    ]
+   }
+  },
+  {
+   "name": "ctl_sustain_pedal__proxy_pedal",
+   "parent": "studio_full_kit",
+   "assetId": "ctl_sustain_pedal",
+   "role": "opaque",
+   "meshIndex": 15,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     1.4,
+     0.005,
+     0.56
+    ],
+    [
+     1.5,
+     0.045,
+     0.82
+    ]
+   ],
+   "transform": {
+    "translation": [
+     1.4500000476837158,
+     0.02500000037252903,
+     0.6899999976158142
+    ],
+    "scale": [
+     0.10000000149011612,
+     0.03999999910593033,
+     0.25999999046325684
+    ]
+   }
+  },
+  {
+   "name": "desk_frame__proxy_leg_1",
+   "parent": "studio_full_kit",
+   "assetId": "desk_frame",
+   "role": "opaque",
+   "meshIndex": 16,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -1.78,
+     0.0,
+     -0.2
+    ],
+    [
+     -1.73,
+     0.67,
+     -0.15
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -1.7549999952316284,
+     0.33500000834465027,
+     -0.17499999701976776
+    ],
+    "scale": [
+     0.05000000074505806,
+     0.6700000166893005,
+     0.05000000074505806
+    ]
+   }
+  },
+  {
+   "name": "desk_frame__proxy_leg_2",
+   "parent": "studio_full_kit",
+   "assetId": "desk_frame",
+   "role": "opaque",
+   "meshIndex": 16,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     0.38,
+     0.0,
+     -0.2
+    ],
+    [
+     0.43,
+     0.67,
+     -0.15
+    ]
+   ],
+   "transform": {
+    "translation": [
+     0.4050000011920929,
+     0.33500000834465027,
+     -0.17499999701976776
+    ],
+    "scale": [
+     0.05000000074505806,
+     0.6700000166893005,
+     0.05000000074505806
+    ]
+   }
+  },
+  {
+   "name": "desk_frame__proxy_leg_3",
+   "parent": "studio_full_kit",
+   "assetId": "desk_frame",
+   "role": "opaque",
+   "meshIndex": 16,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -1.78,
+     0.0,
+     0.4
+    ],
+    [
+     -1.73,
+     0.67,
+     0.45
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -1.7549999952316284,
+     0.33500000834465027,
+     0.42500001192092896
+    ],
+    "scale": [
+     0.05000000074505806,
+     0.6700000166893005,
+     0.05000000074505806
+    ]
+   }
+  },
+  {
+   "name": "desk_frame__proxy_leg_4",
+   "parent": "studio_full_kit",
+   "assetId": "desk_frame",
+   "role": "opaque",
+   "meshIndex": 16,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     0.38,
+     0.0,
+     0.4
+    ],
+    [
+     0.43,
+     0.67,
+     0.45
+    ]
+   ],
+   "transform": {
+    "translation": [
+     0.4050000011920929,
+     0.33500000834465027,
+     0.42500001192092896
+    ],
+    "scale": [
+     0.05000000074505806,
+     0.6700000166893005,
+     0.05000000074505806
+    ]
+   }
+  },
+  {
+   "name": "desk_mat__proxy_mat",
+   "parent": "studio_full_kit",
+   "assetId": "desk_mat",
+   "role": "opaque",
+   "meshIndex": 0,
+   "materialIndex": 0,
+   "material": "lib_weave",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -1.45,
+     0.735,
+     0.07
+    ],
+    [
+     -0.15,
+     0.744,
+     0.53
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -0.800000011920929,
+     0.7394999861717224,
+     0.30000001192092896
+    ],
+    "scale": [
+     1.2999999523162842,
+     0.008999999612569809,
+     0.46000000834465027
+    ]
+   }
+  },
+  {
+   "name": "desk_top__proxy_slab",
+   "parent": "studio_full_kit",
+   "assetId": "desk_top",
+   "role": "opaque",
+   "meshIndex": 17,
+   "materialIndex": 4,
+   "material": "lib_oak",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -1.9,
+     0.655,
+     -0.3125
+    ],
+    [
+     0.55,
+     0.735,
+     0.5625
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -0.675000011920929,
+     0.6949999928474426,
+     0.125
+    ],
+    "scale": [
+     2.450000047683716,
+     0.07999999821186066,
+     0.875
+    ]
+   }
+  },
+  {
+   "name": "display_studio",
+   "parent": "studio_full_kit",
+   "assetId": "display_studio",
+   "role": "decorative-screen",
+   "meshIndex": 18,
+   "materialIndex": 6,
+   "material": "rt_placeholder",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": false
+   },
+   "proxy": false,
+   "triangles": 2,
+   "boundsGltfMetres": [
+    [
+     -1.1275,
+     1.5225,
+     -0.293
+    ],
+    [
+     -0.4825,
+     1.8875,
+     -0.293
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -0.8050000071525574,
+     1.7050000429153442,
+     -0.2930000126361847
+    ]
+   }
+  },
+  {
+   "name": "drum_cymbals__proxy_cymbal_1",
+   "parent": "studio_full_kit",
+   "assetId": "drum_cymbals",
+   "role": "opaque",
+   "meshIndex": 19,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 60,
+   "boundsGltfMetres": [
+    [
+     0.67,
+     1.0125,
+     -0.85
+    ],
+    [
+     1.07,
+     1.0275,
+     -0.45
+    ]
+   ],
+   "transform": {
+    "translation": [
+     0.8700000047683716,
+     1.0199999809265137,
+     -0.6499999761581421
+    ],
+    "scale": [
+     0.4000000059604645,
+     0.014999999664723873,
+     0.4000000059604645
+    ]
+   }
+  },
+  {
+   "name": "drum_cymbals__proxy_cymbal_2",
+   "parent": "studio_full_kit",
+   "assetId": "drum_cymbals",
+   "role": "opaque",
+   "meshIndex": 19,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 60,
+   "boundsGltfMetres": [
+    [
+     1.46,
+     1.0525,
+     -0.89
+    ],
+    [
+     1.9,
+     1.0675,
+     -0.45
+    ]
+   ],
+   "transform": {
+    "translation": [
+     1.6799999475479126,
+     1.059999942779541,
+     -0.6700000166893005
+    ],
+    "scale": [
+     0.4399999976158142,
+     0.014999999664723873,
+     0.4399999976158142
+    ]
+   }
+  },
+  {
+   "name": "drum_cymbals__proxy_cymbal_3",
+   "parent": "studio_full_kit",
+   "assetId": "drum_cymbals",
+   "role": "opaque",
+   "meshIndex": 19,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 60,
+   "boundsGltfMetres": [
+    [
+     1.795,
+     0.9275,
+     -0.63
+    ],
+    [
+     2.165,
+     0.9425,
+     -0.26
+    ]
+   ],
+   "transform": {
+    "translation": [
+     1.9800000190734863,
+     0.9350000023841858,
+     -0.4449999928474426
+    ],
+    "scale": [
+     0.3700000047683716,
+     0.014999999664723873,
+     0.3700000047683716
+    ]
+   }
+  },
+  {
+   "name": "drum_hihat_pedal__proxy_pedal",
+   "parent": "studio_full_kit",
+   "assetId": "drum_hihat_pedal",
+   "role": "opaque",
+   "meshIndex": 15,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     0.81,
+     0.005,
+     -0.35
+    ],
+    [
+     0.94,
+     0.045,
+     -0.02
+    ]
+   ],
+   "transform": {
+    "translation": [
+     0.875,
+     0.02500000037252903,
+     -0.1850000023841858
+    ],
+    "scale": [
+     0.12999999523162842,
+     0.03999999910593033,
+     0.33000001311302185
+    ]
+   }
+  },
+  {
+   "name": "drum_kick__proxy_tower_pedal",
+   "parent": "studio_full_kit",
+   "assetId": "drum_kick",
+   "role": "opaque",
+   "meshIndex": 15,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     1.305,
+     0.025,
+     -0.3725
+    ],
+    [
+     1.525,
+     0.325,
+     -0.1475
+    ]
+   ],
+   "transform": {
+    "translation": [
+     1.4149999618530273,
+     0.17499999701976776,
+     -0.25999999046325684
+    ],
+    "scale": [
+     0.2199999988079071,
+     0.30000001192092896,
+     0.22499999403953552
+    ]
+   }
+  },
+  {
+   "name": "drum_module__proxy_module",
+   "parent": "studio_full_kit",
+   "assetId": "drum_module",
+   "role": "opaque",
+   "meshIndex": 15,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     0.695,
+     0.6975,
+     -0.49
+    ],
+    [
+     0.815,
+     0.7325,
+     -0.33
+    ]
+   ],
+   "transform": {
+    "translation": [
+     0.7549999952316284,
+     0.7149999737739563,
+     -0.4099999964237213
+    ],
+    "scale": [
+     0.11999999731779099,
+     0.03500000014901161,
+     0.1599999964237213
+    ]
+   }
+  },
+  {
+   "name": "drum_pads__proxy_pad_1",
+   "parent": "studio_full_kit",
+   "assetId": "drum_pads",
+   "role": "opaque",
+   "meshIndex": 20,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 60,
+   "boundsGltfMetres": [
+    [
+     0.975,
+     0.77,
+     -0.705
+    ],
+    [
+     1.265,
+     0.82,
+     -0.415
+    ]
+   ],
+   "transform": {
+    "translation": [
+     1.1200000047683716,
+     0.7950000166893005,
+     -0.5600000023841858
+    ],
+    "scale": [
+     0.28999999165534973,
+     0.05000000074505806,
+     0.28999999165534973
+    ]
+   }
+  },
+  {
+   "name": "drum_pads__proxy_pad_2",
+   "parent": "studio_full_kit",
+   "assetId": "drum_pads",
+   "role": "opaque",
+   "meshIndex": 20,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 60,
+   "boundsGltfMetres": [
+    [
+     1.37,
+     0.785,
+     -0.71
+    ],
+    [
+     1.67,
+     0.835,
+     -0.41
+    ]
+   ],
+   "transform": {
+    "translation": [
+     1.5199999809265137,
+     0.8100000023841858,
+     -0.5600000023841858
+    ],
+    "scale": [
+     0.30000001192092896,
+     0.05000000074505806,
+     0.30000001192092896
+    ]
+   }
+  },
+  {
+   "name": "drum_pads__proxy_pad_3",
+   "parent": "studio_full_kit",
+   "assetId": "drum_pads",
+   "role": "opaque",
+   "meshIndex": 20,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 60,
+   "boundsGltfMetres": [
+    [
+     0.88,
+     0.52,
+     -0.4
+    ],
+    [
+     1.22,
+     0.57,
+     -0.06
+    ]
+   ],
+   "transform": {
+    "translation": [
+     1.0499999523162842,
+     0.5450000166893005,
+     -0.23000000417232513
+    ],
+    "scale": [
+     0.3400000035762787,
+     0.05000000074505806,
+     0.3400000035762787
+    ]
+   }
+  },
+  {
+   "name": "drum_pads__proxy_pad_4",
+   "parent": "studio_full_kit",
+   "assetId": "drum_pads",
+   "role": "opaque",
+   "meshIndex": 20,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 60,
+   "boundsGltfMetres": [
+    [
+     1.65,
+     0.55,
+     -0.435
+    ],
+    [
+     1.99,
+     0.6,
+     -0.095
+    ]
+   ],
+   "transform": {
+    "translation": [
+     1.8200000524520874,
+     0.574999988079071,
+     -0.26499998569488525
+    ],
+    "scale": [
+     0.3400000035762787,
+     0.05000000074505806,
+     0.3400000035762787
+    ]
+   }
+  },
+  {
+   "name": "drum_rack__proxy_crossbar",
+   "parent": "studio_full_kit",
+   "assetId": "drum_rack",
+   "role": "opaque",
+   "meshIndex": 21,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     0.8,
+     0.6425,
+     -0.5775
+    ],
+    [
+     2.0,
+     0.6775,
+     -0.5425
+    ]
+   ],
+   "transform": {
+    "translation": [
+     1.399999976158142,
+     0.6600000262260437,
+     -0.5600000023841858
+    ],
+    "scale": [
+     1.2000000476837158,
+     0.03500000014901161,
+     0.03500000014901161
+    ]
+   }
+  },
+  {
+   "name": "drum_rack__proxy_upright_1",
+   "parent": "studio_full_kit",
+   "assetId": "drum_rack",
+   "role": "opaque",
+   "meshIndex": 21,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     0.8025,
+     0.0,
+     -0.5775
+    ],
+    [
+     0.8375,
+     0.75,
+     -0.5425
+    ]
+   ],
+   "transform": {
+    "translation": [
+     0.8199999928474426,
+     0.375,
+     -0.5600000023841858
+    ],
+    "scale": [
+     0.03500000014901161,
+     0.75,
+     0.03500000014901161
+    ]
+   }
+  },
+  {
+   "name": "drum_rack__proxy_upright_2",
+   "parent": "studio_full_kit",
+   "assetId": "drum_rack",
+   "role": "opaque",
+   "meshIndex": 21,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     1.9625,
+     0.0,
+     -0.5775
+    ],
+    [
+     1.9975,
+     0.75,
+     -0.5425
+    ]
+   ],
+   "transform": {
+    "translation": [
+     1.9800000190734863,
+     0.375,
+     -0.5600000023841858
+    ],
+    "scale": [
+     0.03500000014901161,
+     0.75,
+     0.03500000014901161
+    ]
+   }
+  },
+  {
+   "name": "drum_sticks__proxy_pair",
+   "parent": "studio_full_kit",
+   "assetId": "drum_sticks",
+   "role": "opaque",
+   "meshIndex": 17,
+   "materialIndex": 4,
+   "material": "lib_oak",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     0.95,
+     0.59,
+     -0.255
+    ],
+    [
+     1.2,
+     0.6,
+     -0.225
+    ]
+   ],
+   "transform": {
+    "translation": [
+     1.0750000476837158,
+     0.5950000286102295,
+     -0.23999999463558197
+    ],
+    "scale": [
+     0.25,
+     0.009999999776482582,
+     0.029999999329447746
+    ]
+   }
+  },
+  {
+   "name": "drum_throne__proxy_seat",
+   "parent": "studio_full_kit",
+   "assetId": "drum_throne",
+   "role": "opaque",
+   "meshIndex": 22,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 60,
+   "boundsGltfMetres": [
+    [
+     1.27,
+     0.41,
+     -0.155
+    ],
+    [
+     1.58,
+     0.48,
+     0.155
+    ]
+   ],
+   "transform": {
+    "translation": [
+     1.4249999523162842,
+     0.4449999928474426,
+     0
+    ],
+    "scale": [
+     0.3100000023841858,
+     0.07000000029802322,
+     0.3100000023841858
+    ]
+   }
+  },
+  {
+   "name": "fix_floor_lamp__base",
+   "parent": "studio_full_kit",
+   "assetId": "fix_floor_lamp",
+   "role": "opaque",
+   "meshIndex": 23,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 204,
+   "boundsGltfMetres": [
+    [
+     2.235,
+     0.0,
+     -0.135
+    ],
+    [
+     2.485,
+     0.05,
+     0.115
+    ]
+   ],
+   "transform": {}
+  },
+  {
+   "name": "fix_floor_lamp__bulb",
+   "parent": "studio_full_kit",
+   "assetId": "fix_floor_lamp",
+   "role": "opaque",
+   "meshIndex": 24,
+   "materialIndex": 8,
+   "material": "lib_glow",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 440,
+   "boundsGltfMetres": [
+    [
+     2.326,
+     1.6575,
+     -0.044
+    ],
+    [
+     2.394,
+     1.7425,
+     0.024
+    ]
+   ],
+   "transform": {}
+  },
+  {
+   "name": "fix_floor_lamp__fittings",
+   "parent": "studio_full_kit",
+   "assetId": "fix_floor_lamp",
+   "role": "opaque",
+   "meshIndex": 25,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 732,
+   "boundsGltfMetres": [
+    [
+     2.257694,
+     1.555,
+     -0.09259
+    ],
+    [
+     2.48458,
+     1.892,
+     0.117993
+    ]
+   ],
+   "transform": {}
+  },
+  {
+   "name": "fix_floor_lamp__pole",
+   "parent": "studio_full_kit",
+   "assetId": "fix_floor_lamp",
+   "role": "opaque",
+   "meshIndex": 26,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 60,
+   "boundsGltfMetres": [
+    [
+     2.349,
+     0.05,
+     -0.021
+    ],
+    [
+     2.371,
+     1.86,
+     0.001
+    ]
+   ],
+   "transform": {}
+  },
+  {
+   "name": "fix_floor_lamp__shade",
+   "parent": "studio_full_kit",
+   "assetId": "fix_floor_lamp",
+   "role": "opaque",
+   "meshIndex": 27,
+   "materialIndex": 9,
+   "material": "lib_linen_shade",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 384,
+   "boundsGltfMetres": [
+    [
+     2.192,
+     1.599612,
+     -0.178
+    ],
+    [
+     2.528,
+     1.845,
+     0.158
+    ]
+   ],
+   "transform": {}
+  },
+  {
+   "name": "fix_floor_lamp__shade_trim",
+   "parent": "studio_full_kit",
+   "assetId": "fix_floor_lamp",
+   "role": "opaque",
+   "meshIndex": 28,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": false,
+   "triangles": 788,
+   "boundsGltfMetres": [
+    [
+     2.1895,
+     1.597875,
+     -0.1805
+    ],
+    [
+     2.5305,
+     1.847,
+     0.1605
+    ]
+   ],
+   "transform": {}
+  },
+  {
+   "name": "fix_pendant__proxy_body",
+   "parent": "studio_full_kit",
+   "assetId": "fix_pendant",
+   "role": "opaque",
+   "meshIndex": 15,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -1.275,
+     1.935,
+     0.1075
+    ],
+    [
+     -0.325,
+     1.975,
+     0.1925
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -0.800000011920929,
+     1.9550000429153442,
+     0.15000000596046448
+    ],
+    "scale": [
+     0.949999988079071,
+     0.03999999910593033,
+     0.08500000089406967
+    ]
+   }
+  },
+  {
+   "name": "fix_pendant__proxy_lens",
+   "parent": "studio_full_kit",
+   "assetId": "fix_pendant",
+   "role": "opaque",
+   "meshIndex": 29,
+   "materialIndex": 8,
+   "material": "lib_glow",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -1.245,
+     1.9275,
+     0.125
+    ],
+    [
+     -0.355,
+     1.9375,
+     0.175
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -0.800000011920929,
+     1.9325000047683716,
+     0.15000000596046448
+    ],
+    "scale": [
+     0.8899999856948853,
+     0.009999999776482582,
+     0.05000000074505806
+    ]
+   }
+  },
+  {
+   "name": "fix_wall_triangles__proxy_light_1",
+   "parent": "studio_full_kit",
+   "assetId": "fix_wall_triangles",
+   "role": "opaque",
+   "meshIndex": 29,
+   "materialIndex": 8,
+   "material": "lib_glow",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -0.15,
+     1.805,
+     -1.0475
+    ],
+    [
+     0.0,
+     1.935,
+     -1.0125
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -0.07500000298023224,
+     1.8700000047683716,
+     -1.0299999713897705
+    ],
+    "scale": [
+     0.15000000596046448,
+     0.12999999523162842,
+     0.03500000014901161
+    ]
+   }
+  },
+  {
+   "name": "fix_wall_triangles__proxy_light_2",
+   "parent": "studio_full_kit",
+   "assetId": "fix_wall_triangles",
+   "role": "opaque",
+   "meshIndex": 29,
+   "materialIndex": 8,
+   "material": "lib_glow",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     0.02,
+     1.935,
+     -1.0475
+    ],
+    [
+     0.17,
+     2.065,
+     -1.0125
+    ]
+   ],
+   "transform": {
+    "translation": [
+     0.0949999988079071,
+     2,
+     -1.0299999713897705
+    ],
+    "scale": [
+     0.15000000596046448,
+     0.12999999523162842,
+     0.03500000014901161
+    ]
+   }
+  },
+  {
+   "name": "fix_wall_triangles__proxy_light_3",
+   "parent": "studio_full_kit",
+   "assetId": "fix_wall_triangles",
+   "role": "opaque",
+   "meshIndex": 29,
+   "materialIndex": 8,
+   "material": "lib_glow",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     0.19,
+     1.805,
+     -1.0475
+    ],
+    [
+     0.34,
+     1.935,
+     -1.0125
+    ]
+   ],
+   "transform": {
+    "translation": [
+     0.26499998569488525,
+     1.8700000047683716,
+     -1.0299999713897705
+    ],
+    "scale": [
+     0.15000000596046448,
+     0.12999999523162842,
+     0.03500000014901161
+    ]
+   }
+  },
+  {
+   "name": "fix_wall_triangles__proxy_light_4",
+   "parent": "studio_full_kit",
+   "assetId": "fix_wall_triangles",
+   "role": "opaque",
+   "meshIndex": 29,
+   "materialIndex": 8,
+   "material": "lib_glow",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     0.36,
+     1.935,
+     -1.0475
+    ],
+    [
+     0.51,
+     2.065,
+     -1.0125
+    ]
+   ],
+   "transform": {
+    "translation": [
+     0.4350000023841858,
+     2,
+     -1.0299999713897705
+    ],
+    "scale": [
+     0.15000000596046448,
+     0.12999999523162842,
+     0.03500000014901161
+    ]
+   }
+  },
+  {
+   "name": "fix_wall_triangles__proxy_light_5",
+   "parent": "studio_full_kit",
+   "assetId": "fix_wall_triangles",
+   "role": "opaque",
+   "meshIndex": 29,
+   "materialIndex": 8,
+   "material": "lib_glow",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     0.53,
+     1.805,
+     -1.0475
+    ],
+    [
+     0.68,
+     1.935,
+     -1.0125
+    ]
+   ],
+   "transform": {
+    "translation": [
+     0.6050000190734863,
+     1.8700000047683716,
+     -1.0299999713897705
+    ],
+    "scale": [
+     0.15000000596046448,
+     0.12999999523162842,
+     0.03500000014901161
+    ]
+   }
+  },
+  {
+   "name": "headphones__proxy_flat",
+   "parent": "studio_full_kit",
+   "assetId": "headphones",
+   "role": "opaque",
+   "meshIndex": 30,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -1.625,
+     0.735,
+     0.285
+    ],
+    [
+     -1.375,
+     0.795,
+     0.535
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -1.5,
+     0.7649999856948853,
+     0.4099999964237213
+    ],
+    "scale": [
+     0.25,
+     0.05999999865889549,
+     0.25
+    ]
+   }
+  },
+  {
+   "name": "kb_case__proxy_case",
+   "parent": "studio_full_kit",
+   "assetId": "kb_case",
+   "role": "opaque",
+   "meshIndex": 31,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -1.2325,
+     0.74375,
+     0.1525
+    ],
+    [
+     -0.4175,
+     0.78625,
+     0.4675
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -0.824999988079071,
+     0.7649999856948853,
+     0.3100000023841858
+    ],
+    "scale": [
+     0.8149999976158142,
+     0.042500000447034836,
+     0.3149999976158142
+    ]
+   }
+  },
+  {
+   "name": "kb_keycaps__proxy_accent_caps",
+   "parent": "studio_full_kit",
+   "assetId": "kb_keycaps",
+   "role": "opaque",
+   "meshIndex": 32,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -0.56,
+     0.787,
+     0.31
+    ],
+    [
+     -0.46,
+     0.818,
+     0.41
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -0.5099999904632568,
+     0.8025000095367432,
+     0.36000001430511475
+    ],
+    "scale": [
+     0.10000000149011612,
+     0.03099999949336052,
+     0.10000000149011612
+    ]
+   }
+  },
+  {
+   "name": "kb_keycaps__proxy_cap_field",
+   "parent": "studio_full_kit",
+   "assetId": "kb_keycaps",
+   "role": "opaque",
+   "meshIndex": 14,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -1.2,
+     0.785,
+     0.185
+    ],
+    [
+     -0.45,
+     0.815,
+     0.435
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -0.824999988079071,
+     0.800000011920929,
+     0.3100000023841858
+    ],
+    "scale": [
+     0.75,
+     0.029999999329447746,
+     0.25
+    ]
+   }
+  },
+  {
+   "name": "mic_boom__proxy_arm",
+   "parent": "studio_full_kit",
+   "assetId": "mic_boom",
+   "role": "opaque",
+   "meshIndex": 15,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -1.795,
+     0.74,
+     0.22
+    ],
+    [
+     -1.765,
+     1.19,
+     0.25
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -1.7799999713897705,
+     0.9649999737739563,
+     0.23499999940395355
+    ],
+    "scale": [
+     0.029999999329447746,
+     0.44999998807907104,
+     0.029999999329447746
+    ]
+   }
+  },
+  {
+   "name": "mic_boom__proxy_capsule",
+   "parent": "studio_full_kit",
+   "assetId": "mic_boom",
+   "role": "opaque",
+   "meshIndex": 30,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -1.575,
+     0.87,
+     0.445
+    ],
+    [
+     -1.505,
+     1.02,
+     0.515
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -1.5399999618530273,
+     0.9449999928474426,
+     0.47999998927116394
+    ],
+    "scale": [
+     0.07000000029802322,
+     0.15000000596046448,
+     0.07000000029802322
+    ]
+   }
+  },
+  {
+   "name": "mic_boom__proxy_clamp",
+   "parent": "studio_full_kit",
+   "assetId": "mic_boom",
+   "role": "opaque",
+   "meshIndex": 15,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -1.82,
+     0.6575,
+     0.205
+    ],
+    [
+     -1.76,
+     0.7775,
+     0.305
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -1.7899999618530273,
+     0.7174999713897705,
+     0.2549999952316284
+    ],
+    "scale": [
+     0.05999999865889549,
+     0.11999999731779099,
+     0.10000000149011612
+    ]
+   }
+  },
+  {
+   "name": "mon_central__proxy_dissertation_foot",
+   "parent": "studio_full_kit",
+   "assetId": "mon_central",
+   "role": "opaque",
+   "meshIndex": 15,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -0.9375,
+     0.73625,
+     -0.2275
+    ],
+    [
+     -0.6725,
+     0.75375,
+     -0.0425
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -0.8050000071525574,
+     0.7450000047683716,
+     -0.13500000536441803
+    ],
+    "scale": [
+     0.26499998569488525,
+     0.017500000074505806,
+     0.1850000023841858
+    ]
+   }
+  },
+  {
+   "name": "mon_central__proxy_dissertation_post",
+   "parent": "studio_full_kit",
+   "assetId": "mon_central",
+   "role": "opaque",
+   "meshIndex": 21,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -0.8225,
+     0.705,
+     -0.19
+    ],
+    [
+     -0.7875,
+     1.135,
+     -0.155
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -0.8050000071525574,
+     0.9200000166893005,
+     -0.17249999940395355
+    ],
+    "scale": [
+     0.03500000014901161,
+     0.4300000071525574,
+     0.03500000014901161
+    ]
+   }
+  },
+  {
+   "name": "mon_central__proxy_dissertation_shell",
+   "parent": "studio_full_kit",
+   "assetId": "mon_central",
+   "role": "opaque",
+   "meshIndex": 15,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -1.3075,
+     0.8375,
+     -0.1625
+    ],
+    [
+     -0.3025,
+     1.4325,
+     -0.1125
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -0.8050000071525574,
+     1.1349999904632568,
+     -0.13750000298023224
+    ],
+    "scale": [
+     1.0049999952316284,
+     0.5950000286102295,
+     0.05000000074505806
+    ]
+   }
+  },
+  {
+   "name": "mon_side__proxy_copilot_foot",
+   "parent": "studio_full_kit",
+   "assetId": "mon_side",
+   "role": "opaque",
+   "meshIndex": 15,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -1.708918,
+     0.73625,
+     -0.192525
+    ],
+    [
+     -1.401082,
+     0.75375,
+     0.062525
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -1.5549999475479126,
+     0.7450000047683716,
+     -0.06499999761581421
+    ],
+    "rotation": [
+     0,
+     0.14943812787532806,
+     0,
+     0.9887710809707642
+    ],
+    "scale": [
+     0.26500001549720764,
+     0.017500000074505806,
+     0.18500001728534698
+    ]
+   }
+  },
+  {
+   "name": "mon_side__proxy_copilot_post",
+   "parent": "studio_full_kit",
+   "assetId": "mon_side",
+   "role": "opaque",
+   "meshIndex": 21,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -1.587972,
+     0.705,
+     -0.122715
+    ],
+    [
+     -1.544192,
+     1.165,
+     -0.078935
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -1.5660820007324219,
+     0.9350000023841858,
+     -0.10082511603832245
+    ],
+    "rotation": [
+     0,
+     0.14943814277648926,
+     0,
+     0.9887710809707642
+    ],
+    "scale": [
+     0.03500000014901161,
+     0.46000000834465027,
+     0.03500000014901161
+    ]
+   }
+  },
+  {
+   "name": "mon_side__proxy_copilot_shell",
+   "parent": "studio_full_kit",
+   "assetId": "mon_side",
+   "role": "opaque",
+   "meshIndex": 15,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -1.785243,
+     0.7975,
+     -0.15998
+    ],
+    [
+     -1.326235,
+     1.5325,
+     0.025204
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -1.5557388067245483,
+     1.1649999618530273,
+     -0.06738834083080292
+    ],
+    "rotation": [
+     0,
+     0.14943814277648926,
+     0,
+     0.9887710809707642
+    ],
+    "scale": [
+     0.4650000035762787,
+     0.7350000143051147,
+     0.05000000074505806
+    ]
+   }
+  },
+  {
+   "name": "mon_side__proxy_typeforge_foot",
+   "parent": "studio_full_kit",
+   "assetId": "mon_side",
+   "role": "opaque",
+   "meshIndex": 15,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -0.208918,
+     0.73625,
+     -0.192525
+    ],
+    [
+     0.098918,
+     0.75375,
+     0.062525
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -0.054999999701976776,
+     0.7450000047683716,
+     -0.06499999761581421
+    ],
+    "rotation": [
+     0,
+     -0.14943812787532806,
+     0,
+     0.9887710809707642
+    ],
+    "scale": [
+     0.26500001549720764,
+     0.017500000074505806,
+     0.18500001728534698
+    ]
+   }
+  },
+  {
+   "name": "mon_side__proxy_typeforge_post",
+   "parent": "studio_full_kit",
+   "assetId": "mon_side",
+   "role": "opaque",
+   "meshIndex": 21,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -0.065808,
+     0.705,
+     -0.122715
+    ],
+    [
+     -0.022028,
+     1.165,
+     -0.078935
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -0.04391799122095108,
+     0.9350000023841858,
+     -0.10082511603832245
+    ],
+    "rotation": [
+     0,
+     -0.14943814277648926,
+     0,
+     0.9887710809707642
+    ],
+    "scale": [
+     0.03500000014901161,
+     0.46000000834465027,
+     0.03500000014901161
+    ]
+   }
+  },
+  {
+   "name": "mon_side__proxy_typeforge_shell",
+   "parent": "studio_full_kit",
+   "assetId": "mon_side",
+   "role": "opaque",
+   "meshIndex": 15,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -0.283765,
+     0.7975,
+     -0.15998
+    ],
+    [
+     0.175243,
+     1.5325,
+     0.025204
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -0.05426120012998581,
+     1.1649999618530273,
+     -0.06738834083080292
+    ],
+    "rotation": [
+     0,
+     -0.14943814277648926,
+     0,
+     0.9887710809707642
+    ],
+    "scale": [
+     0.4650000035762787,
+     0.7350000143051147,
+     0.05000000074505806
+    ]
+   }
+  },
+  {
+   "name": "mon_top__proxy_studio_post",
+   "parent": "studio_full_kit",
+   "assetId": "mon_top",
+   "role": "opaque",
+   "meshIndex": 21,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -0.8225,
+     0.705,
+     -0.375
+    ],
+    [
+     -0.7875,
+     1.705,
+     -0.34
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -0.8050000071525574,
+     1.2050000429153442,
+     -0.35749998688697815
+    ],
+    "scale": [
+     0.03500000014901161,
+     1,
+     0.03500000014901161
+    ]
+   }
+  },
+  {
+   "name": "mon_top__proxy_studio_shell",
+   "parent": "studio_full_kit",
+   "assetId": "mon_top",
+   "role": "opaque",
+   "meshIndex": 15,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -1.16,
+     1.49,
+     -0.3475
+    ],
+    [
+     -0.45,
+     1.92,
+     -0.2975
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -0.8050000071525574,
+     1.7050000429153442,
+     -0.32249999046325684
+    ],
+    "scale": [
+     0.7099999785423279,
+     0.4300000071525574,
+     0.05000000074505806
+    ]
+   }
+  },
+  {
+   "name": "mouse_native__proxy_body",
+   "parent": "studio_full_kit",
+   "assetId": "mouse_native",
+   "role": "opaque",
+   "meshIndex": 2,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -0.3225,
+     0.745,
+     0.255
+    ],
+    [
+     -0.2275,
+     0.795,
+     0.405
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -0.2750000059604645,
+     0.7699999809265137,
+     0.33000001311302185
+    ],
+    "scale": [
+     0.0949999988079071,
+     0.05000000074505806,
+     0.15000000596046448
+    ]
+   }
+  },
+  {
+   "name": "mug_coaster__proxy_mug",
+   "parent": "studio_full_kit",
+   "assetId": "mug_coaster",
+   "role": "opaque",
+   "meshIndex": 33,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 60,
+   "boundsGltfMetres": [
+    [
+     0.2525,
+     0.735,
+     0.2425
+    ],
+    [
+     0.3675,
+     0.86,
+     0.3575
+    ]
+   ],
+   "transform": {
+    "translation": [
+     0.3100000023841858,
+     0.7975000143051147,
+     0.30000001192092896
+    ],
+    "scale": [
+     0.11500000208616257,
+     0.125,
+     0.11500000208616257
+    ]
+   }
+  },
+  {
+   "name": "notebook_pen__proxy_notebook",
+   "parent": "studio_full_kit",
+   "assetId": "notebook_pen",
+   "role": "opaque",
+   "meshIndex": 31,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -0.065,
+     0.735,
+     0.255
+    ],
+    [
+     0.135,
+     0.75,
+     0.525
+    ]
+   ],
+   "transform": {
+    "translation": [
+     0.03500000014901161,
+     0.7425000071525574,
+     0.38999998569488525
+    ],
+    "scale": [
+     0.20000000298023224,
+     0.014999999664723873,
+     0.27000001072883606
+    ]
+   }
+  },
+  {
+   "name": "pc_tower__proxy_case",
+   "parent": "studio_full_kit",
+   "assetId": "pc_tower",
+   "role": "opaque",
+   "meshIndex": 13,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     0.0175,
+     0.025,
+     -0.0825
+    ],
+    [
+     0.4025,
+     0.645,
+     0.4625
+    ]
+   ],
+   "transform": {
+    "translation": [
+     0.20999999344348907,
+     0.33500000834465027,
+     0.1899999976158142
+    ],
+    "scale": [
+     0.38499999046325684,
+     0.6200000047683716,
+     0.5450000166893005
+    ]
+   }
+  },
+  {
+   "name": "rt_window_dusk",
+   "parent": "studio_full_kit",
+   "assetId": "rt_window_dusk",
+   "role": "runtime-dusk",
+   "meshIndex": 34,
+   "materialIndex": 6,
+   "material": "rt_placeholder",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": false
+   },
+   "proxy": false,
+   "triangles": 2,
+   "boundsGltfMetres": [
+    [
+     2.5425,
+     0.945,
+     0.25
+    ],
+    [
+     2.5425,
+     1.945,
+     1.25
+    ]
+   ],
+   "transform": {
+    "translation": [
+     2.5425000190734863,
+     1.4450000524520874,
+     0.75
+    ],
+    "rotation": [
+     0,
+     -0.7071068286895752,
+     0,
+     0.7071068286895752
+    ]
+   }
+  },
+  {
+   "name": "rug__proxy_rug",
+   "parent": "studio_full_kit",
+   "assetId": "rug",
+   "role": "opaque",
+   "meshIndex": 0,
+   "materialIndex": 0,
+   "material": "lib_weave",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     0.45,
+     0.00125,
+     -0.975
+    ],
+    [
+     2.3,
+     0.01875,
+     1.275
+    ]
+   ],
+   "transform": {
+    "translation": [
+     1.375,
+     0.009999999776482582,
+     0.15000000596046448
+    ],
+    "scale": [
+     1.850000023841858,
+     0.017500000074505806,
+     2.25
+    ]
+   }
+  },
+  {
+   "name": "shelf_books__proxy_row",
+   "parent": "studio_full_kit",
+   "assetId": "shelf_books",
+   "role": "opaque",
+   "meshIndex": 31,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -2.22,
+     1.51,
+     -0.5
+    ],
+    [
+     -2.08,
+     1.72,
+     0.0
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -2.1500000953674316,
+     1.6150000095367432,
+     -0.25
+    ],
+    "scale": [
+     0.14000000059604645,
+     0.20999999344348907,
+     0.5
+    ]
+   }
+  },
+  {
+   "name": "shelf_plant__proxy_plant",
+   "parent": "studio_full_kit",
+   "assetId": "shelf_plant",
+   "role": "opaque",
+   "meshIndex": 35,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -2.22,
+     1.51,
+     0.185
+    ],
+    [
+     -2.07,
+     1.76,
+     0.335
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -2.1449999809265137,
+     1.6349999904632568,
+     0.25999999046325684
+    ],
+    "scale": [
+     0.15000000596046448,
+     0.25,
+     0.15000000596046448
+    ]
+   }
+  },
+  {
+   "name": "shelf_speaker__proxy_cabinet",
+   "parent": "studio_full_kit",
+   "assetId": "shelf_speaker",
+   "role": "opaque",
+   "meshIndex": 15,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -2.22,
+     1.51,
+     0.425
+    ],
+    [
+     -2.08,
+     1.7,
+     0.555
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -2.1500000953674316,
+     1.6050000190734863,
+     0.49000000953674316
+    ],
+    "scale": [
+     0.14000000059604645,
+     0.1899999976158142,
+     0.12999999523162842
+    ]
+   }
+  },
+  {
+   "name": "snowboard_bindings__proxy_binding_1",
+   "parent": "studio_full_kit",
+   "assetId": "snowboard_bindings",
+   "role": "opaque",
+   "meshIndex": 15,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -2.135,
+     0.325,
+     0.4
+    ],
+    [
+     -2.065,
+     0.435,
+     0.55
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -2.0999999046325684,
+     0.3799999952316284,
+     0.4749999940395355
+    ],
+    "scale": [
+     0.07000000029802322,
+     0.10999999940395355,
+     0.15000000596046448
+    ]
+   }
+  },
+  {
+   "name": "snowboard_bindings__proxy_binding_2",
+   "parent": "studio_full_kit",
+   "assetId": "snowboard_bindings",
+   "role": "opaque",
+   "meshIndex": 15,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -2.135,
+     0.725,
+     0.4
+    ],
+    [
+     -2.065,
+     0.835,
+     0.55
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -2.0999999046325684,
+     0.7799999713897705,
+     0.4749999940395355
+    ],
+    "scale": [
+     0.07000000029802322,
+     0.10999999940395355,
+     0.15000000596046448
+    ]
+   }
+  },
+  {
+   "name": "snowboard_deck__proxy_deck",
+   "parent": "studio_full_kit",
+   "assetId": "snowboard_deck",
+   "role": "opaque",
+   "meshIndex": 2,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -2.16875,
+     -0.02,
+     0.385
+    ],
+    [
+     -2.13125,
+     1.18,
+     0.565
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -2.1500000953674316,
+     0.5799999833106995,
+     0.4749999940395355
+    ],
+    "scale": [
+     0.03750000149011612,
+     1.2000000476837158,
+     0.18000000715255737
+    ]
+   }
+  },
+  {
+   "name": "speaker_nearfield__proxy_cabinet",
+   "parent": "studio_full_kit",
+   "assetId": "speaker_nearfield",
+   "role": "opaque",
+   "meshIndex": 15,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     0.25,
+     0.755,
+     -0.205
+    ],
+    [
+     0.47,
+     1.075,
+     0.005
+    ]
+   ],
+   "transform": {
+    "translation": [
+     0.36000001430511475,
+     0.9150000214576721,
+     -0.10000000149011612
+    ],
+    "scale": [
+     0.2199999988079071,
+     0.3199999928474426,
+     0.20999999344348907
+    ]
+   }
+  },
+  {
+   "name": "stool_keys__proxy_post",
+   "parent": "studio_full_kit",
+   "assetId": "stool_keys",
+   "role": "opaque",
+   "meshIndex": 21,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     1.53,
+     0.0,
+     1.005
+    ],
+    [
+     1.57,
+     0.45,
+     1.045
+    ]
+   ],
+   "transform": {
+    "translation": [
+     1.5499999523162842,
+     0.22499999403953552,
+     1.024999976158142
+    ],
+    "scale": [
+     0.03999999910593033,
+     0.44999998807907104,
+     0.03999999910593033
+    ]
+   }
+  },
+  {
+   "name": "stool_keys__proxy_seat",
+   "parent": "studio_full_kit",
+   "assetId": "stool_keys",
+   "role": "opaque",
+   "meshIndex": 22,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 60,
+   "boundsGltfMetres": [
+    [
+     1.395,
+     0.45,
+     0.87
+    ],
+    [
+     1.705,
+     0.52,
+     1.18
+    ]
+   ],
+   "transform": {
+    "translation": [
+     1.5499999523162842,
+     0.48500001430511475,
+     1.024999976158142
+    ],
+    "scale": [
+     0.3100000023841858,
+     0.07000000029802322,
+     0.3100000023841858
+    ]
+   }
+  },
+  {
+   "name": "sub_woofer__proxy_cabinet",
+   "parent": "studio_full_kit",
+   "assetId": "sub_woofer",
+   "role": "opaque",
+   "meshIndex": 15,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": false,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -1.535,
+     0.02,
+     -0.205
+    ],
+    [
+     -1.165,
+     0.41,
+     0.155
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -1.350000023841858,
+     0.2150000035762787,
+     -0.02500000037252903
+    ],
+    "scale": [
+     0.3700000047683716,
+     0.38999998569488525,
+     0.36000001430511475
+    ]
+   }
+  },
+  {
+   "name": "target_copilot",
+   "parent": "studio_full_kit",
+   "assetId": "target_faces",
+   "role": "target",
+   "meshIndex": 36,
+   "materialIndex": 6,
+   "material": "rt_placeholder",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": false,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": false
+   },
+   "proxy": false,
+   "triangles": 2,
+   "boundsGltfMetres": [
+    [
+     -1.738088,
+     0.83,
+     -0.09831
+    ],
+    [
+     -1.355954,
+     1.5,
+     0.019898
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -1.5470209121704102,
+     1.1649999618530273,
+     -0.03920591622591019
+    ],
+    "rotation": [
+     0,
+     0.14943814277648926,
+     0,
+     0.9887710809707642
+    ]
+   }
+  },
+  {
+   "name": "target_dissertation",
+   "parent": "studio_full_kit",
+   "assetId": "target_faces",
+   "role": "target",
+   "meshIndex": 37,
+   "materialIndex": 6,
+   "material": "rt_placeholder",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": false,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": false
+   },
+   "proxy": false,
+   "triangles": 2,
+   "boundsGltfMetres": [
+    [
+     -1.275,
+     0.87,
+     -0.108
+    ],
+    [
+     -0.335,
+     1.4,
+     -0.108
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -0.8050000071525574,
+     1.1349999904632568,
+     -0.1080000028014183
+    ]
+   }
+  },
+  {
+   "name": "target_typeforge",
+   "parent": "studio_full_kit",
+   "assetId": "target_faces",
+   "role": "target",
+   "meshIndex": 38,
+   "materialIndex": 6,
+   "material": "rt_placeholder",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": false,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": false
+   },
+   "proxy": false,
+   "triangles": 2,
+   "boundsGltfMetres": [
+    [
+     -0.254046,
+     0.83,
+     -0.09831
+    ],
+    [
+     0.128088,
+     1.5,
+     0.019898
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -0.06297904253005981,
+     1.1649999618530273,
+     -0.03920591622591019
+    ],
+    "rotation": [
+     0,
+     -0.14943814277648926,
+     0,
+     0.9887710809707642
+    ]
+   }
+  },
+  {
+   "name": "wall_print__proxy_frame",
+   "parent": "studio_full_kit",
+   "assetId": "wall_print",
+   "role": "opaque",
+   "meshIndex": 15,
+   "materialIndex": 2,
+   "material": "lib_palette",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -2.2475,
+     1.16,
+     0.77
+    ],
+    [
+     -2.2225,
+     1.78,
+     1.23
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -2.234999895095825,
+     1.4700000286102295,
+     1
+    ],
+    "scale": [
+     0.02500000037252903,
+     0.6200000047683716,
+     0.46000000834465027
+    ]
+   }
+  },
+  {
+   "name": "wall_shelf__proxy_board",
+   "parent": "studio_full_kit",
+   "assetId": "wall_shelf",
+   "role": "opaque",
+   "meshIndex": 17,
+   "materialIndex": 4,
+   "material": "lib_oak",
+   "attributes": [
+    "NORMAL",
+    "POSITION",
+    "TEXCOORD_0"
+   ],
+   "flags": {
+    "occluder": true,
+    "transparent": false,
+    "nocast": true,
+    "receiveShadow": true
+   },
+   "proxy": true,
+   "triangles": 12,
+   "boundsGltfMetres": [
+    [
+     -2.25,
+     1.48,
+     -0.525
+    ],
+    [
+     -2.04,
+     1.51,
+     0.625
+    ]
+   ],
+   "transform": {
+    "translation": [
+     -2.1449999809265137,
+     1.4950000047683716,
+     0.05000000074505806
+    ],
+    "scale": [
+     0.20999999344348907,
+     0.029999999329447746,
+     1.149999976158142
+    ]
+   }
+  },
+  {
+   "name": "studio_full_kit",
+   "parent": null
+  }
+ ]
+}

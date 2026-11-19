@@ -1,0 +1,289 @@
+{
+  "status": "PASS-independent-angular-geometry-and-emission",
+  "assetSha256": "bc1a4d6d968dd53eda3480936959d0ebf292e76652a6bbdd201e15f4cd665270",
+  "materialChecks": [
+    {
+      "role": "porcelain",
+      "name": "MAT_APA_porcelain",
+      "loadedColor": [
+        0.8069522380828857,
+        0.7379103899002075,
+        0.6239603757858276
+      ],
+      "loadedEmissive": [
+        0,
+        0,
+        0
+      ],
+      "loadedIntensity": 1,
+      "product": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "role": "brass",
+      "name": "MAT_APA_brass",
+      "loadedColor": [
+        0.5647115111351013,
+        0.3324515223503113,
+        0.0802198201417923
+      ],
+      "loadedEmissive": [
+        0,
+        0,
+        0
+      ],
+      "loadedIntensity": 1,
+      "product": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "role": "ink",
+      "name": "MAT_APA_ink",
+      "loadedColor": [
+        0.022173885256052017,
+        0.017641954123973846,
+        0.013702083379030228
+      ],
+      "loadedEmissive": [
+        0,
+        0,
+        0
+      ],
+      "loadedIntensity": 1,
+      "product": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "role": "eyeGlow",
+      "name": "MAT_APA_eye_emit",
+      "loadedColor": [
+        1,
+        0.8713670969009399,
+        0.5972017645835876
+      ],
+      "loadedEmissive": [
+        1,
+        0.8713670969009399,
+        0.5972017645835876
+      ],
+      "loadedIntensity": 4,
+      "product": [
+        4,
+        3.4854683876037598,
+        2.3888070583343506
+      ]
+    },
+    {
+      "role": "highlight",
+      "name": "MAT_APA_highlight",
+      "loadedColor": [
+        1,
+        0.9301108717918396,
+        0.7912979125976562
+      ],
+      "loadedEmissive": [
+        0.25,
+        0.2325277179479599,
+        0.19782447814941406
+      ],
+      "loadedIntensity": 1,
+      "product": [
+        0.25,
+        0.2325277179479599,
+        0.19782447814941406
+      ]
+    },
+    {
+      "role": "redRibbon",
+      "name": "MAT_APA_ribbon",
+      "loadedColor": [
+        0.366252601146698,
+        0.02518685907125473,
+        0.020288562402129173
+      ],
+      "loadedEmissive": [
+        0,
+        0,
+        0
+      ],
+      "loadedIntensity": 1,
+      "product": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "role": "trayGlow",
+      "name": "MAT_APA_tray_emit",
+      "loadedColor": [
+        0.5647115111351013,
+        0.3324515223503113,
+        0.0802198201417923
+      ],
+      "loadedEmissive": [
+        0.05647115195499586,
+        0.0332451527304225,
+        0.008021982133716077
+      ],
+      "loadedIntensity": 1,
+      "product": [
+        0.05647115195499586,
+        0.0332451527304225,
+        0.008021982133716077
+      ]
+    }
+  ],
+  "sides": [
+    {
+      "side": "L",
+      "eyeRadiiMetres": [
+        0.031355295330286026,
+        0.03557619825005531
+      ],
+      "pupilRadiusMetres": 0.015074663965436337,
+      "maxEllipseNormalizedRadiusSquared": 0.47530087288854167,
+      "maxHighlightRadiusMetres": 0.01157110929385933,
+      "minAnalyticGapMetres": 0.0057758908030218215,
+      "minDenseGapMetres": 0.0057758908030218215,
+      "where": {
+        "from": "neutral",
+        "to": "dismissal",
+        "t": 1,
+        "lidVertex": 23
+      },
+      "maxVerticalGapSpeed": 0.01570255524743154,
+      "conservative40StepPadding": 0.00019728194059289426,
+      "endpoints": [
+        {
+          "pose": "neutral",
+          "angleRadians": 0,
+          "verticalGapMetres": 0.01169793400913477,
+          "centreOcclusionFraction": 0.20000001570694936
+        },
+        {
+          "pose": "attention",
+          "angleRadians": 0.015653133156880848,
+          "verticalGapMetres": 0.017096496204383575,
+          "centreOcclusionFraction": 0.17497423774300488
+        },
+        {
+          "pose": "sources",
+          "angleRadians": -0.025948762492826075,
+          "verticalGapMetres": 0.011094947306444784,
+          "centreOcclusionFraction": 0.24237290227138839
+        },
+        {
+          "pose": "no-match",
+          "angleRadians": 0,
+          "verticalGapMetres": 0.009888974949717522,
+          "centreOcclusionFraction": 0.20000001570694936
+        },
+        {
+          "pose": "dismissal",
+          "angleRadians": -0.08148860856255372,
+          "verticalGapMetres": 0.0057758908030218215,
+          "centreOcclusionFraction": 0.3338984390496671
+        }
+      ],
+      "hingeNeutralGltfTRS": {
+        "translation": [
+          0.05065084993839264,
+          0,
+          -0.0024119457229971886
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "side": "R",
+      "eyeRadiiMetres": [
+        0.031355295330286026,
+        0.03557619825005531
+      ],
+      "pupilRadiusMetres": 0.015074663965436337,
+      "maxEllipseNormalizedRadiusSquared": 0.47530087288854167,
+      "maxHighlightRadiusMetres": 0.01157110929385933,
+      "minAnalyticGapMetres": 0.0057758908030218215,
+      "minDenseGapMetres": 0.0057758908030218215,
+      "where": {
+        "from": "neutral",
+        "to": "dismissal",
+        "t": 1,
+        "lidVertex": 25
+      },
+      "maxVerticalGapSpeed": 0.01570255524743154,
+      "conservative40StepPadding": 0.00019728194059289426,
+      "endpoints": [
+        {
+          "pose": "neutral",
+          "angleRadians": 0,
+          "verticalGapMetres": 0.01169793400913477,
+          "centreOcclusionFraction": 0.20000001570694936
+        },
+        {
+          "pose": "attention",
+          "angleRadians": 0.015653133156880848,
+          "verticalGapMetres": 0.017096496204383575,
+          "centreOcclusionFraction": 0.17497423774300488
+        },
+        {
+          "pose": "sources",
+          "angleRadians": -0.025948762492826075,
+          "verticalGapMetres": 0.011094947306444784,
+          "centreOcclusionFraction": 0.24237290227138839
+        },
+        {
+          "pose": "no-match",
+          "angleRadians": 0,
+          "verticalGapMetres": 0.009888974949717522,
+          "centreOcclusionFraction": 0.20000001570694936
+        },
+        {
+          "pose": "dismissal",
+          "angleRadians": -0.08148860856255372,
+          "verticalGapMetres": 0.0057758908030218215,
+          "centreOcclusionFraction": 0.3338984390496671
+        }
+      ],
+      "hingeNeutralGltfTRS": {
+        "translation": [
+          -0.05065085366368294,
+          0,
+          -0.0024119457229971886
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "proofBoundary": "Actual exported vertices; coupled five-pose endpoint pairs, local translation lerp and normalized shortest slerp with one common nonovershooting parameter; fixed eye/hinge translations; pure X lid rotations. Analytic vertical pupil/lid gap evaluates endpoints and all derivative roots. Convex ellipse contains translated pupil triangles throughout each pair because each fixed vertex has a convex quadratic along the linear path. Highlight geometry is fixed relative to pupil. This does not certify visible 3D silhouettes, all eye/face surface intersections, intermediate-to-third interruptions, extra offsets, room placement or runtime cards."
+}

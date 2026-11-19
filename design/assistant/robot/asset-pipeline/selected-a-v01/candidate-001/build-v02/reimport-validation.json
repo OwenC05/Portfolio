@@ -1,0 +1,526 @@
+{
+  "status": "PASS-reimport-structure",
+  "sourceGlbSha256": "bc1a4d6d968dd53eda3480936959d0ebf292e76652a6bbdd201e15f4cd665270",
+  "blenderVersion": "5.2.3 LTS",
+  "blenderBuildHash": "e13b728c6880",
+  "nodeCount": 22,
+  "materialCount": 7,
+  "maxLocalTranslationErrorMetres": 0,
+  "neutralBoundsBlenderMetres": {
+    "min": [
+      -0.13927824795246124,
+      -0.12633870542049408,
+      -0.23599658906459808
+    ],
+    "max": [
+      0.13787990808486938,
+      0.13388045132160187,
+      0.3456544876098633
+    ]
+  },
+  "records": [
+    {
+      "name": "APA_root",
+      "parent": null,
+      "localTranslationBlenderMetres": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localQuaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "type": "EMPTY"
+    },
+    {
+      "name": "APA_head",
+      "parent": "APA_root",
+      "localTranslationBlenderMetres": [
+        -0.0015689143911004066,
+        0.0082279397174716,
+        0.13357515633106232
+      ],
+      "localQuaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "type": "MESH",
+      "vertices": 4693,
+      "triangles": 9252,
+      "boundaryEdgesAfterDiagnosticWeld": 132,
+      "nonManifoldEdgesAfterDiagnosticWeld": 132,
+      "materials": [
+        "MAT_APA_porcelain"
+      ]
+    },
+    {
+      "name": "APA_seam",
+      "parent": "APA_head",
+      "localTranslationBlenderMetres": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localQuaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "type": "MESH",
+      "vertices": 768,
+      "triangles": 1536,
+      "boundaryEdgesAfterDiagnosticWeld": 0,
+      "nonManifoldEdgesAfterDiagnosticWeld": 0,
+      "materials": [
+        "MAT_APA_brass"
+      ]
+    },
+    {
+      "name": "APA_face_rim",
+      "parent": "APA_head",
+      "localTranslationBlenderMetres": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localQuaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "type": "MESH",
+      "vertices": 576,
+      "triangles": 1152,
+      "boundaryEdgesAfterDiagnosticWeld": 0,
+      "nonManifoldEdgesAfterDiagnosticWeld": 0,
+      "materials": [
+        "MAT_APA_brass"
+      ]
+    },
+    {
+      "name": "APA_face",
+      "parent": "APA_head",
+      "localTranslationBlenderMetres": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localQuaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "type": "MESH",
+      "vertices": 4098,
+      "triangles": 8192,
+      "boundaryEdgesAfterDiagnosticWeld": 0,
+      "nonManifoldEdgesAfterDiagnosticWeld": 0,
+      "materials": [
+        "MAT_APA_ink"
+      ]
+    },
+    {
+      "name": "APA_eye_L",
+      "parent": "APA_head",
+      "localTranslationBlenderMetres": [
+        0.05065084993839264,
+        -0.11665036529302597,
+        -0.008985906839370728
+      ],
+      "localQuaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "type": "MESH",
+      "vertices": 1026,
+      "triangles": 2048,
+      "boundaryEdgesAfterDiagnosticWeld": 0,
+      "nonManifoldEdgesAfterDiagnosticWeld": 0,
+      "materials": [
+        "MAT_APA_eye_emit"
+      ]
+    },
+    {
+      "name": "APA_pupil_L",
+      "parent": "APA_eye_L",
+      "localTranslationBlenderMetres": [
+        0.0,
+        -0.0010771676898002625,
+        0.005426868796348572
+      ],
+      "localQuaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "type": "MESH",
+      "vertices": 322,
+      "triangles": 640,
+      "boundaryEdgesAfterDiagnosticWeld": 0,
+      "nonManifoldEdgesAfterDiagnosticWeld": 0,
+      "materials": [
+        "MAT_APA_ink"
+      ]
+    },
+    {
+      "name": "APA_highlight_L",
+      "parent": "APA_pupil_L",
+      "localTranslationBlenderMetres": [
+        0.004220906645059586,
+        0.000633537769317627,
+        0.006029859185218811
+      ],
+      "localQuaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "type": "MESH",
+      "vertices": 146,
+      "triangles": 288,
+      "boundaryEdgesAfterDiagnosticWeld": 0,
+      "nonManifoldEdgesAfterDiagnosticWeld": 0,
+      "materials": [
+        "MAT_APA_highlight"
+      ]
+    },
+    {
+      "name": "APA_lid_lower_L",
+      "parent": "APA_head",
+      "localTranslationBlenderMetres": [
+        0.05065084993839264,
+        0.0024119457229971886,
+        0.0
+      ],
+      "localQuaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "type": "MESH",
+      "vertices": 1274,
+      "triangles": 2544,
+      "boundaryEdgesAfterDiagnosticWeld": 0,
+      "nonManifoldEdgesAfterDiagnosticWeld": 0,
+      "materials": [
+        "MAT_APA_ink"
+      ]
+    },
+    {
+      "name": "APA_eye_R",
+      "parent": "APA_head",
+      "localTranslationBlenderMetres": [
+        -0.05065085366368294,
+        -0.11665036529302597,
+        -0.008985906839370728
+      ],
+      "localQuaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "type": "MESH",
+      "vertices": 1026,
+      "triangles": 2048,
+      "boundaryEdgesAfterDiagnosticWeld": 0,
+      "nonManifoldEdgesAfterDiagnosticWeld": 0,
+      "materials": [
+        "MAT_APA_eye_emit"
+      ]
+    },
+    {
+      "name": "APA_pupil_R",
+      "parent": "APA_eye_R",
+      "localTranslationBlenderMetres": [
+        0.0,
+        -0.0010771676898002625,
+        0.005426868796348572
+      ],
+      "localQuaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "type": "MESH",
+      "vertices": 322,
+      "triangles": 640,
+      "boundaryEdgesAfterDiagnosticWeld": 0,
+      "nonManifoldEdgesAfterDiagnosticWeld": 0,
+      "materials": [
+        "MAT_APA_ink"
+      ]
+    },
+    {
+      "name": "APA_highlight_R",
+      "parent": "APA_pupil_R",
+      "localTranslationBlenderMetres": [
+        0.004220906645059586,
+        -0.0023556575179100037,
+        0.006029859185218811
+      ],
+      "localQuaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "type": "MESH",
+      "vertices": 146,
+      "triangles": 288,
+      "boundaryEdgesAfterDiagnosticWeld": 0,
+      "nonManifoldEdgesAfterDiagnosticWeld": 0,
+      "materials": [
+        "MAT_APA_highlight"
+      ]
+    },
+    {
+      "name": "APA_lid_lower_R",
+      "parent": "APA_head",
+      "localTranslationBlenderMetres": [
+        -0.05065085366368294,
+        0.0024119457229971886,
+        0.0
+      ],
+      "localQuaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "type": "MESH",
+      "vertices": 1274,
+      "triangles": 2544,
+      "boundaryEdgesAfterDiagnosticWeld": 0,
+      "nonManifoldEdgesAfterDiagnosticWeld": 0,
+      "materials": [
+        "MAT_APA_ink"
+      ]
+    },
+    {
+      "name": "APA_bookmark_post",
+      "parent": "APA_head",
+      "localTranslationBlenderMetres": [
+        0.05243154615163803,
+        -0.0206263717263937,
+        0.11161136627197266
+      ],
+      "localQuaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "type": "MESH",
+      "vertices": 362,
+      "triangles": 720,
+      "boundaryEdgesAfterDiagnosticWeld": 0,
+      "nonManifoldEdgesAfterDiagnosticWeld": 0,
+      "materials": [
+        "MAT_APA_brass"
+      ]
+    },
+    {
+      "name": "APA_bookmark_ribbon",
+      "parent": "APA_bookmark_post",
+      "localTranslationBlenderMetres": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localQuaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "type": "MESH",
+      "vertices": 70,
+      "triangles": 136,
+      "boundaryEdgesAfterDiagnosticWeld": 0,
+      "nonManifoldEdgesAfterDiagnosticWeld": 0,
+      "materials": [
+        "MAT_APA_ribbon"
+      ]
+    },
+    {
+      "name": "APA_body",
+      "parent": "APA_root",
+      "localTranslationBlenderMetres": [
+        0.0014177522389218211,
+        -0.002750651678070426,
+        -0.009273719973862171
+      ],
+      "localQuaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "type": "MESH",
+      "vertices": 788,
+      "triangles": 1572,
+      "boundaryEdgesAfterDiagnosticWeld": 0,
+      "nonManifoldEdgesAfterDiagnosticWeld": 0,
+      "materials": [
+        "MAT_APA_porcelain"
+      ]
+    },
+    {
+      "name": "APA_collar",
+      "parent": "APA_body",
+      "localTranslationBlenderMetres": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localQuaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "type": "MESH",
+      "vertices": 384,
+      "triangles": 768,
+      "boundaryEdgesAfterDiagnosticWeld": 0,
+      "nonManifoldEdgesAfterDiagnosticWeld": 0,
+      "materials": [
+        "MAT_APA_brass"
+      ]
+    },
+    {
+      "name": "APA_body_cap",
+      "parent": "APA_body",
+      "localTranslationBlenderMetres": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localQuaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "type": "MESH",
+      "vertices": 258,
+      "triangles": 512,
+      "boundaryEdgesAfterDiagnosticWeld": 0,
+      "nonManifoldEdgesAfterDiagnosticWeld": 0,
+      "materials": [
+        "MAT_APA_brass"
+      ]
+    },
+    {
+      "name": "APA_mitten_L",
+      "parent": "APA_body",
+      "localTranslationBlenderMetres": [
+        0.0795942023396492,
+        0.0006029864307492971,
+        -0.04582696408033371
+      ],
+      "localQuaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "type": "MESH",
+      "vertices": 416,
+      "triangles": 828,
+      "boundaryEdgesAfterDiagnosticWeld": 0,
+      "nonManifoldEdgesAfterDiagnosticWeld": 0,
+      "materials": [
+        "MAT_APA_porcelain"
+      ]
+    },
+    {
+      "name": "APA_mitten_R",
+      "parent": "APA_body",
+      "localTranslationBlenderMetres": [
+        -0.0765792578458786,
+        0.0006029864307492971,
+        -0.04582696408033371
+      ],
+      "localQuaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "type": "MESH",
+      "vertices": 412,
+      "triangles": 820,
+      "boundaryEdgesAfterDiagnosticWeld": 0,
+      "nonManifoldEdgesAfterDiagnosticWeld": 0,
+      "materials": [
+        "MAT_APA_porcelain"
+      ]
+    },
+    {
+      "name": "APA_tray",
+      "parent": "APA_root",
+      "localTranslationBlenderMetres": [
+        -0.0015689143911004066,
+        0.0008672664989717305,
+        -0.2275547832250595
+      ],
+      "localQuaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "type": "MESH",
+      "vertices": 386,
+      "triangles": 768,
+      "boundaryEdgesAfterDiagnosticWeld": 0,
+      "nonManifoldEdgesAfterDiagnosticWeld": 0,
+      "materials": [
+        "MAT_APA_brass"
+      ]
+    },
+    {
+      "name": "APA_tray_glow",
+      "parent": "APA_tray",
+      "localTranslationBlenderMetres": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "localQuaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "type": "MESH",
+      "vertices": 384,
+      "triangles": 380,
+      "boundaryEdgesAfterDiagnosticWeld": 0,
+      "nonManifoldEdgesAfterDiagnosticWeld": 0,
+      "materials": [
+        "MAT_APA_tray_emit"
+      ]
+    }
+  ],
+  "crossMassOverlapSamples": 45,
+  "crossMassOverlaps": [],
+  "collisionLimit": "45 finite-path samples only; BVH triangle intersections, not a proof of arbitrary runtime motion clearance",
+  "sourceBytesUnchanged": true
+}

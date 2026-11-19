@@ -1,0 +1,87 @@
+{
+  "sourceSha256": "8829c741ee25bbb32da8328e4d56eb43fcd40ad9eac931a49bc0bb7192d22954",
+  "preflightRunnerSha256": "0218b471df4649c126e32d60848fb7ab9f498665db2cfdfab15cb8e3cb8aa726",
+  "originalReceiptSha256": "956ae2d1ebfe8472d2ec8d27ff53694c13992b7df5024875ac512a859fc108da",
+  "scope": "Actual pure helper AST extraction, 25 original checks rerun into a separate receipt plus independent negative/positive probes. No bpy import or full authoring-script execution.",
+  "originalPassed": 25,
+  "additionalResults": [
+    {
+      "name": "additional scene rejected",
+      "passed": true
+    },
+    {
+      "name": "root cycle rejected",
+      "passed": true
+    },
+    {
+      "name": "retained mesh presence removal rejected",
+      "passed": true
+    },
+    {
+      "name": "new leaf children rejected",
+      "passed": true
+    },
+    {
+      "name": "unreachable extra node rejected",
+      "passed": true
+    },
+    {
+      "name": "retained cast flag change rejected",
+      "passed": true
+    },
+    {
+      "name": "image MIME metadata change rejected",
+      "passed": true
+    },
+    {
+      "name": "duplicate image identity rejected",
+      "passed": true
+    },
+    {
+      "name": "missing texture rejected",
+      "passed": true
+    },
+    {
+      "name": "texture sampler removal rejected",
+      "passed": true
+    },
+    {
+      "name": "semantic image renumbering accepted",
+      "passed": true
+    },
+    {
+      "name": "RGB implicit alpha agrees with RGBA255",
+      "passed": true
+    },
+    {
+      "name": "RGB candidate accepted with implicit alpha255",
+      "passed": true
+    },
+    {
+      "name": "missing authorized cell rejected",
+      "passed": true
+    },
+    {
+      "name": "dimension change rejected",
+      "passed": true
+    },
+    {
+      "name": "actual PNG decoder RGB3 filters0to4 exact",
+      "passed": true
+    },
+    {
+      "name": "actual PNG decoder RGB4 filters0to4 exact",
+      "passed": true
+    },
+    {
+      "name": "all corrected guards called inside glb export conditional",
+      "passed": true
+    },
+    {
+      "name": "original receipt unchanged",
+      "passed": true
+    }
+  ],
+  "additionalPassed": 19,
+  "additionalFailed": 0
+}

@@ -1,0 +1,499 @@
+{
+  "checkedAt": "2026-11-17T14:22:53.806Z",
+  "status": "PASS-emission-only-delta",
+  "sourceGlbSha256": "bc1a4d6d968dd53eda3480936959d0ebf292e76652a6bbdd201e15f4cd665270",
+  "exportSha256": "65f1dea3b1d35a748bdfc2089dea0feed1d054cc8b0eb957645ea2d669578a12",
+  "binaryPayloadSha256": "2deb2f9dc668b3dd6c2937e9b3ee7c1c01887df69124fcb9723f88721dab6db0",
+  "allBinaryBytesIdentical": true,
+  "allJsonExceptEyeStrengthAndUnusedExtensionDeclarationIdentical": true,
+  "posesSha256": "6dd7ce35a027352b4f2cffbe673081910837e69d56c9f4ec866e970381c6e96d",
+  "poseBytesIdentical": true,
+  "profileGeometryPoseAndOtherMaterialsIdentical": true,
+  "changedFields": [
+    "materials[5].extensions.KHR_materials_emissive_strength: 4 -> implicit 1",
+    "extensionsUsed: removed now-unused KHR_materials_emissive_strength"
+  ],
+  "measurements": {
+    "rawGlbBytes": 673144,
+    "gzipBytes": 482957,
+    "brotliBytes": 334311,
+    "triangles": 37676,
+    "exportedVertexRecords": 19131,
+    "nodes": 22,
+    "meshes": 21,
+    "materials": 7,
+    "primitives": 21,
+    "textures": 0,
+    "animations": 0
+  },
+  "payloads": [
+    {
+      "mesh": "APA_body_cap_mesh",
+      "kind": "POSITION",
+      "accessor": 0,
+      "bufferView": 0,
+      "sha256": "dd70492d8f97f6d5fdb4166a5f76f7e675873bf224933320f91c3ab43d390a3d"
+    },
+    {
+      "mesh": "APA_body_cap_mesh",
+      "kind": "NORMAL",
+      "accessor": 1,
+      "bufferView": 1,
+      "sha256": "cce9758f49dbab8fe2475337ab3ffb80e0d5736bc0227c5878f5442e2328e7f0"
+    },
+    {
+      "mesh": "APA_body_cap_mesh",
+      "kind": "INDICES",
+      "accessor": 2,
+      "bufferView": 2,
+      "sha256": "c5a2707d8d284a651f984293e95ef43ea5d88cbbb3d3b8a6e12e5fd457fc9c1f"
+    },
+    {
+      "mesh": "APA_collar_mesh",
+      "kind": "POSITION",
+      "accessor": 3,
+      "bufferView": 3,
+      "sha256": "65e1498830d9e5d809f42b950534add2f15fb93769d0f47d7df0ca43ad31ad93"
+    },
+    {
+      "mesh": "APA_collar_mesh",
+      "kind": "NORMAL",
+      "accessor": 4,
+      "bufferView": 4,
+      "sha256": "db16323ec1de2257370e7968157563882d63b334592b0765299c56c0008989a1"
+    },
+    {
+      "mesh": "APA_collar_mesh",
+      "kind": "INDICES",
+      "accessor": 5,
+      "bufferView": 5,
+      "sha256": "b1f99d2ed0723cce8cc25c3e0712e223bbe1869a60e64e2d0af051ebd1a647bd"
+    },
+    {
+      "mesh": "APA_mitten_L_mesh",
+      "kind": "POSITION",
+      "accessor": 6,
+      "bufferView": 6,
+      "sha256": "3839ab6c2e563ee6dbd858b9ece3fc35e1a9a78d159b0beb84d81dc41f20f3d5"
+    },
+    {
+      "mesh": "APA_mitten_L_mesh",
+      "kind": "NORMAL",
+      "accessor": 7,
+      "bufferView": 7,
+      "sha256": "e15ce54abd38ddc28611db4766c617c8c4f13eba45e10fc0500231cbe0a761a9"
+    },
+    {
+      "mesh": "APA_mitten_L_mesh",
+      "kind": "INDICES",
+      "accessor": 8,
+      "bufferView": 8,
+      "sha256": "de5e26893853e0552cd0e98f73c271f9f3fe8a792d1e3b5429a265aa0bf4e14c"
+    },
+    {
+      "mesh": "APA_mitten_R_mesh",
+      "kind": "POSITION",
+      "accessor": 9,
+      "bufferView": 9,
+      "sha256": "62e869333280a6a9e27d7f9bd1d28bdbf5aa69ccd70eed3cf79789a3092d9903"
+    },
+    {
+      "mesh": "APA_mitten_R_mesh",
+      "kind": "NORMAL",
+      "accessor": 10,
+      "bufferView": 10,
+      "sha256": "3830d5491edcbd566f514073b7ddc2f64f9b16a7cb8348978780b33e6e9b07cb"
+    },
+    {
+      "mesh": "APA_mitten_R_mesh",
+      "kind": "INDICES",
+      "accessor": 11,
+      "bufferView": 11,
+      "sha256": "c8d28d7f6ccc1ff1fbc4f6831da953586f7f4813944ae2219b15077e7bc6dad9"
+    },
+    {
+      "mesh": "APA_body_mesh",
+      "kind": "POSITION",
+      "accessor": 12,
+      "bufferView": 12,
+      "sha256": "e891728860a00cbf83cc35e5b8b4c08a7de15e42d214dcb47787fb61de2d22b4"
+    },
+    {
+      "mesh": "APA_body_mesh",
+      "kind": "NORMAL",
+      "accessor": 13,
+      "bufferView": 13,
+      "sha256": "fc024f5da97490b787237a283372af5d8f8a683eb6acc3d6262b0721f8a23301"
+    },
+    {
+      "mesh": "APA_body_mesh",
+      "kind": "INDICES",
+      "accessor": 14,
+      "bufferView": 14,
+      "sha256": "6511910a0d6869de89725527a2dd5ffdebc55fe58a79c66fc8269b9187d84156"
+    },
+    {
+      "mesh": "APA_bookmark_ribbon_mesh",
+      "kind": "POSITION",
+      "accessor": 15,
+      "bufferView": 15,
+      "sha256": "c6914d06390ad835adfa3f081a7ff7338bb85a544b8edbfc3f233bfe383e47b4"
+    },
+    {
+      "mesh": "APA_bookmark_ribbon_mesh",
+      "kind": "NORMAL",
+      "accessor": 16,
+      "bufferView": 16,
+      "sha256": "3a9e9aa5d01d1269719974721d0b9724a308a021b6543fa7ff1c5b71431b7090"
+    },
+    {
+      "mesh": "APA_bookmark_ribbon_mesh",
+      "kind": "INDICES",
+      "accessor": 17,
+      "bufferView": 17,
+      "sha256": "420b4d84ad9aff385cd09d9f8adedcef33ece1d68540e7d489cf0d3ba84f2304"
+    },
+    {
+      "mesh": "APA_bookmark_post_mesh",
+      "kind": "POSITION",
+      "accessor": 18,
+      "bufferView": 18,
+      "sha256": "605fb69ba09e854116c14f59b9c885b8ed70c230d927c1f2668c164fecddc29a"
+    },
+    {
+      "mesh": "APA_bookmark_post_mesh",
+      "kind": "NORMAL",
+      "accessor": 19,
+      "bufferView": 19,
+      "sha256": "c68581c3358f1421c01983fa0f164f6c7413eb3d3e17f0b3b87a56337d64caa1"
+    },
+    {
+      "mesh": "APA_bookmark_post_mesh",
+      "kind": "INDICES",
+      "accessor": 20,
+      "bufferView": 20,
+      "sha256": "132881cc5081dabee3e9966df70d9b4279cdefac454b9a4dbcf94fc1509beff7"
+    },
+    {
+      "mesh": "APA_highlight_L_mesh",
+      "kind": "POSITION",
+      "accessor": 21,
+      "bufferView": 21,
+      "sha256": "be4c1c29e47e1ee925f63569787b7b13216383cff8fc7f91bbb10535abedb2f2"
+    },
+    {
+      "mesh": "APA_highlight_L_mesh",
+      "kind": "NORMAL",
+      "accessor": 22,
+      "bufferView": 22,
+      "sha256": "1ca9fb554f2ff61023ec4075c1d63821e3c891e6fca8bd460855a279ca5b7371"
+    },
+    {
+      "mesh": "APA_highlight_L_mesh",
+      "kind": "INDICES",
+      "accessor": 23,
+      "bufferView": 23,
+      "sha256": "fed79402983a87bf7ac50bcdeede9ea168793bf8b430fbcdf16ecbfa5f9f6f06"
+    },
+    {
+      "mesh": "APA_pupil_L_mesh",
+      "kind": "POSITION",
+      "accessor": 24,
+      "bufferView": 24,
+      "sha256": "d06c655de0e343b771e5077b02cec52859de3a8b890461d7b2c48fe03d4bb2ea"
+    },
+    {
+      "mesh": "APA_pupil_L_mesh",
+      "kind": "NORMAL",
+      "accessor": 25,
+      "bufferView": 25,
+      "sha256": "dd1cb9962c62c81a356444fdbd69fcf024b246777b728506853c992b3bff9a60"
+    },
+    {
+      "mesh": "APA_pupil_L_mesh",
+      "kind": "INDICES",
+      "accessor": 26,
+      "bufferView": 26,
+      "sha256": "98a96b663d175d50e459728685d5428537c97aa5953d3576d8e0002ca773e958"
+    },
+    {
+      "mesh": "APA_eye_L_mesh",
+      "kind": "POSITION",
+      "accessor": 27,
+      "bufferView": 27,
+      "sha256": "00c68e256b481266f88379a57cadf0451b31d17348131858cc9490c5c204d8f5"
+    },
+    {
+      "mesh": "APA_eye_L_mesh",
+      "kind": "NORMAL",
+      "accessor": 28,
+      "bufferView": 28,
+      "sha256": "d5ea105a2de401d4972ccb1db8d56d0d8b8a359362f3dd1ebbac0cdb6efb09a4"
+    },
+    {
+      "mesh": "APA_eye_L_mesh",
+      "kind": "INDICES",
+      "accessor": 29,
+      "bufferView": 29,
+      "sha256": "ed21a8856877f00ff211a9f484317b38f25e9ab87c0ced615ebf553ee55a17b3"
+    },
+    {
+      "mesh": "APA_highlight_R_mesh",
+      "kind": "POSITION",
+      "accessor": 30,
+      "bufferView": 30,
+      "sha256": "359274a6308aa2ee835fccd33ff70761b7708524bdd16d80421966e29854b011"
+    },
+    {
+      "mesh": "APA_highlight_R_mesh",
+      "kind": "NORMAL",
+      "accessor": 31,
+      "bufferView": 31,
+      "sha256": "297bc77ec96c3045a8b54a871b6025ed788527690b0a71d89f1faf39db06d379"
+    },
+    {
+      "mesh": "APA_highlight_R_mesh",
+      "kind": "INDICES",
+      "accessor": 23,
+      "bufferView": 23,
+      "sha256": "fed79402983a87bf7ac50bcdeede9ea168793bf8b430fbcdf16ecbfa5f9f6f06"
+    },
+    {
+      "mesh": "APA_pupil_R_mesh",
+      "kind": "POSITION",
+      "accessor": 32,
+      "bufferView": 32,
+      "sha256": "1ca6aafc25e6a574275c259f636522cfdb78b0f95a3413cf2b0554857eed4614"
+    },
+    {
+      "mesh": "APA_pupil_R_mesh",
+      "kind": "NORMAL",
+      "accessor": 33,
+      "bufferView": 33,
+      "sha256": "d518344ac70437cbacdba22e7a9dc664610a14bb89775f008542f32bab7aa098"
+    },
+    {
+      "mesh": "APA_pupil_R_mesh",
+      "kind": "INDICES",
+      "accessor": 26,
+      "bufferView": 26,
+      "sha256": "98a96b663d175d50e459728685d5428537c97aa5953d3576d8e0002ca773e958"
+    },
+    {
+      "mesh": "APA_eye_R_mesh",
+      "kind": "POSITION",
+      "accessor": 34,
+      "bufferView": 34,
+      "sha256": "9df603ca8689e07f3524f34f4f411bc7e92a2eedf6d94000526680f8fe32d0b2"
+    },
+    {
+      "mesh": "APA_eye_R_mesh",
+      "kind": "NORMAL",
+      "accessor": 35,
+      "bufferView": 35,
+      "sha256": "0498d9e90767726986bdbb424421e7751167b991fd8952744a02449c75a81979"
+    },
+    {
+      "mesh": "APA_eye_R_mesh",
+      "kind": "INDICES",
+      "accessor": 29,
+      "bufferView": 29,
+      "sha256": "ed21a8856877f00ff211a9f484317b38f25e9ab87c0ced615ebf553ee55a17b3"
+    },
+    {
+      "mesh": "APA_face_mesh",
+      "kind": "POSITION",
+      "accessor": 36,
+      "bufferView": 36,
+      "sha256": "cff52763ef67dbd233fd2970889fdc06474b33d1c807edd3963376f0c83f4577"
+    },
+    {
+      "mesh": "APA_face_mesh",
+      "kind": "NORMAL",
+      "accessor": 37,
+      "bufferView": 37,
+      "sha256": "026b969c84ba89cf7e74f6f3ca281d93163d67d5307a6424a6fb64c990b60d34"
+    },
+    {
+      "mesh": "APA_face_mesh",
+      "kind": "INDICES",
+      "accessor": 38,
+      "bufferView": 38,
+      "sha256": "63b50d8da06a7eee8fcc17a18059f4c0c48afab80c49701e2f744f5518bac46a"
+    },
+    {
+      "mesh": "APA_face_rim_mesh",
+      "kind": "POSITION",
+      "accessor": 39,
+      "bufferView": 39,
+      "sha256": "0e6c39f51d7e6804ddcc3b8ab20e730243cb4750851cff0eec00e79af0d3ca77"
+    },
+    {
+      "mesh": "APA_face_rim_mesh",
+      "kind": "NORMAL",
+      "accessor": 40,
+      "bufferView": 40,
+      "sha256": "57be656c6f6f77ba8ca65f8213df957e96a61b99fd2bd0b66afce1335d8aaf72"
+    },
+    {
+      "mesh": "APA_face_rim_mesh",
+      "kind": "INDICES",
+      "accessor": 41,
+      "bufferView": 41,
+      "sha256": "7191f92a6c7974be6add4692ccc8faf3695bbdb385691129cef636733fb9ee4d"
+    },
+    {
+      "mesh": "APA_lid_lower_L_mesh",
+      "kind": "POSITION",
+      "accessor": 42,
+      "bufferView": 42,
+      "sha256": "4ad624a82c07122a5dac7ba89cc5dd116d4cfc72501523d912f5f3510cf392bf"
+    },
+    {
+      "mesh": "APA_lid_lower_L_mesh",
+      "kind": "NORMAL",
+      "accessor": 43,
+      "bufferView": 43,
+      "sha256": "eb15d62a81a806632c12a701d479e4373f2d89e143554d31ccfcbc1fe9122ea2"
+    },
+    {
+      "mesh": "APA_lid_lower_L_mesh",
+      "kind": "INDICES",
+      "accessor": 44,
+      "bufferView": 44,
+      "sha256": "2c66a677f53c06c99e4fd79c5a056c140065258c686df9531699956bc8d7f6ea"
+    },
+    {
+      "mesh": "APA_lid_lower_R_mesh",
+      "kind": "POSITION",
+      "accessor": 45,
+      "bufferView": 45,
+      "sha256": "28f0e2aeb065c9f200cb00d6d8455bf1903171a5ebf33c69e87ec499335952f5"
+    },
+    {
+      "mesh": "APA_lid_lower_R_mesh",
+      "kind": "NORMAL",
+      "accessor": 46,
+      "bufferView": 46,
+      "sha256": "5998dda45a4faf50f38d27fc944b56ff7ee95928f3fd54966966dc6c65aa9dc4"
+    },
+    {
+      "mesh": "APA_lid_lower_R_mesh",
+      "kind": "INDICES",
+      "accessor": 44,
+      "bufferView": 44,
+      "sha256": "2c66a677f53c06c99e4fd79c5a056c140065258c686df9531699956bc8d7f6ea"
+    },
+    {
+      "mesh": "APA_seam_mesh",
+      "kind": "POSITION",
+      "accessor": 47,
+      "bufferView": 47,
+      "sha256": "6a28cd3e70fd9d04035669c7476e2629c935c76191d5303ff023a2bc3e44b8ba"
+    },
+    {
+      "mesh": "APA_seam_mesh",
+      "kind": "NORMAL",
+      "accessor": 48,
+      "bufferView": 48,
+      "sha256": "32721e6872e5dc872f37156f79056657ef7ffd57f890fc1872406d57d9a11222"
+    },
+    {
+      "mesh": "APA_seam_mesh",
+      "kind": "INDICES",
+      "accessor": 49,
+      "bufferView": 49,
+      "sha256": "4a0ac4757c9c6b92fa4f07032bfb78dc429a495602e58c179b975b21f956f430"
+    },
+    {
+      "mesh": "APA_head_mesh",
+      "kind": "POSITION",
+      "accessor": 50,
+      "bufferView": 50,
+      "sha256": "a5a740054857a86f438b7d36aefb9be5ab309bfd24e2fef1659fe633766bd3f8"
+    },
+    {
+      "mesh": "APA_head_mesh",
+      "kind": "NORMAL",
+      "accessor": 51,
+      "bufferView": 51,
+      "sha256": "3a84b1329845b678df92c8065da5ed64a7f7f67cc41e06cf62fc0abd7cd4dd95"
+    },
+    {
+      "mesh": "APA_head_mesh",
+      "kind": "INDICES",
+      "accessor": 52,
+      "bufferView": 52,
+      "sha256": "49f4fb82bd85f8f7f35f12c91ffba5f8126257c1b48a4488eb3fb0e2a0d66203"
+    },
+    {
+      "mesh": "APA_tray_glow_mesh",
+      "kind": "POSITION",
+      "accessor": 53,
+      "bufferView": 53,
+      "sha256": "ad238e66dc096974e56ae1e78fa91070a5a79ca1ad98019c6eef634c073fca3a"
+    },
+    {
+      "mesh": "APA_tray_glow_mesh",
+      "kind": "NORMAL",
+      "accessor": 54,
+      "bufferView": 54,
+      "sha256": "369e05134ad835f2fb27d013bae44afd9ec77245fdfd56d0fccfc25bddaaf302"
+    },
+    {
+      "mesh": "APA_tray_glow_mesh",
+      "kind": "INDICES",
+      "accessor": 55,
+      "bufferView": 55,
+      "sha256": "c06b900e19dc7fd66e71e20e13bed4e3930f8bddf9e3e39751d926088e83586e"
+    },
+    {
+      "mesh": "APA_tray_mesh",
+      "kind": "POSITION",
+      "accessor": 56,
+      "bufferView": 56,
+      "sha256": "5f68620d7cf070d1b564524e18d9af11cb814bd56da977e86ab674d7a1b06429"
+    },
+    {
+      "mesh": "APA_tray_mesh",
+      "kind": "NORMAL",
+      "accessor": 57,
+      "bufferView": 57,
+      "sha256": "92be637a9ef4ff5c6d6f463914e219435e1e4dc1ffcfdc641d80b1b6a5fde64c"
+    },
+    {
+      "mesh": "APA_tray_mesh",
+      "kind": "INDICES",
+      "accessor": 58,
+      "bufferView": 58,
+      "sha256": "4117eadee67c2d51835e894569d62de7a4d11a9f630c45e5d4c6737abc2bd8c6"
+    }
+  ],
+  "carriedEvidence": [
+    {
+      "path": "../build-v02/validation.json",
+      "sha256": "abb15cbe35a845179e05e5f23db0d58112edea5e2f7c60d730c474140da5bd4c",
+      "status": "unchanged geometry/pose evidence carried by exact byte and structure identity; not rerun for v03"
+    },
+    {
+      "path": "../build-v02/reimport-validation.json",
+      "sha256": "00f04fcbbf22b94f48daf91f91d3fb59bd0c8f831acfa822a7b483b34e3b284a",
+      "status": "unchanged geometry/pose evidence carried by exact byte and structure identity; not rerun for v03"
+    },
+    {
+      "path": "../build-v02/validator-probes.json",
+      "sha256": "b626a5fc4753b982c16514e8a099f1d6e82d52fbdd1899c351156ef8d17700e4",
+      "status": "unchanged geometry/pose evidence carried by exact byte and structure identity; not rerun for v03"
+    },
+    {
+      "path": "../build-v02/placement-check.json",
+      "sha256": "522f25f426b800506adaad8c2bf824cd075b6685ce9719bf9aa13e4dbe0ea8a9",
+      "status": "unchanged geometry/pose evidence carried by exact byte and structure identity; not rerun for v03"
+    },
+    {
+      "path": "../build-v02/retained-mesh.json",
+      "sha256": "0df0a802dafc81ce45425b4877bbacd5246725ccb7dbee509b3a2931193568a6",
+      "status": "unchanged geometry/pose evidence carried by exact byte and structure identity; not rerun for v03"
+    }
+  ]
+}

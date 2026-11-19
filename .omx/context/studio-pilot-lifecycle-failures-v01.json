@@ -1,0 +1,91 @@
+{
+  "config": {
+    "previewMode": "development",
+    "scope": "Only delayed-unmount and context-loss-panel execute; no production or total resource-disposal claim.",
+    "hashes": {
+      "loader": "B5CD61C682DD69D2336B10B508B516999E72D73A00EDBD6E2CEBCF0323D39D11",
+      "glb": "2B9A4182C3024485680C1E066C8A22EF0DC0F541ACCA4BD958486BCED2C4063E",
+      "controller": "CC76055EA4BFE596E0D3AB49C84CA55C55B8A9BAD3B33627E08ADEB78F0969F0"
+    },
+    "artifactDir": "C:\\Users\\Owenc\\orca\\Portfolio\\.omx\\artifacts\\visual-ralph\\portfolio-immersive-v2\\pilot-runtime-v01\\lifecycle-failures",
+    "baseURL": "http://127.0.0.1:4181",
+    "glbs": [
+      "/studio/pilot-right-limit-v03.glb"
+    ],
+    "sceneJS": [
+      "/_next/static/chunks/_app-pages-browser_components_studio_StudioScene_tsx.js"
+    ]
+  },
+  "checks": [
+    {
+      "scenario": {
+        "mode": "delayed-unmount",
+        "url": "/studio/pilot-right-limit-v03.glb"
+      },
+      "routeEvents": [
+        {
+          "event": "intercepted",
+          "url": "http://127.0.0.1:4181/studio/pilot-right-limit-v03.glb"
+        },
+        {
+          "event": "intercepted",
+          "url": "http://127.0.0.1:4181/studio/pilot-right-limit-v03.glb"
+        },
+        {
+          "event": "response-held",
+          "status": 200
+        },
+        {
+          "event": "response-held",
+          "status": 200
+        },
+        {
+          "event": "completed"
+        },
+        {
+          "event": "completed"
+        }
+      ],
+      "errors": [],
+      "consoleErrors": [],
+      "state": {
+        "token": 0.8325767188329962,
+        "canvases": 0,
+        "studio": false,
+        "pathname": "/"
+      },
+      "pass": true,
+      "limitation": "Same-document unmount before delayed response. DOM/error observation only: parsed-resource disposal and late ImageBitmap/texture ownership require S adapter CPU tests and instrumented lifecycle review. A cancelled delivery is recorded, not proof of parse completion."
+    },
+    {
+      "scenario": {
+        "mode": "context-loss-panel"
+      },
+      "routeEvents": [],
+      "fallback": {
+        "status": "unavailable",
+        "canvases": 0,
+        "guidance": "The 3D studio could not start here. Reload the page to try again. Every project still opens in full from the project list.",
+        "lost": true
+      },
+      "panel": {
+        "focus": "panel-project-dissertation-heading",
+        "text": "Selected workClose01Dissertation preparation / Retrieval + evaluationFrom a model to an inspectable comparisonSelf-hosted Qwen inference, custom retrieval and a reproducible plain-versus-RAG comparison, built as a preparatory teaching benchmark on fictional documents.Teaching scope20 questions, 40 primary outputs, 1 GPU — a fictional teaching fixture.ComparisonPlain Qwen / Qwen with paragraph-level TF-IDF retrievalScoringFacts, claim support, citations and abstentionThe problemHow does adding source material change a model answer, and where can the pipeline still fail? The task was to run a language model on a university GPU, add retrieval and compare the answers against evidence in a small set of fictional equipment-hire documents.My workThe build connects self-hosted inference, a custom paragraph-level TF-IDF retriever, prompt packing and a comparison with recorded configurations and source provenance.An early generation run produced unusable output with nonfinite model scores. A corrected attention configuration and a guard against nonfinite scores were checked before the comparison; the failed run was retained as diagnostic evidence.Plain and RAG architecturePlain: question → Qwen → saved answer. The model receives the question without retrieved source documents, providing the baseline condition.RAG: question → TF-IDF paragraph retrieval → question plus selected context → the same Qwen model → saved answer and trace. Retrieval chooses whole paragraphs; prompt packing adds that evidence to the model input. Both paths save their answers for the same scoring process.What the comparison exposedRetrieving the right material was only part of the problem. Answers could still contradict themselves, overlook a condition or cite an unrelated paragraph. The useful distinction was between finding evidence, reasoning with it and supporting the final claim.Comparison protocolBoth conditions use the same questions and matching generation settings. Reference answers and scoring labels are excluded from generation. Warm-up calls are excluded from the primary results, and the scoring convention was recorded before generation.Scoring separates required facts, unsupported claims, paragraph-ID citation support and abstention. Ambiguous answers retain their interpretation notes, so a reader can see how the scoring decision was reached.ReproducibilityThe record pins the model snapshot, runtime and generation settings, and preserves code identities, outputs and annotations. Copied evidence was hash-checked, and the archived evaluator reproduces the recorded scoring. The model ran on demand in a bounded container, which was stopped after the work.Scope and limitationsThese findings describe a small fictional fixture and its scoring protocol. They do not establish general model accuracy or a completed dissertation result; ambiguous abstentions also depend on how the scoring rules are interpreted.Back to studio",
+        "hash": "#project-dissertation"
+      },
+      "closed": {
+        "focus": "studio-shortcut-dissertation",
+        "pathname": "/studio",
+        "hash": ""
+      },
+      "loss": {
+        "supported": true
+      },
+      "errors": [],
+      "consoleErrors": [],
+      "pass": true
+    }
+  ],
+  "failures": [],
+  "note": "Expected injected failure console output is preserved for review; it is not blanket-suppressed. No product hooks or source changes. This is graphics-failure panel usability, not the full v2 history/noJS acceptance suite."
+}

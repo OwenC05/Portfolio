@@ -1,0 +1,462 @@
+/*
+ * Studio Ask: entry plate and paper sheet contents.
+ * Colours and type come from the custom properties on .studioPage
+ * (app/studio/studio.module.css); the fallbacks match those values.
+ */
+
+/* ---------- Entry (rests on the room, beside the look controls) ---------- */
+
+.entry {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 48px;
+  padding: 0 1rem;
+  pointer-events: auto;
+  color: var(--cream, #f4ead8);
+  background: var(--plate, rgba(24, 22, 19, 0.92));
+  border: 1px solid var(--plate-line, rgba(244, 234, 216, 0.16));
+  border-radius: 0.8rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.28);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+.entry:hover {
+  color: var(--amber, #e9b77d);
+}
+
+/* ---------- Sheet ---------- */
+
+.sheet {
+  --rule: #cdbfa8;
+  --label: #705135;
+  --accent: #854819;
+  --field-line: #8a7862;
+  color: var(--ink, #27231f);
+}
+
+.sheet :where(ul, ol) {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sheet :where(p, h2, h3) {
+  margin: 0;
+}
+
+.heading {
+  font-family: var(--serif, Georgia, 'Times New Roman', serif);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+/* The heading takes focus when the sheet opens but is not a control, so it
+   gets a short bar in the left gutter, not a ring that reads as a field. */
+.heading:focus {
+  outline: none;
+  box-shadow: -0.7rem 0 0 -0.5rem var(--accent);
+}
+
+.scope {
+  margin-top: 0.75rem;
+  color: #50463c;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.scopeShort {
+  display: none;
+}
+
+.label {
+  display: block;
+  color: var(--label);
+  font-family: var(--mono, 'Courier New', Courier, monospace);
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+/* ---------- Question ---------- */
+
+.form {
+  margin-top: 1.25rem;
+}
+
+.question {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 0.35rem;
+  padding: 0.7rem 0.8rem;
+  resize: vertical;
+  color: var(--ink, #27231f);
+  background: #faf5ec;
+  border: 1px solid var(--field-line);
+  border-radius: 0.4rem;
+  font: inherit;
+  /* 16px keeps iOS from zooming the page when the field takes focus. */
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.question::placeholder {
+  color: #6f6455;
+}
+
+.question:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+}
+
+.primary,
+.secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 1.1rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.primary {
+  color: var(--paper, #f2eadc);
+  background: var(--ink, #27231f);
+  border: 1px solid var(--ink, #27231f);
+}
+
+.primary:hover:not([aria-disabled='true']) {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.secondary {
+  color: var(--ink, #27231f);
+  background: var(--paper, #f2eadc);
+  border: 1px solid var(--field-line);
+}
+
+.secondary:hover:not([aria-disabled='true']) {
+  color: var(--paper, #f2eadc);
+  background: var(--ink, #27231f);
+  border-color: var(--ink, #27231f);
+}
+
+/* Still focusable and announced as unavailable; the handlers ignore it. */
+.primary[aria-disabled='true'] {
+  background: #6f665b;
+  border-color: #6f665b;
+  cursor: default;
+}
+
+.secondary[aria-disabled='true'] {
+  color: #6f665b;
+  border-color: var(--rule);
+  cursor: default;
+}
+
+.hint {
+  margin-left: auto;
+  color: var(--label);
+  font-family: var(--mono, 'Courier New', Courier, monospace);
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+
+/* ---------- Status and messages ---------- */
+
+.status {
+  min-height: 1.5rem;
+  margin-top: 1.1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--mono, 'Courier New', Courier, monospace);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.status:empty {
+  min-height: 0;
+}
+
+.error {
+  padding: 0.1rem 0 0.1rem 0.85rem;
+  border-left: 3px solid #96281e;
+}
+
+.errorText {
+  color: #78201a;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.errorNote {
+  margin-top: 0.25rem;
+  color: #50463c;
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+
+.examples {
+  margin-top: 1rem;
+}
+
+.examples ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}
+
+.example {
+  min-height: 44px;
+  padding: 0.35rem 0.95rem;
+  color: var(--ink, #27231f);
+  background: transparent;
+  border: 1px solid var(--field-line);
+  border-radius: 1.4rem;
+  font-size: 0.875rem;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.example:hover {
+  background: var(--paper-deep, #e9dfcd);
+}
+
+.asked {
+  margin-top: 1rem;
+  font-family: var(--serif, Georgia, 'Times New Roman', serif);
+  font-size: 1.125rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.note {
+  margin-top: 1rem;
+  padding: 0.6rem 0.85rem;
+  background: #f6ead6;
+  border-left: 3px solid var(--accent);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.contact {
+  margin-top: 1.25rem;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+/* ---------- Sources ---------- */
+
+.results {
+  margin-top: 1rem;
+}
+
+.chipRow {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.chips {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  color: var(--ink, #27231f);
+  background: var(--paper, #f2eadc);
+  border: 1px solid var(--field-line);
+  border-radius: 50%;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.chip:hover {
+  background: var(--paper-deep, #e9dfcd);
+}
+
+.chip[aria-pressed='true'] {
+  color: var(--paper, #f2eadc);
+  background: var(--ink, #27231f);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+.rows {
+  margin-top: 0.75rem;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 2.1rem minmax(0, 1fr);
+  padding: 0.85rem 0.75rem 0.6rem;
+  margin-inline: -0.75rem;
+  border-top: 1px solid var(--rule);
+  border-left: 3px solid transparent;
+}
+
+.row[data-selected='true'] {
+  background: var(--paper-deep, #e9dfcd);
+  border-left-color: var(--accent);
+}
+
+.rank {
+  padding-top: 0.15rem;
+  color: var(--label);
+  font-family: var(--mono, 'Courier New', Courier, monospace);
+  font-size: 0.8125rem;
+}
+
+.rowBody {
+  min-width: 0;
+}
+
+.sourceLink {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.sourceHeading {
+  color: #50463c;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+}
+
+.passage {
+  margin-top: 0.35rem;
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+/* Visual preview only: the full passage stays in the document. */
+.passage[data-open='false'] {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+}
+
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  color: var(--accent);
+  background: none;
+  border: 0;
+  font-family: var(--mono, 'Courier New', Courier, monospace);
+  font-size: 0.75rem;
+  letter-spacing: 0.09em;
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+  text-transform: uppercase;
+}
+
+/* ---------- Narrow and short screens ---------- */
+
+@media (max-width: 47.99rem) {
+  .entry {
+    min-height: 44px;
+  }
+
+  .hint {
+    flex: 1 1 100%;
+    margin-left: 0;
+  }
+
+  .hintKeys {
+    display: none;
+  }
+
+  /* With sources on a narrow screen the passages matter most: the field
+     drops to two lines (longer text scrolls inside it and stays editable). */
+  .sheet[data-assistant-result='sources'] .question {
+    height: 4.4rem;
+  }
+
+  /* Where supported, the field follows its text: one line up to two. */
+  @supports (field-sizing: content) {
+    .sheet[data-assistant-result='sources'] .question {
+      field-sizing: content;
+      height: auto;
+      min-height: 2.95rem;
+      max-height: 4.4rem;
+    }
+  }
+
+  /* The repeat is hidden only while the field still shows that question. */
+  .sheet[data-assistant-result='sources'] .asked[data-repeats-draft='true'] {
+    display: none;
+  }
+}
+
+@media (max-width: 22.49rem) {
+  .entry {
+    min-height: 48px;
+  }
+
+  .heading {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-height: 34rem) {
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .scopeLong {
+    display: none;
+  }
+
+  .scopeShort {
+    display: inline;
+  }
+
+  .scope {
+    margin-top: 0.4rem;
+  }
+
+  .form {
+    margin-top: 0.75rem;
+  }
+
+  /* Two lines of question on short screens; it can still be resized. */
+  .question {
+    height: 4.4rem;
+  }
+}

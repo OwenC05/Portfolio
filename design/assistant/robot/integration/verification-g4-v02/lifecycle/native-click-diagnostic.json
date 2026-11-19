@@ -1,0 +1,96 @@
+{
+  "events": [
+    {
+      "type": "pointerdown",
+      "target": "CANVAS",
+      "x": 1130,
+      "y": 310,
+      "detail": 0,
+      "button": 0,
+      "buttons": 1,
+      "pointerType": "mouse",
+      "pointerId": 1,
+      "primary": true,
+      "trusted": true,
+      "time": 584954.6000000238
+    },
+    {
+      "type": "mousedown",
+      "target": "CANVAS",
+      "x": 1130,
+      "y": 310,
+      "detail": 1,
+      "button": 0,
+      "buttons": 1,
+      "trusted": true,
+      "time": 584954.6000000238
+    },
+    {
+      "type": "pointerup",
+      "target": "CANVAS",
+      "x": 1130,
+      "y": 310,
+      "detail": 0,
+      "button": 0,
+      "buttons": 0,
+      "pointerType": "mouse",
+      "pointerId": 1,
+      "primary": true,
+      "trusted": true,
+      "time": 585769.9000000358
+    },
+    {
+      "type": "mouseup",
+      "target": "CANVAS",
+      "x": 1130,
+      "y": 310,
+      "detail": 1,
+      "button": 0,
+      "buttons": 0,
+      "trusted": true,
+      "time": 585769.9000000358
+    },
+    {
+      "type": "click",
+      "target": "CANVAS",
+      "x": 1130,
+      "y": 310,
+      "detail": 1,
+      "button": 0,
+      "buttons": 0,
+      "pointerType": "mouse",
+      "pointerId": 1,
+      "primary": false,
+      "trusted": true,
+      "time": 585769.9000000358
+    }
+  ],
+  "open": false,
+  "canvas": {
+    "engine": "three.js r187",
+    "studioInteractionEnabled": "true",
+    "studioYaw": "-4",
+    "studioPitch": "-6",
+    "studioEye": "-0.7,2.8,3.4",
+    "studioFov": "58",
+    "studioDpr": "1.0000000149011612",
+    "studioRenderCount": "122",
+    "studioDrawCalls": "94",
+    "studioTriangles": "94512",
+    "studioGeometries": "40",
+    "studioTextures": "12",
+    "assistantRunId": "",
+    "assistantRevision": "16",
+    "assistantCardCount": "0"
+  },
+  "rect": {
+    "x": 0,
+    "y": 0,
+    "width": 1424.800048828125,
+    "height": 900,
+    "top": 0,
+    "right": 1424.800048828125,
+    "bottom": 900,
+    "left": 0
+  }
+}

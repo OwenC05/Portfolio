@@ -1,0 +1,245 @@
+{
+  "checkedAt": "2026-11-18T19:15:14.119Z",
+  "status": "PASS-offline-asset-structure-not-production-acceptance",
+  "assetSha256": "02c5a8c656ca23c55571a4e32241fd36afc2a12d96bfa704b9896c5661b19c0b",
+  "measurements": {
+    "rawGlbBytes": 673148,
+    "gzipBytes": 482960,
+    "brotliBytes": 336514,
+    "triangles": 37676,
+    "exportedVertexRecords": 19131,
+    "nodes": 22,
+    "meshes": 21,
+    "materials": 7,
+    "primitives": 21,
+    "textures": 0,
+    "animations": 0
+  },
+  "meshRecords": [
+    {
+      "name": "APA_body_cap",
+      "vertices": 258,
+      "triangles": 512,
+      "primitives": 1
+    },
+    {
+      "name": "APA_collar",
+      "vertices": 384,
+      "triangles": 768,
+      "primitives": 1
+    },
+    {
+      "name": "APA_mitten_L",
+      "vertices": 416,
+      "triangles": 828,
+      "primitives": 1
+    },
+    {
+      "name": "APA_mitten_R",
+      "vertices": 412,
+      "triangles": 820,
+      "primitives": 1
+    },
+    {
+      "name": "APA_body",
+      "vertices": 788,
+      "triangles": 1572,
+      "primitives": 1
+    },
+    {
+      "name": "APA_bookmark_ribbon",
+      "vertices": 70,
+      "triangles": 136,
+      "primitives": 1
+    },
+    {
+      "name": "APA_bookmark_post",
+      "vertices": 362,
+      "triangles": 720,
+      "primitives": 1
+    },
+    {
+      "name": "APA_highlight_L",
+      "vertices": 146,
+      "triangles": 288,
+      "primitives": 1
+    },
+    {
+      "name": "APA_pupil_L",
+      "vertices": 322,
+      "triangles": 640,
+      "primitives": 1
+    },
+    {
+      "name": "APA_eye_L",
+      "vertices": 1026,
+      "triangles": 2048,
+      "primitives": 1
+    },
+    {
+      "name": "APA_highlight_R",
+      "vertices": 146,
+      "triangles": 288,
+      "primitives": 1
+    },
+    {
+      "name": "APA_pupil_R",
+      "vertices": 322,
+      "triangles": 640,
+      "primitives": 1
+    },
+    {
+      "name": "APA_eye_R",
+      "vertices": 1026,
+      "triangles": 2048,
+      "primitives": 1
+    },
+    {
+      "name": "APA_face",
+      "vertices": 4098,
+      "triangles": 8192,
+      "primitives": 1
+    },
+    {
+      "name": "APA_face_rim",
+      "vertices": 576,
+      "triangles": 1152,
+      "primitives": 1
+    },
+    {
+      "name": "APA_lid_lower_L",
+      "vertices": 1274,
+      "triangles": 2544,
+      "primitives": 1
+    },
+    {
+      "name": "APA_lid_lower_R",
+      "vertices": 1274,
+      "triangles": 2544,
+      "primitives": 1
+    },
+    {
+      "name": "APA_seam",
+      "vertices": 768,
+      "triangles": 1536,
+      "primitives": 1
+    },
+    {
+      "name": "APA_head",
+      "vertices": 4693,
+      "triangles": 9252,
+      "primitives": 1
+    },
+    {
+      "name": "APA_tray_glow",
+      "vertices": 384,
+      "triangles": 380,
+      "primitives": 1
+    },
+    {
+      "name": "APA_tray",
+      "vertices": 386,
+      "triangles": 768,
+      "primitives": 1
+    }
+  ],
+  "neutralBoundsGltfMetres": {
+    "min": [
+      -0.13927824888378382,
+      -0.23599659092724323,
+      -0.133880446664989
+    ],
+    "max": [
+      0.13787991914432496,
+      0.3456544801592827,
+      0.12633870140416548
+    ]
+  },
+  "degenerateTriangles": 0,
+  "maxNormalLengthError": 1.517521723837234e-7,
+  "hierarchyAndNeutralTRSMatch": true,
+  "materialsOpaqueAndUntextured": true,
+  "animationFree": true,
+  "requiredBindings": 22,
+  "movingBindings": 10,
+  "runtimeChecks": {
+    "requiredBindings": 22,
+    "movingBindings": 10,
+    "runtimeSampleCount": 1025,
+    "recomputedSampledBoundsBlenderMetres": {
+      "min": [
+        -0.15471808746770888,
+        -0.15245652335445634,
+        -0.2760609921932848
+      ],
+      "max": [
+        0.15585201126152076,
+        0.13439257192806622,
+        0.35567773586976836
+      ]
+    },
+    "geometryEyeChecks": {
+      "sampleCount": 1025,
+      "maxEllipseNormalizedRadiusSquared": 0.47530087288854367,
+      "minPupilToLidClearanceMetres": 0.00577589080302179,
+      "continuousGapPaddingMetres": 0.00020054253997124578,
+      "conservativeContinuousGapMetres": 0.005575348263050545,
+      "maxHighlightRadiusMetres": 0.01157110929385939,
+      "eyes": [
+        {
+          "side": "L",
+          "eyeRadiiMetres": [
+            0.031355295330286026,
+            0.03557619825005531
+          ],
+          "pupilRadiusMetres": 0.015074663965436337
+        },
+        {
+          "side": "R",
+          "eyeRadiiMetres": [
+            0.031355295330286026,
+            0.03557619825005531
+          ],
+          "pupilRadiusMetres": 0.015074663965436337
+        }
+      ]
+    },
+    "scope": "actual exported geometry; five endpoints/common-parameter pairwise lerp and shortest slerp; excludes intermediate-to-third interruption, independent easing clocks, extra gaze/lid offsets and runtime cards"
+  },
+  "pupilChecks": {
+    "maxEllipseNormalizedRadiusSquared": 0.47530087288854367,
+    "minPupilToLidClearanceMetres": 0.005575348263050545,
+    "highlightContained": true
+  },
+  "sweep": {
+    "sampleCount": 1025,
+    "scope": "five endpoints with common-parameter nonovershooting pairwise lerp/shortest-slerp only; excludes interrupted intermediate-to-third transitions, independent node clocks, extra gaze/lid offsets, scale changes and runtime marks",
+    "paddingMetres": 0.0013941260623603878,
+    "maxVertexSpeedBoundMetresPerNormalizedTransition": 0.11145008498883104,
+    "conservativeContinuousBoundsBlenderMetres": {
+      "min": [
+        -0.15611222708698808,
+        -0.15385064805027543,
+        -0.2774551245021492
+      ],
+      "max": [
+        0.1572461458491951,
+        0.13578670049187241,
+        0.3570718797492653
+      ]
+    },
+    "method": "41 samples per ordered pose pair; expand each side by max chain speed / 80 plus 1 micrometre; lerp translation and shortest quaternion slerp only",
+    "runtimeMarksIncluded": false
+  },
+  "compression": {
+    "gzipLevel": 9,
+    "brotliQuality": 11,
+    "gzipSha256": "c12cc47fb0348376a90379c82925a0ef828ac7ad36910dedf8f878602d058b85",
+    "brotliSha256": "71bb8ee701004dce910260d163d31b235a6405e119a9aa379ea35741a10a3809"
+  },
+  "limitations": [
+    "Isolated WebGL evidence is separate; no app integration/mobile acceptance/transport test",
+    "Source marks unbuilt; their bounds and resources remain unallocated",
+    "Independent visual and technical review pending"
+  ]
+}

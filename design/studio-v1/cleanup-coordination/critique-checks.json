@@ -1,0 +1,57 @@
+{
+  "taskId": "task_c545eea9eae3",
+  "dispatchId": "ctx_a6cc31db2a1d",
+  "method": "Read-only independent source critique. No runtime checks rerun.",
+  "freshSourceScan": {
+    "command": "rg -n '^(import|export)|catch|TODO|FIXME|fallback|console\\.|history\\.|location\\.|fetch\\(|AudioContext|setInterval' app/studio components/studio lib/studio-contract.ts lib/studio-content.ts",
+    "result": {
+      "chunk_id": "daa12e",
+      "wall_time_seconds": 0.1884878,
+      "exit_code": 0,
+      "original_token_count": 1857,
+      "output": "lib/studio-contract.ts:1:export const PROJECT_IDS = ['dissertation', 'copilot', 'typeforge'] as const;\nlib/studio-contract.ts:3:export type ProjectId = typeof PROJECT_IDS[number];\nlib/studio-contract.ts:4:export type SceneStatus = 'loading' | 'ready' | 'unavailable';\nlib/studio-contract.ts:6:export interface StudioSceneProps {\nlib/studio-contract.ts:13:export interface StudioProject {\nlib/studio-contract.ts:23:export function projectAnchor(id: ProjectId): string {\nlib/studio-contract.ts:27:export function projectIdFromHash(hash: string): ProjectId | null {\nlib/studio-content.ts:1:import type { StudioProject } from './studio-contract';\nlib/studio-content.ts:3:export const studioProfile = {\nlib/studio-content.ts:26:export const studioProjects: readonly StudioProject[] = [\ncomponents/studio\\StudioScene.tsx:3:import { useEffect, useRef } from 'react';\ncomponents/studio\\StudioScene.tsx:4:import type { StudioSceneProps } from '@/lib/studio-contract';\ncomponents/studio\\StudioScene.tsx:5:import { createStudioController, type StudioController } from './scene/controller';\ncomponents/studio\\StudioScene.tsx:7:export default function StudioScene(props: StudioSceneProps) {\napp/studio\\studio.module.css:128:.fallbackLabel,\napp/studio\\studio.module.css:272:.fallbackLabel {\napp/studio\\studio.module.css:279:.fallbackDrawing {\napp/studio\\studio.module.css:288:.fallbackDrawing span {\napp/studio\\studio.module.css:369:.fallbackContent > p {\napp/studio\\studio.module.css:376:.fallbackContent em {\napp/studio\\studio.module.css:381:.fallbackContent > span {\napp/studio\\studio.module.css:712:  .fallbackDrawing {\napp/studio\\studio.module.css:790:  .fallbackLabel {\ncomponents/studio\\StudioExperience.tsx:3:import dynamic from 'next/dynamic'\ncomponents/studio\\StudioExperience.tsx:4:import {\ncomponents/studio\\StudioExperience.tsx:13:import {\ncomponents/studio\\StudioExperience.tsx:20:import styles from '@/app/studio/studio.module.css'\ncomponents/studio\\StudioExperience.tsx:58:export default function StudioExperience({\ncomponents/studio\\StudioExperience.tsx:87:    const hash = window.location.hash\ncomponents/studio\\StudioExperience.tsx:117:        if (lastAppliedHash.current !== window.location.hash)\ncomponents/studio\\StudioExperience.tsx:134:      if (window.location.hash !== hash) {\ncomponents/studio\\StudioExperience.tsx:136:        window.history.pushState(window.history.state, '', hash)\ncomponents/studio\\StudioExperience.tsx:174:      destination.origin !== window.location.origin ||\ncomponents/studio\\StudioExperience.tsx:175:      destination.pathname !== window.location.pathname ||\ncomponents/studio\\StudioExperience.tsx:176:      destination.search !== window.location.search\ncomponents/studio\\StudioExperience.tsx:207:              <span className={styles.fallbackLabel}>\ncomponents/studio\\StudioExperience.tsx:210:              <div className={styles.fallbackDrawing} aria-hidden=\"true\">\ncomponents/studio\\StudioExperience.tsx:217:              <div className={styles.fallbackContent}>\napp/studio\\page.tsx:1:import type { Metadata } from 'next'\napp/studio\\page.tsx:2:import ProjectEvidence from '@/components/studio/ProjectEvidence'\napp/studio\\page.tsx:3:import StudioExperience from '@/components/studio/StudioExperience'\napp/studio\\page.tsx:4:import { studioProfile, studioProjects } from '@/lib/studio-content'\napp/studio\\page.tsx:5:import { projectAnchor } from '@/lib/studio-contract'\napp/studio\\page.tsx:6:import styles from './studio.module.css'\napp/studio\\page.tsx:8:export const metadata: Metadata = {\napp/studio\\page.tsx:13:export default function StudioPage() {\ncomponents/studio\\ProjectEvidence.tsx:1:import { projectAnchor, type StudioProject } from '@/lib/studio-contract'\ncomponents/studio\\ProjectEvidence.tsx:2:import styles from '@/app/studio/studio.module.css'\ncomponents/studio\\ProjectEvidence.tsx:4:export default function ProjectEvidence({\ncomponents/studio\\scene\\controller.ts:1:import * as THREE from 'three';\ncomponents/studio\\scene\\controller.ts:2:import { PROJECT_IDS, type ProjectId, type StudioSceneProps } from '@/lib/studio-contract';\ncomponents/studio\\scene\\controller.ts:3:import { createStudio } from './build-studio';\ncomponents/studio\\scene\\controller.ts:4:import { SceneResources } from './resources';\ncomponents/studio\\scene\\controller.ts:5:import type { StudioModel } from './types';\ncomponents/studio\\scene\\controller.ts:9:export interface StudioController {\ncomponents/studio\\scene\\controller.ts:45:export function createStudioController(host: HTMLDivElement, props: StudioSceneProps): StudioController {\ncomponents/studio\\scene\\controller.ts:86:    const release = (cleanup: () => void) => { try { cleanup(); } catch { /* Context may already be lost. */ } };\ncomponents/studio\\scene\\controller.ts:152:    } catch {\ncomponents/studio\\scene\\controller.ts:325:  } catch {\ncomponents/studio\\scene\\build-studio.ts:1:import * as THREE from 'three';\ncomponents/studio\\scene\\build-studio.ts:2:import { SceneResources, makePrimitives, instanceStaticMeshes } from './resources';\ncomponents/studio\\scene\\build-studio.ts:3:import { contactTexture, screenTexture, woodTexture } from './textures';\ncomponents/studio\\scene\\build-studio.ts:4:import type { StudioModel, StudioTarget } from './types';\ncomponents/studio\\scene\\build-studio.ts:9:export function createStudio(resources: SceneResources): StudioModel {\ncomponents/studio\\scene\\textures.ts:1:import * as THREE from 'three';\ncomponents/studio\\scene\\textures.ts:2:import type { ProjectId } from '@/lib/studio-contract';\ncomponents/studio\\scene\\textures.ts:3:import type { SceneResources } from './resources';\ncomponents/studio\\scene\\textures.ts:17:export function woodTexture(resources: SceneResources) {\ncomponents/studio\\scene\\textures.ts:35:export function contactTexture(resources: SceneResources) {\ncomponents/studio\\scene\\textures.ts:47:export function screenTexture(resources: SceneResources, project: ProjectId | 'studio') {\ncomponents/studio\\scene\\verify-controller.mjs:2:import assert from 'node:assert/strict';\ncomponents/studio\\scene\\verify-controller.mjs:3:import { readFileSync } from 'node:fs';\ncomponents/studio\\scene\\verify-controller.mjs:4:import test from 'node:test';\ncomponents/studio\\scene\\verify-controller.mjs:5:import vm from 'node:vm';\ncomponents/studio\\scene\\verify-controller.mjs:6:import ts from 'typescript';\ncomponents/studio\\scene\\verify-controller.mjs:7:import * as THREE from 'three';\ncomponents/studio\\scene\\verify-controller.mjs:8:import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';\ncomponents/studio\\scene\\resources.ts:1:import * as THREE from 'three';\ncomponents/studio\\scene\\resources.ts:2:import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';\ncomponents/studio\\scene\\resources.ts:7:export class SceneResources {\ncomponents/studio\\scene\\resources.ts:35:        try { value.dispose(); } catch (error) {\ncomponents/studio\\scene\\resources.ts:50:export function makePrimitives(resources: SceneResources) {\ncomponents/studio\\scene\\resources.ts:92:export function instanceStaticMeshes(scene: THREE.Scene, resources: SceneResources) {\ncomponents/studio\\scene\\types.ts:1:import type * as THREE from 'three';\ncomponents/studio\\scene\\types.ts:2:import type { ProjectId } from '@/lib/studio-contract';\ncomponents/studio\\scene\\types.ts:4:export interface StudioTarget {\ncomponents/studio\\scene\\types.ts:11:export interface StudioModel {\n"
+    }
+  },
+  "adoptedEvidence": {
+    "file": "design/studio-v1/cleanup-coordination/inventory-checks.json",
+    "reviewerReran": false,
+    "cpu": {
+      "exit_code": 0,
+      "passed": 20,
+      "failed": 0,
+      "scope": "CPU renderer/DOM/observer/React stubs with real Three maths"
+    },
+    "typecheck": {
+      "exit_code": 0,
+      "scope": "Full nonincremental typecheck"
+    },
+    "lint": {
+      "exit_code": 1,
+      "cause": "Cannot find module @typescript-eslint/eslint-plugin",
+      "successfulLint": false
+    }
+  },
+  "otherReviewCommands": [
+    "orca skills get orchestration",
+    "node design/studio-v1/cleanup-coordination/critique-fingerprint.mjs before",
+    "git status --short",
+    "git diff -- app/globals.css",
+    "Get-Content -Encoding UTF8 -LiteralPath <scoped source and required artifacts> with numbered ForEach-Object output",
+    "node design/studio-v1/cleanup-coordination/critique-fingerprint.mjs after"
+  ],
+  "runtimeTestsRun": [],
+  "filesAuthorizedForReviewOutput": "design/studio-v1/cleanup-coordination/critique.md and critique-* evidence files only",
+  "closingSnapshot": {
+    "capturedAtUtc": "2026-11-14T20:24:20.067Z",
+    "sources": 14,
+    "allMatchInventory": true,
+    "globalsAdditionMatches": true,
+    "inputsChanged": []
+  },
+  "artifactValidation": {
+    "capturedAtUtc": "2026-11-14T20:24:52.966Z",
+    "exit_code": 0,
+    "result": "Five owned artifacts exist; all 18 families present; no conflict markers; 14 live source hashes still match; recorded check exits remain 0/0/1.",
+    "runtimeTestsRun": false
+  }
+}

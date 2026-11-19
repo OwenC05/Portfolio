@@ -1,0 +1,27 @@
+{
+  "verifiedAtUtc": "2026-11-15T16:19:08.847Z",
+  "status": "passed",
+  "verificationScriptSha256": "257f009ebe6173ed14f73799650d9e0449e4e99ae408610148bf57034c48c4d6",
+  "resultsSha256": "dad54961bc3e1eb101c6e3434ff26cc1bf97dc6aff2f58641207f32674723d37",
+  "frozenQuestionsSha256": "1fa0b7c7a7d65dc23456142bd393f1d52ea5de6191f95c458db0c6128f25454f",
+  "catalogVersion": "2026-11-15.2",
+  "selectedPassagesVerified": 27,
+  "checks": [
+    "Frozen question, catalog, retriever, loader and runner hashes match recorded evidence",
+    "Retrieval timestamp follows freeze timestamp",
+    "Saved case text, source expectations and criteria exactly match the frozen set",
+    "Every selected excerpt and link matches the published catalog snapshot",
+    "Every saved coverage decision and aggregate count recomputes from selected IDs",
+    "Validation loaded only the saved catalog; no retrieval or generation rerun"
+  ],
+  "summary": {
+    "questions": 20,
+    "scoredQuestions": 19,
+    "passedQuestions": 11,
+    "failedQuestions": 8,
+    "observationOnlyQuestions": 1,
+    "requiredGroups": 22,
+    "hitGroups": 14,
+    "emptySelections": 6
+  }
+}

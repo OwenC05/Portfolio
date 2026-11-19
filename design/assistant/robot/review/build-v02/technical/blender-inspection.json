@@ -1,0 +1,644 @@
+{
+  "status": "completed-independent-source-export-and-reimport-inspection",
+  "blenderVersion": "5.2.3 LTS",
+  "blenderBuildHash": "e13b728c6880",
+  "blendObjects": [
+    {
+      "name": "APA_root",
+      "type": "EMPTY",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceComponent": null,
+      "sourceRawSha256": null,
+      "vertices": null
+    },
+    {
+      "name": "APA_head",
+      "type": "MESH",
+      "location": [
+        -0.0015689143911004066,
+        0.0082279397174716,
+        0.13357515633106232
+      ],
+      "quaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceComponent": 0,
+      "sourceRawSha256": "412c0c213e0c6adc6baa80fa0686b6cbd9a1d259348bb96c571ef28b2f59bec7",
+      "vertices": 4693
+    },
+    {
+      "name": "APA_seam",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceComponent": null,
+      "sourceRawSha256": null,
+      "vertices": 768
+    },
+    {
+      "name": "APA_face_rim",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceComponent": null,
+      "sourceRawSha256": null,
+      "vertices": 576
+    },
+    {
+      "name": "APA_face",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceComponent": null,
+      "sourceRawSha256": null,
+      "vertices": 4098
+    },
+    {
+      "name": "APA_eye_L",
+      "type": "MESH",
+      "location": [
+        0.05065084993839264,
+        -0.11665036529302597,
+        -0.008985906839370728
+      ],
+      "quaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceComponent": null,
+      "sourceRawSha256": null,
+      "vertices": 1026
+    },
+    {
+      "name": "APA_pupil_L",
+      "type": "MESH",
+      "location": [
+        0.0,
+        -0.0010771676898002625,
+        0.005426868796348572
+      ],
+      "quaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceComponent": null,
+      "sourceRawSha256": null,
+      "vertices": 322
+    },
+    {
+      "name": "APA_highlight_L",
+      "type": "MESH",
+      "location": [
+        0.004220906645059586,
+        0.000633537769317627,
+        0.006029859185218811
+      ],
+      "quaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceComponent": null,
+      "sourceRawSha256": null,
+      "vertices": 146
+    },
+    {
+      "name": "APA_lid_lower_L",
+      "type": "MESH",
+      "location": [
+        0.05065084993839264,
+        0.0024119457229971886,
+        0.0
+      ],
+      "quaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceComponent": null,
+      "sourceRawSha256": null,
+      "vertices": 1274
+    },
+    {
+      "name": "APA_eye_R",
+      "type": "MESH",
+      "location": [
+        -0.05065085366368294,
+        -0.11665036529302597,
+        -0.008985906839370728
+      ],
+      "quaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceComponent": null,
+      "sourceRawSha256": null,
+      "vertices": 1026
+    },
+    {
+      "name": "APA_pupil_R",
+      "type": "MESH",
+      "location": [
+        0.0,
+        -0.0010771676898002625,
+        0.005426868796348572
+      ],
+      "quaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceComponent": null,
+      "sourceRawSha256": null,
+      "vertices": 322
+    },
+    {
+      "name": "APA_highlight_R",
+      "type": "MESH",
+      "location": [
+        0.004220906645059586,
+        -0.0023556575179100037,
+        0.006029859185218811
+      ],
+      "quaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceComponent": null,
+      "sourceRawSha256": null,
+      "vertices": 146
+    },
+    {
+      "name": "APA_lid_lower_R",
+      "type": "MESH",
+      "location": [
+        -0.05065085366368294,
+        0.0024119457229971886,
+        0.0
+      ],
+      "quaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceComponent": null,
+      "sourceRawSha256": null,
+      "vertices": 1274
+    },
+    {
+      "name": "APA_bookmark_post",
+      "type": "MESH",
+      "location": [
+        0.05243154615163803,
+        -0.0206263717263937,
+        0.11161136627197266
+      ],
+      "quaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceComponent": null,
+      "sourceRawSha256": null,
+      "vertices": 362
+    },
+    {
+      "name": "APA_bookmark_ribbon",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceComponent": null,
+      "sourceRawSha256": null,
+      "vertices": 70
+    },
+    {
+      "name": "APA_body",
+      "type": "MESH",
+      "location": [
+        0.0014177522389218211,
+        -0.002750651678070426,
+        -0.009273719973862171
+      ],
+      "quaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceComponent": 1,
+      "sourceRawSha256": "412c0c213e0c6adc6baa80fa0686b6cbd9a1d259348bb96c571ef28b2f59bec7",
+      "vertices": 788
+    },
+    {
+      "name": "APA_collar",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceComponent": null,
+      "sourceRawSha256": null,
+      "vertices": 384
+    },
+    {
+      "name": "APA_body_cap",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceComponent": null,
+      "sourceRawSha256": null,
+      "vertices": 258
+    },
+    {
+      "name": "APA_mitten_L",
+      "type": "MESH",
+      "location": [
+        0.0795942023396492,
+        0.0006029864307492971,
+        -0.04582696408033371
+      ],
+      "quaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceComponent": 3,
+      "sourceRawSha256": "412c0c213e0c6adc6baa80fa0686b6cbd9a1d259348bb96c571ef28b2f59bec7",
+      "vertices": 416
+    },
+    {
+      "name": "APA_mitten_R",
+      "type": "MESH",
+      "location": [
+        -0.0765792578458786,
+        0.0006029864307492971,
+        -0.04582696408033371
+      ],
+      "quaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceComponent": 4,
+      "sourceRawSha256": "412c0c213e0c6adc6baa80fa0686b6cbd9a1d259348bb96c571ef28b2f59bec7",
+      "vertices": 412
+    },
+    {
+      "name": "APA_tray",
+      "type": "MESH",
+      "location": [
+        -0.0015689143911004066,
+        0.0008672664989717305,
+        -0.2275547832250595
+      ],
+      "quaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceComponent": null,
+      "sourceRawSha256": null,
+      "vertices": 386
+    },
+    {
+      "name": "APA_tray_glow",
+      "type": "MESH",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quaternionWxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sourceComponent": null,
+      "sourceRawSha256": null,
+      "vertices": 192
+    }
+  ],
+  "independentExport": {
+    "path": "independent-export.glb",
+    "bytes": 673268,
+    "sha256": "bc1a4d6d968dd53eda3480936959d0ebf292e76652a6bbdd201e15f4cd665270"
+  },
+  "exactExportBytesEqual": true,
+  "collisionSamples": 95,
+  "collisionGroups": {
+    "APA_body": [
+      "APA_body",
+      "APA_body_cap",
+      "APA_collar"
+    ],
+    "APA_mitten_L": [
+      "APA_mitten_L"
+    ],
+    "APA_mitten_R": [
+      "APA_mitten_R"
+    ],
+    "APA_head": [
+      "APA_head",
+      "APA_bookmark_post",
+      "APA_bookmark_ribbon",
+      "APA_eye_L",
+      "APA_pupil_L",
+      "APA_highlight_L",
+      "APA_eye_R",
+      "APA_pupil_R",
+      "APA_highlight_R",
+      "APA_face",
+      "APA_face_rim",
+      "APA_lid_lower_L",
+      "APA_lid_lower_R",
+      "APA_seam"
+    ],
+    "APA_tray": [
+      "APA_tray",
+      "APA_tray_glow"
+    ]
+  },
+  "crossMassTriangleIntersections": [],
+  "eyeEndpointGeometryChecks": [
+    {
+      "pose": "neutral",
+      "side": "L",
+      "actualPupilEllipseMaximum": 0.33208812343925737,
+      "actualPupilLidVerticalGapMetres": 0.011697933077812195,
+      "highlightRadiusMetres": 0.011571115080478523,
+      "pupilRadiusMetres": 0.015074658254468982
+    },
+    {
+      "pose": "neutral",
+      "side": "R",
+      "actualPupilEllipseMaximum": 0.33208812343925737,
+      "actualPupilLidVerticalGapMetres": 0.011697933077812195,
+      "highlightRadiusMetres": 0.011571115080478523,
+      "pupilRadiusMetres": 0.015074658254468982
+    },
+    {
+      "pose": "attention",
+      "side": "L",
+      "actualPupilEllipseMaximum": 0.4753012601175879,
+      "actualPupilLidVerticalGapMetres": 0.017096498981118202,
+      "highlightRadiusMetres": 0.011571128362923882,
+      "pupilRadiusMetres": 0.015074658254468982
+    },
+    {
+      "pose": "attention",
+      "side": "R",
+      "actualPupilEllipseMaximum": 0.47530155752715886,
+      "actualPupilLidVerticalGapMetres": 0.017096501775085926,
+      "highlightRadiusMetres": 0.011571138736561478,
+      "pupilRadiusMetres": 0.015074658254468982
+    },
+    {
+      "pose": "sources",
+      "side": "L",
+      "actualPupilEllipseMaximum": 0.41482311093299346,
+      "actualPupilLidVerticalGapMetres": 0.01109493337571621,
+      "highlightRadiusMetres": 0.011571121796067669,
+      "pupilRadiusMetres": 0.015074658254468982
+    },
+    {
+      "pose": "sources",
+      "side": "R",
+      "actualPupilEllipseMaximum": 0.41482311093299346,
+      "actualPupilLidVerticalGapMetres": 0.01109493337571621,
+      "highlightRadiusMetres": 0.011571114601190024,
+      "pupilRadiusMetres": 0.015074658254468982
+    },
+    {
+      "pose": "no-match",
+      "side": "L",
+      "actualPupilEllipseMaximum": 0.27743604038244823,
+      "actualPupilLidVerticalGapMetres": 0.009888984262943268,
+      "highlightRadiusMetres": 0.011571116160265408,
+      "pupilRadiusMetres": 0.015074658254468982
+    },
+    {
+      "pose": "no-match",
+      "side": "R",
+      "actualPupilEllipseMaximum": 0.27743600910313815,
+      "actualPupilLidVerticalGapMetres": 0.009888986125588417,
+      "highlightRadiusMetres": 0.011571107254804916,
+      "pupilRadiusMetres": 0.015074658254468982
+    },
+    {
+      "pose": "dismissal",
+      "side": "L",
+      "actualPupilEllipseMaximum": 0.4753011441989994,
+      "actualPupilLidVerticalGapMetres": 0.0057758791372179985,
+      "highlightRadiusMetres": 0.011571123415748818,
+      "pupilRadiusMetres": 0.015074658254468982
+    },
+    {
+      "pose": "dismissal",
+      "side": "R",
+      "actualPupilEllipseMaximum": 0.47530160612293226,
+      "actualPupilLidVerticalGapMetres": 0.00577588751912117,
+      "highlightRadiusMetres": 0.011571102908127491,
+      "pupilRadiusMetres": 0.015074658254468982
+    }
+  ],
+  "limits": "Triangle intersections at 95 samples are not continuous collision certification; eye projections do not prove full 3D visible silhouette or runtime marker clearance.",
+  "inputHashes": {
+    "C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\asset-pipeline\\selected-a-v01\\candidate-001\\build-v02\\selected-a.blend": "80704c8f2989683dffa59f9616b1ef146eab944f7d05ae0e0bf55e1964bc508e",
+    "C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\asset-pipeline\\selected-a-v01\\candidate-001\\build-v02\\selected-a.glb": "bc1a4d6d968dd53eda3480936959d0ebf292e76652a6bbdd201e15f4cd665270",
+    "C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\asset-pipeline\\selected-a-v01\\candidate-001\\raw\\model.glb": "412c0c213e0c6adc6baa80fa0686b6cbd9a1d259348bb96c571ef28b2f59bec7",
+    "C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\asset-pipeline\\selected-a-v01\\candidate-001\\cleanup-v01\\selected-a-cleanup-start.blend": "1506ea45bd007cfd6855770348969fb36ab379a26a9e1de9690dbd78c4f586b1"
+  },
+  "inputsUnchanged": true
+}

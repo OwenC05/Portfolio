@@ -1,0 +1,79 @@
+﻿{
+    "capturedUtc":  "2026-11-14T23:02:54.1441023Z",
+    "taskId":  "task_04013a2c4f28",
+    "dispatchId":  "ctx_03cb188aa6c1",
+    "files":  [
+                  {
+                      "file":  "components/studio/StudioExperience.tsx",
+                      "sha256":  "e4a2207e8664a1f755d81fbf00442223f99c55bf5b93ca22cb0063a9a7a30ed6"
+                  },
+                  {
+                      "file":  "components/studio/ProjectEvidence.tsx",
+                      "sha256":  "7242983f72892b81591848fbb5d81d39d61a4e6ae8f9ee3a7333e0a4b54b4e91"
+                  },
+                  {
+                      "file":  "app/studio/panel-navigation.ts",
+                      "sha256":  "e0d78f392b3b68ee115c56fe2e3c4c662e424b7a6629e88f8cebdf48b9a2733b"
+                  },
+                  {
+                      "file":  "app/studio/panel-scroll.ts",
+                      "sha256":  "ef13a9d34aec31eb245232ada5675bc1cf010dd41bdd352ecbefc72fe0daa188"
+                  },
+                  {
+                      "file":  "app/studio/StudioShell.tsx",
+                      "sha256":  "bcae10c0b983b1295b4d13e4ff1777c25fe9af224ebf2aee865c146fdb62eca8"
+                  },
+                  {
+                      "file":  "app/studio/page.tsx",
+                      "sha256":  "f811dc5eca892e911650eb61cf3f859fe9ceba2b725cd95d3ac39a546f4d7314"
+                  },
+                  {
+                      "file":  "app/studio/studio.module.css",
+                      "sha256":  "04b55c973d556b8a4c2fe396f3a7f4ccbb422a3e9577e55d373cdc608582691a"
+                  },
+                  {
+                      "file":  "app/globals.css",
+                      "sha256":  "38a5427299238e2be46ad5062e798ef3c68d13dfa884a1272bfdb2c55946f13f"
+                  },
+                  {
+                      "file":  "components/studio/StudioScene.tsx",
+                      "sha256":  "29586d8a880ad079627e9e8d670f46a60c4614b221b17bbcefeb54112327e5ac"
+                  },
+                  {
+                      "file":  "lib/studio-contract.ts",
+                      "sha256":  "64f88fd30b896c88c87a5631349bbb2bb9a3bc8676c0a1a816f1e5720902c84d"
+                  },
+                  {
+                      "file":  "lib/studio-content.ts",
+                      "sha256":  "36e08b40cfb779f3f05cc17623766f1a2fb7b8f876cac73ac9b12db381764662"
+                  },
+                  {
+                      "file":  "design/studio-v2/interface/verify-behavior.mjs",
+                      "sha256":  "904116dbee8f5ec21262fda9faa053b4b5366a51ca684ca06b031fd9dfea3837"
+                  },
+                  {
+                      "file":  "design/studio-v2/interface/verify-lint.mjs",
+                      "sha256":  "0ad5d73cd235946f4cadcfdafce52fc0ae087e2562e9e7466520cfb53991f636"
+                  },
+                  {
+                      "file":  "design/studio-v2/interface/behavior-performer.md",
+                      "sha256":  "d7e65ac722f0e369b931296aab30f6c44eaca6bad0ccddd10048667726c1260c"
+                  },
+                  {
+                      "file":  "design/studio-v2/interface/visual-performer.md",
+                      "sha256":  "507ecaba2998a1b55c05d4f59ae8fc4f200b6c40c2a30dbd1977bd0ad16ba73a"
+                  },
+                  {
+                      "file":  "design/studio-v2/interface/technical-critique-probes.mjs",
+                      "sha256":  "ee925fd9eca48078bda841a2fa884c3e7210d4ba1b53cbff7e5cdd600b996f2c"
+                  },
+                  {
+                      "file":  "node_modules/next/dist/client/components/app-router.js",
+                      "sha256":  "3ae72fa70679349c68fd76a40a385d4d038901716035d0d28d8df3a892ba8d22"
+                  },
+                  {
+                      "file":  "next.config.mjs",
+                      "sha256":  "da91c6e5ae789d200499ed422227d23c814d16709ceb34a6bc4a224165cfc982"
+                  }
+              ]
+}

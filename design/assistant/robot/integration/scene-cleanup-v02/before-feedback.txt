@@ -1,0 +1,60 @@
+TAP version 13
+# Subtest: G2 feedback: one native mouse mousedown qualifies with root commits and paintDuringHold=false
+not ok 1 - G2 feedback: one native mouse mousedown qualifies with root commits and paintDuringHold=false
+  ---
+  duration_ms: 200.4377
+  type: 'test'
+  location: 'C:\\Users\\Owenc\\orca\\Portfolio-assistant\\components\\studio\\scene\\verify-controller.mjs:1698:3'
+  failureType: 'testCodeFailure'
+  error: |-
+    root hover trace [true,false]; paintDuringHold=false
+    
+    0 !== 1
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 1
+  actual: 0
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/verify-controller.mjs:1712:12)
+    async Test.run (node:internal/test_runner/test:1409:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3)
+  ...
+# Subtest: G2 feedback: one native mouse mousedown qualifies with root commits and paintDuringHold=true
+not ok 2 - G2 feedback: one native mouse mousedown qualifies with root commits and paintDuringHold=true
+  ---
+  duration_ms: 123.4421
+  type: 'test'
+  location: 'C:\\Users\\Owenc\\orca\\Portfolio-assistant\\components\\studio\\scene\\verify-controller.mjs:1698:3'
+  failureType: 'testCodeFailure'
+  error: |-
+    root hover trace [true,false]; paintDuringHold=true
+    
+    0 !== 1
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 1
+  actual: 0
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/components/studio/scene/verify-controller.mjs:1712:12)
+    async Test.run (node:internal/test_runner/test:1409:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: G2 feedback: a fresh presentation still blocks gestures until its geometry is rendered
+ok 3 - G2 feedback: a fresh presentation still blocks gestures until its geometry is rendered
+  ---
+  duration_ms: 82.6195
+  type: 'test'
+  ...
+1..3
+# tests 3
+# suites 0
+# pass 1
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 966.0915

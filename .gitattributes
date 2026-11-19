@@ -1,2 +1,45 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Preserve byte-bound portfolio evidence and its source snapshots across checkouts.
+/.omx/** -text
+/design/** -text
+# Keep frozen challenge hashes intact when original evidence uses CRLF.
+/design/assistant/challenge/** whitespace=cr-at-eol
+# Raw Node failure output includes indented blank lines; preserve the transcript.
+/design/assistant/challenge/candidate-tests-*.txt whitespace=cr-at-eol,-blank-at-eol
+/components/studio/** -text
+/app/studio/** -text
+/app/globals.css -text
+/lib/studio-content.ts -text
+/lib/studio-contract.ts -text
+/public/studio/** -text
+/package.json -text
+/package-lock.json -text
+
+# Preserve the assistant implementation/test hashes recorded in robot reviews.
+/components/assistant/** -text
+/lib/assistant/** -text
+/tests/assistant/** -text
+/scripts/verify-assistant*.mjs -text
+/scripts/verify-studio-assistant*.mjs -text
+/docs/assistant-delivery.md -text
+
+# These inherited files are also byte-pinned by the integrated build receipts.
+# Keep their existing working bytes; this changes Git storage, not application logic.
+/.eslintrc.json -text
+/app/layout.tsx -text
+/app/page.tsx -text
+/components/Footer.tsx -text
+/components/Hero.tsx -text
+/components/Navbar.tsx -text
+/components/ProjectsTeaser.tsx -text
+/components/Skills.tsx -text
+/components/ThemeToggle.tsx -text
+/lib/utils.ts -text
+/next-env.d.ts -text
+/next.config.mjs -text
+/postcss.config.js -text
+/public/favicon.ico -text
+/tailwind.config.ts -text
+/tsconfig.json -text

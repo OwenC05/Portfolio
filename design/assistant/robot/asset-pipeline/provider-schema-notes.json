@@ -1,0 +1,70 @@
+{
+  "checkedAt": "2026-11-15T18:29:14.449Z",
+  "scope": "Tool-schema discovery and read-only status/balance; no media listing, project selection or create call.",
+  "callsPerformed": [
+    "mcp__blender.get_host_status",
+    "mcp__meshy_mcp_server.meshy_check_balance",
+    "mcp__higgsfield.get_preset_instructions(/3d-jutsu)",
+    "mcp__higgsfield.get_preset_instructions(/use-blender)"
+  ],
+  "hostStatus": {
+    "blr": false,
+    "3d_bs": false
+  },
+  "localServerGap": "No bl_health/bl_open_project/local importer tools exposed to this worker; A's local server is distinct.",
+  "hosted": {
+    "documentedBpyApi": "5.2",
+    "exactRuntimeBuild": null,
+    "arbitraryUserGlbImport": false,
+    "catalogImport": true,
+    "projectSelected": false
+  },
+  "balance": {
+    "observed": 70,
+    "monthly": 65,
+    "permanent": 5,
+    "reset": "2026-12-01T00:00:00.000Z",
+    "taskAllocation": null,
+    "spendAuthorized": false
+  },
+  "providerGenerationModelSelected": null,
+  "officialReferences": [
+    "https://docs.meshy.ai/en/api/pricing",
+    "https://docs.meshy.ai/en/api/models",
+    "https://docs.meshy.ai/en/api/image-to-3d",
+    "https://docs.blender.org/manual/en/latest/addons/scene_gltf2.html",
+    "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html"
+  ],
+  "schemas": [
+    {
+      "name": "mcp__blender__get_host_status",
+      "exposed": true,
+      "signature": "```ts\ndeclare const tools: { mcp__blender__get_host_status(args: {}): Promise<CallToolResult>; };\n```"
+    },
+    {
+      "name": "mcp__meshy_mcp_server__meshy_image_to_3d",
+      "exposed": true,
+      "signature": "```ts\ndeclare const tools: { mcp__meshy_mcp_server__meshy_image_to_3d(args: { ai_model?: \"meshy-6-lite\" | \"meshy-6\" | \"meshy-7\" | \"meshy-7.1\" | \"latest\" | \"meshy-t2\" | \"meshy-t2.5\"; alpha_thumbnail?: boolean; auto_size?: boolean; decimation_mode?: number; enable_pbr?: boolean; file_path?: string; geometry_resolution?: \"standard\" | \"2k\" | \"4k\"; hd_texture?: boolean; image_enhancement?: boolean; image_url?: string; input_task_id?: string; model_type?: \"standard\" | \"smart-topology\"; multi_view_thumbnails?: boolean; origin_at?: \"bottom\" | \"center\"; pose_mode?: \"a-pose\" | \"t-pose\"; remove_lighting?: boolean; response_format?: \"markdown\" | \"json\"; save_pre_remeshed_model?: boolean; should_remesh?: boolean; should_texture?: boolean; symmetry_mode?: \"off\" | \"auto\" | \"on\"; target_formats?: Array<\"glb\" | \"obj\" | \"fbx\" | \"stl\" | \"usdz\" | \"3mf\">; target_polycount?: number; texture_image_url?: string; texture_model?: \"meshy-7\" | \"meshy-n1\" | \"meshy-6-lite\"; texture_prompt?: string; texture_resolution?: \"2k\" | \"4k\" | \"8k\"; topology?: \"quad\" | \"triangle\"; ultra_mode?: boolean; }): Promise<CallToolResult<{ estimated_time: string; message: string; status: string; task_id: string; }>>; };\n```"
+    },
+    {
+      "name": "mcp__meshy_mcp_server__meshy_multi_image_to_3d",
+      "exposed": true,
+      "signature": "```ts\ndeclare const tools: { mcp__meshy_mcp_server__meshy_multi_image_to_3d(args: {\n  // 'latest' (default, = Meshy 7.1) or 'meshy-7.1' (best), 'meshy-6', 'meshy-6-lite' (fast, cheap, 2K textures only); 'meshy-7' is deprecated. No Smart Topology here.\n  ai_model?: \"meshy-6-lite\" | \"meshy-6\" | \"meshy-7\" | \"meshy-7.1\" | \"latest\";\n  // Also return a transparent-background preview (alpha_thumbnail_url).\n  alpha_thumbnail?: boolean;\n  // AI-estimate the real-world height and resize to it (default false).\n  auto_size?: boolean;\n  // Adaptive decimation 1 (ultra) – 4 (low); overrides target_polycount.\n  decimation_mode?: number;\n  // Also make metallic/roughness/normal maps. Not with texture_model meshy-n1.\n  enable_pbr?: boolean;\n  // 1–4 absolute paths to local .jpg/.jpeg/.png/.webp images; the server encodes them.\n  file_paths?: Array<string>;\n  // Ultra geometry pass: standard (default) or 2k (+5 credits); meshy-7.1/latest only. No 4k here.\n  geometry_resolution?: \"standard\" | \"2k\";\n  // Deprecated: use texture_resolution '4k'.\n  hd_texture?: boolean;\n  // Optimize the input image (meshy-6/7.1/latest); false keeps deliberate styling.\n  image_enhancement?: boolean;\n  // 1–4 public image URLs.\n  image_urls?: Array<string>;\n  // A SUCCEEDED text-to-image / image-to-image task (multi-view included) whose images are the input.\n  input_task_id?: string;\n  // Deprecated; ignored (this endpoint has no model_type).\n  model_type?: \"standard\" | \"lowpoly\";\n  // Also return front/back/left/right thumbnails.\n  multi_view_thumbnails?: boolean;\n  // 'bottom' or 'center' (default bottom with auto_size).\n  origin_at?: \"bottom\" | \"center\";\n  // 'a-pose' or 't-pose'; use 't-pose' when the model will be rigged or animated.\n  pose_mode?: \"a-pose\" | \"t-pose\";\n  // Remove highlights/shadows from the base color (meshy-6/7.1/latest; API default true). Not true with texture_model meshy-n1.\n  remove_lighting?: boolean;\n  // markdown (default) or json\n  response_format?: \"markdown\" | \"json\";\n  // Also keep the GLB from before remeshing (with should_remesh).\n  save_pre_remeshed_model?: boolean;\n  // Remesh to target_polycount / topology (default false).\n  should_remesh?: boolean;\n  // Generate textures (default true); false gives a cheaper untextured mesh.\n  should_texture?: boolean;\n  // Deprecated: has no effect.\n  symmetry_mode?: \"off\" | \"auto\" | \"on\";\n  // Formats to produce (default: all but 3mf; list '3mf' to get it). Fewer formats finish faster.\n  target_formats?: Array<\"glb\" | \"obj\" | \"fbx\" | \"stl\" | \"usdz\" | \"3mf\">;\n  // Remesh target 100–300,000, needs should_remesh true.\n  target_polycount?: number;\n  // Image URL to guide texturing. Not with texture_prompt. With texture_model meshy-n1, the front view it textures from.\n  texture_image_url?: string;\n  // 1–4 views (URLs or data URIs) of the SAME object to drive the texture; element 0 is the front. ai_model meshy-7.1/latest, or texture_model meshy-7 / meshy-n1; not with texture_prompt / texture_image_url.\n  texture_image_urls?: Array<string>;\n  // Texture model, picked apart from the geometry: meshy-7 (PBR, 2K/4K/8K) or meshy-n1 (2K base color from texture_image_urls / texture_image_url, else the input images, first = front; no texture_prompt, enable_pbr, 4k/8k, remove_lighting or quad remesh). Either also allows texture_image_urls on meshy-6 / meshy-6-lite. No meshy-6-lite here. Omit for the geometry's default: meshy-7 (meshy-7.1, latest, meshy-t2, meshy-t2.5), meshy-6 (meshy-6), meshy-6-lite (meshy-6-lite). Same price whichever; ignored with should_texture false.\n  texture_model?: \"meshy-7\" | \"meshy-n1\";\n  // Text to guide texturing (max 800 characters). Not with texture_image_url. Not with texture_model meshy-n1.\n  texture_prompt?: string;\n  // Base color texture: 2k (default), 4k or 8k (+5 credits; PBR maps stay 4K, no emission map). 4k/8k need the meshy-7 or meshy-6 texture model: not meshy-6-lite or meshy-n1.\n  texture_resolution?: \"2k\" | \"4k\" | \"8k\";\n  // quad or triangle (default).\n  topology?: \"quad\" | \"triangle\";\n  // Deprecated: use geometry_resolution '2k'.\n  ultra_mode?: boolean;\n}): Promise<CallToolResult<{ estimated_time: string; message: string; status: string; task_id: string; }>>; };\n```"
+    },
+    {
+      "name": "mcp__meshy_mcp_server__meshy_get_task_status",
+      "exposed": true,
+      "signature": "```ts\ndeclare const tools: { mcp__meshy_mcp_server__meshy_get_task_status(args: {\n  // markdown (default) or json\n  response_format?: \"markdown\" | \"json\";\n  // Task ID\n  task_id: string;\n  // Optional: if omitted or wrong, the server finds the task and reports its real type.\n  task_type?: \"text-to-3d\" | \"image-to-3d\" | \"multi-image-to-3d\" | \"remesh\" | \"retexture\" | \"rigging\" | \"animation\" | \"text-to-image\" | \"image-to-image\" | \"convert\" | \"resize\" | \"uv-unwrap\" | \"multi-color-print\" | \"print-analyze\" | \"print-repair\" | \"print-split\" | \"text-to-motion\" | \"creative-lab-figure-prototype\" | \"creative-lab-figure-build\" | \"creative-lab-lamp-prototype\" | \"creative-lab-lamp-build\" | \"creative-lab-keychain-prototype\" | \"creative-lab-keychain-build\" | \"creative-lab-fridge-magnet-prototype\" | \"creative-lab-fridge-magnet-build\" | \"creative-lab-vinyl-figure-prototype\" | \"creative-lab-vinyl-figure-build\" | \"creative-lab-brick-figure-prototype\" | \"creative-lab-brick-figure-build\" | \"creative-lab-keycap-prototype\" | \"creative-lab-keycap-build\" | \"creative-lab-fidget-pixel-prototype\" | \"creative-lab-fidget-pixel-build\" | \"creative-lab-fidget-collapsible\";\n  // Max wait for this call when wait=true; the task keeps running after it.\n  timeout_seconds?: number;\n  // true (default): poll until it finishes; false: return the current status.\n  wait?: boolean;\n}): Promise<CallToolResult<{\n  alpha_thumbnail_url?: string;\n  // Credits consumed by the task (0 for FAILED — credits are refunded on failure)\n  consumed_credits?: number;\n  // e.g. image_too_complex\n  error_code?: string;\n  // Resolution guide for error_code\n  error_doc_url?: string;\n  error_message?: string;\n  // Failure category if the task failed: invalid_input (fix the input), timeout / service_unavailable / server_error (refunded; create it again)\n  error_type?: string;\n  face_count?: number;\n  image_urls?: Array<string>;\n  model_urls?: { [key: string]: string; };\n  // Outcome of this call; TIMEOUT means the wait ended, not the task\n  outcome: \"SUCCEEDED\" | \"FAILED\" | \"CANCELED\" | \"TIMEOUT\" | \"IN_PROGRESS\" | \"PENDING\";\n  // Auto Split: number of parts\n  part_count?: number;\n  poll_count?: number;\n  // print-analyze result: status, issue counts, metrics, thin walls\n  printability?: { [key: string]: unknown; };\n  // 0–100\n  progress: number;\n  // Auto Split: the prompt was unreadable, so the cuts were chosen automatically\n  prompt_ignored?: boolean;\n  // Rigging, animation and text-to-motion file URLs\n  result?: { [key: string]: unknown; };\n  status: string;\n  task_id: string;\n  // The task's actual type (pass it as task_type to the download and cancel tools)\n  task_type?: string;\n  thumbnail_url?: string;\n  vertex_count?: number;\n  wait_time_seconds?: number;\n}>>; };\n```"
+    },
+    {
+      "name": "mcp__meshy_mcp_server__meshy_download_model",
+      "exposed": true,
+      "signature": "```ts\ndeclare const tools: { mcp__meshy_mcp_server__meshy_download_model(args: {\n  // Model format (default glb; omit for every Creative Lab part).\n  format?: \"glb\" | \"fbx\" | \"usdz\" | \"stl\" | \"obj\" | \"blend\" | \"3mf\";\n  // Also save the texture maps\n  include_textures?: boolean;\n  // Earlier task of the same chain (e.g. the preview of a refine); saves into its project folder.\n  parent_task_id?: string;\n  // Height in mm with print_ready (default 75; '15 cm' → 150).\n  print_height_mm?: number;\n  // OBJ only: rotate Y-up to Z-up, scale to print_height_mm, center, bottom at Z=0. Changes only the local file (free); meshy_resize (1 credit) rescales the model on Meshy.\n  print_ready?: boolean;\n  // Absolute file path to save to instead of meshy_output/{timestamp}_{prompt}_{id}/\n  save_to?: string;\n  // Task ID\n  task_id: string;\n  // Optional: if omitted or wrong, the server finds the task and reports its real type.\n  task_type?: \"text-to-3d\" | \"image-to-3d\" | \"multi-image-to-3d\" | \"remesh\" | \"retexture\" | \"rigging\" | \"animation\" | \"text-to-image\" | \"image-to-image\" | \"convert\" | \"resize\" | \"uv-unwrap\" | \"multi-color-print\" | \"print-analyze\" | \"print-repair\" | \"print-split\" | \"text-to-motion\" | \"creative-lab-figure-prototype\" | \"creative-lab-figure-build\" | \"creative-lab-lamp-prototype\" | \"creative-lab-lamp-build\" | \"creative-lab-keychain-prototype\" | \"creative-lab-keychain-build\" | \"creative-lab-fridge-magnet-prototype\" | \"creative-lab-fridge-magnet-build\" | \"creative-lab-vinyl-figure-prototype\" | \"creative-lab-vinyl-figure-build\" | \"creative-lab-brick-figure-prototype\" | \"creative-lab-brick-figure-build\" | \"creative-lab-keycap-prototype\" | \"creative-lab-keycap-build\" | \"creative-lab-fidget-pixel-prototype\" | \"creative-lab-fidget-pixel-build\" | \"creative-lab-fidget-collapsible\";\n}): Promise<CallToolResult>; };\n```"
+    },
+    {
+      "name": "mcp__meshy_mcp_server__meshy_rig",
+      "exposed": true,
+      "signature": "```ts\ndeclare const tools: { mcp__meshy_mcp_server__meshy_rig(args: {\n  // Character height in meters; helps scaling\n  height_meters?: number;\n  // A SUCCEEDED task with a textured humanoid model\n  input_task_id?: string;\n  // Public URL of a textured humanoid .glb (max 400 MB), or a GLB data URI (max 100 MB)\n  model_url?: string;\n  // markdown (default) or json\n  response_format?: \"markdown\" | \"json\";\n  // Deprecated: leave it out when the model has its own textures (Meshy models and most GLBs do), which the rig keeps. Sending it makes this image the only texture and drops the PBR maps. Only for a model_url GLB without textures: its UV-unwrapped base color (.png, max 20 MB)\n  texture_image_url?: string;\n}): Promise<CallToolResult<{ estimated_time: string; message: string; status: string; task_id: string; }>>; };\n```"
+    }
+  ]
+}

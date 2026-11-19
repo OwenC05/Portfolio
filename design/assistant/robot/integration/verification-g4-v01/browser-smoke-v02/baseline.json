@@ -1,0 +1,26 @@
+{
+  "url": "http://127.0.0.1:4193/studio",
+  "canvas": {
+    "engine": "three.js r187",
+    "studioInteractionEnabled": "true",
+    "studioYaw": "-4",
+    "studioPitch": "-6",
+    "studioEye": "-0.7,2.8,3.4",
+    "studioFov": "58",
+    "studioDpr": "1.0000000149011612",
+    "studioRenderCount": "65",
+    "studioDrawCalls": "94",
+    "studioTriangles": "94512",
+    "studioGeometries": "40",
+    "studioTextures": "12",
+    "assistantRunId": "",
+    "assistantRevision": "8",
+    "assistantCardCount": "0"
+  },
+  "dialogs": 1,
+  "viewport": [
+    1440,
+    900
+  ],
+  "overflow": false
+}

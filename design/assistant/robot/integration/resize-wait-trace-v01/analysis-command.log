@@ -1,0 +1,1188 @@
+{
+  "frames": 193,
+  "delay": {
+    "count": 193,
+    "p50": 5.5,
+    "p95": 10.399999976158142,
+    "max": 113
+  },
+  "callback": {
+    "count": 193,
+    "p50": 2.5,
+    "p95": 7.800000011920929,
+    "max": 116.5
+  },
+  "late": 8,
+  "changedWrites": {
+    "count": 16,
+    "p50": 6,
+    "p95": 114.69999998807907,
+    "max": 114.69999998807907
+  },
+  "setterTotal": 594.6000000238419,
+  "changedCallbackTotal": 635.1999999880791,
+  "traceEvents": 396119,
+  "markerOffsetSpreadMs": 0.19599997997283936,
+  "host": {
+    "sampleEpoch": [
+      1795034778674,
+      1795034788869.8
+    ],
+    "overlappingQueries": [
+      {
+        "at": "2026-11-18T20:46:19.5282581Z",
+        "completed": "2026-11-18T20:46:20.1011982Z",
+        "queryDurationMs": 572.8525000000001,
+        "cpuPercent": 34,
+        "availableMB": 798
+      },
+      {
+        "at": "2026-11-18T20:46:21.1136024Z",
+        "completed": "2026-11-18T20:46:21.7004580Z",
+        "queryDurationMs": 587.033,
+        "cpuPercent": 20,
+        "availableMB": 914
+      },
+      {
+        "at": "2026-11-18T20:46:22.7156539Z",
+        "completed": "2026-11-18T20:46:23.3108276Z",
+        "queryDurationMs": 594.613,
+        "cpuPercent": 41,
+        "availableMB": 733
+      },
+      {
+        "at": "2026-11-18T20:46:24.3142550Z",
+        "completed": "2026-11-18T20:46:24.9233058Z",
+        "queryDurationMs": 607.9915,
+        "cpuPercent": 36,
+        "availableMB": 676
+      },
+      {
+        "at": "2026-11-18T20:46:25.9317395Z",
+        "completed": "2026-11-18T20:46:26.5246187Z",
+        "queryDurationMs": 593.1573000000001,
+        "cpuPercent": 39,
+        "availableMB": 680
+      },
+      {
+        "at": "2026-11-18T20:46:27.5393161Z",
+        "completed": "2026-11-18T20:46:28.1272863Z",
+        "queryDurationMs": 587.9128000000001,
+        "cpuPercent": 30,
+        "availableMB": 582
+      }
+    ],
+    "queryStartsInside": 6,
+    "cpuPercent": {
+      "count": 6,
+      "p50": 34,
+      "p95": 41,
+      "max": 41
+    },
+    "availableMB": {
+      "count": 6,
+      "p50": 680,
+      "p95": 914,
+      "max": 914
+    },
+    "queryWallMs": {
+      "count": 6,
+      "p50": 587.9128000000001,
+      "p95": 607.9915,
+      "max": 607.9915
+    },
+    "allSamplerQueries": 46
+  },
+  "lateFrames": [
+    {
+      "id": 28,
+      "delay": 75.40000003576279,
+      "duration": 3.300000011920929,
+      "msAfterWrite": 4.199999988079071,
+      "requestToObserver": 0.09999996423721313,
+      "mainTraceUnionMs": 5.759000045775338,
+      "mainTop": [
+        {
+          "name": "RunTask",
+          "category": "disabled-by-default-devtools.timeline",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 3505.907000005245,
+          "duration": 12.746,
+          "threadDuration": 8.402,
+          "overlap": 1.453000009059906,
+          "args": {}
+        },
+        {
+          "name": "ThreadControllerImpl::RunTask",
+          "category": "toplevel",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 3505.9129999876022,
+          "duration": 12.656,
+          "threadDuration": 8.318,
+          "overlap": 1.3690000176429749,
+          "args": {
+            "src_file": "cc/trees/proxy_impl.cc",
+            "src_func": "ScheduledActionSendBeginMainFrame",
+            "src_line": 849
+          }
+        },
+        {
+          "name": "ProxyMain::BeginMainFrame",
+          "category": "cc,benchmark",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 3505.9210000038147,
+          "duration": 12.641,
+          "threadDuration": 8.305,
+          "overlap": 1.3619999885559082,
+          "args": {
+            "begin_frame_id": 221,
+            "main_frame_pipeline": {
+              "main_frame_id": 11338648893362913000,
+              "step": "BEGIN_MAIN_FRAME"
+            }
+          }
+        },
+        {
+          "name": "RunTask",
+          "category": "disabled-by-default-devtools.timeline",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 3522.1290000081062,
+          "duration": 1.248,
+          "threadDuration": 1.236,
+          "overlap": 1.2479999661445618,
+          "args": {}
+        },
+        {
+          "name": "ThreadControllerImpl::RunTask",
+          "category": "toplevel",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 3522.130999982357,
+          "duration": 1.23,
+          "threadDuration": 1.221,
+          "overlap": 1.2300000190734863,
+          "args": {
+            "src_file": "ipc/ipc_mojo_bootstrap.cc",
+            "src_func": "Accept",
+            "src_line": 1138
+          }
+        }
+      ],
+      "otherTop": [
+        {
+          "name": "RunTask",
+          "category": "disabled-by-default-devtools.timeline",
+          "pid": 66644,
+          "tid": 6868,
+          "thread": "CrGpuMain",
+          "process": "GPU Process",
+          "at": 3518.1520000100136,
+          "duration": 73.339,
+          "threadDuration": 3.112,
+          "overlap": 73.33899998664856,
+          "args": {}
+        },
+        {
+          "name": "ThreadControllerImpl::RunTask",
+          "category": "toplevel",
+          "pid": 66644,
+          "tid": 6868,
+          "thread": "CrGpuMain",
+          "process": "GPU Process",
+          "at": 3518.1549999713898,
+          "duration": 73.334,
+          "threadDuration": 3.11,
+          "overlap": 73.33400005102158,
+          "args": {
+            "src_file": "gpu/command_buffer/service/scheduler.cc",
+            "src_func": "TryScheduleSequence",
+            "src_line": 439
+          }
+        },
+        {
+          "name": "Scheduler::RunTask",
+          "category": "gpu,toplevel.flow",
+          "pid": 66644,
+          "tid": 6868,
+          "thread": "CrGpuMain",
+          "process": "GPU Process",
+          "at": 3518.158999979496,
+          "duration": 73.326,
+          "threadDuration": 3.103,
+          "overlap": 73.32600003480911,
+          "args": {}
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "delay": 53.89999997615814,
+      "duration": 1.399999976158142,
+      "msAfterWrite": 4.5,
+      "requestToObserver": 0.10000002384185791,
+      "mainTraceUnionMs": 5.675999970436351,
+      "mainTop": [
+        {
+          "name": "RunTask",
+          "category": "disabled-by-default-devtools.timeline",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 4088.444000005722,
+          "duration": 12.258,
+          "threadDuration": 8.878,
+          "overlap": 1.8019999861717224,
+          "args": {}
+        },
+        {
+          "name": "ThreadControllerImpl::RunTask",
+          "category": "toplevel",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 4088.4480000138283,
+          "duration": 12.206,
+          "threadDuration": 8.828,
+          "overlap": 1.753999948501587,
+          "args": {
+            "src_file": "cc/trees/proxy_impl.cc",
+            "src_func": "ScheduledActionSendBeginMainFrame",
+            "src_line": 849
+          }
+        },
+        {
+          "name": "ProxyMain::BeginMainFrame",
+          "category": "cc,benchmark",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 4088.4520000219345,
+          "duration": 12.198,
+          "threadDuration": 8.82,
+          "overlap": 1.7499999403953552,
+          "args": {
+            "begin_frame_id": 256,
+            "main_frame_pipeline": {
+              "main_frame_id": 11338648893362905000,
+              "step": "BEGIN_MAIN_FRAME"
+            }
+          }
+        },
+        {
+          "name": "RunTask",
+          "category": "disabled-by-default-devtools.timeline",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 4106.7580000162125,
+          "duration": 1.14,
+          "threadDuration": 1.131,
+          "overlap": 1.1399999856948853,
+          "args": {}
+        },
+        {
+          "name": "ThreadControllerImpl::RunTask",
+          "category": "toplevel",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 4106.759999990463,
+          "duration": 1.122,
+          "threadDuration": 1.118,
+          "overlap": 1.1220000386238098,
+          "args": {
+            "src_file": "ipc/ipc_mojo_bootstrap.cc",
+            "src_func": "Accept",
+            "src_line": 1138
+          }
+        }
+      ],
+      "otherTop": [
+        {
+          "name": "RunTask",
+          "category": "disabled-by-default-devtools.timeline",
+          "pid": 66644,
+          "tid": 6868,
+          "thread": "CrGpuMain",
+          "process": "GPU Process",
+          "at": 4101.082000017166,
+          "duration": 50.881,
+          "threadDuration": 3.743,
+          "overlap": 50.880999982357025,
+          "args": {}
+        },
+        {
+          "name": "ThreadControllerImpl::RunTask",
+          "category": "toplevel",
+          "pid": 66644,
+          "tid": 6868,
+          "thread": "CrGpuMain",
+          "process": "GPU Process",
+          "at": 4101.083999991417,
+          "duration": 50.876,
+          "threadDuration": 3.74,
+          "overlap": 50.8759999871254,
+          "args": {
+            "src_file": "gpu/command_buffer/service/scheduler.cc",
+            "src_func": "TryScheduleSequence",
+            "src_line": 439
+          }
+        },
+        {
+          "name": "Scheduler::RunTask",
+          "category": "gpu,toplevel.flow",
+          "pid": 66644,
+          "tid": 6868,
+          "thread": "CrGpuMain",
+          "process": "GPU Process",
+          "at": 4101.087000012398,
+          "duration": 50.869,
+          "threadDuration": 3.734,
+          "overlap": 50.86899995803833,
+          "args": {}
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "delay": 113,
+      "duration": 3.399999976158142,
+      "msAfterWrite": 4.399999976158142,
+      "requestToObserver": 0,
+      "mainTraceUnionMs": 6.470999988555377,
+      "mainTop": [
+        {
+          "name": "RunTask",
+          "category": "disabled-by-default-devtools.timeline",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 7222.236999988556,
+          "duration": 1.218,
+          "threadDuration": 1.208,
+          "overlap": 1.2179999947547913,
+          "args": {}
+        },
+        {
+          "name": "ThreadControllerImpl::RunTask",
+          "category": "toplevel",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 7222.240000009537,
+          "duration": 1.201,
+          "threadDuration": 1.194,
+          "overlap": 1.2009999752044678,
+          "args": {
+            "src_file": "ipc/ipc_mojo_bootstrap.cc",
+            "src_func": "Accept",
+            "src_line": 1138
+          }
+        },
+        {
+          "name": "Receive mojo message",
+          "category": "toplevel,mojom",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 7222.245999991894,
+          "duration": 1.19,
+          "threadDuration": 1.183,
+          "overlap": 1.1899999976158142,
+          "args": {
+            "chrome_mojo_event_info": {
+              "data_num_bytes": 2968,
+              "ipc_hash": 3544143186,
+              "mojo_interface_tag": "blink.mojom.DevToolsSession",
+              "payload_size": 2912
+            }
+          }
+        },
+        {
+          "name": "RunTask",
+          "category": "disabled-by-default-devtools.timeline",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 7204.670000016689,
+          "duration": 11.796,
+          "threadDuration": 7.447,
+          "overlap": 1.1660000085830688,
+          "args": {}
+        },
+        {
+          "name": "ThreadControllerImpl::RunTask",
+          "category": "toplevel",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 7204.6740000247955,
+          "duration": 11.769,
+          "threadDuration": 7.424,
+          "overlap": 1.1430000066757202,
+          "args": {
+            "src_file": "cc/trees/proxy_impl.cc",
+            "src_func": "ScheduledActionSendBeginMainFrame",
+            "src_line": 849
+          }
+        }
+      ],
+      "otherTop": [
+        {
+          "name": "RunTask",
+          "category": "disabled-by-default-devtools.timeline",
+          "pid": 66644,
+          "tid": 6868,
+          "thread": "CrGpuMain",
+          "process": "GPU Process",
+          "at": 7218.014999985695,
+          "duration": 109.053,
+          "threadDuration": 5.155,
+          "overlap": 109.05300003290176,
+          "args": {}
+        },
+        {
+          "name": "ThreadControllerImpl::RunTask",
+          "category": "toplevel",
+          "pid": 66644,
+          "tid": 6868,
+          "thread": "CrGpuMain",
+          "process": "GPU Process",
+          "at": 7218.014999985695,
+          "duration": 109.045,
+          "threadDuration": 5.148,
+          "overlap": 109.0450000166893,
+          "args": {
+            "src_file": "gpu/command_buffer/service/scheduler.cc",
+            "src_func": "RunNextTask",
+            "src_line": 654
+          }
+        },
+        {
+          "name": "Scheduler::RunTask",
+          "category": "gpu,toplevel.flow",
+          "pid": 66644,
+          "tid": 6868,
+          "thread": "CrGpuMain",
+          "process": "GPU Process",
+          "at": 7218.01700001955,
+          "duration": 109.036,
+          "threadDuration": 5.14,
+          "overlap": 109.0359999537468,
+          "args": {}
+        }
+      ]
+    },
+    {
+      "id": 113,
+      "delay": 46.80000001192093,
+      "duration": 5.199999988079071,
+      "msAfterWrite": 50.60000002384186,
+      "requestToObserver": 45.5,
+      "mainTraceUnionMs": 5.0939999818792785,
+      "mainTop": [
+        {
+          "name": "RunTask",
+          "category": "disabled-by-default-devtools.timeline",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 7941.214999973774,
+          "duration": 1.271,
+          "threadDuration": 1.262,
+          "overlap": 1.2710000276565552,
+          "args": {}
+        },
+        {
+          "name": "RunTask",
+          "category": "disabled-by-default-devtools.timeline",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 7926.4509999752045,
+          "duration": 5.384,
+          "threadDuration": 5.204,
+          "overlap": 1.23499995470047,
+          "args": {}
+        },
+        {
+          "name": "ThreadControllerImpl::RunTask",
+          "category": "toplevel",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 7941.217000007629,
+          "duration": 1.224,
+          "threadDuration": 1.22,
+          "overlap": 1.2239999771118164,
+          "args": {
+            "src_file": "ipc/ipc_mojo_bootstrap.cc",
+            "src_func": "Accept",
+            "src_line": 1138
+          }
+        },
+        {
+          "name": "Receive mojo message",
+          "category": "toplevel,mojom",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 7941.225000023842,
+          "duration": 1.196,
+          "threadDuration": 1.193,
+          "overlap": 1.1959999799728394,
+          "args": {
+            "chrome_mojo_event_info": {
+              "data_num_bytes": 2968,
+              "ipc_hash": 3544143186,
+              "mojo_interface_tag": "blink.mojom.DevToolsSession",
+              "payload_size": 2912
+            }
+          }
+        },
+        {
+          "name": "ThreadControllerImpl::RunTask",
+          "category": "toplevel",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 7926.4520000219345,
+          "duration": 5.252,
+          "threadDuration": 5.074,
+          "overlap": 1.1039999723434448,
+          "args": {
+            "src_file": "third_party/blink/renderer/platform/widget/input/main_thread_event_queue.cc",
+            "src_func": "PostTaskToMainThread",
+            "src_line": 788
+          }
+        }
+      ],
+      "otherTop": [
+        {
+          "name": "RunTask",
+          "category": "disabled-by-default-devtools.timeline",
+          "pid": 66644,
+          "tid": 6868,
+          "thread": "CrGpuMain",
+          "process": "GPU Process",
+          "at": 7918.503000020981,
+          "duration": 57.814,
+          "threadDuration": 1.668,
+          "overlap": 45.71699994802475,
+          "args": {}
+        },
+        {
+          "name": "ThreadControllerImpl::RunTask",
+          "category": "toplevel",
+          "pid": 66644,
+          "tid": 6868,
+          "thread": "CrGpuMain",
+          "process": "GPU Process",
+          "at": 7918.504999995232,
+          "duration": 57.805,
+          "threadDuration": 1.659,
+          "overlap": 45.70999997854233,
+          "args": {
+            "src_file": "gpu/command_buffer/service/scheduler.cc",
+            "src_func": "RunNextTask",
+            "src_line": 654
+          }
+        },
+        {
+          "name": "Scheduler::RunTask",
+          "category": "gpu,toplevel.flow",
+          "pid": 66644,
+          "tid": 6868,
+          "thread": "CrGpuMain",
+          "process": "GPU Process",
+          "at": 7918.514999985695,
+          "duration": 57.778,
+          "threadDuration": 1.633,
+          "overlap": 45.692999958992004,
+          "args": {}
+        }
+      ]
+    },
+    {
+      "id": 125,
+      "delay": 49.5,
+      "duration": 1.399999976158142,
+      "msAfterWrite": 33.60000002384186,
+      "requestToObserver": 29.80000001192093,
+      "mainTraceUnionMs": 3.405999951362901,
+      "mainTop": [
+        {
+          "name": "RunTask",
+          "category": "disabled-by-default-devtools.timeline",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 8540.776000022888,
+          "duration": 0.976,
+          "threadDuration": 0.966,
+          "overlap": 0.9759999513626099,
+          "args": {}
+        },
+        {
+          "name": "ThreadControllerImpl::RunTask",
+          "category": "toplevel",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 8540.777999997139,
+          "duration": 0.968,
+          "threadDuration": 0.963,
+          "overlap": 0.9679999947547913,
+          "args": {
+            "src_file": "ipc/ipc_mojo_bootstrap.cc",
+            "src_func": "Accept",
+            "src_line": 1138
+          }
+        },
+        {
+          "name": "Receive mojo message",
+          "category": "toplevel,mojom",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 8540.782000005245,
+          "duration": 0.961,
+          "threadDuration": 0.957,
+          "overlap": 0.9609999656677246,
+          "args": {
+            "chrome_mojo_event_info": {
+              "data_num_bytes": 2968,
+              "ipc_hash": 3544143186,
+              "mojo_interface_tag": "blink.mojom.DevToolsSession",
+              "payload_size": 2912
+            }
+          }
+        },
+        {
+          "name": "RunTask",
+          "category": "disabled-by-default-devtools.timeline",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 8536.440999984741,
+          "duration": 0.661,
+          "threadDuration": 0.644,
+          "overlap": 0.6610000133514404,
+          "args": {}
+        },
+        {
+          "name": "ThreadControllerImpl::RunTask",
+          "category": "toplevel",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 8536.462000012398,
+          "duration": 0.62,
+          "threadDuration": 0.616,
+          "overlap": 0.6200000047683716,
+          "args": {
+            "src_file": "ipc/ipc_mojo_bootstrap.cc",
+            "src_func": "Accept",
+            "src_line": 1138
+          }
+        }
+      ],
+      "otherTop": [
+        {
+          "name": "RunTask",
+          "category": "disabled-by-default-devtools.timeline",
+          "pid": 66644,
+          "tid": 6868,
+          "thread": "CrGpuMain",
+          "process": "GPU Process",
+          "at": 8523.745000004768,
+          "duration": 58.75,
+          "threadDuration": 1.803,
+          "overlap": 48.894999980926514,
+          "args": {}
+        },
+        {
+          "name": "ThreadControllerImpl::RunTask",
+          "category": "toplevel",
+          "pid": 66644,
+          "tid": 6868,
+          "thread": "CrGpuMain",
+          "process": "GPU Process",
+          "at": 8523.74699997902,
+          "duration": 58.741,
+          "threadDuration": 1.795,
+          "overlap": 48.88799995183945,
+          "args": {
+            "src_file": "gpu/command_buffer/service/scheduler.cc",
+            "src_func": "RunNextTask",
+            "src_line": 654
+          }
+        },
+        {
+          "name": "Scheduler::RunTask",
+          "category": "gpu,toplevel.flow",
+          "pid": 66644,
+          "tid": 6868,
+          "thread": "CrGpuMain",
+          "process": "GPU Process",
+          "at": 8523.75199997425,
+          "duration": 58.725,
+          "threadDuration": 1.78,
+          "overlap": 48.87699997425079,
+          "args": {}
+        }
+      ]
+    },
+    {
+      "id": 160,
+      "delay": 81.19999998807907,
+      "duration": 3.600000023841858,
+      "msAfterWrite": 3.800000011920929,
+      "requestToObserver": 0.19999998807907104,
+      "mainTraceUnionMs": 7.691999980446781,
+      "mainTop": [
+        {
+          "name": "RunTask",
+          "category": "disabled-by-default-devtools.timeline",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 10416.97000002861,
+          "duration": 1.546,
+          "threadDuration": 1.529,
+          "overlap": 1.5459999442100525,
+          "args": {}
+        },
+        {
+          "name": "ThreadControllerImpl::RunTask",
+          "category": "toplevel",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 10416.971000015736,
+          "duration": 1.527,
+          "threadDuration": 1.512,
+          "overlap": 1.5270000100135803,
+          "args": {
+            "src_file": "ipc/ipc_mojo_bootstrap.cc",
+            "src_func": "Accept",
+            "src_line": 1138
+          }
+        },
+        {
+          "name": "Receive mojo message",
+          "category": "toplevel,mojom",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 10416.980000019073,
+          "duration": 1.511,
+          "threadDuration": 1.496,
+          "overlap": 1.5109999775886536,
+          "args": {
+            "chrome_mojo_event_info": {
+              "data_num_bytes": 2968,
+              "ipc_hash": 3544143186,
+              "mojo_interface_tag": "blink.mojom.DevToolsSession",
+              "payload_size": 2912
+            }
+          }
+        },
+        {
+          "name": "RunTask",
+          "category": "disabled-by-default-devtools.timeline",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 10404.337000012398,
+          "duration": 12.624,
+          "threadDuration": 9.446,
+          "overlap": 1.4610000252723694,
+          "args": {}
+        },
+        {
+          "name": "ThreadControllerImpl::RunTask",
+          "category": "toplevel",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 10404.337999999523,
+          "duration": 12.595,
+          "threadDuration": 9.42,
+          "overlap": 1.4330000281333923,
+          "args": {
+            "src_file": "cc/trees/proxy_impl.cc",
+            "src_func": "ScheduledActionSendBeginMainFrame",
+            "src_line": 849
+          }
+        }
+      ],
+      "otherTop": [
+        {
+          "name": "RunTask",
+          "category": "disabled-by-default-devtools.timeline",
+          "pid": 66644,
+          "tid": 6868,
+          "thread": "CrGpuMain",
+          "process": "GPU Process",
+          "at": 10416.574999988079,
+          "duration": 77.811,
+          "threadDuration": 4.878,
+          "overlap": 77.81099998950958,
+          "args": {}
+        },
+        {
+          "name": "ThreadControllerImpl::RunTask",
+          "category": "toplevel",
+          "pid": 66644,
+          "tid": 6868,
+          "thread": "CrGpuMain",
+          "process": "GPU Process",
+          "at": 10416.577000021935,
+          "duration": 77.803,
+          "threadDuration": 4.872,
+          "overlap": 77.80299997329712,
+          "args": {
+            "src_file": "gpu/command_buffer/service/scheduler.cc",
+            "src_func": "TryScheduleSequence",
+            "src_line": 439
+          }
+        },
+        {
+          "name": "Scheduler::RunTask",
+          "category": "gpu,toplevel.flow",
+          "pid": 66644,
+          "tid": 6868,
+          "thread": "CrGpuMain",
+          "process": "GPU Process",
+          "at": 10416.57999998331,
+          "duration": 77.79,
+          "threadDuration": 4.86,
+          "overlap": 77.79000002145767,
+          "args": {}
+        }
+      ]
+    },
+    {
+      "id": 172,
+      "delay": 78.5,
+      "duration": 2.600000023841858,
+      "msAfterWrite": 3.800000011920929,
+      "requestToObserver": 0,
+      "mainTraceUnionMs": 4.252000011920245,
+      "mainTop": [
+        {
+          "name": "RunTask",
+          "category": "disabled-by-default-devtools.timeline",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 10992.342999994755,
+          "duration": 10.295,
+          "threadDuration": 6.653,
+          "overlap": 1.3379999995231628,
+          "args": {}
+        },
+        {
+          "name": "ThreadControllerImpl::RunTask",
+          "category": "toplevel",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 10992.342999994755,
+          "duration": 10.269,
+          "threadDuration": 6.629,
+          "overlap": 1.3119999766349792,
+          "args": {
+            "src_file": "cc/trees/proxy_impl.cc",
+            "src_func": "ScheduledActionSendBeginMainFrame",
+            "src_line": 849
+          }
+        },
+        {
+          "name": "ProxyMain::BeginMainFrame",
+          "category": "cc,benchmark",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 10992.347999989986,
+          "duration": 10.262,
+          "threadDuration": 6.623,
+          "overlap": 1.3100000023841858,
+          "args": {
+            "begin_frame_id": 670,
+            "main_frame_pipeline": {
+              "main_frame_id": 11338648893362928000,
+              "step": "BEGIN_MAIN_FRAME"
+            }
+          }
+        },
+        {
+          "name": "Paint",
+          "category": "devtools.timeline",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 11001.59500002861,
+          "duration": 0.52,
+          "threadDuration": 0.517,
+          "overlap": 0.5199999809265137,
+          "args": {
+            "data": {
+              "clip": [
+                0,
+                0,
+                1440,
+                0,
+                1440,
+                1709,
+                0,
+                1709
+              ],
+              "frame": "64DB0457C1DE2F1E23533E6D92AFB13C",
+              "layerId": 0,
+              "nodeId": 2,
+              "nodeName": "#document"
+            }
+          }
+        },
+        {
+          "name": "RunTask",
+          "category": "disabled-by-default-devtools.timeline",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 11002.644999980927,
+          "duration": 0.508,
+          "threadDuration": 0.494,
+          "overlap": 0.5080000162124634,
+          "args": {}
+        }
+      ],
+      "otherTop": [
+        {
+          "name": "RunTask",
+          "category": "disabled-by-default-devtools.timeline",
+          "pid": 66644,
+          "tid": 6868,
+          "thread": "CrGpuMain",
+          "process": "GPU Process",
+          "at": 11000.74699997902,
+          "duration": 78.17,
+          "threadDuration": 4.167,
+          "overlap": 77.61699998378754,
+          "args": {}
+        },
+        {
+          "name": "ThreadControllerImpl::RunTask",
+          "category": "toplevel",
+          "pid": 66644,
+          "tid": 6868,
+          "thread": "CrGpuMain",
+          "process": "GPU Process",
+          "at": 11000.74699997902,
+          "duration": 78.168,
+          "threadDuration": 4.166,
+          "overlap": 77.61500000953674,
+          "args": {
+            "src_file": "gpu/command_buffer/service/scheduler.cc",
+            "src_func": "RunNextTask",
+            "src_line": 654
+          }
+        },
+        {
+          "name": "Scheduler::RunTask",
+          "category": "gpu,toplevel.flow",
+          "pid": 66644,
+          "tid": 6868,
+          "thread": "CrGpuMain",
+          "process": "GPU Process",
+          "at": 11000.749000012875,
+          "duration": 78.162,
+          "threadDuration": 4.162,
+          "overlap": 77.61100000143051,
+          "args": {}
+        }
+      ]
+    },
+    {
+      "id": 196,
+      "delay": 102.69999998807907,
+      "duration": 2.5,
+      "msAfterWrite": 3,
+      "requestToObserver": 0.09999996423721313,
+      "mainTraceUnionMs": 8.590000044821863,
+      "mainTop": [
+        {
+          "name": "RunTask",
+          "category": "disabled-by-default-devtools.timeline",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 12221.782000005245,
+          "duration": 2.849,
+          "threadDuration": 2.807,
+          "overlap": 2.8489999771118164,
+          "args": {}
+        },
+        {
+          "name": "ThreadControllerImpl::RunTask",
+          "category": "toplevel",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 12221.785000026226,
+          "duration": 2.796,
+          "threadDuration": 2.758,
+          "overlap": 2.7959999442100525,
+          "args": {
+            "src_file": "ipc/ipc_mojo_bootstrap.cc",
+            "src_func": "Accept",
+            "src_line": 1138
+          }
+        },
+        {
+          "name": "Receive mojo message",
+          "category": "toplevel,mojom",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 12221.79500001669,
+          "duration": 2.774,
+          "threadDuration": 2.736,
+          "overlap": 2.7739999890327454,
+          "args": {
+            "chrome_mojo_event_info": {
+              "data_num_bytes": 2968,
+              "ipc_hash": 3544143186,
+              "mojo_interface_tag": "blink.mojom.DevToolsSession",
+              "payload_size": 2912
+            }
+          }
+        },
+        {
+          "name": "RunTask",
+          "category": "disabled-by-default-devtools.timeline",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 12204.115000009537,
+          "duration": 9.952,
+          "threadDuration": 6.507,
+          "overlap": 1.5669999718666077,
+          "args": {}
+        },
+        {
+          "name": "ThreadControllerImpl::RunTask",
+          "category": "toplevel",
+          "pid": 68704,
+          "tid": 55024,
+          "thread": "CrRendererMain",
+          "process": "Renderer",
+          "at": 12204.120000004768,
+          "duration": 9.917,
+          "threadDuration": 6.476,
+          "overlap": 1.5370000004768372,
+          "args": {
+            "src_file": "cc/trees/proxy_impl.cc",
+            "src_func": "ScheduledActionSendBeginMainFrame",
+            "src_line": 849
+          }
+        }
+      ],
+      "otherTop": [
+        {
+          "name": "RunTask",
+          "category": "disabled-by-default-devtools.timeline",
+          "pid": 66644,
+          "tid": 6868,
+          "thread": "CrGpuMain",
+          "process": "GPU Process",
+          "at": 12216.92199999094,
+          "duration": 96.866,
+          "threadDuration": 6.927,
+          "overlap": 96.86599999666214,
+          "args": {}
+        },
+        {
+          "name": "ThreadControllerImpl::RunTask",
+          "category": "toplevel",
+          "pid": 66644,
+          "tid": 6868,
+          "thread": "CrGpuMain",
+          "process": "GPU Process",
+          "at": 12216.922999978065,
+          "duration": 96.859,
+          "threadDuration": 6.921,
+          "overlap": 96.85900002717972,
+          "args": {
+            "src_file": "gpu/command_buffer/service/scheduler.cc",
+            "src_func": "RunNextTask",
+            "src_line": 654
+          }
+        },
+        {
+          "name": "Scheduler::RunTask",
+          "category": "gpu,toplevel.flow",
+          "pid": 66644,
+          "tid": 6868,
+          "thread": "CrGpuMain",
+          "process": "GPU Process",
+          "at": 12216.925000011921,
+          "duration": 96.85,
+          "threadDuration": 6.912,
+          "overlap": 96.84999996423721,
+          "args": {}
+        }
+      ]
+    }
+  ]
+}

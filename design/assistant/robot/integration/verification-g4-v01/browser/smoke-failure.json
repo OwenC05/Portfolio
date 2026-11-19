@@ -1,0 +1,17 @@
+{
+  "checks": [
+    {
+      "name": "Studio has one canvas and one native dialog",
+      "passed": true
+    },
+    {
+      "name": "Desktop has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "Ask opens the assistant variant and focuses the heading",
+      "passed": false
+    }
+  ],
+  "error": "AssertionError [ERR_ASSERTION]: Ask opens the assistant variant and focuses the heading"
+}

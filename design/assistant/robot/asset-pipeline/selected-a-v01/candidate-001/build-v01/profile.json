@@ -1,0 +1,1515 @@
+{
+  "profileId": "selected-a-v01-candidate-001-build-v01",
+  "revision": 1,
+  "productionReady": false,
+  "status": "built-candidate-awaiting-independent-visual-and-technical-review",
+  "sourcePins": {
+    "canonicalImage": {
+      "path": "design/assistant/robot/higgsfield-concepts/selected-a-v01/outputs/02-front.png",
+      "sha256": "9b94d861e18d5c95f439847e30a81aa7a036110f0105585a8914126bfc9c8cc7",
+      "bytes": 4037510
+    },
+    "buildDecisions": {
+      "path": "design/assistant/robot/selected-a-build-decisions.md",
+      "sha256": "face0b2be9557a6f55d3a2106a7a2ebf5a0617b14701c5d3e7de9c9408e27a11",
+      "bytes": 3831
+    },
+    "visualReview": {
+      "path": "design/assistant/robot/review/selected-a-v01/review.md",
+      "sha256": "491c25cfc863e3e27a718b4e4971916fcfa01d6204aa9a615d0b7934e3ed5b77",
+      "bytes": 10156
+    },
+    "stateContract": {
+      "path": "design/assistant/robot/integration/state-contract.md",
+      "sha256": "e9c1916fd9a0529b6f3a11bdc7a1829b67c1e3b29ccdc5b58d6c05d970f9b26d",
+      "bytes": 21582
+    }
+  },
+  "approval": {
+    "directionASelected": true,
+    "boundedVisualBuildReview": "PASS",
+    "finalAssetAccepted": false,
+    "bindingFreezePending": true
+  },
+  "coordinates": {
+    "units": "metres",
+    "authorUp": "+Z",
+    "authorForward": "-Y",
+    "gltfUp": "+Y",
+    "gltfForward": "+Z",
+    "characterLeftBlender": "+X",
+    "blenderToGltf": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        -1,
+        0
+      ]
+    ],
+    "rootNeutral": {
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "rotationConversion": "C * R * inverse(C); do not swap Euler components",
+    "placement": {
+      "worldUnitsPerMetre": 2,
+      "applications": 1,
+      "addRoomFloorOffset": false,
+      "anchorWorld": null,
+      "rotationXyzw": null,
+      "facingFixedEye": "external placement assumption only"
+    }
+  },
+  "requiredMovingNodes": [
+    "APA_root",
+    "APA_head",
+    "APA_pupil_L",
+    "APA_lid_lower_L",
+    "APA_pupil_R",
+    "APA_lid_lower_R",
+    "APA_body",
+    "APA_mitten_L",
+    "APA_mitten_R",
+    "APA_tray"
+  ],
+  "bindings": [
+    {
+      "name": "APA_root",
+      "parent": null,
+      "moving": true,
+      "materialRoles": [],
+      "pivotDefinition": "centre of neutral head/body gap",
+      "neutralTranslationBlenderMetres": [
+        0,
+        0,
+        0
+      ],
+      "neutralRotationXyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "geometryOrigin": "Blender empty",
+      "neutralScale": [
+        1,
+        1,
+        1
+      ],
+      "neutralGltfTRS": {
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "localPivotBlenderMetres": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APA_head",
+      "parent": "APA_root",
+      "moving": true,
+      "materialRoles": [
+        "porcelain"
+      ],
+      "pivotDefinition": "centre of head volume",
+      "neutralTranslationBlenderMetres": [
+        -0.002171823987737298,
+        0.009133256040513515,
+        0.13376763463020325
+      ],
+      "neutralRotationXyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "geometryOrigin": "Meshy shell, repaired",
+      "neutralScale": [
+        1,
+        1,
+        1
+      ],
+      "neutralGltfTRS": {
+        "translation": [
+          -0.002171823987737298,
+          0.13376763463020325,
+          -0.009133256040513515
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "localPivotBlenderMetres": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APA_seam",
+      "parent": "APA_head",
+      "moving": false,
+      "materialRoles": [
+        "brass"
+      ],
+      "pivotDefinition": "fixed to head",
+      "neutralTranslationBlenderMetres": [
+        0,
+        0,
+        0
+      ],
+      "neutralRotationXyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "geometryOrigin": "Blender coronal ring; plain back",
+      "neutralScale": [
+        1,
+        1,
+        1
+      ],
+      "neutralGltfTRS": {
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "localPivotBlenderMetres": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APA_face_rim",
+      "parent": "APA_head",
+      "moving": false,
+      "materialRoles": [
+        "brass"
+      ],
+      "pivotDefinition": "fixed to head",
+      "neutralTranslationBlenderMetres": [
+        0,
+        0,
+        0
+      ],
+      "neutralRotationXyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "geometryOrigin": "Blender thin rim",
+      "neutralScale": [
+        1,
+        1,
+        1
+      ],
+      "neutralGltfTRS": {
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "localPivotBlenderMetres": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APA_face",
+      "parent": "APA_head",
+      "moving": false,
+      "materialRoles": [
+        "ink"
+      ],
+      "pivotDefinition": "fixed to head",
+      "neutralTranslationBlenderMetres": [
+        0,
+        0,
+        0
+      ],
+      "neutralRotationXyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "geometryOrigin": "Blender opaque curved inset",
+      "neutralScale": [
+        1,
+        1,
+        1
+      ],
+      "neutralGltfTRS": {
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "localPivotBlenderMetres": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APA_eye_L",
+      "parent": "APA_head",
+      "moving": false,
+      "materialRoles": [
+        "eyeGlow"
+      ],
+      "pivotDefinition": "fixed eye centre",
+      "neutralTranslationBlenderMetres": [
+        0.05065084993839264,
+        -0.11803723871707916,
+        -0.00898589938879013
+      ],
+      "neutralRotationXyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "geometryOrigin": "Blender disc",
+      "neutralScale": [
+        1,
+        1,
+        1
+      ],
+      "neutralGltfTRS": {
+        "translation": [
+          0.05065084993839264,
+          -0.00898589938879013,
+          0.11803723871707916
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "localPivotBlenderMetres": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APA_pupil_L",
+      "parent": "APA_eye_L",
+      "moving": true,
+      "materialRoles": [
+        "ink"
+      ],
+      "pivotDefinition": "pupil centre, eye tangent translation",
+      "neutralTranslationBlenderMetres": [
+        0,
+        -0.0023605450987815857,
+        0.004220910370349884
+      ],
+      "neutralRotationXyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "geometryOrigin": "Blender pupil",
+      "neutralScale": [
+        1,
+        1,
+        1
+      ],
+      "neutralGltfTRS": {
+        "translation": [
+          0,
+          0.004220910370349884,
+          0.0023605450987815857
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "localPivotBlenderMetres": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APA_highlight_L",
+      "parent": "APA_pupil_L",
+      "moving": false,
+      "materialRoles": [
+        "highlight"
+      ],
+      "pivotDefinition": "fixed offset on pupil; inherits gaze",
+      "neutralTranslationBlenderMetres": [
+        0.004220906645059586,
+        -0.00003228336572647095,
+        0.006029859185218811
+      ],
+      "neutralRotationXyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "geometryOrigin": "Blender highlight",
+      "neutralScale": [
+        1,
+        1,
+        1
+      ],
+      "neutralGltfTRS": {
+        "translation": [
+          0.004220906645059586,
+          0.006029859185218811,
+          0.00003228336572647095
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "localPivotBlenderMetres": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APA_lid_lower_L",
+      "parent": "APA_head",
+      "moving": true,
+      "materialRoles": [
+        "ink"
+      ],
+      "pivotDefinition": "eye-local lower edge; precise travel pending",
+      "neutralTranslationBlenderMetres": [
+        0.05065084993839264,
+        -0.11616919934749603,
+        -0.03033161163330078
+      ],
+      "neutralRotationXyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "geometryOrigin": "Blender rounded lid",
+      "neutralScale": [
+        1,
+        1,
+        1
+      ],
+      "neutralGltfTRS": {
+        "translation": [
+          0.05065084993839264,
+          -0.03033161163330078,
+          0.11616919934749603
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "localPivotBlenderMetres": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APA_eye_R",
+      "parent": "APA_head",
+      "moving": false,
+      "materialRoles": [
+        "eyeGlow"
+      ],
+      "pivotDefinition": "fixed eye centre",
+      "neutralTranslationBlenderMetres": [
+        -0.05065084993839264,
+        -0.11803723871707916,
+        -0.00898589938879013
+      ],
+      "neutralRotationXyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "geometryOrigin": "Blender disc",
+      "neutralScale": [
+        1,
+        1,
+        1
+      ],
+      "neutralGltfTRS": {
+        "translation": [
+          -0.05065084993839264,
+          -0.00898589938879013,
+          0.11803723871707916
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "localPivotBlenderMetres": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APA_pupil_R",
+      "parent": "APA_eye_R",
+      "moving": true,
+      "materialRoles": [
+        "ink"
+      ],
+      "pivotDefinition": "pupil centre, eye tangent translation",
+      "neutralTranslationBlenderMetres": [
+        0,
+        -0.0023605450987815857,
+        0.004220910370349884
+      ],
+      "neutralRotationXyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "geometryOrigin": "Blender pupil",
+      "neutralScale": [
+        1,
+        1,
+        1
+      ],
+      "neutralGltfTRS": {
+        "translation": [
+          0,
+          0.004220910370349884,
+          0.0023605450987815857
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "localPivotBlenderMetres": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APA_highlight_R",
+      "parent": "APA_pupil_R",
+      "moving": false,
+      "materialRoles": [
+        "highlight"
+      ],
+      "pivotDefinition": "fixed offset on pupil; inherits gaze",
+      "neutralTranslationBlenderMetres": [
+        0.004220902919769287,
+        -0.0030209943652153015,
+        0.006029859185218811
+      ],
+      "neutralRotationXyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "geometryOrigin": "Blender highlight",
+      "neutralScale": [
+        1,
+        1,
+        1
+      ],
+      "neutralGltfTRS": {
+        "translation": [
+          0.004220902919769287,
+          0.006029859185218811,
+          0.0030209943652153015
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "localPivotBlenderMetres": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APA_lid_lower_R",
+      "parent": "APA_head",
+      "moving": true,
+      "materialRoles": [
+        "ink"
+      ],
+      "pivotDefinition": "eye-local lower edge; precise travel pending",
+      "neutralTranslationBlenderMetres": [
+        -0.05065084993839264,
+        -0.11616919934749603,
+        -0.03033161163330078
+      ],
+      "neutralRotationXyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "geometryOrigin": "Blender rounded lid",
+      "neutralScale": [
+        1,
+        1,
+        1
+      ],
+      "neutralGltfTRS": {
+        "translation": [
+          -0.05065084993839264,
+          -0.03033161163330078,
+          0.11616919934749603
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "localPivotBlenderMetres": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APA_bookmark_post",
+      "parent": "APA_head",
+      "moving": false,
+      "materialRoles": [
+        "brass"
+      ],
+      "pivotDefinition": "character-left crown",
+      "neutralTranslationBlenderMetres": [
+        0.05243154615163803,
+        -0.0206263717263937,
+        0.11161136627197266
+      ],
+      "neutralRotationXyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "geometryOrigin": "Blender rigid outward-leaning post",
+      "neutralScale": [
+        1,
+        1,
+        1
+      ],
+      "neutralGltfTRS": {
+        "translation": [
+          0.05243154615163803,
+          0.11161136627197266,
+          0.0206263717263937
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "localPivotBlenderMetres": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APA_bookmark_ribbon",
+      "parent": "APA_bookmark_post",
+      "moving": false,
+      "materialRoles": [
+        "redRibbon"
+      ],
+      "pivotDefinition": "fixed to post outer side",
+      "neutralTranslationBlenderMetres": [
+        0,
+        0,
+        0
+      ],
+      "neutralRotationXyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "geometryOrigin": "Blender solid-thickness rigid notched ribbon",
+      "neutralScale": [
+        1,
+        1,
+        1
+      ],
+      "neutralGltfTRS": {
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "localPivotBlenderMetres": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APA_body",
+      "parent": "APA_root",
+      "moving": true,
+      "materialRoles": [
+        "porcelain"
+      ],
+      "pivotDefinition": "top of teardrop",
+      "neutralTranslationBlenderMetres": [
+        0.0008148427587002516,
+        -0.001845334772951901,
+        -0.009081235155463219
+      ],
+      "neutralRotationXyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "geometryOrigin": "Meshy body, repaired",
+      "neutralScale": [
+        1,
+        1,
+        1
+      ],
+      "neutralGltfTRS": {
+        "translation": [
+          0.0008148427587002516,
+          -0.009081235155463219,
+          0.001845334772951901
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "localPivotBlenderMetres": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APA_collar",
+      "parent": "APA_body",
+      "moving": false,
+      "materialRoles": [
+        "brass"
+      ],
+      "pivotDefinition": "fixed to body top",
+      "neutralTranslationBlenderMetres": [
+        0,
+        0,
+        0
+      ],
+      "neutralRotationXyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "geometryOrigin": "Blender collar",
+      "neutralScale": [
+        1,
+        1,
+        1
+      ],
+      "neutralGltfTRS": {
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "localPivotBlenderMetres": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APA_body_cap",
+      "parent": "APA_body",
+      "moving": false,
+      "materialRoles": [
+        "brass"
+      ],
+      "pivotDefinition": "closed slightly domed body top",
+      "neutralTranslationBlenderMetres": [
+        0,
+        0,
+        0
+      ],
+      "neutralRotationXyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "geometryOrigin": "Blender cap, no recess",
+      "neutralScale": [
+        1,
+        1,
+        1
+      ],
+      "neutralGltfTRS": {
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "localPivotBlenderMetres": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APA_mitten_L",
+      "parent": "APA_body",
+      "moving": true,
+      "materialRoles": [
+        "porcelain"
+      ],
+      "pivotDefinition": "inner upper end nearest body",
+      "neutralTranslationBlenderMetres": [
+        0.0795942023396492,
+        0.0006029864307492971,
+        -0.04582696408033371
+      ],
+      "neutralRotationXyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "geometryOrigin": "Meshy mitten, separated/repaired",
+      "neutralScale": [
+        1,
+        1,
+        1
+      ],
+      "neutralGltfTRS": {
+        "translation": [
+          0.0795942023396492,
+          -0.04582696408033371,
+          -0.0006029864307492971
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "localPivotBlenderMetres": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APA_mitten_R",
+      "parent": "APA_body",
+      "moving": true,
+      "materialRoles": [
+        "porcelain"
+      ],
+      "pivotDefinition": "inner upper end nearest body",
+      "neutralTranslationBlenderMetres": [
+        -0.0765792578458786,
+        0.0006029864307492971,
+        -0.04582696408033371
+      ],
+      "neutralRotationXyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "geometryOrigin": "Meshy mitten, separated/repaired",
+      "neutralScale": [
+        1,
+        1,
+        1
+      ],
+      "neutralGltfTRS": {
+        "translation": [
+          -0.0765792578458786,
+          -0.04582696408033371,
+          -0.0006029864307492971
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "localPivotBlenderMetres": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APA_tray",
+      "parent": "APA_root",
+      "moving": true,
+      "materialRoles": [
+        "brass"
+      ],
+      "pivotDefinition": "dish centre; level rest",
+      "neutralTranslationBlenderMetres": [
+        -0.002171823987737298,
+        0.0017725833458825946,
+        -0.22736229002475739
+      ],
+      "neutralRotationXyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "geometryOrigin": "Blender shallow round dish",
+      "neutralScale": [
+        1,
+        1,
+        1
+      ],
+      "neutralGltfTRS": {
+        "translation": [
+          -0.002171823987737298,
+          -0.22736229002475739,
+          -0.0017725833458825946
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "localPivotBlenderMetres": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "APA_tray_glow",
+      "parent": "APA_tray",
+      "moving": false,
+      "materialRoles": [
+        "trayGlow"
+      ],
+      "pivotDefinition": "fixed inner tray surface",
+      "neutralTranslationBlenderMetres": [
+        0,
+        0,
+        0
+      ],
+      "neutralRotationXyzw": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "geometryOrigin": "Blender surface, no light or bloom geometry",
+      "neutralScale": [
+        1,
+        1,
+        1
+      ],
+      "neutralGltfTRS": {
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "rotationXyzw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "localPivotBlenderMetres": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "poseContract": {
+    "headAxesBlender": {
+      "pitch": "+X",
+      "yaw": "+Z",
+      "roll": "+Y"
+    },
+    "gazeBasisBlender": {
+      "horizontal": [
+        1,
+        0,
+        0
+      ],
+      "vertical": [
+        0,
+        0,
+        1
+      ],
+      "normalOffset": "authored to stay on curved face"
+    },
+    "gazeLimits": {
+      "horizontalMetres": [
+        -0.002411945320715037,
+        0.002411945320715037
+      ],
+      "verticalMetres": [
+        -0.002411945320715037,
+        0.002411945320715037
+      ]
+    },
+    "lidLimits": {
+      "translationZMetres": [
+        -0.0012059726603575185,
+        0.0012059726603575185
+      ]
+    },
+    "finitePoses": [
+      "neutral",
+      "attention",
+      "sources",
+      "no-match",
+      "dismissal"
+    ],
+    "trayNeutralEulerXyzDegrees": [
+      0,
+      0,
+      0
+    ],
+    "trayPresentedTRS": {
+      "translation": [
+        -0.002171823987737298,
+        -0.010227416654117406,
+        -0.2093622900247574
+      ],
+      "rotationXyzw": [
+        0.13917315006256104,
+        0,
+        0,
+        0.9902680516242981
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "metadataPath": "poses.json"
+  },
+  "appearanceConstraints": {
+    "headWidthToHeightApprox": 1.1,
+    "headDepthToHeightApprox": 1,
+    "trayWidthToHeadWidthApprox": 0.9,
+    "restLowerLidOcclusionApprox": 0.2,
+    "ratiosAreAbsoluteDimensions": false,
+    "absoluteDimensionsMetres": [
+      0.2779004545882344,
+      0.5364859607070684,
+      0.2609210965456441
+    ],
+    "bakedWindowReflections": false,
+    "bakedCraze": false,
+    "transparentDome": false,
+    "bodyCapClosed": true,
+    "ribbonRigid": true,
+    "restTrayEmpty": true
+  },
+  "materials": {
+    "roles": {
+      "porcelain": {
+        "binding": "MAT_APA_porcelain",
+        "scope": "head/body/mittens"
+      },
+      "brass": {
+        "binding": "MAT_APA_brass",
+        "scope": "seam/rim/post/collar/cap/tray"
+      },
+      "ink": {
+        "binding": "MAT_APA_ink",
+        "scope": "opaque face/lids/pupils"
+      },
+      "eyeGlow": {
+        "binding": "MAT_APA_eye_emit",
+        "scope": "eye discs only"
+      },
+      "highlight": {
+        "binding": "MAT_APA_highlight",
+        "scope": "one white fixed-relative dot per pupil"
+      },
+      "redRibbon": {
+        "binding": "MAT_APA_ribbon",
+        "scope": "rigid ribbon only"
+      },
+      "trayGlow": {
+        "binding": "MAT_APA_tray_emit",
+        "scope": "inner tray only; independent of eyes"
+      }
+    },
+    "finalPbrValues": {
+      "porcelain": {
+        "baseColorLinear": [
+          0.8069522380828857,
+          0.7379103899002075,
+          0.6239603757858276,
+          1
+        ],
+        "metallic": 0,
+        "roughness": 0.3700000047683716,
+        "emissionStrength": 0
+      },
+      "brass": {
+        "baseColorLinear": [
+          0.5647115111351013,
+          0.3324515223503113,
+          0.0802198201417923,
+          1
+        ],
+        "metallic": 0.7799999713897705,
+        "roughness": 0.30000001192092896,
+        "emissionStrength": 0
+      },
+      "ink": {
+        "baseColorLinear": [
+          0.022173885256052017,
+          0.017641954123973846,
+          0.013702083379030228,
+          1
+        ],
+        "metallic": 0,
+        "roughness": 0.5799999833106995,
+        "emissionStrength": 0
+      },
+      "eyeGlow": {
+        "baseColorLinear": [
+          1,
+          0.520995557308197,
+          0.14702726900577545,
+          1
+        ],
+        "metallic": 0,
+        "roughness": 0.4000000059604645,
+        "emissionStrength": 2.5
+      },
+      "highlight": {
+        "baseColorLinear": [
+          1,
+          0.9301108717918396,
+          0.7912979125976562,
+          1
+        ],
+        "metallic": 0,
+        "roughness": 0.2800000011920929,
+        "emissionStrength": 0.25
+      },
+      "redRibbon": {
+        "baseColorLinear": [
+          0.366252601146698,
+          0.02518685907125473,
+          0.020288562402129173,
+          1
+        ],
+        "metallic": 0,
+        "roughness": 0.5799999833106995,
+        "emissionStrength": 0
+      },
+      "trayGlow": {
+        "baseColorLinear": [
+          0.8069522380828857,
+          0.4910208582878113,
+          0.14995978772640228,
+          1
+        ],
+        "metallic": 0.25,
+        "roughness": 0.4000000059604645,
+        "emissionStrength": 0.3499999940395355
+      }
+    },
+    "exportedMaterialCount": 7,
+    "exportedTextureCount": 0,
+    "texturePolicy": "none-proposed; plain PBR/emission, no photographic texture or new light/postprocess"
+  },
+  "format": {
+    "glbVersion": 2,
+    "sceneCount": 1,
+    "rootCount": 1,
+    "externalUris": false,
+    "primitiveMode": 4,
+    "requiredAttributes": [
+      "POSITION",
+      "NORMAL"
+    ],
+    "animations": false,
+    "skins": false,
+    "morphs": false,
+    "cameras": false,
+    "lights": false,
+    "textures": false,
+    "alphaModes": [
+      "OPAQUE"
+    ],
+    "doubleSided": false,
+    "allowedExtensions": [
+      "KHR_materials_emissive_strength"
+    ],
+    "compressionDecoders": []
+  },
+  "runtime": {
+    "textGenerationEnabled": false,
+    "motion": "finite poses through existing single controller only",
+    "idleLoops": false,
+    "eyeGeometryOwner": "private-per-load-import-owner",
+    "eyeTransformsAndEmissionOwner": "robot-presentation-owner",
+    "highlightMotion": "inherits pupil transform; no independent wandering",
+    "marks": {
+      "baked": false,
+      "min": 0,
+      "max": 4,
+      "source": "same current validated snapshot as HTML",
+      "overflowPolicy": "protocol-error-clear-all-views",
+      "selection": "HTML-only runId + source/chunk key",
+      "pickable": false,
+      "clearOn": "new submission, terminal failure, cancel, close; next rendered frame",
+      "resourceOwner": "robot-presentation-owner"
+    },
+    "trayStates": {
+      "carried": "idle/attention/waiting; empty while retrieval pending",
+      "presented": "valid current 1-4 hits or valid abstained answer after zero-hit retrieval",
+      "glowMeaning": "presentation only; does not establish hits",
+      "glowValues": null
+    },
+    "reducedMotion": "snap newest settled pose; OFF starts no replay",
+    "suspension": "cancel frames; resume latest snapshot without replay",
+    "dispose": "deduplicate import resources once; keep runtime markers separately owned"
+  },
+  "rejectExportedSemanticKinds": [
+    "source cards/marks/text",
+    "demo clips",
+    "upper lids/brows",
+    "skeleton",
+    "glass face",
+    "baked room/world placement"
+  ],
+  "productionMeasurements": {
+    "rawGlbBytes": 328960,
+    "gzipBytes": 214023,
+    "brotliBytes": 149706,
+    "triangles": 18330,
+    "peakRenderedTriangles": null,
+    "peakDrawCalls": null,
+    "localBoundsMetres": {
+      "min": [
+        -0.14062344492413104,
+        -0.2358040977269411,
+        -0.1354877119883895
+      ],
+      "max": [
+        0.1372770096641034,
+        0.30068186298012733,
+        0.1254333845572546
+      ]
+    },
+    "fullSweptBoundsMetres": {
+      "basis": "Blender",
+      "min": [
+        -0.1429218412182589,
+        -0.1354826004050036,
+        -0.24962987609126763
+      ],
+      "max": [
+        0.14795153446414666,
+        0.13634890921333032,
+        0.3060847581169863
+      ]
+    },
+    "sourceBlendSha256": "23c6fdf90d48bee4f3a82fd811f312b6eb798dd40712544fa7afa6bdb67a22fc",
+    "exportSha256": "775733a18559d7f52dd6bd71e7ec518a9783ef3c9e95dd753b3072e553587232",
+    "exportedVertexRecords": 9341,
+    "nodes": 22,
+    "meshes": 21,
+    "materials": 7,
+    "primitives": 21,
+    "textures": 0,
+    "animations": 0
+  },
+  "allocation": {
+    "approved": false,
+    "glbEncodedBytes": null,
+    "assistantJsBytes": null,
+    "eyeAndMarkerResourcesBytes": null,
+    "peakCalls": null,
+    "peakRenderedTriangles": null,
+    "texturePixels": null
+  },
+  "inheritedRoomPolicy": {
+    "modify": false,
+    "note": "Existing room gates and animation-free profile remain unchanged; historical forecasts allocate nothing to A."
+  },
+  "physicalScale": {
+    "status": "provisional-uniform-authoring-scale-not-room-allocation",
+    "metresPerRawUnit": 0.6029863301787592,
+    "targetRawHeadWidthMetres": 0.28,
+    "rootRaw": [
+      0.0016486546956002712,
+      -0.0029396740719676018,
+      -0.07193956524133682
+    ],
+    "gapEndpointsRaw": {
+      "headBottom": [
+        0.00029730936512351036,
+        0.00012065190821886063,
+        -0.056879132986068726
+      ],
+      "bodyCapTop": [
+        0.003000000026077032,
+        -0.006000000052154064,
+        -0.08699999749660492
+      ]
+    },
+    "rootDefinition": "midpoint of final head bottom and closed body-cap top",
+    "extraFloorOffset": false
+  }
+}

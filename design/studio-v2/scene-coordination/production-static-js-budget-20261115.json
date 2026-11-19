@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "scope": "ALL-ROUTE static JavaScript: conservative upper bound for studio generated static chunks. This is not actual network transfer or an exact route graph; not all files load in studio. Excludes dynamic runtime external code and future full-kit integration.",
+  "sourceRevision": "df5a598dac14a749010bd1685205e3b3602a1dce",
+  "compression": {
+    "method": "Each file compressed independently with Node gzipSync and brotliCompressSync default settings; totals sum per-file byte counts.",
+    "node": "24.22.2",
+    "zlib": "1.3.2.1-motley-285e94b",
+    "brotli": "1.2.0"
+  },
+  "fileCount": 19,
+  "totals": {
+    "rawBytes": 1379523,
+    "gzipBytes": 391334,
+    "brotliBytes": 333289
+  },
+  "files": [
+    {
+      "path": "SU8AHyzQJG2L8bhX6n0em/_buildManifest.js",
+      "rawBytes": 224,
+      "gzipBytes": 179,
+      "brotliBytes": 150,
+      "sha256": "d429a03a81bf98275fca32bffbc6cdc272d12db4265487ca2a313be418be7494"
+    },
+    {
+      "path": "SU8AHyzQJG2L8bhX6n0em/_ssgManifest.js",
+      "rawBytes": 80,
+      "gzipBytes": 64,
+      "brotliBytes": 67,
+      "sha256": "678f6ce2cb80b1fe72fc67e7412be6e2ab6ada083111b64f7c40d35e3cba5e00"
+    },
+    {
+      "path": "chunks/618.42666045fe56a130.js",
+      "rawBytes": 47635,
+      "gzipBytes": 18061,
+      "brotliBytes": 15879,
+      "sha256": "c906153ef448e88bd3129af784afb540dced49134986cfef6bab4d72b2ce6441"
+    },
+    {
+      "path": "chunks/698.17a9eed5543d64ca.js",
+      "rawBytes": 47837,
+      "gzipBytes": 14132,
+      "brotliBytes": 12612,
+      "sha256": "1ec23e973f96a602b1d5b24aa334e7256bf14074a8d5d4fdee116b812e5dcc56"
+    },
+    {
+      "path": "chunks/938-1452ecbe568c4ebf.js",
+      "rawBytes": 104463,
+      "gzipBytes": 26775,
+      "brotliBytes": 23211,
+      "sha256": "6f9e2a2f2011cd201ede6582cdd1993d7fdd6c355f3d9246a55ec62bb04d62ce"
+    },
+    {
+      "path": "chunks/app/_not-found-d90ba3f8bda444ef.js",
+      "rawBytes": 1822,
+      "gzipBytes": 869,
+      "brotliBytes": 714,
+      "sha256": "55f001f4076bf1ae4893ff1833703f462eea7fb44d12b053f7b912d06787ab3c"
+    },
+    {
+      "path": "chunks/app/layout-dc0cb1ef8ba9a060.js",
+      "rawBytes": 226,
+      "gzipBytes": 180,
+      "brotliBytes": 156,
+      "sha256": "43d7bec444c0d4c0c7667f71631fb3dee5bcebd39e4b6ae0847ec3214191c669"
+    },
+    {
+      "path": "chunks/app/page-c3cb9a7ddc80e98f.js",
+      "rawBytes": 5547,
+      "gzipBytes": 2034,
+      "brotliBytes": 1783,
+      "sha256": "a3d5f2bb4c6c61df7ac068528e4529fdba7886e258b0f06c87b4e07e674ba6d2"
+    },
+    {
+      "path": "chunks/app/studio/page-7f6b6630b411a8af.js",
+      "rawBytes": 24605,
+      "gzipBytes": 8672,
+      "brotliBytes": 7519,
+      "sha256": "775ca0b80ac5bc806fbd540807199f9c233637cf212af3ffa59791a2ba11b4d9"
+    },
+    {
+      "path": "chunks/b536a0f1.6c31ef11a63259cb.js",
+      "rawBytes": 357014,
+      "gzipBytes": 84156,
+      "brotliBytes": 70011,
+      "sha256": "646d376de76eaa665d65b95cc4fe85981df1f034a0e410c6a8f73ba89448b599"
+    },
+    {
+      "path": "chunks/bd904a5c.693ac2d6017b53fb.js",
+      "rawBytes": 272670,
+      "gzipBytes": 72390,
+      "brotliBytes": 58706,
+      "sha256": "c7918de928117b1f1a0f05d757b7d6c4b6ad8ff1e810a173b43ede93e94ab682"
+    },
+    {
+      "path": "chunks/fd9d1056-1f93743d30740867.js",
+      "rawBytes": 171902,
+      "gzipBytes": 53365,
+      "brotliBytes": 45883,
+      "sha256": "5f0f5ae2b4ee1c48ab9be4af79fa77d891930bdc375b74a7f77909edc05d0d43"
+    },
+    {
+      "path": "chunks/framework-c5181c9431ddc45b.js",
+      "rawBytes": 140069,
+      "gzipBytes": 45105,
+      "brotliBytes": 39052,
+      "sha256": "1ac73fdaa0cc1448248e2bf31c1f0c49358441942ae9a2057ab540e1530180f1"
+    },
+    {
+      "path": "chunks/main-5eba8f53d25cdb8f.js",
+      "rawBytes": 109193,
+      "gzipBytes": 31754,
+      "brotliBytes": 27444,
+      "sha256": "e4ace93ef5916a9339ffaf2a5d0608fe9021ea2cad0e1e9d1905680b844e1f87"
+    },
+    {
+      "path": "chunks/main-app-fcbe17b59d927e7f.js",
+      "rawBytes": 461,
+      "gzipBytes": 219,
+      "brotliBytes": 180,
+      "sha256": "5db5830c402f888f7c403ddcb3395257fed8f95f70e6e107a27e3d62d8b297f1"
+    },
+    {
+      "path": "chunks/pages/_app-98cb51ec6f9f135f.js",
+      "rawBytes": 280,
+      "gzipBytes": 194,
+      "brotliBytes": 188,
+      "sha256": "2bb80152a390909148522b9aef397a5a20da3c145e978ab49044003ec0fd628d"
+    },
+    {
+      "path": "chunks/pages/_error-e87e5963ec1b8011.js",
+      "rawBytes": 247,
+      "gzipBytes": 180,
+      "brotliBytes": 152,
+      "sha256": "75d10b9436a4954ea12292604a44b2ab46c5538d752d45998fea13c87d7ef32c"
+    },
+    {
+      "path": "chunks/polyfills-c67a75d1b6f99dc8.js",
+      "rawBytes": 91460,
+      "gzipBytes": 31170,
+      "brotliBytes": 27953,
+      "sha256": "0225eb034d024a03bdc90ea6c79f56193662e7c3eee909696298820e517cbb83"
+    },
+    {
+      "path": "chunks/webpack-c4894948ecd5b5f3.js",
+      "rawBytes": 3788,
+      "gzipBytes": 1835,
+      "brotliBytes": 1629,
+      "sha256": "fa08f7ac8ee892914e9f24f9dcbab5a623b7def98c0ead1cf651ecb045e313a8"
+    }
+  ],
+  "evidence": {
+    "repository": "OwenC05/Portfolio",
+    "headCommit": "482a81cc5f78cab8a6425d99d7b3b73d69e663d9",
+    "workflowRunId": 43722493152,
+    "jobId": 132837282840,
+    "jobConclusion": "success",
+    "url": "https://github.com/OwenC05/Portfolio/actions/runs/43722493152/job/132837282840",
+    "retrievedAt": "2026-11-15 14:08:01 UTC"
+  }
+}

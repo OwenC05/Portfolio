@@ -1,0 +1,13 @@
+# M4 guard v2: root disposition
+
+15 November 2026. Root accepts the repaired helper for first M4 v01 export validation. This closes the two helper blockers and releases the author's guarded export step under the existing M4 task. It does not accept an actual M4 asset or release M5.
+
+The independent [focused rereview](m4-transition-guard-focused-rereview.md), SHA256 `d85af790831a221decac728f5dbc494dfe5914bb9f80531ea077678165aae6a4`, returns APPROVE for helper readiness after32 focused probes. The writer's separate81 synthetic checks also pass; these counts are separate evidence sets, not a claim of113 unique checks.
+
+Accepted helper SHA256: `ad62627f0683806ace2c8ebbb133ba83e72c7d95f1df8adc291a3706aa40da6b`. Exact first-v01 provenance amendment SHA256: `3b3a011d5d2f599dc63a4bf31aacd115513eb06c31267ddee0201209cebb2229`. Original geometry mapping stays `8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98`. The unchanged API is `audit_m4_transition(parent_bytes, candidate_bytes)`; it reports and never repairs a GLB.
+
+The accepted amendment changes only the complete pinned scene-provenance object as authorized in [the repair decision](m4-guard-repair-root-decision.md): `fk_tag=m4-v01`, `fk_stage=M4`, new `fk_m4_tag=v01`, with inherited keys and all other metadata preserved. Stale, missing, additional and wrong tags reject. The three malformed record cases now produce JSON-safe invalid results. Independent exact diff/preimage review confirms retained geometry/reference/material/palette checks, budget checks and CLI logic remain AST-identical. Previous failures and old receipts remain preserved.
+
+S may now tell the retained actual-Claude author to use this exact helper and corrected M3 parent `dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf`, with paired parent manifest `060bab9af5dd23b4258e03aef10de21faa7c32aa0a6010cd4e09b35089026405`. Preserve source/editable/raw export and exact helper/contract identities. If the first raw export fails, preserve the artifact and semantic mismatch receipt and report it; do not bypass the guard or apply unapproved byte/metadata tolerances.
+
+One Blender lane remains with S/Claude; root has no active capture lane. Before accepting an assembled M4 candidate, require the actual transition result, unchanged full-kit structural validator, exact paired manifest/target invariants, per-row/weighted/global counts, actual compressed bytes and updated full-room forecast. Root then coordinates real-renderer capture and independent actual-Claude visual review. All M4 art criteria, inherited M3 exception/follow-ups, final integration checks and unresolved T1/transfer requirements remain in force.

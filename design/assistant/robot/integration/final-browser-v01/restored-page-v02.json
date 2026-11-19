@@ -1,0 +1,11 @@
+{
+  "id": "ac1b4d3d-202b-4431-8822-9d7bbbd5a277",
+  "ok": true,
+  "result": {
+    "result": "{\"url\":\"http://127.0.0.1:4193/studio\",\"width\":1440,\"height\":900,\"dpr\":1.0000000149011612,\"dialog\":false,\"canvas\":{\"engine\":\"three.js r187\",\"studioInteractionEnabled\":\"true\",\"studioYaw\":\"-4\",\"studioPitch\":\"-6\",\"studioEye\":\"-0.7,2.8,3.4\",\"studioFov\":\"58\",\"studioDpr\":\"1.0000000149011612\",\"studioRenderCount\":\"4\",\"studioDrawCalls\":\"94\",\"studioTriangles\":\"94512\",\"studioGeometries\":\"38\",\"studioTextures\":\"12\",\"assistantRunId\":\"\",\"assistantRevision\":\"0\",\"assistantCardCount\":\"0\"},\"probePresent\":false,\"fetchNative\":true}",
+    "origin": "http://127.0.0.1:4193/studio"
+  },
+  "_meta": {
+    "runtimeId": "19e04513-1ef5-4d38-9d02-d9354525c5f3"
+  }
+}

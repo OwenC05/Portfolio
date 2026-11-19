@@ -1,0 +1,17 @@
+{
+  "at": "2026-11-18T21:03:12.206Z",
+  "format": "gzip",
+  "raw": {
+    "path": "integration/resize-wait-trace-v01/chromium-trace.json",
+    "bytes": 98562463,
+    "sha256": "57a9ec45ae4eabd556bd1b94cf601bc91e1c9be3120d8c64d702ca146d8c6a57"
+  },
+  "archive": {
+    "path": "integration/resize-wait-trace-v01/chromium-trace.json.gz",
+    "bytes": 9186683,
+    "sha256": "973f85891a9bd7745eeb564c8200bc21cfd8f7e0f601f091d55669c45042d75a"
+  },
+  "verifiedLossless": true,
+  "restore": "node design/assistant/robot/delivery/trace-archive.mjs restore",
+  "policy": "Original retained locally; Git carries the lossless archive. Historical raw-file hashes and reports stay unchanged."
+}

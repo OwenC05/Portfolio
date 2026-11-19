@@ -1,0 +1,13 @@
+{
+  "command": [
+    "node",
+    "node_modules/eslint/bin/eslint.js",
+    "components/studio/assistant/StudioAssistantPanel.tsx",
+    "tests/assistant/studio-panel.test.cjs",
+    "--max-warnings",
+    "0"
+  ],
+  "exitCode": 0,
+  "stdout": "",
+  "stderr": ""
+}

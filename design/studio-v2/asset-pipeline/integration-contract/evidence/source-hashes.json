@@ -1,0 +1,17 @@
+{
+  "algorithm": "sha256",
+  "scope": "Authored validator/profile/evidence, excluding this manifest and mutable report",
+  "files": {
+    "design/studio-v2/asset-pipeline/integration-contract/evidence/lint.json": "147a635501eae15d5cc427b70ee75edae3d2b2984c9b30d94a0aa227699dadcd",
+    "design/studio-v2/asset-pipeline/integration-contract/evidence/pilot-v02.json": "78468d981901bff3b8bdb12ca5c5d8eeca55f2662d4e72b0049583470d8c9516",
+    "design/studio-v2/asset-pipeline/integration-contract/evidence/pilot-v03.json": "548ab0b592d21ddd4911042ca011884b579000a0ebe40fa0385c3455d5f9b1af",
+    "design/studio-v2/asset-pipeline/integration-contract/evidence/synthetic-failure.json": "94ce4c6b93d6b8e58fb2a89fae89de9f6b318ad9182c37035f7621bbea39ee13",
+    "design/studio-v2/asset-pipeline/integration-contract/evidence/synthetic-pass.json": "6bf082628fbb619451885ce14887c2b0fd9f88f5f43acdfa2d29578f4256a461",
+    "design/studio-v2/asset-pipeline/integration-contract/evidence/validator-tests.tap": "7093d8667dc507f33d0a997d1a521a8cf7f9ceea4b43cdf9be54960dc696c840",
+    "design/studio-v2/asset-pipeline/integration-contract/evidence/verification.json": "d6692d2dd342d987e055f7cae58357db2982b6b2f1b251a38285e97cc18beae0",
+    "design/studio-v2/asset-pipeline/integration-contract/pilot-profile.json": "02a9b364ed42127988747660ac61d6efca8bc3af9f151a0e41eb0d50bc0baa08",
+    "design/studio-v2/asset-pipeline/integration-contract/synthetic-fixture.mjs": "55632b3f3d758a5fd0fb03b8dd891b2e6ea55d37dbf155021017b45cb01ab465",
+    "design/studio-v2/asset-pipeline/integration-contract/validate-glb.mjs": "fb3d6bee77fda20f89553a01bd24c70c70713f94ae7c543b894426a14f41ec7c",
+    "design/studio-v2/asset-pipeline/integration-contract/verify-validator.mjs": "341365e141e9ea1f457161446d8d3b102b2a3452dfc5ef560152137844c38390"
+  }
+}

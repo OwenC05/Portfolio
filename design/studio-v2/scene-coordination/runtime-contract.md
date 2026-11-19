@@ -1,0 +1,24 @@
+# Bounded door/lamp runtime contract
+
+Released under root's conditional authority in msg_9ded322695e7 after all four actual gates: exact v03 offline pass (pilot-v03.json), independent validator APPROVE (scene-asset-contract-review.md), Claude APPROVE FOR BOUNDED RUNTIME COMPARISON (scene-pilot-visual-critique.md), and repaired-controller APPROVE (scene-technical-re-review.md). This releases local implementation only; root retains build/browser/preview and final acceptance.
+
+## Frozen internal API
+
+- types.ts (S lead) exports `StudioPilotAsset { root: THREE.Group; dispose(): void }`. No public contract/props/status changes.
+- Codex new `load-pilot.ts` exports `loadStudioPilot(signal: AbortSignal): Promise<StudioPilotAsset>`. Fetch exactly `/studio/pilot-right-limit-v03.glb`; root is a validated group already placed with scale(2,2,2), translation(0,0.11,0), no extra rotation. All imported resources/images belong exclusively to the returned idempotent dispose operation, independently of the procedural SceneResources. Failures release acquired partial resources; stale resolved results are immediately disposed by controller without attachment/callback.
+- Claude `createStudio(resources: SceneResources, pilotRoot: THREE.Group | null = null): StudioModel` retains the default procedural construction for existing CPU/baseline callers. With pilotRoot supplied, omit only original floor-lamp and door geometry BEFORE static batching, and add pilotRoot once. Retain room/gear/target/border/camera data and all other scenery. Do not remove already-batched geometry by group name.
+- Imported meshes retain exact nine names/materials/extras from right-limit-pilot-v1. Loader assigns castShadow from !nocast, receiveShadow true and opaque blocker status consistent with material; no imported light/camera/animation. After attachment/batching the existing live opaque collection must include imported blockers; only the agreed three highlight planes and target faces are excluded. No public fields added.
+- Controller mounts/owns renderer/listeners immediately, uses a private token/liveness guard around async pilot readiness, then builds the model with returned root. Report ready only after first visible successful render. Network/parse/decode/validation/first-render failure produces existing unavailable fallback; there is no silent procedural fallback hiding a broken pilot. Preserve queued latest commands/selection/disabled state, fixed eye and demand rendering. Dispose procedural owner and pilot owner independently; late parse results cannot leak, attach or notify.
+
+## Exclusive ownership for this implementation
+
+- Claude runtime art author: components/studio/scene/build-studio.ts only, plus design/studio-v2/scene-runtime-art-report.md. Initial assembly changes only exact geometry substitution; runtime lighting/material adjustments wait actual root captures and remain Claude-authored. No camera/texture/UI tuning or Blender rerender in initial pass.
+- Codex original technical author: scene/controller.ts, new load-pilot.ts, resources.ts if necessary for imported resource cleanup, verify-controller.mjs, new focused loader tests, and StudioScene.tsx only if essential; exact public/studio/pilot-right-limit-v03.glb copy; scene-runtime-technical*.md reports. No build-studio/textures/view-config/lib/types edits. Ask S about any internal API change before mutation.
+- S retains lib/studio-contract.ts and scene/types.ts; no overlapping helper changes. Asset validator/profile remains separately owned and frozen.
+- Exact candidate source: design/studio-v2/asset-pipeline/pilot-right-limit/exports/pilot-right-limit-v03.glb, SHA256 2B9A4182C3024485680C1E066C8A22EF0DC0F541ACCA4BD958486BCED2C4063E. Preserve original and failed v02. Copy to the exact public file only; existing differing destination is an ownership issue, not permission to overwrite silently.
+
+## Gates after assembly
+
+Send assembled-ready before exhaustive verification. Root captures actual GLB/image decode and same-pose right-up/right-down/music/home at desktop/390/320. Targeted CPU tests cover replacement/one transform, live blockers, success/failure/abort/unmount/late parse, unique shared geometry/material/texture/bitmap disposal, remount, commands/disabled/selection through loading and unchanged camera. Preserve unrelated trusted click/pen/visibility regressions. No full build/server/browser by S.
+
+Root/I measures actual network/render/idle/timing budgets and failure/lifecycle browser behavior; independent Codex reviews changes and independent Claude judges runtime material/light response. The generated look frame supplies limited door/shade/light direction, not layout or amber palette. Raw Meshy mouse stays untouched; root schedules native Blender mouse with the later full kit after this pair passes. No new spending or full-room asset integration.

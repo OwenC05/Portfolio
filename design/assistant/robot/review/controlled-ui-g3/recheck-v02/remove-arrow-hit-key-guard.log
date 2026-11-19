@@ -1,0 +1,81 @@
+TAP version 13
+# Subtest: G3 arrows: four current ordered chips wrap both ways synchronously without actions or queued focus
+ok 1 - G3 arrows: four current ordered chips wrap both ways synchronously without actions or queued focus
+  ---
+  duration_ms: 272.2995
+  type: 'test'
+  ...
+# Subtest: G3 arrows: one hit consumes either arrow without moving focus, selecting or submitting
+ok 2 - G3 arrows: one hit consumes either arrow without moving focus, selecting or submitting
+  ---
+  duration_ms: 88.8891
+  type: 'test'
+  ...
+# Subtest: G3 arrows: focus navigation preserves existing selection and passage disclosure
+ok 3 - G3 arrows: focus navigation preserves existing selection and passage disclosure
+  ---
+  duration_ms: 65.7128
+  type: 'test'
+  ...
+# Subtest: G3 arrows: modified arrows and other keys leave focus, defaults, state and actions untouched
+ok 4 - G3 arrows: modified arrows and other keys leave focus, defaults, state and actions untouched
+  ---
+  duration_ms: 50.8979
+  type: 'test'
+  ...
+# Subtest: G3 arrows: missing target and target DOM run/key mismatches cannot receive focus
+not ok 5 - G3 arrows: missing target and target DOM run/key mismatches cannot receive focus
+  ---
+  duration_ms: 166.2346
+  type: 'test'
+  location: 'C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\review\\controlled-ui-g3\\recheck-v02\\counterfactual-tests.cjs:979:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    hitKey
+    + actual - expected
+    
+    + 'uid-chip-2'
+    - 'uid-chip-1'
+                ^
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'uid-chip-1'
+  actual: 'uid-chip-2'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (C:\Users\Owenc\orca\Portfolio-assistant\design\assistant\robot\review\controlled-ui-g3\recheck-v02\counterfactual-tests.cjs:993:12)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1402:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:974:18)
+    Test.postRun (node:internal/test_runner/test:1542:19)
+    Test.run (node:internal/test_runner/test:1467:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# Subtest: G3 arrows: old handlers cannot focus cleared or replacement chips after supersession, cancel, close or failure
+ok 6 - G3 arrows: old handlers cannot focus cleared or replacement chips after supersession, cancel, close or failure
+  ---
+  duration_ms: 191.3273
+  type: 'test'
+  ...
+# Subtest: G3 arrows: synchronous focus remains valid across a same-run selection revision
+ok 7 - G3 arrows: synchronous focus remains valid across a same-run selection revision
+  ---
+  duration_ms: 65.7079
+  type: 'test'
+  ...
+# Subtest: G3 arrows: ordinary Tab and native button activation remain available with guarded select-and-reveal
+ok 8 - G3 arrows: ordinary Tab and native button activation remain available with guarded select-and-reveal
+  ---
+  duration_ms: 82.4946
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 7
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1389.2343

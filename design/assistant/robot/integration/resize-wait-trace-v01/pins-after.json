@@ -1,0 +1,862 @@
+{
+  "at": "2026-11-18T20:56:19.810Z",
+  "stage": "after",
+  "sourcePins": 83,
+  "inputs": [
+    {
+      "path": ".eslintrc.json",
+      "bytes": 461,
+      "sha256": "3448ee6d1528d25b0dbb4003b1489cc2fdebda1c64509c7d64dfb5506ff4ff5d"
+    },
+    {
+      "path": "app/api/assistant/route.ts",
+      "bytes": 315,
+      "sha256": "d595a6d3c3296a305b68889cd89c3a0a0d9ad6120ac77306574485049f788c15"
+    },
+    {
+      "path": "app/ask/page.tsx",
+      "bytes": 1180,
+      "sha256": "411bc2894ec464d72e1cb5047549606b515dae867ac840c5f4d152f5af1c7c71"
+    },
+    {
+      "path": "app/globals.css",
+      "bytes": 1701,
+      "sha256": "38a5427299238e2be46ad5062e798ef3c68d13dfa884a1272bfdb2c55946f13f"
+    },
+    {
+      "path": "app/layout.tsx",
+      "bytes": 453,
+      "sha256": "8a9bc8229a6486f517f630aa1e30e9b88bb9c76d89d643351fc01c769f80385b"
+    },
+    {
+      "path": "app/page.tsx",
+      "bytes": 2333,
+      "sha256": "1355de8be21a12fad889dae7b9bd20cc2b5bf3b3f5943ec05bbd8b64b3a170ef"
+    },
+    {
+      "path": "app/studio/StudioShell.tsx",
+      "bytes": 9870,
+      "sha256": "ef637b1d61f39fd0cddc34f2697ce35546735f05219acb435d9e7d7c314c6738"
+    },
+    {
+      "path": "app/studio/page.tsx",
+      "bytes": 2416,
+      "sha256": "298294562717d8fc8f30e7b6444c45dc18dd5d103815414f4e687ac80b04044d"
+    },
+    {
+      "path": "app/studio/panel-navigation.ts",
+      "bytes": 3713,
+      "sha256": "e67abf654d6fd286edc536ec3f29290ca5a6f2e67daeb91ca596ae3fd976e347"
+    },
+    {
+      "path": "app/studio/panel-scroll.ts",
+      "bytes": 1168,
+      "sha256": "ef13a9d34aec31eb245232ada5675bc1cf010dd41bdd352ecbefc72fe0daa188"
+    },
+    {
+      "path": "app/studio/studio.module.css",
+      "bytes": 20785,
+      "sha256": "81bd8787a6259212d7244702ffeb14ce0815aa9a1a51f5f47bb2d3ef4b0549ea"
+    },
+    {
+      "path": "app/work/[slug]/page.tsx",
+      "bytes": 2778,
+      "sha256": "9ed10b1d426cbb7c366b6521db629e4d16021e4422a2e0df2bc1730b9dfb56b3"
+    },
+    {
+      "path": "app/work/content.module.css",
+      "bytes": 1856,
+      "sha256": "4d99f4dd26dbc1d1bcf9c4523dcca8c2dc04d1ad724580697bb50667856e5f22"
+    },
+    {
+      "path": "app/work/page.tsx",
+      "bytes": 2145,
+      "sha256": "74acf2db22188d6fe9aac43066fe7fb3b859195f72d7425e9147fb383c546ef1"
+    },
+    {
+      "path": "app/writing/[slug]/page.tsx",
+      "bytes": 2234,
+      "sha256": "e5699fc8e861993d21101278e87d21f9930bfd58fee935718c2e3a45216015e3"
+    },
+    {
+      "path": "app/writing/page.tsx",
+      "bytes": 2738,
+      "sha256": "bd495a287f3f779ea2987116a114e088e1c13c461a6b11a8a4c9126dc99b47da"
+    },
+    {
+      "path": "components/Footer.tsx",
+      "bytes": 5243,
+      "sha256": "450fad3b3c3f36ae035db620800b25e1c04b5c39ed724e8cef1b3c5bbf10ecb6"
+    },
+    {
+      "path": "components/Hero.tsx",
+      "bytes": 2118,
+      "sha256": "4a221443a7626679a485bddf5714d1152b3f3e7ee2d3779f7b3b5e23e128e164"
+    },
+    {
+      "path": "components/Navbar.tsx",
+      "bytes": 4702,
+      "sha256": "7b3dd34079273926b440a6788f0d9815cdb0e05e733ee6f564cb0f9608653251"
+    },
+    {
+      "path": "components/ProjectsTeaser.tsx",
+      "bytes": 2517,
+      "sha256": "d6494145843dfa4f9ca4292aa2a1abccdab726bd380b6d192b71e88d99715473"
+    },
+    {
+      "path": "components/Skills.tsx",
+      "bytes": 1006,
+      "sha256": "59a009ed70cee2790d05e5331f044a867d57242af599e825c7e65814b018dd1a"
+    },
+    {
+      "path": "components/ThemeToggle.tsx",
+      "bytes": 2112,
+      "sha256": "aa1b20001c70a767ee2902bcb813c50f81746a56b1a90bb05a479777cca610f5"
+    },
+    {
+      "path": "components/assistant/AssistantWorkbench.tsx",
+      "bytes": 21149,
+      "sha256": "f1769caa1ef1bc97b1902e9b9294b0dbdf3cd73a17c184213f641dcf364b43fe"
+    },
+    {
+      "path": "components/assistant/assistant.module.css",
+      "bytes": 11655,
+      "sha256": "eaa316e29f646c718112cd841ea6028eb72929fff0133c01b6d566d92105b3c4"
+    },
+    {
+      "path": "components/assistant/useAssistantRun.ts",
+      "bytes": 1589,
+      "sha256": "b6149c54687f02605f7f5448641f34741482e10527df4ecbd9736e510bad96c7"
+    },
+    {
+      "path": "components/studio/ProjectEvidence.tsx",
+      "bytes": 2321,
+      "sha256": "7242983f72892b81591848fbb5d81d39d61a4e6ae8f9ee3a7333e0a4b54b4e91"
+    },
+    {
+      "path": "components/studio/StudioExperience.tsx",
+      "bytes": 19149,
+      "sha256": "1c1af8cc3bd9a77a108d9ff21cd9cad09056c0c31755db61db887bf6b97923ca"
+    },
+    {
+      "path": "components/studio/StudioScene.tsx",
+      "bytes": 1323,
+      "sha256": "bed95661809ae444829c0daaf30222a84c8c16e6bef721b417f342a5ef4a31b1"
+    },
+    {
+      "path": "components/studio/assistant/AssistantEntry.tsx",
+      "bytes": 705,
+      "sha256": "065d4115428f0dc042a6a3c7e599179ddd7b5aa88495eaed90f9c546c60853a9"
+    },
+    {
+      "path": "components/studio/assistant/StudioAssistantPanel.tsx",
+      "bytes": 14955,
+      "sha256": "174d06c105483718298e674b4fe2f034f20ada0117cc8baa4a0ae8bf3df35619"
+    },
+    {
+      "path": "components/studio/assistant/assistant.module.css",
+      "bytes": 8665,
+      "sha256": "42605b4b98542d322e94d67d3657733f5563899df8768c55967c55ccce98fbf5"
+    },
+    {
+      "path": "components/studio/scene/bind-full-kit.ts",
+      "bytes": 2075,
+      "sha256": "0ee8bbe6e0fb83ab4bf219343655c4260a8f5193f5624dc69fb802634a2294eb"
+    },
+    {
+      "path": "components/studio/scene/build-full-studio.ts",
+      "bytes": 3998,
+      "sha256": "5a4e8296e04d66cfeaedf59bedee8c633b378c84126de52b78eaabe421c0f02f"
+    },
+    {
+      "path": "components/studio/scene/build-studio.ts",
+      "bytes": 34789,
+      "sha256": "e23588e2702ece52c5b8a2ed25adb2debac366fdf90c66609a5ef4299ffc11ae"
+    },
+    {
+      "path": "components/studio/scene/controller.ts",
+      "bytes": 25252,
+      "sha256": "3061a5644f7c1281e12dcb1032d186238aa83047090960d6ef3555d7d0657687"
+    },
+    {
+      "path": "components/studio/scene/full-kit-types.ts",
+      "bytes": 490,
+      "sha256": "19269dc5acf09fc9ebac3de6b5ac37157608b258a1b0ac288a85fd13021a4a56"
+    },
+    {
+      "path": "components/studio/scene/load-full-kit.ts",
+      "bytes": 16066,
+      "sha256": "37549d60af2eb7f5e1feaf0914fd0da496ec38441ebe088ce445d2914b5ad68f"
+    },
+    {
+      "path": "components/studio/scene/load-pilot.ts",
+      "bytes": 15772,
+      "sha256": "b5cd61c682dd69d2336b10b508b516999e72d73a00edbd6e2cebcf0323d39d11"
+    },
+    {
+      "path": "components/studio/scene/picking.ts",
+      "bytes": 10961,
+      "sha256": "cefc0ca653b44ea4892fe54e82d5676a700741f5e6766cc841453795216fddc9"
+    },
+    {
+      "path": "components/studio/scene/resources.ts",
+      "bytes": 4210,
+      "sha256": "756a26fba1840696fd7b8f0a24dfa588a50488a55fbc99bec60ca3c0e14cb509"
+    },
+    {
+      "path": "components/studio/scene/robot/cards.ts",
+      "bytes": 2292,
+      "sha256": "4a27a76b1327a55c5a4df80124ddb0b8676eec3ae51c1d8e22e49943acd8faa2"
+    },
+    {
+      "path": "components/studio/scene/robot/derive-profile.mjs",
+      "bytes": 2245,
+      "sha256": "3e7ccb2ae6f4ec7f0bb4ddcbfe33f78968484fa480a191a363fbb6fec2542588"
+    },
+    {
+      "path": "components/studio/scene/robot/load-robot.ts",
+      "bytes": 9715,
+      "sha256": "f237471d54e2837fab90eab6767ae9a8a70ae15ff5e97daf82dd4a30c2eeb695"
+    },
+    {
+      "path": "components/studio/scene/robot/presentation.ts",
+      "bytes": 6640,
+      "sha256": "733e0885712fdb23f6103146e74de8f8c9faff389bdeac28524d51601f8847a3"
+    },
+    {
+      "path": "components/studio/scene/robot/resources.ts",
+      "bytes": 1942,
+      "sha256": "375fdf233e6128c613c64aa52ffa762d941b47090af990a20652b6ffae0f687f"
+    },
+    {
+      "path": "components/studio/scene/robot/runtime-profile.json",
+      "bytes": 14212,
+      "sha256": "102cfdd0178f4cb9e301ce2feaeb82df0b9701ab60f9379f8cdaac18e208a447"
+    },
+    {
+      "path": "components/studio/scene/robot/runtime.ts",
+      "bytes": 176,
+      "sha256": "93e8ff8f6d56b518da7b53ded84aae748369def0c54b1277871d44a5791add8a"
+    },
+    {
+      "path": "components/studio/scene/robot/test-support.mjs",
+      "bytes": 2627,
+      "sha256": "58a131bdbbe3a7d07a2a5fea9f44c2405dff68934bb0c7643b576e108542b61b"
+    },
+    {
+      "path": "components/studio/scene/robot/types.ts",
+      "bytes": 643,
+      "sha256": "a5c23f38bfae89830545660c2ee30a0b1fd54ad8cf8614042f256127235f37a6"
+    },
+    {
+      "path": "components/studio/scene/robot/verify-cleanup.mjs",
+      "bytes": 3231,
+      "sha256": "fe0c84687ca89ca4894321456bcafd3f0ab9f9e9ee4f89b5dd822d2e2a6ffd40"
+    },
+    {
+      "path": "components/studio/scene/robot/verify-envelope.mjs",
+      "bytes": 10759,
+      "sha256": "fa76ec7514d3236db1867eac1b5043f2a3f0be319322c1af0f6532bfb308b922"
+    },
+    {
+      "path": "components/studio/scene/robot/verify-robot.mjs",
+      "bytes": 18662,
+      "sha256": "391ead023fda086398cb7bde8a54053030d9a5258f6d8af9f7ea754c1d98930f"
+    },
+    {
+      "path": "components/studio/scene/textures.ts",
+      "bytes": 11246,
+      "sha256": "09f6ff6cc7bb8910f09838566dfcf840d85a0d2ce1be8d064deafb0989c63aa6"
+    },
+    {
+      "path": "components/studio/scene/types.ts",
+      "bytes": 1322,
+      "sha256": "4b7aacd6d5dafda407a989a10c00cfa46689fca72df455ad50554527717405d4"
+    },
+    {
+      "path": "components/studio/scene/verify-controller.mjs",
+      "bytes": 95656,
+      "sha256": "a182b86ebcbc5a940a72705c08f4684e09229a16fa9a14005e67cfb0356d6293"
+    },
+    {
+      "path": "components/studio/scene/verify-full-kit.mjs",
+      "bytes": 33885,
+      "sha256": "ea836ba70da71020ba78b70b78311b46d2eacec798da4f8163e7b03a54b3b531"
+    },
+    {
+      "path": "components/studio/scene/verify-pilot.mjs",
+      "bytes": 19288,
+      "sha256": "8b0e9b33ef874ddd412cd92fd99b60420f8f8263fd32cdb7c9d96c3e9c3ad295"
+    },
+    {
+      "path": "components/studio/scene/verify-types.mjs",
+      "bytes": 1202,
+      "sha256": "7a684d6e38384c80b57fecb63d24db6fcf6e8eac24cdb6f4918c451ebe066947"
+    },
+    {
+      "path": "components/studio/scene/view-config.ts",
+      "bytes": 756,
+      "sha256": "1fea7adbcfd730a56920389c8ac4ecf8323c9739fd4882c15f3e134a11f1a450"
+    },
+    {
+      "path": "design/assistant/robot/integration/dpr-candidate-v01/apply-candidate.mjs",
+      "bytes": 2430,
+      "sha256": "4bbf8f996c100f56fa1b55524f14843573d0428df75478503f7ac997916fcd08"
+    },
+    {
+      "path": "design/assistant/robot/integration/dpr-candidate-v01/artifact-index.json",
+      "bytes": 3563,
+      "sha256": "658101516f1bed9a81922cbcf543d7a97e488767a8ae4d816738e456e3d70219"
+    },
+    {
+      "path": "design/assistant/robot/integration/dpr-candidate-v01/candidate-after.json",
+      "bytes": 487,
+      "sha256": "e34ba79641119483ea823b08824344bc3397f6174ac382bb96d6832069491e61"
+    },
+    {
+      "path": "design/assistant/robot/integration/dpr-candidate-v01/candidate-after.log",
+      "bytes": 1738,
+      "sha256": "2ef36c0f671ff5cabf7810de4ef9dd7ab45ec2bea4f5468a1676f85e0490fc10"
+    },
+    {
+      "path": "design/assistant/robot/integration/dpr-candidate-v01/candidate-tests-old-source.json",
+      "bytes": 498,
+      "sha256": "e1668572861bea6e733626aac725a8005965ff1dcae2a5b4d701a31e58ce6e5f"
+    },
+    {
+      "path": "design/assistant/robot/integration/dpr-candidate-v01/candidate-tests-old-source.log",
+      "bytes": 3125,
+      "sha256": "83e44524f1bcb35ed9aa016095a0845c9783f0c344d0cbe9b21779ad11f55770"
+    },
+    {
+      "path": "design/assistant/robot/integration/dpr-candidate-v01/check.mjs",
+      "bytes": 1422,
+      "sha256": "29b4074f1e16e05f833ef0343f6cb02d154a48e4208c47af5823514fc12622c4"
+    },
+    {
+      "path": "design/assistant/robot/integration/dpr-candidate-v01/controller.after.ts.txt",
+      "bytes": 25252,
+      "sha256": "3061a5644f7c1281e12dcb1032d186238aa83047090960d6ef3555d7d0657687"
+    },
+    {
+      "path": "design/assistant/robot/integration/dpr-candidate-v01/controller.before.ts.txt",
+      "bytes": 25265,
+      "sha256": "dbc91da47931fbbd592278ef5e82fe9db8c40d02fc29806b050161585f822afc"
+    },
+    {
+      "path": "design/assistant/robot/integration/dpr-candidate-v01/eslint.json",
+      "bytes": 295,
+      "sha256": "b7c6bb6ea3074881b6fa6e58f9e91fbfb07c992f0859de73a50d888b89730ff5"
+    },
+    {
+      "path": "design/assistant/robot/integration/dpr-candidate-v01/eslint.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "design/assistant/robot/integration/dpr-candidate-v01/existing-before.json",
+      "bytes": 487,
+      "sha256": "e1181501fb5c5ce55be067c67cb9042c8e527ee11ef7bc76c5b9a660cb20532c"
+    },
+    {
+      "path": "design/assistant/robot/integration/dpr-candidate-v01/existing-before.log",
+      "bytes": 1621,
+      "sha256": "bcb2bcf579ffd25157eb3797583c5ffb1dfd5416f97ac6cb4e545da744b93258"
+    },
+    {
+      "path": "design/assistant/robot/integration/dpr-candidate-v01/handoff.md",
+      "bytes": 6241,
+      "sha256": "a651114032dbafdf50641db5bedc2ad4132d99464d97615132fee0f451e01903"
+    },
+    {
+      "path": "design/assistant/robot/integration/dpr-candidate-v01/pin.mjs",
+      "bytes": 2597,
+      "sha256": "f19de5158158a944b1629e7445d4771b302393986a9c5d5685d07f2126bcbb72"
+    },
+    {
+      "path": "design/assistant/robot/integration/dpr-candidate-v01/pins-after.json",
+      "bytes": 45241,
+      "sha256": "0563e483ba24a2095cb67a313d813cd364d76db09a4d4f0f0cb848cdf2f0c9f3"
+    },
+    {
+      "path": "design/assistant/robot/integration/dpr-candidate-v01/pins-before.json",
+      "bytes": 45239,
+      "sha256": "06573185b75e1d2d3c45e4c79e7c6a500b2c8dccc9bd7cfad11815f65e15783b"
+    },
+    {
+      "path": "design/assistant/robot/integration/dpr-candidate-v01/plan.md",
+      "bytes": 947,
+      "sha256": "a14fe9a9ea59604335482c1e07c2a1d3b1cc81d09a97d7079266265dc4891570"
+    },
+    {
+      "path": "design/assistant/robot/integration/dpr-candidate-v01/typescript.json",
+      "bytes": 249,
+      "sha256": "0106c80057621112967e0cb1d2756d54339ec0f5312b0a8618dcce6f26b75519"
+    },
+    {
+      "path": "design/assistant/robot/integration/dpr-candidate-v01/typescript.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "design/assistant/robot/integration/dpr-candidate-v01/verification.json",
+      "bytes": 1068,
+      "sha256": "04fb17520973b076dc1a0e23b04337fe794a863db91ef130754f553983c79ced"
+    },
+    {
+      "path": "design/assistant/robot/integration/dpr-candidate-v01/verify-controller.after.mjs.txt",
+      "bytes": 95656,
+      "sha256": "a182b86ebcbc5a940a72705c08f4684e09229a16fa9a14005e67cfb0356d6293"
+    },
+    {
+      "path": "design/assistant/robot/integration/dpr-candidate-v01/verify-controller.before.mjs.txt",
+      "bytes": 94270,
+      "sha256": "cc58de1b838a67a452481a9b9e750f578c95c570de8c04d4fe634db91a7283b0"
+    },
+    {
+      "path": "design/assistant/robot/integration/dpr-candidate-v01/verify.mjs",
+      "bytes": 2398,
+      "sha256": "98bcf1724d102703bed694780edf92f9351829a1854fd1df4dc7d2ffa335e122"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/analysis.json",
+      "bytes": 42059,
+      "sha256": "08dd5c9dfc26c70e990b6678e931117e742111932ea975464f614ead9f1ebb77"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/artifact-index.json",
+      "bytes": 4785,
+      "sha256": "65777ff11f4fb77391f25d612c3fda07d76e3be15b12b2b30ab003a500ebe55b"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/attention-home-dpr2.png",
+      "bytes": 2040978,
+      "sha256": "59d5a502c263cdb4ab73f1ee43938563c5129d4c1e28075491857c785bffab2b"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/attention-neighbour-dpr2.png",
+      "bytes": 2211956,
+      "sha256": "ce1db3418ad08936ee273feb4a2048a23e0f507a169224a81a708963a021ac78"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/attention.json",
+      "bytes": 11785,
+      "sha256": "4a7121aa71bc03124c49f6726edc67d5cde4ec3f165203b2b1843f85a232b339"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/attention.run.mjs",
+      "bytes": 3012,
+      "sha256": "5e775c04165b363a1e5de3e8fd0504089cfdb63a386e29f0939903c4ed0015db"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/contexts-after.json",
+      "bytes": 120,
+      "sha256": "544add1a940d29be28db463650ebc25e74e39be83f24473d79ed28445e8f5470"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/handoff.md",
+      "bytes": 11871,
+      "sha256": "2cd40f8deed343cf17901366e4bdd6e37699b7e3cb51e7af5850269d433c27ed"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/host-load.jsonl",
+      "bytes": 35292,
+      "sha256": "c8fa9e4bcdd49b7d07a4fb2807a2ade495c76a77986352b0c06d4d9553ee43f0"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/host-sample.ps1",
+      "bytes": 1132,
+      "sha256": "af43287db2deda46187997b623dd512b9262fce3a0cfd9972c6385674fd35376"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/image-manifest.json",
+      "bytes": 19158,
+      "sha256": "f82bdc1ef7acf5995bf5efac9845ed577a52d2c6be1b360799a8a886adb6316f"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/matrix-first.json",
+      "bytes": 686093,
+      "sha256": "2c46c3aab7cc423279900c424258fa1d578c0ffe69be4ab66af3a2374259bd67"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/matrix-first.run.mjs",
+      "bytes": 8798,
+      "sha256": "dbbfbe41b97bfebacbe566a987545f2254315576bb9e5e812ba523ed776d6b0f"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/matrix-reverse.json",
+      "bytes": 666141,
+      "sha256": "4b168cca69a2fc127dc391c5529c32df0933b7a3aa247b54568dd0297e2a8ddc"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/matrix-reverse.run.mjs",
+      "bytes": 8798,
+      "sha256": "24d464fd25d7bcf4229fa117e341a32ac6b219fabbf179146082a1d0cad336d0"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/normal-dpr1.5.png",
+      "bytes": 1273833,
+      "sha256": "86ead9fee7a2c6f6c0877fb5b5e0107042c8efc02cc8ed799a1824e56595771b"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/normal-dpr1.png",
+      "bytes": 670290,
+      "sha256": "3e247c76756dddec687a53f54bcbea5557bd029a49ae00fecec52928352d555d"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/normal-dpr2.png",
+      "bytes": 2043992,
+      "sha256": "1543c611bf998e7170113954f435e040c9a644ce154697892a7f0d51b6654b4a"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/pin.mjs",
+      "bytes": 1916,
+      "sha256": "c3cc41e0f59e332944d681f9779c460d09f5a2449ad6d912bf79c17b1f9c60a8"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/pins-after.json",
+      "bytes": 36126,
+      "sha256": "4e9b8fc4ed83b729fe29229bea6276dad3ca6b25f0273fa9b8d811608b1abfd2"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/pins-before.json",
+      "bytes": 36126,
+      "sha256": "cf8e4017416f9b9e0d81a8d60ffd2b9799f63dfc71d6201a73899106c2080eb7"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/plan.md",
+      "bytes": 1053,
+      "sha256": "622e178fbc0588b89928370939331d1206e606f67c7d624f4d650a56b493af01"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/preview-after.json",
+      "bytes": 216,
+      "sha256": "4a0fc4eedc0fe9695065f9366d2134843f4924478304eef49eb98ebe7a9f8851"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/preview-before.json",
+      "bytes": 216,
+      "sha256": "4a0fc4eedc0fe9695065f9366d2134843f4924478304eef49eb98ebe7a9f8851"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/resize-attribution.json",
+      "bytes": 168395,
+      "sha256": "bfbb5e043b80fea7732b0b3d0573ec0b1afb89517eb010659c720959e777043a"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/resize-attribution.run.mjs",
+      "bytes": 6390,
+      "sha256": "7e6b260c9e5a83a6a3d5523b0d78b6a70c7142e0a97dea174f54bb68be2c7eb6"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/resize-cpu-profile.json",
+      "bytes": 230379,
+      "sha256": "d308d583bacf09ef3bd832e71aca89c63a4f88d22842853aabc37367083629c5"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/restoration.json",
+      "bytes": 7243,
+      "sha256": "d72d45d57246690aeaeaa4907fe782a4cf3477ec5083c2b7b6c7df373f72fe94"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/restore.mjs",
+      "bytes": 1560,
+      "sha256": "2727cedc404f0becd70f1c172bb71e976449714e60e3497f4ffb628caaa99686"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/summarize.mjs",
+      "bytes": 6051,
+      "sha256": "6d4d2d664eec2d53d9bab03140874d646d202d8efb85bccd0168a587a2895d8c"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/verification.json",
+      "bytes": 1619,
+      "sha256": "14b0420c5a48f24e07556ae9f8e882e6cc459460bf8e823392407c1e63ab5e26"
+    },
+    {
+      "path": "design/assistant/robot/integration/performance-diagnosis-v01/verify.mjs",
+      "bytes": 2820,
+      "sha256": "594ff15a3502211a6df73ed6bfe9bfbadba9ae103039d8561e3fa46b441a7924"
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g4-v04/README.md",
+      "bytes": 5372,
+      "sha256": "ab06fe906a781237db42e9379c9a2aec5dcda3efdec7a8146c6b12b76ce41bbf"
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g4-v04/browser-results.json",
+      "bytes": 504101,
+      "sha256": "cd5c533e1ac78864f34bfb9c893d85cefcc2662b54be4c531bf773649b0afa9e"
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g4-v04/build.log",
+      "bytes": 1779,
+      "sha256": "b937db363b36dcd349da1e2d7effc170a74285a8c4a4165404c471cbc94dc59c"
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g4-v04/capture-manifest.json",
+      "bytes": 5552,
+      "sha256": "b3ba20a5f17ec33fc677405eac37e89084c971920005adec7dcb652f43fadb3d"
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g4-v04/checks.json",
+      "bytes": 369,
+      "sha256": "f853ba78af5567e2e1307f23bef526767851e3dba626f288e0c14b1b0cf6b80c"
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g4-v04/measure.run.mjs",
+      "bytes": 8086,
+      "sha256": "0c1c39dfec356035268b199f9dc6b3c04c0ed9bf5a79ed62791baddbff86c9f9"
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g4-v04/native-dpr2-four-sources.png",
+      "bytes": 1316898,
+      "sha256": "469df3963c38ada14bc56d6fafb5c25f3d3b1ecef4f69fdc211ba2b023dbcbf5"
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g4-v04/native-dpr2-neutral.png",
+      "bytes": 1900886,
+      "sha256": "71005badb402115218ccf38a81852dfc3210876928a7ddcd8ce19926541790e1"
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g4-v04/preview-process.json",
+      "bytes": 498,
+      "sha256": "3aac0a12db9bf99455317d1178b646de50575c1c71153ca272a9e557d6e7f1f3"
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g4-v04/preview.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g4-v04/preview.stdout.log",
+      "bytes": 143,
+      "sha256": "75e30ffccb4140b5de73ea2ae4a664093550973ce15196e4b68cc291602299b5"
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g4-v04/source-after.json",
+      "bytes": 13868,
+      "sha256": "22251e3b16f3f9331e8a1e54c02963c850005411c97a961982bc64db1b972918"
+    },
+    {
+      "path": "design/assistant/robot/integration/verification-g4-v04/source-before.json",
+      "bytes": 14099,
+      "sha256": "05d605d8f58c0c760726f9ca99fc10536b81a288a9e5153288633caefb41b4e2"
+    },
+    {
+      "path": "design/assistant/robot/review/density-source-v04/evidence/centre-screen-old-dpr2-vs-source-cap15-actual-pixels.png",
+      "bytes": 318522,
+      "sha256": "a66c3a47763d97942c69a2865692816cec1c009e97ea9a58015199fd6f377200"
+    },
+    {
+      "path": "design/assistant/robot/review/density-source-v04/evidence/four-cards-tray-3x-nearest.png",
+      "bytes": 50114,
+      "sha256": "724ed6372e1b405c1409936d7b167ff2936d932d028b56e9c7902efefac5e47d"
+    },
+    {
+      "path": "design/assistant/robot/review/density-source-v04/evidence/four-sources-robot-actual-pixels.png",
+      "bytes": 140688,
+      "sha256": "38f5493b2b9da458885e7d4a0d7cec6fd82ae04c427ef3b2984d66cd723ff89e"
+    },
+    {
+      "path": "design/assistant/robot/review/density-source-v04/evidence/html-chrome-over-canvas-actual-pixels.png",
+      "bytes": 218685,
+      "sha256": "c24535982245f2c72bb11eb0e968dfb3fa3a4c0f9ae260e807c49d33c592f053"
+    },
+    {
+      "path": "design/assistant/robot/review/density-source-v04/evidence/robot-old-dpr2-vs-source-cap15-actual-pixels.png",
+      "bytes": 261239,
+      "sha256": "77b300810d6257d387f4da435c690d9365aa37d0d6c802588991984711a0c69e"
+    },
+    {
+      "path": "design/assistant/robot/review/density-source-v04/review.md",
+      "bytes": 4822,
+      "sha256": "06b508d413a07c533d107b5d1053156611cdede16f98fbb8ec764db1728c5293"
+    },
+    {
+      "path": "design/assistant/robot/review/g4-v04-performance/analysis-command.log",
+      "bytes": 8116,
+      "sha256": "1b7c8fa95dd688ae16c37e8c80161304aa9affdadbb9b588dc2afde320c6b5a4"
+    },
+    {
+      "path": "design/assistant/robot/review/g4-v04-performance/analysis.json",
+      "bytes": 580671,
+      "sha256": "3ba0d7fd5f5896593ed441b634713c6b5d0c6c0f2f8d5af63ab21daa416bb571"
+    },
+    {
+      "path": "design/assistant/robot/review/g4-v04-performance/analyze.mjs",
+      "bytes": 8879,
+      "sha256": "f878cb70decbb14b077d9de1d04d4c76c1848e202d8324f3c234e0b92a53c646"
+    },
+    {
+      "path": "design/assistant/robot/review/g4-v04-performance/artifact-index.json",
+      "bytes": 1835,
+      "sha256": "6d023e8f7f57bd34f4eb4d9ed303553c108bf805accf973b3a10166bcbbb1b76"
+    },
+    {
+      "path": "design/assistant/robot/review/g4-v04-performance/commands.json",
+      "bytes": 6338,
+      "sha256": "5bf90f875e861a1bcac689867a89d55efe159f556836da62914ec757bf3f9f51"
+    },
+    {
+      "path": "design/assistant/robot/review/g4-v04-performance/frames.csv",
+      "bytes": 55414,
+      "sha256": "8e65728ef1d94b42c76737ab3b321722aa84174235cf6afe19e31b79682b5e9c"
+    },
+    {
+      "path": "design/assistant/robot/review/g4-v04-performance/late-repeat.csv",
+      "bytes": 499,
+      "sha256": "f003f675ae0d8cd68d2bc3a953556ea4696fed4204f452c7234c99e74aa143e7"
+    },
+    {
+      "path": "design/assistant/robot/review/g4-v04-performance/pin.mjs",
+      "bytes": 1582,
+      "sha256": "95079d6f072377e368ac40895e0a5b05ad63782ad75c8cc26533604ab8a91032"
+    },
+    {
+      "path": "design/assistant/robot/review/g4-v04-performance/pins-after.json",
+      "bytes": 28320,
+      "sha256": "fa80de166c52573614be791f8bf243110945d194f367e41d741b96f12f0902a0"
+    },
+    {
+      "path": "design/assistant/robot/review/g4-v04-performance/pins-before.json",
+      "bytes": 28321,
+      "sha256": "007fc6723dd128e059bfb99e7c7f22f44205a11436002d308a89932246e2b703"
+    },
+    {
+      "path": "design/assistant/robot/review/g4-v04-performance/review.md",
+      "bytes": 10625,
+      "sha256": "e510ca7a1beeb7877cf6ffa9e0949ad94bc45513464afaca08d79e84f4b6ff55"
+    },
+    {
+      "path": "design/assistant/robot/review/g4-v04-performance/verification.json",
+      "bytes": 979,
+      "sha256": "6f28d51c357e701c02a1c169fc269a1af4bdb5e1909c39c4b85e38497e6cd1a6"
+    },
+    {
+      "path": "design/assistant/robot/review/g4-v04-performance/verify.mjs",
+      "bytes": 3356,
+      "sha256": "b7f75098e73b10b93a8de1fe133d5d9e5335390134d25a094e47a3c285e2f598"
+    },
+    {
+      "path": "lib/assistant/events.ts",
+      "bytes": 2982,
+      "sha256": "95e37b16c181cb13e663695f73c5555608d873c12d4e9505c888d71c87f5e491"
+    },
+    {
+      "path": "lib/assistant/generation.ts",
+      "bytes": 7717,
+      "sha256": "28bee687ea18b91e7ab2ac340b4ebcb4a403223b4c825b0a6d49f8e030c83635"
+    },
+    {
+      "path": "lib/assistant/handler.ts",
+      "bytes": 6642,
+      "sha256": "2836c4f60915e15583d9910923ca7c2ef72c78ca47a1b2d97cb6247692a92458"
+    },
+    {
+      "path": "lib/assistant/retrieval.ts",
+      "bytes": 7971,
+      "sha256": "99c5b5af5e85d43289d97d31c25b7b826425838ab4e576de99f3b6648c356445"
+    },
+    {
+      "path": "lib/assistant/run-state.ts",
+      "bytes": 10480,
+      "sha256": "1b804c6b9e0f528ef197e5a01efd5f39dafe8176f9dadb4a36268c96e69e5df7"
+    },
+    {
+      "path": "lib/assistant/run-transport.ts",
+      "bytes": 6870,
+      "sha256": "932db03394adddf2d568a1ea002bbaaf142da4151b1f70a9733e7b7f8a33283e"
+    },
+    {
+      "path": "lib/assistant/types.ts",
+      "bytes": 973,
+      "sha256": "6842f79d2d7547fb811cb25e72e38ecd6da45efbd82445a267bbb152f476d836"
+    },
+    {
+      "path": "lib/knowledge/catalog.test.mjs",
+      "bytes": 3535,
+      "sha256": "6c94c147c732eb51ffa24a959ffe3f7cc106964b1a0ae2a1ca06967b6d94b22d"
+    },
+    {
+      "path": "lib/knowledge/catalog.ts",
+      "bytes": 15118,
+      "sha256": "145e04a8296e8815ff6c4f9da94f663df3c5a993223a5fb1b41c365a2b09d52b"
+    },
+    {
+      "path": "lib/knowledge/types.ts",
+      "bytes": 562,
+      "sha256": "3230b52be190bc74a6c881a6bc10184dcd1e01ccd962b9be017982108553ba7a"
+    },
+    {
+      "path": "lib/site.config.ts",
+      "bytes": 1687,
+      "sha256": "d1886b8c9f9240aaeaef05f706a90379681e6ecb2a82861dee054bce70d2e9ee"
+    },
+    {
+      "path": "lib/studio-content.ts",
+      "bytes": 8095,
+      "sha256": "36e08b40cfb779f3f05cc17623766f1a2fb7b8f876cac73ac9b12db381764662"
+    },
+    {
+      "path": "lib/studio-contract.ts",
+      "bytes": 1756,
+      "sha256": "08ba5af18af6c8ed41de7a74cbe6492d6974bd81ad83b7a7aea5c00b83bdd2e8"
+    },
+    {
+      "path": "lib/utils.ts",
+      "bytes": 918,
+      "sha256": "632d5f54be6664c2a4e9735cf3719f55c92c0c977904fd603f9f89d1c0978c39"
+    },
+    {
+      "path": "next-env.d.ts",
+      "bytes": 268,
+      "sha256": "f4e8976c19fc926644d72610bf1058bd6bf52add97e46a02bc0b912a751625c0"
+    },
+    {
+      "path": "next.config.mjs",
+      "bytes": 120,
+      "sha256": "dd271e8790c673110c668e2825e6684864fbaa2bdb3a9ae5836d8ccbc8961345"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 235583,
+      "sha256": "85c9c38951d29d2d1e2b71dcd06cd287f845cc9841278d971e8846ee2fe296be"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1007,
+      "sha256": "665e51bf618feb94e031f297ef5c8b25986a25450ffdcae6b39663d0a5c04790"
+    },
+    {
+      "path": "postcss.config.js",
+      "bytes": 90,
+      "sha256": "2b8a1cb7003456256e96f3d832878af90f08b3677ff62dd52b73c972ed6a8d37"
+    },
+    {
+      "path": "public/favicon.ico",
+      "bytes": 129,
+      "sha256": "65f9c208d088eb7e9e1a8a10d7468e8a6afffd7328d4a82953a2abafcd5f732c"
+    },
+    {
+      "path": "public/studio/assistant-apprentice-v03.glb",
+      "bytes": 673144,
+      "sha256": "65f1dea3b1d35a748bdfc2089dea0feed1d054cc8b0eb957645ea2d669578a12"
+    },
+    {
+      "path": "public/studio/pilot-right-limit-v03.glb",
+      "bytes": 585536,
+      "sha256": "2b9a4182c3024485680c1e066c8a22ef0dc0f541acca4bd958486bced2c4063e"
+    },
+    {
+      "path": "tailwind.config.ts",
+      "bytes": 318,
+      "sha256": "e627efc6978c4c486ae6f617facd4f061d5ab3e3defa7f01a91fa9a872eb0337"
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 686,
+      "sha256": "16ed5e2babbdcd10e424eeaa5f5e054c3b0cf34d50dc9caa37c5d72f17b443af"
+    }
+  ]
+}

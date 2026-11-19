@@ -1,0 +1,117 @@
+TAP version 13
+# Subtest: independent real guard controls reject skin zero and missing POSITION min/max
+ok 1 - independent real guard controls reject skin zero and missing POSITION min/max
+  ---
+  duration_ms: 173.8283
+  type: 'test'
+  ...
+# Subtest: abort during a real asynchronous parser continuation releases all 28 imported identities
+ok 2 - abort during a real asynchronous parser continuation releases all 28 imported identities
+  ---
+  duration_ms: 55.5182
+  type: 'test'
+  ...
+# Subtest: remove/readd fences old resolve after replacement is already ready
+ok 3 - remove/readd fences old resolve after replacement is already ready
+  ---
+  duration_ms: 289.6674
+  type: 'test'
+  ...
+# Subtest: remove/readd fences old reject after replacement is already ready
+ok 4 - remove/readd fences old reject after replacement is already ready
+  ---
+  duration_ms: 116.3618
+  type: 'test'
+  ...
+# Subtest: real G1 replacement/cancel/failure/close erase card identity synchronously before a pending frame
+ok 5 - real G1 replacement/cancel/failure/close erase card identity synchronously before a pending frame
+  ---
+  duration_ms: 109.3911
+  type: 'test'
+  ...
+# Subtest: all imported opaque meshes and four real card meshes are registered as direct and expanded blockers
+ok 6 - all imported opaque meshes and four real card meshes are registered as direct and expanded blockers
+  ---
+  duration_ms: 135.6659
+  type: 'test'
+  ...
+# Subtest: normal optional removal releases all 31 robot/card identities and preserves the renderer
+ok 7 - normal optional removal releases all 31 robot/card identities and preserves the renderer
+  ---
+  duration_ms: 99.7103
+  type: 'test'
+  ...
+# Subtest: cleanup/remount lifetime analogue ignores old observers, RAF and robot resolution
+ok 8 - cleanup/remount lifetime analogue ignores old observers, RAF and robot resolution
+  ---
+  duration_ms: 141.5666
+  type: 'test'
+  ...
+# CARD_RELEASE_EVIDENCE [{"type":"ExtrudeGeometry","disposals":1},{"type":"MeshStandardMaterial","disposals":0},{"type":"ExtrudeGeometry","disposals":0}]
+# Subtest: P2: one generated-card release exception must not skip independent remaining resources
+not ok 9 - P2: one generated-card release exception must not skip independent remaining resources
+  ---
+  duration_ms: 82.2118
+  type: 'test'
+  location: 'C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\review\\scene-runtime-g2\\probe.test.mjs:203:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+      [
+        1,
+    +   0,
+    +   0
+    -   1,
+    -   1
+      ]
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    0: 1
+    1: 1
+    2: 1
+  actual:
+    0: 1
+    1: 0
+    2: 0
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/scene-runtime-g2/probe.test.mjs:220:10)
+    async Test.run (node:internal/test_runner/test:1409:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+# ROOT_RELEASE_EVIDENCE {"released":0,"total":28,"detached":true,"rendererDisposals":0}
+# Subtest: P2: a throwing root removal listener must not bypass the 28 imported resource releases
+not ok 10 - P2: a throwing root removal listener must not bypass the 28 imported resource releases
+  ---
+  duration_ms: 85.3406
+  type: 'test'
+  location: 'C:\\Users\\Owenc\\orca\\Portfolio-assistant\\design\\assistant\\robot\\review\\scene-runtime-g2\\probe.test.mjs:223:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    0 !== 28
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 28
+  actual: 0
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/scene-runtime-g2/probe.test.mjs:235:10)
+    async Test.run (node:internal/test_runner/test:1409:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:974:7)
+  ...
+1..10
+# tests 10
+# suites 0
+# pass 8
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2517.3904

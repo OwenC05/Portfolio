@@ -1,0 +1,63 @@
+{
+  "at": "2026-11-18T20:09:11.260Z",
+  "checks": [
+    {
+      "command": "node --check attention.run.mjs",
+      "passed": true
+    },
+    {
+      "command": "node --check matrix-first.run.mjs",
+      "passed": true
+    },
+    {
+      "command": "node --check matrix-reverse.run.mjs",
+      "passed": true
+    },
+    {
+      "command": "node --check pin.mjs",
+      "passed": true
+    },
+    {
+      "command": "node --check resize-attribution.run.mjs",
+      "passed": true
+    },
+    {
+      "command": "node --check restore.mjs",
+      "passed": true
+    },
+    {
+      "command": "node --check summarize.mjs",
+      "passed": true
+    },
+    {
+      "command": "node --check verify.mjs",
+      "passed": true
+    },
+    {
+      "command": "node pin.mjs after",
+      "passed": true,
+      "output": "{\"stage\":\"after\",\"sourceCount\":83,\"priorEvidenceFiles\":91,\"allMatch\":true,\"buildId\":\"cFKSWm6Bayf__QstZY2CC\"}"
+    },
+    {
+      "name": "Root preview PID/creation/command unchanged",
+      "passed": true
+    },
+    {
+      "name": "All eight timing populations settled, visible, single-owner and internally consistent",
+      "passed": true
+    },
+    {
+      "name": "Exactly two requested attention states meet camera/focus/data/settle conditions",
+      "passed": true
+    },
+    {
+      "name": "Leased page restored and all private contexts closed",
+      "passed": true
+    },
+    {
+      "name": "Five image hashes match manifest",
+      "passed": true
+    }
+  ],
+  "limit": "Evidence/harness consistency checks; not production performance acceptance or independent implementation review."
+}

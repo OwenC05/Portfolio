@@ -1,0 +1,111 @@
+{
+  "sourceSha256": "8829c741ee25bbb32da8328e4d56eb43fcd40ad9eac931a49bc0bb7192d22954",
+  "parentSha256": "4b2f7b8f44e13ef2a23e6d3420f1098147702aba72a365e6a942dec7e7ccc735",
+  "scope": "CPU-only AST-extracted production guards, actual parent hierarchy/texture data and synthetic authorized replacement/mutation fixtures; no bpy import, Blender or M3 export.",
+  "regression": "Original retained-root JSON equality rejects the valid 117-to-115 direct-child fixture; semantic named substitution accepts it.",
+  "results": [
+    {
+      "name": "exact 11 proxy to 9 leaf substitution accepted",
+      "passed": true
+    },
+    {
+      "name": "semantic hierarchy survives global index reorder",
+      "passed": true
+    },
+    {
+      "name": "root transform mutation rejected",
+      "passed": true
+    },
+    {
+      "name": "retained target metadata mutation rejected",
+      "passed": false,
+      "error": "AssertionError('retained target metadata mutation rejected')"
+    },
+    {
+      "name": "missing root child rejected",
+      "passed": true
+    },
+    {
+      "name": "duplicate root child rejected",
+      "passed": true
+    },
+    {
+      "name": "duplicate node name rejected",
+      "passed": true
+    },
+    {
+      "name": "invalid child reference rejected",
+      "passed": true
+    },
+    {
+      "name": "retained leaf reparenting rejected",
+      "passed": true
+    },
+    {
+      "name": "new leaf reparenting rejected",
+      "passed": true
+    },
+    {
+      "name": "wrong default scene rejected",
+      "passed": true
+    },
+    {
+      "name": "changed scene root rejected",
+      "passed": true
+    },
+    {
+      "name": "unexpected replacement-name set rejected",
+      "passed": true
+    },
+    {
+      "name": "actual parent image and sampler graph accepted",
+      "passed": true
+    },
+    {
+      "name": "retained texture source rewire rejected",
+      "passed": true
+    },
+    {
+      "name": "sampler mutation rejected",
+      "passed": true
+    },
+    {
+      "name": "nonpalette embedded image mutation rejected",
+      "passed": true
+    },
+    {
+      "name": "exact authorized colour cells accepted",
+      "passed": true
+    },
+    {
+      "name": "exact authorized ORM cells accepted",
+      "passed": true
+    },
+    {
+      "name": "alpha-only change outside T2 rejected",
+      "passed": true
+    },
+    {
+      "name": "RGB change outside T2 rejected",
+      "passed": true
+    },
+    {
+      "name": "incorrect new-cell RGB rejected",
+      "passed": true
+    },
+    {
+      "name": "incorrect new-cell alpha rejected",
+      "passed": true
+    },
+    {
+      "name": "incorrect new-cell roughness rejected",
+      "passed": true
+    },
+    {
+      "name": "tested guards wired into export branch",
+      "passed": true
+    }
+  ],
+  "passed": 24,
+  "failed": 1
+}

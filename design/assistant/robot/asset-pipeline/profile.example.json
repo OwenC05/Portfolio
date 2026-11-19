@@ -1,0 +1,42 @@
+{
+  "profileId": "apprentice-robot-neutral-v0-draft",
+  "revision": 0,
+  "productionReady": false,
+  "status": "proposal-awaiting-A-C-root-and-Studio-owner",
+  "roomProfile": { "id": "studio-full-kit-v1", "modify": false },
+  "coordinates": {
+    "units": "metres", "authorUp": "+Z", "authorForward": "-Y",
+    "gltfUp": "+Y", "gltfForward": "+Z",
+    "blenderToGltf": [[1,0,0],[0,0,1],[0,-1,0]],
+    "rootNeutral": { "translation": [0,0,0], "rotation": [0,0,0,1], "scale": [1,1,1] },
+    "placement": { "worldUnitsPerMetre": 2, "applications": 1, "addRoomFloorOffset": false, "anchorWorld": null, "rotationXyzw": null },
+    "comparisonToleranceMetres": null
+  },
+  "provisionalSemanticNodes": {
+    "root": "APR_root", "head": "APR_head", "body": "APR_body",
+    "finLeft": "APR_fin_L", "finRight": "APR_fin_R", "tray": "APR_tray",
+    "gaze": "APR_eyes", "eyeLeft": "APR_eye_L", "eyeRight": "APR_eye_R",
+    "lidUpper": "APR_lid_upper", "lidLower": "APR_lid_lower"
+  },
+  "namesRequireAConfirmation": true,
+  "format": {
+    "glbVersion": 2, "sceneCount": 1, "rootCount": 1,
+    "externalUris": false, "images": ["image/png","image/jpeg"],
+    "primitiveMode": 4, "requiredAttributes": ["POSITION","NORMAL"],
+    "optionalDeclaredAttributes": ["TEXCOORD_0","COLOR_0"],
+    "uv0RequiredWhenTextured": true, "sparseAccessors": false,
+    "allowedExtensions": ["KHR_materials_emissive_strength"],
+    "animations": false, "skins": false, "morphs": false,
+    "cameras": false, "lights": false, "compressionDecoders": [],
+    "alphaModes": ["OPAQUE"], "doubleSidedDefault": false
+  },
+  "runtime": {
+    "motion": "finite-runtime-TRS-proposal", "eyeTechnique": "A-confirmation-pending",
+    "marks": { "baked": false, "min": 0, "max": 4, "source": "current-validated-hit-list", "overflowPolicy": null },
+    "castShadowProposal": false, "opaqueLeavesOcclude": true,
+    "importOwner": "private-per-load", "dynamicOwner": "robot-runtime-controller"
+  },
+  "parserSafetyCaps": { "rawBytes": null, "nodes": null, "depth": null, "accessors": null, "imagePixels": null },
+  "allocation": { "approved": false, "encodedGlbBytes": null, "assistantJsBytes": null, "dynamicEyesMarksBytes": null, "peakCalls": null, "peakRenderedTriangles": null, "texturePixels": null },
+  "wholeSceneHardGates": { "encodedSceneJsAndAssetsBytes": 1500000, "peakCalls": 200, "peakRenderedTriangles": 200000, "shadowLights": 1 }
+}

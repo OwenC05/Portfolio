@@ -1,0 +1,214 @@
+{
+  "studyId": "portfolio-source-navigation-challenge-2026-11-15",
+  "catalogVersion": "2026-11-15.2",
+  "authorship": "Independently authored by the dispatched evaluation worker before reading retrieval implementation, loader, evaluation scripts or existing fixtures; informed by the published catalog and documented public behavior.",
+  "preFreezeInputs": [
+    "lib/knowledge/catalog.ts (entire publication allowlist)",
+    "docs/assistant-delivery.md (public behavior, publishing limits and interface direction)",
+    "docs/assistant-architecture.md (heading/public-behavior search excerpts, documented passage-ID convention and no-hit/premise policy)",
+    "README.md (heading search only)",
+    "Dispatch task and supplied AGENTS.md instructions"
+  ],
+  "scope": "A small catalog-informed challenge of the current source-search selection, not an unbiased general benchmark, semantic answer evaluation or UI/policy enforcement test. Generation remains off.",
+  "scoring": {
+    "execution": "Call the current exported retrieval entry point with each standalone question and its existing default options using the repository TypeScript test loader. Do not tune retrieval or inspect results before freezing this set.",
+    "passageIdConvention": "record-id:section-id:0; each expected section fits in the documented first slice",
+    "groupHit": "A requiredEvidenceGroups entry passes when at least one listed passage ID is in the returned selected passages. Rank and numeric scores do not affect pass/fail.",
+    "questionPass": "A scored question passes only when every required evidence group is hit; partial group coverage is reported separately. Empty requiredEvidenceGroups means observation-only, excluded from pass-rate denominators.",
+    "denominators": "Report scored-question passes/19 and required-evidence-group hits/22; also report per-answerability counts. Do not convert observation-only questions into passes.",
+    "unsupportedHandling": "For unsupported and misleading questions, a required group targets an explicit published limit or correction, not evidence that the requested fact or premise is true. Related sources may be returned. No question requires an empty result, and no selected passage is treated as a generated answer.",
+    "unscoredObservations": "Save all selected passage IDs, source IDs, exact text, links and returned scores; note empty selections and unexpected topics descriptively. There is no precision, rank, confidence, latency, abstention or generated-answer-quality target.",
+    "freezePolicy": "Hash the exact bytes and record catalog version plus a catalog file hash before reading implementation or fixtures and before any retrieval execution. Do not change questions, groups or scoring after results. Later development use turns this into regression evidence."
+  },
+  "questions": [
+    {
+      "id": "C01",
+      "question": "I'm hiring for a role that mixes building software with applied AI. What is Owen's background, and has he worked with customers?",
+      "tags": ["broad career", "mixed sources"],
+      "answerability": "qualified",
+      "explanation": "The public profile supplies education and technical focus; the employment account supplies customer-facing experience. These are owner-reported accounts, not independent verification or a hiring recommendation.",
+      "expectedSourceIds": ["about-owen", "lexisnexis"],
+      "requiredEvidenceGroups": [
+        {"id": "background", "kind": "support", "anyOf": ["about-owen:about-owen-background:0"]},
+        {"id": "customer-work", "kind": "support", "anyOf": ["lexisnexis:lexisnexis-role:0"]}
+      ]
+    },
+    {
+      "id": "C02",
+      "question": "After his student placement, did Owen stay on with the same employer, and what did he do next?",
+      "tags": ["career chronology", "paraphrase"],
+      "answerability": "supported",
+      "explanation": "The employment chronology explicitly covers the transition from placement to AI engineering contractor, including dates; broader subsequent career history is not implied.",
+      "expectedSourceIds": ["lexisnexis"],
+      "requiredEvidenceGroups": [{"id": "continuing-role", "kind": "support", "anyOf": ["lexisnexis:lexisnexis-role:0"]}]
+    },
+    {
+      "id": "C03",
+      "question": "Which language and data platform did he use for financial analysis at LexisNexis?",
+      "tags": ["narrow tooling"],
+      "answerability": "supported",
+      "explanation": "The role passage names Python, SQL and Snowflake for financial-data analysis. It does not publish employer datasets or quantitative outcomes.",
+      "expectedSourceIds": ["lexisnexis"],
+      "requiredEvidenceGroups": [{"id": "analysis-tools", "kind": "support", "anyOf": ["lexisnexis:lexisnexis-role:0"]}]
+    },
+    {
+      "id": "C04",
+      "question": "How has he helped colleagues get usable rules out of boosted-tree models?",
+      "tags": ["narrow tooling", "paraphrase"],
+      "answerability": "supported",
+      "explanation": "The tooling passage describes improving LightGBM rule mining for team data scientists. It supports an activity-level account only; numerical improvement is explicitly absent.",
+      "expectedSourceIds": ["lexisnexis"],
+      "requiredEvidenceGroups": [{"id": "rule-mining", "kind": "support", "anyOf": ["lexisnexis:lexisnexis-tooling:0"]}]
+    },
+    {
+      "id": "C05",
+      "question": "Is the employer AI project a funded trial, or is it already rolled out across the whole organisation?",
+      "tags": ["career", "scope distinction", "paraphrase"],
+      "answerability": "qualified",
+      "explanation": "The pilot passage reports a funded internal pilot and explicitly distinguishes intended organisational scope from established deployment or tested production scale.",
+      "expectedSourceIds": ["lexisnexis"],
+      "requiredEvidenceGroups": [{"id": "pilot-scope", "kind": "support-and-limit", "anyOf": ["lexisnexis:lexisnexis-pilot:0"]}]
+    },
+    {
+      "id": "C06",
+      "question": "If an application-drafting step is repeated or interrupted, what engineering choices make the workflow inspectable?",
+      "tags": ["narrow engineering", "paraphrase", "recovery qualification"],
+      "answerability": "qualified",
+      "explanation": "Copilot describes durable jobs, explicit state and idempotency. Its validation caveat is also needed because full end-to-end recovery remains unqualified; the question must not become a claim that interruption recovery is proven.",
+      "expectedSourceIds": ["copilot"],
+      "requiredEvidenceGroups": [
+        {"id": "workflow-mechanisms", "kind": "support", "anyOf": ["copilot:copilot-engineering:0"]},
+        {"id": "recovery-limit", "kind": "limit", "anyOf": ["copilot:copilot-limits:0"]}
+      ]
+    },
+    {
+      "id": "C07",
+      "question": "For his language-model comparison, did both sides receive the same questions and settings?",
+      "tags": ["research method", "paraphrase"],
+      "answerability": "supported",
+      "explanation": "The preparatory dissertation method passage explicitly records matched questions and generation settings. This is evidence about a small teaching comparison, not dissertation novelty or model superiority.",
+      "expectedSourceIds": ["dissertation"],
+      "requiredEvidenceGroups": [{"id": "matched-comparison", "kind": "support", "anyOf": ["dissertation:dissertation-method:0"]}]
+    },
+    {
+      "id": "C08",
+      "question": "What went wrong when he first ran the small language model, and how did he catch invalid numeric output?",
+      "tags": ["debugging evidence", "paraphrase"],
+      "answerability": "supported",
+      "explanation": "The observations passage records unusable output, nonfinite scores, a corrected attention configuration and a guard; it does not expose all diagnostic details or exact configuration values.",
+      "expectedSourceIds": ["dissertation"],
+      "requiredEvidenceGroups": [{"id": "numeric-failure", "kind": "support", "anyOf": ["dissertation:dissertation-observations:0"]}]
+    },
+    {
+      "id": "C09",
+      "question": "What exactly does the typing model predict, and does that demonstrate people learn to type faster?",
+      "tags": ["model task", "benefit qualification"],
+      "answerability": "qualified",
+      "explanation": "TypeForge's limits identify transition-timing prediction and explicitly say learning and user benefit are not established by that benchmark.",
+      "expectedSourceIds": ["typeforge"],
+      "requiredEvidenceGroups": [{"id": "prediction-versus-benefit", "kind": "support-and-limit", "anyOf": ["typeforge:typeforge-limits:0"]}]
+    },
+    {
+      "id": "C10",
+      "question": "Can the typing tool keep data on my device, and what stage is the product at?",
+      "tags": ["product behavior", "mixed facets"],
+      "answerability": "qualified",
+      "explanation": "The product passage describes browser-local interaction and on-device storage; the limits passage explicitly marks work in development rather than a completed release. This is not a security audit.",
+      "expectedSourceIds": ["typeforge"],
+      "requiredEvidenceGroups": [
+        {"id": "device-storage", "kind": "support", "anyOf": ["typeforge:typeforge-product:0"]},
+        {"id": "development-status", "kind": "limit", "anyOf": ["typeforge:typeforge-limits:0"]}
+      ]
+    },
+    {
+      "id": "C11",
+      "question": "Why am I seeing extracts rather than a reply written by the bot, and can I check where they came from?",
+      "tags": ["public assistant behavior", "paraphrase"],
+      "answerability": "supported",
+      "explanation": "The assistant's current-behavior passage says generated answers are off and source excerpts have citations. This evaluates locating that explanation, not whether the running UI actually obeys it.",
+      "expectedSourceIds": ["portfolio-assistant"],
+      "requiredEvidenceGroups": [{"id": "source-only-explanation", "kind": "support", "anyOf": ["portfolio-assistant:portfolio-assistant-design:0"]}]
+    },
+    {
+      "id": "C12",
+      "question": "When is Owen due to finish university, and what is he studying?",
+      "tags": ["background", "paraphrase"],
+      "answerability": "supported",
+      "explanation": "The profile gives degree subject, university and expected graduation year; expected graduation is not a claim that he has already graduated.",
+      "expectedSourceIds": ["about-owen"],
+      "requiredEvidenceGroups": [{"id": "education", "kind": "support", "anyOf": ["about-owen:about-owen-background:0"]}]
+    },
+    {
+      "id": "C13",
+      "question": "When he's away from programming, what does Owen like doing?",
+      "tags": ["personal background", "paraphrase"],
+      "answerability": "supported",
+      "explanation": "The interests passage lists leisure activities. It does not support specific equipment, artist or destination preferences.",
+      "expectedSourceIds": ["about-owen"],
+      "requiredEvidenceGroups": [{"id": "leisure-interests", "kind": "support", "anyOf": ["about-owen:about-owen-interests:0"]}]
+    },
+    {
+      "id": "C14",
+      "question": "Which paper most changed Owen's approach, and where can I read his personal take on it?",
+      "tags": ["missing writing", "personal view"],
+      "answerability": "unsupported",
+      "explanation": "No individual paper title or personal interpretation is supplied. The reading passage explicitly states that gap; it is a useful boundary locator, not an answer to which paper. Contact Owen for the missing view.",
+      "expectedSourceIds": ["about-owen"],
+      "requiredEvidenceGroups": [{"id": "unpublished-reading-view", "kind": "limit", "anyOf": ["about-owen:about-owen-reading:0"]}]
+    },
+    {
+      "id": "C15",
+      "question": "What brand of espresso machine does he recommend for a beginner?",
+      "tags": ["missing preference", "paraphrase"],
+      "answerability": "unsupported",
+      "explanation": "Coffee is a listed interest, but no equipment preference or recommendation is published. The interests caveat is the target boundary locator; coffee-related retrieval cannot establish a recommendation. Contact Owen.",
+      "expectedSourceIds": ["about-owen"],
+      "requiredEvidenceGroups": [{"id": "no-equipment-preference", "kind": "limit", "anyOf": ["about-owen:about-owen-interests:0"]}]
+    },
+    {
+      "id": "C16",
+      "question": "Is Owen available for a freelance project next month, and what is his day rate?",
+      "tags": ["missing commercial details", "career"],
+      "answerability": "unsupported",
+      "explanation": "The catalog contains neither availability nor pricing and has no specific published caveat about them. Contact Owen; any related career or profile selections are observations only and do not supply either fact.",
+      "expectedSourceIds": [],
+      "requiredEvidenceGroups": []
+    },
+    {
+      "id": "C17",
+      "question": "Can I see the names of his employer's customers and their fraud-detection results?",
+      "tags": ["missing evidence", "disclosure limits"],
+      "answerability": "unsupported",
+      "explanation": "The LexisNexis disclosure passage explicitly withholds customer identities and internal evaluation results. It supports the publication boundary only, not the requested details; contact Owen for what can be shared.",
+      "expectedSourceIds": ["lexisnexis"],
+      "requiredEvidenceGroups": [{"id": "employer-disclosure-limit", "kind": "limit", "anyOf": ["lexisnexis:lexisnexis-limits:0"]}]
+    },
+    {
+      "id": "C18",
+      "question": "Which reinforcement-learning agent did Owen train, and what score did it achieve?",
+      "tags": ["misleading premise", "research"],
+      "answerability": "misleading-premise",
+      "explanation": "The coursework status explicitly does not claim an agent was trained or a score achieved. Retrieving that correction is useful; topical coursework sources do not confirm the premise.",
+      "expectedSourceIds": ["reinforcement-learning"],
+      "requiredEvidenceGroups": [{"id": "no-training-or-score-claim", "kind": "correction", "anyOf": ["reinforcement-learning:reinforcement-learning-status:0"]}]
+    },
+    {
+      "id": "C19",
+      "question": "Now that the portfolio assistant's small-model training has improved answer quality, how big was the gain?",
+      "tags": ["misleading premise", "adaptation"],
+      "answerability": "misleading-premise",
+      "explanation": "The assistant evaluation passage says adaptation is only planned and no training or improvement is claimed. The requested gain has no published support; the target is the explicit correction.",
+      "expectedSourceIds": ["portfolio-assistant"],
+      "requiredEvidenceGroups": [{"id": "no-adaptation-gain-claim", "kind": "correction", "anyOf": ["portfolio-assistant:portfolio-assistant-evaluation:0"]}]
+    },
+    {
+      "id": "C20",
+      "question": "What did his Qwen exercise show about citations, and what does he personally think about letting AI make hiring decisions?",
+      "tags": ["mixed topics", "supported fact plus missing view"],
+      "answerability": "mixed",
+      "explanation": "The dissertation observations describe unrelated paragraph citations and distinguish finding from supporting evidence. No personal hiring-policy view is published; only the first clause has a scored evidence target, and the second needs contact with Owen rather than inference from his projects.",
+      "expectedSourceIds": ["dissertation"],
+      "requiredEvidenceGroups": [{"id": "citation-observation", "kind": "support", "anyOf": ["dissertation:dissertation-observations:0"]}]
+    }
+  ]
+}

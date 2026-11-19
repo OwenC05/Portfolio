@@ -1,0 +1,70 @@
+{
+    "purpose":  "Preserve exact pre-v2 source bytes and compare scoped changes; not a Git commit or complete machine backup.",
+    "files":  [
+                  {
+                      "path":  "app/globals.css",
+                      "sha256":  "38A5427299238E2BE46AD5062E798EF3C68D13DFA884A1272BFDB2C55946F13F"
+                  },
+                  {
+                      "path":  "app/studio/page.tsx",
+                      "sha256":  "7A3E95A799A27041229ED70F496607B376D9097BB5A0D0194C186F0DD1A66152"
+                  },
+                  {
+                      "path":  "app/studio/studio.module.css",
+                      "sha256":  "30BA6D8C4AC62F3F7A9120D41D7774B531E53891A504634ED91E2EF62DF052AC"
+                  },
+                  {
+                      "path":  "components/studio/ProjectEvidence.tsx",
+                      "sha256":  "078C749B8BAD50D88DCD47EC29CD9CF97A5C3621B3E98D21FAD455B3420905C5"
+                  },
+                  {
+                      "path":  "components/studio/StudioExperience.tsx",
+                      "sha256":  "E186AC78ACFC51583BE852B115046E28CFD20779F23AF5F6EAA2F0C83E6D15D1"
+                  },
+                  {
+                      "path":  "components/studio/StudioScene.tsx",
+                      "sha256":  "29586D8A880AD079627E9E8D670F46A60C4614B221B17BBCEFEB54112327E5AC"
+                  },
+                  {
+                      "path":  "components/studio/scene/build-studio.ts",
+                      "sha256":  "DBAF86527A207C09DB45F19125316FD8C929B97CFE16B14E52CC25B6D386DDEE"
+                  },
+                  {
+                      "path":  "components/studio/scene/controller.ts",
+                      "sha256":  "728C12AFFD53A069FD684A725C53CEB39A046AD569A43314A9AC2DD5348222B0"
+                  },
+                  {
+                      "path":  "components/studio/scene/resources.ts",
+                      "sha256":  "756A26FBA1840696FD7B8F0A24DFA588A50488A55FBC99BEC60CA3C0E14CB509"
+                  },
+                  {
+                      "path":  "components/studio/scene/textures.ts",
+                      "sha256":  "EF7E5E025D21DEB88350B79A994DFB5AB1D9A1296D57EB0000CFDE813FB2BC84"
+                  },
+                  {
+                      "path":  "components/studio/scene/types.ts",
+                      "sha256":  "F5A0A0F6F174124FF6C0ABBFD6C9BEF46E6FB6BCC4900404719B4928C4FEF5C6"
+                  },
+                  {
+                      "path":  "components/studio/scene/verify-controller.mjs",
+                      "sha256":  "D26A7F4EB94678F1DBA7C32922F1FF35F3019231E71A712117E5E3D1AB49E2C4"
+                  },
+                  {
+                      "path":  "lib/studio-content.ts",
+                      "sha256":  "36E08B40CFB779F3F05CC17623766F1A2FB7B8F876CAC73AC9B12DB381764662"
+                  },
+                  {
+                      "path":  "lib/studio-contract.ts",
+                      "sha256":  "7F00624980E4E89ECFF7E90ABF371595FE8A0DDF3CDC0401DB4B679A872A9097"
+                  },
+                  {
+                      "path":  "package.json",
+                      "sha256":  "74B49915FAC2EE8CD0F896A1AAADBAB0FD68427B52D31979F4DED4273A133D54"
+                  },
+                  {
+                      "path":  "package-lock.json",
+                      "sha256":  "E2D26D355BF292C7C880469AD295B7CB9356F51136ECC5D7F79BA0A15B34515D"
+                  }
+              ],
+    "createdUTC":  "2026-11-14T22:20:28.8218997Z"
+}

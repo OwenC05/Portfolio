@@ -1,0 +1,22 @@
+{
+  "scope": "Bounded writer-side guard checks, not independent review",
+  "passed": true,
+  "checks": [
+    {
+      "check": "pure replay reproduces candidate exactly",
+      "passed": true
+    },
+    {
+      "check": "wrong raw hash",
+      "passed": true
+    },
+    {
+      "check": "wrong parent hash",
+      "passed": true
+    },
+    {
+      "check": "existing output refused before writes",
+      "passed": true
+    }
+  ]
+}

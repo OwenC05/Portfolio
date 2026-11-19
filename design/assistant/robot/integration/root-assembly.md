@@ -1,0 +1,15 @@
+# Root Studio assembly, source checkpoint
+
+18 November 2026. Root-owned implementation in `components/studio/StudioExperience.tsx`. G1 and repaired G3 have independent source PASS; G2 scene implementation continues against its frozen optional interface. This checkpoint has not been built or browser-tested and is not runtime acceptance.
+
+The component mounts `useAssistantRun()` once with default generation disabled. A single panel discriminant and increasing epoch arbitrate project, assistant and closed states. The HTML panel and optional scene input receive the same immutable snapshot object. The draft survives close/reopen, while leaving the assistant synchronously calls `actions.close()` to invalidate/abort and clear its results before changing panels.
+
+The existing native dialog remains the only modal. Assistant opening focuses its heading, retains the URL and collapses the project list. Project URL/navigation takes precedence, refuses competing Ask activation, and replaces assistant content without a root-issued intermediate Ask focus return. Ordinary assistant close returns to the persistent HTML entry, including canvas-origin opens. Source/history navigation clears the assistant and allows destination focus. Existing project history/scroll helpers remain unchanged. Programmatic native close events are tracked so delayed events cannot close a reopened panel.
+
+Ask is available whenever dialog enhancement succeeds, independently of WebGL status. The existing server `/ask` link remains available without enhancement. An assistant `showModal()` failure clears the session and navigates to `/ask`; project fallback still reveals the server-rendered article. Scene input is disabled for either modal. HTML Ask focus and robot hover supply the attention hint; only Studio mounts the feature.
+
+Only the root assembly file changed. Original baseline SHA-256: `4e8628d8b91c840a494174d559e30b7967bc062f773aa37d74f53f3094891e16`; a private copy is retained at `.omx/artifacts/StudioExperience.pre-g4.tsx`. The current source hash and independent review will identify the reviewed candidate. G2 owns all scene/contract edits; Claude's repaired UI files remain unchanged.
+
+Initial direct `tsc --noEmit --incremental false` and scoped ESLint passed. Prettier was applied to this file only. These checks establish source compatibility, not React scheduling, dialog/focus, browser layout or G2 runtime correctness.
+
+Next: independent assembly review with focused actual-component probes, then one fresh build after G2 hands back stable scene sources. Root owns the production-preview/build lease and browser helpers. Required browser checks include shared-snapshot identity/clearing, delayed response cancellation, stale close events, project takeover and Back/Forward, heading/return focus, chip keyboard behavior, no-WebGL/no-JS fallback, mobile layout/keyboard and current `/ask` Retry/caption fixes. No current preview should be described as containing this new assembly until its build identity is recorded.

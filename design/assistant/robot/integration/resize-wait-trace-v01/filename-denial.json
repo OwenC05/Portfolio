@@ -1,0 +1,9 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "### Error\nError: File access denied: C:\\Users\\Owenc\\orca\\Portfolio\\.playwright-mcp\\robot-resize-wait-trace-v01\\trace.run.mjs is outside allowed roots. Allowed roots: C:\\Users\\Owenc\\orca\\Portfolio-assistant\\.playwright-mcp, C:\\Users\\Owenc\\orca\\Portfolio-assistant"
+    }
+  ],
+  "isError": true
+}

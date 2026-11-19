@@ -1,0 +1,31 @@
+{
+  "status": "PASS-offline-asset-structure-not-production-acceptance",
+  "measurements": {
+    "rawGlbBytes": 673280,
+    "gzipBytes": 483011,
+    "brotliBytes": 336172,
+    "triangles": 37676,
+    "exportedVertexRecords": 19131,
+    "nodes": 22,
+    "meshes": 21,
+    "materials": 7,
+    "primitives": 21,
+    "textures": 0,
+    "animations": 0
+  },
+  "bounds": {
+    "min": [
+      -0.13927824888378382,
+      -0.23599659092724323,
+      -0.133880446664989
+    ],
+    "max": [
+      0.13787991914432496,
+      0.3456544801592827,
+      0.12633870140416548
+    ]
+  },
+  "sweepPadding": 0.0013941260623603878,
+  "pupilMaxEllipse": 0.47530087288854367,
+  "minimumPupilLidGap": 0.005575348263050545
+}

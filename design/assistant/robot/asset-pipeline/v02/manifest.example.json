@@ -1,0 +1,314 @@
+{
+  "manifestVersion": 1,
+  "status": "candidate-v02-design-handoff-not-exported",
+  "productionReady": false,
+  "candidateId": "apprentice-blockout-v02",
+  "profile": {
+    "path": "profile.example.json",
+    "id": "apprentice-robot-neutral-candidate-v02-draft",
+    "sha256": "fb442b03fdb0726a3b6a9b76be536cff55ce12b34a35de43ebbcba004aa6787b"
+  },
+  "design": {
+    "version": "v02-after-D1-text-alignment",
+    "specPath": "../../apprentice/design-spec.md",
+    "sha256": "00474adfac3e349ce7dfd1ca2b28aeb831a3e79906427d5cb5fb4274f3d303f6",
+    "sourceBlend": {
+      "relativePath": "../../apprentice/blockout-v02/apprentice-blockout-v02.blend",
+      "bytes": 303382,
+      "sha256": "ac48061fa08e53008be541e14f9e970c1bef9710089804c9fac17a683e1d7e1c"
+    },
+    "authorScript": {
+      "relativePath": "../../apprentice/blockout-v02/build_apprentice_blockout_v02.py",
+      "bytes": 31380,
+      "sha256": "2fd5ecdf58dd9d0298eddee2beea5af613189bbe2836dbe87f1b73b26fc6709b"
+    },
+    "passport": {
+      "relativePath": "../../apprentice/blockout-v02/README.md",
+      "bytes": 9515,
+      "sha256": "c6437173a403ab96eda415c794f4a8167844c56094cacfc7ae8ca88bef29e589"
+    },
+    "review": {
+      "relativePath": "../../review/blockout-v02/review.md",
+      "bytes": 11637,
+      "sha256": "50f285bb6c3ce18b17c4099dbb84a127866f3eabe3d5dffcb1d42b45c0c58043"
+    },
+    "verdict": "PASS-isolated-concept-only",
+    "appearanceApproval": null,
+    "placementApproval": null
+  },
+  "target": {
+    "roomGlbSha256": null,
+    "cameraSourceSha256": null,
+    "buildRevision": null
+  },
+  "files": {
+    "sourceBlend": {
+      "relativePath": "../../apprentice/blockout-v02/apprentice-blockout-v02.blend",
+      "bytes": 303382,
+      "sha256": "ac48061fa08e53008be541e14f9e970c1bef9710089804c9fac17a683e1d7e1c",
+      "purpose": "concept-source-not-cleaned-production-source"
+    },
+    "authorScript": {
+      "relativePath": "../../apprentice/blockout-v02/build_apprentice_blockout_v02.py",
+      "bytes": 31380,
+      "sha256": "2fd5ecdf58dd9d0298eddee2beea5af613189bbe2836dbe87f1b73b26fc6709b",
+      "purpose": "blockout-and-demonstration-authoring-not-export-script"
+    },
+    "providerRawGlb": null,
+    "cleanupBlend": null,
+    "exportGlb": null
+  },
+  "fileRecordShape": [
+    "relativePath",
+    "bytes",
+    "sha256"
+  ],
+  "provider": {
+    "tool": null,
+    "geometryModel": null,
+    "textureModel": null,
+    "settings": null,
+    "inputHashes": [],
+    "taskId": null,
+    "taskType": null,
+    "status": "not-submitted",
+    "submittedAt": null,
+    "completedAt": null,
+    "quotedCredits": null,
+    "authorizedLimitCredits": null,
+    "chargedCredits": null
+  },
+  "export": {
+    "blenderVersion": null,
+    "blenderBuildHash": null,
+    "exporterSourceSha256": null,
+    "settings": null,
+    "neutralFrame": null
+  },
+  "coordinates": {
+    "profileDefined": true,
+    "anchorWorld": null,
+    "placementRotationXyzw": null,
+    "neutralBoundsGltfMetres": null,
+    "sweptBoundsWithEyesAndMarksGltfMetres": null,
+    "heldClearanceProposal": {
+      "dimensionsBlenderMetres": [
+        0.42,
+        0.28,
+        0.52
+      ],
+      "centreBlenderMetres": [
+        0,
+        -0.012,
+        -0.04
+      ],
+      "minBlenderMetres": [
+        -0.21,
+        -0.152,
+        -0.3
+      ],
+      "maxBlenderMetres": [
+        0.21,
+        0.128,
+        0.22
+      ],
+      "dimensionsGltfMetres": [
+        0.42,
+        0.52,
+        0.28
+      ],
+      "centreGltfMetres": [
+        0,
+        -0.04,
+        0.012
+      ],
+      "minGltfMetres": [
+        -0.21,
+        -0.3,
+        -0.128
+      ],
+      "maxGltfMetres": [
+        0.21,
+        0.22,
+        0.152
+      ],
+      "evidence": "Author-held-pose-proposal; tray envelope arithmetic independently recomputed; not a new geometry measurement",
+      "fullSweptBoundsGltfMetres": null,
+      "selectedMarkerEnlargementCovered": null,
+      "roomClearanceAccepted": false
+    }
+  },
+  "nodes": [],
+  "nodeRecordShape": [
+    "name",
+    "parent",
+    "semanticRole",
+    "translation",
+    "rotationXyzw",
+    "scale",
+    "meshIndex",
+    "materialIndices",
+    "occluder",
+    "nocast",
+    "receiveShadow"
+  ],
+  "materials": [],
+  "materialRecordShape": [
+    "index",
+    "name",
+    "alphaMode",
+    "doubleSided",
+    "factors",
+    "requiredTextureSlots",
+    "extensions"
+  ],
+  "textures": [],
+  "textureRecordShape": [
+    "imageIndex",
+    "mimeType",
+    "width",
+    "height",
+    "encodedBytes",
+    "sha256",
+    "referencedSlots",
+    "decodeEvidence"
+  ],
+  "clips": [],
+  "clipRecordShape": [
+    "name",
+    "durationSeconds",
+    "fps",
+    "targets",
+    "interpolation",
+    "keyCount",
+    "loop",
+    "eventBinding",
+    "restPose",
+    "settledPose",
+    "sweptBounds"
+  ],
+  "counts": {
+    "uniqueTriangles": null,
+    "placedTriangles": null,
+    "primitiveInstances": null,
+    "mainPassForecast": null,
+    "refreshPassForecast": null,
+    "weightedTrianglesForecast": null,
+    "runtimePeakCalls": null,
+    "runtimePeakTriangles": null,
+    "dynamicEyesMarksDelta": null
+  },
+  "sizes": {
+    "rawGlbBytes": null,
+    "gzip": {
+      "bytes": null,
+      "sha256": null,
+      "settings": null
+    },
+    "brotli": {
+      "bytes": null,
+      "sha256": null,
+      "settings": null
+    },
+    "uniqueImagePixels": null,
+    "estimatedDecodedTextureBytes": null,
+    "encodedAssistantJsDeltaBytes": null
+  },
+  "validation": {
+    "profileReport": null,
+    "browserDecode": null,
+    "rendererEvidence": null,
+    "lifecycleEvidence": null,
+    "independentVisualVerdict": {
+      "relativePath": "../../review/blockout-v02/review.md",
+      "bytes": 11637,
+      "sha256": "50f285bb6c3ce18b17c4099dbb84a127866f3eabe3d5dffcb1d42b45c0c58043",
+      "scope": "isolated-concept-only",
+      "runtimeOrExportAcceptance": false
+    },
+    "rootAcceptance": null
+  },
+  "exportCandidateId": null,
+  "derivedFrom": {
+    "relativePath": "../manifest.example.json",
+    "bytes": 2551,
+    "sha256": "2fd563fb63b624906b64db5cbd375433ff07af6887466b79aedaa43f4add8e0e"
+  },
+  "expectedBindingNodes": [
+    {
+      "name": "APR_root",
+      "parent": null,
+      "moving": true
+    },
+    {
+      "name": "APR_head",
+      "parent": "APR_root",
+      "moving": true
+    },
+    {
+      "name": "APR_visor",
+      "parent": "APR_head",
+      "moving": false
+    },
+    {
+      "name": "APR_ear_L",
+      "parent": "APR_head",
+      "moving": false
+    },
+    {
+      "name": "APR_ear_R",
+      "parent": "APR_head",
+      "moving": false
+    },
+    {
+      "name": "APR_eyes",
+      "parent": "APR_head",
+      "moving": true
+    },
+    {
+      "name": "APR_eye_L",
+      "parent": "APR_eyes",
+      "moving": false
+    },
+    {
+      "name": "APR_eye_R",
+      "parent": "APR_eyes",
+      "moving": false
+    },
+    {
+      "name": "APR_lid_lower",
+      "parent": "APR_eyes",
+      "moving": true
+    },
+    {
+      "name": "APR_body",
+      "parent": "APR_root",
+      "moving": true
+    },
+    {
+      "name": "APR_badge",
+      "parent": "APR_body",
+      "moving": false
+    },
+    {
+      "name": "APR_fin_L",
+      "parent": "APR_body",
+      "moving": true
+    },
+    {
+      "name": "APR_fin_R",
+      "parent": "APR_body",
+      "moving": true
+    },
+    {
+      "name": "APR_tray",
+      "parent": "APR_root",
+      "moving": true
+    },
+    {
+      "name": "APR_tray_glow",
+      "parent": "APR_tray",
+      "moving": false
+    }
+  ]
+}

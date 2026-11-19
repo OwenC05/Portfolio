@@ -1,0 +1,70 @@
+{
+  "buildId": "XH_oOqBftWO8em8L7m4E6",
+  "checks": [
+    {
+      "name": "Settled idle scene does not continuously render",
+      "passed": true
+    },
+    {
+      "name": "Keyboard Ask focuses the substantive heading",
+      "passed": true
+    },
+    {
+      "name": "Tab remains inside the native assistant dialog",
+      "passed": true
+    },
+    {
+      "name": "Real source query renders four source chips and cards",
+      "passed": true
+    },
+    {
+      "name": "Left arrow wraps focus without selecting or submitting",
+      "passed": true
+    },
+    {
+      "name": "Enter selects source four and focuses its disclosure",
+      "passed": true
+    },
+    {
+      "name": "Submitting pending work clears every previous row and rendered card",
+      "passed": true
+    },
+    {
+      "name": "Cancel aborts and focuses persistent Search",
+      "passed": true
+    },
+    {
+      "name": "Failure has one alert, no stale sources and no duplicate status text",
+      "passed": true
+    }
+  ],
+  "observations": {
+    "idle": {
+      "before": "122",
+      "after": "122"
+    },
+    "robotActivation": "Skipped here: the separate lifecycle/native-click-diagnostic.json preserves a valid trusted robot click that did not open Ask. Runtime repair required.",
+    "selected": {
+      "engine": "three.js r187",
+      "studioInteractionEnabled": "false",
+      "studioYaw": "-4",
+      "studioPitch": "-6",
+      "studioEye": "-0.7,2.8,3.4",
+      "studioFov": "58",
+      "studioDpr": "1.0000000149011612",
+      "studioRenderCount": "148",
+      "studioDrawCalls": "98",
+      "studioTriangles": "94816",
+      "studioGeometries": "40",
+      "studioTextures": "12",
+      "assistantRunId": "34adacd6-37a4-465c-a6e7-291cacecbfcf:3",
+      "assistantRevision": "23",
+      "assistantCardCount": "4"
+    },
+    "error": "Error: Command failed: orca wait --text No matching sources --page 0c891a8f-5ffd-4c83-a292-da00ef2ccf26 --json"
+  },
+  "limits": [
+    "Controlled pending/error fetches test state handling, not provider quality.",
+    "Real Chromium input and native navigation; no physical touch, screen reader, full pose sweep, GPU lifetime or full performance certification."
+  ]
+}

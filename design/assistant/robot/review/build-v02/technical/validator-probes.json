@@ -1,0 +1,127 @@
+{
+  "sourceValidatorSha256": "dc1231aa8c824a184582a69fd6b7d7603c2de979ff5e05e6421a3e2ace5ea0ad",
+  "sourceContractGuardSha256": "b65ea4dbf9dcd034791b53203d41c98de5d94abaccffef0fb0aca3e4b13b3a87",
+  "candidateUnchanged": true,
+  "scope": "exact copied validator; no execution or writes in source build directory",
+  "results": [
+    {
+      "name": "control-unmodified",
+      "expected": "accept",
+      "actual": "accept",
+      "exitCode": 0,
+      "guardCaught": true,
+      "stdout": "{\n  \"status\": \"PASS-offline-asset-structure-not-production-acceptance\",\n  \"measurements\": {\n    \"rawGlbBytes\": 673268,\n    \"gzipBytes\": 483001,\n    \"brotliBytes\": 335697,\n    \"triangles\": 37676,\n    \"exportedVertexRecords\": 19131,\n    \"nodes\": 22,\n    \"meshes\": 21,\n    \"materials\": 7,\n    \"primitives\": 21,\n    \"textures\": 0,\n    \"animations\": 0\n  },\n  \"bounds\": {\n    \"min\": [\n      -0.13927824888378382,\n      -0.23599659092724323,\n      -0.133880446664989\n    ],\n    \"max\": [\n      0.13787991914432496,\n      0.3456544801592827,\n      0.12633870140416548\n    ]\n  },\n  \"sweepPadding\": 0.0013941260623603878,\n  \"pupilMaxEllipse\": 0.47530087288854367,\n  \"minimumPupilLidGap\": 0.005575348263050545\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "wrong-gltf-pose",
+      "expected": "reject",
+      "actual": "reject",
+      "exitCode": 1,
+      "guardCaught": true,
+      "stdout": "",
+      "stderr": "node:internal/modules/run_main:107\r\n    triggerUncaughtException(\r\n    ^\r\n\r\nAssertionError [ERR_ASSERTION]: mismatch 20,30,40 / -0.0015689143911004066,-0.24155478322505952,0.02713273350102827\r\n    at file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/build-v02/technical/validator-copy/validate_contract.mjs:4:70\r\n    at Array.forEach (<anonymous>)\r\n    at near (file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/build-v02/technical/validator-copy/validate_contract.mjs:4:48)\r\n    at compare (file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/build-v02/technical/validator-copy/validate_contract.mjs:7:41)\r\n    at checkRuntime (file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/build-v02/technical/validator-copy/validate_contract.mjs:30:308)\r\n    at file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/build-v02/technical/validator-copy/validate_asset.mjs:93:21\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)\r\n    at async node:internal/modules/esm/loader:647:26\r\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {\r\n  generatedMessage: false,\r\n  code: 'ERR_ASSERTION',\r\n  actual: false,\r\n  expected: true,\r\n  operator: '==',\r\n  diff: 'simple'\r\n}\r\n\r\nNode.js v24.21.0\r\n"
+    },
+    {
+      "name": "fabricated-sampled-envelope",
+      "expected": "reject",
+      "actual": "reject",
+      "exitCode": 1,
+      "guardCaught": true,
+      "stdout": "",
+      "stderr": "node:internal/modules/run_main:107\r\n    triggerUncaughtException(\r\n    ^\r\n\r\nAssertionError [ERR_ASSERTION]: mismatch 0,0,0 / -0.15471808746770888,-0.15245652335445634,-0.2760609921932848\r\n    at file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/build-v02/technical/validator-copy/validate_contract.mjs:4:70\r\n    at Array.forEach (<anonymous>)\r\n    at near (file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/build-v02/technical/validator-copy/validate_contract.mjs:4:48)\r\n    at checkRuntime (file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/build-v02/technical/validator-copy/validate_contract.mjs:37:2)\r\n    at file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/build-v02/technical/validator-copy/validate_asset.mjs:93:21\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)\r\n    at async node:internal/modules/esm/loader:647:26\r\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {\r\n  generatedMessage: false,\r\n  code: 'ERR_ASSERTION',\r\n  actual: false,\r\n  expected: true,\r\n  operator: '==',\r\n  diff: 'simple'\r\n}\r\n\r\nNode.js v24.21.0\r\n"
+    },
+    {
+      "name": "wrong-moving-binding-list",
+      "expected": "reject",
+      "actual": "reject",
+      "exitCode": 1,
+      "guardCaught": true,
+      "stdout": "",
+      "stderr": "node:internal/modules/run_main:107\r\n    triggerUncaughtException(\r\n    ^\r\n\r\nAssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\r\n+ actual - expected\r\n\r\n+ []\r\n- [\r\n-   'APA_body',\r\n-   'APA_head',\r\n-   'APA_lid_lower_L',\r\n-   'APA_lid_lower_R',\r\n-   'APA_mitten_L',\r\n-   'APA_mitten_R',\r\n-   'APA_pupil_L',\r\n-   'APA_pupil_R',\r\n-   'APA_root',\r\n-   'APA_tray'\r\n- ]\r\n\r\n    at checkRuntime (file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/build-v02/technical/validator-copy/validate_contract.mjs:26:109)\r\n    at file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/build-v02/technical/validator-copy/validate_asset.mjs:93:21\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)\r\n    at async node:internal/modules/esm/loader:647:26\r\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {\r\n  generatedMessage: true,\r\n  code: 'ERR_ASSERTION',\r\n  actual: [],\r\n  expected: [\r\n    'APA_body',\r\n    'APA_head',\r\n    'APA_lid_lower_L',\r\n    'APA_lid_lower_R',\r\n    'APA_mitten_L',\r\n    'APA_mitten_R',\r\n    'APA_pupil_L',\r\n    'APA_pupil_R',\r\n    'APA_root',\r\n    'APA_tray'\r\n  ],\r\n  operator: 'deepStrictEqual',\r\n  diff: 'simple'\r\n}\r\n\r\nNode.js v24.21.0\r\n"
+    },
+    {
+      "name": "invalid-root-quaternion",
+      "expected": "reject",
+      "actual": "reject",
+      "exitCode": 1,
+      "guardCaught": true,
+      "stdout": "",
+      "stderr": "node:internal/modules/run_main:107\r\n    triggerUncaughtException(\r\n    ^\r\n\r\nAssertionError [ERR_ASSERTION]: unit quaternion\r\n    at valid (file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/build-v02/technical/validator-copy/validate_contract.mjs:5:176)\r\n    at checkDocument (file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/build-v02/technical/validator-copy/validate_contract.mjs:14:27)\r\n    at file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/build-v02/technical/validator-copy/validate_asset.mjs:18:40\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)\r\n    at async node:internal/modules/esm/loader:647:26\r\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {\r\n  generatedMessage: false,\r\n  code: 'ERR_ASSERTION',\r\n  actual: false,\r\n  expected: true,\r\n  operator: '==',\r\n  diff: 'simple'\r\n}\r\n\r\nNode.js v24.21.0\r\n"
+    },
+    {
+      "name": "undeclared-node-light",
+      "expected": "reject",
+      "actual": "reject",
+      "exitCode": 1,
+      "guardCaught": true,
+      "stdout": "",
+      "stderr": "node:internal/modules/run_main:107\r\n    triggerUncaughtException(\r\n    ^\r\n\r\nAssertionError [ERR_ASSERTION]: extension location\r\n    at visit (file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/build-v02/technical/validator-copy/validate_contract.mjs:11:27)\r\n    at checkDocument (file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/build-v02/technical/validator-copy/validate_contract.mjs:13:3)\r\n    at file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/build-v02/technical/validator-copy/validate_asset.mjs:18:40\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)\r\n    at async node:internal/modules/esm/loader:647:26\r\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {\r\n  generatedMessage: false,\r\n  code: 'ERR_ASSERTION',\r\n  actual: '',\r\n  expected: /^materials\\/\\d+$/,\r\n  operator: 'match',\r\n  diff: 'simple'\r\n}\r\n\r\nNode.js v24.21.0\r\n"
+    },
+    {
+      "name": "wrong-position-minmax",
+      "expected": "reject",
+      "actual": "reject",
+      "exitCode": 1,
+      "guardCaught": true,
+      "stdout": "",
+      "stderr": "node:internal/modules/run_main:107\r\n    triggerUncaughtException(\r\n    ^\r\n\r\nAssertionError [ERR_ASSERTION]: mismatch 0,0,0 / -0.03376723453402519,-0.012662716209888458,-0.03376723453402519\r\n    at file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/build-v02/technical/validator-copy/validate_contract.mjs:4:70\r\n    at Array.forEach (<anonymous>)\r\n    at near (file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/build-v02/technical/validator-copy/validate_contract.mjs:4:48)\r\n    at checkAccessor (file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/build-v02/technical/validator-copy/validate_contract.mjs:18:201)\r\n    at accessor (file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/build-v02/technical/validator-copy/validate_asset.mjs:48:174)\r\n    at file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/build-v02/technical/validator-copy/validate_asset.mjs:66:53\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)\r\n    at async node:internal/modules/esm/loader:647:26\r\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {\r\n  generatedMessage: false,\r\n  code: 'ERR_ASSERTION',\r\n  actual: false,\r\n  expected: true,\r\n  operator: '==',\r\n  diff: 'simple'\r\n}\r\n\r\nNode.js v24.21.0\r\n"
+    },
+    {
+      "name": "unknown-extra-vertex-attribute",
+      "expected": "reject",
+      "actual": "reject",
+      "exitCode": 1,
+      "guardCaught": true,
+      "stdout": "",
+      "stderr": "node:internal/modules/run_main:107\r\n    triggerUncaughtException(\r\n    ^\r\n\r\nAssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\r\n+ actual - expected\r\n\r\n  [\r\n    'NORMAL',\r\n    'POSITION',\r\n+   '_UNREVIEWED'\r\n  ]\r\n\r\n    at checkDocument (file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/build-v02/technical/validator-copy/validate_contract.mjs:15:70)\r\n    at file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/build-v02/technical/validator-copy/validate_asset.mjs:18:40\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)\r\n    at async node:internal/modules/esm/loader:647:26\r\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {\r\n  generatedMessage: true,\r\n  code: 'ERR_ASSERTION',\r\n  actual: [ 'NORMAL', 'POSITION', '_UNREVIEWED' ],\r\n  expected: [ 'NORMAL', 'POSITION' ],\r\n  operator: 'deepStrictEqual',\r\n  diff: 'simple'\r\n}\r\n\r\nNode.js v24.21.0\r\n"
+    },
+    {
+      "name": "missing-position-minmax",
+      "expected": "reject",
+      "actual": "accept",
+      "exitCode": 0,
+      "guardCaught": false,
+      "stdout": "{\n  \"status\": \"PASS-offline-asset-structure-not-production-acceptance\",\n  \"measurements\": {\n    \"rawGlbBytes\": 673148,\n    \"gzipBytes\": 482960,\n    \"brotliBytes\": 336514,\n    \"triangles\": 37676,\n    \"exportedVertexRecords\": 19131,\n    \"nodes\": 22,\n    \"meshes\": 21,\n    \"materials\": 7,\n    \"primitives\": 21,\n    \"textures\": 0,\n    \"animations\": 0\n  },\n  \"bounds\": {\n    \"min\": [\n      -0.13927824888378382,\n      -0.23599659092724323,\n      -0.133880446664989\n    ],\n    \"max\": [\n      0.13787991914432496,\n      0.3456544801592827,\n      0.12633870140416548\n    ]\n  },\n  \"sweepPadding\": 0.0013941260623603878,\n  \"pupilMaxEllipse\": 0.47530087288854367,\n  \"minimumPupilLidGap\": 0.005575348263050545\n}\n",
+      "stderr": "",
+      "installedLoader": {
+        "accepted": true,
+        "warnings": [
+          "THREE.GLTFLoader: Missing min/max properties for accessor POSITION."
+        ]
+      }
+    },
+    {
+      "name": "dangling-zero-skin",
+      "expected": "reject",
+      "actual": "accept",
+      "exitCode": 0,
+      "guardCaught": false,
+      "stdout": "{\n  \"status\": \"PASS-offline-asset-structure-not-production-acceptance\",\n  \"measurements\": {\n    \"rawGlbBytes\": 673280,\n    \"gzipBytes\": 483011,\n    \"brotliBytes\": 336172,\n    \"triangles\": 37676,\n    \"exportedVertexRecords\": 19131,\n    \"nodes\": 22,\n    \"meshes\": 21,\n    \"materials\": 7,\n    \"primitives\": 21,\n    \"textures\": 0,\n    \"animations\": 0\n  },\n  \"bounds\": {\n    \"min\": [\n      -0.13927824888378382,\n      -0.23599659092724323,\n      -0.133880446664989\n    ],\n    \"max\": [\n      0.13787991914432496,\n      0.3456544801592827,\n      0.12633870140416548\n    ]\n  },\n  \"sweepPadding\": 0.0013941260623603878,\n  \"pupilMaxEllipse\": 0.47530087288854367,\n  \"minimumPupilLidGap\": 0.005575348263050545\n}\n",
+      "stderr": "",
+      "installedLoader": {
+        "accepted": false,
+        "error": "TypeError: Cannot read properties of undefined (reading '0')",
+        "warnings": []
+      }
+    },
+    {
+      "name": "double-sided-material-control",
+      "expected": "reject",
+      "actual": "reject",
+      "exitCode": 1,
+      "guardCaught": true,
+      "stdout": "",
+      "stderr": "node:internal/modules/run_main:107\r\n    triggerUncaughtException(\r\n    ^\r\n\r\nAssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\r\n\r\ntrue !== false\r\n\r\n    at file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/build-v02/technical/validator-copy/validate_asset.mjs:79:83\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)\r\n    at async node:internal/modules/esm/loader:647:26\r\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {\r\n  generatedMessage: true,\r\n  code: 'ERR_ASSERTION',\r\n  actual: true,\r\n  expected: false,\r\n  operator: 'strictEqual',\r\n  diff: 'simple'\r\n}\r\n\r\nNode.js v24.21.0\r\n"
+    },
+    {
+      "name": "out-of-range-position-buffer-control",
+      "expected": "reject",
+      "actual": "reject",
+      "exitCode": 1,
+      "guardCaught": true,
+      "stdout": "",
+      "stderr": "node:internal/modules/run_main:107\r\n    triggerUncaughtException(\r\n    ^\r\n\r\nAssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\r\n\r\n  assert.ok(end<=(v.byteOffset??0)+v.byteLength&&end<=bin.length)\r\n\r\n    at accessor (file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/build-v02/technical/validator-copy/validate_asset.mjs:47:9)\r\n    at file:///C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/review/build-v02/technical/validator-copy/validate_asset.mjs:66:53\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:561:25)\r\n    at async node:internal/modules/esm/loader:647:26\r\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {\r\n  generatedMessage: true,\r\n  code: 'ERR_ASSERTION',\r\n  actual: false,\r\n  expected: true,\r\n  operator: '==',\r\n  diff: 'simple'\r\n}\r\n\r\nNode.js v24.21.0\r\n"
+    }
+  ]
+}

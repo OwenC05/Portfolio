@@ -1,0 +1,81 @@
+﻿{
+    "planning_artifacts":  [
+                               {
+                                   "sha256":  "bb11eea94aa76f931d9632222cfd2fe1a9674e6748d7c9ced3e69088924640b8",
+                                   "path":  ".omx/plans/prd-portfolio-refinement.md"
+                               },
+                               {
+                                   "sha256":  "208939fc0d1d580a8809b4164d832f80e28aeb55ebb668708fbab3cadff24414",
+                                   "path":  ".omx/plans/test-spec-portfolio-refinement.md"
+                               },
+                               {
+                                   "sha256":  "33444fa14cdde35bfcc1e211e7c20c722f13db3cea2ce0658119e03d03f56524",
+                                   "path":  ".omx/context/portfolio-refinement-20261114T153100Z.md"
+                               },
+                               {
+                                   "sha256":  "8ef4e194dc04050de483f8eb502e29c949abfd317d4e9e47717b06bb36bbdc4e",
+                                   "path":  ".omx/context/portfolio-target-roles-20261114.md"
+                               },
+                               {
+                                   "sha256":  "66c229fbe029a4057149790ec6332bc636d08973448950e7779a2b28621c1a47",
+                                   "path":  ".omx/context/portfolio-refinement-research-20261114.md"
+                               }
+                           ],
+    "review_input_manifest":  ".omx/plans/portfolio-refinement-cycle-2-inputs.json",
+    "review_cycle":  2,
+    "task":  "Portfolio refinement for user-supplied software engineering, applied AI and data scientist role examples",
+    "ralplan_architect_review":  {
+                                     "review_cycle":  2,
+                                     "agent":  "/root/portfolio_architect_review",
+                                     "verdict":  "APPROVE",
+                                     "sha256":  "59d9159cd422fb186fae5f2db8c012e416e772d657d10c406c32657bfbea3f82",
+                                     "recorded_at":  "2026-11-14T15:37:24.1009602Z",
+                                     "role":  "architect",
+                                     "artifact":  ".omx/plans/review-portfolio-refinement-architect-cycle-2.md"
+                                 },
+    "verification":  {
+                         "source_and_role_research":  "completed",
+                         "git_diff_check":  "PASS",
+                         "future_checks":  ".omx/plans/test-spec-portfolio-refinement.md",
+                         "runtime_build_lint":  "not run - planning only",
+                         "tracked_application_files_unchanged":  true,
+                         "rendered_ui":  "not verified"
+                     },
+    "ralplan_execution_handoff":  {
+                                      "host_issued_authority":  false,
+                                      "requested_lane":  "planning_only",
+                                      "authorized":  false,
+                                      "review_cycle":  2,
+                                      "session_id":  "01a1daa7-0ca8-77a0-9bcc-da11ad109c99",
+                                      "reason":  "User requested a refinement plan only. No implementation or publication requested."
+                                  },
+    "ralplan_consensus_gate":  {
+                                   "review_cycle":  2,
+                                   "complete":  true,
+                                   "authority_scope":  "Local native Planner -\u003e Architect -\u003e Critic planning lifecycle only",
+                                   "host_verification":  false,
+                                   "configured_quality_gates":  [
+
+                                                                ],
+                                   "input_hashes_revalidated":  true,
+                                   "qualityGateResults":  [
+
+                                                          ],
+                                   "checked_at":  "2026-11-14T15:40:21.9169835Z"
+                               },
+    "ralplan_critic_review":  {
+                                  "artifact":  ".omx/plans/review-portfolio-refinement-critic-cycle-2.md",
+                                  "recorded_at":  "2026-11-14T15:40:21.9169835Z",
+                                  "review_cycle":  2,
+                                  "started_after_architect_completed":  true,
+                                  "agent":  "/root/portfolio_critic_review",
+                                  "verdict":  "APPROVE",
+                                  "role":  "critic",
+                                  "sha256":  "b82286c51cfe8835e0b9feed7ac57a2a5caa5524da258632a0ff31ac20fd2178"
+                              },
+    "mode":  "short",
+    "session_id":  "01a1daa7-0ca8-77a0-9bcc-da11ad109c99",
+    "completed_at":  "2026-11-14T15:40:21.9169835Z",
+    "outcome":  "planning_complete",
+    "workflow":  "ralplan"
+}

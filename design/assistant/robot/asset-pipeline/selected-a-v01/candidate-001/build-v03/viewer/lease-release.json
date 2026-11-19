@@ -1,0 +1,11 @@
+{
+    "pid":  37052,
+    "commandLine":  "\"C:\\Program Files\\nodejs\\node.exe\" design/assistant/robot/asset-pipeline/selected-a-v01/candidate-001/build-v03/viewer-server.mjs",
+    "port":  4195,
+    "priorOwnerVerified":  true,
+    "ownedBrowserTabClosed":  true,
+    "stopRequestedAt":  "2026-11-17T14:22:07.0337407Z",
+    "processAbsentAfter":  true,
+    "listenerAbsentAfter":  true,
+    "checkedAt":  "2026-11-17T14:22:51.3942013Z"
+}

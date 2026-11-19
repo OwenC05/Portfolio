@@ -1,0 +1,748 @@
+{
+  "profileId": "studio-full-kit-v1",
+  "variant": "baseline",
+  "stage": "synthetic",
+  "glbSha256": "89a776af8b476f32348d1fbd77ebf4104c79bcd83a47b36967cbea3e3f61290d",
+  "artInventorySha256": "eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87",
+  "boundsGltfMetres": {
+    "min": [
+      -1.751962934042795,
+      -0.05000000074505806,
+      -1
+    ],
+    "max": [
+      2.1500000059604645,
+      1.8875000047683717,
+      0.02157318956658883
+    ]
+  },
+  "nodes": [
+    {
+      "index": 0,
+      "name": "studio_full_kit",
+      "parent": null,
+      "meshIndex": null,
+      "materialIndex": null,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {}
+    },
+    {
+      "index": 1,
+      "name": "target_dissertation",
+      "parent": "studio_full_kit",
+      "meshIndex": 0,
+      "materialIndex": 0,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.805,
+        1.135,
+        -0.10800000000000001,
+        1
+      ],
+      "extras": {
+        "assetId": "target_faces",
+        "role": "target",
+        "occluder": false,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": false
+      }
+    },
+    {
+      "index": 2,
+      "name": "border_dissertation",
+      "parent": "studio_full_kit",
+      "meshIndex": 1,
+      "materialIndex": 0,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.805,
+        1.135,
+        -0.11050000000000001,
+        1
+      ],
+      "extras": {
+        "assetId": "target_borders",
+        "role": "border",
+        "occluder": false,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": false
+      }
+    },
+    {
+      "index": 3,
+      "name": "target_copilot",
+      "parent": "studio_full_kit",
+      "meshIndex": 2,
+      "materialIndex": 0,
+      "renderOrder": null,
+      "transform": [
+        0.955336489125606,
+        0,
+        -0.29552020666133955,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.29552020666133955,
+        0,
+        0.955336489125606,
+        0,
+        -1.5470209544201439,
+        1.165,
+        -0.039205914793608646,
+        1
+      ],
+      "extras": {
+        "assetId": "target_faces",
+        "role": "target",
+        "occluder": false,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": false
+      }
+    },
+    {
+      "index": 4,
+      "name": "border_copilot",
+      "parent": "studio_full_kit",
+      "meshIndex": 3,
+      "materialIndex": 0,
+      "renderOrder": null,
+      "transform": [
+        0.955336489125606,
+        0,
+        -0.29552020666133955,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0.29552020666133955,
+        0,
+        0.955336489125606,
+        0,
+        -1.5477597549367972,
+        1.165,
+        -0.04159425601642266,
+        1
+      ],
+      "extras": {
+        "assetId": "target_borders",
+        "role": "border",
+        "occluder": false,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": false
+      }
+    },
+    {
+      "index": 5,
+      "name": "target_typeforge",
+      "parent": "studio_full_kit",
+      "meshIndex": 4,
+      "materialIndex": 0,
+      "renderOrder": null,
+      "transform": [
+        0.955336489125606,
+        0,
+        0.29552020666133955,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.29552020666133955,
+        0,
+        0.955336489125606,
+        0,
+        -0.06297904557985617,
+        1.165,
+        -0.039205914793608646,
+        1
+      ],
+      "extras": {
+        "assetId": "target_faces",
+        "role": "target",
+        "occluder": false,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": false
+      }
+    },
+    {
+      "index": 6,
+      "name": "border_typeforge",
+      "parent": "studio_full_kit",
+      "meshIndex": 5,
+      "materialIndex": 0,
+      "renderOrder": null,
+      "transform": [
+        0.955336489125606,
+        0,
+        0.29552020666133955,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -0.29552020666133955,
+        0,
+        0.955336489125606,
+        0,
+        -0.062240245063202825,
+        1.165,
+        -0.04159425601642266,
+        1
+      ],
+      "extras": {
+        "assetId": "target_borders",
+        "role": "border",
+        "occluder": false,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": false
+      }
+    },
+    {
+      "index": 7,
+      "name": "display_studio",
+      "parent": "studio_full_kit",
+      "meshIndex": 6,
+      "materialIndex": 0,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -0.805,
+        1.705,
+        -0.293,
+        1
+      ],
+      "extras": {
+        "assetId": "display_studio",
+        "role": "decorative-screen",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": false
+      }
+    },
+    {
+      "index": 8,
+      "name": "rt_window_dusk",
+      "parent": "studio_full_kit",
+      "meshIndex": 7,
+      "materialIndex": 0,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        2,
+        1.5,
+        -1,
+        1
+      ],
+      "extras": {
+        "assetId": "rt_window_dusk",
+        "role": "runtime-dusk",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": false
+      }
+    },
+    {
+      "index": 9,
+      "name": "arch_shell__group",
+      "parent": "studio_full_kit",
+      "meshIndex": null,
+      "materialIndex": null,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "extras": {}
+    },
+    {
+      "index": 10,
+      "name": "arch_shell__linked0",
+      "parent": "arch_shell__group",
+      "meshIndex": 8,
+      "materialIndex": 1,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_shell",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": true,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 11,
+      "name": "arch_shell__linked1",
+      "parent": "arch_shell__group",
+      "meshIndex": 8,
+      "materialIndex": 1,
+      "renderOrder": null,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        2.1,
+        0,
+        0,
+        1
+      ],
+      "extras": {
+        "assetId": "arch_shell",
+        "role": "opaque",
+        "occluder": true,
+        "transparent": false,
+        "nocast": false,
+        "receiveShadow": true
+      }
+    },
+    {
+      "index": 12,
+      "name": "contact_decals__test",
+      "parent": "studio_full_kit",
+      "meshIndex": 9,
+      "materialIndex": 2,
+      "renderOrder": 1,
+      "transform": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        2,
+        0,
+        -1,
+        1
+      ],
+      "extras": {
+        "assetId": "contact_decals",
+        "role": "transparent",
+        "occluder": false,
+        "transparent": true,
+        "nocast": true,
+        "receiveShadow": false,
+        "renderOrder": 1
+      }
+    }
+  ],
+  "materials": [
+    {
+      "index": 0,
+      "name": "rt_placeholder",
+      "definition": {
+        "name": "rt_placeholder",
+        "pbrMetallicRoughness": {
+          "metallicFactor": 0,
+          "roughnessFactor": 1
+        }
+      },
+      "slots": []
+    },
+    {
+      "index": 1,
+      "name": "lib_plaster",
+      "definition": {
+        "name": "lib_plaster",
+        "pbrMetallicRoughness": {
+          "metallicFactor": 0,
+          "roughnessFactor": 1,
+          "baseColorTexture": {
+            "index": 0
+          }
+        },
+        "emissiveTexture": {
+          "index": 1
+        }
+      },
+      "slots": [
+        {
+          "slot": "map",
+          "textureIndex": 0,
+          "texCoord": 0
+        },
+        {
+          "slot": "emissiveMap",
+          "textureIndex": 1,
+          "texCoord": 0
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "lib_contact",
+      "definition": {
+        "name": "lib_contact",
+        "alphaMode": "BLEND",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            0,
+            0,
+            0,
+            0.3
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 1,
+          "baseColorTexture": {
+            "index": 2
+          }
+        }
+      },
+      "slots": [
+        {
+          "slot": "map",
+          "textureIndex": 2,
+          "texCoord": 0
+        }
+      ]
+    }
+  ],
+  "textures": {
+    "images": [
+      {
+        "index": 0,
+        "mimeType": "image/png",
+        "width": 1,
+        "height": 1,
+        "bytes": 68
+      },
+      {
+        "index": 1,
+        "mimeType": "image/png",
+        "width": 1,
+        "height": 1,
+        "bytes": 68
+      }
+    ],
+    "textures": [
+      {
+        "index": 0,
+        "source": 0,
+        "sampler": {
+          "wrapS": 10497
+        }
+      },
+      {
+        "index": 1,
+        "source": 0,
+        "sampler": {
+          "wrapS": 33071
+        }
+      },
+      {
+        "index": 2,
+        "source": 1,
+        "sampler": null
+      }
+    ]
+  },
+  "targetWorldCorners": {
+    "target_dissertation": [
+      [
+        -2.5499999976158145,
+        1.8500000286102296,
+        -0.21600000000000003
+      ],
+      [
+        -0.6700000023841859,
+        1.8500000286102296,
+        -0.21600000000000003
+      ],
+      [
+        -0.6700000023841859,
+        2.9099999713897704,
+        -0.21600000000000003
+      ],
+      [
+        -2.5499999976158145,
+        2.9099999713897704,
+        -0.21600000000000003
+      ]
+    ],
+    "border_dissertation": [
+      [
+        -2.577499971389771,
+        1.8224999952316285,
+        -0.22100000000000003
+      ],
+      [
+        -0.6425000286102296,
+        1.8224999952316285,
+        -0.22100000000000003
+      ],
+      [
+        -0.6425000286102296,
+        2.9375000047683715,
+        -0.22100000000000003
+      ],
+      [
+        -2.577499971389771,
+        2.9375000047683715,
+        -0.22100000000000003
+      ]
+    ],
+    "target_copilot": [
+      [
+        -3.4761765101847795,
+        1.7699999833106996,
+        0.03979625483875622
+      ],
+      [
+        -2.711907307495796,
+        1.7699999833106996,
+        -0.1966199140131908
+      ],
+      [
+        -2.711907307495796,
+        3.1100000166893005,
+        -0.1966199140131908
+      ],
+      [
+        -3.4761765101847795,
+        3.1100000166893005,
+        0.03979625483875622
+      ]
+    ],
+    "border_copilot": [
+      [
+        -3.50392586808559,
+        1.7425000095367433,
+        0.04314637913317766
+      ],
+      [
+        -2.687113151661599,
+        1.7425000095367433,
+        -0.2095234031988683
+      ],
+      [
+        -2.687113151661599,
+        3.137499990463257,
+        -0.2095234031988683
+      ],
+      [
+        -3.50392586808559,
+        3.137499990463257,
+        0.04314637913317766
+      ]
+    ],
+    "target_typeforge": [
+      [
+        -0.508092692504204,
+        1.7699999833106996,
+        -0.1966199140131908
+      ],
+      [
+        0.25617651018477927,
+        1.7699999833106996,
+        0.03979625483875622
+      ],
+      [
+        0.25617651018477927,
+        3.1100000166893005,
+        0.03979625483875622
+      ],
+      [
+        -0.508092692504204,
+        3.1100000166893005,
+        -0.1966199140131908
+      ]
+    ],
+    "border_typeforge": [
+      [
+        -0.5328868483384009,
+        1.7425000095367433,
+        -0.2095234031988683
+      ],
+      [
+        0.2839258680855896,
+        1.7425000095367433,
+        0.04314637913317766
+      ],
+      [
+        0.2839258680855896,
+        3.137499990463257,
+        0.04314637913317766
+      ],
+      [
+        -0.5328868483384009,
+        3.137499990463257,
+        -0.2095234031988683
+      ]
+    ],
+    "display_studio": [
+      [
+        -2.254999980926514,
+        3.154999990463257,
+        -0.586
+      ],
+      [
+        -0.9650000190734864,
+        3.154999990463257,
+        -0.586
+      ],
+      [
+        -0.9650000190734864,
+        3.885000009536743,
+        -0.586
+      ],
+      [
+        -2.254999980926514,
+        3.885000009536743,
+        -0.586
+      ]
+    ],
+    "rt_window_dusk": [
+      [
+        3.699999988079071,
+        2.809999988079071,
+        -2
+      ],
+      [
+        4.300000011920929,
+        2.809999988079071,
+        -2
+      ],
+      [
+        4.300000011920929,
+        3.410000011920929,
+        -2
+      ],
+      [
+        3.699999988079071,
+        3.410000011920929,
+        -2
+      ]
+    ]
+  },
+  "counts": {
+    "uniqueGeometryTriangles": 20,
+    "placedTriangles": 22,
+    "shadowTriangles": 2,
+    "primitiveInstances": 11,
+    "shadowInstances": 1,
+    "imagePixels": 2,
+    "materialCount": 3,
+    "textureCount": 3
+  }
+}

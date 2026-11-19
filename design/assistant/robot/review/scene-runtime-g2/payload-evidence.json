@@ -1,0 +1,301 @@
+{
+  "node": "v24.21.0",
+  "three": "187",
+  "v03": {
+    "sha256": "65f1dea3b1d35a748bdfc2089dea0feed1d054cc8b0eb957645ea2d669578a12",
+    "rawBytes": 673144,
+    "gzip9": 482957,
+    "brotli11": 334311
+  },
+  "v02": {
+    "sha256": "bc1a4d6d968dd53eda3480936959d0ebf292e76652a6bbdd201e15f4cd665270",
+    "rawBytes": 673268
+  },
+  "binarySha256": "2deb2f9dc668b3dd6c2937e9b3ee7c1c01887df69124fcb9723f88721dab6db0",
+  "binaryIdenticalToV02": true,
+  "unchangedFromV02": [
+    "nodes",
+    "meshes",
+    "accessors",
+    "bufferViews",
+    "buffers",
+    "scenes",
+    "scene"
+  ],
+  "changedMaterials": [
+    {
+      "name": "MAT_APA_eye_emit",
+      "before": {
+        "emissiveFactor": [
+          1,
+          0.8713670969009399,
+          0.5972017645835876
+        ],
+        "extensions": {
+          "KHR_materials_emissive_strength": {
+            "emissiveStrength": 4
+          }
+        },
+        "name": "MAT_APA_eye_emit",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            1,
+            0.8713670969009399,
+            0.5972017645835876,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.4000000059604645
+        }
+      },
+      "after": {
+        "emissiveFactor": [
+          1,
+          0.8713670969009399,
+          0.5972017645835876
+        ],
+        "name": "MAT_APA_eye_emit",
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            1,
+            0.8713670969009399,
+            0.5972017645835876,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.4000000059604645
+        }
+      }
+    }
+  ],
+  "emissions": [
+    {
+      "name": "MAT_APA_porcelain",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 1,
+      "product": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "MAT_APA_brass",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 1,
+      "product": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "MAT_APA_ribbon",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 1,
+      "product": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "MAT_APA_eye_emit",
+      "rgb": [
+        1,
+        0.8713670969009399,
+        0.5972017645835876
+      ],
+      "intensity": 1,
+      "product": [
+        1,
+        0.8713670969009399,
+        0.5972017645835876
+      ]
+    },
+    {
+      "name": "MAT_APA_ink",
+      "rgb": [
+        0,
+        0,
+        0
+      ],
+      "intensity": 1,
+      "product": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "MAT_APA_highlight",
+      "rgb": [
+        0.25,
+        0.2325277179479599,
+        0.19782447814941406
+      ],
+      "intensity": 1,
+      "product": [
+        0.25,
+        0.2325277179479599,
+        0.19782447814941406
+      ]
+    },
+    {
+      "name": "MAT_APA_tray_emit",
+      "rgb": [
+        0.05647115195499586,
+        0.0332451527304225,
+        0.008021982133716077
+      ],
+      "intensity": 1,
+      "product": [
+        0.05647115195499586,
+        0.0332451527304225,
+        0.008021982133716077
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "node": "APA_body",
+      "vertices": 788,
+      "triangles": 1572
+    },
+    {
+      "node": "APA_body_cap",
+      "vertices": 258,
+      "triangles": 512
+    },
+    {
+      "node": "APA_collar",
+      "vertices": 384,
+      "triangles": 768
+    },
+    {
+      "node": "APA_mitten_L",
+      "vertices": 416,
+      "triangles": 828
+    },
+    {
+      "node": "APA_mitten_R",
+      "vertices": 412,
+      "triangles": 820
+    },
+    {
+      "node": "APA_head",
+      "vertices": 4693,
+      "triangles": 9252
+    },
+    {
+      "node": "APA_bookmark_post",
+      "vertices": 362,
+      "triangles": 720
+    },
+    {
+      "node": "APA_bookmark_ribbon",
+      "vertices": 70,
+      "triangles": 136
+    },
+    {
+      "node": "APA_eye_L",
+      "vertices": 1026,
+      "triangles": 2048
+    },
+    {
+      "node": "APA_pupil_L",
+      "vertices": 322,
+      "triangles": 640
+    },
+    {
+      "node": "APA_highlight_L",
+      "vertices": 146,
+      "triangles": 288
+    },
+    {
+      "node": "APA_eye_R",
+      "vertices": 1026,
+      "triangles": 2048
+    },
+    {
+      "node": "APA_pupil_R",
+      "vertices": 322,
+      "triangles": 640
+    },
+    {
+      "node": "APA_highlight_R",
+      "vertices": 146,
+      "triangles": 288
+    },
+    {
+      "node": "APA_face",
+      "vertices": 4098,
+      "triangles": 8192
+    },
+    {
+      "node": "APA_face_rim",
+      "vertices": 576,
+      "triangles": 1152
+    },
+    {
+      "node": "APA_lid_lower_L",
+      "vertices": 1274,
+      "triangles": 2544
+    },
+    {
+      "node": "APA_lid_lower_R",
+      "vertices": 1274,
+      "triangles": 2544
+    },
+    {
+      "node": "APA_seam",
+      "vertices": 768,
+      "triangles": 1536
+    },
+    {
+      "node": "APA_tray",
+      "vertices": 386,
+      "triangles": 768
+    },
+    {
+      "node": "APA_tray_glow",
+      "vertices": 384,
+      "triangles": 380
+    }
+  ],
+  "triangles": 37676,
+  "geometries": 21,
+  "materials": 7,
+  "finitePositionsNormalsAndValidUnsignedIndices": true,
+  "gltfNeutralBoundsMetres": {
+    "min": [
+      -0.13927824888378382,
+      -0.23599659092724323,
+      -0.133880446664989
+    ],
+    "max": [
+      0.13787991914432496,
+      0.3456544801592827,
+      0.12633870140416548
+    ]
+  },
+  "fourCardRadialSupportMetres": 0.11227482810674412,
+  "radialMarginMetres": 0.0052833680802752275,
+  "limits": [
+    "geometry/CPU evidence only",
+    "compression is asset-only with explicit encoder settings",
+    "no total room budget or browser draw/appearance claim"
+  ]
+}

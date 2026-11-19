@@ -1,0 +1,100 @@
+[
+  {
+    "path": "design/studio-v2/asset-pipeline/full-kit/exports/studio-full-kit-m1-baseline-v02.glb",
+    "glbSha256": "04994845f62236c6230dce1ba8af7d9811e21fc1e45c0fff6a89be7f06777093",
+    "decoder": "Pillow 12.3.0",
+    "scope": "Actual native image decode; not browser decoding or GPU upload",
+    "valid": true,
+    "images": [
+      {
+        "index": 0,
+        "sha256": "a1aa4bf775d31be69e5b97bbdad3cf5f06bc9fb2243383263cef570606b1b11a",
+        "width": 128,
+        "height": 128,
+        "mode": "RGB",
+        "rgbaBytes": 65536
+      },
+      {
+        "index": 1,
+        "sha256": "0923eef60b99ca698b043d750fdc6b5f2a6392b89c25c104960f94867ee25ff5",
+        "width": 128,
+        "height": 128,
+        "mode": "RGB",
+        "rgbaBytes": 65536
+      },
+      {
+        "index": 2,
+        "sha256": "ab1b820b394d7fa97125b92a384a29633117bcceef9cbd8214a1ca31245b0429",
+        "width": 1024,
+        "height": 256,
+        "mode": "RGB",
+        "rgbaBytes": 1048576
+      },
+      {
+        "index": 3,
+        "sha256": "ad2cfc3d67e0e2e975fe1464c9e3ecdbedf1e455e7219ebcdd17babce1bd9ff0",
+        "width": 256,
+        "height": 256,
+        "mode": "RGB",
+        "rgbaBytes": 262144
+      },
+      {
+        "index": 4,
+        "sha256": "47eeaa04e00157247fd99e475947ab9c74a3d3196a119df1ac27568e65136809",
+        "width": 256,
+        "height": 256,
+        "mode": "RGB",
+        "rgbaBytes": 262144
+      }
+    ]
+  },
+  {
+    "path": "design/studio-v2/asset-pipeline/full-kit/exports/studio-full-kit-m1-proposal-v02.glb",
+    "glbSha256": "bdc997b45917be0c72480af9738362e9940e5159b07781eac2bfa6b86b01fe76",
+    "decoder": "Pillow 12.3.0",
+    "scope": "Actual native image decode; not browser decoding or GPU upload",
+    "valid": true,
+    "images": [
+      {
+        "index": 0,
+        "sha256": "a1aa4bf775d31be69e5b97bbdad3cf5f06bc9fb2243383263cef570606b1b11a",
+        "width": 128,
+        "height": 128,
+        "mode": "RGB",
+        "rgbaBytes": 65536
+      },
+      {
+        "index": 1,
+        "sha256": "0923eef60b99ca698b043d750fdc6b5f2a6392b89c25c104960f94867ee25ff5",
+        "width": 128,
+        "height": 128,
+        "mode": "RGB",
+        "rgbaBytes": 65536
+      },
+      {
+        "index": 2,
+        "sha256": "ab1b820b394d7fa97125b92a384a29633117bcceef9cbd8214a1ca31245b0429",
+        "width": 1024,
+        "height": 256,
+        "mode": "RGB",
+        "rgbaBytes": 1048576
+      },
+      {
+        "index": 3,
+        "sha256": "ad2cfc3d67e0e2e975fe1464c9e3ecdbedf1e455e7219ebcdd17babce1bd9ff0",
+        "width": 256,
+        "height": 256,
+        "mode": "RGB",
+        "rgbaBytes": 262144
+      },
+      {
+        "index": 4,
+        "sha256": "47eeaa04e00157247fd99e475947ab9c74a3d3196a119df1ac27568e65136809",
+        "width": 256,
+        "height": 256,
+        "mode": "RGB",
+        "rgbaBytes": 262144
+      }
+    ]
+  }
+]

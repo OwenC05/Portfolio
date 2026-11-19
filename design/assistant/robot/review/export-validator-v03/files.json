@@ -1,0 +1,390 @@
+{
+  "at": "2026-11-18T19:17:50.863Z",
+  "files": [
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/checks.json",
+      "bytes": 1334,
+      "sha256": "2accf77b038e9dc54a7b9678726bfdb03f782f302749415bac51b7d0ad0a2a34"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-body-cap-missing-position-bounds-6x2ju4/build-summary.json",
+      "bytes": 635,
+      "sha256": "213051dc027261b842269b076afb744277b7e30340bac1513cb22daa120d0ed6"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-body-cap-missing-position-bounds-6x2ju4/build_asset.py",
+      "bytes": 30984,
+      "sha256": "2412f0f4bd6498784c96b7d722ca3cb5d4454e7526a4ef5f6c1957b1ede84bc4"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-body-cap-missing-position-bounds-6x2ju4/poses.json",
+      "bytes": 86562,
+      "sha256": "6dd7ce35a027352b4f2cffbe673081910837e69d56c9f4ec866e970381c6e96d"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-body-cap-missing-position-bounds-6x2ju4/profile.json",
+      "bytes": 32679,
+      "sha256": "f5dbf7f2a9e3e57332c62c21e27013d6ce05d11085fac94ec979631e4728e33e"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-body-cap-missing-position-bounds-6x2ju4/selected-a.blend",
+      "bytes": 572151,
+      "sha256": "80704c8f2989683dffa59f9616b1ef146eab944f7d05ae0e0bf55e1964bc508e"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-body-cap-missing-position-bounds-6x2ju4/selected-a.glb",
+      "bytes": 673148,
+      "sha256": "02c5a8c656ca23c55571a4e32241fd36afc2a12d96bfa704b9896c5661b19c0b"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-body-cap-missing-position-bounds-6x2ju4/validate_asset.mjs",
+      "bytes": 11542,
+      "sha256": "ba1990472d6697c3efc89b3930c37ba123313c4340ff2af9a0460ceb028e8e59"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-body-cap-missing-position-bounds-6x2ju4/validate_contract.mjs",
+      "bytes": 10343,
+      "sha256": "7331dbc75d24aeae8553922f50a4ebcd31bd3ed945d3617bbfbb2422b5e32c8e"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-body-cap-missing-position-bounds.stderr.txt",
+      "bytes": 1054,
+      "sha256": "7d46d52b10b368a38cc66294e6ff9800bced4a746f778f163435429b946fd649"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-body-cap-missing-position-bounds.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-body-cap-skin-zero-qmj3No/build-summary.json",
+      "bytes": 635,
+      "sha256": "213051dc027261b842269b076afb744277b7e30340bac1513cb22daa120d0ed6"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-body-cap-skin-zero-qmj3No/build_asset.py",
+      "bytes": 30984,
+      "sha256": "2412f0f4bd6498784c96b7d722ca3cb5d4454e7526a4ef5f6c1957b1ede84bc4"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-body-cap-skin-zero-qmj3No/poses.json",
+      "bytes": 86562,
+      "sha256": "6dd7ce35a027352b4f2cffbe673081910837e69d56c9f4ec866e970381c6e96d"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-body-cap-skin-zero-qmj3No/profile.json",
+      "bytes": 32679,
+      "sha256": "f5dbf7f2a9e3e57332c62c21e27013d6ce05d11085fac94ec979631e4728e33e"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-body-cap-skin-zero-qmj3No/selected-a.blend",
+      "bytes": 572151,
+      "sha256": "80704c8f2989683dffa59f9616b1ef146eab944f7d05ae0e0bf55e1964bc508e"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-body-cap-skin-zero-qmj3No/selected-a.glb",
+      "bytes": 673280,
+      "sha256": "3561165ff04cac56d97ad943a2f11ee154c33c336090f7b8b00103bb2bc24822"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-body-cap-skin-zero-qmj3No/validate_asset.mjs",
+      "bytes": 11542,
+      "sha256": "ba1990472d6697c3efc89b3930c37ba123313c4340ff2af9a0460ceb028e8e59"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-body-cap-skin-zero-qmj3No/validate_contract.mjs",
+      "bytes": 10343,
+      "sha256": "7331dbc75d24aeae8553922f50a4ebcd31bd3ed945d3617bbfbb2422b5e32c8e"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-body-cap-skin-zero.stderr.txt",
+      "bytes": 884,
+      "sha256": "0ce3dd96ff6b25f71757043d3f45c0f329e266a28b66bfef34e476cfdcaa2ad7"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-body-cap-skin-zero.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-valid-exact-v02-w0qiFc/build-summary.json",
+      "bytes": 635,
+      "sha256": "213051dc027261b842269b076afb744277b7e30340bac1513cb22daa120d0ed6"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-valid-exact-v02-w0qiFc/build_asset.py",
+      "bytes": 30984,
+      "sha256": "2412f0f4bd6498784c96b7d722ca3cb5d4454e7526a4ef5f6c1957b1ede84bc4"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-valid-exact-v02-w0qiFc/manifest.json",
+      "bytes": 1770,
+      "sha256": "5ab01dc63a952d618877e150729b443ecb4cf9922cd3bdf1df7a985e6f6f7423"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-valid-exact-v02-w0qiFc/poses.json",
+      "bytes": 86562,
+      "sha256": "6dd7ce35a027352b4f2cffbe673081910837e69d56c9f4ec866e970381c6e96d"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-valid-exact-v02-w0qiFc/profile.json",
+      "bytes": 32679,
+      "sha256": "f5dbf7f2a9e3e57332c62c21e27013d6ce05d11085fac94ec979631e4728e33e"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-valid-exact-v02-w0qiFc/selected-a.blend",
+      "bytes": 572151,
+      "sha256": "80704c8f2989683dffa59f9616b1ef146eab944f7d05ae0e0bf55e1964bc508e"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-valid-exact-v02-w0qiFc/selected-a.glb",
+      "bytes": 673268,
+      "sha256": "bc1a4d6d968dd53eda3480936959d0ebf292e76652a6bbdd201e15f4cd665270"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-valid-exact-v02-w0qiFc/validate_asset.mjs",
+      "bytes": 11542,
+      "sha256": "ba1990472d6697c3efc89b3930c37ba123313c4340ff2af9a0460ceb028e8e59"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-valid-exact-v02-w0qiFc/validate_contract.mjs",
+      "bytes": 10343,
+      "sha256": "7331dbc75d24aeae8553922f50a4ebcd31bd3ed945d3617bbfbb2422b5e32c8e"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-valid-exact-v02-w0qiFc/validation.json",
+      "bytes": 6276,
+      "sha256": "0869e980728cdb9e5c36f8e4fa5dbddf0542195e9b78471ae4a1776eed0d4288"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-valid-exact-v02.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/current-valid-exact-v02.stdout.txt",
+      "bytes": 700,
+      "sha256": "677e0ba07522dcfcb5e907fb44ba656ed2bdaf878c57d5141a1f0c450375c5b1"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/full-results.json",
+      "bytes": 5921,
+      "sha256": "f148a6813b12932709cec3dd3a9f6b0b27181b328b4ca60acde711f0ff1cc788"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/guard-results.json",
+      "bytes": 6420,
+      "sha256": "b45a610f7a8c05ad4c1a001d9c1a71da6d2b027365be8c573d7ed2c2f7f577ed"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-body-cap-missing-position-bounds-A9ZiKl/build-summary.json",
+      "bytes": 635,
+      "sha256": "213051dc027261b842269b076afb744277b7e30340bac1513cb22daa120d0ed6"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-body-cap-missing-position-bounds-A9ZiKl/build_asset.py",
+      "bytes": 30984,
+      "sha256": "2412f0f4bd6498784c96b7d722ca3cb5d4454e7526a4ef5f6c1957b1ede84bc4"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-body-cap-missing-position-bounds-A9ZiKl/manifest.json",
+      "bytes": 1770,
+      "sha256": "31c63a325d3ab6835146bc834bb0c0f5d9f73617f0a6d07d0f19b88c37c3b9ee"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-body-cap-missing-position-bounds-A9ZiKl/poses.json",
+      "bytes": 86562,
+      "sha256": "6dd7ce35a027352b4f2cffbe673081910837e69d56c9f4ec866e970381c6e96d"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-body-cap-missing-position-bounds-A9ZiKl/profile.json",
+      "bytes": 32679,
+      "sha256": "1ef4358f9221517dfe389ac3bd852702ca18abdc1a35ec2ce6a9f955067bcf04"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-body-cap-missing-position-bounds-A9ZiKl/selected-a.blend",
+      "bytes": 572151,
+      "sha256": "80704c8f2989683dffa59f9616b1ef146eab944f7d05ae0e0bf55e1964bc508e"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-body-cap-missing-position-bounds-A9ZiKl/selected-a.glb",
+      "bytes": 673148,
+      "sha256": "02c5a8c656ca23c55571a4e32241fd36afc2a12d96bfa704b9896c5661b19c0b"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-body-cap-missing-position-bounds-A9ZiKl/validate_asset.mjs",
+      "bytes": 11497,
+      "sha256": "dc1231aa8c824a184582a69fd6b7d7603c2de979ff5e05e6421a3e2ace5ea0ad"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-body-cap-missing-position-bounds-A9ZiKl/validate_contract.mjs",
+      "bytes": 10053,
+      "sha256": "b65ea4dbf9dcd034791b53203d41c98de5d94abaccffef0fb0aca3e4b13b3a87"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-body-cap-missing-position-bounds-A9ZiKl/validation.json",
+      "bytes": 6276,
+      "sha256": "847556d22a429b9c77502f2fdaa9ff458dcd183acb336b593714494b5f1bc7e1"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-body-cap-missing-position-bounds.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-body-cap-missing-position-bounds.stdout.txt",
+      "bytes": 700,
+      "sha256": "0ecdbc9fd02b10f871600f2cb16a31428cc4a57f4768a687cc77adc99d808e29"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-body-cap-skin-zero-gzoUpX/build-summary.json",
+      "bytes": 635,
+      "sha256": "213051dc027261b842269b076afb744277b7e30340bac1513cb22daa120d0ed6"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-body-cap-skin-zero-gzoUpX/build_asset.py",
+      "bytes": 30984,
+      "sha256": "2412f0f4bd6498784c96b7d722ca3cb5d4454e7526a4ef5f6c1957b1ede84bc4"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-body-cap-skin-zero-gzoUpX/manifest.json",
+      "bytes": 1770,
+      "sha256": "4f71192b348ce3e7dac27a330fb11002a59a66d9be90995221798820c2d16ab5"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-body-cap-skin-zero-gzoUpX/poses.json",
+      "bytes": 86562,
+      "sha256": "6dd7ce35a027352b4f2cffbe673081910837e69d56c9f4ec866e970381c6e96d"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-body-cap-skin-zero-gzoUpX/profile.json",
+      "bytes": 32679,
+      "sha256": "345f6424bc93725c38ad54f35e8b58beccf59dd3362f48a76ce5ad89e6705bad"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-body-cap-skin-zero-gzoUpX/selected-a.blend",
+      "bytes": 572151,
+      "sha256": "80704c8f2989683dffa59f9616b1ef146eab944f7d05ae0e0bf55e1964bc508e"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-body-cap-skin-zero-gzoUpX/selected-a.glb",
+      "bytes": 673280,
+      "sha256": "3561165ff04cac56d97ad943a2f11ee154c33c336090f7b8b00103bb2bc24822"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-body-cap-skin-zero-gzoUpX/validate_asset.mjs",
+      "bytes": 11497,
+      "sha256": "dc1231aa8c824a184582a69fd6b7d7603c2de979ff5e05e6421a3e2ace5ea0ad"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-body-cap-skin-zero-gzoUpX/validate_contract.mjs",
+      "bytes": 10053,
+      "sha256": "b65ea4dbf9dcd034791b53203d41c98de5d94abaccffef0fb0aca3e4b13b3a87"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-body-cap-skin-zero-gzoUpX/validation.json",
+      "bytes": 6276,
+      "sha256": "b57c23be0d50798f5768246f4c9aca200737e67b6af48123006baa4c2c02e352"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-body-cap-skin-zero.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-body-cap-skin-zero.stdout.txt",
+      "bytes": 700,
+      "sha256": "315912af5eb1d40e9f350119116ea0cd66bcee48e37d3a7bb7e4005e86939461"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-valid-exact-v02-7ChGT2/build-summary.json",
+      "bytes": 635,
+      "sha256": "213051dc027261b842269b076afb744277b7e30340bac1513cb22daa120d0ed6"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-valid-exact-v02-7ChGT2/build_asset.py",
+      "bytes": 30984,
+      "sha256": "2412f0f4bd6498784c96b7d722ca3cb5d4454e7526a4ef5f6c1957b1ede84bc4"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-valid-exact-v02-7ChGT2/manifest.json",
+      "bytes": 1770,
+      "sha256": "5ab01dc63a952d618877e150729b443ecb4cf9922cd3bdf1df7a985e6f6f7423"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-valid-exact-v02-7ChGT2/poses.json",
+      "bytes": 86562,
+      "sha256": "6dd7ce35a027352b4f2cffbe673081910837e69d56c9f4ec866e970381c6e96d"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-valid-exact-v02-7ChGT2/profile.json",
+      "bytes": 32679,
+      "sha256": "f5dbf7f2a9e3e57332c62c21e27013d6ce05d11085fac94ec979631e4728e33e"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-valid-exact-v02-7ChGT2/selected-a.blend",
+      "bytes": 572151,
+      "sha256": "80704c8f2989683dffa59f9616b1ef146eab944f7d05ae0e0bf55e1964bc508e"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-valid-exact-v02-7ChGT2/selected-a.glb",
+      "bytes": 673268,
+      "sha256": "bc1a4d6d968dd53eda3480936959d0ebf292e76652a6bbdd201e15f4cd665270"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-valid-exact-v02-7ChGT2/validate_asset.mjs",
+      "bytes": 11497,
+      "sha256": "dc1231aa8c824a184582a69fd6b7d7603c2de979ff5e05e6421a3e2ace5ea0ad"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-valid-exact-v02-7ChGT2/validate_contract.mjs",
+      "bytes": 10053,
+      "sha256": "b65ea4dbf9dcd034791b53203d41c98de5d94abaccffef0fb0aca3e4b13b3a87"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-valid-exact-v02-7ChGT2/validation.json",
+      "bytes": 6276,
+      "sha256": "c572afd0b5e62ae65970934fb3e3c91e045cdeb735d57626c485820c855af4e0"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-valid-exact-v02.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/old-valid-exact-v02.stdout.txt",
+      "bytes": 700,
+      "sha256": "677e0ba07522dcfcb5e907fb44ba656ed2bdaf878c57d5141a1f0c450375c5b1"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/probe.mjs",
+      "bytes": 11609,
+      "sha256": "314ee20b97033c0bc08e07c457e5c5a6f2a47222426116137a85796ca1f3e07c"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/review.md",
+      "bytes": 8855,
+      "sha256": "ac9dc8b4f1db829ba914ff2de3e76548b3c1a7a15fef3beff34d9b7f63541bf5"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/source-after.json",
+      "bytes": 4780,
+      "sha256": "e9997a2e9a116b2512ec6ccd24ec757221a978f80d89b4c793c807007bd45d5d"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/source-before.json",
+      "bytes": 4759,
+      "sha256": "98a0c175bd0539e4159a2cec87602795545850f1e7a279003099da2292a511c2"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/source-comparison.json",
+      "bytes": 328,
+      "sha256": "efffeb661ac344d5280001f9059a7574e99f832cd7dd3929615fdd31f127dd0f"
+    },
+    {
+      "path": "design/assistant/robot/review/export-validator-v03/summary.json",
+      "bytes": 464,
+      "sha256": "26c84534bad00a97805ae6e9523697cff79f2cad72cf73a8e11300eed23285a5"
+    }
+  ]
+}

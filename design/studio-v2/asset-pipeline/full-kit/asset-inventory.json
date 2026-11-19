@@ -1,0 +1,2067 @@
+{
+ "schema": "studio-full-kit-art-inventory/1 (art proposal; not the export contract)",
+ "status": "PLANNING ONLY. No asset exists. Node and material names are art proposals for the Codex technical mapper to freeze; reserved names target_* and border_* are used exactly as the integration contract reserves them.",
+ "task": {
+  "task": "task_069e146abc59",
+  "dispatch": "ctx_8446c84f0a28",
+  "author": "Claude (actual), full-kit art planner",
+  "date": "2026-11-15"
+ },
+ "boundSnapshot": {
+  "build-studio.ts": "e23588e2702ece52c5b8a2ed25adb2debac366fdf90c66609a5ef4299ffc11ae",
+  "view-config.ts": "1fea7adbcfd730a56920389c8ac4ecf8323c9739fd4882c15f3e134a11f1a450",
+  "textures.ts": "09f6ff6cc7bb8910f09838566dfcf840d85a0d2ce1be8d064deafb0989c63aa6",
+  "public/studio/pilot-right-limit-v03.glb": "2b9a4182c3024485680c1e066c8a22ef0dc0f541acca4bd958486bced2c4063e",
+  "note": "pilot-runtime-v01 captures were taken at build-studio.ts d8abf67f, before the runtime tuning now on disk. Lighting may change again; reconcile at M6, not before."
+ },
+ "units": {
+  "authoring": "Blender metres, Z up",
+  "worldToBlender": "(x/2, -z/2, (y-0.11)/2)",
+  "eyeBlenderM": [
+   -0.35,
+   -1.7,
+   1.345
+  ],
+  "roomInteriorBlenderM": {
+   "x": [
+    -2.25,
+    2.55
+   ],
+   "y": [
+    -3.3,
+    1.06
+   ],
+   "z": [
+    0,
+    2.595
+   ]
+  },
+  "adapter": "unchanged from the pilot contract: world = 2 * gltf + (0, 0.11, 0), applied once"
+ },
+ "scaleTiers": {
+  "A": {
+   "factor": 1.0,
+   "appliesTo": "architecture, doors, windows, furniture heights, stands, snowboard, lamp"
+  },
+  "F": {
+   "factor": 1.25,
+   "appliesTo": "floor-standing gear and instruments: PC tower, subwoofer, controller, drum pads, cymbals, pedals"
+  },
+  "D": {
+   "factor": 1.6,
+   "appliesTo": "everything that sits on the desk top, including the screens (which already equal 27-inch-class panels at about 1.57)"
+  },
+  "status": "Proposed (pending choice P2). The prototype mixes 0.75x to 2.6x."
+ },
+ "collections": {
+  "FK_LIBRARY": "materials, images, modifier presets; linked into every stage file",
+  "FK_ARCH": "shell, trims, window, door, floor lamp",
+  "FK_WORKSTATION": "desk, monitors bodies, cables, under-desk, pendant",
+  "FK_TARGETS": "three target quads, three border quads, fourth display quad",
+  "FK_NEARFIELD": "hand-scale desk gear",
+  "FK_MUSIC": "controller, stand, drums, pedals, seats, rug",
+  "FK_WALLS": "left and back wall dressing, wall lights",
+  "FK_CONTACT": "contact decals",
+  "FK_BLOCKOUT": "grey proxies for composition, never exported",
+  "FK_CAMERAS": "eye cameras, never exported",
+  "FK_LIGHT_REFERENCE": "Blender copies of the runtime lights, never exported",
+  "REF_RAW": "optional read-only link to meshy-raw/mouse-base.glb for proportions, never exported"
+ },
+ "materials": [
+  {
+   "name": "lib_plaster",
+   "role": "Olive plaster for walls, ceiling, cornice. Small tiling mottle multiplied by COLOR_0 light memory.",
+   "alpha": "OPAQUE",
+   "textures": [
+    {
+     "image": "fk_plaster_mottle",
+     "px": [
+      256,
+      256
+     ],
+     "format": "JPEG",
+     "channel": "baseColor",
+     "budgetBytes": 16000
+    }
+   ],
+   "vertexColour": true,
+   "continuesPilotName": false
+  },
+  {
+   "name": "lib_floor",
+   "role": "Smoked floorboards, matte. Tiling boards multiplied by COLOR_0 light memory.",
+   "alpha": "OPAQUE",
+   "textures": [
+    {
+     "image": "fk_floorboards",
+     "px": [
+      512,
+      512
+     ],
+     "format": "JPEG",
+     "channel": "baseColor",
+     "budgetBytes": 48000
+    }
+   ],
+   "vertexColour": true,
+   "continuesPilotName": false
+  },
+  {
+   "name": "lib_oak",
+   "role": "Honey oak: door leaf, desk top, shelf, coaster, controller cheeks, drum sticks. Shared grain strip with end-grain block.",
+   "alpha": "OPAQUE",
+   "textures": [
+    {
+     "image": "fk_timber_grain",
+     "px": [
+      1024,
+      256
+     ],
+     "format": "JPEG",
+     "channel": "baseColor",
+     "budgetBytes": 64000
+    }
+   ],
+   "vertexColour": false,
+   "continuesPilotName": true
+  },
+  {
+   "name": "lib_dark_oak",
+   "role": "One dark trim timber: beams, skirting, architrave, window frame and sill. Same grain image, dark factor.",
+   "alpha": "OPAQUE",
+   "textures": [
+    {
+     "image": "fk_timber_grain",
+     "px": [
+      1024,
+      256
+     ],
+     "format": "JPEG",
+     "channel": "baseColor",
+     "budgetBytes": 0,
+     "shared": true
+    }
+   ],
+   "vertexColour": false,
+   "continuesPilotName": true
+  },
+  {
+   "name": "lib_weave",
+   "role": "Cloth: rug, desk mat, acoustic fabric, stool tops, speaker cloth. Greyscale weave, tint per object through COLOR_0.",
+   "alpha": "OPAQUE",
+   "textures": [
+    {
+     "image": "fk_weave",
+     "px": [
+      256,
+      256
+     ],
+     "format": "JPEG",
+     "channel": "baseColor",
+     "budgetBytes": 20000
+    }
+   ],
+   "vertexColour": true,
+   "continuesPilotName": false
+  },
+  {
+   "name": "lib_linen_shade",
+   "role": "Lamp shade only: shared weave plus emissive core-to-rim ramp.",
+   "alpha": "OPAQUE",
+   "textures": [
+    {
+     "image": "fk_weave",
+     "px": [
+      256,
+      256
+     ],
+     "format": "JPEG",
+     "channel": "baseColor",
+     "budgetBytes": 0,
+     "shared": true
+    },
+    {
+     "image": "fk_shade_emissive",
+     "px": [
+      64,
+      256
+     ],
+     "format": "PNG",
+     "channel": "emissive",
+     "budgetBytes": 10000
+    }
+   ],
+   "vertexColour": false,
+   "continuesPilotName": true
+  },
+  {
+   "name": "lib_palette",
+   "role": "Every flat-colour surface: ivory and black plastic, rubber, ceramic, pastel caps, brass, brushed and black metal, paper, leaf. One swatch atlas with matching metallic-roughness atlas; UV islands collapse onto swatch centres.",
+   "alpha": "OPAQUE",
+   "textures": [
+    {
+     "image": "fk_palette_colour",
+     "px": [
+      128,
+      128
+     ],
+     "format": "PNG",
+     "channel": "baseColor",
+     "budgetBytes": 3000
+    },
+    {
+     "image": "fk_palette_orm",
+     "px": [
+      128,
+      128
+     ],
+     "format": "PNG",
+     "channel": "metallicRoughness",
+     "budgetBytes": 3000
+    }
+   ],
+   "vertexColour": false,
+   "continuesPilotName": false,
+   "note": "Replaces the pilot one-off lib_brass, lib_brushed_metal, lib_black_metal, lib_linen_trim in the full-kit profile. Metal swatches authored at metalness 0.6 or lower because the runtime has no environment map."
+  },
+  {
+   "name": "lib_glow",
+   "role": "Fixture diffusers and small indicators: pendant lens, wall triangles, lamp bulb, controller display, PC interior. Emissive ramp atlas so each diffuser has a core and a falloff, never a flat card.",
+   "alpha": "OPAQUE",
+   "textures": [
+    {
+     "image": "fk_glow_ramps",
+     "px": [
+      128,
+      128
+     ],
+     "format": "PNG",
+     "channel": "emissive",
+     "budgetBytes": 8000
+    }
+   ],
+   "vertexColour": false,
+   "continuesPilotName": false,
+   "note": "Supersedes pilot lib_bulb. Uses KHR_materials_emissive_strength, already allowed by the pilot profile."
+  },
+  {
+   "name": "lib_frost",
+   "role": "Frosted keyboard case only.",
+   "alpha": "BLEND",
+   "textures": [],
+   "vertexColour": false,
+   "continuesPilotName": false
+  },
+  {
+   "name": "lib_glass",
+   "role": "PC side panel only.",
+   "alpha": "BLEND",
+   "textures": [],
+   "vertexColour": false,
+   "continuesPilotName": false
+  },
+  {
+   "name": "lib_contact",
+   "role": "Soft contact shadow decals, merged per support surface.",
+   "alpha": "BLEND",
+   "textures": [
+    {
+     "image": "fk_contact_soft",
+     "px": [
+      128,
+      128
+     ],
+     "format": "PNG",
+     "channel": "baseColor+alpha",
+     "budgetBytes": 5000
+    }
+   ],
+   "vertexColour": false,
+   "continuesPilotName": false
+  },
+  {
+   "name": "rt_placeholder",
+   "role": "Placeholder on runtime-authored surfaces (three targets, three borders, fourth display, dusk pane). The runtime replaces it; its look is never evidence.",
+   "alpha": "OPAQUE",
+   "textures": [],
+   "vertexColour": false,
+   "continuesPilotName": false
+  }
+ ],
+ "targets": {
+  "faces": [
+   {
+    "node": "target_dissertation",
+    "projectId": "dissertation",
+    "faceSizeM": [
+     0.94,
+     0.53
+    ],
+    "geometry": "one planar quad, 4 vertices, 2 triangles, UV0 covering 0..1 once, image upright seen from the front",
+    "currentPlacement": {
+     "centreBlenderM": [
+      -0.805,
+      0.108,
+      1.135
+     ],
+     "frontNormalBlender": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "rotationAboutBlenderZRad": 0.0
+    },
+    "proposedPlacement": {
+     "centreBlenderM": [
+      -0.805,
+      0.168,
+      1.135
+     ],
+     "frontNormalBlender": [
+      0.0,
+      -1.0,
+      0.0
+     ],
+     "rotationAboutBlenderZRad": 0.0
+    },
+    "borderNode": "border_dissertation",
+    "borderSizeM_proposed": [
+     0.96,
+     0.55
+    ],
+    "borderSizeM_current": [
+     0.9675,
+     0.5575
+    ]
+   },
+   {
+    "node": "target_copilot",
+    "projectId": "copilot",
+    "faceSizeM": [
+     0.4,
+     0.67
+    ],
+    "geometry": "one planar quad, 4 vertices, 2 triangles, UV0 covering 0..1 once, image upright seen from the front",
+    "currentPlacement": {
+     "centreBlenderM": [
+      -1.54702,
+      0.03921,
+      1.165
+     ],
+     "frontNormalBlender": [
+      0.29552,
+      -0.95534,
+      0.0
+     ],
+     "rotationAboutBlenderZRad": 0.3
+    },
+    "borderNode": "border_copilot",
+    "borderSizeM_proposed": [
+     0.42,
+     0.69
+    ],
+    "borderSizeM_current": [
+     0.4275,
+     0.6975
+    ]
+   },
+   {
+    "node": "target_typeforge",
+    "projectId": "typeforge",
+    "faceSizeM": [
+     0.4,
+     0.67
+    ],
+    "geometry": "one planar quad, 4 vertices, 2 triangles, UV0 covering 0..1 once, image upright seen from the front",
+    "currentPlacement": {
+     "centreBlenderM": [
+      -0.06298,
+      0.03921,
+      1.165
+     ],
+     "frontNormalBlender": [
+      -0.29552,
+      -0.95534,
+      0.0
+     ],
+     "rotationAboutBlenderZRad": -0.3
+    },
+    "borderNode": "border_typeforge",
+    "borderSizeM_proposed": [
+     0.42,
+     0.69
+    ],
+    "borderSizeM_current": [
+     0.4275,
+     0.6975
+    ]
+   }
+  ],
+  "decorativeDisplay": {
+   "node": "display_studio",
+   "faceSizeM": [
+    0.645,
+    0.365
+   ],
+   "geometry": "one planar quad, 4 vertices, 2 triangles, UV0 covering 0..1 once, image upright seen from the front",
+   "currentPlacement": {
+    "centreBlenderM": [
+     -0.805,
+     0.293,
+     1.705
+    ],
+    "frontNormalBlender": [
+     0.0,
+     -1.0,
+     0.0
+    ],
+    "rotationAboutBlenderZRad": 0.0
+   },
+   "note": "Subordinate fourth display: no target, no border, opaque occluder. Node name is an art proposal; Codex freezes it."
+  },
+  "separationMm_proposed": {
+   "bezelRecessFloorToBorder": 4.0,
+   "borderToFace": 4.0,
+   "bezelLipFrontToFacePlane": 0.0
+  },
+  "separationMm_current": {
+   "bezelFrontToBorder": 2.0,
+   "borderToFace": 2.5
+  },
+  "rules": [
+   "Face and border are parallel planes; border sits behind the face and overhangs it by 10 mm on every side (current 13.75 mm).",
+   "The bezel lip surrounds the border and is flush with the face plane, so the highlight reads as an inset line and nothing opaque lies in front of the face.",
+   "No opaque geometry other than listed foreground props may cross the pyramid from the eye to any face. Home pose must stay 81 of 81 sample rays clear on all three faces.",
+   "Face and border meshes carry no bevel, no modifier and no extra vertices."
+  ]
+ },
+ "camera": {
+  "frozenNow": {
+   "eye": [
+    -0.7,
+    2.8,
+    3.4
+   ],
+   "desktopFov": 58,
+   "mobileFov": 64,
+   "desktopHome": [
+    -4,
+    -6
+   ],
+   "mobileHome": [
+    -13,
+    -8
+   ],
+   "yawBounds": [
+    -38,
+    58
+   ],
+   "pitchBounds": [
+    -16,
+    12
+   ]
+  },
+  "proposed": {
+   "mobileFov": 74,
+   "mobileHome": [
+    -14,
+    -7
+   ],
+   "centralMonitorGroupZ": -0.39,
+   "bezelSideWorldUnits": 0.035,
+   "everythingElse": "unchanged"
+  },
+  "arithmetic": {
+   "current_320x844_fov64": {
+    "viewport": "320x844",
+    "verticalFov": 64,
+    "horizontalFovDeg": 26.7,
+    "bezelMarginPxEachSide": -27.7,
+    "faceWidthPx": 351,
+    "monitorAzimuthDeg": -14.13
+   },
+   "current_390x844_fov64": {
+    "viewport": "390x844",
+    "verticalFov": 64,
+    "horizontalFovDeg": 32.2,
+    "bezelMarginPxEachSide": 7.3,
+    "faceWidthPx": 351,
+    "monitorAzimuthDeg": -14.13
+   },
+   "current_1440x900_fov58": {
+    "viewport": "1440x900",
+    "verticalFov": 58,
+    "horizontalFovDeg": 83.1,
+    "bezelMarginPxEachSide": 494.4,
+    "faceWidthPx": 422,
+    "monitorAzimuthDeg": -14.13
+   },
+   "fovOnly_320x844_fov70": {
+    "viewport": "320x844",
+    "verticalFov": 70,
+    "horizontalFovDeg": 29.7,
+    "bezelMarginPxEachSide": -7.5,
+    "faceWidthPx": 313,
+    "monitorAzimuthDeg": -14.13
+   },
+   "fovOnly_320x844_fov76": {
+    "viewport": "320x844",
+    "verticalFov": 76,
+    "horizontalFovDeg": 33.0,
+    "bezelMarginPxEachSide": 9.9,
+    "faceWidthPx": 281,
+    "monitorAzimuthDeg": -14.13
+   },
+   "proposed_320x844_fov72": {
+    "viewport": "320x844",
+    "verticalFov": 72,
+    "horizontalFovDeg": 30.8,
+    "bezelMarginPxEachSide": 8.4,
+    "faceWidthPx": 292,
+    "monitorAzimuthDeg": -13.69
+   },
+   "proposed_320x844_fov74": {
+    "viewport": "320x844",
+    "verticalFov": 74,
+    "horizontalFovDeg": 31.9,
+    "bezelMarginPxEachSide": 13.9,
+    "faceWidthPx": 282,
+    "monitorAzimuthDeg": -13.69
+   },
+   "proposed_390x844_fov74": {
+    "viewport": "390x844",
+    "verticalFov": 74,
+    "horizontalFovDeg": 38.4,
+    "bezelMarginPxEachSide": 48.9,
+    "faceWidthPx": 282,
+    "monitorAzimuthDeg": -13.69
+   },
+   "proposed_320x568_fov74": {
+    "viewport": "320x568",
+    "verticalFov": 74,
+    "horizontalFovDeg": 46.0,
+    "bezelMarginPxEachSide": 61.6,
+    "faceWidthPx": 190,
+    "monitorAzimuthDeg": -13.69
+   },
+   "proposed_1440x900_fov58": {
+    "viewport": "1440x900",
+    "verticalFov": 58,
+    "horizontalFovDeg": 83.1,
+    "bezelMarginPxEachSide": 508.1,
+    "faceWidthPx": 409,
+    "monitorAzimuthDeg": -13.69
+   },
+   "proposed_1024x768_fov58": {
+    "viewport": "1024x768",
+    "verticalFov": 58,
+    "horizontalFovDeg": 72.9,
+    "bezelMarginPxEachSide": 331.2,
+    "faceWidthPx": 349,
+    "monitorAzimuthDeg": -13.69
+   }
+  },
+  "coverageEnvelopeDeg": {
+   "azimuth": [
+    -95,
+    115
+   ],
+   "elevation": [
+    -55,
+    50
+   ],
+   "basis": "yaw and pitch bounds plus half-frusta for 21:9 desktop at FOV 58 and tall phones at FOV 76"
+  }
+ },
+ "runtimeAuthored": [
+  "project display textures on the three targets and the fourth display",
+  "per-target border highlight materials and colours",
+  "dusk pane texture (proposed)",
+  "all lights, the single shadow caster and its frustum",
+  "tone mapping, exposure, DPR caps, demand rendering",
+  "occluder list derivation and picking",
+  "temporary per-material response overrides by library name, to be emptied back into the library at M6"
+ ],
+ "budgets": {
+  "transferBytesCompressed": {
+   "ceiling": 1500000,
+   "sceneJsReserve_unmeasured": 330000,
+   "geometryAndJson": 720000,
+   "textures": 300000,
+   "contingency": 150000,
+   "basis": "gzip. Pilot v03 measured about 47 bytes per triangle raw and about 12.7 gzip after removing its PNGs. Re-measured at M1."
+  },
+  "textures": {
+   "plannedBytes": 177000,
+   "plannedPixels": 737280,
+   "unallocatedBytes": 123000,
+   "normalMaps": 0
+  },
+  "trianglesPlaced": {
+   "planned": 75134,
+   "designCeiling": 86500
+  },
+  "trianglesUnique": {
+   "planned": 57144,
+   "atPilotGzipBytesPerTri": 725729
+  },
+  "trianglesCastingShadow": {
+   "planned": 50418,
+   "designCeiling": 52000
+  },
+  "peakRenderedTriangles": {
+   "plannedWorstCase": 125552,
+   "designCeiling": 138500,
+   "gate": 200000
+  },
+  "drawCalls": {
+   "plannedMainPass": 61,
+   "designCeilingMainPass": 70,
+   "shadowPassAllowance": 60,
+   "designCeilingPeak": 130,
+   "gate": 200,
+   "note": "A value of 0 means the asset is exported inside another asset's merge group of the same stage, material and flags."
+  },
+  "shadowCasters": 1,
+  "pointLightsMax": 5
+ },
+ "stages": [
+  {
+   "id": "M0",
+   "title": "Library and scaffold",
+   "owner": "Claude full-kit artist",
+   "dependsOn": [
+    "pilot runtime approval recorded by root",
+    "this plan accepted"
+   ],
+   "blend": "fk-00-library-vNN.blend",
+   "produces": [
+    "material library with every texture image",
+    "bevel and normal modifier presets",
+    "eye cameras",
+    "runtime light reference rig",
+    "swatch board"
+   ],
+   "gate": "G0"
+  },
+  {
+   "id": "M1",
+   "title": "Architecture, enclosure, right-limit pair, and proxy blockout of everything else",
+   "owner": "Claude full-kit artist",
+   "dependsOn": [
+    "M0"
+   ],
+   "blend": "fk-10-arch-vNN.blend",
+   "produces": [
+    "FK_ARCH final geometry",
+    "FK_BLOCKOUT proxies (never exported)",
+    "camera and scale decision renders",
+    "first stage GLB for byte measurement"
+   ],
+   "gate": "G1"
+  },
+  {
+   "id": "M2",
+   "title": "Workstation, screens, stands, cables, under-desk, pendant",
+   "owner": "Claude full-kit artist",
+   "dependsOn": [
+    "M1",
+    "camera decision P1 recorded",
+    "target and border node contract frozen by Codex"
+   ],
+   "blend": "fk-20-workstation-vNN.blend",
+   "produces": [
+    "FK_WORKSTATION",
+    "FK_TARGETS"
+   ],
+   "gate": "G2"
+  },
+  {
+   "id": "M3",
+   "title": "Nearfield hand-scale gear",
+   "owner": "Claude full-kit artist",
+   "dependsOn": [
+    "M2",
+    "scale decision P2 recorded"
+   ],
+   "blend": "fk-30-nearfield-vNN.blend",
+   "produces": [
+    "FK_NEARFIELD including the native mouse"
+   ],
+   "gate": "G3"
+  },
+  {
+   "id": "M4",
+   "title": "Music rig, supports, pedals",
+   "owner": "Claude full-kit artist",
+   "dependsOn": [
+    "M1",
+    "scale decision P2 recorded"
+   ],
+   "blend": "fk-40-music-vNN.blend",
+   "produces": [
+    "FK_MUSIC"
+   ],
+   "gate": "G4"
+  },
+  {
+   "id": "M5",
+   "title": "Side and back wall dressing",
+   "owner": "Claude full-kit artist",
+   "dependsOn": [
+    "M1"
+   ],
+   "blend": "fk-50-walls-vNN.blend",
+   "produces": [
+    "FK_WALLS"
+   ],
+   "gate": "G5"
+  },
+  {
+   "id": "M6",
+   "title": "Assembly, light memory bake, contact decals, full export",
+   "owner": "Claude full-kit artist; Codex validates; root captures",
+   "dependsOn": [
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "full-kit profile and validator from Codex"
+   ],
+   "blend": "fk-90-assembly-vNN.blend",
+   "produces": [
+    "studio-full-kit-vNN.glb candidate",
+    "budget ledger",
+    "reconciled runtime tuning table"
+   ],
+   "gate": "G6 then runtime gates R1 to R4"
+  }
+ ],
+ "stageTotals": {
+  "M1": {
+   "trisUnique": 15950,
+   "trisPlaced": 17670,
+   "trisCasting": 2608,
+   "drawsMain": 10,
+   "assets": 11,
+   "ceilingTrisPlaced": 20000,
+   "ceilingDrawsMain": 12
+  },
+  "M2": {
+   "trisUnique": 13014,
+   "trisPlaced": 15214,
+   "trisCasting": 11900,
+   "drawsMain": 19,
+   "assets": 14,
+   "ceilingTrisPlaced": 18000,
+   "ceilingDrawsMain": 20
+  },
+  "M3": {
+   "trisUnique": 10500,
+   "trisPlaced": 14100,
+   "trisCasting": 14100,
+   "drawsMain": 7,
+   "assets": 8,
+   "ceilingTrisPlaced": 15500,
+   "ceilingDrawsMain": 9
+  },
+  "M4": {
+   "trisUnique": 12760,
+   "trisPlaced": 19710,
+   "trisCasting": 18510,
+   "drawsMain": 14,
+   "assets": 15,
+   "ceilingTrisPlaced": 22500,
+   "ceilingDrawsMain": 16
+  },
+  "M5": {
+   "trisUnique": 4800,
+   "trisPlaced": 8320,
+   "trisCasting": 3300,
+   "drawsMain": 8,
+   "assets": 10,
+   "ceilingTrisPlaced": 10000,
+   "ceilingDrawsMain": 10
+  },
+  "M6": {
+   "trisUnique": 120,
+   "trisPlaced": 120,
+   "trisCasting": 0,
+   "drawsMain": 3,
+   "assets": 1,
+   "ceilingTrisPlaced": 500,
+   "ceilingDrawsMain": 3
+  }
+ },
+ "totals": {
+  "trisUnique": 57144,
+  "trisPlaced": 75134,
+  "trisCasting": 50418,
+  "drawsMain": 61,
+  "assets": 59
+ },
+ "assets": [
+  {
+   "id": "arch_shell",
+   "collection": "FK_ARCH",
+   "stage": "M1",
+   "title": "Four walls and ceiling, inward faces, window and door reveals cut in",
+   "source": "native-new",
+   "scaleTier": "A",
+   "targetSizeM": "4.80 x 4.36 x 2.595 interior",
+   "materials": [
+    "lib_plaster"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 5200,
+   "trisPlaced": 5200,
+   "drawsMainPass": 1,
+   "castsShadow": false,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": "0.20 m grid so COLOR_0 can carry light pooling and corner darkening. Closed at every join; no backfaces visible from the eye."
+  },
+  {
+   "id": "arch_cornice",
+   "collection": "FK_ARCH",
+   "stage": "M1",
+   "title": "Cove cornice, mitred, continuous",
+   "source": "native-new",
+   "scaleTier": "A",
+   "targetSizeM": "60 mm cove",
+   "materials": [
+    "lib_plaster"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 1000,
+   "trisPlaced": 1000,
+   "drawsMainPass": 0,
+   "castsShadow": false,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": "Curve profile swept on a path; exported inside the plaster group."
+  },
+  {
+   "id": "arch_floor",
+   "collection": "FK_ARCH",
+   "stage": "M1",
+   "title": "Floorboards",
+   "source": "native-new",
+   "scaleTier": "A",
+   "targetSizeM": "4.80 x 4.36",
+   "materials": [
+    "lib_floor"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 1400,
+   "trisPlaced": 1400,
+   "drawsMainPass": 1,
+   "castsShadow": false,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": "0.25 m grid for COLOR_0. Board direction runs toward the back wall."
+  },
+  {
+   "id": "arch_skirting",
+   "collection": "FK_ARCH",
+   "stage": "M1",
+   "title": "Profiled skirting, mitred, continuous",
+   "source": "native-new",
+   "scaleTier": "A",
+   "targetSizeM": "110 mm high",
+   "materials": [
+    "lib_dark_oak"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 900,
+   "trisPlaced": 900,
+   "drawsMainPass": 1,
+   "castsShadow": false,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": "Dark trim timber, replacing the prototype black strip."
+  },
+  {
+   "id": "arch_beams",
+   "collection": "FK_ARCH",
+   "stage": "M1",
+   "title": "Four chamfered ceiling beams with wall plates",
+   "source": "native-new",
+   "scaleTier": "A",
+   "targetSizeM": "0.12 x 0.11 x 4.80 each",
+   "materials": [
+    "lib_dark_oak"
+   ],
+   "linkedInstances": 4,
+   "trisUnique": 180,
+   "trisPlaced": 720,
+   "drawsMainPass": 0,
+   "castsShadow": false,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": "Linked duplicates. Undersides must not show a saturated specular streak (seen in right-up-1440)."
+  },
+  {
+   "id": "arch_window",
+   "collection": "FK_ARCH",
+   "stage": "M1",
+   "title": "Window frame, mullion, sash bead, sill, reveal",
+   "source": "native-new",
+   "scaleTier": "A",
+   "targetSizeM": "1.08 x 1.08 opening",
+   "materials": [
+    "lib_dark_oak"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 1100,
+   "trisPlaced": 1100,
+   "drawsMainPass": 0,
+   "castsShadow": false,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": "Same timber as beams and architrave."
+  },
+  {
+   "id": "rt_window_dusk",
+   "collection": "FK_ARCH",
+   "stage": "M1",
+   "title": "Dusk pane quad",
+   "source": "native-new",
+   "scaleTier": "A",
+   "targetSizeM": "1.00 x 1.00",
+   "materials": [
+    "rt_placeholder"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 2,
+   "trisPlaced": 2,
+   "drawsMainPass": 1,
+   "castsShadow": false,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": "Runtime keeps its procedural dusk texture; node name is an art proposal for Codex to freeze. Fallback: embedded 512x256 JPEG, about 25 kB."
+  },
+  {
+   "id": "arch_blind",
+   "collection": "FK_ARCH",
+   "stage": "M1",
+   "title": "Half-drawn blind: head rail, 14 slats, ladder cords, bottom rail",
+   "source": "native-new",
+   "scaleTier": "A",
+   "targetSizeM": "1.00 wide, 0.45 drop",
+   "materials": [
+    "lib_palette"
+   ],
+   "linkedInstances": 14,
+   "trisUnique": 260,
+   "trisPlaced": 1300,
+   "drawsMainPass": 1,
+   "castsShadow": false,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": "Slats are linked duplicates with a slight curl."
+  },
+  {
+   "id": "arch_door",
+   "collection": "FK_ARCH",
+   "stage": "M1",
+   "title": "Panelled door, architrave, knob, rose, keyhole; adds three hinges and threshold",
+   "source": "migrate-pilot-v03",
+   "scaleTier": "A",
+   "targetSizeM": "0.70 x 2.146",
+   "materials": [
+    "lib_oak",
+    "lib_dark_oak",
+    "lib_palette"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 3200,
+   "trisPlaced": 3200,
+   "drawsMainPass": 2,
+   "castsShadow": false,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": "Geometry from pilot-right-limit-v03.blend re-pointed to the shared library. Pilot files stay untouched."
+  },
+  {
+   "id": "arch_switches",
+   "collection": "FK_ARCH",
+   "stage": "M1",
+   "title": "Switch plate by the door, two wall sockets",
+   "source": "native-new",
+   "scaleTier": "A",
+   "targetSizeM": "86 mm plates",
+   "materials": [
+    "lib_palette"
+   ],
+   "linkedInstances": 3,
+   "trisUnique": 100,
+   "trisPlaced": 240,
+   "drawsMainPass": 0,
+   "castsShadow": false,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": "Dressing for the wall strip between door and rear wall that only ultrawide desktops reach."
+  },
+  {
+   "id": "fix_floor_lamp",
+   "collection": "FK_ARCH",
+   "stage": "M1",
+   "title": "Floor lamp: base, pole, fittings, linen shade, trims, bulb",
+   "source": "migrate-pilot-v03",
+   "scaleTier": "A",
+   "targetSizeM": "1.892 high",
+   "materials": [
+    "lib_palette",
+    "lib_linen_shade",
+    "lib_glow"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 2608,
+   "trisPlaced": 2608,
+   "drawsMainPass": 3,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": "Shade, trims and bulb nocast as in the pilot. Darker trim bands and seam per the generation critique."
+  },
+  {
+   "id": "desk_top",
+   "collection": "FK_WORKSTATION",
+   "stage": "M2",
+   "title": "Timber desk top with eased edge, end grain, cable grommet",
+   "source": "native-new",
+   "scaleTier": "D",
+   "targetSizeM": "2.45 x 0.875 x 0.04, top at 0.735",
+   "materials": [
+    "lib_oak"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 900,
+   "trisPlaced": 900,
+   "drawsMainPass": 1,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": "timber desk",
+   "notes": "Separate end-grain UV islands. Thickness reads 40 mm, not the prototype 80 mm."
+  },
+  {
+   "id": "desk_frame",
+   "collection": "FK_WORKSTATION",
+   "stage": "M2",
+   "title": "Steel legs, rails, levelling feet, under-desk cable tray",
+   "source": "native-new",
+   "scaleTier": "A",
+   "targetSizeM": "0.70 high",
+   "materials": [
+    "lib_palette"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 1400,
+   "trisPlaced": 1400,
+   "drawsMainPass": 1,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": "timber desk",
+   "notes": ""
+  },
+  {
+   "id": "desk_mat",
+   "collection": "FK_WORKSTATION",
+   "stage": "M2",
+   "title": "Felt desk mat with stitched edge",
+   "source": "native-new",
+   "scaleTier": "D",
+   "targetSizeM": "0.90 x 0.40",
+   "materials": [
+    "lib_weave"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 300,
+   "trisPlaced": 300,
+   "drawsMainPass": 1,
+   "castsShadow": false,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": ""
+  },
+  {
+   "id": "mon_central",
+   "collection": "FK_WORKSTATION",
+   "stage": "M2",
+   "title": "Landscape monitor: rear shell, 17.5 mm bezel lip, chin, hinge, neck, foot",
+   "source": "native-new",
+   "scaleTier": "D",
+   "targetSizeM": "0.975 x 0.565 outer",
+   "materials": [
+    "lib_palette"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 1600,
+   "trisPlaced": 1600,
+   "drawsMainPass": 1,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": "Proposed 60 mm setback and thinner bezel; see camera section."
+  },
+  {
+   "id": "mon_side",
+   "collection": "FK_WORKSTATION",
+   "stage": "M2",
+   "title": "Portrait monitor with stand, used twice (mirrored)",
+   "source": "native-new",
+   "scaleTier": "D",
+   "targetSizeM": "0.435 x 0.705 outer",
+   "materials": [
+    "lib_palette"
+   ],
+   "linkedInstances": 2,
+   "trisUnique": 1400,
+   "trisPlaced": 2800,
+   "drawsMainPass": 1,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": "Linked; 0.3 rad toe-in kept."
+  },
+  {
+   "id": "mon_top",
+   "collection": "FK_WORKSTATION",
+   "stage": "M2",
+   "title": "Raised fourth monitor on pole arm with desk clamp",
+   "source": "native-new",
+   "scaleTier": "D",
+   "targetSizeM": "0.68 x 0.40 outer",
+   "materials": [
+    "lib_palette"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 1100,
+   "trisPlaced": 1100,
+   "drawsMainPass": 1,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": ""
+  },
+  {
+   "id": "target_faces",
+   "collection": "FK_TARGETS",
+   "stage": "M2",
+   "title": "Three target quads",
+   "source": "native-new",
+   "scaleTier": "D",
+   "targetSizeM": "see targets",
+   "materials": [
+    "rt_placeholder"
+   ],
+   "linkedInstances": 3,
+   "trisUnique": 6,
+   "trisPlaced": 6,
+   "drawsMainPass": 3,
+   "castsShadow": false,
+   "occluder": false,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": "Excluded from occluders by contract. Receive no shadow."
+  },
+  {
+   "id": "target_borders",
+   "collection": "FK_TARGETS",
+   "stage": "M2",
+   "title": "Three border quads",
+   "source": "native-new",
+   "scaleTier": "D",
+   "targetSizeM": "see targets",
+   "materials": [
+    "rt_placeholder"
+   ],
+   "linkedInstances": 3,
+   "trisUnique": 6,
+   "trisPlaced": 6,
+   "drawsMainPass": 3,
+   "castsShadow": false,
+   "occluder": false,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": "Excluded from occluders by the existing narrow exception. Adapter gives each its own highlight material."
+  },
+  {
+   "id": "display_studio",
+   "collection": "FK_TARGETS",
+   "stage": "M2",
+   "title": "Fourth display face quad",
+   "source": "native-new",
+   "scaleTier": "D",
+   "targetSizeM": "0.645 x 0.365",
+   "materials": [
+    "rt_placeholder"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 2,
+   "trisPlaced": 2,
+   "drawsMainPass": 1,
+   "castsShadow": false,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": "Opaque occluder, no target."
+  },
+  {
+   "id": "mon_cables",
+   "collection": "FK_WORKSTATION",
+   "stage": "M2",
+   "title": "Power and video cables from each monitor to the grommet",
+   "source": "native-new",
+   "scaleTier": "D",
+   "targetSizeM": "8 mm round",
+   "materials": [
+    "lib_palette"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 1200,
+   "trisPlaced": 1200,
+   "drawsMainPass": 0,
+   "castsShadow": false,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": "Curves with live bevel; six-sided on export. Sag and a tie point, no straight rods."
+  },
+  {
+   "id": "pc_tower",
+   "collection": "FK_WORKSTATION",
+   "stage": "M2",
+   "title": "White PC tower: shell, mesh front, three fan rings, feet, top ports, interior blocks, glass side",
+   "source": "native-new",
+   "scaleTier": "F",
+   "targetSizeM": "0.275 x 0.59 x 0.56",
+   "materials": [
+    "lib_palette",
+    "lib_glass",
+    "lib_glow"
+   ],
+   "linkedInstances": 3,
+   "trisUnique": 2600,
+   "trisPlaced": 3400,
+   "drawsMainPass": 3,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": "white PC",
+   "notes": "Front 50 mm proud of the desk edge so it reads at home; glass side faces the seat. Soft warm-white interior glow, no colour cycling."
+  },
+  {
+   "id": "sub_woofer",
+   "collection": "FK_WORKSTATION",
+   "stage": "M2",
+   "title": "Under-desk subwoofer",
+   "source": "native-new",
+   "scaleTier": "F",
+   "targetSizeM": "0.37 x 0.39 x 0.36",
+   "materials": [
+    "lib_palette",
+    "lib_weave"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 700,
+   "trisPlaced": 700,
+   "drawsMainPass": 1,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": ""
+  },
+  {
+   "id": "under_desk_power",
+   "collection": "FK_WORKSTATION",
+   "stage": "M2",
+   "title": "Power strip, cable loom, tray drop",
+   "source": "native-new",
+   "scaleTier": "A",
+   "targetSizeM": "0.40 strip",
+   "materials": [
+    "lib_palette"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 900,
+   "trisPlaced": 900,
+   "drawsMainPass": 0,
+   "castsShadow": false,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": ""
+  },
+  {
+   "id": "fix_pendant",
+   "collection": "FK_WORKSTATION",
+   "stage": "M2",
+   "title": "Linear pendant: body, recessed lens, end caps, two cables, ceiling canopy",
+   "source": "native-new",
+   "scaleTier": "A",
+   "targetSizeM": "0.95 long",
+   "materials": [
+    "lib_palette",
+    "lib_glow"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 900,
+   "trisPlaced": 900,
+   "drawsMainPass": 2,
+   "castsShadow": false,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": "Lens uses a glow ramp with a brighter centre line."
+  },
+  {
+   "id": "kb_case",
+   "collection": "FK_NEARFIELD",
+   "stage": "M3",
+   "title": "Compact keyboard: frosted case, plate, feet, coiled cable",
+   "source": "native-new",
+   "scaleTier": "D",
+   "targetSizeM": "0.52 x 0.18 x 0.05",
+   "materials": [
+    "lib_frost",
+    "lib_palette"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 1400,
+   "trisPlaced": 1400,
+   "drawsMainPass": 2,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": true,
+   "requiredGear": "compact frosted pastel keyboard",
+   "notes": "Case mesh is BLEND and not an occluder; plate and cable are opaque. Split into two nodes on export."
+  },
+  {
+   "id": "kb_keycaps",
+   "collection": "FK_NEARFIELD",
+   "stage": "M3",
+   "title": "67 sculpted keycaps with dished tops, pastel accents",
+   "source": "native-new",
+   "scaleTier": "D",
+   "targetSizeM": "30.5 mm pitch",
+   "materials": [
+    "lib_palette"
+   ],
+   "linkedInstances": 67,
+   "trisUnique": 1100,
+   "trisPlaced": 4700,
+   "drawsMainPass": 1,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": "compact frosted pastel keyboard",
+   "notes": "Fifteen unique cap meshes (five colours at 1u, ten wider caps), 67 linked placements. Blank caps, no legends."
+  },
+  {
+   "id": "mouse_native",
+   "collection": "FK_NEARFIELD",
+   "stage": "M3",
+   "title": "Symmetric ivory mouse: shell, two button splits, wheel, glide feet",
+   "source": "native-new-raw-mesh-as-proportion-reference",
+   "scaleTier": "D",
+   "targetSizeM": "0.10 x 0.062 x 0.036 real, x1.6",
+   "materials": [
+    "lib_palette"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 900,
+   "trisPlaced": 900,
+   "drawsMainPass": 0,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": "mouse",
+   "notes": "Modelled from scratch. meshy-raw/mouse-base.glb may be opened read-only for the 10:6:3.5 profile; no vertex of it is adopted."
+  },
+  {
+   "id": "mug_coaster",
+   "collection": "FK_NEARFIELD",
+   "stage": "M3",
+   "title": "Ceramic mug with wall thickness and handle, coffee surface, oak coaster",
+   "source": "native-new",
+   "scaleTier": "D",
+   "targetSizeM": "82 mm dia real, x1.6",
+   "materials": [
+    "lib_palette",
+    "lib_oak"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 800,
+   "trisPlaced": 800,
+   "drawsMainPass": 1,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": "coffee",
+   "notes": ""
+  },
+  {
+   "id": "notebook_pen",
+   "collection": "FK_NEARFIELD",
+   "stage": "M3",
+   "title": "Closed notebook with elastic band, pen",
+   "source": "native-new",
+   "scaleTier": "D",
+   "targetSizeM": "A5 real, x1.6",
+   "materials": [
+    "lib_palette"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 400,
+   "trisPlaced": 400,
+   "drawsMainPass": 0,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": ""
+  },
+  {
+   "id": "mic_boom",
+   "collection": "FK_NEARFIELD",
+   "stage": "M3",
+   "title": "Microphone: desk clamp, two sprung arms, joints, shock mount, body, grille, cable",
+   "source": "native-new",
+   "scaleTier": "D",
+   "targetSizeM": "capsule 50 x 170 mm real, x1.6",
+   "materials": [
+    "lib_palette"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 2600,
+   "trisPlaced": 2600,
+   "drawsMainPass": 1,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": "mic",
+   "notes": "Must stop reading as stacked dark blobs at the left frame edge (home-1440). Pale metal grille band for separation."
+  },
+  {
+   "id": "headphones",
+   "collection": "FK_NEARFIELD",
+   "stage": "M3",
+   "title": "Over-ear headphones on a simple stand: band, yokes, cups, pads, cable",
+   "source": "native-new",
+   "scaleTier": "D",
+   "targetSizeM": "0.18 wide real, x1.6",
+   "materials": [
+    "lib_palette"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 2200,
+   "trisPlaced": 2200,
+   "drawsMainPass": 1,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": "headphones",
+   "notes": "Moved out from under the project list; see composition table."
+  },
+  {
+   "id": "speaker_nearfield",
+   "collection": "FK_NEARFIELD",
+   "stage": "M3",
+   "title": "Nearfield speaker: cabinet, cone, surround, tweeter waveguide, foam pad",
+   "source": "native-new",
+   "scaleTier": "D",
+   "targetSizeM": "0.185 x 0.285 x 0.21 real, x1.6",
+   "materials": [
+    "lib_palette",
+    "lib_weave"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 1100,
+   "trisPlaced": 1100,
+   "drawsMainPass": 1,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": ""
+  },
+  {
+   "id": "ctl_body",
+   "collection": "FK_MUSIC",
+   "stage": "M4",
+   "title": "White 49-key controller: shell, slim oak cheeks, panel, 8 pads, 8 knobs, 2 wheels, small display, rear ports",
+   "source": "native-new",
+   "scaleTier": "F",
+   "targetSizeM": "0.99 x 0.32 x 0.095",
+   "materials": [
+    "lib_palette",
+    "lib_oak",
+    "lib_glow"
+   ],
+   "linkedInstances": 19,
+   "trisUnique": 2200,
+   "trisPlaced": 3000,
+   "drawsMainPass": 3,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": "white 49-key music controller",
+   "notes": "Unbranded. About two thirds of the prototype width."
+  },
+  {
+   "id": "ctl_keys",
+   "collection": "FK_MUSIC",
+   "stage": "M4",
+   "title": "29 white and 20 black keys",
+   "source": "native-new",
+   "scaleTier": "F",
+   "targetSizeM": "29.4 mm white pitch",
+   "materials": [
+    "lib_palette"
+   ],
+   "linkedInstances": 49,
+   "trisUnique": 150,
+   "trisPlaced": 1540,
+   "drawsMainPass": 1,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": "white 49-key music controller",
+   "notes": "Four white shapes and one black shape, linked. Key fronts and gaps modelled so keys are not flat slabs."
+  },
+  {
+   "id": "ctl_stand",
+   "collection": "FK_MUSIC",
+   "stage": "M4",
+   "title": "Double-braced X stand: pivot plate, height teeth, rubber feet, top arms",
+   "source": "native-new",
+   "scaleTier": "A",
+   "targetSizeM": "0.68 high",
+   "materials": [
+    "lib_palette"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 1300,
+   "trisPlaced": 1300,
+   "drawsMainPass": 1,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": "supports",
+   "notes": ""
+  },
+  {
+   "id": "ctl_sustain_pedal",
+   "collection": "FK_MUSIC",
+   "stage": "M4",
+   "title": "Sustain pedal with cable",
+   "source": "native-new",
+   "scaleTier": "F",
+   "targetSizeM": "0.10 x 0.26",
+   "materials": [
+    "lib_palette"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 500,
+   "trisPlaced": 500,
+   "drawsMainPass": 0,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": "pedals",
+   "notes": ""
+  },
+  {
+   "id": "stool_keys",
+   "collection": "FK_MUSIC",
+   "stage": "M4",
+   "title": "Round keyboard stool",
+   "source": "native-new",
+   "scaleTier": "A",
+   "targetSizeM": "0.50 seat height",
+   "materials": [
+    "lib_palette",
+    "lib_weave"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 700,
+   "trisPlaced": 700,
+   "drawsMainPass": 1,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": ""
+  },
+  {
+   "id": "drum_rack",
+   "collection": "FK_MUSIC",
+   "stage": "M4",
+   "title": "Tube rack: uprights, crossbar, wing clamps, feet",
+   "source": "native-new",
+   "scaleTier": "F",
+   "targetSizeM": "1.16 wide, 0.75 high",
+   "materials": [
+    "lib_palette"
+   ],
+   "linkedInstances": 10,
+   "trisUnique": 1400,
+   "trisPlaced": 2400,
+   "drawsMainPass": 1,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": "supports",
+   "notes": "Clamp is one linked mesh used ten times."
+  },
+  {
+   "id": "drum_pads",
+   "collection": "FK_MUSIC",
+   "stage": "M4",
+   "title": "Snare and three tom pads: shell, rim, mesh head, lugs, mount arm",
+   "source": "native-new",
+   "scaleTier": "F",
+   "targetSizeM": "0.25 to 0.31 dia",
+   "materials": [
+    "lib_palette",
+    "lib_weave"
+   ],
+   "linkedInstances": 4,
+   "trisUnique": 1100,
+   "trisPlaced": 3500,
+   "drawsMainPass": 2,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": "electronic drums",
+   "notes": "One tom mesh linked three times plus a deeper snare."
+  },
+  {
+   "id": "drum_cymbals",
+   "collection": "FK_MUSIC",
+   "stage": "M4",
+   "title": "Three rubber cymbals with bell, bow, edge lip, sleeve, wing nut, boom arms",
+   "source": "native-new",
+   "scaleTier": "F",
+   "targetSizeM": "0.38 dia",
+   "materials": [
+    "lib_palette"
+   ],
+   "linkedInstances": 3,
+   "trisUnique": 650,
+   "trisPlaced": 1950,
+   "drawsMainPass": 1,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": "electronic drums",
+   "notes": "Lathed profile; never a flat disc."
+  },
+  {
+   "id": "drum_hihat_pedal",
+   "collection": "FK_MUSIC",
+   "stage": "M4",
+   "title": "Hi-hat controller pedal",
+   "source": "native-new",
+   "scaleTier": "F",
+   "targetSizeM": "0.13 x 0.33",
+   "materials": [
+    "lib_palette"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 600,
+   "trisPlaced": 600,
+   "drawsMainPass": 0,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": "pedals",
+   "notes": ""
+  },
+  {
+   "id": "drum_kick",
+   "collection": "FK_MUSIC",
+   "stage": "M4",
+   "title": "Kick tower pad and pedal: footboard, chain, beater, spring, spurs",
+   "source": "native-new",
+   "scaleTier": "F",
+   "targetSizeM": "0.45 high tower",
+   "materials": [
+    "lib_palette",
+    "lib_weave"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 1500,
+   "trisPlaced": 1500,
+   "drawsMainPass": 1,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": "pedals",
+   "notes": ""
+  },
+  {
+   "id": "drum_module",
+   "collection": "FK_MUSIC",
+   "stage": "M4",
+   "title": "Drum module with display, knob, cable snake",
+   "source": "native-new",
+   "scaleTier": "F",
+   "targetSizeM": "0.20 x 0.15",
+   "materials": [
+    "lib_palette",
+    "lib_glow"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 700,
+   "trisPlaced": 700,
+   "drawsMainPass": 1,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": "electronic drums",
+   "notes": ""
+  },
+  {
+   "id": "drum_sticks",
+   "collection": "FK_MUSIC",
+   "stage": "M4",
+   "title": "Pair of sticks on the snare",
+   "source": "native-new",
+   "scaleTier": "F",
+   "targetSizeM": "0.41 long real, x1.25",
+   "materials": [
+    "lib_oak"
+   ],
+   "linkedInstances": 2,
+   "trisUnique": 60,
+   "trisPlaced": 120,
+   "drawsMainPass": 1,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": ""
+  },
+  {
+   "id": "drum_throne",
+   "collection": "FK_MUSIC",
+   "stage": "M4",
+   "title": "Drum throne",
+   "source": "native-new",
+   "scaleTier": "A",
+   "targetSizeM": "0.48 seat height",
+   "materials": [
+    "lib_palette",
+    "lib_weave"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 700,
+   "trisPlaced": 700,
+   "drawsMainPass": 0,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": ""
+  },
+  {
+   "id": "rug",
+   "collection": "FK_MUSIC",
+   "stage": "M4",
+   "title": "Woven rug with bound edge",
+   "source": "native-new",
+   "scaleTier": "A",
+   "targetSizeM": "1.85 x 2.25",
+   "materials": [
+    "lib_weave"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 400,
+   "trisPlaced": 400,
+   "drawsMainPass": 1,
+   "castsShadow": false,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": ""
+  },
+  {
+   "id": "music_cables",
+   "collection": "FK_MUSIC",
+   "stage": "M4",
+   "title": "Pad, pedal and controller cables to module and wall",
+   "source": "native-new",
+   "scaleTier": "F",
+   "targetSizeM": "6 mm round",
+   "materials": [
+    "lib_palette"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 800,
+   "trisPlaced": 800,
+   "drawsMainPass": 0,
+   "castsShadow": false,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": ""
+  },
+  {
+   "id": "wall_shelf",
+   "collection": "FK_WALLS",
+   "stage": "M5",
+   "title": "Left wall shelf with two brackets",
+   "source": "native-new",
+   "scaleTier": "A",
+   "targetSizeM": "1.15 x 0.21",
+   "materials": [
+    "lib_oak",
+    "lib_palette"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 400,
+   "trisPlaced": 400,
+   "drawsMainPass": 1,
+   "castsShadow": false,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": ""
+  },
+  {
+   "id": "shelf_books",
+   "collection": "FK_WALLS",
+   "stage": "M5",
+   "title": "Nine blank-spined books, one leaning",
+   "source": "native-new",
+   "scaleTier": "A",
+   "targetSizeM": "0.20 to 0.26 high",
+   "materials": [
+    "lib_palette"
+   ],
+   "linkedInstances": 9,
+   "trisUnique": 360,
+   "trisPlaced": 360,
+   "drawsMainPass": 1,
+   "castsShadow": false,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": "Blank spines; no titles."
+  },
+  {
+   "id": "shelf_plant",
+   "collection": "FK_WALLS",
+   "stage": "M5",
+   "title": "Potted plant: pot, soil, nine leaves",
+   "source": "native-new",
+   "scaleTier": "A",
+   "targetSizeM": "0.25 high",
+   "materials": [
+    "lib_palette"
+   ],
+   "linkedInstances": 9,
+   "trisUnique": 300,
+   "trisPlaced": 900,
+   "drawsMainPass": 0,
+   "castsShadow": false,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": "Hand-modelled bent leaf card with thickness, linked; replaces three spheres."
+  },
+  {
+   "id": "shelf_speaker",
+   "collection": "FK_WALLS",
+   "stage": "M5",
+   "title": "Small shelf speaker",
+   "source": "native-new",
+   "scaleTier": "A",
+   "targetSizeM": "0.14 x 0.19 x 0.13",
+   "materials": [
+    "lib_palette",
+    "lib_weave"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 500,
+   "trisPlaced": 500,
+   "drawsMainPass": 0,
+   "castsShadow": false,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": ""
+  },
+  {
+   "id": "wall_print",
+   "collection": "FK_WALLS",
+   "stage": "M5",
+   "title": "Framed abstract print: mitred frame, mount, two shapes",
+   "source": "native-new",
+   "scaleTier": "A",
+   "targetSizeM": "0.46 x 0.62",
+   "materials": [
+    "lib_palette",
+    "lib_dark_oak"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 300,
+   "trisPlaced": 300,
+   "drawsMainPass": 1,
+   "castsShadow": false,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": "Existing abstract composition only."
+  },
+  {
+   "id": "snowboard_deck",
+   "collection": "FK_WALLS",
+   "stage": "M5",
+   "title": "Unbranded snowboard: deck with nose and tail kick, steel edge, two-colour topsheet",
+   "source": "native-new",
+   "scaleTier": "A",
+   "targetSizeM": "1.50 x 0.25",
+   "materials": [
+    "lib_palette"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 900,
+   "trisPlaced": 900,
+   "drawsMainPass": 1,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": "snowboard",
+   "notes": "True length; leans on the left wall. See composition table for placement."
+  },
+  {
+   "id": "snowboard_bindings",
+   "collection": "FK_WALLS",
+   "stage": "M5",
+   "title": "Binding: baseplate, highback, ankle and toe straps, ratchets",
+   "source": "native-new",
+   "scaleTier": "A",
+   "targetSizeM": "0.30 long",
+   "materials": [
+    "lib_palette"
+   ],
+   "linkedInstances": 2,
+   "trisUnique": 1200,
+   "trisPlaced": 2400,
+   "drawsMainPass": 0,
+   "castsShadow": true,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": "snowboard",
+   "notes": "Hand-modelled, linked twice."
+  },
+  {
+   "id": "acoustic_panels",
+   "collection": "FK_WALLS",
+   "stage": "M5",
+   "title": "Three slatted acoustic panels: frame, fabric back, seven slats each",
+   "source": "native-new",
+   "scaleTier": "A",
+   "targetSizeM": "0.435 x 0.89",
+   "materials": [
+    "lib_palette",
+    "lib_weave"
+   ],
+   "linkedInstances": 3,
+   "trisUnique": 420,
+   "trisPlaced": 1260,
+   "drawsMainPass": 2,
+   "castsShadow": false,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": ""
+  },
+  {
+   "id": "fix_wall_triangles",
+   "collection": "FK_WALLS",
+   "stage": "M5",
+   "title": "Five triangular wall lights: brass tray with returned edge, recessed diffuser, wall standoff",
+   "source": "native-new",
+   "scaleTier": "A",
+   "targetSizeM": "0.26 side",
+   "materials": [
+    "lib_palette",
+    "lib_glow"
+   ],
+   "linkedInstances": 5,
+   "trisUnique": 220,
+   "trisPlaced": 1100,
+   "drawsMainPass": 2,
+   "castsShadow": false,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": "Diffuser carries a centre-to-edge ramp and sits 6 mm inside the tray."
+  },
+  {
+   "id": "wall_cable_run",
+   "collection": "FK_WALLS",
+   "stage": "M5",
+   "title": "Cable from desk to left wall socket",
+   "source": "native-new",
+   "scaleTier": "A",
+   "targetSizeM": "6 mm round",
+   "materials": [
+    "lib_palette"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 200,
+   "trisPlaced": 200,
+   "drawsMainPass": 0,
+   "castsShadow": false,
+   "occluder": true,
+   "transparent": false,
+   "requiredGear": null,
+   "notes": ""
+  },
+  {
+   "id": "contact_decals",
+   "collection": "FK_CONTACT",
+   "stage": "M6",
+   "title": "Contact shadow decals merged into three meshes: floor, desk, shelf",
+   "source": "native-new",
+   "scaleTier": "A",
+   "targetSizeM": "per object footprint",
+   "materials": [
+    "lib_contact"
+   ],
+   "linkedInstances": 1,
+   "trisUnique": 120,
+   "trisPlaced": 120,
+   "drawsMainPass": 3,
+   "castsShadow": false,
+   "occluder": false,
+   "transparent": true,
+   "requiredGear": null,
+   "notes": "transparent true, occluder false, as the integration contract requires for BLEND contact meshes."
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+{
+    "execution_lane":  "orchestration",
+    "current_phase":  "executing",
+    "active":  true,
+    "session_id":  "01a1daa7-0ca8-77a0-9bcc-da11ad109c99",
+    "planning_handoff":  ".omx/plans/handoff-after-hours-studio-v1.json",
+    "mode":  "ultragoal"
+}

@@ -1,0 +1,11 @@
+import fs from 'node:fs';import path from 'node:path';import {fileURLToPath} from 'node:url';import {Vector3,Quaternion} from 'three';
+const base=path.dirname(fileURLToPath(import.meta.url)),v=JSON.parse(fs.readFileSync(path.join(base,'validation.json')));
+const sw=v.sweep.conservativeContinuousBoundsBlenderMetres, mn=[sw.min[0],sw.min[2],-sw.max[1]],mx=[sw.max[0],sw.max[2],-sw.min[1]];
+const eye=new Vector3(-.7,2.8,3.4),anchor=new Vector3(.8,2.8,-.2),q=new Quaternion(0,-.19612,0,.98058).normalize();
+const world=[];for(const x of [mn[0],mx[0]])for(const y of [mn[1],mx[1]])for(const z of [mn[2],mx[2]])world.push(new Vector3(x,y,z).multiplyScalar(1.6).applyQuaternion(q).add(anchor));
+const angular=world.map(p=>{const d=p.clone().sub(eye);return [Math.atan2(d.x,-d.z)*180/Math.PI,Math.atan2(d.y,Math.hypot(d.x,d.z))*180/Math.PI];});
+const box={min:[0,1,2].map(k=>Math.min(...world.map(p=>p.toArray()[k]))),max:[0,1,2].map(k=>Math.max(...world.map(p=>p.toArray()[k])))};
+const ranges={azimuth:[Math.min(...angular.map(p=>p[0])),Math.max(...angular.map(p=>p[0]))],elevation:[Math.min(...angular.map(p=>p[1])),Math.max(...angular.map(p=>p[1]))]};
+const margins={typeforgeDegrees:ranges.azimuth[0]-16.96,wallLightsDegrees:7.88-ranges.elevation[1],speakerDegrees:ranges.elevation[0]-(-7.42)};
+const report={assetSha256:v.assetSha256,method:'new v02 conservative swept AABB transformed by root P2 prototype; compare source-projection neighbour angles from placement.md, not actual triangle occlusion',anchorWorld:anchor.toArray(),quaternion:q.toArray(),wrapperScale:1.6,worldUnitsPerMetre:2,artScale:.8,floorOffset:0,worldSweptAabb:box,angularDegrees:ranges,marginsAgainstP2ApproximateAngles:margins,anchorAccepted:false,runtimeCardsIncluded:false,limitations:['Negative box margin is a conservative overlap warning, not proof of silhouette collision; enlarged bookmark may sit right of lights','No shrinking/redesign/moving room authorized or performed','Runtime card bounds and interrupted transitions remain unmeasured']};
+fs.writeFileSync(path.join(base,'placement-check.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));

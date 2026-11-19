@@ -1,0 +1,161 @@
+﻿{
+    "atUtc":  "2026-11-15T00:58:16.6624214Z",
+    "task":  "task_73fa4e160358",
+    "dispatch":  "ctx_e14be999996e",
+    "verdict":  "APPROVE",
+    "scope":  "Bounded async pilot mechanics; no artistic, performance, production, device or final product acceptance",
+    "node":  "v24.21.0",
+    "three":  "0.187.0",
+    "sourceHashes":  [
+                         {
+                             "file":  "components/studio/scene/load-pilot.ts",
+                             "sha256":  "B5CD61C682DD69D2336B10B508B516999E72D73A00EDBD6E2CEBCF0323D39D11"
+                         },
+                         {
+                             "file":  "components/studio/scene/controller.ts",
+                             "sha256":  "CC76055EA4BFE596E0D3AB49C84CA55C55B8A9BAD3B33627E08ADEB78F0969F0"
+                         },
+                         {
+                             "file":  "components/studio/scene/build-studio.ts",
+                             "sha256":  "E23588E2702ECE52C5B8A2ED25ADB2DEBAC366FDF90C66609A5EF4299FFC11AE"
+                         },
+                         {
+                             "file":  "components/studio/scene/resources.ts",
+                             "sha256":  "756A26FBA1840696FD7B8F0A24DFA588A50488A55FBC99BEC60CA3C0E14CB509"
+                         },
+                         {
+                             "file":  "components/studio/scene/types.ts",
+                             "sha256":  "5AA65F769BD2077BD6A16CC5834EF1B47DB5C76B6A4E0FF1ABDA226892178364"
+                         },
+                         {
+                             "file":  "components/studio/scene/textures.ts",
+                             "sha256":  "09F6FF6CC7BB8910F09838566DFCF840D85A0D2CE1BE8D064DEAFB0989C63AA6"
+                         },
+                         {
+                             "file":  "components/studio/scene/view-config.ts",
+                             "sha256":  "1FEA7ADBCFD730A56920389C8AC4ECF8323C9739FD4882C15F3E134A11F1A450"
+                         },
+                         {
+                             "file":  "public/studio/pilot-right-limit-v03.glb",
+                             "sha256":  "2B9A4182C3024485680C1E066C8A22EF0DC0F541ACCA4BD958486BCED2C4063E"
+                         },
+                         {
+                             "file":  "design/studio-v2/asset-pipeline/integration-contract/pilot-profile.json",
+                             "sha256":  "02A9B364ED42127988747660AC61D6EFCA8BC3AF9F151A0E41EB0D50BC0BAA08"
+                         },
+                         {
+                             "file":  "node_modules/three/examples/jsm/loaders/GLTFLoader.js",
+                             "sha256":  "532AC726E120039ACBCD6CF54328C57ACBF7B438176AFAA6951257126D11BFF1"
+                         },
+                         {
+                             "file":  "components/studio/scene/verify-controller.mjs",
+                             "sha256":  "3E31288159AFDF35C3E17CF6E75446ADDD64011A839CC366BA86B247B37891F3"
+                         },
+                         {
+                             "file":  "components/studio/scene/verify-pilot.mjs",
+                             "sha256":  "8B0E9B33EF874DDD412CD92FD99B60420F8F8263FD32CDB7C9D96C3E9C3AD295"
+                         },
+                         {
+                             "file":  "components/studio/scene/picking.ts",
+                             "sha256":  "C427B0553DD2403500F7AC0E306A42C5B1476A6A8AB3175186704261D638261C"
+                         },
+                         {
+                             "file":  "components/studio/StudioScene.tsx",
+                             "sha256":  "29586D8A880AD079627E9E8D670F46A60C4614B221B17BBCEFEB54112327E5AC"
+                         }
+                     ],
+    "evidenceHashes":  [
+                           {
+                               "file":  "design/studio-v2/scene-runtime-technical-critique.md",
+                               "sha256":  "63A02817BF5F608828AB93B15A564AF6C4220124537EF09013532A9D89AD7B46"
+                           },
+                           {
+                               "file":  "design/studio-v2/scene-coordination/runtime-technical-critique-probes.mjs",
+                               "sha256":  "B9883EF124EEBA911890EC80AB93DEAB35D0677C2FC7DE965DC9B170CFAE84E1"
+                           },
+                           {
+                               "file":  "design/studio-v2/scene-coordination/runtime-technical-critique-probes.json",
+                               "sha256":  "61EBF71A37295F9BADCBFBA49CB05E3B4CC58A071D8498CB7B55397B932FBDFD"
+                           },
+                           {
+                               "file":  "design/studio-v2/scene-coordination/runtime-technical-critique-probes-model-final.json",
+                               "sha256":  "893635AED7540E633872F7FE47685ACE5F51DFA94DDBD1AE993C20542C49FDF5"
+                           },
+                           {
+                               "file":  "design/studio-v2/scene-coordination/runtime-technical-critique-controller-probes.mjs",
+                               "sha256":  "23554EDBF5D9B719CF307743D3E6181587FC865ABD853DCC34B0FA34E8CEC4C3"
+                           },
+                           {
+                               "file":  "design/studio-v2/scene-coordination/runtime-technical-critique-controller-probes.json",
+                               "sha256":  "EAFB82FCEE491C011F4E0BCEBA36BD0A62136DADD922266A95E5C52244FC2D4B"
+                           },
+                           {
+                               "file":  "design/studio-v2/scene-runtime-technical-report.md",
+                               "sha256":  "3E1EB651A60F7248BF7460D4AB795F40A978528F106C917E4B2A8104415A26CB"
+                           },
+                           {
+                               "file":  "design/studio-v2/scene-runtime-art-report.md",
+                               "sha256":  "B5FE8F3890EE199A323CC6ABDE47B061A0B8B428DF6EE9482E38EE367BA0C226"
+                           },
+                           {
+                               "file":  "design/studio-v2/scene-runtime-technical-tests-final.md",
+                               "sha256":  "E7A80ECFCDE5BDF6671CC5B9A04422ABCFA9353587E3D8D7A39FB1078C2DAC26"
+                           },
+                           {
+                               "file":  "design/studio-v2/scene-runtime-technical-art-delta.md",
+                               "sha256":  "0D57A7530522C0011C2CAB13E0DD4EB32AAEC883F0A169841B8802EF530C2638"
+                           },
+                           {
+                               "file":  "design/studio-v2/scene-runtime-technical-types.md",
+                               "sha256":  "D1348E642E1BE64554B45EC432F38B534267AE687F8DEAF3C4D58135FF1C3EC9"
+                           },
+                           {
+                               "file":  "design/studio-v2/scene-runtime-technical-types-art-delta.md",
+                               "sha256":  "D1348E642E1BE64554B45EC432F38B534267AE687F8DEAF3C4D58135FF1C3EC9"
+                           },
+                           {
+                               "file":  "design/studio-v2/scene-runtime-technical-lint-configured.md",
+                               "sha256":  "AACDCCB685168CBF2D8D6FE5F6A5CAA53A7E81816EB43719BFC012683C682ECC"
+                           },
+                           {
+                               "file":  "design/studio-v2/scene-runtime-technical-lint-supplemental.md",
+                               "sha256":  "D4D874C98BA7F37B65F4A7C1C0C8679151D338154B5CDB39A8B63AB7A2F55289"
+                           },
+                           {
+                               "file":  ".omx/context/studio-pilot-runtime-capture-v01.json",
+                               "sha256":  "4939E287EFF6289883FA4E6F3F7EC17CCC2A80281EBB20E64E99AF4F6C1955BE"
+                           },
+                           {
+                               "file":  ".omx/context/studio-pilot-runtime-capture-v02.json",
+                               "sha256":  "BEF69D512EB7210D0FE33D449B75E3DCBBB594FDB9733DACDCB4B51071801537"
+                           },
+                           {
+                               "file":  ".omx/context/studio-pilot-png-failure-v01.json",
+                               "sha256":  "D02A5AAFF445195F2547488A3BE79430C12028C7CE0C6B0D888D4B23D1BB3A2A"
+                           },
+                           {
+                               "file":  ".omx/context/studio-pilot-lifecycle-failures-v01.json",
+                               "sha256":  "18375BD59484AE1A953D4792E5CAD97107F3A61ACA6F0B60C5456D2ACE461CE3"
+                           }
+                       ],
+    "sourceStable":  true,
+    "reviewerProbeExitCodes":  [
+                                   0,
+                                   0,
+                                   0
+                               ],
+    "reviewerScenarioCounts":  {
+                                   "controllerBaselines":  5,
+                                   "initialLoader":  7,
+                                   "expectedStaleGuardMutantFailures":  1,
+                                   "finalModelLoader":  7
+                               },
+    "authorEvidence":  {
+                           "fullTests":  81,
+                           "typecheckExit":  0,
+                           "fullTestModel":  "D8ABF67F6C25DDADB0EBA3A1B43DF372EB132F5B35AA6867A3A0F573701E2DD6",
+                           "configuredLintExit":  2,
+                           "finalModelSelectedTests":  4,
+                           "supplementalLintExit":  0
+                       }
+}

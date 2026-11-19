@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-11-15T00:24:44.053Z",
+  "algorithm": "sha256",
+  "scope": "Final independent offline review inputs and outputs; excludes this manifest itself; supporting product/loader files were read only",
+  "task": "task_e50fb788098e",
+  "dispatch": "ctx_41b4a64b4d66",
+  "verdict": "APPROVE bounded offline validator and proposed interface only",
+  "commands": [
+    {
+      "command": "node --check design/studio-v2/scene-coordination/asset-contract-review-probes.mjs",
+      "exit": 0
+    },
+    {
+      "command": "node design/studio-v2/scene-coordination/asset-contract-review-probes.mjs",
+      "exit": 0,
+      "probes": 26,
+      "matchedExpectations": 26
+    }
+  ],
+  "files": {
+    "design/studio-v2/asset-pipeline/integration-contract.md": "da27ce20f1ddb92dd2ac80845b20dde212048b063e7675b8434bd188ceaf3edf",
+    "design/studio-v2/asset-pipeline/integration-contract/pilot-profile.json": "02a9b364ed42127988747660ac61d6efca8bc3af9f151a0e41eb0d50bc0baa08",
+    "design/studio-v2/asset-pipeline/integration-contract/validate-glb.mjs": "fb3d6bee77fda20f89553a01bd24c70c70713f94ae7c543b894426a14f41ec7c",
+    "design/studio-v2/asset-pipeline/integration-contract/synthetic-fixture.mjs": "55632b3f3d758a5fd0fb03b8dd891b2e6ea55d37dbf155021017b45cb01ab465",
+    "design/studio-v2/asset-pipeline/integration-contract/verify-validator.mjs": "341365e141e9ea1f457161446d8d3b102b2a3452dfc5ef560152137844c38390",
+    "design/studio-v2/asset-pipeline/integration-contract/evidence/source-hashes.json": "09c98ded4148ac37eca06dd8bfd20afa0775c83fd87d1a10433c10c3abf0ba21",
+    "design/studio-v2/asset-pipeline/pilot-right-limit/exports/pilot-right-limit-v02.glb": "a4e2e741389bee33eec6eb705b89646490cb89fa34dba479fad9f756a1c0c4b8",
+    "design/studio-v2/asset-pipeline/pilot-right-limit/exports/pilot-right-limit-v03.glb": "2b9a4182c3024485680c1e066c8a22ef0dc0f541acca4bd958486bced2c4063e",
+    "design/studio-v2/scene-asset-contract-review.md": "21c596eb46a1703c471a5e30c0836ab3dec880cd3c83bd161e9e541b6fd8d33a",
+    "design/studio-v2/scene-coordination/asset-contract-review-probes.mjs": "bb79578d7b969c96d72a9f83d968d13e20552c65302e0bddc0c0e000d69ae3e9",
+    "design/studio-v2/scene-coordination/asset-contract-review-probes.json": "c80ddafdfdd31d47f9c7cbe9979b95f22d5bb13757a671f65ea52c4501cab81b",
+    "design/studio-v2/scene-coordination/asset-contract-review-v02.json": "78468d981901bff3b8bdb12ca5c5d8eeca55f2662d4e72b0049583470d8c9516",
+    "design/studio-v2/scene-coordination/asset-contract-review-v03.json": "548ab0b592d21ddd4911042ca011884b579000a0ebe40fa0385c3455d5f9b1af",
+    "components/studio/scene/types.ts": "0085b8d6b3acf8e545b38ef58463d1a1bd82af4f5caa2e88002f40ec6e271104",
+    "components/studio/scene/resources.ts": "756a26fba1840696fd7b8f0a24dfa588a50488a55fbc99bec60ca3c0e14cb509",
+    "components/studio/scene/controller.ts": "f04f7e9f2b4ca082c81a5447343d825b34602ca6be2b09b3edd5610efa6b4847",
+    "components/studio/scene/picking.ts": "c427b0553dd2403500f7ac0e306a42c5b1476a6a8ab3175186704261d638261c",
+    "node_modules/three/examples/jsm/loaders/GLTFLoader.js": "532ac726e120039acbcd6cf54328c57acbf7b438176afaa6951257126d11bff1"
+  }
+}

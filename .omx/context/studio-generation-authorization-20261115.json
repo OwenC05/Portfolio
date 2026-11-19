@@ -1,0 +1,49 @@
+{
+  "approvedAt": "2026-11-15",
+  "source": "User answered both structured approval questions explicitly.",
+  "higgsfield": {
+    "decision": "Approve one image — 2.75 credits",
+    "maximumCredits": 2.75,
+    "count": 1,
+    "toolArguments": {
+      "context": "Single look-reference still for an interior 3D scene lighting and material study.",
+      "params": {
+        "model": "gpt_image_2_6",
+        "prompt": "Interior of a small, cosy home music studio at night: a rectangular room about 4.8 m wide, 4.4 m deep and 2.6 m high. Eye-level view from a seated position, eye about 1.35 m above the floor, near the middle of the room, looking toward the right-hand wall and tilted slightly upward so the junction of wall and ceiling is in frame. Natural perspective, moderate lens, about 58 degrees vertical field of view, level horizon, no distortion.\n\nOn the right of the frame, set in the right-hand wall, a closed warm honey-oak frame-and-panel door with two raised rectangular panels, bevelled mouldings, a dark oak architrave and a round brass knob. The timber grain and the panel mouldings are clearly visible and softly lit; the door is as bright as the wall around it.\n\nLeft of the door, a square window with a dark oak frame and sill, an ivory slatted blind drawn halfway, and behind it a deep blue dusk sky with a low dark roofline and a few small lit windows.\n\nLeft of the window, a slim floor lamp: round dark base, thin brushed pale-metal pole, and a tapered linen drum shade. The shade glows warm amber at its centre and falls gradually darker toward its top and bottom rims, with visible fabric weave, a narrow trim band at each rim and one vertical seam. No part of the shade is flat white. The lamp throws a soft warm pool of light onto the wall behind it and onto the door.\n\nWalls are matte olive-charcoal plaster with gentle tonal variation. Overhead, exposed dark oak ceiling beams catch warm light along their lower edges; a plain cornice joins wall and ceiling; dark skirting runs along smoked timber floorboards. Every surface in view is readable; the darkest areas still show form and colour.\n\nPalette: olive-charcoal plaster, honey oak, dark oak, ivory, brushed pale metal, brass, smoked timber, warm tungsten light with one cool dusk-blue counterpoint from the window.\n\nStyle: stylised 3D illustration, clean hand-modelled forms with soft bevels, matte painted materials with gentle roughness variation, soft contact shadows, light pooling on walls, restrained glow.\n\nNo people, no logos, no brand names, no readable text or signage, no neon, no cyberpunk, no photorealism, no fisheye or wide-angle distortion, no exterior view, no cutaway, dollhouse or isometric view, no extra furniture, no instruments, no audio or computer equipment, no screens, no posters or wall art, no glass in the door, no black door, no blown-out white lamp, no lens flare, no heavy bloom, no fog.",
+        "size": "1920x1200",
+        "quality": "high",
+        "resolution": "2k",
+        "output_format": "png",
+        "count": 1,
+        "use_unlim": false
+      }
+    },
+    "outputPath": "design/studio-v2/asset-pipeline/pilot-right-limit/look-frames/frame-c-right-limit.png"
+  },
+  "meshy": {
+    "decision": "Approve Meshy T2.5 — 5 credits (Recommended)",
+    "maximumCredits": 5,
+    "count": 1,
+    "toolArguments": {
+      "prompt": "A simple modern computer mouse, generic and unbranded, one whole object. Low, smooth, left-right symmetrical ambidextrous shell: flat underside, sides that curve inward slightly at the waist, an arched back that is highest just behind the middle and slopes down to a rounded front. The top front half is split into two primary buttons by one thin straight groove along the centre line. A small ribbed scroll wheel sits in a short slot in that groove and stands slightly proud of the surface. One fine seam line runs around the shell where the top cover meets the base. Soft rounded edges, clean hard-surface product design, plain smooth surface. Proportions: 10 cm long, 6 cm wide, 3.5 cm tall. No cable, no logo, no text, no side buttons, no thumb rest, no lights, no vents, no mouse pad, no stand.",
+      "model_type": "smart-topology",
+      "ai_model": "meshy-t2.5",
+      "target_polycount": 3000,
+      "target_formats": [
+        "glb"
+      ],
+      "response_format": "json"
+    },
+    "outputPath": "design/studio-v2/asset-pipeline/pilot-right-limit/meshy-raw/mouse-base.glb"
+  },
+  "sourceRequestPath": "design/studio-v2/asset-pipeline/generation-request.json",
+  "sourceRequestSha256": "75AC529377BD0F7A3B69C03F919ABC6714E9F0EE844F678E5D6B369D7CFA819C",
+  "constraints": [
+    "Actual Claude executes design generation and review; Codex coordinates.",
+    "Text-only inputs; no private reference upload.",
+    "Read live tool workflow/preferences requirements before submission. No subscription or credit purchase.",
+    "One job each; no texture/refine/remesh/upscale or automatic retry. Resolve uncertain submission using original job/status.",
+    "Preserve exact response IDs, outputs, dimensions, costs and provenance. No publication."
+  ],
+  "status": "authorized_not_submitted"
+}

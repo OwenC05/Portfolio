@@ -1,0 +1,44 @@
+   ▲ Next.js 15.5.29
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 6.6s
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/16) ...
+   Generating static pages (4/16) 
+   Generating static pages (8/16) 
+   Generating static pages (12/16) 
+ ✓ Generating static pages (16/16)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+┌ ○ /                                     1.7 kB         105 kB
+├ ○ /_not-found                            992 B         104 kB
+├ ƒ /api/assistant                         123 B         103 kB
+├ ○ /ask                                 5.73 kB         115 kB
+├ ○ /studio                              12.4 kB         122 kB
+├ ○ /work                                  403 B         107 kB
+├ ● /work/[slug]                           403 B         107 kB
+├   ├ /work/lexisnexis
+├   ├ /work/portfolio-assistant
+├   ├ /work/dissertation
+├   └ [+4 more paths]
+├ ○ /writing                               403 B         107 kB
+└ ● /writing/[slug]                        403 B         107 kB
++ First Load JS shared by all             103 kB
+  ├ chunks/255-73938ce8a8eac1ad.js       46.6 kB
+  ├ chunks/4bd1b696-c023c6e3521b1417.js  54.2 kB
+  └ other shared chunks (total)          2.14 kB
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+
+Browserslist: browsers data (caniuse-lite) is 14 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+Browserslist: browsers data (caniuse-lite) is 14 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme

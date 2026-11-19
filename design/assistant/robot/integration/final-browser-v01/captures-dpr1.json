@@ -1,0 +1,2822 @@
+{
+  "contexts": [
+    {
+      "identity": "task_bc61c9989863-capture-desktop-dpr1",
+      "config": {
+        "name": "desktop-dpr1",
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "errors": [],
+      "screencastCounts": [
+        {
+          "view": "home",
+          "frames": 23
+        },
+        {
+          "view": "robot-neighbour",
+          "frames": 19
+        }
+      ],
+      "trace": {
+        "frames": [
+          {
+            "at": 496.39999997615814,
+            "rafTime": 485.3,
+            "phase": "load",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true"
+            }
+          },
+          {
+            "at": 959.3000000119209,
+            "rafTime": 601.9,
+            "phase": "load",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "1",
+              "studioDrawCalls": "125",
+              "studioTriangles": "98876",
+              "studioGeometries": "17",
+              "studioTextures": "12"
+            }
+          },
+          {
+            "at": 1074.3999999761581,
+            "rafTime": 1051.8,
+            "phase": "load",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "2",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "38",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "0",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 1470.8999999761581,
+            "rafTime": 1468.6,
+            "phase": "load",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "3",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "38",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "0",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 2345.699999988079,
+            "rafTime": 2335.2,
+            "phase": "home-attention",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "4",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "38",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "0",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 2355.5,
+            "rafTime": 2335.2,
+            "phase": "home-attention",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "5",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "38",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "0",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 2361.099999964237,
+            "rafTime": 2351.8,
+            "phase": "home-attention",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "6",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "38",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "0",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 2376.399999976158,
+            "rafTime": 2368.4,
+            "phase": "home-attention",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "7",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "38",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "0",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 2485.599999964237,
+            "rafTime": 2418.5,
+            "phase": "home-attention",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "8",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "38",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "0",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 2605.699999988079,
+            "rafTime": 2485.2,
+            "phase": "home-attention",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "9",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "38",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "0",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 2619.899999976158,
+            "rafTime": 2601.7,
+            "phase": "home-attention",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "10",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "38",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "0",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 2627.399999976158,
+            "rafTime": 2618.6,
+            "phase": "home-attention",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "11",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "38",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "0",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 2794.800000011921,
+            "rafTime": 2768.5,
+            "phase": "home-gathering",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "12",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "38",
+              "studioTextures": "12",
+              "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:1",
+              "assistantRevision": "2",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 2833,
+            "rafTime": 2801.7,
+            "phase": "home-presenting",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "13",
+              "studioDrawCalls": "98",
+              "studioTriangles": "94816",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:1",
+              "assistantRevision": "6",
+              "assistantCardCount": "4"
+            }
+          },
+          {
+            "at": 2869,
+            "rafTime": 2851.7,
+            "phase": "home-presenting",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "14",
+              "studioDrawCalls": "98",
+              "studioTriangles": "94816",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:1",
+              "assistantRevision": "6",
+              "assistantCardCount": "4"
+            }
+          },
+          {
+            "at": 2929.099999964237,
+            "rafTime": 2918.5,
+            "phase": "home-close",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "15",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "7",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 3183.399999976158,
+            "rafTime": 2985,
+            "phase": "home-close",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "16",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "7",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 3194.399999976158,
+            "rafTime": 3168.4,
+            "phase": "home-close",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "17",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "7",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 3229.300000011921,
+            "rafTime": 3201.6,
+            "phase": "home-close",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "18",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "7",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 3341.699999988079,
+            "rafTime": 3335.2,
+            "phase": "home-close",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "19",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "7",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 3505.800000011921,
+            "rafTime": 3351.7,
+            "phase": "home-close",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "20",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "7",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 3516.300000011921,
+            "rafTime": 3501.7,
+            "phase": "home-close",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "21",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "7",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 3525.5,
+            "rafTime": 3518.3,
+            "phase": "home-close",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "22",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "7",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 3684.599999964237,
+            "rafTime": 3668.3,
+            "phase": "home-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "23",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:2",
+              "assistantRevision": "13",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 3698.199999988079,
+            "rafTime": 3684.8,
+            "phase": "home-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "24",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:2",
+              "assistantRevision": "13",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 3780.5,
+            "rafTime": 3768.3,
+            "phase": "home-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "25",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:2",
+              "assistantRevision": "13",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 3880.5,
+            "rafTime": 3851.6,
+            "phase": "home-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "26",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:2",
+              "assistantRevision": "13",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 3953.5,
+            "rafTime": 3934.8,
+            "phase": "home-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "27",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:2",
+              "assistantRevision": "13",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 4661.399999976158,
+            "rafTime": 4651.584,
+            "phase": "home-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "28",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "14",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 4685.399999976158,
+            "rafTime": 4668,
+            "phase": "home-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "29",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "14",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 4701.199999988079,
+            "rafTime": 4684.8,
+            "phase": "home-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "30",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "14",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 4708.899999976158,
+            "rafTime": 4701.5,
+            "phase": "home-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "31",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "14",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 4726.300000011921,
+            "rafTime": 4718.1,
+            "phase": "home-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "32",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "14",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 4833.699999988079,
+            "rafTime": 4818.1,
+            "phase": "home-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "33",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "14",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 4845.899999976158,
+            "rafTime": 4834.7,
+            "phase": "home-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "34",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "14",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 4856.699999988079,
+            "rafTime": 4851.7,
+            "phase": "home-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "35",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "14",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 4889.800000011921,
+            "rafTime": 4868.1,
+            "phase": "home-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "36",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "14",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 4930.800000011921,
+            "rafTime": 4918.1,
+            "phase": "home-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "37",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "14",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 4987.800000011921,
+            "rafTime": 4968.8,
+            "phase": "home-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "38",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "14",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 5271.099999964237,
+            "rafTime": 5268,
+            "phase": "home-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "-4",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "39",
+              "studioDrawCalls": "94",
+              "studioTriangles": "94512",
+              "studioGeometries": "40",
+              "studioTextures": "12",
+              "assistantRunId": "",
+              "assistantRevision": "14",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 5536.300000011921,
+            "rafTime": 5301.332,
+            "phase": "home-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "16",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "40",
+              "studioDrawCalls": "99",
+              "studioTriangles": "95912",
+              "studioGeometries": "42",
+              "studioTextures": "14",
+              "assistantRunId": "",
+              "assistantRevision": "14",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 5560.800000011921,
+            "rafTime": 5551.4,
+            "phase": "home-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "26",
+              "studioPitch": "-6",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "41",
+              "studioDrawCalls": "98",
+              "studioTriangles": "96254",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "",
+              "assistantRevision": "14",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 5627.300000011921,
+            "rafTime": 5618.064,
+            "phase": "home-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "42",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "",
+              "assistantRevision": "14",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 6567.399999976158,
+            "rafTime": 6551.72,
+            "phase": "robot-neighbour-attention",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "43",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "",
+              "assistantRevision": "14",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 6575.699999988079,
+            "rafTime": 6568.1,
+            "phase": "robot-neighbour-attention",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "44",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "",
+              "assistantRevision": "14",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 6589.399999976158,
+            "rafTime": 6584.4,
+            "phase": "robot-neighbour-attention",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "45",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "",
+              "assistantRevision": "14",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 6605.899999976158,
+            "rafTime": 6601.2,
+            "phase": "robot-neighbour-attention",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "46",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "",
+              "assistantRevision": "14",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 6661.399999976158,
+            "rafTime": 6651.3,
+            "phase": "robot-neighbour-attention",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "47",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "",
+              "assistantRevision": "14",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 6861.899999976158,
+            "rafTime": 6701.2,
+            "phase": "robot-neighbour-attention",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "48",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "",
+              "assistantRevision": "14",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 6878,
+            "rafTime": 6851.2,
+            "phase": "robot-neighbour-attention",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "49",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "",
+              "assistantRevision": "14",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 6894,
+            "rafTime": 6867.9,
+            "phase": "robot-neighbour-attention",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "50",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "",
+              "assistantRevision": "14",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 7043.399999976158,
+            "rafTime": 7017.7,
+            "phase": "robot-neighbour-presenting",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "51",
+              "studioDrawCalls": "98",
+              "studioTriangles": "89722",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:3",
+              "assistantRevision": "20",
+              "assistantCardCount": "4"
+            }
+          },
+          {
+            "at": 7065.899999976158,
+            "rafTime": 7051.1,
+            "phase": "robot-neighbour-presenting",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "52",
+              "studioDrawCalls": "98",
+              "studioTriangles": "89722",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:3",
+              "assistantRevision": "20",
+              "assistantCardCount": "4"
+            }
+          },
+          {
+            "at": 7135,
+            "rafTime": 7117.8,
+            "phase": "robot-neighbour-close",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "53",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "",
+              "assistantRevision": "21",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 7406.099999964237,
+            "rafTime": 7201.3,
+            "phase": "robot-neighbour-close",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "54",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "",
+              "assistantRevision": "21",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 7422,
+            "rafTime": 7401.1,
+            "phase": "robot-neighbour-close",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "55",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "",
+              "assistantRevision": "21",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 7543.300000011921,
+            "rafTime": 7534.7,
+            "phase": "robot-neighbour-close",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "56",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "",
+              "assistantRevision": "21",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 7616.599999964237,
+            "rafTime": 7551,
+            "phase": "robot-neighbour-close",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "57",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "",
+              "assistantRevision": "21",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 7632.199999988079,
+            "rafTime": 7617.7,
+            "phase": "robot-neighbour-close",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "58",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:4",
+              "assistantRevision": "23",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 7641.099999964237,
+            "rafTime": 7634.5,
+            "phase": "robot-neighbour-close",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "59",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:4",
+              "assistantRevision": "23",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 7795.5,
+            "rafTime": 7784.3,
+            "phase": "robot-neighbour-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "60",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:4",
+              "assistantRevision": "27",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 7819.699999988079,
+            "rafTime": 7801.1,
+            "phase": "robot-neighbour-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "61",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:4",
+              "assistantRevision": "27",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 7885.800000011921,
+            "rafTime": 7867.8,
+            "phase": "robot-neighbour-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "62",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:4",
+              "assistantRevision": "27",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 7945.699999988079,
+            "rafTime": 7934.4,
+            "phase": "robot-neighbour-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "63",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:4",
+              "assistantRevision": "27",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 8025.099999964237,
+            "rafTime": 8017.8,
+            "phase": "robot-neighbour-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "64",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:4",
+              "assistantRevision": "27",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 8132.800000011921,
+            "rafTime": 8117.6,
+            "phase": "robot-neighbour-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "false",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "65",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:4",
+              "assistantRevision": "27",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 8647.699999988079,
+            "rafTime": 8634.416,
+            "phase": "robot-neighbour-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "66",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "",
+              "assistantRevision": "28",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 8673.300000011921,
+            "rafTime": 8650.8,
+            "phase": "robot-neighbour-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "67",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "",
+              "assistantRevision": "28",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 8682.399999976158,
+            "rafTime": 8667.6,
+            "phase": "robot-neighbour-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "68",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "",
+              "assistantRevision": "28",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 8689.399999976158,
+            "rafTime": 8684.1,
+            "phase": "robot-neighbour-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "69",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "",
+              "assistantRevision": "28",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 8713.300000011921,
+            "rafTime": 8701.5,
+            "phase": "robot-neighbour-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "70",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "",
+              "assistantRevision": "28",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 8805,
+            "rafTime": 8784.2,
+            "phase": "robot-neighbour-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "71",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "",
+              "assistantRevision": "28",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 8814.300000011921,
+            "rafTime": 8801,
+            "phase": "robot-neighbour-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "72",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "",
+              "assistantRevision": "28",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 8820.699999988079,
+            "rafTime": 8817.5,
+            "phase": "robot-neighbour-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "73",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "",
+              "assistantRevision": "28",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 8840.800000011921,
+            "rafTime": 8834.3,
+            "phase": "robot-neighbour-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "74",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "",
+              "assistantRevision": "28",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 8869.199999988079,
+            "rafTime": 8850.8,
+            "phase": "robot-neighbour-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "75",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "",
+              "assistantRevision": "28",
+              "assistantCardCount": "0"
+            }
+          },
+          {
+            "at": 8923.800000011921,
+            "rafTime": 8917.6,
+            "phase": "robot-neighbour-no-match",
+            "canvas": {
+              "engine": "three.js r187",
+              "studioInteractionEnabled": "true",
+              "studioYaw": "26",
+              "studioPitch": "4",
+              "studioEye": "-0.7,2.8,3.4",
+              "studioFov": "58",
+              "studioDpr": "1.0000000149011612",
+              "studioRenderCount": "76",
+              "studioDrawCalls": "94",
+              "studioTriangles": "89418",
+              "studioGeometries": "43",
+              "studioTextures": "15",
+              "assistantRunId": "",
+              "assistantRevision": "28",
+              "assistantCardCount": "0"
+            }
+          }
+        ],
+        "events": [
+          {
+            "name": "home-idle",
+            "at": 2027.5999999642372
+          },
+          {
+            "name": "home-attention",
+            "at": 2319.699999988079
+          },
+          {
+            "name": "request:pending",
+            "question": "Interrupted four-source fixture at home",
+            "at": 2674.199999988079
+          },
+          {
+            "name": "home-gathering",
+            "at": 2695.399999976158
+          },
+          {
+            "name": "release:4",
+            "at": 2779
+          },
+          {
+            "name": "home-presenting",
+            "at": 2805.899999976158
+          },
+          {
+            "name": "home-close",
+            "at": 2883.099999964237
+          },
+          {
+            "name": "request:pending",
+            "question": "Interrupted no-match fixture at home",
+            "at": 3546
+          },
+          {
+            "name": "release:0",
+            "at": 3666.5
+          },
+          {
+            "name": "home-no-match",
+            "at": 3675
+          },
+          {
+            "name": "robot-neighbour-idle",
+            "at": 6154.899999976158
+          },
+          {
+            "name": "robot-neighbour-attention",
+            "at": 6539.300000011921
+          },
+          {
+            "name": "request:pending",
+            "question": "Interrupted four-source fixture at robot-neighbour",
+            "at": 6918.199999988079
+          },
+          {
+            "name": "robot-neighbour-gathering",
+            "at": 6938.399999976158
+          },
+          {
+            "name": "release:4",
+            "at": 7016.300000011921
+          },
+          {
+            "name": "robot-neighbour-presenting",
+            "at": 7024.800000011921
+          },
+          {
+            "name": "robot-neighbour-close",
+            "at": 7112.199999988079
+          },
+          {
+            "name": "request:pending",
+            "question": "Interrupted no-match fixture at robot-neighbour",
+            "at": 7620.800000011921
+          },
+          {
+            "name": "release:0",
+            "at": 7716.199999988079
+          },
+          {
+            "name": "robot-neighbour-no-match",
+            "at": 7723
+          }
+        ],
+        "phase": "robot-neighbour-no-match",
+        "requests": [
+          {
+            "question": "Interrupted four-source fixture at home",
+            "at": 2674.199999988079
+          },
+          {
+            "question": "Interrupted no-match fixture at home",
+            "at": 3545.899999976158
+          },
+          {
+            "question": "Interrupted four-source fixture at robot-neighbour",
+            "at": 6918.199999988079
+          },
+          {
+            "question": "Interrupted no-match fixture at robot-neighbour",
+            "at": 7620.800000011921
+          }
+        ]
+      },
+      "final": {
+        "at": 9286.599999964237,
+        "phase": "robot-neighbour-no-match",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1.0000000149011612
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "26",
+          "studioPitch": "4",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1.0000000149011612",
+          "studioRenderCount": "76",
+          "studioDrawCalls": "94",
+          "studioTriangles": "89418",
+          "studioGeometries": "43",
+          "studioTextures": "15",
+          "assistantRunId": "",
+          "assistantRevision": "28",
+          "assistantCardCount": "0"
+        },
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "frames": [
+        {
+          "name": "desktop-dpr1-home-motion-gathering.jpg",
+          "metadata": {
+            "offsetTop": 0,
+            "pageScaleFactor": 1,
+            "deviceWidth": 1440,
+            "deviceHeight": 900,
+            "scrollOffsetX": 0,
+            "scrollOffsetY": 0,
+            "timestamp": 1795030925.773984,
+            "monotonicTimestamp": 517014.448998
+          },
+          "target": 2709.199999988079,
+          "actual": 2785.183837890625,
+          "view": "home",
+          "events": [
+            {
+              "name": "home-attention",
+              "at": 2319.699999988079
+            },
+            {
+              "name": "request:pending",
+              "question": "Interrupted four-source fixture at home",
+              "at": 2674.199999988079
+            },
+            {
+              "name": "home-gathering",
+              "at": 2695.399999976158
+            },
+            {
+              "name": "release:4",
+              "at": 2779
+            },
+            {
+              "name": "home-presenting",
+              "at": 2805.899999976158
+            },
+            {
+              "name": "home-close",
+              "at": 2883.099999964237
+            },
+            {
+              "name": "request:pending",
+              "question": "Interrupted no-match fixture at home",
+              "at": 3546
+            },
+            {
+              "name": "release:0",
+              "at": 3666.5
+            },
+            {
+              "name": "home-no-match",
+              "at": 3675
+            }
+          ],
+          "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/final-browser-v01/desktop-dpr1-home-motion-gathering.jpg"
+        },
+        {
+          "name": "desktop-dpr1-home-motion-presenting.jpg",
+          "metadata": {
+            "offsetTop": 0,
+            "pageScaleFactor": 1,
+            "deviceWidth": 1440,
+            "deviceHeight": 900,
+            "scrollOffsetX": 0,
+            "scrollOffsetY": 0,
+            "timestamp": 1795030925.807191,
+            "monotonicTimestamp": 517014.482205
+          },
+          "target": 2814,
+          "actual": 2818.390869140625,
+          "view": "home",
+          "events": [
+            {
+              "name": "home-attention",
+              "at": 2319.699999988079
+            },
+            {
+              "name": "request:pending",
+              "question": "Interrupted four-source fixture at home",
+              "at": 2674.199999988079
+            },
+            {
+              "name": "home-gathering",
+              "at": 2695.399999976158
+            },
+            {
+              "name": "release:4",
+              "at": 2779
+            },
+            {
+              "name": "home-presenting",
+              "at": 2805.899999976158
+            },
+            {
+              "name": "home-close",
+              "at": 2883.099999964237
+            },
+            {
+              "name": "request:pending",
+              "question": "Interrupted no-match fixture at home",
+              "at": 3546
+            },
+            {
+              "name": "release:0",
+              "at": 3666.5
+            },
+            {
+              "name": "home-no-match",
+              "at": 3675
+            }
+          ],
+          "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/final-browser-v01/desktop-dpr1-home-motion-presenting.jpg"
+        },
+        {
+          "name": "desktop-dpr1-home-motion-dismiss-interruption.jpg",
+          "metadata": {
+            "offsetTop": 0,
+            "pageScaleFactor": 1,
+            "deviceWidth": 1440,
+            "deviceHeight": 900,
+            "scrollOffsetX": 0,
+            "scrollOffsetY": 0,
+            "timestamp": 1795030925.923987,
+            "monotonicTimestamp": 517014.599001
+          },
+          "target": 2918.099999964237,
+          "actual": 2935.186767578125,
+          "view": "home",
+          "events": [
+            {
+              "name": "home-attention",
+              "at": 2319.699999988079
+            },
+            {
+              "name": "request:pending",
+              "question": "Interrupted four-source fixture at home",
+              "at": 2674.199999988079
+            },
+            {
+              "name": "home-gathering",
+              "at": 2695.399999976158
+            },
+            {
+              "name": "release:4",
+              "at": 2779
+            },
+            {
+              "name": "home-presenting",
+              "at": 2805.899999976158
+            },
+            {
+              "name": "home-close",
+              "at": 2883.099999964237
+            },
+            {
+              "name": "request:pending",
+              "question": "Interrupted no-match fixture at home",
+              "at": 3546
+            },
+            {
+              "name": "release:0",
+              "at": 3666.5
+            },
+            {
+              "name": "home-no-match",
+              "at": 3675
+            }
+          ],
+          "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/final-browser-v01/desktop-dpr1-home-motion-dismiss-interruption.jpg"
+        },
+        {
+          "name": "desktop-dpr1-home-motion-no-match-early.jpg",
+          "metadata": {
+            "offsetTop": 0,
+            "pageScaleFactor": 1,
+            "deviceWidth": 1440,
+            "deviceHeight": 900,
+            "scrollOffsetX": 0,
+            "scrollOffsetY": 0,
+            "timestamp": 1795030926.690357,
+            "monotonicTimestamp": 517015.365371
+          },
+          "target": 3701.5,
+          "actual": 3701.556884765625,
+          "view": "home",
+          "events": [
+            {
+              "name": "home-attention",
+              "at": 2319.699999988079
+            },
+            {
+              "name": "request:pending",
+              "question": "Interrupted four-source fixture at home",
+              "at": 2674.199999988079
+            },
+            {
+              "name": "home-gathering",
+              "at": 2695.399999976158
+            },
+            {
+              "name": "release:4",
+              "at": 2779
+            },
+            {
+              "name": "home-presenting",
+              "at": 2805.899999976158
+            },
+            {
+              "name": "home-close",
+              "at": 2883.099999964237
+            },
+            {
+              "name": "request:pending",
+              "question": "Interrupted no-match fixture at home",
+              "at": 3546
+            },
+            {
+              "name": "release:0",
+              "at": 3666.5
+            },
+            {
+              "name": "home-no-match",
+              "at": 3675
+            }
+          ],
+          "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/final-browser-v01/desktop-dpr1-home-motion-no-match-early.jpg"
+        },
+        {
+          "name": "desktop-dpr1-home-motion-no-match-middle.jpg",
+          "metadata": {
+            "offsetTop": 0,
+            "pageScaleFactor": 1,
+            "deviceWidth": 1440,
+            "deviceHeight": 900,
+            "scrollOffsetX": 0,
+            "scrollOffsetY": 0,
+            "timestamp": 1795030926.773783,
+            "monotonicTimestamp": 517015.448797
+          },
+          "target": 3806.5,
+          "actual": 3784.98291015625,
+          "view": "home",
+          "events": [
+            {
+              "name": "home-attention",
+              "at": 2319.699999988079
+            },
+            {
+              "name": "request:pending",
+              "question": "Interrupted four-source fixture at home",
+              "at": 2674.199999988079
+            },
+            {
+              "name": "home-gathering",
+              "at": 2695.399999976158
+            },
+            {
+              "name": "release:4",
+              "at": 2779
+            },
+            {
+              "name": "home-presenting",
+              "at": 2805.899999976158
+            },
+            {
+              "name": "home-close",
+              "at": 2883.099999964237
+            },
+            {
+              "name": "request:pending",
+              "question": "Interrupted no-match fixture at home",
+              "at": 3546
+            },
+            {
+              "name": "release:0",
+              "at": 3666.5
+            },
+            {
+              "name": "home-no-match",
+              "at": 3675
+            }
+          ],
+          "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/final-browser-v01/desktop-dpr1-home-motion-no-match-middle.jpg"
+        },
+        {
+          "name": "desktop-dpr1-home-motion-no-match-settled.jpg",
+          "metadata": {
+            "offsetTop": 0,
+            "pageScaleFactor": 1,
+            "deviceWidth": 1440,
+            "deviceHeight": 900,
+            "scrollOffsetX": 0,
+            "scrollOffsetY": 0,
+            "timestamp": 1795030926.940381,
+            "monotonicTimestamp": 517015.615395
+          },
+          "target": 3966.5,
+          "actual": 3951.5810546875,
+          "view": "home",
+          "events": [
+            {
+              "name": "home-attention",
+              "at": 2319.699999988079
+            },
+            {
+              "name": "request:pending",
+              "question": "Interrupted four-source fixture at home",
+              "at": 2674.199999988079
+            },
+            {
+              "name": "home-gathering",
+              "at": 2695.399999976158
+            },
+            {
+              "name": "release:4",
+              "at": 2779
+            },
+            {
+              "name": "home-presenting",
+              "at": 2805.899999976158
+            },
+            {
+              "name": "home-close",
+              "at": 2883.099999964237
+            },
+            {
+              "name": "request:pending",
+              "question": "Interrupted no-match fixture at home",
+              "at": 3546
+            },
+            {
+              "name": "release:0",
+              "at": 3666.5
+            },
+            {
+              "name": "home-no-match",
+              "at": 3675
+            }
+          ],
+          "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/final-browser-v01/desktop-dpr1-home-motion-no-match-settled.jpg"
+        },
+        {
+          "name": "desktop-dpr1-robot-neighbour-motion-gathering.jpg",
+          "metadata": {
+            "offsetTop": 0,
+            "pageScaleFactor": 1,
+            "deviceWidth": 1440,
+            "deviceHeight": 900,
+            "scrollOffsetX": 0,
+            "scrollOffsetY": 0,
+            "timestamp": 1795030930.023237,
+            "monotonicTimestamp": 517018.698251
+          },
+          "target": 6953.199999988079,
+          "actual": 7034.43701171875,
+          "view": "robot-neighbour",
+          "events": [
+            {
+              "name": "robot-neighbour-attention",
+              "at": 6539.300000011921
+            },
+            {
+              "name": "request:pending",
+              "question": "Interrupted four-source fixture at robot-neighbour",
+              "at": 6918.199999988079
+            },
+            {
+              "name": "robot-neighbour-gathering",
+              "at": 6938.399999976158
+            },
+            {
+              "name": "release:4",
+              "at": 7016.300000011921
+            },
+            {
+              "name": "robot-neighbour-presenting",
+              "at": 7024.800000011921
+            },
+            {
+              "name": "robot-neighbour-close",
+              "at": 7112.199999988079
+            },
+            {
+              "name": "request:pending",
+              "question": "Interrupted no-match fixture at robot-neighbour",
+              "at": 7620.800000011921
+            },
+            {
+              "name": "release:0",
+              "at": 7716.199999988079
+            },
+            {
+              "name": "robot-neighbour-no-match",
+              "at": 7723
+            }
+          ],
+          "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/final-browser-v01/desktop-dpr1-robot-neighbour-motion-gathering.jpg"
+        },
+        {
+          "name": "desktop-dpr1-robot-neighbour-motion-presenting.jpg",
+          "metadata": {
+            "offsetTop": 0,
+            "pageScaleFactor": 1,
+            "deviceWidth": 1440,
+            "deviceHeight": 900,
+            "scrollOffsetX": 0,
+            "scrollOffsetY": 0,
+            "timestamp": 1795030930.056554,
+            "monotonicTimestamp": 517018.731569
+          },
+          "target": 7051.300000011921,
+          "actual": 7067.754150390625,
+          "view": "robot-neighbour",
+          "events": [
+            {
+              "name": "robot-neighbour-attention",
+              "at": 6539.300000011921
+            },
+            {
+              "name": "request:pending",
+              "question": "Interrupted four-source fixture at robot-neighbour",
+              "at": 6918.199999988079
+            },
+            {
+              "name": "robot-neighbour-gathering",
+              "at": 6938.399999976158
+            },
+            {
+              "name": "release:4",
+              "at": 7016.300000011921
+            },
+            {
+              "name": "robot-neighbour-presenting",
+              "at": 7024.800000011921
+            },
+            {
+              "name": "robot-neighbour-close",
+              "at": 7112.199999988079
+            },
+            {
+              "name": "request:pending",
+              "question": "Interrupted no-match fixture at robot-neighbour",
+              "at": 7620.800000011921
+            },
+            {
+              "name": "release:0",
+              "at": 7716.199999988079
+            },
+            {
+              "name": "robot-neighbour-no-match",
+              "at": 7723
+            }
+          ],
+          "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/final-browser-v01/desktop-dpr1-robot-neighbour-motion-presenting.jpg"
+        },
+        {
+          "name": "desktop-dpr1-robot-neighbour-motion-dismiss-interruption.jpg",
+          "metadata": {
+            "offsetTop": 0,
+            "pageScaleFactor": 1,
+            "deviceWidth": 1440,
+            "deviceHeight": 900,
+            "scrollOffsetX": 0,
+            "scrollOffsetY": 0,
+            "timestamp": 1795030930.123264,
+            "monotonicTimestamp": 517018.798278
+          },
+          "target": 7147.199999988079,
+          "actual": 7134.464111328125,
+          "view": "robot-neighbour",
+          "events": [
+            {
+              "name": "robot-neighbour-attention",
+              "at": 6539.300000011921
+            },
+            {
+              "name": "request:pending",
+              "question": "Interrupted four-source fixture at robot-neighbour",
+              "at": 6918.199999988079
+            },
+            {
+              "name": "robot-neighbour-gathering",
+              "at": 6938.399999976158
+            },
+            {
+              "name": "release:4",
+              "at": 7016.300000011921
+            },
+            {
+              "name": "robot-neighbour-presenting",
+              "at": 7024.800000011921
+            },
+            {
+              "name": "robot-neighbour-close",
+              "at": 7112.199999988079
+            },
+            {
+              "name": "request:pending",
+              "question": "Interrupted no-match fixture at robot-neighbour",
+              "at": 7620.800000011921
+            },
+            {
+              "name": "release:0",
+              "at": 7716.199999988079
+            },
+            {
+              "name": "robot-neighbour-no-match",
+              "at": 7723
+            }
+          ],
+          "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/final-browser-v01/desktop-dpr1-robot-neighbour-motion-dismiss-interruption.jpg"
+        },
+        {
+          "name": "desktop-dpr1-robot-neighbour-motion-no-match-early.jpg",
+          "metadata": {
+            "offsetTop": 0,
+            "pageScaleFactor": 1,
+            "deviceWidth": 1440,
+            "deviceHeight": 900,
+            "scrollOffsetX": 0,
+            "scrollOffsetY": 0,
+            "timestamp": 1795030930.773159,
+            "monotonicTimestamp": 517019.448173
+          },
+          "target": 7751.199999988079,
+          "actual": 7784.35888671875,
+          "view": "robot-neighbour",
+          "events": [
+            {
+              "name": "robot-neighbour-attention",
+              "at": 6539.300000011921
+            },
+            {
+              "name": "request:pending",
+              "question": "Interrupted four-source fixture at robot-neighbour",
+              "at": 6918.199999988079
+            },
+            {
+              "name": "robot-neighbour-gathering",
+              "at": 6938.399999976158
+            },
+            {
+              "name": "release:4",
+              "at": 7016.300000011921
+            },
+            {
+              "name": "robot-neighbour-presenting",
+              "at": 7024.800000011921
+            },
+            {
+              "name": "robot-neighbour-close",
+              "at": 7112.199999988079
+            },
+            {
+              "name": "request:pending",
+              "question": "Interrupted no-match fixture at robot-neighbour",
+              "at": 7620.800000011921
+            },
+            {
+              "name": "release:0",
+              "at": 7716.199999988079
+            },
+            {
+              "name": "robot-neighbour-no-match",
+              "at": 7723
+            }
+          ],
+          "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/final-browser-v01/desktop-dpr1-robot-neighbour-motion-no-match-early.jpg"
+        },
+        {
+          "name": "desktop-dpr1-robot-neighbour-motion-no-match-middle.jpg",
+          "metadata": {
+            "offsetTop": 0,
+            "pageScaleFactor": 1,
+            "deviceWidth": 1440,
+            "deviceHeight": 900,
+            "scrollOffsetX": 0,
+            "scrollOffsetY": 0,
+            "timestamp": 1795030930.873274,
+            "monotonicTimestamp": 517019.548288
+          },
+          "target": 7856.199999988079,
+          "actual": 7884.47412109375,
+          "view": "robot-neighbour",
+          "events": [
+            {
+              "name": "robot-neighbour-attention",
+              "at": 6539.300000011921
+            },
+            {
+              "name": "request:pending",
+              "question": "Interrupted four-source fixture at robot-neighbour",
+              "at": 6918.199999988079
+            },
+            {
+              "name": "robot-neighbour-gathering",
+              "at": 6938.399999976158
+            },
+            {
+              "name": "release:4",
+              "at": 7016.300000011921
+            },
+            {
+              "name": "robot-neighbour-presenting",
+              "at": 7024.800000011921
+            },
+            {
+              "name": "robot-neighbour-close",
+              "at": 7112.199999988079
+            },
+            {
+              "name": "request:pending",
+              "question": "Interrupted no-match fixture at robot-neighbour",
+              "at": 7620.800000011921
+            },
+            {
+              "name": "release:0",
+              "at": 7716.199999988079
+            },
+            {
+              "name": "robot-neighbour-no-match",
+              "at": 7723
+            }
+          ],
+          "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/final-browser-v01/desktop-dpr1-robot-neighbour-motion-no-match-middle.jpg"
+        },
+        {
+          "name": "desktop-dpr1-robot-neighbour-motion-no-match-settled.jpg",
+          "metadata": {
+            "offsetTop": 0,
+            "pageScaleFactor": 1,
+            "deviceWidth": 1440,
+            "deviceHeight": 900,
+            "scrollOffsetX": 0,
+            "scrollOffsetY": 0,
+            "timestamp": 1795030930.873274,
+            "monotonicTimestamp": 517019.548288
+          },
+          "target": 8016.199999988079,
+          "actual": 7884.47412109375,
+          "view": "robot-neighbour",
+          "events": [
+            {
+              "name": "robot-neighbour-attention",
+              "at": 6539.300000011921
+            },
+            {
+              "name": "request:pending",
+              "question": "Interrupted four-source fixture at robot-neighbour",
+              "at": 6918.199999988079
+            },
+            {
+              "name": "robot-neighbour-gathering",
+              "at": 6938.399999976158
+            },
+            {
+              "name": "release:4",
+              "at": 7016.300000011921
+            },
+            {
+              "name": "robot-neighbour-presenting",
+              "at": 7024.800000011921
+            },
+            {
+              "name": "robot-neighbour-close",
+              "at": 7112.199999988079
+            },
+            {
+              "name": "request:pending",
+              "question": "Interrupted no-match fixture at robot-neighbour",
+              "at": 7620.800000011921
+            },
+            {
+              "name": "release:0",
+              "at": 7716.199999988079
+            },
+            {
+              "name": "robot-neighbour-no-match",
+              "at": 7723
+            }
+          ],
+          "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/final-browser-v01/desktop-dpr1-robot-neighbour-motion-no-match-settled.jpg"
+        }
+      ],
+      "closed": true
+    }
+  ],
+  "captures": [
+    {
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/final-browser-v01/desktop-dpr1-home-idle.png",
+      "before": {
+        "at": 2029.300000011921,
+        "phase": "home-idle",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1.0000000149011612
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1.0000000149011612",
+          "studioRenderCount": "3",
+          "studioDrawCalls": "94",
+          "studioTriangles": "94512",
+          "studioGeometries": "38",
+          "studioTextures": "12",
+          "assistantRunId": "",
+          "assistantRevision": "0",
+          "assistantCardCount": "0"
+        },
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "after": {
+        "at": 2310.5,
+        "phase": "home-idle",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1.0000000149011612
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1.0000000149011612",
+          "studioRenderCount": "3",
+          "studioDrawCalls": "94",
+          "studioTriangles": "94512",
+          "studioGeometries": "38",
+          "studioTextures": "12",
+          "assistantRunId": "",
+          "assistantRevision": "0",
+          "assistantCardCount": "0"
+        },
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "context": "task_bc61c9989863-capture-desktop-dpr1"
+    },
+    {
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/final-browser-v01/desktop-dpr1-home-no-match-settled.png",
+      "before": {
+        "at": 4217.899999976158,
+        "phase": "home-no-match",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1.0000000149011612
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1.0000000149011612",
+          "studioRenderCount": "27",
+          "studioDrawCalls": "94",
+          "studioTriangles": "94512",
+          "studioGeometries": "40",
+          "studioTextures": "12",
+          "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:2",
+          "assistantRevision": "13",
+          "assistantCardCount": "0"
+        },
+        "result": "no-match",
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "after": {
+        "at": 4608.099999964237,
+        "phase": "home-no-match",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1.0000000149011612
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "-4",
+          "studioPitch": "-6",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1.0000000149011612",
+          "studioRenderCount": "27",
+          "studioDrawCalls": "94",
+          "studioTriangles": "94512",
+          "studioGeometries": "40",
+          "studioTextures": "12",
+          "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:2",
+          "assistantRevision": "13",
+          "assistantCardCount": "0"
+        },
+        "result": "no-match",
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "context": "task_bc61c9989863-capture-desktop-dpr1"
+    },
+    {
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/final-browser-v01/desktop-dpr1-robot-neighbour-idle.png",
+      "before": {
+        "at": 6158.800000011921,
+        "phase": "robot-neighbour-idle",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1.0000000149011612
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "26",
+          "studioPitch": "4",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1.0000000149011612",
+          "studioRenderCount": "42",
+          "studioDrawCalls": "94",
+          "studioTriangles": "89418",
+          "studioGeometries": "43",
+          "studioTextures": "15",
+          "assistantRunId": "",
+          "assistantRevision": "14",
+          "assistantCardCount": "0"
+        },
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "after": {
+        "at": 6523,
+        "phase": "robot-neighbour-idle",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1.0000000149011612
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "true",
+          "studioYaw": "26",
+          "studioPitch": "4",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1.0000000149011612",
+          "studioRenderCount": "42",
+          "studioDrawCalls": "94",
+          "studioTriangles": "89418",
+          "studioGeometries": "43",
+          "studioTextures": "15",
+          "assistantRunId": "",
+          "assistantRevision": "14",
+          "assistantCardCount": "0"
+        },
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "context": "task_bc61c9989863-capture-desktop-dpr1"
+    },
+    {
+      "path": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/final-browser-v01/desktop-dpr1-robot-neighbour-no-match-settled.png",
+      "before": {
+        "at": 8105.599999964237,
+        "phase": "robot-neighbour-no-match",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1.0000000149011612
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "26",
+          "studioPitch": "4",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1.0000000149011612",
+          "studioRenderCount": "64",
+          "studioDrawCalls": "94",
+          "studioTriangles": "89418",
+          "studioGeometries": "43",
+          "studioTextures": "15",
+          "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:4",
+          "assistantRevision": "27",
+          "assistantCardCount": "0"
+        },
+        "result": "no-match",
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "after": {
+        "at": 8581.199999988079,
+        "phase": "robot-neighbour-no-match",
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "dpr": 1.0000000149011612
+        },
+        "canvas": {
+          "engine": "three.js r187",
+          "studioInteractionEnabled": "false",
+          "studioYaw": "26",
+          "studioPitch": "4",
+          "studioEye": "-0.7,2.8,3.4",
+          "studioFov": "58",
+          "studioDpr": "1.0000000149011612",
+          "studioRenderCount": "65",
+          "studioDrawCalls": "94",
+          "studioTriangles": "89418",
+          "studioGeometries": "43",
+          "studioTextures": "15",
+          "assistantRunId": "88894f37-4ed6-462a-9e72-fa247daa431a:4",
+          "assistantRevision": "27",
+          "assistantCardCount": "0"
+        },
+        "result": "no-match",
+        "chipKeys": [],
+        "rowKeys": [],
+        "scroll": {
+          "x": 0,
+          "y": 0
+        },
+        "mediaReduced": false
+      },
+      "context": "task_bc61c9989863-capture-desktop-dpr1"
+    }
+  ],
+  "events": [],
+  "limits": [
+    "Controlled protocol-valid source-only streams; exact retrieved passages reused from the real seed response.",
+    "Screenshots and CDP screencast frames are discrete browser samples, not continuous collision guarantees or physical phone/keyboard evidence."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "at": "2026-11-16T14:06:32.192Z",
+  "passed": true,
+  "errors": [],
+  "counts": {
+    "originalAsk": 15,
+    "focusedAsk": 22,
+    "studio": 91,
+    "studioPngs": 36,
+    "totalPngs": 54
+  },
+  "head": "c0348b77adbfe09034e82a9e1a3cee34052d4735",
+  "buildId": "O1RTOH0qRVqxRHQExjvm4",
+  "reportSha256": "5e2ff5c791ac0c5a893c95abe673a9ce63a1a2dfb620fd86f165c93d998f8a78",
+  "sourceReceiptSha256": "0f9fb14381261e2504a3b6ebd80fcf547cde1fc7151a335c9eb8f96688ba682b",
+  "previewPid": 30700,
+  "limits": [
+    "Performance offscreen result null; initial cold callback 1876.4ms.",
+    "No code-review approval, physical-device/GPU acceptance or robot budget."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "at": "2026-11-18T20:16:02.096Z",
+  "command": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "node_modules/typescript/bin/tsc",
+    "--noEmit",
+    "--incremental",
+    "false"
+  ],
+  "status": 0,
+  "signal": null,
+  "log": "typescript.log"
+}

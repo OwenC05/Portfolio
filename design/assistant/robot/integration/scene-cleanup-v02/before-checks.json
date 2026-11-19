@@ -1,0 +1,31 @@
+[
+  {
+    "argv": [
+      "--test",
+      "--test-reporter=tap",
+      "--test-name-pattern=P2:",
+      "design/assistant/robot/review/scene-runtime-g2/probe.test.mjs"
+    ],
+    "exitCode": 1,
+    "log": "before-independent-cleanup.txt"
+  },
+  {
+    "argv": [
+      "--test",
+      "--test-reporter=tap",
+      "--test-name-pattern=G2 feedback:",
+      "components/studio/scene/verify-controller.mjs"
+    ],
+    "exitCode": 1,
+    "log": "before-feedback.txt"
+  },
+  {
+    "argv": [
+      "--test",
+      "--test-reporter=tap",
+      "components/studio/scene/robot/verify-cleanup.mjs"
+    ],
+    "exitCode": 1,
+    "log": "before-durable-cleanup.txt"
+  }
+]

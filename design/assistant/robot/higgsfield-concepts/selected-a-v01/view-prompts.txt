@@ -1,0 +1,15 @@
+SHARED IDENTITY PARAGRAPH (appended after each view clause, joined by one space)
+
+identical original robot character as the reference image on this view, same proportions, same shapes, same palette and same materials, plain seamless neutral mid-grey studio background, professional character model sheet presentation. The character is a small floating porcelain apprentice robot made of five separate hovering pieces with clear air gaps between them: head, body, two hands and a tray. Head: a smooth slightly flattened sphere of warm white satin-glazed porcelain with one fine brass seam line running around it, and a wide dark smoked face panel inset on the front only. Eyes on the face panel: two big round softly glowing warm-white eyes, each with a round dark pupil centred in the eye and one small catchlight, with a gently raised lower eyelid. On top of the head, slightly toward the character's own left side: a short slim brass stalk holding a small narrow red ribbon bookmark that hangs straight down a short way with a notched swallowtail end. Body: a compact porcelain teardrop, point down, with a solid closed brass cap on top; no opening, no hollow. Hands: two small rounded porcelain mitten-shaped fins floating level at the two sides of the body, symmetrical, relaxed. Tray: a shallow round brass dish floating level below the body, completely empty. Neutral pose: head upright and level, not tilted, not turned; every part centred on one vertical axis. Finish: calm satin glaze with soft broad highlights only, brushed satin brass, no mirror reflections, no window reflections. Stylised 3D character render, flat orthographic-like view with a long lens and no perspective distortion, camera at the height of the character's middle, soft even studio lighting, whole character in frame with generous empty margin, same scale as the reference, high-end 3D animation studio quality, sharp. Single character only, one view only, no cards, nothing on the tray, no flag, no text, no letters, no watermark, no logos, no frame borders, no extra objects, no second character.
+
+FRONT VIEW CLAUSE
+
+Single full-figure straight front view of the character, facing the camera exactly head-on, both eyes looking straight at the viewer, left and right halves symmetrical,
+
+SIDE VIEW CLAUSE
+
+Single full-figure exact side profile view of the character, seen from its own right side so that it faces toward the left edge of the picture, the dark face panel seen edge-on as a curved band at the front of the head with only the near eye partly visible, the near hand in front of the body, the far hand hidden behind the body,
+
+BACK VIEW CLAUSE
+
+Single full-figure straight back view of the character, seen from directly behind, no face panel and no eyes visible, the back of the head is plain smooth porcelain crossed by the fine brass seam, the back of the body is plain porcelain,

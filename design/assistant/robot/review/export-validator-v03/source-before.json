@@ -1,0 +1,115 @@
+{
+  "at": "2026-11-18T19:14:59.166Z",
+  "files": [
+    {
+      "path": "design/assistant/robot/asset-pipeline/validator-v03/validate_asset.mjs",
+      "bytes": 11542,
+      "sha256": "ba1990472d6697c3efc89b3930c37ba123313c4340ff2af9a0460ceb028e8e59"
+    },
+    {
+      "path": "design/assistant/robot/asset-pipeline/validator-v03/validate_contract.mjs",
+      "bytes": 10343,
+      "sha256": "7331dbc75d24aeae8553922f50a4ebcd31bd3ed945d3617bbfbb2422b5e32c8e"
+    },
+    {
+      "path": "design/assistant/robot/asset-pipeline/validator-v03/verify.mjs",
+      "bytes": 5164,
+      "sha256": "4e359632c83bc6699d0c485978c8af3afaf63cec5f6a122a6a0c3195abb4f430"
+    },
+    {
+      "path": "design/assistant/robot/asset-pipeline/selected-a-v01/candidate-001/build-v02/validate_asset.mjs",
+      "bytes": 11497,
+      "sha256": "dc1231aa8c824a184582a69fd6b7d7603c2de979ff5e05e6421a3e2ace5ea0ad"
+    },
+    {
+      "path": "design/assistant/robot/asset-pipeline/selected-a-v01/candidate-001/build-v02/validate_contract.mjs",
+      "bytes": 10053,
+      "sha256": "b65ea4dbf9dcd034791b53203d41c98de5d94abaccffef0fb0aca3e4b13b3a87"
+    },
+    {
+      "path": "design/assistant/robot/asset-pipeline/selected-a-v01/candidate-001/build-v02/selected-a.glb",
+      "bytes": 673268,
+      "sha256": "bc1a4d6d968dd53eda3480936959d0ebf292e76652a6bbdd201e15f4cd665270"
+    },
+    {
+      "path": "public/studio/assistant-apprentice-v03.glb",
+      "bytes": 673144,
+      "sha256": "65f1dea3b1d35a748bdfc2089dea0feed1d054cc8b0eb957645ea2d669578a12"
+    },
+    {
+      "path": "design/assistant/robot/asset-pipeline/selected-a-v01/candidate-001/build-v02/selected-a.blend",
+      "bytes": 572151,
+      "sha256": "80704c8f2989683dffa59f9616b1ef146eab944f7d05ae0e0bf55e1964bc508e"
+    },
+    {
+      "path": "design/assistant/robot/asset-pipeline/selected-a-v01/candidate-001/build-v02/profile.json",
+      "bytes": 32679,
+      "sha256": "f5dbf7f2a9e3e57332c62c21e27013d6ce05d11085fac94ec979631e4728e33e"
+    },
+    {
+      "path": "design/assistant/robot/asset-pipeline/selected-a-v01/candidate-001/build-v02/poses.json",
+      "bytes": 86562,
+      "sha256": "6dd7ce35a027352b4f2cffbe673081910837e69d56c9f4ec866e970381c6e96d"
+    },
+    {
+      "path": "design/assistant/robot/asset-pipeline/selected-a-v01/candidate-001/build-v02/build-summary.json",
+      "bytes": 635,
+      "sha256": "213051dc027261b842269b076afb744277b7e30340bac1513cb22daa120d0ed6"
+    },
+    {
+      "path": "design/assistant/robot/asset-pipeline/selected-a-v01/candidate-001/build-v02/build_asset.py",
+      "bytes": 30984,
+      "sha256": "2412f0f4bd6498784c96b7d722ca3cb5d4454e7526a4ef5f6c1957b1ede84bc4"
+    },
+    {
+      "path": "design/assistant/robot/asset-pipeline/selected-a-v01/candidate-001/build-v02/manifest.json",
+      "bytes": 1770,
+      "sha256": "5ab01dc63a952d618877e150729b443ecb4cf9922cd3bdf1df7a985e6f6f7423"
+    },
+    {
+      "path": "design/assistant/robot/asset-pipeline/selected-a-v01/candidate-001/build-v02/validation.json",
+      "bytes": 6276,
+      "sha256": "abb15cbe35a845179e05e5f23db0d58112edea5e2f7c60d730c474140da5bd4c"
+    },
+    {
+      "path": "design/assistant/robot/asset-pipeline/selected-a-v01/candidate-001/build-v02/README.md",
+      "bytes": 7557,
+      "sha256": "05c2686f4ca6e8aba43d4c63a17da31f61a8bdae60fed0c62e0e0fe0330ad3e7"
+    },
+    {
+      "path": "design/assistant/robot/asset-pipeline/validator-v03/repair-plan.md",
+      "bytes": 1952,
+      "sha256": "2c64a4b923322da0d4a8639fde33c206a47125832545d5ef266bdde763959c8c"
+    },
+    {
+      "path": "design/assistant/robot/asset-pipeline/validator-v03/README.md",
+      "bytes": 2705,
+      "sha256": "2bc589058e8fb3344ad1119f6ed4350a83fdae93b647e5ca5ff815d7d75dc7ee"
+    },
+    {
+      "path": "design/assistant/robot/asset-pipeline/validator-v03/before-checks.json",
+      "bytes": 3349,
+      "sha256": "69f8217e180ecc48c1f312c05937fd55b5896866b07d84a257ae1175d33641f8"
+    },
+    {
+      "path": "design/assistant/robot/asset-pipeline/validator-v03/after-checks.json",
+      "bytes": 5664,
+      "sha256": "c77acb194ede582d3af8201891ce742a8eb9572ff3abeef3dddde72b4447e9b3"
+    },
+    {
+      "path": "design/assistant/robot/review/build-v02/technical/review.md",
+      "bytes": 17432,
+      "sha256": "12511bb72e256abd88e5a0bf9706c6dc5ea379c80c478058486542c7d5b7d80b"
+    },
+    {
+      "path": "design/assistant/robot/review/build-v02/technical/probe-validator.mjs",
+      "bytes": 5455,
+      "sha256": "7a236bfbeb822c30e05565e498d97e9b5dc5189df2c1abf65bd6242660106243"
+    },
+    {
+      "path": "design/assistant/robot/review/build-v02/technical/validator-probes.json",
+      "bytes": 15436,
+      "sha256": "ad0a97d957244d963091d590cf0996ee56b6028d846aa17add40892818fb29fb"
+    }
+  ]
+}

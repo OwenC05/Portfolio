@@ -1,0 +1,104 @@
+{
+  "scope": "Exact root-approved restoration for this raw/parent pair; writer receipt, not independent acceptance.",
+  "authority": "scene-coordination/m3-v02-raw-root-disposition.md / msg_b489404fc151",
+  "restorer": "scene-coordination/m3-v03-restore.py",
+  "restorerSha256": "e6c7a3ea4cca8539e6b04f8d65dc50c8b2b00cd5e4e32745febf8bb90d4158a3",
+  "inputs": {
+    "parent": {
+      "sha256": "4b2f7b8f44e13ef2a23e6d3420f1098147702aba72a365e6a942dec7e7ccc735",
+      "bytes": 1228192
+    },
+    "raw": {
+      "sha256": "71b39b5c242278408092d3ee95ab4e996df47014eb30ef57383b88f3e526fd18",
+      "bytes": 1628664
+    }
+  },
+  "preservedEditableProvenance": {
+    "source/build_fullkit_m3.py": "dccfa2885919a84b03ff472cecbf76da35e0cd2a8b32baaca2dc8cb31929a209",
+    "source/fk-30-nearfield-proposal-v02.blend": "46c52922f77ca1b78546450b5ef43ec3fdcc2ee6e67082070ccd48b63c25d4cd",
+    "manifests/m3-v02-author-measurements.json": "d10621b30ea6f6ceace4c46e03e04ceba7eec8e36b5f58772670f5785b9c654f"
+  },
+  "output": {
+    "path": "exports/studio-full-kit-m3-proposal-v03.glb",
+    "sha256": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+    "bytes": 1628664
+  },
+  "restoredWordSlots": [
+    {
+      "mesh": "desk_top__top_mesh.002",
+      "attribute": "TEXCOORD_0",
+      "accessor": 64,
+      "vertex": 197,
+      "component": 1,
+      "parentBinOffset": 411436,
+      "parentFileOffset": 483696,
+      "rawBinOffset": 411384,
+      "rawFileOffset": 487532,
+      "rawHex": "dec4203f",
+      "outputHex": "ddc4203f",
+      "changedFileByteOffsets": [
+        487532
+      ]
+    },
+    {
+      "mesh": "desk_top__top_mesh.002",
+      "attribute": "TEXCOORD_0",
+      "accessor": 64,
+      "vertex": 199,
+      "component": 0,
+      "parentBinOffset": 411448,
+      "parentFileOffset": 483708,
+      "rawBinOffset": 411396,
+      "rawFileOffset": 487544,
+      "rawHex": "5d8f72bf",
+      "outputHex": "5b8f72bf",
+      "changedFileByteOffsets": [
+        487544
+      ]
+    },
+    {
+      "mesh": "desk_top__top_mesh.002",
+      "attribute": "TEXCOORD_0",
+      "accessor": 64,
+      "vertex": 258,
+      "component": 0,
+      "parentBinOffset": 411920,
+      "parentFileOffset": 484180,
+      "rawBinOffset": 411868,
+      "rawFileOffset": 488016,
+      "rawHex": "21858b3e",
+      "outputHex": "20858b3e",
+      "changedFileByteOffsets": [
+        488016
+      ]
+    },
+    {
+      "mesh": "desk_top__top_mesh.002",
+      "attribute": "TEXCOORD_0",
+      "accessor": 64,
+      "vertex": 274,
+      "component": 1,
+      "parentBinOffset": 412052,
+      "parentFileOffset": 484312,
+      "rawBinOffset": 412000,
+      "rawFileOffset": 488148,
+      "rawHex": "3789213f",
+      "outputHex": "3689213f",
+      "changedFileByteOffsets": [
+        488148
+      ]
+    }
+  ],
+  "addressedWordCount": 4,
+  "addressedByteSlots": 16,
+  "actuallyChangedByteCount": 4,
+  "changedFileByteOffsets": [
+    487532,
+    487544,
+    488016,
+    488148
+  ],
+  "headerJsonAndAllOtherBytesIdenticalToRaw": true,
+  "embeddedBuildTags": "v02 preserved verbatim; v03 is the separate canonical byte-restoration result",
+  "candidateRetainedParentFullAudit": "Separate assembled audit and root independent technical review required."
+}

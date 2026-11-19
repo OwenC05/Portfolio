@@ -1,0 +1,90 @@
+﻿[
+    {
+        "Path":  "C:\\Users\\Owenc\\orca\\Portfolio\\app\\studio\\page.tsx",
+        "Hash":  "F811DC5ECA892E911650EB61CF3F859FE9CEBA2B725CD95D3AC39A546F4D7314"
+    },
+    {
+        "Path":  "C:\\Users\\Owenc\\orca\\Portfolio\\app\\studio\\panel-navigation.ts",
+        "Hash":  "E0D78F392B3B68EE115C56FE2E3C4C662E424B7A6629E88F8CEBDF48B9A2733B"
+    },
+    {
+        "Path":  "C:\\Users\\Owenc\\orca\\Portfolio\\app\\studio\\panel-scroll.ts",
+        "Hash":  "EF13A9D34AEC31EB245232ADA5675BC1CF010DD41BDD352ECBEFC72FE0DAA188"
+    },
+    {
+        "Path":  "C:\\Users\\Owenc\\orca\\Portfolio\\app\\studio\\studio.module.css",
+        "Hash":  "04B55C973D556B8A4C2FE396F3A7F4CCBB422A3E9577E55D373CDC608582691A"
+    },
+    {
+        "Path":  "C:\\Users\\Owenc\\orca\\Portfolio\\app\\studio\\StudioShell.tsx",
+        "Hash":  "BCAE10C0B983B1295B4D13E4FF1777C25FE9AF224EBF2AEE865C146FDB62ECA8"
+    },
+    {
+        "Path":  "C:\\Users\\Owenc\\orca\\Portfolio\\components\\studio\\ProjectEvidence.tsx",
+        "Hash":  "7242983F72892B81591848FBB5D81D39D61A4E6AE8F9EE3A7333E0A4B54B4E91"
+    },
+    {
+        "Path":  "C:\\Users\\Owenc\\orca\\Portfolio\\components\\studio\\StudioExperience.tsx",
+        "Hash":  "E4A2207E8664A1F755D81FBF00442223F99C55BF5B93CA22CB0063A9A7A30ED6"
+    },
+    {
+        "Path":  "C:\\Users\\Owenc\\orca\\Portfolio\\components\\studio\\StudioScene.tsx",
+        "Hash":  "29586D8A880AD079627E9E8D670F46A60C4614B221B17BBCEFEB54112327E5AC"
+    },
+    {
+        "Path":  "C:\\Users\\Owenc\\orca\\Portfolio\\components\\studio\\scene\\build-studio.ts",
+        "Hash":  "364DA680F5111138207A03A72579D7E6491A5E4FC09F8786B5DE794D69FB1EC3"
+    },
+    {
+        "Path":  "C:\\Users\\Owenc\\orca\\Portfolio\\components\\studio\\scene\\controller.ts",
+        "Hash":  "F04F7E9F2B4CA082C81A5447343D825B34602CA6BE2B09B3EDD5610EFA6B4847"
+    },
+    {
+        "Path":  "C:\\Users\\Owenc\\orca\\Portfolio\\components\\studio\\scene\\picking.ts",
+        "Hash":  "31F4546ED1480C8D5FD99CE0ED42F64387E6002199AC7D506F73649211E35B60"
+    },
+    {
+        "Path":  "C:\\Users\\Owenc\\orca\\Portfolio\\components\\studio\\scene\\resources.ts",
+        "Hash":  "756A26FBA1840696FD7B8F0A24DFA588A50488A55FBC99BEC60CA3C0E14CB509"
+    },
+    {
+        "Path":  "C:\\Users\\Owenc\\orca\\Portfolio\\components\\studio\\scene\\textures.ts",
+        "Hash":  "09F6FF6CC7BB8910F09838566DFCF840D85A0D2CE1BE8D064DEAFB0989C63AA6"
+    },
+    {
+        "Path":  "C:\\Users\\Owenc\\orca\\Portfolio\\components\\studio\\scene\\types.ts",
+        "Hash":  "090288AA14EFBE6AD6C2E95FD38202D2E86CC5530785DA40DC272390FB18200A"
+    },
+    {
+        "Path":  "C:\\Users\\Owenc\\orca\\Portfolio\\components\\studio\\scene\\verify-controller.mjs",
+        "Hash":  "0A8C66647CDCFA27F46EBD2DEAB3682CFC7AA569AF402D3EC27C5B6F007D8020"
+    },
+    {
+        "Path":  "C:\\Users\\Owenc\\orca\\Portfolio\\components\\studio\\scene\\verify-types.mjs",
+        "Hash":  "7A684D6E38384C80B57FECB63D24DB6FCF6E8EAC24CDB6F4918C451EBE066947"
+    },
+    {
+        "Path":  "C:\\Users\\Owenc\\orca\\Portfolio\\components\\studio\\scene\\view-config.ts",
+        "Hash":  "1FEA7ADBCFD730A56920389C8AC4ECF8323C9739FD4882C15F3E134A11F1A450"
+    },
+    {
+        "Path":  "C:\\Users\\Owenc\\orca\\Portfolio\\lib\\studio-contract.ts",
+        "Hash":  "64F88FD30B896C88C87A5631349BBB2BB9A3BC8676C0A1A816F1E5720902C84D"
+    },
+    {
+        "Path":  "C:\\Users\\Owenc\\orca\\Portfolio\\lib\\studio-content.ts",
+        "Hash":  "36E08B40CFB779F3F05CC17623766F1A2FB7B8F876CAC73AC9B12DB381764662"
+    },
+    {
+        "Path":  "C:\\Users\\Owenc\\orca\\Portfolio\\app\\globals.css",
+        "Hash":  "38A5427299238E2BE46AD5062E798EF3C68D13DFA884A1272BFDB2C55946F13F"
+    },
+    {
+        "Path":  "C:\\Users\\Owenc\\orca\\Portfolio\\package.json",
+        "Hash":  "74B49915FAC2EE8CD0F896A1AAADBAB0FD68427B52D31979F4DED4273A133D54"
+    },
+    {
+        "Path":  "C:\\Users\\Owenc\\orca\\Portfolio\\package-lock.json",
+        "Hash":  "E2D26D355BF292C7C880469AD295B7CB9356F51136ECC5D7F79BA0A15B34515D"
+    }
+]

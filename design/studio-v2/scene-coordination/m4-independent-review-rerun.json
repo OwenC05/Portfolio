@@ -1,0 +1,751 @@
+{
+  "scope": "implementer synthetic CPU tests, not independent approval or real M4 art",
+  "helperSha256": "32673405c0f07e248899e3b4a855081cfb8a98b0ef2077e00e558892481e1b6a",
+  "testSha256": "48cf26cee1c47a451bf90e5f42db6b842afddc2f9f0cdeead95daa71cb3cd108",
+  "protectedHashesBefore": {
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-transition-guard.py": "32673405c0f07e248899e3b4a855081cfb8a98b0ef2077e00e558892481e1b6a",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-transition-guard-tests.py": "48cf26cee1c47a451bf90e5f42db6b842afddc2f9f0cdeead95daa71cb3cd108",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-model-contract.json": "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\source\\build_fullkit_m3.py": "dccfa2885919a84b03ff472cecbf76da35e0cd2a8b32baaca2dc8cb31929a209",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\exports\\studio-full-kit-m3-proposal-v03.glb": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\manifests\\studio-full-kit-m3-proposal-v03.manifest.json": "060bab9af5dd23b4258e03aef10de21faa7c32aa0a6010cd4e09b35089026405",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\full-kit-profile-v1.json": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\asset-inventory.json": "eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87"
+  },
+  "protectedHashesAfter": {
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-transition-guard.py": "32673405c0f07e248899e3b4a855081cfb8a98b0ef2077e00e558892481e1b6a",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-transition-guard-tests.py": "48cf26cee1c47a451bf90e5f42db6b842afddc2f9f0cdeead95daa71cb3cd108",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-model-contract.json": "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\source\\build_fullkit_m3.py": "dccfa2885919a84b03ff472cecbf76da35e0cd2a8b32baaca2dc8cb31929a209",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\exports\\studio-full-kit-m3-proposal-v03.glb": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\manifests\\studio-full-kit-m3-proposal-v03.manifest.json": "060bab9af5dd23b4258e03aef10de21faa7c32aa0a6010cd4e09b35089026405",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\full-kit-profile-v1.json": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\asset-inventory.json": "eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87"
+  },
+  "results": [
+    {
+      "name": "synthetic 23-to-18 positive with actual pinned parent",
+      "passed": true,
+      "evidence": {
+        "valid": true,
+        "parentSha256": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+        "candidateSha256": "032c1f7938b157a8b8ff42016e2e1c4953e9df0b2d64137e52d9e9ad4210e907",
+        "errors": [],
+        "mappingSha256": "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98",
+        "hierarchySourceSha256": "dccfa2885919a84b03ff472cecbf76da35e0cd2a8b32baaca2dc8cb31929a209",
+        "profileSha256": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+        "scope": "transition only; full structural validator and independent review still required",
+        "metrics": {
+          "retainedLeaves": 92,
+          "retainedAccessorComparisons": 368,
+          "retainedComponentDifferences": 0,
+          "leaves": 110,
+          "assetIds": 58,
+          "remainingProxies": 17,
+          "provisionalContacts": 3,
+          "placedTriangles": 33708,
+          "stageMainCallsEstimate": 18,
+          "stageShadowCallsEstimate": 9,
+          "stageRefreshCallsEstimate": 27,
+          "stagePlacedTriangles": 216,
+          "rows": [
+            {
+              "node": "ctl_body__shell",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "ctl_body__indicators",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "ctl_keys__keys",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "ctl_stand__frame",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "ctl_sustain_pedal__pedal",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "stool_keys__stool",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "drum_rack__rack",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "drum_pads__shells",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "drum_pads__heads",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "drum_cymbals__cymbals",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "drum_hihat_pedal__pedal",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "drum_kick__tower",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "drum_module__body",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "drum_module__display",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "drum_sticks__pair",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "drum_throne__throne",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "rug__rug",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "music_cables__runs",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            }
+          ],
+          "rendererDrawMeasurements": false
+        }
+      }
+    },
+    {
+      "name": "semantic node/mesh/accessor/view/material/image/texture/sampler index and BIN relocation",
+      "passed": true,
+      "evidence": {
+        "valid": true,
+        "parentSha256": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+        "candidateSha256": "5358c28eb85297fcb6b96b9feca4cc792c22c4b9c1e41c0544d28d4722eddc87",
+        "errors": [],
+        "mappingSha256": "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98",
+        "hierarchySourceSha256": "dccfa2885919a84b03ff472cecbf76da35e0cd2a8b32baaca2dc8cb31929a209",
+        "profileSha256": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+        "scope": "transition only; full structural validator and independent review still required",
+        "metrics": {
+          "retainedLeaves": 92,
+          "retainedAccessorComparisons": 368,
+          "retainedComponentDifferences": 0,
+          "leaves": 110,
+          "assetIds": 58,
+          "remainingProxies": 17,
+          "provisionalContacts": 3,
+          "placedTriangles": 33708,
+          "stageMainCallsEstimate": 18,
+          "stageShadowCallsEstimate": 9,
+          "stageRefreshCallsEstimate": 27,
+          "stagePlacedTriangles": 216,
+          "rows": [
+            {
+              "node": "ctl_body__shell",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "ctl_body__indicators",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "ctl_keys__keys",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "ctl_stand__frame",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "ctl_sustain_pedal__pedal",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "stool_keys__stool",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "drum_rack__rack",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "drum_pads__shells",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "drum_pads__heads",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "drum_cymbals__cymbals",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "drum_hihat_pedal__pedal",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "drum_kick__tower",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "drum_module__body",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "drum_module__display",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "drum_sticks__pair",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "drum_throne__throne",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 1
+            },
+            {
+              "node": "rug__rug",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            },
+            {
+              "node": "music_cables__runs",
+              "triangles": 12,
+              "main": 1,
+              "shadow": 0
+            }
+          ],
+          "rendererDrawMeasurements": false
+        }
+      }
+    },
+    {
+      "name": "pure import does not load bpy or bmesh",
+      "passed": true,
+      "evidence": {
+        "bpyLoaded": false
+      }
+    },
+    {
+      "name": "wrong added name",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "hierarchy"
+        ]
+      }
+    },
+    {
+      "name": "wrong retirement keeping one old proxy",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "hierarchy"
+        ]
+      }
+    },
+    {
+      "name": "retained target reparenting",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "hierarchy"
+        ]
+      }
+    },
+    {
+      "name": "root transform",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "hierarchy"
+        ]
+      }
+    },
+    {
+      "name": "retained translation",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "hierarchy"
+        ]
+      }
+    },
+    {
+      "name": "retained flags",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "hierarchy"
+        ]
+      }
+    },
+    {
+      "name": "cycle",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "hierarchy"
+        ]
+      }
+    },
+    {
+      "name": "duplicate child",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "hierarchy"
+        ]
+      }
+    },
+    {
+      "name": "default scene",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "hierarchy"
+        ]
+      }
+    },
+    {
+      "name": "scene extra changed without permission",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "sceneMetadata"
+        ]
+      }
+    },
+    {
+      "name": "scene camera data",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "documentMetadata"
+        ]
+      }
+    },
+    {
+      "name": "new row camera object",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "newNodeData"
+        ]
+      }
+    },
+    {
+      "name": "new row unexpected extras",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "newRowFlags"
+        ]
+      }
+    },
+    {
+      "name": "retained target position word",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "retainedAccessorBytes"
+        ]
+      }
+    },
+    {
+      "name": "retained target UV word",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "retainedAccessorBytes"
+        ]
+      }
+    },
+    {
+      "name": "retained index word",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "retainedAccessorBytes"
+        ]
+      }
+    },
+    {
+      "name": "prior noise word has no exception",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "retainedAccessorBytes"
+        ]
+      }
+    },
+    {
+      "name": "normalized accessor metadata",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "accessorMetadata"
+        ]
+      }
+    },
+    {
+      "name": "retained mesh metadata",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "retainedMesh"
+        ]
+      }
+    },
+    {
+      "name": "retained primitive mode",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "newPrimitiveDefinition",
+          "retainedPrimitive"
+        ]
+      }
+    },
+    {
+      "name": "retained extra attribute",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "attributeSet",
+          "newAttributeSet"
+        ]
+      }
+    },
+    {
+      "name": "retained material assignment",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "materialAssignment"
+        ]
+      }
+    },
+    {
+      "name": "existing material roughness",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "materialDefinition"
+        ]
+      }
+    },
+    {
+      "name": "encoded image unchanged fk_palette_colour",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "imageBytes"
+        ]
+      }
+    },
+    {
+      "name": "encoded image unchanged fk_palette_orm",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "imageBytes"
+        ]
+      }
+    },
+    {
+      "name": "encoded image unchanged pilot_timber_albedo",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "imageBytes"
+        ]
+      }
+    },
+    {
+      "name": "image metadata",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "imageMetadata"
+        ]
+      }
+    },
+    {
+      "name": "image relationship",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "materialDefinition",
+          "textureWiring"
+        ]
+      }
+    },
+    {
+      "name": "sampler definition",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "materialDefinition",
+          "samplerDefinitions",
+          "textureWiring"
+        ]
+      }
+    },
+    {
+      "name": "sampler wiring",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "materialDefinition",
+          "samplerDefinitions",
+          "textureWiring"
+        ]
+      }
+    },
+    {
+      "name": "opaque nocast must still occlude",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "newRowFlags"
+        ]
+      }
+    },
+    {
+      "name": "wrong new cast flag",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "newRowFlags"
+        ]
+      }
+    },
+    {
+      "name": "numeric value cannot stand in for boolean",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "newRowFlags"
+        ]
+      }
+    },
+    {
+      "name": "new receive flag",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "newRowFlags"
+        ]
+      }
+    },
+    {
+      "name": "wrong row material",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "newRowMaterial"
+        ]
+      }
+    },
+    {
+      "name": "split new primitive",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "onePrimitivePerLeaf"
+        ]
+      }
+    },
+    {
+      "name": "nineteenth row is forbidden",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "hierarchy"
+        ]
+      }
+    },
+    {
+      "name": "per-row ceiling binds before 22500 stage ceiling",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "rowTriangleCeiling"
+        ]
+      }
+    },
+    {
+      "name": "wrong new row alphaMode",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "materialDefinition",
+          "newRowAlpha"
+        ]
+      }
+    },
+    {
+      "name": "wrong new row doubleSided",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "materialDefinition",
+          "newRowSidedness"
+        ]
+      }
+    },
+    {
+      "name": "retained shared geometry identity",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "retainedSharingChanged"
+        ]
+      }
+    },
+    {
+      "name": "diagnostics identify exact word, both indices and both offset spaces",
+      "passed": true,
+      "evidence": {
+        "code": "retainedAccessorBytes",
+        "node": "desk_top__top",
+        "mesh": "desk_top__top_mesh.002",
+        "primitive": 0,
+        "semantic": "TEXCOORD_0",
+        "parentAccessor": 64,
+        "candidateAccessor": 64,
+        "vertex": 258,
+        "component": 0,
+        "parentBinOffset": 411868,
+        "candidateBinOffset": 411868,
+        "parentFileOffset": 488016,
+        "candidateFileOffset": 485392,
+        "parentHex": "20858b3e",
+        "candidateHex": "21858b3e"
+      }
+    },
+    {
+      "name": "wrong parent complete byte hash",
+      "passed": true,
+      "evidence": {
+        "code": "parentHashMismatch"
+      }
+    },
+    {
+      "name": "pure API input immutability",
+      "passed": true,
+      "evidence": {
+        "inputsUnchanged": true
+      }
+    },
+    {
+      "name": "outer main cap wired (test-only cap override)",
+      "passed": true,
+      "evidence": {
+        "testOnlyInMemoryCap": 0,
+        "frozenFileUntouched": true
+      }
+    },
+    {
+      "name": "outer refresh cap wired (test-only cap override)",
+      "passed": true,
+      "evidence": {
+        "testOnlyInMemoryCap": 0,
+        "frozenFileUntouched": true
+      }
+    },
+    {
+      "name": "outer placed cap wired (test-only cap override)",
+      "passed": true,
+      "evidence": {
+        "testOnlyInMemoryCap": 0,
+        "frozenFileUntouched": true
+      }
+    }
+  ],
+  "passed": 50,
+  "total": 50
+}

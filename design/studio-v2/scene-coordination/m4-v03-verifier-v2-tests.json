@@ -1,0 +1,3606 @@
+{
+  "schema": "m4-verifier-v2-writer-regressions/1",
+  "task": "task_3085b11eda21",
+  "dispatch": "ctx_ad552ec9aaf5",
+  "status": "writer implementation evidence; independent review required; author integration held",
+  "candidateAcceptance": false,
+  "fixtureDeclarationWarning": "No complete approved candidate declaration was supplied or invented; fixture pins are test-only expectations.",
+  "command": "python -B design/studio-v2/scene-coordination/m4-v03-verifier-v2-tests.py --write",
+  "environment": {
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "platform": "Windows-10-10.0.26300-SP0"
+  },
+  "fullPlacementSearchRuns": 0,
+  "elapsedSeconds": 0.75,
+  "passed": true,
+  "testCount": 50,
+  "failures": [],
+  "tests": [
+    {
+      "name": "actual_frozen_v03_support_scope_rejects_both_confirmed_spurs",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": true,
+          "errors": []
+        },
+        "supportErrors": [
+          {
+            "code": "liftedSupport",
+            "location": "drum_kick__tower/support/2",
+            "signedGapErrorM": 0.005025064731369289
+          },
+          {
+            "code": "liftedSupport",
+            "location": "drum_kick__tower/support/3",
+            "signedGapErrorM": 0.005025064731369289
+          }
+        ],
+        "normalErrors": [],
+        "supportCount": 25,
+        "normalRows": {
+          "ctl_stand__frame": {
+            "status": "explicitly_out_of_scope"
+          },
+          "ctl_sustain_pedal__pedal": {
+            "status": "explicitly_out_of_scope"
+          },
+          "stool_keys__stool": {
+            "status": "explicitly_out_of_scope"
+          },
+          "drum_rack__rack": {
+            "status": "explicitly_out_of_scope"
+          },
+          "drum_kick__tower": {
+            "status": "explicitly_out_of_scope"
+          },
+          "drum_hihat_pedal__pedal": {
+            "status": "explicitly_out_of_scope"
+          },
+          "drum_throne__throne": {
+            "status": "explicitly_out_of_scope"
+          },
+          "rug__rug": {
+            "status": "explicitly_out_of_scope"
+          }
+        }
+      }
+    },
+    {
+      "name": "actual_v03_without_author_declaration_fails_closed",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "unknown",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": false,
+          "errors": [
+            {
+              "code": "missingDeclaration",
+              "location": "declaration"
+            }
+          ]
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 0,
+        "normalRows": {}
+      }
+    },
+    {
+      "name": "narrow_actual_23_ordinary_supports_positive",
+      "passed": true,
+      "evidence": {
+        "valid": true,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": true,
+          "errors": []
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 23,
+        "normalRows": {
+          "ctl_stand__frame": {
+            "status": "explicitly_out_of_scope"
+          },
+          "ctl_sustain_pedal__pedal": {
+            "status": "explicitly_out_of_scope"
+          },
+          "stool_keys__stool": {
+            "status": "explicitly_out_of_scope"
+          },
+          "drum_rack__rack": {
+            "status": "explicitly_out_of_scope"
+          },
+          "drum_kick__tower": {
+            "status": "explicitly_out_of_scope"
+          },
+          "drum_hihat_pedal__pedal": {
+            "status": "explicitly_out_of_scope"
+          },
+          "drum_throne__throne": {
+            "status": "explicitly_out_of_scope"
+          },
+          "rug__rug": {
+            "status": "explicitly_out_of_scope"
+          }
+        }
+      }
+    },
+    {
+      "name": "actual_rack_foot_lift_5mm_cannot_hide_behind_row_minimum",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": true,
+          "errors": []
+        },
+        "supportErrors": [
+          {
+            "code": "liftedSupport",
+            "location": "drum_rack__rack/support/2",
+            "signedGapErrorM": 0.005000000000000001
+          }
+        ],
+        "normalErrors": [],
+        "supportCount": 23,
+        "normalRows": {
+          "ctl_stand__frame": {
+            "status": "explicitly_out_of_scope"
+          },
+          "ctl_sustain_pedal__pedal": {
+            "status": "explicitly_out_of_scope"
+          },
+          "stool_keys__stool": {
+            "status": "explicitly_out_of_scope"
+          },
+          "drum_rack__rack": {
+            "status": "explicitly_out_of_scope"
+          },
+          "drum_kick__tower": {
+            "status": "explicitly_out_of_scope"
+          },
+          "drum_hihat_pedal__pedal": {
+            "status": "explicitly_out_of_scope"
+          },
+          "drum_throne__throne": {
+            "status": "explicitly_out_of_scope"
+          },
+          "rug__rug": {
+            "status": "explicitly_out_of_scope"
+          }
+        }
+      }
+    },
+    {
+      "name": "actual_rack_foot_penetration_1mm_rejects",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": true,
+          "errors": []
+        },
+        "supportErrors": [
+          {
+            "code": "penetratingSupport",
+            "location": "drum_rack__rack/support/2",
+            "signedGapErrorM": -0.001
+          }
+        ],
+        "normalErrors": [],
+        "supportCount": 23,
+        "normalRows": {
+          "ctl_stand__frame": {
+            "status": "explicitly_out_of_scope"
+          },
+          "ctl_sustain_pedal__pedal": {
+            "status": "explicitly_out_of_scope"
+          },
+          "stool_keys__stool": {
+            "status": "explicitly_out_of_scope"
+          },
+          "drum_rack__rack": {
+            "status": "explicitly_out_of_scope"
+          },
+          "drum_kick__tower": {
+            "status": "explicitly_out_of_scope"
+          },
+          "drum_hihat_pedal__pedal": {
+            "status": "explicitly_out_of_scope"
+          },
+          "drum_throne__throne": {
+            "status": "explicitly_out_of_scope"
+          },
+          "rug__rug": {
+            "status": "explicitly_out_of_scope"
+          }
+        }
+      }
+    },
+    {
+      "name": "missing_expected_support_identity_rejects",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": false,
+          "errors": [
+            {
+              "code": "declarationPinMismatch",
+              "location": "declaration"
+            }
+          ]
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 0,
+        "normalRows": {}
+      }
+    },
+    {
+      "name": "unknown_support_identity_rejects",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": false,
+          "errors": [
+            {
+              "code": "declarationPinMismatch",
+              "location": "declaration"
+            }
+          ]
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 0,
+        "normalRows": {}
+      }
+    },
+    {
+      "name": "duplicate_support_id_even_in_pinned_fixture_rejects",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": false,
+          "errors": [
+            {
+              "code": "duplicateIdentity",
+              "location": "supports/ctl_stand__frame/support/3"
+            }
+          ]
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 0,
+        "normalRows": {}
+      }
+    },
+    {
+      "name": "different_ids_cannot_cover_same_primitive_twice",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": false,
+          "errors": [
+            {
+              "code": "duplicateSupportPrimitive",
+              "location": "second-name-same-foot"
+            }
+          ]
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 0,
+        "normalRows": {}
+      }
+    },
+    {
+      "name": "unknown_support_primitive_rejects",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": false,
+          "errors": [
+            {
+              "code": "unknownSupportPrimitive",
+              "location": "ctl_stand__frame/support/3"
+            }
+          ]
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 0,
+        "normalRows": {}
+      }
+    },
+    {
+      "name": "missing_explicit_surface_rejects",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": false,
+          "errors": [
+            {
+              "code": "missingOrUnknownReceivingSurface",
+              "location": "ctl_stand__frame/support/3"
+            }
+          ]
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 0,
+        "normalRows": {}
+      }
+    },
+    {
+      "name": "mixed_rug_floor_supports_in_one_row_reject",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": false,
+          "errors": [
+            {
+              "code": "mixedReceivingSurfaces",
+              "location": "supports"
+            }
+          ]
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 0,
+        "normalRows": {}
+      }
+    },
+    {
+      "name": "missing_external_manifest_pin_rejects",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": false,
+          "errors": [
+            {
+              "code": "missingDeclarationPin",
+              "location": "declaration"
+            }
+          ]
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 0,
+        "normalRows": {}
+      }
+    },
+    {
+      "name": "actual_source_byte_mismatch_rejects",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": false,
+          "errors": [
+            {
+              "code": "sourcePinMismatch",
+              "location": "frozen-helper"
+            }
+          ]
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 0,
+        "normalRows": {}
+      }
+    },
+    {
+      "name": "preserved_rounded_corner_20mm_false_positive_rejects",
+      "passed": true,
+      "evidence": {
+        "signedClearanceM": 0.019318516525781232,
+        "relation": "inside",
+        "rectangleClaimM": 0.02,
+        "rejectedAtRequiredClearance": true
+      }
+    },
+    {
+      "name": "bare_floor_disjoint_complete_footprint_positive",
+      "passed": true,
+      "evidence": {
+        "signedClearanceM": 0.03500000000000014,
+        "relation": "outside"
+      }
+    },
+    {
+      "name": "bare_floor_vertices_outside_but_edge_crosses_rug_rejects",
+      "passed": true,
+      "evidence": {
+        "signedClearanceM": 0.0,
+        "relation": "touching_or_crossing"
+      }
+    },
+    {
+      "name": "bare_floor_footprint_enclosing_whole_rug_rejects",
+      "passed": true,
+      "evidence": {
+        "signedClearanceM": -0.2100000000000002,
+        "relation": "overlapping_or_enclosing"
+      }
+    },
+    {
+      "name": "bare_floor_footprint_on_rug_rejects",
+      "passed": true,
+      "evidence": {
+        "signedClearanceM": -0.43999999999999995,
+        "relation": "inside"
+      }
+    },
+    {
+      "name": "rug_footprint_crosses_field_edge_rejects",
+      "passed": true,
+      "evidence": {
+        "signedClearanceM": 0.0,
+        "relation": "touching_or_crossing"
+      }
+    },
+    {
+      "name": "bare_floor_actual_outline_and_signed_height_api_positive",
+      "passed": true,
+      "evidence": {
+        "valid": true,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": true,
+          "errors": []
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 1,
+        "normalRows": {
+          "rug__rug": {
+            "status": "explicitly_out_of_scope"
+          },
+          "floor-fixture": {
+            "status": "explicitly_out_of_scope"
+          }
+        }
+      }
+    },
+    {
+      "name": "finite_input_derived_overflow_rejects_JSON_safely",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": true,
+          "errors": []
+        },
+        "supportErrors": [
+          {
+            "code": "nonFiniteDerivedMeasurement",
+            "location": "supportGeometry"
+          }
+        ],
+        "normalErrors": [],
+        "supportCount": 0,
+        "normalRows": {
+          "rug__rug": {
+            "status": "explicitly_out_of_scope"
+          },
+          "floor-fixture": {
+            "status": "explicitly_out_of_scope"
+          }
+        }
+      }
+    },
+    {
+      "name": "nonhorizontal_receiver_rejects",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": false,
+          "errors": [
+            {
+              "code": "nonHorizontalReceivingBoundary",
+              "location": "bare-floor"
+            }
+          ]
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 0,
+        "normalRows": {}
+      }
+    },
+    {
+      "name": "crossed_receiver_boundary_rejects",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": false,
+          "errors": [
+            {
+              "code": "nonConvexOrCrossedBoundary",
+              "location": "bare-floor"
+            }
+          ]
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 0,
+        "normalRows": {}
+      }
+    },
+    {
+      "name": "actual_authored_slab_classes_and_normals_positive",
+      "passed": true,
+      "evidence": {
+        "valid": true,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": true,
+          "errors": []
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 0,
+        "normalRows": {
+          "shell-slab-fixture": {
+            "status": "checked",
+            "valid": true,
+            "triangles": 20,
+            "planarTriangles": 16,
+            "maxPlanarCornerDegrees": 8.537736462515939e-07,
+            "errorCount": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "actual_planar_corner_tilt_3deg_rejects",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": true,
+          "errors": []
+        },
+        "supportErrors": [],
+        "normalErrors": [
+          {
+            "code": "planarCornerAngle",
+            "location": "shell-slab-fixture/0/0/0",
+            "degrees": 3.000000000003691
+          },
+          {
+            "code": "planarCornerAngle",
+            "location": "shell-slab-fixture/0/1/0",
+            "degrees": 3.000000000000409
+          },
+          {
+            "code": "planarCornerAngle",
+            "location": "shell-slab-fixture/0/2/0",
+            "degrees": 2.9999999999998015
+          },
+          {
+            "code": "planarCornerAngle",
+            "location": "shell-slab-fixture/0/3/0",
+            "degrees": 2.9999999999998015
+          }
+        ],
+        "supportCount": 0,
+        "normalRows": {
+          "shell-slab-fixture": {
+            "status": "checked",
+            "valid": false,
+            "triangles": 20,
+            "planarTriangles": 16,
+            "maxPlanarCornerDegrees": 3.000000000003691,
+            "errorCount": 4
+          }
+        }
+      }
+    },
+    {
+      "name": "actual_planar_corner_tilt_below_2deg_positive",
+      "passed": true,
+      "evidence": {
+        "valid": true,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": true,
+          "errors": []
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 0,
+        "normalRows": {
+          "shell-slab-fixture": {
+            "status": "checked",
+            "valid": true,
+            "triangles": 20,
+            "planarTriangles": 16,
+            "maxPlanarCornerDegrees": 1.9900000000035558,
+            "errorCount": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "flipped_planar_normal_rejects_without_abs_dot",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": true,
+          "errors": []
+        },
+        "supportErrors": [],
+        "normalErrors": [
+          {
+            "code": "planarCornerAngle",
+            "location": "shell-slab-fixture/0/0/0",
+            "degrees": 179.99999914622634
+          },
+          {
+            "code": "planarCornerAngle",
+            "location": "shell-slab-fixture/0/1/0",
+            "degrees": 180.0
+          },
+          {
+            "code": "planarCornerAngle",
+            "location": "shell-slab-fixture/0/2/0",
+            "degrees": 180.0
+          },
+          {
+            "code": "planarCornerAngle",
+            "location": "shell-slab-fixture/0/3/0",
+            "degrees": 180.0
+          }
+        ],
+        "supportCount": 0,
+        "normalRows": {
+          "shell-slab-fixture": {
+            "status": "checked",
+            "valid": false,
+            "triangles": 20,
+            "planarTriangles": 16,
+            "maxPlanarCornerDegrees": 180.0,
+            "errorCount": 4
+          }
+        }
+      }
+    },
+    {
+      "name": "actual_degenerate_planar_triangle_rejects",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": true,
+          "errors": []
+        },
+        "supportErrors": [],
+        "normalErrors": [
+          {
+            "code": "degenerateTriangle",
+            "location": "shell-slab-fixture/0/0"
+          },
+          {
+            "code": "nonPlanarDeclaredPanel",
+            "location": "shell-slab-fixture/4"
+          },
+          {
+            "code": "degenerateTriangle",
+            "location": "shell-slab-fixture/5/0"
+          }
+        ],
+        "supportCount": 0,
+        "normalRows": {
+          "shell-slab-fixture": {
+            "status": "checked",
+            "valid": false,
+            "triangles": 20,
+            "planarTriangles": 15,
+            "maxPlanarCornerDegrees": 0.21676891682553073,
+            "errorCount": 3
+          }
+        }
+      }
+    },
+    {
+      "name": "nonfinite_normal_rejects_JSON_safely",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": true,
+          "errors": []
+        },
+        "supportErrors": [],
+        "normalErrors": [
+          {
+            "code": "invalidCornerNormal",
+            "location": "shell-slab-fixture/0"
+          }
+        ],
+        "supportCount": 0,
+        "normalRows": {
+          "shell-slab-fixture": {
+            "status": "checked",
+            "valid": false,
+            "triangles": 20,
+            "planarTriangles": 16,
+            "maxPlanarCornerDegrees": 0.0,
+            "errorCount": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "nonunit_normal_rejects",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": true,
+          "errors": []
+        },
+        "supportErrors": [],
+        "normalErrors": [
+          {
+            "code": "invalidCornerNormal",
+            "location": "shell-slab-fixture/0"
+          }
+        ],
+        "supportCount": 0,
+        "normalRows": {
+          "shell-slab-fixture": {
+            "status": "checked",
+            "valid": false,
+            "triangles": 20,
+            "planarTriangles": 16,
+            "maxPlanarCornerDegrees": 0.0,
+            "errorCount": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "zero_normal_rejects",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": true,
+          "errors": []
+        },
+        "supportErrors": [],
+        "normalErrors": [
+          {
+            "code": "invalidCornerNormal",
+            "location": "shell-slab-fixture/0"
+          }
+        ],
+        "supportCount": 0,
+        "normalRows": {
+          "shell-slab-fixture": {
+            "status": "checked",
+            "valid": false,
+            "triangles": 20,
+            "planarTriangles": 16,
+            "maxPlanarCornerDegrees": 0.0,
+            "errorCount": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "missing_corner_normals_rejects",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": true,
+          "errors": []
+        },
+        "supportErrors": [],
+        "normalErrors": [
+          {
+            "code": "missingOrInvalidCornerNormals",
+            "location": "shell-slab-fixture"
+          }
+        ],
+        "supportCount": 0,
+        "normalRows": {
+          "shell-slab-fixture": {
+            "status": "invalid_normal_array"
+          }
+        }
+      }
+    },
+    {
+      "name": "null_face_class_rejects",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": false,
+          "errors": [
+            {
+              "code": "invalidClasses",
+              "location": "shell-slab-fixture"
+            }
+          ]
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 0,
+        "normalRows": {}
+      }
+    },
+    {
+      "name": "missing_face_class_rejects",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": false,
+          "errors": [
+            {
+              "code": "invalidClasses",
+              "location": "shell-slab-fixture"
+            }
+          ]
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 0,
+        "normalRows": {}
+      }
+    },
+    {
+      "name": "unknown_face_class_rejects",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": false,
+          "errors": [
+            {
+              "code": "invalidClasses",
+              "location": "shell-slab-fixture"
+            }
+          ]
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 0,
+        "normalRows": {}
+      }
+    },
+    {
+      "name": "planar_to_bevel_reclassification_rejects",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": false,
+          "errors": [
+            {
+              "code": "classMismatch",
+              "location": "shell-slab-fixture"
+            }
+          ]
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 0,
+        "normalRows": {}
+      }
+    },
+    {
+      "name": "missing_group_rejects",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": false,
+          "errors": [
+            {
+              "code": "groupSetMismatch",
+              "location": "shell-slab-fixture"
+            }
+          ]
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 0,
+        "normalRows": {}
+      }
+    },
+    {
+      "name": "duplicate_group_identity_rejects",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": false,
+          "errors": [
+            {
+              "code": "duplicateIdentity",
+              "location": "shell-slab-fixture/groups/ctl_body__shell/primitive/0"
+            }
+          ]
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 0,
+        "normalRows": {}
+      }
+    },
+    {
+      "name": "unknown_group_rejects",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": false,
+          "errors": [
+            {
+              "code": "groupSetMismatch",
+              "location": "shell-slab-fixture"
+            }
+          ]
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 0,
+        "normalRows": {}
+      }
+    },
+    {
+      "name": "changed_group_range_rejects",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": false,
+          "errors": [
+            {
+              "code": "groupDeclarationMismatch",
+              "location": "shell-slab-fixture/ctl_body__shell/primitive/0"
+            }
+          ]
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 0,
+        "normalRows": {}
+      }
+    },
+    {
+      "name": "overlapping_group_ranges_even_in_pinned_fixture_reject",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": false,
+          "errors": [
+            {
+              "code": "incompleteOrOverlappingGroupCoverage",
+              "location": "shell-slab-fixture"
+            }
+          ]
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 0,
+        "normalRows": {}
+      }
+    },
+    {
+      "name": "inconsistent_expected_triangle_count_rejects",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": false,
+          "errors": [
+            {
+              "code": "groupTriangleCountMismatch",
+              "location": "shell-slab-fixture/ctl_body__shell/primitive/0"
+            }
+          ]
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 0,
+        "normalRows": {}
+      }
+    },
+    {
+      "name": "long_smooth_bevel_positive_despite_large_area",
+      "passed": true,
+      "evidence": {
+        "valid": true,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": true,
+          "errors": []
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 0,
+        "normalRows": {
+          "bevel-fixture": {
+            "status": "checked",
+            "valid": true,
+            "triangles": 2,
+            "planarTriangles": 0,
+            "maxPlanarCornerDegrees": 0.0,
+            "errorCount": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "same_long_strip_forced_planar_is_negative_control",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": true,
+          "errors": []
+        },
+        "supportErrors": [],
+        "normalErrors": [
+          {
+            "code": "planarCornerAngle",
+            "location": "bevel-fixture/0/0/0",
+            "degrees": 14.999999999999996
+          },
+          {
+            "code": "planarCornerAngle",
+            "location": "bevel-fixture/0/0/1",
+            "degrees": 14.999999999999996
+          },
+          {
+            "code": "planarCornerAngle",
+            "location": "bevel-fixture/0/0/2",
+            "degrees": 14.999999999999996
+          },
+          {
+            "code": "planarCornerAngle",
+            "location": "bevel-fixture/0/1/0",
+            "degrees": 14.999999999999996
+          },
+          {
+            "code": "planarCornerAngle",
+            "location": "bevel-fixture/0/1/2",
+            "degrees": 14.999999999999996
+          },
+          {
+            "code": "planarCornerAngle",
+            "location": "bevel-fixture/0/1/3",
+            "degrees": 14.999999999999996
+          }
+        ],
+        "supportCount": 0,
+        "normalRows": {
+          "bevel-fixture": {
+            "status": "checked",
+            "valid": false,
+            "triangles": 2,
+            "planarTriangles": 2,
+            "maxPlanarCornerDegrees": 14.999999999999996,
+            "errorCount": 6
+          }
+        }
+      }
+    },
+    {
+      "name": "tiny_planar_triangle_is_tested_regardless_of_area",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": true,
+          "errors": []
+        },
+        "supportErrors": [],
+        "normalErrors": [
+          {
+            "code": "planarCornerAngle",
+            "location": "tiny-planar/0/0/0",
+            "degrees": 14.999999999999996
+          },
+          {
+            "code": "planarCornerAngle",
+            "location": "tiny-planar/0/0/1",
+            "degrees": 14.999999999999996
+          },
+          {
+            "code": "planarCornerAngle",
+            "location": "tiny-planar/0/0/2",
+            "degrees": 14.999999999999996
+          }
+        ],
+        "supportCount": 0,
+        "normalRows": {
+          "tiny-planar": {
+            "status": "checked",
+            "valid": false,
+            "triangles": 1,
+            "planarTriangles": 1,
+            "maxPlanarCornerDegrees": 14.999999999999996,
+            "errorCount": 3
+          }
+        }
+      }
+    },
+    {
+      "name": "malformed_null_groups_fails_closed",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": false,
+          "errors": [
+            {
+              "code": "invalidList",
+              "location": "shell-slab-fixture/groups"
+            }
+          ]
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 0,
+        "normalRows": {}
+      }
+    },
+    {
+      "name": "malformed_null_faces_fails_closed",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": false,
+          "errors": [
+            {
+              "code": "faceCountMismatch",
+              "location": "shell-slab-fixture"
+            }
+          ]
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 0,
+        "normalRows": {}
+      }
+    },
+    {
+      "name": "malformed_null_vertices_fails_closed",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": false,
+          "errors": [
+            {
+              "code": "invalidVertices",
+              "location": "shell-slab-fixture"
+            }
+          ]
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 0,
+        "normalRows": {}
+      }
+    },
+    {
+      "name": "malformed_null_faceClasses_fails_closed",
+      "passed": true,
+      "evidence": {
+        "valid": false,
+        "scope": "fixture",
+        "candidateAcceptance": false,
+        "coverage": {
+          "valid": false,
+          "errors": [
+            {
+              "code": "invalidClasses",
+              "location": "shell-slab-fixture"
+            }
+          ]
+        },
+        "supportErrors": [],
+        "normalErrors": [],
+        "supportCount": 0,
+        "normalRows": {}
+      }
+    }
+  ],
+  "evidence": {
+    "actualSupportFailure": {
+      "valid": false,
+      "scope": "fixture",
+      "candidateAcceptance": false,
+      "coverage": {
+        "valid": true,
+        "errors": []
+      },
+      "supportGeometry": {
+        "status": "checked",
+        "valid": false,
+        "errors": [
+          {
+            "code": "liftedSupport",
+            "location": "drum_kick__tower/support/2",
+            "signedGapErrorM": 0.005025064731369289
+          },
+          {
+            "code": "liftedSupport",
+            "location": "drum_kick__tower/support/3",
+            "signedGapErrorM": 0.005025064731369289
+          }
+        ],
+        "supports": {
+          "ctl_stand__frame/support/3": {
+            "row": "ctl_stand__frame",
+            "group": "ctl_stand__frame/primitive/3",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                0.9916865773712925,
+                -0.6880088605217966
+              ],
+              [
+                1.008846139164302,
+                -0.7075421510554442
+              ],
+              [
+                1.2492558688091955,
+                -0.49634754437225
+              ],
+              [
+                1.246742909165704,
+                -0.4934869602030408
+              ],
+              [
+                1.232096307016186,
+                -0.4768142538386024
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.00030000000000000165,
+            "signedGapErrorM": 1.6805133673525319e-18,
+            "signedClearanceM": 0.40568657737129243,
+            "relation": "inside",
+            "valid": true
+          },
+          "ctl_stand__frame/support/4": {
+            "row": "ctl_stand__frame",
+            "group": "ctl_stand__frame/primitive/4",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                0.975158408458206,
+                -0.7025284897312661
+              ],
+              [
+                0.9880280798029631,
+                -0.7171784576315019
+              ],
+              [
+                0.9923179702512156,
+                -0.7220617802649137
+              ],
+              [
+                1.008846139164302,
+                -0.7075421510554442
+              ],
+              [
+                1.0076966664830749,
+                -0.7062336686994408
+              ],
+              [
+                0.995976467819545,
+                -0.6928921831552084
+              ],
+              [
+                0.9916865773712925,
+                -0.6880088605217966
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.00030000000000000165,
+            "signedGapErrorM": 1.6805133673525319e-18,
+            "signedClearanceM": 0.38915840845820593,
+            "relation": "inside",
+            "valid": true
+          },
+          "ctl_stand__frame/support/5": {
+            "row": "ctl_stand__frame",
+            "group": "ctl_stand__frame/primitive/5",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.232096307016186,
+                -0.4768142538386024
+              ],
+              [
+                1.2332457796974132,
+                -0.4781227361946057
+              ],
+              [
+                1.2363861974644383,
+                -0.4816975764720143
+              ],
+              [
+                1.2492558688091955,
+                -0.49634754437225
+              ],
+              [
+                1.265784037722282,
+                -0.4818279151627804
+              ],
+              [
+                1.2646345650410549,
+                -0.48051943280677706
+              ],
+              [
+                1.2614941472740298,
+                -0.4769445925293685
+              ],
+              [
+                1.2486244759292726,
+                -0.4622946246291328
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.00030000000000000165,
+            "signedGapErrorM": 1.6805133673525319e-18,
+            "signedClearanceM": 0.646096307016186,
+            "relation": "inside",
+            "valid": true
+          },
+          "ctl_stand__frame/support/9": {
+            "row": "ctl_stand__frame",
+            "group": "ctl_stand__frame/primitive/9",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.4007441311908044,
+                -1.15365245562775
+              ],
+              [
+                1.4153907333403224,
+                -1.1703251619921884
+              ],
+              [
+                1.4179036929838138,
+                -1.1731857461613975
+              ],
+              [
+                1.6583134226287073,
+                -0.9619911394782034
+              ],
+              [
+                1.6558004629852159,
+                -0.9591305553089942
+              ],
+              [
+                1.641153860835698,
+                -0.9424578489445558
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.00030000000000000165,
+            "signedGapErrorM": 1.6805133673525319e-18,
+            "signedClearanceM": 0.1608142538386026,
+            "relation": "inside",
+            "valid": true
+          },
+          "ctl_stand__frame/support/10": {
+            "row": "ctl_stand__frame",
+            "group": "ctl_stand__frame/primitive/10",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.384215962277718,
+                -1.1681720848372195
+              ],
+              [
+                1.385365434958945,
+                -1.169480567193223
+              ],
+              [
+                1.4013755240707273,
+                -1.1877053753708673
+              ],
+              [
+                1.4179036929838138,
+                -1.1731857461613977
+              ],
+              [
+                1.4167542203025867,
+                -1.1718772638053943
+              ],
+              [
+                1.4007441311908044,
+                -1.1536524556277499
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.00030000000000000165,
+            "signedGapErrorM": 1.6805133673525319e-18,
+            "signedClearanceM": 0.14629462462913279,
+            "relation": "inside",
+            "valid": true
+          },
+          "ctl_stand__frame/support/11": {
+            "row": "ctl_stand__frame",
+            "group": "ctl_stand__frame/primitive/11",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.641153860835698,
+                -0.9424578489445558
+              ],
+              [
+                1.642303333516925,
+                -0.9437663313005591
+              ],
+              [
+                1.6583134226287073,
+                -0.9619911394782034
+              ],
+              [
+                1.6748415915417938,
+                -0.9474715102687338
+              ],
+              [
+                1.6736921188605667,
+                -0.9461630279127304
+              ],
+              [
+                1.6576820297487844,
+                -0.9279382197350862
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.00030000000000000165,
+            "signedGapErrorM": 1.6805133673525319e-18,
+            "signedClearanceM": 0.3720088605217967,
+            "relation": "inside",
+            "valid": true
+          },
+          "ctl_sustain_pedal__pedal/support/0": {
+            "row": "ctl_sustain_pedal__pedal",
+            "group": "ctl_sustain_pedal__pedal/primitive/0",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.447676337964402,
+                -1.2155719899243371
+              ],
+              [
+                1.4513758422918683,
+                -1.2264400907794597
+              ],
+              [
+                1.4975746625038169,
+                -1.27902971913928
+              ],
+              [
+                1.5078755149140737,
+                -1.284098682355576
+              ],
+              [
+                1.5187436157691963,
+                -1.2803991780281099
+              ],
+              [
+                1.6915381089514634,
+                -1.1286030544745638
+              ],
+              [
+                1.6966070721677593,
+                -1.1183022020643072
+              ],
+              [
+                1.692907567840293,
+                -1.1074341012091846
+              ],
+              [
+                1.6467087476283444,
+                -1.0548444728493642
+              ],
+              [
+                1.6364078952180876,
+                -1.0497755096330683
+              ],
+              [
+                1.625539794362965,
+                -1.0534750139605344
+              ],
+              [
+                1.452745301180698,
+                -1.2052711375140805
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.04990131764442407,
+            "relation": "inside",
+            "valid": true
+          },
+          "stool_keys__stool/support/5": {
+            "row": "stool_keys__stool",
+            "group": "stool_keys__stool/primitive/5",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.1206849727443298,
+                -1.2167109272278425
+              ],
+              [
+                1.1237407008343305,
+                -1.226115491264522
+              ],
+              [
+                1.1317407008343305,
+                -1.2319278314885649
+              ],
+              [
+                1.141629244654329,
+                -1.2319278314885649
+              ],
+              [
+                1.149629244654329,
+                -1.226115491264522
+              ],
+              [
+                1.1526849727443298,
+                -1.2167109272278425
+              ],
+              [
+                1.149629244654329,
+                -1.207306363191163
+              ],
+              [
+                1.141629244654329,
+                -1.20149402296712
+              ],
+              [
+                1.1317407008343305,
+                -1.20149402296712
+              ],
+              [
+                1.1237407008343305,
+                -1.207306363191163
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.10207216851143519,
+            "relation": "inside",
+            "valid": true
+          },
+          "stool_keys__stool/support/7": {
+            "row": "stool_keys__stool",
+            "group": "stool_keys__stool/primitive/7",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.1362055068177326,
+                -0.9767961235535458
+              ],
+              [
+                1.1392612349077333,
+                -0.9862006875902254
+              ],
+              [
+                1.1472612349077334,
+                -0.9920130278142683
+              ],
+              [
+                1.1571497787277318,
+                -0.9920130278142683
+              ],
+              [
+                1.1651497787277318,
+                -0.9862006875902254
+              ],
+              [
+                1.1682055068177326,
+                -0.9767961235535458
+              ],
+              [
+                1.1651497787277318,
+                -0.9673915595168663
+              ],
+              [
+                1.1571497787277318,
+                -0.9615792192928234
+              ],
+              [
+                1.1472612349077334,
+                -0.9615792192928234
+              ],
+              [
+                1.1392612349077333,
+                -0.9673915595168663
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.3419869721857318,
+            "relation": "inside",
+            "valid": true
+          },
+          "stool_keys__stool/support/9": {
+            "row": "stool_keys__stool",
+            "group": "stool_keys__stool/primitive/9",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                0.896290703143436,
+                -0.961275589480143
+              ],
+              [
+                0.8993464312334368,
+                -0.9706801535168226
+              ],
+              [
+                0.9073464312334368,
+                -0.9764924937408654
+              ],
+              [
+                0.9172349750534351,
+                -0.9764924937408654
+              ],
+              [
+                0.9252349750534351,
+                -0.9706801535168226
+              ],
+              [
+                0.928290703143436,
+                -0.961275589480143
+              ],
+              [
+                0.9252349750534351,
+                -0.9518710254434635
+              ],
+              [
+                0.9172349750534351,
+                -0.9460586852194206
+              ],
+              [
+                0.9073464312334368,
+                -0.9460586852194206
+              ],
+              [
+                0.8993464312334368,
+                -0.9518710254434635
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.3102907031434359,
+            "relation": "inside",
+            "valid": true
+          },
+          "stool_keys__stool/support/11": {
+            "row": "stool_keys__stool",
+            "group": "stool_keys__stool/primitive/11",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                0.880770169070033,
+                -1.2011903931544397
+              ],
+              [
+                0.8838258971600339,
+                -1.2105949571911192
+              ],
+              [
+                0.8918258971600339,
+                -1.216407297415162
+              ],
+              [
+                0.9017144409800322,
+                -1.216407297415162
+              ],
+              [
+                0.9097144409800322,
+                -1.2105949571911192
+              ],
+              [
+                0.912770169070033,
+                -1.2011903931544397
+              ],
+              [
+                0.9097144409800322,
+                -1.19178582911776
+              ],
+              [
+                0.9017144409800322,
+                -1.1859734888937172
+              ],
+              [
+                0.8918258971600339,
+                -1.1859734888937172
+              ],
+              [
+                0.8838258971600339,
+                -1.19178582911776
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.117592702584838,
+            "relation": "inside",
+            "valid": true
+          },
+          "drum_rack__rack/support/1": {
+            "row": "drum_rack__rack",
+            "group": "drum_rack__rack/primitive/1",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                0.829,
+                0.4
+              ],
+              [
+                0.853,
+                0.4
+              ],
+              [
+                0.853,
+                0.715
+              ],
+              [
+                0.829,
+                0.715
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.1489999999999999,
+            "relation": "inside",
+            "valid": true
+          },
+          "drum_rack__rack/support/2": {
+            "row": "drum_rack__rack",
+            "group": "drum_rack__rack/primitive/2",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                0.829,
+                0.38
+              ],
+              [
+                0.853,
+                0.38
+              ],
+              [
+                0.853,
+                0.4
+              ],
+              [
+                0.829,
+                0.4
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.24299999999999988,
+            "relation": "inside",
+            "valid": true
+          },
+          "drum_rack__rack/support/3": {
+            "row": "drum_rack__rack",
+            "group": "drum_rack__rack/primitive/3",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                0.829,
+                0.715
+              ],
+              [
+                0.853,
+                0.715
+              ],
+              [
+                0.853,
+                0.735
+              ],
+              [
+                0.829,
+                0.735
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.1289999999999999,
+            "relation": "inside",
+            "valid": true
+          },
+          "drum_rack__rack/support/16": {
+            "row": "drum_rack__rack",
+            "group": "drum_rack__rack/primitive/16",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.947,
+                0.4
+              ],
+              [
+                1.971,
+                0.4
+              ],
+              [
+                1.971,
+                0.715
+              ],
+              [
+                1.947,
+                0.715
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.1489999999999999,
+            "relation": "inside",
+            "valid": true
+          },
+          "drum_rack__rack/support/17": {
+            "row": "drum_rack__rack",
+            "group": "drum_rack__rack/primitive/17",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.947,
+                0.38
+              ],
+              [
+                1.971,
+                0.38
+              ],
+              [
+                1.971,
+                0.4
+              ],
+              [
+                1.947,
+                0.4
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.21799999999999997,
+            "relation": "inside",
+            "valid": true
+          },
+          "drum_rack__rack/support/18": {
+            "row": "drum_rack__rack",
+            "group": "drum_rack__rack/primitive/18",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.947,
+                0.715
+              ],
+              [
+                1.971,
+                0.715
+              ],
+              [
+                1.971,
+                0.735
+              ],
+              [
+                1.947,
+                0.735
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.1289999999999999,
+            "relation": "inside",
+            "valid": true
+          },
+          "drum_kick__tower/support/1": {
+            "row": "drum_kick__tower",
+            "group": "drum_kick__tower/primitive/1",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.295,
+                0.343125
+              ],
+              [
+                1.2961438293868264,
+                0.34114382938682636
+              ],
+              [
+                1.298125,
+                0.34
+              ],
+              [
+                1.5418749999999999,
+                0.34
+              ],
+              [
+                1.5438561706131735,
+                0.3411438293868264
+              ],
+              [
+                1.545,
+                0.343125
+              ],
+              [
+                1.545,
+                0.536875
+              ],
+              [
+                1.5438561706131735,
+                0.5388561706131736
+              ],
+              [
+                1.5418749999999999,
+                0.54
+              ],
+              [
+                1.298125,
+                0.54
+              ],
+              [
+                1.2961438293868264,
+                0.5388561706131737
+              ],
+              [
+                1.295,
+                0.536875
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.32399999999999984,
+            "relation": "inside",
+            "valid": true
+          },
+          "drum_kick__tower/support/6": {
+            "row": "drum_kick__tower",
+            "group": "drum_kick__tower/primitive/6",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.375,
+                0.08
+              ],
+              [
+                1.4649999999999999,
+                0.08
+              ],
+              [
+                1.4649999999999999,
+                0.36
+              ],
+              [
+                1.375,
+                0.36
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.5039999999999999,
+            "relation": "inside",
+            "valid": true
+          },
+          "drum_kick__tower/support/2": {
+            "row": "drum_kick__tower",
+            "group": "drum_kick__tower/primitive/2",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.240050252531694,
+                0.5550502525316943
+              ],
+              [
+                1.2900502525316941,
+                0.5050502525316942
+              ],
+              [
+                1.291795921441607,
+                0.5062040785583929
+              ],
+              [
+                1.2954184961161177,
+                0.5095815038838821
+              ],
+              [
+                1.2987959214416072,
+                0.5132040785583928
+              ],
+              [
+                1.2999497474683057,
+                0.5149497474683058
+              ],
+              [
+                1.2499497474683057,
+                0.5649497474683058
+              ],
+              [
+                1.2482040785583928,
+                0.5637959214416072
+              ],
+              [
+                1.2445815038838821,
+                0.5604184961161179
+              ],
+              [
+                1.2412040785583927,
+                0.5567959214416073
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.005325064731369289,
+            "signedGapErrorM": 0.005025064731369289,
+            "signedClearanceM": 0.29905025253169404,
+            "relation": "inside",
+            "valid": false
+          },
+          "drum_kick__tower/support/3": {
+            "row": "drum_kick__tower",
+            "group": "drum_kick__tower/primitive/3",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.5400502525316941,
+                0.5149497474683058
+              ],
+              [
+                1.5412040785583927,
+                0.5132040785583928
+              ],
+              [
+                1.5445815038838822,
+                0.5095815038838821
+              ],
+              [
+                1.5482040785583928,
+                0.5062040785583929
+              ],
+              [
+                1.5499497474683057,
+                0.5050502525316942
+              ],
+              [
+                1.5999497474683058,
+                0.5550502525316943
+              ],
+              [
+                1.5987959214416072,
+                0.5567959214416073
+              ],
+              [
+                1.5954184961161177,
+                0.5604184961161179
+              ],
+              [
+                1.591795921441607,
+                0.5637959214416072
+              ],
+              [
+                1.5900502525316942,
+                0.5649497474683058
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.005325064731369289,
+            "signedGapErrorM": 0.005025064731369289,
+            "signedClearanceM": 0.29905025253169404,
+            "relation": "inside",
+            "valid": false
+          },
+          "drum_hihat_pedal__pedal/support/0": {
+            "row": "drum_hihat_pedal__pedal",
+            "group": "drum_hihat_pedal__pedal/primitive/0",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                0.9173908953688719,
+                0.24213281054015404
+              ],
+              [
+                0.9535439819701256,
+                -0.057695397487713546
+              ],
+              [
+                0.9588000891983272,
+                -0.06703282103923561
+              ],
+              [
+                0.9691192737741245,
+                -0.06991874748762282
+              ],
+              [
+                1.070385754631219,
+                -0.057708102344153044
+              ],
+              [
+                1.079723178182741,
+                -0.052451995115951305
+              ],
+              [
+                1.0826091046311281,
+                -0.042132810540154025
+              ],
+              [
+                1.0464560180298745,
+                0.25769539748771353
+              ],
+              [
+                1.0411999108016727,
+                0.26703282103923565
+              ],
+              [
+                1.0308807262258755,
+                0.26991874748762285
+              ],
+              [
+                0.9296142453687811,
+                0.25770810234415303
+              ],
+              [
+                0.920276821817259,
+                0.2524519951159513
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.3313908953688718,
+            "relation": "inside",
+            "valid": true
+          },
+          "drum_throne__throne/support/6": {
+            "row": "drum_throne__throne",
+            "group": "drum_throne__throne/primitive/6",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.407,
+                -0.2
+              ],
+              [
+                1.410437694101251,
+                -0.21058013454126454
+              ],
+              [
+                1.419437694101251,
+                -0.2171190172933128
+              ],
+              [
+                1.430562305898749,
+                -0.2171190172933128
+              ],
+              [
+                1.439562305898749,
+                -0.21058013454126454
+              ],
+              [
+                1.443,
+                -0.2
+              ],
+              [
+                1.439562305898749,
+                -0.1894198654587355
+              ],
+              [
+                1.430562305898749,
+                -0.18288098270668723
+              ],
+              [
+                1.419437694101251,
+                -0.18288098270668723
+              ],
+              [
+                1.410437694101251,
+                -0.1894198654587355
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.746,
+            "relation": "inside",
+            "valid": true
+          },
+          "drum_throne__throne/support/9": {
+            "row": "drum_throne__throne",
+            "group": "drum_throne__throne/primitive/9",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.5802050807568877,
+                0.1
+              ],
+              [
+                1.5836427748581388,
+                0.0894198654587355
+              ],
+              [
+                1.5926427748581387,
+                0.08288098270668724
+              ],
+              [
+                1.6037673866556368,
+                0.08288098270668724
+              ],
+              [
+                1.6127673866556367,
+                0.08941986545873548
+              ],
+              [
+                1.6162050807568877,
+                0.1
+              ],
+              [
+                1.6127673866556367,
+                0.11058013454126452
+              ],
+              [
+                1.6037673866556368,
+                0.11711901729331277
+              ],
+              [
+                1.5926427748581387,
+                0.11711901729331277
+              ],
+              [
+                1.5836427748581388,
+                0.11058013454126453
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.5727949192431123,
+            "relation": "inside",
+            "valid": true
+          },
+          "drum_throne__throne/support/12": {
+            "row": "drum_throne__throne",
+            "group": "drum_throne__throne/primitive/12",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.2337949192431121,
+                0.09999999999999996
+              ],
+              [
+                1.2372326133443632,
+                0.08941986545873545
+              ],
+              [
+                1.246232613344363,
+                0.0828809827066872
+              ],
+              [
+                1.2573572251418612,
+                0.0828809827066872
+              ],
+              [
+                1.266357225141861,
+                0.08941986545873544
+              ],
+              [
+                1.2697949192431122,
+                0.09999999999999996
+              ],
+              [
+                1.266357225141861,
+                0.11058013454126447
+              ],
+              [
+                1.2573572251418612,
+                0.11711901729331273
+              ],
+              [
+                1.246232613344363,
+                0.11711901729331273
+              ],
+              [
+                1.2372326133443632,
+                0.11058013454126447
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.647794919243112,
+            "relation": "inside",
+            "valid": true
+          }
+        }
+      },
+      "normalValidity": {
+        "status": "checked",
+        "valid": true,
+        "errors": [],
+        "rows": {
+          "ctl_stand__frame": {
+            "status": "explicitly_out_of_scope"
+          },
+          "ctl_sustain_pedal__pedal": {
+            "status": "explicitly_out_of_scope"
+          },
+          "stool_keys__stool": {
+            "status": "explicitly_out_of_scope"
+          },
+          "drum_rack__rack": {
+            "status": "explicitly_out_of_scope"
+          },
+          "drum_kick__tower": {
+            "status": "explicitly_out_of_scope"
+          },
+          "drum_hihat_pedal__pedal": {
+            "status": "explicitly_out_of_scope"
+          },
+          "drum_throne__throne": {
+            "status": "explicitly_out_of_scope"
+          },
+          "rug__rug": {
+            "status": "explicitly_out_of_scope"
+          }
+        }
+      }
+    },
+    "ordinarySupportPositive": {
+      "valid": true,
+      "scope": "fixture",
+      "candidateAcceptance": false,
+      "coverage": {
+        "valid": true,
+        "errors": []
+      },
+      "supportGeometry": {
+        "status": "checked",
+        "valid": true,
+        "errors": [],
+        "supports": {
+          "ctl_stand__frame/support/3": {
+            "row": "ctl_stand__frame",
+            "group": "ctl_stand__frame/primitive/3",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                0.9916865773712925,
+                -0.6880088605217966
+              ],
+              [
+                1.008846139164302,
+                -0.7075421510554442
+              ],
+              [
+                1.2492558688091955,
+                -0.49634754437225
+              ],
+              [
+                1.246742909165704,
+                -0.4934869602030408
+              ],
+              [
+                1.232096307016186,
+                -0.4768142538386024
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.00030000000000000165,
+            "signedGapErrorM": 1.6805133673525319e-18,
+            "signedClearanceM": 0.40568657737129243,
+            "relation": "inside",
+            "valid": true
+          },
+          "ctl_stand__frame/support/4": {
+            "row": "ctl_stand__frame",
+            "group": "ctl_stand__frame/primitive/4",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                0.975158408458206,
+                -0.7025284897312661
+              ],
+              [
+                0.9880280798029631,
+                -0.7171784576315019
+              ],
+              [
+                0.9923179702512156,
+                -0.7220617802649137
+              ],
+              [
+                1.008846139164302,
+                -0.7075421510554442
+              ],
+              [
+                1.0076966664830749,
+                -0.7062336686994408
+              ],
+              [
+                0.995976467819545,
+                -0.6928921831552084
+              ],
+              [
+                0.9916865773712925,
+                -0.6880088605217966
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.00030000000000000165,
+            "signedGapErrorM": 1.6805133673525319e-18,
+            "signedClearanceM": 0.38915840845820593,
+            "relation": "inside",
+            "valid": true
+          },
+          "ctl_stand__frame/support/5": {
+            "row": "ctl_stand__frame",
+            "group": "ctl_stand__frame/primitive/5",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.232096307016186,
+                -0.4768142538386024
+              ],
+              [
+                1.2332457796974132,
+                -0.4781227361946057
+              ],
+              [
+                1.2363861974644383,
+                -0.4816975764720143
+              ],
+              [
+                1.2492558688091955,
+                -0.49634754437225
+              ],
+              [
+                1.265784037722282,
+                -0.4818279151627804
+              ],
+              [
+                1.2646345650410549,
+                -0.48051943280677706
+              ],
+              [
+                1.2614941472740298,
+                -0.4769445925293685
+              ],
+              [
+                1.2486244759292726,
+                -0.4622946246291328
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.00030000000000000165,
+            "signedGapErrorM": 1.6805133673525319e-18,
+            "signedClearanceM": 0.646096307016186,
+            "relation": "inside",
+            "valid": true
+          },
+          "ctl_stand__frame/support/9": {
+            "row": "ctl_stand__frame",
+            "group": "ctl_stand__frame/primitive/9",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.4007441311908044,
+                -1.15365245562775
+              ],
+              [
+                1.4153907333403224,
+                -1.1703251619921884
+              ],
+              [
+                1.4179036929838138,
+                -1.1731857461613975
+              ],
+              [
+                1.6583134226287073,
+                -0.9619911394782034
+              ],
+              [
+                1.6558004629852159,
+                -0.9591305553089942
+              ],
+              [
+                1.641153860835698,
+                -0.9424578489445558
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.00030000000000000165,
+            "signedGapErrorM": 1.6805133673525319e-18,
+            "signedClearanceM": 0.1608142538386026,
+            "relation": "inside",
+            "valid": true
+          },
+          "ctl_stand__frame/support/10": {
+            "row": "ctl_stand__frame",
+            "group": "ctl_stand__frame/primitive/10",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.384215962277718,
+                -1.1681720848372195
+              ],
+              [
+                1.385365434958945,
+                -1.169480567193223
+              ],
+              [
+                1.4013755240707273,
+                -1.1877053753708673
+              ],
+              [
+                1.4179036929838138,
+                -1.1731857461613977
+              ],
+              [
+                1.4167542203025867,
+                -1.1718772638053943
+              ],
+              [
+                1.4007441311908044,
+                -1.1536524556277499
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.00030000000000000165,
+            "signedGapErrorM": 1.6805133673525319e-18,
+            "signedClearanceM": 0.14629462462913279,
+            "relation": "inside",
+            "valid": true
+          },
+          "ctl_stand__frame/support/11": {
+            "row": "ctl_stand__frame",
+            "group": "ctl_stand__frame/primitive/11",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.641153860835698,
+                -0.9424578489445558
+              ],
+              [
+                1.642303333516925,
+                -0.9437663313005591
+              ],
+              [
+                1.6583134226287073,
+                -0.9619911394782034
+              ],
+              [
+                1.6748415915417938,
+                -0.9474715102687338
+              ],
+              [
+                1.6736921188605667,
+                -0.9461630279127304
+              ],
+              [
+                1.6576820297487844,
+                -0.9279382197350862
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.00030000000000000165,
+            "signedGapErrorM": 1.6805133673525319e-18,
+            "signedClearanceM": 0.3720088605217967,
+            "relation": "inside",
+            "valid": true
+          },
+          "ctl_sustain_pedal__pedal/support/0": {
+            "row": "ctl_sustain_pedal__pedal",
+            "group": "ctl_sustain_pedal__pedal/primitive/0",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.447676337964402,
+                -1.2155719899243371
+              ],
+              [
+                1.4513758422918683,
+                -1.2264400907794597
+              ],
+              [
+                1.4975746625038169,
+                -1.27902971913928
+              ],
+              [
+                1.5078755149140737,
+                -1.284098682355576
+              ],
+              [
+                1.5187436157691963,
+                -1.2803991780281099
+              ],
+              [
+                1.6915381089514634,
+                -1.1286030544745638
+              ],
+              [
+                1.6966070721677593,
+                -1.1183022020643072
+              ],
+              [
+                1.692907567840293,
+                -1.1074341012091846
+              ],
+              [
+                1.6467087476283444,
+                -1.0548444728493642
+              ],
+              [
+                1.6364078952180876,
+                -1.0497755096330683
+              ],
+              [
+                1.625539794362965,
+                -1.0534750139605344
+              ],
+              [
+                1.452745301180698,
+                -1.2052711375140805
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.04990131764442407,
+            "relation": "inside",
+            "valid": true
+          },
+          "stool_keys__stool/support/5": {
+            "row": "stool_keys__stool",
+            "group": "stool_keys__stool/primitive/5",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.1206849727443298,
+                -1.2167109272278425
+              ],
+              [
+                1.1237407008343305,
+                -1.226115491264522
+              ],
+              [
+                1.1317407008343305,
+                -1.2319278314885649
+              ],
+              [
+                1.141629244654329,
+                -1.2319278314885649
+              ],
+              [
+                1.149629244654329,
+                -1.226115491264522
+              ],
+              [
+                1.1526849727443298,
+                -1.2167109272278425
+              ],
+              [
+                1.149629244654329,
+                -1.207306363191163
+              ],
+              [
+                1.141629244654329,
+                -1.20149402296712
+              ],
+              [
+                1.1317407008343305,
+                -1.20149402296712
+              ],
+              [
+                1.1237407008343305,
+                -1.207306363191163
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.10207216851143519,
+            "relation": "inside",
+            "valid": true
+          },
+          "stool_keys__stool/support/7": {
+            "row": "stool_keys__stool",
+            "group": "stool_keys__stool/primitive/7",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.1362055068177326,
+                -0.9767961235535458
+              ],
+              [
+                1.1392612349077333,
+                -0.9862006875902254
+              ],
+              [
+                1.1472612349077334,
+                -0.9920130278142683
+              ],
+              [
+                1.1571497787277318,
+                -0.9920130278142683
+              ],
+              [
+                1.1651497787277318,
+                -0.9862006875902254
+              ],
+              [
+                1.1682055068177326,
+                -0.9767961235535458
+              ],
+              [
+                1.1651497787277318,
+                -0.9673915595168663
+              ],
+              [
+                1.1571497787277318,
+                -0.9615792192928234
+              ],
+              [
+                1.1472612349077334,
+                -0.9615792192928234
+              ],
+              [
+                1.1392612349077333,
+                -0.9673915595168663
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.3419869721857318,
+            "relation": "inside",
+            "valid": true
+          },
+          "stool_keys__stool/support/9": {
+            "row": "stool_keys__stool",
+            "group": "stool_keys__stool/primitive/9",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                0.896290703143436,
+                -0.961275589480143
+              ],
+              [
+                0.8993464312334368,
+                -0.9706801535168226
+              ],
+              [
+                0.9073464312334368,
+                -0.9764924937408654
+              ],
+              [
+                0.9172349750534351,
+                -0.9764924937408654
+              ],
+              [
+                0.9252349750534351,
+                -0.9706801535168226
+              ],
+              [
+                0.928290703143436,
+                -0.961275589480143
+              ],
+              [
+                0.9252349750534351,
+                -0.9518710254434635
+              ],
+              [
+                0.9172349750534351,
+                -0.9460586852194206
+              ],
+              [
+                0.9073464312334368,
+                -0.9460586852194206
+              ],
+              [
+                0.8993464312334368,
+                -0.9518710254434635
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.3102907031434359,
+            "relation": "inside",
+            "valid": true
+          },
+          "stool_keys__stool/support/11": {
+            "row": "stool_keys__stool",
+            "group": "stool_keys__stool/primitive/11",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                0.880770169070033,
+                -1.2011903931544397
+              ],
+              [
+                0.8838258971600339,
+                -1.2105949571911192
+              ],
+              [
+                0.8918258971600339,
+                -1.216407297415162
+              ],
+              [
+                0.9017144409800322,
+                -1.216407297415162
+              ],
+              [
+                0.9097144409800322,
+                -1.2105949571911192
+              ],
+              [
+                0.912770169070033,
+                -1.2011903931544397
+              ],
+              [
+                0.9097144409800322,
+                -1.19178582911776
+              ],
+              [
+                0.9017144409800322,
+                -1.1859734888937172
+              ],
+              [
+                0.8918258971600339,
+                -1.1859734888937172
+              ],
+              [
+                0.8838258971600339,
+                -1.19178582911776
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.117592702584838,
+            "relation": "inside",
+            "valid": true
+          },
+          "drum_rack__rack/support/1": {
+            "row": "drum_rack__rack",
+            "group": "drum_rack__rack/primitive/1",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                0.829,
+                0.4
+              ],
+              [
+                0.853,
+                0.4
+              ],
+              [
+                0.853,
+                0.715
+              ],
+              [
+                0.829,
+                0.715
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.1489999999999999,
+            "relation": "inside",
+            "valid": true
+          },
+          "drum_rack__rack/support/2": {
+            "row": "drum_rack__rack",
+            "group": "drum_rack__rack/primitive/2",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                0.829,
+                0.38
+              ],
+              [
+                0.853,
+                0.38
+              ],
+              [
+                0.853,
+                0.4
+              ],
+              [
+                0.829,
+                0.4
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.24299999999999988,
+            "relation": "inside",
+            "valid": true
+          },
+          "drum_rack__rack/support/3": {
+            "row": "drum_rack__rack",
+            "group": "drum_rack__rack/primitive/3",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                0.829,
+                0.715
+              ],
+              [
+                0.853,
+                0.715
+              ],
+              [
+                0.853,
+                0.735
+              ],
+              [
+                0.829,
+                0.735
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.1289999999999999,
+            "relation": "inside",
+            "valid": true
+          },
+          "drum_rack__rack/support/16": {
+            "row": "drum_rack__rack",
+            "group": "drum_rack__rack/primitive/16",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.947,
+                0.4
+              ],
+              [
+                1.971,
+                0.4
+              ],
+              [
+                1.971,
+                0.715
+              ],
+              [
+                1.947,
+                0.715
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.1489999999999999,
+            "relation": "inside",
+            "valid": true
+          },
+          "drum_rack__rack/support/17": {
+            "row": "drum_rack__rack",
+            "group": "drum_rack__rack/primitive/17",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.947,
+                0.38
+              ],
+              [
+                1.971,
+                0.38
+              ],
+              [
+                1.971,
+                0.4
+              ],
+              [
+                1.947,
+                0.4
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.21799999999999997,
+            "relation": "inside",
+            "valid": true
+          },
+          "drum_rack__rack/support/18": {
+            "row": "drum_rack__rack",
+            "group": "drum_rack__rack/primitive/18",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.947,
+                0.715
+              ],
+              [
+                1.971,
+                0.715
+              ],
+              [
+                1.971,
+                0.735
+              ],
+              [
+                1.947,
+                0.735
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.1289999999999999,
+            "relation": "inside",
+            "valid": true
+          },
+          "drum_kick__tower/support/1": {
+            "row": "drum_kick__tower",
+            "group": "drum_kick__tower/primitive/1",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.295,
+                0.343125
+              ],
+              [
+                1.2961438293868264,
+                0.34114382938682636
+              ],
+              [
+                1.298125,
+                0.34
+              ],
+              [
+                1.5418749999999999,
+                0.34
+              ],
+              [
+                1.5438561706131735,
+                0.3411438293868264
+              ],
+              [
+                1.545,
+                0.343125
+              ],
+              [
+                1.545,
+                0.536875
+              ],
+              [
+                1.5438561706131735,
+                0.5388561706131736
+              ],
+              [
+                1.5418749999999999,
+                0.54
+              ],
+              [
+                1.298125,
+                0.54
+              ],
+              [
+                1.2961438293868264,
+                0.5388561706131737
+              ],
+              [
+                1.295,
+                0.536875
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.32399999999999984,
+            "relation": "inside",
+            "valid": true
+          },
+          "drum_kick__tower/support/6": {
+            "row": "drum_kick__tower",
+            "group": "drum_kick__tower/primitive/6",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.375,
+                0.08
+              ],
+              [
+                1.4649999999999999,
+                0.08
+              ],
+              [
+                1.4649999999999999,
+                0.36
+              ],
+              [
+                1.375,
+                0.36
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.5039999999999999,
+            "relation": "inside",
+            "valid": true
+          },
+          "drum_hihat_pedal__pedal/support/0": {
+            "row": "drum_hihat_pedal__pedal",
+            "group": "drum_hihat_pedal__pedal/primitive/0",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                0.9173908953688719,
+                0.24213281054015404
+              ],
+              [
+                0.9535439819701256,
+                -0.057695397487713546
+              ],
+              [
+                0.9588000891983272,
+                -0.06703282103923561
+              ],
+              [
+                0.9691192737741245,
+                -0.06991874748762282
+              ],
+              [
+                1.070385754631219,
+                -0.057708102344153044
+              ],
+              [
+                1.079723178182741,
+                -0.052451995115951305
+              ],
+              [
+                1.0826091046311281,
+                -0.042132810540154025
+              ],
+              [
+                1.0464560180298745,
+                0.25769539748771353
+              ],
+              [
+                1.0411999108016727,
+                0.26703282103923565
+              ],
+              [
+                1.0308807262258755,
+                0.26991874748762285
+              ],
+              [
+                0.9296142453687811,
+                0.25770810234415303
+              ],
+              [
+                0.920276821817259,
+                0.2524519951159513
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.3313908953688718,
+            "relation": "inside",
+            "valid": true
+          },
+          "drum_throne__throne/support/6": {
+            "row": "drum_throne__throne",
+            "group": "drum_throne__throne/primitive/6",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.407,
+                -0.2
+              ],
+              [
+                1.410437694101251,
+                -0.21058013454126454
+              ],
+              [
+                1.419437694101251,
+                -0.2171190172933128
+              ],
+              [
+                1.430562305898749,
+                -0.2171190172933128
+              ],
+              [
+                1.439562305898749,
+                -0.21058013454126454
+              ],
+              [
+                1.443,
+                -0.2
+              ],
+              [
+                1.439562305898749,
+                -0.1894198654587355
+              ],
+              [
+                1.430562305898749,
+                -0.18288098270668723
+              ],
+              [
+                1.419437694101251,
+                -0.18288098270668723
+              ],
+              [
+                1.410437694101251,
+                -0.1894198654587355
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.746,
+            "relation": "inside",
+            "valid": true
+          },
+          "drum_throne__throne/support/9": {
+            "row": "drum_throne__throne",
+            "group": "drum_throne__throne/primitive/9",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.5802050807568877,
+                0.1
+              ],
+              [
+                1.5836427748581388,
+                0.0894198654587355
+              ],
+              [
+                1.5926427748581387,
+                0.08288098270668724
+              ],
+              [
+                1.6037673866556368,
+                0.08288098270668724
+              ],
+              [
+                1.6127673866556367,
+                0.08941986545873548
+              ],
+              [
+                1.6162050807568877,
+                0.1
+              ],
+              [
+                1.6127673866556367,
+                0.11058013454126452
+              ],
+              [
+                1.6037673866556368,
+                0.11711901729331277
+              ],
+              [
+                1.5926427748581387,
+                0.11711901729331277
+              ],
+              [
+                1.5836427748581388,
+                0.11058013454126453
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.5727949192431123,
+            "relation": "inside",
+            "valid": true
+          },
+          "drum_throne__throne/support/12": {
+            "row": "drum_throne__throne",
+            "group": "drum_throne__throne/primitive/12",
+            "surface": "rug-field",
+            "footprintHullXY": [
+              [
+                1.2337949192431121,
+                0.09999999999999996
+              ],
+              [
+                1.2372326133443632,
+                0.08941986545873545
+              ],
+              [
+                1.246232613344363,
+                0.0828809827066872
+              ],
+              [
+                1.2573572251418612,
+                0.0828809827066872
+              ],
+              [
+                1.266357225141861,
+                0.08941986545873544
+              ],
+              [
+                1.2697949192431122,
+                0.09999999999999996
+              ],
+              [
+                1.266357225141861,
+                0.11058013454126447
+              ],
+              [
+                1.2573572251418612,
+                0.11711901729331273
+              ],
+              [
+                1.246232613344363,
+                0.11711901729331273
+              ],
+              [
+                1.2372326133443632,
+                0.11058013454126447
+              ]
+            ],
+            "surfaceZ": 0.0083,
+            "gapM": 0.0002999999999999999,
+            "signedGapErrorM": -5.421010862427522e-20,
+            "signedClearanceM": 0.647794919243112,
+            "relation": "inside",
+            "valid": true
+          }
+        }
+      },
+      "normalValidity": {
+        "status": "checked",
+        "valid": true,
+        "errors": [],
+        "rows": {
+          "ctl_stand__frame": {
+            "status": "explicitly_out_of_scope"
+          },
+          "ctl_sustain_pedal__pedal": {
+            "status": "explicitly_out_of_scope"
+          },
+          "stool_keys__stool": {
+            "status": "explicitly_out_of_scope"
+          },
+          "drum_rack__rack": {
+            "status": "explicitly_out_of_scope"
+          },
+          "drum_kick__tower": {
+            "status": "explicitly_out_of_scope"
+          },
+          "drum_hihat_pedal__pedal": {
+            "status": "explicitly_out_of_scope"
+          },
+          "drum_throne__throne": {
+            "status": "explicitly_out_of_scope"
+          },
+          "rug__rug": {
+            "status": "explicitly_out_of_scope"
+          }
+        }
+      }
+    },
+    "actualSlabNormalPositive": {
+      "valid": true,
+      "scope": "fixture",
+      "candidateAcceptance": false,
+      "coverage": {
+        "valid": true,
+        "errors": []
+      },
+      "supportGeometry": {
+        "status": "checked",
+        "valid": true,
+        "errors": [],
+        "supports": {}
+      },
+      "normalValidity": {
+        "status": "checked",
+        "valid": true,
+        "errors": [],
+        "rows": {
+          "shell-slab-fixture": {
+            "status": "checked",
+            "valid": true,
+            "triangles": 20,
+            "planarTriangles": 16,
+            "maxPlanarCornerDegrees": 8.537736462515939e-07,
+            "errorCount": 0
+          }
+        }
+      }
+    }
+  },
+  "hashesBefore": {
+    "asset-pipeline/full-kit/asset-inventory.json": "eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87",
+    "asset-pipeline/full-kit/export-ledger-v01.json": "26b4c143f64f6880f012c316e81f124fe899b69312b61866531e6bf884320775",
+    "asset-pipeline/full-kit/exports/studio-full-kit-m3-proposal-v03.glb": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+    "asset-pipeline/full-kit/exports/studio-full-kit-m4-proposal-v01.raw-export.glb": "c10e6453b6bee5c1cf09b3d1c905151a4567e5360116a0495bc1398eb20f5906",
+    "asset-pipeline/full-kit/exports/studio-full-kit-m4-proposal-v02.glb": "baa1a43bd343359edb217fa077bde0678a931cc3ed3991d5ee059e04813ed32f",
+    "asset-pipeline/full-kit/full-kit-profile-v1.json": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+    "asset-pipeline/full-kit/m4-author-report.md": "93d7c5c124a846240173b0a04fed1dffd4fb9743e15971d3ea41a966feb3ee79",
+    "asset-pipeline/full-kit/manifests/m4-v01-tier-ledger.json": "63848642fde09d4d5762c9c5054129c22df51f0838bcc8f1b7c450fd80ffae63",
+    "asset-pipeline/full-kit/manifests/m4-v03-cpu-preparation.json": "d7196145a8665abefdf41b3235f3be8ec91aa7474b3c71fed2186d7537e20253",
+    "asset-pipeline/full-kit/manifests/studio-full-kit-m3-proposal-v03.manifest.json": "060bab9af5dd23b4258e03aef10de21faa7c32aa0a6010cd4e09b35089026405",
+    "asset-pipeline/full-kit/manifests/studio-full-kit-m4-proposal-v02.manifest.json": "42597f1b859fdae354063e09ee925d4d2dc9be8ae0ac8556663e391db6906b82",
+    "asset-pipeline/full-kit/source/build_fullkit_m4.py": "aa9724dcd14dbc428ca5c2ba84cffdcbb469fa14c53cf3866ac46164ec04dc22",
+    "asset-pipeline/full-kit/source/build_fullkit_m4_geometry.py": "c7ce9d8e1792273d6aeffdc5b536233413fdca6c6fd16abf344827d6433ab1c0",
+    "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v03.py": "3b220b1d4614a8111247270b21771c5f2280493c16e3ab986603a24efcffaf37",
+    "asset-pipeline/full-kit/source/build_fullkit_m4_v03.py": "53fa310f1144c46916b0ce63f05188818861e63fe9c32abbf4fb3f1596872b84",
+    "asset-pipeline/full-kit/source/fk-40-music-proposal-v01.blend": "0ae40460b9a2cb578fc35a96497a9016e5f116a1efe98cac4809568fd68c4665",
+    "asset-pipeline/full-kit/source/measure_fullkit_m4_v03.py": "9a3a098195e99b889ecee8b2213c9acc6a9dc50af68e1ae35e507e09b1b0bff5",
+    "asset-pipeline/full-kit/source/render_m4_v01_evidence.py": "bfa6fc9bf22707dc08f44f0bd4a7033e3817d54d2d142d5dea7a969fca161e18",
+    "scene-coordination/m4-model-contract.json": "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98",
+    "scene-coordination/m4-transition-guard.py": "ad62627f0683806ace2c8ebbb133ba83e72c7d95f1df8adc291a3706aa40da6b",
+    "scene-coordination/m4-v03-art-closure-interrupted-20261115/partial-evidence.json": "8322d1cd0b11cd27af16ac9dfc990b6e279639469f263fb15cc4de98451bf307",
+    "scene-coordination/m4-v03-art-closure-interrupted-20261115/partial-report.md": "c0f673655f2daa99adea3019935e1294ef098927b1ac307d83a128f692cac207",
+    "scene-coordination/m4-v03-art-closure-interrupted-20261115/snapshot-manifest.json": "483c601a7c470d0a81221f780048568bb9e6dd41b7df1675fa5d16e462282b68",
+    "scene-coordination/m4-v03-art-review-interruption.md": "7f78ad65ecb95584211bdd79c7a6ee734349f4eabff4982258b2d73b2bebf1b0",
+    "scene-coordination/m4-v03-cpu-verification.json": "c0fcce453614ff08e0facb5517fb4ed6fc430217ac455a2bbcf1e6dd325b6927",
+    "scene-coordination/m4-v03-cpu-verification.py": "11b1356d5afcfe9260b2e28e22b498279d1c33450aa5f4a82e9319fa324f5dd6",
+    "scene-coordination/m4-v03-focused-art-closure-task.md": "614e8acb0aa03f6fdf41d17dcb91b8c664c9ae63d1e46a80de1ef3c1081492e4",
+    "scene-coordination/m4-v03-focused-art-closure.json": "8322d1cd0b11cd27af16ac9dfc990b6e279639469f263fb15cc4de98451bf307",
+    "scene-coordination/m4-v03-normal-check-contract-review.md": "cc7812bd57027365bb6e61064eabea6564c7c20aa7eec8c2f9d3b8e07312a3fc",
+    "scene-m4-v03-cpu-verification.md": "815edfabfb41fde8c3cd21e4a9429c1cf8be6d33f1a16ae2e008a23f5f2af174",
+    "scene-m4-v03-focused-art-closure.md": "c0f673655f2daa99adea3019935e1294ef098927b1ac307d83a128f692cac207",
+    "scene-m4-v03-preparation-report.md": "b21b6f2b7b6b97786b4da8a34d59b114e2daf6fe5ffb5ae7d49c4117ecc3abc3"
+  },
+  "hashesAfter": {
+    "asset-pipeline/full-kit/asset-inventory.json": "eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87",
+    "asset-pipeline/full-kit/export-ledger-v01.json": "26b4c143f64f6880f012c316e81f124fe899b69312b61866531e6bf884320775",
+    "asset-pipeline/full-kit/exports/studio-full-kit-m3-proposal-v03.glb": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+    "asset-pipeline/full-kit/exports/studio-full-kit-m4-proposal-v01.raw-export.glb": "c10e6453b6bee5c1cf09b3d1c905151a4567e5360116a0495bc1398eb20f5906",
+    "asset-pipeline/full-kit/exports/studio-full-kit-m4-proposal-v02.glb": "baa1a43bd343359edb217fa077bde0678a931cc3ed3991d5ee059e04813ed32f",
+    "asset-pipeline/full-kit/full-kit-profile-v1.json": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+    "asset-pipeline/full-kit/m4-author-report.md": "93d7c5c124a846240173b0a04fed1dffd4fb9743e15971d3ea41a966feb3ee79",
+    "asset-pipeline/full-kit/manifests/m4-v01-tier-ledger.json": "63848642fde09d4d5762c9c5054129c22df51f0838bcc8f1b7c450fd80ffae63",
+    "asset-pipeline/full-kit/manifests/m4-v03-cpu-preparation.json": "d7196145a8665abefdf41b3235f3be8ec91aa7474b3c71fed2186d7537e20253",
+    "asset-pipeline/full-kit/manifests/studio-full-kit-m3-proposal-v03.manifest.json": "060bab9af5dd23b4258e03aef10de21faa7c32aa0a6010cd4e09b35089026405",
+    "asset-pipeline/full-kit/manifests/studio-full-kit-m4-proposal-v02.manifest.json": "42597f1b859fdae354063e09ee925d4d2dc9be8ae0ac8556663e391db6906b82",
+    "asset-pipeline/full-kit/source/build_fullkit_m4.py": "aa9724dcd14dbc428ca5c2ba84cffdcbb469fa14c53cf3866ac46164ec04dc22",
+    "asset-pipeline/full-kit/source/build_fullkit_m4_geometry.py": "c7ce9d8e1792273d6aeffdc5b536233413fdca6c6fd16abf344827d6433ab1c0",
+    "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v03.py": "3b220b1d4614a8111247270b21771c5f2280493c16e3ab986603a24efcffaf37",
+    "asset-pipeline/full-kit/source/build_fullkit_m4_v03.py": "53fa310f1144c46916b0ce63f05188818861e63fe9c32abbf4fb3f1596872b84",
+    "asset-pipeline/full-kit/source/fk-40-music-proposal-v01.blend": "0ae40460b9a2cb578fc35a96497a9016e5f116a1efe98cac4809568fd68c4665",
+    "asset-pipeline/full-kit/source/measure_fullkit_m4_v03.py": "9a3a098195e99b889ecee8b2213c9acc6a9dc50af68e1ae35e507e09b1b0bff5",
+    "asset-pipeline/full-kit/source/render_m4_v01_evidence.py": "bfa6fc9bf22707dc08f44f0bd4a7033e3817d54d2d142d5dea7a969fca161e18",
+    "scene-coordination/m4-model-contract.json": "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98",
+    "scene-coordination/m4-transition-guard.py": "ad62627f0683806ace2c8ebbb133ba83e72c7d95f1df8adc291a3706aa40da6b",
+    "scene-coordination/m4-v03-art-closure-interrupted-20261115/partial-evidence.json": "8322d1cd0b11cd27af16ac9dfc990b6e279639469f263fb15cc4de98451bf307",
+    "scene-coordination/m4-v03-art-closure-interrupted-20261115/partial-report.md": "c0f673655f2daa99adea3019935e1294ef098927b1ac307d83a128f692cac207",
+    "scene-coordination/m4-v03-art-closure-interrupted-20261115/snapshot-manifest.json": "483c601a7c470d0a81221f780048568bb9e6dd41b7df1675fa5d16e462282b68",
+    "scene-coordination/m4-v03-art-review-interruption.md": "7f78ad65ecb95584211bdd79c7a6ee734349f4eabff4982258b2d73b2bebf1b0",
+    "scene-coordination/m4-v03-cpu-verification.json": "c0fcce453614ff08e0facb5517fb4ed6fc430217ac455a2bbcf1e6dd325b6927",
+    "scene-coordination/m4-v03-cpu-verification.py": "11b1356d5afcfe9260b2e28e22b498279d1c33450aa5f4a82e9319fa324f5dd6",
+    "scene-coordination/m4-v03-focused-art-closure-task.md": "614e8acb0aa03f6fdf41d17dcb91b8c664c9ae63d1e46a80de1ef3c1081492e4",
+    "scene-coordination/m4-v03-focused-art-closure.json": "8322d1cd0b11cd27af16ac9dfc990b6e279639469f263fb15cc4de98451bf307",
+    "scene-coordination/m4-v03-normal-check-contract-review.md": "cc7812bd57027365bb6e61064eabea6564c7c20aa7eec8c2f9d3b8e07312a3fc",
+    "scene-m4-v03-cpu-verification.md": "815edfabfb41fde8c3cd21e4a9429c1cf8be6d33f1a16ae2e008a23f5f2af174",
+    "scene-m4-v03-focused-art-closure.md": "c0f673655f2daa99adea3019935e1294ef098927b1ac307d83a128f692cac207",
+    "scene-m4-v03-preparation-report.md": "b21b6f2b7b6b97786b4da8a34d59b114e2daf6fe5ffb5ae7d49c4117ecc3abc3"
+  },
+  "implementationHashes": {
+    "module": "12658d50605c9bc7fe625151adf05a8b9faa993c4f378cc99a502402ebf24710",
+    "tests": "af71947a0647259ce22eed99a17193f3f8072f63bad3f494a0341d53b7aea00a",
+    "interface": "71eb54107e54ae94856ea3461471a1afe3e3a27b7de97bfe5a331fe91c8e5293"
+  }
+}

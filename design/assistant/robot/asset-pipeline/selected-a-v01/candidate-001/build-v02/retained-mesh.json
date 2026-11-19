@@ -1,0 +1,78 @@
+{
+  "rawSha256": "412c0c213e0c6adc6baa80fa0686b6cbd9a1d259348bb96c571ef28b2f59bec7",
+  "retained": [
+    {
+      "node": "APA_head",
+      "componentId": 0,
+      "sourceVertices": 1174,
+      "sourceTriangles": 2344,
+      "afterRepairVertices": 4693,
+      "afterRepairTriangles": 9252
+    },
+    {
+      "node": "APA_body",
+      "componentId": 1,
+      "sourceVertices": 1065,
+      "sourceTriangles": 2126,
+      "afterRepairVertices": 788,
+      "afterRepairTriangles": 1572
+    },
+    {
+      "node": "APA_mitten_L",
+      "componentId": 3,
+      "sourceVertices": 416,
+      "sourceTriangles": 828,
+      "afterRepairVertices": 416,
+      "afterRepairTriangles": 828
+    },
+    {
+      "node": "APA_mitten_R",
+      "componentId": 4,
+      "sourceVertices": 412,
+      "sourceTriangles": 820,
+      "afterRepairVertices": 412,
+      "afterRepairTriangles": 820
+    }
+  ],
+  "discardedComponents": [
+    2,
+    5,
+    6
+  ],
+  "headOriginalVerticesRetainedBeforeLoft": 544,
+  "headOriginalFacesSurvivingCutBeforeRetopology": 1031,
+  "headCutBoundaryVertices": 66,
+  "headLoftRings": 6,
+  "headSubdivisionLevels": 1,
+  "rearFairingVertices": 544,
+  "maxRearFairingDisplacementRaw": 0.0066620510005330515,
+  "repairs": [
+    "4 iterations Laplacian smoothing factor .25",
+    "radial fairing of retained Meshy rear-shell vertices to fitted stretched-ball envelope, preserving angular positions",
+    "convex retopology of those same rear-shell samples removes folded source seam faces",
+    "loft actual cut boundary into clean front band",
+    "body collar bisect and hole cap",
+    "one subdivision smooths front band and retained rear shell",
+    "reset imported custom normals to automatic after geometry edits"
+  ],
+  "nativeNodes": [
+    "APA_root",
+    "APA_seam",
+    "APA_face_rim",
+    "APA_face",
+    "APA_eye_L",
+    "APA_pupil_L",
+    "APA_highlight_L",
+    "APA_lid_lower_L",
+    "APA_eye_R",
+    "APA_pupil_R",
+    "APA_highlight_R",
+    "APA_lid_lower_R",
+    "APA_bookmark_post",
+    "APA_bookmark_ribbon",
+    "APA_collar",
+    "APA_body_cap",
+    "APA_tray",
+    "APA_tray_glow"
+  ]
+}

@@ -1,0 +1,376 @@
+TAP version 13
+# Subtest: synthetic indexed fixture measures nine placed triangles, not an authored asset
+ok 1 - synthetic indexed fixture measures nine placed triangles, not an authored asset
+  ---
+  duration_ms: 73.9771
+  type: 'test'
+  ...
+# Subtest: unindexed triangles and interleaved vertex strides are supported
+ok 2 - unindexed triangles and interleaved vertex strides are supported
+  ---
+  duration_ms: 57.464
+  type: 'test'
+  ...
+# Subtest: identity matrix and independent shadow flag are accepted
+ok 3 - identity matrix and independent shadow flag are accepted
+  ---
+  duration_ms: 43.7409
+  type: 'test'
+  ...
+# Subtest: allowed emissive-strength extension preserves finite authored strength
+ok 4 - allowed emissive-strength extension preserves finite authored strength
+  ---
+  duration_ms: 48.4769
+  type: 'test'
+  ...
+# Subtest: shared primitive geometry is counted once uniquely and for every placement
+ok 5 - shared primitive geometry is counted once uniquely and for every placement
+  ---
+  duration_ms: 49.4183
+  type: 'test'
+  ...
+# Subtest: bad magic, version, length, chunk alignment and truncation reject
+ok 6 - bad magic, version, length, chunk alignment and truncation reject
+  ---
+  duration_ms: 1.5743
+  type: 'test'
+  ...
+# Subtest: raw file ceiling rejects without parsing
+ok 7 - raw file ceiling rejects without parsing
+  ---
+  duration_ms: 5.8589
+  type: 'test'
+  ...
+# Subtest: triangle budget rejects valid index data above the placed triangle ceiling
+ok 8 - triangle budget rejects valid index data above the placed triangle ceiling
+  ---
+  duration_ms: 83.8428
+  type: 'test'
+  ...
+# Subtest: documented Blender-to-glTF adapter round trips fixed eye and floor once
+ok 9 - documented Blender-to-glTF adapter round trips fixed eye and floor once
+  ---
+  duration_ms: 0.5554
+  type: 'test'
+  ...
+# Subtest: embedded buffer cannot point to network
+ok 10 - embedded buffer cannot point to network
+  ---
+  duration_ms: 1.9259
+  type: 'test'
+  ...
+# Subtest: declared buffer cannot exceed BIN chunk
+ok 11 - declared buffer cannot exceed BIN chunk
+  ---
+  duration_ms: 1.5192
+  type: 'test'
+  ...
+# Subtest: bufferView cannot overrun declared buffer
+ok 12 - bufferView cannot overrun declared buffer
+  ---
+  duration_ms: 1.0245
+  type: 'test'
+  ...
+# Subtest: accessor count cannot overrun bufferView
+ok 13 - accessor count cannot overrun bufferView
+  ---
+  duration_ms: 1.0945
+  type: 'test'
+  ...
+# Subtest: accessor offset must be aligned
+ok 14 - accessor offset must be aligned
+  ---
+  duration_ms: 1.0702
+  type: 'test'
+  ...
+# Subtest: invalid stride is rejected
+ok 15 - invalid stride is rejected
+  ---
+  duration_ms: 0.9686
+  type: 'test'
+  ...
+# Subtest: sparse accessor is not silently skipped
+ok 16 - sparse accessor is not silently skipped
+  ---
+  duration_ms: 1.3684
+  type: 'test'
+  ...
+# Subtest: finite JSON bounds cannot conceal binary NaN
+ok 17 - finite JSON bounds cannot conceal binary NaN
+  ---
+  duration_ms: 1.1591
+  type: 'test'
+  ...
+# Subtest: non-position attribute Infinity also rejects
+ok 18 - non-position attribute Infinity also rejects
+  ---
+  duration_ms: 1.0491
+  type: 'test'
+  ...
+# Subtest: lying position extrema reject
+ok 19 - lying position extrema reject
+  ---
+  duration_ms: 0.9964
+  type: 'test'
+  ...
+# Subtest: indices cannot reference missing vertices
+ok 20 - indices cannot reference missing vertices
+  ---
+  duration_ms: 1.2574
+  type: 'test'
+  ...
+# Subtest: nontriangle counts reject
+ok 21 - nontriangle counts reject
+  ---
+  duration_ms: 1.518
+  type: 'test'
+  ...
+# Subtest: nontriangle primitive modes reject
+ok 22 - nontriangle primitive modes reject
+  ---
+  duration_ms: 6.0817
+  type: 'test'
+  ...
+# Subtest: morph targets reject
+ok 23 - morph targets reject
+  ---
+  duration_ms: 32.8081
+  type: 'test'
+  ...
+# Subtest: missing normal is not accepted
+ok 24 - missing normal is not accepted
+  ---
+  duration_ms: 2.2703
+  type: 'test'
+  ...
+# Subtest: missing UV0 is not accepted
+ok 25 - missing UV0 is not accepted
+  ---
+  duration_ms: 13.0182
+  type: 'test'
+  ...
+# Subtest: missing and duplicate pilot names reject
+ok 26 - missing and duplicate pilot names reject
+  ---
+  duration_ms: 19.807
+  type: 'test'
+  ...
+# Subtest: extra wrapper root rejects
+ok 27 - extra wrapper root rejects
+  ---
+  duration_ms: 1.8659
+  type: 'test'
+  ...
+# Subtest: multiple scenes reject
+ok 28 - multiple scenes reject
+  ---
+  duration_ms: 5.4087
+  type: 'test'
+  ...
+# Subtest: nested pilot transform rejects
+ok 29 - nested pilot transform rejects
+  ---
+  duration_ms: 2.5841
+  type: 'test'
+  ...
+# Subtest: premature scale2 adapter rejects
+ok 30 - premature scale2 adapter rejects
+  ---
+  duration_ms: 2.2548
+  type: 'test'
+  ...
+# Subtest: null transform rejects
+ok 31 - null transform rejects
+  ---
+  duration_ms: 1.8582
+  type: 'test'
+  ...
+# Subtest: conflicting matrix and TRS reject
+ok 32 - conflicting matrix and TRS reject
+  ---
+  duration_ms: 4.7553
+  type: 'test'
+  ...
+# Subtest: camera export rejects
+ok 33 - camera export rejects
+  ---
+  duration_ms: 0.7058
+  type: 'test'
+  ...
+# Subtest: animation export rejects
+ok 34 - animation export rejects
+  ---
+  duration_ms: 0.7987
+  type: 'test'
+  ...
+# Subtest: skin export rejects
+ok 35 - skin export rejects
+  ---
+  duration_ms: 0.7446
+  type: 'test'
+  ...
+# Subtest: decoder/light/unknown declaration rejects: KHR_draco_mesh_compression
+ok 36 - decoder/light/unknown declaration rejects: KHR_draco_mesh_compression
+  ---
+  duration_ms: 0.7428
+  type: 'test'
+  ...
+# Subtest: decoder/light/unknown declaration rejects: EXT_meshopt_compression
+ok 37 - decoder/light/unknown declaration rejects: EXT_meshopt_compression
+  ---
+  duration_ms: 0.6867
+  type: 'test'
+  ...
+# Subtest: decoder/light/unknown declaration rejects: KHR_meshopt_compression
+ok 38 - decoder/light/unknown declaration rejects: KHR_meshopt_compression
+  ---
+  duration_ms: 0.6966
+  type: 'test'
+  ...
+# Subtest: decoder/light/unknown declaration rejects: KHR_texture_basisu
+ok 39 - decoder/light/unknown declaration rejects: KHR_texture_basisu
+  ---
+  duration_ms: 0.7936
+  type: 'test'
+  ...
+# Subtest: decoder/light/unknown declaration rejects: KHR_lights_punctual
+ok 40 - decoder/light/unknown declaration rejects: KHR_lights_punctual
+  ---
+  duration_ms: 3.1939
+  type: 'test'
+  ...
+# Subtest: decoder/light/unknown declaration rejects: UNKNOWN_optional
+ok 41 - decoder/light/unknown declaration rejects: UNKNOWN_optional
+  ---
+  duration_ms: 1.1733
+  type: 'test'
+  ...
+# Subtest: undeclared hidden decoder rejects
+ok 42 - undeclared hidden decoder rejects
+  ---
+  duration_ms: 1.0028
+  type: 'test'
+  ...
+# Subtest: allowed extension in wrong location rejects
+ok 43 - allowed extension in wrong location rejects
+  ---
+  duration_ms: 29.5629
+  type: 'test'
+  ...
+# Subtest: used extension needs declaration
+ok 44 - used extension needs declaration
+  ---
+  duration_ms: 9.7517
+  type: 'test'
+  ...
+# Subtest: missing required base texture rejects
+ok 45 - missing required base texture rejects
+  ---
+  duration_ms: 2.6769
+  type: 'test'
+  ...
+# Subtest: missing required emissive texture rejects
+ok 46 - missing required emissive texture rejects
+  ---
+  duration_ms: 4.3998
+  type: 'test'
+  ...
+# Subtest: material names are adapter keys
+ok 47 - material names are adapter keys
+  ---
+  duration_ms: 3.47
+  type: 'test'
+  ...
+# Subtest: wrong named material assignment rejects
+ok 48 - wrong named material assignment rejects
+  ---
+  duration_ms: 1.2961
+  type: 'test'
+  ...
+# Subtest: external image rejects
+ok 49 - external image rejects
+  ---
+  duration_ms: 3.2822
+  type: 'test'
+  ...
+# Subtest: WebP image rejects
+ok 50 - WebP image rejects
+  ---
+  duration_ms: 1.062
+  type: 'test'
+  ...
+# Subtest: MIME/signature mismatch rejects
+ok 51 - MIME/signature mismatch rejects
+  ---
+  duration_ms: 1.1304
+  type: 'test'
+  ...
+# Subtest: PNG truncation rejects
+ok 52 - PNG truncation rejects
+  ---
+  duration_ms: 1.3553
+  type: 'test'
+  ...
+# Subtest: oversized PNG dimensions reject
+ok 53 - oversized PNG dimensions reject
+  ---
+  duration_ms: 28.5643
+  type: 'test'
+  ...
+# Subtest: material factor range rejects
+ok 54 - material factor range rejects
+  ---
+  duration_ms: 1.5646
+  type: 'test'
+  ...
+# Subtest: BLEND material rejects opaque profile
+ok 55 - BLEND material rejects opaque profile
+  ---
+  duration_ms: 2.1573
+  type: 'test'
+  ...
+# Subtest: opaque bulb exemption rejects even with nocast
+ok 56 - opaque bulb exemption rejects even with nocast
+  ---
+  duration_ms: 10.5514
+  type: 'test'
+  ...
+# Subtest: transparent metadata cannot exempt opaque material
+ok 57 - transparent metadata cannot exempt opaque material
+  ---
+  duration_ms: 1.7079
+  type: 'test'
+  ...
+# Subtest: wrong axis/baked scale fails placement
+ok 58 - wrong axis/baked scale fails placement
+  ---
+  duration_ms: 38.0279
+  type: 'test'
+  ...
+# Subtest: unintended metre miniaturisation fails height
+ok 59 - unintended metre miniaturisation fails height
+  ---
+  duration_ms: 2.5361
+  type: 'test'
+  ...
+# Subtest: primitive budget is separate from triangle budget
+ok 60 - primitive budget is separate from triangle budget
+  ---
+  duration_ms: 2.1784
+  type: 'test'
+  ...
+# Subtest: malformed primitive schema returns a failing report, not a crash
+ok 61 - malformed primitive schema returns a failing report, not a crash
+  ---
+  duration_ms: 12.0226
+  type: 'test'
+  ...
+1..61
+# tests 61
+# suites 0
+# pass 61
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1162.2267

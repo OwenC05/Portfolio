@@ -1,0 +1,224 @@
+{
+  "scope": "Independent exact restoration/actual output review only, no stage budget or art acceptance",
+  "protectedHashesBefore": {
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-v02-restore.py": "9f5cb2f5ec5ab2395d254bf32e828a9a89a6473a244284871f931046373fc12b",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\exports\\studio-full-kit-m3-proposal-v03.glb": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\exports\\studio-full-kit-m4-proposal-v01.raw-export.glb": "c10e6453b6bee5c1cf09b3d1c905151a4567e5360116a0495bc1398eb20f5906",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\exports\\studio-full-kit-m4-proposal-v02.glb": "baa1a43bd343359edb217fa077bde0678a931cc3ed3991d5ee059e04813ed32f",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\manifests\\studio-full-kit-m4-proposal-v02.manifest.json": "42597f1b859fdae354063e09ee925d4d2dc9be8ae0ac8556663e391db6906b82",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\manifests\\m4-v02-restoration-receipt.json": "29194ca093280a5113f3aaa91e30d2594b9be7d651bba10a03825520886895a1",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\source\\build_fullkit_m4.py": "aa9724dcd14dbc428ca5c2ba84cffdcbb469fa14c53cf3866ac46164ec04dc22",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\source\\build_fullkit_m4_geometry.py": "c7ce9d8e1792273d6aeffdc5b536233413fdca6c6fd16abf344827d6433ab1c0",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\source\\fk-40-music-proposal-v01.blend": "0ae40460b9a2cb578fc35a96497a9016e5f116a1efe98cac4809568fd68c4665",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\manifests\\m4-v01-author-measurements.json": "22039aa167938fea67554bf42158b8d66eae2b4a244ddf1ee63486a93b194782",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\manifests\\m4-v01-transition-guard-receipt.json": "b31e17bfd8782ce5625f80222e28dd836a0cb5930f07cd4d5b6e990e7d250fcd",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-transition-guard.py": "ad62627f0683806ace2c8ebbb133ba83e72c7d95f1df8adc291a3706aa40da6b",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-model-contract.json": "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-scene-provenance-amendment-v01.json": "3b3a011d5d2f599dc63a4bf31aacd115513eb06c31267ddee0201209cebb2229",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-v01-raw-word-audit.json": "17d74e9f10881e91992f133375abbe40458bff07bd4c80213484545fac0725bc",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-v01-raw-transition-audit.json": "064aa67479acf3534e4f062e25e6941ad83da21396147dd3292fc4a3db170afe",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-v02-transition-audit.json": "29475b2d7ea5c4110980124498f8b975793d2b8e6cf17b84603dacebcbadc5e0",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-v02-restore-tests.json": "94140db416ff28892cdf2e5dd2e0f0e1dbd968806770d3d2c3418ee8d5a15ded",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-v02-restore-tests.py": "89a1a25039bd709eac159c95ec1b59cf4f7e0f258e9eefe0cd75aa9011dedd04",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-v02-profile-check.json": "e46cfd05c8470a1177a9a1cc30477eb4b7828b980d4b9568ea28718037db7b68",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-transition-guard-independent-review.md": "f46c07f30991c0e65b0bd104e381c1b1b6919e772058d27b7e641c437f58dcac",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-transition-guard-focused-rereview.md": "d85af790831a221decac728f5dbc494dfe5914bb9f80531ea077678165aae6a4",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-independent-review-first-attempt.json": "1f5d442d1894c4fffc7a61eeae9afc782ae73a3856de0c607a81a8a6460fe6f9"
+  },
+  "protectedHashesAfter": {
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-v02-restore.py": "9f5cb2f5ec5ab2395d254bf32e828a9a89a6473a244284871f931046373fc12b",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\exports\\studio-full-kit-m3-proposal-v03.glb": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\exports\\studio-full-kit-m4-proposal-v01.raw-export.glb": "c10e6453b6bee5c1cf09b3d1c905151a4567e5360116a0495bc1398eb20f5906",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\exports\\studio-full-kit-m4-proposal-v02.glb": "baa1a43bd343359edb217fa077bde0678a931cc3ed3991d5ee059e04813ed32f",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\manifests\\studio-full-kit-m4-proposal-v02.manifest.json": "42597f1b859fdae354063e09ee925d4d2dc9be8ae0ac8556663e391db6906b82",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\manifests\\m4-v02-restoration-receipt.json": "29194ca093280a5113f3aaa91e30d2594b9be7d651bba10a03825520886895a1",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\source\\build_fullkit_m4.py": "aa9724dcd14dbc428ca5c2ba84cffdcbb469fa14c53cf3866ac46164ec04dc22",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\source\\build_fullkit_m4_geometry.py": "c7ce9d8e1792273d6aeffdc5b536233413fdca6c6fd16abf344827d6433ab1c0",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\source\\fk-40-music-proposal-v01.blend": "0ae40460b9a2cb578fc35a96497a9016e5f116a1efe98cac4809568fd68c4665",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\manifests\\m4-v01-author-measurements.json": "22039aa167938fea67554bf42158b8d66eae2b4a244ddf1ee63486a93b194782",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\asset-pipeline\\full-kit\\manifests\\m4-v01-transition-guard-receipt.json": "b31e17bfd8782ce5625f80222e28dd836a0cb5930f07cd4d5b6e990e7d250fcd",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-transition-guard.py": "ad62627f0683806ace2c8ebbb133ba83e72c7d95f1df8adc291a3706aa40da6b",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-model-contract.json": "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-scene-provenance-amendment-v01.json": "3b3a011d5d2f599dc63a4bf31aacd115513eb06c31267ddee0201209cebb2229",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-v01-raw-word-audit.json": "17d74e9f10881e91992f133375abbe40458bff07bd4c80213484545fac0725bc",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-v01-raw-transition-audit.json": "064aa67479acf3534e4f062e25e6941ad83da21396147dd3292fc4a3db170afe",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-v02-transition-audit.json": "29475b2d7ea5c4110980124498f8b975793d2b8e6cf17b84603dacebcbadc5e0",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-v02-restore-tests.json": "94140db416ff28892cdf2e5dd2e0f0e1dbd968806770d3d2c3418ee8d5a15ded",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-v02-restore-tests.py": "89a1a25039bd709eac159c95ec1b59cf4f7e0f258e9eefe0cd75aa9011dedd04",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-v02-profile-check.json": "e46cfd05c8470a1177a9a1cc30477eb4b7828b980d4b9568ea28718037db7b68",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-transition-guard-independent-review.md": "f46c07f30991c0e65b0bd104e381c1b1b6919e772058d27b7e641c437f58dcac",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-transition-guard-focused-rereview.md": "d85af790831a221decac728f5dbc494dfe5914bb9f80531ea077678165aae6a4",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-independent-review-first-attempt.json": "1f5d442d1894c4fffc7a61eeae9afc782ae73a3856de0c607a81a8a6460fe6f9"
+  },
+  "bytes": 2206200,
+  "actuallyChangedByteOffsets": [
+    662880,
+    663352,
+    663484
+  ],
+  "wordSlots": [
+    {
+      "node": "desk_top__top",
+      "mesh": "desk_top__top_mesh.002",
+      "semantic": "TEXCOORD_0",
+      "vertex": 199,
+      "component": 0,
+      "parentAccessor": 64,
+      "rawAccessor": 75,
+      "parentView": 67,
+      "rawView": 78,
+      "parentBinOffset": 411396,
+      "parentFileOffset": 487544,
+      "rawBinOffset": 580196,
+      "rawFileOffset": 662880,
+      "rawHex": "5d8f72bf",
+      "outputHex": "5b8f72bf",
+      "ulpDistance": 2
+    },
+    {
+      "node": "desk_top__top",
+      "mesh": "desk_top__top_mesh.002",
+      "semantic": "TEXCOORD_0",
+      "vertex": 258,
+      "component": 0,
+      "parentAccessor": 64,
+      "rawAccessor": 75,
+      "parentView": 67,
+      "rawView": 78,
+      "parentBinOffset": 411868,
+      "parentFileOffset": 488016,
+      "rawBinOffset": 580668,
+      "rawFileOffset": 663352,
+      "rawHex": "21858b3e",
+      "outputHex": "20858b3e",
+      "ulpDistance": 1
+    },
+    {
+      "node": "desk_top__top",
+      "mesh": "desk_top__top_mesh.002",
+      "semantic": "TEXCOORD_0",
+      "vertex": 274,
+      "component": 1,
+      "parentAccessor": 64,
+      "rawAccessor": 75,
+      "parentView": 67,
+      "rawView": 78,
+      "parentBinOffset": 412000,
+      "parentFileOffset": 488148,
+      "rawBinOffset": 580800,
+      "rawFileOffset": 663484,
+      "rawHex": "3789213f",
+      "outputHex": "3689213f",
+      "ulpDistance": 1
+    }
+  ],
+  "headerAndJsonByteIdentical": true,
+  "allOtherRawBytesIdentical": true,
+  "retainedLeaves": 92,
+  "retainedAccessorComparisons": 368,
+  "retainedAccessorDifferences": 0,
+  "pureRestorerReproducesActualOutput": true,
+  "approvedTransitionGuardPass": true,
+  "honestEmbeddedTags": {
+    "fk_variant": "proposal",
+    "fk_tag": "m4-v01",
+    "fk_profile": "studio-full-kit-v1",
+    "fk_stage": "M4",
+    "fk_m2_tag": "v04-pc",
+    "fk_m3_tag": "v02",
+    "fk_m4_tag": "v01"
+  },
+  "negativeTests": [
+    {
+      "name": "wrong raw full hash",
+      "passed": true,
+      "rejection": "complete input hashes"
+    },
+    {
+      "name": "wrong parent full hash",
+      "passed": true,
+      "rejection": "complete input hashes"
+    },
+    {
+      "name": "corrected candidate cannot masquerade as raw",
+      "passed": true,
+      "rejection": "complete input hashes"
+    },
+    {
+      "name": "duplicate semantic mesh identity",
+      "passed": true,
+      "rejection": "unique named desk mesh"
+    },
+    {
+      "name": "UV accessor shared by another attribute",
+      "passed": true,
+      "rejection": "unique accessor owner"
+    },
+    {
+      "name": "UV bufferView shared with another accessor",
+      "passed": true,
+      "rejection": "unique UV bufferView owner"
+    },
+    {
+      "name": "wrong accessor count",
+      "passed": true,
+      "rejection": "exact float32 VEC2 accessor layout"
+    },
+    {
+      "name": "explicit interleaved layout rejected",
+      "passed": true,
+      "rejection": "exact packed UV view layout"
+    },
+    {
+      "name": "wrong authorized slot field 2",
+      "passed": true,
+      "rejection": "derived parent BIN offset"
+    },
+    {
+      "name": "wrong authorized slot field 4",
+      "passed": true,
+      "rejection": "derived raw BIN offset"
+    },
+    {
+      "name": "wrong authorized slot field 5",
+      "passed": true,
+      "rejection": "derived file offsets"
+    },
+    {
+      "name": "wrong authorized slot field 6",
+      "passed": true,
+      "rejection": "exact word input/output bytes"
+    },
+    {
+      "name": "wrong authorized slot field 7",
+      "passed": true,
+      "rejection": "exact word input/output bytes"
+    },
+    {
+      "name": "wrong actual raw word after hash precondition",
+      "passed": true,
+      "rejection": "exact word input/output bytes"
+    },
+    {
+      "name": "wrong actual parent word after hash precondition",
+      "passed": true,
+      "rejection": "exact word input/output bytes"
+    },
+    {
+      "name": "preexisting output prevents both opens",
+      "passed": true,
+      "rejection": "Refusing overwrite: in-memory-exclusive-path"
+    },
+    {
+      "name": "preexisting receipt prevents both opens",
+      "passed": true,
+      "rejection": "Refusing overwrite: in-memory-exclusive-path"
+    }
+  ],
+  "passedNegativeTests": 17,
+  "totalNegativeTests": 17,
+  "limits": [
+    "No renderer/visual/performance/whole-room forecast evaluation",
+    "Writer exclusive-I/O receipt race may leave an empty fresh output; no overwrite or retry"
+  ]
+}

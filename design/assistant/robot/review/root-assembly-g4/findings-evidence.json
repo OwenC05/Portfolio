@@ -1,0 +1,32 @@
+{
+  "attention": {
+    "qualified": {
+      "panelOpen": false,
+      "presentationEpoch": 0,
+      "attentionRequested": true
+    },
+    "project": "copilot",
+    "sceneInteractionEnabled": false,
+    "attentionRequested": true,
+    "panelOpen": false,
+    "presentationEpoch": 1,
+    "afterDownstreamHoverReset": false
+  },
+  "focus": {
+    "before": "studio-ask-heading",
+    "afterCloseCommit": "ask-entry",
+    "rootPreventedNavigation": false,
+    "abortedBeforeCommit": true,
+    "clearedHits": 0,
+    "dialogOpen": false,
+    "focusMoves": [
+      {
+        "id": "ask-entry",
+        "blocked": false,
+        "dialogOpen": false
+      }
+    ],
+    "model": "WHATWG close-the-dialog step 12 restores the previously focused element for a modal before queuing close; this is an explicit native-behavior port, not a real browser or React scheduling observation",
+    "source": "https://html.spec.whatwg.org/multipage/interactive-elements.html#close-the-dialog"
+  }
+}

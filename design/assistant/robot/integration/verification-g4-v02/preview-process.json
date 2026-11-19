@@ -1,0 +1,11 @@
+{
+    "cwd":  "C:\\Users\\Owenc\\orca\\Portfolio-assistant",
+    "executablePath":  "C:\\Program Files\\nodejs\\node.exe",
+    "ownedPid":  12112,
+    "buildId":  "XH_oOqBftWO8em8L7m4E6",
+    "owner":  "root G4 verification",
+    "checkedAtUtc":  "2026-11-18T18:34:43.9830527Z",
+    "commandLine":  "\"C:\\Program Files\\nodejs\\node.exe\" node_modules/next/dist/bin/next start --hostname 127.0.0.1 --port 4193 ",
+    "creationDate":  "2026-11-18T18:34:42.8724100Z",
+    "port":  4193
+}

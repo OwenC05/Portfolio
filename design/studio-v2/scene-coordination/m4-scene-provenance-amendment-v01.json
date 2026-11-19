@@ -1,0 +1,41 @@
+{
+  "schema": "studio-full-kit-m4-scene-provenance/1",
+  "status": "Authorized exact first M4 v01 amendment",
+  "authority": "m4-guard-repair-root-decision.md / msg_71991aa019dc",
+  "authoredIntentMessage": "msg_73ae299f6383",
+  "requestSha256": "d351950457b4508b161de5d8f43f454ff41345c23c4f116344d955dbaca40696",
+  "mappingSha256": "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98",
+  "parentSha256": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+  "parentManifestSha256": "060bab9af5dd23b4258e03aef10de21faa7c32aa0a6010cd4e09b35089026405",
+  "sceneCount": 1,
+  "sceneName": "Scene",
+  "sceneRootNames": ["studio_full_kit"],
+  "path": "scenes[0].extras",
+  "before": {
+    "fk_variant": "proposal",
+    "fk_tag": "m3-v02",
+    "fk_profile": "studio-full-kit-v1",
+    "fk_stage": "M3",
+    "fk_m2_tag": "v04-pc",
+    "fk_m3_tag": "v02"
+  },
+  "after": {
+    "fk_variant": "proposal",
+    "fk_tag": "m4-v01",
+    "fk_profile": "studio-full-kit-v1",
+    "fk_stage": "M4",
+    "fk_m2_tag": "v04-pc",
+    "fk_m3_tag": "v02",
+    "fk_m4_tag": "v01"
+  },
+  "assetMetadata": {
+    "generator": "Khronos glTF Blender I/O v5.2.41",
+    "version": "2.0"
+  },
+  "invariants": [
+    "Validate complete before and after extras objects exactly; no missing or additional keys.",
+    "All other scene and document metadata remains exact, except semantic scene-root node index relocation.",
+    "Original mapping, accepted parent, inherited stage tags and all retained art remain unchanged.",
+    "Only first M4 v01 is authorized; no wildcard revision or prior UV-noise allowance."
+  ]
+}

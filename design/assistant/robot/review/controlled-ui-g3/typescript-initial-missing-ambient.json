@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-11-17T14:23:06.018Z",
+  "roots": [
+    "app/studio/StudioShell.tsx",
+    "components/studio/assistant/AssistantEntry.tsx",
+    "components/studio/assistant/StudioAssistantPanel.tsx",
+    "components/studio/StudioExperience.tsx"
+  ],
+  "diagnostics": 4,
+  "noEmit": true,
+  "incremental": false,
+  "details": "\u001b[96mapp/studio/StudioShell.tsx\u001b[0m:\u001b[93m18\u001b[0m:\u001b[93m20\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS2307: \u001b[0mCannot find module './studio.module.css' or its corresponding type declarations.\n\n\u001b[7m18\u001b[0m import styles from './studio.module.css'\n\u001b[7m  \u001b[0m \u001b[91m                   ~~~~~~~~~~~~~~~~~~~~~\u001b[0m\n\u001b[96mcomponents/studio/assistant/AssistantEntry.tsx\u001b[0m:\u001b[93m4\u001b[0m:\u001b[93m20\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS2307: \u001b[0mCannot find module './assistant.module.css' or its corresponding type declarations.\n\n\u001b[7m4\u001b[0m import styles from './assistant.module.css'\n\u001b[7m \u001b[0m \u001b[91m                   ~~~~~~~~~~~~~~~~~~~~~~~~\u001b[0m\n\u001b[96mcomponents/studio/assistant/StudioAssistantPanel.tsx\u001b[0m:\u001b[93m20\u001b[0m:\u001b[93m20\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS2307: \u001b[0mCannot find module './assistant.module.css' or its corresponding type declarations.\n\n\u001b[7m20\u001b[0m import styles from './assistant.module.css'\n\u001b[7m  \u001b[0m \u001b[91m                   ~~~~~~~~~~~~~~~~~~~~~~~~\u001b[0m\n\u001b[96mcomponents/studio/ProjectEvidence.tsx\u001b[0m:\u001b[93m2\u001b[0m:\u001b[93m20\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS2307: \u001b[0mCannot find module '@/app/studio/studio.module.css' or its corresponding type declarations.\n\n\u001b[7m2\u001b[0m import styles from '@/app/studio/studio.module.css'\n\u001b[7m \u001b[0m \u001b[91m                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\u001b[0m\n"
+}

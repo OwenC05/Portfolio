@@ -1,0 +1,12 @@
+{
+  "at": "2026-11-18T20:16:00.614Z",
+  "command": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "node_modules/eslint/bin/eslint.js",
+    "components/studio/scene/controller.ts",
+    "components/studio/scene/verify-controller.mjs"
+  ],
+  "status": 0,
+  "signal": null,
+  "log": "eslint.log"
+}

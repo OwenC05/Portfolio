@@ -1,0 +1,28 @@
+{
+  "baseURL": "http://127.0.0.1:4193",
+  "previewMode": "production",
+  "sceneJS": [
+    "http://127.0.0.1:4193/_next/static/chunks/webpack-e1ff4172c76c0361.js",
+    "http://127.0.0.1:4193/_next/static/chunks/255-73938ce8a8eac1ad.js",
+    "http://127.0.0.1:4193/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+    "http://127.0.0.1:4193/_next/static/chunks/main-app-cc32d398de97c20e.js",
+    "http://127.0.0.1:4193/_next/static/chunks/619-ba102abea3e3d0e4.js",
+    "http://127.0.0.1:4193/_next/static/chunks/app/studio/page-154eaaedc7527911.js",
+    "http://127.0.0.1:4193/_next/static/chunks/b536a0f1.6b8cd45be2d3d889.js",
+    "http://127.0.0.1:4193/_next/static/chunks/bd904a5c.c5a6adda59322159.js",
+    "http://127.0.0.1:4193/_next/static/chunks/894.727b167a66da5efa.js",
+    "http://127.0.0.1:4193/_next/static/chunks/703.9b57ff8b5aa079ef.js"
+  ],
+  "glbs": [
+    "/studio/pilot-right-limit-v03.glb"
+  ],
+  "textures": [],
+  "hashes": {
+    "build": "O1RTOH0qRVqxRHQExjvm4",
+    "source": "0f1baa67effb3106ac9abd13076507d0006c039be485fb6c934469fe16e947c3",
+    "assets": {
+      "/studio/pilot-right-limit-v03.glb": "2b9a4182c3024485680c1e066c8a22ef0dc0f541acca4bd958486bced2c4063e"
+    }
+  },
+  "artifactDir": "C:/Users/Owenc/orca/Portfolio-assistant/design/assistant/robot/integration/verification-g1/studio"
+}

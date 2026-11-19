@@ -1,0 +1,69 @@
+{
+  "action": {
+    "clicked": "@e18",
+    "effects": {
+      "settled": true,
+      "page": "unchanged"
+    }
+  },
+  "observed": {
+    "events": [
+      {
+        "type": "pointerdown",
+        "target": "HTML",
+        "id": "",
+        "text": "Owen Cheung — After-hours StudioSkip to selected workOw",
+        "x": 3256.2421875,
+        "y": 1797.875,
+        "trusted": true,
+        "prevented": false
+      },
+      {
+        "type": "mousedown",
+        "target": "HTML",
+        "id": "",
+        "text": "Owen Cheung — After-hours StudioSkip to selected workOw",
+        "x": 3256,
+        "y": 1797,
+        "trusted": true,
+        "prevented": false
+      },
+      {
+        "type": "pointerup",
+        "target": "HTML",
+        "id": "",
+        "text": "Owen Cheung — After-hours StudioSkip to selected workOw",
+        "x": 3256.2421875,
+        "y": 1797.875,
+        "trusted": true,
+        "prevented": false
+      },
+      {
+        "type": "mouseup",
+        "target": "HTML",
+        "id": "",
+        "text": "Owen Cheung — After-hours StudioSkip to selected workOw",
+        "x": 3256,
+        "y": 1797,
+        "trusted": true,
+        "prevented": false
+      },
+      {
+        "type": "click",
+        "target": "HTML",
+        "id": "",
+        "text": "Owen Cheung — After-hours StudioSkip to selected workOw",
+        "x": 3256,
+        "y": 1797,
+        "trusted": true,
+        "prevented": false
+      }
+    ],
+    "open": false,
+    "active": {
+      "tag": "BODY",
+      "id": "",
+      "text": "Skip to selected workOwen CheungSoftware engineering / Applied AIWorkA"
+    }
+  }
+}

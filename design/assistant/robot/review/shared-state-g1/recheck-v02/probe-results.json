@@ -1,0 +1,109 @@
+{
+  "checkedAt": "2026-11-16T14:39:05.406Z",
+  "actualAppModules": true,
+  "host": "Hash-verified original simulated React hook harness; not browser/StrictMode",
+  "results": [
+    {
+      "name": "current-draft-retry",
+      "phase": "error",
+      "draftLength": 28,
+      "wireQuestion": "Independent edited draft",
+      "wireLength": 24,
+      "blankResults": [
+        {
+          "draft": "",
+          "disabled": true,
+          "noFetchOrNewRun": true
+        },
+        {
+          "draft": " \t\n ",
+          "disabled": true,
+          "noFetchOrNewRun": true
+        }
+      ],
+      "previousId": "524bdff5-a61e-4c7d-acd9-d2693f9f8cd9:1",
+      "retryId": "524bdff5-a61e-4c7d-acd9-d2693f9f8cd9:2",
+      "distinctRunId": true,
+      "completion": "complete",
+      "draftPreserved": true
+    },
+    {
+      "name": "current-draft-retry",
+      "phase": "error",
+      "draftLength": 802,
+      "wireQuestion": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ",
+      "wireLength": 600,
+      "blankResults": [
+        {
+          "draft": "",
+          "disabled": true,
+          "noFetchOrNewRun": true
+        },
+        {
+          "draft": " \t\n ",
+          "disabled": true,
+          "noFetchOrNewRun": true
+        }
+      ],
+      "previousId": "2bd025e1-f319-443d-8974-19da126a8efd:1",
+      "retryId": "2bd025e1-f319-443d-8974-19da126a8efd:2",
+      "distinctRunId": true,
+      "completion": "complete",
+      "draftPreserved": true
+    },
+    {
+      "name": "current-draft-retry",
+      "phase": "cancelled",
+      "draftLength": 28,
+      "wireQuestion": "Independent edited draft",
+      "wireLength": 24,
+      "blankResults": [
+        {
+          "draft": "",
+          "disabled": true,
+          "noFetchOrNewRun": true
+        },
+        {
+          "draft": " \t\n ",
+          "disabled": true,
+          "noFetchOrNewRun": true
+        }
+      ],
+      "previousId": "feb71fcb-92ad-41eb-a33f-20dc5bbc2898:1",
+      "retryId": "feb71fcb-92ad-41eb-a33f-20dc5bbc2898:2",
+      "distinctRunId": true,
+      "completion": "complete",
+      "draftPreserved": true
+    },
+    {
+      "name": "current-draft-retry",
+      "phase": "cancelled",
+      "draftLength": 802,
+      "wireQuestion": "x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ",
+      "wireLength": 600,
+      "blankResults": [
+        {
+          "draft": "",
+          "disabled": true,
+          "noFetchOrNewRun": true
+        },
+        {
+          "draft": " \t\n ",
+          "disabled": true,
+          "noFetchOrNewRun": true
+        }
+      ],
+      "previousId": "9c78f1af-e1df-4d8a-9c11-e963fefbbb05:1",
+      "retryId": "9c78f1af-e1df-4d8a-9c11-e963fefbbb05:2",
+      "distinctRunId": true,
+      "completion": "complete",
+      "draftPreserved": true
+    },
+    {
+      "name": "actual-nested-svg-caption",
+      "caption": "0 passages; response pending",
+      "pendingBeforeAnswer": true,
+      "validAbstentionAfter": true
+    }
+  ]
+}

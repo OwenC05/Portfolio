@@ -1,0 +1,1298 @@
+{
+  "schema": "m4-v04-root-pinned-candidate-source-audit/1",
+  "startedAt": "2026-11-18T17:44:23.965605+00:00",
+  "status": "PASS",
+  "auditInvocations": 1,
+  "candidateAcceptance": false,
+  "rootFreezeSha256": "48d7925416bd1ffab4ddfed0935f18ef074522d23c6a678af150fa3d6351ef72",
+  "fileBytePins": {
+    "scene-coordination/m4-v04-root-expected-pins.json": "48d7925416bd1ffab4ddfed0935f18ef074522d23c6a678af150fa3d6351ef72",
+    "scene-coordination/m4-v04-independent-technical-review.md": "07b35d029909ea8b2a188e8b3dd0d118146bca05c578a20fb947f51bf7ad4cb1",
+    "scene-m4-v04-source-closure.md": "6cd87cec85d12c280ee6ee7b9cbed80c6393fdf1766c7884c8aa1d0dda552f28",
+    "scene-coordination/m4-v03-verifier-v3r1.py": "3f32c40e4eca885219b0cb34e8737a318f8fff803b4dfa1950b3857cd956307d",
+    "scene-coordination/m4-v04-independent-expected-pins-proposal.json": "ab4d82e3e6e16a806c134a0ab555456942d9fc38fbdeb1f1241c4c60a24bb19d",
+    "asset-pipeline/full-kit/manifests/m4-v04-rows.json": "1fa5fdd3f267896a76743aca986af9cadd1dd84610395e6049fc799009489992",
+    "asset-pipeline/full-kit/manifests/m4-v04-verifier-declaration.json": "5d04a051398e09c9b2aeb309e2893efe09ed286a18e27113785ff487a7074d42",
+    "asset-pipeline/full-kit/source/build_fullkit_m4_v04.py": "0d01536c36481021e8ff7026a6608998eb44dce0d88505dae105f94834909826",
+    "scene-m4-v04-preparation-report.md": "71139a40e60aaf38859b53512d79bfb5a84179783544b11fa53f0fa5796c2c92",
+    "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py": "8d814874ee0ac1317827297d2a729b34f4789fffd891212ae03e2c440a73b792",
+    "asset-pipeline/full-kit/manifests/m4-v04-author-declarations.json": "8ce8db34b40a3ce053d037c5152fec8c8ed19d586b0968439abf64e3308f32bb",
+    "asset-pipeline/full-kit/source/produce_fullkit_m4_v04.py": "3c9fe150d859087050fed73d3fed54d3a97a5998774c455203e6a00462dc08d1"
+  },
+  "canonicalInputPins": {
+    "rowsSha256": "cfac1013f686bb7790bc2f5e9ed5acc518009ab7e2bc27d09ad09629c429533e",
+    "declarationSha256": "a737d402307d0aa056e375934beab94c7696c1f5a14f0fe7d028893d5c30db7d",
+    "invocationSha256": "5128d2a61205f9e4262814ca5bdd96ff661a5e613259c7af852ad9fe9c38f5c6"
+  },
+  "sourceAliases": {
+    "helper": {
+      "path": "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py",
+      "sha256": "8d814874ee0ac1317827297d2a729b34f4789fffd891212ae03e2c440a73b792",
+      "byteLength": 135968
+    },
+    "authorDeclarations": {
+      "path": "asset-pipeline/full-kit/manifests/m4-v04-author-declarations.json",
+      "sha256": "8ce8db34b40a3ce053d037c5152fec8c8ed19d586b0968439abf64e3308f32bb",
+      "byteLength": 302196
+    },
+    "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py": {
+      "path": "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py",
+      "sha256": "8d814874ee0ac1317827297d2a729b34f4789fffd891212ae03e2c440a73b792",
+      "byteLength": 135968
+    },
+    "producer": {
+      "path": "asset-pipeline/full-kit/source/produce_fullkit_m4_v04.py",
+      "sha256": "3c9fe150d859087050fed73d3fed54d3a97a5998774c455203e6a00462dc08d1",
+      "byteLength": 14903
+    }
+  },
+  "invocation": {
+    "entrypoint": "audit_m4_v3",
+    "verifierPath": "scene-coordination/m4-v03-verifier-v3r1.py",
+    "verifierSha256": "3f32c40e4eca885219b0cb34e8737a318f8fff803b4dfa1950b3857cd956307d",
+    "expected_declaration_sha256": "a737d402307d0aa056e375934beab94c7696c1f5a14f0fe7d028893d5c30db7d",
+    "expectedValueOrigin": "independently hash-checked root-owned freeze, not the declaration being audited",
+    "source_bytes": "actual captured bytes for the exact four declared aliases"
+  },
+  "resourceBefore": {
+    "availablePhysicalBytes": 678707200,
+    "totalPhysicalBytes": 16886083584
+  },
+  "runtime": {
+    "python": "3.11.9",
+    "numpy": "2.4.6"
+  },
+  "runnerSha256": "b19797d1c48520890f0fc3d984360614885034b7d17ff32233368b8e2e64eb01",
+  "verifierResult": {
+    "valid": true,
+    "scope": "candidate",
+    "candidateAcceptance": false,
+    "coverage": {
+      "valid": true,
+      "errors": []
+    },
+    "supportGeometry": {
+      "status": "checked",
+      "valid": true,
+      "errors": [],
+      "supports": {
+        "ctl_stand__frame/stand.foot#0": {
+          "row": "ctl_stand__frame",
+          "group": "stand.foot#0",
+          "surface": "rug_field",
+          "footprintHullXY": [
+            [
+              1.0570280496458124,
+              -0.6554174278177326
+            ],
+            [
+              1.0699369865506416,
+              -0.6734690604316594
+            ],
+            [
+              1.0721518099718732,
+              -0.6765662309422563
+            ],
+            [
+              1.3324447715044727,
+              -0.4904276423138135
+            ],
+            [
+              1.3195358345996435,
+              -0.4723760096998867
+            ],
+            [
+              1.317321011178412,
+              -0.4692788391892898
+            ]
+          ],
+          "surfaceZ": 0.0083,
+          "gapM": 0.00030000000000000165,
+          "signedGapErrorM": 1.6805133673525319e-18,
+          "signedClearanceM": 0.47102804964581235,
+          "relation": "inside",
+          "valid": true
+        },
+        "ctl_stand__frame/stand.foot#1": {
+          "row": "ctl_stand__frame",
+          "group": "stand.foot#1",
+          "surface": "rug_field",
+          "footprintHullXY": [
+            [
+              1.4175552284955273,
+              -1.1595723576861865
+            ],
+            [
+              1.4304641654003565,
+              -1.1776239903001133
+            ],
+            [
+              1.432678988821588,
+              -1.18072116081071
+            ],
+            [
+              1.6929719503541876,
+              -0.9945825721822673
+            ],
+            [
+              1.6800630134493584,
+              -0.9765309395683405
+            ],
+            [
+              1.6778481900281268,
+              -0.9734337690577436
+            ]
+          ],
+          "surfaceZ": 0.0083,
+          "gapM": 0.00030000000000000165,
+          "signedGapErrorM": 1.6805133673525319e-18,
+          "signedClearanceM": 0.15327883918929008,
+          "relation": "inside",
+          "valid": true
+        },
+        "ctl_stand__frame/stand.foot_end#0": {
+          "row": "ctl_stand__frame",
+          "group": "stand.foot_end#0",
+          "surface": "rug_field",
+          "footprintHullXY": [
+            [
+              1.0391329085404462,
+              -0.668214455785938
+            ],
+            [
+              1.0401460083819185,
+              -0.6696311569654632
+            ],
+            [
+              1.0504757287849917,
+              -0.6840760581293308
+            ],
+            [
+              1.054256668866507,
+              -0.6893632589104617
+            ],
+            [
+              1.0721518099718732,
+              -0.6765662309422563
+            ],
+            [
+              1.0711387101304009,
+              -0.6751495297627311
+            ],
+            [
+              1.0608089897273276,
+              -0.6607046285988635
+            ],
+            [
+              1.0570280496458124,
+              -0.6554174278177326
+            ]
+          ],
+          "surfaceZ": 0.0083,
+          "gapM": 0.00030000000000000165,
+          "signedGapErrorM": 1.6805133673525319e-18,
+          "signedClearanceM": 0.4531329085404461,
+          "relation": "inside",
+          "valid": true
+        },
+        "ctl_stand__frame/stand.foot_end#1": {
+          "row": "ctl_stand__frame",
+          "group": "stand.foot_end#1",
+          "surface": "rug_field",
+          "footprintHullXY": [
+            [
+              1.317321011178412,
+              -0.46927883918928975
+            ],
+            [
+              1.3183341110198843,
+              -0.470695540368815
+            ],
+            [
+              1.3324447715044727,
+              -0.4904276423138136
+            ],
+            [
+              1.350339912609839,
+              -0.4776306143456082
+            ],
+            [
+              1.3493268127683666,
+              -0.47621391316608297
+            ],
+            [
+              1.3352161522837782,
+              -0.4564818112210844
+            ]
+          ],
+          "surfaceZ": 0.0083,
+          "gapM": 0.00030000000000000165,
+          "signedGapErrorM": 1.6805133673525319e-18,
+          "signedClearanceM": 0.7313210111784119,
+          "relation": "inside",
+          "valid": true
+        },
+        "ctl_stand__frame/stand.foot_end#2": {
+          "row": "ctl_stand__frame",
+          "group": "stand.foot_end#2",
+          "surface": "rug_field",
+          "footprintHullXY": [
+            [
+              1.399660087390161,
+              -1.1723693856543915
+            ],
+            [
+              1.4006731872316334,
+              -1.1737860868339167
+            ],
+            [
+              1.4034410274716762,
+              -1.1776565864355226
+            ],
+            [
+              1.4147838477162218,
+              -1.1935181887789155
+            ],
+            [
+              1.432678988821588,
+              -1.1807211608107102
+            ],
+            [
+              1.4316658889801157,
+              -1.179304459631185
+            ],
+            [
+              1.4288980487400729,
+              -1.1754339600295791
+            ],
+            [
+              1.4175552284955273,
+              -1.1595723576861863
+            ]
+          ],
+          "surfaceZ": 0.0083,
+          "gapM": 0.00030000000000000165,
+          "signedGapErrorM": 1.6805133673525319e-18,
+          "signedClearanceM": 0.1404818112210846,
+          "relation": "inside",
+          "valid": true
+        },
+        "ctl_stand__frame/stand.foot_end#3": {
+          "row": "ctl_stand__frame",
+          "group": "stand.foot_end#3",
+          "surface": "rug_field",
+          "footprintHullXY": [
+            [
+              1.6778481900281268,
+              -0.9734337690577436
+            ],
+            [
+              1.6788612898695991,
+              -0.9748504702372688
+            ],
+            [
+              1.6891910102726724,
+              -0.9892953714011364
+            ],
+            [
+              1.6929719503541876,
+              -0.9945825721822673
+            ],
+            [
+              1.7108670914595538,
+              -0.981785544214062
+            ],
+            [
+              1.7098539916180815,
+              -0.9803688430345368
+            ],
+            [
+              1.6995242712150083,
+              -0.9659239418706691
+            ],
+            [
+              1.695743331133493,
+              -0.9606367410895382
+            ]
+          ],
+          "surfaceZ": 0.0083,
+          "gapM": 0.00030000000000000165,
+          "signedGapErrorM": 1.6805133673525319e-18,
+          "signedClearanceM": 0.33941742781773276,
+          "relation": "inside",
+          "valid": true
+        },
+        "ctl_sustain_pedal__pedal/sustain.base": {
+          "row": "ctl_sustain_pedal__pedal",
+          "group": "sustain.base",
+          "surface": "rug_field",
+          "footprintHullXY": [
+            [
+              1.4580713310549376,
+              -1.2258679547763498
+            ],
+            [
+              1.4606673536294017,
+              -1.2370510945527688
+            ],
+            [
+              1.5013851698918734,
+              -1.293990179888025
+            ],
+            [
+              1.5111285090292532,
+              -1.3000621886923713
+            ],
+            [
+              1.5223116488056723,
+              -1.2974661661179074
+            ],
+            [
+              1.7093972149072283,
+              -1.163679055541214
+            ],
+            [
+              1.7154692237115747,
+              -1.1539357164038344
+            ],
+            [
+              1.7128732011371106,
+              -1.1427525766274154
+            ],
+            [
+              1.6721553848746389,
+              -1.0858134912921593
+            ],
+            [
+              1.662412045737259,
+              -1.0797414824878129
+            ],
+            [
+              1.65122890596084,
+              -1.0823375050622768
+            ],
+            [
+              1.464143339859284,
+              -1.2161246156389702
+            ]
+          ],
+          "surfaceZ": 0.0083,
+          "gapM": 0.0002999999999999999,
+          "signedGapErrorM": -5.421010862427522e-20,
+          "signedClearanceM": 0.03393781130762874,
+          "relation": "inside",
+          "valid": true
+        },
+        "stool_keys__stool/stool.foot#0": {
+          "row": "stool_keys__stool",
+          "group": "stool.foot#0",
+          "surface": "rug_field",
+          "footprintHullXY": [
+            [
+              1.1325199232931107,
+              -1.1959538715997469
+            ],
+            [
+              1.1355756513831115,
+              -1.2053584356364264
+            ],
+            [
+              1.1435756513831115,
+              -1.2111707758604693
+            ],
+            [
+              1.15346419520311,
+              -1.2111707758604693
+            ],
+            [
+              1.16146419520311,
+              -1.2053584356364264
+            ],
+            [
+              1.1645199232931107,
+              -1.1959538715997469
+            ],
+            [
+              1.16146419520311,
+              -1.1865493075630673
+            ],
+            [
+              1.15346419520311,
+              -1.1807369673390244
+            ],
+            [
+              1.1435756513831115,
+              -1.1807369673390244
+            ],
+            [
+              1.1355756513831115,
+              -1.1865493075630673
+            ]
+          ],
+          "surfaceZ": 0.0083,
+          "gapM": 0.0002999999999999999,
+          "signedGapErrorM": -5.421010862427522e-20,
+          "signedClearanceM": 0.12282922413953079,
+          "relation": "inside",
+          "valid": true
+        },
+        "stool_keys__stool/stool.foot#1": {
+          "row": "stool_keys__stool",
+          "group": "stool.foot#1",
+          "surface": "rug_field",
+          "footprintHullXY": [
+            [
+              1.171914433898444,
+              -0.9587871105766932
+            ],
+            [
+              1.1749701619884447,
+              -0.9681916746133727
+            ],
+            [
+              1.1829701619884447,
+              -0.9740040148374156
+            ],
+            [
+              1.1928587058084432,
+              -0.9740040148374156
+            ],
+            [
+              1.2008587058084432,
+              -0.9681916746133727
+            ],
+            [
+              1.203914433898444,
+              -0.9587871105766932
+            ],
+            [
+              1.2008587058084432,
+              -0.9493825465400136
+            ],
+            [
+              1.1928587058084432,
+              -0.9435702063159708
+            ],
+            [
+              1.1829701619884447,
+              -0.9435702063159708
+            ],
+            [
+              1.1749701619884447,
+              -0.9493825465400136
+            ]
+          ],
+          "surfaceZ": 0.0083,
+          "gapM": 0.0002999999999999999,
+          "signedGapErrorM": -5.421010862427522e-20,
+          "signedClearanceM": 0.35999598516258446,
+          "relation": "inside",
+          "valid": true
+        },
+        "stool_keys__stool/stool.foot#2": {
+          "row": "stool_keys__stool",
+          "group": "stool.foot#2",
+          "surface": "rug_field",
+          "footprintHullXY": [
+            [
+              0.9347476728753903,
+              -0.9193925999713598
+            ],
+            [
+              0.9378034009653912,
+              -0.9287971640080394
+            ],
+            [
+              0.9458034009653912,
+              -0.9346095042320822
+            ],
+            [
+              0.9556919447853894,
+              -0.9346095042320822
+            ],
+            [
+              0.9636919447853894,
+              -0.9287971640080394
+            ],
+            [
+              0.9667476728753903,
+              -0.9193925999713598
+            ],
+            [
+              0.9636919447853894,
+              -0.9099880359346803
+            ],
+            [
+              0.9556919447853894,
+              -0.9041756957106374
+            ],
+            [
+              0.9458034009653912,
+              -0.9041756957106374
+            ],
+            [
+              0.9378034009653912,
+              -0.9099880359346803
+            ]
+          ],
+          "surfaceZ": 0.0083,
+          "gapM": 0.0002999999999999999,
+          "signedGapErrorM": -5.421010862427522e-20,
+          "signedClearanceM": 0.3487476728753902,
+          "relation": "inside",
+          "valid": true
+        },
+        "stool_keys__stool/stool.foot#3": {
+          "row": "stool_keys__stool",
+          "group": "stool.foot#3",
+          "surface": "rug_field",
+          "footprintHullXY": [
+            [
+              0.8953531622700569,
+              -1.1565593609944136
+            ],
+            [
+              0.8984088903600578,
+              -1.1659639250310931
+            ],
+            [
+              0.9064088903600578,
+              -1.171776265255136
+            ],
+            [
+              0.916297434180056,
+              -1.171776265255136
+            ],
+            [
+              0.924297434180056,
+              -1.1659639250310931
+            ],
+            [
+              0.9273531622700569,
+              -1.1565593609944136
+            ],
+            [
+              0.924297434180056,
+              -1.147154796957734
+            ],
+            [
+              0.916297434180056,
+              -1.1413424567336912
+            ],
+            [
+              0.9064088903600578,
+              -1.1413424567336912
+            ],
+            [
+              0.8984088903600578,
+              -1.147154796957734
+            ]
+          ],
+          "surfaceZ": 0.0083,
+          "gapM": 0.0002999999999999999,
+          "signedGapErrorM": -5.421010862427522e-20,
+          "signedClearanceM": 0.16222373474486407,
+          "relation": "inside",
+          "valid": true
+        },
+        "drum_rack__rack/rack.foot#0": {
+          "row": "drum_rack__rack",
+          "group": "rack.foot#0",
+          "surface": "rug_field",
+          "footprintHullXY": [
+            [
+              0.829,
+              0.4
+            ],
+            [
+              0.853,
+              0.4
+            ],
+            [
+              0.853,
+              0.715
+            ],
+            [
+              0.829,
+              0.715
+            ]
+          ],
+          "surfaceZ": 0.0083,
+          "gapM": 0.0002999999999999999,
+          "signedGapErrorM": -5.421010862427522e-20,
+          "signedClearanceM": 0.1489999999999999,
+          "relation": "inside",
+          "valid": true
+        },
+        "drum_rack__rack/rack.foot#1": {
+          "row": "drum_rack__rack",
+          "group": "rack.foot#1",
+          "surface": "rug_field",
+          "footprintHullXY": [
+            [
+              1.947,
+              0.4
+            ],
+            [
+              1.971,
+              0.4
+            ],
+            [
+              1.971,
+              0.715
+            ],
+            [
+              1.947,
+              0.715
+            ]
+          ],
+          "surfaceZ": 0.0083,
+          "gapM": 0.0002999999999999999,
+          "signedGapErrorM": -5.421010862427522e-20,
+          "signedClearanceM": 0.1489999999999999,
+          "relation": "inside",
+          "valid": true
+        },
+        "drum_rack__rack/rack.foot_end#0": {
+          "row": "drum_rack__rack",
+          "group": "rack.foot_end#0",
+          "surface": "rug_field",
+          "footprintHullXY": [
+            [
+              0.829,
+              0.38
+            ],
+            [
+              0.853,
+              0.38
+            ],
+            [
+              0.853,
+              0.4
+            ],
+            [
+              0.829,
+              0.4
+            ]
+          ],
+          "surfaceZ": 0.0083,
+          "gapM": 0.0002999999999999999,
+          "signedGapErrorM": -5.421010862427522e-20,
+          "signedClearanceM": 0.24299999999999988,
+          "relation": "inside",
+          "valid": true
+        },
+        "drum_rack__rack/rack.foot_end#1": {
+          "row": "drum_rack__rack",
+          "group": "rack.foot_end#1",
+          "surface": "rug_field",
+          "footprintHullXY": [
+            [
+              0.829,
+              0.715
+            ],
+            [
+              0.853,
+              0.715
+            ],
+            [
+              0.853,
+              0.735
+            ],
+            [
+              0.829,
+              0.735
+            ]
+          ],
+          "surfaceZ": 0.0083,
+          "gapM": 0.0002999999999999999,
+          "signedGapErrorM": -5.421010862427522e-20,
+          "signedClearanceM": 0.1289999999999999,
+          "relation": "inside",
+          "valid": true
+        },
+        "drum_rack__rack/rack.foot_end#2": {
+          "row": "drum_rack__rack",
+          "group": "rack.foot_end#2",
+          "surface": "rug_field",
+          "footprintHullXY": [
+            [
+              1.947,
+              0.38
+            ],
+            [
+              1.971,
+              0.38
+            ],
+            [
+              1.971,
+              0.4
+            ],
+            [
+              1.947,
+              0.4
+            ]
+          ],
+          "surfaceZ": 0.0083,
+          "gapM": 0.0002999999999999999,
+          "signedGapErrorM": -5.421010862427522e-20,
+          "signedClearanceM": 0.21799999999999997,
+          "relation": "inside",
+          "valid": true
+        },
+        "drum_rack__rack/rack.foot_end#3": {
+          "row": "drum_rack__rack",
+          "group": "rack.foot_end#3",
+          "surface": "rug_field",
+          "footprintHullXY": [
+            [
+              1.947,
+              0.715
+            ],
+            [
+              1.971,
+              0.715
+            ],
+            [
+              1.971,
+              0.735
+            ],
+            [
+              1.947,
+              0.735
+            ]
+          ],
+          "surfaceZ": 0.0083,
+          "gapM": 0.0002999999999999999,
+          "signedGapErrorM": -5.421010862427522e-20,
+          "signedClearanceM": 0.1289999999999999,
+          "relation": "inside",
+          "valid": true
+        },
+        "drum_kick__tower/kick.base": {
+          "row": "drum_kick__tower",
+          "group": "kick.base",
+          "surface": "rug_field",
+          "footprintHullXY": [
+            [
+              1.295,
+              0.343125
+            ],
+            [
+              1.2961438293868264,
+              0.34114382938682636
+            ],
+            [
+              1.298125,
+              0.34
+            ],
+            [
+              1.5418749999999999,
+              0.34
+            ],
+            [
+              1.5438561706131735,
+              0.3411438293868264
+            ],
+            [
+              1.545,
+              0.343125
+            ],
+            [
+              1.545,
+              0.536875
+            ],
+            [
+              1.5438561706131735,
+              0.5388561706131736
+            ],
+            [
+              1.5418749999999999,
+              0.54
+            ],
+            [
+              1.298125,
+              0.54
+            ],
+            [
+              1.2961438293868264,
+              0.5388561706131737
+            ],
+            [
+              1.295,
+              0.536875
+            ]
+          ],
+          "surfaceZ": 0.0083,
+          "gapM": 0.0002999999999999999,
+          "signedGapErrorM": -5.421010862427522e-20,
+          "signedClearanceM": 0.32399999999999984,
+          "relation": "inside",
+          "valid": true
+        },
+        "drum_kick__tower/kick.spur_foot.L": {
+          "row": "drum_kick__tower",
+          "group": "kick.spur_foot.L",
+          "surface": "rug_field",
+          "footprintHullXY": [
+            [
+              1.2365,
+              0.56
+            ],
+            [
+              1.2389895923599141,
+              0.5539895923599144
+            ],
+            [
+              1.2449999999999999,
+              0.5515000000000001
+            ],
+            [
+              1.2510104076400856,
+              0.5539895923599144
+            ],
+            [
+              1.2534999999999998,
+              0.56
+            ],
+            [
+              1.2510104076400856,
+              0.5660104076400857
+            ],
+            [
+              1.2449999999999999,
+              0.5685
+            ],
+            [
+              1.2389895923599141,
+              0.5660104076400857
+            ]
+          ],
+          "surfaceZ": 0.0083,
+          "gapM": 0.0002999999999999999,
+          "signedGapErrorM": -5.421010862427522e-20,
+          "signedClearanceM": 0.2954999999999999,
+          "relation": "inside",
+          "valid": true
+        },
+        "drum_kick__tower/kick.spur_foot.R": {
+          "row": "drum_kick__tower",
+          "group": "kick.spur_foot.R",
+          "surface": "rug_field",
+          "footprintHullXY": [
+            [
+              1.5865,
+              0.56
+            ],
+            [
+              1.5889895923599142,
+              0.5539895923599144
+            ],
+            [
+              1.595,
+              0.5515000000000001
+            ],
+            [
+              1.6010104076400857,
+              0.5539895923599144
+            ],
+            [
+              1.6035,
+              0.56
+            ],
+            [
+              1.6010104076400857,
+              0.5660104076400857
+            ],
+            [
+              1.595,
+              0.5685
+            ],
+            [
+              1.5889895923599142,
+              0.5660104076400857
+            ]
+          ],
+          "surfaceZ": 0.0083,
+          "gapM": 0.0002999999999999999,
+          "signedGapErrorM": -5.421010862427522e-20,
+          "signedClearanceM": 0.2954999999999999,
+          "relation": "inside",
+          "valid": true
+        },
+        "drum_kick__tower/kick.pedal_plate": {
+          "row": "drum_kick__tower",
+          "group": "kick.pedal_plate",
+          "surface": "rug_field",
+          "footprintHullXY": [
+            [
+              1.3519999999999999,
+              0.060000000000000005
+            ],
+            [
+              1.488,
+              0.060000000000000005
+            ],
+            [
+              1.488,
+              0.36
+            ],
+            [
+              1.3519999999999999,
+              0.36
+            ]
+          ],
+          "surfaceZ": 0.0083,
+          "gapM": 0.0002999999999999999,
+          "signedGapErrorM": -5.421010862427522e-20,
+          "signedClearanceM": 0.5039999999999999,
+          "relation": "inside",
+          "valid": true
+        },
+        "drum_hihat_pedal__pedal/hihat.base": {
+          "row": "drum_hihat_pedal__pedal",
+          "group": "hihat.base",
+          "surface": "rug_field",
+          "footprintHullXY": [
+            [
+              0.9173908953688719,
+              0.24213281054015404
+            ],
+            [
+              0.9535439819701256,
+              -0.057695397487713546
+            ],
+            [
+              0.9588000891983272,
+              -0.06703282103923561
+            ],
+            [
+              0.9691192737741245,
+              -0.06991874748762282
+            ],
+            [
+              1.070385754631219,
+              -0.057708102344153044
+            ],
+            [
+              1.079723178182741,
+              -0.052451995115951305
+            ],
+            [
+              1.0826091046311281,
+              -0.042132810540154025
+            ],
+            [
+              1.0464560180298745,
+              0.25769539748771353
+            ],
+            [
+              1.0411999108016727,
+              0.26703282103923565
+            ],
+            [
+              1.0308807262258755,
+              0.26991874748762285
+            ],
+            [
+              0.9296142453687811,
+              0.25770810234415303
+            ],
+            [
+              0.920276821817259,
+              0.2524519951159513
+            ]
+          ],
+          "surfaceZ": 0.0083,
+          "gapM": 0.0002999999999999999,
+          "signedGapErrorM": -5.421010862427522e-20,
+          "signedClearanceM": 0.3313908953688718,
+          "relation": "inside",
+          "valid": true
+        },
+        "drum_throne__throne/throne.foot#0": {
+          "row": "drum_throne__throne",
+          "group": "throne.foot#0",
+          "surface": "rug_field",
+          "footprintHullXY": [
+            [
+              1.407,
+              -0.2
+            ],
+            [
+              1.410437694101251,
+              -0.21058013454126454
+            ],
+            [
+              1.419437694101251,
+              -0.2171190172933128
+            ],
+            [
+              1.430562305898749,
+              -0.2171190172933128
+            ],
+            [
+              1.439562305898749,
+              -0.21058013454126454
+            ],
+            [
+              1.443,
+              -0.2
+            ],
+            [
+              1.439562305898749,
+              -0.1894198654587355
+            ],
+            [
+              1.430562305898749,
+              -0.18288098270668723
+            ],
+            [
+              1.419437694101251,
+              -0.18288098270668723
+            ],
+            [
+              1.410437694101251,
+              -0.1894198654587355
+            ]
+          ],
+          "surfaceZ": 0.0083,
+          "gapM": 0.0002999999999999999,
+          "signedGapErrorM": -5.421010862427522e-20,
+          "signedClearanceM": 0.746,
+          "relation": "inside",
+          "valid": true
+        },
+        "drum_throne__throne/throne.foot#1": {
+          "row": "drum_throne__throne",
+          "group": "throne.foot#1",
+          "surface": "rug_field",
+          "footprintHullXY": [
+            [
+              1.5802050807568877,
+              0.1
+            ],
+            [
+              1.5836427748581388,
+              0.0894198654587355
+            ],
+            [
+              1.5926427748581387,
+              0.08288098270668724
+            ],
+            [
+              1.6037673866556368,
+              0.08288098270668724
+            ],
+            [
+              1.6127673866556367,
+              0.08941986545873548
+            ],
+            [
+              1.6162050807568877,
+              0.1
+            ],
+            [
+              1.6127673866556367,
+              0.11058013454126452
+            ],
+            [
+              1.6037673866556368,
+              0.11711901729331277
+            ],
+            [
+              1.5926427748581387,
+              0.11711901729331277
+            ],
+            [
+              1.5836427748581388,
+              0.11058013454126453
+            ]
+          ],
+          "surfaceZ": 0.0083,
+          "gapM": 0.0002999999999999999,
+          "signedGapErrorM": -5.421010862427522e-20,
+          "signedClearanceM": 0.5727949192431123,
+          "relation": "inside",
+          "valid": true
+        },
+        "drum_throne__throne/throne.foot#2": {
+          "row": "drum_throne__throne",
+          "group": "throne.foot#2",
+          "surface": "rug_field",
+          "footprintHullXY": [
+            [
+              1.2337949192431121,
+              0.09999999999999996
+            ],
+            [
+              1.2372326133443632,
+              0.08941986545873545
+            ],
+            [
+              1.246232613344363,
+              0.0828809827066872
+            ],
+            [
+              1.2573572251418612,
+              0.0828809827066872
+            ],
+            [
+              1.266357225141861,
+              0.08941986545873544
+            ],
+            [
+              1.2697949192431122,
+              0.09999999999999996
+            ],
+            [
+              1.266357225141861,
+              0.11058013454126447
+            ],
+            [
+              1.2573572251418612,
+              0.11711901729331273
+            ],
+            [
+              1.246232613344363,
+              0.11711901729331273
+            ],
+            [
+              1.2372326133443632,
+              0.11058013454126447
+            ]
+          ],
+          "surfaceZ": 0.0083,
+          "gapM": 0.0002999999999999999,
+          "signedGapErrorM": -5.421010862427522e-20,
+          "signedClearanceM": 0.647794919243112,
+          "relation": "inside",
+          "valid": true
+        }
+      }
+    },
+    "normalValidity": {
+      "status": "checked",
+      "valid": true,
+      "errors": [],
+      "rows": {
+        "ctl_body__shell": {
+          "status": "checked",
+          "valid": true,
+          "triangles": 1292,
+          "planarTriangles": 116,
+          "maxPlanarCornerDegrees": 1.2074182697257333e-06,
+          "errorCount": 0
+        },
+        "ctl_body__indicators": {
+          "status": "explicitly_out_of_scope"
+        },
+        "ctl_keys__keys": {
+          "status": "checked",
+          "valid": true,
+          "triangles": 1168,
+          "planarTriangles": 464,
+          "maxPlanarCornerDegrees": 1.2074182697257333e-06,
+          "errorCount": 0
+        },
+        "ctl_stand__frame": {
+          "status": "explicitly_out_of_scope"
+        },
+        "ctl_sustain_pedal__pedal": {
+          "status": "checked",
+          "valid": true,
+          "triangles": 312,
+          "planarTriangles": 56,
+          "maxPlanarCornerDegrees": 1.2074182697257333e-06,
+          "errorCount": 0
+        },
+        "stool_keys__stool": {
+          "status": "explicitly_out_of_scope"
+        },
+        "rug__rug": {
+          "status": "explicitly_out_of_scope"
+        },
+        "drum_rack__rack": {
+          "status": "explicitly_out_of_scope"
+        },
+        "drum_pads__shells": {
+          "status": "checked",
+          "valid": true,
+          "triangles": 2312,
+          "planarTriangles": 288,
+          "maxPlanarCornerDegrees": 1.2074182697257333e-06,
+          "errorCount": 0
+        },
+        "drum_pads__heads": {
+          "status": "explicitly_out_of_scope"
+        },
+        "drum_cymbals__cymbals": {
+          "status": "explicitly_out_of_scope"
+        },
+        "drum_kick__tower": {
+          "status": "checked",
+          "valid": true,
+          "triangles": 1040,
+          "planarTriangles": 104,
+          "maxPlanarCornerDegrees": 0.0,
+          "errorCount": 0
+        },
+        "drum_hihat_pedal__pedal": {
+          "status": "checked",
+          "valid": true,
+          "triangles": 300,
+          "planarTriangles": 56,
+          "maxPlanarCornerDegrees": 8.537736462515939e-07,
+          "errorCount": 0
+        },
+        "drum_module__body": {
+          "status": "checked",
+          "valid": true,
+          "triangles": 416,
+          "planarTriangles": 28,
+          "maxPlanarCornerDegrees": 8.537736462515939e-07,
+          "errorCount": 0
+        },
+        "drum_module__display": {
+          "status": "explicitly_out_of_scope"
+        },
+        "drum_sticks__pair": {
+          "status": "explicitly_out_of_scope"
+        },
+        "drum_throne__throne": {
+          "status": "explicitly_out_of_scope"
+        },
+        "music_cables__runs": {
+          "status": "explicitly_out_of_scope"
+        }
+      }
+    }
+  },
+  "exception": null,
+  "limits": [
+    "Source audit only; no export, GLB correspondence, visual or product acceptance.",
+    "This API checks identity/coverage, support geometry and normal validity; attachments, inlays, edges and budgets retain separate reviewed evidence.",
+    "Author report successor is authorized prose-only provenance; the original measured report is not a source_bytes alias."
+  ],
+  "elapsedSeconds": 1.1235360999708064,
+  "canonicalInputsUnchanged": true,
+  "sourceBytesUnchanged": true,
+  "filePinsUnchanged": {
+    "scene-coordination/m4-v04-root-expected-pins.json": true,
+    "scene-coordination/m4-v04-independent-technical-review.md": true,
+    "scene-m4-v04-source-closure.md": true,
+    "scene-coordination/m4-v03-verifier-v3r1.py": true,
+    "scene-coordination/m4-v04-independent-expected-pins-proposal.json": true,
+    "asset-pipeline/full-kit/manifests/m4-v04-rows.json": true,
+    "asset-pipeline/full-kit/manifests/m4-v04-verifier-declaration.json": true,
+    "asset-pipeline/full-kit/source/build_fullkit_m4_v04.py": true,
+    "scene-m4-v04-preparation-report.md": true,
+    "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py": true,
+    "asset-pipeline/full-kit/manifests/m4-v04-author-declarations.json": true,
+    "asset-pipeline/full-kit/source/produce_fullkit_m4_v04.py": true
+  },
+  "resourceAfter": {
+    "availablePhysicalBytes": 514084864,
+    "totalPhysicalBytes": 16886083584
+  }
+}

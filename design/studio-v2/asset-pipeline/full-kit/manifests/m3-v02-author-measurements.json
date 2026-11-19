@@ -1,0 +1,858 @@
+{
+ "statement": "M3 author measurements from the in-memory Blender state. Exact geometry ray tests from the fixed eye; projections use the builder cameras (home-1440, home-1024, music-1440, phone home f74, left-down, right-down). They are builder-camera planning estimates, not runtime proof: the v04 reconstructed mid-right / music-390 projections were wrong against root capture, so no mid-right or music-390 claim is made here. Root captures the true views after export.",
+ "parent": {
+  "glb": "exports/studio-full-kit-m2-proposal-v05.glb",
+  "sha256": "4b2f7b8f44e13ef2a23e6d3420f1098147702aba72a365e6a942dec7e7ccc735",
+  "editableChain": "build_fullkit_m2_pc_v04.py (dry) + v05 byte step"
+ },
+ "removedM3Proxies": [
+  "headphones__proxy_on_stand",
+  "kb_case__proxy_case",
+  "kb_keycaps__proxy_accent_caps",
+  "kb_keycaps__proxy_cap_field",
+  "mic_boom__proxy_arm",
+  "mic_boom__proxy_capsule",
+  "mic_boom__proxy_clamp",
+  "mouse_native__proxy_body",
+  "mug_coaster__proxy_mug",
+  "notebook_pen__proxy_notebook",
+  "speaker_nearfield__proxy_cabinet"
+ ],
+ "t2Cells": {
+  "oak_tone": {
+   "index": 19,
+   "row": 2,
+   "col": 3,
+   "srgb": "#a47c55",
+   "roughness": 0.62,
+   "metallic": 0.0,
+   "uv": [
+    0.4375,
+    0.6875
+   ]
+  },
+  "dark_oak": {
+   "index": 20,
+   "row": 2,
+   "col": 4,
+   "srgb": "#5e4130",
+   "roughness": 0.55,
+   "metallic": 0.0,
+   "uv": [
+    0.5625,
+    0.6875
+   ]
+  }
+ },
+ "trianglesPerRow": {
+  "kb_case__frost_shell": 284,
+  "kb_case__plate_cable": 648,
+  "kb_keycaps__caps": 2680,
+  "mouse_native__body": 754,
+  "mug_coaster__mug_coaster": 720,
+  "notebook_pen__set": 208,
+  "mic_boom__assembly": 1724,
+  "headphones__on_stand": 1756,
+  "speaker_nearfield__cabinet": 884
+ },
+ "frost": {
+  "leaf": "kb_case__frost_shell",
+  "renderOrder": 1.5,
+  "doubleSided": false,
+  "transparent": true,
+  "occluder": false,
+  "nocast": true,
+  "receiveShadow": false
+ },
+ "ledger": {
+  "rows": {
+   "kb_case__frost_shell": {
+    "assetId": "kb_case",
+    "placed": 284,
+    "ceiling": 700,
+    "main": 1,
+    "shadow": 0,
+    "refresh": 1,
+    "refreshTriangles": 284
+   },
+   "kb_case__plate_cable": {
+    "assetId": "kb_case",
+    "placed": 648,
+    "ceiling": 700,
+    "main": 1,
+    "shadow": 1,
+    "refresh": 2,
+    "refreshTriangles": 1296
+   },
+   "kb_keycaps__caps": {
+    "assetId": "kb_keycaps",
+    "placed": 2680,
+    "ceiling": 4700,
+    "main": 1,
+    "shadow": 0,
+    "refresh": 1,
+    "refreshTriangles": 2680
+   },
+   "mouse_native__body": {
+    "assetId": "mouse_native",
+    "placed": 754,
+    "ceiling": 900,
+    "main": 1,
+    "shadow": 1,
+    "refresh": 2,
+    "refreshTriangles": 1508
+   },
+   "mug_coaster__mug_coaster": {
+    "assetId": "mug_coaster",
+    "placed": 720,
+    "ceiling": 800,
+    "main": 1,
+    "shadow": 1,
+    "refresh": 2,
+    "refreshTriangles": 1440
+   },
+   "notebook_pen__set": {
+    "assetId": "notebook_pen",
+    "placed": 208,
+    "ceiling": 400,
+    "main": 1,
+    "shadow": 1,
+    "refresh": 2,
+    "refreshTriangles": 416
+   },
+   "mic_boom__assembly": {
+    "assetId": "mic_boom",
+    "placed": 1724,
+    "ceiling": 2600,
+    "main": 1,
+    "shadow": 1,
+    "refresh": 2,
+    "refreshTriangles": 3448
+   },
+   "headphones__on_stand": {
+    "assetId": "headphones",
+    "placed": 1756,
+    "ceiling": 2200,
+    "main": 1,
+    "shadow": 1,
+    "refresh": 2,
+    "refreshTriangles": 3512
+   },
+   "speaker_nearfield__cabinet": {
+    "assetId": "speaker_nearfield",
+    "placed": 884,
+    "ceiling": 1100,
+    "main": 1,
+    "shadow": 1,
+    "refresh": 2,
+    "refreshTriangles": 1768
+   }
+  },
+  "stage": {
+   "main": 9,
+   "casters": 7,
+   "refresh": 16,
+   "placed": 9658,
+   "refreshTriangles": 16352
+  },
+  "stageLimits": {
+   "main": 10,
+   "refresh": 18,
+   "placed": 15500
+  }
+ },
+ "targetRays": {
+  "dissertation": {
+   "clear": 81,
+   "of": 81,
+   "blockers": []
+  },
+  "copilot": {
+   "clear": 81,
+   "of": 81,
+   "blockers": []
+  },
+  "typeforge": {
+   "clear": 81,
+   "of": 81,
+   "blockers": []
+  }
+ },
+ "visibility": {
+  "kb_case__frost_shell": {
+   "samples": 144,
+   "visibleFromEye": 108,
+   "home-1440": {
+    "inFrame": 108,
+    "px": [
+     361.5,
+     675.1,
+     663.4,
+     726.7
+    ],
+    "outsideChrome": 75
+   },
+   "home-1024": {
+    "inFrame": 108,
+    "px": [
+     206.0,
+     473.7,
+     566.1,
+     620.1
+    ]
+   },
+   "music-1440": {
+    "inFrame": 0,
+    "px": null,
+    "outsideChrome": 0
+   },
+   "home-390-f74": {
+    "inFrame": 108,
+    "px": [
+     54.4,
+     258.4,
+     548.8,
+     602.3
+    ]
+   },
+   "home-320-f74": {
+    "inFrame": 108,
+    "px": [
+     19.4,
+     223.4,
+     548.8,
+     602.3
+    ]
+   },
+   "left-down": {
+    "inFrame": 108,
+    "px": [
+     844.0,
+     1164.0,
+     504.0,
+     620.8
+    ]
+   },
+   "right-down": {
+    "inFrame": 0,
+    "px": null
+   }
+  },
+  "kb_case__plate_cable": {
+   "samples": 340,
+   "visibleFromEye": 114,
+   "home-1440": {
+    "inFrame": 114,
+    "px": [
+     456.3,
+     671.7,
+     615.5,
+     692.1
+    ],
+    "outsideChrome": 114
+   },
+   "home-1024": {
+    "inFrame": 114,
+    "px": [
+     287.0,
+     470.8,
+     525.2,
+     590.6
+    ]
+   },
+   "music-1440": {
+    "inFrame": 0,
+    "px": null,
+    "outsideChrome": 0
+   },
+   "home-390-f74": {
+    "inFrame": 114,
+    "px": [
+     113.6,
+     256.9,
+     526.8,
+     578.0
+    ]
+   },
+   "home-320-f74": {
+    "inFrame": 114,
+    "px": [
+     78.6,
+     221.9,
+     526.8,
+     578.0
+    ]
+   },
+   "left-down": {
+    "inFrame": 114,
+    "px": [
+     930.6,
+     1170.1,
+     501.9,
+     581.8
+    ]
+   },
+   "right-down": {
+    "inFrame": 0,
+    "px": null
+   }
+  },
+  "kb_keycaps__caps": {
+   "samples": 335,
+   "visibleFromEye": 307,
+   "home-1440": {
+    "inFrame": 307,
+    "px": [
+     376.4,
+     661.9,
+     660.3,
+     711.2
+    ],
+    "outsideChrome": 302
+   },
+   "home-1024": {
+    "inFrame": 307,
+    "px": [
+     218.8,
+     462.4,
+     563.5,
+     606.8
+    ]
+   },
+   "music-1440": {
+    "inFrame": 0,
+    "px": null,
+    "outsideChrome": 0
+   },
+   "home-390-f74": {
+    "inFrame": 307,
+    "px": [
+     63.5,
+     249.3,
+     547.2,
+     589.8
+    ]
+   },
+   "home-320-f74": {
+    "inFrame": 307,
+    "px": [
+     28.5,
+     214.3,
+     547.2,
+     589.8
+    ]
+   },
+   "left-down": {
+    "inFrame": 307,
+    "px": [
+     857.6,
+     1148.3,
+     503.4,
+     595.0
+    ]
+   },
+   "right-down": {
+    "inFrame": 0,
+    "px": null
+   }
+  },
+  "mouse_native__body": {
+   "samples": 385,
+   "visibleFromEye": 367,
+   "home-1440": {
+    "inFrame": 367,
+    "px": [
+     719.6,
+     777.2,
+     676.8,
+     730.1
+    ],
+    "outsideChrome": 367
+   },
+   "home-1024": {
+    "inFrame": 367,
+    "px": [
+     511.6,
+     560.8,
+     577.5,
+     623.0
+    ]
+   },
+   "music-1440": {
+    "inFrame": 0,
+    "px": null,
+    "outsideChrome": 0
+   },
+   "home-390-f74": {
+    "inFrame": 367,
+    "px": [
+     289.0,
+     330.1,
+     572.6,
+     610.3
+    ]
+   },
+   "home-320-f74": {
+    "inFrame": 367,
+    "px": [
+     254.0,
+     295.1,
+     572.6,
+     610.3
+    ]
+   },
+   "left-down": {
+    "inFrame": 367,
+    "px": [
+     1212.1,
+     1294.2,
+     594.0,
+     657.9
+    ]
+   },
+   "right-down": {
+    "inFrame": 0,
+    "px": null
+   }
+  },
+  "mug_coaster__mug_coaster": {
+   "samples": 370,
+   "visibleFromEye": 337,
+   "home-1440": {
+    "inFrame": 337,
+    "px": [
+     973.4,
+     1096.1,
+     640.2,
+     772.9
+    ],
+    "outsideChrome": 337
+   },
+   "home-1024": {
+    "inFrame": 337,
+    "px": [
+     728.2,
+     832.9,
+     546.3,
+     659.6
+    ]
+   },
+   "music-1440": {
+    "inFrame": 337,
+    "px": [
+     279.7,
+     404.0,
+     621.5,
+     759.0
+    ],
+    "outsideChrome": 170
+   },
+   "home-390-f74": {
+    "inFrame": 0,
+    "px": null
+   },
+   "home-320-f74": {
+    "inFrame": 0,
+    "px": null
+   },
+   "left-down": {
+    "inFrame": 0,
+    "px": null
+   },
+   "right-down": {
+    "inFrame": 337,
+    "px": [
+     13.5,
+     178.8,
+     549.3,
+     702.3
+    ]
+   }
+  },
+  "notebook_pen__set": {
+   "samples": 122,
+   "visibleFromEye": 108,
+   "home-1440": {
+    "inFrame": 108,
+    "px": [
+     54.0,
+     295.4,
+     646.0,
+     731.2
+    ],
+    "outsideChrome": 59
+   },
+   "home-1024": {
+    "inFrame": 95,
+    "px": [
+     49.7,
+     149.7,
+     551.3,
+     620.6
+    ]
+   },
+   "music-1440": {
+    "inFrame": 0,
+    "px": null,
+    "outsideChrome": 0
+   },
+   "home-390-f74": {
+    "inFrame": 19,
+    "px": [
+     5.6,
+     15.0,
+     532.8,
+     540.6
+    ]
+   },
+   "home-320-f74": {
+    "inFrame": 0,
+    "px": null
+   },
+   "left-down": {
+    "inFrame": 108,
+    "px": [
+     632.2,
+     796.1,
+     457.3,
+     521.6
+    ]
+   },
+   "right-down": {
+    "inFrame": 0,
+    "px": null
+   }
+  },
+  "mic_boom__assembly": {
+   "samples": 301,
+   "visibleFromEye": 213,
+   "home-1440": {
+    "inFrame": 213,
+    "px": [
+     33.1,
+     165.8,
+     341.9,
+     613.9
+    ],
+    "outsideChrome": 213
+   },
+   "home-1024": {
+    "inFrame": 16,
+    "px": [
+     1.3,
+     39.1,
+     435.1,
+     523.8
+    ]
+   },
+   "music-1440": {
+    "inFrame": 0,
+    "px": null,
+    "outsideChrome": 0
+   },
+   "home-390-f74": {
+    "inFrame": 0,
+    "px": null
+   },
+   "home-320-f74": {
+    "inFrame": 0,
+    "px": null
+   },
+   "left-down": {
+    "inFrame": 213,
+    "px": [
+     624.9,
+     706.1,
+     198.2,
+     424.7
+    ]
+   },
+   "right-down": {
+    "inFrame": 0,
+    "px": null
+   }
+  },
+  "headphones__on_stand": {
+   "samples": 447,
+   "visibleFromEye": 403,
+   "home-1440": {
+    "inFrame": 403,
+    "px": [
+     1049.5,
+     1228.3,
+     523.6,
+     715.2
+    ],
+    "outsideChrome": 403
+   },
+   "home-1024": {
+    "inFrame": 403,
+    "px": [
+     793.2,
+     945.7,
+     446.8,
+     610.3
+    ]
+   },
+   "music-1440": {
+    "inFrame": 403,
+    "px": [
+     349.3,
+     507.6,
+     487.2,
+     665.2
+    ],
+    "outsideChrome": 403
+   },
+   "home-390-f74": {
+    "inFrame": 0,
+    "px": null
+   },
+   "home-320-f74": {
+    "inFrame": 0,
+    "px": null
+   },
+   "left-down": {
+    "inFrame": 0,
+    "px": null
+   },
+   "right-down": {
+    "inFrame": 403,
+    "px": [
+     96.8,
+     292.7,
+     393.6,
+     589.1
+    ]
+   }
+  },
+  "speaker_nearfield__cabinet": {
+   "samples": 470,
+   "visibleFromEye": 318,
+   "home-1440": {
+    "inFrame": 318,
+    "px": [
+     1020.7,
+     1147.8,
+     462.0,
+     652.1
+    ],
+    "outsideChrome": 318
+   },
+   "home-1024": {
+    "inFrame": 318,
+    "px": [
+     768.6,
+     877.1,
+     394.2,
+     556.5
+    ]
+   },
+   "music-1440": {
+    "inFrame": 318,
+    "px": [
+     308.4,
+     435.5,
+     433.0,
+     618.4
+    ],
+    "outsideChrome": 318
+   },
+   "home-390-f74": {
+    "inFrame": 0,
+    "px": null
+   },
+   "home-320-f74": {
+    "inFrame": 0,
+    "px": null
+   },
+   "left-down": {
+    "inFrame": 0,
+    "px": null
+   },
+   "right-down": {
+    "inFrame": 318,
+    "px": [
+     16.7,
+     207.5,
+     331.8,
+     549.0
+    ]
+   }
+  }
+ },
+ "keycapPitchPx": {
+  "home-1440": 16.6,
+  "home-320-f74": 10.7,
+  "home-390-f74": 10.7
+ },
+ "mouseSpanKeyPitches": {
+  "lengthWorld": 5.25,
+  "widthWorld": 3.25,
+  "home-1440WidthPx": 56.9,
+  "home-1440WidthInPitches": 3.43
+ },
+ "leftCymbal": {
+  "object": "drum_cymbals__proxy_cymbal_1",
+  "note": "fixed-eye rays only; music-1440 framing is a builder-camera estimate",
+  "samples": 64,
+  "firstHitCymbal": 61,
+  "blockers": {
+   "speaker_nearfield__cabinet": 3
+  }
+ },
+ "mugVersusTypeforgeFootHome1440": {
+  "footPx": [
+   848.9,
+   967.6,
+   619.3,
+   661.3
+  ],
+  "mugPx": [
+   973.4,
+   1096.1,
+   640.1,
+   773.5
+  ],
+  "overlapPx2": 0.0
+ },
+ "intersections": {
+  "m3VersusAcceptedOrM3": {},
+  "m3VersusLaterStageProxiesOrContacts": {
+   "kb_case__plate_cable x contact_decals__desk_gear": 14,
+   "notebook_pen__set x contact_decals__desk_gear": 18
+  }
+ },
+ "restingGapsM": {
+  "kb_case__plate_cable | desk_mat__felt": 0.0003,
+  "mouse_native__body | desk_mat__felt": 0.0003,
+  "mug_coaster__mug_coaster | desk_top__top": 0.0003,
+  "notebook_pen__set | desk_top__top": 0.0003,
+  "mic_boom__assembly | desk_top__top": 0.0003,
+  "mic_boom__assembly | desk_frame__steel": 0.015,
+  "headphones__on_stand | desk_top__top": 0.0003,
+  "speaker_nearfield__cabinet | desk_top__top": 0.0003,
+  "speaker_nearfield__cabinet | mon_side__typeforge": 0.0672,
+  "headphones__on_stand | mon_side__typeforge": 0.1121,
+  "mug_coaster__mug_coaster | headphones__on_stand": 0.1972,
+  "kb_case__plate_cable | mon_cables__grommet": 0.0003,
+  "kb_case__plate_cable | mon_central__body": 0.051
+ },
+ "placementsBlenderM": {
+  "keyboard": {
+   "cx": -0.795,
+   "cy": -0.33,
+   "w": 0.52,
+   "d": 0.18,
+   "hf": 0.02,
+   "hb": 0.03,
+   "r": 0.012,
+   "foot": 0.003
+  },
+  "mouse": {
+   "cx": -0.395,
+   "cy": -0.34,
+   "L": 0.16,
+   "W": 0.099,
+   "H": 0.056
+  },
+  "mug": {
+   "cx": 0.04,
+   "cy": -0.44,
+   "r": 0.0656,
+   "h": 0.152,
+   "rc": 0.072,
+   "handle_deg": -35
+  },
+  "notebook": {
+   "cx": -1.45,
+   "cy": -0.3,
+   "yaw": 6.0,
+   "w": 0.237,
+   "d": 0.336,
+   "t": 0.024
+  },
+  "micCapsuleCentre": [
+   -1.600000023841858,
+   -0.36000001430511475,
+   1.100000023841858
+  ],
+  "micAxis": [
+   0.6288281679153442,
+   -0.45732957124710083,
+   0.6288281679153442
+  ],
+  "micClamp": [
+   -1.875,
+   0.17000000178813934
+  ],
+  "micElbow": [
+   -1.9500000476837158,
+   -0.019999999552965164,
+   1.3799999952316284
+  ],
+  "headphones": {
+   "cx": 0.3,
+   "cy": -0.22,
+   "yaw": 45.0,
+   "half": 0.108,
+   "zc": 0.94
+  },
+  "speaker": {
+   "cx": 0.34,
+   "cy": 0.14,
+   "yaw": -22.0,
+   "w": 0.231,
+   "d": 0.263,
+   "h": 0.356,
+   "pad": 0.019
+  }
+ },
+ "sourceScript": "source/build_fullkit_m3.py",
+ "sourceScriptSha256": "dccfa2885919a84b03ff472cecbf76da35e0cd2a8b32baaca2dc8cb31929a209",
+ "sourceBlend": "source/fk-30-nearfield-proposal-v02.blend",
+ "sourceBlendSha256": "46c52922f77ca1b78546450b5ef43ec3fdcc2ee6e67082070ccd48b63c25d4cd",
+ "exportReadback": {
+  "rawExport": "exports/studio-full-kit-m3-proposal-v02.raw-export.glb",
+  "rawSha256": "71b39b5c242278408092d3ee95ab4e996df47014eb30ef57383b88f3e526fd18",
+  "parent": "4b2f7b8f44e13ef2a23e6d3420f1098147702aba72a365e6a942dec7e7ccc735",
+  "problems": [
+   [
+    "bytes",
+    "desk_top__top",
+    "TEXCOORD_0",
+    "258",
+    "0"
+   ]
+  ],
+  "namedNoiseRestorations": [
+   {
+    "binOffset": 487532,
+    "location": [
+     "desk_top__top_mesh.002",
+     "TEXCOORD_0",
+     197,
+     1
+    ]
+   },
+   {
+    "binOffset": 487544,
+    "location": [
+     "desk_top__top_mesh.002",
+     "TEXCOORD_0",
+     199,
+     0
+    ]
+   },
+   {
+    "binOffset": 488148,
+    "location": [
+     "desk_top__top_mesh.002",
+     "TEXCOORD_0",
+     274,
+     1
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,6072 @@
+{
+ "schema": "m4-v03-cpu-preparation/v1",
+ "status": "Author CPU measurements of the v03 source preparation. Not a paired GLB manifest, not an export, not visual approval. S/Codex verifies numerically; root decides before any freeze, provenance/guard amendment, Blender run or export.",
+ "command": "python asset-pipeline/full-kit/source/measure_fullkit_m4_v03.py --write   (cwd design/studio-v2; any cwd works)",
+ "environment": {
+  "python": "3.11.9",
+  "numpy": "2.4.6",
+  "platform": "Windows-10-10.0.26300-SP0"
+ },
+ "inputs": {
+  "helperV01": {
+   "path": "asset-pipeline/full-kit/source/build_fullkit_m4_geometry.py",
+   "sha256": "c7ce9d8e1792273d6aeffdc5b536233413fdca6c6fd16abf344827d6433ab1c0"
+  },
+  "parentGlb": {
+   "path": "asset-pipeline/full-kit/exports/studio-full-kit-m3-proposal-v03.glb",
+   "sha256": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf"
+  },
+  "mapping": {
+   "path": "scene-coordination/m4-model-contract.json",
+   "sha256": "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98"
+  },
+  "inventory": {
+   "path": "asset-pipeline/full-kit/asset-inventory.json",
+   "sha256": "eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87"
+  },
+  "helperV03": {
+   "path": "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v03.py",
+   "sha256": "3b220b1d4614a8111247270b21771c5f2280493c16e3ab986603a24efcffaf37"
+  },
+  "builderV03 (held, not run)": {
+   "path": "asset-pipeline/full-kit/source/build_fullkit_m4_v03.py",
+   "sha256": "53fa310f1144c46916b0ce63f05188818861e63fe9c32abbf4fb3f1596872b84"
+  },
+  "measureScript": {
+   "path": "asset-pipeline/full-kit/source/measure_fullkit_m4_v03.py",
+   "sha256": "9a3a098195e99b889ecee8b2213c9acc6a9dc50af68e1ae35e507e09b1b0bff5"
+  }
+ },
+ "builderPinsMeasuredHelper": true,
+ "retainedGeometry": "92 parent v03 mesh nodes after removing the 23 retired M4 proxies; 33492 triangles",
+ "bevelClasses": {
+  "casing": {
+   "radius": 0.003125,
+   "segments": 2,
+   "source": "art-direction.md section 5: equipment casings 2.5 mm / 2 segments, x tier F 1.25"
+  },
+  "white_key_lip": {
+   "radius": 0.003125,
+   "segments": 2,
+   "source": "m4-v03-design-correction-disposition.md H1: front-top edge of each white key, about 3 mm or greater"
+  }
+ },
+ "sharpReasons": [
+  [
+   "ctl.slab",
+   "casing",
+   "underside rests on the stand arms; ends hidden inside the cheeks; back-bottom edge hidden"
+  ],
+  [
+   "ctl.panel",
+   "casing",
+   "bottom edges rest on the slab; ends meet the cheek inner faces"
+  ],
+  [
+   "ctl.bays",
+   "casing",
+   "bottom edges rest on the slab; ends meet the cheeks and the keys; back meets the panel wall"
+  ],
+  [
+   "ctl.cheeks",
+   "casing",
+   "inner face meets the shell; bottom profile corners rest on the stand arms"
+  ],
+  [
+   "ctl.keys",
+   "named",
+   "other white-key edges and black-key edges (white-key front-top lips are bevelled, H1)"
+  ],
+  [
+   "ctl.knobs",
+   "named",
+   "knobs"
+  ],
+  [
+   "ctl.controls",
+   "named",
+   "panel pads and transport keys; ALSO pitch/mod wheels, wheel slots and display bezel, which root did not name"
+  ],
+  [
+   "ctl.indicators",
+   "screen",
+   "indicator and display glow faces"
+  ],
+  [
+   "module.display",
+   "screen",
+   "display glow face"
+  ],
+  [
+   "stand",
+   "named",
+   "stand pivot plates and teeth; ALSO tube, rubber-end and pivot-knob cylinder caps, which root did not name"
+  ],
+  [
+   "sustain.base",
+   "casing",
+   "underside rests on the rug"
+  ],
+  [
+   "sustain.plate",
+   "casing",
+   "underside perimeter, hidden below the plate"
+  ],
+  [
+   "sustain.hinge",
+   "named",
+   "pedal hinges"
+  ],
+  [
+   "sustain.cable",
+   "unnamed",
+   "cable end caps at the pedal and the jack"
+  ],
+  [
+   "stool",
+   "unnamed",
+   "post, collar, hub and rubber-foot cylinder caps; leg tube end caps"
+  ],
+  [
+   "throne",
+   "unnamed",
+   "post, lock, hub, collar and rubber-foot cylinder caps; leg and brace tube end caps"
+  ],
+  [
+   "rug",
+   "named",
+   "rug inner binding step"
+  ],
+  [
+   "rack.*",
+   "named",
+   "clamp caps and wing bolts; ALSO tube, rubber-end and stub cylinder caps, which root did not name"
+  ],
+  [
+   "pad.*.shell",
+   "named",
+   "pad-rim inner corners (outer top corner bevelled)"
+  ],
+  [
+   "pad.*.lugs",
+   "named",
+   "pad lugs"
+  ],
+  [
+   "pad.*.mount",
+   "named",
+   "mount blocks; ALSO the mount arm tube end caps, which root did not name"
+  ],
+  [
+   "pad.*.head",
+   "casing",
+   "none expected (thin mesh-head disc edge, 3 mm)"
+  ],
+  [
+   "cymbal.*",
+   "named",
+   "cymbal wing nuts; ALSO the rod, felt and tilter cylinder caps, which root did not name"
+  ],
+  [
+   "kick.tower",
+   "casing",
+   "bottom perimeter rests on the base frame"
+  ],
+  [
+   "kick.base",
+   "casing",
+   "bottom perimeter rests on the rug"
+  ],
+  [
+   "kick.hardware",
+   "unnamed",
+   "pedal base plate, footboard, heel block, posts, cam, beater and pad ring (pedal hinges/axle are named)"
+  ],
+  [
+   "hihat.base",
+   "casing",
+   "underside rests on the rug"
+  ],
+  [
+   "hihat.housing",
+   "casing",
+   "bottom perimeter rests on the base"
+  ],
+  [
+   "hihat.hardware",
+   "unnamed",
+   "footboard and heel rubber (the heel hinge is a named pedal hinge)"
+  ],
+  [
+   "module.case",
+   "casing",
+   "none expected (front and back perimeters bevelled; plan corners rounded)"
+  ],
+  [
+   "module.controls",
+   "unnamed",
+   "module knob and pad buttons"
+  ],
+  [
+   "module.mount",
+   "unnamed",
+   "holder plate and arm tube end caps"
+  ],
+  [
+   "module.snake",
+   "unnamed",
+   "snake end caps"
+  ],
+  [
+   "cable.*",
+   "unnamed",
+   "cable end caps at the jacks and the wall"
+  ],
+  [
+   "sticks",
+   "casing",
+   "none expected (lathed tips)"
+  ]
+ ],
+ "v01FrozenReference": {
+  "placement": {
+   "controller": {
+    "cx": 1.2,
+    "cy": -0.8,
+    "yaw": -0.6,
+    "zb": 0.573
+   },
+   "stoolLocal": [
+    0.25,
+    -0.4
+   ]
+  },
+  "trianglesPerRow": {
+   "ctl_body__shell": 1132,
+   "ctl_body__indicators": 60,
+   "ctl_keys__keys": 936,
+   "ctl_stand__frame": 776,
+   "ctl_sustain_pedal__pedal": 216,
+   "stool_keys__stool": 548,
+   "rug__rug": 156,
+   "drum_rack__rack": 2084,
+   "drum_pads__shells": 1928,
+   "drum_pads__heads": 384,
+   "drum_cymbals__cymbals": 1812,
+   "drum_kick__tower": 696,
+   "drum_hihat_pedal__pedal": 172,
+   "drum_module__body": 320,
+   "drum_module__display": 12,
+   "drum_sticks__pair": 120,
+   "drum_throne__throne": 588,
+   "music_cables__runs": 588
+  },
+  "stage": {
+   "main": 18,
+   "casters": 9,
+   "refresh": 27,
+   "placed": 12528,
+   "refreshTriangles": 22412
+  },
+  "supports": {
+   "ctl_stand__frame": {
+    "surfaces": [
+     "rug"
+    ],
+    "minClearanceFromBindingM": 0.20881,
+    "footprintZ": 0.0086
+   },
+   "ctl_sustain_pedal__pedal": {
+    "surfaces": [
+     "rug"
+    ],
+    "minClearanceFromBindingM": 0.13442,
+    "footprintZ": 0.0086
+   },
+   "stool_keys__stool": {
+    "surfaces": [
+     "binding",
+     "floor",
+     "rug"
+    ],
+    "minClearanceFromBindingM": 0.01615,
+    "footprintZ": 0.0086
+   },
+   "drum_rack__rack": {
+    "surfaces": [
+     "rug"
+    ],
+    "minClearanceFromBindingM": 0.064,
+    "footprintZ": 0.0086
+   },
+   "drum_kick__tower": {
+    "surfaces": [
+     "rug"
+    ],
+    "minClearanceFromBindingM": 0.324,
+    "footprintZ": 0.0086
+   },
+   "drum_hihat_pedal__pedal": {
+    "surfaces": [
+     "rug"
+    ],
+    "minClearanceFromBindingM": 0.33517,
+    "footprintZ": 0.0086
+   },
+   "drum_throne__throne": {
+    "surfaces": [
+     "rug"
+    ],
+    "minClearanceFromBindingM": 0.57279,
+    "footprintZ": 0.0086
+   },
+   "stoolFeet": [
+    {
+     "centreXY": [
+      1.34756,
+      -1.23996
+     ],
+     "support": "rug",
+     "footUndersideZ": 0.0086,
+     "heightAboveSurfaceM": 0.0003
+    },
+    {
+     "centreXY": [
+      1.14914,
+      -1.10421
+     ],
+     "support": "rug",
+     "footUndersideZ": 0.0086,
+     "heightAboveSurfaceM": 0.0003
+    },
+    {
+     "centreXY": [
+      1.01339,
+      -1.30263
+     ],
+     "support": "binding",
+     "footUndersideZ": 0.0086,
+     "heightAboveSurfaceM": 0.0086
+    },
+    {
+     "centreXY": [
+      1.21181,
+      -1.43838
+     ],
+     "support": "floor",
+     "footUndersideZ": 0.0086,
+     "heightAboveSurfaceM": 0.0086
+    }
+   ]
+  },
+  "views": {
+   "featureVisibility": {
+    "kickPedal": {
+     "unobstructed": 169,
+     "of": 190,
+     "blockers": {
+      "contact_decals__music_corner": 13,
+      "drum_throne__throne": 5,
+      "ctl_body__shell": 3
+     }
+    },
+    "kickTowerUpper": {
+     "unobstructed": 158,
+     "of": 160,
+     "blockers": {
+      "drum_pads__heads": 2
+     }
+    },
+    "hihatPedal": {
+     "unobstructed": 63,
+     "of": 96,
+     "blockers": {
+      "desk_frame__steel": 18,
+      "contact_decals__music_corner": 15
+     }
+    },
+    "sustainPedal": {
+     "unobstructed": 55,
+     "of": 80,
+     "blockers": {
+      "contact_decals__music_corner": 17,
+      "stool_keys__stool": 6,
+      "rug__rug": 2
+     }
+    },
+    "throneSeat": {
+     "unobstructed": 54,
+     "of": 73,
+     "blockers": {
+      "ctl_body__shell": 19
+     }
+    },
+    "stoolSeat": {
+     "unobstructed": 110,
+     "of": 110,
+     "blockers": {}
+    },
+    "moduleDisplay": {
+     "unobstructed": 7,
+     "of": 8,
+     "blockers": {
+      "drum_module__body": 1
+     }
+    }
+   },
+   "controllerAzimuth": {
+    "unobstructedSpanDeg": 30.9563,
+    "allVerticesSpanDeg": 32.1438,
+    "unobstructedSamples": "313/313",
+    "builderAssert": ">= 30.0 deg (unobstructed)"
+   },
+   "targetRays": {
+    "target_dissertation": {
+     "clear": 81,
+     "of": 81
+    },
+    "target_copilot": {
+     "clear": 81,
+     "of": 81
+    },
+    "target_typeforge": {
+     "clear": 81,
+     "of": 81
+    }
+   },
+   "whiteKeys": {
+    "topsFirstHitKeys": 29,
+    "of": 29,
+    "pitchPx (pinhole estimate)": {
+     "music-1440": {
+      "minPx": 12.2591,
+      "maxPx": 14.3254,
+      "keysInFrame": 29
+     },
+     "right-down": {
+      "minPx": 10.0672,
+      "maxPx": 14.1014,
+      "keysInFrame": 29
+     },
+     "music-320-f74": {
+      "minPx": 8.4566,
+      "maxPx": 9.882,
+      "keysInFrame": 12
+     }
+    }
+   },
+   "cymbals": {
+    "hihat": {
+     "bell": {
+      "unobstructed": 16,
+      "of": 16,
+      "blockers": {}
+     },
+     "edge": {
+      "unobstructed": 25,
+      "of": 32,
+      "blockers": {
+       "speaker_nearfield__cabinet": 7
+      }
+     }
+    },
+    "crash": {
+     "bell": {
+      "unobstructed": 16,
+      "of": 16,
+      "blockers": {}
+     },
+     "edge": {
+      "unobstructed": 32,
+      "of": 32,
+      "blockers": {}
+     }
+    },
+    "ride": {
+     "bell": {
+      "unobstructed": 16,
+      "of": 16,
+      "blockers": {}
+     },
+     "edge": {
+      "unobstructed": 32,
+      "of": 32,
+      "blockers": {}
+     }
+    }
+   }
+  }
+ },
+ "v03Candidate": {
+  "placement": {
+   "controller": {
+    "cx": 1.325,
+    "cy": -0.825,
+    "yaw": -0.85,
+    "zb": 0.6889
+   },
+   "stoolLocal": [
+    0.0,
+    -0.4
+   ],
+   "stoolLegPhaseDeg": 0.0,
+   "rideX": 1.98
+  },
+  "keys": {
+   "white": 29,
+   "black": 20
+  },
+  "trianglesPerRow": {
+   "ctl_body__shell": 1260,
+   "ctl_body__indicators": 60,
+   "ctl_keys__keys": 1168,
+   "ctl_stand__frame": 776,
+   "ctl_sustain_pedal__pedal": 312,
+   "stool_keys__stool": 548,
+   "rug__rug": 156,
+   "drum_rack__rack": 2084,
+   "drum_pads__shells": 2312,
+   "drum_pads__heads": 384,
+   "drum_cymbals__cymbals": 1812,
+   "drum_kick__tower": 856,
+   "drum_hihat_pedal__pedal": 300,
+   "drum_module__body": 416,
+   "drum_module__display": 12,
+   "drum_sticks__pair": 120,
+   "drum_throne__throne": 588,
+   "music_cables__runs": 588
+  },
+  "stage": {
+   "main": 18,
+   "casters": 9,
+   "refresh": 27,
+   "placed": 13752,
+   "refreshTriangles": 24404
+  },
+  "contractRowsHold": true,
+  "rowLedger": {
+   "ctl_body__shell": {
+    "assetId": "ctl_body",
+    "material": "lib_palette",
+    "placed": 1260,
+    "ceiling": 2500,
+    "main": 1,
+    "shadow": 1,
+    "refresh": 2,
+    "refreshTriangles": 2520
+   },
+   "ctl_body__indicators": {
+    "assetId": "ctl_body",
+    "material": "lib_glow",
+    "placed": 60,
+    "ceiling": 60,
+    "main": 1,
+    "shadow": 0,
+    "refresh": 1,
+    "refreshTriangles": 60
+   },
+   "ctl_keys__keys": {
+    "assetId": "ctl_keys",
+    "material": "lib_palette",
+    "placed": 1168,
+    "ceiling": 1540,
+    "main": 1,
+    "shadow": 0,
+    "refresh": 1,
+    "refreshTriangles": 1168
+   },
+   "ctl_stand__frame": {
+    "assetId": "ctl_stand",
+    "material": "lib_palette",
+    "placed": 776,
+    "ceiling": 1300,
+    "main": 1,
+    "shadow": 1,
+    "refresh": 2,
+    "refreshTriangles": 1552
+   },
+   "ctl_sustain_pedal__pedal": {
+    "assetId": "ctl_sustain_pedal",
+    "material": "lib_palette",
+    "placed": 312,
+    "ceiling": 500,
+    "main": 1,
+    "shadow": 0,
+    "refresh": 1,
+    "refreshTriangles": 312
+   },
+   "stool_keys__stool": {
+    "assetId": "stool_keys",
+    "material": "lib_palette",
+    "placed": 548,
+    "ceiling": 700,
+    "main": 1,
+    "shadow": 1,
+    "refresh": 2,
+    "refreshTriangles": 1096
+   },
+   "rug__rug": {
+    "assetId": "rug",
+    "material": "lib_weave",
+    "placed": 156,
+    "ceiling": 400,
+    "main": 1,
+    "shadow": 0,
+    "refresh": 1,
+    "refreshTriangles": 156
+   },
+   "drum_rack__rack": {
+    "assetId": "drum_rack",
+    "material": "lib_palette",
+    "placed": 2084,
+    "ceiling": 2400,
+    "main": 1,
+    "shadow": 1,
+    "refresh": 2,
+    "refreshTriangles": 4168
+   },
+   "drum_pads__shells": {
+    "assetId": "drum_pads",
+    "material": "lib_palette",
+    "placed": 2312,
+    "ceiling": 2600,
+    "main": 1,
+    "shadow": 1,
+    "refresh": 2,
+    "refreshTriangles": 4624
+   },
+   "drum_pads__heads": {
+    "assetId": "drum_pads",
+    "material": "lib_weave",
+    "placed": 384,
+    "ceiling": 900,
+    "main": 1,
+    "shadow": 0,
+    "refresh": 1,
+    "refreshTriangles": 384
+   },
+   "drum_cymbals__cymbals": {
+    "assetId": "drum_cymbals",
+    "material": "lib_palette",
+    "placed": 1812,
+    "ceiling": 1950,
+    "main": 1,
+    "shadow": 1,
+    "refresh": 2,
+    "refreshTriangles": 3624
+   },
+   "drum_kick__tower": {
+    "assetId": "drum_kick",
+    "material": "lib_palette",
+    "placed": 856,
+    "ceiling": 1500,
+    "main": 1,
+    "shadow": 1,
+    "refresh": 2,
+    "refreshTriangles": 1712
+   },
+   "drum_hihat_pedal__pedal": {
+    "assetId": "drum_hihat_pedal",
+    "material": "lib_palette",
+    "placed": 300,
+    "ceiling": 600,
+    "main": 1,
+    "shadow": 0,
+    "refresh": 1,
+    "refreshTriangles": 300
+   },
+   "drum_module__body": {
+    "assetId": "drum_module",
+    "material": "lib_palette",
+    "placed": 416,
+    "ceiling": 640,
+    "main": 1,
+    "shadow": 1,
+    "refresh": 2,
+    "refreshTriangles": 832
+   },
+   "drum_module__display": {
+    "assetId": "drum_module",
+    "material": "lib_glow",
+    "placed": 12,
+    "ceiling": 60,
+    "main": 1,
+    "shadow": 0,
+    "refresh": 1,
+    "refreshTriangles": 12
+   },
+   "drum_sticks__pair": {
+    "assetId": "drum_sticks",
+    "material": "lib_oak",
+    "placed": 120,
+    "ceiling": 120,
+    "main": 1,
+    "shadow": 0,
+    "refresh": 1,
+    "refreshTriangles": 120
+   },
+   "drum_throne__throne": {
+    "assetId": "drum_throne",
+    "material": "lib_palette",
+    "placed": 588,
+    "ceiling": 700,
+    "main": 1,
+    "shadow": 1,
+    "refresh": 2,
+    "refreshTriangles": 1176
+   },
+   "music_cables__runs": {
+    "assetId": "music_cables",
+    "material": "lib_palette",
+    "placed": 588,
+    "ceiling": 800,
+    "main": 1,
+    "shadow": 0,
+    "refresh": 1,
+    "refreshTriangles": 588
+   }
+  },
+  "dimensions": {
+   "C1 ctl_body": {
+    "semantics": "whole-asset envelope W x D x H in the controller frame incl. knobs/pads/keys-free shell",
+    "envelopeWDH": [
+     0.99,
+     0.32,
+     0.09491
+    ],
+    "knobTop": 0.09489,
+    "cheekTop": 0.09491,
+    "panelTop": 0.08274,
+    "target": [
+     0.99,
+     0.32,
+     0.095
+    ],
+    "devPct": [
+     0.0,
+     0.0,
+     -0.095
+    ]
+   },
+   "C2 ctl_stand": {
+    "semantics": "stand own height, foot underside to arm top",
+    "ownHeight": 0.68,
+    "topAboveFloor": 0.6886,
+    "target": 0.68,
+    "devPct": -0.0,
+    "controllerUndersideZ": 0.6889,
+    "whiteKeyTopZ": 0.7424,
+    "stoolSeatTopZ": 0.5,
+    "keyTopAboveSeat": 0.2424
+   },
+   "C3/C4 drum_rack": {
+    "semantics": "frame = uprights, feet, side bars, crossbar and frame clamps; booms (drum_cymbals boom arms) and stubs separate",
+    "uprightTubeOuterWidth": 1.16,
+    "frameWidthInclClamps": 1.17,
+    "frameXRange": [
+     0.815,
+     1.985
+    ],
+    "frameOwnHeight": 0.75,
+    "frameTopAboveFloor": 0.7586,
+    "boomInclusiveWidth (frame + booms)": 1.19068,
+    "rowInclusiveWidth (frame + booms + stubs)": 1.19808,
+    "rowInclusiveXRange": [
+     0.80666,
+     2.00475
+    ],
+    "boomsTopZ": 1.00238,
+    "target": [
+     1.16,
+     0.75
+    ],
+    "devPct": {
+     "tubeWidth": 0.0,
+     "frameWidth": 0.862,
+     "boomInclusiveWidth": 2.645,
+     "rowInclusiveWidth": 3.283,
+     "frameOwnHeight": 0.0
+    }
+   },
+   "C5 drum_pads": {
+    "tom1": {
+     "headDia": 0.2488,
+     "rimOuterDia": 0.282,
+     "lugOuterDia": 0.29056,
+     "rimDevPct (0.25..0.31)": 0.0
+    },
+    "tom2": {
+     "headDia": 0.2488,
+     "rimOuterDia": 0.282,
+     "lugOuterDia": 0.29056,
+     "rimDevPct (0.25..0.31)": 0.0
+    },
+    "snare": {
+     "headDia": 0.2728,
+     "rimOuterDia": 0.306,
+     "lugOuterDia": 0.31452,
+     "rimDevPct (0.25..0.31)": 0.0
+    },
+    "tom3": {
+     "headDia": 0.2488,
+     "rimOuterDia": 0.282,
+     "lugOuterDia": 0.29056,
+     "rimDevPct (0.25..0.31)": 0.0
+    }
+   },
+   "C6/C7 drum_cymbals": {
+    "hihat": {
+     "dia": 0.38,
+     "devPct": 0.0,
+     "centre": [
+      0.85,
+      0.62,
+      1.0
+     ]
+    },
+    "crash": {
+     "dia": 0.38,
+     "devPct": 0.0,
+     "centre": [
+      1.68,
+      0.67,
+      1.06
+     ]
+    },
+    "ride": {
+     "dia": 0.38,
+     "devPct": 0.0,
+     "centre": [
+      1.98,
+      0.445,
+      0.95
+     ]
+    }
+   },
+   "C8/C9 drum_hihat_pedal": {
+    "baseWL": [
+     0.13,
+     0.33
+    ],
+    "inclusiveWL": [
+     0.13,
+     0.33
+    ],
+    "devPct": [
+     0.0,
+     0.0
+    ]
+   },
+   "C10 drum_module": {
+    "caseFaceWHD": [
+     0.2,
+     0.15,
+     0.05
+    ],
+    "devPct": [
+     0.0,
+     0.0
+    ]
+   },
+   "C11 rug (root conditional allowance 1.655 x 2.25)": {
+    "outlineWD": [
+     1.655,
+     2.25
+    ],
+    "devPctVsArt1.85x2.25": [
+     -10.541,
+     0.0
+    ],
+    "devPctVsAllowance1.655x2.25": [
+     0.0,
+     0.0
+    ]
+   },
+   "H1 keys": {
+    "whiteFrontBlocks": 29,
+    "blockWidthMinMax": [
+     0.026,
+     0.026
+    ],
+    "pitchMinMax": [
+     0.0294,
+     0.0294
+    ],
+    "pitchTarget": 0.0294,
+    "gapMinMax": [
+     0.0034,
+     0.0034
+    ],
+    "gapTarget": 0.0034,
+    "lipVerticalM": 0.00313,
+    "lipHorizontalM": 0.00312,
+    "lipRule": ">= 0.003 (root H1)",
+    "lipSegments": 2,
+    "keysXRange": [
+     -0.3963,
+     0.4529
+    ],
+    "cheekInnerFacesX": [
+     -0.473,
+     0.473
+    ],
+    "keysInsideCheeks": true,
+    "keysFrontY": -0.157,
+    "shellFrontY": -0.16,
+    "keyBottomZ": 0.0303,
+    "bedTopZ": 0.03,
+    "keysTriangles": 1168,
+    "keysCeiling": 1540
+   },
+   "C12 cable diameters mm": {
+    "cable.tom1": 6.0,
+    "cable.tom2": 6.0,
+    "cable.snare": 6.0,
+    "cable.tom3": 6.0,
+    "cable.kick": 6.0,
+    "cable.hihat_pedal": 6.0,
+    "cable.controller": 6.0,
+    "cable.module_power": 6.0,
+    "sustain.cable": 7.0,
+    "module.snake": 18.0,
+    "musicCablesDevPct": [
+     0.0
+    ]
+   },
+   "sustain base (unchanged)": {
+    "baseXY": [
+     0.1,
+     0.26
+    ],
+    "devPct": [
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "supportsK1": {
+   "ctl_stand__frame": {
+    "footprintVertices": 12,
+    "surfaces": [
+     "rug"
+    ],
+    "minClearanceFromBindingM": 0.15606,
+    "footprintZ": [
+     0.0086,
+     0.0086
+    ],
+    "signedRestingHeightErrorM": 0.0,
+    "pass": true
+   },
+   "ctl_sustain_pedal__pedal": {
+    "footprintVertices": 12,
+    "surfaces": [
+     "rug"
+    ],
+    "minClearanceFromBindingM": 0.0499,
+    "footprintZ": [
+     0.0086,
+     0.0086
+    ],
+    "signedRestingHeightErrorM": 0.0,
+    "pass": true
+   },
+   "stool_keys__stool": {
+    "footprintVertices": 40,
+    "surfaces": [
+     "rug"
+    ],
+    "minClearanceFromBindingM": 0.10207,
+    "footprintZ": [
+     0.0086,
+     0.0086
+    ],
+    "signedRestingHeightErrorM": 0.0,
+    "pass": true
+   },
+   "drum_rack__rack": {
+    "footprintVertices": 12,
+    "surfaces": [
+     "rug"
+    ],
+    "minClearanceFromBindingM": 0.129,
+    "footprintZ": [
+     0.0086,
+     0.0086
+    ],
+    "signedRestingHeightErrorM": 0.0,
+    "pass": true
+   },
+   "drum_kick__tower": {
+    "footprintVertices": 16,
+    "surfaces": [
+     "rug"
+    ],
+    "minClearanceFromBindingM": 0.324,
+    "footprintZ": [
+     0.0086,
+     0.0086
+    ],
+    "signedRestingHeightErrorM": 0.0,
+    "pass": true
+   },
+   "drum_hihat_pedal__pedal": {
+    "footprintVertices": 12,
+    "surfaces": [
+     "rug"
+    ],
+    "minClearanceFromBindingM": 0.33139,
+    "footprintZ": [
+     0.0086,
+     0.0086
+    ],
+    "signedRestingHeightErrorM": 0.0,
+    "pass": true
+   },
+   "drum_throne__throne": {
+    "footprintVertices": 30,
+    "surfaces": [
+     "rug"
+    ],
+    "minClearanceFromBindingM": 0.57279,
+    "footprintZ": [
+     0.0086,
+     0.0086
+    ],
+    "signedRestingHeightErrorM": 0.0,
+    "pass": true
+   },
+   "stoolFeet": {
+    "seatCentre": [
+     1.02449,
+     -1.08899
+    ],
+    "footRadius": 0.016,
+    "feet": [
+     {
+      "centreXY": [
+       1.13668,
+       -1.21671
+      ],
+      "support": "rug",
+      "footUndersideZ": 0.0086,
+      "surfaceZ": 0.0083,
+      "signedRestingHeightErrorM": -0.0,
+      "discClearanceFromBindingM": 0.10129
+     },
+     {
+      "centreXY": [
+       1.15221,
+       -0.9768
+      ],
+      "support": "rug",
+      "footUndersideZ": 0.0086,
+      "surfaceZ": 0.0083,
+      "signedRestingHeightErrorM": -0.0,
+      "discClearanceFromBindingM": 0.3412
+     },
+     {
+      "centreXY": [
+       0.91229,
+       -0.96128
+      ],
+      "support": "rug",
+      "footUndersideZ": 0.0086,
+      "surfaceZ": 0.0083,
+      "signedRestingHeightErrorM": -0.0,
+      "discClearanceFromBindingM": 0.31029
+     },
+     {
+      "centreXY": [
+       0.89677,
+       -1.20119
+      ],
+      "support": "rug",
+      "footUndersideZ": 0.0086,
+      "surfaceZ": 0.0083,
+      "signedRestingHeightErrorM": -0.0,
+      "discClearanceFromBindingM": 0.11681
+     }
+    ]
+   },
+   "rackFootRugMarginsM (root: >= 0.150 each side)": {
+    "left": 0.255,
+    "right": 0.23,
+    "front": 1.74,
+    "back": 0.155
+   },
+   "music_cables (draped, not footprints)": {
+    "minZ": 0.00045,
+    "note": "runs lie on the rug, cross the bound edge and reach the wall on the floor by design"
+   }
+  },
+  "rugC11": {
+   "outline": {
+    "x": [
+     0.56,
+     2.215
+    ],
+    "y": [
+     -1.36,
+     0.89
+    ],
+    "widthM": 1.655,
+    "depthM": 2.25
+   },
+   "lampBaseMinX": 2.235,
+   "deskFrameFloorRunnerMaxX": 0.49,
+   "underDeskDecalMaxX": 0.55,
+   "physicalSpanLampToDeskM": 1.745,
+   "chosenClearancesM": {
+    "lamp": 0.02,
+    "deskFrame": 0.07,
+    "underDeskDecal": 0.01
+   },
+   "contact_decals__music_corner (M6 dependency, not edited)": {
+    "overhangBeyondRugM": {
+     "left": 0.035,
+     "right": 0.01,
+     "front": -0.36,
+     "back": -0.09
+    },
+    "zRange": [
+     0.0205,
+     0.0215
+    ],
+    "rugFieldTopZ": 0.0083
+   }
+  },
+  "topology": {
+   "ctl_body__shell": {
+    "triangles": 1260,
+    "faces": 426,
+    "vertices": 692,
+    "groups": 31,
+    "boundsMin": [
+     0.87972,
+     -1.30087,
+     0.6889
+    ],
+    "boundsMax": [
+     1.77028,
+     -0.34913,
+     0.78381
+    ],
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "inconsistentlyWoundEdges": 0,
+    "invertedGroups": 0,
+    "degenerateFaces": 0,
+    "maxNonPlanarityM": 0.0,
+    "sharpEdgesOver40deg": 725,
+    "bevelMiddleSeamLengthByClassM": {
+     "casing": 4.6267
+    },
+    "hardConvexEdgeLengthByStatusM": {
+     "casing": 10.3812,
+     "named": 6.2485
+    },
+    "hardConvexEdgesByLabel": {
+     "casing | ctl.bays": {
+      "lengthM": 1.8433,
+      "edges": 30,
+      "reason": "bottom edges rest on the slab; ends meet the cheeks and the keys; back meets the panel wall"
+     },
+     "casing | ctl.cheeks": {
+      "lengthM": 1.6561,
+      "edges": 22,
+      "reason": "inner face meets the shell; bottom profile corners rest on the stand arms"
+     },
+     "casing | ctl.panel": {
+      "lengthM": 2.6483,
+      "edges": 18,
+      "reason": "bottom edges rest on the slab; ends meet the cheek inner faces"
+     },
+     "casing | ctl.slab": {
+      "lengthM": 4.2335,
+      "edges": 15,
+      "reason": "underside rests on the stand arms; ends hidden inside the cheeks; back-bottom edge hidden"
+     },
+     "named | ctl.controls": {
+      "lengthM": 5.0998,
+      "edges": 340,
+      "reason": "panel pads and transport keys; ALSO pitch/mod wheels, wheel slots and display bezel, which root did not name"
+     },
+     "named | ctl.knobs": {
+      "lengthM": 1.1487,
+      "edges": 256,
+      "reason": "knobs"
+     }
+    }
+   },
+   "ctl_body__indicators": {
+    "triangles": 60,
+    "faces": 30,
+    "vertices": 40,
+    "groups": 5,
+    "boundsMin": [
+     1.04522,
+     -0.97891,
+     0.75982
+    ],
+    "boundsMax": [
+     1.58288,
+     -0.46167,
+     0.77162
+    ],
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "inconsistentlyWoundEdges": 0,
+    "invertedGroups": 0,
+    "degenerateFaces": 0,
+    "maxNonPlanarityM": 0.0,
+    "sharpEdgesOver40deg": 60,
+    "bevelMiddleSeamLengthByClassM": {},
+    "hardConvexEdgeLengthByStatusM": {
+     "screen": 1.1888
+    },
+    "hardConvexEdgesByLabel": {
+     "screen | ctl.indicators": {
+      "lengthM": 1.1888,
+      "edges": 60,
+      "reason": "indicator and display glow faces"
+     }
+    }
+   },
+   "ctl_keys__keys": {
+    "triangles": 1168,
+    "faces": 526,
+    "vertices": 740,
+    "groups": 78,
+    "boundsMin": [
+     0.9455,
+     -1.26887,
+     0.7192
+    ],
+    "boundsMax": [
+     1.63367,
+     -0.51869,
+     0.7537
+    ],
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "inconsistentlyWoundEdges": 0,
+    "invertedGroups": 0,
+    "degenerateFaces": 0,
+    "maxNonPlanarityM": 0.0,
+    "sharpEdgesOver40deg": 1023,
+    "bevelMiddleSeamLengthByClassM": {
+     "white_key_lip": 0.754
+    },
+    "hardConvexEdgeLengthByStatusM": {
+     "named": 40.8266
+    },
+    "hardConvexEdgesByLabel": {
+     "named | ctl.keys": {
+      "lengthM": 40.8266,
+      "edges": 1003,
+      "reason": "other white-key edges and black-key edges (white-key front-top lips are bevelled, H1)"
+     }
+    }
+   },
+   "ctl_stand__frame": {
+    "triangles": 776,
+    "faces": 272,
+    "vertices": 440,
+    "groups": 26,
+    "boundsMin": [
+     0.97516,
+     -1.18771,
+     0.0086
+    ],
+    "boundsMax": [
+     1.67484,
+     -0.46229,
+     0.6886
+    ],
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "inconsistentlyWoundEdges": 0,
+    "invertedGroups": 0,
+    "degenerateFaces": 0,
+    "maxNonPlanarityM": 0.0,
+    "sharpEdgesOver40deg": 536,
+    "bevelMiddleSeamLengthByClassM": {},
+    "hardConvexEdgeLengthByStatusM": {
+     "named": 4.8498
+    },
+    "hardConvexEdgesByLabel": {
+     "named | stand": {
+      "lengthM": 4.8498,
+      "edges": 472,
+      "reason": "stand pivot plates and teeth; ALSO tube, rubber-end and pivot-knob cylinder caps, which root did not name"
+     }
+    }
+   },
+   "ctl_sustain_pedal__pedal": {
+    "triangles": 312,
+    "faces": 132,
+    "vertices": 164,
+    "groups": 4,
+    "boundsMin": [
+     1.44768,
+     -1.2841,
+     0.0086
+    ],
+    "boundsMax": [
+     1.81023,
+     -0.93079,
+     0.73217
+    ],
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "inconsistentlyWoundEdges": 0,
+    "invertedGroups": 0,
+    "degenerateFaces": 0,
+    "maxNonPlanarityM": 0.00156,
+    "sharpEdgesOver40deg": 112,
+    "bevelMiddleSeamLengthByClassM": {
+     "casing": 1.3265
+    },
+    "hardConvexEdgeLengthByStatusM": {
+     "casing": 1.2293,
+     "named": 0.0742,
+     "unnamed": 0.1096
+    },
+    "hardConvexEdgesByLabel": {
+     "casing | sustain.base": {
+      "lengthM": 0.6918,
+      "edges": 12,
+      "reason": "underside rests on the rug"
+     },
+     "casing | sustain.plate": {
+      "lengthM": 0.5375,
+      "edges": 12,
+      "reason": "underside perimeter, hidden below the plate"
+     },
+     "named | sustain.hinge": {
+      "lengthM": 0.0742,
+      "edges": 20,
+      "reason": "pedal hinges"
+     },
+     "unnamed | sustain.cable": {
+      "lengthM": 0.1096,
+      "edges": 16,
+      "reason": "cable end caps at the pedal and the jack"
+     }
+    }
+   },
+   "stool_keys__stool": {
+    "triangles": 548,
+    "faces": 242,
+    "vertices": 298,
+    "groups": 12,
+    "boundsMin": [
+     0.85949,
+     -1.25399,
+     0.0086
+    ],
+    "boundsMax": [
+     1.18949,
+     -0.92399,
+     0.5
+    ],
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "inconsistentlyWoundEdges": 0,
+    "invertedGroups": 0,
+    "degenerateFaces": 0,
+    "maxNonPlanarityM": 0.0,
+    "sharpEdgesOver40deg": 320,
+    "bevelMiddleSeamLengthByClassM": {},
+    "hardConvexEdgeLengthByStatusM": {
+     "unnamed": 2.3129
+    },
+    "hardConvexEdgesByLabel": {
+     "unnamed | stool": {
+      "lengthM": 2.3129,
+      "edges": 200,
+      "reason": "post, collar, hub and rubber-foot cylinder caps; leg tube end caps"
+     }
+    }
+   },
+   "rug__rug": {
+    "triangles": 156,
+    "faces": 66,
+    "vertices": 80,
+    "groups": 1,
+    "boundsMin": [
+     0.56,
+     -1.36,
+     0.0003
+    ],
+    "boundsMax": [
+     2.215,
+     0.89,
+     0.0108
+    ],
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "inconsistentlyWoundEdges": 0,
+    "invertedGroups": 0,
+    "degenerateFaces": 0,
+    "maxNonPlanarityM": 0.0,
+    "sharpEdgesOver40deg": 64,
+    "bevelMiddleSeamLengthByClassM": {},
+    "hardConvexEdgeLengthByStatusM": {
+     "named": 15.3047
+    },
+    "hardConvexEdgesByLabel": {
+     "named | rug": {
+      "lengthM": 15.3047,
+      "edges": 32,
+      "reason": "rug inner binding step"
+     }
+    }
+   },
+   "drum_rack__rack": {
+    "triangles": 2084,
+    "faces": 740,
+    "vertices": 1168,
+    "groups": 63,
+    "boundsMin": [
+     0.80666,
+     0.188,
+     0.0086
+    ],
+    "boundsMax": [
+     2.00475,
+     0.735,
+     1.00238
+    ],
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "inconsistentlyWoundEdges": 0,
+    "invertedGroups": 0,
+    "degenerateFaces": 0,
+    "maxNonPlanarityM": 0.00041,
+    "sharpEdgesOver40deg": 1412,
+    "bevelMiddleSeamLengthByClassM": {},
+    "hardConvexEdgeLengthByStatusM": {
+     "named": 11.9294
+    },
+    "hardConvexEdgesByLabel": {
+     "named | rack.boom.crash": {
+      "lengthM": 0.7099,
+      "edges": 64,
+      "reason": "clamp caps and wing bolts; ALSO tube, rubber-end and stub cylinder caps, which root did not name"
+     },
+     "named | rack.boom.hihat": {
+      "lengthM": 0.7099,
+      "edges": 64,
+      "reason": "clamp caps and wing bolts; ALSO tube, rubber-end and stub cylinder caps, which root did not name"
+     },
+     "named | rack.boom.ride": {
+      "lengthM": 0.7099,
+      "edges": 64,
+      "reason": "clamp caps and wing bolts; ALSO tube, rubber-end and stub cylinder caps, which root did not name"
+     },
+     "named | rack.frame": {
+      "lengthM": 6.2474,
+      "edges": 632,
+      "reason": "clamp caps and wing bolts; ALSO tube, rubber-end and stub cylinder caps, which root did not name"
+     },
+     "named | rack.stub.module": {
+      "lengthM": 0.7105,
+      "edges": 68,
+      "reason": "clamp caps and wing bolts; ALSO tube, rubber-end and stub cylinder caps, which root did not name"
+     },
+     "named | rack.stub.snare": {
+      "lengthM": 0.7105,
+      "edges": 68,
+      "reason": "clamp caps and wing bolts; ALSO tube, rubber-end and stub cylinder caps, which root did not name"
+     },
+     "named | rack.stub.tom1": {
+      "lengthM": 0.7105,
+      "edges": 68,
+      "reason": "clamp caps and wing bolts; ALSO tube, rubber-end and stub cylinder caps, which root did not name"
+     },
+     "named | rack.stub.tom2": {
+      "lengthM": 0.7105,
+      "edges": 68,
+      "reason": "clamp caps and wing bolts; ALSO tube, rubber-end and stub cylinder caps, which root did not name"
+     },
+     "named | rack.stub.tom3": {
+      "lengthM": 0.7105,
+      "edges": 68,
+      "reason": "clamp caps and wing bolts; ALSO tube, rubber-end and stub cylinder caps, which root did not name"
+     }
+    }
+   },
+   "drum_pads__shells": {
+    "triangles": 2312,
+    "faces": 1180,
+    "vertices": 1260,
+    "groups": 30,
+    "boundsMin": [
+     0.88252,
+     0.09605,
+     0.43812
+    ],
+    "boundsMax": [
+     1.93588,
+     0.62121,
+     0.84569
+    ],
+    "boundaryEdges": 96,
+    "nonManifoldEdges": 0,
+    "inconsistentlyWoundEdges": 96,
+    "invertedGroups": 4,
+    "degenerateFaces": 0,
+    "maxNonPlanarityM": 0.00086,
+    "sharpEdgesOver40deg": 751,
+    "bevelMiddleSeamLengthByClassM": {
+     "casing": 4.0194
+    },
+    "hardConvexEdgeLengthByStatusM": {
+     "named": 9.6168
+    },
+    "hardConvexEdgesByLabel": {
+     "named | pad.snare.lugs": {
+      "lengthM": 1.344,
+      "edges": 72,
+      "reason": "pad lugs"
+     },
+     "named | pad.snare.mount": {
+      "lengthM": 0.5896,
+      "edges": 32,
+      "reason": "mount blocks; ALSO the mount arm tube end caps, which root did not name"
+     },
+     "named | pad.snare.shell": {
+      "lengthM": 0.8583,
+      "edges": 24,
+      "reason": "pad-rim inner corners (outer top corner bevelled)"
+     },
+     "named | pad.tom1.lugs": {
+      "lengthM": 0.896,
+      "edges": 48,
+      "reason": "pad lugs"
+     },
+     "named | pad.tom1.mount": {
+      "lengthM": 0.602,
+      "edges": 34,
+      "reason": "mount blocks; ALSO the mount arm tube end caps, which root did not name"
+     },
+     "named | pad.tom1.shell": {
+      "lengthM": 0.7832,
+      "edges": 24,
+      "reason": "pad-rim inner corners (outer top corner bevelled)"
+     },
+     "named | pad.tom2.lugs": {
+      "lengthM": 0.896,
+      "edges": 48,
+      "reason": "pad lugs"
+     },
+     "named | pad.tom2.mount": {
+      "lengthM": 0.5958,
+      "edges": 33,
+      "reason": "mount blocks; ALSO the mount arm tube end caps, which root did not name"
+     },
+     "named | pad.tom2.shell": {
+      "lengthM": 0.7832,
+      "edges": 24,
+      "reason": "pad-rim inner corners (outer top corner bevelled)"
+     },
+     "named | pad.tom3.lugs": {
+      "lengthM": 0.896,
+      "edges": 48,
+      "reason": "pad lugs"
+     },
+     "named | pad.tom3.mount": {
+      "lengthM": 0.5896,
+      "edges": 32,
+      "reason": "mount blocks; ALSO the mount arm tube end caps, which root did not name"
+     },
+     "named | pad.tom3.shell": {
+      "lengthM": 0.7832,
+      "edges": 24,
+      "reason": "pad-rim inner corners (outer top corner bevelled)"
+     }
+    }
+   },
+   "drum_pads__heads": {
+    "triangles": 384,
+    "faces": 288,
+    "vertices": 200,
+    "groups": 4,
+    "boundsMin": [
+     0.92415,
+     0.1143,
+     0.53609
+    ],
+    "boundsMax": [
+     1.90801,
+     0.59168,
+     0.83285
+    ],
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "inconsistentlyWoundEdges": 0,
+    "invertedGroups": 4,
+    "degenerateFaces": 0,
+    "maxNonPlanarityM": 0.0,
+    "sharpEdgesOver40deg": 192,
+    "bevelMiddleSeamLengthByClassM": {},
+    "hardConvexEdgeLengthByStatusM": {},
+    "hardConvexEdgesByLabel": {}
+   },
+   "drum_cymbals__cymbals": {
+    "triangles": 1812,
+    "faces": 930,
+    "vertices": 942,
+    "groups": 18,
+    "boundsMin": [
+     0.6599,
+     0.25815,
+     0.88833
+    ],
+    "boundsMax": [
+     2.16879,
+     0.85721,
+     1.11015
+    ],
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "inconsistentlyWoundEdges": 0,
+    "invertedGroups": 3,
+    "degenerateFaces": 0,
+    "maxNonPlanarityM": 0.0,
+    "sharpEdgesOver40deg": 468,
+    "bevelMiddleSeamLengthByClassM": {},
+    "hardConvexEdgeLengthByStatusM": {
+     "named": 2.4917
+    },
+    "hardConvexEdgesByLabel": {
+     "named | cymbal.crash": {
+      "lengthM": 0.8306,
+      "edges": 76,
+      "reason": "cymbal wing nuts; ALSO the rod, felt and tilter cylinder caps, which root did not name"
+     },
+     "named | cymbal.hihat": {
+      "lengthM": 0.8306,
+      "edges": 76,
+      "reason": "cymbal wing nuts; ALSO the rod, felt and tilter cylinder caps, which root did not name"
+     },
+     "named | cymbal.ride": {
+      "lengthM": 0.8306,
+      "edges": 76,
+      "reason": "cymbal wing nuts; ALSO the rod, felt and tilter cylinder caps, which root did not name"
+     }
+    }
+   },
+   "drum_kick__tower": {
+    "triangles": 856,
+    "faces": 358,
+    "vertices": 484,
+    "groups": 17,
+    "boundsMin": [
+     1.24005,
+     0.06,
+     0.0086
+    ],
+    "boundsMax": [
+     1.59995,
+     0.56495,
+     0.4586
+    ],
+    "boundaryEdges": 48,
+    "nonManifoldEdges": 0,
+    "inconsistentlyWoundEdges": 48,
+    "invertedGroups": 1,
+    "degenerateFaces": 0,
+    "maxNonPlanarityM": 0.00039,
+    "sharpEdgesOver40deg": 416,
+    "bevelMiddleSeamLengthByClassM": {
+     "casing": 3.4353
+    },
+    "hardConvexEdgeLengthByStatusM": {
+     "casing": 1.5266,
+     "unnamed": 5.7255
+    },
+    "hardConvexEdgesByLabel": {
+     "casing | kick.base": {
+      "lengthM": 0.8933,
+      "edges": 12,
+      "reason": "bottom perimeter rests on the rug"
+     },
+     "casing | kick.tower": {
+      "lengthM": 0.6333,
+      "edges": 12,
+      "reason": "bottom perimeter rests on the base frame"
+     },
+     "unnamed | kick.hardware": {
+      "lengthM": 5.7255,
+      "edges": 268,
+      "reason": "pedal base plate, footboard, heel block, posts, cam, beater and pad ring (pedal hinges/axle are named)"
+     }
+    }
+   },
+   "drum_hihat_pedal__pedal": {
+    "triangles": 300,
+    "faces": 114,
+    "vertices": 160,
+    "groups": 5,
+    "boundsMin": [
+     0.91739,
+     -0.06992,
+     0.0086
+    ],
+    "boundsMax": [
+     1.08261,
+     0.26992,
+     0.08842
+    ],
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "inconsistentlyWoundEdges": 0,
+    "invertedGroups": 0,
+    "degenerateFaces": 0,
+    "maxNonPlanarityM": 0.0,
+    "sharpEdgesOver40deg": 96,
+    "bevelMiddleSeamLengthByClassM": {
+     "casing": 1.5899
+    },
+    "hardConvexEdgeLengthByStatusM": {
+     "casing": 1.247,
+     "unnamed": 1.8704
+    },
+    "hardConvexEdgesByLabel": {
+     "casing | hihat.base": {
+      "lengthM": 0.8937,
+      "edges": 12,
+      "reason": "underside rests on the rug"
+     },
+     "casing | hihat.housing": {
+      "lengthM": 0.3533,
+      "edges": 12,
+      "reason": "bottom perimeter rests on the base"
+     },
+     "unnamed | hihat.hardware": {
+      "lengthM": 1.8704,
+      "edges": 68,
+      "reason": "footboard and heel rubber (the heel hinge is a named pedal hinge)"
+     }
+    }
+   },
+   "drum_module__body": {
+    "triangles": 416,
+    "faces": 178,
+    "vertices": 230,
+    "groups": 11,
+    "boundsMin": [
+     0.73942,
+     0.31726,
+     0.56734
+    ],
+    "boundsMax": [
+     0.99271,
+     0.52996,
+     0.85418
+    ],
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "inconsistentlyWoundEdges": 0,
+    "invertedGroups": 0,
+    "degenerateFaces": 0,
+    "maxNonPlanarityM": 0.00111,
+    "sharpEdgesOver40deg": 208,
+    "bevelMiddleSeamLengthByClassM": {
+     "casing": 1.4521
+    },
+    "hardConvexEdgeLengthByStatusM": {
+     "unnamed": 1.8676
+    },
+    "hardConvexEdgesByLabel": {
+     "unnamed | module.controls": {
+      "lengthM": 0.9678,
+      "edges": 104,
+      "reason": "module knob and pad buttons"
+     },
+     "unnamed | module.mount": {
+      "lengthM": 0.7896,
+      "edges": 32,
+      "reason": "holder plate and arm tube end caps"
+     },
+     "unnamed | module.snake": {
+      "lengthM": 0.1102,
+      "edges": 16,
+      "reason": "snake end caps"
+     }
+    }
+   },
+   "drum_module__display": {
+    "triangles": 12,
+    "faces": 6,
+    "vertices": 8,
+    "groups": 1,
+    "boundsMin": [
+     0.79556,
+     0.37034,
+     0.8027
+    ],
+    "boundsMax": [
+     0.87828,
+     0.41138,
+     0.83206
+    ],
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "inconsistentlyWoundEdges": 0,
+    "invertedGroups": 0,
+    "degenerateFaces": 0,
+    "maxNonPlanarityM": 0.0,
+    "sharpEdgesOver40deg": 12,
+    "bevelMiddleSeamLengthByClassM": {},
+    "hardConvexEdgeLengthByStatusM": {
+     "screen": 0.4648
+    },
+    "hardConvexEdgesByLabel": {
+     "screen | module.display": {
+      "lengthM": 0.4648,
+      "edges": 12,
+      "reason": "display glow face"
+     }
+    }
+   },
+   "drum_sticks__pair": {
+    "triangles": 120,
+    "faces": 72,
+    "vertices": 64,
+    "groups": 2,
+    "boundsMin": [
+     0.8662,
+     -0.01086,
+     0.55802
+    ],
+    "boundsMax": [
+     1.20382,
+     0.45072,
+     0.58593
+    ],
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "inconsistentlyWoundEdges": 0,
+    "invertedGroups": 0,
+    "degenerateFaces": 0,
+    "maxNonPlanarityM": 0.0,
+    "sharpEdgesOver40deg": 84,
+    "bevelMiddleSeamLengthByClassM": {},
+    "hardConvexEdgeLengthByStatusM": {},
+    "hardConvexEdgesByLabel": {}
+   },
+   "drum_throne__throne": {
+    "triangles": 588,
+    "faces": 258,
+    "vertices": 322,
+    "groups": 14,
+    "boundsMin": [
+     1.23379,
+     -0.21712,
+     0.0086
+    ],
+    "boundsMax": [
+     1.61621,
+     0.175,
+     0.482
+    ],
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "inconsistentlyWoundEdges": 0,
+    "invertedGroups": 0,
+    "degenerateFaces": 0,
+    "maxNonPlanarityM": 0.0,
+    "sharpEdgesOver40deg": 308,
+    "bevelMiddleSeamLengthByClassM": {},
+    "hardConvexEdgeLengthByStatusM": {
+     "unnamed": 2.7524
+    },
+    "hardConvexEdgesByLabel": {
+     "unnamed | throne": {
+      "lengthM": 2.7524,
+      "edges": 224,
+      "reason": "post, lock, hub, collar and rubber-foot cylinder caps; leg and brace tube end caps"
+     }
+    }
+   },
+   "music_cables__runs": {
+    "triangles": 588,
+    "faces": 286,
+    "vertices": 310,
+    "groups": 8,
+    "boundsMin": [
+     0.61735,
+     -0.49365,
+     0.00045
+    ],
+    "boundsMax": [
+     1.93281,
+     1.0314,
+     0.75974
+    ],
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "inconsistentlyWoundEdges": 0,
+    "invertedGroups": 0,
+    "degenerateFaces": 0,
+    "maxNonPlanarityM": 0.00157,
+    "sharpEdgesOver40deg": 420,
+    "bevelMiddleSeamLengthByClassM": {},
+    "hardConvexEdgeLengthByStatusM": {
+     "unnamed": 2.6859
+    },
+    "hardConvexEdgesByLabel": {
+     "unnamed | cable.controller": {
+      "lengthM": 0.9642,
+      "edges": 14,
+      "reason": "cable end caps at the jacks and the wall"
+     },
+     "unnamed | cable.hihat_pedal": {
+      "lengthM": 0.2166,
+      "edges": 17,
+      "reason": "cable end caps at the jacks and the wall"
+     },
+     "unnamed | cable.kick": {
+      "lengthM": 0.0353,
+      "edges": 10,
+      "reason": "cable end caps at the jacks and the wall"
+     },
+     "unnamed | cable.module_power": {
+      "lengthM": 0.4345,
+      "edges": 13,
+      "reason": "cable end caps at the jacks and the wall"
+     },
+     "unnamed | cable.snare": {
+      "lengthM": 0.1541,
+      "edges": 14,
+      "reason": "cable end caps at the jacks and the wall"
+     },
+     "unnamed | cable.tom1": {
+      "lengthM": 0.1189,
+      "edges": 17,
+      "reason": "cable end caps at the jacks and the wall"
+     },
+     "unnamed | cable.tom2": {
+      "lengthM": 0.4308,
+      "edges": 15,
+      "reason": "cable end caps at the jacks and the wall"
+     },
+     "unnamed | cable.tom3": {
+      "lengthM": 0.3315,
+      "edges": 14,
+      "reason": "cable end caps at the jacks and the wall"
+     }
+    }
+   }
+  },
+  "normalsN1": {
+   "rows": {
+    "ctl_body__shell": {
+     "planarTriangles": 112,
+     "degeneratePlanarTriangles": 0,
+     "authoredMaxDeg": 0.0,
+     "authoredFailCorners": 0,
+     "v01DefaultMaxDeg": 21.1494,
+     "v01DefaultFailCorners": 105,
+     "nonUnitOrNonFiniteNormals": 0
+    },
+    "ctl_keys__keys": {
+     "planarTriangles": 464,
+     "degeneratePlanarTriangles": 0,
+     "authoredMaxDeg": 0.0,
+     "authoredFailCorners": 0,
+     "v01DefaultMaxDeg": 15.0,
+     "v01DefaultFailCorners": 174,
+     "nonUnitOrNonFiniteNormals": 0
+    },
+    "ctl_sustain_pedal__pedal": {
+     "planarTriangles": 56,
+     "degeneratePlanarTriangles": 0,
+     "authoredMaxDeg": 0.0,
+     "authoredFailCorners": 0,
+     "v01DefaultMaxDeg": 18.4916,
+     "v01DefaultFailCorners": 108,
+     "nonUnitOrNonFiniteNormals": 0
+    },
+    "drum_pads__shells": {
+     "planarTriangles": 288,
+     "degeneratePlanarTriangles": 0,
+     "authoredMaxDeg": 0.0,
+     "authoredFailCorners": 0,
+     "v01DefaultMaxDeg": 16.1833,
+     "v01DefaultFailCorners": 480,
+     "nonUnitOrNonFiniteNormals": 0
+    },
+    "drum_kick__tower": {
+     "planarTriangles": 56,
+     "degeneratePlanarTriangles": 0,
+     "authoredMaxDeg": 0.0,
+     "authoredFailCorners": 0,
+     "v01DefaultMaxDeg": 20.9547,
+     "v01DefaultFailCorners": 108,
+     "nonUnitOrNonFiniteNormals": 0
+    },
+    "drum_hihat_pedal__pedal": {
+     "planarTriangles": 56,
+     "degeneratePlanarTriangles": 0,
+     "authoredMaxDeg": 0.0,
+     "authoredFailCorners": 0,
+     "v01DefaultMaxDeg": 20.9547,
+     "v01DefaultFailCorners": 108,
+     "nonUnitOrNonFiniteNormals": 0
+    },
+    "drum_module__body": {
+     "planarTriangles": 28,
+     "degeneratePlanarTriangles": 0,
+     "authoredMaxDeg": 0.0,
+     "authoredFailCorners": 0,
+     "v01DefaultMaxDeg": 18.4916,
+     "v01DefaultFailCorners": 84,
+     "nonUnitOrNonFiniteNormals": 0
+    }
+   },
+   "authoredFailures (first 50)": []
+  },
+  "faceClassesN1": {
+   "ctl_body__shell": {
+    "classTotals": {
+     "bevel:casing": {
+      "faces": 50,
+      "triangles": 100,
+      "areaM2": 0.0207
+     },
+     "planar": {
+      "faces": 36,
+      "triangles": 112,
+      "areaM2": 1.21423
+     },
+     "round": {
+      "faces": 6,
+      "triangles": 12,
+      "areaM2": 0.00706
+     },
+     "unclassified": {
+      "faces": 334,
+      "triangles": 1036,
+      "areaM2": 0.08363
+     }
+    },
+    "classifiedGroups": [
+     {
+      "label": "ctl.slab",
+      "faces": [
+       0,
+       8
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:casing",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.panel",
+      "faces": [
+       8,
+       18
+      ],
+      "classRuns": [
+       [
+        "planar",
+        4
+       ],
+       [
+        "bevel:casing",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "bevel:casing",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.bays",
+      "faces": [
+       18,
+       26
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:casing",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.bays",
+      "faces": [
+       26,
+       34
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:casing",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.cheeks",
+      "faces": [
+       34,
+       63
+      ],
+      "classRuns": [
+       [
+        "planar",
+        2
+       ],
+       [
+        "bevel:casing",
+        18
+       ],
+       [
+        "planar",
+        2
+       ],
+       [
+        "bevel:casing",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "round",
+        3
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.cheeks",
+      "faces": [
+       63,
+       92
+      ],
+      "classRuns": [
+       [
+        "planar",
+        4
+       ],
+       [
+        "bevel:casing",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "round",
+        3
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "bevel:casing",
+        18
+       ]
+      ]
+     }
+    ],
+    "classArraySha256": "34e3b68b37010aabb603dabf47a68cbf4bc54e9b752970c62f9f0e49060ff724",
+    "authoredCornerNormalsSha256": "c34a1b8ce5abce5777c13335c6bd92ba5fc6135031edb8b32cf78ffa3da1f478",
+    "corners": 2112
+   },
+   "ctl_body__indicators": {
+    "classTotals": {
+     "unclassified": {
+      "faces": 30,
+      "triangles": 60,
+      "areaM2": 0.01042
+     }
+    },
+    "classifiedGroups": [],
+    "classArraySha256": "8716c703b430a453f97c56cb241980ec817bc0f341cacff00cf95e4af26f8e99",
+    "authoredCornerNormalsSha256": "40489a53a3739f1b85b127357415191c725aeb87a0f1c3000abe114109b1ba80",
+    "corners": 120
+   },
+   "ctl_keys__keys": {
+    "classTotals": {
+     "bevel:white_key_lip": {
+      "faces": 58,
+      "triangles": 116,
+      "areaM2": 0.00345
+     },
+     "planar": {
+      "faces": 174,
+      "triangles": 464,
+      "areaM2": 0.20842
+     },
+     "unclassified": {
+      "faces": 294,
+      "triangles": 588,
+      "areaM2": 0.47557
+     }
+    },
+    "classifiedGroups": [
+     {
+      "label": "ctl.keys",
+      "faces": [
+       0,
+       8
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:white_key_lip",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.keys",
+      "faces": [
+       14,
+       22
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:white_key_lip",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.keys",
+      "faces": [
+       28,
+       36
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:white_key_lip",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.keys",
+      "faces": [
+       42,
+       50
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:white_key_lip",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.keys",
+      "faces": [
+       56,
+       64
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:white_key_lip",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.keys",
+      "faces": [
+       70,
+       78
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:white_key_lip",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.keys",
+      "faces": [
+       84,
+       92
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:white_key_lip",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.keys",
+      "faces": [
+       98,
+       106
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:white_key_lip",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.keys",
+      "faces": [
+       112,
+       120
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:white_key_lip",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.keys",
+      "faces": [
+       126,
+       134
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:white_key_lip",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.keys",
+      "faces": [
+       140,
+       148
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:white_key_lip",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.keys",
+      "faces": [
+       154,
+       162
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:white_key_lip",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.keys",
+      "faces": [
+       168,
+       176
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:white_key_lip",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.keys",
+      "faces": [
+       182,
+       190
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:white_key_lip",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.keys",
+      "faces": [
+       196,
+       204
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:white_key_lip",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.keys",
+      "faces": [
+       210,
+       218
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:white_key_lip",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.keys",
+      "faces": [
+       224,
+       232
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:white_key_lip",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.keys",
+      "faces": [
+       238,
+       246
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:white_key_lip",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.keys",
+      "faces": [
+       252,
+       260
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:white_key_lip",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.keys",
+      "faces": [
+       266,
+       274
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:white_key_lip",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.keys",
+      "faces": [
+       280,
+       288
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:white_key_lip",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.keys",
+      "faces": [
+       294,
+       302
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:white_key_lip",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.keys",
+      "faces": [
+       308,
+       316
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:white_key_lip",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.keys",
+      "faces": [
+       322,
+       330
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:white_key_lip",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.keys",
+      "faces": [
+       336,
+       344
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:white_key_lip",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.keys",
+      "faces": [
+       350,
+       358
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:white_key_lip",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.keys",
+      "faces": [
+       364,
+       372
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:white_key_lip",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.keys",
+      "faces": [
+       378,
+       386
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:white_key_lip",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     },
+     {
+      "label": "ctl.keys",
+      "faces": [
+       392,
+       400
+      ],
+      "classRuns": [
+       [
+        "planar",
+        5
+       ],
+       [
+        "bevel:white_key_lip",
+        2
+       ],
+       [
+        "planar",
+        1
+       ]
+      ]
+     }
+    ],
+    "classArraySha256": "7811520ef46adaab24783c8a64986c4e4725c9f81a0bd841a77a94b6c0d8fb35",
+    "authoredCornerNormalsSha256": "55e29ee5e173972f0d1a7a268bee70eed8e56d0f2d6a5e519b4a56426704e1df",
+    "corners": 2220
+   },
+   "ctl_stand__frame": {
+    "classTotals": {
+     "unclassified": {
+      "faces": 272,
+      "triangles": 776,
+      "areaM2": 0.44004
+     }
+    },
+    "classifiedGroups": [],
+    "classArraySha256": "62fcd2a171fdd5558abce66f71e06a8683990a53796bad93e7325e89c6f5322f",
+    "authoredCornerNormalsSha256": "5ec01f2c50e8b2f86c0299a3a654ba28991bc874add7e94505b5d7f08a929c9f",
+    "corners": 1320
+   },
+   "ctl_sustain_pedal__pedal": {
+    "classTotals": {
+     "bevel:casing": {
+      "faces": 48,
+      "triangles": 96,
+      "areaM2": 0.00554
+     },
+     "planar": {
+      "faces": 12,
+      "triangles": 56,
+      "areaM2": 0.09078
+     },
+     "round": {
+      "faces": 16,
+      "triangles": 32,
+      "areaM2": 0.00176
+     },
+     "unclassified": {
+      "faces": 56,
+      "triangles": 128,
+      "areaM2": 0.02293
+     }
+    },
+    "classifiedGroups": [
+     {
+      "label": "sustain.base",
+      "faces": [
+       0,
+       38
+      ],
+      "classRuns": [
+       [
+        "planar",
+        2
+       ],
+       [
+        "round",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "round",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "round",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "round",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "bevel:casing",
+        24
+       ]
+      ]
+     },
+     {
+      "label": "sustain.plate",
+      "faces": [
+       38,
+       76
+      ],
+      "classRuns": [
+       [
+        "planar",
+        2
+       ],
+       [
+        "round",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "round",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "round",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "round",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "bevel:casing",
+        24
+       ]
+      ]
+     }
+    ],
+    "classArraySha256": "fc2d5b8c0d473591459160fa2acca7070ff68fbecff389422b597af1aaf244c5",
+    "authoredCornerNormalsSha256": "83ee308fa55b902891945a5b41ce31f7364c71c1610be8c0294cba61cd670a21",
+    "corners": 576
+   },
+   "stool_keys__stool": {
+    "classTotals": {
+     "unclassified": {
+      "faces": 242,
+      "triangles": 548,
+      "areaM2": 0.34018
+     }
+    },
+    "classifiedGroups": [],
+    "classArraySha256": "318a550565eb11633d9deb19ee3a1f10c4a0a1b5ed4a651c03ae4e060b47081f",
+    "authoredCornerNormalsSha256": "2563cc3c95b4d4e476bb3e53c1a870e771aabfc5869e9e5f5544814f6a2d06ca",
+    "corners": 1032
+   },
+   "rug__rug": {
+    "classTotals": {
+     "unclassified": {
+      "faces": 66,
+      "triangles": 156,
+      "areaM2": 7.52916
+     }
+    },
+    "classifiedGroups": [],
+    "classArraySha256": "53f3aa5bf421fa0d22a115488aaea0007d503784dff3d7a7abdec2f7d6e8fc91",
+    "authoredCornerNormalsSha256": "b3a15d067e94e30e4b10eb53e7e34c955ccc6e5445e3c190c590ffe7775bd63f",
+    "corners": 288
+   },
+   "drum_rack__rack": {
+    "classTotals": {
+     "unclassified": {
+      "faces": 740,
+      "triangles": 2084,
+      "areaM2": 0.79212
+     }
+    },
+    "classifiedGroups": [],
+    "classArraySha256": "219ed15c45bbe343b9c348e064e280ee29ba10b12fb77cc6d703682cf717b236",
+    "authoredCornerNormalsSha256": "538762328a9208fa8fb56414571eb6cd2e79ed3f4f9c3136b850ebfac237db71",
+    "corners": 3564
+   },
+   "drum_pads__shells": {
+    "classTotals": {
+     "bevel:casing": {
+      "faces": 192,
+      "triangles": 384,
+      "areaM2": 0.01629
+     },
+     "planar": {
+      "faces": 192,
+      "triangles": 288,
+      "areaM2": 0.20198
+     },
+     "round": {
+      "faces": 576,
+      "triangles": 1152,
+      "areaM2": 0.39788
+     },
+     "unclassified": {
+      "faces": 220,
+      "triangles": 488,
+      "areaM2": 0.1005
+     }
+    },
+    "classifiedGroups": [
+     {
+      "label": "pad.tom1.shell",
+      "faces": [
+       0,
+       240
+      ],
+      "classRuns": [
+       [
+        "planar",
+        24
+       ],
+       [
+        "round",
+        120
+       ],
+       [
+        "bevel:casing",
+        48
+       ],
+       [
+        "planar",
+        24
+       ],
+       [
+        "round",
+        24
+       ]
+      ]
+     },
+     {
+      "label": "pad.tom2.shell",
+      "faces": [
+       292,
+       532
+      ],
+      "classRuns": [
+       [
+        "planar",
+        24
+       ],
+       [
+        "round",
+        120
+       ],
+       [
+        "bevel:casing",
+        48
+       ],
+       [
+        "planar",
+        24
+       ],
+       [
+        "round",
+        24
+       ]
+      ]
+     },
+     {
+      "label": "pad.snare.shell",
+      "faces": [
+       584,
+       824
+      ],
+      "classRuns": [
+       [
+        "planar",
+        24
+       ],
+       [
+        "round",
+        120
+       ],
+       [
+        "bevel:casing",
+        48
+       ],
+       [
+        "planar",
+        24
+       ],
+       [
+        "round",
+        24
+       ]
+      ]
+     },
+     {
+      "label": "pad.tom3.shell",
+      "faces": [
+       888,
+       1128
+      ],
+      "classRuns": [
+       [
+        "planar",
+        24
+       ],
+       [
+        "round",
+        120
+       ],
+       [
+        "bevel:casing",
+        48
+       ],
+       [
+        "planar",
+        24
+       ],
+       [
+        "round",
+        24
+       ]
+      ]
+     }
+    ],
+    "classArraySha256": "4427bf8797d318e221672cc7b832c8229812e472014cad33d5d5a9773b0248d1",
+    "authoredCornerNormalsSha256": "59ac48e2f5e0266e6b263e7d4d74c4224a616319b7f42a49c40c97f627cc17d7",
+    "corners": 4672
+   },
+   "drum_pads__heads": {
+    "classTotals": {
+     "unclassified": {
+      "faces": 288,
+      "triangles": 384,
+      "areaM2": 0.41353
+     }
+    },
+    "classifiedGroups": [],
+    "classArraySha256": "feac42cdabd4104fa973d924ddac590a2fe4d8eaec6537d2feb259554af05802",
+    "authoredCornerNormalsSha256": "a9a41334165821ec3c433874d8a9590f4f02127d24f11049adcbb75e93f20121",
+    "corners": 960
+   },
+   "drum_cymbals__cymbals": {
+    "classTotals": {
+     "unclassified": {
+      "faces": 930,
+      "triangles": 1812,
+      "areaM2": 0.74582
+     }
+    },
+    "classifiedGroups": [],
+    "classArraySha256": "134718ef95cf3c7881844e8a1f6c1d33f3f12b53af791ea9cd9af16e4c86658f",
+    "authoredCornerNormalsSha256": "8f435f7c93556ac605c2328ad66886f29a2c84f035a9c40c0d742dfdbd23b043",
+    "corners": 3672
+   },
+   "drum_kick__tower": {
+    "classTotals": {
+     "bevel:casing": {
+      "faces": 64,
+      "triangles": 128,
+      "areaM2": 0.01503
+     },
+     "planar": {
+      "faces": 12,
+      "triangles": 56,
+      "areaM2": 0.42263
+     },
+     "unclassified": {
+      "faces": 282,
+      "triangles": 672,
+      "areaM2": 0.21921
+     }
+    },
+    "classifiedGroups": [
+     {
+      "label": "kick.tower",
+      "faces": [
+       0,
+       38
+      ],
+      "classRuns": [
+       [
+        "planar",
+        2
+       ],
+       [
+        "bevel:casing",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "bevel:casing",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "bevel:casing",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "bevel:casing",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "bevel:casing",
+        24
+       ]
+      ]
+     },
+     {
+      "label": "kick.base",
+      "faces": [
+       38,
+       76
+      ],
+      "classRuns": [
+       [
+        "planar",
+        2
+       ],
+       [
+        "bevel:casing",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "bevel:casing",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "bevel:casing",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "bevel:casing",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "bevel:casing",
+        24
+       ]
+      ]
+     }
+    ],
+    "classArraySha256": "eb208ce5e0012d2748aa6bb4812517509636ea154d9d918ccbd653b7fcfb005d",
+    "authoredCornerNormalsSha256": "6ea1d3bf106cce0147ba36c9a7f1a60cb66228f5c565e2d57e43a4229289d2d3",
+    "corners": 1572
+   },
+   "drum_hihat_pedal__pedal": {
+    "classTotals": {
+     "bevel:casing": {
+      "faces": 56,
+      "triangles": 112,
+      "areaM2": 0.00667
+     },
+     "planar": {
+      "faces": 12,
+      "triangles": 56,
+      "areaM2": 0.12209
+     },
+     "round": {
+      "faces": 8,
+      "triangles": 16,
+      "areaM2": 0.00059
+     },
+     "unclassified": {
+      "faces": 38,
+      "triangles": 116,
+      "areaM2": 0.06343
+     }
+    },
+    "classifiedGroups": [
+     {
+      "label": "hihat.base",
+      "faces": [
+       0,
+       38
+      ],
+      "classRuns": [
+       [
+        "planar",
+        2
+       ],
+       [
+        "round",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "round",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "round",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "round",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "bevel:casing",
+        24
+       ]
+      ]
+     },
+     {
+      "label": "hihat.housing",
+      "faces": [
+       38,
+       76
+      ],
+      "classRuns": [
+       [
+        "planar",
+        2
+       ],
+       [
+        "bevel:casing",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "bevel:casing",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "bevel:casing",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "bevel:casing",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "bevel:casing",
+        24
+       ]
+      ]
+     }
+    ],
+    "classArraySha256": "fa0c95111e1c7b9d3bb7d40241b0f675570c95ec7362d81f9231668c30d36b0a",
+    "authoredCornerNormalsSha256": "11ca77cbc0727d68e79703203e1dab447739fe84efe46d1e5992214bd2ad5740",
+    "corners": 528
+   },
+   "drum_module__body": {
+    "classTotals": {
+     "bevel:casing": {
+      "faces": 48,
+      "triangles": 96,
+      "areaM2": 0.00612
+     },
+     "planar": {
+      "faces": 6,
+      "triangles": 28,
+      "areaM2": 0.08192
+     },
+     "round": {
+      "faces": 8,
+      "triangles": 16,
+      "areaM2": 0.00321
+     },
+     "unclassified": {
+      "faces": 116,
+      "triangles": 276,
+      "areaM2": 0.05048
+     }
+    },
+    "classifiedGroups": [
+     {
+      "label": "module.case",
+      "faces": [
+       0,
+       62
+      ],
+      "classRuns": [
+       [
+        "planar",
+        2
+       ],
+       [
+        "bevel:casing",
+        24
+       ],
+       [
+        "round",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "round",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "round",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "round",
+        2
+       ],
+       [
+        "planar",
+        1
+       ],
+       [
+        "bevel:casing",
+        24
+       ]
+      ]
+     }
+    ],
+    "classArraySha256": "e5ad62d7d86b323670d3801877ce9627add6f12c28dc2afc4824efeb213ece9d",
+    "authoredCornerNormalsSha256": "9f680e03a75c8e862ceebd5b0035d639e1f7b2f99c16a56833c856713a898440",
+    "corners": 772
+   },
+   "drum_module__display": {
+    "classTotals": {
+     "unclassified": {
+      "faces": 6,
+      "triangles": 12,
+      "areaM2": 0.00588
+     }
+    },
+    "classifiedGroups": [],
+    "classArraySha256": "14de83ddd5268654cb3c64e37fbe04cb0b1cdee1191749bda08e82081a5c0596",
+    "authoredCornerNormalsSha256": "15cd3dddf0a8713813744b76ae5453fd8d871888f3d52dfdb80d0bb5a877fdfd",
+    "corners": 24
+   },
+   "drum_sticks__pair": {
+    "classTotals": {
+     "unclassified": {
+      "faces": 72,
+      "triangles": 120,
+      "areaM2": 0.0543
+     }
+    },
+    "classifiedGroups": [],
+    "classArraySha256": "7afa864ce65adf6c84b2204a80abb677553c2a2cdd31dc46f2b6539740cecb85",
+    "authoredCornerNormalsSha256": "c0264177fc4d4c2b7c13c732a5fc57c3477fa9a115020be3efe8a0426a0742d3",
+    "corners": 264
+   },
+   "drum_throne__throne": {
+    "classTotals": {
+     "unclassified": {
+      "faces": 258,
+      "triangles": 588,
+      "areaM2": 0.40029
+     }
+    },
+    "classifiedGroups": [],
+    "classArraySha256": "dc2c2a42b16b92ba9d1d0bba751f7ac776b9b6ec52854815358c86a4b855ccf3",
+    "authoredCornerNormalsSha256": "f16af429dec52388b7c9dab3e9a4c059762cad40c663c960a5db21a3f0606893",
+    "corners": 1104
+   },
+   "music_cables__runs": {
+    "classTotals": {
+     "unclassified": {
+      "faces": 286,
+      "triangles": 588,
+      "areaM2": 0.12778
+     }
+    },
+    "classifiedGroups": [],
+    "classArraySha256": "be3553c6f3188ed993f64f8f2c8d3cbaa8ec8e339433ad39581e4e5cc9efb0a2",
+    "authoredCornerNormalsSha256": "5bbc2db42a82dcb743a1f1a452223a7c11321d9a8021c67f9615127e9772afc1",
+    "corners": 1160
+   }
+  },
+  "restingGapsM": {
+   "stool | rug": 0.0003,
+   "stand | rug": 0.0003,
+   "shell | stand": 0.00571,
+   "keys | shell": 0.0003,
+   "sustain | rug": 0.0003,
+   "rack | rug": 0.0003,
+   "kick | rug": 0.0003,
+   "hihat pedal | rug": 0.0003,
+   "throne | rug": 0.0003,
+   "pad shells | rack": 0.0003,
+   "cymbals | rack": 0.0003,
+   "module | rack": 0.0003,
+   "sticks | pad shells": 0.00157,
+   "cables | rug": 0.00043,
+   "cables | module": 0.0003,
+   "cables | pad shells": 0.0038,
+   "cables | kick": 0.0038,
+   "cables | hihat pedal": 0.0038,
+   "cables | shell": 0.0038
+  },
+  "intersections": {
+   "m4VersusRetainedOrOtherM4Asset": {},
+   "m4VersusContactDecalsRecordedOnly": {
+    "ctl_stand__frame x contact_decals__music_corner": 170,
+    "ctl_sustain_pedal__pedal x contact_decals__music_corner": 24,
+    "drum_hihat_pedal__pedal x contact_decals__music_corner": 64,
+    "drum_kick__tower x contact_decals__music_corner": 220,
+    "drum_rack__rack x contact_decals__music_corner": 254,
+    "drum_throne__throne x contact_decals__music_corner": 120,
+    "music_cables__runs x contact_decals__music_corner": 86,
+    "stool_keys__stool x contact_decals__music_corner": 90
+   }
+  },
+  "views": {
+   "featureVisibility": {
+    "kickPedal": {
+     "unobstructed": 188,
+     "of": 210,
+     "blockers": {
+      "contact_decals__music_corner": 15,
+      "drum_throne__throne": 7
+     }
+    },
+    "kickTowerUpper": {
+     "unobstructed": 174,
+     "of": 192,
+     "blockers": {
+      "drum_pads__heads": 18
+     }
+    },
+    "hihatPedal": {
+     "unobstructed": 73,
+     "of": 160,
+     "blockers": {
+      "desk_frame__steel": 58,
+      "contact_decals__music_corner": 29
+     }
+    },
+    "sustainPedal": {
+     "unobstructed": 103,
+     "of": 116,
+     "blockers": {
+      "stool_keys__stool": 12,
+      "rug__rug": 1
+     }
+    },
+    "throneSeat": {
+     "unobstructed": 45,
+     "of": 73,
+     "blockers": {
+      "ctl_body__shell": 28
+     }
+    },
+    "stoolSeat": {
+     "unobstructed": 110,
+     "of": 110,
+     "blockers": {}
+    },
+    "moduleDisplay": {
+     "unobstructed": 7,
+     "of": 8,
+     "blockers": {
+      "drum_module__body": 1
+     }
+    }
+   },
+   "controllerAzimuth": {
+    "unobstructedSpanDeg": 30.6701,
+    "allVerticesSpanDeg": 30.923,
+    "unobstructedSamples": "354/358",
+    "builderAssert": ">= 30.0 deg (unobstructed)"
+   },
+   "targetRays": {
+    "target_dissertation": {
+     "clear": 81,
+     "of": 81
+    },
+    "target_copilot": {
+     "clear": 81,
+     "of": 81
+    },
+    "target_typeforge": {
+     "clear": 81,
+     "of": 81
+    }
+   },
+   "whiteKeys": {
+    "topsFirstHitKeys": 29,
+    "of": 29,
+    "pitchPx (pinhole estimate)": {
+     "music-1440": {
+      "minPx": 13.6274,
+      "maxPx": 14.6803,
+      "keysInFrame": 29
+     },
+     "right-down": {
+      "minPx": 11.68,
+      "maxPx": 13.3355,
+      "keysInFrame": 29
+     },
+     "music-320-f74": {
+      "minPx": 9.4005,
+      "maxPx": 10.1268,
+      "keysInFrame": 10
+     }
+    }
+   },
+   "cymbals": {
+    "hihat": {
+     "bell": {
+      "unobstructed": 16,
+      "of": 16,
+      "blockers": {}
+     },
+     "edge": {
+      "unobstructed": 25,
+      "of": 32,
+      "blockers": {
+       "speaker_nearfield__cabinet": 7
+      }
+     }
+    },
+    "crash": {
+     "bell": {
+      "unobstructed": 16,
+      "of": 16,
+      "blockers": {}
+     },
+     "edge": {
+      "unobstructed": 32,
+      "of": 32,
+      "blockers": {}
+     }
+    },
+    "ride": {
+     "bell": {
+      "unobstructed": 16,
+      "of": 16,
+      "blockers": {}
+     },
+     "edge": {
+      "unobstructed": 32,
+      "of": 32,
+      "blockers": {}
+     }
+    }
+   }
+  },
+  "matchesSearchSelection": true
+ },
+ "c2Search": {
+  "grid": {
+   "cx": [
+    1.25,
+    1.3,
+    1.35
+   ],
+   "cy": [
+    -0.9,
+    -0.85,
+    -0.8,
+    -0.75,
+    -0.7
+   ],
+   "yaw": [
+    -0.6,
+    -0.7,
+    -0.8
+   ],
+   "stool_x": [
+    0.0,
+    0.1,
+    0.25
+   ],
+   "leg_phase": [
+    0.0,
+    45.0
+   ]
+  },
+  "combinations": 270,
+  "prefilter": "root K1 support on the rug flat field (20 mm) for stool feet, stand ends and sustain base; all-vertex controller azimuth span >= 30.5 deg (an upper bound of the unobstructed span)",
+  "stage1Evaluated": 48,
+  "refinement": {
+   "around": {
+    "cx": 1.3,
+    "cy": -0.8,
+    "yaw": -0.8
+   },
+   "deltas": {
+    "dcx": [
+     -0.025,
+     0.0,
+     0.025
+    ],
+    "dcy": [
+     -0.025,
+     0.0,
+     0.025
+    ],
+    "dyaw": [
+     -0.05,
+     0.0,
+     0.05
+    ]
+   },
+   "combinations": 27,
+   "evaluated": 27
+  },
+  "selectionRule": "targets 81/81 each; unobstructed controller azimuth >= 30.5 deg (0.5 deg author margin over the builder assert); kick-pedal unobstructed fraction not below the v01 reference fraction (sample sets differ in size); then maximise the smaller of the throne-seat and sustain-pedal unobstructed fractions (both root recheck items); ties: the larger of the two, then nearest placement D (cx 1.30, cy -0.90, yaw -0.70). Revised once by the author after the first dry run, whose throne-first rule chose a sustain pedal at 59/116.",
+  "kickPedalReferenceV01": [
+   169,
+   190
+  ],
+  "selected": {
+   "cx": 1.325,
+   "cy": -0.825,
+   "yaw": -0.85,
+   "stool_x": 0.0,
+   "leg_phase": 0.0,
+   "unobstructedAzimuthSpan": 30.6701,
+   "throneSeat": [
+    45,
+    73
+   ],
+   "kickPedal": [
+    188,
+    210
+   ],
+   "stoolSeat": [
+    110,
+    110
+   ],
+   "hihatPedal": [
+    73,
+    160
+   ],
+   "sustainPedal": [
+    103,
+    116
+   ],
+   "targetsMin": 81
+  },
+  "standHeightVariants": {
+   "0.68": {
+    "zb": 0.6889,
+    "throneSeat": [
+     45,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "sustainPedal": [
+     103,
+     116
+    ],
+    "unobstructedAzimuthSpan": 30.6701,
+    "withinSizeTolerance": true
+   },
+   "0.665": {
+    "zb": 0.6739,
+    "throneSeat": [
+     44,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "sustainPedal": [
+     103,
+     116
+    ],
+    "unobstructedAzimuthSpan": 30.6701,
+    "withinSizeTolerance": true
+   },
+   "0.65": {
+    "zb": 0.6589,
+    "throneSeat": [
+     43,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "sustainPedal": [
+     103,
+     116
+    ],
+    "unobstructedAzimuthSpan": 30.6701,
+    "withinSizeTolerance": false
+   }
+  },
+  "results": [
+   {
+    "cx": 1.325,
+    "cy": -0.825,
+    "yaw": -0.8,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.4627,
+    "throneSeat": [
+     46,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     81,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.325,
+    "cy": -0.825,
+    "yaw": -0.85,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.6701,
+    "throneSeat": [
+     45,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     103,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.325,
+    "cy": -0.8,
+    "yaw": -0.85,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.5669,
+    "throneSeat": [
+     44,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     101,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.325,
+    "cy": -0.8,
+    "yaw": -0.8,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.2796,
+    "throneSeat": [
+     43,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     87,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.3,
+    "cy": -0.825,
+    "yaw": -0.85,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 31.0981,
+    "throneSeat": [
+     42,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     102,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.3,
+    "cy": -0.825,
+    "yaw": -0.8,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.8035,
+    "throneSeat": [
+     41,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     79,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.325,
+    "cy": -0.775,
+    "yaw": -0.85,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.4555,
+    "throneSeat": [
+     40,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     103,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.35,
+    "cy": -0.85,
+    "yaw": -0.8,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.2973,
+    "throneSeat": [
+     52,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     62,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.325,
+    "cy": -0.775,
+    "yaw": -0.8,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.0915,
+    "throneSeat": [
+     38,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     97,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.3,
+    "cy": -0.8,
+    "yaw": -0.85,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.9869,
+    "throneSeat": [
+     37,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     102,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.3,
+    "cy": -0.775,
+    "yaw": -0.85,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.8673,
+    "throneSeat": [
+     37,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     102,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.3,
+    "cy": -0.775,
+    "yaw": -0.8,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.465,
+    "throneSeat": [
+     37,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     101,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.325,
+    "cy": -0.775,
+    "yaw": -0.75,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.1019,
+    "throneSeat": [
+     38,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     58,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.3,
+    "cy": -0.8,
+    "yaw": -0.8,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.6124,
+    "throneSeat": [
+     36,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     88,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.3,
+    "cy": -0.8,
+    "yaw": -0.8,
+    "stool_x": 0.0,
+    "leg_phase": 45.0,
+    "unobstructedAzimuthSpan": 30.6124,
+    "throneSeat": [
+     36,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     88,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.3,
+    "cy": -0.85,
+    "yaw": -0.8,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.9892,
+    "throneSeat": [
+     44,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     57,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.3,
+    "cy": -0.8,
+    "yaw": -0.75,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.6165,
+    "throneSeat": [
+     36,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     57,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.325,
+    "cy": -0.8,
+    "yaw": -0.75,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.2758,
+    "throneSeat": [
+     42,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     56,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.275,
+    "cy": -0.825,
+    "yaw": -0.85,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 31.535,
+    "throneSeat": [
+     35,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     102,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.275,
+    "cy": -0.8,
+    "yaw": -0.85,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 31.4153,
+    "throneSeat": [
+     35,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     102,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.275,
+    "cy": -0.8,
+    "yaw": -0.8,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.9979,
+    "throneSeat": [
+     35,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     89,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.3,
+    "cy": -0.775,
+    "yaw": -0.75,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.4349,
+    "throneSeat": [
+     36,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     55,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.275,
+    "cy": -0.825,
+    "yaw": -0.75,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 31.1471,
+    "throneSeat": [
+     34,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     53,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.275,
+    "cy": -0.825,
+    "yaw": -0.8,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 31.1496,
+    "throneSeat": [
+     33,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     77,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.275,
+    "cy": -0.8,
+    "yaw": -0.75,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.9625,
+    "throneSeat": [
+     33,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     57,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.85,
+    "yaw": -0.8,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 31.7038,
+    "throneSeat": [
+     33,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     57,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.275,
+    "cy": -0.775,
+    "yaw": -0.85,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 31.287,
+    "throneSeat": [
+     32,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     103,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.3,
+    "cy": -0.75,
+    "yaw": -0.8,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.3585,
+    "throneSeat": [
+     32,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     98,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.3,
+    "cy": -0.75,
+    "yaw": -0.8,
+    "stool_x": 0.0,
+    "leg_phase": 45.0,
+    "unobstructedAzimuthSpan": 30.3585,
+    "throneSeat": [
+     32,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     98,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.275,
+    "cy": -0.775,
+    "yaw": -0.8,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.8916,
+    "throneSeat": [
+     31,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     99,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.325,
+    "cy": -0.825,
+    "yaw": -0.75,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.4444,
+    "throneSeat": [
+     43,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     49,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.3,
+    "cy": -0.825,
+    "yaw": -0.75,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.7929,
+    "throneSeat": [
+     40,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     49,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.275,
+    "cy": -0.775,
+    "yaw": -0.75,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.7727,
+    "throneSeat": [
+     30,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     57,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.8,
+    "yaw": -0.8,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 31.4417,
+    "throneSeat": [
+     27,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     89,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.8,
+    "yaw": -0.8,
+    "stool_x": 0.0,
+    "leg_phase": 45.0,
+    "unobstructedAzimuthSpan": 31.4417,
+    "throneSeat": [
+     27,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     89,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.75,
+    "yaw": -0.8,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 31.2029,
+    "throneSeat": [
+     23,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     96,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.75,
+    "yaw": -0.8,
+    "stool_x": 0.0,
+    "leg_phase": 45.0,
+    "unobstructedAzimuthSpan": 31.2029,
+    "throneSeat": [
+     23,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     96,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.3,
+    "cy": -0.75,
+    "yaw": -0.8,
+    "stool_x": 0.1,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.3585,
+    "throneSeat": [
+     32,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     34,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.3,
+    "cy": -0.75,
+    "yaw": -0.8,
+    "stool_x": 0.1,
+    "leg_phase": 45.0,
+    "unobstructedAzimuthSpan": 30.3585,
+    "throneSeat": [
+     32,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     34,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.75,
+    "yaw": -0.7,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.8994,
+    "throneSeat": [
+     21,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     46,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.75,
+    "yaw": -0.7,
+    "stool_x": 0.0,
+    "leg_phase": 45.0,
+    "unobstructedAzimuthSpan": 30.8994,
+    "throneSeat": [
+     21,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     46,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.3,
+    "cy": -0.8,
+    "yaw": -0.6,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.2544,
+    "throneSeat": [
+     35,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     24,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.3,
+    "cy": -0.8,
+    "yaw": -0.6,
+    "stool_x": 0.0,
+    "leg_phase": 45.0,
+    "unobstructedAzimuthSpan": 30.2544,
+    "throneSeat": [
+     35,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     24,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.8,
+    "yaw": -0.6,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.997,
+    "throneSeat": [
+     28,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     24,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.8,
+    "yaw": -0.6,
+    "stool_x": 0.0,
+    "leg_phase": 45.0,
+    "unobstructedAzimuthSpan": 30.997,
+    "throneSeat": [
+     28,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     24,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.3,
+    "cy": -0.8,
+    "yaw": -0.8,
+    "stool_x": 0.1,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.6124,
+    "throneSeat": [
+     36,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     23,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.85,
+    "yaw": -0.7,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 31.621,
+    "throneSeat": [
+     34,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     23,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.8,
+    "yaw": -0.7,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 31.2715,
+    "throneSeat": [
+     28,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     23,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.8,
+    "yaw": -0.7,
+    "stool_x": 0.0,
+    "leg_phase": 45.0,
+    "unobstructedAzimuthSpan": 31.2715,
+    "throneSeat": [
+     28,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     23,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.8,
+    "yaw": -0.8,
+    "stool_x": 0.1,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 31.4417,
+    "throneSeat": [
+     27,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     23,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.75,
+    "yaw": -0.8,
+    "stool_x": 0.1,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 31.2029,
+    "throneSeat": [
+     23,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     23,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.75,
+    "yaw": -0.8,
+    "stool_x": 0.1,
+    "leg_phase": 45.0,
+    "unobstructedAzimuthSpan": 31.2029,
+    "throneSeat": [
+     23,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     23,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.75,
+    "yaw": -0.6,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.6857,
+    "throneSeat": [
+     19,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     23,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.75,
+    "yaw": -0.6,
+    "stool_x": 0.0,
+    "leg_phase": 45.0,
+    "unobstructedAzimuthSpan": 30.6857,
+    "throneSeat": [
+     19,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     23,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.75,
+    "yaw": -0.6,
+    "stool_x": 0.1,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.6857,
+    "throneSeat": [
+     19,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     23,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.7,
+    "yaw": -0.7,
+    "stool_x": 0.25,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.5078,
+    "throneSeat": [
+     14,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     84,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.7,
+    "yaw": -0.7,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.5078,
+    "throneSeat": [
+     14,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     56,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.7,
+    "yaw": -0.7,
+    "stool_x": 0.0,
+    "leg_phase": 45.0,
+    "unobstructedAzimuthSpan": 30.5078,
+    "throneSeat": [
+     14,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     56,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.3,
+    "cy": -0.85,
+    "yaw": -0.7,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.8754,
+    "throneSeat": [
+     43,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     22,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.3,
+    "cy": -0.8,
+    "yaw": -0.7,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.5583,
+    "throneSeat": [
+     35,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     22,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.3,
+    "cy": -0.8,
+    "yaw": -0.7,
+    "stool_x": 0.0,
+    "leg_phase": 45.0,
+    "unobstructedAzimuthSpan": 30.5583,
+    "throneSeat": [
+     35,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     22,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.75,
+    "yaw": -0.7,
+    "stool_x": 0.1,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.8994,
+    "throneSeat": [
+     21,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     22,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.75,
+    "yaw": -0.7,
+    "stool_x": 0.1,
+    "leg_phase": 45.0,
+    "unobstructedAzimuthSpan": 30.8994,
+    "throneSeat": [
+     21,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     22,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.7,
+    "yaw": -0.7,
+    "stool_x": 0.1,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.5078,
+    "throneSeat": [
+     14,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     22,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.7,
+    "yaw": -0.7,
+    "stool_x": 0.1,
+    "leg_phase": 45.0,
+    "unobstructedAzimuthSpan": 30.5078,
+    "throneSeat": [
+     14,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     22,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.7,
+    "yaw": -0.8,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.9316,
+    "throneSeat": [
+     13,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     98,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.7,
+    "yaw": -0.8,
+    "stool_x": 0.0,
+    "leg_phase": 45.0,
+    "unobstructedAzimuthSpan": 30.9316,
+    "throneSeat": [
+     13,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     98,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.7,
+    "yaw": -0.8,
+    "stool_x": 0.1,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.9316,
+    "throneSeat": [
+     13,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     52,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.7,
+    "yaw": -0.8,
+    "stool_x": 0.1,
+    "leg_phase": 45.0,
+    "unobstructedAzimuthSpan": 30.9316,
+    "throneSeat": [
+     13,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     52,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.7,
+    "yaw": -0.8,
+    "stool_x": 0.25,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.9316,
+    "throneSeat": [
+     13,
+     73
+    ],
+    "kickPedal": [
+     188,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     51,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.7,
+    "yaw": -0.6,
+    "stool_x": 0.0,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.3523,
+    "throneSeat": [
+     9,
+     73
+    ],
+    "kickPedal": [
+     186,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     23,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.7,
+    "yaw": -0.6,
+    "stool_x": 0.0,
+    "leg_phase": 45.0,
+    "unobstructedAzimuthSpan": 30.3523,
+    "throneSeat": [
+     9,
+     73
+    ],
+    "kickPedal": [
+     186,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     23,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.7,
+    "yaw": -0.6,
+    "stool_x": 0.1,
+    "leg_phase": 0.0,
+    "unobstructedAzimuthSpan": 30.3523,
+    "throneSeat": [
+     9,
+     73
+    ],
+    "kickPedal": [
+     186,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     23,
+     116
+    ],
+    "targetsMin": 81
+   },
+   {
+    "cx": 1.25,
+    "cy": -0.7,
+    "yaw": -0.6,
+    "stool_x": 0.1,
+    "leg_phase": 45.0,
+    "unobstructedAzimuthSpan": 30.3523,
+    "throneSeat": [
+     9,
+     73
+    ],
+    "kickPedal": [
+     186,
+     210
+    ],
+    "stoolSeat": [
+     110,
+     110
+    ],
+    "hihatPedal": [
+     73,
+     160
+    ],
+    "sustainPedal": [
+     23,
+     116
+    ],
+    "targetsMin": 81
+   }
+  ]
+ },
+ "elapsedSeconds": 155.9
+}

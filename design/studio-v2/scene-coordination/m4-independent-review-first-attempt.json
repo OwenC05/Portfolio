@@ -1,0 +1,8 @@
+{
+  "scope": "Independent reviewer fixture failure, not a guard failure",
+  "command": "python -B design/studio-v2/scene-coordination/m4-independent-review-probes.py",
+  "exit": 1,
+  "originalInMemoryChecks": "50/50 passed; retained in m4-independent-review-rerun.json",
+  "failure": "StopIteration before the frost probe invoked the guard: reviewer fixture used nonexistent desk_cup__frost",
+  "correction": "Use actual kb_case__frost_shell identity; preserve original rerun receipt and do not repeat those 50 checks"
+}

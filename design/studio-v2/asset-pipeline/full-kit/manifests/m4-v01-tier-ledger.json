@@ -1,0 +1,459 @@
+{
+ "statement": "M4 v01 tier-size ledger (G2-G5 'tier size within 3%'), computed offline in CPython from the frozen geometry helper; no Blender. Geometry facts only, not visual approval.",
+ "units": "Blender metres = glTF metres (Blender +Z up, glTF +Y up). Runtime world units = 2 x metres, +0.11 on Y. Prototype sizes are glTF-local accessor extents x node scale.",
+ "inputs": {
+  "helper": [
+   "source/build_fullkit_m4_geometry.py",
+   "c7ce9d8e1792273d6aeffdc5b536233413fdca6c6fd16abf344827d6433ab1c0"
+  ],
+  "inventory": [
+   "asset-inventory.json",
+   "eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87"
+  ],
+  "prototypeBaseline": [
+   "exports/studio-full-kit-m1-baseline-v02.glb",
+   "04994845f62236c6230dce1ba8af7d9811e21fc1e45c0fff6a89be7f06777093"
+  ]
+ },
+ "m4MeasuredVsTarget": {
+  "ctl_body": {
+   "target": "0.99 x 0.32 x 0.095",
+   "measured_wdh": [
+    0.99,
+    0.32,
+    0.1039
+   ]
+  },
+  "ctl_keys": {
+   "target": "29.4 mm white pitch",
+   "measured": "29.4 mm pitch, 3.4 mm gap, 29 white / 20 black"
+  },
+  "ctl_stand": {
+   "target": "0.68 high",
+   "measured_height": 0.5641,
+   "note": "top of frame under the controller base (zb 0.573)"
+  },
+  "ctl_sustain_pedal": {
+   "target": "0.10 x 0.26",
+   "measured_xyz_incl_cable": [
+    0.1184,
+    0.4635,
+    0.6078
+   ]
+  },
+  "stool_keys": {
+   "target": "0.50 seat height",
+   "measured_top": 0.5,
+   "seat_param": 0.5
+  },
+  "drum_rack": {
+   "target": "1.16 wide, 0.75 high",
+   "upright_centres": 1.16,
+   "top_bar_z": 0.8,
+   "measured_top": 1.0024,
+   "measured_xyz": [
+    1.2572,
+    0.612,
+    0.9938
+   ]
+  },
+  "drum_pads": {
+   "target": "0.25 to 0.31 dia",
+   "measured_outer_rim_dia": {
+    "tom1": 0.282,
+    "tom2": 0.282,
+    "snare": 0.332,
+    "tom3": 0.282
+   },
+   "head_dia": {
+    "tom1": 0.27,
+    "tom2": 0.27,
+    "snare": 0.32,
+    "tom3": 0.27
+   }
+  },
+  "drum_cymbals": {
+   "target": "0.38 dia",
+   "measured_dia": {
+    "hihat": 0.38,
+    "crash": 0.4,
+    "ride": 0.4
+   }
+  },
+  "drum_hihat_pedal": {
+   "target": "0.13 x 0.33",
+   "measured_xyz": [
+    0.126,
+    0.3,
+    0.0798
+   ],
+   "params": [
+    0.11,
+    0.3
+   ]
+  },
+  "drum_kick": {
+   "target": "0.45 high tower",
+   "tower_param": 0.45,
+   "measured_top_above_rug": 0.45
+  },
+  "drum_module": {
+   "target": "0.20 x 0.15",
+   "params_w_h_d": [
+    0.2,
+    0.13,
+    0.05
+   ]
+  },
+  "drum_sticks": {
+   "target": "0.41 long real x1.25 = 0.5125",
+   "measured_xyz_pair": [
+    0.3376,
+    0.4616,
+    0.0279
+   ]
+  },
+  "drum_throne": {
+   "target": "0.48 seat height",
+   "measured_top": 0.482,
+   "seat_param": 0.48
+  },
+  "rug": {
+   "target": "1.85 x 2.25",
+   "measured": [
+    1.655,
+    2.25
+   ]
+  },
+  "music_cables": {
+   "target": "6 mm round",
+   "measured_dia_mm": 6.4
+  }
+ },
+ "prototypeBaselineV02Proxies": {
+  "ctl_body__proxy_body": {
+   "localSizeXYZ_glTF": [
+    1.485,
+    0.08,
+    0.45
+   ],
+   "translation": [
+    1.350000023841858,
+    0.6200000047683716,
+    0.41499999165534973
+   ],
+   "rotation": null
+  },
+  "ctl_keys__proxy_key_bed": {
+   "localSizeXYZ_glTF": [
+    1.3,
+    0.02,
+    0.26
+   ],
+   "translation": [
+    1.350000023841858,
+    0.675000011920929,
+    0.49000000953674316
+   ],
+   "rotation": null
+  },
+  "ctl_stand__proxy_leg_1": {
+   "localSizeXYZ_glTF": [
+    0.04,
+    0.6,
+    0.3
+   ],
+   "translation": [
+    0.8349999785423279,
+    0.2800000011920929,
+    0.41499999165534973
+   ],
+   "rotation": null
+  },
+  "ctl_stand__proxy_leg_2": {
+   "localSizeXYZ_glTF": [
+    0.04,
+    0.6,
+    0.3
+   ],
+   "translation": [
+    1.8650000095367432,
+    0.2800000011920929,
+    0.41499999165534973
+   ],
+   "rotation": null
+  },
+  "ctl_sustain_pedal__proxy_pedal": {
+   "localSizeXYZ_glTF": [
+    0.1,
+    0.04,
+    0.26
+   ],
+   "translation": [
+    1.4500000476837158,
+    0.02500000037252903,
+    0.6899999976158142
+   ],
+   "rotation": null
+  },
+  "drum_cymbals__proxy_cymbal_1": {
+   "localSizeXYZ_glTF": [
+    0.4,
+    0.015,
+    0.4
+   ],
+   "translation": [
+    0.8700000047683716,
+    1.0199999809265137,
+    -0.6499999761581421
+   ],
+   "rotation": null
+  },
+  "drum_cymbals__proxy_cymbal_2": {
+   "localSizeXYZ_glTF": [
+    0.44,
+    0.015,
+    0.44
+   ],
+   "translation": [
+    1.6799999475479126,
+    1.059999942779541,
+    -0.6700000166893005
+   ],
+   "rotation": null
+  },
+  "drum_cymbals__proxy_cymbal_3": {
+   "localSizeXYZ_glTF": [
+    0.37,
+    0.015,
+    0.37
+   ],
+   "translation": [
+    1.9800000190734863,
+    0.9350000023841858,
+    -0.4449999928474426
+   ],
+   "rotation": null
+  },
+  "drum_hihat_pedal__proxy_pedal": {
+   "localSizeXYZ_glTF": [
+    0.13,
+    0.04,
+    0.33
+   ],
+   "translation": [
+    0.875,
+    0.02500000037252903,
+    -0.1850000023841858
+   ],
+   "rotation": null
+  },
+  "drum_kick__proxy_tower_pedal": {
+   "localSizeXYZ_glTF": [
+    0.22,
+    0.3,
+    0.225
+   ],
+   "translation": [
+    1.4149999618530273,
+    0.17499999701976776,
+    -0.25999999046325684
+   ],
+   "rotation": null
+  },
+  "drum_module__proxy_module": {
+   "localSizeXYZ_glTF": [
+    0.12,
+    0.035,
+    0.16
+   ],
+   "translation": [
+    0.7549999952316284,
+    0.7149999737739563,
+    -0.4099999964237213
+   ],
+   "rotation": null
+  },
+  "drum_pads__proxy_pad_1": {
+   "localSizeXYZ_glTF": [
+    0.29,
+    0.05,
+    0.29
+   ],
+   "translation": [
+    1.1200000047683716,
+    0.7950000166893005,
+    -0.5600000023841858
+   ],
+   "rotation": null
+  },
+  "drum_pads__proxy_pad_2": {
+   "localSizeXYZ_glTF": [
+    0.3,
+    0.05,
+    0.3
+   ],
+   "translation": [
+    1.5199999809265137,
+    0.8100000023841858,
+    -0.5600000023841858
+   ],
+   "rotation": null
+  },
+  "drum_pads__proxy_pad_3": {
+   "localSizeXYZ_glTF": [
+    0.34,
+    0.05,
+    0.34
+   ],
+   "translation": [
+    1.0499999523162842,
+    0.5450000166893005,
+    -0.23000000417232513
+   ],
+   "rotation": null
+  },
+  "drum_pads__proxy_pad_4": {
+   "localSizeXYZ_glTF": [
+    0.34,
+    0.05,
+    0.34
+   ],
+   "translation": [
+    1.8200000524520874,
+    0.574999988079071,
+    -0.26499998569488525
+   ],
+   "rotation": null
+  },
+  "drum_rack__proxy_crossbar": {
+   "localSizeXYZ_glTF": [
+    1.2,
+    0.035,
+    0.035
+   ],
+   "translation": [
+    1.399999976158142,
+    0.6600000262260437,
+    -0.5600000023841858
+   ],
+   "rotation": null
+  },
+  "drum_rack__proxy_upright_1": {
+   "localSizeXYZ_glTF": [
+    0.035,
+    0.75,
+    0.035
+   ],
+   "translation": [
+    0.8199999928474426,
+    0.375,
+    -0.5600000023841858
+   ],
+   "rotation": null
+  },
+  "drum_rack__proxy_upright_2": {
+   "localSizeXYZ_glTF": [
+    0.035,
+    0.75,
+    0.035
+   ],
+   "translation": [
+    1.9800000190734863,
+    0.375,
+    -0.5600000023841858
+   ],
+   "rotation": null
+  },
+  "drum_sticks__proxy_pair": {
+   "localSizeXYZ_glTF": [
+    0.25,
+    0.01,
+    0.03
+   ],
+   "translation": [
+    1.0750000476837158,
+    0.5950000286102295,
+    -0.23999999463558197
+   ],
+   "rotation": null
+  },
+  "drum_throne__proxy_seat": {
+   "localSizeXYZ_glTF": [
+    0.31,
+    0.07,
+    0.31
+   ],
+   "translation": [
+    1.4249999523162842,
+    0.4449999928474426,
+    0
+   ],
+   "rotation": null
+  },
+  "rug__proxy_rug": {
+   "localSizeXYZ_glTF": [
+    1.85,
+    0.0175,
+    2.25
+   ],
+   "translation": [
+    1.375,
+    0.009999999776482582,
+    0.15000000596046448
+   ],
+   "rotation": null
+  },
+  "stool_keys__proxy_post": {
+   "localSizeXYZ_glTF": [
+    0.04,
+    0.45,
+    0.04
+   ],
+   "translation": [
+    1.5499999523162842,
+    0.22499999403953552,
+    1.024999976158142
+   ],
+   "rotation": null
+  },
+  "stool_keys__proxy_seat": {
+   "localSizeXYZ_glTF": [
+    0.31,
+    0.07,
+    0.31
+   ],
+   "translation": [
+    1.5499999523162842,
+    0.48500001430511475,
+    1.024999976158142
+   ],
+   "rotation": null
+  }
+ },
+ "within3pct": [
+  "ctl_body width/depth (0.99 x 0.32)",
+  "ctl_keys pitch 29.4 mm",
+  "ctl_sustain_pedal base 0.10 x 0.26",
+  "stool_keys seat 0.50",
+  "drum_kick tower 0.45",
+  "drum_cymbals hihat 0.38",
+  "drum_rack upright centres 1.16",
+  "drum_sticks 0.51 vs 0.5125",
+  "drum_throne seat 0.48 (top 0.482)",
+  "drum_pads toms 0.27 head / 0.282 rim inside 0.25-0.31",
+  "drum_hihat_pedal width 0.126 vs 0.13 (-3.1%, at the limit)"
+ ],
+ "outside3pct": {
+  "ctl_body height": "slab 0.095, cheeks 0.099, knobs to 0.104 (+9.4% overall)",
+  "ctl_stand": "0.564 tall vs 0.68 (-17%): frame ends under the 0.573 controller base",
+  "drum_rack": "top bar 0.80 vs 0.75 high (+6.7%); cymbal/module booms reach 1.00",
+  "drum_pads snare": "head 0.32 / rim 0.332 vs <=0.31 (+3.2..7.1%)",
+  "drum_cymbals crash/ride": "0.40 vs 0.38 (+5.3%)",
+  "drum_hihat_pedal length": "0.30 vs 0.33 (-9.1%)",
+  "drum_module height": "0.13 vs 0.15 (-13.3%)",
+  "rug width": "1.655 vs 1.85 (-10.5%; x0 moved to 0.56 off the under-desk contact decal)",
+  "music_cables": "6.4 mm vs 6 mm (+6.7%)"
+ },
+ "bevelClass": "Not met as written: M4 follows the M3 explicit-vertex rule (no modifiers, exact triangle counts); edges are sharp-split above 40 degrees, with no live bevel family. Reported, not passed."
+}

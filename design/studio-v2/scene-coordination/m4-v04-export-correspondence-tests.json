@@ -1,0 +1,544 @@
+{
+  "schema": "m4-v04-export-correspondence-writer-fixtures/1",
+  "scope": "synthetic finite geometry only; no actual candidate, Blender, source producer or completed audit run",
+  "candidateAcceptance": false,
+  "exportAuthorization": false,
+  "checkerSha256": "a343bd2e8764bd26d8d1060ed78bb300922a3f620554316c738d4401dc17b378",
+  "testSha256": "eaa704d92e4a1e404b378c4f0dff3026cbe1f9dd21b4957d7bdf2a9597fc5f74",
+  "protectedBefore": {
+    "scene-coordination\\m4-v04-root-expected-pins.json": "48d7925416bd1ffab4ddfed0935f18ef074522d23c6a678af150fa3d6351ef72",
+    "scene-coordination\\m4-v04-inspection-export-contract.md": "baa9dad00bfb21e6d11aef841216364c9c1286d9b5c4d6a5a8a829e5e8c90e21",
+    "scene-coordination\\m4-v04-inspection-provenance-proposal.json": "8004a15019e3dcb8a522d01c4026679b639ea05e92bda45de166b507ee91bd6f",
+    "scene-coordination\\m4-transition-guard.py": "ad62627f0683806ace2c8ebbb133ba83e72c7d95f1df8adc291a3706aa40da6b",
+    "scene-coordination\\m4-v04-inspection-transition-guard.py": "b79fca8ae91c97a8d817154a948e4b7388664e1ddbc5b11c1ffc744de513524c",
+    "scene-coordination\\m4-v04-inspection-transition-guard-tests.json": "ccc4159cfe832fb405e6271716b9879708d30972b09703fff3c427c8a0861b66",
+    "scene-coordination\\m4-v04-candidate-audit.py": "b19797d1c48520890f0fc3d984360614885034b7d17ff32233368b8e2e64eb01",
+    "scene-coordination\\m4-v04-candidate-audit.json": "ece4bff6f1a768835a3b2f9cd9f932acb270e6f2c1d250e48de363c098da9fdc",
+    "asset-pipeline\\full-kit\\source\\build_fullkit_m4_geometry_v04.py": "8d814874ee0ac1317827297d2a729b34f4789fffd891212ae03e2c440a73b792",
+    "asset-pipeline\\full-kit\\source\\build_fullkit_m4_v04.py": "0d01536c36481021e8ff7026a6608998eb44dce0d88505dae105f94834909826",
+    "asset-pipeline\\full-kit\\source\\produce_fullkit_m4_v04.py": "3c9fe150d859087050fed73d3fed54d3a97a5998774c455203e6a00462dc08d1",
+    "asset-pipeline\\full-kit\\source\\measure_fullkit_m4_v04.py": "d56efb031e843320625b610181885ff9110f1789b8bced9bef475f75f50ccf1b",
+    "asset-pipeline\\full-kit\\manifests\\m4-v04-rows.json": "1fa5fdd3f267896a76743aca986af9cadd1dd84610395e6049fc799009489992",
+    "asset-pipeline\\full-kit\\manifests\\m4-v04-verifier-declaration.json": "5d04a051398e09c9b2aeb309e2893efe09ed286a18e27113785ff487a7074d42",
+    "asset-pipeline\\full-kit\\manifests\\m4-v04-cpu-measurements.json": "be6c205db283f86ce8a8048c0dde58ae11e0cdb38ff326e1a4c62d26a9265bea",
+    "asset-pipeline\\full-kit\\manifests\\m4-v04-author-declarations.json": "8ce8db34b40a3ce053d037c5152fec8c8ed19d586b0968439abf64e3308f32bb",
+    "asset-pipeline\\full-kit\\exports\\studio-full-kit-m3-proposal-v03.glb": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+    "asset-pipeline\\full-kit\\manifests\\studio-full-kit-m3-proposal-v03.manifest.json": "060bab9af5dd23b4258e03aef10de21faa7c32aa0a6010cd4e09b35089026405",
+    "scene-coordination\\m4-v04-export-correspondence.py": "a343bd2e8764bd26d8d1060ed78bb300922a3f620554316c738d4401dc17b378",
+    "scene-coordination\\m4-v04-export-correspondence-tests.py": "eaa704d92e4a1e404b378c4f0dff3026cbe1f9dd21b4957d7bdf2a9597fc5f74"
+  },
+  "protectedAfter": {
+    "scene-coordination\\m4-v04-root-expected-pins.json": "48d7925416bd1ffab4ddfed0935f18ef074522d23c6a678af150fa3d6351ef72",
+    "scene-coordination\\m4-v04-inspection-export-contract.md": "baa9dad00bfb21e6d11aef841216364c9c1286d9b5c4d6a5a8a829e5e8c90e21",
+    "scene-coordination\\m4-v04-inspection-provenance-proposal.json": "8004a15019e3dcb8a522d01c4026679b639ea05e92bda45de166b507ee91bd6f",
+    "scene-coordination\\m4-transition-guard.py": "ad62627f0683806ace2c8ebbb133ba83e72c7d95f1df8adc291a3706aa40da6b",
+    "scene-coordination\\m4-v04-inspection-transition-guard.py": "b79fca8ae91c97a8d817154a948e4b7388664e1ddbc5b11c1ffc744de513524c",
+    "scene-coordination\\m4-v04-inspection-transition-guard-tests.json": "ccc4159cfe832fb405e6271716b9879708d30972b09703fff3c427c8a0861b66",
+    "scene-coordination\\m4-v04-candidate-audit.py": "b19797d1c48520890f0fc3d984360614885034b7d17ff32233368b8e2e64eb01",
+    "scene-coordination\\m4-v04-candidate-audit.json": "ece4bff6f1a768835a3b2f9cd9f932acb270e6f2c1d250e48de363c098da9fdc",
+    "asset-pipeline\\full-kit\\source\\build_fullkit_m4_geometry_v04.py": "8d814874ee0ac1317827297d2a729b34f4789fffd891212ae03e2c440a73b792",
+    "asset-pipeline\\full-kit\\source\\build_fullkit_m4_v04.py": "0d01536c36481021e8ff7026a6608998eb44dce0d88505dae105f94834909826",
+    "asset-pipeline\\full-kit\\source\\produce_fullkit_m4_v04.py": "3c9fe150d859087050fed73d3fed54d3a97a5998774c455203e6a00462dc08d1",
+    "asset-pipeline\\full-kit\\source\\measure_fullkit_m4_v04.py": "d56efb031e843320625b610181885ff9110f1789b8bced9bef475f75f50ccf1b",
+    "asset-pipeline\\full-kit\\manifests\\m4-v04-rows.json": "1fa5fdd3f267896a76743aca986af9cadd1dd84610395e6049fc799009489992",
+    "asset-pipeline\\full-kit\\manifests\\m4-v04-verifier-declaration.json": "5d04a051398e09c9b2aeb309e2893efe09ed286a18e27113785ff487a7074d42",
+    "asset-pipeline\\full-kit\\manifests\\m4-v04-cpu-measurements.json": "be6c205db283f86ce8a8048c0dde58ae11e0cdb38ff326e1a4c62d26a9265bea",
+    "asset-pipeline\\full-kit\\manifests\\m4-v04-author-declarations.json": "8ce8db34b40a3ce053d037c5152fec8c8ed19d586b0968439abf64e3308f32bb",
+    "asset-pipeline\\full-kit\\exports\\studio-full-kit-m3-proposal-v03.glb": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+    "asset-pipeline\\full-kit\\manifests\\studio-full-kit-m3-proposal-v03.manifest.json": "060bab9af5dd23b4258e03aef10de21faa7c32aa0a6010cd4e09b35089026405",
+    "scene-coordination\\m4-v04-export-correspondence.py": "a343bd2e8764bd26d8d1060ed78bb300922a3f620554316c738d4401dc17b378",
+    "scene-coordination\\m4-v04-export-correspondence-tests.py": "eaa704d92e4a1e404b378c4f0dff3026cbe1f9dd21b4957d7bdf2a9597fc5f74"
+  },
+  "results": [
+    {
+      "name": "float32 rounded noninteger positions and source normals",
+      "passed": true,
+      "evidence": {
+        "codes": [],
+        "rows": {
+          "toy_row": {
+            "positionAndTopologyExact": true,
+            "strictSourceNormalAgreement": true,
+            "sourceVertices": 4,
+            "exportedVerticesAfterCornerSplitting": 4,
+            "triangles": 2,
+            "normalMismatchOccurrences": 0,
+            "maximumNormalAngleDifferenceDeg": 0.0
+          }
+        }
+      }
+    },
+    {
+      "name": "exporter UV/normal corner splitting",
+      "passed": true,
+      "evidence": {
+        "codes": [],
+        "rows": {
+          "toy_row": {
+            "positionAndTopologyExact": true,
+            "strictSourceNormalAgreement": true,
+            "sourceVertices": 4,
+            "exportedVerticesAfterCornerSplitting": 6,
+            "triangles": 2,
+            "normalMismatchOccurrences": 0,
+            "maximumNormalAngleDifferenceDeg": 0.0
+          }
+        }
+      }
+    },
+    {
+      "name": "alternate quad diagonal and triangle order",
+      "passed": true,
+      "evidence": {
+        "codes": [],
+        "rows": {
+          "toy_row": {
+            "positionAndTopologyExact": true,
+            "strictSourceNormalAgreement": true,
+            "sourceVertices": 4,
+            "exportedVerticesAfterCornerSplitting": 6,
+            "triangles": 2,
+            "normalMismatchOccurrences": 0,
+            "maximumNormalAngleDifferenceDeg": 0.0
+          }
+        }
+      }
+    },
+    {
+      "name": "witnessed winding reversal also reverses oriented source normals",
+      "passed": true,
+      "evidence": {
+        "codes": [],
+        "rows": {
+          "toy_row": {
+            "positionAndTopologyExact": true,
+            "strictSourceNormalAgreement": true,
+            "sourceVertices": 4,
+            "exportedVerticesAfterCornerSplitting": 4,
+            "triangles": 2,
+            "normalMismatchOccurrences": 0,
+            "maximumNormalAngleDifferenceDeg": 0.0
+          }
+        }
+      }
+    },
+    {
+      "name": "accessor vertex reordering does not substitute identity",
+      "passed": true,
+      "evidence": {
+        "codes": [],
+        "rows": {
+          "toy_row": {
+            "positionAndTopologyExact": true,
+            "strictSourceNormalAgreement": true,
+            "sourceVertices": 4,
+            "exportedVerticesAfterCornerSplitting": 4,
+            "triangles": 2,
+            "normalMismatchOccurrences": 0,
+            "maximumNormalAngleDifferenceDeg": 0.0
+          }
+        }
+      }
+    },
+    {
+      "name": "one float step POSITION substitution rejects",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "positionSetMismatch"
+        ],
+        "rows": {}
+      }
+    },
+    {
+      "name": "one float step NORMAL substitution fails strict agreement even if tiny angle",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "strictNormalMismatch"
+        ],
+        "rows": {
+          "toy_row": {
+            "positionAndTopologyExact": true,
+            "strictSourceNormalAgreement": false,
+            "sourceVertices": 4,
+            "exportedVerticesAfterCornerSplitting": 4,
+            "triangles": 2,
+            "normalMismatchOccurrences": 2,
+            "maximumNormalAngleDifferenceDeg": 0.0
+          }
+        }
+      }
+    },
+    {
+      "name": "nonfinite NaN NORMAL",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "nonfiniteComponent"
+        ],
+        "rows": {}
+      }
+    },
+    {
+      "name": "nonfinite infinity NORMAL",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "nonfiniteComponent"
+        ],
+        "rows": {}
+      }
+    },
+    {
+      "name": "normal reversal without winding reversal",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "strictNormalMismatch"
+        ],
+        "rows": {
+          "toy_row": {
+            "positionAndTopologyExact": true,
+            "strictSourceNormalAgreement": false,
+            "sourceVertices": 4,
+            "exportedVerticesAfterCornerSplitting": 4,
+            "triangles": 2,
+            "normalMismatchOccurrences": 2,
+            "maximumNormalAngleDifferenceDeg": 180.0
+          }
+        }
+      }
+    },
+    {
+      "name": "zero NORMAL is not a usable source normal",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "strictNormalMismatch"
+        ],
+        "rows": {
+          "toy_row": {
+            "positionAndTopologyExact": true,
+            "strictSourceNormalAgreement": false,
+            "sourceVertices": 4,
+            "exportedVerticesAfterCornerSplitting": 4,
+            "triangles": 2,
+            "normalMismatchOccurrences": 2,
+            "maximumNormalAngleDifferenceDeg": 0.0
+          }
+        }
+      }
+    },
+    {
+      "name": "forged winding witness contradicts actual triangles",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "windingWitnessMismatch"
+        ],
+        "rows": {}
+      }
+    },
+    {
+      "name": "witness source count substitution",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "witnessCountMismatch"
+        ],
+        "rows": {}
+      }
+    },
+    {
+      "name": "unbound textual loop convention rejects",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "loopCorrespondenceContractMismatch"
+        ],
+        "rows": {}
+      }
+    },
+    {
+      "name": "duplicate triangle cannot replace polygon coverage",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "positionSetMismatch"
+        ],
+        "rows": {}
+      }
+    },
+    {
+      "name": "same vertex set with overlapping triangles fails polygon boundary coverage",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "polygonBoundaryCoverage"
+        ],
+        "rows": {}
+      }
+    },
+    {
+      "name": "automatic-normal rows are never exempted from frozen normal comparison",
+      "passed": true,
+      "evidence": {
+        "automaticModeRetainsStrictNormalObligation": true,
+        "positive": {
+          "codes": [],
+          "rows": {
+            "toy_row": {
+              "positionAndTopologyExact": true,
+              "strictSourceNormalAgreement": true,
+              "sourceVertices": 4,
+              "exportedVerticesAfterCornerSplitting": 4,
+              "triangles": 2,
+              "normalMismatchOccurrences": 0,
+              "maximumNormalAngleDifferenceDeg": 0.0
+            }
+          }
+        },
+        "mismatch": {
+          "codes": [
+            "strictNormalMismatch"
+          ],
+          "rows": {
+            "toy_row": {
+              "positionAndTopologyExact": true,
+              "strictSourceNormalAgreement": false,
+              "sourceVertices": 4,
+              "exportedVerticesAfterCornerSplitting": 4,
+              "triangles": 2,
+              "normalMismatchOccurrences": 2,
+              "maximumNormalAngleDifferenceDeg": 0.572938684877075
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "foreign row transform rejected without epsilon",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "nonIdentityTransform"
+        ],
+        "rows": {}
+      }
+    },
+    {
+      "name": "runtime scale cannot be baked into GLB root",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "nonIdentityTransform"
+        ],
+        "rows": {}
+      }
+    },
+    {
+      "name": "quantisation extension is unsupported",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "quantizedOrCompressedGeometryUnsupported"
+        ],
+        "rows": {}
+      }
+    },
+    {
+      "name": "normal accessor layout substitution",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "float32Vec3Required"
+        ],
+        "rows": {}
+      }
+    },
+    {
+      "name": "row asset identity is required",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "rowAssetIdentity"
+        ],
+        "rows": {}
+      }
+    },
+    {
+      "name": "material row identity is required",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "rowMaterialIdentity"
+        ],
+        "rows": {}
+      }
+    },
+    {
+      "name": "coincident duplicate polygons fail closed rather than nearest assignment",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "ambiguousOrForeignSourceTriangle"
+        ],
+        "rows": {}
+      }
+    },
+    {
+      "name": "normal correspondence follows exact polygon corner across coincident seams",
+      "passed": true,
+      "evidence": {
+        "splitSeamPositive": {
+          "codes": [],
+          "rows": {
+            "toy_row": {
+              "positionAndTopologyExact": true,
+              "strictSourceNormalAgreement": true,
+              "sourceVertices": 6,
+              "exportedVerticesAfterCornerSplitting": 12,
+              "triangles": 4,
+              "normalMismatchOccurrences": 0,
+              "maximumNormalAngleDifferenceDeg": 0.0
+            }
+          }
+        },
+        "samePositionWrongFaceNormalRejected": {
+          "codes": [
+            "strictNormalMismatch"
+          ],
+          "rows": {
+            "toy_row": {
+              "positionAndTopologyExact": true,
+              "strictSourceNormalAgreement": false,
+              "sourceVertices": 6,
+              "exportedVerticesAfterCornerSplitting": 12,
+              "triangles": 4,
+              "normalMismatchOccurrences": 1,
+              "maximumNormalAngleDifferenceDeg": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "concave polygon triangulation must cover oriented interior",
+      "passed": true,
+      "evidence": {
+        "concaveValid": {
+          "codes": [],
+          "rows": {
+            "toy_row": {
+              "positionAndTopologyExact": true,
+              "strictSourceNormalAgreement": true,
+              "sourceVertices": 5,
+              "exportedVerticesAfterCornerSplitting": 5,
+              "triangles": 3,
+              "normalMismatchOccurrences": 0,
+              "maximumNormalAngleDifferenceDeg": 0.0
+            }
+          }
+        },
+        "outsideDiagonalReject": {
+          "codes": [
+            "windingWitnessMismatch"
+          ],
+          "rows": {}
+        }
+      }
+    },
+    {
+      "name": "externally supplied raw hash must match",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "candidateHashMismatch"
+        ],
+        "candidateAcceptance": false
+      }
+    },
+    {
+      "name": "externally supplied witness hash must match",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "witnessHashMismatch"
+        ],
+        "candidateAcceptance": false
+      }
+    },
+    {
+      "name": "witness cannot choose its own trusted builder",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "witnessBuilderIdentity"
+        ],
+        "candidateAcceptance": false
+      }
+    },
+    {
+      "name": "witness raw cross-link required",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "witnessRawIdentity"
+        ],
+        "candidateAcceptance": false
+      }
+    },
+    {
+      "name": "source normal/payload pin substitution rejects",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "witnessInputPins"
+        ],
+        "candidateAcceptance": false
+      }
+    },
+    {
+      "name": "witness pose substitution rejects",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "witnessPose"
+        ],
+        "candidateAcceptance": false
+      }
+    },
+    {
+      "name": "complete witness row set required",
+      "passed": true,
+      "evidence": {
+        "codes": [
+          "witnessRowSet"
+        ],
+        "candidateAcceptance": false
+      }
+    },
+    {
+      "name": "caller cannot replace root frozen rows with a fixture",
+      "passed": true,
+      "evidence": [
+        {
+          "code": "frozenRowsArtifactMismatch"
+        }
+      ]
+    },
+    {
+      "name": "fresh-exclusive CLI evidence and existing-file refusal",
+      "passed": true,
+      "evidence": {
+        "invalidExit": 1,
+        "memoryOnlyReceiptMode": "x",
+        "existingPathExit": 2
+      }
+    }
+  ],
+  "passed": 35,
+  "total": 35,
+  "elapsedSeconds": 0.7810000000172295
+}

@@ -1,0 +1,1023 @@
+{
+  "schema": "m4-v04-producer-writer-fixtures/1",
+  "task": "task_2cf416822c8f",
+  "dispatch": "ctx_55fd1ff42d3b",
+  "status": "writer fixture invocation; this test process does not import the live candidate helper",
+  "candidateAcceptance": false,
+  "independentExpectedDigestFreeze": false,
+  "runsByThisFixtureInvocation": {
+    "candidateCoarseRuns": 0,
+    "candidateFullRuns": 0,
+    "fullPlacementSearchRuns": 0
+  },
+  "tests": [
+    {
+      "name": "producer_preserves_authored_primitive_class_normal_and_UV_identity",
+      "passed": true,
+      "evidence": {
+        "fullRowsSha256": "3c77a50dd2a9dd7d4e79ed48d8c71733dc94d1a679bada69f74e9d2b29f2b8a7",
+        "scope": "synthetic-only"
+      }
+    },
+    {
+      "name": "producer_rejects_missing_row",
+      "passed": true,
+      "evidence": {
+        "rejection": "author/helper row set mismatch"
+      }
+    },
+    {
+      "name": "producer_rejects_class",
+      "passed": true,
+      "evidence": {
+        "rejection": "fixture: author/source class mismatch"
+      }
+    },
+    {
+      "name": "producer_rejects_missing_class",
+      "passed": true,
+      "evidence": {
+        "rejection": "fixture: incomplete class coverage"
+      }
+    },
+    {
+      "name": "producer_rejects_range",
+      "passed": true,
+      "evidence": {
+        "rejection": "fixture: changed/duplicate primitive locator"
+      }
+    },
+    {
+      "name": "producer_rejects_missing_reason",
+      "passed": true,
+      "evidence": {
+        "rejection": "fixture: missing semantic scope/reason"
+      }
+    },
+    {
+      "name": "producer_rejects_normal_scope",
+      "passed": true,
+      "evidence": {
+        "rejection": "fixture: unverified normal scope"
+      }
+    },
+    {
+      "name": "producer_rejects_duplicate_group",
+      "passed": true,
+      "evidence": {
+        "rejection": "duplicate fixture/group identity"
+      }
+    },
+    {
+      "name": "producer_rejects_missing_normal",
+      "passed": true,
+      "evidence": {
+        "rejection": "fixture: authored corner normal correspondence mismatch"
+      }
+    },
+    {
+      "name": "explicit_out_of_scope_is_preserved_without_inference",
+      "passed": true,
+      "evidence": {
+        "rawNullPreserved": true,
+        "declaredExclusionRequired": true
+      }
+    },
+    {
+      "name": "unready_changed_helper_bytes_reject_before_execution",
+      "passed": true,
+      "evidence": {
+        "rejection": "author-ready source pin mismatch"
+      }
+    },
+    {
+      "name": "duplicate_author_JSON_keys_reject",
+      "passed": true,
+      "evidence": {
+        "rejection": "duplicate author JSON key: x"
+      }
+    },
+    {
+      "name": "producer_binding_tracks_payload_source_and_invocation_without_claiming_freeze",
+      "passed": true,
+      "evidence": {
+        "sourceSha256": {
+          "helper": "8db07fbcae6a3cd2ca81d09f4107d1e85d8f555b9d94508152db4c8725cb008b",
+          "authorDeclarations": "eae5bdca3a65fde72749ceab63ab8554ce7ac86b25eea0bd8b5a24c49298b455",
+          "producer": "57c50b5221e522c0fc446078e2e9bb4d677655dbac009de4d7d575e697ee30cf"
+        },
+        "rowsSha256": "3c77a50dd2a9dd7d4e79ed48d8c71733dc94d1a679bada69f74e9d2b29f2b8a7",
+        "declarationSha256": "f3d3f391a683f4f9c7f5a4ab22e48d13bc8146ca74fe786d7f716f653d3d4bbe",
+        "invocationSha256": "b9e24fa9506a88ab1c69b4d3c738392202aa695f712b821b166b53b4e7514060",
+        "invocation": {
+          "entrypoint": "synthetic_only.snapshot_rows",
+          "pose": {
+            "cx": 1.325,
+            "cy": -0.825,
+            "yaw": -0.85
+          }
+        },
+        "independentExpectedDigestFreeze": false,
+        "candidateAcceptance": false,
+        "status": "provisional producer identity; root freeze and independent review pending"
+      }
+    },
+    {
+      "name": "bounded_author_pose_table_no_expansion_or_selection",
+      "passed": true,
+      "evidence": {
+        "explicitTableOnly": true,
+        "oldReferenceRequired": true
+      }
+    },
+    {
+      "name": "binder_and_picker_eligibility_metadata_and_ancestors",
+      "passed": true,
+      "evidence": {
+        "actualTransparentPolicy": true,
+        "semanticOccluderNotSubstituted": true
+      }
+    },
+    {
+      "name": "transparent_contact_not_blocker_and_no_hit_not_target_success",
+      "passed": true,
+      "evidence": {
+        "sampling": "synthetic endpoints",
+        "count": 2,
+        "targetHits": 1,
+        "opaqueBlockerHits": 0,
+        "otherProjectTargetHits": 0,
+        "noHits": 1,
+        "targetHitFraction": 0.5,
+        "opaqueBlockersByLabel": {},
+        "transparentExcludedRayCountsByLabel": {
+          "decal": 1
+        },
+        "interpretation": "no-hit is not a target hit; fractions are sample diagnostics, not visible pixels"
+      }
+    },
+    {
+      "name": "project_border_excluded_and_other_target_reported_separately",
+      "passed": true,
+      "evidence": {
+        "category": "other_project_target_hit",
+        "firstLabel": "other-target",
+        "distanceM": 0.5,
+        "transparentExclusions": []
+      }
+    },
+    {
+      "name": "uniform_area_sampling_differs_from_equal_vertex_weighting",
+      "passed": true,
+      "evidence": {
+        "method": "equal-area stratified triangle selection and square-root barycentrics",
+        "sampleCount": 400,
+        "surfaceAreaM2": 4.0,
+        "triangleSampleCounts": [
+          100,
+          300
+        ],
+        "interpretation": "source surface-area diagnostic; not visible pixels or image approval"
+      }
+    },
+    {
+      "name": "vertex_diagnostic_enforces_actual_sample_cap",
+      "passed": true,
+      "evidence": {
+        "sourceVertices": 359,
+        "actualSamples": 150,
+        "oldFloorDivisionCapWouldExceed": true
+      }
+    },
+    {
+      "name": "four_indicator_pairs_do_not_exempt_other_same_asset_primitives",
+      "passed": true,
+      "evidence": {
+        "fourExactPairsOnly": true,
+        "seating": {
+          "minimumSignedOffsetM": -0.001,
+          "maximumSignedOffsetM": 0.0025,
+          "limitation": "plane offsets only; footprint containment and exact declared pair checked separately"
+        }
+      }
+    },
+    {
+      "name": "attachment_requires_height_and_receiver_footprint_independently_of_floor_contact",
+      "passed": true,
+      "evidence": {
+        "seated": {
+          "signedAttachmentGapM": 0.0,
+          "bottomVertexCount": 2,
+          "bottomVerticesInsideReceiver": 2,
+          "bottomFootprintInside": true,
+          "scope": "declared attachment only; no floor-gap substitution or solid intersection claim"
+        },
+        "floatingDespiteProjection": {
+          "signedAttachmentGapM": 0.006,
+          "bottomVertexCount": 2,
+          "bottomVerticesInsideReceiver": 2,
+          "bottomFootprintInside": true,
+          "scope": "declared attachment only; no floor-gap substitution or solid intersection claim"
+        },
+        "outsideDespiteCorrectHeight": {
+          "signedAttachmentGapM": 0.0,
+          "bottomVertexCount": 2,
+          "bottomVerticesInsideReceiver": 0,
+          "bottomFootprintInside": false,
+          "scope": "declared attachment only; no floor-gap substitution or solid intersection claim"
+        }
+      }
+    },
+    {
+      "name": "analytic_wedges_separate_40_to_80_at_least_80_and_concave_edges",
+      "passed": true,
+      "evidence": {
+        "(39, -1)": {
+          "vertices": [
+            0,
+            1
+          ],
+          "faces": [
+            0,
+            1
+          ],
+          "lengthM": 1.0,
+          "angleDeg": 39.0,
+          "signedOtherFaceOffsetM": -0.20977346368327912,
+          "band": "below_40"
+        },
+        "(40, -1)": {
+          "vertices": [
+            0,
+            1
+          ],
+          "faces": [
+            0,
+            1
+          ],
+          "lengthM": 1.0,
+          "angleDeg": 39.99999999999999,
+          "signedOtherFaceOffsetM": -0.21426253656217975,
+          "band": "convex_40_to_80"
+        },
+        "(79, -1)": {
+          "vertices": [
+            0,
+            1
+          ],
+          "faces": [
+            0,
+            1
+          ],
+          "lengthM": 1.0,
+          "angleDeg": 79.0,
+          "signedOtherFaceOffsetM": -0.3272090611492213,
+          "band": "convex_40_to_80"
+        },
+        "(80, -1)": {
+          "vertices": [
+            0,
+            1
+          ],
+          "faces": [
+            0,
+            1
+          ],
+          "lengthM": 1.0,
+          "angleDeg": 80.0,
+          "signedOtherFaceOffsetM": -0.32826925100406934,
+          "band": "convex_at_least_80"
+        },
+        "(90, -1)": {
+          "vertices": [
+            0,
+            1
+          ],
+          "faces": [
+            0,
+            1
+          ],
+          "lengthM": 1.0,
+          "angleDeg": 90.0,
+          "signedOtherFaceOffsetM": -0.3333333333333333,
+          "band": "convex_at_least_80"
+        },
+        "(60, 1)": {
+          "vertices": [
+            0,
+            1
+          ],
+          "faces": [
+            0,
+            1
+          ],
+          "lengthM": 1.0,
+          "angleDeg": 59.99999999999999,
+          "signedOtherFaceOffsetM": 0.28867513459481287,
+          "band": "concave_at_least_40"
+        }
+      }
+    },
+    {
+      "name": "middle_seam_is_named_honestly_and_bad_winding_stays_unclassified",
+      "passed": true,
+      "evidence": {
+        "sharedSeamM": 1.0,
+        "badWindingNotClassifiedConvex": true,
+        "noInferredExemption": true
+      }
+    },
+    {
+      "name": "v04_author_roles_runs_and_stable_ids_remain_in_complete_payload",
+      "passed": true,
+      "evidence": {
+        "rawNewAuthorFieldsBound": true,
+        "changedStableIdRejected": true
+      }
+    },
+    {
+      "name": "project_target_sampling_requires_actual_rectangle_and_front_face",
+      "passed": true,
+      "evidence": {
+        "interiorGrid81": true,
+        "missingCornerAndReversedTargetRejected": true
+      }
+    },
+    {
+      "name": "declared_support_adapter_catches_lift_and_actual_boundary_failure",
+      "passed": true,
+      "evidence": {
+        "liftedDeclaredFootRejected": true,
+        "insideRectangleOutsideActualBoundaryRejected": true
+      }
+    },
+    {
+      "name": "pinned_retained_loader_metadata_and_transforms_match_known_controls",
+      "passed": true,
+      "evidence": {
+        "retainedLeaves": 92,
+        "retainedTriangles": 33492,
+        "actualMusicDecalHeightM": 0.02049999969312921,
+        "runtimeMetadataApplied": true,
+        "candidateGeometryConsumed": false
+      }
+    },
+    {
+      "name": "author_pose_table_adapter_preserves_explicit_ids_and_status",
+      "passed": true,
+      "evidence": {
+        "helperEmbeddedIdsMatchSeparateJSONIds": true,
+        "changedOptionIdRejected": true
+      }
+    },
+    {
+      "name": "attachment_receiver_is_actual_closed_convex_solid_not_bounds",
+      "passed": true,
+      "evidence": {
+        "insideAndOutsideDistinguished": true,
+        "openAndNonconvexReceiversRejected": true
+      }
+    },
+    {
+      "name": "spur_ring_burial_centre_inset_and_only_declared_side_crossings",
+      "passed": true,
+      "evidence": {
+        "positive": {
+          "withinDeclaredGeometricCriterion": true,
+          "rootRingVertices": 8,
+          "rootRingInsideSolid": true,
+          "minimumSideBurialM": 0.006,
+          "maximumSideBurialM": 0.006,
+          "rootCentreInsetM": 0.006,
+          "declaredCentreInsetM": 0.006,
+          "declaredMinimumRingBurialM": 0.001,
+          "crossings": {
+            "crossings": [
+              {
+                "edge": [
+                  0,
+                  8
+                ],
+                "face": 3,
+                "fraction": 0.23076923076923075,
+                "point": [
+                  0.0,
+                  0.002,
+                  0.02
+                ]
+              },
+              {
+                "edge": [
+                  1,
+                  9
+                ],
+                "face": 3,
+                "fraction": 0.23076923076923075,
+                "point": [
+                  0.0,
+                  0.0014142135623730952,
+                  0.021414213562373094
+                ]
+              },
+              {
+                "edge": [
+                  2,
+                  10
+                ],
+                "face": 3,
+                "fraction": 0.23076923076923075,
+                "point": [
+                  0.0,
+                  1.2246467991473531e-19,
+                  0.022
+                ]
+              },
+              {
+                "edge": [
+                  3,
+                  11
+                ],
+                "face": 3,
+                "fraction": 0.23076923076923075,
+                "point": [
+                  0.0,
+                  -0.001414213562373095,
+                  0.021414213562373094
+                ]
+              },
+              {
+                "edge": [
+                  4,
+                  12
+                ],
+                "face": 3,
+                "fraction": 0.23076923076923075,
+                "point": [
+                  0.0,
+                  -0.002,
+                  0.02
+                ]
+              },
+              {
+                "edge": [
+                  5,
+                  13
+                ],
+                "face": 3,
+                "fraction": 0.23076923076923075,
+                "point": [
+                  0.0,
+                  -0.0014142135623730955,
+                  0.018585786437626907
+                ]
+              },
+              {
+                "edge": [
+                  6,
+                  14
+                ],
+                "face": 3,
+                "fraction": 0.23076923076923075,
+                "point": [
+                  0.0,
+                  -3.6739403974420597e-19,
+                  0.018000000000000002
+                ]
+              },
+              {
+                "edge": [
+                  7,
+                  15
+                ],
+                "face": 3,
+                "fraction": 0.23076923076923075,
+                "point": [
+                  0.0,
+                  0.0014142135623730948,
+                  0.018585786437626903
+                ]
+              }
+            ],
+            "coplanarBoundarySegments": [],
+            "scope": "segments against closed convex receiver, including touches; not a general triangle/solid collision audit"
+          },
+          "eachLengthwiseEdgeCrossesSideOnce": true,
+          "unexpectedFaceCrossings": [],
+          "minimumCrossingOtherPlaneClearanceM": 0.018000000000000002,
+          "scope": "exact declared spur arm/base pair; support foot and tip require separate checks; no export/image approval"
+        },
+        "shallowAndOutsideRingRejected": true,
+        "omittedLengthwiseEdgeRejected": true,
+        "wrongTopExitRejected": true
+      }
+    },
+    {
+      "name": "heel_seating_all_vertices_edges_depth_actual_thickness_and_proud",
+      "passed": true,
+      "evidence": {
+        "positive": {
+          "withinDeclaredGeometricCriterion": true,
+          "allSourceEdgesChecked": 12,
+          "belowTopVertexIndices": [
+            0,
+            1
+          ],
+          "allBelowTopVerticesInsideReceiver": true,
+          "maximumDepthM": 0.004,
+          "declaredMaximumDepthM": 0.004,
+          "declaredBoardThicknessM": 0.008,
+          "measuredBoardThicknessM": 0.007999999999999993,
+          "minimumDeclaredUpperHeelCornerProudM": 0.003814575630816521,
+          "noVertexBelowReceiverUnderside": true,
+          "crossings": {
+            "crossings": [
+              {
+                "edge": [
+                  0,
+                  3
+                ],
+                "face": 1,
+                "fraction": 0.07474769301152619,
+                "point": [
+                  -0.0375,
+                  0.09825379688336333,
+                  0.026
+                ]
+              },
+              {
+                "edge": [
+                  0,
+                  4
+                ],
+                "face": 1,
+                "fraction": 0.5118640075893733,
+                "point": [
+                  -0.0375,
+                  0.07912347003189334,
+                  0.026
+                ]
+              },
+              {
+                "edge": [
+                  1,
+                  2
+                ],
+                "face": 1,
+                "fraction": 0.07474769301152619,
+                "point": [
+                  0.0375,
+                  0.09825379688336333,
+                  0.026
+                ]
+              },
+              {
+                "edge": [
+                  1,
+                  5
+                ],
+                "face": 1,
+                "fraction": 0.5118640075893733,
+                "point": [
+                  0.0375,
+                  0.07912347003189334,
+                  0.026
+                ]
+              }
+            ],
+            "coplanarBoundarySegments": [],
+            "scope": "segments against closed convex receiver, including touches; not a general triangle/solid collision audit"
+          },
+          "unexpectedFaceCrossings": [],
+          "scope": "exact kick footboard/heel pair, all source edges and below-top vertices; not floor support or a cylindrical hinge rule"
+        },
+        "sideEscapeOverdepthBackExitAndBelowUndersideRejected": true
+      }
+    },
+    {
+      "name": "spur_metadata_adapter_rebases_complete_explicit_locators_and_root_limits",
+      "passed": true,
+      "evidence": {
+        "globalLocatorsRebasedExactly": true,
+        "noRangeFallback": true,
+        "partialSideCoverageRejected": true,
+        "authorObservedIgnored": true,
+        "rootLimitsCannotBeLoosened": true
+      }
+    },
+    {
+      "name": "heel_metadata_adapter_requires_complete_board_and_exact_pair",
+      "passed": true,
+      "evidence": {
+        "completeBoardCoverageRequired": true,
+        "proudCornersMustBelongToTop": true,
+        "noGeneralSameRowExemption": true,
+        "maximumDepthIsBoundNotTarget": true
+      }
+    },
+    {
+      "name": "edge_role_pair_adapter_preserves_exact_scope_and_author_priority",
+      "passed": true,
+      "evidence": {
+        "differentRolePairsKeepDifferentReasons": true,
+        "unmatchedRolesStayUndeclared": true,
+        "priorityMatchesAllDisclosed": true
+      }
+    },
+    {
+      "name": "hihat_A_exact_seat_depth_identity_margin_axis_and_separate_heel_clearance",
+      "passed": true,
+      "evidence": {
+        "positive": {
+          "withinDeclaredGeometricCriterion": true,
+          "seatedVertexIndices": [
+            8,
+            9,
+            10,
+            20,
+            21,
+            22
+          ],
+          "deepestVertexIndices": [
+            9,
+            21
+          ],
+          "exactSeatedAndDeepestIdentitiesMatch": true,
+          "maximumSeatDepthM": 0.002999999999999999,
+          "minimumOtherVertexAboveTopM": 0.0014999999999999961,
+          "minimumSeatedFootprintMarginM": 0.016875,
+          "minimumAboveBaseUndersideM": 0.007000000000000001,
+          "baseThicknessM": 0.01,
+          "axisHeightsAboveBaseTopM": [
+            0.006,
+            0.006
+          ],
+          "minimumBarrelVertexDistanceToHeelSolidM": 0.002999999999999975,
+          "barrelVertexDistancesToHeelSolidM": [
+            0.02099999999999999,
+            0.01979422863405994,
+            0.016499999999999987,
+            0.011999999999999983,
+            0.007499999999999979,
+            0.004205771365940025,
+            0.002999999999999975,
+            0.004205771365940025,
+            0.007711631240618311,
+            0.012369316876852965,
+            0.01659726653371814,
+            0.01979422863405994,
+            0.02099999999999999,
+            0.01979422863405994,
+            0.016499999999999987,
+            0.011999999999999983,
+            0.007499999999999979,
+            0.004205771365940025,
+            0.002999999999999975,
+            0.004205771365940025,
+            0.007711631240618311,
+            0.012369316876852965,
+            0.01659726653371814,
+            0.01979422863405994
+          ],
+          "crossings": {
+            "crossings": [
+              {
+                "edge": [
+                  7,
+                  8
+                ],
+                "face": 1,
+                "fraction": 0.4553418012614804,
+                "point": [
+                  -0.045,
+                  -0.14129422863405997,
+                  0.01
+                ]
+              },
+              {
+                "edge": [
+                  10,
+                  11
+                ],
+                "face": 1,
+                "fraction": 0.544658198738521,
+                "point": [
+                  -0.045,
+                  -0.12870577136594005,
+                  0.01
+                ]
+              },
+              {
+                "edge": [
+                  19,
+                  20
+                ],
+                "face": 1,
+                "fraction": 0.4553418012614804,
+                "point": [
+                  0.045,
+                  -0.14129422863405997,
+                  0.01
+                ]
+              },
+              {
+                "edge": [
+                  22,
+                  23
+                ],
+                "face": 1,
+                "fraction": 0.544658198738521,
+                "point": [
+                  0.045,
+                  -0.12870577136594005,
+                  0.01
+                ]
+              }
+            ],
+            "coplanarBoundarySegments": [],
+            "scope": "segments against closed convex receiver, including touches; not a general triangle/solid collision audit"
+          },
+          "boundaryCrossingsOnlyThroughBaseTop": true,
+          "scope": "criterion A: exact barrel/base pair; vertex-to-heel clearance is not a full solid-pair distance"
+        },
+        "floatingOverToleranceSideMarginAndHeelClearanceNegatives": true
+      }
+    },
+    {
+      "name": "hihat_B_uses_derived_axis_exact_polygon_all_vertices_and_base_plane",
+      "passed": true,
+      "evidence": {
+        "positive": {
+          "withinDeclaredGeometricCriterion": true,
+          "heelAxisRadialDistancesM": [
+            2.7755575615628914e-17,
+            2.7755575615628914e-17
+          ],
+          "heelAxisVerticesBetweenEndDiscs": true,
+          "allBoardVertexCount": 12,
+          "verticesBetweenEndsWithinRadius": [
+            0,
+            1,
+            6,
+            7
+          ],
+          "allSelectedVerticesInsideExactBarrel": true,
+          "wholeHeelEndFaceInsideBarrel": true,
+          "maximumAxialOverhangM": 0.007000000000000006,
+          "minimumBoardAboveBaseTopM": 0.006,
+          "measuredBoardThicknessM": 0.007999999999999988,
+          "derivedAxisStart": [
+            -0.04499999999999999,
+            -0.13499999999999998,
+            0.016
+          ],
+          "derivedAxisEnd": [
+            0.04499999999999999,
+            -0.13499999999999998,
+            0.016
+          ],
+          "scope": "criterion B: board/barrel capture only; criterion A independently establishes mounting"
+        },
+        "axisOverhangExactPolygonAndBaseNegatives": true
+      }
+    },
+    {
+      "name": "hihat_C_full_housing_separation_rest_gap_and_lip_footprint_margin",
+      "passed": true,
+      "evidence": {
+        "positive": {
+          "withinDeclaredGeometricCriterion": true,
+          "allHousingVertexCount": 8,
+          "allHousingClearancesM": [
+            0.02941123588055014,
+            0.02941123588055014,
+            0.04436058325566197,
+            0.04436058325566197,
+            0.00030000000000000865,
+            0.00030000000000000865,
+            0.01524934737511184,
+            0.01524934737511184
+          ],
+          "minimumHousingClearanceM": 0.00030000000000000865,
+          "lipClearancesM": [
+            0.00030000000000000865,
+            0.00030000000000000865
+          ],
+          "minimumOtherHousingVertexClearanceM": 0.01524934737511184,
+          "otherVerticesHaveGreaterClearance": true,
+          "lipProjections": [
+            {
+              "projection": [
+                -0.046038,
+                0.08305251831575704,
+                0.07029111235880552
+              ],
+              "inside": true,
+              "signedBoundaryClearanceM": 0.005961999999999995
+            },
+            {
+              "projection": [
+                0.046038,
+                0.08305251831575704,
+                0.07029111235880552
+              ],
+              "inside": true,
+              "signedBoundaryClearanceM": 0.005961999999999995
+            }
+          ],
+          "minimumLipProjectedFootprintMarginM": 0.005961999999999995,
+          "sourceConvexSolidsSeparatedByBoardUndersidePlane": true,
+          "toeTipHeightAboveHousingTopM": [
+            0.00326581806518364,
+            0.00326581806518364
+          ],
+          "scope": "criterion C: exact board/housing pair; convex-plane separation covers all vertices/edges/faces; no overlap exemption"
+        },
+        "penetrationFloatingAndTooNearBoardEdgeReject": true
+      }
+    },
+    {
+      "name": "surface_contacts_distinguish_crossing_coplanar_separation_and_containment_limit",
+      "passed": true,
+      "evidence": {
+        "crossingAndCoplanarDetected": true,
+        "separationRejected": true,
+        "fullyContainedBoxHasNoSurfaceContact": true,
+        "surfaceCountsAreNotSolidContainmentProof": true
+      }
+    },
+    {
+      "name": "full_normal_diagnostics_require_oriented_unit_nondegenerate_source_corners",
+      "passed": true,
+      "evidence": {
+        "orientedReversalNonunitAndDegenerateTriangleReject": true
+      }
+    },
+    {
+      "name": "semantic_edge_geometry_counts_lengths_convexity_and_role_pair_filter",
+      "passed": true,
+      "evidence": {
+        "knownCubeTwelveEdgesLengthTwelve": true,
+        "rolePairMismatchUnclassified": true,
+        "inwardWindingConventionDisclosed": true
+      }
+    },
+    {
+      "name": "plain_rest_adapter_measures_inclined_receiving_plane_and_finite_footprint",
+      "passed": true,
+      "evidence": {
+        "inclinedRestUsesSignedPerpendicularDistance": true,
+        "floatingChildRejected": true
+      }
+    },
+    {
+      "name": "four_inlay_adapter_measures_depth_proud_and_exact_pair_scope",
+      "passed": true,
+      "evidence": {
+        "exactFourPairsMeasured": true,
+        "excessDepthAndUnscopedReceiverReject": true
+      }
+    }
+  ],
+  "testCount": 42,
+  "passed": true,
+  "elapsedSeconds": 0.4220000000204891,
+  "protectedBefore": {
+    "asset-pipeline/full-kit/asset-inventory.json": "eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87",
+    "asset-pipeline/full-kit/export-ledger-v01.json": "26b4c143f64f6880f012c316e81f124fe899b69312b61866531e6bf884320775",
+    "asset-pipeline/full-kit/exports/studio-full-kit-m3-proposal-v03.glb": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+    "asset-pipeline/full-kit/exports/studio-full-kit-m4-proposal-v01.raw-export.glb": "c10e6453b6bee5c1cf09b3d1c905151a4567e5360116a0495bc1398eb20f5906",
+    "asset-pipeline/full-kit/exports/studio-full-kit-m4-proposal-v02.glb": "baa1a43bd343359edb217fa077bde0678a931cc3ed3991d5ee059e04813ed32f",
+    "asset-pipeline/full-kit/full-kit-profile-v1.json": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+    "asset-pipeline/full-kit/m4-author-report.md": "93d7c5c124a846240173b0a04fed1dffd4fb9743e15971d3ea41a966feb3ee79",
+    "asset-pipeline/full-kit/manifests/m4-v01-tier-ledger.json": "63848642fde09d4d5762c9c5054129c22df51f0838bcc8f1b7c450fd80ffae63",
+    "asset-pipeline/full-kit/manifests/m4-v03-cpu-preparation.json": "d7196145a8665abefdf41b3235f3be8ec91aa7474b3c71fed2186d7537e20253",
+    "asset-pipeline/full-kit/manifests/studio-full-kit-m3-proposal-v03.manifest.json": "060bab9af5dd23b4258e03aef10de21faa7c32aa0a6010cd4e09b35089026405",
+    "asset-pipeline/full-kit/manifests/studio-full-kit-m4-proposal-v02.manifest.json": "42597f1b859fdae354063e09ee925d4d2dc9be8ae0ac8556663e391db6906b82",
+    "asset-pipeline/full-kit/source/build_fullkit_m4.py": "aa9724dcd14dbc428ca5c2ba84cffdcbb469fa14c53cf3866ac46164ec04dc22",
+    "asset-pipeline/full-kit/source/build_fullkit_m4_geometry.py": "c7ce9d8e1792273d6aeffdc5b536233413fdca6c6fd16abf344827d6433ab1c0",
+    "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v03.py": "3b220b1d4614a8111247270b21771c5f2280493c16e3ab986603a24efcffaf37",
+    "asset-pipeline/full-kit/source/build_fullkit_m4_v03.py": "53fa310f1144c46916b0ce63f05188818861e63fe9c32abbf4fb3f1596872b84",
+    "asset-pipeline/full-kit/source/fk-40-music-proposal-v01.blend": "0ae40460b9a2cb578fc35a96497a9016e5f116a1efe98cac4809568fd68c4665",
+    "asset-pipeline/full-kit/source/measure_fullkit_m4_v03.py": "9a3a098195e99b889ecee8b2213c9acc6a9dc50af68e1ae35e507e09b1b0bff5",
+    "asset-pipeline/full-kit/source/render_m4_v01_evidence.py": "bfa6fc9bf22707dc08f44f0bd4a7033e3817d54d2d142d5dea7a969fca161e18",
+    "scene-coordination/m4-model-contract.json": "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98",
+    "scene-coordination/m4-transition-guard.py": "ad62627f0683806ace2c8ebbb133ba83e72c7d95f1df8adc291a3706aa40da6b",
+    "scene-coordination/m4-v03-art-closure-interrupted-20261115/partial-evidence.json": "8322d1cd0b11cd27af16ac9dfc990b6e279639469f263fb15cc4de98451bf307",
+    "scene-coordination/m4-v03-art-closure-interrupted-20261115/partial-report.md": "c0f673655f2daa99adea3019935e1294ef098927b1ac307d83a128f692cac207",
+    "scene-coordination/m4-v03-art-closure-interrupted-20261115/snapshot-manifest.json": "483c601a7c470d0a81221f780048568bb9e6dd41b7df1675fa5d16e462282b68",
+    "scene-coordination/m4-v03-art-review-interruption.md": "7f78ad65ecb95584211bdd79c7a6ee734349f4eabff4982258b2d73b2bebf1b0",
+    "scene-coordination/m4-v03-cpu-verification.json": "c0fcce453614ff08e0facb5517fb4ed6fc430217ac455a2bbcf1e6dd325b6927",
+    "scene-coordination/m4-v03-cpu-verification.py": "11b1356d5afcfe9260b2e28e22b498279d1c33450aa5f4a82e9319fa324f5dd6",
+    "scene-coordination/m4-v03-focused-art-closure-task.md": "614e8acb0aa03f6fdf41d17dcb91b8c664c9ae63d1e46a80de1ef3c1081492e4",
+    "scene-coordination/m4-v03-normal-check-contract-review.md": "cc7812bd57027365bb6e61064eabea6564c7c20aa7eec8c2f9d3b8e07312a3fc",
+    "scene-m4-v03-cpu-verification.md": "815edfabfb41fde8c3cd21e4a9429c1cf8be6d33f1a16ae2e008a23f5f2af174",
+    "scene-m4-v03-preparation-report.md": "b21b6f2b7b6b97786b4da8a34d59b114e2daf6fe5ffb5ae7d49c4117ecc3abc3",
+    "scene-coordination/m4-v03-verifier-v2.py": "12658d50605c9bc7fe625151adf05a8b9faa993c4f378cc99a502402ebf24710",
+    "scene-coordination/m4-v03-verifier-v2-tests.py": "af71947a0647259ce22eed99a17193f3f8072f63bad3f494a0341d53b7aea00a",
+    "scene-coordination/m4-v03-verifier-v2-tests.json": "31648785e1d4fa93b1a16daa9f941af0de8418d4eefe74db0d3fecc41899246c",
+    "scene-coordination/m4-v03-verifier-declaration-contract.json": "71eb54107e54ae94856ea3461471a1afe3e3a27b7de97bfe5a331fe91c8e5293",
+    "scene-m4-v03-verification-repair-report.md": "6f1088bcf5691de641c55e959fdb7290bbcc310fc99bbf64a410be337c92209d",
+    "scene-coordination/m4-v03-verifier-contract-review.md": "7f5f6340960ab3aabf4d107577b6702f36d205257b73fa88de59bdbfd8a94e35",
+    "scene-coordination/m4-v03-verifier-binding-task.md": "4eff478f63355ff551fa9f72e9bb86a5d988a020c5f80ba95ea2750b8eb27c16",
+    "scene-coordination/m4-v03-verifier-binding-disposition.md": "4ac02bc7a2ec2f09f38545270b9ff47c7c1e43d08d032ba5a8fdf79597800acd",
+    "scene-coordination/m4-v03-verifier-declaration-contract-v3.json": "5632ca4a42214edc89776c05f6b8f80835c22ddc8fcbeb0429ea3c39f2670e97",
+    "scene-coordination/m4-v03-verifier-v3-independent-probes-v2.json": "72a2c9a60cd4418ffe5bb78892453e7332a12036c6aae419d86364c975a76a81",
+    "scene-coordination/m4-v03-verifier-v3-independent-probes.json": "10ff605b13da906553ddddb1131129cc1d05d67bbbc767a9043dc1a52db91be6",
+    "scene-coordination/m4-v03-verifier-v3-independent-probes.py": "d6b99b15096153140f7a41b86cfd959997ba032297771d600d0e08ea5c0ce5d6",
+    "scene-coordination/m4-v03-verifier-v3-independent-review.md": "26951c0ee6dd005f8526148c276c8f784880aff567afaa4a4fd4910b91a4247a",
+    "scene-coordination/m4-v03-verifier-v3-tests.json": "eac31cf2e41c24b20de348672b0e74111d11d447bf1e504977a7dce6d1143533",
+    "scene-coordination/m4-v03-verifier-v3-tests.py": "d638fba2f657df9b88a6d4f85ce2906481c642ea54e5784f03a1b26022257659",
+    "scene-coordination/m4-v03-verifier-v3.py": "0abeb41ea77153ab5bcc442771fff9828edd7220a416ec28f8d10bc7290669dc",
+    "scene-coordination/m4-v04-author-task.md": "bb6f4dce04d3c1f810391556a04ebf9243b9b140b18c3734b7c37393af0a3f3d",
+    "scene-coordination/m4-v04-producer-task.md": "5cd88fdd7576ec52e2f517b320f8562fbaa3c08aef0b79c38244c8b62c40cadf",
+    "scene-coordination/m4-v04-internal-contract.md": "a2afc8a324681c595ae4d9e849f56ff01a28b126f3d33dc1db5a28609400b5ae",
+    "scene-coordination/m4-v04-combined-repair-disposition.md": "24e9b32c05c0c7f58da9f8a38054aecfc85bf7fb2f909c6d65d40d3016821890",
+    "scene-m4-v03-verifier-binding-report.md": "c76449289e38a5fee2f569eb1d001fc1639b8499a1d7be02c5983a6a88d59cd7",
+    "scene-m4-v03-focused-art-closure.md": "4157a176701d2697e44cd39cc3de0b0b3a4d2101d36a46bf8212ff01361401af",
+    "scene-coordination/m4-v03-focused-art-closure.json": "d21dfd71cff79ed4747d55b8afcee810d9427b07f8a910b2cb2ad8b8841adc03",
+    "scene-coordination/m4-v04-bounded-art-disposition.md": "7705f590de09dd20c213bb2598f2fd977ee811f402da7fc1f5f3e436fedd9c6f",
+    "scene-m4-v04-bounded-art-review.md": "1af11ba58ed0892851baa352deddcd9663e6fd330805c58bd84e2a65d39e1381",
+    "scene-coordination/m4-v04-bounded-art-review.json": "4da5eacb4ec3084987b078faa161dfb6a711bbb8af1905485ad7ceaf2a59ea7f",
+    "asset-pipeline/full-kit/manifests/m4-v04-pose-comparison.json": "fc4af9e7e8842f315aa7ff3a3ff916e3f27977265e0544c4da7473643aa0eb04",
+    "scene-m4-v04-hihat-repair-review.md": "5bc3d79f802894763f66a877516a9c1f6827821a998d82b4fbc9d5d8306e39ad",
+    "scene-coordination/m4-v04-hihat-repair-review.json": "780363ca62cf514caa8317280113bda8af146311a2d93ba0cfdafb07d55ef03b",
+    "scene-coordination/m4-v04-hihat-repair-release.md": "038dc8afe9ab795539c57c3dba120f7f33232909a48f5d846d5f22db1498dc68",
+    "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py": "8d814874ee0ac1317827297d2a729b34f4789fffd891212ae03e2c440a73b792",
+    "asset-pipeline/full-kit/manifests/m4-v04-author-declarations.json": "8ce8db34b40a3ce053d037c5152fec8c8ed19d586b0968439abf64e3308f32bb",
+    "asset-pipeline/full-kit/source/build_fullkit_m4_v04.py": "0d01536c36481021e8ff7026a6608998eb44dce0d88505dae105f94834909826",
+    "scene-m4-v04-preparation-report.md": "6b2a62a31ab086a5a72c880ecad04332576a5ae14c31ab882f6421aa6f51c6be",
+    "scene-coordination/m4-v03-verifier-v3r1.py": "3f32c40e4eca885219b0cb34e8737a318f8fff803b4dfa1950b3857cd956307d"
+  },
+  "protectedAfter": {
+    "asset-pipeline/full-kit/asset-inventory.json": "eddc33b5a1c4b05184745c70ac71d25cb37bef295638f0b3ecaaa440a4001c87",
+    "asset-pipeline/full-kit/export-ledger-v01.json": "26b4c143f64f6880f012c316e81f124fe899b69312b61866531e6bf884320775",
+    "asset-pipeline/full-kit/exports/studio-full-kit-m3-proposal-v03.glb": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+    "asset-pipeline/full-kit/exports/studio-full-kit-m4-proposal-v01.raw-export.glb": "c10e6453b6bee5c1cf09b3d1c905151a4567e5360116a0495bc1398eb20f5906",
+    "asset-pipeline/full-kit/exports/studio-full-kit-m4-proposal-v02.glb": "baa1a43bd343359edb217fa077bde0678a931cc3ed3991d5ee059e04813ed32f",
+    "asset-pipeline/full-kit/full-kit-profile-v1.json": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+    "asset-pipeline/full-kit/m4-author-report.md": "93d7c5c124a846240173b0a04fed1dffd4fb9743e15971d3ea41a966feb3ee79",
+    "asset-pipeline/full-kit/manifests/m4-v01-tier-ledger.json": "63848642fde09d4d5762c9c5054129c22df51f0838bcc8f1b7c450fd80ffae63",
+    "asset-pipeline/full-kit/manifests/m4-v03-cpu-preparation.json": "d7196145a8665abefdf41b3235f3be8ec91aa7474b3c71fed2186d7537e20253",
+    "asset-pipeline/full-kit/manifests/studio-full-kit-m3-proposal-v03.manifest.json": "060bab9af5dd23b4258e03aef10de21faa7c32aa0a6010cd4e09b35089026405",
+    "asset-pipeline/full-kit/manifests/studio-full-kit-m4-proposal-v02.manifest.json": "42597f1b859fdae354063e09ee925d4d2dc9be8ae0ac8556663e391db6906b82",
+    "asset-pipeline/full-kit/source/build_fullkit_m4.py": "aa9724dcd14dbc428ca5c2ba84cffdcbb469fa14c53cf3866ac46164ec04dc22",
+    "asset-pipeline/full-kit/source/build_fullkit_m4_geometry.py": "c7ce9d8e1792273d6aeffdc5b536233413fdca6c6fd16abf344827d6433ab1c0",
+    "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v03.py": "3b220b1d4614a8111247270b21771c5f2280493c16e3ab986603a24efcffaf37",
+    "asset-pipeline/full-kit/source/build_fullkit_m4_v03.py": "53fa310f1144c46916b0ce63f05188818861e63fe9c32abbf4fb3f1596872b84",
+    "asset-pipeline/full-kit/source/fk-40-music-proposal-v01.blend": "0ae40460b9a2cb578fc35a96497a9016e5f116a1efe98cac4809568fd68c4665",
+    "asset-pipeline/full-kit/source/measure_fullkit_m4_v03.py": "9a3a098195e99b889ecee8b2213c9acc6a9dc50af68e1ae35e507e09b1b0bff5",
+    "asset-pipeline/full-kit/source/render_m4_v01_evidence.py": "bfa6fc9bf22707dc08f44f0bd4a7033e3817d54d2d142d5dea7a969fca161e18",
+    "scene-coordination/m4-model-contract.json": "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98",
+    "scene-coordination/m4-transition-guard.py": "ad62627f0683806ace2c8ebbb133ba83e72c7d95f1df8adc291a3706aa40da6b",
+    "scene-coordination/m4-v03-art-closure-interrupted-20261115/partial-evidence.json": "8322d1cd0b11cd27af16ac9dfc990b6e279639469f263fb15cc4de98451bf307",
+    "scene-coordination/m4-v03-art-closure-interrupted-20261115/partial-report.md": "c0f673655f2daa99adea3019935e1294ef098927b1ac307d83a128f692cac207",
+    "scene-coordination/m4-v03-art-closure-interrupted-20261115/snapshot-manifest.json": "483c601a7c470d0a81221f780048568bb9e6dd41b7df1675fa5d16e462282b68",
+    "scene-coordination/m4-v03-art-review-interruption.md": "7f78ad65ecb95584211bdd79c7a6ee734349f4eabff4982258b2d73b2bebf1b0",
+    "scene-coordination/m4-v03-cpu-verification.json": "c0fcce453614ff08e0facb5517fb4ed6fc430217ac455a2bbcf1e6dd325b6927",
+    "scene-coordination/m4-v03-cpu-verification.py": "11b1356d5afcfe9260b2e28e22b498279d1c33450aa5f4a82e9319fa324f5dd6",
+    "scene-coordination/m4-v03-focused-art-closure-task.md": "614e8acb0aa03f6fdf41d17dcb91b8c664c9ae63d1e46a80de1ef3c1081492e4",
+    "scene-coordination/m4-v03-normal-check-contract-review.md": "cc7812bd57027365bb6e61064eabea6564c7c20aa7eec8c2f9d3b8e07312a3fc",
+    "scene-m4-v03-cpu-verification.md": "815edfabfb41fde8c3cd21e4a9429c1cf8be6d33f1a16ae2e008a23f5f2af174",
+    "scene-m4-v03-preparation-report.md": "b21b6f2b7b6b97786b4da8a34d59b114e2daf6fe5ffb5ae7d49c4117ecc3abc3",
+    "scene-coordination/m4-v03-verifier-v2.py": "12658d50605c9bc7fe625151adf05a8b9faa993c4f378cc99a502402ebf24710",
+    "scene-coordination/m4-v03-verifier-v2-tests.py": "af71947a0647259ce22eed99a17193f3f8072f63bad3f494a0341d53b7aea00a",
+    "scene-coordination/m4-v03-verifier-v2-tests.json": "31648785e1d4fa93b1a16daa9f941af0de8418d4eefe74db0d3fecc41899246c",
+    "scene-coordination/m4-v03-verifier-declaration-contract.json": "71eb54107e54ae94856ea3461471a1afe3e3a27b7de97bfe5a331fe91c8e5293",
+    "scene-m4-v03-verification-repair-report.md": "6f1088bcf5691de641c55e959fdb7290bbcc310fc99bbf64a410be337c92209d",
+    "scene-coordination/m4-v03-verifier-contract-review.md": "7f5f6340960ab3aabf4d107577b6702f36d205257b73fa88de59bdbfd8a94e35",
+    "scene-coordination/m4-v03-verifier-binding-task.md": "4eff478f63355ff551fa9f72e9bb86a5d988a020c5f80ba95ea2750b8eb27c16",
+    "scene-coordination/m4-v03-verifier-binding-disposition.md": "4ac02bc7a2ec2f09f38545270b9ff47c7c1e43d08d032ba5a8fdf79597800acd",
+    "scene-coordination/m4-v03-verifier-declaration-contract-v3.json": "5632ca4a42214edc89776c05f6b8f80835c22ddc8fcbeb0429ea3c39f2670e97",
+    "scene-coordination/m4-v03-verifier-v3-independent-probes-v2.json": "72a2c9a60cd4418ffe5bb78892453e7332a12036c6aae419d86364c975a76a81",
+    "scene-coordination/m4-v03-verifier-v3-independent-probes.json": "10ff605b13da906553ddddb1131129cc1d05d67bbbc767a9043dc1a52db91be6",
+    "scene-coordination/m4-v03-verifier-v3-independent-probes.py": "d6b99b15096153140f7a41b86cfd959997ba032297771d600d0e08ea5c0ce5d6",
+    "scene-coordination/m4-v03-verifier-v3-independent-review.md": "26951c0ee6dd005f8526148c276c8f784880aff567afaa4a4fd4910b91a4247a",
+    "scene-coordination/m4-v03-verifier-v3-tests.json": "eac31cf2e41c24b20de348672b0e74111d11d447bf1e504977a7dce6d1143533",
+    "scene-coordination/m4-v03-verifier-v3-tests.py": "d638fba2f657df9b88a6d4f85ce2906481c642ea54e5784f03a1b26022257659",
+    "scene-coordination/m4-v03-verifier-v3.py": "0abeb41ea77153ab5bcc442771fff9828edd7220a416ec28f8d10bc7290669dc",
+    "scene-coordination/m4-v04-author-task.md": "bb6f4dce04d3c1f810391556a04ebf9243b9b140b18c3734b7c37393af0a3f3d",
+    "scene-coordination/m4-v04-producer-task.md": "5cd88fdd7576ec52e2f517b320f8562fbaa3c08aef0b79c38244c8b62c40cadf",
+    "scene-coordination/m4-v04-internal-contract.md": "a2afc8a324681c595ae4d9e849f56ff01a28b126f3d33dc1db5a28609400b5ae",
+    "scene-coordination/m4-v04-combined-repair-disposition.md": "24e9b32c05c0c7f58da9f8a38054aecfc85bf7fb2f909c6d65d40d3016821890",
+    "scene-m4-v03-verifier-binding-report.md": "c76449289e38a5fee2f569eb1d001fc1639b8499a1d7be02c5983a6a88d59cd7",
+    "scene-m4-v03-focused-art-closure.md": "4157a176701d2697e44cd39cc3de0b0b3a4d2101d36a46bf8212ff01361401af",
+    "scene-coordination/m4-v03-focused-art-closure.json": "d21dfd71cff79ed4747d55b8afcee810d9427b07f8a910b2cb2ad8b8841adc03",
+    "scene-coordination/m4-v04-bounded-art-disposition.md": "7705f590de09dd20c213bb2598f2fd977ee811f402da7fc1f5f3e436fedd9c6f",
+    "scene-m4-v04-bounded-art-review.md": "1af11ba58ed0892851baa352deddcd9663e6fd330805c58bd84e2a65d39e1381",
+    "scene-coordination/m4-v04-bounded-art-review.json": "4da5eacb4ec3084987b078faa161dfb6a711bbb8af1905485ad7ceaf2a59ea7f",
+    "asset-pipeline/full-kit/manifests/m4-v04-pose-comparison.json": "fc4af9e7e8842f315aa7ff3a3ff916e3f27977265e0544c4da7473643aa0eb04",
+    "scene-m4-v04-hihat-repair-review.md": "5bc3d79f802894763f66a877516a9c1f6827821a998d82b4fbc9d5d8306e39ad",
+    "scene-coordination/m4-v04-hihat-repair-review.json": "780363ca62cf514caa8317280113bda8af146311a2d93ba0cfdafb07d55ef03b",
+    "scene-coordination/m4-v04-hihat-repair-release.md": "038dc8afe9ab795539c57c3dba120f7f33232909a48f5d846d5f22db1498dc68",
+    "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py": "8d814874ee0ac1317827297d2a729b34f4789fffd891212ae03e2c440a73b792",
+    "asset-pipeline/full-kit/manifests/m4-v04-author-declarations.json": "8ce8db34b40a3ce053d037c5152fec8c8ed19d586b0968439abf64e3308f32bb",
+    "asset-pipeline/full-kit/source/build_fullkit_m4_v04.py": "0d01536c36481021e8ff7026a6608998eb44dce0d88505dae105f94834909826",
+    "scene-m4-v04-preparation-report.md": "6b2a62a31ab086a5a72c880ecad04332576a5ae14c31ab882f6421aa6f51c6be",
+    "scene-coordination/m4-v03-verifier-v3r1.py": "3f32c40e4eca885219b0cb34e8737a318f8fff803b4dfa1950b3857cd956307d"
+  },
+  "sourceHashes": {
+    "produce_fullkit_m4_v04.py": "3c9fe150d859087050fed73d3fed54d3a97a5998774c455203e6a00462dc08d1",
+    "measure_fullkit_m4_v04.py": "d56efb031e843320625b610181885ff9110f1789b8bced9bef475f75f50ccf1b",
+    "m4-v04-producer-tests.py": "dcf7b924bb876a44b243e838aa3d4f59ae1ad987cb4b4fbdccaf3a6f39712039"
+  }
+}

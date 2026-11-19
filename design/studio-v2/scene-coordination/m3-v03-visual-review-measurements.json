@@ -1,0 +1,1868 @@
+{
+ "receiptSha256": "641328d42c029b00979d41324df213190e168526af5447689cb50713652098b0",
+ "selected": {
+  "revision": "v03",
+  "glbSha256": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+  "manifestSha256": "060bab9af5dd23b4258e03aef10de21faa7c32aa0a6010cd4e09b35089026405"
+ },
+ "images": {
+  "scene-home-1440x900-f58.png": "d7a99c4bd330d4fd4a5773dee5d745b57c2e7c25d786c41e464870c8736edbc1",
+  "scene-left-down-1440x900-f58.png": "371021a4fc77085342d53cce65003c7807fa6bc9af000fd22ac4cf3a2ba58839",
+  "scene-right-down-1440x900-f58.png": "cca919714ec936e5ee34ad19d136e0c9caa6d3adaafac6c5fcae4a6ddd2c61d5",
+  "scene-music-1440x900-f58.png": "8dd3710e4bf0da96c557bf2f96f5af61d297f3f1ab7374b1d30c2dd0741ac5d5",
+  "scene-mid-right-1440x900-f58.png": "2505ac0076f720e9e32ad2a26efa151554105bd5106f95a59d177e69136d4811",
+  "scene-home-1024x768-f58.png": "62da4d52647e01249cdcec824c3b288a1edc9e8ed53cb1d6ca3b80025e7c0644",
+  "scene-home-390x844-f74.png": "fc370298151a31354a352d0d82cc1fc3e0498752e5c6b4ec5b10a8e17304dc00",
+  "scene-music-390x844-f74.png": "f3fbfacde63e93f3346044f54ebf4d579c62f1e613e576c9cba59e90df10506d",
+  "scene-left-down-390x844-f74.png": "5c4f1c1039478b74f2d890fa7ad222cf19b958f873cb017aad61ac84436c06c6",
+  "scene-home-320x844-f74.png": "48a97844be27f28ae8bb5bbd19384e14f69548f828eb5009190d6b5202c35b78",
+  "scene-music-320x844-f74.png": "2f848afa443f1841cf701e87017a19d2e747edcdc4a50f3a641246f4861b9fec",
+  "scene-left-down-320x844-f74.png": "bfa2a61be44bb979c7afc594185aa4502fdf4bd3642c36795a976527f4ee5778",
+  "chrome-home-default-1440x900.png": "955f09de2af4fea1226bcb80995936bdb149f3f814f11a74892512f549115432",
+  "chrome-left-down-default-1440x900.png": "ca21150110badab8e4238c8383c6ef8ece723447a5c4042126bbb6336f135804",
+  "chrome-right-down-default-1440x900.png": "0ae61bcbe900d513adf990f33380f25cd9ac8d4316188351f6be5746efde4db1",
+  "chrome-music-default-1440x900.png": "353dac14823cc80ec2a7d46abd743028e56e39dece07e12de9acb12b519041b4",
+  "chrome-mid-right-default-1440x900.png": "64c6dbd213c07e6fba34e92b2c649369ea87105573a805109d858971e4f65d65",
+  "chrome-home-default-1024x768.png": "1631076ed79f6c0bf625cb8f1e7be06bf76f83ebfa2046b384d0849574b1151b",
+  "chrome-home-closed-390x844.png": "950dba16c6c95efff0b2cd3036b7934b4aabb5accab57d6e33bfe7cebff60e7b",
+  "chrome-home-open-390x844.png": "5c6940a1313c9a78f962a7fa54aec2172b570adb898b3f3f64d600df84abd249",
+  "chrome-music-closed-390x844.png": "5481a58d05ff26dad84a3fd73d82df0bd21dd40b3c56545f660a4953661b146e",
+  "chrome-left-down-closed-390x844.png": "df667b416053f0020359e44df0db4a3d2b0fef4a30170751500bf32642172cb6",
+  "chrome-home-closed-320x844.png": "0537eb936e84f064bffad318211ab803ba71dd8f01bbb1e6266506cd7a95fe19",
+  "chrome-home-open-320x844.png": "bc02d7240726c6b64f2d7af0ea394e051f9a394fb0f026a81a7085b2d254df60",
+  "chrome-music-closed-320x844.png": "8ede9ccb34b73dde1b1c525163451dec92f63efedf47861b56054f8ec6ef59fb",
+  "chrome-left-down-closed-320x844.png": "efce6adfb4dbaefb010f3a03491cdd7a6c6f5b1635a19c7209eccfabe35b4665"
+ },
+ "parents": {
+  "scene-home-1440x900-f58.png": {
+   "folder": "full-kit-m2-v05",
+   "sha256": "489e74d203aa811957a56d2a43227204f5e5193135cceec95171fd7bc5030964"
+  },
+  "scene-home-1024x768-f58.png": {
+   "folder": "full-kit-m2-v05",
+   "sha256": "da1b2aa5f107717746702ee64a2355434f5121efbdc047fc689ad776d4a16812"
+  },
+  "scene-mid-right-1440x900-f58.png": {
+   "folder": "full-kit-m2-v05",
+   "sha256": "4788bd140a60a514fa86c05434432990d544275041247748bea8adc7d2dcde73"
+  },
+  "scene-music-1440x900-f58.png": {
+   "folder": "full-kit-m2-v05",
+   "sha256": "618adc9cba0a9262289fec25c52caa62a73001e27232d1237fd9d6081b25c9b0"
+  },
+  "scene-music-390x844-f74.png": {
+   "folder": "full-kit-m2-v05",
+   "sha256": "5f1718544b43414b7c98b71364d29a758e50f822bfa7db2ee5c7f2f5c227523b"
+  },
+  "scene-home-390x844-f74.png": {
+   "folder": "full-kit-m2-v03",
+   "sha256": "24f6150660774a7d6035b9e65217cbd596bf815ed205c6ae62cae1a569a3c98f"
+  },
+  "scene-home-320x844-f74.png": {
+   "folder": "full-kit-m2-v03",
+   "sha256": "d9bb31c03cd33730e8585a4c355556144dcd96f872d0807431f66ab4a4817676"
+  },
+  "scene-right-down-1440x900-f58.png": {
+   "folder": "full-kit-m2-v03",
+   "sha256": "9abd79860a218f40c47a2405a370156307cd8a5b14a49c7c2b1483fa8690a7de"
+  },
+  "scene-left-down-1440x900-f58.png": {
+   "folder": "full-kit-m2-v02",
+   "sha256": "4de903241c35c433d2f82a9aff3dfc8d2d6204194a9e7ff14afcf967b5f897f4"
+  },
+  "scene-left-down-390x844-f74.png": {
+   "folder": "full-kit-m2-v02",
+   "sha256": "73097cb81cb1f72eb37f9ca71ad08288aecc1bb8265176e9f4c8edaf1188b178"
+  },
+  "scene-left-down-320x844-f74.png": {
+   "folder": "full-kit-m2-v02",
+   "sha256": "9445653bab47b949e0c674cf250f53f54238bde44036228bd074e9da09d67695"
+  },
+  "scene-music-320x844-f74.png": {
+   "folder": "full-kit-m2-v02",
+   "sha256": "36b1fc5a533e4b60bf6072cf0a514d5cdea2acc49fb25eff1602646ee6c40a45"
+  }
+ },
+ "keyPitch": {
+  "scene-home-1440x900-f58.png": {
+   "rowDirectionSlopeBackFront": [
+    0.02584243807964504,
+    0.02870329668990562
+   ],
+   "rows": [
+    {
+     "row": 1,
+     "scanLines": 9,
+     "gaps": 13,
+     "intervals": 12,
+     "pitchBest": 16.106489705217133,
+     "seBest": 0.019664962896597,
+     "endToEndBest": 16.14074396548276,
+     "pitchMinOverLines": 16.023930390914767,
+     "pitchMaxOverLines": 16.106489705217133,
+     "pitchMeanOverLines": 16.052553774912734,
+     "minSpacing": 15.659877985354441,
+     "maxSpacing": 16.507191029143712,
+     "from": [
+      422.9633567269666,
+      663.8408230272554
+     ],
+     "to": [
+      616.585139249674,
+      668.940431057687
+     ]
+    },
+    {
+     "row": 2,
+     "scanLines": 9,
+     "gaps": 12,
+     "intervals": 11,
+     "pitchBest": 16.326320062575373,
+     "seBest": 0.019607752211655012,
+     "endToEndBest": 16.363273138172676,
+     "pitchMinOverLines": 16.29323980569787,
+     "pitchMaxOverLines": 16.33284911285462,
+     "pitchMeanOverLines": 16.322796820533327,
+     "minSpacing": 16.055670502850298,
+     "maxSpacing": 16.808724446503273,
+     "from": [
+      422.41060900127746,
+      669.6592702054519
+     ],
+     "to": [
+      602.3416360032281,
+      674.4952980332209
+     ]
+    },
+    {
+     "row": 3,
+     "scanLines": 5,
+     "gaps": 12,
+     "intervals": 11,
+     "pitchBest": 16.651461793684465,
+     "seBest": 0.028617669372747123,
+     "endToEndBest": 16.659022272329423,
+     "pitchMinOverLines": 16.578112967829863,
+     "pitchMaxOverLines": 16.66247970307513,
+     "pitchMeanOverLines": 16.622752358232518,
+     "minSpacing": 16.19430287202688,
+     "maxSpacing": 17.031847985000894,
+     "from": [
+      419.5218311286338,
+      679.3161118368794
+     ],
+     "to": [
+      602.7006461035234,
+      684.3962236330206
+     ]
+    },
+    {
+     "row": 4,
+     "scanLines": 6,
+     "gaps": 11,
+     "intervals": 10,
+     "pitchBest": 17.018103517068006,
+     "seBest": 0.013548064720275982,
+     "endToEndBest": 17.053541158078552,
+     "pitchMinOverLines": 17.017311214153136,
+     "pitchMaxOverLines": 17.031205972196293,
+     "pitchMeanOverLines": 17.02105872649693,
+     "minSpacing": 16.766475517351154,
+     "maxSpacing": 17.458048796810147,
+     "from": [
+      420.0537427522819,
+      684.8553242445139
+     ],
+     "to": [
+      590.5214058089989,
+      689.6618255718329
+     ]
+    }
+   ],
+   "meanOfRows1to4": 16.50479042004388
+  },
+  "scene-home-1024x768-f58.png": {
+   "rowDirectionSlopeBackFront": [
+    0.025842438079645556,
+    0.02870329668990561
+   ],
+   "rows": [
+    {
+     "row": 1,
+     "scanLines": 7,
+     "gaps": 13,
+     "intervals": 12,
+     "pitchBest": 13.695859211377593,
+     "seBest": 0.016204551417350246,
+     "endToEndBest": 13.7092756305596,
+     "pitchMinOverLines": 13.692536056880737,
+     "pitchMaxOverLines": 13.724798815235872,
+     "pitchMeanOverLines": 13.703340681292945,
+     "minSpacing": 13.378013661088175,
+     "maxSpacing": 14.016402254722038,
+     "from": [
+      259.147107398534,
+      565.4617809549728
+     ],
+     "to": [
+      423.6018787617501,
+      569.774377989556
+     ]
+    },
+    {
+     "row": 2,
+     "scanLines": 7,
+     "gaps": 12,
+     "intervals": 11,
+     "pitchBest": 13.937469920733296,
+     "seBest": 0.0171140105648786,
+     "endToEndBest": 13.968048117734774,
+     "pitchMinOverLines": 13.899435306225307,
+     "pitchMaxOverLines": 13.954037411278424,
+     "pitchMeanOverLines": 13.925780596588181,
+     "minSpacing": 13.665695990708002,
+     "maxSpacing": 14.440398857124062,
+     "from": [
+      257.86574460108994,
+      571.9086996391205
+     ],
+     "to": [
+      411.4586012547069,
+      576.0445114727627
+     ]
+    },
+    {
+     "row": 3,
+     "scanLines": 3,
+     "gaps": 12,
+     "intervals": 11,
+     "pitchBest": 14.215182695337809,
+     "seBest": 0.022676993829614283,
+     "endToEndBest": 14.213898348840424,
+     "pitchMinOverLines": 14.215182695337809,
+     "pitchMaxOverLines": 14.216984134121114,
+     "pitchMeanOverLines": 14.216329766802014,
+     "minSpacing": 13.998996308969694,
+     "maxSpacing": 14.543865222682967,
+     "from": [
+      255.61580611352767,
+      578.9865826085049
+     ],
+     "to": [
+      411.908897309131,
+      583.3101579038131
+     ]
+    },
+    {
+     "row": 4,
+     "scanLines": 5,
+     "gaps": 11,
+     "intervals": 10,
+     "pitchBest": 14.535042647073274,
+     "seBest": 0.013516984852769403,
+     "endToEndBest": 14.55823434118038,
+     "pitchMinOverLines": 14.521366503741572,
+     "pitchMaxOverLines": 14.540493461212229,
+     "pitchMeanOverLines": 14.533401130830057,
+     "minSpacing": 14.367701898304006,
+     "maxSpacing": 14.761215464886362,
+     "from": [
+      255.89905105469538,
+      585.1687601458287
+     ],
+     "to": [
+      401.42325751408396,
+      589.2826448838357
+     ]
+    }
+   ],
+   "meanOfRows1to4": 14.094713043878299
+  },
+  "scene-home-390x844-f74.png": {
+   "rowDirectionSlopeBackFront": [
+    0.08619397589441417,
+    0.09567952994582136
+   ],
+   "rows": [
+    {
+     "row": 1,
+     "scanLines": 7,
+     "gaps": 13,
+     "intervals": 12,
+     "pitchBest": 10.51504667693451,
+     "seBest": 0.0428407634132568,
+     "endToEndBest": 10.556641714655074,
+     "pitchMinOverLines": 10.460768849914198,
+     "pitchMaxOverLines": 10.545058800979387,
+     "pitchMeanOverLines": 10.493652396617358,
+     "minSpacing": 10.016326729803517,
+     "maxSpacing": 11.126066323064933,
+     "from": [
+      87.24890673915351,
+      549.8703447291778
+     ],
+     "to": [
+      213.44292782204087,
+      560.9525638626161
+     ]
+    },
+    {
+     "row": 2,
+     "scanLines": 7,
+     "gaps": 12,
+     "intervals": 11,
+     "pitchBest": 10.660184546033909,
+     "seBest": 0.04264818493739774,
+     "endToEndBest": 10.681973410024664,
+     "pitchMinOverLines": 10.648791732903831,
+     "pitchMaxOverLines": 10.660747115609668,
+     "pitchMeanOverLines": 10.654566403200922,
+     "minSpacing": 10.271475547467784,
+     "maxSpacing": 11.04193654413173,
+     "from": [
+      87.02386602113894,
+      554.304036786264
+     ],
+     "to": [
+      204.05363124600316,
+      564.824745851841
+     ]
+    },
+    {
+     "row": 3,
+     "scanLines": 4,
+     "gaps": 12,
+     "intervals": 11,
+     "pitchBest": 10.883855117530354,
+     "seBest": 0.039202021120076466,
+     "endToEndBest": 10.919233993289446,
+     "pitchMinOverLines": 10.822192972013408,
+     "pitchMaxOverLines": 10.883855117530354,
+     "pitchMeanOverLines": 10.84739342828198,
+     "minSpacing": 10.272014571321119,
+     "maxSpacing": 11.676931335932295,
+     "from": [
+      84.69600843118533,
+      560.2871281897837
+     ],
+     "to": [
+      204.29537440672732,
+      571.3678253372336
+     ]
+    },
+    {
+     "row": 4,
+     "scanLines": 1,
+     "gaps": 12,
+     "intervals": 11,
+     "pitchBest": 11.054521065998136,
+     "seBest": 0.03971931535075458,
+     "endToEndBest": 11.129350176525573,
+     "pitchMinOverLines": 11.054521065998136,
+     "pitchMaxOverLines": 11.054521065998136,
+     "pitchMeanOverLines": 11.054521065998136,
+     "minSpacing": 10.422424141637187,
+     "maxSpacing": 11.758832390165123,
+     "from": [
+      73.88473563338931,
+      563.4145757266217
+     ],
+     "to": [
+      195.76567324309184,
+      574.9207360305242
+     ]
+    }
+   ],
+   "meanOfRows1to4": 10.7625333235246
+  },
+  "scene-home-320x844-f74.png": {
+   "rowDirectionSlopeBackFront": [
+    0.08619397589441416,
+    0.09567952994582135
+   ],
+   "rows": [
+    {
+     "row": 1,
+     "scanLines": 7,
+     "gaps": 13,
+     "intervals": 12,
+     "pitchBest": 10.515034525932647,
+     "seBest": 0.04284905798658459,
+     "endToEndBest": 10.556641714655077,
+     "pitchMinOverLines": 10.46046803691291,
+     "pitchMaxOverLines": 10.545095914942852,
+     "pitchMeanOverLines": 10.493450168493851,
+     "minSpacing": 10.01808536135686,
+     "maxSpacing": 11.126066323064961,
+     "from": [
+      52.2489067391535,
+      549.8703447291778
+     ],
+     "to": [
+      178.44292782204087,
+      560.9525638626161
+     ]
+    },
+    {
+     "row": 2,
+     "scanLines": 8,
+     "gaps": 12,
+     "intervals": 11,
+     "pitchBest": 10.660072882840213,
+     "seBest": 0.04261286862201408,
+     "endToEndBest": 10.681973410024662,
+     "pitchMinOverLines": 10.645320798780793,
+     "pitchMaxOverLines": 10.660703048395499,
+     "pitchMeanOverLines": 10.653321378877326,
+     "minSpacing": 10.271475547467787,
+     "maxSpacing": 11.041936544131701,
+     "from": [
+      52.02386602113894,
+      554.304036786264
+     ],
+     "to": [
+      169.05363124600314,
+      564.824745851841
+     ]
+    },
+    {
+     "row": 3,
+     "scanLines": 4,
+     "gaps": 12,
+     "intervals": 11,
+     "pitchBest": 10.883519290026857,
+     "seBest": 0.03907097909210619,
+     "endToEndBest": 10.918471499035336,
+     "pitchMinOverLines": 10.822004865649646,
+     "pitchMaxOverLines": 10.883519290026857,
+     "pitchMeanOverLines": 10.847077453229197,
+     "minSpacing": 10.272014571321094,
+     "maxSpacing": 11.668543899137092,
+     "from": [
+      49.69600843118533,
+      560.2871281897837
+     ],
+     "to": [
+      169.2870227376077,
+      571.3670515679462
+     ]
+    },
+    {
+     "row": 4,
+     "scanLines": 1,
+     "gaps": 12,
+     "intervals": 11,
+     "pitchBest": 11.054656795857408,
+     "seBest": 0.03971805254259621,
+     "endToEndBest": 11.129350176525575,
+     "pitchMinOverLines": 11.054656795857408,
+     "pitchMaxOverLines": 11.054656795857408,
+     "pitchMeanOverLines": 11.054656795857408,
+     "minSpacing": 10.422424141637187,
+     "maxSpacing": 11.75883239016516,
+     "from": [
+      38.88473563338929,
+      563.4145757266217
+     ],
+     "to": [
+      160.76567324309184,
+      574.9207360305242
+     ]
+    }
+   ],
+   "meanOfRows1to4": 10.762126449114445
+  }
+ },
+ "mouse": {
+  "scene-home-1440x900-f58.png": {
+   "silhouetteX": [
+    721,
+    776
+   ],
+   "silhouetteY": [
+    678,
+    729
+   ],
+   "widthPx": 56,
+   "widestRowPx": 56,
+   "heightPx": 52,
+   "pixels": 2512,
+   "widthInRow3Pitches": 3.368876512935938,
+   "widthInMeanPitches": 3.392954322642718,
+   "receiptBoxWidthPx": 60.422393294943845
+  },
+  "scene-home-1024x768-f58.png": {
+   "silhouetteX": [
+    513,
+    559
+   ],
+   "silhouetteY": [
+    579,
+    622
+   ],
+   "widthPx": 47,
+   "widestRowPx": 47,
+   "heightPx": 44,
+   "pixels": 1820,
+   "widthInRow3Pitches": 3.306057243393048,
+   "widthInMeanPitches": 3.334583673586269,
+   "receiptBoxWidthPx": 51.56044227835213
+  },
+  "scene-home-390x844-f74.png": {
+   "silhouetteX": [
+    285,
+    324
+   ],
+   "silhouetteY": [
+    573,
+    608
+   ],
+   "widthPx": 40,
+   "widestRowPx": 40,
+   "heightPx": 36,
+   "pixels": 1235,
+   "widthInRow3Pitches": 3.6875218239719763,
+   "widthInMeanPitches": 3.716597087097379,
+   "receiptBoxWidthPx": 43.96536435903431
+  },
+  "scene-home-320x844-f74.png": {
+   "silhouetteX": [
+    250,
+    289
+   ],
+   "silhouetteY": [
+    573,
+    608
+   ],
+   "widthPx": 40,
+   "widestRowPx": 40,
+   "heightPx": 36,
+   "pixels": 1235,
+   "widthInRow3Pitches": 3.687629241376157,
+   "widthInMeanPitches": 3.7167375972702286,
+   "receiptBoxWidthPx": 43.96536435903431
+  },
+  "authoredWorld": {
+   "widthMm": 99,
+   "lengthMm": 160,
+   "heightMm": 56,
+   "keyPitchMm": 30.5,
+   "widthInPitches": 3.2459016393442623,
+   "lengthInPitches": 5.245901639344262
+  }
+ },
+ "cymbal": {
+  "scene-home-1440x900-f58.png": {
+   "m3": {
+    "topFacePixels": 2148,
+    "visibleX": [
+     1147,
+     1296
+    ],
+    "visibleWidthPx": 150,
+    "maxThicknessPx": 27,
+    "thicknessAtLeftCutPx": 9.0,
+    "leftCutBy": "speaker",
+    "mirrorEstimateHiddenPx": 11,
+    "estimatedFullWidthPx": 161,
+    "estimatedHiddenWidthShare": 0.06832298136645963
+   },
+   "parent": {
+    "folder": "full-kit-m2-v05",
+    "topFacePixels": 1015,
+    "visibleX": [
+     1225,
+     1296
+    ],
+    "visibleWidthPx": 72,
+    "hiddenWidthShareAgainstM3FullWidth": 0.5527950310559007
+   },
+   "visibleTopFacePixelsRatioM3OverParent": 2.116256157635468
+  },
+  "scene-home-1024x768-f58.png": {
+   "m3": {
+    "topFacePixels": 1553,
+    "visibleX": [
+     876,
+     1004
+    ],
+    "visibleWidthPx": 129,
+    "maxThicknessPx": 23,
+    "thicknessAtLeftCutPx": 7.0,
+    "leftCutBy": "speaker",
+    "mirrorEstimateHiddenPx": 7,
+    "estimatedFullWidthPx": 136,
+    "estimatedHiddenWidthShare": 0.051470588235294115
+   },
+   "parent": {
+    "folder": "full-kit-m2-v05",
+    "topFacePixels": 728,
+    "visibleX": [
+     943,
+     1004
+    ],
+    "visibleWidthPx": 62,
+    "hiddenWidthShareAgainstM3FullWidth": 0.5441176470588236
+   },
+   "visibleTopFacePixelsRatioM3OverParent": 2.133241758241758
+  },
+  "scene-music-1440x900-f58.png": {
+   "m3": {
+    "topFacePixels": 1478,
+    "visibleX": [
+     425,
+     543
+    ],
+    "visibleWidthPx": 119,
+    "maxThicknessPx": 21,
+    "thicknessAtLeftCutPx": 5.0,
+    "leftCutBy": "speaker",
+    "mirrorEstimateHiddenPx": 4,
+    "estimatedFullWidthPx": 123,
+    "estimatedHiddenWidthShare": 0.032520325203252036
+   },
+   "parent": {
+    "folder": "full-kit-m2-v05",
+    "topFacePixels": 618,
+    "visibleX": [
+     491,
+     543
+    ],
+    "visibleWidthPx": 53,
+    "hiddenWidthShareAgainstM3FullWidth": 0.5691056910569106
+   },
+   "visibleTopFacePixelsRatioM3OverParent": 2.3915857605177995
+  },
+  "scene-mid-right-1440x900-f58.png": {
+   "m3": {
+    "topFacePixels": 1307,
+    "visibleX": [
+     634,
+     743
+    ],
+    "visibleWidthPx": 110,
+    "maxThicknessPx": 22,
+    "thicknessAtLeftCutPx": 6.0,
+    "leftCutBy": "speaker",
+    "mirrorEstimateHiddenPx": 5,
+    "estimatedFullWidthPx": 115,
+    "estimatedHiddenWidthShare": 0.043478260869565216
+   },
+   "parent": {
+    "folder": "full-kit-m2-v05",
+    "topFacePixels": 575,
+    "visibleX": [
+     694,
+     743
+    ],
+    "visibleWidthPx": 50,
+    "hiddenWidthShareAgainstM3FullWidth": 0.5652173913043479
+   },
+   "visibleTopFacePixelsRatioM3OverParent": 2.2730434782608695
+  },
+  "scene-music-390x844-f74.png": {
+   "m3": {
+    "topFacePixels": 642,
+    "visibleX": [
+     0,
+     73
+    ],
+    "visibleWidthPx": 74,
+    "maxThicknessPx": 17,
+    "thicknessAtLeftCutPx": 8.0,
+    "leftCutBy": "frame edge",
+    "mirrorEstimateHiddenPx": 14,
+    "estimatedFullWidthPx": 88,
+    "estimatedHiddenWidthShare": 0.1590909090909091
+   },
+   "parent": {
+    "folder": "full-kit-m2-v05",
+    "topFacePixels": 293,
+    "visibleX": [
+     37,
+     73
+    ],
+    "visibleWidthPx": 37,
+    "hiddenWidthShareAgainstM3FullWidth": 0.5795454545454546
+   },
+   "visibleTopFacePixelsRatioM3OverParent": 2.1911262798634814
+  },
+  "scene-music-320x844-f74.png": {
+   "m3": {
+    "topFacePixels": 319,
+    "visibleX": [
+     0,
+     38
+    ],
+    "visibleWidthPx": 39,
+    "maxThicknessPx": 17,
+    "thicknessAtLeftCutPx": 10.0,
+    "leftCutBy": "frame edge",
+    "mirrorEstimateHiddenPx": null,
+    "estimatedFullWidthPx": 88,
+    "estimatedHiddenWidthShare": 0.5568181818181819
+   },
+   "parent": {
+    "folder": "full-kit-m2-v02",
+    "topFacePixels": 293,
+    "visibleX": [
+     2,
+     38
+    ],
+    "visibleWidthPx": 37,
+    "hiddenWidthShareAgainstM3FullWidth": 0.5795454545454546
+   },
+   "visibleTopFacePixelsRatioM3OverParent": 1.0887372013651877
+  }
+ },
+ "uiOverlap": {
+  "chrome-home-default-1440x900.png": {
+   "scene": "scene-home-1440x900-f58.png",
+   "projectsOpen": "false",
+   "coveredShareOfFrame": 0.16087654320987654,
+   "boxes": {
+    "kb_keycaps__caps": {
+     "inFrameShareOfBox": 1.0062846541893857,
+     "uiCoveredShareOfInFramePart": 0.11759889140841522
+    },
+    "kb_case__frost_shell": {
+     "inFrameShareOfBox": 0.9871206019579868,
+     "uiCoveredShareOfInFramePart": 0.16814072327044025
+    },
+    "mouse_native__body": {
+     "inFrameShareOfBox": 1.00169166273807,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "mug_coaster__mug_coaster": {
+     "inFrameShareOfBox": 0.9998202348234293,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "notebook_pen__set": {
+     "inFrameShareOfBox": 1.006983797118829,
+     "uiCoveredShareOfInFramePart": 0.7704645016472973
+    },
+    "mic_boom__assembly": {
+     "inFrameShareOfBox": 0.6108256744339374,
+     "uiCoveredShareOfInFramePart": 0.28220754343987947
+    },
+    "headphones__on_stand": {
+     "inFrameShareOfBox": 1.003514672817186,
+     "uiCoveredShareOfInFramePart": 0.03305921052631579
+    },
+    "speaker_nearfield__cabinet": {
+     "inFrameShareOfBox": 1.0008014340386633,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "drum_cymbals__proxy_cymbal_1": {
+     "inFrameShareOfBox": 0.9938963904457462,
+     "uiCoveredShareOfInFramePart": 0.0
+    }
+   },
+   "targets": {
+    "dissertation": {
+     "inFramePixels": 88696,
+     "uiCoveredShare": 0.0
+    },
+    "copilot": {
+     "inFramePixels": 59036,
+     "uiCoveredShare": 0.0
+    },
+    "typeforge": {
+     "inFramePixels": 60763,
+     "uiCoveredShare": 0.0
+    }
+   }
+  },
+  "chrome-left-down-default-1440x900.png": {
+   "scene": "scene-left-down-1440x900-f58.png",
+   "projectsOpen": "false",
+   "coveredShareOfFrame": 0.15386574074074075,
+   "boxes": {
+    "kb_keycaps__caps": {
+     "inFrameShareOfBox": 1.000873486622663,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "kb_case__frost_shell": {
+     "inFrameShareOfBox": 0.9975507891032208,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "mouse_native__body": {
+     "inFrameShareOfBox": 1.0008449029936035,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "mug_coaster__mug_coaster": {
+     "inFrameShareOfBox": 0.0
+    },
+    "notebook_pen__set": {
+     "inFrameShareOfBox": 0.9977678976553827,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "mic_boom__assembly": {
+     "inFrameShareOfBox": 0.9989796435376902,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "headphones__on_stand": {
+     "inFrameShareOfBox": 0.0
+    },
+    "speaker_nearfield__cabinet": {
+     "inFrameShareOfBox": 0.0
+    },
+    "drum_cymbals__proxy_cymbal_1": {
+     "inFrameShareOfBox": 0.0
+    }
+   },
+   "targets": {
+    "dissertation": {
+     "inFramePixels": 122958,
+     "uiCoveredShare": 0.0
+    },
+    "copilot": {
+     "inFramePixels": 40347,
+     "uiCoveredShare": 0.0
+    },
+    "typeforge": {
+     "inFramePixels": 7159,
+     "uiCoveredShare": 0.0
+    }
+   }
+  },
+  "chrome-right-down-default-1440x900.png": {
+   "scene": "scene-right-down-1440x900-f58.png",
+   "projectsOpen": "false",
+   "coveredShareOfFrame": 0.15977546296296297,
+   "boxes": {
+    "kb_keycaps__caps": {
+     "inFrameShareOfBox": 0.0
+    },
+    "kb_case__frost_shell": {
+     "inFrameShareOfBox": 0.0
+    },
+    "mouse_native__body": {
+     "inFrameShareOfBox": 0.0
+    },
+    "mug_coaster__mug_coaster": {
+     "inFrameShareOfBox": 0.9321985802465799,
+     "uiCoveredShareOfInFramePart": 0.3011758039382349
+    },
+    "notebook_pen__set": {
+     "inFrameShareOfBox": 0.0
+    },
+    "mic_boom__assembly": {
+     "inFrameShareOfBox": 0.0
+    },
+    "headphones__on_stand": {
+     "inFrameShareOfBox": 1.0006155234896634,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "speaker_nearfield__cabinet": {
+     "inFrameShareOfBox": 0.8850448488527818,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "drum_cymbals__proxy_cymbal_1": {
+     "inFrameShareOfBox": 0.9788808611852221,
+     "uiCoveredShareOfInFramePart": 0.0
+    }
+   },
+   "targets": {
+    "dissertation": {
+     "inFramePixels": 0
+    },
+    "copilot": {
+     "inFramePixels": 0
+    },
+    "typeforge": {
+     "inFramePixels": 2604,
+     "uiCoveredShare": 0.0
+    }
+   }
+  },
+  "chrome-music-default-1440x900.png": {
+   "scene": "scene-music-1440x900-f58.png",
+   "projectsOpen": "false",
+   "coveredShareOfFrame": 0.1604104938271605,
+   "boxes": {
+    "kb_keycaps__caps": {
+     "inFrameShareOfBox": 0.0
+    },
+    "kb_case__frost_shell": {
+     "inFrameShareOfBox": 0.0
+    },
+    "mouse_native__body": {
+     "inFrameShareOfBox": 0.0
+    },
+    "mug_coaster__mug_coaster": {
+     "inFrameShareOfBox": 1.0036887970250326,
+     "uiCoveredShareOfInFramePart": 0.6848509933774835
+    },
+    "notebook_pen__set": {
+     "inFrameShareOfBox": 0.0
+    },
+    "mic_boom__assembly": {
+     "inFrameShareOfBox": 0.0
+    },
+    "headphones__on_stand": {
+     "inFrameShareOfBox": 0.9988966637458135,
+     "uiCoveredShareOfInFramePart": 0.06309859154929577
+    },
+    "speaker_nearfield__cabinet": {
+     "inFrameShareOfBox": 0.9999995064039525,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "drum_cymbals__proxy_cymbal_1": {
+     "inFrameShareOfBox": 0.9708190143176084,
+     "uiCoveredShareOfInFramePart": 0.0
+    }
+   },
+   "targets": {
+    "dissertation": {
+     "inFramePixels": 0
+    },
+    "copilot": {
+     "inFramePixels": 0
+    },
+    "typeforge": {
+     "inFramePixels": 99830,
+     "uiCoveredShare": 0.0
+    }
+   }
+  },
+  "chrome-mid-right-default-1440x900.png": {
+   "scene": "scene-mid-right-1440x900-f58.png",
+   "projectsOpen": "false",
+   "coveredShareOfFrame": 0.1540239197530864,
+   "boxes": {
+    "kb_keycaps__caps": {
+     "inFrameShareOfBox": 0.15790210852537107,
+     "uiCoveredShareOfInFramePart": 0.9899917965545529
+    },
+    "kb_case__frost_shell": {
+     "inFrameShareOfBox": 0.14058509660163312,
+     "uiCoveredShareOfInFramePart": 0.9911022511790732
+    },
+    "mouse_native__body": {
+     "inFrameShareOfBox": 0.9984549718032265,
+     "uiCoveredShareOfInFramePart": 1.0
+    },
+    "mug_coaster__mug_coaster": {
+     "inFrameShareOfBox": 0.9952220691824791,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "notebook_pen__set": {
+     "inFrameShareOfBox": 0.0
+    },
+    "mic_boom__assembly": {
+     "inFrameShareOfBox": 0.0
+    },
+    "headphones__on_stand": {
+     "inFrameShareOfBox": 0.9990560893386252,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "speaker_nearfield__cabinet": {
+     "inFrameShareOfBox": 0.9988876781438439,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "drum_cymbals__proxy_cymbal_1": {
+     "inFrameShareOfBox": 0.9919514739616428,
+     "uiCoveredShareOfInFramePart": 0.0
+    }
+   },
+   "targets": {
+    "dissertation": {
+     "inFramePixels": 74018,
+     "uiCoveredShare": 0.0
+    },
+    "copilot": {
+     "inFramePixels": 0
+    },
+    "typeforge": {
+     "inFramePixels": 68144,
+     "uiCoveredShare": 0.0
+    }
+   }
+  },
+  "chrome-home-default-1024x768.png": {
+   "scene": "scene-home-1024x768-f58.png",
+   "projectsOpen": "false",
+   "coveredShareOfFrame": 0.25755945841471356,
+   "boxes": {
+    "kb_keycaps__caps": {
+     "inFrameShareOfBox": 1.0050181189704108,
+     "uiCoveredShareOfInFramePart": 0.7871124198856747
+    },
+    "kb_case__frost_shell": {
+     "inFrameShareOfBox": 1.0108413958536722,
+     "uiCoveredShareOfInFramePart": 0.7749736425935688
+    },
+    "mouse_native__body": {
+     "inFrameShareOfBox": 1.0074920614783427,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "mug_coaster__mug_coaster": {
+     "inFrameShareOfBox": 0.9966774416144487,
+     "uiCoveredShareOfInFramePart": 0.2624964090778512
+    },
+    "notebook_pen__set": {
+     "inFrameShareOfBox": 0.6897136127206669,
+     "uiCoveredShareOfInFramePart": 0.9880226480836237
+    },
+    "mic_boom__assembly": {
+     "inFrameShareOfBox": 0.38134613309837856,
+     "uiCoveredShareOfInFramePart": 0.3400209926525716
+    },
+    "headphones__on_stand": {
+     "inFrameShareOfBox": 1.001603441186689,
+     "uiCoveredShareOfInFramePart": 0.19557455368368118
+    },
+    "speaker_nearfield__cabinet": {
+     "inFrameShareOfBox": 1.0039846546651212,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "drum_cymbals__proxy_cymbal_1": {
+     "inFrameShareOfBox": 0.9260444430563133,
+     "uiCoveredShareOfInFramePart": 0.0
+    }
+   },
+   "targets": {
+    "dissertation": {
+     "inFramePixels": 64724,
+     "uiCoveredShare": 0.0
+    },
+    "copilot": {
+     "inFramePixels": 42812,
+     "uiCoveredShare": 0.0
+    },
+    "typeforge": {
+     "inFramePixels": 44351,
+     "uiCoveredShare": 0.0
+    }
+   }
+  },
+  "chrome-home-closed-390x844.png": {
+   "scene": "scene-home-390x844-f74.png",
+   "projectsOpen": "false",
+   "coveredShareOfFrame": 0.24076740794750273,
+   "boxes": {
+    "kb_keycaps__caps": {
+     "inFrameShareOfBox": 0.9979454173688531,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "kb_case__frost_shell": {
+     "inFrameShareOfBox": 1.0115865359780476,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "mouse_native__body": {
+     "inFrameShareOfBox": 1.0100158236869656,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "mug_coaster__mug_coaster": {
+     "inFrameShareOfBox": 0.0
+    },
+    "notebook_pen__set": {
+     "inFrameShareOfBox": 0.12448567106829479,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "mic_boom__assembly": {
+     "inFrameShareOfBox": 0.08661914781355938,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "headphones__on_stand": {
+     "inFrameShareOfBox": 0.0
+    },
+    "speaker_nearfield__cabinet": {
+     "inFrameShareOfBox": 0.0
+    },
+    "drum_cymbals__proxy_cymbal_1": {
+     "inFrameShareOfBox": 0.0
+    }
+   },
+   "targets": {
+    "dissertation": {
+     "inFramePixels": 40920,
+     "uiCoveredShare": 0.0
+    },
+    "copilot": {
+     "inFramePixels": 7276,
+     "uiCoveredShare": 0.0
+    },
+    "typeforge": {
+     "inFramePixels": 6551,
+     "uiCoveredShare": 0.0
+    }
+   }
+  },
+  "chrome-home-open-390x844.png": {
+   "scene": "scene-home-390x844-f74.png",
+   "projectsOpen": "true",
+   "coveredShareOfFrame": 0.496649046056629,
+   "boxes": {
+    "kb_keycaps__caps": {
+     "inFrameShareOfBox": 0.9979454173688531,
+     "uiCoveredShareOfInFramePart": 0.9900978829956749
+    },
+    "kb_case__frost_shell": {
+     "inFrameShareOfBox": 1.0115865359780476,
+     "uiCoveredShareOfInFramePart": 0.9946420729029425
+    },
+    "mouse_native__body": {
+     "inFrameShareOfBox": 1.0100158236869656,
+     "uiCoveredShareOfInFramePart": 1.0
+    },
+    "mug_coaster__mug_coaster": {
+     "inFrameShareOfBox": 0.0
+    },
+    "notebook_pen__set": {
+     "inFrameShareOfBox": 0.12448567106829479,
+     "uiCoveredShareOfInFramePart": 0.509016393442623
+    },
+    "mic_boom__assembly": {
+     "inFrameShareOfBox": 0.08661914781355938,
+     "uiCoveredShareOfInFramePart": 0.21929078014184397
+    },
+    "headphones__on_stand": {
+     "inFrameShareOfBox": 0.0
+    },
+    "speaker_nearfield__cabinet": {
+     "inFrameShareOfBox": 0.0
+    },
+    "drum_cymbals__proxy_cymbal_1": {
+     "inFrameShareOfBox": 0.0
+    }
+   },
+   "targets": {
+    "dissertation": {
+     "inFramePixels": 40920,
+     "uiCoveredShare": 0.0
+    },
+    "copilot": {
+     "inFramePixels": 7276,
+     "uiCoveredShare": 0.0
+    },
+    "typeforge": {
+     "inFramePixels": 6551,
+     "uiCoveredShare": 0.0
+    }
+   }
+  },
+  "chrome-music-closed-390x844.png": {
+   "scene": "scene-music-390x844-f74.png",
+   "projectsOpen": "false",
+   "coveredShareOfFrame": 0.24149046056628995,
+   "boxes": {
+    "kb_keycaps__caps": {
+     "inFrameShareOfBox": 0.0
+    },
+    "kb_case__frost_shell": {
+     "inFrameShareOfBox": 0.0
+    },
+    "mouse_native__body": {
+     "inFrameShareOfBox": 0.0
+    },
+    "mug_coaster__mug_coaster": {
+     "inFrameShareOfBox": 0.0
+    },
+    "notebook_pen__set": {
+     "inFrameShareOfBox": 0.0
+    },
+    "mic_boom__assembly": {
+     "inFrameShareOfBox": 0.0
+    },
+    "headphones__on_stand": {
+     "inFrameShareOfBox": 0.4548727743007251,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "speaker_nearfield__cabinet": {
+     "inFrameShareOfBox": 0.19353226882676108,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "drum_cymbals__proxy_cymbal_1": {
+     "inFrameShareOfBox": 0.7378836860458967,
+     "uiCoveredShareOfInFramePart": 0.0
+    }
+   },
+   "targets": {
+    "dissertation": {
+     "inFramePixels": 0
+    },
+    "copilot": {
+     "inFramePixels": 0
+    },
+    "typeforge": {
+     "inFramePixels": 0
+    }
+   }
+  },
+  "chrome-left-down-closed-390x844.png": {
+   "scene": "scene-left-down-390x844-f74.png",
+   "projectsOpen": "false",
+   "coveredShareOfFrame": 0.2467553773240977,
+   "boxes": {
+    "kb_keycaps__caps": {
+     "inFrameShareOfBox": 0.5020577986566565,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "kb_case__frost_shell": {
+     "inFrameShareOfBox": 0.4967465197286583,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "mouse_native__body": {
+     "inFrameShareOfBox": 0.0
+    },
+    "mug_coaster__mug_coaster": {
+     "inFrameShareOfBox": 0.0
+    },
+    "notebook_pen__set": {
+     "inFrameShareOfBox": 1.0115028993177286,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "mic_boom__assembly": {
+     "inFrameShareOfBox": 1.0008223290332647,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "headphones__on_stand": {
+     "inFrameShareOfBox": 0.0
+    },
+    "speaker_nearfield__cabinet": {
+     "inFrameShareOfBox": 0.0
+    },
+    "drum_cymbals__proxy_cymbal_1": {
+     "inFrameShareOfBox": 0.0
+    }
+   },
+   "targets": {
+    "dissertation": {
+     "inFramePixels": 12283,
+     "uiCoveredShare": 0.0
+    },
+    "copilot": {
+     "inFramePixels": 19152,
+     "uiCoveredShare": 0.0
+    },
+    "typeforge": {
+     "inFramePixels": 0
+    }
+   }
+  },
+  "chrome-home-closed-320x844.png": {
+   "scene": "scene-home-320x844-f74.png",
+   "projectsOpen": "false",
+   "coveredShareOfFrame": 0.2730783471563981,
+   "boxes": {
+    "kb_keycaps__caps": {
+     "inFrameShareOfBox": 0.9979454173688531,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "kb_case__frost_shell": {
+     "inFrameShareOfBox": 1.0115865359780472,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "mouse_native__body": {
+     "inFrameShareOfBox": 1.0100158236869656,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "mug_coaster__mug_coaster": {
+     "inFrameShareOfBox": 0.0
+    },
+    "notebook_pen__set": {
+     "inFrameShareOfBox": 0.0
+    },
+    "mic_boom__assembly": {
+     "inFrameShareOfBox": 0.0
+    },
+    "headphones__on_stand": {
+     "inFrameShareOfBox": 0.0
+    },
+    "speaker_nearfield__cabinet": {
+     "inFrameShareOfBox": 0.0
+    },
+    "drum_cymbals__proxy_cymbal_1": {
+     "inFrameShareOfBox": 0.0
+    }
+   },
+   "targets": {
+    "dissertation": {
+     "inFramePixels": 40920,
+     "uiCoveredShare": 0.0
+    },
+    "copilot": {
+     "inFramePixels": 755,
+     "uiCoveredShare": 0.0
+    },
+    "typeforge": {
+     "inFramePixels": 0
+    }
+   }
+  },
+  "chrome-home-open-320x844.png": {
+   "scene": "scene-home-320x844-f74.png",
+   "projectsOpen": "true",
+   "coveredShareOfFrame": 0.532290432464455,
+   "boxes": {
+    "kb_keycaps__caps": {
+     "inFrameShareOfBox": 0.9979454173688531,
+     "uiCoveredShareOfInFramePart": 1.0
+    },
+    "kb_case__frost_shell": {
+     "inFrameShareOfBox": 1.0115865359780472,
+     "uiCoveredShareOfInFramePart": 1.0
+    },
+    "mouse_native__body": {
+     "inFrameShareOfBox": 1.0100158236869656,
+     "uiCoveredShareOfInFramePart": 1.0
+    },
+    "mug_coaster__mug_coaster": {
+     "inFrameShareOfBox": 0.0
+    },
+    "notebook_pen__set": {
+     "inFrameShareOfBox": 0.0
+    },
+    "mic_boom__assembly": {
+     "inFrameShareOfBox": 0.0
+    },
+    "headphones__on_stand": {
+     "inFrameShareOfBox": 0.0
+    },
+    "speaker_nearfield__cabinet": {
+     "inFrameShareOfBox": 0.0
+    },
+    "drum_cymbals__proxy_cymbal_1": {
+     "inFrameShareOfBox": 0.0
+    }
+   },
+   "targets": {
+    "dissertation": {
+     "inFramePixels": 40920,
+     "uiCoveredShare": 0.0003176930596285435
+    },
+    "copilot": {
+     "inFramePixels": 755,
+     "uiCoveredShare": 0.0
+    },
+    "typeforge": {
+     "inFramePixels": 0
+    }
+   }
+  },
+  "chrome-music-closed-320x844.png": {
+   "scene": "scene-music-320x844-f74.png",
+   "projectsOpen": "false",
+   "coveredShareOfFrame": 0.27178984004739337,
+   "boxes": {
+    "kb_keycaps__caps": {
+     "inFrameShareOfBox": 0.0
+    },
+    "kb_case__frost_shell": {
+     "inFrameShareOfBox": 0.0
+    },
+    "mouse_native__body": {
+     "inFrameShareOfBox": 0.0
+    },
+    "mug_coaster__mug_coaster": {
+     "inFrameShareOfBox": 0.0
+    },
+    "notebook_pen__set": {
+     "inFrameShareOfBox": 0.0
+    },
+    "mic_boom__assembly": {
+     "inFrameShareOfBox": 0.0
+    },
+    "headphones__on_stand": {
+     "inFrameShareOfBox": 0.21725266832273424,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "speaker_nearfield__cabinet": {
+     "inFrameShareOfBox": 0.0
+    },
+    "drum_cymbals__proxy_cymbal_1": {
+     "inFrameShareOfBox": 0.45716706635452276,
+     "uiCoveredShareOfInFramePart": 0.0
+    }
+   },
+   "targets": {
+    "dissertation": {
+     "inFramePixels": 0
+    },
+    "copilot": {
+     "inFramePixels": 0
+    },
+    "typeforge": {
+     "inFramePixels": 0
+    }
+   }
+  },
+  "chrome-left-down-closed-320x844.png": {
+   "scene": "scene-left-down-320x844-f74.png",
+   "projectsOpen": "false",
+   "coveredShareOfFrame": 0.28017624407582936,
+   "boxes": {
+    "kb_keycaps__caps": {
+     "inFrameShareOfBox": 0.3314556340645886,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "kb_case__frost_shell": {
+     "inFrameShareOfBox": 0.3401147342286309,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "mouse_native__body": {
+     "inFrameShareOfBox": 0.0
+    },
+    "mug_coaster__mug_coaster": {
+     "inFrameShareOfBox": 0.0
+    },
+    "notebook_pen__set": {
+     "inFrameShareOfBox": 1.0115028993177286,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "mic_boom__assembly": {
+     "inFrameShareOfBox": 1.0008223290332645,
+     "uiCoveredShareOfInFramePart": 0.0
+    },
+    "headphones__on_stand": {
+     "inFrameShareOfBox": 0.0
+    },
+    "speaker_nearfield__cabinet": {
+     "inFrameShareOfBox": 0.0
+    },
+    "drum_cymbals__proxy_cymbal_1": {
+     "inFrameShareOfBox": 0.0
+    }
+   },
+   "targets": {
+    "dissertation": {
+     "inFramePixels": 6681,
+     "uiCoveredShare": 0.0
+    },
+    "copilot": {
+     "inFramePixels": 19152,
+     "uiCoveredShare": 0.0
+    },
+    "typeforge": {
+     "inFramePixels": 0
+    }
+   }
+  }
+ },
+ "regression": {
+  "scene-home-1440x900-f58.png": {
+   "parent": "full-kit-m2-v05",
+   "changedPixels": 151138,
+   "changedBox": [
+    0,
+    341,
+    1228,
+    783
+   ],
+   "targets": {
+    "dissertation": {
+     "inFramePixels": 88696,
+     "changedPixels": 0
+    },
+    "copilot": {
+     "inFramePixels": 59036,
+     "changedPixels": 0
+    },
+    "typeforge": {
+     "inFramePixels": 60763,
+     "changedPixels": 0
+    }
+   },
+   "pendant": {
+    "changedPixels": 0,
+    "litPixels": 6907,
+    "clippedPixels": 19,
+    "commonestLitRgb": [
+     237,
+     225,
+     201
+    ],
+    "lensMaterialPixels": 6607,
+    "lensMaterialPixelsChangedInM3": 0
+   },
+   "pcFrontAndGlow": {
+    "pixelsChangedV03toV05": 7682,
+    "ofThoseChangedInM3": 0
+   },
+   "lowestChangedRow": 783
+  },
+  "scene-home-1024x768-f58.png": {
+   "parent": "full-kit-m2-v05",
+   "changedPixels": 93453,
+   "changedBox": [
+    0,
+    366,
+    945,
+    668
+   ],
+   "targets": {
+    "dissertation": {
+     "inFramePixels": 64724,
+     "changedPixels": 0
+    },
+    "copilot": {
+     "inFramePixels": 42812,
+     "changedPixels": 0
+    },
+    "typeforge": {
+     "inFramePixels": 44351,
+     "changedPixels": 0
+    }
+   },
+   "pendant": {
+    "changedPixels": 0,
+    "litPixels": 5035,
+    "clippedPixels": 11,
+    "commonestLitRgb": [
+     237,
+     225,
+     201
+    ],
+    "lensMaterialPixels": 4861,
+    "lensMaterialPixelsChangedInM3": 0
+   },
+   "pcFrontAndGlow": {
+    "pixelsChangedV03toV05": 5636,
+    "ofThoseChangedInM3": 0
+   },
+   "lowestChangedRow": 668
+  },
+  "scene-mid-right-1440x900-f58.png": {
+   "parent": "full-kit-m2-v05",
+   "changedPixels": 92492,
+   "changedBox": [
+    0,
+    423,
+    704,
+    847
+   ],
+   "targets": {
+    "dissertation": {
+     "inFramePixels": 74018,
+     "changedPixels": 0
+    },
+    "copilot": {
+     "inFramePixels": 0
+    },
+    "typeforge": {
+     "inFramePixels": 68144,
+     "changedPixels": 0
+    }
+   },
+   "pcFrontAndGlow": {
+    "pixelsChangedV03toV05": 10875,
+    "ofThoseChangedInM3": 0
+   },
+   "lowestChangedRow": 847
+  },
+  "scene-music-1440x900-f58.png": {
+   "parent": "full-kit-m2-v05",
+   "changedPixels": 89938,
+   "changedBox": [
+    0,
+    398,
+    507,
+    806
+   ],
+   "targets": {
+    "dissertation": {
+     "inFramePixels": 0
+    },
+    "copilot": {
+     "inFramePixels": 0
+    },
+    "typeforge": {
+     "inFramePixels": 99830,
+     "changedPixels": 0
+    }
+   },
+   "pcFrontAndGlow": {
+    "pixelsChangedV03toV05": 12726,
+    "ofThoseChangedInM3": 0
+   },
+   "lowestChangedRow": 806
+  },
+  "scene-music-390x844-f74.png": {
+   "parent": "full-kit-m2-v05",
+   "changedPixels": 7540,
+   "changedBox": [
+    0,
+    387,
+    48,
+    613
+   ],
+   "targets": {
+    "dissertation": {
+     "inFramePixels": 0
+    },
+    "copilot": {
+     "inFramePixels": 0
+    },
+    "typeforge": {
+     "inFramePixels": 0
+    }
+   },
+   "pcFrontAndGlow": {
+    "pixelsChangedV03toV05": 7280,
+    "ofThoseChangedInM3": 0
+   },
+   "lowestChangedRow": 613
+  },
+  "scene-home-390x844-f74.png": {
+   "parent": "full-kit-m2-v03",
+   "changedPixels": 16552,
+   "changedBox": [
+    0,
+    526,
+    389,
+    625
+   ],
+   "targets": {
+    "dissertation": {
+     "inFramePixels": 40920,
+     "changedPixels": 0
+    },
+    "copilot": {
+     "inFramePixels": 7276,
+     "changedPixels": 0
+    },
+    "typeforge": {
+     "inFramePixels": 6551,
+     "changedPixels": 0
+    }
+   },
+   "pendant": {
+    "changedPixels": 0,
+    "litPixels": 3148,
+    "clippedPixels": 2,
+    "commonestLitRgb": [
+     237,
+     225,
+     201
+    ],
+    "lensMaterialPixels": 3118,
+    "lensMaterialPixelsChangedInM3": 0
+   },
+   "lowestChangedRow": 625
+  },
+  "scene-home-320x844-f74.png": {
+   "parent": "full-kit-m2-v03",
+   "changedPixels": 13712,
+   "changedBox": [
+    1,
+    526,
+    319,
+    614
+   ],
+   "targets": {
+    "dissertation": {
+     "inFramePixels": 40920,
+     "changedPixels": 0
+    },
+    "copilot": {
+     "inFramePixels": 755,
+     "changedPixels": 0
+    },
+    "typeforge": {
+     "inFramePixels": 0
+    }
+   },
+   "pendant": {
+    "changedPixels": 0,
+    "litPixels": 2964,
+    "clippedPixels": 2,
+    "commonestLitRgb": [
+     237,
+     225,
+     201
+    ],
+    "lensMaterialPixels": 2934,
+    "lensMaterialPixelsChangedInM3": 0
+   },
+   "lowestChangedRow": 614
+  },
+  "scene-right-down-1440x900-f58.png": {
+   "parent": "full-kit-m2-v03",
+   "changedPixels": 119526,
+   "changedBox": [
+    0,
+    290,
+    343,
+    899
+   ],
+   "targets": {
+    "dissertation": {
+     "inFramePixels": 0
+    },
+    "copilot": {
+     "inFramePixels": 0
+    },
+    "typeforge": {
+     "inFramePixels": 2604,
+     "changedPixels": 0
+    }
+   },
+   "lowestChangedRow": 899
+  },
+  "scene-left-down-1440x900-f58.png": {
+   "parent": "full-kit-m2-v02",
+   "changedPixels": 63224,
+   "changedBox": [
+    603,
+    197,
+    1439,
+    716
+   ],
+   "targets": {
+    "dissertation": {
+     "inFramePixels": 122958,
+     "changedPixels": 0
+    },
+    "copilot": {
+     "inFramePixels": 40347,
+     "changedPixels": 0
+    },
+    "typeforge": {
+     "inFramePixels": 7159,
+     "changedPixels": 0
+    }
+   },
+   "lowestChangedRow": 716
+  },
+  "scene-left-down-390x844-f74.png": {
+   "parent": "full-kit-m2-v02",
+   "changedPixels": 15440,
+   "changedBox": [
+    114,
+    4,
+    389,
+    517
+   ],
+   "targets": {
+    "dissertation": {
+     "inFramePixels": 12283,
+     "changedPixels": 0
+    },
+    "copilot": {
+     "inFramePixels": 19152,
+     "changedPixels": 0
+    },
+    "typeforge": {
+     "inFramePixels": 0
+    }
+   },
+   "lowestChangedRow": 517,
+   "pendant": {
+    "box": [
+     240,
+     0,
+     390,
+     60
+    ],
+    "litPixels": 1071,
+    "clippedPixels": 0,
+    "commonestLitRgb": [
+     237,
+     225,
+     201
+    ]
+   }
+  },
+  "scene-left-down-320x844-f74.png": {
+   "parent": "full-kit-m2-v02",
+   "changedPixels": 13256,
+   "changedBox": [
+    79,
+    14,
+    319,
+    507
+   ],
+   "targets": {
+    "dissertation": {
+     "inFramePixels": 6681,
+     "changedPixels": 0
+    },
+    "copilot": {
+     "inFramePixels": 19152,
+     "changedPixels": 0
+    },
+    "typeforge": {
+     "inFramePixels": 0
+    }
+   },
+   "lowestChangedRow": 507,
+   "pendant": {
+    "box": [
+     200,
+     0,
+     320,
+     70
+    ],
+    "litPixels": 721,
+    "clippedPixels": 0,
+    "commonestLitRgb": [
+     237,
+     225,
+     201
+    ]
+   }
+  },
+  "scene-music-320x844-f74.png": {
+   "parent": "full-kit-m2-v02",
+   "changedPixels": 3734,
+   "changedBox": [
+    0,
+    391,
+    17,
+    816
+   ],
+   "targets": {
+    "dissertation": {
+     "inFramePixels": 0
+    },
+    "copilot": {
+     "inFramePixels": 0
+    },
+    "typeforge": {
+     "inFramePixels": 0
+    }
+   },
+   "lowestChangedRow": 816
+  }
+ },
+ "tall320CentralScreen": {
+  "firstReviewMidHeightRunPx": 266,
+  "firstReviewSource": "m2-visual-review-measurements.json, M2 v02 home-320x844",
+  "m2v02HomeSha256": "04d0c489af84fa7fd28a905c04bb2fdb9749d0db7366b41420fecbaade444ba2",
+  "checkedBox": [
+   17,
+   327,
+   309,
+   503
+  ],
+  "changedPixelsInCentralMonitorBoxVsM2v02": 0,
+  "changedPixelsInCentralMonitorBoxVsM2v03": 0,
+  "firstChangedRowVsM2v03": 526,
+  "projectedLowerEdgeSpanPx": 260.93843931059075,
+  "projectedUpperEdgeSpanPx": 269.85205688171897,
+  "borderBoxMarginsLeftRightPx": [
+   28.80548524943082,
+   15.914448774408754
+  ]
+ },
+ "contactSheet": {
+  "path": "design/studio-v2/scene-coordination/m3-v03-visual-review-crops.png",
+  "size": [
+   1530,
+   3954
+  ],
+  "rows": [
+   "keyboard, home-1440, x3",
+   "keyboard and mouse, home-320, x4",
+   "keyboard and mouse, left-down-1440 x2; mouse, home-1440 x4",
+   "speaker, headphones, mug: home-1440 x2; right-down-1440 x2",
+   "microphone home-1440 x2 and left-down-1440 x2; notebook home-1440 x2",
+   "left cymbal at home-1440: M2 v05 parent, then M3",
+   "left cymbal at music-1440: M2 v05 parent, then M3",
+   "static UI composites, home-1440 and home-1024, 1:1",
+   "static UI composites, phone home closed/open at 390 and 320, 1:1"
+  ]
+ }
+}

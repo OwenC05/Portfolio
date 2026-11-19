@@ -1,0 +1,64 @@
+{
+  "schema": "m4-root-expected-pins/1",
+  "adoptedAt": "2026-11-18",
+  "authoritativeFreeze": true,
+  "scope": "Exact identities for the approved v3r1 source-binding, support and normal audit; not export, visual or product acceptance.",
+  "technicalReview": {
+    "path": "scene-coordination/m4-v04-independent-technical-review.md",
+    "sha256": "07b35d029909ea8b2a188e8b3dd0d118146bca05c578a20fb947f51bf7ad4cb1"
+  },
+  "sourceIntentReview": {
+    "path": "scene-m4-v04-source-closure.md",
+    "sha256": "6cd87cec85d12c280ee6ee7b9cbed80c6393fdf1766c7884c8aa1d0dda552f28"
+  },
+  "proposalSha256": "ab4d82e3e6e16a806c134a0ab555456942d9fc38fbdeb1f1241c4c60a24bb19d",
+  "authorCommit": "e684190b6c19af4b664f2d32e1f3d097ab00d25f",
+  "technicalCommit": "8a6addb9c9e16074f1106ca51b26d41830add71a",
+  "canonicalEncoding": "UTF-8 JSON; sort_keys=True; separators=(',',':'); ensure_ascii=False; allow_nan=False; no rounding",
+  "rowsSha256": "cfac1013f686bb7790bc2f5e9ed5acc518009ab7e2bc27d09ad09629c429533e",
+  "declarationSha256": "a737d402307d0aa056e375934beab94c7696c1f5a14f0fe7d028893d5c30db7d",
+  "invocationSha256": "5128d2a61205f9e4262814ca5bdd96ff661a5e613259c7af852ad9fe9c38f5c6",
+  "verifier": {
+    "path": "scene-coordination/m4-v03-verifier-v3r1.py",
+    "sha256": "3f32c40e4eca885219b0cb34e8737a318f8fff803b4dfa1950b3857cd956307d",
+    "entrypoint": "audit_m4_v3"
+  },
+  "artifactBytePins": {
+    "asset-pipeline/full-kit/manifests/m4-v04-rows.json": "1fa5fdd3f267896a76743aca986af9cadd1dd84610395e6049fc799009489992",
+    "asset-pipeline/full-kit/manifests/m4-v04-verifier-declaration.json": "5d04a051398e09c9b2aeb309e2893efe09ed286a18e27113785ff487a7074d42"
+  },
+  "sources": {
+    "helper": "8d814874ee0ac1317827297d2a729b34f4789fffd891212ae03e2c440a73b792",
+    "authorDeclarations": "8ce8db34b40a3ce053d037c5152fec8c8ed19d586b0968439abf64e3308f32bb",
+    "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py": "8d814874ee0ac1317827297d2a729b34f4789fffd891212ae03e2c440a73b792",
+    "producer": "3c9fe150d859087050fed73d3fed54d3a97a5998774c455203e6a00462dc08d1"
+  },
+  "sourcePaths": {
+    "helper": "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py",
+    "authorDeclarations": "asset-pipeline/full-kit/manifests/m4-v04-author-declarations.json",
+    "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py": "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py",
+    "producer": "asset-pipeline/full-kit/source/produce_fullkit_m4_v04.py"
+  },
+  "producerInvocation": {
+    "entrypoint": "produce_fullkit_m4_v04.produce_selected",
+    "helperPath": "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py",
+    "helperSha256": "8d814874ee0ac1317827297d2a729b34f4789fffd891212ae03e2c440a73b792",
+    "authorPath": "asset-pipeline/full-kit/manifests/m4-v04-author-declarations.json",
+    "authorSha256": "8ce8db34b40a3ce053d037c5152fec8c8ed19d586b0968439abf64e3308f32bb",
+    "pose": {
+      "cx": 1.375,
+      "cy": -0.825,
+      "yaw": -0.95
+    }
+  },
+  "provenanceNotes": {
+    "heldBuilderSha256": "0d01536c36481021e8ff7026a6608998eb44dce0d88505dae105f94834909826",
+    "measuredAuthorReportSha256": "6b2a62a31ab086a5a72c880ecad04332576a5ae14c31ab882f6421aa6f51c6be",
+    "proseOnlyAuthorReportSuccessorSha256": "71139a40e60aaf38859b53512d79bfb5a84179783544b11fa53f0fa5796c2c92",
+    "note": "The report-only successor does not change helper, author declaration, builder, producer, rows or canonical identities. Original measured report remains in authorCommit."
+  },
+  "candidateAcceptance": false,
+  "auditPending": true,
+  "exportReleased": false,
+  "visualAcceptance": false
+}

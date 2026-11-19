@@ -1,0 +1,20 @@
+{
+  "scope": "Exact owned overwrite-test marker cleanup",
+  "resolvedDirectory": "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m3-v03-review-isolated-hhuarwvz",
+  "status": "blocked",
+  "removed": false,
+  "reason": "Automatic approval review rejected recursive cleanup and narrower exact-file nonrecursive removal as blocked by policy before either command executed. No bypass attempted.",
+  "files": [
+    {
+      "name": "candidate.glb",
+      "bytes": 15,
+      "sha256": "fbcc5b173cf49a0562662d4df1d57eba2072da8e3c4f9a3fae708f4a4a44decd"
+    },
+    {
+      "name": "receipt.json",
+      "bytes": 16,
+      "sha256": "681effb44eb592a7e28f4bf9dbec91159601e6862e674d0046e9a8d589a3f936"
+    }
+  ],
+  "handoff": "Exclude this exact test marker directory from commit; root handles supported cleanup. No real candidate data is stored here."
+}

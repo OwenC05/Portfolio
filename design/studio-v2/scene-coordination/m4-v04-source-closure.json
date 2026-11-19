@@ -1,0 +1,1920 @@
+{
+ "schema": "m4-v04-source-closure/1",
+ "task": {
+  "taskId": "task_fbd556b80f9b",
+  "dispatchId": "ctx_d57e5b350d04",
+  "ack": "msg_b1e050f629b6",
+  "rootRequest": "msg_6664ce0c80eb"
+ },
+ "reviewer": "actual Claude Fable 5.2 (claude-fable-5-2, --effort high), retained independent critic session, PID 11168",
+ "date": "2026-11-16",
+ "report": {
+  "path": "scene-m4-v04-source-closure.md",
+  "sha256": "6cd87cec85d12c280ee6ee7b9cbed80c6393fdf1766c7884c8aa1d0dda552f28"
+ },
+ "verdict": {
+  "sourceIntent": "fits released scope; no true source blocker found",
+  "trueSourceBlockers": [],
+  "scopeOfVerdict": "source intent only",
+  "notCovered": {
+   "numerical": "pending: Codex full P14 measurement not run on these pins",
+   "export": "pending: held builder never run and refuses to run",
+   "image": "pending: all fourteen image gates open"
+  },
+  "approvals": "none: no visual, export or candidate approval"
+ },
+ "imageGatesOpen": [
+  "N1a",
+  "N1b",
+  "H1",
+  "K1",
+  "T1",
+  "HH1",
+  "SP1",
+  "AZ1",
+  "RUG1",
+  "RK1",
+  "E1a",
+  "E1b",
+  "F1",
+  "M6"
+ ],
+ "pins": {
+  "reviewedInputs": {
+   "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py": "8d814874ee0ac1317827297d2a729b34f4789fffd891212ae03e2c440a73b792",
+   "asset-pipeline/full-kit/manifests/m4-v04-author-declarations.json": "8ce8db34b40a3ce053d037c5152fec8c8ed19d586b0968439abf64e3308f32bb",
+   "asset-pipeline/full-kit/source/build_fullkit_m4_v04.py": "0d01536c36481021e8ff7026a6608998eb44dce0d88505dae105f94834909826",
+   "scene-m4-v04-preparation-report.md": "6b2a62a31ab086a5a72c880ecad04332576a5ae14c31ab882f6421aa6f51c6be"
+  },
+  "immutableCommit": "e684190b6c19af4b664f2d32e1f3d097ab00d25f",
+  "comparisonBase": {
+   "commit": "98eed1e",
+   "helperSha256": "4bb4094672fd762e622f9187690941b88f8677ec463eb09b38f691d0e7effbaf"
+  },
+  "authorities": {
+   "scene-coordination/m4-v04-bounded-art-disposition.md": "7705f590de09dd20c213bb2598f2fd977ee811f402da7fc1f5f3e436fedd9c6f",
+   "scene-m4-v04-bounded-art-review.md": "1af11ba58ed0892851baa352deddcd9663e6fd330805c58bd84e2a65d39e1381",
+   "scene-coordination/m4-v04-hihat-repair-release.md": "038dc8afe9ab795539c57c3dba120f7f33232909a48f5d846d5f22db1498dc68",
+   "scene-m4-v04-hihat-repair-review.md": "5bc3d79f802894763f66a877516a9c1f6827821a998d82b4fbc9d5d8306e39ad"
+  }
+ },
+ "decisions": {
+  "1_spur_roots": {
+   "appliedAsDecided": true,
+   "basis": "criterion rod_root_embedded_through_flat_face on exactly the two arms into kick.base; minRingBurialM 0.001; flat own-side face only; not a same-row overlap allowance"
+  },
+  "2_inset_depth_heights": {
+   "appliedAsDecided": true,
+   "basis": "depthM removed from all attachments; rootCentreInsetM 0.006 stated as centre inset, not penetration; heights 18->22 and 12->14 stated; schema string unchanged"
+  },
+  "3_cheek_nose_bevel_round_run": {
+   "appliedAsDecided": true,
+   "basis": "68->84 triangles per cheek, shell 1260->1292 of 2500, bounds identical; explicit four-face run per cheek asserted; no hard edge inside a run (max turn 22.7 deg)"
+  },
+  "4_underside_mitres": {
+   "appliedAsDecided": true,
+   "basis": "ctl.cheeks.front_corner removed; eight mitres (4 at 75.5, 4 at 41.4 deg, 0.0223 m) in ctl.cheeks.contact; helper asserts"
+  },
+  "5_cymbal_edge": {
+   "appliedAsDecided": true,
+   "basis": "cymbal.edge named, source decision 5; 72 edges at 70.0 (b5/b6) and 72 at 108.5 (b6/b7); bell-to-bow reason removed"
+  },
+  "6_pad_rim_split": {
+   "appliedAsDecided": true,
+   "basis": "pad.rim_lower_outer named (96 edges, 71.4, b4/b5); pad.shell_bottom.contact contact (96 edges, 52.8, b1/b2); row 2312 of 2600; fallback stated as not authorised"
+  },
+  "7_rug_shoulder": {
+   "appliedAsDecided": true,
+   "basis": "rug.binding_shoulder named, source decision 7; 16 edges at 62.3 / 61.5 deg; rug row unchanged"
+  },
+  "8_kick_heel_seat": {
+   "appliedAsDecided": true,
+   "basis": "criterion board_end_seated_through_top_face, kick.footboard into kick.heel, four conditions; maxDepthM 0.004, boardThicknessM 0.008, minProudM 0.0038"
+  },
+  "hihat_geometry": {
+   "appliedAsDecided": true,
+   "basis": "axis z 0.016 pedal frame; pitch derived 13.9813 deg; only hihat.footboard and hihat.hinge vertices move; topology, classes, runs unchanged"
+  },
+  "hihat_A": {
+   "appliedAsDecided": true,
+   "basis": "seated [133,134,135,145,146,147]; 3.000 mm at 134/146, 1.794 others; unseated >= 1.5 mm; 16.9 mm inside outline; 7.0 mm above underside; axis 6.000 mm; heel 3.0 mm (reviewer recompute)"
+  },
+  "hihat_B": {
+   "appliedAsDecided": true,
+   "basis": "axis vertices 107/108; 107,108,123,124 inside barrel at 8.000 vs 8.693 mm; board 6.0 mm above base top; barrelMountingNote and ranges removed"
+  },
+  "hihat_C": {
+   "appliedAsDecided": true,
+   "basis": "lip 86/87 at 0.300 mm; next 0.374 mm; no housing vertex inside the board; rests_on gapM 0.0003 with criterion"
+  },
+  "explicit_index_lists": {
+   "appliedAsDecided": true,
+   "basis": "no key containing \"range\" inside any criterion; indexConvention on each"
+  },
+  "edge_coverage": {
+   "appliedAsDecided": true,
+   "basis": "0 undeclared, 44 sets, none empty, no proposed set"
+  },
+  "pose_P14": {
+   "appliedAsDecided": true,
+   "basis": "SELECTED_POSE (1.375, -0.825, -0.95); 24 options identical to checkpoint"
+  },
+  "builder_refusal": {
+   "appliedAsDecided": true,
+   "basis": "only HELPER_SHA changed since 98eed1e; unconditional raise SystemExit before flag handling; pins final helper"
+  },
+  "throne_wording": {
+   "appliedAsDecided": true,
+   "basis": "report: sampled-area improvement, not a T1 result"
+  }
+ },
+ "nonBlockingNotes": [
+  {
+   "id": "report_stale_field_names",
+   "kind": "report wording",
+   "detail": "report section 3b names armSideFaceRange, boardVertexRange 376-400, boardSideFaceRange; the declaration has armSideFaces, boardVertices, boardSideFaces (explicit lists)",
+   "recommendation": "correct at the author final handoff; changes the report hash only"
+  },
+  {
+   "id": "cheek_run_includes_rear_segment",
+   "kind": "declared shading intent, within decision 3",
+   "detail": "run is four faces per cheek (was three at 98eed1e): the 137 mm rear top segment changed planar -> round; its front corners now 3.34 deg off the face normal (were 0), next face rear corners 6.68 -> 3.34; bevels do not pull the top (round outranks bevel)",
+   "decidedBy": "image gate N1a"
+  },
+  {
+   "id": "measurer_must_read_new_fields",
+   "kind": "interface dependency, not a source defect",
+   "detail": "pad.rim_lower_outer and pad.shell_bottom.contact differ only by rolePairs; hihat.footboard_on_housing is rests_on across an inclined plane and holds through its criterion, not a vertical gap",
+   "observed": {
+    "file": "asset-pipeline/full-kit/source/measure_fullkit_m4_v04.py",
+    "state": "uncommitted working tree, other owner, not a pinned input",
+    "sha256WhenRead": "d453c5fdabba22fbbeb5ea0eaf6d2594357313c8d0cddd10a63bca00166cebef",
+    "found": "a rolePairs test and a board_rests_on_lip_separating_plane branch (string search only; not reviewed or run)"
+   }
+  },
+  {
+   "id": "thin_margins_for_export",
+   "kind": "export evidence, already in author report 7.3",
+   "detail": "lip gap 0.30 mm (next 0.374); spur ring burial 1.34 vs 1.0 mm; footboard corners 3.82 vs 3.8 mm proud; barrel seat 3.0 mm"
+  }
+ ],
+ "remaining": [
+  "Codex single full P14 measurement on these pins",
+  "export under explicit root release (builder held)",
+  "all fourteen image gates on actual captures",
+  "report wording fix at author final handoff"
+ ],
+ "method": {
+  "delta": "git diff 98eed1e e684190 (read-only) for the four files; final author report read in full",
+  "checks": "three read-only CPython -B scripts on hash-verified scratch copies; four build_all() calls at P14 in total, one declaration serialisation; largest about 17 s wall",
+  "gitReadOnly": [
+   "diff",
+   "show",
+   "rev-parse",
+   "status"
+  ],
+  "notDone": [
+   "pose search",
+   "full numerical measurement",
+   "design exploration",
+   "Blender",
+   "browser",
+   "render",
+   "export",
+   "Git mutation",
+   "helper workers",
+   "edits to any artist or producer file"
+  ]
+ },
+ "evidence": {
+  "check1": {
+   "script": "\"\"\"Reviewer targeted source check for the final applied-delta closure. Read-only, lightweight (two build_all() calls at\nP14, one declaration serialisation). Not a measurement of record: Codex measures.\nFINAL = hash-verified copy of the four static files (helper 8d814874...); BASE = the P14 checkpoint helper (98eed1e).\"\"\"\nimport hashlib, importlib.util, json, math, os, sys\nimport numpy as np\n\nHERE = os.path.dirname(os.path.abspath(__file__))\nsha = lambda p: hashlib.sha256(open(p, 'rb').read()).hexdigest()\nmm = lambda x: round(float(x) * 1000.0, 4)\n\n\ndef load(name, path):\n    spec = importlib.util.spec_from_file_location(name, path)\n    m = importlib.util.module_from_spec(spec)\n    spec.loader.exec_module(m)\n    return m\n\n\nF = load('final_helper', os.path.join(HERE, 'helper.py'))\nB = load('base_helper', os.path.join(HERE, 'p14', 'helper_p14.py'))\nout = {'finalHelperSha256': sha(os.path.join(HERE, 'helper.py')), 'baseHelperSha256': sha(os.path.join(HERE, 'p14', 'helper_p14.py'))}\n\n# ---- 1. declaration bytes reproduce; builder pin\ndecl_bytes = F.declaration_bytes()\nout['declaration'] = dict(reproducedSha256=hashlib.sha256(decl_bytes).hexdigest(), fileSha256=sha(os.path.join(HERE, 'decl.json')),\n                          byteIdentical=decl_bytes == open(os.path.join(HERE, 'decl.json'), 'rb').read(), bytes=len(decl_bytes))\nD = json.loads(decl_bytes.decode('utf-8'))\nbsrc = open(os.path.join(HERE, 'builder.py'), encoding='utf-8').read()\nout['builder'] = dict(pinsFinalHelper=(\"HELPER_SHA = '%s'\" % out['finalHelperSha256']) in bsrc,\n                      unconditionalRefusalPresent=\"raise SystemExit('M4 v04 builder is HELD\" in bsrc)\n\n# ---- 2. pose\nout['pose'] = dict(selected=dict(F.SELECTED_POSE), sameAsP14Checkpoint=dict(F.SELECTED_POSE) == dict(B.SELECTED_POSE),\n                   poseOptionsSame=[dict(p) for p in F.POSE_OPTIONS] == [dict(p) for p in B.POSE_OPTIONS], options=len(F.POSE_OPTIONS))\n\n# ---- 3. geometry delta against the P14 checkpoint, per row and per group\npf, _ = F.build_all()\npb, _ = B.build_all()\ndelta = {}\nfor row in pf:\n    a, b = pf[row], pb[row]\n    same_topo = [f for f, _ in a.f] == [f for f, _ in b.f] and a.ids == b.ids\n    same_v = len(a.v) == len(b.v) and bool(np.allclose(np.asarray(a.v), np.asarray(b.v), atol=0, rtol=0))\n    same_meta = a.cls == b.cls and a.roles == b.roles and a.runs == b.runs and [u for _, u in a.f] == [u for _, u in b.f]\n    if same_topo and same_v and same_meta:\n        continue\n    rec = dict(tris=[b.tris, a.tris], verts=[len(b.v), len(a.v)], ceiling=a.ceiling, sameTopology=same_topo, sameClassesRolesRunsUv=same_meta)\n    gb = {i: g for i, g in zip(b.ids, b.groups)}\n    changed = []\n    for gid, g in zip(a.ids, a.groups):\n        if gid not in gb:\n            changed.append(gid + ' (new)'); continue\n        h = gb[gid]\n        va, vb = np.asarray(a.v[g[1]:g[2]]), np.asarray(b.v[h[1]:h[2]])\n        fa = [tuple(i - g[1] for i in f) for f, _ in a.f[g[3]:g[4]]]\n        fb = [tuple(i - h[1] for i in f) for f, _ in b.f[h[3]:h[4]]]\n        if va.shape != vb.shape or not np.array_equal(va, vb) or fa != fb or a.cls[g[3]:g[4]] != b.cls[h[3]:h[4]] or \\\n                [r.split('.', 1)[-1] if r else r for r in a.runs[g[3]:g[4]]] != [r.split('.', 1)[-1] if r else r for r in b.runs[h[3]:h[4]]]:\n            changed.append(gid)\n    rec['changedGroups'] = changed\n    A, Bv = np.asarray(a.v), np.asarray(b.v)\n    rec['bounds'] = dict(base=[[round(float(c), 5) for c in Bv.min(0)], [round(float(c), 5) for c in Bv.max(0)]],\n                         final=[[round(float(c), 5) for c in A.min(0)], [round(float(c), 5) for c in A.max(0)]])\n    delta[row] = rec\nout['geometryDelta'] = dict(rowsChanged=sorted(delta), rowsUnchanged=len(pf) - len(delta), detail=delta)\n\n# ---- 4. ledger\nrows, totals = F.ledger(pf)\nout['ledger'] = dict(totals=totals if isinstance(totals, dict) else str(totals),\n                     overCeiling=[r for r in pf if pf[r].tris > pf[r].ceiling],\n                     tris={r: [pf[r].tris, pf[r].ceiling] for r in ('ctl_body__shell', 'drum_hihat_pedal__pedal', 'drum_kick__tower')},\n                     placedTriangles=sum(p.tris for p in pf.values()))\n\n# ---- 5. cheeks\nshell = pf['ctl_body__shell']\nch = [r for r in F.edge_records(shell) if shell.groups[r['group']][0] == 'ctl.cheeks']\nby = {}\nfor r in ch:\n    s = F.edge_set('ctl.cheeks', r['kind'], r['band'], r['roles'])\n    k = f\"{s['id'] if s else 'UNDECLARED'}|{r['kind']}|{r['band']}|{round(r['angle'], 1)}\"\n    t = by.setdefault(k, [0, 0.0]); t[0] += 1; t[1] = round(t[1] + r['length'], 5)\nruns = {}\nfor fi, r in enumerate(shell.runs):\n    if r is not None and shell.groups[F._group_of_faces(shell)[fi]][0] == 'ctl.cheeks':\n        runs.setdefault(r, []).append(fi)\ncn = F.corner_normals(shell)\nfn = F._face_normals(shell)\ngof = F._group_of_faces(shell)\ndev = 0.0\nfor (fi, vi), n in cn.items():\n    if shell.groups[gof[fi]][0] == 'ctl.cheeks' and shell.cls[fi] == 'planar':\n        dev = max(dev, math.degrees(math.acos(max(-1.0, min(1.0, float(np.dot(n, fn[fi])))))))\nsmooth = F.smooth_edges(shell)\nef = F._edge_faces(shell)\nmaxturn_in_run, hard_in_run = 0.0, 0\nfor e, fs in ef.items():\n    if len(fs) == 2 and shell.runs[fs[0]] is not None and shell.runs[fs[0]] == shell.runs[fs[1]] and shell.groups[gof[fs[0]]][0] == 'ctl.cheeks':\n        maxturn_in_run = max(maxturn_in_run, math.degrees(math.acos(max(-1.0, min(1.0, float(np.dot(fn[fs[0]], fn[fs[1]])))))))\n        hard_in_run += 0 if smooth[e] else 1\ncls_count = {}\nfor gi, g in enumerate(shell.groups):\n    if g[0] == 'ctl.cheeks':\n        for c in shell.cls[g[3]:g[4]]:\n            cls_count[c] = cls_count.get(c, 0) + 1\ncg = [(i, g) for i, g in zip(shell.ids, shell.groups) if g[0] == 'ctl.cheeks']\nout['cheeks'] = dict(groups={i: dict(verts=g[2] - g[1], faces=g[4] - g[3], tris=sum(len(f) - 2 for f, _ in shell.f[g[3]:g[4]])) for i, g in cg},\n                     hardEdgesBySet=dict(sorted(by.items())), roundRuns={k: v for k, v in runs.items()},\n                     maxTurnInsideARoundRunDeg=round(maxturn_in_run, 3), hardEdgesInsideARoundRun=hard_in_run,\n                     planarCornerNormalMaxDeviationDeg=round(dev, 7), faceClassCounts=cls_count)\n\n# ---- 6. whole-kit edge tally\ntally = F.edge_tally(pf)\nout['edgeTally'] = dict(undeclared=tally['undeclared'], statuses=sorted({t['status'] for t in tally['sets'].values()}),\n                        proposedSets=[k for k, t in tally['sets'].items() if t['status'] == 'proposed'],\n                        setsInSource=len(F.EDGE_SETS), setsWithEdges=len(tally['sets']),\n                        focus={k: dict(status=tally['sets'][k]['status'], edges=tally['sets'][k]['edges'], lengthM=tally['sets'][k]['lengthM'], labels=tally['sets'][k]['labels'])\n                               for k in ('cymbal.edge', 'pad.rim_lower_outer', 'pad.shell_bottom.contact', 'rug.binding_shoulder', 'ctl.cheeks.contact',\n                                         'faceted_round.profiles', 'pedal.hinges', 'granted.thin_plates') if k in tally['sets']},\n                        emptySets=[s['id'] for s in F.EDGE_SETS if s['id'] not in tally['sets']],\n                        bevelMiddleSeamM=tally['bevelMiddleSeamM'])\n# angle content of the three named sets and the pad contact set (exact corners?)\nang = {}\nfor row, part in pf.items():\n    for r in F.edge_records(part):\n        lab = part.groups[r['group']][0]\n        s = F.edge_set(lab, r['kind'], r['band'], r['roles'])\n        if s and s['id'] in ('cymbal.edge', 'pad.rim_lower_outer', 'pad.shell_bottom.contact', 'rug.binding_shoulder'):\n            k = f\"{s['id']}|{round(r['angle'], 1)}|{'/'.join(r['roles'])}\"\n            t = ang.setdefault(k, [0, 0.0]); t[0] += 1; t[1] = round(t[1] + r['length'], 4)\nout['namedSetContents'] = dict(sorted(ang.items()))\n\n# ---- 7. declaration structure\natt = {a['id']: a for a in D['attachments']}\n\n\ndef has_range_key(o, path=''):\n    hits = []\n    if isinstance(o, dict):\n        for k, v in o.items():\n            if 'range' in k.lower():\n                hits.append(path + '/' + k)\n            hits += has_range_key(v, path + '/' + k)\n    elif isinstance(o, list):\n        for i, v in enumerate(o):\n            hits += has_range_key(v, path)\n    return hits\n\n\nout['declarationStructure'] = dict(\n    schema=D['schema'], topKeys=list(D.keys()), rows=len(D['rows']), supports=len(D['supports']), seatings=len(D['seatings']),\n    roundRuns=len(D['roundRuns']), edgeSets=len(D['edgeSets']), attachments=len(D['attachments']), attachmentIds=list(att),\n    relations={k: a['relation'] for k, a in att.items()}, withCriterion=[k for k, a in att.items() if 'criterion' in a],\n    anyDepthM=[k for k, a in att.items() if 'depthM' in a], rangeKeysInsideCriteria=sorted(set(sum((has_range_key(a.get('criterion', {})) for a in att.values()), []))),\n    proposedEdgeSets=[s['id'] for s in D['edgeSets'] if s['status'] == 'proposed'],\n    namedByDisposition={s['id']: s.get('source') for s in D['edgeSets'] if s.get('source', '').startswith('m4-v04-bounded-art-disposition')},\n    selectedPose=D['selectedPose'], sourcesPin=D['sources'],\n    cheekRoundRuns=[dict(id=r['id'], faces=r['faces']) for r in D['roundRuns'] if 'cheek' in r['id']],\n    hihatRow=next(dict(vertexCount=r['vertexCount'], faceCount=r['faceCount'], groups=[[g['id'], g['vertexRange'], g['faceRange'], g['triangleCount']] for g in r['groups']])\n                  for r in D['rows'] if r['id'] == 'drum_hihat_pedal__pedal'))\nout['criteriaObserved'] = {k: dict(kind=a['criterion']['kind'], thresholds={x: y for x, y in a['criterion'].items() if isinstance(y, (int, float)) and not isinstance(y, bool)},\n                                   authorObserved=a['criterion']['authorObserved']) for k, a in att.items() if 'criterion' in a}\n\n# ---- 8. independent recompute of the hi-hat criteria from the built vertices (pedal frame)\np = pf['drum_hihat_pedal__pedal']\nh = F.HIHAT_PEDAL\nM = F.T(h['cx'], h['cy'], F.ON_RUG) @ F.Rz(h['yaw'])\nV = np.asarray(p.v, float)\nL = (np.linalg.inv(M) @ np.c_[V, np.ones(len(V))].T).T[:, :3]\nG = {gid: (g[1], g[2], g[3], g[4]) for gid, g in zip(p.ids, p.groups)}\nbz = 0.010\nhv = list(range(*G['hihat.hinge'][:2]))\nseated = [i for i in hv if L[i][2] < bz - 1e-9]\nc0, c1 = L[hv[:12]].mean(0), L[hv[12:]].mean(0)\ntop_poly = list(p.f[G['hihat.base'][2] + 1][0])\nP2 = L[top_poly][:, :2]; cen = P2.mean(0); marg = 1e9\nfor k in range(len(P2)):\n    a, b = P2[k], P2[(k + 1) % len(P2)]\n    e = b - a; n = np.array([-e[1], e[0]]) / np.linalg.norm(e)\n    if np.dot(n, cen - a) < 0:\n        n = -n\n    marg = min(marg, min(float(np.dot(n, L[i][:2] - a)) for i in seated))\nev = list(range(*G['hihat.heel'][:2]))\nlo, hi = L[ev].min(0), L[ev].max(0)\nheel_gap = min(float(np.linalg.norm(np.maximum(np.maximum(lo - L[i], L[i] - hi), 0.0))) for i in hv)\nfv = list(range(*G['hihat.footboard'][:2]))\nunder = G['hihat.footboard'][2]\nPu = L[list(p.f[under][0])]\nnrm = np.cross(Pu[1] - Pu[0], Pu[2] - Pu[0]); nrm /= np.linalg.norm(nrm)\nif nrm[2] > 0:\n    nrm = -nrm\ngv = list(range(*G['hihat.housing'][:2]))\nclr = {i: float(np.dot(L[i] - Pu[0], nrm)) for i in gv}\ncmin = min(clr.values()); lip = sorted(i for i in gv if clr[i] < cmin + 1e-7)\nrad = {i: float(np.hypot(L[i][1] - c0[1], L[i][2] - c0[2])) for i in fv}\nboard_above_plane = min(float(np.dot(L[i] - Pu[0], -nrm)) for i in fv)\nout['hihatRecomputed'] = dict(\n    rowTris=p.tris, groups={k: [v[0], v[1], v[2], v[3]] for k, v in G.items()},\n    A=dict(seatedVertices=seated, depths_mm=[mm(bz - L[i][2]) for i in seated], minUnseatedAboveTop_mm=mm(min(L[i][2] - bz for i in hv if i not in seated)),\n           minInsideTopOutline_mm=mm(marg), minAboveBaseUnderside_mm=mm(L[hv][:, 2].min()), axisHeightsAboveTop_mm=[mm(c0[2] - bz), mm(c1[2] - bz)],\n           minClearanceToHeel_mm=mm(heel_gap)),\n    B=dict(heelAxisVertices=[i for i in fv if rad[i] < 1e-6], withinBarrel=[i for i in fv if abs(L[i][0]) <= 0.045 and rad[i] < 0.009],\n           maxRadial_mm=mm(max(rad[i] for i in fv if abs(L[i][0]) <= 0.045 and rad[i] < 0.009)), inscribed_mm=mm(0.009 * math.cos(math.pi / 12)),\n           boardMinAboveBaseTop_mm=mm(L[fv][:, 2].min() - bz), maxOverhangBeyondEndDisc_mm=mm(np.abs(L[fv][:, 0]).max() - 0.045)),\n    C=dict(lipVertices=lip, lipClearance_mm=[mm(clr[i]) for i in lip], nextClearance_mm=mm(min(v for i, v in clr.items() if i not in lip)),\n           minClearanceAllHousing_mm=mm(cmin), housingVerticesInsideBoard=[i for i in gv if clr[i] < 0],\n           boardVerticesBelowOwnUndersidePlane=int(sum(1 for i in fv if float(np.dot(L[i] - Pu[0], -nrm)) < -1e-9)),\n           pitchDeg=round(math.degrees(math.atan2(-nrm[1], -nrm[2])), 4)),\n    unchangedGroupsVsP14={g: bool(np.array_equal(np.asarray(pf['drum_hihat_pedal__pedal'].v[G[g][0]:G[g][1]]), np.asarray(pb['drum_hihat_pedal__pedal'].v[G[g][0]:G[g][1]])))\n                          for g in G})\njson.dump(out, sys.stdout, indent=1, default=str)\n",
+   "output": {
+    "finalHelperSha256": "8d814874ee0ac1317827297d2a729b34f4789fffd891212ae03e2c440a73b792",
+    "baseHelperSha256": "4bb4094672fd762e622f9187690941b88f8677ec463eb09b38f691d0e7effbaf",
+    "declaration": {
+     "reproducedSha256": "8ce8db34b40a3ce053d037c5152fec8c8ed19d586b0968439abf64e3308f32bb",
+     "fileSha256": "8ce8db34b40a3ce053d037c5152fec8c8ed19d586b0968439abf64e3308f32bb",
+     "byteIdentical": true,
+     "bytes": 302196
+    },
+    "builder": {
+     "pinsFinalHelper": true,
+     "unconditionalRefusalPresent": true
+    },
+    "pose": {
+     "selected": {
+      "cx": 1.375,
+      "cy": -0.825,
+      "yaw": -0.95
+     },
+     "sameAsP14Checkpoint": true,
+     "poseOptionsSame": true,
+     "options": 24
+    },
+    "geometryDelta": {
+     "rowsChanged": [
+      "ctl_body__shell",
+      "drum_hihat_pedal__pedal"
+     ],
+     "rowsUnchanged": 16,
+     "detail": {
+      "ctl_body__shell": {
+       "tris": [
+        1260,
+        1292
+       ],
+       "verts": [
+        692,
+        708
+       ],
+       "ceiling": 2500,
+       "sameTopology": false,
+       "sameClassesRolesRunsUv": false,
+       "changedGroups": [
+        "ctl.cheeks#0",
+        "ctl.cheeks#1"
+       ],
+       "bounds": {
+        "base": [
+         [
+          0.95852,
+          -1.31911,
+          0.6889
+         ],
+         [
+          1.79148,
+          -0.33089,
+          0.78381
+         ]
+        ],
+        "final": [
+         [
+          0.95852,
+          -1.31911,
+          0.6889
+         ],
+         [
+          1.79148,
+          -0.33089,
+          0.78381
+         ]
+        ]
+       }
+      },
+      "drum_hihat_pedal__pedal": {
+       "tris": [
+        300,
+        300
+       ],
+       "verts": [
+        160,
+        160
+       ],
+       "ceiling": 600,
+       "sameTopology": true,
+       "sameClassesRolesRunsUv": true,
+       "changedGroups": [
+        "hihat.footboard",
+        "hihat.hinge"
+       ],
+       "bounds": {
+        "base": [
+         [
+          0.91739,
+          -0.06992,
+          0.0086
+         ],
+         [
+          1.08261,
+          0.26992,
+          0.08842
+         ]
+        ],
+        "final": [
+         [
+          0.91739,
+          -0.06992,
+          0.0086
+         ],
+         [
+          1.08261,
+          0.26992,
+          0.08963
+         ]
+        ]
+       }
+      }
+     }
+    },
+    "ledger": {
+     "totals": {
+      "main": 18,
+      "casters": 9,
+      "refresh": 27,
+      "placed": 13968,
+      "refreshTriangles": 24836
+     },
+     "overCeiling": [],
+     "tris": {
+      "ctl_body__shell": [
+       1292,
+       2500
+      ],
+      "drum_hihat_pedal__pedal": [
+       300,
+       600
+      ],
+      "drum_kick__tower": [
+       1040,
+       1500
+      ]
+     },
+     "placedTriangles": 13968
+    },
+    "cheeks": {
+     "groups": {
+      "ctl.cheeks#0": {
+       "verts": 44,
+       "faces": 35,
+       "tris": 84
+      },
+      "ctl.cheeks#1": {
+       "verts": 44,
+       "faces": 35,
+       "tris": 84
+      }
+     },
+     "hardEdgesBySet": {
+      "ctl.cheeks.contact|along|convex40-80|41.4": [
+       4,
+       0.01212
+      ],
+      "ctl.cheeks.contact|along|convex40-80|75.5": [
+       4,
+       0.01024
+      ],
+      "ctl.cheeks.contact|along|convex>=80|90.0": [
+       4,
+       0.0755
+      ],
+      "ctl.cheeks.contact|cap|convex>=80|90.0": [
+       22,
+       1.57953
+      ]
+     },
+     "roundRuns": {
+      "g4.b2.r4": [
+       62,
+       63,
+       64,
+       65
+      ],
+      "g5.b0.r4": [
+       75,
+       76,
+       77,
+       78
+      ]
+     },
+     "maxTurnInsideARoundRunDeg": 22.714,
+     "hardEdgesInsideARoundRun": 0,
+     "planarCornerNormalMaxDeviationDeg": 1.2e-06,
+     "faceClassCounts": {
+      "planar": 10,
+      "bevel:casing": 52,
+      "round": 8
+     }
+    },
+    "edgeTally": {
+     "undeclared": {},
+     "statuses": [
+      "contact",
+      "faceted-round",
+      "granted",
+      "named",
+      "screen"
+     ],
+     "proposedSets": [],
+     "setsInSource": 44,
+     "setsWithEdges": 44,
+     "focus": {
+      "cymbal.edge": {
+       "status": "named",
+       "edges": 144,
+       "lengthM": {
+        "convex40-80": 3.496,
+        "convex>=80": 3.5712
+       },
+       "labels": [
+        "cymbal.crash.disc",
+        "cymbal.hihat.disc",
+        "cymbal.ride.disc"
+       ]
+      },
+      "pad.rim_lower_outer": {
+       "status": "named",
+       "edges": 96,
+       "lengthM": {
+        "convex40-80": 3.6088
+       },
+       "labels": [
+        "pad.snare.shell",
+        "pad.tom1.shell",
+        "pad.tom2.shell",
+        "pad.tom3.shell"
+       ]
+      },
+      "pad.shell_bottom.contact": {
+       "status": "contact",
+       "edges": 96,
+       "lengthM": {
+        "convex40-80": 3.3582
+       },
+       "labels": [
+        "pad.snare.shell",
+        "pad.tom1.shell",
+        "pad.tom2.shell",
+        "pad.tom3.shell"
+       ]
+      },
+      "rug.binding_shoulder": {
+       "status": "named",
+       "edges": 16,
+       "lengthM": {
+        "convex40-80": 7.7385
+       },
+       "labels": [
+        "rug"
+       ]
+      },
+      "ctl.cheeks.contact": {
+       "status": "contact",
+       "edges": 34,
+       "lengthM": {
+        "convex40-80": 0.0223,
+        "convex>=80": 1.655
+       },
+       "labels": [
+        "ctl.cheeks"
+       ]
+      },
+      "faceted_round.profiles": {
+       "status": "faceted-round",
+       "edges": 168,
+       "lengthM": {
+        "convex40-80": 6.226
+       },
+       "labels": [
+        "kick.beater",
+        "stool.seat",
+        "throne.seat"
+       ]
+      },
+      "pedal.hinges": {
+       "status": "named",
+       "edges": 60,
+       "lengthM": {
+        "convex>=80": 0.2472
+       },
+       "labels": [
+        "hihat.hinge",
+        "kick.axle",
+        "sustain.hinge"
+       ]
+      },
+      "granted.thin_plates": {
+       "status": "granted",
+       "edges": 120,
+       "lengthM": {
+        "convex40-80": 0.032,
+        "convex>=80": 6.3792
+       },
+       "labels": [
+        "ctl.bezel",
+        "ctl.wheel_slot",
+        "hihat.footboard",
+        "kick.footboard",
+        "kick.pedal_plate",
+        "module.plate"
+       ]
+      }
+     },
+     "emptySets": [],
+     "bevelMiddleSeamM": {
+      "bevel:casing": 17.1477,
+      "bevel:white_key_lip": 0.754
+     }
+    },
+    "namedSetContents": {
+     "cymbal.edge|108.5|b6/b7": [
+      72,
+      3.5712
+     ],
+     "cymbal.edge|70.0|b5/b6": [
+      72,
+      3.4992
+     ],
+     "pad.rim_lower_outer|71.4|b4/b5": [
+      96,
+      3.6072
+     ],
+     "pad.shell_bottom.contact|52.8|b1/b2": [
+      96,
+      3.3576
+     ],
+     "rug.binding_shoulder|61.5|b0/b1": [
+      12,
+      0.2484
+     ],
+     "rug.binding_shoulder|62.3|b0/b1": [
+      4,
+      7.49
+     ]
+    },
+    "declarationStructure": {
+     "schema": "m4-source-declaration/3",
+     "topKeys": [
+      "schema",
+      "scope",
+      "status",
+      "author",
+      "sources",
+      "interface",
+      "rows",
+      "surfaces",
+      "supports",
+      "attachments",
+      "seatings",
+      "roundRuns",
+      "edgeClassification",
+      "attachmentCriteria",
+      "edgeSets",
+      "poseOptionIds",
+      "poseOptions",
+      "selectedPose",
+      "selectedPoseStatus",
+      "restingRuns"
+     ],
+     "rows": 18,
+     "supports": 25,
+     "seatings": 4,
+     "roundRuns": 18,
+     "edgeSets": 44,
+     "attachments": 13,
+     "attachmentIds": [
+      "kick.spring_on_plate",
+      "kick.post0_on_plate",
+      "kick.post1_on_plate",
+      "kick.heel_on_plate",
+      "kick.spur_arm_L_in_foot",
+      "kick.spur_arm_R_in_foot",
+      "kick.spur_arm_L_in_base",
+      "kick.spur_arm_R_in_base",
+      "kick.footboard_on_heel",
+      "hihat.hinge_in_base",
+      "hihat.footboard_in_hinge",
+      "hihat.footboard_on_housing",
+      "ctl.display_face_on_bezel"
+     ],
+     "relations": {
+      "kick.spring_on_plate": "rests_on",
+      "kick.post0_on_plate": "rests_on",
+      "kick.post1_on_plate": "rests_on",
+      "kick.heel_on_plate": "rests_on",
+      "kick.spur_arm_L_in_foot": "embedded",
+      "kick.spur_arm_R_in_foot": "embedded",
+      "kick.spur_arm_L_in_base": "embedded",
+      "kick.spur_arm_R_in_base": "embedded",
+      "kick.footboard_on_heel": "embedded",
+      "hihat.hinge_in_base": "embedded",
+      "hihat.footboard_in_hinge": "hinged",
+      "hihat.footboard_on_housing": "rests_on",
+      "ctl.display_face_on_bezel": "rests_on"
+     },
+     "withCriterion": [
+      "kick.spur_arm_L_in_foot",
+      "kick.spur_arm_R_in_foot",
+      "kick.spur_arm_L_in_base",
+      "kick.spur_arm_R_in_base",
+      "kick.footboard_on_heel",
+      "hihat.hinge_in_base",
+      "hihat.footboard_in_hinge",
+      "hihat.footboard_on_housing"
+     ],
+     "anyDepthM": [],
+     "rangeKeysInsideCriteria": [],
+     "proposedEdgeSets": [],
+     "namedByDisposition": {
+      "rug.binding_shoulder": "m4-v04-bounded-art-disposition.md (7705f590...) decision 7",
+      "pad.rim_lower_outer": "m4-v04-bounded-art-disposition.md (7705f590...) decision 6",
+      "cymbal.edge": "m4-v04-bounded-art-disposition.md (7705f590...) decision 5"
+     },
+     "selectedPose": {
+      "cx": 1.375,
+      "cy": -0.825,
+      "yaw": -0.95
+     },
+     "sourcesPin": {
+      "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py": "8d814874ee0ac1317827297d2a729b34f4789fffd891212ae03e2c440a73b792"
+     },
+     "cheekRoundRuns": [
+      {
+       "id": "ctl_body__shell/ctl.cheeks#0/b2.r4",
+       "faces": [
+        62,
+        63,
+        64,
+        65
+       ]
+      },
+      {
+       "id": "ctl_body__shell/ctl.cheeks#1/b0.r4",
+       "faces": [
+        75,
+        76,
+        77,
+        78
+       ]
+      }
+     ],
+     "hihatRow": {
+      "vertexCount": 160,
+      "faceCount": 114,
+      "groups": [
+       [
+        "hihat.base",
+        [
+         0,
+         48
+        ],
+        [
+         0,
+         38
+        ],
+        92
+       ],
+       [
+        "hihat.housing",
+        [
+         48,
+         96
+        ],
+        [
+         38,
+         76
+        ],
+        92
+       ],
+       [
+        "hihat.footboard",
+        [
+         96,
+         128
+        ],
+        [
+         76,
+         94
+        ],
+        60
+       ],
+       [
+        "hihat.hinge",
+        [
+         128,
+         152
+        ],
+        [
+         94,
+         108
+        ],
+        44
+       ],
+       [
+        "hihat.heel",
+        [
+         152,
+         160
+        ],
+        [
+         108,
+         114
+        ],
+        12
+       ]
+      ]
+     }
+    },
+    "criteriaObserved": {
+     "kick.spur_arm_L_in_foot": {
+      "kind": "rod_tip_inside_solid",
+      "thresholds": {
+       "tipCapFace": 85
+      },
+      "authorObserved": {
+       "minInsideWallM": 0.00085,
+       "minBelowTopM": 0.00104
+      }
+     },
+     "kick.spur_arm_R_in_foot": {
+      "kind": "rod_tip_inside_solid",
+      "thresholds": {
+       "tipCapFace": 113
+      },
+      "authorObserved": {
+       "minInsideWallM": 0.00085,
+       "minBelowTopM": 0.00104
+      }
+     },
+     "kick.spur_arm_L_in_base": {
+      "kind": "rod_root_embedded_through_flat_face",
+      "thresholds": {
+       "rootCapFace": 84,
+       "tipCapFace": 85,
+       "minRingBurialM": 0.001,
+       "rootCentreInsetM": 0.006,
+       "restingHeightM": 0.0086,
+       "rootCentreHeightM": 0.022,
+       "tipCentreHeightM": 0.014
+      },
+      "authorObserved": {
+       "ringBurialMinM": 0.00134,
+       "ringBurialMaxM": 0.01066,
+       "crossingMinInsideFaceOutlineM": 0.00369,
+       "rootCentreHeightM": 0.022,
+       "tipCentreHeightM": 0.014
+      }
+     },
+     "kick.spur_arm_R_in_base": {
+      "kind": "rod_root_embedded_through_flat_face",
+      "thresholds": {
+       "rootCapFace": 112,
+       "tipCapFace": 113,
+       "minRingBurialM": 0.001,
+       "rootCentreInsetM": 0.006,
+       "restingHeightM": 0.0086,
+       "rootCentreHeightM": 0.022,
+       "tipCentreHeightM": 0.014
+      },
+      "authorObserved": {
+       "ringBurialMinM": 0.00134,
+       "ringBurialMaxM": 0.01066,
+       "crossingMinInsideFaceOutlineM": 0.00369,
+       "rootCentreHeightM": 0.022,
+       "tipCentreHeightM": 0.014
+      }
+     },
+     "kick.footboard_on_heel": {
+      "kind": "board_end_seated_through_top_face",
+      "thresholds": {
+       "receivingTopFace": 299,
+       "receivingUndersideFace": 298,
+       "maxDepthM": 0.004,
+       "boardThicknessM": 0.008,
+       "minProudM": 0.0038
+      },
+      "authorObserved": {
+       "belowTopVertices": [
+        382,
+        383,
+        384,
+        385,
+        386,
+        387
+       ],
+       "maxDepthM": 0.004,
+       "boardThicknessM": 0.008,
+       "heelEndCornerProudM": [
+        0.00382,
+        0.00382
+       ],
+       "minAboveUndersideM": 0.016
+      }
+     },
+     "hihat.hinge_in_base": {
+      "kind": "barrel_knuckle_seated_through_top_face",
+      "thresholds": {
+       "receivingUndersideFace": 0,
+       "baseThicknessM": 0.01,
+       "seatDepthM": 0.003,
+       "axisHeightAboveTopM": 0.005999999999999999,
+       "toleranceM": 5e-05,
+       "minUnseatedAboveTopM": 0.001,
+       "minInsideTopOutlineM": 0.01,
+       "minAboveBaseUndersideM": 0.005,
+       "minClearanceToHeelM": 0.0025
+      },
+      "authorObserved": {
+       "seatedVertices": [
+        133,
+        134,
+        135,
+        145,
+        146,
+        147
+       ],
+       "seatDepthM": 0.003,
+       "seatedVertexDepthsM": {
+        "133": 0.001794,
+        "134": 0.003,
+        "135": 0.001794,
+        "145": 0.001794,
+        "146": 0.003,
+        "147": 0.001794
+       },
+       "minUnseatedAboveTopM": 0.0015,
+       "minInsideTopOutlineM": 0.01687,
+       "minAboveBaseUndersideM": 0.007,
+       "axisHeightsAboveTopM": [
+        0.006,
+        0.006
+       ],
+       "minClearanceToHeelM": 0.003
+      }
+     },
+     "hihat.footboard_in_hinge": {
+      "kind": "board_heel_captured_in_hinge_barrel",
+      "thresholds": {
+       "axisToleranceM": 5e-05,
+       "maxCornerOverhangM": 0.007
+      },
+      "authorObserved": {
+       "heelAxisVertexRadialM": [
+        0.0,
+        0.0
+       ],
+       "verticesBetweenEndDiscsWithinRadius": [
+        107,
+        108,
+        123,
+        124
+       ],
+       "allThoseInsideBarrel": true,
+       "maxRadialOfThoseM": 0.008,
+       "cornerVerticesBeyondEndDiscs": [
+        105,
+        106,
+        109,
+        110,
+        122,
+        125
+       ],
+       "maxBoardOverhangBeyondEndDiscM": 0.007,
+       "maxOverhangOfCornerVerticesWithinRadiusM": 0.00539,
+       "boardMinAboveBaseTopM": 0.006
+      }
+     },
+     "hihat.footboard_on_housing": {
+      "kind": "board_rests_on_lip_separating_plane",
+      "thresholds": {
+       "gapM": 0.0003,
+       "toleranceM": 5e-05,
+       "minClearanceM": 0.00025,
+       "minLipInsideBoardOutlineM": 0.005
+      },
+      "authorObserved": {
+       "lipClearanceM": [
+        0.0003,
+        0.0003
+       ],
+       "nextClearanceM": 0.000374,
+       "minClearanceAllHousingM": 0.0003,
+       "lipInsideBoardOutlineM": [
+        0.00584,
+        0.00584
+       ],
+       "toeTipAboveHousingTopM": [
+        0.00327,
+        0.00327
+       ],
+       "boardOverhangBeyondLipM": 0.01188,
+       "boardPitchDeg": 13.9813
+      }
+     }
+    },
+    "hihatRecomputed": {
+     "rowTris": 300,
+     "groups": {
+      "hihat.base": [
+       0,
+       48,
+       0,
+       38
+      ],
+      "hihat.housing": [
+       48,
+       96,
+       38,
+       76
+      ],
+      "hihat.footboard": [
+       96,
+       128,
+       76,
+       94
+      ],
+      "hihat.hinge": [
+       128,
+       152,
+       94,
+       108
+      ],
+      "hihat.heel": [
+       152,
+       160,
+       108,
+       114
+      ]
+     },
+     "A": {
+      "seatedVertices": [
+       133,
+       134,
+       135,
+       145,
+       146,
+       147
+      ],
+      "depths_mm": [
+       1.7942,
+       3.0,
+       1.7942,
+       1.7942,
+       3.0,
+       1.7942
+      ],
+      "minUnseatedAboveTop_mm": 1.5,
+      "minInsideTopOutline_mm": 16.875,
+      "minAboveBaseUnderside_mm": 7.0,
+      "axisHeightsAboveTop_mm": [
+       6.0,
+       6.0
+      ],
+      "minClearanceToHeel_mm": 3.0
+     },
+     "B": {
+      "heelAxisVertices": [
+       107,
+       108
+      ],
+      "withinBarrel": [
+       107,
+       108,
+       123,
+       124
+      ],
+      "maxRadial_mm": 8.0,
+      "inscribed_mm": 8.6933,
+      "boardMinAboveBaseTop_mm": 6.0,
+      "maxOverhangBeyondEndDisc_mm": 7.0
+     },
+     "C": {
+      "lipVertices": [
+       86,
+       87
+      ],
+      "lipClearance_mm": [
+       0.3,
+       0.3
+      ],
+      "nextClearance_mm": 0.374,
+      "minClearanceAllHousing_mm": 0.3,
+      "housingVerticesInsideBoard": [],
+      "boardVerticesBelowOwnUndersidePlane": 0,
+      "pitchDeg": -13.9813
+     },
+     "unchangedGroupsVsP14": {
+      "hihat.base": true,
+      "hihat.housing": true,
+      "hihat.footboard": false,
+      "hihat.hinge": false,
+      "hihat.heel": true
+     }
+    }
+   }
+  },
+  "check2": {
+   "script": "\"\"\"Reviewer follow-up (read-only, two build_all() calls at P14): cheek top-run turn angles and classes before/after,\nhi-hat heel height, declaration status strings.\"\"\"\nimport importlib.util, json, math, os, sys\nimport numpy as np\nHERE = os.path.dirname(os.path.abspath(__file__))\ndef load(n, p):\n    s = importlib.util.spec_from_file_location(n, p); m = importlib.util.module_from_spec(s); s.loader.exec_module(m); return m\nF = load('final_helper', os.path.join(HERE, 'helper.py'))\nB = load('base_helper', os.path.join(HERE, 'p14', 'helper_p14.py'))\nout = {}\nfor tag, H in (('final', F), ('p14', B)):\n    parts, _ = H.build_all()\n    p = parts['ctl_body__shell']\n    fn = H._face_normals(p); ef = H._edge_faces(p); sm = H.smooth_edges(p); gof = H._group_of_faces(p)\n    V = np.asarray(p.v, float)\n    res = {}\n    for gid, g in zip(p.ids, p.groups):\n        if g[0] != 'ctl.cheeks':\n            continue\n        cls = {}\n        for c in p.cls[g[3]:g[4]]:\n            cls[c] = cls.get(c, 0) + 1\n        runf = [fi for fi in range(g[3], g[4]) if p.runs[fi] is not None]\n        area = {}\n        for fi in runf:\n            P = V[list(p.f[fi][0])]\n            a = 0.5 * np.linalg.norm(sum(np.cross(P[i] - P[0], P[(i + 1) % len(P)] - P[0]) for i in range(1, len(P) - 1)))\n            area[fi] = round(float(a) * 1e6, 1)\n        turns = []\n        for e, fs in ef.items():\n            if len(fs) == 2 and gof[fs[0]] == p.ids.index(gid) and (fs[0] in runf or fs[1] in runf):\n                a, b = fs\n                ang = math.degrees(math.acos(max(-1, min(1, float(np.dot(fn[a], fn[b]))))))\n                L = float(np.linalg.norm(V[e[0]] - V[e[1]]))\n                if L > 0.015:      # across-the-cheek (22 mm) edges only: the profile turns along the top\n                    turns.append(dict(faces=[a, b], classes=[p.cls[a], p.cls[b]], sameRun=p.runs[a] is not None and p.runs[a] == p.runs[b],\n                                      turnDeg=round(ang, 2), smooth=bool(sm[e]), lengthMm=round(L * 1000, 2)))\n        res[gid] = dict(classes=cls, runFaces=runf, runFaceAreaMm2=area, profileTurnsTouchingRun=sorted(turns, key=lambda t: t['faces']))\n    out[tag] = res\n    if tag == 'final':\n        hp = parts['drum_hihat_pedal__pedal']\n        h = H.HIHAT_PEDAL\n        M = H.T(h['cx'], h['cy'], H.ON_RUG) @ H.Rz(h['yaw'])\n        HV = np.asarray(hp.v, float)\n        L = (np.linalg.inv(M) @ np.c_[HV, np.ones(len(HV))].T).T[:, :3]\n        G = {gid: g for gid, g in zip(hp.ids, hp.groups)}\n        heel = L[G['hihat.heel'][1]:G['hihat.heel'][2]]; bar = L[G['hihat.hinge'][1]:G['hihat.hinge'][2]]\n        out['hihatHeel'] = dict(heelTopMm=round(float(heel[:, 2].max()) * 1000, 3), barrelTopMm=round(float(bar[:, 2].max()) * 1000, 3),\n                                barrelAboveHeelTopMm=round(float(bar[:, 2].max() - heel[:, 2].max()) * 1000, 3))\nD = json.load(open(os.path.join(HERE, 'decl.json'), encoding='utf-8'))\nout['declStrings'] = dict(scope=D['scope'], status=D['status'], selectedPoseStatus=D['selectedPoseStatus'], author=D['author'], interface=D['interface'])\njson.dump(out, sys.stdout, indent=1, default=str)\n",
+   "output": {
+    "final": {
+     "ctl.cheeks#0": {
+      "classes": {
+       "planar": 5,
+       "bevel:casing": 26,
+       "round": 4
+      },
+      "runFaces": [
+       62,
+       63,
+       64,
+       65
+      ],
+      "runFaceAreaMm2": {
+       "62": 2584.6,
+       "63": 2479.8,
+       "64": 687.1,
+       "65": 303.6
+      },
+      "profileTurnsTouchingRun": [
+       {
+        "faces": [
+         35,
+         62
+        ],
+        "classes": [
+         "planar",
+         "round"
+        ],
+        "sameRun": false,
+        "turnDeg": 90.0,
+        "smooth": false,
+        "lengthMm": 136.93
+       },
+       {
+        "faces": [
+         35,
+         63
+        ],
+        "classes": [
+         "planar",
+         "round"
+        ],
+        "sameRun": false,
+        "turnDeg": 90.0,
+        "smooth": false,
+        "lengthMm": 131.38
+       },
+       {
+        "faces": [
+         35,
+         64
+        ],
+        "classes": [
+         "planar",
+         "round"
+        ],
+        "sameRun": false,
+        "turnDeg": 90.0,
+        "smooth": false,
+        "lengthMm": 36.4
+       },
+       {
+        "faces": [
+         35,
+         65
+        ],
+        "classes": [
+         "planar",
+         "round"
+        ],
+        "sameRun": false,
+        "turnDeg": 90.0,
+        "smooth": false,
+        "lengthMm": 16.08
+       },
+       {
+        "faces": [
+         51,
+         62
+        ],
+        "classes": [
+         "bevel:casing",
+         "round"
+        ],
+        "sameRun": false,
+        "turnDeg": 30.0,
+        "smooth": true,
+        "lengthMm": 136.93
+       },
+       {
+        "faces": [
+         52,
+         63
+        ],
+        "classes": [
+         "bevel:casing",
+         "round"
+        ],
+        "sameRun": false,
+        "turnDeg": 30.0,
+        "smooth": true,
+        "lengthMm": 131.38
+       },
+       {
+        "faces": [
+         53,
+         64
+        ],
+        "classes": [
+         "bevel:casing",
+         "round"
+        ],
+        "sameRun": false,
+        "turnDeg": 30.0,
+        "smooth": true,
+        "lengthMm": 36.4
+       },
+       {
+        "faces": [
+         54,
+         65
+        ],
+        "classes": [
+         "bevel:casing",
+         "round"
+        ],
+        "sameRun": false,
+        "turnDeg": 30.0,
+        "smooth": true,
+        "lengthMm": 16.08
+       },
+       {
+        "faces": [
+         61,
+         62
+        ],
+        "classes": [
+         "bevel:casing",
+         "round"
+        ],
+        "sameRun": false,
+        "turnDeg": 30.55,
+        "smooth": true,
+        "lengthMm": 18.88
+       },
+       {
+        "faces": [
+         62,
+         63
+        ],
+        "classes": [
+         "round",
+         "round"
+        ],
+        "sameRun": true,
+        "turnDeg": 6.68,
+        "smooth": true,
+        "lengthMm": 18.88
+       },
+       {
+        "faces": [
+         63,
+         64
+        ],
+        "classes": [
+         "round",
+         "round"
+        ],
+        "sameRun": true,
+        "turnDeg": 7.63,
+        "smooth": true,
+        "lengthMm": 18.88
+       },
+       {
+        "faces": [
+         64,
+         65
+        ],
+        "classes": [
+         "round",
+         "round"
+        ],
+        "sameRun": true,
+        "turnDeg": 22.71,
+        "smooth": true,
+        "lengthMm": 18.88
+       },
+       {
+        "faces": [
+         65,
+         66
+        ],
+        "classes": [
+         "round",
+         "bevel:casing"
+        ],
+        "sameRun": false,
+        "turnDeg": 17.11,
+        "smooth": true,
+        "lengthMm": 18.88
+       }
+      ]
+     },
+     "ctl.cheeks#1": {
+      "classes": {
+       "planar": 5,
+       "bevel:casing": 26,
+       "round": 4
+      },
+      "runFaces": [
+       75,
+       76,
+       77,
+       78
+      ],
+      "runFaceAreaMm2": {
+       "75": 2584.6,
+       "76": 2479.8,
+       "77": 687.1,
+       "78": 303.6
+      },
+      "profileTurnsTouchingRun": [
+       {
+        "faces": [
+         69,
+         75
+        ],
+        "classes": [
+         "planar",
+         "round"
+        ],
+        "sameRun": false,
+        "turnDeg": 90.0,
+        "smooth": false,
+        "lengthMm": 136.93
+       },
+       {
+        "faces": [
+         69,
+         76
+        ],
+        "classes": [
+         "planar",
+         "round"
+        ],
+        "sameRun": false,
+        "turnDeg": 90.0,
+        "smooth": false,
+        "lengthMm": 131.38
+       },
+       {
+        "faces": [
+         69,
+         77
+        ],
+        "classes": [
+         "planar",
+         "round"
+        ],
+        "sameRun": false,
+        "turnDeg": 90.0,
+        "smooth": false,
+        "lengthMm": 36.4
+       },
+       {
+        "faces": [
+         69,
+         78
+        ],
+        "classes": [
+         "planar",
+         "round"
+        ],
+        "sameRun": false,
+        "turnDeg": 90.0,
+        "smooth": false,
+        "lengthMm": 16.08
+       },
+       {
+        "faces": [
+         74,
+         75
+        ],
+        "classes": [
+         "bevel:casing",
+         "round"
+        ],
+        "sameRun": false,
+        "turnDeg": 30.55,
+        "smooth": true,
+        "lengthMm": 18.87
+       },
+       {
+        "faces": [
+         75,
+         76
+        ],
+        "classes": [
+         "round",
+         "round"
+        ],
+        "sameRun": true,
+        "turnDeg": 6.68,
+        "smooth": true,
+        "lengthMm": 18.87
+       },
+       {
+        "faces": [
+         75,
+         86
+        ],
+        "classes": [
+         "round",
+         "bevel:casing"
+        ],
+        "sameRun": false,
+        "turnDeg": 30.0,
+        "smooth": true,
+        "lengthMm": 136.93
+       },
+       {
+        "faces": [
+         76,
+         77
+        ],
+        "classes": [
+         "round",
+         "round"
+        ],
+        "sameRun": true,
+        "turnDeg": 7.63,
+        "smooth": true,
+        "lengthMm": 18.87
+       },
+       {
+        "faces": [
+         76,
+         87
+        ],
+        "classes": [
+         "round",
+         "bevel:casing"
+        ],
+        "sameRun": false,
+        "turnDeg": 30.0,
+        "smooth": true,
+        "lengthMm": 131.38
+       },
+       {
+        "faces": [
+         77,
+         78
+        ],
+        "classes": [
+         "round",
+         "round"
+        ],
+        "sameRun": true,
+        "turnDeg": 22.71,
+        "smooth": true,
+        "lengthMm": 18.87
+       },
+       {
+        "faces": [
+         77,
+         88
+        ],
+        "classes": [
+         "round",
+         "bevel:casing"
+        ],
+        "sameRun": false,
+        "turnDeg": 30.0,
+        "smooth": true,
+        "lengthMm": 36.4
+       },
+       {
+        "faces": [
+         78,
+         79
+        ],
+        "classes": [
+         "round",
+         "bevel:casing"
+        ],
+        "sameRun": false,
+        "turnDeg": 17.11,
+        "smooth": true,
+        "lengthMm": 18.87
+       },
+       {
+        "faces": [
+         78,
+         89
+        ],
+        "classes": [
+         "round",
+         "bevel:casing"
+        ],
+        "sameRun": false,
+        "turnDeg": 30.0,
+        "smooth": true,
+        "lengthMm": 16.08
+       }
+      ]
+     }
+    },
+    "hihatHeel": {
+     "heelTopMm": 18.0,
+     "barrelTopMm": 25.0,
+     "barrelAboveHeelTopMm": 7.0
+    },
+    "p14": {
+     "ctl.cheeks#0": {
+      "classes": {
+       "planar": 6,
+       "bevel:casing": 20,
+       "round": 3
+      },
+      "runFaces": [
+       59,
+       60,
+       61
+      ],
+      "runFaceAreaMm2": {
+       "59": 2479.8,
+       "60": 687.1,
+       "61": 362.6
+      },
+      "profileTurnsTouchingRun": [
+       {
+        "faces": [
+         35,
+         59
+        ],
+        "classes": [
+         "planar",
+         "round"
+        ],
+        "sameRun": false,
+        "turnDeg": 90.0,
+        "smooth": false,
+        "lengthMm": 131.38
+       },
+       {
+        "faces": [
+         35,
+         60
+        ],
+        "classes": [
+         "planar",
+         "round"
+        ],
+        "sameRun": false,
+        "turnDeg": 90.0,
+        "smooth": false,
+        "lengthMm": 36.4
+       },
+       {
+        "faces": [
+         35,
+         61
+        ],
+        "classes": [
+         "planar",
+         "round"
+        ],
+        "sameRun": false,
+        "turnDeg": 90.0,
+        "smooth": false,
+        "lengthMm": 19.21
+       },
+       {
+        "faces": [
+         50,
+         59
+        ],
+        "classes": [
+         "bevel:casing",
+         "round"
+        ],
+        "sameRun": false,
+        "turnDeg": 30.0,
+        "smooth": true,
+        "lengthMm": 131.38
+       },
+       {
+        "faces": [
+         51,
+         60
+        ],
+        "classes": [
+         "bevel:casing",
+         "round"
+        ],
+        "sameRun": false,
+        "turnDeg": 30.0,
+        "smooth": true,
+        "lengthMm": 36.4
+       },
+       {
+        "faces": [
+         52,
+         61
+        ],
+        "classes": [
+         "bevel:casing",
+         "round"
+        ],
+        "sameRun": false,
+        "turnDeg": 30.0,
+        "smooth": true,
+        "lengthMm": 19.21
+       },
+       {
+        "faces": [
+         58,
+         59
+        ],
+        "classes": [
+         "planar",
+         "round"
+        ],
+        "sameRun": false,
+        "turnDeg": 6.68,
+        "smooth": true,
+        "lengthMm": 18.88
+       },
+       {
+        "faces": [
+         59,
+         60
+        ],
+        "classes": [
+         "round",
+         "round"
+        ],
+        "sameRun": true,
+        "turnDeg": 7.63,
+        "smooth": true,
+        "lengthMm": 18.88
+       },
+       {
+        "faces": [
+         60,
+         61
+        ],
+        "classes": [
+         "round",
+         "round"
+        ],
+        "sameRun": true,
+        "turnDeg": 22.71,
+        "smooth": true,
+        "lengthMm": 18.88
+       },
+       {
+        "faces": [
+         61,
+         62
+        ],
+        "classes": [
+         "round",
+         "planar"
+        ],
+        "sameRun": false,
+        "turnDeg": 51.34,
+        "smooth": false,
+        "lengthMm": 18.88
+       }
+      ]
+     },
+     "ctl.cheeks#1": {
+      "classes": {
+       "planar": 6,
+       "bevel:casing": 20,
+       "round": 3
+      },
+      "runFaces": [
+       70,
+       71,
+       72
+      ],
+      "runFaceAreaMm2": {
+       "70": 2479.8,
+       "71": 687.1,
+       "72": 362.6
+      },
+      "profileTurnsTouchingRun": [
+       {
+        "faces": [
+         63,
+         70
+        ],
+        "classes": [
+         "planar",
+         "round"
+        ],
+        "sameRun": false,
+        "turnDeg": 90.0,
+        "smooth": false,
+        "lengthMm": 131.38
+       },
+       {
+        "faces": [
+         63,
+         71
+        ],
+        "classes": [
+         "planar",
+         "round"
+        ],
+        "sameRun": false,
+        "turnDeg": 90.0,
+        "smooth": false,
+        "lengthMm": 36.4
+       },
+       {
+        "faces": [
+         63,
+         72
+        ],
+        "classes": [
+         "planar",
+         "round"
+        ],
+        "sameRun": false,
+        "turnDeg": 90.0,
+        "smooth": false,
+        "lengthMm": 19.21
+       },
+       {
+        "faces": [
+         69,
+         70
+        ],
+        "classes": [
+         "planar",
+         "round"
+        ],
+        "sameRun": false,
+        "turnDeg": 6.68,
+        "smooth": true,
+        "lengthMm": 18.87
+       },
+       {
+        "faces": [
+         70,
+         71
+        ],
+        "classes": [
+         "round",
+         "round"
+        ],
+        "sameRun": true,
+        "turnDeg": 7.63,
+        "smooth": true,
+        "lengthMm": 18.87
+       },
+       {
+        "faces": [
+         70,
+         79
+        ],
+        "classes": [
+         "round",
+         "bevel:casing"
+        ],
+        "sameRun": false,
+        "turnDeg": 30.0,
+        "smooth": true,
+        "lengthMm": 131.38
+       },
+       {
+        "faces": [
+         71,
+         72
+        ],
+        "classes": [
+         "round",
+         "round"
+        ],
+        "sameRun": true,
+        "turnDeg": 22.71,
+        "smooth": true,
+        "lengthMm": 18.87
+       },
+       {
+        "faces": [
+         71,
+         80
+        ],
+        "classes": [
+         "round",
+         "bevel:casing"
+        ],
+        "sameRun": false,
+        "turnDeg": 30.0,
+        "smooth": true,
+        "lengthMm": 36.4
+       },
+       {
+        "faces": [
+         72,
+         73
+        ],
+        "classes": [
+         "round",
+         "planar"
+        ],
+        "sameRun": false,
+        "turnDeg": 51.34,
+        "smooth": false,
+        "lengthMm": 18.87
+       },
+       {
+        "faces": [
+         72,
+         81
+        ],
+        "classes": [
+         "round",
+         "bevel:casing"
+        ],
+        "sameRun": false,
+        "turnDeg": 30.0,
+        "smooth": true,
+        "lengthMm": 19.21
+       }
+      ]
+     }
+    },
+    "declStrings": {
+     "scope": "candidate",
+     "status": "actual-Claude author semantic declaration for M4 v04 source preparation; NOT frozen, NOT verified, NOT candidate acceptance. rowsSha256 and the expected declaration digest are for the producer and root/S freeze.",
+     "selectedPoseStatus": "selected P14 by the author from manifests/m4-v04-pose-comparison.json (fc4af9e7...): throne-top uniform area 292/384 (0.760; P00 0.638), actual-hit azimuth envelope 30.70 deg, sustain 116/116, targets 243/243, 29/29 key tops, support clearance min 33.9 mm, music-320 key pitch 9.05 px. Alternatives kept: P08 if the captured azimuth fails AZ1, P13 if yaw -0.95 reads too turned. Image gates T1 and AZ1 decide; not image approval",
+     "author": "actual Claude Opus 5.5 (claude-opus-5-5, effort high), task_23314c669e03",
+     "interface": {
+      "helper": "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py",
+      "buildAll": "build_all(pose=None) -> (parts, meta)",
+      "cornerNormals": "corner_normals(part)",
+      "smoothEdges": "smooth_edges(part)",
+      "edgeRecords": "edge_records(part)",
+      "ledger": "ledger(parts)",
+      "coordinates": "Blender metres, +Z up; runtime scale 2, +Y 0.11; planning eye [-0.35, -1.70, 1.345]"
+     }
+    }
+   }
+  },
+  "check3": {
+   "script": "\"\"\"Reviewer follow-up (read-only): authored corner-normal deviation on the cheek top faces, final against the P14 checkpoint.\"\"\"\nimport importlib.util, json, math, os, sys\nimport numpy as np\nHERE = os.path.dirname(os.path.abspath(__file__))\ndef load(n, p):\n    s = importlib.util.spec_from_file_location(n, p); m = importlib.util.module_from_spec(s); s.loader.exec_module(m); return m\nout = {}\nfor tag, path, tops in (('final', 'helper.py', {'ctl.cheeks#0': [62, 63, 64, 65], 'ctl.cheeks#1': [75, 76, 77, 78]}),\n                        ('p14', os.path.join('p14', 'helper_p14.py'), {'ctl.cheeks#0': [58, 59, 60, 61], 'ctl.cheeks#1': [69, 70, 71, 72]})):\n    H = load(tag + '_helper', os.path.join(HERE, path))\n    parts, _ = H.build_all()\n    p = parts['ctl_body__shell']\n    cn = H.corner_normals(p); fn = H._face_normals(p)\n    res = {}\n    for gid, faces in tops.items():\n        for fi in faces:\n            devs = [math.degrees(math.acos(max(-1, min(1, float(np.dot(cn[(fi, v)], fn[fi])))))) for v in p.f[fi][0]]\n            res[f'{gid}/face{fi}'] = dict(cls=p.cls[fi], run=p.runs[fi], cornerDeviationDeg=[round(d, 2) for d in devs])\n    out[tag] = res\n    if tag == 'final':\n        out['faceTupleSample'] = repr(p.f[62])[:200]\njson.dump(out, sys.stdout, indent=1)\n",
+   "output": {
+    "final": {
+     "ctl.cheeks#0/face62": {
+      "cls": "round",
+      "run": "g4.b2.r4",
+      "cornerDeviationDeg": [
+       0.0,
+       3.34,
+       3.34,
+       0.0
+      ]
+     },
+     "ctl.cheeks#0/face63": {
+      "cls": "round",
+      "run": "g4.b2.r4",
+      "cornerDeviationDeg": [
+       3.34,
+       3.82,
+       3.82,
+       3.34
+      ]
+     },
+     "ctl.cheeks#0/face64": {
+      "cls": "round",
+      "run": "g4.b2.r4",
+      "cornerDeviationDeg": [
+       3.82,
+       11.36,
+       11.36,
+       3.82
+      ]
+     },
+     "ctl.cheeks#0/face65": {
+      "cls": "round",
+      "run": "g4.b2.r4",
+      "cornerDeviationDeg": [
+       11.36,
+       0.0,
+       0.0,
+       11.36
+      ]
+     },
+     "ctl.cheeks#1/face75": {
+      "cls": "round",
+      "run": "g5.b0.r4",
+      "cornerDeviationDeg": [
+       0.0,
+       3.34,
+       3.34,
+       0.0
+      ]
+     },
+     "ctl.cheeks#1/face76": {
+      "cls": "round",
+      "run": "g5.b0.r4",
+      "cornerDeviationDeg": [
+       3.34,
+       3.82,
+       3.82,
+       3.34
+      ]
+     },
+     "ctl.cheeks#1/face77": {
+      "cls": "round",
+      "run": "g5.b0.r4",
+      "cornerDeviationDeg": [
+       3.82,
+       11.36,
+       11.36,
+       3.82
+      ]
+     },
+     "ctl.cheeks#1/face78": {
+      "cls": "round",
+      "run": "g5.b0.r4",
+      "cornerDeviationDeg": [
+       11.36,
+       0.0,
+       0.0,
+       11.36
+      ]
+     }
+    },
+    "faceTupleSample": "((78, 79, 90, 89), 'oak_tone')",
+    "p14": {
+     "ctl.cheeks#0/face58": {
+      "cls": "planar",
+      "run": null,
+      "cornerDeviationDeg": [
+       0.0,
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "ctl.cheeks#0/face59": {
+      "cls": "round",
+      "run": "g4.b2.r5",
+      "cornerDeviationDeg": [
+       6.68,
+       3.82,
+       3.82,
+       6.68
+      ]
+     },
+     "ctl.cheeks#0/face60": {
+      "cls": "round",
+      "run": "g4.b2.r5",
+      "cornerDeviationDeg": [
+       3.82,
+       11.36,
+       11.36,
+       3.82
+      ]
+     },
+     "ctl.cheeks#0/face61": {
+      "cls": "round",
+      "run": "g4.b2.r5",
+      "cornerDeviationDeg": [
+       11.36,
+       0.0,
+       0.0,
+       11.36
+      ]
+     },
+     "ctl.cheeks#1/face69": {
+      "cls": "planar",
+      "run": null,
+      "cornerDeviationDeg": [
+       0.0,
+       0.0,
+       0.0,
+       0.0
+      ]
+     },
+     "ctl.cheeks#1/face70": {
+      "cls": "round",
+      "run": "g5.b0.r5",
+      "cornerDeviationDeg": [
+       6.68,
+       3.82,
+       3.82,
+       6.68
+      ]
+     },
+     "ctl.cheeks#1/face71": {
+      "cls": "round",
+      "run": "g5.b0.r5",
+      "cornerDeviationDeg": [
+       3.82,
+       11.36,
+       11.36,
+       3.82
+      ]
+     },
+     "ctl.cheeks#1/face72": {
+      "cls": "round",
+      "run": "g5.b0.r5",
+      "cornerDeviationDeg": [
+       11.36,
+       0.0,
+       0.0,
+       11.36
+      ]
+     }
+    }
+   }
+  }
+ }
+}

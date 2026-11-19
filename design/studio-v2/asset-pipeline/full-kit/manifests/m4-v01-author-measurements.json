@@ -1,0 +1,2186 @@
+{
+ "statement": "M4 author measurements from the in-memory Blender state. Exact Blender ray casts from the fixed eye and projections with the M1 builder cameras (music-1440 yaw 44/pitch -8/FOV 58, right-down 58/-16/58, music-320-f74, home-1440). Geometry evidence only: builder cameras are planning estimates, not runtime captures or image approval.",
+ "parent": {
+  "glb": "exports/studio-full-kit-m3-proposal-v03.glb",
+  "sha256": "dc9c6a78a704880db92678908bf7171329f6a80c86b96e2143e44e85e3f36baf",
+  "editableChain": "build_fullkit_m3.py (frozen DCCFA288, dry) = editable M3 v02; v03 = raw v02 + root exact restoration"
+ },
+ "mapping": {
+  "path": "scene-coordination/m4-model-contract.json",
+  "sha256": "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98"
+ },
+ "helper": {
+  "path": "source/build_fullkit_m4_geometry.py",
+  "sha256": "c7ce9d8e1792273d6aeffdc5b536233413fdca6c6fd16abf344827d6433ab1c0"
+ },
+ "removedM4Proxies": [
+  "ctl_body__proxy_body",
+  "ctl_keys__proxy_key_bed",
+  "ctl_stand__proxy_leg_1",
+  "ctl_stand__proxy_leg_2",
+  "ctl_sustain_pedal__proxy_pedal",
+  "drum_cymbals__proxy_cymbal_1",
+  "drum_cymbals__proxy_cymbal_2",
+  "drum_cymbals__proxy_cymbal_3",
+  "drum_hihat_pedal__proxy_pedal",
+  "drum_kick__proxy_tower_pedal",
+  "drum_module__proxy_module",
+  "drum_pads__proxy_pad_1",
+  "drum_pads__proxy_pad_2",
+  "drum_pads__proxy_pad_3",
+  "drum_pads__proxy_pad_4",
+  "drum_rack__proxy_crossbar",
+  "drum_rack__proxy_upright_1",
+  "drum_rack__proxy_upright_2",
+  "drum_sticks__proxy_pair",
+  "drum_throne__proxy_seat",
+  "rug__proxy_rug",
+  "stool_keys__proxy_post",
+  "stool_keys__proxy_seat"
+ ],
+ "trianglesPerRow": {
+  "ctl_body__shell": 1132,
+  "ctl_body__indicators": 60,
+  "ctl_keys__keys": 936,
+  "ctl_stand__frame": 776,
+  "ctl_sustain_pedal__pedal": 216,
+  "stool_keys__stool": 548,
+  "rug__rug": 156,
+  "drum_rack__rack": 2084,
+  "drum_pads__shells": 1928,
+  "drum_pads__heads": 384,
+  "drum_cymbals__cymbals": 1812,
+  "drum_kick__tower": 696,
+  "drum_hihat_pedal__pedal": 172,
+  "drum_module__body": 320,
+  "drum_module__display": 12,
+  "drum_sticks__pair": 120,
+  "drum_throne__throne": 588,
+  "music_cables__runs": 588
+ },
+ "ledger": {
+  "rows": {
+   "ctl_body__shell": {
+    "assetId": "ctl_body",
+    "material": "lib_palette",
+    "placed": 1132,
+    "ceiling": 2500,
+    "main": 1,
+    "shadow": 1,
+    "refresh": 2,
+    "refreshTriangles": 2264
+   },
+   "ctl_body__indicators": {
+    "assetId": "ctl_body",
+    "material": "lib_glow",
+    "placed": 60,
+    "ceiling": 60,
+    "main": 1,
+    "shadow": 0,
+    "refresh": 1,
+    "refreshTriangles": 60
+   },
+   "ctl_keys__keys": {
+    "assetId": "ctl_keys",
+    "material": "lib_palette",
+    "placed": 936,
+    "ceiling": 1540,
+    "main": 1,
+    "shadow": 0,
+    "refresh": 1,
+    "refreshTriangles": 936
+   },
+   "ctl_stand__frame": {
+    "assetId": "ctl_stand",
+    "material": "lib_palette",
+    "placed": 776,
+    "ceiling": 1300,
+    "main": 1,
+    "shadow": 1,
+    "refresh": 2,
+    "refreshTriangles": 1552
+   },
+   "ctl_sustain_pedal__pedal": {
+    "assetId": "ctl_sustain_pedal",
+    "material": "lib_palette",
+    "placed": 216,
+    "ceiling": 500,
+    "main": 1,
+    "shadow": 0,
+    "refresh": 1,
+    "refreshTriangles": 216
+   },
+   "stool_keys__stool": {
+    "assetId": "stool_keys",
+    "material": "lib_palette",
+    "placed": 548,
+    "ceiling": 700,
+    "main": 1,
+    "shadow": 1,
+    "refresh": 2,
+    "refreshTriangles": 1096
+   },
+   "rug__rug": {
+    "assetId": "rug",
+    "material": "lib_weave",
+    "placed": 156,
+    "ceiling": 400,
+    "main": 1,
+    "shadow": 0,
+    "refresh": 1,
+    "refreshTriangles": 156
+   },
+   "drum_rack__rack": {
+    "assetId": "drum_rack",
+    "material": "lib_palette",
+    "placed": 2084,
+    "ceiling": 2400,
+    "main": 1,
+    "shadow": 1,
+    "refresh": 2,
+    "refreshTriangles": 4168
+   },
+   "drum_pads__shells": {
+    "assetId": "drum_pads",
+    "material": "lib_palette",
+    "placed": 1928,
+    "ceiling": 2600,
+    "main": 1,
+    "shadow": 1,
+    "refresh": 2,
+    "refreshTriangles": 3856
+   },
+   "drum_pads__heads": {
+    "assetId": "drum_pads",
+    "material": "lib_weave",
+    "placed": 384,
+    "ceiling": 900,
+    "main": 1,
+    "shadow": 0,
+    "refresh": 1,
+    "refreshTriangles": 384
+   },
+   "drum_cymbals__cymbals": {
+    "assetId": "drum_cymbals",
+    "material": "lib_palette",
+    "placed": 1812,
+    "ceiling": 1950,
+    "main": 1,
+    "shadow": 1,
+    "refresh": 2,
+    "refreshTriangles": 3624
+   },
+   "drum_kick__tower": {
+    "assetId": "drum_kick",
+    "material": "lib_palette",
+    "placed": 696,
+    "ceiling": 1500,
+    "main": 1,
+    "shadow": 1,
+    "refresh": 2,
+    "refreshTriangles": 1392
+   },
+   "drum_hihat_pedal__pedal": {
+    "assetId": "drum_hihat_pedal",
+    "material": "lib_palette",
+    "placed": 172,
+    "ceiling": 600,
+    "main": 1,
+    "shadow": 0,
+    "refresh": 1,
+    "refreshTriangles": 172
+   },
+   "drum_module__body": {
+    "assetId": "drum_module",
+    "material": "lib_palette",
+    "placed": 320,
+    "ceiling": 640,
+    "main": 1,
+    "shadow": 1,
+    "refresh": 2,
+    "refreshTriangles": 640
+   },
+   "drum_module__display": {
+    "assetId": "drum_module",
+    "material": "lib_glow",
+    "placed": 12,
+    "ceiling": 60,
+    "main": 1,
+    "shadow": 0,
+    "refresh": 1,
+    "refreshTriangles": 12
+   },
+   "drum_sticks__pair": {
+    "assetId": "drum_sticks",
+    "material": "lib_oak",
+    "placed": 120,
+    "ceiling": 120,
+    "main": 1,
+    "shadow": 0,
+    "refresh": 1,
+    "refreshTriangles": 120
+   },
+   "drum_throne__throne": {
+    "assetId": "drum_throne",
+    "material": "lib_palette",
+    "placed": 588,
+    "ceiling": 700,
+    "main": 1,
+    "shadow": 1,
+    "refresh": 2,
+    "refreshTriangles": 1176
+   },
+   "music_cables__runs": {
+    "assetId": "music_cables",
+    "material": "lib_palette",
+    "placed": 588,
+    "ceiling": 800,
+    "main": 1,
+    "shadow": 0,
+    "refresh": 1,
+    "refreshTriangles": 588
+   }
+  },
+  "stage": {
+   "main": 18,
+   "casters": 9,
+   "refresh": 27,
+   "placed": 12528,
+   "refreshTriangles": 22412
+  },
+  "stageLimits": {
+   "main": 20,
+   "refresh": 30,
+   "placed": 22500
+  }
+ },
+ "sceneExtras": {
+  "fk_variant": "proposal",
+  "fk_tag": "m4-v01",
+  "fk_profile": "studio-full-kit-v1",
+  "fk_stage": "M4",
+  "fk_m2_tag": "v04-pc",
+  "fk_m3_tag": "v02",
+  "fk_m4_tag": "v01"
+ },
+ "keys": {
+  "white": 29,
+  "black": 20
+ },
+ "targetRays": {
+  "dissertation": {
+   "clear": 81,
+   "of": 81,
+   "blockers": []
+  },
+  "copilot": {
+   "clear": 81,
+   "of": 81,
+   "blockers": []
+  },
+  "typeforge": {
+   "clear": 81,
+   "of": 81,
+   "blockers": []
+  }
+ },
+ "visibility": {
+  "ctl_body__shell": {
+   "samples": 157,
+   "unobstructedFromEye": 157,
+   "blockers": {},
+   "music-1440": {
+    "inFrame": 157,
+    "px": [
+     718.6,
+     1181.2,
+     607.0,
+     737.3
+    ]
+   },
+   "right-down": {
+    "inFrame": 157,
+    "px": [
+     531.6,
+     949.9,
+     472.0,
+     623.9
+    ]
+   },
+   "music-320-f74": {
+    "inFrame": 142,
+    "px": [
+     159.0,
+     313.2,
+     540.7,
+     620.2
+    ]
+   },
+   "home-1440": {
+    "inFrame": 0,
+    "px": null
+   }
+  },
+  "ctl_body__indicators": {
+   "samples": 40,
+   "unobstructedFromEye": 24,
+   "blockers": {
+    "ctl_body__shell": 16
+   },
+   "music-1440": {
+    "inFrame": 24,
+    "px": [
+     736.5,
+     1034.0,
+     622.0,
+     657.6
+    ]
+   },
+   "right-down": {
+    "inFrame": 24,
+    "px": [
+     549.0,
+     827.3,
+     490.2,
+     547.5
+    ]
+   },
+   "music-320-f74": {
+    "inFrame": 20,
+    "px": [
+     171.4,
+     223.6,
+     561.1,
+     565.2
+    ]
+   },
+   "home-1440": {
+    "inFrame": 0,
+    "px": null
+   }
+  },
+  "ctl_keys__keys": {
+   "samples": 156,
+   "unobstructedFromEye": 142,
+   "blockers": {
+    "ctl_body__shell": 14
+   },
+   "music-1440": {
+    "inFrame": 142,
+    "px": [
+     776.6,
+     1161.0,
+     660.0,
+     715.6
+    ]
+   },
+   "right-down": {
+    "inFrame": 142,
+    "px": [
+     591.3,
+     933.6,
+     516.6,
+     595.0
+    ]
+   },
+   "music-320-f74": {
+    "inFrame": 60,
+    "px": [
+     199.0,
+     318.6,
+     575.7,
+     605.2
+    ]
+   },
+   "home-1440": {
+    "inFrame": 0,
+    "px": null
+   }
+  },
+  "ctl_stand__frame": {
+   "samples": 220,
+   "unobstructedFromEye": 165,
+   "blockers": {
+    "contact_decals__music_corner": 7,
+    "ctl_body__shell": 18,
+    "ctl_keys__keys": 30
+   },
+   "music-1440": {
+    "inFrame": 126,
+    "px": [
+     777.5,
+     1119.9,
+     708.7,
+     884.2
+    ]
+   },
+   "right-down": {
+    "inFrame": 165,
+    "px": [
+     601.7,
+     900.2,
+     560.4,
+     834.7
+    ]
+   },
+   "music-320-f74": {
+    "inFrame": 88,
+    "px": [
+     199.7,
+     319.8,
+     616.4,
+     792.0
+    ]
+   },
+   "home-1440": {
+    "inFrame": 0,
+    "px": null
+   }
+  },
+  "ctl_sustain_pedal__pedal": {
+   "samples": 116,
+   "unobstructedFromEye": 69,
+   "blockers": {
+    "contact_decals__music_corner": 16,
+    "ctl_body__shell": 12,
+    "ctl_keys__keys": 6,
+    "rug__rug": 1,
+    "stool_keys__stool": 12
+   },
+   "music-1440": {
+    "inFrame": 58,
+    "px": [
+     1022.4,
+     1097.0,
+     767.2,
+     875.0
+    ]
+   },
+   "right-down": {
+    "inFrame": 69,
+    "px": [
+     819.2,
+     906.6,
+     619.4,
+     757.6
+    ]
+   },
+   "music-320-f74": {
+    "inFrame": 0,
+    "px": null
+   },
+   "home-1440": {
+    "inFrame": 0,
+    "px": null
+   }
+  },
+  "stool_keys__stool": {
+   "samples": 298,
+   "unobstructedFromEye": 289,
+   "blockers": {
+    "rug__rug": 9
+   },
+   "music-1440": {
+    "inFrame": 134,
+    "px": [
+     1062.6,
+     1270.2,
+     762.6,
+     892.6
+    ]
+   },
+   "right-down": {
+    "inFrame": 289,
+    "px": [
+     837.1,
+     1016.6,
+     604.6,
+     893.4
+    ]
+   },
+   "music-320-f74": {
+    "inFrame": 0,
+    "px": null
+   },
+   "home-1440": {
+    "inFrame": 0,
+    "px": null
+   }
+  },
+  "drum_rack__rack": {
+   "samples": 167,
+   "unobstructedFromEye": 57,
+   "blockers": {
+    "contact_decals__music_corner": 2,
+    "ctl_body__indicators": 1,
+    "ctl_body__shell": 12,
+    "ctl_keys__keys": 3,
+    "desk_top__top": 22,
+    "drum_cymbals__cymbals": 4,
+    "drum_module__body": 6,
+    "drum_pads__heads": 11,
+    "drum_pads__shells": 10,
+    "drum_throne__throne": 2,
+    "headphones__on_stand": 30,
+    "pc_tower__case": 7
+   },
+   "music-1440": {
+    "inFrame": 57,
+    "px": [
+     476.9,
+     817.5,
+     440.8,
+     775.3
+    ]
+   },
+   "right-down": {
+    "inFrame": 57,
+    "px": [
+     242.5,
+     625.0,
+     331.4,
+     687.6
+    ]
+   },
+   "music-320-f74": {
+    "inFrame": 56,
+    "px": [
+     20.8,
+     227.3,
+     415.6,
+     646.4
+    ]
+   },
+   "home-1440": {
+    "inFrame": 12,
+    "px": [
+     1201.5,
+     1353.5,
+     531.7,
+     873.5
+    ]
+   }
+  },
+  "drum_pads__shells": {
+   "samples": 153,
+   "unobstructedFromEye": 129,
+   "blockers": {
+    "desk_top__top": 5,
+    "drum_pads__heads": 18,
+    "drum_sticks__pair": 1
+   },
+   "music-1440": {
+    "inFrame": 129,
+    "px": [
+     549.3,
+     806.1,
+     470.3,
+     644.6
+    ]
+   },
+   "right-down": {
+    "inFrame": 129,
+    "px": [
+     335.2,
+     612.9,
+     362.0,
+     547.2
+    ]
+   },
+   "music-320-f74": {
+    "inFrame": 129,
+    "px": [
+     42.3,
+     219.4,
+     436.0,
+     556.3
+    ]
+   },
+   "home-1440": {
+    "inFrame": 60,
+    "px": [
+     1280.3,
+     1439.0,
+     551.1,
+     765.0
+    ]
+   }
+  },
+  "drum_pads__heads": {
+   "samples": 200,
+   "unobstructedFromEye": 90,
+   "blockers": {
+    "drum_pads__shells": 106,
+    "drum_sticks__pair": 4
+   },
+   "music-1440": {
+    "inFrame": 90,
+    "px": [
+     560.0,
+     801.7,
+     472.7,
+     602.0
+    ]
+   },
+   "right-down": {
+    "inFrame": 90,
+    "px": [
+     343.4,
+     608.5,
+     364.5,
+     501.3
+    ]
+   },
+   "music-320-f74": {
+    "inFrame": 90,
+    "px": [
+     49.6,
+     216.4,
+     437.7,
+     526.8
+    ]
+   },
+   "home-1440": {
+    "inFrame": 38,
+    "px": [
+     1299.3,
+     1427.8,
+     557.5,
+     703.8
+    ]
+   }
+  },
+  "drum_cymbals__cymbals": {
+   "samples": 157,
+   "unobstructedFromEye": 157,
+   "blockers": {},
+   "music-1440": {
+    "inFrame": 157,
+    "px": [
+     428.2,
+     817.1,
+     398.1,
+     467.4
+    ]
+   },
+   "right-down": {
+    "inFrame": 157,
+    "px": [
+     175.5,
+     618.0,
+     285.4,
+     368.4
+    ]
+   },
+   "music-320-f74": {
+    "inFrame": 121,
+    "px": [
+     0.8,
+     227.0,
+     386.2,
+     427.0
+    ]
+   },
+   "home-1440": {
+    "inFrame": 57,
+    "px": [
+     1148.7,
+     1439.2,
+     451.8,
+     511.2
+    ]
+   }
+  },
+  "drum_hihat_pedal__pedal": {
+   "samples": 96,
+   "unobstructedFromEye": 60,
+   "blockers": {
+    "contact_decals__music_corner": 18,
+    "desk_frame__steel": 18
+   },
+   "music-1440": {
+    "inFrame": 60,
+    "px": [
+     602.8,
+     672.0,
+     748.5,
+     812.2
+    ]
+   },
+   "right-down": {
+    "inFrame": 60,
+    "px": [
+     417.1,
+     492.8,
+     650.4,
+     705.0
+    ]
+   },
+   "music-320-f74": {
+    "inFrame": 60,
+    "px": [
+     79.2,
+     126.9,
+     627.9,
+     671.9
+    ]
+   },
+   "home-1440": {
+    "inFrame": 1,
+    "px": [
+     1344.0,
+     1344.0,
+     889.2,
+     889.2
+    ]
+   }
+  },
+  "drum_kick__tower": {
+   "samples": 202,
+   "unobstructedFromEye": 187,
+   "blockers": {
+    "contact_decals__music_corner": 10,
+    "ctl_body__shell": 2,
+    "desk_frame__steel": 1,
+    "drum_pads__heads": 1,
+    "drum_throne__throne": 1
+   },
+   "music-1440": {
+    "inFrame": 187,
+    "px": [
+     601.1,
+     730.8,
+     579.1,
+     744.8
+    ]
+   },
+   "right-down": {
+    "inFrame": 187,
+    "px": [
+     410.8,
+     548.3,
+     475.5,
+     631.8
+    ]
+   },
+   "music-320-f74": {
+    "inFrame": 187,
+    "px": [
+     78.0,
+     167.5,
+     511.1,
+     625.3
+    ]
+   },
+   "home-1440": {
+    "inFrame": 18,
+    "px": [
+     1345.4,
+     1440.0,
+     781.2,
+     883.9
+    ]
+   }
+  },
+  "drum_module__body": {
+   "samples": 182,
+   "unobstructedFromEye": 156,
+   "blockers": {
+    "drum_module__display": 2,
+    "headphones__on_stand": 24
+   },
+   "music-1440": {
+    "inFrame": 156,
+    "px": [
+     489.4,
+     555.5,
+     500.7,
+     581.9
+    ]
+   },
+   "right-down": {
+    "inFrame": 156,
+    "px": [
+     261.3,
+     342.4,
+     402.2,
+     490.2
+    ]
+   },
+   "music-320-f74": {
+    "inFrame": 156,
+    "px": [
+     1.0,
+     46.5,
+     457.0,
+     513.0
+    ]
+   },
+   "home-1440": {
+    "inFrame": 156,
+    "px": [
+     1213.8,
+     1300.3,
+     559.4,
+     653.8
+    ]
+   }
+  },
+  "drum_module__display": {
+   "samples": 8,
+   "unobstructedFromEye": 6,
+   "blockers": {
+    "drum_module__body": 2
+   },
+   "music-1440": {
+    "inFrame": 6,
+    "px": [
+     503.1,
+     528.1,
+     510.0,
+     525.7
+    ]
+   },
+   "right-down": {
+    "inFrame": 6,
+    "px": [
+     278.0,
+     308.5,
+     412.9,
+     431.0
+    ]
+   },
+   "music-320-f74": {
+    "inFrame": 6,
+    "px": [
+     10.4,
+     27.6,
+     463.4,
+     474.2
+    ]
+   },
+   "home-1440": {
+    "inFrame": 6,
+    "px": [
+     1231.0,
+     1263.7,
+     567.7,
+     582.5
+    ]
+   }
+  },
+  "drum_sticks__pair": {
+   "samples": 64,
+   "unobstructedFromEye": 64,
+   "blockers": {},
+   "music-1440": {
+    "inFrame": 64,
+    "px": [
+     592.0,
+     636.9,
+     569.3,
+     626.5
+    ]
+   },
+   "right-down": {
+    "inFrame": 64,
+    "px": [
+     392.4,
+     442.1,
+     470.5,
+     528.5
+    ]
+   },
+   "music-320-f74": {
+    "inFrame": 64,
+    "px": [
+     71.7,
+     102.7,
+     504.3,
+     543.8
+    ]
+   },
+   "home-1440": {
+    "inFrame": 64,
+    "px": [
+     1343.4,
+     1417.1,
+     661.3,
+     748.9
+    ]
+   }
+  },
+  "drum_throne__throne": {
+   "samples": 161,
+   "unobstructedFromEye": 62,
+   "blockers": {
+    "contact_decals__music_corner": 7,
+    "ctl_body__indicators": 1,
+    "ctl_body__shell": 91
+   },
+   "music-1440": {
+    "inFrame": 62,
+    "px": [
+     683.3,
+     806.2,
+     598.9,
+     776.7
+    ]
+   },
+   "right-down": {
+    "inFrame": 62,
+    "px": [
+     501.5,
+     620.8,
+     489.1,
+     653.2
+    ]
+   },
+   "music-320-f74": {
+    "inFrame": 62,
+    "px": [
+     134.7,
+     219.4,
+     524.7,
+     647.4
+    ]
+   },
+   "home-1440": {
+    "inFrame": 0,
+    "px": null
+   }
+  },
+  "rug__rug": {
+   "samples": 80,
+   "unobstructedFromEye": 36,
+   "blockers": {
+    "arch_floor__boards": 4,
+    "desk_top__top": 20,
+    "drum_throne__throne": 20
+   },
+   "music-1440": {
+    "inFrame": 19,
+    "px": [
+     1293.0,
+     1312.5,
+     829.2,
+     842.1
+    ]
+   },
+   "right-down": {
+    "inFrame": 19,
+    "px": [
+     1033.7,
+     1047.8,
+     642.7,
+     651.4
+    ]
+   },
+   "music-320-f74": {
+    "inFrame": 0,
+    "px": null
+   },
+   "home-1440": {
+    "inFrame": 0,
+    "px": null
+   }
+  },
+  "music_cables__runs": {
+   "samples": 155,
+   "unobstructedFromEye": 59,
+   "blockers": {
+    "contact_decals__music_corner": 4,
+    "ctl_body__shell": 5,
+    "ctl_keys__keys": 3,
+    "desk_frame__steel": 7,
+    "desk_top__top": 25,
+    "drum_module__body": 14,
+    "drum_pads__heads": 22,
+    "drum_pads__shells": 8,
+    "headphones__on_stand": 2,
+    "mug_coaster__mug_coaster": 3,
+    "pc_tower__case": 3
+   },
+   "music-1440": {
+    "inFrame": 59,
+    "px": [
+     513.9,
+     754.5,
+     500.3,
+     859.2
+    ]
+   },
+   "right-down": {
+    "inFrame": 59,
+    "px": [
+     295.6,
+     574.3,
+     395.2,
+     735.5
+    ]
+   },
+   "music-320-f74": {
+    "inFrame": 59,
+    "px": [
+     17.8,
+     183.8,
+     456.7,
+     704.3
+    ]
+   },
+   "home-1440": {
+    "inFrame": 43,
+    "px": [
+     1240.4,
+     1328.6,
+     600.5,
+     677.3
+    ]
+   }
+  }
+ },
+ "featureVisibility": {
+  "kickPedal": {
+   "samples": 190,
+   "unobstructedFromEye": 169,
+   "blockers": {
+    "contact_decals__music_corner": 13,
+    "ctl_body__shell": 3,
+    "drum_throne__throne": 5
+   },
+   "music-1440": {
+    "inFrame": 169,
+    "px": [
+     651.4,
+     740.8,
+     657.2,
+     744.8
+    ]
+   },
+   "right-down": {
+    "inFrame": 169,
+    "px": [
+     461.6,
+     558.6,
+     552.1,
+     631.8
+    ]
+   },
+   "music-320-f74": {
+    "inFrame": 169,
+    "px": [
+     112.7,
+     174.3,
+     564.9,
+     625.3
+    ]
+   },
+   "home-1440": {
+    "inFrame": 3,
+    "px": [
+     1427.7,
+     1439.8,
+     813.8,
+     883.9
+    ]
+   }
+  },
+  "kickTowerUpper": {
+   "samples": 160,
+   "unobstructedFromEye": 158,
+   "blockers": {
+    "drum_pads__heads": 2
+   },
+   "music-1440": {
+    "inFrame": 158,
+    "px": [
+     648.7,
+     689.3,
+     579.1,
+     667.8
+    ]
+   },
+   "right-down": {
+    "inFrame": 158,
+    "px": [
+     457.7,
+     499.3,
+     475.5,
+     565.4
+    ]
+   },
+   "music-320-f74": {
+    "inFrame": 158,
+    "px": [
+     110.8,
+     138.8,
+     511.1,
+     572.2
+    ]
+   },
+   "home-1440": {
+    "inFrame": 18,
+    "px": [
+     1432.7,
+     1440.0,
+     781.2,
+     811.2
+    ]
+   }
+  },
+  "hihatPedal": {
+   "samples": 96,
+   "unobstructedFromEye": 60,
+   "blockers": {
+    "contact_decals__music_corner": 18,
+    "desk_frame__steel": 18
+   },
+   "music-1440": {
+    "inFrame": 60,
+    "px": [
+     602.8,
+     672.0,
+     748.5,
+     812.2
+    ]
+   },
+   "right-down": {
+    "inFrame": 60,
+    "px": [
+     417.1,
+     492.8,
+     650.4,
+     705.0
+    ]
+   },
+   "music-320-f74": {
+    "inFrame": 60,
+    "px": [
+     79.2,
+     126.9,
+     627.9,
+     671.9
+    ]
+   },
+   "home-1440": {
+    "inFrame": 1,
+    "px": [
+     1344.0,
+     1344.0,
+     889.2,
+     889.2
+    ]
+   }
+  },
+  "sustainPedal": {
+   "samples": 80,
+   "unobstructedFromEye": 57,
+   "blockers": {
+    "contact_decals__music_corner": 16,
+    "rug__rug": 1,
+    "stool_keys__stool": 6
+   },
+   "music-1440": {
+    "inFrame": 52,
+    "px": [
+     1056.7,
+     1097.0,
+     856.8,
+     875.0
+    ]
+   },
+   "right-down": {
+    "inFrame": 57,
+    "px": [
+     849.2,
+     906.6,
+     691.0,
+     757.6
+    ]
+   },
+   "music-320-f74": {
+    "inFrame": 0,
+    "px": null
+   },
+   "home-1440": {
+    "inFrame": 0,
+    "px": null
+   }
+  },
+  "throneSeat": {
+   "samples": 73,
+   "unobstructedFromEye": 54,
+   "blockers": {
+    "ctl_body__shell": 19
+   },
+   "music-1440": {
+    "inFrame": 54,
+    "px": [
+     694.9,
+     806.2,
+     598.9,
+     642.1
+    ]
+   },
+   "right-down": {
+    "inFrame": 54,
+    "px": [
+     503.6,
+     616.6,
+     488.7,
+     535.7
+    ]
+   },
+   "music-320-f74": {
+    "inFrame": 54,
+    "px": [
+     142.7,
+     219.4,
+     524.7,
+     554.5
+    ]
+   },
+   "home-1440": {
+    "inFrame": 0,
+    "px": null
+   }
+  },
+  "stoolSeat": {
+   "samples": 110,
+   "unobstructedFromEye": 110,
+   "blockers": {},
+   "music-1440": {
+    "inFrame": 110,
+    "px": [
+     1062.6,
+     1270.2,
+     762.6,
+     892.6
+    ]
+   },
+   "right-down": {
+    "inFrame": 110,
+    "px": [
+     853.6,
+     1016.6,
+     604.6,
+     704.5
+    ]
+   },
+   "music-320-f74": {
+    "inFrame": 0,
+    "px": null
+   },
+   "home-1440": {
+    "inFrame": 0,
+    "px": null
+   }
+  },
+  "moduleDisplay": {
+   "samples": 8,
+   "unobstructedFromEye": 6,
+   "blockers": {
+    "drum_module__body": 2
+   },
+   "music-1440": {
+    "inFrame": 6,
+    "px": [
+     503.1,
+     528.1,
+     510.0,
+     525.7
+    ]
+   },
+   "right-down": {
+    "inFrame": 6,
+    "px": [
+     278.0,
+     308.5,
+     412.9,
+     431.0
+    ]
+   },
+   "music-320-f74": {
+    "inFrame": 6,
+    "px": [
+     10.4,
+     27.6,
+     463.4,
+     474.2
+    ]
+   },
+   "home-1440": {
+    "inFrame": 6,
+    "px": [
+     1231.0,
+     1263.7,
+     567.7,
+     582.5
+    ]
+   }
+  }
+ },
+ "controller": {
+  "placementBlenderM": {
+   "cx": 1.2,
+   "cy": -0.8,
+   "zb": 0.573,
+   "w": 0.99,
+   "d": 0.32,
+   "h": 0.095,
+   "yawDeg": -34.38
+  },
+  "eyeDistanceM": 1.932,
+  "azimuthAllVerticesDeg": [
+   43.2,
+   75.35,
+   32.14
+  ],
+  "azimuthUnobstructedSamplesDeg": [
+   43.89,
+   74.85,
+   30.96
+  ],
+  "whiteKeyTopsFirstHitKeys": 29,
+  "whiteKeyPitchPx": {
+   "music-1440": [
+    12.2,
+    14.3
+   ],
+   "right-down": [
+    10.0,
+    14.1
+   ],
+   "music-320-f74": [
+    8.4,
+    9.9
+   ]
+  }
+ },
+ "cymbals": {
+  "hihat": {
+   "centre": [
+    0.85,
+    0.62,
+    1.0
+   ],
+   "radius": 0.19,
+   "tiltDeg": 3,
+   "bell": {
+    "unobstructed": 16,
+    "of": 16,
+    "blockers": {},
+    "music-1440px": [
+     [
+      483.4,
+      438.2
+     ],
+     [
+      468.5,
+      438.9
+     ],
+     [
+      475.6,
+      441.0
+     ],
+     [
+      490.7,
+      440.3
+     ]
+    ]
+   },
+   "edge": {
+    "unobstructed": 25,
+    "of": 32,
+    "blockers": {
+     "speaker_nearfield__cabinet": 7
+    },
+    "music-1440px": [
+     [
+      499.0,
+      441.4
+     ],
+     [
+      453.9,
+      441.2
+     ],
+     [
+      420.6,
+      445.6
+     ],
+     [
+      420.0,
+      452.6
+     ],
+     [
+      456.9,
+      458.1
+     ],
+     [
+      508.0,
+      458.0
+     ],
+     [
+      538.7,
+      452.7
+     ],
+     [
+      533.4,
+      446.0
+     ]
+    ]
+   }
+  },
+  "crash": {
+   "centre": [
+    1.68,
+    0.67,
+    1.06
+   ],
+   "radius": 0.2,
+   "tiltDeg": 12,
+   "bell": {
+    "unobstructed": 16,
+    "of": 16,
+    "blockers": {},
+    "music-1440px": [
+     [
+      680.6,
+      403.9
+     ],
+     [
+      669.1,
+      401.6
+     ],
+     [
+      663.4,
+      404.5
+     ],
+     [
+      675.1,
+      406.8
+     ]
+    ]
+   },
+   "edge": {
+    "unobstructed": 32,
+    "of": 32,
+    "blockers": {},
+    "music-1440px": [
+     [
+      718.7,
+      409.9
+     ],
+     [
+      692.5,
+      400.5
+     ],
+     [
+      655.4,
+      397.6
+     ],
+     [
+      626.4,
+      402.7
+     ],
+     [
+      622.1,
+      413.6
+     ],
+     [
+      648.2,
+      424.2
+     ],
+     [
+      689.6,
+      427.4
+     ],
+     [
+      718.7,
+      421.1
+     ]
+    ]
+   }
+  },
+  "ride": {
+   "centre": [
+    1.98,
+    0.445,
+    0.95
+   ],
+   "radius": 0.2,
+   "tiltDeg": 9,
+   "bell": {
+    "unobstructed": 16,
+    "of": 16,
+    "blockers": {},
+    "music-1440px": [
+     [
+      776.3,
+      431.3
+     ],
+     [
+      768.0,
+      428.8
+     ],
+     [
+      758.5,
+      431.0
+     ],
+     [
+      766.8,
+      433.6
+     ]
+    ]
+   },
+   "edge": {
+    "unobstructed": 32,
+    "of": 32,
+    "blockers": {},
+    "music-1440px": [
+     [
+      817.9,
+      439.3
+     ],
+     [
+      804.0,
+      429.6
+     ],
+     [
+      770.7,
+      425.4
+     ],
+     [
+      735.9,
+      428.6
+     ],
+     [
+      717.6,
+      437.7
+     ],
+     [
+      728.1,
+      448.2
+     ],
+     [
+      763.7,
+      453.3
+     ],
+     [
+      802.0,
+      449.5
+     ]
+    ]
+   }
+  }
+ },
+ "intersections": {
+  "m4VersusRetainedOrOtherM4Asset": {},
+  "m4VersusContactDecalsRecordedOnly": {
+   "ctl_stand__frame x contact_decals__music_corner": 64,
+   "ctl_sustain_pedal__pedal x contact_decals__music_corner": 44,
+   "drum_rack__rack x contact_decals__music_corner": 84,
+   "drum_hihat_pedal__pedal x contact_decals__music_corner": 16,
+   "drum_kick__tower x contact_decals__music_corner": 92,
+   "drum_throne__throne x contact_decals__music_corner": 60,
+   "music_cables__runs x contact_decals__music_corner": 44
+  }
+ },
+ "restingGapsM": {
+  "rug__rug | arch_floor__boards": 0.0003,
+  "ctl_stand__frame | rug__rug": 0.0003,
+  "ctl_body__shell | ctl_stand__frame": 0.005,
+  "ctl_keys__keys | ctl_body__shell": 0.0003,
+  "ctl_sustain_pedal__pedal | rug__rug": 0.0003,
+  "stool_keys__stool | rug__rug": 0.0003,
+  "drum_rack__rack | rug__rug": 0.0003,
+  "drum_kick__tower | rug__rug": 0.0003,
+  "drum_hihat_pedal__pedal | rug__rug": 0.0003,
+  "drum_throne__throne | rug__rug": 0.0003,
+  "drum_pads__shells | drum_rack__rack": 0.0003,
+  "drum_cymbals__cymbals | drum_rack__rack": 0.0003,
+  "drum_module__body | drum_rack__rack": 0.0003,
+  "drum_sticks__pair | drum_pads__shells": 0.0016,
+  "music_cables__runs | rug__rug": 0.0004,
+  "music_cables__runs | drum_module__body": 0.0003,
+  "rug__rug | desk_frame__steel": 0.0702,
+  "rug__rug | fix_floor_lamp__base": 0.02,
+  "ctl_body__shell | desk_top__top": 0.1904,
+  "drum_cymbals__cymbals | speaker_nearfield__cabinet": 0.3492
+ },
+ "placementsBlenderM": {
+  "controller": {
+   "cx": 1.2,
+   "cy": -0.8,
+   "zb": 0.573,
+   "w": 0.99,
+   "d": 0.32,
+   "h": 0.095,
+   "yawDeg": -34.38
+  },
+  "stoolLocal": {
+   "local": [
+    0.25,
+    -0.4
+   ],
+   "seat": 0.5,
+   "r": 0.165,
+   "legs": 0.17
+  },
+  "sustainLocal": {
+   "local": [
+    0.42,
+    -0.04
+   ]
+  },
+  "throne": {
+   "cx": 1.425,
+   "cy": 0.0,
+   "seat": 0.48,
+   "r": 0.175,
+   "legs": 0.2
+  },
+  "rack": {
+   "r": 0.021,
+   "top": 0.8,
+   "bar": 0.66,
+   "side": 0.48,
+   "side_y": 0.2,
+   "foot_y": [
+    0.4,
+    0.78
+   ],
+   "uprightX": [
+    0.82,
+    1.98
+   ],
+   "y": 0.56
+  },
+  "pads": {
+   "tom1": [
+    [
+     1.18,
+     0.47,
+     0.79
+    ],
+    0.135,
+    0.075,
+    16
+   ],
+   "tom2": [
+    [
+     1.6,
+     0.47,
+     0.8
+    ],
+    0.135,
+    0.075,
+    16
+   ],
+   "snare": [
+    [
+     1.06,
+     0.25,
+     0.555
+    ],
+    0.16,
+    0.095,
+    6
+   ],
+   "tom3": [
+    [
+     1.8,
+     0.27,
+     0.56
+    ],
+    0.135,
+    0.075,
+    9
+   ]
+  },
+  "cymbals": {
+   "hihat": [
+    [
+     0.85,
+     0.62,
+     1.0
+    ],
+    0.19,
+    3
+   ],
+   "crash": [
+    [
+     1.68,
+     0.67,
+     1.06
+    ],
+    0.2,
+    12
+   ],
+   "ride": [
+    [
+     1.98,
+     0.445,
+     0.95
+    ],
+    0.2,
+    9
+   ]
+  },
+  "kick": {
+   "cx": 1.42,
+   "ty": 0.455,
+   "tw": 0.21,
+   "td": 0.11,
+   "th": 0.45,
+   "pad_r": 0.078,
+   "pad_z": 0.235,
+   "heel_y": 0.1,
+   "toe_y": 0.33
+  },
+  "hihatPedal": {
+   "cx": 1.0,
+   "cy": 0.1,
+   "w": 0.11,
+   "l": 0.3,
+   "yaw": 0.12
+  },
+  "module": {
+   "c": [
+    0.85,
+    0.4,
+    0.78
+   ],
+   "w": 0.2,
+   "h": 0.13,
+   "d": 0.05,
+   "az": 165.0,
+   "up": 35.0
+  },
+  "rug": {
+   "x0": 0.56,
+   "x1": 2.215,
+   "y0": -1.36,
+   "y1": 0.89,
+   "t": 0.008,
+   "bind": 0.0105,
+   "bw": 0.026,
+   "r": 0.04
+  },
+  "mounts": {
+   "tom1": [
+    [
+     1.18,
+     0.5451342308872352,
+     0.7024736260364708
+    ],
+    [
+     0.0,
+     -0.33035042472810605,
+     0.9438583563660174
+    ]
+   ],
+   "tom2": [
+    [
+     1.6,
+     0.5451342308872352,
+     0.7024736260364708
+    ],
+    [
+     0.0,
+     -0.33035042472810605,
+     0.9438583563660174
+    ]
+   ],
+   "snare": [
+    [
+     0.8636564125065399,
+     0.3,
+     0.49091410312663497
+    ],
+    [
+     0.9701425001453319,
+     0.0,
+     0.24253562503633297
+    ]
+   ],
+   "tom3": [
+    [
+     1.9375263739635291,
+     0.3,
+     0.49486576911276475
+    ],
+    [
+     -0.9438583563660174,
+     0.0,
+     0.33035042472810605
+    ]
+   ],
+   "module": [
+    [
+     0.7937281278245033,
+     0.5241747197606865,
+     0.7271650560478626
+    ],
+    [
+     -0.5838193816777029,
+     -0.7961173386514129,
+     0.15922346773028256
+    ]
+   ],
+   "hihat": [
+    [
+     0.8478291129395192,
+     0.6223407825695618,
+     0.939083598379971
+    ],
+    [
+     0.03558831246689776,
+     -0.03837348474691584,
+     0.9986295347545739
+    ]
+   ],
+   "crash": [
+    [
+     1.6845112724202933,
+     0.6818531471435161,
+     1.0003329963552379
+    ],
+    [
+     -0.07395528557858026,
+     -0.19431388759862275,
+     0.9781476007338057
+    ]
+   ],
+   "ride": [
+    [
+     1.9874448944495209,
+     0.45096932978385007,
+     0.8897510112236966
+    ],
+    [
+     -0.12204744999214583,
+     -0.09785786530901784,
+     0.9876883405951378
+    ]
+   ],
+   "snake": [
+    [
+     0.99,
+     0.51,
+     0.585
+    ],
+    [
+     0.9486832980505139,
+     0.31622776601683794,
+     0.0
+    ]
+   ],
+   "module_power": [
+    [
+     0.8096570243471028,
+     0.35737686960731274,
+     0.7221665056304072
+    ],
+    [
+     0.1484525055496847,
+     -0.5540322932223234,
+     -0.8191520442889919
+    ]
+   ]
+  }
+ },
+ "sourceScript": "source/build_fullkit_m4.py",
+ "sourceScriptSha256": "aa9724dcd14dbc428ca5c2ba84cffdcbb469fa14c53cf3866ac46164ec04dc22",
+ "sourceBlend": "source/fk-40-music-proposal-v01.blend",
+ "sourceBlendSha256": "0ae40460b9a2cb578fc35a96497a9016e5f116a1efe98cac4809568fd68c4665",
+ "exportReadback": {
+  "rawExport": "exports/studio-full-kit-m4-proposal-v01.raw-export.glb",
+  "rawSha256": "c10e6453b6bee5c1cf09b3d1c905151a4567e5360116a0495bc1398eb20f5906",
+  "rawBytes": 2206200,
+  "nodes": 111,
+  "meshNodes": 110,
+  "sceneExtras": {
+   "fk_variant": "proposal",
+   "fk_tag": "m4-v01",
+   "fk_profile": "studio-full-kit-v1",
+   "fk_stage": "M4",
+   "fk_m2_tag": "v04-pc",
+   "fk_m3_tag": "v02",
+   "fk_m4_tag": "v01"
+  },
+  "newRows": {
+   "ctl_body__shell": {
+    "primitives": 1,
+    "triangles": 1132,
+    "material": [
+     "lib_palette"
+    ],
+    "extras": {
+     "assetId": "ctl_body",
+     "role": "opaque",
+     "occluder": true,
+     "transparent": false,
+     "nocast": false,
+     "receiveShadow": true
+    }
+   },
+   "ctl_body__indicators": {
+    "primitives": 1,
+    "triangles": 60,
+    "material": [
+     "lib_glow"
+    ],
+    "extras": {
+     "assetId": "ctl_body",
+     "role": "opaque",
+     "occluder": true,
+     "transparent": false,
+     "nocast": true,
+     "receiveShadow": true
+    }
+   },
+   "ctl_keys__keys": {
+    "primitives": 1,
+    "triangles": 936,
+    "material": [
+     "lib_palette"
+    ],
+    "extras": {
+     "assetId": "ctl_keys",
+     "role": "opaque",
+     "occluder": true,
+     "transparent": false,
+     "nocast": true,
+     "receiveShadow": true
+    }
+   },
+   "ctl_stand__frame": {
+    "primitives": 1,
+    "triangles": 776,
+    "material": [
+     "lib_palette"
+    ],
+    "extras": {
+     "assetId": "ctl_stand",
+     "role": "opaque",
+     "occluder": true,
+     "transparent": false,
+     "nocast": false,
+     "receiveShadow": true
+    }
+   },
+   "ctl_sustain_pedal__pedal": {
+    "primitives": 1,
+    "triangles": 216,
+    "material": [
+     "lib_palette"
+    ],
+    "extras": {
+     "assetId": "ctl_sustain_pedal",
+     "role": "opaque",
+     "occluder": true,
+     "transparent": false,
+     "nocast": true,
+     "receiveShadow": true
+    }
+   },
+   "stool_keys__stool": {
+    "primitives": 1,
+    "triangles": 548,
+    "material": [
+     "lib_palette"
+    ],
+    "extras": {
+     "assetId": "stool_keys",
+     "role": "opaque",
+     "occluder": true,
+     "transparent": false,
+     "nocast": false,
+     "receiveShadow": true
+    }
+   },
+   "drum_rack__rack": {
+    "primitives": 1,
+    "triangles": 2084,
+    "material": [
+     "lib_palette"
+    ],
+    "extras": {
+     "assetId": "drum_rack",
+     "role": "opaque",
+     "occluder": true,
+     "transparent": false,
+     "nocast": false,
+     "receiveShadow": true
+    }
+   },
+   "drum_pads__shells": {
+    "primitives": 1,
+    "triangles": 1928,
+    "material": [
+     "lib_palette"
+    ],
+    "extras": {
+     "assetId": "drum_pads",
+     "role": "opaque",
+     "occluder": true,
+     "transparent": false,
+     "nocast": false,
+     "receiveShadow": true
+    }
+   },
+   "drum_pads__heads": {
+    "primitives": 1,
+    "triangles": 384,
+    "material": [
+     "lib_weave"
+    ],
+    "extras": {
+     "assetId": "drum_pads",
+     "role": "opaque",
+     "occluder": true,
+     "transparent": false,
+     "nocast": true,
+     "receiveShadow": true
+    }
+   },
+   "drum_cymbals__cymbals": {
+    "primitives": 1,
+    "triangles": 1812,
+    "material": [
+     "lib_palette"
+    ],
+    "extras": {
+     "assetId": "drum_cymbals",
+     "role": "opaque",
+     "occluder": true,
+     "transparent": false,
+     "nocast": false,
+     "receiveShadow": true
+    }
+   },
+   "drum_hihat_pedal__pedal": {
+    "primitives": 1,
+    "triangles": 172,
+    "material": [
+     "lib_palette"
+    ],
+    "extras": {
+     "assetId": "drum_hihat_pedal",
+     "role": "opaque",
+     "occluder": true,
+     "transparent": false,
+     "nocast": true,
+     "receiveShadow": true
+    }
+   },
+   "drum_kick__tower": {
+    "primitives": 1,
+    "triangles": 696,
+    "material": [
+     "lib_palette"
+    ],
+    "extras": {
+     "assetId": "drum_kick",
+     "role": "opaque",
+     "occluder": true,
+     "transparent": false,
+     "nocast": false,
+     "receiveShadow": true
+    }
+   },
+   "drum_module__body": {
+    "primitives": 1,
+    "triangles": 320,
+    "material": [
+     "lib_palette"
+    ],
+    "extras": {
+     "assetId": "drum_module",
+     "role": "opaque",
+     "occluder": true,
+     "transparent": false,
+     "nocast": false,
+     "receiveShadow": true
+    }
+   },
+   "drum_module__display": {
+    "primitives": 1,
+    "triangles": 12,
+    "material": [
+     "lib_glow"
+    ],
+    "extras": {
+     "assetId": "drum_module",
+     "role": "opaque",
+     "occluder": true,
+     "transparent": false,
+     "nocast": true,
+     "receiveShadow": true
+    }
+   },
+   "drum_sticks__pair": {
+    "primitives": 1,
+    "triangles": 120,
+    "material": [
+     "lib_oak"
+    ],
+    "extras": {
+     "assetId": "drum_sticks",
+     "role": "opaque",
+     "occluder": true,
+     "transparent": false,
+     "nocast": true,
+     "receiveShadow": true
+    }
+   },
+   "drum_throne__throne": {
+    "primitives": 1,
+    "triangles": 588,
+    "material": [
+     "lib_palette"
+    ],
+    "extras": {
+     "assetId": "drum_throne",
+     "role": "opaque",
+     "occluder": true,
+     "transparent": false,
+     "nocast": false,
+     "receiveShadow": true
+    }
+   },
+   "rug__rug": {
+    "primitives": 1,
+    "triangles": 156,
+    "material": [
+     "lib_weave"
+    ],
+    "extras": {
+     "assetId": "rug",
+     "role": "opaque",
+     "occluder": true,
+     "transparent": false,
+     "nocast": true,
+     "receiveShadow": true
+    }
+   },
+   "music_cables__runs": {
+    "primitives": 1,
+    "triangles": 588,
+    "material": [
+     "lib_palette"
+    ],
+    "extras": {
+     "assetId": "music_cables",
+     "role": "opaque",
+     "occluder": true,
+     "transparent": false,
+     "nocast": true,
+     "receiveShadow": true
+    }
+   }
+  },
+  "note": "Raw export only. Retained-byte parity, final candidate and paired manifest wait for the frozen transition guard."
+ }
+}

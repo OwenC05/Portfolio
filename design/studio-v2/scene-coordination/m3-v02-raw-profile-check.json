@@ -1,0 +1,43 @@
+{
+  "scope": "Preserved rejected raw-export diagnostic only; not an accepted candidate manifest or art approval",
+  "report": {
+    "valid": true,
+    "profileId": "studio-full-kit-v1",
+    "profileSha256": "7d2892ae7cb376b1b11942f956647e48284549e718f125b94bd57e5900d7a052",
+    "glbSha256": "71b39b5c242278408092d3ee95ab4e996df47014eb30ef57383b88f3e526fd18",
+    "errors": [],
+    "deferred": [
+      "Actual browser PNG/JPEG decode",
+      "Runtime renderer first-refresh/settled draws and triangles",
+      "Scene JS plus assets transfer",
+      "Root visual gate and independent review"
+    ],
+    "metrics": {
+      "uniqueGeometryTriangles": 32232,
+      "placedTriangles": 34200,
+      "shadowTriangles": 19194,
+      "primitiveInstances": 115,
+      "shadowInstances": 44,
+      "imagePixels": 425984,
+      "materialCount": 12,
+      "textureCount": 5,
+      "rawBytes": 1628664,
+      "gzipBytesEstimate": 708056,
+      "brotliBytesEstimate": 564514,
+      "textureEncodedBytes": 325144,
+      "rawRgbaBytesBeforeMipmaps": 1703936
+    },
+    "boundsGltfMetres": {
+      "min": [
+        -2.250000089406967,
+        -0.02000001072883606,
+        -1.0600000619888306
+      ],
+      "max": [
+        2.550000101327896,
+        2.5950000565499067,
+        3.3000000715255737
+      ]
+    }
+  }
+}

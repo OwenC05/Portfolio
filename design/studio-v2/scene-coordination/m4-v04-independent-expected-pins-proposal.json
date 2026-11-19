@@ -1,0 +1,33 @@
+{
+  "status": "independent proposal only; root adoption required",
+  "technicalCommitReportedByRoot": "8a6addb9c9e16074f1106ca51b26d41830add71a",
+  "authorCommitReportedByRoot": "e684190b6c19af4b664f2d32e1f3d097ab00d25f",
+  "canonicalEncoding": "UTF-8 JSON, sort_keys=True, separators=(comma,colon), ensure_ascii=False, allow_nan=False; no rounding",
+  "rowsSha256": "cfac1013f686bb7790bc2f5e9ed5acc518009ab7e2bc27d09ad09629c429533e",
+  "declarationSha256": "a737d402307d0aa056e375934beab94c7696c1f5a14f0fe7d028893d5c30db7d",
+  "invocationSha256": "5128d2a61205f9e4262814ca5bdd96ff661a5e613259c7af852ad9fe9c38f5c6",
+  "sources": {
+    "helper": "8d814874ee0ac1317827297d2a729b34f4789fffd891212ae03e2c440a73b792",
+    "authorDeclarations": "8ce8db34b40a3ce053d037c5152fec8c8ed19d586b0968439abf64e3308f32bb",
+    "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py": "8d814874ee0ac1317827297d2a729b34f4789fffd891212ae03e2c440a73b792",
+    "producer": "3c9fe150d859087050fed73d3fed54d3a97a5998774c455203e6a00462dc08d1"
+  },
+  "producerInvocation": {
+    "entrypoint": "produce_fullkit_m4_v04.produce_selected",
+    "helperPath": "asset-pipeline/full-kit/source/build_fullkit_m4_geometry_v04.py",
+    "helperSha256": "8d814874ee0ac1317827297d2a729b34f4789fffd891212ae03e2c440a73b792",
+    "authorPath": "asset-pipeline/full-kit/manifests/m4-v04-author-declarations.json",
+    "authorSha256": "8ce8db34b40a3ce053d037c5152fec8c8ed19d586b0968439abf64e3308f32bb",
+    "pose": {
+      "cx": 1.375,
+      "cy": -0.825,
+      "yaw": -0.95
+    }
+  },
+  "artifactBytePins": {
+    "asset-pipeline/full-kit/manifests/m4-v04-rows.json": "1fa5fdd3f267896a76743aca986af9cadd1dd84610395e6049fc799009489992",
+    "asset-pipeline/full-kit/manifests/m4-v04-verifier-declaration.json": "5d04a051398e09c9b2aeb309e2893efe09ed286a18e27113785ff487a7074d42"
+  },
+  "candidateAcceptance": false,
+  "authoritativeFreeze": false
+}

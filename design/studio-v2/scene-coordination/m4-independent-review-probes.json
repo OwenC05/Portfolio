@@ -1,0 +1,610 @@
+{
+  "scope": "independent frozen M4 helper synthetic CPU review; no actual M4 artifact or art acceptance",
+  "originalReceipt": {
+    "passed": 51,
+    "independentlyRerun": 50,
+    "omitted": "CLI fixture writing/cleanup only; reviewed source and frozen receipt"
+  },
+  "protectedHashesBefore": {
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-transition-guard.py": "32673405c0f07e248899e3b4a855081cfb8a98b0ef2077e00e558892481e1b6a",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-transition-guard-tests.py": "48cf26cee1c47a451bf90e5f42db6b842afddc2f9f0cdeead95daa71cb3cd108",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-model-contract.json": "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-transition-guard-tests-v1.json": "6a90cc5c69c79ec676ebdd08db96b5ac80be97cee6b0e2154692ff9f7afc3134"
+  },
+  "protectedHashesAfter": {
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-transition-guard.py": "32673405c0f07e248899e3b4a855081cfb8a98b0ef2077e00e558892481e1b6a",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-transition-guard-tests.py": "48cf26cee1c47a451bf90e5f42db6b842afddc2f9f0cdeead95daa71cb3cd108",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-model-contract.json": "8f0474aad063a2517b0b399bb87728d823ddf5539ae12b67db60bdd7ae3f2d98",
+    "C:\\Users\\Owenc\\orca\\Portfolio\\design\\studio-v2\\scene-coordination\\m4-transition-guard-tests-v1.json": "6a90cc5c69c79ec676ebdd08db96b5ac80be97cee6b0e2154692ff9f7afc3134"
+  },
+  "additionalResults": [
+    {
+      "name": "retained UV repacking into strided storage preserves exact logical bytes",
+      "expected": "valid",
+      "actual": "valid",
+      "passed": true,
+      "codes": [],
+      "errors": []
+    },
+    {
+      "name": "shared retained accessor splitting rejected even with identical bytes",
+      "expected": "invalid",
+      "actual": "invalid",
+      "passed": true,
+      "codes": [
+        "retainedSharingChanged"
+      ],
+      "errors": [
+        {
+          "code": "retainedSharingChanged",
+          "kind": "mesh",
+          "node": "mon_side__typeforge",
+          "parentIndex": 41,
+          "candidateIndex": 35
+        },
+        {
+          "code": "retainedSharingChanged",
+          "kind": "accessor",
+          "node": "mon_side__typeforge",
+          "parentIndex": 149,
+          "candidateIndex": 149
+        }
+      ]
+    },
+    {
+      "name": "distinct retained accessors cannot collapse onto one reference",
+      "expected": "invalid",
+      "actual": "invalid",
+      "passed": true,
+      "codes": [
+        "accessorMetadata",
+        "additionalRetainedByteDifferences",
+        "retainedAccessorBytes",
+        "retainedSharingChanged"
+      ],
+      "errors": [
+        {
+          "code": "accessorMetadata",
+          "node": "desk_top__top",
+          "mesh": "desk_top__top_mesh.002",
+          "primitive": 0,
+          "semantic": "NORMAL",
+          "parentAccessor": 63,
+          "candidateAccessor": 62,
+          "parent": {
+            "componentType": 5126,
+            "count": 292,
+            "type": "VEC3"
+          },
+          "candidate": {
+            "componentType": 5126,
+            "count": 292,
+            "max": [
+              0.5500000715255737,
+              0.7350000143051147,
+              0.5625
+            ],
+            "min": [
+              -1.899999976158142,
+              0.6950000524520874,
+              -0.3125
+            ],
+            "type": "VEC3"
+          }
+        },
+        {
+          "code": "retainedAccessorBytes",
+          "node": "desk_top__top",
+          "mesh": "desk_top__top_mesh.002",
+          "primitive": 0,
+          "semantic": "NORMAL",
+          "parentAccessor": 63,
+          "candidateAccessor": 62,
+          "vertex": 0,
+          "component": 0,
+          "parentBinOffset": 406300,
+          "candidateBinOffset": 402796,
+          "parentFileOffset": 482448,
+          "candidateFileOffset": 476320,
+          "parentHex": "00000000",
+          "candidateHex": "86eb21bf"
+        },
+        {
+          "code": "retainedAccessorBytes",
+          "node": "desk_top__top",
+          "mesh": "desk_top__top_mesh.002",
+          "primitive": 0,
+          "semantic": "NORMAL",
+          "parentAccessor": 63,
+          "candidateAccessor": 62,
+          "vertex": 0,
+          "component": 1,
+          "parentBinOffset": 406304,
+          "candidateBinOffset": 402800,
+          "parentFileOffset": 482452,
+          "candidateFileOffset": 476324,
+          "parentHex": "000080bf",
+          "candidateHex": "86eb313f"
+        }
+      ]
+    },
+    {
+      "name": "retained transform numeric boolean cannot exploit Python equality",
+      "expected": "invalid",
+      "actual": "invalid",
+      "passed": true,
+      "codes": [
+        "hierarchy"
+      ],
+      "errors": [
+        {
+          "code": "hierarchy",
+          "detail": [
+            "node",
+            "studio_full_kit"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "retained boolean flag cannot become numeric one",
+      "expected": "invalid",
+      "actual": "invalid",
+      "passed": true,
+      "codes": [
+        "retainedNode"
+      ],
+      "errors": [
+        {
+          "code": "retainedNode",
+          "node": "desk_top__top",
+          "parent": {
+            "extras": {
+              "assetId": "desk_top",
+              "role": "opaque",
+              "occluder": true,
+              "transparent": false,
+              "nocast": false,
+              "receiveShadow": true
+            },
+            "name": "desk_top__top"
+          },
+          "candidate": {
+            "extras": {
+              "assetId": "desk_top",
+              "role": "opaque",
+              "occluder": 1,
+              "transparent": false,
+              "nocast": false,
+              "receiveShadow": true
+            },
+            "name": "desk_top__top"
+          }
+        }
+      ]
+    },
+    {
+      "name": "retained frost renderOrder cannot drift",
+      "expected": "invalid",
+      "actual": "invalid",
+      "passed": true,
+      "codes": [
+        "hierarchy"
+      ],
+      "errors": [
+        {
+          "code": "hierarchy",
+          "detail": [
+            "node",
+            "kb_case__frost_shell"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "retained full image metadata including name cannot drift",
+      "expected": "invalid",
+      "actual": "invalid",
+      "passed": true,
+      "codes": [
+        "imageIdentities",
+        "materialDefinition",
+        "textureWiring"
+      ],
+      "errors": [
+        {
+          "code": "imageIdentities",
+          "parent": [
+            "fk_palette_colour",
+            "fk_palette_orm",
+            "pilot_linen_albedo",
+            "pilot_linen_emissive",
+            "pilot_timber_albedo"
+          ],
+          "candidate": [
+            "fk_palette_orm",
+            "pilot_linen_albedo",
+            "pilot_linen_emissive",
+            "pilot_timber_albedo",
+            "renamed_existing_image"
+          ]
+        },
+        {
+          "code": "textureWiring",
+          "parent": [
+            "{\"samplerDefinition\":{\"magFilter\":9728,\"minFilter\":9984},\"sourceName\":\"fk_palette_colour\"}",
+            "{\"samplerDefinition\":{\"magFilter\":9728,\"minFilter\":9984},\"sourceName\":\"fk_palette_orm\"}",
+            "{\"samplerDefinition\":{\"magFilter\":9729,\"minFilter\":9987},\"sourceName\":\"pilot_linen_albedo\"}",
+            "{\"samplerDefinition\":{\"magFilter\":9729,\"minFilter\":9987},\"sourceName\":\"pilot_linen_emissive\"}",
+            "{\"samplerDefinition\":{\"magFilter\":9729,\"minFilter\":9987},\"sourceName\":\"pilot_timber_albedo\"}"
+          ],
+          "candidate": [
+            "{\"samplerDefinition\":{\"magFilter\":9728,\"minFilter\":9984},\"sourceName\":\"fk_palette_orm\"}",
+            "{\"samplerDefinition\":{\"magFilter\":9728,\"minFilter\":9984},\"sourceName\":\"renamed_existing_image\"}",
+            "{\"samplerDefinition\":{\"magFilter\":9729,\"minFilter\":9987},\"sourceName\":\"pilot_linen_albedo\"}",
+            "{\"samplerDefinition\":{\"magFilter\":9729,\"minFilter\":9987},\"sourceName\":\"pilot_linen_emissive\"}",
+            "{\"samplerDefinition\":{\"magFilter\":9729,\"minFilter\":9987},\"sourceName\":\"pilot_timber_albedo\"}"
+          ]
+        },
+        {
+          "code": "materialDefinition",
+          "material": "lib_palette",
+          "parent": {
+            "doubleSided": true,
+            "name": "lib_palette",
+            "pbrMetallicRoughness": {
+              "baseColorTexture": {
+                "index": {
+                  "sourceName": "fk_palette_colour",
+                  "samplerDefinition": {
+                    "magFilter": 9728,
+                    "minFilter": 9984
+                  }
+                }
+              },
+              "metallicRoughnessTexture": {
+                "index": {
+                  "sourceName": "fk_palette_orm",
+                  "samplerDefinition": {
+                    "magFilter": 9728,
+                    "minFilter": 9984
+                  }
+                }
+              }
+            }
+          },
+          "candidate": {
+            "doubleSided": true,
+            "name": "lib_palette",
+            "pbrMetallicRoughness": {
+              "baseColorTexture": {
+                "index": {
+                  "sourceName": "renamed_existing_image",
+                  "samplerDefinition": {
+                    "magFilter": 9728,
+                    "minFilter": 9984
+                  }
+                }
+              },
+              "metallicRoughnessTexture": {
+                "index": {
+                  "sourceName": "fk_palette_orm",
+                  "samplerDefinition": {
+                    "magFilter": 9728,
+                    "minFilter": 9984
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "material texture slot changed without changing texture graph",
+      "expected": "invalid",
+      "actual": "invalid",
+      "passed": true,
+      "codes": [
+        "materialDefinition"
+      ],
+      "errors": [
+        {
+          "code": "materialDefinition",
+          "material": "lib_palette",
+          "parent": {
+            "doubleSided": true,
+            "name": "lib_palette",
+            "pbrMetallicRoughness": {
+              "baseColorTexture": {
+                "index": {
+                  "sourceName": "fk_palette_colour",
+                  "samplerDefinition": {
+                    "magFilter": 9728,
+                    "minFilter": 9984
+                  }
+                }
+              },
+              "metallicRoughnessTexture": {
+                "index": {
+                  "sourceName": "fk_palette_orm",
+                  "samplerDefinition": {
+                    "magFilter": 9728,
+                    "minFilter": 9984
+                  }
+                }
+              }
+            }
+          },
+          "candidate": {
+            "doubleSided": true,
+            "name": "lib_palette",
+            "pbrMetallicRoughness": {
+              "baseColorTexture": {
+                "index": {
+                  "sourceName": "fk_palette_orm",
+                  "samplerDefinition": {
+                    "magFilter": 9728,
+                    "minFilter": 9984
+                  }
+                }
+              },
+              "metallicRoughnessTexture": {
+                "index": {
+                  "sourceName": "fk_palette_orm",
+                  "samplerDefinition": {
+                    "magFilter": 9728,
+                    "minFilter": 9984
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "duplicate existing texture record is unexpected graph data",
+      "expected": "invalid",
+      "actual": "invalid",
+      "passed": true,
+      "codes": [
+        "textureWiring"
+      ],
+      "errors": [
+        {
+          "code": "textureWiring",
+          "parent": [
+            "{\"samplerDefinition\":{\"magFilter\":9728,\"minFilter\":9984},\"sourceName\":\"fk_palette_colour\"}",
+            "{\"samplerDefinition\":{\"magFilter\":9728,\"minFilter\":9984},\"sourceName\":\"fk_palette_orm\"}",
+            "{\"samplerDefinition\":{\"magFilter\":9729,\"minFilter\":9987},\"sourceName\":\"pilot_linen_albedo\"}",
+            "{\"samplerDefinition\":{\"magFilter\":9729,\"minFilter\":9987},\"sourceName\":\"pilot_linen_emissive\"}",
+            "{\"samplerDefinition\":{\"magFilter\":9729,\"minFilter\":9987},\"sourceName\":\"pilot_timber_albedo\"}"
+          ],
+          "candidate": [
+            "{\"samplerDefinition\":{\"magFilter\":9728,\"minFilter\":9984},\"sourceName\":\"fk_palette_colour\"}",
+            "{\"samplerDefinition\":{\"magFilter\":9728,\"minFilter\":9984},\"sourceName\":\"fk_palette_colour\"}",
+            "{\"samplerDefinition\":{\"magFilter\":9728,\"minFilter\":9984},\"sourceName\":\"fk_palette_orm\"}",
+            "{\"samplerDefinition\":{\"magFilter\":9729,\"minFilter\":9987},\"sourceName\":\"pilot_linen_albedo\"}",
+            "{\"samplerDefinition\":{\"magFilter\":9729,\"minFilter\":9987},\"sourceName\":\"pilot_linen_emissive\"}",
+            "{\"samplerDefinition\":{\"magFilter\":9729,\"minFilter\":9987},\"sourceName\":\"pilot_timber_albedo\"}"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "retained target normal payload changed",
+      "expected": "invalid",
+      "actual": "invalid",
+      "passed": true,
+      "codes": [
+        "retainedAccessorBytes"
+      ],
+      "errors": [
+        {
+          "code": "retainedAccessorBytes",
+          "node": "display_studio",
+          "mesh": "display_studio",
+          "primitive": 0,
+          "semantic": "NORMAL",
+          "parentAccessor": 67,
+          "candidateAccessor": 67,
+          "vertex": 0,
+          "component": 0,
+          "parentBinOffset": 413916,
+          "candidateBinOffset": 413916,
+          "parentFileOffset": 490064,
+          "candidateFileOffset": 487440,
+          "parentHex": "00000000",
+          "candidateHex": "01000000"
+        }
+      ]
+    },
+    {
+      "name": "full semantic relocation remains accepted in independent invocation",
+      "expected": "valid",
+      "actual": "valid",
+      "passed": true,
+      "codes": [],
+      "errors": []
+    },
+    {
+      "name": "honest M4 provenance currently rejected (known release blocker)",
+      "expected": "invalid",
+      "actual": "invalid",
+      "passed": true,
+      "codes": [
+        "sceneMetadata"
+      ],
+      "errors": [
+        {
+          "code": "sceneMetadata",
+          "parent": [
+            {
+              "extras": {
+                "fk_variant": "proposal",
+                "fk_tag": "m3-v02",
+                "fk_profile": "studio-full-kit-v1",
+                "fk_stage": "M3",
+                "fk_m2_tag": "v04-pc",
+                "fk_m3_tag": "v02"
+              },
+              "name": "Scene",
+              "nodes": [
+                "studio_full_kit"
+              ]
+            }
+          ],
+          "candidate": [
+            {
+              "extras": {
+                "fk_variant": "proposal",
+                "fk_tag": "m4-v01",
+                "fk_profile": "studio-full-kit-v1",
+                "fk_stage": "M4",
+                "fk_m2_tag": "v04-pc",
+                "fk_m3_tag": "v02",
+                "fk_m4_tag": "v01"
+              },
+              "name": "Scene",
+              "nodes": [
+                "studio_full_kit"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "negative accessor reference rejected",
+      "expected": "invalid",
+      "actual": "invalid",
+      "passed": true,
+      "codes": [
+        "invalidReference"
+      ],
+      "errors": [
+        {
+          "code": "invalidReference",
+          "kind": "accessor",
+          "index": -1
+        }
+      ]
+    },
+    {
+      "name": "out-of-buffer retained accessor offset rejected",
+      "expected": "invalid",
+      "actual": "invalid",
+      "passed": true,
+      "codes": [
+        "accessorBounds"
+      ],
+      "errors": [
+        {
+          "code": "accessorBounds",
+          "accessor": 62
+        }
+      ]
+    },
+    {
+      "name": "sparse retained accessor unsupported and rejected",
+      "expected": "invalid",
+      "actual": "invalid",
+      "passed": true,
+      "codes": [
+        "sparseAccessorUnsupported"
+      ],
+      "errors": [
+        {
+          "code": "sparseAccessorUnsupported",
+          "accessor": 62
+        }
+      ]
+    },
+    {
+      "name": "malformed scene value returns invalid receipt",
+      "expected": "invalid",
+      "actual": "exception",
+      "passed": false,
+      "exception": "AttributeError",
+      "message": "'NoneType' object has no attribute 'get'"
+    },
+    {
+      "name": "malformed image record returns invalid receipt",
+      "expected": "invalid",
+      "actual": "exception",
+      "passed": false,
+      "exception": "AttributeError",
+      "message": "'NoneType' object has no attribute 'get'"
+    },
+    {
+      "name": "malformed accessor record returns invalid receipt",
+      "expected": "invalid",
+      "actual": "invalid",
+      "passed": true,
+      "codes": [
+        "malformedInput"
+      ],
+      "errors": [
+        {
+          "code": "malformedInput",
+          "message": "argument of type 'NoneType' is not iterable"
+        }
+      ]
+    },
+    {
+      "name": "malformed texture record returns invalid receipt",
+      "expected": "invalid",
+      "actual": "exception",
+      "passed": false,
+      "exception": "AttributeError",
+      "message": "'NoneType' object has no attribute 'items'"
+    },
+    {
+      "name": "truncated GLB",
+      "expected": "invalid",
+      "actual": "invalid",
+      "passed": true,
+      "codes": [
+        "rawSize"
+      ]
+    },
+    {
+      "name": "invalid UTF8 JSON",
+      "expected": "invalid",
+      "actual": "invalid",
+      "passed": true,
+      "codes": [
+        "malformedInput"
+      ]
+    }
+  ],
+  "passed": 18,
+  "total": 21,
+  "apiContractFailures": [
+    {
+      "name": "malformed scene value returns invalid receipt",
+      "expected": "invalid",
+      "actual": "exception",
+      "passed": false,
+      "exception": "AttributeError",
+      "message": "'NoneType' object has no attribute 'get'"
+    },
+    {
+      "name": "malformed image record returns invalid receipt",
+      "expected": "invalid",
+      "actual": "exception",
+      "passed": false,
+      "exception": "AttributeError",
+      "message": "'NoneType' object has no attribute 'get'"
+    },
+    {
+      "name": "malformed texture record returns invalid receipt",
+      "expected": "invalid",
+      "actual": "exception",
+      "passed": false,
+      "exception": "AttributeError",
+      "message": "'NoneType' object has no attribute 'items'"
+    }
+  ]
+}
